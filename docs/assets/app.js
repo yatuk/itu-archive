@@ -6,15 +6,15 @@
 import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
 import { state, markIndexReady } from './core/store.js';
 import { I18N } from './i18n.js';
-import { initCourses, loadTerm, applyFilters } from './views/courses.js';
+import { initCourses, loadTerm, applyFilters, syncProgramFilter } from './views/courses.js?v=uirefactor2026';
 import { initCourseDetail, openCourseDetail } from './core/course-detail.js';
 import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
 import { initExams, onShow as examsShow } from './views/exams.js';
 import { initCalendar, onShow as calendarShow } from './views/calendar.js';
 import { renderTerms } from './views/terms.js';
-import { onShow as programShow } from './views/program.js';
-import { onShow as dersplanimShow } from './views/dersplanim.js';
-import { PrereqGraph } from './prereq.js?v=prereq-resize-2026';
+import { onShow as programShow } from './views/program.js?v=uirefactor2026';
+import { onShow as dersplanimShow } from './views/dersplanim.js?v=uirefactor2026';
+import { PrereqGraph } from './prereq.js?v=uirefactor2026';
 import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
@@ -118,14 +118,14 @@ async function boot() {
   if (params.has('branch')) $('#f-branch').value = params.get('branch');
   if (params.has('day')) $('#f-day').value = params.get('day');
   if (params.has('time')) $('#f-time').value = params.get('time');
-  if (params.has('level')) $('#f-level').value = params.get('level');
+  $('#f-level').value = params.has('level') ? params.get('level') : 'LS';
   // method URL'de kısa kodla (f/c/h) gelir; eski uzun biçim (geriye uyumlu)
   // aynen kabul edilir — applyFilters/saveState kısa koda çevirip sadeleştirir.
   if (params.has('method')) {
     const m = params.get('method');
     $('#f-method').value = codeToMethod(m) || m;
   }
-  if (params.has('program')) $('#f-program').value = params.get('program');
+  await syncProgramFilter(params.get('program') || '');
   if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
   applyFilters();
@@ -200,7 +200,7 @@ function derslerParams() {
   if ($('#f-branch').value) p.set('branch', $('#f-branch').value);
   if ($('#f-day').value) p.set('day', $('#f-day').value);
   if ($('#f-time').value) p.set('time', $('#f-time').value);
-  if ($('#f-level').value) p.set('level', $('#f-level').value);
+  if ($('#f-level').value && $('#f-level').value !== 'LS') p.set('level', $('#f-level').value);
   const method = methodToCode($('#f-method').value);
   if (method) p.set('method', method);
   if ($('#f-program').value) p.set('program', $('#f-program').value);
@@ -257,7 +257,7 @@ function writeViewUrl(view, push) {
 // geçmişine yazılır (geri/ileri çalışır), değilse mevcut girişi değiştirir
 // (ilk yükleme ve popstate).
 function wireTabs() {
-  const buttons = [...document.querySelectorAll('.tabs button[data-view]')];
+  const buttons = [...document.querySelectorAll('.tabs [data-view]')];
   const more = document.querySelector('.tabs-more');
   const moreLabel = $('#tabs-more-label');
   const moreNames = I18N.lang === 'en'
@@ -268,6 +268,8 @@ function wireTabs() {
     for (const b of buttons) {
       const active = b.dataset.view === view;
       b.setAttribute('aria-selected', String(active));
+      if (active) b.setAttribute('aria-current', 'page');
+      else b.removeAttribute('aria-current');
       b.tabIndex = active ? 0 : -1; // roving tabindex: klavye dolaşımı
       if (active) {
         // Mobilde kaydırılabilir çubukta aktif sekme görünüme gelsin.
@@ -304,7 +306,13 @@ function wireTabs() {
   showView = show;
 
   for (const b of buttons) {
-    b.addEventListener('click', () => show(b.dataset.view, true));
+    b.addEventListener('click', (ev) => {
+      // Gerçek bağlantılar Ctrl/Cmd/Shift ve orta tıkta tarayıcının doğal
+      // yeni sekme davranışını korur. Yalnızca düz sol tık SPA içinde açılır.
+      if (ev.button !== 0 || ev.ctrlKey || ev.metaKey || ev.shiftKey || ev.altKey) return;
+      ev.preventDefault();
+      show(b.dataset.view, true);
+    });
     // Sekmeler arasında ok tuşlarıyla dolaşım (kapsayıcı klavye erişimi).
     b.addEventListener('keydown', (ev) => {
       const visible = buttons.filter((x) => x.offsetParent !== null);

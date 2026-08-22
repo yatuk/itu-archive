@@ -8,7 +8,7 @@
 
 import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js';
 import { methodToCode } from '../core/urlcodes.js';
-import { loadProgramMap } from '../core/programs.js';
+import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js';
 import { state } from '../core/store.js';
 import { quotaDisplay } from '../core/chart.js';
 import { fillRows } from '../core/table.js';
@@ -18,6 +18,11 @@ import { openCourseDetail } from '../core/course-detail.js';
 import { I18N } from '../i18n.js';
 
 const PAGE = 200;
+const MOBILE_GROUP_PAGE = 30;
+const MOBILE_SECTION_PREVIEW = 4;
+const mobileCourseLayout = typeof window !== 'undefined' && window.matchMedia
+  ? window.matchMedia('(max-width: 640px)')
+  : { matches: false, addEventListener() {}, addListener() {} };
 const TIME_LABEL = { sabah: 'sabah (<12:00)', ogle: 'öğle (12:00-17:00)', aksam: 'akşam (≥17:00)' };
 
 export function initCourses() {
@@ -25,7 +30,7 @@ export function initCourses() {
   $('#f-branch').addEventListener('change', applyFilters);
   $('#f-day').addEventListener('change', applyFilters);
   $('#f-time').addEventListener('change', applyFilters);
-  $('#f-level').addEventListener('change', applyFilters);
+  $('#f-level').addEventListener('change', () => syncProgramFilter().then(applyFilters));
   $('#f-method').addEventListener('change', applyFilters);
   $('#f-program').addEventListener('change', applyFilters);
   $('#f-code').addEventListener('input', debounce(applyFilters, 120));
@@ -72,13 +77,24 @@ export function initCourses() {
   $('#f-filter-btn').addEventListener('click', () => fsOpen(!$('#filters').classList.contains('open')));
   $('#fs-apply').addEventListener('click', () => fsOpen(false));
   $('#fs-clear').addEventListener('click', () => {
-    for (const sel of ['#f-branch', '#f-day', '#f-time', '#f-level', '#f-method', '#f-program']) $(sel).value = '';
+    for (const sel of ['#f-branch', '#f-day', '#f-time', '#f-method', '#f-program']) $(sel).value = '';
+    $('#f-level').value = 'LS';
     $('#f-code').value = '';
     $('#f-open').checked = false;
     fsOpen(false);
-    applyFilters();
+    syncProgramFilter().then(applyFilters);
   });
   $('#filters-scrim').addEventListener('click', () => fsOpen(false));
+
+  // Masaüstü tablo, mobil ise ders altında gruplanmış şube listesi kullanır.
+  // Ekran yönü/genişliği çalışma sırasında değişirse aynı filtrelenmiş veri yeni
+  // düzene baştan basılır; iki ayrı veri kaynağı ya da cihaz tespiti yoktur.
+  const switchCourseLayout = () => {
+    state.shown = 0;
+    renderRows(false);
+  };
+  if (mobileCourseLayout.addEventListener) mobileCourseLayout.addEventListener('change', switchCourseLayout);
+  else mobileCourseLayout.addListener(switchCourseLayout);
 }
 
 export async function loadTerm(slug) {
@@ -92,6 +108,8 @@ export async function loadTerm(slug) {
   $('#rows').innerHTML = '<tr class="skel-row"><td colspan="10"><div class="skel">' +
     '<div class="skel-line wide"></div>'.repeat(5) +
     '</div></td></tr>';
+  $('#course-groups').innerHTML = '<div class="mobile-course-skeleton skel">' +
+    '<div class="skel-line wide"></div>'.repeat(4) + '</div>';
   try {
     const [rows, meta] = await Promise.all([
       getJSON(`data/terms/${slug}/search.json`),
@@ -119,28 +137,30 @@ export async function loadTerm(slug) {
       methods.map((m) => `<option>${esc(m)}</option>`).join('');
     mSel.value = methods.includes(keepM) ? keepM : '';
 
-    // "Alabilen programlar" filtre seçenekleri bu dönemin verisinden gelir.
-    // Her satırdaki liste tek tek kodlara indirgenir, tekrarlar alınır ve
-    // alfabetik sıralanır; "hepsi" en üstte sabittir.
-    const programs = [...new Set(rows.flatMap((r) => programList(r)))].sort((a, b) => a.localeCompare(b, 'tr'));
-    const pSel = $('#f-program');
-    const keepP = pSel.value;
-    pSel.innerHTML = '<option value="">hepsi</option>' +
-      programs.map((p) => `<option value="${esc(p)}">${esc(p)}</option>`).join('');
-    pSel.value = programs.includes(keepP) ? keepP : '';
-    // Faz B (G7): resmî listeden okunur adı yaz (varsa) — kod + ad görünür.
-    loadProgramMap().then((m) => {
-      for (const o of pSel.options) {
-        if (!o.value) continue;
-        const p = m.get(o.value);
-        if (p) o.textContent = `${o.value} · ${p.name}`;
-      }
-    }).catch(() => {});
+    await syncProgramFilter($('#f-program').value);
 
     applyFilters();
   } catch (e) {
     setStatus($('#resultline'), `veri yüklenemedi (${e.message})`, { error: true });
   }
+}
+
+export async function syncProgramFilter(preferred = '') {
+  const pSel = $('#f-program');
+  if (!pSel) return;
+  const level = normalizeProgramLevel($('#f-level')?.value || 'LS');
+  const map = await loadProgramMap();
+  const programs = [...new Set((state.rows || []).flatMap((r) => programList(r)))]
+    .filter((code) => normalizeProgramLevel(map.get(code)?.level, code) === level)
+    .sort((a, b) => {
+      const an = map.get(a)?.name || a;
+      const bn = map.get(b)?.name || b;
+      return an.localeCompare(bn, 'tr') || a.localeCompare(b, 'tr');
+    });
+  const keep = preferred || pSel.value;
+  pSel.innerHTML = `<option value="">${esc(I18N.t('filterAll'))}</option>` +
+    programs.map((code) => `<option value="${esc(code)}">${esc(formatProgramLabel(code, map.get(code), I18N.lang))}</option>`).join('');
+  pSel.value = programs.includes(keep) ? keep : '';
 }
 
 // Alan bazlı arama indeksi: her satırın crn/kod/ad/hoca alanı ayrı normalize
@@ -354,7 +374,7 @@ function renderChips() {
   if ($('#f-code').value.trim()) chips.push({ key: 'code', label: `kod: ${$('#f-code').value.trim()}` });
   if ($('#f-day').value) chips.push({ key: 'day', label: `gün: ${$('#f-day').value}` });
   if ($('#f-time').value) chips.push({ key: 'time', label: `saat: ${TIME_LABEL[$('#f-time').value] || $('#f-time').value}` });
-  if ($('#f-level').value) chips.push({ key: 'level', label: `seviye: ${$('#f-level').value}` });
+  if ($('#f-level').value) chips.push({ key: 'level', label: `${I18N.t('filterLevel')}: ${programLevelLabel($('#f-level').value, I18N.lang)}` });
   if ($('#f-method').value) chips.push({ key: 'method', label: `yöntem: ${$('#f-method').value}` });
   if ($('#f-program').value) chips.push({ key: 'program', label: `program: ${$('#f-program').value}` });
   if ($('#f-open').checked) chips.push({ key: 'open', label: 'yalnızca kontenjan' });
@@ -364,17 +384,17 @@ function renderChips() {
   box.innerHTML = chips.map((c) =>
     `<button type="button" class="chip-x" data-key="${c.key}" title="Filtreyi kaldır">${esc(c.label)} ✕</button>`).join('');
   box.querySelectorAll('.chip-x').forEach((b) =>
-    b.addEventListener('click', () => { clearFilter(b.dataset.key); applyFilters(); }));
+    b.addEventListener('click', async () => { await clearFilter(b.dataset.key); applyFilters(); }));
 }
 
-function clearFilter(key) {
+async function clearFilter(key) {
   switch (key) {
     case 'q': $('#q').value = ''; break;
     case 'branch': $('#f-branch').value = ''; break;
     case 'code': $('#f-code').value = ''; break;
     case 'day': $('#f-day').value = ''; break;
     case 'time': $('#f-time').value = ''; break;
-    case 'level': $('#f-level').value = ''; break;
+    case 'level': $('#f-level').value = 'LS'; await syncProgramFilter(); break;
     case 'method': $('#f-method').value = ''; break;
     case 'program': $('#f-program').value = ''; break;
     case 'open': $('#f-open').checked = false; break;
@@ -434,6 +454,11 @@ function sendToProgram() {
 /* ---------- tablo ---------- */
 
 function renderRows(append) {
+  if (mobileCourseLayout.matches) renderMobileGroups(append);
+  else renderTableRows(append);
+}
+
+function renderTableRows(append) {
   const tbody = $('#rows');
   const slice = state.filtered.slice(state.shown, state.shown + PAGE);
 
@@ -483,29 +508,135 @@ function renderRows(append) {
           updateSelection();
         });
       }
-      const star = tr.querySelector('.fav-star');
-      if (star) {
-        star.addEventListener('click', (ev) => {
-          ev.stopPropagation();
-          const [branch, crn] = star.dataset.key.split('|');
-          const on = fav.toggleFavorite(state.termSlug, branch, crn);
-          star.classList.toggle('on', on);
-          star.textContent = on ? '★' : '☆';
-          star.setAttribute('aria-pressed', String(on));
-          star.setAttribute('aria-label', on ? 'Favorilerden çıkar' : 'Favorilere ekle');
-          // Kısa ölçek animasyonu (reduced-motion CSS'te kapanır).
-          star.classList.remove('pop');
-          void star.offsetWidth;
-          star.classList.add('pop');
-          toast(on ? `Favoriye eklendi (${crn})` : `Favoriden çıkarıldı (${crn})`, { kind: on ? 'ok' : 'warn' });
-        });
-      }
+      wireFavoriteButton(tr.querySelector('.fav-star'));
     });
   }
 
   state.shown += slice.length;
   $('#more').hidden = state.shown >= state.filtered.length;
   $('#more').textContent = `daha fazla göster (${state.filtered.length - state.shown} kaldı)`;
+}
+
+// Mobilde tekrar eden ders adı/kodu tek başlık altında toplanır. Filtrelenmiş
+// satır sırası korunur; böylece seçili sıralamanın ilk eşleşmesi grup sırasını,
+// devamındaki eşleşmeler de şube sırasını belirler.
+export function groupCourseRows(rows) {
+  const byCourse = new Map();
+  for (const row of rows) {
+    const key = `${row[1]}\u0000${row[2]}`;
+    if (!byCourse.has(key)) byCourse.set(key, { code: row[1], name: row[2], rows: [] });
+    byCourse.get(key).rows.push(row);
+  }
+  return [...byCourse.values()];
+}
+
+function renderMobileGroups(append) {
+  const box = $('#course-groups');
+  const groups = groupCourseRows(state.filtered);
+  const slice = groups.slice(state.shown, state.shown + MOBILE_GROUP_PAGE);
+
+  if (!append) box.innerHTML = '';
+  if (!slice.length && !state.shown) {
+    box.innerHTML = '<p class="empty">eşleşen ders yok</p>';
+    $('#more').hidden = true;
+    return;
+  }
+
+  const frag = document.createDocumentFragment();
+  for (const group of slice) {
+    const first = group.rows[0];
+    const titleHitRow = group.rows.find((row) => {
+      const hits = state.marks?.get(selKey(row))?.hits || [];
+      return hits.some((hit) => hit.field === 'code' || hit.field === 'name');
+    }) || first;
+    const titleHits = state.marks?.get(selKey(titleHitRow))?.hits || [];
+    const article = document.createElement('article');
+    article.className = 'mobile-course-group';
+    article.innerHTML = `
+      <header class="mobile-course-head">
+        <button type="button" class="mobile-course-open" aria-haspopup="dialog">
+          <span class="mobile-course-code">${markField(group.code, 'code', titleHits.filter((h) => h.field === 'code'))}</span>
+          <span class="mobile-course-name">${markField(group.name, 'name', titleHits.filter((h) => h.field === 'name'))}</span>
+        </button>
+        <span class="mobile-course-count">${group.rows.length} şube</span>
+      </header>
+      <ul class="mobile-section-list"></ul>`;
+
+    const list = article.querySelector('.mobile-section-list');
+    group.rows.forEach((row, index) => {
+      const [crn, code, name, branch, instructor, when, cap, enr] = row;
+      const key = selKey(row);
+      const starred = fav.isFavorite(state.termSlug, branch, crn);
+      const hits = state.marks?.get(key)?.hits || [];
+      const cleanInstructor = instructor && !['-', '·', '.'].includes(instructor.trim()) ? instructor : '';
+      const schedule = when
+        ? when.split(' | ').map((session) => `<span>${esc(session)}</span>`).join('')
+        : '<span class="mobile-data-missing">Zaman açıklanmadı</span>';
+      const quota = Number(cap) > 0
+        ? quotaDisplay(cap, enr, { legacyCounts: true })
+        : '<span class="quota-unknown">kontenjan açıklanmadı</span>';
+      const li = document.createElement('li');
+      li.className = 'mobile-section';
+      if (index >= MOBILE_SECTION_PREVIEW) {
+        li.classList.add('mobile-section-extra');
+        li.hidden = true;
+      }
+      li.innerHTML = `
+        <button type="button" class="mobile-section-open" aria-haspopup="dialog" aria-label="${esc(code)} ${esc(name)}, CRN ${esc(crn)} detayını aç">
+          <span class="mobile-section-top">
+            <span class="mobile-crn"><span>CRN</span> ${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</span>
+            <span class="mobile-quota">${quota}</span>
+          </span>
+          <span class="mobile-schedule">${schedule}</span>
+          ${cleanInstructor ? `<span class="mobile-instructor">${markField(cleanInstructor, 'instructor', hits.filter((h) => h.field === 'instructor'))}</span>` : ''}
+        </button>
+        <button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? 'Favorilerden çıkar' : 'Favorilere ekle'}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button>`;
+      li.querySelector('.mobile-section-open').addEventListener('click', () => openDetail(row));
+      wireFavoriteButton(li.querySelector('.fav-star'));
+      list.appendChild(li);
+    });
+
+    article.querySelector('.mobile-course-open').addEventListener('click', () => openDetail(first));
+    if (group.rows.length > MOBILE_SECTION_PREVIEW) {
+      const toggle = document.createElement('button');
+      const hiddenCount = group.rows.length - MOBILE_SECTION_PREVIEW;
+      toggle.type = 'button';
+      toggle.className = 'mobile-sections-toggle';
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = `${hiddenCount} şube daha göster`;
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        for (const row of article.querySelectorAll('.mobile-section-extra')) row.hidden = expanded;
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        toggle.textContent = expanded ? `${hiddenCount} şube daha göster` : 'Şubeleri daralt';
+      });
+      article.appendChild(toggle);
+    }
+    frag.appendChild(article);
+  }
+  box.appendChild(frag);
+
+  state.shown += slice.length;
+  const remaining = groups.length - state.shown;
+  $('#more').hidden = remaining <= 0;
+  $('#more').textContent = `daha fazla ders göster (${remaining} kaldı)`;
+}
+
+function wireFavoriteButton(star) {
+  if (!star) return;
+  star.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    const [branch, crn] = star.dataset.key.split('|');
+    const on = fav.toggleFavorite(state.termSlug, branch, crn);
+    star.classList.toggle('on', on);
+    star.textContent = on ? '★' : '☆';
+    star.setAttribute('aria-pressed', String(on));
+    star.setAttribute('aria-label', on ? 'Favorilerden çıkar' : 'Favorilere ekle');
+    star.classList.remove('pop');
+    void star.offsetWidth;
+    star.classList.add('pop');
+    toast(on ? `Favoriye eklendi (${crn})` : `Favoriden çıkarıldı (${crn})`, { kind: on ? 'ok' : 'warn' });
+  });
 }
 
 /* ---------- detay paneli (modal) ---------- */
@@ -529,7 +660,7 @@ function saveState() {
   if ($('#f-branch').value) p.set('branch', $('#f-branch').value);
   if ($('#f-day').value) p.set('day', $('#f-day').value);
   if ($('#f-time').value) p.set('time', $('#f-time').value);
-  if ($('#f-level').value) p.set('level', $('#f-level').value);
+  if ($('#f-level').value && $('#f-level').value !== 'LS') p.set('level', $('#f-level').value);
   const method = methodToCode($('#f-method').value);
   if (method) p.set('method', method);
   if ($('#f-program').value) p.set('program', $('#f-program').value);

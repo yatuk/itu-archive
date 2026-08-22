@@ -622,7 +622,10 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 
 	pages := []sitemapEntry{{Loc: baseURL + "/", Lastmod: rootDate}}
 	for _, p := range landingPages {
-		pages = append(pages, sitemapEntry{Loc: fmt.Sprintf("%s/%s/", baseURL, p.slug)})
+		pages = append(pages, sitemapEntry{
+			Loc:     fmt.Sprintf("%s/%s/", baseURL, p.slug),
+			Lastmod: landingContentUpdated,
+		})
 	}
 	if err := writeSitemapComponent(componentDir, "pages.xml", pages); err != nil {
 		return err
@@ -940,8 +943,10 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 // --- iniş sayfaları (araç/bilgi sayfaları) ---
 // "İTÜ ders planı", "GANO hesaplama" gibi Türkçe arama sorgularına karşılık gelen
 // elle yazılmış içerik sayfaları. CTA ile SPA özelliğine (/#dersplanim vb.) bağlanır.
-// Yalnızca TR üretilir (alt=false — hreflang yok). lastmod sitemap'te verilmez:
-// içerik elle yazıldığı için scrape tarihiyle değişmemeli.
+// Yalnızca TR üretilir (alt=false — hreflang yok). Bu tarih landing-page
+// metni veya bilgi mimarisi gerçekten değiştiğinde elle ilerletilir; veri
+// taraması her çalıştığında sahte bir lastmod üretmez.
+const landingContentUpdated = "2026-08-22"
 
 type landingPage struct {
 	slug        string
@@ -961,15 +966,15 @@ type landingAction struct {
 
 var landingPages = []landingPage{
 	{
-		slug: "ders-plani", title: "İTÜ ders planı oluştur",
-		description: "İTÜ ders planını görüntüle: bölümünün planını aç, derslerini işaretle, notlarını gir ve GANO'nu hesapla.",
-		h1:          "İTÜ ders planı",
+		slug: "ders-plani", title: "İTÜ ders planı ve müfredat planlama",
+		description: "İTÜ ders planı: bölüm müfredatını dönem dönem gör, zorunlu ve seçmeli dersleri işaretle, kredi ve GANO planını yap.",
+		h1:          "İTÜ ders planı ve müfredat planlama",
 		body: []string{
 			"İTÜ Ders Arşivi'nde seçtiğin programın dönem dönem ders planını açabilir, derslerin bu dönem açık olup olmadığını görebilirsin. Ders Planım görünümü, derslere not girip GANO ve dönem ortalamalarını anında hesaplar.",
 			"Planı aç, seçmeli slotlarda dersi seç, notlarını gir · hepsi tarayıcında saklanır, hiçbir veri sunucuya gitmez.",
 		},
 		primary:   landingAction{href: "/#dersplanim", label: "Ders Planım'ı aç", detail: "Programını seç; dönem derslerini, kredilerini ve açık şubeleri birlikte gör."},
-		secondary: []landingAction{{href: "/#program", label: "Haftalık program oluştur"}, {href: "/#onsart", label: "Önşart haritasını aç"}},
+		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesapla"}, {href: "/ders-programi-olustur/", label: "Haftalık program oluştur"}, {href: "/onsart-haritasi/", label: "Önşart haritasını aç"}},
 	},
 	{
 		slug: "gano-hesaplama", title: "İTÜ GPA ve GANO hesaplama",
@@ -981,7 +986,7 @@ var landingPages = []landingPage{
 			"Bu bir transkript değildir · resmî GANO için öğrenci bilgi sistemine bak.",
 		},
 		primary:   landingAction{href: "/#dersplanim", label: "GPA / GANO hesaplayıcıyı aç", detail: "Bölümünü seçip ders notlarını gir; dönem ortalaması ve genel ortalama aynı yerde hesaplansın."},
-		secondary: []landingAction{{href: "/ders-plani/", label: "Ders planını görüntüle"}},
+		secondary: []landingAction{{href: "/ders-plani/", label: "Ders planını görüntüle"}, {href: "/not-ortalamasi/", label: "Harf notu katsayılarını gör"}},
 	},
 	{
 		slug: "not-ortalamasi", title: "İTÜ not ortalaması ve harf notları",
@@ -992,7 +997,7 @@ var landingPages = []landingPage{
 			"Muaf (M), geçti (G), devamsız (VF) ve kredisi sayılmayan durumlar ortalamayı farklı etkiler. Ders Planım'da bu notları işaretleyip ortalamanı görebilirsin.",
 		},
 		primary:   landingAction{href: "/#dersplanim", label: "Notlarını gir ve ortalamanı hesapla", detail: "Harf notlarını gerçek ders planın üzerinde işaretle; kredi ağırlıklı sonucu anında gör."},
-		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesabını oku"}},
+		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesaplayıcıyı aç"}, {href: "/ders-plani/", label: "Ders planını görüntüle"}},
 	},
 	{
 		slug: "ders-programi", title: "İTÜ ders programı",
@@ -1003,7 +1008,7 @@ var landingPages = []landingPage{
 			"Kayıt haftasında kontenjan doluluğu yarım saatte bir tazelenir.",
 		},
 		primary:   landingAction{href: "/#dersler", label: "Güncel ders programını ara", detail: "Ders kodu, ad, CRN veya öğretim üyesiyle açık şubeleri doğrudan filtrele."},
-		secondary: []landingAction{{href: "/#program", label: "Haftalık program oluştur"}, {href: "/#sinavlar", label: "Sınav programını aç"}},
+		secondary: []landingAction{{href: "/ders-programi-olustur/", label: "Kişisel haftalık program oluştur"}, {href: "/sinav-programi/", label: "Sınav programını aç"}, {href: "/kontenjan/", label: "Kontenjan doluluğunu incele"}},
 	},
 	{
 		slug: "ders-programi-olustur", title: "İTÜ ders programı oluşturma",
@@ -1014,7 +1019,7 @@ var landingPages = []landingPage{
 			"Hazırladığın programı görsel veya .ics takvim dosyası olarak indirebilir, seçtiğin CRN'leri OBS kayıt ekranı için kopyalayabilirsin.",
 		},
 		primary:   landingAction{href: "/#program", label: "Haftalık program oluşturmaya başla", detail: "Şubelerini ekle; gün/saat çakışmalarını ve toplam krediyi tek çizelgede gör."},
-		secondary: []landingAction{{href: "/#dersler", label: "Açık dersleri ara"}, {href: "/#sinavlar", label: "Final çakışmalarını kontrol et"}},
+		secondary: []landingAction{{href: "/ders-programi/", label: "Açık dersleri ve CRN'leri ara"}, {href: "/sinav-programi/", label: "Final çakışmalarını kontrol et"}},
 	},
 	{
 		slug: "kontenjan", title: "İTÜ ders kontenjanları ve doluluk",
@@ -1025,7 +1030,7 @@ var landingPages = []landingPage{
 			"Bir dersin geçmiş dönemlerde ne kadar hızlı dolduğunu detay sayfasında görebilirsin.",
 		},
 		primary:   landingAction{href: "/#dersler", label: "Güncel kontenjanları gör", detail: "Yalnızca kontenjanı olan şubeleri filtrele veya ders detayından doluluk geçmişini aç."},
-		secondary: []landingAction{{href: "/#program", label: "Şubeyi programa ekle"}},
+		secondary: []landingAction{{href: "/ders-programi/", label: "Güncel dersleri ara"}, {href: "/ders-programi-olustur/", label: "Şubeyi programa ekle"}},
 	},
 	{
 		slug: "ders-secimi", title: "İTÜ ders seçimi rehberi",
@@ -1036,7 +1041,7 @@ var landingPages = []landingPage{
 			"Arşivde dersin önşart haritasını aç, final takviminde çakışmayı kontrol et, Program görünümünde haftalık çizelgeni kur ve çakışmaları gör.",
 		},
 		primary:   landingAction{href: "/#dersler", label: "Ders seçimine başla", detail: "Önce açık dersleri ve kontenjanları bul; ardından program ve sınav çakışmalarını kontrol et."},
-		secondary: []landingAction{{href: "/#onsart", label: "Önşartları kontrol et"}, {href: "/#sinavlar", label: "Sınavları kontrol et"}, {href: "/#program", label: "Programını oluştur"}},
+		secondary: []landingAction{{href: "/onsart-haritasi/", label: "Önşartları kontrol et"}, {href: "/sinav-programi/", label: "Sınavları kontrol et"}, {href: "/ders-programi-olustur/", label: "Programını oluştur"}},
 	},
 	{
 		slug: "onsart-haritasi", title: "İTÜ önşart haritası",
@@ -1047,7 +1052,7 @@ var landingPages = []landingPage{
 			"Program seçmek için Dersler'de arayarak başlayabilirsin.",
 		},
 		primary:   landingAction{href: "/#onsart", label: "Önşart haritasını aç", detail: "Fakülte ve programını seç; zorunlu, alternatif ve seçmeli bağlantıları dönem dönem gör."},
-		secondary: []landingAction{{href: "/#dersplanim", label: "Ders planını aç"}},
+		secondary: []landingAction{{href: "/ders-plani/", label: "Ders planını aç"}, {href: "/ders-secimi/", label: "Ders seçimi adımlarını gör"}},
 	},
 	{
 		slug: "sinav-programi", title: "İTÜ sınav programı ve final takvimi",
@@ -1058,7 +1063,7 @@ var landingPages = []landingPage{
 			"Aynı gün ve saatte çakışan sınavlar açıkça işaretlenir. Kesin kayıt ve sınav bilgisi için resmî İTÜ duyurusunu doğrula.",
 		},
 		primary:   landingAction{href: "/#sinavlar", label: "Sınav programını aç", detail: "Derslerini ara; final tarihlerini, saatlerini ve çakışmaları tek listede gör."},
-		secondary: []landingAction{{href: "/#program", label: "Haftalık programını aç"}},
+		secondary: []landingAction{{href: "/ders-programi-olustur/", label: "Haftalık programını aç"}, {href: "/akademik-takvim/", label: "Akademik takvimi gör"}},
 	},
 	{
 		slug: "akademik-takvim", title: "İTÜ akademik takvim",
@@ -1069,18 +1074,18 @@ var landingPages = []landingPage{
 			"İstediğin etkinliği .ics olarak indirip kişisel takvimine ekleyebilirsin. Resmî değişiklikler için İTÜ akademik takvim kaynağını doğrula.",
 		},
 		primary:   landingAction{href: "/#takvim", label: "Akademik takvimi aç", detail: "Takvim türünü seç; yaklaşan kayıt, ders ve sınav tarihlerini sırayla gör."},
-		secondary: []landingAction{{href: "/#sinavlar", label: "Sınav programını aç"}},
+		secondary: []landingAction{{href: "/sinav-programi/", label: "Sınav programını aç"}, {href: "/ders-programi-olustur/", label: "Ders programını oluştur"}},
 	},
 	{
-		slug: "ders-arsivi", title: "İTÜ ders arşivi · geçmiş dönemler",
-		description: "İTÜ ders arşivi: 2016'dan bugüne tüm dönemlerin dersleri, kontenjan geçmişi, katalog ve not dağılımı.",
-		h1:          "İTÜ ders arşivi",
+		slug: "ders-arsivi", title: "Geçmiş Dönem Dersleri ve Hocalar",
+		description: "2016'dan bugüne İTÜ'de açılan dersleri, geçmiş şubeleri, dersi veren öğretim üyelerini, kontenjan geçmişini ve not dağılımını ara.",
+		h1:          "İTÜ ders arşivi ve geçmiş dönem dersleri",
 		body: []string{
 			"OBS yalnızca içinde bulunulan dönemi gösterir; dönem bitince veri kaybolur. Bu arşiv 2016'dan beri her dönemi sürüm kontrolüne alır.",
 			"Geçmiş görünümünde bir dersin hangi dönemlerde, hangi hocayla ve kaç şube açıldığını ara; not dağılımı ve katalog bilgisini gör.",
 		},
 		primary:   landingAction{href: "/#gecmis", label: "Geçmiş dönemlerde ara", detail: "Ders kodu veya öğretim üyesiyle 2016'dan bugüne açılan şubeleri doğrudan ara."},
-		secondary: []landingAction{{href: "/#dersler", label: "Güncel dersleri aç"}, {href: "/#donemler", label: "Tüm dönemleri listele"}},
+		secondary: []landingAction{{href: "/ders-programi/", label: "Güncel ders programını ara"}, {href: "/#donemler", label: "Tüm dönemleri listele"}, {href: "/kontenjan/", label: "Kontenjan geçmişini incele"}},
 	},
 }
 
@@ -1103,6 +1108,7 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		related.WriteString(`</ul>`)
 	}
 	content := template.HTML(buildContent(
+		`<nav class="crumb" aria-label="Breadcrumb"><a href="/">İTÜ Ders Arşivi</a> › <span>`+template.HTMLEscapeString(p.h1)+`</span></nav>`,
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(p.h1)),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(p.description)),
 		fmt.Sprintf(`<section class="seo-tool-launch" aria-label="Aracı aç"><div><strong>%s</strong><p>%s</p></div><a class="btn-primary" href="%s">%s</a></section>`,
@@ -1112,12 +1118,22 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		paras.String(),
 		related.String(),
 	))
-	jsonld := jsonldScript([]any{map[string]any{
-		"@context": "https://schema.org", "@type": "WebPage",
-		"url": canonical, "name": p.title, "description": p.description,
-	}})
+	jsonld := jsonldScript([]any{
+		map[string]any{
+			"@context": "https://schema.org", "@type": "WebPage",
+			"url": canonical, "name": p.title, "description": p.description,
+			"inLanguage": "tr-TR", "dateModified": landingContentUpdated,
+		},
+		map[string]any{
+			"@context": "https://schema.org", "@type": "BreadcrumbList",
+			"itemListElement": []any{
+				map[string]any{"@type": "ListItem", "position": 1, "name": "İTÜ Ders Arşivi", "item": baseURL + "/"},
+				map[string]any{"@type": "ListItem", "position": 2, "name": p.h1, "item": canonical},
+			},
+		},
+	})
 	return b.writePage(filepath.Join(b.outRoot, p.slug, "index.html"),
-		p.title, p.description, canonical, dateOf(b.index.ScrapedAt), content, jsonld, false)
+		p.title, p.description, canonical, landingContentUpdated, content, jsonld, false)
 }
 
 // --- helpers ---

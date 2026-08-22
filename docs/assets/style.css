@@ -358,6 +358,9 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 .masthead { border-bottom: 1px solid var(--line); padding: 34px 0 0; }
 
 .brand { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.brand-home { width: fit-content; color: inherit; text-decoration: none; border-radius: 8px; }
+.brand-home:hover h1 { color: var(--cyan); }
+.brand-home:focus-visible { outline: 2px solid var(--cyan); outline-offset: 6px; }
 .prompt { color: var(--acid); }
 .path { color: var(--cyan); }
 .caret { color: var(--dim); }
@@ -446,7 +449,7 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
   text-decoration: none; white-space: nowrap;
 }
 .tabs button:hover, .tabs a:hover { color: var(--fg); background: var(--panel-2); }
-.tabs button[aria-selected="true"], .tabs a[aria-current="page"] {
+.tabs button[aria-selected="true"], .tabs a[aria-selected="true"], .tabs a[aria-current="page"] {
   color: var(--bg); background: var(--acid); font-weight: 700;
 }
 .tabs button:focus-visible, .tabs a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
@@ -548,6 +551,61 @@ select:focus-visible, input:focus-visible { outline: 2px solid var(--cyan); outl
    tablo yüksekliğini değiştirip yer kaydırmasın. */
 #f-term { min-width: 210px; }
 #view-dersler .tablewrap { min-height: 28vh; }
+
+.tool-directory {
+  margin-top: 28px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--panel);
+  box-shadow: var(--shadow-card);
+}
+.tool-directory-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+.tool-directory-head h2 { margin: 0; font-size: clamp(20px, 2vw, 28px); }
+.tool-directory-all { white-space: nowrap; }
+.tool-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+}
+.tool-directory-grid > a {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  color: var(--fg);
+  text-decoration: none;
+  transition: color 140ms ease;
+}
+.tool-directory-grid > a:hover {
+  color: var(--cyan);
+}
+.tool-directory-grid strong { font-size: 15px; }
+.tool-directory-grid span { color: var(--dim); font-size: 13px; line-height: 1.45; }
+.tool-directory-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .tool-directory { margin-top: 20px; padding: 16px; }
+  .tool-directory-head { align-items: start; flex-direction: column; gap: 8px; }
+  .tool-directory-grid { grid-template-columns: 1fr; }
+  .tool-directory-grid > a { padding: 14px; }
+  .tool-directory-links { display: grid; grid-template-columns: 1fr 1fr; }
+}
 input[type="checkbox"] { accent-color: var(--acid); width: 15px; height: 15px; }
 
 .resultline { color: var(--dim); margin: 16px 0 10px; font-size: 13px; }
@@ -955,7 +1013,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 }
 .pg-pool-name { display: grid; gap: 1px; min-width: 0; }
 .pg-pool-name b { color: var(--fg); white-space: nowrap; }
-.pg-pool-name em { color: var(--dimmer); font-style: normal; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pg-pool-name em { color: var(--dimmer); font-style: normal; overflow-wrap: anywhere; line-height: 1.35; }
 .pg-pool-status-badge { white-space: nowrap; font-size: 11px; }
 .pg-pool-status-badge .loading { color: var(--dimmer); }
 .pg-pool-status-badge .open { color: var(--acid); }
@@ -1179,6 +1237,40 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
   .pg-pool-name { grid-area: name; }
   .pg-pool-status-badge { grid-area: status; }
   .pg-pool-actions { grid-area: actions; }
+  .pg-workspace { display: none; }
+  .pg-root.pg-has-detail:not(.pg-mobile-full) .pg-workspace { display: block; }
+  .pg-root.pg-has-detail:not(.pg-mobile-full) .pg-map { display: none; }
+  .pg-root.pg-mobile-full .pg-mobile-explorer { display: none; }
+  .pg-root.pg-mobile-full .pg-workspace { display: grid; }
+}
+
+.pg-mobile-explorer { display: none; }
+@media (max-width: 700px) {
+  .pg-mobile-explorer:not([hidden]) { display: grid; gap: 10px; scroll-margin-top: 82px; }
+  .pg-mobile-explorer-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .pg-mobile-explorer-head > div { display: grid; gap: 2px; }
+  .pg-mobile-explorer-head span { color: var(--dimmer); font-size: 12px; }
+  .pg-mobile-back, .pg-mobile-detail { min-height: 40px; padding: 7px 12px; border: 1px solid var(--line-hot); border-radius: 999px; background: var(--panel); color: var(--fg); font: inherit; }
+  .pg-mobile-semester { overflow: hidden; border: 1px solid var(--hairline-strong); border-radius: 12px; background: var(--panel); }
+  .pg-mobile-semester summary { display: flex; justify-content: space-between; padding: 13px 14px; cursor: pointer; font-weight: 700; }
+  .pg-mobile-semester summary span { color: var(--dimmer); font-size: 11px; font-weight: 400; }
+  .pg-mobile-course { width: 100%; min-height: 64px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 11px 14px; border: 0; border-top: 1px solid var(--line); background: transparent; color: var(--fg); text-align: left; font: inherit; }
+  .pg-mobile-course span { display: grid; gap: 2px; min-width: 72px; }
+  .pg-mobile-course small { color: var(--cyan); font-size: 10px; font-weight: 400; }
+  .pg-mobile-course em { color: var(--dim); font-style: normal; line-height: 1.35; overflow-wrap: anywhere; }
+  .pg-mobile-course i { color: var(--dimmer); font: 22px/1 var(--sans); }
+  .pg-mobile-course.elective b { color: var(--amber); }
+  .pg-mobile-flow { display: grid; gap: 10px; }
+  .pg-mobile-flow section, .pg-mobile-selected { padding: 13px; border: 1px solid var(--hairline-strong); border-radius: 12px; background: var(--panel); }
+  .pg-mobile-flow section h3 { margin: 0 0 8px; color: var(--dimmer); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+  .pg-mobile-flow section .pg-mobile-course { padding-inline: 0; }
+  .pg-mobile-flow section .pg-mobile-course:first-of-type { border-top: 0; }
+  .pg-mobile-selected { border-color: var(--acid); box-shadow: inset 3px 0 0 var(--acid); }
+  .pg-mobile-selected > span { color: var(--acid); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+  .pg-mobile-selected > b { display: block; margin-top: 7px; color: var(--cyan); }
+  .pg-mobile-selected h2 { margin: 4px 0; font-size: 18px; line-height: 1.25; }
+  .pg-mobile-selected p, .pg-mobile-empty, .pg-mobile-logic { margin: 6px 0 0; color: var(--dim); font-size: 12px; }
+  .pg-mobile-logic { color: var(--amber); font-weight: 700; }
 }
 
 /* ---------- takvim ---------- */
@@ -1850,43 +1942,156 @@ body.modal-open { overflow: hidden; }
 [data-theme="sade"] .d-sec,
 [data-theme="sade"] .d-cat-details { background: transparent; border-radius: 0; }
 
-/* Faz 5.4: mobilde dersler tablosu kart görünümüne döner. 8 kolonlu tablo
-   360px'te okunmuyor; satırlar etiketli kart olur, tablo başlıkları gizlenir. */
+.course-groups { display: none; }
+
+/* Mobilde tablo ölçeklenmez: aynı dersin şubeleri tek ders başlığı altında,
+   karşılaştırılabilir liste satırlarına dönüşür. Masaüstü tablo semantiği ve
+   fosfor masaüstü görünümü aynen kalır. */
 @media (max-width: 640px) {
-  /* Kart görünümünü bozan global min-width sıfırlanır — 360px'te kartlar
-     gerçek genişliğe oturur, yatay kaydırma kalkar. */
   #results, #etable { min-width: 0; }
-  #results, #results thead, #results tbody { display: block; }
-  #results thead { display: none; }
-  #results tbody { display: grid; gap: 10px; }
-  /* Kompakt kart: [★] KOD · CRN / ad / hoca / zaman / sağ alt doluluk. */
-  #results tr {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-      "fav title crn"
-      "name name name"
-      "instr instr instr"
-      "when when when"
-      "fill fill fill";
-    gap: 3px 8px;
-    background: var(--panel); border: 1px solid var(--hairline-strong);
-    border-radius: var(--radius-card); padding: 10px 12px;
+  #view-dersler .tablewrap { display: none; }
+  .course-groups { display: grid; gap: 10px; }
+  .mobile-course-group {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--panel);
   }
-  #results td { display: block; }
-  #results .sel { display: none; } /* toplu seçim masaüstü işi */
-  #results .fav { grid-area: fav; align-self: center; }
-  #results .code { grid-area: title; }
-  #results .code b { font-size: 15px; }
-  #results .code small { display: none; }
-  #results .crn { grid-area: crn; color: var(--dimmer); align-self: center; }
-  #results .crn::before { content: '· '; }
-  #results td[data-label="Adı"] { grid-area: name; }
-  #results td[data-label="Öğretim Üyesi"] { grid-area: instr; color: var(--dim); }
-  #results .when { grid-area: when; white-space: normal; }
-  #results td[data-label="Kontenjan"] { grid-area: fill; justify-self: end; }
-  #results td[data-label="Kont."], #results td[data-label="Yazılan"] { display: none; }
-  #results td[data-label]::before { display: none; }
+  .mobile-course-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    min-height: 64px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mobile-course-open {
+    display: grid;
+    min-width: 0;
+    min-height: 64px;
+    padding: 11px 14px;
+    gap: 3px;
+    border: 0;
+    background: transparent;
+    color: var(--fg);
+    text-align: left;
+  }
+  .mobile-course-code {
+    color: var(--cyan);
+    font: 700 13px/1.25 var(--mono);
+  }
+  .mobile-course-name {
+    overflow-wrap: anywhere;
+    font: 650 16px/1.35 var(--sans);
+  }
+  .mobile-course-count {
+    padding: 0 14px 0 8px;
+    color: var(--dimmer);
+    font: 12px/1.2 var(--sans);
+    white-space: nowrap;
+  }
+  .mobile-section-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mobile-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 44px;
+    min-width: 0;
+    border-top: 1px solid var(--line);
+  }
+  .mobile-section[hidden] { display: none; }
+  .mobile-section:first-child { border-top: 0; }
+  .mobile-section-open {
+    display: grid;
+    min-width: 0;
+    min-height: 58px;
+    padding: 10px 8px 10px 14px;
+    gap: 5px;
+    border: 0;
+    background: transparent;
+    color: var(--fg);
+    text-align: left;
+  }
+  .mobile-section-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    min-width: 0;
+    gap: 12px;
+  }
+  .mobile-crn {
+    color: var(--fg);
+    font: 700 12px/1.3 var(--mono);
+    white-space: nowrap;
+  }
+  .mobile-crn > span {
+    margin-right: 4px;
+    color: var(--dimmer);
+    font: 600 9px/1 var(--sans);
+    letter-spacing: .06em;
+  }
+  .mobile-quota {
+    min-width: 0;
+    color: var(--dim);
+    font: 11px/1.35 var(--mono);
+    text-align: right;
+    white-space: nowrap;
+  }
+  .mobile-quota .quota-state.full { color: var(--red); }
+  .mobile-quota .quota-state.tight { color: var(--amber); }
+  .quota-unknown,
+  .mobile-data-missing { color: var(--dimmer); font-family: var(--sans); }
+  .mobile-schedule {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    gap: 2px 10px;
+    color: var(--fg);
+    font: 12px/1.45 var(--mono);
+  }
+  .mobile-schedule span { overflow-wrap: anywhere; }
+  .mobile-instructor {
+    overflow-wrap: anywhere;
+    color: var(--dim);
+    font: 13px/1.4 var(--sans);
+  }
+  .mobile-section > .fav-star {
+    width: 44px;
+    min-height: 44px;
+    align-self: stretch;
+    border: 0;
+    background: transparent;
+    font-size: 18px;
+  }
+  /* Genel yıldız kuralı küçük masaüstü ikonunun hitbox'ını pseudo-elementle
+     büyütür. Burada düğmenin kendisi zaten 44px; taşan pseudo-elementi kapat. */
+  .mobile-section > .fav-star::after { inset: 0; }
+  .mobile-course-open:active,
+  .mobile-section-open:active,
+  .mobile-section > .fav-star:active,
+  .mobile-sections-toggle:active { background: var(--panel-2); }
+  .mobile-course-open:focus-visible,
+  .mobile-section-open:focus-visible,
+  .mobile-section > .fav-star:focus-visible,
+  .mobile-sections-toggle:focus-visible {
+    position: relative;
+    z-index: 1;
+    outline: 2px solid var(--cyan);
+    outline-offset: -3px;
+  }
+  .mobile-sections-toggle {
+    width: 100%;
+    min-height: 44px;
+    padding: 9px 14px;
+    border: 0;
+    border-top: 1px solid var(--line);
+    background: transparent;
+    color: var(--cyan);
+    font: 600 12px/1.3 var(--sans);
+    text-align: left;
+  }
+  .mobile-course-skeleton { padding: 18px 14px; border: 1px solid var(--line); border-radius: 12px; }
 
   /* Faz 5.4: sınavlar tablosu da mobilde kart görünümüne döner.
      #erows zaten tbody'dir — seçiciler #etable thead + #erows olmalı. */
@@ -2092,6 +2297,16 @@ body.modal-open { overflow: hidden; }
   outline: 2px solid var(--red); outline-offset: -2px;
   border-color: var(--red);
 }
+.tt-context-menu {
+  position: fixed; z-index: 220; min-width: 210px; padding: 6px;
+  border: 1px solid var(--hairline-strong); border-radius: 12px;
+  background: var(--panel); color: var(--fg); box-shadow: var(--shadow-float);
+}
+.tt-context-menu p { display: flex; justify-content: space-between; gap: 14px; margin: 0 0 5px; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+.tt-context-menu p span { color: var(--dimmer); font-size: 11px; }
+.tt-context-menu button { display: block; width: 100%; padding: 9px 10px; border: 0; border-radius: 7px; background: transparent; color: var(--fg); text-align: left; font: inherit; cursor: pointer; }
+.tt-context-menu button:hover, .tt-context-menu button:focus-visible { background: var(--panel-2); outline: none; }
+.tt-context-menu button.danger { color: var(--red); }
 .tt-conf-icon { position: absolute; top: 3px; right: 4px; font-size: 11px; color: var(--tt-fg, #fff); }
 /* Şu anki zaman çizgisi (C): vurgu rengi — kırmızı çakışma için ayrıldı. */
 .tt-now {
@@ -2337,11 +2552,23 @@ body.modal-open { overflow: hidden; }
 .p-clear-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .p-clear-link:disabled { opacity: .35; cursor: default; text-decoration: none; }
 .p-list { gap: 0; border-top: 1px solid var(--line); }
+.p-list-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  padding: 8px 3px;
+  border-bottom: 1px solid var(--line);
+  color: var(--dimmer);
+  font: 9px/1.3 var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
 .p-item {
   grid-template-columns: 12px minmax(0, 1fr) auto auto auto;
   grid-template-areas:
     "grip code fill remove menu"
     "grip crn crn remove menu"
+    "grip instructor instructor remove menu"
     "grip when when remove menu";
   gap: 4px 9px;
   margin: 0;
@@ -2359,6 +2586,16 @@ body.modal-open { overflow: hidden; }
 .p-code b { display: inline; font-size: 13px; }
 .p-code small { max-width: 100%; margin-top: 2px; }
 .p-crn { grid-area: crn; font-family: var(--mono); }
+.p-mobile-label { display: none; }
+.p-instructor {
+  grid-area: instructor;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--dimmer);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .p-when { grid-area: when; min-width: 0; line-height: 1.45; }
 .p-fill { grid-area: fill; align-self: start; white-space: nowrap; }
 .p-remove {
@@ -2440,15 +2677,40 @@ body.modal-open { overflow: hidden; }
   .p-layout { gap: 12px; }
   .p-panel,
   .p-main { padding: 13px; }
+  .p-panel { gap: 10px; overflow: visible; }
+  .p-panel-head { align-items: center; }
+  .p-panel-head h2 { font-size: 17px; }
+  .p-panel-head h2 span { min-width: 28px; }
+  .p-panel-hint { font-size: 11px; }
+  .p-clear-link { min-height: 44px; padding: 0 4px; }
+  .p-list { margin-inline: -13px; border-top: 0; }
+  .p-list-head { padding: 8px 13px; background: var(--panel-2); }
+  .p-list > .empty { padding: 20px 13px; }
   .p-item {
-    grid-template-columns: minmax(0, 1fr) auto auto auto;
+    grid-template-columns: minmax(0, 1fr) auto 44px 44px;
     grid-template-areas:
       "code fill remove menu"
       "crn crn remove menu"
+      "instructor instructor remove menu"
       "when when remove menu";
+    min-height: 112px;
+    padding: 11px 13px;
+    gap: 3px 8px;
   }
   .p-grip { display: none; }
-  .p-remove { padding-inline: 5px; }
+  .p-code b { font-size: 14px; }
+  .p-code small { font-size: 11px; }
+  .p-crn { font-size: 11px; }
+  .p-mobile-label { display: inline; margin-right: 5px; color: var(--dimmer); font: 9px/1 var(--sans); text-transform: uppercase; }
+  .p-instructor { font-size: 11px; }
+  .p-when { font-size: 11px; white-space: normal; }
+  .p-fill { font-size: 11px; }
+  .p-remove,
+  .p-menu { align-self: stretch; min-width: 44px; min-height: 44px; display: inline-grid; place-items: center; padding: 0; }
+  .p-remove { color: var(--dim); font-size: 10px; text-decoration: none; }
+  .p-remove:hover { color: var(--fg); text-decoration: none; }
+  .p-menu { font-size: 18px; }
+  .p-menu-pop { right: 13px; top: 54px; }
   .p-main-head { align-items: flex-start; flex-direction: column; }
   .p-main-actions,
   .p-main-actions .p-obs-wrap,
@@ -2586,8 +2848,23 @@ body.modal-open { overflow: hidden; }
 .dp-console label { display: inline-flex; align-items: center; gap: 6px; min-width: 0; }
 .dp-program-pick { display: flex; align-items: center; gap: 8px; flex: 1 1 620px; min-width: 0; }
 .dp-program-pick label { flex: 1 1 0; }
-.dp-program-pick label:nth-of-type(2) { flex-grow: 1.5; }
+.dp-program-pick label:first-child { flex: 0 1 150px; }
+.dp-program-pick label:nth-of-type(3) { flex-grow: 1.7; }
 .dp-field-label { color: var(--dimmer); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; }
+.dp-empty {
+  margin-top: 14px;
+  padding: 28px 18px;
+  border-block: 1px solid var(--line);
+  text-align: center;
+}
+.dp-empty[hidden] { display: none; }
+.dp-empty h2 { margin: 0 0 7px; font-size: 18px; }
+.dp-empty p { max-width: 62ch; margin: 0 auto; color: var(--dim); line-height: 1.55; }
+.dp-no-program .dp-filterbar,
+.dp-no-program .dp-summary,
+.dp-no-program .dp-resultbar,
+.dp-no-program .dp-grades,
+.dp-no-program .dp-semesters { display: none; }
 .dp-term-pick { flex: 0 1 auto; }
 .dp-fac-select,
 .dp-prog-select { flex: 1 1 0; min-width: 0; max-width: min(420px, 100%); }
@@ -2904,11 +3181,14 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 
 /* Mobil "sırala" seçicisi — masaüstü sıralama başlıklarının yerine. */
 .mobile-sort { display: none; }
+.label-mobile { display: none; }
 @media (max-width: 600px) {
   .mobile-sort {
     display: inline-flex; align-items: center; gap: 6px;
     color: var(--dim); font-size: 13px;
   }
+  .label-desktop { display: none; }
+  .label-mobile { display: inline; }
 }
 
 /* Program mobil GÜN LİSTESİ (varsayılan; "ızgara görünümü" ile değişir). */
@@ -3042,6 +3322,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   backdrop-filter: none; -webkit-backdrop-filter: none;
 }
 [data-theme="sade"] .tabs button,
+[data-theme="sade"] .tabs a,
 [data-theme="sade"] .tabs summary { padding: 7px 13px; letter-spacing: .03em; }
 [data-theme="sade"] .tabs-more { display: block; position: relative; }
 [data-theme="sade"] .tabs-more summary {
@@ -3223,7 +3504,15 @@ body { padding-bottom: env(safe-area-inset-bottom); }
     margin-top: 10px;
     padding: 3px;
     border-radius: 12px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background: var(--panel);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    scrollbar-width: none;
   }
+  .tabs::-webkit-scrollbar { display: none; }
   .tabs button,
   .tabs a,
   [data-theme="sade"] .tabs button,
@@ -3240,133 +3529,22 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   [data-theme="sade"] .query::before { width: 18px; height: 18px; }
   .resultbar { margin-top: 14px; gap: 9px; }
   .resultline { font-size: 12px; line-height: 1.5; }
-  .result-actions { gap: 7px; }
+  .result-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: end;
+    gap: 7px;
+  }
   .result-actions .mobile-sort {
-    width: 100%;
+    width: auto;
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
   }
   .result-actions .mobile-sort select { width: 100%; max-width: none; }
   .result-actions #tt-toggle,
-  .result-actions #csv { flex: 1 1 calc(50% - 4px); justify-content: center; }
+  .result-actions #csv { justify-content: center; padding-inline: 14px; }
   .result-actions .btn-ghost,
   .mobile-sort select { min-height: 40px; }
-
-  /* Tablo semantiği korunur; her şube mobilde kompakt, tek bakışta taranan bir karttır. */
-  #results,
-  [data-theme="sade"] #results { width: 100%; min-width: 0; }
-  #view-dersler .tablewrap { width: 100%; overflow-x: visible; }
-  #results tbody { gap: 9px; }
-  #results tr {
-    grid-template-columns: minmax(0, 1fr) auto auto;
-    grid-template-areas:
-      "title crn fav"
-      "name name name"
-      "instr instr instr"
-      "when when when"
-      "fill fill fill";
-    gap: 0 8px;
-    padding: 13px 14px 12px;
-    border-color: var(--line);
-    border-radius: 12px;
-    box-shadow: none;
-  }
-  #results td {
-    min-width: 0;
-    padding: 0;
-    border: 0;
-  }
-  #results .code {
-    grid-area: title;
-    align-self: center;
-    line-height: 1.2;
-  }
-  #results .code b { font-size: 14px; }
-  #results .crn {
-    grid-area: crn;
-    align-self: center;
-    color: var(--dimmer);
-    font-size: 11px;
-    line-height: 1;
-  }
-  #results .crn::before { content: '#'; }
-  #results .fav {
-    grid-area: fav;
-    width: 34px;
-    min-height: 34px;
-    display: grid;
-    place-items: center;
-    align-self: center;
-  }
-  #results .fav-star { font-size: 18px; }
-  #results .course-name {
-    grid-area: name;
-    padding-top: 9px;
-  }
-  #results .course-name .row-toggle {
-    min-height: 0;
-    color: var(--fg);
-    font: 650 16px/1.35 var(--sans);
-    text-align: left;
-  }
-  #results .course-instructor {
-    grid-area: instr;
-    position: relative;
-    margin-top: 8px;
-    padding-left: 16px;
-    color: var(--dim);
-    font-size: 13px;
-    line-height: 1.4;
-  }
-  #results .course-instructor::before {
-    content: '';
-    position: absolute;
-    left: 1px;
-    top: .48em;
-    width: 7px;
-    height: 7px;
-    border: 1.5px solid var(--dimmer);
-    border-radius: 50%;
-  }
-  #results .course-schedule {
-    grid-area: when;
-    display: grid;
-    gap: 3px;
-    margin-top: 10px;
-    padding: 9px 10px;
-    border-radius: 8px;
-    background: var(--panel-2);
-    color: var(--fg);
-    font: 12px/1.45 var(--mono);
-  }
-  #results .course-schedule span {
-    display: block;
-    overflow-wrap: anywhere;
-  }
-  #results .quota-main-col {
-    grid-area: fill;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 9px;
-  }
-  #results .quota-main-col .quota-sade,
-  #results .quota-main-col .quota-fosfor {
-    min-height: 28px;
-    padding: 5px 9px;
-    border-radius: 999px;
-    background: var(--panel-2);
-    color: var(--dim);
-    font-size: 11px;
-    line-height: 18px;
-  }
-  [data-theme="dark"] #results .quota-main-col .quota-fosfor {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-  }
-  #results .quota-main-col .fill { justify-content: flex-start; }
-  #results .quota-main-col .quota-state.full,
-  #results .quota-main-col .quota-state.tight { color: var(--amber); }
 
   /* Ders detayı artık küçük masaüstü tablosu değil, okunabilir şube kartlarıdır. */
   .detail-box {

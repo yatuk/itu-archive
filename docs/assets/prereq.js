@@ -18,6 +18,7 @@
 import { esc, fold, getJSON, termLabel } from './core/utils.js';
 import { state } from './core/store.js';
 import { isTaken, TAKEN_CHANGED } from './core/taken.js';
+import { I18N } from './i18n.js';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
@@ -539,7 +540,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
                   ? `<span class="open">● açık · ${st.sections.length} şube · ${st.enr}/${st.cap || '—'}</span>`
                   : `<span class="closed">● ${st.last ? 'son ' + esc(termLabel(st.last)) : 'hiç açılmadı'}</span>`;
               return `<div class="pg-pool-row${taken ? ' pg-pool-taken' : ''}">
-                <div class="pg-pool-name"><b>${esc(o.code)}</b><em>${esc(o.name)}</em></div>
+                <div class="pg-pool-name"><b>${esc(o.code)}</b><em title="${esc(o.name)}">${esc(o.name || 'Ders adı arşivde bulunamadı')}</em></div>
                 <span class="pg-pool-status-badge">${taken ? '<span class="taken-mark">✓ aldım</span>' : ''}${badge}</span>
                 <span class="pg-pool-actions">
                   <button data-act="detay" data-code="${esc(o.code)}">detay</button>
@@ -963,7 +964,65 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     renderBranchLegend(root, nodes);
     renderSemesterList(root, plan, reqByCode);
     await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ders/slot, bir düğüme tıkla`);
+    renderMobileExplorer(root, plan, graph);
     statusEl.classList.remove('busy');
+  }
+
+  // Telefonda masaüstü canvas'ını küçültmek yerine, önce dönemleri gösteren ve
+  // bir derse dokununca "önce → seçili → sonra" ilişkisini açan odak gezgini.
+  // Düğmeler aynı grafın indeksini kullandığı için görsel ve metin görünümü
+  // arasında veri farkı oluşmaz.
+  function renderMobileExplorer(root, plan, currentGraph) {
+    const box = root.querySelector('.pg-mobile-explorer');
+    if (!box) return;
+    const byCode = new Map((currentGraph.nodes || []).map((n) => [n.code, n]));
+    const en = I18N.lang === 'en';
+    const txt = (tr, english) => en ? english : tr;
+    const courseButton = (code, rel = '') => {
+      const n = byCode.get(code) || { code, name: '' };
+      return `<button type="button" class="pg-mobile-course" data-focus-code="${esc(code)}">
+        <span><b>${esc(n.code)}</b>${rel ? `<small>${esc(rel)}</small>` : ''}</span>
+        <em>${esc(n.name || txt('Ders adı arşivde bulunamadı', 'Course name unavailable in archive'))}</em><i aria-hidden="true">›</i>
+      </button>`;
+    };
+    const renderIndex = () => {
+      box.innerHTML = `<div class="pg-mobile-explorer-head"><div><b>${txt('Dönemlere göre dersler', 'Courses by term')}</b><span>${txt('Bağlantıları görmek için bir derse dokun.', 'Tap a course to inspect its links.')}</span></div></div>` +
+        (plan.semesters || []).map((sem, semIndex) => {
+          const items = (sem.items || []).map((it) => {
+            if (it.course) return courseButton(it.course.code);
+            if (it.elective) {
+              const node = [...byCode.values()].find((n) => n.kind === 'elective' && n.name === it.elective.title);
+              return node ? `<button type="button" class="pg-mobile-course elective" data-pool-code="${esc(node.code)}"><span><b>${txt('Seçmeli havuz', 'Elective pool')}</b><small>${it.elective.options?.length || 0} ${txt('seçenek', 'options')}</small></span><em>${esc(it.elective.title)}</em><i aria-hidden="true">›</i></button>` : '';
+            }
+            return '';
+          }).join('');
+          return items ? `<details class="pg-mobile-semester" ${semIndex === 0 ? 'open' : ''}><summary>${esc(sem.title)}<span>${(sem.items || []).length} ${txt('ders/slot', 'courses/slots')}</span></summary>${items}</details>` : '';
+        }).join('');
+      wire();
+    };
+    const renderFocus = (code) => {
+      const n = byCode.get(code);
+      if (!n) return;
+      const before = (currentGraph.byTo.get(code) || []);
+      const after = (currentGraph.byFrom.get(code) || []);
+      const logic = n.requirement ? (/veya/i.test(n.requirement) ? txt('VEYA · biri yeterli', 'OR · any one is enough') : txt('VE · hepsi gerekli', 'AND · all are required')) : '';
+      box.innerHTML = `<div class="pg-mobile-explorer-head"><button type="button" class="pg-mobile-back">← ${txt('Dönemler', 'Terms')}</button><button type="button" class="pg-mobile-detail" data-detail-code="${esc(code)}">${txt('Ders detayı', 'Course details')}</button></div>
+        <div class="pg-mobile-flow">
+          <section><h3>${txt('Önce alınması gerekenler', 'Required before')}</h3>${logic ? `<p class="pg-mobile-logic">${esc(logic)}</p>` : ''}${before.length ? before.map((c) => courseButton(c, txt('önşart', 'prerequisite'))).join('') : `<p class="pg-mobile-empty">${txt('Kayıtlı önşart yok.', 'No recorded prerequisite.')}</p>`}</section>
+          <article class="pg-mobile-selected"><span>${txt('Seçili ders', 'Selected course')}</span><b>${esc(n.code)}</b><h2>${esc(n.name || txt('Ders adı arşivde bulunamadı', 'Course name unavailable in archive'))}</h2>${n.requirement ? `<p>${esc(n.requirement)}</p>` : ''}</article>
+          <section><h3>${txt('Bu dersten sonra açılanlar', 'Courses unlocked after')}</h3>${after.length ? after.map((c) => courseButton(c, txt('bu dersi ister', 'requires this course'))).join('') : `<p class="pg-mobile-empty">${txt('Bu dersi doğrudan isteyen başka ders yok.', 'No course directly requires this course.')}</p>`}</section>
+        </div>`;
+      wire();
+      box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    const wire = () => {
+      box.querySelector('.pg-mobile-back')?.addEventListener('click', renderIndex);
+      box.querySelectorAll('[data-focus-code]').forEach((b) => b.addEventListener('click', () => renderFocus(b.dataset.focusCode)));
+      box.querySelectorAll('[data-pool-code]').forEach((b) => b.addEventListener('click', () => currentGraph.focusNode(b.dataset.poolCode)));
+      box.querySelector('[data-detail-code]')?.addEventListener('click', (ev) => window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: ev.currentTarget.dataset.detailCode, source: 'onsart-mobile' } })));
+    };
+    box.hidden = false;
+    renderIndex();
   }
 
   // Faz 5.4 (D2): grafiğin dönem-dönem metin karşılığı. Ekran okuyucu için her
@@ -994,19 +1053,14 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js';
     const btn = root.querySelector('.pg-list-toggle');
     const box = root.querySelector('.pg-semester-list');
     if (!btn || !box) return;
-    // Mobilde varsayılan LİSTE görünümü; "grafiğe dön" ile canvas'a geçilir.
-    if (window.matchMedia('(max-width: 600px)').matches && !root.classList.contains('pg-list-mode')) {
-      root.classList.add('pg-list-mode');
-      btn.textContent = 'Grafik görünümü';
-      btn.setAttribute('aria-pressed', 'true');
-      box.classList.remove('sr-only');
-    }
     btn.addEventListener('click', () => {
-      const on = root.classList.toggle('pg-list-mode');
-      btn.textContent = on ? 'Grafik görünümü' : 'Liste görünümü';
+      const mobile = window.matchMedia('(max-width: 700px)').matches;
+      const on = mobile ? root.classList.toggle('pg-mobile-full') : root.classList.toggle('pg-list-mode');
+      btn.textContent = mobile ? (on ? 'Odak görünümü' : 'Tam grafik') : (on ? 'Grafik görünümü' : 'Liste görünümü');
       btn.setAttribute('aria-pressed', String(on));
-      box.classList.toggle('sr-only', !on);
+      if (!mobile) box.classList.toggle('sr-only', !on);
     });
+    if (window.matchMedia('(max-width: 700px)').matches) btn.textContent = 'Tam grafik';
   }
 
   // renderBranchLegend, grafikteki renklerin hangi branşa ait olduğunu

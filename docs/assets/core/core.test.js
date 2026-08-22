@@ -8,7 +8,7 @@ import assert from 'node:assert/strict';
 import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, quotaDisplay, quotaState, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
-import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList } from '../views/courses.js';
+import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList, groupCourseRows } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
 import { examToIcs } from '../views/exams.js';
@@ -20,6 +20,15 @@ import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoa
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from './grades.js';
 import { setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
 import * as fav from './favorites.js';
+import { formatProgramLabel, normalizeProgramLevel, programLevelLabel } from './programs.js';
+
+test('program etiketleri kod, ad ve açık seviye adıyla her zaman doludur', () => {
+  assert.equal(normalizeProgramLevel('', 'CEN_LS'), 'LS');
+  assert.equal(normalizeProgramLevel('LU'), 'YL');
+  assert.equal(programLevelLabel('LS', 'tr'), 'Lisans');
+  assert.equal(formatProgramLabel('CEN_LS', { name: 'Bilgisayar Mühendisliği (İngilizce) (KKTC) Lisans' }), 'CEN_LS · Bilgisayar Mühendisliği (İngilizce) (KKTC) · Lisans');
+  assert.equal(formatProgramLabel('ABC_OL', { name: '' }), 'ABC_OL · Program adı arşivde bulunamadı · Önlisans');
+});
 
 test('methodToCode/codeToMethod iki yönlü çevirir', () => {
   assert.equal(methodToCode('Fiziksel (Yüz yüze)'), 'f');
@@ -568,6 +577,19 @@ test('programList boş/eksik alanda boş liste döndürür', () => {
   assert.deepEqual(programList([null, '', '', '', '', '', 0, 0]), []);
   assert.deepEqual(programList([null, '', '', '', '', '', 0, 0, '', '', []]), []);
   assert.deepEqual(programList([null, '', '', '', '', '', 0, 0, '', '', null]), []);
+});
+
+test('groupCourseRows aynı dersin şubelerini sırayı bozmadan tek grupta toplar', () => {
+  const rows = [
+    ['10001', 'TUR 101', 'Türk Dili I', 'TUR'],
+    ['10002', 'TUR 101', 'Türk Dili I', 'TUR'],
+    ['20001', 'MAT 101', 'Matematik I', 'MAT'],
+  ];
+  const groups = groupCourseRows(rows);
+  assert.equal(groups.length, 2);
+  assert.equal(groups[0].code, 'TUR 101');
+  assert.deepEqual(groups[0].rows.map((row) => row[0]), ['10001', '10002']);
+  assert.equal(groups[1].rows[0][0], '20001');
 });
 
 // Row biçimi: [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan]

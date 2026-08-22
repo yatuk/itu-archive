@@ -939,7 +939,8 @@ func (r *Result) checkSitePages(root string) {
 	// landingPages ile aynı slug listesi; kök dizininde <slug>/index.html.
 	landingSlugs := []string{
 		"ders-plani", "gano-hesaplama", "not-ortalamasi", "ders-programi",
-		"kontenjan", "ders-secimi", "onsart-haritasi", "ders-arsivi",
+		"ders-programi-olustur", "kontenjan", "ders-secimi", "onsart-haritasi",
+		"sinav-programi", "akademik-takvim", "ders-arsivi",
 	}
 	gotLanding := map[string]bool{}
 	for _, s := range landingSlugs {

@@ -26,6 +26,8 @@ import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js';
 import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js';
 import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js';
 import { confirmDialog } from '../core/dialog.js';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js';
+import { I18N } from '../i18n.js';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
@@ -46,7 +48,7 @@ export async function onShow() {
   // sekme URL'sini yeniden yazıp prog'u düşürebilir (DOM henüz boşken) —
   // doğrudan ?prog=X#dersplanim bağlantısı bu yüzden programı kaybetmemeli.
   const urlParams = new URLSearchParams(location.search);
-  initialParams = urlParams;
+  if (urlParams.has('prog') || !initialParams) initialParams = urlParams;
   ensureHost();
   if (!inited) {
     init();
@@ -55,40 +57,54 @@ export async function onShow() {
   if (!progIndex.length) {
     progIndex = (await getJSON('data/curriculum/index.json').catch(() => []));
   }
+  const levelSel = $('#dp-level');
   const fac = $('#dp-fac');
   const sel = $('#dp-prog');
-  if (fac.options.length === 0) fac.innerHTML = renderFacultyOptions();
-  const want = urlParams.get('prog') || '';
+  const want = urlParams.get('prog') || initialParams?.get('prog') || '';
   applyParams(urlParams);
-  // URL'deki program geçerliyse onu, değilse ilk programı seç (URL kaynaktır).
-  const secili = progIndex.find((p) => p.code === want) || progIndex[0];
-  const current = secili?.code || '';
-  // Fakülte seçimi programdan türetilir: paylaşılan link doğru fakülteyi açar.
-  fac.value = secili ? facultyOf(secili) : fac.options[0]?.value || '';
-  sel.innerHTML = renderProgramOptions(fac.value);
-  sel.value = current;
-  await selectProgram(current);
+  // URL programı varsa ilgili seviye/fakülteyi aç; aksi halde Lisans seçili
+  // fakat fakülte ve program boş başlar. İlk katalog kaydı artık gizlice seçilmez.
+  const secili = progIndex.find((p) => p.code === want) || null;
+  levelSel.value = secili ? normalizeProgramLevel(secili.level, secili.code) : 'LS';
+  fac.innerHTML = renderFacultyOptions(levelSel.value);
+  fac.value = secili ? facultyOf(secili) : '';
+  sel.innerHTML = renderProgramOptions(fac.value, levelSel.value);
+  sel.value = secili?.code || '';
+  if (secili) await selectProgram(secili.code);
+  else showProgramEmpty();
 }
 
 function ensureHost() {
   // #dp-root HTML'de hazır durur; içerik doldurulmuş mu onu kontrol et.
   if ($('#dp-prog')) return;
   const root = document.querySelector('#view-dersplanim');
+  const en = I18N.lang === 'en';
+  const t = (tr, english) => en ? english : tr;
   root.innerHTML = `
     <p class="dp-intro">
-      Programını ve dönemi seç; müfredatı, açık şubeleri ve not planını birlikte gör.
+      ${t('Programını ve dönemi seç; müfredatı, açık şubeleri ve not planını birlikte gör.', 'Choose your program and term to see the curriculum, open sections, and grade plan together.')}
     </p>
     <div class="console dp-console">
       <div class="dp-program-pick" role="group" aria-label="Program seçimi">
         <span class="sigil" aria-hidden="true">&gt;</span>
-        <label><span class="dp-field-label">fakülte</span>
+        <label><span class="dp-field-label">${t('seviye', 'level')}</span>
+        <select id="dp-level" class="dp-level-select" aria-label="Program seviyesi seç">
+          <option value="OL">${t('Önlisans', 'Associate')}</option><option value="LS" selected>${t('Lisans', 'Bachelor')}</option>
+          <option value="YL">${t('Yüksek Lisans', 'Master')}</option><option value="DR">${t('Doktora', 'Doctorate')}</option>
+        </select>
+        </label>
+        <label><span class="dp-field-label">${t('fakülte', 'faculty')}</span>
         <select id="dp-fac" class="dp-fac-select" aria-label="Fakülte seç"></select>
         </label>
-        <label><span class="dp-field-label">program</span>
+        <label><span class="dp-field-label">${t('program', 'program')}</span>
         <select id="dp-prog" class="dp-prog-select" aria-label="Bölüm seç"></select>
         </label>
       </div>
-      <label class="dp-term-pick"><span class="dp-field-label">dönem</span><select id="dp-term" aria-label="Dönem seç"></select></label>
+      <label class="dp-term-pick"><span class="dp-field-label">${t('dönem', 'term')}</span><select id="dp-term" aria-label="${t('Dönem seç', 'Choose term')}"></select></label>
+    </div>
+    <div id="dp-empty" class="dp-empty">
+      <h2>${t('Ders planını görmek için programını seç', 'Choose your program to view its course plan')}</h2>
+      <p>${t('Önce seviyeyi, ardından fakülte ve programı seç. GANO ve dönem dersleri seçiminin ardından burada açılır.', 'Choose a level, faculty, and program. GPA tools and term courses will appear after your selection.')}</p>
     </div>
     <div class="dp-filterbar" role="group" aria-label="Ders Planım filtreleri">
       <div class="dp-filter-primary">
@@ -144,25 +160,41 @@ function facultyOf(p) {
   return p.faculty || 'Diğer';
 }
 
-function renderFacultyOptions() {
-  const facs = [...new Set(progIndex.map(facultyOf))].sort((a, b) => a.localeCompare(b, 'tr'));
-  return facs.map((f) => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
+function renderFacultyOptions(level = 'LS') {
+  const facs = [...new Set(progIndex
+    .filter((p) => normalizeProgramLevel(p.level, p.code) === level)
+    .map(facultyOf))].sort((a, b) => a.localeCompare(b, 'tr'));
+  return `<option value="">${I18N.lang === 'en' ? 'Choose faculty…' : 'Fakülte seçiniz…'}</option>` +
+    facs.map((f) => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
 }
 
 // Verilen fakültenin bölümleri. Aynı bölümün farklı planları (KKTC/İngilizce vb.)
 // kod + ad ile ayrışsın — kullanıcı yanlış planı seçmesin (Faz F).
-function renderProgramOptions(faculty) {
+function renderProgramOptions(faculty, level = $('#dp-level')?.value || 'LS') {
+  if (!faculty) return `<option value="">${I18N.lang === 'en' ? 'Choose a faculty first…' : 'Önce fakülte seçiniz…'}</option>`;
   const ps = progIndex
-    .filter((p) => facultyOf(p) === faculty)
-    .sort((a, b) => a.code.localeCompare(b.code));
-  return ps.map((p) => {
-    const label = p.name !== p.code ? `${p.code} · ${p.name}` : p.code;
-    return `<option value="${esc(p.code)}">${esc(label)}</option>`;
-  }).join('');
+    .filter((p) => facultyOf(p) === faculty && normalizeProgramLevel(p.level, p.code) === level)
+    .sort((a, b) => a.name.localeCompare(b.name, 'tr') || a.code.localeCompare(b.code));
+  return `<option value="">${I18N.lang === 'en' ? 'Choose program…' : 'Program seçiniz…'}</option>` +
+    ps.map((p) => `<option value="${esc(p.code)}">${esc(formatProgramLabel(p.code, p, I18N.lang))}</option>`).join('');
+}
+
+function showProgramEmpty() {
+  progCode = '';
+  plan = null;
+  const view = $('#view-dersplanim');
+  view?.classList.add('dp-no-program');
+  if ($('#dp-empty')) $('#dp-empty').hidden = false;
+  if ($('#dp-result')) $('#dp-result').textContent = I18N.lang === 'en' ? 'No program selected' : 'Program seçilmedi';
+  if ($('#dp-summary')) $('#dp-summary').innerHTML = '';
+  if ($('#dp-semesters')) $('#dp-semesters').innerHTML = '';
 }
 
 async function selectProgram(code) {
-  if (!code || code === progCode && plan) return;
+  if (!code) { showProgramEmpty(); return; }
+  if (code === progCode && plan) return;
+  $('#view-dersplanim')?.classList.remove('dp-no-program');
+  if ($('#dp-empty')) $('#dp-empty').hidden = true;
   progCode = code;
   plan = null;
   stored = loadStored(code);
@@ -1070,14 +1102,20 @@ function init() {
     toggle.setAttribute('aria-expanded', String(open));
     more.hidden = !open;
   });
-  // Fakülte değişince bölüm listesi yenilenir ve ilk bölüm seçilir.
+  $('#dp-level').addEventListener('change', () => {
+    const fac = $('#dp-fac');
+    fac.innerHTML = renderFacultyOptions($('#dp-level').value);
+    fac.value = '';
+    $('#dp-prog').innerHTML = renderProgramOptions('', $('#dp-level').value);
+    showProgramEmpty();
+    saveState();
+  });
+  // Fakülte değişince bölüm listesi yenilenir; program kullanıcı tarafından seçilir.
   $('#dp-fac').addEventListener('change', () => {
     const sel = $('#dp-prog');
-    sel.innerHTML = renderProgramOptions($('#dp-fac').value);
-    if (sel.options.length) {
-      sel.value = sel.options[0].value;
-      selectProgram(sel.value);
-    }
+    sel.innerHTML = renderProgramOptions($('#dp-fac').value, $('#dp-level').value);
+    sel.value = '';
+    showProgramEmpty();
   });
   $('#dp-prog').addEventListener('change', () => {
     selectProgram($('#dp-prog').value);

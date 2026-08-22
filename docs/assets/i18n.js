@@ -135,6 +135,10 @@ const I18N = (() => {
       prgFullBadge: '⚠ dolu şube',
       prgSessions: 'oturum',
       prgSube: 'şube',
+      levelAssociate: 'Önlisans',
+      levelBachelor: 'Lisans',
+      levelMaster: 'Yüksek Lisans',
+      levelDoctorate: 'Doktora',
     },
     en: {
       statLoading: 'loading…',
@@ -269,6 +273,10 @@ const I18N = (() => {
       prgFullBadge: '⚠ full section',
       prgSessions: 'sessions',
       prgSube: 'sections',
+      levelAssociate: 'Associate',
+      levelBachelor: 'Bachelor',
+      levelMaster: 'Master',
+      levelDoctorate: 'Doctorate',
     }
   };
 

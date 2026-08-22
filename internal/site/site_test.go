@@ -129,10 +129,56 @@ func TestLandingPagesRouteSearchIntentToWorkingViews(t *testing.T) {
 		if page.primary.label == "" || page.primary.detail == "" {
 			t.Errorf("%s birincil araç çağrısı eksik", page.slug)
 		}
+		if page.title == "" || page.description == "" || page.h1 == "" {
+			t.Errorf("%s arama niyeti metadatası eksik", page.slug)
+		}
+		for _, action := range page.secondary {
+			if action.href == "" || action.label == "" {
+				t.Errorf("%s boş ilgili araç bağlantısı içeriyor", page.slug)
+			}
+		}
 	}
 	for slug := range want {
 		if !seen[slug] {
 			t.Errorf("aranan araç için iniş sayfası eksik: %s", slug)
+		}
+	}
+}
+
+func TestLandingPagesHaveAccurateStableSitemapDate(t *testing.T) {
+	if landingContentUpdated != "2026-08-22" {
+		t.Fatalf("landing içerik tarihi beklenmedik: %q", landingContentUpdated)
+	}
+	entries := make([]sitemapEntry, 0, len(landingPages))
+	for _, page := range landingPages {
+		entries = append(entries, sitemapEntry{
+			Loc:     baseURL + "/" + page.slug + "/",
+			Lastmod: landingContentUpdated,
+		})
+	}
+	xml := string(renderURLSet(entries))
+	if got := strings.Count(xml, "<lastmod>"+landingContentUpdated+"</lastmod>"); got != len(landingPages) {
+		t.Fatalf("landing lastmod sayısı = %d, beklenen %d", got, len(landingPages))
+	}
+}
+
+func TestLandingPageIntentsStayDistinct(t *testing.T) {
+	bySlug := map[string]landingPage{}
+	for _, page := range landingPages {
+		bySlug[page.slug] = page
+	}
+	checks := map[string]string{
+		"gano-hesaplama":        "GANO",
+		"not-ortalamasi":        "harf not",
+		"ders-programi":         "açık ders",
+		"ders-programi-olustur": "oluşturma aracı",
+		"ders-plani":            "müfredat",
+	}
+	for slug, phrase := range checks {
+		page := bySlug[slug]
+		haystack := strings.ToLower(page.title + " " + page.description + " " + page.h1)
+		if !strings.Contains(haystack, strings.ToLower(phrase)) {
+			t.Errorf("%s niyeti %q ifadesini taşımıyor", slug, phrase)
 		}
 	}
 }

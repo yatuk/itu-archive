@@ -12,6 +12,7 @@ import { buildTimetable, parseWhen, openDetail } from './courses.js';
 import * as fav from '../core/favorites.js';
 import { toast } from '../core/toast.js';
 import { confirmDialog, promptDialog } from '../core/dialog.js';
+import { I18N } from '../i18n.js';
 
 let term = null;
 let rows = [];
@@ -26,6 +27,8 @@ let showWeekend = false;
 let showFullDay = false;
 // Mobilde varsayılan gün listesidir; "ızgara görünümü" ile ızgaraya geçilir.
 let showGrid = false;
+let gridContextMenu = null;
+let gridContextReturnFocus = null;
 
 // --- çoklu program (liste) ---
 const PROG_KEY = 'itu-programs';
@@ -124,6 +127,9 @@ export function initProgram() {
   $('#p-weekend').addEventListener('change', (e) => { showWeekend = e.target.checked; render(); });
   $('#p-fullday').addEventListener('change', (e) => { showFullDay = e.target.checked; render(); });
   document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && gridContextMenu && !gridContextMenu.hidden) closeGridContextMenu(true);
+  });
   inited = true;
 }
 
@@ -371,7 +377,7 @@ async function renderCredits(items) {
       cache.set(branch, map);
     }
     const c = map && map[row[1]] && map[row[1]].credits;
-    const item = box.children[i];
+    const item = box.querySelector(`.p-item[data-idx="${i}"]`);
     if (!item || !c) continue;
     const parts = [];
     if (c.local != null) parts.push(`${trNum(c.local)} kr`);
@@ -388,22 +394,29 @@ async function renderCredits(items) {
 function renderList(items) {
   const box = $('#p-list');
   const markFull = $('#p-full').checked;
-  box.innerHTML = items.map(({ rec, row }, idx) => {
+  const rowsHtml = items.map(({ rec, row }, idx) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = row;
     const full = cap > 0 && enr >= cap;
     const key = fav.favKeyOf(branch, crn);
     const speed = fillSpeedNote(crn);
-    return `<div class="p-item${markFull && full ? ' p-full' : ''}" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
+    return `<div class="p-item${markFull && full ? ' p-full' : ''}" role="row" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
-      <span class="p-crn">${esc(crn)}${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
-      <div class="p-code"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
-      <span class="p-when">${esc(when || '·')}</span>
-      <span class="p-fill">${cap ? quotaDisplay(cap, enr) : '·'}</span>
+      <span class="p-crn" role="cell"><span class="p-mobile-label">CRN</span>${esc(crn)}${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
+      <div class="p-code" role="cell"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
+      <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : 'Öğretim üyesi açıklanmadı')}</span>
+      <span class="p-when" role="cell">${esc(when || 'Zaman açıklanmadı')}</span>
+      <span class="p-fill" role="cell" aria-label="Kontenjan">${cap ? quotaDisplay(cap, enr) : '·'}</span>
       <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${esc(code)} dersini programdan çıkar">Çıkar</button>
       <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için diğer eylemler" aria-haspopup="menu" aria-expanded="false">⋮</button>
       <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
     </div>`;
-  }).join('') || '<p class="empty">Henüz ders eklenmedi. Yukarıdan arayabilir, “Bölümden seç” akışını kullanabilir veya Dersler sayfasından programa gönderebilirsin.</p>';
+  }).join('');
+  box.innerHTML = items.length ? `
+    <div class="p-list-head" role="row">
+      <span role="columnheader">Ders ve şube</span>
+      <span role="columnheader">Kontenjan / işlem</span>
+    </div>${rowsHtml}`
+    : '<p class="empty">Henüz ders eklenmedi. Yukarıdan ders kodu, ad veya CRN arayarak ekle.</p>';
 
   box.querySelectorAll('.p-item').forEach((item) => {
     const idx = Number(item.dataset.idx);
@@ -674,8 +687,65 @@ function renderGrid(itemRows) {
   }
 
   wrap.querySelectorAll('.tt-block').forEach((b, i) => {
-    b.addEventListener('click', () => openDetail(placedRefs[i], term));
+    const row = placedRefs[i];
+    b.addEventListener('click', () => openDetail(row, term));
+    b.addEventListener('contextmenu', (ev) => {
+      ev.preventDefault();
+      openGridContextMenu(row, b, ev.clientX, ev.clientY);
+    });
+    b.addEventListener('keydown', (ev) => {
+      if ((ev.shiftKey && ev.key === 'F10') || ev.key === 'ContextMenu') {
+        ev.preventDefault();
+        const rect = b.getBoundingClientRect();
+        openGridContextMenu(row, b, rect.left + Math.min(rect.width, 40), rect.top + 28);
+      }
+    });
   });
+}
+
+function openGridContextMenu(row, trigger, x, y) {
+  closeGridContextMenu(false);
+  const key = fav.favKeyOf(row[3], row[0]);
+  const menu = document.createElement('div');
+  menu.className = 'tt-context-menu';
+  menu.setAttribute('role', 'menu');
+  const en = I18N.lang === 'en';
+  menu.setAttribute('aria-label', `${row[1]} ${en ? 'actions' : 'işlemleri'}`);
+  menu.innerHTML = `
+    <p><b>${esc(row[1])}</b><span>CRN ${esc(row[0])}</span></p>
+    <button type="button" role="menuitem" data-act="detail" data-key="${esc(key)}">${en ? 'Open course details' : 'Ders ayrıntısını aç'}</button>
+    <button type="button" role="menuitem" data-act="copy" data-key="${esc(key)}">${en ? 'Copy CRN' : "CRN'yi kopyala"}</button>
+    <button type="button" role="menuitem" data-act="obs" data-key="${esc(key)}">${en ? 'Find on OBS' : "OBS'de ara"}</button>
+    <button type="button" role="menuitem" class="danger" data-act="remove" data-key="${esc(key)}">${en ? 'Remove from schedule' : 'Programdan çıkar'}</button>`;
+  document.body.appendChild(menu);
+  gridContextMenu = menu;
+  gridContextReturnFocus = trigger;
+  wireMenuActions(menu);
+  const rect = menu.getBoundingClientRect();
+  menu.style.left = `${Math.max(8, Math.min(x, innerWidth - rect.width - 8))}px`;
+  menu.style.top = `${Math.max(8, Math.min(y, innerHeight - rect.height - 8))}px`;
+  menu.querySelector('button')?.focus();
+  menu.addEventListener('keydown', (ev) => {
+    const items = [...menu.querySelectorAll('[role="menuitem"]')];
+    const at = items.indexOf(document.activeElement);
+    if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+      ev.preventDefault();
+      items[(at + (ev.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length]?.focus();
+    }
+  });
+  setTimeout(() => document.addEventListener('pointerdown', gridContextOutside, { once: true }), 0);
+}
+
+function gridContextOutside(ev) {
+  if (!gridContextMenu?.contains(ev.target)) closeGridContextMenu(false);
+}
+
+function closeGridContextMenu(restoreFocus) {
+  if (!gridContextMenu) return;
+  gridContextMenu.remove();
+  gridContextMenu = null;
+  if (restoreFocus) gridContextReturnFocus?.focus();
+  gridContextReturnFocus = null;
 }
 
 // Mobil GÜN LİSTESİ: gün başlıkları altında dersler zaman sırasıyla; çakışanlar
@@ -718,6 +788,10 @@ function renderDayList(itemRows, t, noTime, noTimeNote) {
         row.appendChild(tag);
       }
       row.addEventListener('click', () => openDetail(s.row, term));
+      row.addEventListener('contextmenu', (ev) => {
+        ev.preventDefault();
+        openGridContextMenu(s.row, row, ev.clientX, ev.clientY);
+      });
       day.appendChild(row);
     }
     list.appendChild(day);
@@ -1196,6 +1270,7 @@ function fallbackCopy(txt) {
 }
 
 function closeMenus() {
+  closeGridContextMenu(false);
   if (openMenuKey) {
     const pop = document.querySelector(`[data-pop="${openMenuKey}"]`);
     const button = document.querySelector(`[data-menu="${openMenuKey}"]`);

@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi — ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=seo2026">
+<link rel="stylesheet" href="assets/style.css?v=uirefactor2026">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -125,11 +125,11 @@
 <header class="masthead">
  <div class="wrap">
   <div class="mast-top">
-   <div class="brand">
+   <a class="brand brand-home" href="/#dersler" aria-label="Dersler ana sayfasına git">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
     <img class="brand-logo" src="itü_ari.png" alt="İTÜ Ders Arşivi" width="32" height="31">
     <h1>DERS&nbsp;ARŞİVİ</h1>
-   </div>
+   </a>
    <div class="mast-controls">
     <div class="theme-pick" role="group" aria-label="Görünüm teması">
      <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)"><span aria-hidden="true">◎</span><span class="theme-name" data-i18n="themeLight">Açık</span></button>
@@ -154,15 +154,15 @@
 
 <h2 class="sr-only">Bölümler</h2>
 <nav class="tabs wrap" role="tablist" aria-label="Bölümler">
- <button role="tab" aria-selected="true" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" data-i18n="tabDersler">01 DERSLER</button>
- <button role="tab" aria-selected="false" id="tab-gecmis" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" data-i18n="tabGecmis">02 GEÇMİŞ</button>
- <button role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" data-i18n="tabDersplanim">03 DERS PLANIM/GPA</button>
- <button role="tab" aria-selected="false" id="tab-onsart" aria-controls="view-onsart" tabindex="-1" data-view="onsart" data-i18n="tabOnsart">04 ÖNŞART HARİTASI</button>
- <button role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar" data-i18n="tabSinavlar">05 SINAVLAR</button>
- <button role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" data-i18n="tabTakvim">06 AKADEMİK TAKVİM</button>
- <button role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" data-i18n="tabDonemler">07 DÖNEMLER</button>
- <button role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" data-i18n="tabProgram">08 PROGRAM</button>
- <button role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" data-i18n="tabHakkinda">09 HAKKINDA</button>
+ <a role="tab" aria-selected="true" aria-current="page" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" href="/#dersler" data-i18n="tabDersler">01 DERSLER</a>
+ <a role="tab" aria-selected="false" id="tab-gecmis" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" href="/#gecmis" data-i18n="tabGecmis">02 GEÇMİŞ</a>
+ <a role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" href="/#dersplanim" data-i18n="tabDersplanim">03 DERS PLANIM/GPA</a>
+ <a role="tab" aria-selected="false" id="tab-onsart" aria-controls="view-onsart" tabindex="-1" data-view="onsart" href="/#onsart" data-i18n="tabOnsart">04 ÖNŞART HARİTASI</a>
+ <a role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar" href="/#sinavlar" data-i18n="tabSinavlar">05 SINAVLAR</a>
+ <a role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" href="/#takvim" data-i18n="tabTakvim">06 AKADEMİK TAKVİM</a>
+ <a role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" href="/#donemler" data-i18n="tabDonemler">07 DÖNEMLER</a>
+ <a role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" href="/#program" data-i18n="tabProgram">08 PROGRAM</a>
+ <a role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" href="/#hakkinda" data-i18n="tabHakkinda">09 HAKKINDA</a>
  <details class="tabs-more">
   <summary id="tabs-more-label" data-i18n="navMore">Daha fazla</summary>
   <div class="tabs-more-menu">
@@ -207,8 +207,10 @@
     <button type="button" id="f-more-toggle" class="btn-ghost" aria-expanded="false" aria-controls="filters-more" data-i18n="filterMore">Diğer filtreler</button>
     <div class="filters-more" id="filters-more" hidden>
      <label>seviye <select id="f-level">
-      <option value="">hepsi</option>
-      <option>OL</option><option>LS</option><option>LU</option><option>LUI</option>
+      <option value="OL" data-i18n="levelAssociate">Önlisans</option>
+      <option value="LS" selected data-i18n="levelBachelor">Lisans</option>
+      <option value="LU" data-i18n="levelMaster">Yüksek Lisans</option>
+      <option value="LUI" data-i18n="levelDoctorate">Doktora</option>
      </select></label>
      <label>yöntem <select id="f-method"><option value="">hepsi</option></select></label>
      <label>alabilen program <select id="f-program"><option value="">hepsi</option></select></label>
@@ -231,7 +233,7 @@
       <option value="enr">Yazılan öğrenci</option>
       <option value="fill">Kontenjan doluluğu</option>
     </select></label>
-    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle">zaman çizelgesi</button>
+    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle"><span class="label-desktop">zaman çizelgesi</span><span class="label-mobile">Program</span></button>
     <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir">CSV</button>
    </div>
   </div>
@@ -265,8 +267,32 @@
     <tbody id="rows"></tbody>
    </table>
   </div>
+  <div id="course-groups" class="course-groups" aria-label="Dersler ve şubeleri"></div>
   <button id="more" class="more" hidden>daha fazla göster</button>
   <div id="tt" hidden></div>
+
+  <aside class="tool-directory" aria-labelledby="tool-directory-title">
+   <div class="tool-directory-head">
+    <div>
+     <h2 id="tool-directory-title">Aradığın işleme doğrudan git</h2>
+    </div>
+    <a class="tool-directory-all" href="/ders-secimi/">Ders seçimi rehberi</a>
+   </div>
+   <div class="tool-directory-grid">
+    <a href="/ders-arsivi/"><strong>Geçmiş dersleri ara</strong><span>2016'dan bugüne ders, hoca ve şube geçmişi</span></a>
+    <a href="/ders-programi-olustur/"><strong>Ders programı oluştur</strong><span>CRN ekle, çakışmaları gör ve takvime aktar</span></a>
+    <a href="/gano-hesaplama/"><strong>GPA / GANO hesapla</strong><span>Harf notlarını gir, dönem ve genel ortalamanı gör</span></a>
+    <a href="/ders-plani/"><strong>Ders planını incele</strong><span>Müfredatı, kredileri ve seçmeli dersleri dönem dönem gör</span></a>
+    <a href="/sinav-programi/"><strong>Sınav programını aç</strong><span>Final tarihlerini ara ve sınav çakışmalarını kontrol et</span></a>
+    <a href="/akademik-takvim/"><strong>Akademik takvimi gör</strong><span>Kayıt, ders ve sınav tarihlerini tek yerde takip et</span></a>
+   </div>
+   <nav class="tool-directory-links" aria-label="Diğer İTÜ ders araçları">
+    <a href="/ders-programi/">Güncel ders programı</a>
+    <a href="/not-ortalamasi/">Harf notları</a>
+    <a href="/kontenjan/">Kontenjan doluluğu</a>
+    <a href="/onsart-haritasi/">Önşart haritası</a>
+   </nav>
+  </aside>
  </section>
 
  <section id="view-gecmis" class="view" role="tabpanel" aria-labelledby="tab-gecmis" hidden>
@@ -323,6 +349,7 @@
      <div><span><i class="pg-line-solid"></i>Zorunlu önşart</span><span><i class="pg-line-dash"></i>Alternatif; biri yeterli</span><span><i class="pg-diamond"></i>Seçmeli havuz</span></div>
     </details>
    </div>
+   <section class="pg-mobile-explorer" aria-label="Mobil önşart gezgini" hidden></section>
    <div class="pg-workspace">
     <div class="pg-map">
      <div class="pg-branches" aria-hidden="true"></div>
@@ -424,11 +451,11 @@
   <div class="p-layout">
    <aside class="p-panel">
     <div class="p-panel-head">
-     <div><h2>Seçili dersler <span id="p-count">0</span></h2><p>Sürükleyerek sıralayabilirsin.</p></div>
+     <div><h2>Eklenen dersler <span id="p-count">0</span></h2><p class="p-panel-hint"><span class="label-desktop">Sürükleyerek sıralayabilirsin.</span><span class="label-mobile">Programındaki şubeler burada görünür.</span></p></div>
      <button type="button" id="p-clear" class="p-clear-link">Tümünü temizle</button>
     </div>
     <label class="check p-full"><input type="checkbox" id="p-full"> dolu şubeleri işaretle</label>
-    <div id="p-list" class="p-list"></div>
+    <div id="p-list" class="p-list" role="table" aria-label="Programa eklenen dersler" aria-live="polite"></div>
     <button type="button" id="p-favs" class="btn-ghost p-favs">Favorilerimi ekle</button>
     <details class="p-export">
      <summary>Dışa aktar ve paylaş</summary>
@@ -589,6 +616,6 @@ curl https://<span class="host">SİTE</span>/data/index.json</code></pre>
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
-<script type="module" src="assets/app.js?v=seo2026"></script>
+<script type="module" src="assets/app.js?v=uirefactor2026"></script>
 </body>
 </html>

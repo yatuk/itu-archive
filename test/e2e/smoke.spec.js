@@ -56,11 +56,13 @@ test.describe('SPA (ana sayfa)', () => {
 
     // Masthead ve sekmeler yerinde mi?
     await expect(page.locator('.brand-title, .brand h1').first()).toBeVisible();
-    await expect(page.locator('.tabs button').first()).toBeVisible();
+    await expect(page.locator('.tabs [data-view]').first()).toBeVisible();
 
-    // Veri gerçekten geldi mi? (docs/data bozulursa tablo boş kalır — bu,
-    // scrape yeşil görünürken sitenin sessizce boşalmasını yakalar.)
-    await expect(page.locator('#results tbody tr').first()).toBeVisible({ timeout: 15000 });
+    // Veri gerçekten geldi mi? Mobil gruplu liste, masaüstü tablo kullanır.
+    const firstResult = page.viewportSize().width <= 640
+      ? page.locator('#course-groups .mobile-course-group').first()
+      : page.locator('#results tbody tr').first();
+    await expect(firstResult).toBeVisible({ timeout: 15000 });
 
     expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
   });
@@ -82,6 +84,23 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#taken-btn, #f-taken')).toHaveCount(0);
   });
 
+  test('ana sayfa yüksek niyetli araç sayfalarını taranabilir bağlantılarla öne çıkarır', async ({ page }) => {
+    await page.goto('/');
+
+    const dizin = page.locator('.tool-directory');
+    await expect(dizin).toBeVisible();
+    for (const href of [
+      '/ders-arsivi/',
+      '/ders-programi-olustur/',
+      '/gano-hesaplama/',
+      '/ders-plani/',
+      '/sinav-programi/',
+      '/akademik-takvim/',
+    ]) {
+      await expect(dizin.locator(`a[href="${href}"]`)).toHaveCount(1);
+    }
+  });
+
   test('iki tema da uygulanır ve tarayıcı çubuğu rengi eşleşir', async ({ page }) => {
     await page.goto('/');
 
@@ -97,10 +116,10 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#statbar')).toBeVisible();
   });
 
-  test('mobil header ve ders kartı sıkışmadan, okunabilir sırada çalışır', async ({ page }) => {
+  test('mobil header ve gruplanmış ders listesi sıkışmadan çalışır', async ({ page }) => {
     test.skip(page.viewportSize().width > 600, 'Mobil yerleşim testi');
     await page.goto('/?term=2025-2026-yaz');
-    const first = page.locator('#results tbody tr').first();
+    const first = page.locator('#course-groups .mobile-course-group').first();
     await expect(first).toBeVisible({ timeout: 15000 });
 
     const brand = page.locator('.brand');
@@ -110,20 +129,20 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('.theme-name')).toHaveText(['Açık', 'Koyu']);
     await expect(page.locator('#lang-btn')).toBeVisible();
 
-    for (const selector of ['.code', '.crn', '.fav', '.course-name', '.course-instructor', '.course-schedule', '.quota-main-col']) {
-      await expect(first.locator(selector)).toBeVisible();
+    for (const selector of ['.mobile-course-code', '.mobile-course-name', '.mobile-course-count', '.mobile-section', '.mobile-crn', '.mobile-schedule', '.mobile-quota', '.fav-star']) {
+      await expect(first.locator(selector).first()).toBeVisible();
     }
-    expect(await first.locator('.course-schedule span').count()).toBeGreaterThan(1);
-    const cardBox = await first.boundingBox();
-    expect(cardBox.height).toBeLessThan(240);
-    const cardType = await first.evaluate((el) => ({
-      name: parseFloat(getComputedStyle(el.querySelector('.row-toggle')).fontSize),
-      schedule: parseFloat(getComputedStyle(el.querySelector('.course-schedule')).fontSize),
+    expect(await first.locator('.mobile-section:visible').count()).toBeLessThanOrEqual(4);
+    const sectionBox = await first.locator('.mobile-section:visible').first().boundingBox();
+    expect(sectionBox.height).toBeLessThan(110);
+    const listType = await first.evaluate((el) => ({
+      name: parseFloat(getComputedStyle(el.querySelector('.mobile-course-name')).fontSize),
+      schedule: parseFloat(getComputedStyle(el.querySelector('.mobile-schedule')).fontSize),
     }));
-    expect(cardType.name).toBeGreaterThanOrEqual(16);
-    expect(cardType.schedule).toBeGreaterThanOrEqual(12);
+    expect(listType.name).toBeGreaterThanOrEqual(16);
+    expect(listType.schedule).toBeGreaterThanOrEqual(12);
 
-    await first.click();
+    await first.locator('.mobile-section-open').first().click();
     await expect(page.locator('.detail-panel')).toBeVisible();
     const section = page.locator('.d-sec').first();
     await expect(section).toBeVisible();
@@ -132,7 +151,48 @@ test.describe('SPA (ana sayfa)', () => {
 
     await page.locator('.theme-btn[data-theme="dark"]').click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
-    await expect(first.locator('.bar')).toBeVisible();
+    await expect(first.locator('.bar').first()).toBeVisible();
+  });
+
+  test('mobilde aynı dersin şubeleri tek başlıkta toplanır ve favori korunur', async ({ page }) => {
+    test.skip(page.viewportSize().width > 600, 'Mobil yerleşim testi');
+    await page.goto('/?q=TUR121');
+
+    const group = page.locator('#course-groups .mobile-course-group').filter({ hasText: 'TUR 121' }).first();
+    await expect(group).toBeVisible({ timeout: 15000 });
+    await expect(group.locator('.mobile-course-code')).toContainText('TUR 121');
+    expect(await group.locator('.mobile-course-name').count()).toBe(1);
+
+    const total = await group.locator('.mobile-section').count();
+    expect(total).toBeGreaterThan(1);
+    expect(await group.locator('.mobile-section:visible').count()).toBeLessThanOrEqual(4);
+    const toggle = group.locator('.mobile-sections-toggle');
+    if (total > 4) {
+      await toggle.click();
+      await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+      expect(await group.locator('.mobile-section:visible').count()).toBe(total);
+    }
+
+    const star = group.locator('.fav-star').first();
+    const before = await star.getAttribute('aria-pressed');
+    await star.click();
+    await expect(star).toHaveAttribute('aria-pressed', before === 'true' ? 'false' : 'true');
+  });
+
+  test('gruplanmış ders listesi 320–430 px aralığında yatay taşmaz', async ({ page }) => {
+    test.skip(page.viewportSize().width > 600, 'Mobil yerleşim testi');
+    for (const width of [320, 390, 430]) {
+      await page.setViewportSize({ width, height: 820 });
+      await page.goto('/?q=TUR121');
+      const group = page.locator('#course-groups .mobile-course-group').first();
+      await expect(group).toBeVisible({ timeout: 15000 });
+      const metrics = await page.evaluate(() => ({
+        document: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+        group: document.querySelector('.mobile-course-group').scrollWidth - document.querySelector('.mobile-course-group').clientWidth,
+      }));
+      expect(metrics.document, `${width}px belge taşması`).toBeLessThanOrEqual(1);
+      expect(metrics.group, `${width}px ders grubu taşması`).toBeLessThanOrEqual(1);
+    }
   });
 
   test('sade navigasyon düşük öncelikli sayfaları Daha fazla altında toplar', async ({ page }) => {
@@ -148,28 +208,29 @@ test.describe('SPA (ana sayfa)', () => {
     await page.goto('/?lang=en');
     await expect(page.locator('.tagline-sade')).toHaveText('Search ITU courses, capacity, and past terms.');
     await expect(page.locator('.theme-name')).toHaveText(['Light', 'Dark']);
-    await expect(page.locator('#f-filter-btn')).toHaveText('Filters (0)');
+    await expect(page.locator('#f-filter-btn')).toHaveText('Filters (1)');
     if (page.viewportSize().width <= 600) await page.locator('#f-filter-btn').click();
-    await expect(page.locator('#f-more-toggle')).toHaveText('More filters');
+    await expect(page.locator('#f-more-toggle')).toHaveText('More filters (1)');
     await expect(page.locator('#tabs-more-label')).toHaveText('More');
   });
 
   test('sade kontenjanı tek temsile indirir, fosfor eski çubuğu korur', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('#results tbody tr').first()).toBeVisible({ timeout: 15000 });
     const mobile = page.viewportSize().width <= 640;
+    const scope = mobile ? page.locator('#course-groups') : page.locator('#results');
+    await expect(mobile ? scope.locator('.mobile-course-group').first() : scope.locator('tbody tr').first()).toBeVisible({ timeout: 15000 });
 
     // Sade: Kont./Yazılan/Doluluk üçlüsü tek Kontenjan kolonuna iner.
     await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 8);
-    await expect(page.locator('#results tbody .quota-main-col').filter({ hasText: '/' }).first()).toBeVisible();
-    await expect(page.locator('#results .bar:visible')).toHaveCount(0);
-    await expect(page.locator('#results .fill-measured')).toHaveCount(0);
+    await expect(scope.locator(mobile ? '.mobile-quota' : 'tbody .quota-main-col').filter({ hasText: '/' }).first()).toBeVisible();
+    await expect(scope.locator('.bar:visible')).toHaveCount(0);
+    await expect(scope.locator('.fill-measured')).toHaveCount(0);
 
     // Fosfor dondurulmuş görünümü: iki sayı kolonu ve yüzde + bar geri gelir.
     await page.locator('.theme-btn[data-theme="dark"]').click();
     await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 10);
-    await expect(page.locator('#results .bar:visible').first()).toBeVisible();
-    await expect(page.locator('#results tbody .quota-fosfor').filter({ hasText: '%' }).first()).toBeVisible();
+    await expect(scope.locator('.bar:visible').first()).toBeVisible();
+    await expect(scope.locator('.quota-fosfor').filter({ hasText: '%' }).first()).toBeVisible();
   });
 
   test('"İçeriğe atla" ilk odak durağıdır ve odaklanınca görünür olur', async ({ page }) => {
@@ -220,9 +281,13 @@ test.describe('Ders detay paneli', () => {
     await expect(page.locator('.d-history-records')).not.toHaveAttribute('open', '');
     await expect(page.locator('.d-history-records .htable')).toBeHidden();
 
-    // Kullanıcının gerçek akışı: tablo satırından gelince doğrudan ilgili şubeler açılır.
+    // Kullanıcının gerçek akışı: masaüstü satırı veya mobil şube satırı ilgili
+    // şubeler sekmesini açar ve seçilen CRN'ye odaklanır.
     await page.locator('#detail-close').click();
-    await page.locator('#results tbody tr').first().click();
+    const firstSection = page.viewportSize().width <= 640
+      ? page.locator('#course-groups .mobile-section-open').first()
+      : page.locator('#results tbody tr').first();
+    await firstSection.click();
     await expect(page.locator('[data-dtab="sections"]')).toHaveAttribute('aria-selected', 'true');
     await expect(page.locator('.d-sec.is-focus')).toHaveCount(1);
     expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
@@ -251,6 +316,32 @@ test.describe('Ders detay paneli', () => {
 });
 
 test.describe('Program seçimi (fakülte → bölüm)', () => {
+  test('Dersler program filtresi varsayılan Lisansla başlar ve etiketleri eksiksizdir', async ({ page, isMobile }) => {
+    await page.goto('/#dersler');
+    await expect(page.locator('#f-level')).toHaveValue('LS');
+    await expect.poll(async () => page.locator('#f-program option').count(), { timeout: 20000 }).toBeGreaterThan(20);
+    const lisans = await page.locator('#f-program option').allTextContents();
+    expect(lisans.slice(1).every((x) => / · Lisans$/.test(x))).toBe(true);
+    const cen = lisans.find((x) => x.startsWith('CEN_LS ·'));
+    expect(cen).toBe('CEN_LS · Bilgisayar Mühendisliği (İngilizce) (KKTC) · Lisans');
+
+    if (isMobile) await page.locator('#f-filter-btn').click();
+    await page.locator('#f-more-toggle').click();
+    await page.locator('#f-level').selectOption('OL');
+    await expect.poll(async () => page.locator('#f-program option').allTextContents()).toEqual(expect.arrayContaining([expect.stringMatching(/ · Önlisans$/)]));
+    const onlisans = await page.locator('#f-program option').allTextContents();
+    expect(onlisans.slice(1).every((x) => / · Önlisans$/.test(x))).toBe(true);
+  });
+
+  test('logo ve sekmeler gerçek derin bağlantı taşır', async ({ page }) => {
+    await page.goto('/#program');
+    await expect(page.locator('.brand-home')).toHaveAttribute('href', '/#dersler');
+    await expect(page.locator('#tab-onsart')).toHaveAttribute('href', '/#onsart');
+    await page.locator('.brand-home').click();
+    await expect(page).toHaveURL(/\/#dersler$/);
+    await expect(page.locator('#view-dersler')).toBeVisible();
+  });
+
   test('Ders Planım sade hiyerarşisi ikincil araçları kontrollü açar', async ({ page }) => {
     await page.goto('/?prog=SAO_OL#dersplanim');
     await page.locator('#tab-dersplanim').click();
@@ -295,8 +386,9 @@ test.describe('Program seçimi (fakülte → bölüm)', () => {
     // Daralma gerçek olmalı: 313 programın tamamı listelenmemeli.
     expect(bolumler.length).toBeLessThan(50);
     expect(bolumler.some((b) => /Mimarlık/i.test(b))).toBe(true);
-    // Seçim otomatik ilk bölüme düşer, boş kalmaz.
-    await expect(page.locator('#dp-prog')).not.toHaveValue('');
+    // Program kullanıcının açık seçimi olmadan ilk kayda düşmez.
+    await expect(page.locator('#dp-prog')).toHaveValue('');
+    await expect(page.locator('#dp-empty')).toBeVisible();
   });
 
   test('Seçmeli slot adı ders seçicinin altında ezilmez', async ({ page }) => {
@@ -384,6 +476,58 @@ test.describe('Haftalık program kurucu', () => {
     await expect(page.locator('#p-list .p-item')).toHaveCount(0);
     await expect(page.locator('#p-clear')).toBeDisabled();
     await expect(page.locator('#p-csv')).toBeDisabled();
+  });
+
+  test('ızgara bloğu sağ tık menüsünden kaldırılır ve geri alınır', async ({ page, isMobile }) => {
+    test.skip(isMobile, 'Mobil program gün listesi satır menüsünü kullanır; bağlam menüsü masaüstü ızgarasınındır.');
+    await programiAc(page);
+    await arayipEkle(page);
+    const block = page.locator('.tt-block').first();
+    await expect(block).toBeVisible();
+    await block.click({ button: 'right' });
+    const menu = page.locator('.tt-context-menu');
+    await expect(menu).toBeVisible();
+    await expect(menu).toContainText('Programdan çıkar');
+    await menu.locator('[data-act="remove"]').click();
+    await expect(page.locator('#p-list .p-item')).toHaveCount(0);
+    await page.locator('.toast-action', { hasText: 'geri al' }).click();
+    await expect(page.locator('#p-list .p-item')).toHaveCount(1);
+  });
+
+  test('mobilde eklenen ders tablosu, çıkarma ve geri alma birlikte güncellenir', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await programiAc(page);
+
+    await expect(page.locator('#p-list .empty')).toContainText('Henüz ders eklenmedi');
+    await arayipEkle(page);
+
+    const satir = page.locator('#p-list .p-item').first();
+    await expect(page.locator('.p-panel-head h2')).toContainText('Eklenen dersler');
+    await expect(page.locator('#p-list .p-list-head')).toBeVisible();
+    await expect(satir.locator('.p-code')).toContainText('MAT 271E');
+    await expect(satir.locator('.p-crn')).toContainText(/CRN\s*\d+/);
+    await expect(satir.locator('.p-when')).not.toHaveText('Zaman açıklanmadı');
+    await expect(page.locator('#p-grid .dp-daylist')).toBeVisible();
+
+    const removeBox = await satir.locator('.p-remove').boundingBox();
+    expect(removeBox.width).toBeGreaterThanOrEqual(44);
+    expect(removeBox.height).toBeGreaterThanOrEqual(44);
+    for (const width of [320, 390, 430]) {
+      await page.setViewportSize({ width, height: 844 });
+      const overflow = await page.evaluate(() => ({
+        page: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+        list: document.querySelector('#p-list').scrollWidth - document.querySelector('#p-list').clientWidth,
+      }));
+      expect(overflow.page, `${width}px belge taşması`).toBeLessThanOrEqual(1);
+      expect(overflow.list, `${width}px eklenen dersler taşması`).toBeLessThanOrEqual(1);
+    }
+
+    await satir.locator('.p-remove').click();
+    await expect(page.locator('#p-list .p-item')).toHaveCount(0);
+    await expect(page.locator('#p-list .empty')).toBeVisible();
+    await page.locator('.toast-action', { hasText: 'geri al' }).click();
+    await expect(page.locator('#p-list .p-item')).toHaveCount(1);
+    await expect(page.locator('#p-grid .dp-daylist')).toBeVisible();
   });
 
   test('bölümden seçim, yeni program, adlandırma, kopyalama ve silme çalışır', async ({ page }) => {
@@ -493,6 +637,23 @@ test.describe('Önşart haritası', () => {
     else await expect(page.locator('.pg-semester-list')).toBeVisible();
   });
 
+  test('mobilde dönem listesi ve odak ilişkileri masaüstü canvası yerine okunur', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await haritayiAc(page);
+    const explorer = page.locator('.pg-mobile-explorer');
+    await expect(explorer).toBeVisible();
+    await expect(page.locator('.pg-workspace')).toBeHidden();
+    const first = explorer.locator('[data-focus-code]').first();
+    const sourceName = await first.locator('em').textContent();
+    expect(sourceName?.trim().length).toBeGreaterThan(2);
+    await first.click();
+    await expect(explorer.locator('.pg-mobile-selected')).toBeVisible();
+    await expect(explorer.locator('.pg-mobile-selected h2')).toHaveText(sourceName.trim());
+    await expect(explorer.locator('.pg-mobile-back')).toBeVisible();
+    await page.locator('.pg-list-toggle').click();
+    await expect(page.locator('.pg-canvas-wrap')).toBeVisible();
+  });
+
   test('seçmeli havuz bağlantısı, arama, sıralama, ders detayı ve kapatma çalışır', async ({ page }) => {
     await haritayiAc(page, '&pool=TM%20Elective%20II');
     await expect(page.locator('#pg-root')).toHaveClass(/pg-has-detail/);
@@ -587,6 +748,17 @@ test.describe('SEO sayfaları', () => {
       await expect(page.locator(gorunum)).toBeVisible();
     });
   }
+
+  test('landing sayfası breadcrumb ve güncellenme sinyali taşır', async ({ page }) => {
+    await page.goto('/ders-arsivi/');
+
+    await expect(page.locator('.crumb')).toContainText('İTÜ Ders Arşivi');
+    const graph = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
+    expect(graph.some((item) => item['@type'] === 'BreadcrumbList')).toBe(true);
+    expect(graph.some((item) => item['@type'] === 'WebPage' && item.dateModified === '2026-08-22')).toBe(true);
+    await expect(page.locator('.seo-action-list a[href="/ders-programi/"]')).toBeVisible();
+    await expect(page.locator('.seo-action-list a[href="/kontenjan/"]')).toBeVisible();
+  });
 });
 
 test.describe('Düzen bütünlüğü', () => {

@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi — ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=7e12ca046d39">
+<link rel="stylesheet" href="assets/style.css?v=5200cebd4769">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -125,15 +125,15 @@
 <header class="masthead">
  <div class="wrap">
   <div class="mast-top">
-   <a class="brand brand-home" href="/#dersler" aria-label="Dersler ana sayfasına git">
+   <a class="brand brand-home" href="/#dersler" aria-label="Dersler ana sayfasına git" data-i18n-aria-label="homeLabel">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
     <img class="brand-logo" src="itü_ari.png" alt="İTÜ Ders Arşivi" width="32" height="31">
     <h1>DERS&nbsp;ARŞİVİ</h1>
    </a>
    <div class="mast-controls">
-    <div class="theme-pick" role="group" aria-label="Görünüm teması">
-     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)"><span aria-hidden="true">◎</span><span class="theme-name" data-i18n="themeLight">Açık</span></button>
-     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)"><span aria-hidden="true">◐</span><span class="theme-name" data-i18n="themeDark">Koyu</span></button>
+    <div class="theme-pick" role="group" aria-label="Görünüm teması" data-i18n-aria-label="themeGroup">
+     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)" data-i18n-aria-label="themeLightLabel" data-i18n-title="themeLightLabel"><span aria-hidden="true">◎</span><span class="theme-name" data-i18n="themeLight">Açık</span></button>
+     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)" data-i18n-aria-label="themeDarkLabel" data-i18n-title="themeDarkLabel"><span aria-hidden="true">◐</span><span class="theme-name" data-i18n="themeDark">Koyu</span></button>
     </div>
     <button type="button" id="lang-btn" class="btn-ghost" title="Dil / Language">TR/EN</button>
    </div>
@@ -153,7 +153,7 @@
 </header>
 
 <h2 class="sr-only">Bölümler</h2>
-<nav class="tabs wrap" role="tablist" aria-label="Bölümler">
+<nav class="tabs wrap" role="tablist" aria-label="Bölümler" data-i18n-aria-label="sectionsLabel">
  <a role="tab" aria-selected="true" aria-current="page" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" href="/#dersler"><span class="tab-number" aria-hidden="true">01</span><span data-i18n="tabDersler">DERSLER</span></a>
  <a role="tab" aria-selected="false" id="tab-gecmis" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" href="/#gecmis"><span class="tab-number" aria-hidden="true">02</span><span data-i18n="tabGecmis">GEÇMİŞ</span></a>
  <a role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" href="/#dersplanim"><span class="tab-number" aria-hidden="true">03</span><span data-i18n="tabDersplanim">DERS PLANIM/GPA</span></a>
@@ -192,51 +192,52 @@
    <label class="query">
     <span class="sigil">&gt;</span>
     <input id="q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="ders kodu, ad, CRN veya öğretim üyesi ara…" aria-label="Ders ara">
+           placeholder="ders kodu, ad, CRN veya öğretim üyesi ara…" aria-label="Ders ara"
+           data-i18n-placeholder="courseSearchPlaceholder" data-i18n-aria-label="courseSearchLabel">
    </label>
    <div class="filters" id="filters">
     <div class="filters-sheet-head">
-     <span class="eyebrow">Filtreler</span>
+     <span class="eyebrow" data-i18n="filterButton">Filtreler</span>
      <div class="fs-actions">
       <button type="button" id="fs-clear" class="btn-ghost" data-i18n="filterClear">temizle</button>
       <button type="button" id="fs-apply" class="btn-primary" data-i18n="filterApply">uygula</button>
      </div>
     </div>
-    <label>dönem <select id="f-term"></select></label>
-    <label>bölüm <select id="f-branch"><option value="">hepsi</option></select></label>
-    <label>gün <select id="f-day">
-      <option value="">hepsi</option>
-      <option>Pazartesi</option><option>Salı</option><option>Çarşamba</option>
-      <option>Perşembe</option><option>Cuma</option><option>Cumartesi</option><option>Pazar</option>
+    <label><span data-i18n="filterTerm">dönem</span> <select id="f-term"></select></label>
+    <label><span data-i18n="filterBranch">bölüm</span> <select id="f-branch"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+    <label><span data-i18n="filterDay">gün</span> <select id="f-day">
+      <option value="" data-i18n="filterAll">hepsi</option>
+      <option value="Pazartesi" data-i18n="dayMonday">Pazartesi</option><option value="Salı" data-i18n="dayTuesday">Salı</option><option value="Çarşamba" data-i18n="dayWednesday">Çarşamba</option>
+      <option value="Perşembe" data-i18n="dayThursday">Perşembe</option><option value="Cuma" data-i18n="dayFriday">Cuma</option><option value="Cumartesi" data-i18n="daySaturday">Cumartesi</option><option value="Pazar" data-i18n="daySunday">Pazar</option>
     </select></label>
-    <label>saat <select id="f-time">
-      <option value="">hepsi</option>
-      <option value="sabah">sabah (&lt;12:00)</option>
-      <option value="ogle">öğle (12:00-17:00)</option>
-      <option value="aksam">akşam (≥17:00)</option>
+    <label><span data-i18n="filterTime">saat</span> <select id="f-time">
+      <option value="" data-i18n="filterAll">hepsi</option>
+      <option value="sabah" data-i18n="timeMorning">sabah (&lt;12:00)</option>
+      <option value="ogle" data-i18n="timeNoon">öğle (12:00-17:00)</option>
+      <option value="aksam" data-i18n="timeEvening">akşam (≥17:00)</option>
     </select></label>
-    <label class="check"><input type="checkbox" id="f-open"> yalnızca kontenjanı olanlar</label>
+    <label class="check"><input type="checkbox" id="f-open"> <span data-i18n="filterOpen">yalnızca kontenjanı olanlar</span></label>
     <button type="button" id="f-more-toggle" class="btn-ghost" aria-expanded="false" aria-controls="filters-more" data-i18n="filterMore">Diğer filtreler</button>
     <div class="filters-more" id="filters-more" hidden>
-     <label>seviye <select id="f-level">
+     <label><span data-i18n="filterLevel">seviye</span> <select id="f-level">
       <option value="OL" data-i18n="levelAssociate">Önlisans</option>
       <option value="LS" selected data-i18n="levelBachelor">Lisans</option>
       <option value="LU" data-i18n="levelMaster">Yüksek Lisans</option>
       <option value="LUI" data-i18n="levelDoctorate">Doktora</option>
      </select></label>
-     <label>yöntem <select id="f-method"><option value="">hepsi</option></select></label>
-     <label>alabilen program <select id="f-program"><option value="">hepsi</option></select></label>
-     <label>ders kodu <input id="f-code" type="text" class="f-in" placeholder="BLG 101" spellcheck="false" aria-label="Ders koduna göre filtrele"></label>
+     <label><span data-i18n="filterMethod">yöntem</span> <select id="f-method"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+     <label><span data-i18n="filterProgram">alabilen program</span> <select id="f-program"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+     <label><span data-i18n="filterCode">ders kodu</span> <input id="f-code" type="text" class="f-in" placeholder="BLG 101" spellcheck="false" aria-label="Ders koduna göre filtrele"></label>
     </div>
    </div>
    <button type="button" id="f-filter-btn" class="btn-ghost" aria-expanded="false" aria-controls="filters" data-i18n="filterButton">Filtreler</button>
   </div>
-  <div id="filters-scrim" class="filters-scrim" hidden></div>
+  <div id="filters-scrim" class="filters-scrim" hidden aria-hidden="true"></div>
 
   <div class="resultbar">
    <p class="resultline" id="resultline" aria-live="polite"></p>
    <div class="result-actions">
-    <label class="mobile-sort">sırala <select id="mobile-sort" aria-label="Sırala">
+    <label class="mobile-sort"><span data-i18n="sortLabel">sırala</span> <select id="mobile-sort" aria-label="Sırala" data-i18n-aria-label="sortLabel">
       <option value="crn">CRN</option>
       <option value="code">Kod</option>
       <option value="name">Ad</option>
@@ -245,8 +246,8 @@
       <option value="enr">Yazılan öğrenci</option>
       <option value="fill">Kontenjan doluluğu</option>
     </select></label>
-    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle"><span class="label-desktop">zaman çizelgesi</span><span class="label-mobile">Program</span></button>
-    <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir">CSV</button>
+    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle" data-i18n-title="scheduleTitle"><span class="label-desktop">zaman çizelgesi</span><span class="label-mobile">Program</span></button>
+    <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir" data-i18n-title="csvTitle">CSV</button>
    </div>
   </div>
 
@@ -254,10 +255,10 @@
 
   <div class="sepet" id="sepet" hidden>
    <span id="sel-count"></span>
-   <button type="button" id="sel-csv" class="btn-ghost">seçilenleri CSV</button>
-   <button type="button" id="sel-send" class="btn-ghost">programa gönder</button>
-   <button type="button" id="sel-clear" class="btn-ghost">temizle</button>
-   <label class="check"><input type="checkbox" id="sel-only"> yalnızca seçilenleri çizelgede göster</label>
+   <button type="button" id="sel-csv" class="btn-ghost" data-i18n="selCSV">seçilenleri CSV</button>
+   <button type="button" id="sel-send" class="btn-ghost" data-i18n="selSend">programa gönder</button>
+   <button type="button" id="sel-clear" class="btn-ghost" data-i18n="selClear">temizle</button>
+   <label class="check"><input type="checkbox" id="sel-only"> <span data-i18n="selOnly">yalnızca seçilenleri çizelgede göster</span></label>
   </div>
 
   <div class="tablewrap">
@@ -633,7 +634,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
-<script type="module" src="assets/app.js?v=7e12ca046d39"></script>
+<script type="module" src="assets/app.js?v=5200cebd4769"></script>
 <script>
 (function () {
   var root = document.documentElement;

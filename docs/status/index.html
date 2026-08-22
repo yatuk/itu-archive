@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>İTÜ Ders Arşivi durumu</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #1e2b23; background: #f4f6f4; }
+    body { margin: 0; padding: max(24px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); }
+    main { width: min(680px, 100%); margin: 8vh auto 0; }
+    h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); margin: 0 0 12px; }
+    p { line-height: 1.6; max-width: 68ch; }
+    dl { display: grid; grid-template-columns: minmax(9rem, auto) 1fr; gap: 0; margin: 28px 0; border-block: 1px solid #cdd7cf; }
+    dt, dd { margin: 0; padding: 12px 0; border-bottom: 1px solid #cdd7cf; }
+    dt { color: #45564c; }
+    dd { font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+    a { color: #1f6f8b; text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid #1f6f8b; outline-offset: 3px; border-radius: 3px; }
+    .state { font-weight: 700; }
+    @media (max-width: 520px) { dl { grid-template-columns: 1fr; } dt { padding-bottom: 2px; border-bottom: 0; } dd { padding-top: 2px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>İTÜ Ders Arşivi durumu</h1>
+    <p>Bu sayfa son başarılı veri taramasını doğrudan açık durum dosyasından kontrol eder. Arayüz açılmıyorsa verinin ne zaman ve hangi kapsamda üretildiğini buradan görebilirsiniz.</p>
+    <p id="status-state" class="state" role="status" aria-live="polite">kontrol ediliyor…</p>
+    <dl>
+      <dt>son başarılı tarama</dt><dd id="last-run">—</dd>
+      <dt>aktif dönem</dt><dd id="term">—</dd>
+      <dt>şube sayısı</dt><dd id="sections">—</dd>
+      <dt>tarama kapsamı</dt><dd id="coverage">—</dd>
+    </dl>
+    <p><a href="/">Ders Arşivi’ne dön</a> · <a href="https://github.com/yatuk/itu-archive/issues">sorun bildir</a></p>
+  </main>
+  <script>
+    const byId = (id) => document.getElementById(id);
+    fetch('/data/status.json', { cache: 'no-store' })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((status) => {
+        const date = new Date(status.lastRunAt);
+        if (!status.lastRunAt || Number.isNaN(date.getTime())) throw new Error('geçersiz tarama zamanı');
+        const ageHours = (Date.now() - date.getTime()) / 3_600_000;
+        byId('status-state').textContent = ageHours < 48 ? 'veri yayını çalışıyor' : 'son tarama gecikmiş görünüyor';
+        byId('last-run').textContent = new Intl.DateTimeFormat('tr-TR', { dateStyle: 'long', timeStyle: 'short', timeZone: 'Europe/Istanbul' }).format(date);
+        byId('term').textContent = status.term || status.currentTerm || 'açıklanmadı';
+        byId('sections').textContent = Number(status.sections || 0).toLocaleString('tr-TR');
+        const failed = Array.isArray(status.failedBranches) ? status.failedBranches.length : 0;
+        byId('coverage').textContent = status.partial ? `kısmi · ${failed} bölüm alınamadı` : 'tam';
+      })
+      .catch(() => {
+        byId('status-state').textContent = 'durum dosyası şu anda okunamıyor';
+      });
+  </script>
+</body>
+</html>

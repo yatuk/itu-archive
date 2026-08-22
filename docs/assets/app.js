@@ -3,20 +3,20 @@
    her sekmenin mantığı views/ altındaki kendi modülünde. Tüm veri docs/data
    altındaki statik JSON'lardan geliyor; sunucu tarafı yok. */
 
-import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js?v=7e12ca046d39';
-import { state, markIndexReady } from './core/store.js?v=7e12ca046d39';
-import { I18N } from './i18n.js?v=7e12ca046d39';
-import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=7e12ca046d39';
-import { initCourses, loadTerm, applyFilters, syncProgramFilter, restoreCourseSort } from './views/courses.js?v=7e12ca046d39';
-import { initCourseDetail, openCourseDetail } from './core/course-detail.js?v=7e12ca046d39';
-import { initHistory, onShow as historyShow, searchHistory } from './views/history.js?v=7e12ca046d39';
-import { initExams, onShow as examsShow } from './views/exams.js?v=7e12ca046d39';
-import { initCalendar, onShow as calendarShow } from './views/calendar.js?v=7e12ca046d39';
-import { renderTerms } from './views/terms.js?v=7e12ca046d39';
-import { onShow as programShow } from './views/program.js?v=7e12ca046d39';
-import { onShow as dersplanimShow } from './views/dersplanim.js?v=7e12ca046d39';
-import { PrereqGraph } from './prereq.js?v=7e12ca046d39';
-import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=7e12ca046d39';
+import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js?v=5200cebd4769';
+import { state, markIndexReady } from './core/store.js?v=5200cebd4769';
+import { I18N } from './i18n.js?v=5200cebd4769';
+import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=5200cebd4769';
+import { initCourses, loadTerm, applyFilters, syncProgramFilter, restoreCourseSort } from './views/courses.js?v=5200cebd4769';
+import { initCourseDetail, openCourseDetail } from './core/course-detail.js?v=5200cebd4769';
+import { initHistory, onShow as historyShow, searchHistory } from './views/history.js?v=5200cebd4769';
+import { initExams, onShow as examsShow } from './views/exams.js?v=5200cebd4769';
+import { initCalendar, onShow as calendarShow } from './views/calendar.js?v=5200cebd4769';
+import { renderTerms } from './views/terms.js?v=5200cebd4769';
+import { onShow as programShow } from './views/program.js?v=5200cebd4769';
+import { onShow as dersplanimShow } from './views/dersplanim.js?v=5200cebd4769';
+import { PrereqGraph } from './prereq.js?v=5200cebd4769';
+import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=5200cebd4769';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -396,7 +396,7 @@ function enhanceSearchInputs() {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'search-clear';
-    btn.setAttribute('aria-label', 'Aramayı temizle');
+    btn.setAttribute('aria-label', I18N.t('searchClear'));
     btn.textContent = '×';
     wrap.appendChild(btn);
     const sync = () => { btn.hidden = input.value.length === 0; };

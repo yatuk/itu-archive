@@ -1,8 +1,11 @@
 package site
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
+	"unicode/utf8"
 )
 
 func TestInstructorSlugAndIndexability(t *testing.T) {
@@ -149,7 +152,7 @@ func TestLandingPagesRouteSearchIntentToWorkingViews(t *testing.T) {
 }
 
 func TestLandingPagesHaveAccurateStableSitemapDate(t *testing.T) {
-	if landingContentUpdated != "2026-08-22" {
+	if landingContentUpdated != "2026-08-23" {
 		t.Fatalf("landing içerik tarihi beklenmedik: %q", landingContentUpdated)
 	}
 	entries := make([]sitemapEntry, 0, len(landingPages))
@@ -162,6 +165,207 @@ func TestLandingPagesHaveAccurateStableSitemapDate(t *testing.T) {
 	xml := string(renderURLSet(entries))
 	if got := strings.Count(xml, "<lastmod>"+landingContentUpdated+"</lastmod>"); got != len(landingPages) {
 		t.Fatalf("landing lastmod sayısı = %d, beklenen %d", got, len(landingPages))
+	}
+}
+
+func TestPrioritySearchIntentsHaveOneCanonicalOwner(t *testing.T) {
+	want := map[string]string{
+		"İTÜ ders":                  "ders-programi",
+		"İTÜ ders arşivi":           "ders-arsivi",
+		"İTÜ geçmiş dersler":        "ders-arsivi",
+		"İTÜ ortalama hesapla":      "gano-hesaplama",
+		"İTÜ GPA hesapla":           "gano-hesaplama",
+		"İTÜ GANO hesapla":          "gano-hesaplama",
+		"İTÜ ders programı oluştur": "ders-programi-olustur",
+	}
+	owners := map[string][]string{}
+	for _, page := range landingPages {
+		for _, query := range page.queries {
+			key := strings.ToLower(query)
+			owners[key] = append(owners[key], page.slug)
+		}
+	}
+	for query, slug := range want {
+		got := owners[strings.ToLower(query)]
+		if len(got) != 1 || got[0] != slug {
+			t.Errorf("%q canonical sahibi = %#v, beklenen %q", query, got, slug)
+		}
+	}
+}
+
+func TestPriorityLandingMetadataAndCapabilitiesMeetQualityGate(t *testing.T) {
+	priority := map[string]bool{
+		"ders-plani": true, "gano-hesaplama": true, "ders-programi": true,
+		"ders-programi-olustur": true, "ders-arsivi": true,
+	}
+	for _, page := range landingPages {
+		if !priority[page.slug] {
+			continue
+		}
+		fullTitle := page.title + " | " + langTR.SiteTitle
+		if n := utf8.RuneCountInString(fullTitle); n < 30 || n > 60 {
+			t.Errorf("%s title uzunluğu %d; 30-60 olmalı: %q", page.slug, n, fullTitle)
+		}
+		if n := utf8.RuneCountInString(page.description); n < 120 || n > 160 {
+			t.Errorf("%s description uzunluğu %d; 120-160 olmalı", page.slug, n)
+		}
+		if len(page.features) < 3 {
+			t.Errorf("%s veri destekli yetenek listesi eksik", page.slug)
+		}
+	}
+}
+
+func TestLandingTitlesAndDescriptionsAreUnique(t *testing.T) {
+	titles := map[string]string{}
+	descriptions := map[string]string{}
+	for _, page := range landingPages {
+		if other := titles[page.title]; other != "" {
+			t.Errorf("%s ve %s aynı title'ı kullanıyor", other, page.slug)
+		}
+		titles[page.title] = page.slug
+		if other := descriptions[page.description]; other != "" {
+			t.Errorf("%s ve %s aynı description'ı kullanıyor", other, page.slug)
+		}
+		descriptions[page.description] = page.slug
+	}
+}
+
+func TestDiscoveryFilesExposeCanonicalResources(t *testing.T) {
+	root := t.TempDir()
+	if err := writeDiscoveryFiles(root); err != nil {
+		t.Fatal(err)
+	}
+	robots, err := os.ReadFile(filepath.Join(root, "robots.txt"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(robots), "Sitemap: "+baseURL+"/sitemap.xml") {
+		t.Fatal("robots.txt canonical sitemap indexini bildirmiyor")
+	}
+	llms, err := os.ReadFile(filepath.Join(root, "llms.txt"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	text := string(llms)
+	for _, path := range []string{"/ders-programi/", "/ders-programi-olustur/", "/gano-hesaplama/", "/ders-arsivi/", "/sitemap.xml"} {
+		if !strings.Contains(text, baseURL+path) {
+			t.Errorf("llms.txt canonical kaynak eksik: %s", path)
+		}
+	}
+	for _, forbidden := range []string{"FAQPage", "HowTo"} {
+		if strings.Contains(text, forbidden) {
+			t.Errorf("llms.txt kullanılmayan schema terimi içeriyor: %s", forbidden)
+		}
+	}
+}
+
+func TestPriorityLandingRendersCanonicalWebApplicationSchema(t *testing.T) {
+	root := t.TempDir()
+	b := &Builder{root: root, outRoot: root, l: langTR, version: "test"}
+	var target landingPage
+	for _, page := range landingPages {
+		if page.slug == "gano-hesaplama" {
+			target = page
+			break
+		}
+	}
+	if err := b.writeLandingPage(target); err != nil {
+		t.Fatal(err)
+	}
+	body, err := os.ReadFile(filepath.Join(root, target.slug, "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	html := string(body)
+	for _, want := range []string{
+		`<link rel="canonical" href="` + baseURL + `/gano-hesaplama/">`,
+		`"@type":"WebApplication"`,
+		`"applicationCategory":"EducationalApplication"`,
+		`"isAccessibleForFree":true`,
+		`"@type":"BreadcrumbList"`,
+		`href="/#dersplanim"`,
+	} {
+		if !strings.Contains(html, want) {
+			t.Errorf("landing çıktısı eksik: %s", want)
+		}
+	}
+	if strings.Contains(html, `hreflang=`) {
+		t.Fatal("Türkçe-only landing, var olmayan EN karşılığına hreflang vermemeli")
+	}
+	for _, forbidden := range []string{`"@type":"FAQPage"`, `"@type":"HowTo"`} {
+		if strings.Contains(html, forbidden) {
+			t.Errorf("kısıtlı/deprecated schema eklenmiş: %s", forbidden)
+		}
+	}
+}
+
+func TestCourseSelectionHubLinksToEveryPriorityIntentPage(t *testing.T) {
+	want := map[string]bool{
+		"/ders-arsivi/": false, "/ders-plani/": false, "/gano-hesaplama/": false,
+		"/#dersler": false, "/#program": false, "/#onsart": false,
+	}
+	for _, page := range landingPages {
+		if page.slug != "ders-secimi" {
+			continue
+		}
+		if _, ok := want[page.primary.href]; ok {
+			want[page.primary.href] = true
+		}
+		for _, action := range page.secondary {
+			if _, ok := want[action.href]; ok {
+				want[action.href] = true
+			}
+		}
+	}
+	for href, linked := range want {
+		if !linked {
+			t.Errorf("ders seçimi hub'ı hedefe bağlanmıyor: %s", href)
+		}
+	}
+}
+
+func TestLandingSitemapCandidatesAreUniqueCanonicalURLs(t *testing.T) {
+	seen := map[string]bool{baseURL + "/": true}
+	for _, page := range landingPages {
+		loc := baseURL + "/" + page.slug + "/"
+		if seen[loc] {
+			t.Errorf("pages.xml adayı yineleniyor: %s", loc)
+		}
+		seen[loc] = true
+		if strings.Contains(loc, "#") || strings.Contains(loc, "?") {
+			t.Errorf("sitemap adayı canonical değil: %s", loc)
+		}
+	}
+}
+
+func TestSitemapIndexCoversEveryGeneratedPartitionOnce(t *testing.T) {
+	root := t.TempDir()
+	dir := filepath.Join(root, "sitemaps")
+	if err := os.MkdirAll(dir, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	parts := []string{"pages.xml", "terms.xml", "branches.xml", "courses.xml", "instructors.xml", "en.xml"}
+	for _, name := range parts {
+		if err := os.WriteFile(filepath.Join(dir, name), []byte("<urlset/>"), 0o644); err != nil {
+			t.Fatal(err)
+		}
+	}
+	if err := writeRootSitemapIndex(root, "2026-08-23"); err != nil {
+		t.Fatal(err)
+	}
+	body, err := os.ReadFile(filepath.Join(root, "sitemap.xml"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	xml := string(body)
+	for _, name := range parts {
+		url := baseURL + "/sitemaps/" + name
+		if got := strings.Count(xml, "<loc>"+url+"</loc>"); got != 1 {
+			t.Errorf("sitemap partition %s sayısı = %d", name, got)
+		}
+	}
+	if got := strings.Count(xml, "<sitemap>"); got != len(parts) {
+		t.Errorf("sitemap partition toplamı = %d, beklenen %d", got, len(parts))
 	}
 }
 

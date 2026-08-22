@@ -90,6 +90,11 @@ func atomicWrite(path string, write func(*os.File) error) (err error) {
 // Source, üretilen tüm veride kullanılan kaynak etiketi.
 const Source = "itu-archive"
 
+const (
+	OBSProgramEndpoint = "https://obs.itu.edu.tr/public/DersProgram"
+	ArchiveEndpoint    = "https://itutakvimci.com/ders-arsivi/data"
+)
+
 // WriteTerm, bir dönemin tüm dosyalarını yazar ve meta'sını döndürür.
 // live, dönemin aktif (canlı) taranmış dönem olup olmadığını işaretler.
 func (s *Store) WriteTerm(label, slug, scrapedAt string, live bool, sections []model.Section) (*model.TermMeta, error) {
@@ -128,6 +133,12 @@ func (s *Store) WriteTerm(label, slug, scrapedAt string, live bool, sections []m
 	sort.Slice(branches, func(i, j int) bool { return branches[i].Code < branches[j].Code })
 
 	meta := &model.TermMeta{
+		SchemaVersion: model.DataSchemaVersion,
+		Provenance: model.Provenance{
+			Provider:         map[bool]string{true: "İstanbul Teknik Üniversitesi OBS", false: "İTÜ Takvimci ders arşivi"}[live],
+			Endpoint:         map[bool]string{true: OBSProgramEndpoint, false: ArchiveEndpoint}[live],
+			LastSuccessfulAt: scrapedAt,
+		},
 		Term:      label,
 		Slug:      slug,
 		ScrapedAt: scrapedAt,
@@ -146,6 +157,81 @@ func (s *Store) WriteTerm(label, slug, scrapedAt string, live bool, sections []m
 	}
 	if err := s.writeCSV(slug, sections); err != nil {
 		return nil, err
+	}
+	return meta, nil
+}
+
+// ReplaceTerm, yeni dönem snapshot'ını önce ayrı bir geçici kökte bütünüyle
+// üretir, ardından tek klasör değişimiyle yayına alır. Üretim veya taşıma
+// başarısız olursa önceki sağlam klasör geri yüklenir. Böylece Clean+WriteTerm
+// arasındaki kesinti branş dosyalarını yarım bırakamaz.
+func (s *Store) ReplaceTerm(label, slug, scrapedAt string, live bool, sections []model.Section) (*model.TermMeta, error) {
+	return s.ReplaceTermQuality(label, slug, scrapedAt, live, sections, false, nil)
+}
+
+// ReplaceTermQuality, kısmi tarama bilgisini de staging snapshot'ına yazar;
+// veri ile kalite metadatası aynı atomik değişimde görünür olur.
+func (s *Store) ReplaceTermQuality(label, slug, scrapedAt string, live bool, sections []model.Section, partial bool, failed []string) (*model.TermMeta, error) {
+	stagingRoot, err := os.MkdirTemp(s.root, ".term-staging-*")
+	if err != nil {
+		return nil, fmt.Errorf("dönem staging dizini oluşturulamadı: %w", err)
+	}
+	defer os.RemoveAll(stagingRoot)
+
+	staging := New(stagingRoot)
+	meta, err := staging.WriteTerm(label, slug, scrapedAt, live, sections)
+	if err != nil {
+		return nil, fmt.Errorf("dönem staging snapshot'ı üretilemedi: %w", err)
+	}
+	meta.Partial = partial
+	meta.FailedBranches = append([]string(nil), failed...)
+	if err := staging.WriteJSON(meta, "data", "terms", slug, "meta.json"); err != nil {
+		return nil, fmt.Errorf("dönem kalite metadatası staging'e yazılamadı: %w", err)
+	}
+
+	prepared := staging.path("data", "terms", slug)
+	target := s.path("data", "terms", slug)
+	if err := os.MkdirAll(filepath.Dir(target), 0o755); err != nil {
+		return nil, err
+	}
+	backup := target + ".previous"
+	// Önceki koşu target->backup sonrasında kesildiyse son sağlam snapshot'ı
+	// silmek yerine geri yükle. Target varsa backup yalnızca tamamlanmış değişimin
+	// artık yedeğidir ve güvenle temizlenebilir.
+	if _, backupErr := os.Stat(backup); backupErr == nil {
+		if _, targetErr := os.Stat(target); os.IsNotExist(targetErr) {
+			if err := os.Rename(backup, target); err != nil {
+				return nil, fmt.Errorf("kesintiden kalan dönem snapshot'ı geri yüklenemedi: %w", err)
+			}
+		} else if targetErr == nil {
+			if err := os.RemoveAll(backup); err != nil {
+				return nil, fmt.Errorf("eski dönem yedeği temizlenemedi: %w", err)
+			}
+		} else {
+			return nil, targetErr
+		}
+	} else if !os.IsNotExist(backupErr) {
+		return nil, backupErr
+	}
+	hadTarget := false
+	if _, err := os.Stat(target); err == nil {
+		hadTarget = true
+		if err := os.Rename(target, backup); err != nil {
+			return nil, fmt.Errorf("önceki dönem snapshot'ı korunamadı: %w", err)
+		}
+	} else if !os.IsNotExist(err) {
+		return nil, err
+	}
+	if err := os.Rename(prepared, target); err != nil {
+		if hadTarget {
+			if restoreErr := os.Rename(backup, target); restoreErr != nil {
+				return nil, fmt.Errorf("yeni dönem snapshot'ı alınamadı (%v) ve önceki snapshot geri yüklenemedi: %w", err, restoreErr)
+			}
+		}
+		return nil, fmt.Errorf("yeni dönem snapshot'ı yayına alınamadı: %w", err)
+	}
+	if hadTarget {
+		_ = os.RemoveAll(backup)
 	}
 	return meta, nil
 }

@@ -3,7 +3,7 @@
 // kullanıcının kendi beyanı; arayüz "kesin sağlıyorsun" değil "girdiğin derslere
 // göre sağlanıyor görünüyor" der.
 
-import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=5200cebd4769';
 
 const KEY = 'itu-taken';
 

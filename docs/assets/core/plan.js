@@ -9,7 +9,7 @@
 // Görünüm (views/dersplanim.js) buradaki saf fonksiyonları çağırır; kopyalanmış
 // üçüncü bir "şube eşleştirme" mantığı yazılmaz.
 
-import { trNum } from './utils.js?v=7e12ca046d39';
+import { trNum } from './utils.js?v=5200cebd4769';
 
 // search.json satırı: [crn, kod, ad, branş, hoca, zaman, kont, yazılan, seviye, yöntem, programlar]
 // Şube bilgisini okunur nesneye toplar (Faz E: courses.js satır bileşenine giriş).

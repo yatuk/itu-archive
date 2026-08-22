@@ -161,14 +161,35 @@ func writeStatus(st *store.Store, out, mode string, started time.Time) error {
 	// Önceki koşunun sections'ı (commit'li status.json) — validate %20 düşüş
 	// kuralı bu değeri kullanır.
 	prevSections := 0
+	sources := map[string]model.Provenance{}
 	if b, err := os.ReadFile(filepath.Join(out, "data", "status.json")); err == nil {
 		var prev struct {
-			Sections int `json:"sections"`
+			Sections int                         `json:"sections"`
+			Sources  map[string]model.Provenance `json:"sources"`
 		}
 		_ = json.Unmarshal(b, &prev)
 		prevSections = prev.Sections
+		for name, source := range prev.Sources {
+			sources[name] = source
+		}
+	}
+	// Kaynak bazlı başarı zamanı dosyanın kendi provenance'ından gelir. Bir
+	// kaynak bu koşuda atlandıysa önceki başarılı zaman korunur; "şimdi başarılı"
+	// diye yanlış tazelenmez.
+	currentSlug, currentCalendar := currentDataRefs(out)
+	provenanceFiles := map[string]string{
+		"courses":       filepath.Join(out, "data", "terms", currentSlug, "meta.json"),
+		"exams":         filepath.Join(out, "data", "exams", currentSlug+".json"),
+		"calendar":      filepath.Join(out, "data", "calendar", currentCalendar+".json"),
+		"prerequisites": filepath.Join(out, "data", "prereq", "graph.json"),
+	}
+	for name, path := range provenanceFiles {
+		if p, ok := readProvenance(path); ok {
+			sources[name] = p
+		}
 	}
 	status := map[string]any{
+		"schemaVersion":  model.DataSchemaVersion,
 		"lastRunAt":      now.Format(time.RFC3339),
 		"lastSuccessAt":  now.Format(time.RFC3339),
 		"mode":           mode,
@@ -177,8 +198,41 @@ func writeStatus(st *store.Store, out, mode string, started time.Time) error {
 		"durationSec":    int(time.Since(started).Seconds()),
 		"sections":       sections,
 		"prevSections":   prevSections,
+		"sources":        sources,
 	}
 	return st.WriteJSON(status, "data", "status.json")
+}
+
+func currentDataRefs(root string) (slug, calendarYearID string) {
+	b, err := os.ReadFile(filepath.Join(root, "data", "index.json"))
+	if err != nil {
+		return "", ""
+	}
+	var idx struct {
+		CurrentSlug string `json:"currentSlug"`
+		Calendars   []struct {
+			YearID string `json:"yearId"`
+		} `json:"calendars"`
+	}
+	_ = json.Unmarshal(b, &idx)
+	if len(idx.Calendars) > 0 {
+		calendarYearID = idx.Calendars[0].YearID
+	}
+	return idx.CurrentSlug, calendarYearID
+}
+
+func readProvenance(path string) (model.Provenance, bool) {
+	b, err := os.ReadFile(path)
+	if err != nil {
+		return model.Provenance{}, false
+	}
+	var envelope struct {
+		Provenance model.Provenance `json:"provenance"`
+	}
+	if json.Unmarshal(b, &envelope) != nil || envelope.Provenance.LastSuccessfulAt == "" {
+		return model.Provenance{}, false
+	}
+	return envelope.Provenance, true
 }
 
 // partialGate, kısmi başarı eşiğini uygular (Faz 2): başarısız oran %5'in
@@ -201,6 +255,36 @@ func partialGate(total int, failed []string) error {
 			len(failed), total, rate*100, strings.Join(sample, "; "))
 	}
 	logf("UYARI: %d/%d branş hatalı (%0.1f%%) — kısmi tarama yazılıyor", len(failed), total, rate*100)
+	return nil
+}
+
+const snapshotShrinkMin = 0.80
+
+// snapshotShrinkGate, aynı dönem için daha önce yayımlanmış sağlam snapshot'a
+// göre beklenmedik küçülmeyi yazımdan önce durdurur. Dönem geçişinde yeni slug
+// kullanıldığı için gerçek yeni dönemler bu karşılaştırmaya girmez.
+func snapshotShrinkGate(st *store.Store, slug string, sections int) error {
+	if sections <= 0 {
+		return fmt.Errorf("%s: boş ders snapshot'ı yayınlanamaz", slug)
+	}
+	b, err := os.ReadFile(st.Path("data", "terms", slug, "meta.json"))
+	if os.IsNotExist(err) {
+		return nil
+	}
+	if err != nil {
+		return fmt.Errorf("%s önceki snapshot metası okunamadı: %w", slug, err)
+	}
+	var previous model.TermMeta
+	if err := json.Unmarshal(b, &previous); err != nil {
+		return fmt.Errorf("%s önceki snapshot metası bozuk; üzerine yazılmadı: %w", slug, err)
+	}
+	if previous.Sections <= 0 {
+		return fmt.Errorf("%s önceki snapshot şube sayısı geçersiz; üzerine yazılmadı", slug)
+	}
+	if float64(sections) < float64(previous.Sections)*snapshotShrinkMin {
+		return fmt.Errorf("%s şube sayısı %d → %d (%%%.0f düşüş); önceki sağlam snapshot korundu",
+			slug, previous.Sections, sections, 100*(1-float64(sections)/float64(previous.Sections)))
+	}
 	return nil
 }
 
@@ -251,20 +335,13 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	if err := partialGate(len(branches), failed); err != nil {
 		return "", "", err
 	}
-	if err := st.Clean(slug); err != nil {
+	if err := snapshotShrinkGate(st, slug, len(sections)); err != nil {
 		return "", "", err
 	}
-	meta, err := st.WriteTerm(label, slug, time.Now().UTC().Format(time.RFC3339), true, sections)
+	stamp := time.Now().UTC().Format(time.RFC3339)
+	meta, err := st.ReplaceTermQuality(label, slug, stamp, true, sections, len(failed) > 0, failed)
 	if err != nil {
 		return "", "", err
-	}
-	// Faz 2: eşik altı kısmi başarı dosyada açıkça işaretlenir.
-	if len(failed) > 0 {
-		meta.Partial = true
-		meta.FailedBranches = failed
-		if err := st.WriteJSON(meta, "data", "terms", slug, "meta.json"); err != nil {
-			return "", "", err
-		}
 	}
 	logf("%s: %d şube, %d ders, %d branş yazıldı", slug, meta.Sections, meta.Courses, len(meta.Branches))
 	return label, slug, nil
@@ -355,6 +432,12 @@ func scrapeExams(ctx context.Context, f *fetch.Client, st *store.Store, workers 
 		return nil
 	}
 	sched := &model.ExamSchedule{
+		SchemaVersion: model.DataSchemaVersion,
+		Provenance: model.Provenance{
+			Provider:         "İstanbul Teknik Üniversitesi OBS",
+			Endpoint:         "https://obs.itu.edu.tr/public/FinalTakvimi/SearchFinalTakvimiByDersBransKodu",
+			LastSuccessfulAt: time.Now().UTC().Format(time.RFC3339),
+		},
 		Term: label, Slug: slug,
 		ScrapedAt:      time.Now().UTC().Format(time.RFC3339),
 		Exams:          exams,
@@ -462,6 +545,12 @@ func scrapePrereqs(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	}
 	graph := prereq.BuildGraph(rows, names)
 	graph.GeneratedAt = time.Now().UTC().Format(time.RFC3339)
+	graph.SchemaVersion = model.DataSchemaVersion
+	graph.Provenance = model.Provenance{
+		Provider:         "İstanbul Teknik Üniversitesi OBS",
+		Endpoint:         "https://obs.itu.edu.tr/public/GenelTanimlamalar/OnsartAra",
+		LastSuccessfulAt: graph.GeneratedAt,
+	}
 	graph.Partial = len(failed) > 0
 	graph.FailedBranches = failed
 
@@ -510,10 +599,10 @@ func runBackfill(ctx context.Context, f *fetch.Client, st *store.Store, currentS
 			logf("%s: canlı scrape ile aynı dönem, arşiv sürümü atlandı", sn.Slug)
 			continue
 		}
-		if err := st.Clean(sn.Slug); err != nil {
+		if err := snapshotShrinkGate(st, sn.Slug, len(sn.Sections)); err != nil {
 			return err
 		}
-		meta, err := st.WriteTerm(sn.Label, sn.Slug, stamp, false, sn.Sections)
+		meta, err := st.ReplaceTerm(sn.Label, sn.Slug, stamp, false, sn.Sections)
 		if err != nil {
 			return err
 		}
@@ -590,6 +679,7 @@ func writeIndex(root string, st *store.Store, requestedCurrentSlug string) error
 			}
 		}
 		ref := model.TermRef{
+			SchemaVersion: m.SchemaVersion, Provenance: m.Provenance,
 			Slug: m.Slug, Label: m.Term, ScrapedAt: m.ScrapedAt,
 			Source: store.Source, Live: live, Sections: m.Sections,
 			Partial: m.Partial, FailedBranches: m.FailedBranches,
@@ -636,12 +726,14 @@ func writeIndex(root string, st *store.Store, requestedCurrentSlug string) error
 	sort.Slice(cals, func(i, j int) bool { return cals[i].Label > cals[j].Label })
 
 	idx := model.SiteIndex{
-		CurrentTerm: current.Label,
-		CurrentSlug: current.Slug,
-		ScrapedAt:   current.ScrapedAt,
-		Terms:       refs,
-		Calendars:   cals,
-		Stats:       currentMeta.Stats,
+		SchemaVersion: model.DataSchemaVersion,
+		Provenance:    currentMeta.Provenance,
+		CurrentTerm:   current.Label,
+		CurrentSlug:   current.Slug,
+		ScrapedAt:     current.ScrapedAt,
+		Terms:         refs,
+		Calendars:     cals,
+		Stats:         currentMeta.Stats,
 	}
 	if err := st.WriteJSON(idx, "data", "index.json"); err != nil {
 		return err

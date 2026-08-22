@@ -1,4 +1,4 @@
-import { readLocalState, writeLocalState } from './core/persistence.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState } from './core/persistence.js?v=5200cebd4769';
 
 // Çok hafif i18n modülü. `?lang=en` parametresinden veya localStorage'dan
 // dil seçimi okur; `t(key)` ile çeviri yapar. Eksik anahtarlar tr'ye düşer.
@@ -24,6 +24,17 @@ const I18N = (() => {
       taglineSimple: 'İTÜ derslerini, kontenjanları ve geçmiş dönemleri ara.',
       themeLight: 'Açık',
       themeDark: 'Koyu',
+      homeLabel: 'Dersler ana sayfasına git',
+      themeGroup: 'Görünüm teması',
+      themeLightLabel: 'Sade (varsayılan)',
+      themeDarkLabel: 'Fosfor (koyu)',
+      sectionsLabel: 'Bölümler',
+      courseSearchLabel: 'Ders ara',
+      courseSearchPlaceholder: 'ders kodu, ad, CRN veya öğretim üyesi ara…',
+      filterDialogLabel: 'Ders filtreleri',
+      sortLabel: 'Sırala',
+      scheduleTitle: 'Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle',
+      csvTitle: 'Görünen satırları CSV olarak indir',
       navMore: 'Daha fazla',
       navHistory: 'Geçmiş',
       navTerms: 'Dönemler',
@@ -42,7 +53,15 @@ const I18N = (() => {
       filterCode: 'ders kodu',
       filterOpen: 'yalnızca kontenjanı olanlar',
       filterAll: 'hepsi',
-      timeMorning: 'sabah (&lt;12:00)',
+      dayMonday: 'Pazartesi',
+      dayTuesday: 'Salı',
+      dayWednesday: 'Çarşamba',
+      dayThursday: 'Perşembe',
+      dayFriday: 'Cuma',
+      daySaturday: 'Cumartesi',
+      daySunday: 'Pazar',
+      searchClear: 'Aramayı temizle',
+      timeMorning: 'sabah (<12:00)',
       timeNoon: 'öğle (12:00-17:00)',
       timeEvening: 'akşam (≥17:00)',
       btnCSV: 'CSV indir',
@@ -162,6 +181,17 @@ const I18N = (() => {
       taglineSimple: 'Search ITU courses, capacity, and past terms.',
       themeLight: 'Light',
       themeDark: 'Dark',
+      homeLabel: 'Go to the courses home page',
+      themeGroup: 'Display theme',
+      themeLightLabel: 'Light (default)',
+      themeDarkLabel: 'Phosphor (dark)',
+      sectionsLabel: 'Sections',
+      courseSearchLabel: 'Search courses',
+      courseSearchPlaceholder: 'search course code, name, CRN or instructor…',
+      filterDialogLabel: 'Course filters',
+      sortLabel: 'Sort',
+      scheduleTitle: 'Show filtered sections in a weekly timetable and mark conflicts',
+      csvTitle: 'Download visible rows as CSV',
       navMore: 'More',
       navHistory: 'History',
       navTerms: 'Terms',
@@ -180,7 +210,15 @@ const I18N = (() => {
       filterCode: 'course code',
       filterOpen: 'with capacity only',
       filterAll: 'all',
-      timeMorning: 'morning (&lt;12:00)',
+      dayMonday: 'Monday',
+      dayTuesday: 'Tuesday',
+      dayWednesday: 'Wednesday',
+      dayThursday: 'Thursday',
+      dayFriday: 'Friday',
+      daySaturday: 'Saturday',
+      daySunday: 'Sunday',
+      searchClear: 'Clear search',
+      timeMorning: 'morning (<12:00)',
       timeNoon: 'noon (12:00-17:00)',
       timeEvening: 'evening (≥17:00)',
       btnCSV: 'CSV export',
@@ -303,6 +341,18 @@ const I18N = (() => {
     for (const el of document.querySelectorAll('[data-i18n]')) {
       const k = el.getAttribute('data-i18n');
       if (k) el.textContent = t(k);
+    }
+    // Görsel metinden ayrı erişilebilir adlar ve form ipuçları da dil değişimini
+    // izler. Ders adları bu işaretleri taşımaz; arşivdeki özgün ad aynen kalır.
+    for (const [attr, dataAttr] of [
+      ['aria-label', 'data-i18n-aria-label'],
+      ['placeholder', 'data-i18n-placeholder'],
+      ['title', 'data-i18n-title'],
+    ]) {
+      for (const el of document.querySelectorAll(`[${dataAttr}]`)) {
+        const key = el.getAttribute(dataAttr);
+        if (key) el.setAttribute(attr, t(key));
+      }
     }
   }
 

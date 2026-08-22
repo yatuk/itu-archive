@@ -343,27 +343,27 @@ export function sessionHours(times) {
 
 // ISO zaman damgasından kısa "ne kadar önce" metni üretir: "şimdi", "4 dk önce",
 // "6 sa önce", "3 gün önce"; 30 günden eskisinde tarih. Saf · test edilebilir.
-export function timeAgo(iso, now = Date.now()) {
+export function timeAgo(iso, now = Date.now(), lang = 'tr') {
   if (iso == null || String(iso).trim() === '') return ''; // new Date(null) → 1970 tuzağı
   const t = new Date(iso);
   if (isNaN(t)) return '';
   const ms = now - t.getTime();
   if (ms < 0) return '';
   const min = Math.floor(ms / 60000);
-  if (min < 1) return 'şimdi';
-  if (min < 60) return `${min} dk önce`;
+  if (min < 1) return lang === 'en' ? 'now' : 'şimdi';
+  if (min < 60) return lang === 'en' ? `${min} min ago` : `${min} dk önce`;
   const hr = Math.floor(min / 60);
-  if (hr < 24) return `${hr} sa önce`;
+  if (hr < 24) return lang === 'en' ? `${hr} hr ago` : `${hr} sa önce`;
   const day = Math.floor(hr / 24);
-  if (day < 30) return `${day} gün önce`;
-  return t.toLocaleDateString('tr-TR');
+  if (day < 30) return lang === 'en' ? `${day} days ago` : `${day} gün önce`;
+  return t.toLocaleDateString(lang === 'en' ? 'en-GB' : 'tr-TR');
 }
 
 // Doluluk rozetinin ölçüm zamanını küçük etikete çevirir: "en son 6 sa önce
 // ölçüldü". Zaman damgası yoksa (eski dönem/quota yoksa) boş döner — saf, testli.
-export function fillMeasured(lastIso, now = Date.now()) {
-  const ago = timeAgo(lastIso, now);
-  return ago ? `en son ${ago} ölçüldü` : '';
+export function fillMeasured(lastIso, now = Date.now(), lang = 'tr') {
+  const ago = timeAgo(lastIso, now, lang);
+  return ago ? (lang === 'en' ? `measured ${ago}` : `en son ${ago} ölçüldü`) : '';
 }
 
 // CSV indirme (Excel için BOM'lu).

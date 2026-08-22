@@ -61,11 +61,11 @@ jobs:
         run: npx playwright test --config=playwright.live.config.js
 
       - name: Hata kanıtlarını sakla
-        if: failure()
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: live-smoke-raporu
           path: |
             playwright-report/
             test-results/
-          retention-days: 7
+          retention-days: 14

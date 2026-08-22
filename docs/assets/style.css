@@ -141,6 +141,11 @@
 /* Sade'de gövde metni sans; veri (kod, CRN, saat, sayı) hâlâ monospace —
    sayı hizalaması ve "veri" hissi için. */
 [data-theme="sade"] body { font-family: var(--sans); }
+/* Yatay kayan veri/sekme rayları kendi kapsayıcısında kalır; özellikle metin
+   büyütmede sticky sekme çocukları belgeyi yana kaydıramaz. `clip`, sticky
+   davranışını bozacak yeni bir scroll container oluşturmaz. */
+[data-theme="sade"],
+[data-theme="sade"] body { overflow-x: clip; }
 [data-theme="sade"] .crn,
 [data-theme="sade"] .code,
 [data-theme="sade"] .when,
@@ -290,7 +295,14 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
+  *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; }
+  button, select, input[type="checkbox"], a, .chip, .chip-x, .th-sort, .row-toggle,
+  .tt-chip, .pg-chip, .pg-level, .more, .detail-close {
+    transition: color 80ms linear, background-color 80ms linear,
+      border-color 80ms linear, box-shadow 80ms linear, opacity 80ms linear !important;
+  }
+  button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active,
+  .tt-chip:active, .pg-chip:active, .pg-level:active, .more:active { transform: none; }
   body::after { display: none; }
 }
 
@@ -606,6 +618,16 @@ select:focus-visible, input:focus-visible { outline: 2px solid var(--cyan); outl
   .tool-directory-grid { grid-template-columns: 1fr; }
   .tool-directory-grid > a { padding: 14px; }
   .tool-directory-links { display: grid; grid-template-columns: 1fr 1fr; }
+}
+
+/* Ekran genişliği giriş yöntemini söylemez: dokunmatik tablet ve hibrit
+   bilgisayarlarda da sade temanın ana kontrolleri WCAG hedef boyutunu korur. */
+@media (pointer: coarse) {
+  [data-theme="sade"] :is(
+    .tabs a, .tabs button, .tabs summary, .btn-ghost, .btn-primary,
+    .theme-btn, #lang-btn, select, .f-in, .p-menu, .p-result,
+    .pg-level, .pg-chip, .dp-type, .dp-sec-btn, .dp-grade, .dp-epick
+  ) { min-height: 44px; }
 }
 input[type="checkbox"] { accent-color: var(--acid); width: 15px; height: 15px; }
 
@@ -3174,7 +3196,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 /* Dokunma hedefleri ≥44px. Yoğun satırlarda görseli büyütmeden ::after ile
    tıklama alanı genişletilir; formlar/butonlar min-height alır. */
 @media (max-width: 600px) {
-  .tabs button, .btn-ghost, .btn-primary, .theme-btn, #lang-btn,
+  .tabs button, .tabs a, .tabs summary, .btn-ghost, .btn-primary, .theme-btn, #lang-btn,
   .th-sort, .row-toggle, .dp-code, .dp-more, .dp-actions button,
   .d-prog, .d-req, .d-eq, .p-menu, .p-menu-pop button, .p-result,
   .dp-type, .dp-sec-btn, .dp-repeat-btn, .dp-grade-clear, .chip-x,
@@ -3572,6 +3594,15 @@ body { padding-bottom: env(safe-area-inset-bottom); }
     -webkit-backdrop-filter: none;
     scrollbar-width: none;
   }
+  /* Metin %200 büyütüldüğünde max-content genişliği belgeyi itmesin; sekmeler
+     kendi rayında yatay kayar. Yalnız iyileştirme yüzeyi, fosfor değişmez. */
+  [data-theme="sade"] .tabs {
+    width: auto;
+    min-width: 0;
+    max-width: calc(100vw - 28px);
+    margin-inline: 14px;
+    contain: inline-size;
+  }
   .tabs::-webkit-scrollbar { display: none; }
   .tabs button,
   .tabs a,
@@ -3604,7 +3635,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .result-actions #tt-toggle,
   .result-actions #csv { justify-content: center; padding-inline: 14px; }
   .result-actions .btn-ghost,
-  .mobile-sort select { min-height: 40px; }
+  .mobile-sort select { min-height: 44px; }
 
   /* Ders detayı artık küçük masaüstü tablosu değil, okunabilir şube kartlarıdır. */
   .detail-box {

@@ -9,6 +9,7 @@ export default defineConfig({
   retries: 1,
   reporter: [['github'], ['list']],
   timeout: 60_000,
+  preserveOutput: 'always',
   use: {
     baseURL,
     trace: 'retain-on-failure',

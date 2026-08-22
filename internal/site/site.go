@@ -415,7 +415,13 @@ func (b *Builder) Generate() error {
 		}
 	}
 
-	return b.writeSitemap(terms, brCodes, courseSlugs, instrSlugs)
+	if err := b.writeSitemap(terms, brCodes, courseSlugs, instrSlugs); err != nil {
+		return err
+	}
+	if b.l.Code == "tr" {
+		return writeDiscoveryFiles(b.root)
+	}
+	return nil
 }
 
 // pruneGeneratedPageDirs yalnızca tekil üretilmiş sayfa klasörlerini temizler;
@@ -733,6 +739,38 @@ func writeRootSitemapIndex(root, fallbackDate string) error {
 	return os.WriteFile(filepath.Join(root, "sitemap.xml"), []byte(out.String()), 0o644)
 }
 
+// writeDiscoveryFiles, tarayıcı ve yapay zekâ istemcilerine yalnızca
+// canonical, kalıcı sayfaları bildirir. SPA hash rotaları sitemap'e
+// sokulmaz; bunlara niyet sayfalarındaki doğrudan CTA'lar aracılık eder.
+func writeDiscoveryFiles(root string) error {
+	robots := "User-agent: *\nAllow: /\n\nSitemap: " + baseURL + "/sitemap.xml\n"
+	if err := os.WriteFile(filepath.Join(root, "robots.txt"), []byte(robots), 0o644); err != nil {
+		return err
+	}
+	llms := `# İTÜ Ders Arşivi
+
+> İstanbul Teknik Üniversitesi dersleri için bağımsız, açık kaynaklı arşiv ve planlama araçları. Resmî kayıt kararları için OBS verisi esas alınmalıdır.
+
+## Temel araçlar
+- [Güncel ders programı](` + baseURL + `/ders-programi/): Açık şube, CRN, hoca, saat ve kontenjan araması.
+- [Ders programı oluştur](` + baseURL + `/ders-programi-olustur/): Şubelerden haftalık program ve çakışma kontrolü.
+- [GPA ve GANO hesapla](` + baseURL + `/gano-hesaplama/): Ders kredileri ve harf notlarıyla dönem/genel ortalama hesabı.
+- [Ders planı](` + baseURL + `/ders-plani/): Program müfredatı, zorunlu/seçmeli dersler, kredi ve AKTS.
+- [Önşart haritası](` + baseURL + `/onsart-haritasi/): Program dersleri arasındaki önşart bağlantıları.
+
+## Arşiv
+- [Geçmiş dönem dersleri](` + baseURL + `/ders-arsivi/): 2016'dan bugüne ders, şube, hoca, kontenjan ve not dağılımı geçmişi.
+- [Dönem sayfaları](` + baseURL + `/sitemaps/terms.xml): Arşivlenen dönemlerin canonical URL listesi.
+- [Ders sayfaları](` + baseURL + `/sitemaps/courses.xml): Ders kodu bazında geçmiş ve son dönem bilgileri.
+- [Hoca sayfaları](` + baseURL + `/sitemaps/instructors.xml): Öğretim üyesi bazında verilen derslerin dönem geçmişi.
+
+## Veri erişimi
+- [Dönem ve veri dizini](` + baseURL + `/data/index.json)
+- [XML sitemap index](` + baseURL + `/sitemap.xml)
+`
+	return os.WriteFile(filepath.Join(root, "llms.txt"), []byte(llms), 0o644)
+}
+
 func latestBranchDate(a *branchAgg, dates map[string]string, fallback string) string {
 	if a == nil {
 		return fallback
@@ -946,7 +984,7 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 // Yalnızca TR üretilir (alt=false — hreflang yok). Bu tarih landing-page
 // metni veya bilgi mimarisi gerçekten değiştiğinde elle ilerletilir; veri
 // taraması her çalıştığında sahte bir lastmod üretmez.
-const landingContentUpdated = "2026-08-22"
+const landingContentUpdated = "2026-08-23"
 
 type landingPage struct {
 	slug        string
@@ -956,6 +994,8 @@ type landingPage struct {
 	body        []string // düz paragraf metinleri (<p> ile sarılır)
 	primary     landingAction
 	secondary   []landingAction
+	queries     []string // Bu URL'nin sahip olduğu ana arama niyetleri; kanibalizasyon denetiminde kullanılır.
+	features    []string // Yalnızca gerçekte var olan, WebApplication ve sayfa içeriğinde ortak kullanılan yetenekler.
 }
 
 type landingAction struct {
@@ -987,9 +1027,11 @@ var landingActionDetails = map[string]string{
 
 var landingPages = []landingPage{
 	{
-		slug: "ders-plani", title: "İTÜ ders planı ve müfredat planlama",
-		description: "İTÜ ders planı: bölüm müfredatını dönem dönem gör, zorunlu ve seçmeli dersleri işaretle, kredi ve GANO planını yap.",
+		slug: "ders-plani", title: "İTÜ Ders Planı ve Müfredat",
+		description: "İTÜ ders planında bölüm müfredatını yarıyıl yarıyıl incele; zorunlu ve seçmeli dersleri, kredi ve AKTS toplamlarını birlikte gör.",
 		h1:          "İTÜ ders planı ve müfredat planlama",
+		queries:     []string{"İTÜ ders planı", "İTÜ müfredat"},
+		features:    []string{"Programı yarıyıl bazında gösterir", "Zorunlu ve seçmeli dersleri ayırır", "Kredi ve AKTS toplamlarını hesaplar"},
 		body: []string{
 			"İTÜ Ders Arşivi'nde seçtiğin programın dönem dönem ders planını açabilir, derslerin bu dönem açık olup olmadığını görebilirsin. Ders Planım görünümü, derslere not girip GANO ve dönem ortalamalarını anında hesaplar.",
 			"Planı aç, seçmeli slotlarda dersi seç, notlarını gir · hepsi tarayıcında saklanır, hiçbir veri sunucuya gitmez.",
@@ -998,9 +1040,11 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesapla"}, {href: "/ders-programi-olustur/", label: "Haftalık program oluştur"}, {href: "/onsart-haritasi/", label: "Önşart haritasını aç"}},
 	},
 	{
-		slug: "gano-hesaplama", title: "İTÜ GPA ve GANO hesaplama",
-		description: "İTÜ GPA/GANO (genel ağırlıklı not ortalaması) hesaplama aracı: harf notlarını ve kredilerini gir, ortalaman hesaplansın.",
+		slug: "gano-hesaplama", title: "İTÜ GPA ve GANO Hesaplama",
+		description: "İTÜ GPA ve GANO hesaplama aracında ders kredilerini ve harf notlarını gir; dönem ortalamanı ve genel ağırlıklı not ortalamanı birlikte gör.",
 		h1:          "İTÜ GPA ve GANO hesaplama",
+		queries:     []string{"İTÜ ortalama hesapla", "İTÜ GPA hesapla", "İTÜ GANO hesapla"},
+		features:    []string{"Harf notlarını kredi ağırlıklı hesaplar", "Dönem ortalaması ile GANO'yu ayrı gösterir", "OBS transkript metninden notları tarayıcıda aktarır"},
 		body: []string{
 			"GANO, İTÜ'nün 4.00 ölçeğindeki genel ağırlıklı not ortalamandır. Her harf notu bir katsayı taşır: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0; FF ve VF 0.0.",
 			"Ders Planım görünümünde notlarını ders ders gir; GANO'n ve her yarıyılın ortalaması otomatik hesaplansın. Transfer kredin veya mevcut GANO'n varsa üstteki kutulara yaz.",
@@ -1021,9 +1065,11 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesaplayıcıyı aç"}, {href: "/ders-plani/", label: "Ders planını görüntüle"}},
 	},
 	{
-		slug: "ders-programi", title: "İTÜ ders programı",
-		description: "İTÜ ders programı: bu dönem açık dersleri, şubeleri, öğretim üyelerini, gün/saati ve kontenjan doluluğunu ara.",
+		slug: "ders-programi", title: "İTÜ Ders Programı ve Açık Dersler",
+		description: "İTÜ ders programında bu dönem açık dersleri kod, ad, CRN veya hocayla ara; şube saatlerini, kontenjanı ve doluluk durumunu karşılaştır.",
 		h1:          "İTÜ ders programı",
+		queries:     []string{"İTÜ ders", "İTÜ ders programı", "İTÜ açık dersler"},
+		features:    []string{"Ders kodu, ad, CRN ve hocayla arama yapar", "Şube gün ve saatlerini karşılaştırır", "Kontenjan ve yazılan öğrenci sayısını gösterir"},
 		body: []string{
 			"OBS'nin yayınladığı ders programını arşivden ara: ders kodu, ad, CRN veya öğretim üyesiyle filtrele; şubelerin gün/saatini, kontenjanını ve doluluk oranını gör.",
 			"Kayıt haftasında kontenjan doluluğu yarım saatte bir tazelenir.",
@@ -1032,9 +1078,11 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/ders-programi-olustur/", label: "Kişisel haftalık program oluştur"}, {href: "/sinav-programi/", label: "Sınav programını aç"}, {href: "/kontenjan/", label: "Kontenjan doluluğunu incele"}},
 	},
 	{
-		slug: "ders-programi-olustur", title: "İTÜ ders programı oluşturma",
-		description: "İTÜ haftalık ders programı oluşturma aracı: şubeleri ve CRN'leri ekle, çakışmaları gör, programını indir veya takvime aktar.",
+		slug: "ders-programi-olustur", title: "İTÜ Ders Programı Oluşturma Aracı",
+		description: "İTÜ ders programı oluşturma aracıyla şube ve CRN ekle, haftalık çizelgedeki çakışmaları gör; programını görsel veya takvim olarak indir.",
 		h1:          "İTÜ ders programı oluştur",
+		queries:     []string{"İTÜ ders programı oluştur", "İTÜ program oluşturucu"},
+		features:    []string{"Şube ve CRN'leri haftalık çizelgeye ekler", "Saat çakışmalarını işaretler", "Programı görsel ve .ics takvim dosyası olarak dışa aktarır"},
 		body: []string{
 			"Açık şubeleri ders kodu, ad veya CRN ile bulup haftalık çizelgene ekle. Aynı saate gelen dersler çakışma olarak işaretlenir.",
 			"Hazırladığın programı görsel veya .ics takvim dosyası olarak indirebilir, seçtiğin CRN'leri OBS kayıt ekranı için kopyalayabilirsin.",
@@ -1069,6 +1117,9 @@ var landingPages = []landingPage{
 			{href: "/#onsart", label: "2. Önşartları kontrol et", detail: "Program haritasında dersin geriye doğru bağlantılarını izle."},
 			{href: "/#program", label: "3. Haftalık programını kur", detail: "Şubeleri ekle, ders çakışmalarını gider ve CRN listesini hazırla."},
 			{href: "/#sinavlar", label: "4. Sınav çakışmalarını kontrol et", detail: "Takvim yayımlandığında finalleri aynı listede karşılaştır."},
+			{href: "/ders-arsivi/", label: "Geçmiş dönem derslerini ara", detail: "Dersin daha önce hangi dönemlerde ve hangi hocalarla açıldığını incele."},
+			{href: "/ders-plani/", label: "Müfredatını incele", detail: "Zorunlu ve seçmeli dersleri yarıyıl, kredi ve AKTS bilgileriyle gör."},
+			{href: "/gano-hesaplama/", label: "GPA / GANO hesabını yap", detail: "Notlarını ders planına aktar; dönem ve genel ortalamanı birlikte hesapla."},
 		},
 	},
 	{
@@ -1105,9 +1156,11 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/sinav-programi/", label: "Sınav programını aç"}, {href: "/ders-programi-olustur/", label: "Ders programını oluştur"}},
 	},
 	{
-		slug: "ders-arsivi", title: "Geçmiş Dönem Dersleri ve Hocalar",
-		description: "2016'dan bugüne İTÜ'de açılan dersleri, geçmiş şubeleri, dersi veren öğretim üyelerini, kontenjan geçmişini ve not dağılımını ara.",
+		slug: "ders-arsivi", title: "İTÜ Ders Arşivi ve Geçmiş Dersler",
+		description: "İTÜ ders arşivinde 2016'dan bugüne açılan dersleri ara; geçmiş şubeleri, dersi veren hocaları, kontenjanı ve not dağılımını incele.",
 		h1:          "İTÜ ders arşivi ve geçmiş dönem dersleri",
+		queries:     []string{"İTÜ ders arşivi", "İTÜ geçmiş dersler", "İTÜ geçmiş dönem dersleri"},
+		features:    []string{"2016'dan bugüne arşivlenen dönemlerde arama yapar", "Derslerin şube ve hoca geçmişini gösterir", "Kontenjan geçmişi ile not dağılımını bir arada sunar"},
 		body: []string{
 			"OBS yalnızca içinde bulunulan dönemi gösterir; dönem bitince veri kaybolur. Bu arşiv 2016'dan beri her dönemi sürüm kontrolüne alır.",
 			"Geçmiş görünümünde bir dersin hangi dönemlerde, hangi hocayla ve kaç şube açıldığını ara; not dağılımı ve katalog bilgisini gör.",
@@ -1143,6 +1196,14 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		}
 		related.WriteString(`</ul>`)
 	}
+	var capabilities strings.Builder
+	if len(p.features) > 0 {
+		capabilities.WriteString(`<h2>Bu sayfada ne yapabilirsin?</h2><ul>`)
+		for _, feature := range p.features {
+			capabilities.WriteString(`<li>` + template.HTMLEscapeString(feature) + `</li>`)
+		}
+		capabilities.WriteString(`</ul>`)
+	}
 	content := template.HTML(buildContent(
 		`<nav class="crumb" aria-label="Breadcrumb"><a href="/">İTÜ Ders Arşivi</a> › <span>`+template.HTMLEscapeString(p.h1)+`</span></nav>`,
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(p.h1)),
@@ -1152,14 +1213,19 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 			template.HTMLEscapeString(p.primary.href), template.HTMLEscapeString(p.primary.label)),
 		`<h2>Nasıl kullanılır?</h2>`,
 		paras.String(),
+		capabilities.String(),
 		related.String(),
 	))
-	jsonld := jsonldScript([]any{
-		map[string]any{
-			"@context": "https://schema.org", "@type": "WebPage",
-			"url": canonical, "name": p.title, "description": p.description,
-			"inLanguage": "tr-TR", "dateModified": landingContentUpdated,
-		},
+	webPageSchema := map[string]any{
+		"@context": "https://schema.org", "@type": "WebPage", "@id": canonical + "#webpage",
+		"url": canonical, "name": p.title, "description": p.description,
+		"inLanguage": "tr-TR", "dateModified": landingContentUpdated,
+	}
+	if len(p.features) > 0 {
+		webPageSchema["mainEntity"] = map[string]any{"@id": canonical + "#application"}
+	}
+	schema := []any{
+		webPageSchema,
 		map[string]any{
 			"@context": "https://schema.org", "@type": "BreadcrumbList",
 			"itemListElement": []any{
@@ -1167,7 +1233,18 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 				map[string]any{"@type": "ListItem", "position": 2, "name": p.h1, "item": canonical},
 			},
 		},
-	})
+	}
+	if len(p.features) > 0 {
+		schema = append(schema, map[string]any{
+			"@context": "https://schema.org", "@type": "WebApplication", "@id": canonical + "#application",
+			"url": canonical, "name": p.h1, "description": p.description,
+			"applicationCategory": "EducationalApplication", "operatingSystem": "Any",
+			"browserRequirements": "JavaScript destekleyen güncel bir web tarayıcısı",
+			"inLanguage":          "tr-TR", "isAccessibleForFree": true, "featureList": p.features,
+			"offers": map[string]any{"@type": "Offer", "price": 0, "priceCurrency": "TRY"},
+		})
+	}
+	jsonld := jsonldScript(schema)
 	return b.writePage(filepath.Join(b.outRoot, p.slug, "index.html"),
 		p.title, p.description, canonical, landingContentUpdated, content, jsonld, false)
 }
@@ -1484,6 +1561,7 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 		map[string]any{
 			"@context":         "https://schema.org",
 			"@type":            "Person",
+			"@id":              canonical + "#person",
 			"url":              canonical,
 			"name":             hi.Name,
 			"mainEntityOfPage": canonical,
@@ -1916,11 +1994,20 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 		map[string]any{
 			"@context":    "https://schema.org",
 			"@type":       "Course",
+			"@id":         canonical + "#course",
 			"url":         canonical,
-			"name":        code,
+			"name":        code + " " + hc.Name,
 			"description": hc.Name,
 			"inLanguage":  "tr-TR",
-			"provider":    map[string]string{"@type": "CollegeOrUniversity", "name": "İstanbul Teknik Üniversitesi"},
+			"provider":    map[string]string{"@type": "CollegeOrUniversity", "name": "İstanbul Teknik Üniversitesi", "url": "https://www.itu.edu.tr/"},
+		},
+		map[string]any{
+			"@context": "https://schema.org", "@type": "BreadcrumbList",
+			"itemListElement": []any{
+				map[string]any{"@type": "ListItem", "position": 1, "name": "İTÜ Ders Arşivi", "item": baseURL + "/"},
+				map[string]any{"@type": "ListItem", "position": 2, "name": branch, "item": baseURL + "/brans/" + branch + "/"},
+				map[string]any{"@type": "ListItem", "position": 3, "name": code, "item": canonical},
+			},
 		},
 	})
 

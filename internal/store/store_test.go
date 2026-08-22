@@ -1,6 +1,7 @@
 package store
 
 import (
+	"encoding/json"
 	"errors"
 	"os"
 	"path/filepath"
@@ -90,5 +91,58 @@ func TestDedupeStable(t *testing.T) {
 		if s.CRN != want[i] {
 			t.Fatalf("sıra bozuldu: %d. eleman %q, beklenen %q", i, s.CRN, want[i])
 		}
+	}
+}
+
+func TestReplaceTermPublishesCompleteSnapshotAndMetadata(t *testing.T) {
+	root := t.TempDir()
+	st := New(root)
+	old := []model.Section{{CRN: "1", Branch: "OLD", Code: "OLD 101"}}
+	if _, err := st.ReplaceTerm("Dönem", "2026-2027-guz", "2026-08-01T00:00:00Z", true, old); err != nil {
+		t.Fatal(err)
+	}
+	fresh := []model.Section{{CRN: "2", Branch: "NEW", Code: "NEW 101"}}
+	meta, err := st.ReplaceTerm("Dönem", "2026-2027-guz", "2026-08-02T00:00:00Z", true, fresh)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if meta.SchemaVersion != model.DataSchemaVersion || meta.Provenance.LastSuccessfulAt != "2026-08-02T00:00:00Z" {
+		t.Fatalf("şema/provenance eksik: %+v", meta)
+	}
+	if _, err := os.Stat(filepath.Join(root, "data", "terms", "2026-2027-guz", "branches", "OLD.json")); !os.IsNotExist(err) {
+		t.Fatalf("eski branş atomik değişimden sonra kaldı: %v", err)
+	}
+	b, err := os.ReadFile(filepath.Join(root, "data", "terms", "2026-2027-guz", "meta.json"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	var stored model.TermMeta
+	if err := json.Unmarshal(b, &stored); err != nil || stored.Sections != 1 || stored.Provenance.Endpoint != OBSProgramEndpoint {
+		t.Fatalf("yayımlanan meta yanlış: err=%v meta=%+v", err, stored)
+	}
+}
+
+func TestReplaceTermRecoversInterruptedBackup(t *testing.T) {
+	root := t.TempDir()
+	st := New(root)
+	slug := "2026-2027-guz"
+	if _, err := st.ReplaceTerm("Dönem", slug, "2026-08-01T00:00:00Z", true,
+		[]model.Section{{CRN: "1", Branch: "OLD", Code: "OLD 101"}}); err != nil {
+		t.Fatal(err)
+	}
+	target := filepath.Join(root, "data", "terms", slug)
+	backup := target + ".previous"
+	if err := os.Rename(target, backup); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := st.ReplaceTerm("Dönem", slug, "2026-08-02T00:00:00Z", true,
+		[]model.Section{{CRN: "2", Branch: "NEW", Code: "NEW 101"}}); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := os.Stat(filepath.Join(target, "branches", "NEW.json")); err != nil {
+		t.Fatalf("yeni snapshot yayınlanmadı: %v", err)
+	}
+	if _, err := os.Stat(backup); !os.IsNotExist(err) {
+		t.Fatalf("kesinti yedeği temizlenmedi: %v", err)
 	}
 }

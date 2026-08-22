@@ -79,10 +79,16 @@ func (c *Client) Fetch(ctx context.Context, y Year, takvimadi int) (*model.Calen
 		return nil, err
 	}
 	cal := &model.Calendar{
-		Year:      y.Label,
-		YearID:    y.ID,
-		ScrapedAt: time.Now().UTC().Format(time.RFC3339),
-		Events:    []model.CalendarEvent{},
+		SchemaVersion: model.DataSchemaVersion,
+		Year:          y.Label,
+		YearID:        y.ID,
+		ScrapedAt:     time.Now().UTC().Format(time.RFC3339),
+		Events:        []model.CalendarEvent{},
+	}
+	cal.Provenance = model.Provenance{
+		Provider:         "İstanbul Teknik Üniversitesi Akademik Takvim",
+		Endpoint:         base,
+		LastSuccessfulAt: cal.ScrapedAt,
 	}
 	for _, t := range tableRe.FindAllStringSubmatch(body, -1) {
 		rows := rowRe.FindAllStringSubmatch(t[1], -1)

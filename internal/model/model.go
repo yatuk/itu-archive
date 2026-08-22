@@ -2,6 +2,20 @@
 // JSON etiketleri doğrudan site tarafından tüketiliyor, değiştirirken docs/assets/app.js'e bak.
 package model
 
+// DataSchemaVersion, statik JSON veri sözleşmesinin güncel sürümüdür. Eski
+// dosyalarda alan bulunmadığı için sıfır okunur; okuyucular böylece geriye
+// uyumlu kalırken yeni üretimler açıkça sürümlenir.
+const DataSchemaVersion = 1
+
+// Provenance, bir snapshot'ın hangi mevcut kaynaktan ve ne zaman başarıyla
+// alındığını açıklar. Endpoint alanı kullanıcı verisi veya istek parametresi
+// içermez; yalnızca sabit kaynak ucu yazılır.
+type Provenance struct {
+	Provider         string `json:"provider"`
+	Endpoint         string `json:"endpoint"`
+	LastSuccessfulAt string `json:"lastSuccessfulAt"`
+}
+
 // Section, bir dersin tek bir şubesi (CRN). OBS tablosundaki bir satıra karşılık gelir.
 // Çoklu oturumu olan derslerde Days/Times/Rooms/Buildings aynı uzunlukta paralel dizilerdir.
 type Section struct {
@@ -34,15 +48,17 @@ type BranchMeta struct {
 
 // TermMeta, docs/data/terms/<slug>/meta.json içeriği.
 type TermMeta struct {
-	Term      string       `json:"term"`
-	Slug      string       `json:"slug"`
-	ScrapedAt string       `json:"scrapedAt"`
-	Source    string       `json:"source"`         // veri kaynağı etiketi (site: "itu-archive")
-	Live      bool         `json:"live,omitempty"` // aktif dönem mi (canlı tarama)
-	Sections  int          `json:"sections"`
-	Courses   int          `json:"courses"`
-	Branches  []BranchMeta `json:"branches"`
-	Stats     SiteStats    `json:"stats"`
+	SchemaVersion int          `json:"schemaVersion,omitempty"`
+	Provenance    Provenance   `json:"provenance,omitempty"`
+	Term          string       `json:"term"`
+	Slug          string       `json:"slug"`
+	ScrapedAt     string       `json:"scrapedAt"`
+	Source        string       `json:"source"`         // veri kaynağı etiketi (site: "itu-archive")
+	Live          bool         `json:"live,omitempty"` // aktif dönem mi (canlı tarama)
+	Sections      int          `json:"sections"`
+	Courses       int          `json:"courses"`
+	Branches      []BranchMeta `json:"branches"`
+	Stats         SiteStats    `json:"stats"`
 	// Kısmi tarama (Faz 2): bazı branşlar çekilemedi — site "veri eksik olabilir"
 	// diyebilsin, sessizce yanlış sayı göstermesin.
 	Partial        bool     `json:"partial,omitempty"`
@@ -65,12 +81,14 @@ type Exam struct {
 
 // ExamSchedule, bir dönemin sınav takvimi.
 type ExamSchedule struct {
-	Term           string   `json:"term"`
-	Slug           string   `json:"slug"`
-	ScrapedAt      string   `json:"scrapedAt"`
-	Exams          []Exam   `json:"exams"`
-	Partial        bool     `json:"partial,omitempty"`
-	FailedBranches []string `json:"failedBranches,omitempty"`
+	SchemaVersion  int        `json:"schemaVersion,omitempty"`
+	Provenance     Provenance `json:"provenance,omitempty"`
+	Term           string     `json:"term"`
+	Slug           string     `json:"slug"`
+	ScrapedAt      string     `json:"scrapedAt"`
+	Exams          []Exam     `json:"exams"`
+	Partial        bool       `json:"partial,omitempty"`
+	FailedBranches []string   `json:"failedBranches,omitempty"`
 }
 
 // PrereqNode, önşart grafiğindeki tek bir ders. Katalogdaki her ders bir düğüm;
@@ -91,6 +109,8 @@ type PrereqEdge struct {
 
 // PrereqGraph, docs/data/prereq/graph.json içeriği.
 type PrereqGraph struct {
+	SchemaVersion  int          `json:"schemaVersion,omitempty"`
+	Provenance     Provenance   `json:"provenance,omitempty"`
 	GeneratedAt    string       `json:"generatedAt"`
 	Nodes          []PrereqNode `json:"nodes"`
 	Edges          []PrereqEdge `json:"edges"`
@@ -116,33 +136,39 @@ type CalendarEvent struct {
 // (0 = tümü; 15 lisans, 16 yatay-ÇAP, 17 önkayıt, 18 hazırlık, 19 lisansüstü,
 // 20 II. öğretim lisansüstü). Tek türlü dosyada adla birlikte yazılır.
 type Calendar struct {
-	Year      string          `json:"year"`           // "2026-2027 Eğitim - Öğretim Yılı"
-	YearID    string          `json:"yearId"`         // akademikyil parametresi
-	Type      string          `json:"type,omitempty"` // takvim türü adı ("Lisans", ...)
-	ScrapedAt string          `json:"scrapedAt"`
-	Events    []CalendarEvent `json:"events"`
+	SchemaVersion int             `json:"schemaVersion,omitempty"`
+	Provenance    Provenance      `json:"provenance,omitempty"`
+	Year          string          `json:"year"`           // "2026-2027 Eğitim - Öğretim Yılı"
+	YearID        string          `json:"yearId"`         // akademikyil parametresi
+	Type          string          `json:"type,omitempty"` // takvim türü adı ("Lisans", ...)
+	ScrapedAt     string          `json:"scrapedAt"`
+	Events        []CalendarEvent `json:"events"`
 }
 
 // SiteIndex, docs/data/index.json — sitenin açılışta çektiği tek dosya.
 type SiteIndex struct {
-	CurrentTerm string    `json:"currentTerm"`
-	CurrentSlug string    `json:"currentSlug"`
-	ScrapedAt   string    `json:"scrapedAt"`
-	Terms       []TermRef `json:"terms"`
-	Calendars   []CalRef  `json:"calendars"`
-	Stats       SiteStats `json:"stats"`
+	SchemaVersion int        `json:"schemaVersion,omitempty"`
+	Provenance    Provenance `json:"provenance,omitempty"`
+	CurrentTerm   string     `json:"currentTerm"`
+	CurrentSlug   string     `json:"currentSlug"`
+	ScrapedAt     string     `json:"scrapedAt"`
+	Terms         []TermRef  `json:"terms"`
+	Calendars     []CalRef   `json:"calendars"`
+	Stats         SiteStats  `json:"stats"`
 }
 
 type TermRef struct {
-	Slug           string   `json:"slug"`
-	Label          string   `json:"label"`
-	ScrapedAt      string   `json:"scrapedAt"`
-	Source         string   `json:"source"`         // "itu-archive"
-	Live           bool     `json:"live,omitempty"` // aktif dönem (canlı) işareti
-	Sections       int      `json:"sections"`
-	Missing        bool     `json:"missing,omitempty"` // veri bulunamayan dönem (arşiv boşluğu)
-	Partial        bool     `json:"partial,omitempty"` // bazı branşlar son taramada alınamadı
-	FailedBranches []string `json:"failedBranches,omitempty"`
+	SchemaVersion  int        `json:"schemaVersion,omitempty"`
+	Provenance     Provenance `json:"provenance,omitempty"`
+	Slug           string     `json:"slug"`
+	Label          string     `json:"label"`
+	ScrapedAt      string     `json:"scrapedAt"`
+	Source         string     `json:"source"`         // "itu-archive"
+	Live           bool       `json:"live,omitempty"` // aktif dönem (canlı) işareti
+	Sections       int        `json:"sections"`
+	Missing        bool       `json:"missing,omitempty"` // veri bulunamayan dönem (arşiv boşluğu)
+	Partial        bool       `json:"partial,omitempty"` // bazı branşlar son taramada alınamadı
+	FailedBranches []string   `json:"failedBranches,omitempty"`
 }
 
 type CalRef struct {

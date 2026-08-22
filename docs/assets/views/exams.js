@@ -1,11 +1,11 @@
 // Sınavlar görünümü: aktif dönemin sınav takvimini ders/bina/tür üzerinden
 // arar. Bina filtresi yer alanından çıkarılır (yeni kazıma yok).
 
-import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate } from '../core/utils.js?v=7e12ca046d39';
-import { state } from '../core/store.js?v=7e12ca046d39';
-import { fillRows } from '../core/table.js?v=7e12ca046d39';
-import { toast } from '../core/toast.js?v=7e12ca046d39';
-import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=7e12ca046d39';
+import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate } from '../core/utils.js?v=5200cebd4769';
+import { state } from '../core/store.js?v=5200cebd4769';
+import { fillRows } from '../core/table.js?v=5200cebd4769';
+import { toast } from '../core/toast.js?v=5200cebd4769';
+import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=5200cebd4769';
 
 let inited = false;
 let currentHits = []; // son filtre sonucu — .ics dışa aktarımı için
@@ -17,7 +17,8 @@ function examPreference() {
   const keys = ['eq', 'etype', 'building', 'ebranch'];
   const explicit = location.hash === '#sinavlar' && keys.some((key) => params.has(key));
   const pref = explicit ? {} : readLocalState('itu-exam-filters', { fallback: {}, validate: isPlainObject });
-  const value = (key) => params.has(key) ? params.get(key) : (pref[key] || '');
+  const saved = { eq: pref.q, etype: pref.type, building: pref.building, ebranch: pref.branch };
+  const value = (key) => params.has(key) ? params.get(key) : (saved[key] || '');
   return { q: value('eq'), type: value('etype'), building: value('building'), branch: value('ebranch') };
 }
 
@@ -38,10 +39,16 @@ function saveExamPreference() {
 export function initExams() {
   if (inited) return;
   $('#eq').value = examPreference().q;
-  $('#eq').addEventListener('input', debounce(renderExams, 120));
-  $('#f-etype').addEventListener('change', renderExams);
-  $('#f-building').addEventListener('change', renderExams);
-  $('#f-ebranch').addEventListener('change', renderExams);
+  // DOM Event nesnesini `append` bayrağı sanmamak için çağrıyı sar. Aksi halde
+  // input/change kaynaklı filtreler URL'ye ve yerel tercihlere hiç yazılmıyordu.
+  $('#eq').addEventListener('input', saveExamPreference);
+  $('#eq').addEventListener('input', debounce(() => renderExams(true), 120));
+  for (const control of [$('#f-etype'), $('#f-building'), $('#f-ebranch')]) {
+    control.addEventListener('change', () => {
+      saveExamPreference();
+      renderExams(true);
+    });
+  }
   const ics = $('#e-ics');
   if (ics) ics.addEventListener('click', exportExamsICS);
   const emore = $('#emore');
@@ -51,7 +58,15 @@ export function initExams() {
 
 export function onShow() {
   initExams();
+  // Hash/query navigasyonu uygulama yüklenirken gerçekleşmiş olsa bile görünüm
+  // açıldığında en güncel URL/yerel tercihi forma geri uygula.
+  const pref = examPreference();
+  $('#eq').value = pref.q;
+  $('#f-etype').value = pref.type;
+  $('#f-building').value = pref.building;
+  $('#f-ebranch').value = pref.branch;
   if (!state.exams && state.index) loadExams();
+  else if (state.exams) renderExams(true);
 }
 
 async function loadExams() {
@@ -156,6 +171,9 @@ export function examDateMatchesTerm(value, termSlug) {
 }
 
 function renderExams(append) {
+  // Filtre tercihi veri isteğinden bağımsız kaydedilir. Kullanıcı sınav verisi
+  // yüklenmeden yazıp başka sekmeye geçerse de arama kaybolmamalı.
+  if (!append) saveExamPreference();
   if (!state.exams) return;
   if (!append) examsShown = 400;
   const q = fold($('#eq').value.trim());
@@ -171,8 +189,6 @@ function renderExams(append) {
     return terms.every((t) => state.examHay[i].includes(t));
   });
   currentHits = hits; // .ics dışa aktarımı için
-  if (!append) saveExamPreference();
-
   // P2-17: yer bilgisi tüm satırlarda aynı/ilgisizse ("İlgili Bölümce
   // Açıklanacak") YER kolonu bilgi taşımıyor — gizle, üstte tek satır not düş.
   const realPlace = (p) => p && p !== '-' && p !== 'İlgili Bölümce Açıklanacak';

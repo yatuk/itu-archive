@@ -254,6 +254,7 @@ test.describe('SPA (ana sayfa)', () => {
     await page.goto('/#dersler');
     await expect(page.locator('#rows tr').first()).toBeVisible({ timeout: 15000 });
     await page.locator('#q').fill('MAT');
+    await expect(page).toHaveURL(/q=MAT/);
     await page.locator('#results th[data-sort="name"] .th-sort').click();
     await expect(page).toHaveURL(/q=MAT/);
     await page.goto('/#hakkinda');
@@ -277,9 +278,13 @@ test.describe('SPA (ana sayfa)', () => {
 
     await page.goto('/#sinavlar');
     await page.locator('#eq').fill('BLG');
-    await page.waitForTimeout(180);
-    await page.goto('/#hakkinda');
-    await page.goto('/#sinavlar');
+    await expect.poll(() => page.evaluate(() => localStorage.getItem('itu-exam-filters:v1')))
+      .toContain('BLG');
+    await page.locator('#tab-dersler').click();
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 15000 });
+    await expect(await page.evaluate(() => localStorage.getItem('itu-exam-filters:v1'))).toContain('BLG');
+    await page.locator('#tab-sinavlar').click();
     await expect(page.locator('#eq')).toHaveValue('BLG');
 
     await page.goto('/#onsart');
@@ -971,7 +976,7 @@ test.describe('SEO sayfaları', () => {
     await expect(page.locator('.crumb')).toContainText('İTÜ Ders Arşivi');
     const graph = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
     expect(graph.some((item) => item['@type'] === 'BreadcrumbList')).toBe(true);
-    expect(graph.some((item) => item['@type'] === 'WebPage' && item.dateModified === '2026-08-22')).toBe(true);
+    expect(graph.some((item) => item['@type'] === 'WebPage' && item.dateModified === '2026-08-23')).toBe(true);
     await expect(page.locator('.seo-action-list a[href="/ders-programi/"]')).toBeVisible();
     await expect(page.locator('.seo-action-list a[href="/kontenjan/"]')).toBeVisible();
   });

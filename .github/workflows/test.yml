@@ -1,5 +1,12 @@
 name: test
 
+permissions:
+  contents: read
+
+concurrency:
+  group: test-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 # Birim testleri ve veri doğrulama. Her push/PR'de koşar; kazıyıcı regex'leri
 # ve frontend saf fonksiyonları OBS değişimlerine karşı sabit tutar.
 on:
@@ -66,3 +73,48 @@ jobs:
             playwright-report/
             test-results/
           retention-days: 7
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Yerel yayın sunucusu
+        shell: bash
+        run: |
+          python3 -m http.server 4173 --directory docs > /tmp/itu-http.log 2>&1 &
+          echo $! > /tmp/itu-http.pid
+          for attempt in $(seq 1 20); do
+            curl -fsS http://127.0.0.1:4173/ >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/itu-http.log
+          exit 1
+
+      - name: Lighthouse bütçeleri
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./lighthouserc.cjs
+          uploadArtifacts: true
+          temporaryPublicStorage: false
+
+  quality-gate:
+    if: always()
+    needs: [test, e2e, lighthouse]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Yayın kalite kapısı
+        shell: bash
+        env:
+          UNIT_RESULT: ${{ needs.test.result }}
+          E2E_RESULT: ${{ needs.e2e.result }}
+          LIGHTHOUSE_RESULT: ${{ needs.lighthouse.result }}
+        run: |
+          printf 'unit=%s\ne2e=%s\nlighthouse=%s\n' "$UNIT_RESULT" "$E2E_RESULT" "$LIGHTHOUSE_RESULT"
+          test "$UNIT_RESULT" = success
+          test "$E2E_RESULT" = success
+          test "$LIGHTHOUSE_RESULT" = success

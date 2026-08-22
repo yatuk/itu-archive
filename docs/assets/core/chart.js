@@ -1,7 +1,7 @@
 // Görselleştirme yardımcıları: doluluk çubuğu ve dönem trend grafiği.
 // Saf string üreticileri — DOM'a dokunmazlar, test edilebilirler.
 
-import { termLabel, esc, formatInt } from './utils.js?v=7e12ca046d39';
+import { termLabel, esc, formatInt } from './utils.js?v=5200cebd4769';
 
 // fillBar, dondurulmuş fosfor temasının yüzde + çubuk motifidir. full/tight
 // sınıfları doluluk durumunu taşır. detail:true → "yazılan / kapasite · %pct";

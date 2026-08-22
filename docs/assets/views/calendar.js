@@ -1,11 +1,33 @@
 // Akademik takvim görünümü: seçilen yılın takvimini tabloya göre gruplar,
 // geçmiş etkinlikleri isteğe bağlı gizler.
 
-import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, hashShort } from '../core/utils.js?v=e99ae63c7504';
-import { state } from '../core/store.js?v=e99ae63c7504';
-import { initReveal } from '../core/reveal.js?v=e99ae63c7504';
+import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, hashShort } from '../core/utils.js?v=7e12ca046d39';
+import { state } from '../core/store.js?v=7e12ca046d39';
+import { initReveal } from '../core/reveal.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=7e12ca046d39';
 
 let inited = false;
+
+function calendarPreference() {
+  const params = new URLSearchParams(location.search);
+  const explicit = location.hash === '#takvim' && ['year', 'caltype', 'upcoming'].some((key) => params.has(key));
+  const pref = explicit ? {} : readLocalState('itu-calendar-filters', { fallback: {}, validate: isPlainObject });
+  return {
+    year: params.get('year') || pref.year || '',
+    type: params.get('caltype') || pref.type || '',
+    upcoming: params.has('upcoming') ? params.get('upcoming') !== '0' : pref.upcoming !== false,
+  };
+}
+
+function saveCalendarPreference() {
+  const data = { year: $('#f-year').value, type: $('#f-caltype').value, upcoming: $('#f-upcoming').checked };
+  writeLocalState('itu-calendar-filters', data, { validate: isPlainObject });
+  const p = new URLSearchParams();
+  if (data.year) p.set('year', data.year);
+  if (data.type) p.set('caltype', data.type);
+  if (!data.upcoming) p.set('upcoming', '0');
+  history.replaceState(null, '', `${location.pathname}${p.size ? `?${p}` : ''}#takvim`);
+}
 
 // Tür slug → görünür etiket. Liste kodda sabit değil — hangi türlerin
 // seçileceğini index.json (seçili yılın types'ı) belirler (P0-4).
@@ -31,15 +53,20 @@ function populateTypes(yearId) {
 
 export function initCalendar() {
   if (inited) return;
+  const pref = calendarPreference();
+  if ([...$('#f-year').options].some((o) => o.value === pref.year)) $('#f-year').value = pref.year;
+  $('#f-upcoming').checked = pref.upcoming;
+  populateTypes($('#f-year').value);
+  if ([...$('#f-caltype').options].some((o) => o.value === pref.type)) $('#f-caltype').value = pref.type;
   $('#f-year').addEventListener('change', () => {
     populateTypes($('#f-year').value);
+    saveCalendarPreference();
     loadCalendar($('#f-year').value, $('#f-caltype').value);
   });
-  $('#f-caltype').addEventListener('change', () => loadCalendar($('#f-year').value, $('#f-caltype').value));
-  $('#f-upcoming').addEventListener('change', renderCalendar);
+  $('#f-caltype').addEventListener('change', () => { saveCalendarPreference(); loadCalendar($('#f-year').value, $('#f-caltype').value); });
+  $('#f-upcoming').addEventListener('change', () => { saveCalendarPreference(); renderCalendar(); });
   const ics = $('#cal-ics');
   if (ics) ics.addEventListener('click', exportICS);
-  populateTypes($('#f-year').value);
   inited = true;
 }
 

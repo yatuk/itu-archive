@@ -15,10 +15,11 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-import { esc, fold, getJSON, termLabel } from './core/utils.js?v=e99ae63c7504';
-import { state } from './core/store.js?v=e99ae63c7504';
-import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=e99ae63c7504';
-import { I18N } from './i18n.js?v=e99ae63c7504';
+import { esc, fold, getJSON, termLabel } from './core/utils.js?v=7e12ca046d39';
+import { state } from './core/store.js?v=7e12ca046d39';
+import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=7e12ca046d39';
+import { I18N } from './i18n.js?v=7e12ca046d39';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
@@ -872,6 +873,14 @@ import { I18N } from './i18n.js?v=e99ae63c7504';
   // Seviye filtresi: varsayılan yalnızca lisans. Kullanıcı değiştirirse bu
   // Set üzerinden seçici yeniden kurulur.
   let activeLevels = new Set(['LS']);
+  let prereqPreference = {};
+
+  function savePrereqPreference(root) {
+    const program = root.querySelector('.pg-program-select')?.value || '';
+    const list = root.classList.contains('pg-list-mode') || root.classList.contains('pg-mobile-full');
+    prereqPreference = { program, levels: [...activeLevels], view: list ? 'list' : 'graph' };
+    writeLocalState('itu-prereq-view', prereqPreference, { validate: isPlainObject });
+  }
 
   // ---- Seçmeli havuz yardımcıları ----
   // Havuz listesi her seçmeli slot açılışında branş dosyalarını çeker;
@@ -1069,8 +1078,19 @@ import { I18N } from './i18n.js?v=e99ae63c7504';
       btn.textContent = mobile ? (on ? 'Odak görünümü' : 'Tam grafik') : (on ? 'Grafik görünümü' : 'Liste görünümü');
       btn.setAttribute('aria-pressed', String(on));
       if (!mobile) box.classList.toggle('sr-only', !on);
+      savePrereqPreference(root);
     });
-    if (window.matchMedia('(max-width: 700px)').matches) btn.textContent = 'Tam grafik';
+    const mobile = window.matchMedia('(max-width: 700px)').matches;
+    if (mobile) btn.textContent = 'Tam grafik';
+    if (prereqPreference.view === 'list') {
+      if (mobile) root.classList.add('pg-mobile-full');
+      else {
+        root.classList.add('pg-list-mode');
+        box.classList.remove('sr-only');
+      }
+      btn.textContent = mobile ? 'Odak görünümü' : 'Grafik görünümü';
+      btn.setAttribute('aria-pressed', 'true');
+    }
   }
 
   // renderBranchLegend, grafikteki renklerin hangi branşa ait olduğunu
@@ -1096,6 +1116,7 @@ import { I18N } from './i18n.js?v=e99ae63c7504';
       else activeLevels.add(lv);
       renderLevelFilter(box);
       renderProgramPicker(root);
+      savePrereqPreference(root);
     });
     renderLevelFilter(box);
   }
@@ -1148,6 +1169,10 @@ import { I18N } from './i18n.js?v=e99ae63c7504';
       const root = document.querySelector(rootSelector);
       const { programs: ps } = await ensureData(root);
       if (!inited) {
+        prereqPreference = readLocalState('itu-prereq-view', { fallback: {}, validate: isPlainObject });
+        const levels = Array.isArray(prereqPreference.levels)
+          ? prereqPreference.levels.filter((level) => LEVEL_ORDER.includes(level)) : [];
+        activeLevels = new Set(levels.length ? levels : ['LS']);
         initLevelFilter(root);
         renderProgramPicker(root);
         // Fakülte değişince bölüm listesi yenilenir (seçim temizlenir).
@@ -1158,6 +1183,7 @@ import { I18N } from './i18n.js?v=e99ae63c7504';
           const sel = root.querySelector('.pg-program-select');
           if (!sel.value) return;
           selectProgram(root, sel.value);
+          savePrereqPreference(root);
           history.replaceState(null, '', `?prog=${encodeURIComponent(sel.value)}#onsart`);
         });
         root.querySelector('.pg-search').addEventListener('input', (e) => {
@@ -1177,7 +1203,7 @@ import { I18N } from './i18n.js?v=e99ae63c7504';
         // Paylaşılabilir URL: ?prog=BLG_LS&pool=<slot>#onsart — programı seç,
         // grafik kurulunca (varsa) havuz panelini aç.
         const params = new URLSearchParams(location.search);
-        const wantProg = params.get('prog');
+        const wantProg = params.get('prog') || prereqPreference.program || '';
         if (wantProg) {
           // Paylaşılan link başka bir fakültenin programına işaret edebilir:
           // önce o programın fakültesini aç, sonra bölüm listesini kur.

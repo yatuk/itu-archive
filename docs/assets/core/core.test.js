@@ -8,7 +8,7 @@ import assert from 'node:assert/strict';
 import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, quotaDisplay, quotaState, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
-import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList, groupCourseRows } from '../views/courses.js';
+import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList, groupCourseRows, cachedGroupCourseRows } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
 import { examDateMatchesTerm, examScheduleMatchesTerm, examToIcs } from '../views/exams.js';
@@ -22,6 +22,7 @@ import { setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON,
 import * as fav from './favorites.js';
 import { formatProgramLabel, normalizeProgramLevel, programLevelLabel } from './programs.js';
 import { parseOBSTranscript, transcriptLatest, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from './transcript.js';
+import { versionedKey, readLocalState, writeLocalState, isPlainObject } from './persistence.js';
 
 test('program etiketleri kod, ad ve açık seviye adıyla her zaman doludur', () => {
   assert.equal(normalizeProgramLevel('', 'CEN_LS'), 'LS');
@@ -80,6 +81,74 @@ CEN 101E Information Systems 2,00 BA+`).records;
   assert.deepEqual(merged.grades['CEN 101E'], { grade: 'BA+', prev: 'FF', repeat: true });
   assert.equal(merged.grades['EEE 211E'].grade, 'DC');
   assert.deepEqual(merged.elective.s0i2, { code: 'BLG 337E', grade: 'BB', prev: '' });
+});
+
+test('transkript kodu boş laboratuvar ve akademik yazım slotlarını kesin adla ayrı ayrı eşler', () => {
+  const records = parseOBSTranscript(`2023-2024 / Güz Dönemi
+FIZ 101EL Physics I Laboratory 1,00 AA
+KIM 101EL General Chemistry I Lab 1,00 BB
+2023-2024 / Bahar Dönemi
+FIZ 102EL Physics II Laboratory 1,00 CB+
+ING 112A Basics of Academic Writing 2,00 CC+
+EHB 315E Intro to Electronics Laboratory 1,00 BA`).records;
+  const plan = { semesters: [{ items: [
+    { course: { code: '', name: 'Physics I Laboratory' } },
+    { course: { code: '', name: 'General Chemistry I Laboratory' } },
+    { course: { code: '', name: 'Physics II Laboratory' } },
+    { course: { code: '', name: 'Basics of Academic Writing' } },
+    { course: { code: 'EEE 315E', name: 'Intr.to Electronics Laboratory' } },
+  ] }] };
+  const match = matchTranscriptToPlan(plan, records);
+  assert.deepEqual(match.courseAssignments.map((r) => [r.targetSlot, r.targetCode, r.grade]), [
+    ['s0i0', 'FIZ 101EL', 'AA'],
+    ['s0i1', 'KIM 101EL', 'BB'],
+    ['s0i2', 'FIZ 102EL', 'CB+'],
+    ['s0i3', 'ING 112A', 'CC+'],
+    ['s0i4', 'EEE 315E', 'BA'],
+  ]);
+  assert.equal(match.unmatched.length, 0);
+  const merged = mergeTranscriptMatch({}, match);
+  assert.deepEqual(merged.requiredSlots, {
+    s0i0: 'FIZ 101EL', s0i1: 'KIM 101EL', s0i2: 'FIZ 102EL', s0i3: 'ING 112A',
+  });
+  assert.equal(merged.grades['ING 112A'].grade, 'CC+');
+});
+
+test('transkript ITB ve SNT derslerini kesin seçenekten sonra ortak boş havuza yerleştirir', () => {
+  const records = parseOBSTranscript(`2024-2025 / Güz Dönemi
+ITB 205E Philosophy 3,00 BB
+SNT 102E Photography 3,00 BA`).records;
+  const plan = { semesters: [{ items: [
+    { elective: { title: 'Elective Course (ITB)', options: [{ code: 'SNT 102E' }] } },
+    { elective: { title: 'Elective Course (SNT)', options: [{ code: 'SNT 103E' }] } },
+  ] }] };
+  const match = matchTranscriptToPlan(plan, records);
+  assert.deepEqual(match.electiveAssignments.map((r) => [r.slot, r.code]), [
+    ['s0i0', 'SNT 102E'],
+    ['s0i1', 'ITB 205E'],
+  ]);
+  assert.equal(match.unmatched.length, 0);
+});
+
+test('eşdeğer kodlu derste eski VF yerine kronolojik son başarılı notu kullanır', () => {
+  const records = parseOBSTranscript(`2024-2025 / Güz Dönemi
+BLG 335E Analysis of Algorithms I 3,00 VF
+2025-2026 / Bahar Dönemi
+CEN 335E Analysis of Algorithms I 3,00 CB`).records;
+  const plan = { semesters: [{ items: [
+    { course: { code: 'CEN 335E', name: 'Analysis of Algorithms I' } },
+  ] }] };
+  const match = matchTranscriptToPlan(plan, records);
+  assert.equal(match.courseAssignments.length, 1);
+  assert.deepEqual(match.courseAssignments[0], {
+    code: 'CEN 335E', name: 'Analysis of Algorithms I', credits: 3, grade: 'CB',
+    markedRepeat: false, term: '2025-2026 / Bahar', seq: 1,
+    prev: 'VF', repeat: true, attempts: 2,
+    equivalentCodes: ['BLG 335E', 'CEN 335E'], sourceCode: 'CEN 335E',
+    targetCode: 'CEN 335E', targetPlanCode: 'CEN 335E', targetSlot: 's0i0',
+  });
+  assert.equal(match.unmatched.length, 0);
+  assert.deepEqual(mergeTranscriptMatch({}, match).grades['CEN 335E'], { grade: 'CB', prev: 'VF', repeat: true });
 });
 
 test('transkript program adı ek nitelemelere rağmen tek program adayı bulur', () => {
@@ -590,6 +659,25 @@ globalThis.localStorage = {
   removeItem: (k) => storeMap.delete(k),
 };
 
+test('versioned storage eski kaydı taşır, bozuk/engelli depolamada fallback döndürür', () => {
+  storeMap.clear();
+  storeMap.set('legacy-pref', JSON.stringify({ enabled: true }));
+  const migrated = readLocalState('pref', {
+    fallback: {}, legacyKey: 'legacy-pref', validate: isPlainObject,
+  });
+  assert.deepEqual(migrated, { enabled: true });
+  assert.ok(storeMap.has(versionedKey('pref')));
+  assert.equal(writeLocalState('pref', { enabled: false }, { validate: isPlainObject }), true);
+  assert.deepEqual(readLocalState('pref', { fallback: {}, validate: isPlainObject }), { enabled: false });
+
+  storeMap.set(versionedKey('broken'), '{bad json');
+  assert.deepEqual(readLocalState('broken', { fallback: { safe: true }, validate: isPlainObject }), { safe: true });
+  const originalGet = globalThis.localStorage.getItem;
+  globalThis.localStorage.getItem = () => { throw new Error('blocked'); };
+  assert.equal(readLocalState('blocked', { fallback: 'ok' }), 'ok');
+  globalThis.localStorage.getItem = originalGet;
+});
+
 test('favori toggle ekler ve kaldırır', () => {
   storeMap.clear();
   assert.equal(fav.toggleFavorite('2025-2026-yaz', 'BLG', '100'), true);
@@ -650,6 +738,20 @@ test('groupCourseRows aynı dersin şubelerini sırayı bozmadan tek grupta topl
   assert.equal(groups[0].code, 'TUR 101');
   assert.deepEqual(groups[0].rows.map((row) => row[0]), ['10001', '10002']);
   assert.equal(groups[1].rows[0][0], '20001');
+});
+
+test('cachedGroupCourseRows aynı filtre sonucunu yeniden gruplamaz, yeni diziyi ayırır', () => {
+  const firstRows = [
+    ['10001', 'TUR 101', 'Türk Dili I', 'TUR'],
+    ['10002', 'TUR 101', 'Türk Dili I', 'TUR'],
+  ];
+  const first = cachedGroupCourseRows(firstRows);
+  assert.equal(cachedGroupCourseRows(firstRows), first, 'aynı filtre dizisi aynı grup sonucunu paylaşır');
+
+  const secondRows = [...firstRows, ['20001', 'MAT 101', 'Matematik I', 'MAT']];
+  const second = cachedGroupCourseRows(secondRows);
+  assert.notEqual(second, first, 'yeni filtre/sıralama dizisi önbelleği geçersiz kılar');
+  assert.equal(second.length, 2);
 });
 
 // Row biçimi: [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan]
@@ -1163,12 +1265,14 @@ test('typeBuckets Z/S tür kovalarına sızmaz, yalnızca gerçek türleri sayar
 });
 
 test('exportJSON/importJSON yuvarlak döner', () => {
-  const data = { grades: { 'BLG 101E': { grade: 'AA' } }, elective: {}, transfer: { credits: 20, gpa: 2.8 } };
+  const data = { grades: { 'BLG 101E': { grade: 'AA' } }, elective: {}, requiredSlots: { s0i1: 'FIZ 101EL' }, transfer: { credits: 20, gpa: 2.8 }, targetGpa: 3.25 };
   const json = exportJSON('BLG_LS', data);
   const back = importJSON(json);
   assert.equal(back.program, 'BLG_LS');
   assert.deepEqual(back.data.grades['BLG 101E'], { grade: 'AA' });
+  assert.deepEqual(back.data.requiredSlots, { s0i1: 'FIZ 101EL' });
   assert.equal(back.data.transfer.credits, 20);
+  assert.equal(back.data.targetGpa, 3.25);
   assert.equal(importJSON('bozuk'), null);
 });
 

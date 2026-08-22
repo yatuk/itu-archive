@@ -179,18 +179,19 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int, 
 	if ctx.Err() != nil {
 		return nil, failed, ctx.Err()
 	}
+	sort.Strings(failed)
 	return out, failed, nil
 }
 
 func key(br Branch) string { return br.Level + "/" + br.Code }
 
 var (
-	rowRe    = regexp.MustCompile(`(?is)<tr[^>]*>(.*?)</tr>`)
-	cellRe   = regexp.MustCompile(`(?is)<td[^>]*>(.*?)</td>`)
-	brRe     = regexp.MustCompile(`(?i)<br\s*/?>`)
-	tagRe    = regexp.MustCompile(`(?s)<[^>]*>`)
-	spaceRe  = regexp.MustCompile(`\s+`)
-	tbodyRe  = regexp.MustCompile(`(?is)<tbody[^>]*>(.*?)</tbody>`)
+	rowRe     = regexp.MustCompile(`(?is)<tr[^>]*>(.*?)</tr>`)
+	cellRe    = regexp.MustCompile(`(?is)<td[^>]*>(.*?)</td>`)
+	brRe      = regexp.MustCompile(`(?i)<br\s*/?>`)
+	tagRe     = regexp.MustCompile(`(?s)<[^>]*>`)
+	spaceRe   = regexp.MustCompile(`\s+`)
+	tbodyRe   = regexp.MustCompile(`(?is)<tbody[^>]*>(.*?)</tbody>`)
 	baslik1Re = regexp.MustCompile(`(?is)<h1[^>]*id="baslik1"[^>]*>(.*?)</h1>`)
 )
 

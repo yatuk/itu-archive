@@ -15,20 +15,20 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=e99ae63c7504';
-import { state } from '../core/store.js?v=e99ae63c7504';
-import { openCourseDetail } from '../core/course-detail.js?v=e99ae63c7504';
-import { quotaDisplay } from '../core/chart.js?v=e99ae63c7504';
-import * as fav from '../core/favorites.js?v=e99ae63c7504';
-import { toast } from '../core/toast.js?v=e99ae63c7504';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge } from '../core/plan.js?v=e99ae63c7504';
-import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=e99ae63c7504';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js?v=e99ae63c7504';
-import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=e99ae63c7504';
-import { confirmDialog } from '../core/dialog.js?v=e99ae63c7504';
-import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=e99ae63c7504';
-import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=e99ae63c7504';
-import { I18N } from '../i18n.js?v=e99ae63c7504';
+import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=7e12ca046d39';
+import { state } from '../core/store.js?v=7e12ca046d39';
+import { openCourseDetail } from '../core/course-detail.js?v=7e12ca046d39';
+import { quotaDisplay } from '../core/chart.js?v=7e12ca046d39';
+import * as fav from '../core/favorites.js?v=7e12ca046d39';
+import { toast } from '../core/toast.js?v=7e12ca046d39';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge } from '../core/plan.js?v=7e12ca046d39';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=7e12ca046d39';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js?v=7e12ca046d39';
+import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=7e12ca046d39';
+import { confirmDialog } from '../core/dialog.js?v=7e12ca046d39';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=7e12ca046d39';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=7e12ca046d39';
+import { I18N } from '../i18n.js?v=7e12ca046d39';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
@@ -208,6 +208,9 @@ async function selectProgram(code) {
   progCode = code;
   plan = null;
   stored = loadStored(code);
+  const savedTarget = Number(stored.targetGpa);
+  $('#dp-targetgpa').value = Number.isFinite(savedTarget) && savedTarget >= 0 && savedTarget <= 4
+    ? String(savedTarget) : '3.00';
   catalogMap.clear();
   setDPResult('yükleniyor…', { busy: true });
   try {
@@ -505,7 +508,7 @@ function renderAll() {
       const slotKey = `s${i}i${ii}`;
       if (item.course) {
         const c = item.course;
-        const code = canonicalCode(c.code);
+        const code = resolvedCourseCode(c, slotKey);
         if (filters.types.size && (!c.type || !filters.types.has(c.type))) return;
         const st = joinCourse(code, rows, historyFor(branchOf(code)));
         if (st.state === 'closed' && !histCache.has(branchOf(code))) historyCodes.push(code);
@@ -579,11 +582,33 @@ function planSummaryLine(open, closed, slotOpen, slotCount, shown) {
   return parts.join(' · ');
 }
 
+// Bazı eski OBS müfredatlarında laboratuvar/yazım dersinin kodu boş. Transkript
+// aktarımı bu slot için doğrulanmış kaynak kodunu saklar; diğer bütün derslerde
+// müfredat kodu değişmeden kullanılır.
+function resolvedCourseCode(course, slotKey) {
+  return canonicalCode(course?.code) || canonicalCode((stored.requiredSlots || {})[slotKey]);
+}
+
+function resolvedPlan() {
+  if (!plan || !Object.keys(stored.requiredSlots || {}).length) return plan;
+  return {
+    ...plan,
+    semesters: plan.semesters.map((semester, si) => ({
+      ...semester,
+      items: semester.items.map((item, ii) => {
+        if (!item.course || canonicalCode(item.course.code)) return item;
+        const code = resolvedCourseCode(item.course, `s${si}i${ii}`);
+        return code ? { ...item, course: { ...item.course, code } } : item;
+      }),
+    })),
+  };
+}
+
 // Ders satırı — sabit 5 hücreli ızgara: kredi | ders | tekrar | not | durum.
 // Şube listesi satırın ALTINDA katlı (varsayılan kapalı) — satır yüksekliği şube
 // sayısından bağımsızdır. Tam DOM (createElement + textContent): ham HTML yok.
 function courseRow(c, st, slotKey) {
-  const code = canonicalCode(c.code);
+  const code = resolvedCourseCode(c, slotKey);
   const rec = (stored.grades || {})[code] || {};
 
   const card = document.createElement('div');
@@ -878,9 +903,10 @@ function remainingRequired() {
   if (!plan) return 0;
   const graded = new Set(allEntries().filter((e) => e.grade).map((e) => e.code));
   let n = 0;
-  for (const sem of plan.semesters) {
-    for (const item of sem.items) {
-      if (item.course && item.course.required === 'Z' && !graded.has(canonicalCode(item.course.code))) n++;
+  for (const [si, sem] of plan.semesters.entries()) {
+    for (const [ii, item] of sem.items.entries()) {
+      const code = item.course ? resolvedCourseCode(item.course, `s${si}i${ii}`) : '';
+      if (item.course && item.course.required === 'Z' && !graded.has(code)) n++;
     }
   }
   return n;
@@ -889,7 +915,7 @@ function remainingRequired() {
 // -- GANO hesapları (Faz: Ders Planım not girişi) --
 
 function allEntries() {
-  return buildEntries(plan, stored, catalogMap);
+  return buildEntries(resolvedPlan(), stored, catalogMap);
 }
 
 // Yarıyıl ortalamaları: her yarıyılın kendi Σ(katsayı×kredi)/Σ(kredi).
@@ -977,7 +1003,7 @@ function setTargetState(off) {
 // Tür bazlı eksik: "EC 0/5 kredi" — yalnızca gerçek türler kova olur; türü olmayan
 // dersler sayılmaz, Z/S kovalara sızmaz. Kova hesabı saf planstore.typeBuckets'te.
 function typeProgress() {
-  const buckets = typeBuckets(plan, allEntries());
+  const buckets = typeBuckets(resolvedPlan(), allEntries());
   if (!buckets.size) return '';
   return [...buckets.entries()]
     .sort((a, b) => a[0].localeCompare(b[0]))
@@ -1394,7 +1420,14 @@ function init() {
   };
   $('#dp-tcredits').addEventListener('change', wireTransfer);
   $('#dp-tgpa').addEventListener('change', wireTransfer);
-  $('#dp-targetgpa').addEventListener('input', renderGPA);
+  $('#dp-targetgpa').addEventListener('input', () => {
+    const value = Number(String($('#dp-targetgpa').value || '').replace(',', '.'));
+    if (Number.isFinite(value) && value >= 0 && value <= 4 && progCode) {
+      stored = { ...stored, targetGpa: value };
+      saveStored(progCode, stored);
+    }
+    renderGPA();
+  });
 
   // Dışa/içe aktar + sıfırla (veri yalnızca tarayıcıda, JSON ile taşınır).
   $('#dp-export').addEventListener('click', () => {
@@ -1413,6 +1446,8 @@ function init() {
     if (parsed.program !== progCode) { toast('Bu dosya başka bir programın notlarını içeriyor', { kind: 'warn' }); return; }
     stored = parsed.data;
     saveStored(progCode, stored);
+    const target = Number(stored.targetGpa);
+    $('#dp-targetgpa').value = Number.isFinite(target) && target >= 0 && target <= 4 ? String(target) : '3.00';
     catalogMap.clear();
     ensureCatalogForPicks();
     renderAll();
@@ -1428,6 +1463,7 @@ function init() {
       if (!yes) return;
       stored = {};
       saveStored(progCode, stored);
+      $('#dp-targetgpa').value = '3.00';
       renderAll();
       toast('Notlar sıfırlandı');
     });

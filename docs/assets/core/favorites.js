@@ -1,6 +1,7 @@
 // Favoriler ve program (ders programı) kaydı — localStorage'da kalıcı.
 // Kayıt: { term, branch, crn } üçlüsü; branş|crn anahtarı dönem içinde benzersiz.
-import { getJSON } from './utils.js?v=e99ae63c7504';
+import { getJSON } from './utils.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState } from './persistence.js?v=7e12ca046d39';
 
 const FAV_KEY = 'itu-favorites';
 const SCHED_KEY = 'itu-schedule';
@@ -8,15 +9,15 @@ const SCHED_KEY = 'itu-schedule';
 export function favKeyOf(branch, crn) { return `${branch}|${crn}`; }
 
 function read(key) {
-  try {
-    const v = localStorage.getItem(key);
-    if (!v) return [];
-    const p = JSON.parse(v);
-    return Array.isArray(p) ? p : [];
-  } catch { return []; }
+  return readLocalState(key, {
+    fallback: [],
+    legacyKey: key,
+    validate: (list) => Array.isArray(list) && list.every((item) => item &&
+      typeof item.term === 'string' && typeof item.branch === 'string' && typeof item.crn === 'string'),
+  });
 }
 function write(key, list) {
-  try { localStorage.setItem(key, JSON.stringify(list)); } catch { /* dolu/saklı mod */ }
+  writeLocalState(key, list, { validate: Array.isArray });
 }
 
 export function loadFavorites() { return read(FAV_KEY); }

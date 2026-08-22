@@ -132,6 +132,7 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) 
 	if ctx.Err() != nil {
 		return nil, failed, ctx.Err()
 	}
+	sort.Strings(failed)
 	sort.Slice(all, func(i, j int) bool {
 		if all[i].CRN != all[j].CRN {
 			return all[i].CRN < all[j].CRN

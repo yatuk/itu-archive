@@ -14,23 +14,28 @@
 // not girer (latestOnly/calcGPA). Seçmeli slotta ders seçilmediyse plan kredisi
 // varsayılandır ve `defaultCredit` işareti taşır.
 
-import { parseRange, canonicalCode } from './plan.js?v=e99ae63c7504';
+import { parseRange, canonicalCode } from './plan.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=7e12ca046d39';
 
 const KEY = 'itu-grades';
 
 export function loadStored(prog) {
-  try {
-    const all = JSON.parse(localStorage.getItem(KEY) || 'null');
-    return (all && all[prog]) || {};
-  } catch { return {}; }
+  const all = readLocalState(KEY, {
+    fallback: {},
+    legacyKey: KEY,
+    validate: isPlainObject,
+  });
+  return isPlainObject(all[prog]) ? all[prog] : {};
 }
 
 export function saveStored(prog, data) {
-  try {
-    const all = JSON.parse(localStorage.getItem(KEY) || '{}') || {};
-    all[prog] = { ...data, updatedAt: Date.now() };
-    localStorage.setItem(KEY, JSON.stringify(all));
-  } catch { /* dolu/saklı mod */ }
+  const all = readLocalState(KEY, {
+    fallback: {},
+    legacyKey: KEY,
+    validate: isPlainObject,
+  });
+  all[prog] = { ...data, updatedAt: Date.now() };
+  writeLocalState(KEY, all, { validate: isPlainObject });
 }
 
 // Zorunlu ders notunu yazar; mevcut not varsa eskiye taşınır (tekrar işareti).
@@ -67,7 +72,7 @@ export function importJSON(json) {
   try {
     const d = JSON.parse(json);
     if (!d || !d.program) return null;
-    return { program: d.program, data: { grades: d.grades || {}, elective: d.elective || {}, transfer: d.transfer || null } };
+    return { program: d.program, data: { grades: d.grades || {}, elective: d.elective || {}, requiredSlots: d.requiredSlots || {}, transfer: d.transfer || null, targetGpa: d.targetGpa || '' } };
   } catch { return null; }
 }
 

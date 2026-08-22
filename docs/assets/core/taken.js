@@ -3,18 +3,23 @@
 // kullanıcının kendi beyanı; arayüz "kesin sağlıyorsun" değil "girdiğin derslere
 // göre sağlanıyor görünüyor" der.
 
+import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=7e12ca046d39';
+
 const KEY = 'itu-taken';
 
 export function getTaken() {
-  try {
-    const d = JSON.parse(localStorage.getItem(KEY) || 'null');
-    if (d && Array.isArray(d.codes)) return { codes: d.codes, program: d.program || '' };
-  } catch {}
+  const d = readLocalState(KEY, {
+    fallback: null, legacyKey: KEY,
+    validate: (value) => isPlainObject(value) && Array.isArray(value.codes),
+  });
+  if (d) return { codes: d.codes.filter((code) => typeof code === 'string'), program: typeof d.program === 'string' ? d.program : '' };
   return { codes: [], program: '' };
 }
 
 export function saveTaken(t) {
-  try { localStorage.setItem(KEY, JSON.stringify({ codes: t.codes, program: t.program || '' })); } catch {}
+  writeLocalState(KEY, { codes: t.codes, program: t.program || '' }, {
+    validate: (value) => isPlainObject(value) && Array.isArray(value.codes),
+  });
 }
 
 // Ders kodu metnini temizler: virgül/noktalı virgül/satır ayraç olabilir, ders

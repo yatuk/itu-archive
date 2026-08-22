@@ -166,6 +166,7 @@ func (c *Client) ScrapeAll(ctx context.Context, branches []Branch, workers int) 
 	if ctx.Err() != nil {
 		return nil, failed, ctx.Err()
 	}
+	sort.Strings(failed)
 	return all, failed, nil
 }
 

@@ -1,3 +1,5 @@
+import { readLocalState, writeLocalState } from './core/persistence.js?v=7e12ca046d39';
+
 // Çok hafif i18n modülü. `?lang=en` parametresinden veya localStorage'dan
 // dil seçimi okur; `t(key)` ile çeviri yapar. Eksik anahtarlar tr'ye düşer.
 const I18N = (() => {
@@ -285,7 +287,10 @@ const I18N = (() => {
   const want = params.get('lang');
   if (want && strings[want]) lang = want;
   else if (typeof window !== 'undefined') {
-    try { lang = localStorage.getItem('itu-lang') || lang; } catch(e) {}
+    lang = readLocalState('itu-lang', {
+      fallback: lang, legacyKey: 'itu-lang', parseLegacy: (raw) => raw,
+      validate: (value) => Boolean(strings[value]),
+    });
   }
 
   function t(key) {
@@ -306,6 +311,8 @@ const I18N = (() => {
   // aynı kodla yeniden çizilir. ?lang= parametresi korunur.
   function setLang(next) {
     next = strings[next] ? next : (next === 'en' ? 'tr' : 'en');
+    writeLocalState('itu-lang', next, { validate: (value) => Boolean(strings[value]) });
+    // Yenileme öncesi/eskiden kalma istemciler için uyumluluk aynası.
     try { localStorage.setItem('itu-lang', next); } catch (e) {}
     const params = new URLSearchParams(location.search);
     params.set('lang', next);

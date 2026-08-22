@@ -9,7 +9,7 @@
 // (örn. detay satırı açma). NOT: DocumentFragment değil — appendChild çocukları
 // tbody'ye taşır, fragment sonrasında boşalır; o yüzden tr'ler döndürülür.
 
-import { esc } from './utils.js?v=e99ae63c7504';
+import { esc } from './utils.js?v=7e12ca046d39';
 
 export function fillRows(tbody, items, makeRow, { empty = 'kayıt yok', colspan = 1, append = false } = {}) {
   if (!append) tbody.innerHTML = '';

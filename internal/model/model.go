@@ -65,10 +65,12 @@ type Exam struct {
 
 // ExamSchedule, bir dönemin sınav takvimi.
 type ExamSchedule struct {
-	Term      string `json:"term"`
-	Slug      string `json:"slug"`
-	ScrapedAt string `json:"scrapedAt"`
-	Exams     []Exam `json:"exams"`
+	Term           string   `json:"term"`
+	Slug           string   `json:"slug"`
+	ScrapedAt      string   `json:"scrapedAt"`
+	Exams          []Exam   `json:"exams"`
+	Partial        bool     `json:"partial,omitempty"`
+	FailedBranches []string `json:"failedBranches,omitempty"`
 }
 
 // PrereqNode, önşart grafiğindeki tek bir ders. Katalogdaki her ders bir düğüm;
@@ -89,9 +91,11 @@ type PrereqEdge struct {
 
 // PrereqGraph, docs/data/prereq/graph.json içeriği.
 type PrereqGraph struct {
-	GeneratedAt string       `json:"generatedAt"`
-	Nodes       []PrereqNode `json:"nodes"`
-	Edges       []PrereqEdge `json:"edges"`
+	GeneratedAt    string       `json:"generatedAt"`
+	Nodes          []PrereqNode `json:"nodes"`
+	Edges          []PrereqEdge `json:"edges"`
+	Partial        bool         `json:"partial,omitempty"`
+	FailedBranches []string     `json:"failedBranches,omitempty"`
 }
 
 // CalendarEvent, akademik takvimdeki tek bir satır.

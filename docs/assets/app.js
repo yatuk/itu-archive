@@ -3,19 +3,20 @@
    her sekmenin mantığı views/ altındaki kendi modülünde. Tüm veri docs/data
    altındaki statik JSON'lardan geliyor; sunucu tarafı yok. */
 
-import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js?v=e99ae63c7504';
-import { state, markIndexReady } from './core/store.js?v=e99ae63c7504';
-import { I18N } from './i18n.js?v=e99ae63c7504';
-import { initCourses, loadTerm, applyFilters, syncProgramFilter } from './views/courses.js?v=e99ae63c7504';
-import { initCourseDetail, openCourseDetail } from './core/course-detail.js?v=e99ae63c7504';
-import { initHistory, onShow as historyShow, searchHistory } from './views/history.js?v=e99ae63c7504';
-import { initExams, onShow as examsShow } from './views/exams.js?v=e99ae63c7504';
-import { initCalendar, onShow as calendarShow } from './views/calendar.js?v=e99ae63c7504';
-import { renderTerms } from './views/terms.js?v=e99ae63c7504';
-import { onShow as programShow } from './views/program.js?v=e99ae63c7504';
-import { onShow as dersplanimShow } from './views/dersplanim.js?v=e99ae63c7504';
-import { PrereqGraph } from './prereq.js?v=e99ae63c7504';
-import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=e99ae63c7504';
+import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js?v=7e12ca046d39';
+import { state, markIndexReady } from './core/store.js?v=7e12ca046d39';
+import { I18N } from './i18n.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=7e12ca046d39';
+import { initCourses, loadTerm, applyFilters, syncProgramFilter, restoreCourseSort } from './views/courses.js?v=7e12ca046d39';
+import { initCourseDetail, openCourseDetail } from './core/course-detail.js?v=7e12ca046d39';
+import { initHistory, onShow as historyShow, searchHistory } from './views/history.js?v=7e12ca046d39';
+import { initExams, onShow as examsShow } from './views/exams.js?v=7e12ca046d39';
+import { initCalendar, onShow as calendarShow } from './views/calendar.js?v=7e12ca046d39';
+import { renderTerms } from './views/terms.js?v=7e12ca046d39';
+import { onShow as programShow } from './views/program.js?v=7e12ca046d39';
+import { onShow as dersplanimShow } from './views/dersplanim.js?v=7e12ca046d39';
+import { PrereqGraph } from './prereq.js?v=7e12ca046d39';
+import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=7e12ca046d39';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -84,8 +85,14 @@ async function boot() {
     .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ' · canlı' : ''}</option>`)
     .join('');
   const params = new URLSearchParams(location.search);
+  const coursePref = readLocalState('itu-courses-state', { fallback: {}, validate: isPlainObject });
+  const courseUrlKeys = ['term', 'q', 'branch', 'day', 'time', 'level', 'method', 'program', 'code', 'open', 'sort', 'sdir'];
+  const explicitCourseState = pendingView === 'dersler' && courseUrlKeys.some((key) => params.has(key));
+  const courseValue = (key, fallback = '') => params.has(key)
+    ? params.get(key)
+    : (!explicitCourseState && coursePref[key] != null ? coursePref[key] : fallback);
   let initialSlug = ix.currentSlug;
-  const wantTerm = params.get('term');
+  const wantTerm = courseValue('term');
   if (wantTerm && ix.terms.some((t) => t.slug === wantTerm)) initialSlug = wantTerm;
   termSel.value = initialSlug;
 
@@ -115,20 +122,22 @@ async function boot() {
 
   // Arama ve filtre durumunu URL'den uygula (loadTerm filtre seçeneklerini
   // yeniden kurduğu için bunları ondan sonra yazıyoruz).
-  if (params.has('q')) $('#q').value = params.get('q');
-  if (params.has('branch')) $('#f-branch').value = params.get('branch');
-  if (params.has('day')) $('#f-day').value = params.get('day');
-  if (params.has('time')) $('#f-time').value = params.get('time');
-  $('#f-level').value = params.has('level') ? params.get('level') : 'LS';
+  $('#q').value = courseValue('q');
+  $('#f-branch').value = courseValue('branch');
+  $('#f-day').value = courseValue('day');
+  $('#f-time').value = courseValue('time');
+  $('#f-level').value = courseValue('level', 'LS');
   // method URL'de kısa kodla (f/c/h) gelir; eski uzun biçim (geriye uyumlu)
   // aynen kabul edilir — applyFilters/saveState kısa koda çevirip sadeleştirir.
-  if (params.has('method')) {
-    const m = params.get('method');
+  if (courseValue('method')) {
+    const m = courseValue('method');
     $('#f-method').value = codeToMethod(m) || m;
   }
-  await syncProgramFilter(params.get('program') || '');
-  if (params.has('code')) $('#f-code').value = params.get('code');
-  if (params.get('open') === '1') $('#f-open').checked = true;
+  await syncProgramFilter(courseValue('program'));
+  $('#f-code').value = courseValue('code');
+  $('#f-open').checked = courseValue('open') === '1' || courseValue('open') === true;
+  const wantedSort = courseValue('sort', 'crn');
+  restoreCourseSort(wantedSort, courseValue('sdir', coursePref.dir || 1));
   applyFilters();
     window.__ituAppReady?.();
 }
@@ -150,13 +159,18 @@ function initTheme() {
   };
   const apply = (t) => {
     domApply(t);
+    writeLocalState('itu-theme', t, { validate: (value) => value === 'sade' || value === 'dark' });
+    // İlk CSS boyamasından önce çalışan küçük inline bootstrap için uyumluluk aynası.
     try { localStorage.setItem('itu-theme', t); } catch (e) {}
   };
   // Yalnızca sade (ana) ve dark (seçenek) var. Eski light/contrast/auto
   // tercihleri kaldırılan temalara karşılık gelir — sade'ye düşer (yoksa
   // :root koyusu görünürdü, çünkü light/contrast CSS blokları silindi).
   let cur = 'sade';
-  try { cur = localStorage.getItem('itu-theme') === 'dark' ? 'dark' : 'sade'; } catch (e) {}
+  cur = readLocalState('itu-theme', {
+    fallback: 'sade', legacyKey: 'itu-theme', parseLegacy: (raw) => raw,
+    validate: (value) => value === 'sade' || value === 'dark',
+  });
   domApply(cur);
   for (const b of btns) {
     b.addEventListener('click', () => apply(b.dataset.theme));

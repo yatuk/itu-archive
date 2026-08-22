@@ -1,18 +1,43 @@
 // Sınavlar görünümü: aktif dönemin sınav takvimini ders/bina/tür üzerinden
 // arar. Bina filtresi yer alanından çıkarılır (yeni kazıma yok).
 
-import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate } from '../core/utils.js?v=e99ae63c7504';
-import { state } from '../core/store.js?v=e99ae63c7504';
-import { fillRows } from '../core/table.js?v=e99ae63c7504';
-import { toast } from '../core/toast.js?v=e99ae63c7504';
+import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate } from '../core/utils.js?v=7e12ca046d39';
+import { state } from '../core/store.js?v=7e12ca046d39';
+import { fillRows } from '../core/table.js?v=7e12ca046d39';
+import { toast } from '../core/toast.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=7e12ca046d39';
 
 let inited = false;
 let currentHits = []; // son filtre sonucu — .ics dışa aktarımı için
 // Sınav listesi sayfalama: 400'lük tavan yerine "daha fazla" ile artar.
 let examsShown = 400;
 
+function examPreference() {
+  const params = new URLSearchParams(location.search);
+  const keys = ['eq', 'etype', 'building', 'ebranch'];
+  const explicit = location.hash === '#sinavlar' && keys.some((key) => params.has(key));
+  const pref = explicit ? {} : readLocalState('itu-exam-filters', { fallback: {}, validate: isPlainObject });
+  const value = (key) => params.has(key) ? params.get(key) : (pref[key] || '');
+  return { q: value('eq'), type: value('etype'), building: value('building'), branch: value('ebranch') };
+}
+
+function saveExamPreference() {
+  const data = {
+    q: $('#eq').value.trim(), type: $('#f-etype').value,
+    building: $('#f-building').value, branch: $('#f-ebranch').value,
+  };
+  writeLocalState('itu-exam-filters', data, { validate: isPlainObject });
+  const p = new URLSearchParams();
+  if (data.q) p.set('eq', data.q);
+  if (data.type) p.set('etype', data.type);
+  if (data.building) p.set('building', data.building);
+  if (data.branch) p.set('ebranch', data.branch);
+  history.replaceState(null, '', `${location.pathname}${p.size ? `?${p}` : ''}#sinavlar`);
+}
+
 export function initExams() {
   if (inited) return;
+  $('#eq').value = examPreference().q;
   $('#eq').addEventListener('input', debounce(renderExams, 120));
   $('#f-etype').addEventListener('change', renderExams);
   $('#f-building').addEventListener('change', renderExams);
@@ -67,6 +92,10 @@ async function loadExams() {
       .sort((a, b) => a.localeCompare(b, 'tr'));
     $('#f-ebranch').innerHTML = '<option value="">hepsi</option>' +
       branches.map((b) => `<option>${esc(b)}</option>`).join('');
+    const pref = examPreference();
+    if ([...$('#f-etype').options].some((o) => o.value === pref.type)) $('#f-etype').value = pref.type;
+    if ([...$('#f-building').options].some((o) => o.value === pref.building)) $('#f-building').value = pref.building;
+    if ([...$('#f-ebranch').options].some((o) => o.value === pref.branch)) $('#f-ebranch').value = pref.branch;
   } catch (e) {
     state.exams = {
       term: state.index.currentTerm,
@@ -142,6 +171,7 @@ function renderExams(append) {
     return terms.every((t) => state.examHay[i].includes(t));
   });
   currentHits = hits; // .ics dışa aktarımı için
+  if (!append) saveExamPreference();
 
   // P2-17: yer bilgisi tüm satırlarda aynı/ilgisizse ("İlgili Bölümce
   // Açıklanacak") YER kolonu bilgi taşımıyor — gizle, üstte tek satır not düş.

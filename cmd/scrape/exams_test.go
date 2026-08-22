@@ -69,7 +69,7 @@ func TestExamCRNOverlap(t *testing.T) {
 	})
 
 	t.Run("dönem dökümü yoksa karar verilmez", func(t *testing.T) {
-		// -skip-courses ile koşulduğunda all.csv olmayabilir: engellemeyiz.
+		// Çağıran bu durumda fail-closed davranır ve sınav dosyası yazmaz.
 		if _, olculdu := examCRNOverlap(st, "2099-2100-guz", sinavlar("10001")); olculdu {
 			t.Fatal("döküm yokken ölçüm yapıldı sayıldı; koruma yanlışlıkla devreye girer")
 		}
@@ -80,4 +80,23 @@ func TestExamCRNOverlap(t *testing.T) {
 			t.Fatal("boş listede ölçüm yapıldı sayıldı")
 		}
 	})
+}
+
+func TestVerifyExamTermFailsClosed(t *testing.T) {
+	kok := t.TempDir()
+	st := store.New(kok)
+
+	if _, _, err := verifyExamTerm(st, "2026-2027-guz", sinavlar("10001")); err == nil {
+		t.Fatal("dönem dökümü yokken doğrulama başarılı sayıldı")
+	}
+
+	donemYaz(t, kok, "2026-2027-guz", []string{"10001", "10002", "10003", "10004"})
+	yaz, oran, err := verifyExamTerm(st, "2026-2027-guz", sinavlar("30001", "30002"))
+	if err != nil || yaz || oran != 0 {
+		t.Fatalf("başka dönem verisi engellenmeliydi: yaz=%v oran=%.2f err=%v", yaz, oran, err)
+	}
+	yaz, oran, err = verifyExamTerm(st, "2026-2027-guz", sinavlar("10001", "10002"))
+	if err != nil || !yaz || oran != 1 {
+		t.Fatalf("doğru dönem verisi kabul edilmeliydi: yaz=%v oran=%.2f err=%v", yaz, oran, err)
+	}
 }

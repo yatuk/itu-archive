@@ -5,14 +5,15 @@
 // kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
 // Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum } from '../core/utils.js?v=e99ae63c7504';
-import { state, indexReady } from '../core/store.js?v=e99ae63c7504';
-import { quotaDisplay } from '../core/chart.js?v=e99ae63c7504';
-import { buildTimetable, parseWhen, openDetail } from './courses.js?v=e99ae63c7504';
-import * as fav from '../core/favorites.js?v=e99ae63c7504';
-import { toast } from '../core/toast.js?v=e99ae63c7504';
-import { confirmDialog, promptDialog } from '../core/dialog.js?v=e99ae63c7504';
-import { I18N } from '../i18n.js?v=e99ae63c7504';
+import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum } from '../core/utils.js?v=7e12ca046d39';
+import { state, indexReady } from '../core/store.js?v=7e12ca046d39';
+import { quotaDisplay } from '../core/chart.js?v=7e12ca046d39';
+import { buildTimetable, parseWhen, openDetail } from './courses.js?v=7e12ca046d39';
+import * as fav from '../core/favorites.js?v=7e12ca046d39';
+import { toast } from '../core/toast.js?v=7e12ca046d39';
+import { confirmDialog, promptDialog } from '../core/dialog.js?v=7e12ca046d39';
+import { I18N } from '../i18n.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=7e12ca046d39';
 
 let term = null;
 let rows = [];
@@ -32,17 +33,31 @@ let gridContextReturnFocus = null;
 
 // --- çoklu program (liste) ---
 const PROG_KEY = 'itu-programs';
+const PROGRAM_PREF_KEY = 'itu-program-view';
 const PASTELS = ['#5b8def', '#8a6fe8', '#2ecc9f', '#e8a04c', '#e86f8a', '#5bb8e8', '#a0c94c', '#c96fe8', '#e8c94c', '#4cc9c9'];
 
 function loadPrograms() {
-  try {
-    const p = JSON.parse(localStorage.getItem(PROG_KEY) || 'null');
-    if (p && Array.isArray(p.programs) && p.programs.length) return p;
-  } catch {}
+  const p = readLocalState(PROG_KEY, {
+    fallback: null,
+    legacyKey: PROG_KEY,
+    validate: (value) => isPlainObject(value) && Array.isArray(value.programs) && value.programs.length > 0,
+  });
+  if (p) return p;
   return { programs: [{ id: 1, name: 'Program 1', items: [] }], active: 1 };
 }
 function savePrograms(ps) {
-  try { localStorage.setItem(PROG_KEY, JSON.stringify(ps)); } catch {}
+  writeLocalState(PROG_KEY, ps, {
+    validate: (value) => isPlainObject(value) && Array.isArray(value.programs) && value.programs.length > 0,
+  });
+}
+
+function saveProgramView() {
+  writeLocalState(PROGRAM_PREF_KEY, {
+    grid: showGrid,
+    weekend: showWeekend,
+    fullDay: showFullDay,
+    markFull: Boolean($('#p-full')?.checked),
+  }, { validate: isPlainObject });
 }
 function progItems() {
   const ps = loadPrograms();
@@ -83,6 +98,14 @@ function renderProgSelector() {
 
 export function initProgram() {
   if (inited) return;
+  const pref = readLocalState(PROGRAM_PREF_KEY, { fallback: {}, validate: isPlainObject });
+  showGrid = pref.grid === true;
+  showWeekend = pref.weekend === true;
+  showFullDay = pref.fullDay === true;
+  $('#p-gridview').checked = showGrid;
+  $('#p-weekend').checked = showWeekend;
+  $('#p-fullday').checked = showFullDay;
+  $('#p-full').checked = pref.markFull === true;
   $('#p-term').addEventListener('change', (e) => loadTerm(e.target.value));
   $('#p-q').addEventListener('input', debounce(search, 120));
   $('#p-q').addEventListener('keydown', (e) => {
@@ -121,11 +144,11 @@ export function initProgram() {
   $('#p-obs').addEventListener('mouseenter', () => showTip());
   $('#p-obs').addEventListener('mouseleave', () => hideTip());
   $('#p-favs').addEventListener('click', addFavorites);
-  $('#p-full').addEventListener('change', render);
+  $('#p-full').addEventListener('change', () => { saveProgramView(); render(); });
   // Izgara görünüm seçenekleri (hafta sonu sütunları / tam gün aralığı / ızgara).
-  $('#p-gridview').addEventListener('change', (e) => { showGrid = e.target.checked; render(); });
-  $('#p-weekend').addEventListener('change', (e) => { showWeekend = e.target.checked; render(); });
-  $('#p-fullday').addEventListener('change', (e) => { showFullDay = e.target.checked; render(); });
+  $('#p-gridview').addEventListener('change', (e) => { showGrid = e.target.checked; saveProgramView(); render(); });
+  $('#p-weekend').addEventListener('change', (e) => { showWeekend = e.target.checked; saveProgramView(); render(); });
+  $('#p-fullday').addEventListener('change', (e) => { showFullDay = e.target.checked; saveProgramView(); render(); });
   document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && gridContextMenu && !gridContextMenu.hidden) closeGridContextMenu(true);

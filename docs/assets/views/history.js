@@ -1,16 +1,22 @@
 // Geçmiş görünümü: 27 dönemin birleştirilmiş kaydında ders/hoca arama, ders
 // bazlı dönem geçmişi (trend grafiği dahil) ve hoca bazlı ders listesi.
 
-import { $, getJSON, esc, normSearch, searchMatch, debounce, termLabel, setStatus } from '../core/utils.js?v=e99ae63c7504';
-import { state } from '../core/store.js?v=e99ae63c7504';
-import { fillBar, trendChart } from '../core/chart.js?v=e99ae63c7504';
-import { fillRows } from '../core/table.js?v=e99ae63c7504';
-import { initReveal } from '../core/reveal.js?v=e99ae63c7504';
+import { $, getJSON, esc, normSearch, searchMatch, debounce, termLabel, setStatus } from '../core/utils.js?v=7e12ca046d39';
+import { state } from '../core/store.js?v=7e12ca046d39';
+import { fillBar, trendChart } from '../core/chart.js?v=7e12ca046d39';
+import { fillRows } from '../core/table.js?v=7e12ca046d39';
+import { initReveal } from '../core/reveal.js?v=7e12ca046d39';
+import { readLocalState, writeLocalState } from '../core/persistence.js?v=7e12ca046d39';
 
 let inited = false;
 
 export function initHistory() {
   if (inited) return;
+  const params = new URLSearchParams(location.search);
+  const saved = location.hash === '#gecmis' && params.has('hq')
+    ? params.get('hq')
+    : readLocalState('itu-history-search', { fallback: '', validate: (value) => typeof value === 'string' });
+  $('#hq').value = saved;
   $('#hq').addEventListener('input', debounce(searchHistory, 140));
   inited = true;
 }
@@ -44,6 +50,10 @@ export async function searchHistory() {
   await loadHistory();
   if (!state.hist) return;
   const q = normSearch($('#hq').value.trim());
+  writeLocalState('itu-history-search', $('#hq').value.trim(), { validate: (value) => typeof value === 'string' });
+  const params = new URLSearchParams();
+  if ($('#hq').value.trim()) params.set('hq', $('#hq').value.trim());
+  history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}#gecmis`);
   const box = $('#hmatches');
   $('#hdetail').innerHTML = '';
 

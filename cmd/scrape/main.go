@@ -245,6 +245,12 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	}
 	sort.Slice(sections, func(i, j int) bool { return sections[i].CRN < sections[j].CRN })
 
+	// Eşik aşıldıysa mevcut sağlam dönemi temizlemeden dur. Bu kapının
+	// Clean/WriteTerm'den önce olması yerel çalıştırmalarda ve CI dışı
+	// çağırılarda da son iyi snapshot'ı korur.
+	if err := partialGate(len(branches), failed); err != nil {
+		return "", "", err
+	}
 	if err := st.Clean(slug); err != nil {
 		return "", "", err
 	}
@@ -252,11 +258,7 @@ func scrapeCourses(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	if err != nil {
 		return "", "", err
 	}
-	// Faz 2: kısmi başarı — başarısız oran %5'in altındaysa uyarıyla devam,
-	// üstündeyse kırmızı (veri yine yazılır ama iş hata sayar, commit olmaz).
-	if err := partialGate(len(branches), failed); err != nil {
-		return "", "", err
-	}
+	// Faz 2: eşik altı kısmi başarı dosyada açıkça işaretlenir.
 	if len(failed) > 0 {
 		meta.Partial = true
 		meta.FailedBranches = failed
@@ -343,16 +345,21 @@ func scrapeExams(ctx context.Context, f *fetch.Client, st *store.Store, workers 
 	//
 	// Sınavlar o dönemin kendi şubelerine ait olmalı: CRN'ler dönemin ders
 	// listesinde yoksa takvim başka döneme aittir.
-	oran, olcum := examCRNOverlap(st, slug, exams)
-	if olcum && oran < examOverlapMin {
+	yaz, oran, err := verifyExamTerm(st, slug, exams)
+	if err != nil {
+		return err
+	}
+	if !yaz {
 		logf("sınav takvimi aktif dönemin şubeleriyle yalnızca %%%.0f örtüşüyor "+
 			"(eşik %%%.0f) — başka döneme ait, yazılmadı", oran*100, examOverlapMin*100)
 		return nil
 	}
 	sched := &model.ExamSchedule{
 		Term: label, Slug: slug,
-		ScrapedAt: time.Now().UTC().Format(time.RFC3339),
-		Exams:     exams,
+		ScrapedAt:      time.Now().UTC().Format(time.RFC3339),
+		Exams:          exams,
+		Partial:        len(failed) > 0,
+		FailedBranches: failed,
 	}
 	if err := st.WriteExams(sched); err != nil {
 		return err
@@ -366,9 +373,21 @@ func scrapeExams(ctx context.Context, f *fetch.Client, st *store.Store, workers 
 // dönemde ~%5 (sınav takvimi tüm şubeleri kapsamaz, o yüzden eşik 1 değil).
 const examOverlapMin = 0.40
 
+// verifyExamTerm, dönem parametresi olmayan sınav ucunun sonucunu yayınlamadan
+// önce aktif ders dökümüyle doğrular. Doğrulama girdisi yoksa hata verir;
+// başka döneme ait olduğu anlaşılan veri hata değil, yaz=false sonucudur.
+func verifyExamTerm(st *store.Store, slug string, exams []model.Exam) (yaz bool, oran float64, err error) {
+	oran, olcum := examCRNOverlap(st, slug, exams)
+	if !olcum {
+		return false, 0, fmt.Errorf("sınav takviminin %s dönemine ait olduğu doğrulanamadı: dönem ders dökümü yok veya boş", slug)
+	}
+	return oran >= examOverlapMin, oran, nil
+}
+
 // examCRNOverlap, sınav CRN'lerinin ne kadarının dönemin kendi ders listesinde
-// bulunduğunu döner. İkinci dönüş değeri ölçümün yapılabildiğini söyler —
-// dönemin all.csv'si yoksa (ör. -skip-courses) karar veremeyiz, engellemeyiz.
+// bulunduğunu döner. İkinci dönüş değeri ölçümün yapılabildiğini söyler.
+// Ölçüm yapılamıyorsa çağıran fail-closed davranır; OBS'nin dönem
+// parametresi olmayan ucundan gelen veriyi tahminle etiketlemez.
 func examCRNOverlap(st *store.Store, slug string, exams []model.Exam) (float64, bool) {
 	if len(exams) == 0 {
 		return 0, false
@@ -443,6 +462,8 @@ func scrapePrereqs(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	}
 	graph := prereq.BuildGraph(rows, names)
 	graph.GeneratedAt = time.Now().UTC().Format(time.RFC3339)
+	graph.Partial = len(failed) > 0
+	graph.FailedBranches = failed
 
 	if err := st.WriteJSON(graph, "data", "prereq", "graph.json"); err != nil {
 		return err

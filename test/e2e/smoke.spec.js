@@ -205,20 +205,94 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(group.locator('.mobile-course-code')).toContainText('TUR 121');
     expect(await group.locator('.mobile-course-name').count()).toBe(1);
 
-    const total = await group.locator('.mobile-section').count();
-    expect(total).toBeGreaterThan(1);
-    expect(await group.locator('.mobile-section:visible').count()).toBeLessThanOrEqual(4);
+    const declaredTotal = Number((await group.locator('.mobile-course-count').textContent()).match(/\d+/)?.[0]);
+    const initialSections = await group.locator('.mobile-section').count();
+    expect(declaredTotal).toBeGreaterThan(1);
+    expect(initialSections).toBeLessThanOrEqual(4);
+    expect(await group.locator('.mobile-section[hidden]').count()).toBe(0);
     const toggle = group.locator('.mobile-sections-toggle');
-    if (total > 4) {
+    if (declaredTotal > 4) {
       await toggle.click();
       await expect(toggle).toHaveAttribute('aria-expanded', 'true');
-      expect(await group.locator('.mobile-section:visible').count()).toBe(total);
+      expect(await group.locator('.mobile-section').count()).toBe(declaredTotal);
+      expect(await group.locator('.mobile-section:visible').count()).toBe(declaredTotal);
     }
 
     const star = group.locator('.fav-star').first();
     const before = await star.getAttribute('aria-pressed');
     await star.click();
     await expect(star).toHaveAttribute('aria-pressed', before === 'true' ? 'false' : 'true');
+  });
+
+  test('mobil ders listesi görünmeyen şubeleri kullanıcı istemeden DOM’a kurmaz', async ({ page }) => {
+    test.skip(page.viewportSize().width > 600, 'Mobil performans regresyon testi');
+    await page.goto('/?term=2026-2027-guz');
+    await expect(page.locator('#course-groups .mobile-course-group').first()).toBeVisible({ timeout: 15000 });
+
+    const initial = await page.locator('#course-groups').evaluate((root) => ({
+      groups: root.querySelectorAll('.mobile-course-group').length,
+      sections: root.querySelectorAll('.mobile-section').length,
+      hidden: root.querySelectorAll('.mobile-section[hidden]').length,
+    }));
+    expect(initial.groups).toBe(30);
+    expect(initial.sections).toBeLessThanOrEqual(initial.groups * 4);
+    expect(initial.hidden).toBe(0);
+
+    await page.locator('#more').click();
+    await expect(page.locator('#course-groups .mobile-course-group')).toHaveCount(60);
+    const appended = await page.locator('#course-groups').evaluate((root) => ({
+      groups: root.querySelectorAll('.mobile-course-group').length,
+      sections: root.querySelectorAll('.mobile-section').length,
+      hidden: root.querySelectorAll('.mobile-section[hidden]').length,
+    }));
+    expect(appended.sections).toBeLessThanOrEqual(appended.groups * 4);
+    expect(appended.hidden).toBe(0);
+  });
+
+  test('anlamlı görünüm tercihleri URL’den ayrıldıktan ve yenilendikten sonra korunur', async ({ page }) => {
+    test.skip(page.viewportSize().width < 900, 'Tek tarayıcı kalıcılığı masaüstünde bir kez doğrulanır');
+    await page.goto('/#dersler');
+    await expect(page.locator('#rows tr').first()).toBeVisible({ timeout: 15000 });
+    await page.locator('#q').fill('MAT');
+    await page.locator('#results th[data-sort="name"] .th-sort').click();
+    await expect(page).toHaveURL(/q=MAT/);
+    await page.goto('/#hakkinda');
+    await page.reload();
+    await page.locator('.tabs [data-view="dersler"]').click();
+    await expect(page.locator('#q')).toHaveValue('MAT');
+    await expect(page.locator('#results th[data-sort="name"]')).toHaveAttribute('aria-sort', 'ascending');
+
+    await page.goto('/#program');
+    await page.locator('#p-weekend').check();
+    await page.locator('#p-fullday').check();
+    await page.reload();
+    await expect(page.locator('#p-weekend')).toBeChecked();
+    await expect(page.locator('#p-fullday')).toBeChecked();
+
+    await page.goto('/#takvim');
+    await page.locator('#f-upcoming').uncheck();
+    await page.goto('/#hakkinda');
+    await page.goto('/#takvim');
+    await expect(page.locator('#f-upcoming')).not.toBeChecked();
+
+    await page.goto('/#sinavlar');
+    await page.locator('#eq').fill('BLG');
+    await page.waitForTimeout(180);
+    await page.goto('/#hakkinda');
+    await page.goto('/#sinavlar');
+    await expect(page.locator('#eq')).toHaveValue('BLG');
+
+    await page.goto('/#onsart');
+    await expect(page.locator('.pg-level[data-level="LS"]')).toHaveAttribute('aria-pressed', 'true');
+    await page.locator('.pg-level[data-level="OL"]').click();
+    await page.locator('.pg-list-toggle').click();
+    await page.reload();
+    await expect(page.locator('.pg-level[data-level="OL"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('.pg-list-toggle')).toHaveAttribute('aria-pressed', 'true');
+
+    const keys = await page.evaluate(() => Object.keys(localStorage));
+    expect(keys.some((key) => key.endsWith(':v1'))).toBe(true);
+    expect(keys.some((key) => /transcript/i.test(key))).toBe(false);
   });
 
   test('gruplanmış ders listesi 320–430 px aralığında yatay taşmaz', async ({ page }) => {
@@ -439,6 +513,9 @@ Adı : TEST KULLANICISI
 Ders Kodu Ders Adı Kredi Not
 CEN 101E Intr. to Information Systems 2,00 FF *
 MAT 103E Mathematics I 4,00 DC+
+FIZ 101EL Physics I Laboratory 1,00 AA
+KIM 101EL General Chemistry I Lab 1,00 BB
+BLG 335E Analysis of Algorithms I 3,00 VF
 A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
 Bilgisayar Mühendisliği (KKTC)
 Dönem 6,00 2,00 6,00 3,00 0,50
@@ -446,6 +523,11 @@ Dönem 6,00 2,00 6,00 3,00 0,50
 Ders Kodu Ders Adı Kredi Not
 CEN 101E Intr. to Information Systems 2,00 BA+
 CEN 223E Data Structures 3,50 CB+
+ING 112A Basics of Academic Writing 2,00 CC+
+FIZ 102EL Physics II Laboratory 1,00 BB+
+CEN 335E Analysis of Algorithms I 3,00 CB
+SNT 102E Photography 3,00 BA
+ITB 205E Philosophy 3,00 BB
 ZZZ 999 PRIVATE COURSE LABEL 2,00 AA
 Toplam 11,50 9,50 11,50 26,00 2,26`;
 
@@ -465,7 +547,7 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     expect(dialogLayout.right).toBeLessThanOrEqual(dialogLayout.viewport + 1);
     expect(dialogLayout.pageOverflow).toBeLessThanOrEqual(1);
     await page.locator('#transcript-input').fill(transcript);
-    await expect(page.locator('#transcript-preview')).toContainText('5 kayıt · 4 farklı ders');
+    await expect(page.locator('#transcript-preview')).toContainText('13 kayıt · 12 farklı ders');
     await expect(page.locator('#transcript-preview')).toContainText('CEN_LS');
     await expect(page.locator('.transcript-dlg .dlg-ok')).toBeEnabled();
     await page.locator('.transcript-dlg .dlg-ok').click();
@@ -473,13 +555,24 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     await expect(page.locator('#dp-prog')).toHaveValue('CEN_LS', { timeout: 20000 });
     await expect(page.locator('.dp-grade[data-gcode="CEN 101E"]')).toHaveValue('BA+');
     await expect(page.locator('.dp-grade[data-gcode="CEN 223E"]')).toHaveValue('CB+');
+    await expect(page.locator('.dp-grade[data-gcode="FIZ 101EL"]')).toHaveValue('AA');
+    await expect(page.locator('.dp-grade[data-gcode="KIM 101EL"]')).toHaveValue('BB');
+    await expect(page.locator('.dp-grade[data-gcode="FIZ 102EL"]')).toHaveValue('BB+');
+    await expect(page.locator('.dp-grade[data-gcode="ING 112A"]')).toHaveValue('CC+');
+    await expect(page.locator('.dp-grade[data-gcode="CEN 335E"]')).toHaveValue('CB');
+    await expect(page.locator('.dp-repeat-btn[data-gcode="CEN 335E"]')).toHaveAttribute('title', /önceki: VF/);
+    await expect(page.locator('.dp-epick[data-slot="s3i5"]')).toHaveValue('SNT 102E');
+    await expect(page.locator('.dp-epick[data-slot="s6i5"]')).toHaveValue('ITB 205E');
     await expect(page.locator('.dp-repeat-btn[data-gcode="CEN 101E"]')).toHaveAttribute('title', /önceki: FF/);
-    await expect(page.locator('#dp-transcript-result')).toContainText('3 not aktarıldı');
+    await expect(page.locator('#dp-transcript-result')).toContainText('10 not aktarıldı');
     await expect(page.locator('#dp-transcript-result')).toContainText('1 ders elle kontrol edilmeli');
 
-    const stored = await page.evaluate(() => localStorage.getItem('itu-grades') || '');
+    const stored = await page.evaluate(() => localStorage.getItem('itu-grades:v1') || '');
     expect(stored).not.toContain('TEST KULLANICISI');
     expect(stored).not.toContain('PRIVATE COURSE LABEL');
+    expect(JSON.parse(stored).data.CEN_LS.requiredSlots).toEqual({
+      s0i1: 'FIZ 101EL', s0i8: 'KIM 101EL', s1i3: 'ING 112A', s1i6: 'FIZ 102EL',
+    });
     expect(await page.locator('.transcript-dlg').count()).toBe(0);
   });
 
@@ -571,7 +664,7 @@ test.describe('Haftalık program kurucu', () => {
     // Satırdaki görünür eylem gerçekten localStorage kaydını da kaldırır.
     await page.locator('.p-remove').click();
     await expect(page.locator('#p-list .p-item')).toHaveCount(0);
-    expect(await page.evaluate(() => JSON.parse(localStorage.getItem('itu-programs')).programs[0].items)).toHaveLength(0);
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem('itu-programs:v1')).data.programs[0].items)).toHaveLength(0);
 
     await page.locator('.toast-action', { hasText: 'geri al' }).click();
     await expect(page.locator('#p-list .p-item')).toHaveCount(1);

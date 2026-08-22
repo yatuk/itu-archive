@@ -6,20 +6,23 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js?v=e99ae63c7504';
-import { methodToCode } from '../core/urlcodes.js?v=e99ae63c7504';
-import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=e99ae63c7504';
-import { state } from '../core/store.js?v=e99ae63c7504';
-import { quotaDisplay } from '../core/chart.js?v=e99ae63c7504';
-import { fillRows } from '../core/table.js?v=e99ae63c7504';
-import * as fav from '../core/favorites.js?v=e99ae63c7504';
-import { toast } from '../core/toast.js?v=e99ae63c7504';
-import { openCourseDetail } from '../core/course-detail.js?v=e99ae63c7504';
-import { I18N } from '../i18n.js?v=e99ae63c7504';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js?v=7e12ca046d39';
+import { methodToCode } from '../core/urlcodes.js?v=7e12ca046d39';
+import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=7e12ca046d39';
+import { state } from '../core/store.js?v=7e12ca046d39';
+import { quotaDisplay } from '../core/chart.js?v=7e12ca046d39';
+import { fillRows } from '../core/table.js?v=7e12ca046d39';
+import * as fav from '../core/favorites.js?v=7e12ca046d39';
+import { toast } from '../core/toast.js?v=7e12ca046d39';
+import { openCourseDetail } from '../core/course-detail.js?v=7e12ca046d39';
+import { I18N } from '../i18n.js?v=7e12ca046d39';
+import { writeLocalState, isPlainObject } from '../core/persistence.js?v=7e12ca046d39';
 
 const PAGE = 200;
 const MOBILE_GROUP_PAGE = 30;
 const MOBILE_SECTION_PREVIEW = 4;
+let mobileGroupCacheRows = null;
+let mobileGroupCache = [];
 const mobileCourseLayout = typeof window !== 'undefined' && window.matchMedia
   ? window.matchMedia('(max-width: 640px)')
   : { matches: false, addEventListener() {}, addListener() {} };
@@ -363,6 +366,12 @@ function updateSortUI() {
   if (ms) ms.value = state.sort.key;
 }
 
+export function restoreCourseSort(key, dir) {
+  const allowed = new Set(['crn', 'code', 'name', 'instructor', 'when', 'cap', 'enr', 'fill']);
+  state.sort = { key: allowed.has(key) ? key : 'crn', dir: Number(dir) === -1 ? -1 : 1 };
+  updateSortUI();
+}
+
 /* ---------- filtre çipleri ---------- */
 
 function renderChips() {
@@ -530,9 +539,51 @@ export function groupCourseRows(rows) {
   return [...byCourse.values()];
 }
 
+// "Daha fazla" aynı filtrelenmiş dizinin devamını basar. Binlerce şubeyi her
+// tıklamada yeniden gruplamak yerine, filtre/sıralama yeni bir dizi üretene dek
+// sonucu paylaşırız. Referans karşılaştırması bilinçlidir: applyFilters her
+// çalıştığında state.filtered'ı baştan kurar, dolayısıyla eski sonuç sızmaz.
+export function cachedGroupCourseRows(rows) {
+  if (rows !== mobileGroupCacheRows) {
+    mobileGroupCacheRows = rows;
+    mobileGroupCache = groupCourseRows(rows);
+  }
+  return mobileGroupCache;
+}
+
+function createMobileSection(row, extra = false) {
+  const [crn, code, name, branch, instructor, when, cap, enr] = row;
+  const key = selKey(row);
+  const starred = fav.isFavorite(state.termSlug, branch, crn);
+  const hits = state.marks?.get(key)?.hits || [];
+  const cleanInstructor = instructor && !['-', '·', '.'].includes(instructor.trim()) ? instructor : '';
+  const schedule = when
+    ? when.split(' | ').map((session) => `<span>${esc(session)}</span>`).join('')
+    : '<span class="mobile-data-missing">Zaman açıklanmadı</span>';
+  const quota = Number(cap) > 0
+    ? quotaDisplay(cap, enr, { legacyCounts: true })
+    : '<span class="quota-unknown">kontenjan açıklanmadı</span>';
+  const li = document.createElement('li');
+  li.className = `mobile-section${extra ? ' mobile-section-extra' : ''}`;
+  li.hidden = extra;
+  li.innerHTML = `
+    <button type="button" class="mobile-section-open" aria-haspopup="dialog" aria-label="${esc(code)} ${esc(name)}, CRN ${esc(crn)} detayını aç">
+      <span class="mobile-section-top">
+        <span class="mobile-crn"><span>CRN</span> ${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</span>
+        <span class="mobile-quota">${quota}</span>
+      </span>
+      <span class="mobile-schedule">${schedule}</span>
+      ${cleanInstructor ? `<span class="mobile-instructor">${markField(cleanInstructor, 'instructor', hits.filter((h) => h.field === 'instructor'))}</span>` : ''}
+    </button>
+    <button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? 'Favorilerden çıkar' : 'Favorilere ekle'}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button>`;
+  li.querySelector('.mobile-section-open').addEventListener('click', () => openDetail(row));
+  wireFavoriteButton(li.querySelector('.fav-star'));
+  return li;
+}
+
 function renderMobileGroups(append) {
   const box = $('#course-groups');
-  const groups = groupCourseRows(state.filtered);
+  const groups = cachedGroupCourseRows(state.filtered);
   const slice = groups.slice(state.shown, state.shown + MOBILE_GROUP_PAGE);
 
   if (!append) box.innerHTML = '';
@@ -563,37 +614,11 @@ function renderMobileGroups(append) {
       <ul class="mobile-section-list"></ul>`;
 
     const list = article.querySelector('.mobile-section-list');
-    group.rows.forEach((row, index) => {
-      const [crn, code, name, branch, instructor, when, cap, enr] = row;
-      const key = selKey(row);
-      const starred = fav.isFavorite(state.termSlug, branch, crn);
-      const hits = state.marks?.get(key)?.hits || [];
-      const cleanInstructor = instructor && !['-', '·', '.'].includes(instructor.trim()) ? instructor : '';
-      const schedule = when
-        ? when.split(' | ').map((session) => `<span>${esc(session)}</span>`).join('')
-        : '<span class="mobile-data-missing">Zaman açıklanmadı</span>';
-      const quota = Number(cap) > 0
-        ? quotaDisplay(cap, enr, { legacyCounts: true })
-        : '<span class="quota-unknown">kontenjan açıklanmadı</span>';
-      const li = document.createElement('li');
-      li.className = 'mobile-section';
-      if (index >= MOBILE_SECTION_PREVIEW) {
-        li.classList.add('mobile-section-extra');
-        li.hidden = true;
-      }
-      li.innerHTML = `
-        <button type="button" class="mobile-section-open" aria-haspopup="dialog" aria-label="${esc(code)} ${esc(name)}, CRN ${esc(crn)} detayını aç">
-          <span class="mobile-section-top">
-            <span class="mobile-crn"><span>CRN</span> ${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</span>
-            <span class="mobile-quota">${quota}</span>
-          </span>
-          <span class="mobile-schedule">${schedule}</span>
-          ${cleanInstructor ? `<span class="mobile-instructor">${markField(cleanInstructor, 'instructor', hits.filter((h) => h.field === 'instructor'))}</span>` : ''}
-        </button>
-        <button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? 'Favorilerden çıkar' : 'Favorilere ekle'}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button>`;
-      li.querySelector('.mobile-section-open').addEventListener('click', () => openDetail(row));
-      wireFavoriteButton(li.querySelector('.fav-star'));
-      list.appendChild(li);
+    // İlk görünümde yalnızca ekranda görünen dört şubeyi kur. Önceki sürüm
+    // yüzlerce gizli düğmeyi yine de DOM'a ekliyordu; kalanlar ancak kullanıcı
+    // açıkça istediğinde erişilebilir kontrolleriyle birlikte oluşturulur.
+    group.rows.slice(0, MOBILE_SECTION_PREVIEW).forEach((row) => {
+      list.appendChild(createMobileSection(row));
     });
 
     article.querySelector('.mobile-course-open').addEventListener('click', () => openDetail(first));
@@ -606,6 +631,13 @@ function renderMobileGroups(append) {
       toggle.textContent = `${hiddenCount} şube daha göster`;
       toggle.addEventListener('click', () => {
         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        if (!expanded && !list.querySelector('.mobile-section-extra')) {
+          const extras = document.createDocumentFragment();
+          group.rows.slice(MOBILE_SECTION_PREVIEW).forEach((row) => {
+            extras.appendChild(createMobileSection(row, true));
+          });
+          list.appendChild(extras);
+        }
         for (const row of article.querySelectorAll('.mobile-section-extra')) row.hidden = expanded;
         toggle.setAttribute('aria-expanded', String(!expanded));
         toggle.textContent = expanded ? `${hiddenCount} şube daha göster` : 'Şubeleri daralt';
@@ -666,6 +698,14 @@ function saveState() {
   if ($('#f-program').value) p.set('program', $('#f-program').value);
   if ($('#f-code').value.trim()) p.set('code', $('#f-code').value.trim());
   if ($('#f-open').checked) p.set('open', '1');
+  if (state.sort.key !== 'crn') p.set('sort', state.sort.key);
+  if (state.sort.dir !== 1) p.set('sdir', String(state.sort.dir));
+  writeLocalState('itu-courses-state', {
+    term: state.termSlug || '', q, branch: $('#f-branch').value, day: $('#f-day').value,
+    time: $('#f-time').value, level: $('#f-level').value, method: $('#f-method').value,
+    program: $('#f-program').value, code: $('#f-code').value.trim(), open: $('#f-open').checked,
+    sort: state.sort.key, dir: state.sort.dir,
+  }, { validate: isPlainObject });
   const qs = p.toString();
   const url = location.pathname + (qs ? '?' + qs : '') + location.hash;
   history.replaceState(null, '', url);

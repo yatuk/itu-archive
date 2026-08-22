@@ -13,6 +13,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -60,6 +61,7 @@ func All(root string, skipSite bool) *Result {
 
 	res.checkHistory(root)
 	res.checkPrereq(root)
+	res.checkExams(root)
 	res.checkQuota(root)
 	res.checkCurriculum(root)
 	res.checkIndex(root)
@@ -473,6 +475,7 @@ func (r *Result) checkPrereq(root string) {
 		r.errf("prereq/graph.json okunamadı: %v", err)
 		return
 	}
+	r.checkPartial("prereq/graph.json", g.Partial, g.FailedBranches)
 	seen := map[string]bool{}
 	for _, n := range g.Nodes {
 		if seen[n.Code] {
@@ -489,6 +492,90 @@ func (r *Result) checkPrereq(root string) {
 		}
 		if e.From == e.To {
 			r.errf("prereq: %q kendi kendine kenar", e.From)
+		}
+	}
+}
+
+// checkExams, sınav dosyasının kendi dönem meta/verisiyle uyuştuğunu ve
+// kısmi tarama bilgisinin kaybolmadığını denetler. OBS sınav ucunda dönem
+// parametresi olmadığı için bu kontrol yanlış etiketlenmiş eski dönem
+// verisini ikinci kez, yayın öncesi yakalar.
+func (r *Result) checkExams(root string) {
+	dir := filepath.Join(root, "data", "exams")
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return
+		}
+		r.errf("data/exams okunamadı: %v", err)
+		return
+	}
+	for _, e := range entries {
+		if e.IsDir() || !strings.HasSuffix(e.Name(), ".json") {
+			continue
+		}
+		slug := strings.TrimSuffix(e.Name(), ".json")
+		var sched model.ExamSchedule
+		if err := readJSON(filepath.Join(dir, e.Name()), &sched); err != nil {
+			r.errf("exams/%s: çözümlenemedi: %v", e.Name(), err)
+			continue
+		}
+		if sched.Slug != slug {
+			r.errf("exams/%s: slug %q dosya adıyla uyuşmuyor", e.Name(), sched.Slug)
+		}
+		r.checkPartial("exams/"+e.Name(), sched.Partial, sched.FailedBranches)
+
+		var meta model.TermMeta
+		if err := readJSON(filepath.Join(root, "data", "terms", slug, "meta.json"), &meta); err != nil {
+			r.errf("exams/%s: dönem meta.json okunamadı: %v", e.Name(), err)
+			continue
+		}
+		if sched.Term != meta.Term {
+			r.errf("exams/%s: dönem etiketi %q, meta.json %q", e.Name(), sched.Term, meta.Term)
+		}
+
+		known := map[string]bool{}
+		branchDir := filepath.Join(root, "data", "terms", slug, "branches")
+		if files, err := os.ReadDir(branchDir); err == nil {
+			for _, f := range files {
+				if f.IsDir() || !strings.HasSuffix(f.Name(), ".json") {
+					continue
+				}
+				var sections []model.Section
+				if readJSON(filepath.Join(branchDir, f.Name()), &sections) == nil {
+					for _, section := range sections {
+						known[section.CRN] = true
+					}
+				}
+			}
+		}
+		if len(sched.Exams) == 0 || len(known) == 0 {
+			r.errf("exams/%s: dönem/CRN uyumu doğrulanamadı", e.Name())
+			continue
+		}
+		matched := 0
+		for _, exam := range sched.Exams {
+			if known[exam.CRN] {
+				matched++
+			}
+		}
+		overlap := float64(matched) / float64(len(sched.Exams))
+		if overlap < 0.40 {
+			r.errf("exams/%s: CRN'lerin yalnızca %%%.0f'i dönem derslerinde; başka dönem verisi olabilir", e.Name(), overlap*100)
+		}
+	}
+}
+
+func (r *Result) checkPartial(source string, partial bool, failed []string) {
+	if partial != (len(failed) > 0) {
+		r.errf("%s: partial=%v ama failedBranches=%d", source, partial, len(failed))
+	}
+	if !sort.StringsAreSorted(failed) {
+		r.errf("%s: failedBranches deterministik sırada değil", source)
+	}
+	for i := 1; i < len(failed); i++ {
+		if failed[i] == failed[i-1] {
+			r.errf("%s: failedBranches içinde yinelenen kayıt %q", source, failed[i])
 		}
 	}
 }

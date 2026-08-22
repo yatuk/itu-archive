@@ -197,11 +197,18 @@ test.describe('SPA (ana sayfa)', () => {
 
   test('sade navigasyon düşük öncelikli sayfaları Daha fazla altında toplar', async ({ page }) => {
     await page.goto('/');
+    await expect(page.locator('.tabs .tab-number:visible')).toHaveCount(0);
+    await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('DERS PLANIM/GPA');
     await expect(page.locator('#tab-gecmis')).toBeHidden();
     await page.locator('#tabs-more-label').click();
     await page.locator('.tabs-more [data-nav-view="gecmis"]').click();
     await expect(page.locator('#view-gecmis')).toBeVisible();
     await expect(page.locator('#tabs-more-label')).toContainText('Geçmiş');
+
+    // Fosfor temasının dokuzlu terminal dizisi korunur.
+    await page.locator('.theme-btn[data-theme="dark"]').click();
+    await expect(page.locator('#tab-dersplanim .tab-number')).toBeVisible();
+    await expect(page.locator('#tab-dersplanim')).toHaveText('03DERS PLANIM/GPA');
   });
 
   test('yeni sadeleştirme metinleri TR/EN geçişini izler', async ({ page }) => {
@@ -212,6 +219,7 @@ test.describe('SPA (ana sayfa)', () => {
     if (page.viewportSize().width <= 600) await page.locator('#f-filter-btn').click();
     await expect(page.locator('#f-more-toggle')).toHaveText('More filters (1)');
     await expect(page.locator('#tabs-more-label')).toHaveText('More');
+    await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('COURSES');
   });
 
   test('sade kontenjanı tek temsile indirir, fosfor eski çubuğu korur', async ({ page }) => {

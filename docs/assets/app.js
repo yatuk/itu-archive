@@ -5,7 +5,7 @@
 
 import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
 import { state, markIndexReady } from './core/store.js';
-import { I18N } from './i18n.js';
+import { I18N } from './i18n.js?v=navfix1';
 import { initCourses, loadTerm, applyFilters, syncProgramFilter } from './views/courses.js?v=uirefactor2026';
 import { initCourseDetail, openCourseDetail } from './core/course-detail.js';
 import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';

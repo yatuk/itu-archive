@@ -448,6 +448,7 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
   border: none; padding: 8px 16px; border-radius: 999px;
   text-decoration: none; white-space: nowrap;
 }
+.tab-number { margin-right: .55em; }
 .tabs button:hover, .tabs a:hover { color: var(--fg); background: var(--panel-2); }
 .tabs button[aria-selected="true"], .tabs a[aria-selected="true"], .tabs a[aria-current="page"] {
   color: var(--bg); background: var(--acid); font-weight: 700;
@@ -3324,6 +3325,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 [data-theme="sade"] .tabs button,
 [data-theme="sade"] .tabs a,
 [data-theme="sade"] .tabs summary { padding: 7px 13px; letter-spacing: .03em; }
+[data-theme="sade"] .tab-number { display: none; }
 [data-theme="sade"] .tabs-more { display: block; position: relative; }
 [data-theme="sade"] .tabs-more summary {
   list-style: none; cursor: pointer; color: var(--dim); border-radius: 999px;

@@ -28,10 +28,8 @@ jobs:
         run: node --test docs/assets/core/core.test.js
 
       - name: SEO sayfalarını yeniden üret ve drift denetle
-        shell: bash
         run: |
-          ASSET_VERSION="$(grep -o 'style.css?v=[^" ]*' docs/index.html | head -1 | cut -d= -f2)"
-          go run ./cmd/site -version "$ASSET_VERSION"
+          go run ./cmd/site
           git diff --exit-code -- docs
 
       - name: Veri ve yayın bütünlüğü

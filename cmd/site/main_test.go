@@ -43,6 +43,86 @@ func TestReplaceAssetVersionAddsMissingVersion(t *testing.T) {
 	}
 }
 
+func TestPatchRuntimeAssetImportsUsesOneReleaseVersion(t *testing.T) {
+	dir := t.TempDir()
+	assets := filepath.Join(dir, "assets", "views")
+	if err := os.MkdirAll(assets, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	source := `import { a } from '../core/a.js';
+import { b } from "../core/b.js?v=old";
+const c = import('../core/c.js?v=older');
+import { remote } from 'https://cdn.example.com/remote.js';`
+	path := filepath.Join(assets, "screen.js")
+	if err := os.WriteFile(path, []byte(source), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	if err := patchRuntimeAssetImports(dir, "release123"); err != nil {
+		t.Fatal(err)
+	}
+	b, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	got := string(b)
+	for _, want := range []string{
+		`'../core/a.js?v=release123'`,
+		`"../core/b.js?v=release123"`,
+		`'../core/c.js?v=release123'`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Fatalf("tek yayın sürümü eksik: %s\n%s", want, got)
+		}
+	}
+	if !strings.Contains(got, `'https://cdn.example.com/remote.js'`) {
+		t.Fatalf("harici modül adresi değiştirilmemeliydi:\n%s", got)
+	}
+}
+
+func TestContentAssetVersionIsStableAfterImportPatching(t *testing.T) {
+	dir := t.TempDir()
+	assets := filepath.Join(dir, "assets")
+	if err := os.MkdirAll(filepath.Join(assets, "core"), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(assets, "style.css"), []byte("body{color:black}"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	app := filepath.Join(assets, "app.js")
+	if err := os.WriteFile(app, []byte(`import './core/a.js?v=old';`), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(assets, "core", "a.js"), []byte(`export const a = 1;`), 0o644); err != nil {
+		t.Fatal(err)
+	}
+
+	before, err := contentAssetVersion(dir)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := patchRuntimeAssetImports(dir, before); err != nil {
+		t.Fatal(err)
+	}
+	after, err := contentAssetVersion(dir)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if before != after {
+		t.Fatalf("import sürümleme içerik hash'ini değiştirdi: %s != %s", before, after)
+	}
+
+	if err := os.WriteFile(filepath.Join(assets, "core", "a.js"), []byte(`export const a = 2;`), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	changed, err := contentAssetVersion(dir)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if changed == before {
+		t.Fatal("çalışma-zamanı içeriği değiştiği halde asset sürümü değişmedi")
+	}
+}
+
 func TestHomepageUsesCurrentSocialCard(t *testing.T) {
 	root := filepath.Join("..", "..", "docs")
 	body, err := os.ReadFile(filepath.Join(root, "index.html"))

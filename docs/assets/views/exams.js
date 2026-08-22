@@ -1,10 +1,10 @@
 // Sınavlar görünümü: aktif dönemin sınav takvimini ders/bina/tür üzerinden
 // arar. Bina filtresi yer alanından çıkarılır (yeni kazıma yok).
 
-import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate } from '../core/utils.js';
-import { state } from '../core/store.js';
-import { fillRows } from '../core/table.js';
-import { toast } from '../core/toast.js';
+import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate } from '../core/utils.js?v=e99ae63c7504';
+import { state } from '../core/store.js?v=e99ae63c7504';
+import { fillRows } from '../core/table.js?v=e99ae63c7504';
+import { toast } from '../core/toast.js?v=e99ae63c7504';
 
 let inited = false;
 let currentHits = []; // son filtre sonucu — .ics dışa aktarımı için

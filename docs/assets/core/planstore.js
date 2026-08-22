@@ -14,7 +14,7 @@
 // not girer (latestOnly/calcGPA). Seçmeli slotta ders seçilmediyse plan kredisi
 // varsayılandır ve `defaultCredit` işareti taşır.
 
-import { parseRange, canonicalCode } from './plan.js';
+import { parseRange, canonicalCode } from './plan.js?v=e99ae63c7504';
 
 const KEY = 'itu-grades';
 

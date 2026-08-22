@@ -1,9 +1,9 @@
 // Akademik takvim görünümü: seçilen yılın takvimini tabloya göre gruplar,
 // geçmiş etkinlikleri isteğe bağlı gizler.
 
-import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, hashShort } from '../core/utils.js';
-import { state } from '../core/store.js';
-import { initReveal } from '../core/reveal.js';
+import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, hashShort } from '../core/utils.js?v=e99ae63c7504';
+import { state } from '../core/store.js?v=e99ae63c7504';
+import { initReveal } from '../core/reveal.js?v=e99ae63c7504';
 
 let inited = false;
 

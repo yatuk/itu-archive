@@ -5,13 +5,13 @@
 // Tablo satırından açıldığında ilgili CRN'nin Şubeler görünümü; doğrudan bağlantıda
 // ise karar özeti öne gelir. Uzun program ve arşiv listeleri kontrollü açılır.
 
-import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum, formatInt } from './utils.js';
-import { state } from './store.js';
-import { fillBar, quotaDisplay, trendChart } from './chart.js';
-import { parseReq, renderReqTree } from '../prereq.js';
-import { codeToSlug } from './urlcodes.js';
-import { loadProgramMap } from './programs.js';
-import { TAKEN_CHANGED, getTaken } from './taken.js';
+import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum, formatInt } from './utils.js?v=e99ae63c7504';
+import { state } from './store.js?v=e99ae63c7504';
+import { fillBar, quotaDisplay, trendChart } from './chart.js?v=e99ae63c7504';
+import { parseReq, renderReqTree } from '../prereq.js?v=e99ae63c7504';
+import { codeToSlug } from './urlcodes.js?v=e99ae63c7504';
+import { loadProgramMap } from './programs.js?v=e99ae63c7504';
+import { TAKEN_CHANGED, getTaken } from './taken.js?v=e99ae63c7504';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)

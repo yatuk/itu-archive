@@ -15,19 +15,20 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js';
-import { state } from '../core/store.js';
-import { openCourseDetail } from '../core/course-detail.js';
-import { quotaDisplay } from '../core/chart.js';
-import * as fav from '../core/favorites.js';
-import { toast } from '../core/toast.js';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge } from '../core/plan.js';
-import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js';
-import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js';
-import { confirmDialog } from '../core/dialog.js';
-import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js';
-import { I18N } from '../i18n.js';
+import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=e99ae63c7504';
+import { state } from '../core/store.js?v=e99ae63c7504';
+import { openCourseDetail } from '../core/course-detail.js?v=e99ae63c7504';
+import { quotaDisplay } from '../core/chart.js?v=e99ae63c7504';
+import * as fav from '../core/favorites.js?v=e99ae63c7504';
+import { toast } from '../core/toast.js?v=e99ae63c7504';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge } from '../core/plan.js?v=e99ae63c7504';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=e99ae63c7504';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js?v=e99ae63c7504';
+import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=e99ae63c7504';
+import { confirmDialog } from '../core/dialog.js?v=e99ae63c7504';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=e99ae63c7504';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=e99ae63c7504';
+import { I18N } from '../i18n.js?v=e99ae63c7504';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
@@ -105,6 +106,7 @@ function ensureHost() {
     <div id="dp-empty" class="dp-empty">
       <h2>${t('Ders planını görmek için programını seç', 'Choose your program to view its course plan')}</h2>
       <p>${t('Önce seviyeyi, ardından fakülte ve programı seç. GANO ve dönem dersleri seçiminin ardından burada açılır.', 'Choose a level, faculty, and program. GPA tools and term courses will appear after your selection.')}</p>
+      <button type="button" class="btn-ghost dp-transcript-open">${t('OBS transkriptinden aktar', 'Import from OBS transcript')}</button>
     </div>
     <div class="dp-filterbar" role="group" aria-label="Ders Planım filtreleri">
       <div class="dp-filter-primary">
@@ -124,6 +126,14 @@ function ensureHost() {
     <details class="dp-grades" id="dp-grades">
       <summary><span>GANO ve ilerleme</span><b id="dp-grade-preview">Not girdikçe hesaplanır</b></summary>
       <p class="dp-grades-empty" id="dp-grades-empty">Derslerin yanındaki not alanlarından not girdikçe GANO ve ilerleme burada hesaplanır.</p>
+      <div class="dp-transcript-callout">
+        <div>
+          <strong>${t('OBS transkriptinden notları aktar', 'Import grades from an OBS transcript')}</strong>
+          <span>${t('Belgeler → Transkript Önizleme ekranındaki metni kopyala. Ham belge saklanmaz veya sunucuya gönderilmez.', 'Copy the text from Documents → Transcript Preview. The raw document is neither stored nor sent to a server.')}</span>
+        </div>
+        <button type="button" class="btn-ghost dp-transcript-open">${t('Transkript yapıştır', 'Paste transcript')}</button>
+      </div>
+      <p id="dp-transcript-result" class="dp-transcript-result" hidden aria-live="polite"></p>
       <div class="dp-grades-body">
         <div class="dp-grades-grid">
           <div class="dp-metric"><em>GANO</em><b id="dp-gano">yok</b><small>girdiğin notlara göre</small></div>
@@ -140,8 +150,8 @@ function ensureHost() {
       <details class="dp-data-tools">
         <summary>Veri ve gizlilik</summary>
         <div class="dp-grades-actions">
-          <button type="button" id="dp-export" class="btn-ghost">dışa aktar</button>
-          <button type="button" id="dp-import" class="btn-ghost">içe aktar</button>
+          <button type="button" id="dp-export" class="btn-ghost">JSON dışa aktar</button>
+          <button type="button" id="dp-import" class="btn-ghost">JSON içe aktar</button>
           <button type="button" id="dp-reset" class="btn-ghost">tümünü sıfırla</button>
         </div>
         <p class="dp-privacy">Notların yalnızca bu tarayıcıda saklanır; sunucuya gönderilmez. Bu bir transkript değildir ve sonuçlar OBS ile küçük farklar gösterebilir. Kaynak:
@@ -1085,6 +1095,155 @@ function electiveBySlot(slotKey) {
   return null;
 }
 
+function setTranscriptResult(message, kind = '') {
+  const result = $('#dp-transcript-result');
+  if (!result) return;
+  result.hidden = !message;
+  result.textContent = message || '';
+  result.className = `dp-transcript-result${kind ? ` ${kind}` : ''}`;
+}
+
+async function selectTranscriptProgram(code) {
+  const program = progIndex.find((item) => item.code === code);
+  if (!program) return false;
+  const level = normalizeProgramLevel(program.level, program.code);
+  $('#dp-level').value = level;
+  $('#dp-fac').innerHTML = renderFacultyOptions(level);
+  $('#dp-fac').value = facultyOf(program);
+  $('#dp-prog').innerHTML = renderProgramOptions(facultyOf(program), level);
+  $('#dp-prog').value = program.code;
+  await selectProgram(program.code);
+  return Boolean(plan);
+}
+
+// Ham metin yalnız bu diyaloğun textarea'sında yaşar. Kapanırken değer temizlenir
+// ve düğüm DOM'dan kaldırılır; localStorage'a yalnız eşleşen kod/not çiftleri yazılır.
+function openTranscriptDialog() {
+  const en = I18N.lang === 'en';
+  const host = document.createElement('div');
+  host.className = 'dlg transcript-dlg';
+  host.innerHTML = `<div class="dlg-box transcript-dlg-box" role="dialog" aria-modal="true" aria-labelledby="transcript-title" aria-describedby="transcript-help">
+    <button type="button" class="dlg-close" aria-label="${en ? 'Close' : 'Kapat'}">✕</button>
+    <h3 id="transcript-title">${en ? 'Import grades from OBS' : 'OBS transkriptinden notları aktar'}</h3>
+    <ol class="transcript-steps" id="transcript-help">
+      <li>${en ? 'Open Documents → Transcript Preview in OBS.' : 'OBS’de Belgeler → Transkript Önizleme’ye gir.'}</li>
+      <li>${en ? 'Open the Turkish preview and click inside the document. Use Select All and Copy.' : 'Türkçe önizlemeyi aç ve belgenin içine tıkla. Bilgisayarda Ctrl+A / Ctrl+C; telefonda Tümünü seç / Kopyala yap.'}</li>
+      <li>${en ? 'Paste below and review the summary before importing.' : 'Aşağıya yapıştır; aktarmadan önce bulunan ders özetini kontrol et.'}</li>
+    </ol>
+    <p class="transcript-privacy"><strong>${en ? 'Privacy:' : 'Gizlilik:'}</strong> ${en ? 'Parsing happens only in this browser. The raw transcript is not uploaded or saved; after confirmation, only course codes and grades remain in this browser.' : 'Ayrıştırma yalnız bu tarayıcıda yapılır. Ham transkript yüklenmez ve kaydedilmez; onaydan sonra yalnız ders kodları ve notlar bu tarayıcıda kalır.'}</p>
+    <label class="transcript-label" for="transcript-input">${en ? 'Transcript text' : 'Transkript metni'}</label>
+    <textarea id="transcript-input" class="transcript-input" rows="9" spellcheck="false" autocomplete="off" placeholder="${en ? 'Paste the copied transcript here…' : 'Kopyaladığın transkripti buraya yapıştır…'}"></textarea>
+    <div class="transcript-preview" id="transcript-preview" aria-live="polite">${en ? 'No text pasted yet.' : 'Henüz metin yapıştırılmadı.'}</div>
+    <div class="dlg-actions">
+      <button type="button" class="dlg-cancel btn-ghost">${en ? 'Cancel' : 'Vazgeç'}</button>
+      <button type="button" class="dlg-ok btn-primary" disabled>${en ? 'Import grades' : 'Notları aktar'}</button>
+    </div>
+  </div>`;
+  document.body.appendChild(host);
+  document.body.classList.add('modal-open');
+  const opener = document.activeElement;
+  const input = host.querySelector('#transcript-input');
+  const preview = host.querySelector('#transcript-preview');
+  const ok = host.querySelector('.dlg-ok');
+  let parsed = null;
+  let inferredCode = '';
+  let settled = false;
+
+  return new Promise((resolve) => {
+    const close = (value) => {
+      if (settled) return;
+      settled = true;
+      input.value = '';
+      host.remove();
+      document.body.classList.remove('modal-open');
+      opener?.focus?.();
+      resolve(value);
+    };
+    const refresh = () => {
+      if (input.value.length > 2_000_000) {
+        parsed = null;
+        ok.disabled = true;
+        preview.textContent = en ? 'This text is too large to process.' : 'Bu metin işlenemeyecek kadar büyük.';
+        preview.className = 'transcript-preview error';
+        return;
+      }
+      parsed = parseOBSTranscript(input.value);
+      const candidates = transcriptProgramCandidates(progIndex, parsed.programs);
+      inferredCode = !progCode && candidates.length === 1 ? candidates[0].code : '';
+      const canChooseProgram = Boolean(progCode || inferredCode);
+      ok.disabled = parsed.records.length === 0 || !canChooseProgram;
+      preview.className = `transcript-preview${parsed.records.length ? ' ready' : ''}`;
+      if (!parsed.records.length) {
+        preview.textContent = input.value.trim()
+          ? (en ? 'No course rows were found. Copy the Turkish transcript preview as text.' : 'Ders satırı bulunamadı. Türkçe transkript önizlemesini metin olarak kopyaladığından emin ol.')
+          : (en ? 'No text pasted yet.' : 'Henüz metin yapıştırılmadı.');
+        return;
+      }
+      const distinct = new Set(parsed.records.map((r) => r.code)).size;
+      const repeats = parsed.records.length - distinct;
+      const targetCode = progCode || inferredCode;
+      const target = progIndex.find((item) => item.code === targetCode);
+      const parts = [en ? `${parsed.records.length} rows, ${distinct} courses` : `${parsed.records.length} kayıt · ${distinct} farklı ders`];
+      if (repeats) parts.push(en ? `${repeats} repeat attempts` : `${repeats} tekrar kaydı`);
+      if (parsed.officialGpa != null) parts.push(en ? `OBS total GPA ${String(parsed.officialGpa).replace('.', ',')}` : `OBS toplam GANO ${String(parsed.officialGpa).replace('.', ',')}`);
+      if (target) parts.push(`${en ? 'Program' : 'Program'}: ${formatProgramLabel(target.code, target, I18N.lang)}`);
+      else parts.push(en ? 'Choose your program above before importing.' : 'Aktarmadan önce yukarıdan programını seç.');
+      if (plan && progCode) {
+        const match = matchTranscriptToPlan(plan, parsed.records);
+        const count = match.courseAssignments.length + match.electiveAssignments.length;
+        parts.push(en ? `${count} courses match this plan` : `${count} ders seçili planla eşleşiyor`);
+        if (match.unmatched.length) parts.push(en ? `${match.unmatched.length} unmatched` : `${match.unmatched.length} eşleşmeyen`);
+      }
+      preview.textContent = parts.join(' · ');
+    };
+
+    input.addEventListener('input', refresh);
+    host.querySelector('.dlg-close').addEventListener('click', () => close(null));
+    host.querySelector('.dlg-cancel').addEventListener('click', () => close(null));
+    ok.addEventListener('click', () => {
+      if (!ok.disabled && parsed) close({ parsed, inferredCode });
+    });
+    host.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') { event.preventDefault(); close(null); return; }
+      if (event.key !== 'Tab') return;
+      const focusable = [...host.querySelectorAll('button:not([disabled]), textarea')];
+      const first = focusable[0], last = focusable.at(-1);
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
+    input.focus();
+  });
+}
+
+async function importTranscript() {
+  const choice = await openTranscriptDialog();
+  if (!choice) return;
+  if (!progCode && choice.inferredCode) await selectTranscriptProgram(choice.inferredCode);
+  if (!plan || !progCode) {
+    toast(I18N.lang === 'en' ? 'Choose your program first' : 'Önce programını seç', { kind: 'warn' });
+    return;
+  }
+  const match = matchTranscriptToPlan(plan, choice.parsed.records);
+  const imported = match.courseAssignments.length + match.electiveAssignments.length;
+  if (!imported) {
+    setTranscriptResult(I18N.lang === 'en' ? 'No courses matched the selected plan.' : 'Seçili ders planıyla eşleşen ders bulunamadı.', 'error');
+    return;
+  }
+  stored = mergeTranscriptMatch(stored, match);
+  saveStored(progCode, stored);
+  catalogMap.clear();
+  ensureCatalogForPicks();
+  renderAll();
+  syncTakenFromGrades();
+  const repeatCount = match.latest.filter((item) => item.repeat).length;
+  const details = [I18N.lang === 'en' ? `${imported} grades imported` : `${imported} not aktarıldı`];
+  if (repeatCount) details.push(I18N.lang === 'en' ? `${repeatCount} repeated courses` : `${repeatCount} tekrar dersi`);
+  if (match.unmatched.length) details.push(I18N.lang === 'en' ? `${match.unmatched.length} courses need manual review` : `${match.unmatched.length} ders elle kontrol edilmeli`);
+  setTranscriptResult(`${details.join(' · ')}. ${I18N.lang === 'en' ? 'The raw transcript was not saved.' : 'Ham transkript kaydedilmedi.'}`, match.unmatched.length ? 'warn' : 'success');
+  $('#dp-grades').open = true;
+  toast(I18N.lang === 'en' ? 'Transcript grades imported' : 'Transkript notları aktarıldı');
+}
+
 // -- olaylar --
 
 function init() {
@@ -1120,6 +1279,7 @@ function init() {
   $('#dp-prog').addEventListener('change', () => {
     selectProgram($('#dp-prog').value);
   });
+  document.querySelectorAll('.dp-transcript-open').forEach((button) => button.addEventListener('click', importTranscript));
   ['#dp-open', '#dp-cap'].forEach((sel) => {
     $(sel).addEventListener('change', () => {
       filters.open = $('#dp-open').checked;

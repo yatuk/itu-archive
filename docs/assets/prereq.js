@@ -15,10 +15,10 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-import { esc, fold, getJSON, termLabel } from './core/utils.js';
-import { state } from './core/store.js';
-import { isTaken, TAKEN_CHANGED } from './core/taken.js';
-import { I18N } from './i18n.js';
+import { esc, fold, getJSON, termLabel } from './core/utils.js?v=e99ae63c7504';
+import { state } from './core/store.js?v=e99ae63c7504';
+import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=e99ae63c7504';
+import { I18N } from './i18n.js?v=e99ae63c7504';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
@@ -218,6 +218,12 @@ import { I18N } from './i18n.js';
 
     fitToView() {
       const w = this.canvas.clientWidth, h = this.canvas.clientHeight;
+      // ResizeObserver veri/program seçimi tamamlanmadan çalışabilir. Bu sırada
+      // laneTitles henüz yoktur; boş canvas varsayılan kamerayla çizilir.
+      if (!this.nodes?.length || !this.laneTitles?.length) {
+        this.cam = { x: 0, y: 0, k: 1 };
+        return;
+      }
       const contentW = LANE_PAD * 2 + (this.laneTitles.length - 1) * this.laneW;
       const k = Math.min(w / (contentW || w), h / ((this.contentHeight || h) * 1.05), 1.6);
       this.cam.k = Math.max(k, MIN_ZOOM);

@@ -9,13 +9,14 @@
 package main
 
 import (
+	"crypto/sha256"
 	"flag"
 	"fmt"
 	"log"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"regexp"
+	"sort"
 	"strings"
 
 	"itu-scraper/internal/site"
@@ -24,25 +25,30 @@ import (
 func main() {
 	out := flag.String("out", "docs", "çıktı kök dizini (GitHub Pages kaynağı)")
 	lang := flag.String("lang", "tr,en", "dil kodu (tr,en veya virgülle ayrılmış)")
-	ver := flag.String("version", "", "asset sürümü (P2-16) — boşsa GITHUB_SHA'dan kısa sha")
+	ver := flag.String("version", "", "asset sürümü — boşsa çalışma-zamanı CSS/JS içeriğinden üretilir")
 	flag.Parse()
 
-	// Asset önbellek kırma (P2-16): -version yoksa GITHUB_SHA, o da yoksa
-	// git HEAD kısa sha'sı — böylece her commit'te sürüm değişir.
+	// Asset önbellek kırma: açık bir -version verilmediyse yayınlanan CSS ve
+	// çalışma-zamanı JS dosyalarının normalize edilmiş içeriğinden üret. Git SHA
+	// kullanmak veri-only commitlerde gereksiz cache kırıyor; yalnız index/app'i
+	// sürümlemek ise iç içe ES modüllerini eski cache ile karıştırabiliyordu.
 	version := *ver
 	if version == "" {
-		if sha := os.Getenv("GITHUB_SHA"); sha != "" {
-			version = sha
-		} else if out, err := exec.Command("git", "rev-parse", "--short=7", "HEAD").Output(); err == nil {
-			version = strings.TrimSpace(string(out))
+		var err error
+		version, err = contentAssetVersion(*out)
+		if err != nil {
+			log.Fatalf("asset sürümü üretilemedi: %v", err)
 		}
 	}
-	if len(version) > 7 {
-		version = version[:7]
+	if len(version) > 12 {
+		version = version[:12]
 	}
 	if version != "" {
 		if err := patchIndexAssets(*out, version); err != nil {
-			fmt.Fprintf(os.Stderr, "· uyarı: index.html asset sürümü eklenemedi: %v\n", err)
+			log.Fatalf("index.html asset sürümü eklenemedi: %v", err)
+		}
+		if err := patchRuntimeAssetImports(*out, version); err != nil {
+			log.Fatalf("JS modül sürümleri eklenemedi: %v", err)
 		}
 	}
 
@@ -58,6 +64,98 @@ func main() {
 			os.Exit(1)
 		}
 	}
+}
+
+var localJSVersionRE = regexp.MustCompile(`((?:from\s+|import\s*\(\s*|import\s+)["'](?:\.\.?/)[^"']+\.js)(?:\?v=[^"']*)?`)
+
+// normalizedRuntimeJS, yalnız import URL'lerindeki sürüm parçasını çıkarır.
+// Böylece sürümün kendisi içerik hash'ini her çalıştırmada değiştirmez.
+func normalizedRuntimeJS(b []byte) []byte {
+	return localJSVersionRE.ReplaceAllFunc(b, func(match []byte) []byte {
+		parts := []byte(string(match))
+		if i := strings.LastIndex(string(parts), "?v="); i >= 0 {
+			return parts[:i]
+		}
+		return parts
+	})
+}
+
+// contentAssetVersion, tarayıcıda çalışan CSS ve JS kaynaklarından kararlı bir
+// yayın kimliği üretir. Test dosyaları ve veri dosyaları bu kimliği etkilemez.
+func contentAssetVersion(root string) (string, error) {
+	assets := filepath.Join(root, "assets")
+	var files []string
+	err := filepath.WalkDir(assets, func(path string, d os.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+		if d.IsDir() {
+			return nil
+		}
+		ext := strings.ToLower(filepath.Ext(path))
+		if ext != ".js" && ext != ".css" {
+			return nil
+		}
+		if strings.HasSuffix(strings.ToLower(path), ".test.js") {
+			return nil
+		}
+		files = append(files, path)
+		return nil
+	})
+	if err != nil {
+		return "", err
+	}
+	if len(files) == 0 {
+		return "", fmt.Errorf("%s altında çalışma-zamanı asseti bulunamadı", assets)
+	}
+	sort.Strings(files)
+	h := sha256.New()
+	for _, path := range files {
+		b, err := os.ReadFile(path)
+		if err != nil {
+			return "", err
+		}
+		rel, err := filepath.Rel(root, path)
+		if err != nil {
+			return "", err
+		}
+		h.Write([]byte(filepath.ToSlash(rel)))
+		h.Write([]byte{0})
+		if strings.EqualFold(filepath.Ext(path), ".js") {
+			b = normalizedRuntimeJS(b)
+		}
+		h.Write(b)
+		h.Write([]byte{0})
+	}
+	return fmt.Sprintf("%x", h.Sum(nil)[:6]), nil
+}
+
+// patchRuntimeAssetImports, giriş modülünden en derindeki yardımcıya kadar tüm
+// yerel ES module importlarını aynı yayın kimliğine bağlar. Bu atomiklik,
+// courses.js yeni iken core/programs.js'in eski cache'den gelmesi gibi üretim
+// kırılmalarını engeller.
+func patchRuntimeAssetImports(root, version string) error {
+	assets := filepath.Join(root, "assets")
+	return filepath.WalkDir(assets, func(path string, d os.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+		if d.IsDir() || !strings.EqualFold(filepath.Ext(path), ".js") || strings.HasSuffix(strings.ToLower(path), ".test.js") {
+			return nil
+		}
+		b, err := os.ReadFile(path)
+		if err != nil {
+			return err
+		}
+		patched := localJSVersionRE.ReplaceAllFunc(b, func(match []byte) []byte {
+			base := normalizedRuntimeJS(match)
+			return append(append([]byte{}, base...), []byte("?v="+version)...)
+		})
+		if string(patched) == string(b) {
+			return nil
+		}
+		return os.WriteFile(path, patched, 0o644)
+	})
 }
 
 // patchIndexAssets, statik docs/index.html'deki asset bağlantılarına ?v= ekler —

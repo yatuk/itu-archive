@@ -1,6 +1,6 @@
 // Favoriler ve program (ders programı) kaydı — localStorage'da kalıcı.
 // Kayıt: { term, branch, crn } üçlüsü; branş|crn anahtarı dönem içinde benzersiz.
-import { getJSON } from './utils.js';
+import { getJSON } from './utils.js?v=e99ae63c7504';
 
 const FAV_KEY = 'itu-favorites';
 const SCHED_KEY = 'itu-schedule';

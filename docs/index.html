@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-app-state="booting">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi — ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=examgui">
+<link rel="stylesheet" href="assets/style.css?v=e99ae63c7504">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -172,6 +172,18 @@
   </div>
  </details>
 </nav>
+
+<section id="app-failure" class="app-failure wrap" hidden role="alert" aria-labelledby="app-failure-title">
+ <div class="app-failure-copy">
+  <h2 id="app-failure-title">Ders verileri açılamadı</h2>
+  <p id="app-failure-message">Uygulamanın bir parçası yüklenemedi. Bağlantını kontrol edip yeniden deneyebilirsin.</p>
+  <p class="app-failure-release">Yayın sürümü: <code id="app-failure-version">bilinmiyor</code></p>
+ </div>
+ <div class="app-failure-actions">
+  <button type="button" id="app-retry" class="btn-primary">Yeniden dene</button>
+  <a class="btn-ghost" href="https://github.com/yatuk/itu-archive/issues/new" rel="noopener">Sorun bildir</a>
+ </div>
+</section>
 
 <main class="wrap" id="icerik">
 
@@ -621,6 +633,61 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
-<script type="module" src="assets/app.js?v=examgui"></script>
+<script type="module" src="assets/app.js?v=e99ae63c7504"></script>
+<script>
+(function () {
+  var root = document.documentElement;
+  var panel = document.getElementById('app-failure');
+  var retry = document.getElementById('app-retry');
+  var status = document.getElementById('stat-status');
+  var rows = document.getElementById('rows');
+  var moduleScript = document.querySelector('script[type="module"][src*="assets/app.js"]');
+  var release = 'bilinmiyor';
+  try { release = new URL(moduleScript.src, location.href).searchParams.get('v') || release; } catch (e) {}
+  var english = new URLSearchParams(location.search).get('lang') === 'en';
+  var timer = setTimeout(function () { fail('timeout'); }, 12000);
+
+  document.getElementById('app-failure-version').textContent = release;
+  if (english) {
+    document.getElementById('app-failure-title').textContent = 'Course data could not be opened';
+    document.getElementById('app-failure-message').textContent = 'Part of the application failed to load. Check your connection and try again.';
+    document.querySelector('.app-failure-release').firstChild.textContent = 'Release: ';
+    retry.textContent = 'Try again';
+    panel.querySelector('a').textContent = 'Report a problem';
+  }
+
+  function fail(kind) {
+    if (root.dataset.appState === 'ready' || root.dataset.appState === 'error') return;
+    root.dataset.appState = 'error';
+    clearTimeout(timer);
+    panel.hidden = false;
+    if (status) {
+      status.textContent = english ? 'application could not start' : 'uygulama başlatılamadı';
+      status.className = 'error';
+    }
+    if (rows && !rows.querySelector('tr:not(.skel-row)')) {
+      rows.innerHTML = '<tr><td colspan="10" class="empty error">' +
+        (english ? 'Course data could not be loaded. Use “Try again” above.' : 'Ders verileri yüklenemedi. Yukarıdaki “Yeniden dene” düğmesini kullan.') +
+        '</td></tr>';
+    }
+    panel.dataset.failureKind = kind || 'unknown';
+    panel.scrollIntoView({ block: 'nearest' });
+  }
+
+  window.__ituAppReady = function () {
+    clearTimeout(timer);
+    root.dataset.appState = 'ready';
+    panel.hidden = true;
+  };
+  window.__ituAppFailed = function (kind) { fail(kind); };
+  window.addEventListener('error', function (event) {
+    var source = String(event.filename || '');
+    var message = String(event.message || '');
+    if (source.indexOf('/assets/') >= 0 || /module|import|script/i.test(message)) fail('module');
+  });
+  window.addEventListener('unhandledrejection', function () { fail('promise'); });
+  retry.addEventListener('click', function () { location.reload(); });
+})();
+</script>
 </body>
 </html>

@@ -36,10 +36,7 @@ jobs:
         run: go run ./cmd/validate -quiet -skip-site
 
       - name: SEO sayfalarını veriden üret
-        shell: bash
-        run: |
-          ASSET_VERSION="$(grep -o 'style.css?v=[^" ]*' docs/index.html | head -1 | cut -d= -f2)"
-          go run ./cmd/site -version "$ASSET_VERSION"
+        run: go run ./cmd/site
 
       - name: Commit
         run: |

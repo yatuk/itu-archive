@@ -21,6 +21,7 @@ import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtT
 import { setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
 import * as fav from './favorites.js';
 import { formatProgramLabel, normalizeProgramLevel, programLevelLabel } from './programs.js';
+import { parseOBSTranscript, transcriptLatest, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from './transcript.js';
 
 test('program etiketleri kod, ad ve açık seviye adıyla her zaman doludur', () => {
   assert.equal(normalizeProgramLevel('', 'CEN_LS'), 'LS');
@@ -28,6 +29,65 @@ test('program etiketleri kod, ad ve açık seviye adıyla her zaman doludur', ()
   assert.equal(programLevelLabel('LS', 'tr'), 'Lisans');
   assert.equal(formatProgramLabel('CEN_LS', { name: 'Bilgisayar Mühendisliği (İngilizce) (KKTC) Lisans' }), 'CEN_LS · Bilgisayar Mühendisliği (İngilizce) (KKTC) · Lisans');
   assert.equal(formatProgramLabel('ABC_OL', { name: '' }), 'ABC_OL · Program adı arşivde bulunamadı · Önlisans');
+});
+
+test('OBS transkript metni kimlik alanlarını almadan dönem, ders ve son GANO ayrıştırır', () => {
+  const parsed = parseOBSTranscript(`Öğrenci Numarası : 000000000
+Adı : ÖRNEK
+2023-2024 / Güz Dönemi
+Ders Kodu Ders Adı Kredi Not
+CEN 101E Intr. to Information Systems 2,00 FF *
+MAT 103E Mathematics I 4,00 DC+
+A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
+Bilgisayar Mühendisliği (KKTC)
+Dönem 6,00 2,00 6,00 3,00 0,50
+2024-2025 / Bahar Dönemi
+Ders Kodu Ders Adı Kredi Not
+CEN 101E Intr. to Information Systems 2,00 BA+
+Toplam 8,00 8,00 8,00 22,00 2,75`);
+  assert.equal(parsed.records.length, 3);
+  assert.deepEqual(parsed.records.map((r) => [r.code, r.grade, r.credits]), [
+    ['CEN 101E', 'FF', 2], ['MAT 103E', 'DC+', 4], ['CEN 101E', 'BA+', 2],
+  ]);
+  assert.equal(parsed.officialGpa, 2.75);
+  assert.deepEqual(parsed.programs, ['Bilgisayar Mühendisliği (KKTC)']);
+  assert.equal(JSON.stringify(parsed).includes('000000000'), false);
+  assert.equal(JSON.stringify(parsed).includes('ÖRNEK'), false);
+});
+
+test('transkript tekrarda son notu kullanır; kod, ad ve seçmeli havuzla eşler', () => {
+  const records = parseOBSTranscript(`2023-2024 / Güz Dönemi
+CEN 101E Information Systems 2,00 FF *
+EEF 211E Basics of Electrical Circuits 3,00 DC
+BLG 337E Principles of Computer Comm. 3,00 BB
+XXX 999 Unknown Course 2,00 AA
+2024-2025 / Bahar Dönemi
+CEN 101E Information Systems 2,00 BA+`).records;
+  const latest = transcriptLatest(records);
+  assert.equal(latest.find((r) => r.code === 'CEN 101E').grade, 'BA+');
+  assert.equal(latest.find((r) => r.code === 'CEN 101E').prev, 'FF');
+
+  const plan = { semesters: [{ items: [
+    { course: { code: 'CEN 101E', name: 'Information Systems' } },
+    { course: { code: 'EEE 211E', name: 'Basics of Electrical Circuits' } },
+    { elective: { options: [{ code: 'BLG 337E' }] } },
+  ] }] };
+  const match = matchTranscriptToPlan(plan, records);
+  assert.equal(match.courseAssignments.length, 2);
+  assert.equal(match.electiveAssignments.length, 1);
+  assert.deepEqual(match.unmatched.map((r) => r.code), ['XXX 999']);
+  const merged = mergeTranscriptMatch({}, match);
+  assert.deepEqual(merged.grades['CEN 101E'], { grade: 'BA+', prev: 'FF', repeat: true });
+  assert.equal(merged.grades['EEE 211E'].grade, 'DC');
+  assert.deepEqual(merged.elective.s0i2, { code: 'BLG 337E', grade: 'BB', prev: '' });
+});
+
+test('transkript program adı ek nitelemelere rağmen tek program adayı bulur', () => {
+  const candidates = transcriptProgramCandidates([
+    { code: 'CEN_LS', name: 'Bilgisayar Mühendisliği (İngilizce) (KKTC) Lisans' },
+    { code: 'BLG_LS', name: 'Bilgisayar Mühendisliği Lisans' },
+  ], ['Bilgisayar Mühendisliği (KKTC)']);
+  assert.deepEqual(candidates.map((p) => p.code), ['CEN_LS']);
 });
 
 test('methodToCode/codeToMethod iki yönlü çevirir', () => {

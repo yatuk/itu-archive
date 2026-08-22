@@ -31,11 +31,11 @@ const ARAC_INIS_SAYFALARI = [
   { yol: '/ders-secimi/', hedef: '/#program', gorunum: '#view-program' },
 ];
 
-// Kontenjan serisi yalnızca kayıt haftalarında ölçülür; henüz ölçülmemiş dönem
-// için dosya yoktur. courses.js bunu try/catch ile bilerek karşılar
-// ("bu dönem için henüz ölçüm yok"), ama tarayıcı 404'ü yine de konsola yazar.
-// Beklenen tek istisna budur — başka her konsol hatası testi kırar.
-const BEKLENEN_404 = /data\/quota\/.*\.json/;
+// Kontenjan serisi yalnız kayıt haftalarında, sınav dosyası ise İTÜ takvimi
+// yayımlandığında oluşur. İlgili görünümler eksik dosyayı dürüst bir boş durumla
+// karşılar; tarayıcı yine de 404 yazar. Bu iki beklenen veri yokluğu dışındaki
+// her konsol hatası testi kırar.
+const BEKLENEN_404 = /data\/(?:quota\/.*|exams\/[^/]+)\.json/;
 
 /** Konsol hatalarını toplar; testin sonunda boş olmalı. */
 function konsolHatalari(page) {
@@ -44,7 +44,7 @@ function konsolHatalari(page) {
     if (m.type() !== 'error') return;
     const yer = m.location?.().url || '';
     if (BEKLENEN_404.test(yer) || BEKLENEN_404.test(m.text())) return;
-    hatalar.push(m.text());
+    hatalar.push(`${yer || 'console'}: ${m.text()}`);
   });
   page.on('pageerror', (e) => hatalar.push(String(e)));
   return hatalar;
@@ -64,6 +64,40 @@ test.describe('SPA (ana sayfa)', () => {
       ? page.locator('#course-groups .mobile-course-group').first()
       : page.locator('#results tbody tr').first();
     await expect(firstResult).toBeVisible({ timeout: 15000 });
+
+    expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
+  });
+
+  test('modül yükleme hatasında boş tablo yerine kurtarma ekranı gösterir', async ({ page }) => {
+    await page.route('**/assets/core/programs.js*', (route) => route.abort('failed'));
+    await page.goto('/');
+
+    const failure = page.locator('#app-failure');
+    await expect(failure).toBeVisible({ timeout: 15000 });
+    await expect(failure).toContainText('Ders verileri açılamadı');
+    await expect(failure.locator('#app-retry')).toBeVisible();
+    await expect(failure.getByRole('link', { name: 'Sorun bildir' })).toHaveAttribute('href', /github\.com\/yatuk\/itu-archive\/issues\/new/);
+    await expect(page.locator('html')).toHaveAttribute('data-app-state', 'error');
+    await expect(page.locator('#rows')).toContainText('Ders verileri yüklenemedi');
+  });
+
+  test('ana veri dosyası yüklenemezse aynı kurtarma yolunu sunar', async ({ page }) => {
+    await page.route('**/data/index.json', (route) => route.abort('failed'));
+    await page.goto('/');
+
+    await expect(page.locator('#app-failure')).toBeVisible({ timeout: 5000 });
+    await expect(page.locator('#stat-status')).toContainText('uygulama başlatılamadı');
+    await expect(page.locator('html')).toHaveAttribute('data-app-state', 'error');
+  });
+
+  test('ana görünümler art arda açılırken istemci hatası oluşmaz', async ({ page }) => {
+    const hatalar = konsolHatalari(page);
+    await page.goto('/');
+
+    for (const view of ['dersplanim', 'onsart', 'sinavlar', 'takvim', 'program']) {
+      await page.locator(`#tab-${view}`).click();
+      await expect(page.locator(`#view-${view}`)).toBeVisible();
+    }
 
     expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
   });
@@ -396,6 +430,57 @@ test.describe('Program seçimi (fakülte → bölüm)', () => {
     await expect(semester).toHaveAttribute('open', '');
     await semester.locator(':scope > summary').click();
     await expect(semester).not.toHaveAttribute('open', '');
+  });
+
+  test('OBS transkript metni programı bulur, tekrarları son notla aktarır ve ham metni saklamaz', async ({ page }) => {
+    const transcript = `Öğrenci Numarası : 000000000
+Adı : TEST KULLANICISI
+2023-2024 / Güz Dönemi
+Ders Kodu Ders Adı Kredi Not
+CEN 101E Intr. to Information Systems 2,00 FF *
+MAT 103E Mathematics I 4,00 DC+
+A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
+Bilgisayar Mühendisliği (KKTC)
+Dönem 6,00 2,00 6,00 3,00 0,50
+2024-2025 / Bahar Dönemi
+Ders Kodu Ders Adı Kredi Not
+CEN 101E Intr. to Information Systems 2,00 BA+
+CEN 223E Data Structures 3,50 CB+
+ZZZ 999 PRIVATE COURSE LABEL 2,00 AA
+Toplam 11,50 9,50 11,50 26,00 2,26`;
+
+    await page.goto('/#dersplanim');
+    const open = page.locator('#dp-empty .dp-transcript-open');
+    await expect(open).toBeVisible({ timeout: 20000 });
+    await open.click();
+
+    await expect(page.getByRole('dialog', { name: 'OBS transkriptinden notları aktar' })).toBeVisible();
+    await expect(page.locator('.transcript-privacy')).toContainText('Ham transkript yüklenmez ve kaydedilmez');
+    await expect(page.locator('.transcript-privacy')).toContainText('yalnız ders kodları ve notlar bu tarayıcıda kalır');
+    const dialogLayout = await page.locator('.transcript-dlg-box').evaluate((box) => ({
+      right: box.getBoundingClientRect().right,
+      viewport: document.documentElement.clientWidth,
+      pageOverflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+    }));
+    expect(dialogLayout.right).toBeLessThanOrEqual(dialogLayout.viewport + 1);
+    expect(dialogLayout.pageOverflow).toBeLessThanOrEqual(1);
+    await page.locator('#transcript-input').fill(transcript);
+    await expect(page.locator('#transcript-preview')).toContainText('5 kayıt · 4 farklı ders');
+    await expect(page.locator('#transcript-preview')).toContainText('CEN_LS');
+    await expect(page.locator('.transcript-dlg .dlg-ok')).toBeEnabled();
+    await page.locator('.transcript-dlg .dlg-ok').click();
+
+    await expect(page.locator('#dp-prog')).toHaveValue('CEN_LS', { timeout: 20000 });
+    await expect(page.locator('.dp-grade[data-gcode="CEN 101E"]')).toHaveValue('BA+');
+    await expect(page.locator('.dp-grade[data-gcode="CEN 223E"]')).toHaveValue('CB+');
+    await expect(page.locator('.dp-repeat-btn[data-gcode="CEN 101E"]')).toHaveAttribute('title', /önceki: FF/);
+    await expect(page.locator('#dp-transcript-result')).toContainText('3 not aktarıldı');
+    await expect(page.locator('#dp-transcript-result')).toContainText('1 ders elle kontrol edilmeli');
+
+    const stored = await page.evaluate(() => localStorage.getItem('itu-grades') || '');
+    expect(stored).not.toContain('TEST KULLANICISI');
+    expect(stored).not.toContain('PRIVATE COURSE LABEL');
+    expect(await page.locator('.transcript-dlg').count()).toBe(0);
   });
 
   test('Ders Planım: fakülte seçimi bölüm listesini daraltır', async ({ page }) => {

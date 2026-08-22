@@ -1,0 +1,71 @@
+name: live-smoke
+
+on:
+  deployment_status:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+
+concurrency:
+  group: live-smoke
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    if: >-
+      github.event_name != 'deployment_status' ||
+      (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Bağımlılıklar
+        run: npm ci
+
+      - name: Chromium indir
+        run: npx playwright install --with-deps chromium
+
+      - name: Beklenen yayın sürümünü oku
+        id: release
+        shell: bash
+        run: |
+          version="$(grep -o 'assets/app.js?v=[^" ]*' docs/index.html | head -1 | cut -d= -f2)"
+          test -n "$version"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: GitHub Pages yayınının aynı sürüme gelmesini bekle
+        shell: bash
+        run: |
+          expected='assets/app.js?v=${{ steps.release.outputs.version }}'
+          for attempt in $(seq 1 40); do
+            if curl -fsSL --retry 2 --max-time 20 "https://itu-ders.com/?release-check=$attempt" | grep -Fq "$expected"; then
+              echo "Yayın hazır: ${{ steps.release.outputs.version }}"
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "Yayın 10 dakika içinde beklenen asset sürümüne ulaşmadı." >&2
+          exit 1
+
+      - name: Canlı Playwright duman testi
+        env:
+          LIVE_BASE_URL: https://itu-ders.com
+          EXPECTED_ASSET_VERSION: ${{ steps.release.outputs.version }}
+        run: npx playwright test --config=playwright.live.config.js
+
+      - name: Hata kanıtlarını sakla
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-smoke-raporu
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7

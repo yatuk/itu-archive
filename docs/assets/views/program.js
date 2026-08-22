@@ -5,14 +5,14 @@
 // kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
 // Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum } from '../core/utils.js';
-import { state, indexReady } from '../core/store.js';
-import { quotaDisplay } from '../core/chart.js';
-import { buildTimetable, parseWhen, openDetail } from './courses.js';
-import * as fav from '../core/favorites.js';
-import { toast } from '../core/toast.js';
-import { confirmDialog, promptDialog } from '../core/dialog.js';
-import { I18N } from '../i18n.js';
+import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum } from '../core/utils.js?v=e99ae63c7504';
+import { state, indexReady } from '../core/store.js?v=e99ae63c7504';
+import { quotaDisplay } from '../core/chart.js?v=e99ae63c7504';
+import { buildTimetable, parseWhen, openDetail } from './courses.js?v=e99ae63c7504';
+import * as fav from '../core/favorites.js?v=e99ae63c7504';
+import { toast } from '../core/toast.js?v=e99ae63c7504';
+import { confirmDialog, promptDialog } from '../core/dialog.js?v=e99ae63c7504';
+import { I18N } from '../i18n.js?v=e99ae63c7504';
 
 let term = null;
 let rows = [];

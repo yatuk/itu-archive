@@ -3,19 +3,19 @@
    her sekmenin mantığı views/ altındaki kendi modülünde. Tüm veri docs/data
    altındaki statik JSON'lardan geliyor; sunucu tarafı yok. */
 
-import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js';
-import { state, markIndexReady } from './core/store.js';
-import { I18N } from './i18n.js?v=navfix1';
-import { initCourses, loadTerm, applyFilters, syncProgramFilter } from './views/courses.js?v=uirefactor2026';
-import { initCourseDetail, openCourseDetail } from './core/course-detail.js';
-import { initHistory, onShow as historyShow, searchHistory } from './views/history.js';
-import { initExams, onShow as examsShow } from './views/exams.js?v=examfix';
-import { initCalendar, onShow as calendarShow } from './views/calendar.js';
-import { renderTerms } from './views/terms.js';
-import { onShow as programShow } from './views/program.js?v=uirefactor2026';
-import { onShow as dersplanimShow } from './views/dersplanim.js?v=uirefactor2026';
-import { PrereqGraph } from './prereq.js?v=examguidefix';
-import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js';
+import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js?v=e99ae63c7504';
+import { state, markIndexReady } from './core/store.js?v=e99ae63c7504';
+import { I18N } from './i18n.js?v=e99ae63c7504';
+import { initCourses, loadTerm, applyFilters, syncProgramFilter } from './views/courses.js?v=e99ae63c7504';
+import { initCourseDetail, openCourseDetail } from './core/course-detail.js?v=e99ae63c7504';
+import { initHistory, onShow as historyShow, searchHistory } from './views/history.js?v=e99ae63c7504';
+import { initExams, onShow as examsShow } from './views/exams.js?v=e99ae63c7504';
+import { initCalendar, onShow as calendarShow } from './views/calendar.js?v=e99ae63c7504';
+import { renderTerms } from './views/terms.js?v=e99ae63c7504';
+import { onShow as programShow } from './views/program.js?v=e99ae63c7504';
+import { onShow as dersplanimShow } from './views/dersplanim.js?v=e99ae63c7504';
+import { PrereqGraph } from './prereq.js?v=e99ae63c7504';
+import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=e99ae63c7504';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -39,6 +39,7 @@ async function boot() {
     markIndexReady(); // yükleme başarısız olsa da bekleyenleri serbest bırak
     setStatus($('#stat-status'), I18N.t('statVeriYok'), { error: true });
     $('#rows').innerHTML = `<tr><td colspan="10" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
+    window.__ituAppFailed?.('data');
     return;
   }
 
@@ -129,6 +130,7 @@ async function boot() {
   if (params.has('code')) $('#f-code').value = params.get('code');
   if (params.get('open') === '1') $('#f-open').checked = true;
   applyFilters();
+    window.__ituAppReady?.();
 }
 
 /* ---------- tema ---------- */
@@ -423,4 +425,7 @@ function fillHost() {
   if (rawBranch) rawBranch.href = `/data/terms/${encodeURIComponent(state.index.currentSlug)}/branches/BIL.json`;
 }
 
-boot();
+boot().catch((error) => {
+  console.error('Uygulama başlatılamadı:', error);
+  window.__ituAppFailed?.('boot');
+});

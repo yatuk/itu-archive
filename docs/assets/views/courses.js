@@ -6,16 +6,16 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js';
-import { methodToCode } from '../core/urlcodes.js';
-import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js';
-import { state } from '../core/store.js';
-import { quotaDisplay } from '../core/chart.js';
-import { fillRows } from '../core/table.js';
-import * as fav from '../core/favorites.js';
-import { toast } from '../core/toast.js';
-import { openCourseDetail } from '../core/course-detail.js';
-import { I18N } from '../i18n.js';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js?v=e99ae63c7504';
+import { methodToCode } from '../core/urlcodes.js?v=e99ae63c7504';
+import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=e99ae63c7504';
+import { state } from '../core/store.js?v=e99ae63c7504';
+import { quotaDisplay } from '../core/chart.js?v=e99ae63c7504';
+import { fillRows } from '../core/table.js?v=e99ae63c7504';
+import * as fav from '../core/favorites.js?v=e99ae63c7504';
+import { toast } from '../core/toast.js?v=e99ae63c7504';
+import { openCourseDetail } from '../core/course-detail.js?v=e99ae63c7504';
+import { I18N } from '../i18n.js?v=e99ae63c7504';
 
 const PAGE = 200;
 const MOBILE_GROUP_PAGE = 30;

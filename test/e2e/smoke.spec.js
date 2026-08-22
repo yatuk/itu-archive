@@ -16,6 +16,18 @@ const SEO_SAYFALARI = [
   { yol: '/brans/BLG/', beklenenH1: /BLG/ },
   { yol: '/hoca/muhammed-lutfi-yarar/', beklenenH1: /Muhammed Lütfi Yarar/ },
   { yol: '/gano-hesaplama/', beklenenH1: /GANO/ },
+  { yol: '/ders-programi-olustur/', beklenenH1: /ders programı oluştur/i },
+  { yol: '/sinav-programi/', beklenenH1: /sınav programı/i },
+  { yol: '/akademik-takvim/', beklenenH1: /akademik takvim/i },
+];
+
+/** Arama niyetli sayfanın açması gereken gerçek uygulama görünümü. */
+const ARAC_INIS_SAYFALARI = [
+  { yol: '/gano-hesaplama/', hedef: '/#dersplanim', gorunum: '#view-dersplanim' },
+  { yol: '/ders-programi-olustur/', hedef: '/#program', gorunum: '#view-program' },
+  { yol: '/sinav-programi/', hedef: '/#sinavlar', gorunum: '#view-sinavlar' },
+  { yol: '/akademik-takvim/', hedef: '/#takvim', gorunum: '#view-takvim' },
+  { yol: '/ders-arsivi/', hedef: '/#gecmis', gorunum: '#view-gecmis' },
 ];
 
 // Kontenjan serisi yalnızca kayıt haftalarında ölçülür; henüz ölçülmemiş dönem
@@ -561,12 +573,26 @@ test.describe('SEO sayfaları', () => {
     expect(graph.some((item) => item['@type'] === 'BreadcrumbList')).toBe(true);
     expect(JSON.stringify(graph)).not.toContain('affiliation');
   });
+
+  for (const { yol, hedef, gorunum } of ARAC_INIS_SAYFALARI) {
+    test(`${yol} · birincil eylem gerçek aracı açar`, async ({ page }) => {
+      await page.goto(yol);
+
+      const anaEylem = page.locator('.seo-tool-launch .btn-primary');
+      await expect(anaEylem).toBeVisible();
+      await expect(anaEylem).toHaveAttribute('href', hedef);
+      await anaEylem.click();
+
+      await expect(page).toHaveURL(new RegExp(`${hedef.replace('/', '\\/')}$`));
+      await expect(page.locator(gorunum)).toBeVisible();
+    });
+  }
 });
 
 test.describe('Düzen bütünlüğü', () => {
   // Kayıt haftasında birincil bağlam telefon: sayfa gövdesi asla yatay kaymamalı.
   // Geniş içerik (tablo) kendi kabında kayar.
-  for (const yol of ['/', '/ders/blg-102e/', '/dersler/2025-2026-bahar/']) {
+  for (const yol of ['/', '/ders/blg-102e/', '/dersler/2025-2026-bahar/', '/gano-hesaplama/', '/ders-programi-olustur/']) {
     test(`${yol} · sayfa yatay taşmaz`, async ({ page }) => {
       await page.goto(yol);
       await page.waitForLoadState('networkidle');

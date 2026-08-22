@@ -2536,6 +2536,36 @@ body.modal-open { overflow: hidden; }
 
 .cta { margin: 10px 0 16px; }
 
+/* Arama motorundan gelen kullanıcıyı metin sayfasında bırakma: araç niyetli
+   iniş sayfalarının ilk ekranda gerçek SPA görünümüne tek belirgin geçişi. */
+.seo-tool-launch {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; max-width: 860px; margin: 20px 0 28px; padding: 16px 0;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.seo-tool-launch > div { min-width: 0; }
+.seo-tool-launch strong { display: block; color: var(--fg); font-size: 16px; line-height: 1.35; }
+.seo-tool-launch p { max-width: 64ch; margin: 5px 0 0; color: var(--dim); }
+.seo-tool-launch .btn-primary {
+  flex: none; justify-content: center; text-decoration: none; white-space: nowrap;
+}
+.seo-action-list {
+  display: flex; flex-wrap: wrap; gap: 8px 18px;
+  margin: 8px 0 22px; padding: 0; list-style: none;
+}
+.seo-action-list a { color: var(--cyan); text-underline-offset: 3px; }
+.seo-action-list a:hover { color: var(--acid); }
+[data-theme="sade"] .seo-tool-launch {
+  padding: 18px; border: 1px solid var(--line); border-radius: var(--radius-card);
+  background: var(--panel);
+}
+
+@media (max-width: 640px) {
+  .seo-tool-launch { align-items: stretch; flex-direction: column; gap: 14px; }
+  .seo-tool-launch .btn-primary { width: 100%; white-space: normal; }
+  .seo-action-list { flex-direction: column; gap: 10px; }
+}
+
 .data-link { color: var(--dimmer); font-size: 13px; margin-top: 20px; }
 .data-link a { color: var(--dim); }
 

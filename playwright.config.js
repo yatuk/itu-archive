@@ -22,7 +22,7 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: `python -m http.server ${PORT} --bind 127.0.0.1 --directory docs`,
+    command: `node test/e2e/static-server.mjs ${PORT}`,
     url: `http://127.0.0.1:${PORT}/`,
     reuseExistingServer: !process.env.CI,
     stdout: 'ignore',

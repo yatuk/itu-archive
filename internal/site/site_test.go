@@ -100,3 +100,39 @@ func TestSitemapOmitsIgnoredPriorityAndChangefreq(t *testing.T) {
 		t.Fatal("doğru lastmod kayboldu")
 	}
 }
+
+func TestLandingPagesRouteSearchIntentToWorkingViews(t *testing.T) {
+	want := map[string]string{
+		"ders-plani":            "/#dersplanim",
+		"gano-hesaplama":        "/#dersplanim",
+		"not-ortalamasi":        "/#dersplanim",
+		"ders-programi":         "/#dersler",
+		"ders-programi-olustur": "/#program",
+		"kontenjan":             "/#dersler",
+		"ders-secimi":           "/#dersler",
+		"onsart-haritasi":       "/#onsart",
+		"sinav-programi":        "/#sinavlar",
+		"akademik-takvim":       "/#takvim",
+		"ders-arsivi":           "/#gecmis",
+	}
+	seen := map[string]bool{}
+	for _, page := range landingPages {
+		if seen[page.slug] {
+			t.Fatalf("yinelenen iniş sayfası slug'ı: %s", page.slug)
+		}
+		seen[page.slug] = true
+		if got, ok := want[page.slug]; !ok {
+			t.Errorf("beklenmeyen iniş sayfası: %s", page.slug)
+		} else if page.primary.href != got {
+			t.Errorf("%s yanlış araca gidiyor: got %q want %q", page.slug, page.primary.href, got)
+		}
+		if page.primary.label == "" || page.primary.detail == "" {
+			t.Errorf("%s birincil araç çağrısı eksik", page.slug)
+		}
+	}
+	for slug := range want {
+		if !seen[slug] {
+			t.Errorf("aranan araç için iniş sayfası eksik: %s", slug)
+		}
+	}
+}

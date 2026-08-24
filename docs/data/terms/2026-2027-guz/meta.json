@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-08-24T09:04:13Z"
+  "lastSuccessfulAt": "2026-08-24T14:59:46Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-08-24T09:04:13Z",
+ "scrapedAt": "2026-08-24T14:59:46Z",
  "source": "itu-archive",
  "live": true,
  "sections": 4981,
- "courses": 3482,
+ "courses": 3483,
  "branches": [
   {
    "code": "ABM",
@@ -788,7 +788,7 @@
     "LS",
     "LU"
    ],
-   "sections": 44
+   "sections": 45
   },
   {
    "code": "MAK",
@@ -1002,7 +1002,7 @@
     "LS",
     "LU"
    ],
-   "sections": 66
+   "sections": 65
   },
   {
    "code": "MTR",
@@ -1208,7 +1208,7 @@
     "LS",
     "LU"
    ],
-   "sections": 68
+   "sections": 69
   },
   {
    "code": "SEC",
@@ -1299,7 +1299,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 14
+   "sections": 13
   },
   {
    "code": "SUS",
@@ -1509,10 +1509,10 @@
  ],
  "stats": {
   "sections": 4981,
-  "courses": 3482,
+  "courses": 3483,
   "branches": 210,
   "instructors": 1713,
-  "capacity": 242542,
+  "capacity": 242567,
   "enrolled": 1204
  }
 }

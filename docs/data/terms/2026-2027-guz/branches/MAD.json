@@ -1211,5 +1211,35 @@
   "programs": [],
   "prereq": "-",
   "classReq": "-"
+ },
+ {
+  "crn": "15108",
+  "code": "MAD 439E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Cement Technology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hasan Ergin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MAD_LS",
+   "MADE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
  }
 ]

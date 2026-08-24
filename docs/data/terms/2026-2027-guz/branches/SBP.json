@@ -6,7 +6,7 @@
   "level": "LS",
   "name": "Project IV: Spatial Strategic Planning & Policy Making",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Eda Yücesoy , Hadiseh Hosseini Jahanabad",
+  "instructor": "İmge Akçakaya Waıte Jr , Serim Dinç",
   "buildings": [
    "undeclared",
    "undeclared"
@@ -1103,7 +1103,7 @@
   "level": "LS",
   "name": "Prj.V:Spatial Plan.&Urb.Dev.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Fatih Terzi",
+  "instructor": "Seda Kundak",
   "buildings": [
    "undeclared",
    "undeclared"
@@ -1136,7 +1136,7 @@
   "level": "LS",
   "name": "Proj.VI:Spatial Plan.in Act.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "İmge Akçakaya Waıte Jr , Serim Dinç",
+  "instructor": "Eda Yücesoy , Hadiseh Hosseini Jahanabad",
   "buildings": [
    "undeclared",
    "undeclared"
@@ -1480,6 +1480,7 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
+   "SBP_LS",
    "SBPE_LS"
   ],
   "prereq": "Detay",
@@ -2064,6 +2065,39 @@
    "SBPE_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15107",
+  "code": "SBP 207",
+  "branch": "SBP",
+  "level": "LS",
+  "name": "Proje III: Yöre Plan.&Tas.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fatih Terzi",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/17:29",
+   "14:00/17:59"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SBP_LS"
+  ],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

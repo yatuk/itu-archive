@@ -11099,6 +11099,121 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=563"
  },
+ "BLG 565E": {
+  "code": "BLG 565E",
+  "name": "Bioinformatics Algorithms",
+  "nameEn": "Bioinformatics Algorithms",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Biyoinformatik kavramlarının ve biyolojik veri işlemenin temelleri, dizi hizalama ve analizi, genom yeniden düzenlemeleri, gen bulma, DNA haritalama, genom arama ve sistem biyolojisi için algoritmalar, farklı biyoinformatik problemler içinde dinamik programlama, açgözlü ve dallara ayır-ve-sınırla yaklaşımların analizi ve uygulaması Basics of bioinformatics concepts and biological data processing, algorithms for sequence alignment and analysis, genome rearrangements, gene finding, DNA mapping, searching genomes, and systems biology, analysis and application of dynamic programming, greedy, and branch-and-bound approaches within different bioinformatics problems",
+  "outcomes": [
+   "Genetik ve moleküler biyolojinin temel kavramları.",
+   "Klasik biyoinformatik algoritmaları.",
+   "Alternatif bioinformatik algoritmalarının performans analizi.",
+   "Temel biyoinformatik algoritma tasarım yaklaşımları."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Algoritma Temelleri",
+   "Hafta 2 · Moleküler Biyoloji Temelleri",
+   "Hafta 3 · DNA Haritalama, Genomda Düzenleyici Motifleri Bulma",
+   "Hafta 4 · Genom Yeniden Düzenlemelerini Ortaya Çıkarma",
+   "Hafta 5 · DNA Dizisi Karşılaştırması",
+   "Hafta 6 · Global ve Yerel Sıra Hizalama, Puanlama Matrisleri",
+   "Hafta 7 · Çoklu Sıra Hizalama",
+   "Hafta 8 · Gen Tahmini: İstatistiksel ve Benzerlik Temelli Yaklaşımlar",
+   "Hafta 9 · Gen Tahmini: Gizli Markov Modelleri – Bölüm 1",
+   "Hafta 10 · Gen Tahmini: Gizli Markov Modelleri – Bölüm 2",
+   "Hafta 11 · DNA Dizileme Algoritmaları",
+   "Hafta 12 · Protein Dizileme ve Tanımlama",
+   "Hafta 13 · Genomlarda Arama: Tam Örüntü Eşleşmesi",
+   "Hafta 14 · Genomlarda Arama: Yaklaşık Örüntü Eşleşmesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Algoritma Temelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Moleküler Biyoloji Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "DNA Haritalama, Genomda Düzenleyici Motifleri Bulma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Genom Yeniden Düzenlemelerini Ortaya Çıkarma",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "DNA Dizisi Karşılaştırması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Global ve Yerel Sıra Hizalama, Puanlama Matrisleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çoklu Sıra Hizalama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Gen Tahmini: İstatistiksel ve Benzerlik Temelli Yaklaşımlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Gen Tahmini: Gizli Markov Modelleri – Bölüm 1",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Gen Tahmini: Gizli Markov Modelleri – Bölüm 2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "DNA Dizileme Algoritmaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Protein Dizileme ve Tanımlama",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Genomlarda Arama: Tam Örüntü Eşleşmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Genomlarda Arama: Yaklaşık Örüntü Eşleşmesi"
+   }
+  ],
+  "textbooks": [
+   "Bolyen, E., Rideout, J. R., Chase, J., Pitman, T. A., Shiffer, A., Mercurio, W., ... & Caporaso, J. G. (2018). An Introduction to Applied Bioinformatics: a free, open, and interactive text. The Journal of open source education, 1(5).",
+   "Compeau, P., & Pevzner, P. (2015). Bioinformatics algorithms: an active learning approach (Vol. 1). La Jolla, California: Active Learning Publishers.",
+   "Pevsner, J. (2015). Bioinformatics and functional genomics. John Wiley & Sons.",
+   "Jones, N. C., Pevzner, P. A., & Pevzner, P. (2004). An introduction to bioinformatics algorithms. MIT press.",
+   "Zvelebil, M. J., & Baum, J. O. (2007). Understanding bioinformatics. Garland Science."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=565"
+ },
  "BLG 596": {
   "code": "BLG 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",

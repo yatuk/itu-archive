@@ -1,0 +1,347 @@
+{
+ "MKC 521": {
+  "code": "MKC 521",
+  "name": "Elastisite Teorisi",
+  "nameEn": "Theory of Elasticity",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İndis notasyonu ve Kartezyen tansör analizi. Gerilme analizi. Şekil değiştirme analizi. Bünye denklemleri. Termoelastisite. Uygunluk koşulları. İki boyutlu Elastisite. Airy gerilme fonksiyonu. Çeşitli düzlem elastisite problemleri için analitik çözümler. Prizmatik çubukların burulması. Indicial notation and Cartesian tensor analysis. Analysis of stress. Analysis of deformation. Constitutive equations. Two-dimensional elasticity. Airy stress function. Analytical solutions for various plane elasticity problems. Torsion of prismatic bars.",
+  "outcomes": [
+   "İndis notasyonu ve Kartezyen tansör analizi",
+   "Gerilme ve şekil değiştirme analizi",
+   "Lineer elastik cisimlerin temel alan denklemleri",
+   "Çeşitli sınır değer problemlerinin formülasyonları ve çözüm stratejileri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Elastisite teorisine giriş, İndis notasyonu",
+   "Hafta 2 · Kartezyen tansör analizi, Koordinat dönüşümleri",
+   "Hafta 3 · Gerilme analizi, İşaret kabulü, Cauchy bağıntısı, Gerilme vektörünün bileşenleri",
+   "Hafta 4 · Korunum yasalarının sonuçları, Asal gerilme ve doğrultular, Küresel ve deviatrik gerilmeler",
+   "Hafta 5 · Şekil değiştirme analizi, Yer değiştirme ve birim şekil değiştirme, Çok küçük şekil değiştirme hali",
+   "Hafta 6 · Tansör bileşenlerinin geometrik anlamları, Şekil değiştirme hali için asal değer ve doğrultular, Küresel ve deviatrik tansörler, Uygunluk denklemleri",
+   "Hafta 7 · Anizotropi, Lineer izotropik bir elastik katı için bünye denklemi, Elastik katsayıların fiziksel anlamları",
+   "Hafta 8 · Sıcaklığa bağlı şekil değiştirme ve gerilmeler, Temel alan denklemleri, Yer değiştirme ve gerilme problemlerine ait denklemler",
+   "Hafta 9 · İki boyutlu elastisite, Düzlemsel gerilme ve düzlemsel şekil değiştirme problemleri, Temel çözüm yöntemleri",
+   "Hafta 10 · Airy gerilme fonksiyonu, İki boyutlu problemlerin kuvvet serileri yardımıyla çözülmesi, Kartezyen koordinatlarda örnek çözümler",
+   "Hafta 11 · Kartezyen koordinatlarda örnek çözümler",
+   "Hafta 12 · Kutupsal koordinatlarda örnek çözümler",
+   "Hafta 13 · Kutupsal koordinatlarda örnek çözümler",
+   "Hafta 14 · Prizmatik çubukların burulması, Prandtl gerilme fonksiyonu, Örnek çözümler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elastisite teorisine giriş, İndis notasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kartezyen tansör analizi, Koordinat dönüşümleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gerilme analizi, İşaret kabulü, Cauchy bağıntısı, Gerilme vektörünün bileşenleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Korunum yasalarının sonuçları, Asal gerilme ve doğrultular, Küresel ve deviatrik gerilmeler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Şekil değiştirme analizi, Yer değiştirme ve birim şekil değiştirme, Çok küçük şekil değiştirme hali",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Tansör bileşenlerinin geometrik anlamları, Şekil değiştirme hali için asal değer ve doğrultular, Küresel ve deviatrik tansörler, Uygunluk denklemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Anizotropi, Lineer izotropik bir elastik katı için bünye denklemi, Elastik katsayıların fiziksel anlamları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Sıcaklığa bağlı şekil değiştirme ve gerilmeler, Temel alan denklemleri, Yer değiştirme ve gerilme problemlerine ait denklemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "İki boyutlu elastisite, Düzlemsel gerilme ve düzlemsel şekil değiştirme problemleri, Temel çözüm yöntemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Airy gerilme fonksiyonu, İki boyutlu problemlerin kuvvet serileri yardımıyla çözülmesi, Kartezyen koordinatlarda örnek çözümler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Kartezyen koordinatlarda örnek çözümler",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Kutupsal koordinatlarda örnek çözümler",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kutupsal koordinatlarda örnek çözümler",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Prizmatik çubukların burulması, Prandtl gerilme fonksiyonu, Örnek çözümler"
+   }
+  ],
+  "textbooks": [
+   "Theory Applications and Numerics, M.H. Sadd, 2005, Elsevier",
+   "Introduction to Linear Elasticity, P.L. Gould, 1983, Springer",
+   "Elasticity, J.R. Barber, 1992, Kluwer",
+   "Elasticity in Engineering Mechanics, A.P. Boresi, 2000, Wiley",
+   "Elastisite Teorisi, S. Tameroğlu, 1991, İTÜ",
+   "Düzlemde Elastisite Teorisi, M. İnan, 1969, İTÜ"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKC&dersNo=521"
+ },
+ "MKC 526": {
+  "code": "MKC 526",
+  "name": "Biyomekanik",
+  "nameEn": "Biomechanics",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Temel mekanik (statik, dinamik ve mukavemet) bilgileri. Gerilme şekil değiştirme ilişkileri. Biyolojik yapıların çeşitleri. Yumuşak ve sert dokuların açıklanması. Temel anatomi bilgisinin verilmesi. Viskoelastik dokuların davranışı. İmplant, protez ve ortezlerin tanıtılması. Biyolojik yapıların sayısal ve deneysel analizi.Biyomekanikte Ölçüm yöntemleri Basic mechanical (static, dynamic and strength) information. Stress strain relations. Types of biological structures. Explanation of soft and hard tissues. Giving the knowledge of basic anatomy. Viscoelastic behavior of tissues. Implant Prosthetics and Orthotics introduction. Numerical and experimental analysis of biological structures. Measurement Methods in Biomechanics",
+  "outcomes": [
+   "Mekanik",
+   "İnsan anatomisi",
+   "Yapay organlar (İmplant,protez,Ortez)",
+   "Mekaniğin biyolojik yapılara uygulanması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 2 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 3 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 4 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 5 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 6 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 7 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 8 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 9 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 10 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 11 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 12 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 13 · Biyomekanikte ölçme ve test yöntemleri",
+   "Hafta 14 · Biyomekanikte ölçme ve test yöntemleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 2,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Biyomekanikte ölçme ve test yöntemleri"
+   }
+  ],
+  "textbooks": [
+   "Fundamentals of Biomechanics, Duane Knudson, 2010, Springer",
+   "Clinical Biomechanics of the Spine, Augustus A. White and Manohar Panjabi, Lippincott Williams and Wilkins, 1990",
+   "Biomechanics, Y.C. Fung, 1990, Springer.",
+   "Principles of Biomechanics, Ronald L. Huston, 2009, CRC Press"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKC&dersNo=526"
+ },
+ "MKC 527E": {
+  "code": "MKC 527E",
+  "name": "Vibration of Structures",
+  "nameEn": "Vibration of Structures",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sonlu serbestlik dereceli sistemlerin titreşimi (Özet), Tek eksenli bükülebilen sistemlerin (Sicim ve kablolar) titreşimi, Çubukların eksenel titreşimi, Dairesel millerin burulmna titreşimi, kirişlerin eğilme titreşimi, Matris notasyonu ile yaklaşık çözümler, Dikdörtgen ve Dairesl membranların titreşimi, Frekans analizinin, makinaların performans izlemesine uygulanması, Uluslararası Titreşim Standardları. Summary of Finite Degree of freedom systems, Vibrations of one dimensional flexible structures (strings and cables), Longitudinal vibrations of bars, Torsional vibrations of shafts, Vibrations of beams, Approximated Method (Solutions with Matrix Notation), Vibrations of rectangular and circular membranes, Application of frequency analysis on condition monitoring, International vibration standards.",
+  "outcomes": [
+   "Diferansiyel denklemlerin (basit ve kısmi diferansiyel denklemler) uygulaması ile titreşim problemlerini analitik çözümü",
+   "Titreşim problemlerinin sayısal yöntemlerle çözümü",
+   "Titreşim sonuçlarının uluslararası standardlara göre değerlendirilmesi",
+   "Titreşim frekans analizi ile makina hatalarının teşhis edilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Sonlu serbestlik dereceli sistemlerin titreşimi (Özet)",
+   "Hafta 2 · Tek eksenli bükülebilen sistemlerin (Sicim ve kablolar) titreşimi",
+   "Hafta 3 · Çubukların eksenel titreşimi",
+   "Hafta 4 · Dairesel millerin burulma titreşimi",
+   "Hafta 5 · Kirişlerin eğilme titreşimleri",
+   "Hafta 6 · Kirişlerin eğilme titreşimlerinde karmaşık sınır şartları",
+   "Hafta 7 · Matris notasyonu ile yaklaşık çözümler",
+   "Hafta 8 · Dikdörtgen Levhaların Titreşimi",
+   "Hafta 9 · Dairesel Levhaların Titreşimleri",
+   "Hafta 10 · Frekans Analizinin Makinalarda Uygulanmasının Temelleri",
+   "Hafta 11 · Makinaların Performans İzleme Sistemleri ve Uygulamalar",
+   "Hafta 12 · Frekans Analizinin, Makinaların Performans İzlemesine Uygulanması,",
+   "Hafta 13 · Uluslararası Titreşim Standardlarının Karakteristiklerinin İncelenmesi.",
+   "Hafta 14 · Uluslararası Titreşim Standardlarına Göre Titreşim Seviyelerinin Değerlendirilmesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sonlu serbestlik dereceli sistemlerin titreşimi (Özet)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tek eksenli bükülebilen sistemlerin (Sicim ve kablolar) titreşimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Çubukların eksenel titreşimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dairesel millerin burulma titreşimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Kirişlerin eğilme titreşimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Kirişlerin eğilme titreşimlerinde karmaşık sınır şartları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Matris notasyonu ile yaklaşık çözümler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dikdörtgen Levhaların Titreşimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Dairesel Levhaların Titreşimleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Frekans Analizinin Makinalarda Uygulanmasının Temelleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Makinaların Performans İzleme Sistemleri ve Uygulamalar",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Frekans Analizinin, Makinaların Performans İzlemesine Uygulanması,",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Uluslararası Titreşim Standardlarının Karakteristiklerinin İncelenmesi.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Uluslararası Titreşim Standardlarına Göre Titreşim Seviyelerinin Değerlendirilmesi"
+   }
+  ],
+  "textbooks": [
+   "S.S. Rao ; Vibration of Continuous Systems, John Wiley & Sons, 2011, USA",
+   "S. Graham Kelly ; Mechanical Vibrations: Theory and App., Cencage, 2011",
+   "F. S. Tse, I.E. Morse, R.T. Hinkle; Mechanical Vibrations – Allyn & Bacon, 1963",
+   "L. Meirovitch, Elements of Vibration Analysis, Mc Graw Hill Publ., 2003",
+   "Singiresu S. Rao, Mechanical Vibrations, Pearson, Prentice Hall., 2010"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKC&dersNo=527"
+ }
+}

@@ -729,111 +729,108 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "1. Temel Olasılık Kavramları (Basic Probability Concepts) 2. Toplam Olasılık ve Bayes Teoremi (Total Probability and Bayes Theorem) 3. Bayes Karar Teorisi (Bayes Decision Theory) 4. Markov Zincirleri (Markov Chains) 5. İstatistiğe Giriş (Introduction to Statistics) 6. Parametrelerin Tahmini (Estimation of Parameters) 7. Frekans Analizi (Frequency Analysis) 8. Güven Aralığı (Confidence Interval) 9. Hipotez Testleri (Hypotheses Tests) 10. Dağılım Fonsiyonları ve Testler (Probability Distributions and Tests) 11. Varyans Analizi (Analysis of Variance) 12. Korelasyon ve Regresyon (Correlation and Regression) 13. Zaman Serileri (Time Series) 14. ARMA Modelleri (ARMA Models) -",
+  "description": "Temel Olasılık ve İstatistik Kavramları, İstatistiğin Esasları Olasılık ve İstatistik Kavramlarının Uygulamalı Yorumlanması Toplam olasılık ve Bayes teoremi, Bayes karar teorisi İstatistiksel ve İhtimali Standardizasyon, Normalizasyon Standardize Yağış İndisi ve Kuraklık Analizi Olasılık Dağılımda Çarpıklık, Çarpıklık Katsayıları ve Basıklık. Hipotez testleri, Dağılım fonksiyonları ve testler Zaman Serileri, Aykırı Değer Analizi ve IQR Yöntemi Güven Aralığı, Trend Analizi ve Klasik Trend Analiz Yöntemleri Modern Trend Analiz Yöntemleri, Yenilikçi Trend Analizi ve Türevleri Varyans, Korelasyon, Regresyon Olasılık, Toplam Olasılık ve Olasılık Dağılım Fonksiyonları Risk Analizi, Taşkın ve Kuraklık Frekans Analizi Risk Analizi, Taşkın ve Kuraklık Frekans Analizi Üzerine Uygulamalar Fundamental Concepts of Probability and Statistics; Principles of Statistics Applied Interpretation of Probability and Statistical Concepts Total Probability and Bayes’ Theorem; Bayesian Decision Theory Statistical and Probabilistic Standardization; Normalization Standardized Precipitation Index and Drought Analysis Skewness in Probability Distributions; Measures of Skewness and Kurtosis Hypothesis Testing; Distribution Functions and Statistical Tests Time Series; Outlier Analysis and the IQR Method Confidence Intervals; Trend Analysis and Classical Trend Analysis Methods Modern Trend Analysis Methods; Innovative Trend Analysis and Its Derivatives Variance, Correlation, and Regression Probability, Cumulative Probability, and Probability Distribution Functions Risk Analysis; Flood and Drought Frequency Analysis Applications of Risk Analysis, Flood Frequency Analysis, and Drought Frequency Analysis",
   "outcomes": [
    "Temel olasılık kavramlarını bilirler,",
    "Mühendislik problemlerinde Bayes teoremi kullanabilirler ve Bayes karar teorisi ile karar verebilirler,",
-   "Markov zinciri ile mühendislik problemlerini çözebilirler,",
    "Mühendislik problemlerinin istatistik analizini yapabilirler,",
-   "Güven aralığı ve hipotez testlerini bilirler,",
-   "Varyans analizi yapabilirler,",
    "Zaman serilerinin temel bilgilerini bilirler,",
-   "ARMA modellerini kullanabilirler."
+   "Güven aralığı ve hipotez testlerini bilirler,",
+   "Varyans analizi yapabilirler,"
   ],
   "weeklyTopics": [
-   "Hafta 1 · Temel olasılık kavramları",
-   "Hafta 2 · Toplam olasılık ve Bayes teoremi",
-   "Hafta 3 · Bayes karar teorisi",
-   "Hafta 4 · Markov zincirleri",
-   "Hafta 5 · İstatistiğin esasları",
-   "Hafta 6 · Parametrelerin tahmini",
-   "Hafta 7 · Frekans analizi",
-   "Hafta 8 · Güven aralığı",
-   "Hafta 9 · Hipotez testleri",
-   "Hafta 10 · Dağılım fonksiyonları ve testler",
-   "Hafta 11 · Varyans analizi",
-   "Hafta 12 · Korelasyon ve regresyon",
-   "Hafta 13 · Zaman serileri",
-   "Hafta 14 · ARMA Modelleri"
+   "Hafta 1 · Temel Olasılık ve İstatistik Kavramları, İstatistiğin Esasları",
+   "Hafta 2 · Olasılık ve İstatistik Kavramlarının Uygulamalı Yorumlanması",
+   "Hafta 3 · Toplam olasılık ve Bayes teoremi, Bayes karar teorisi",
+   "Hafta 4 · İstatistiksel ve İhtimali Standardizasyon, Normalizasyon",
+   "Hafta 5 · Standardize Yağış İndisi ve Kuraklık Analizi",
+   "Hafta 6 · Olasılık Dağılımda Çarpıklık, Çarpıklık Katsayıları ve Basıklık",
+   "Hafta 7 · Hipotez testleri, Dağılım fonksiyonları ve testler",
+   "Hafta 8 · Zaman Serileri, Aykırı Değer Analizi ve IQR Yöntemi",
+   "Hafta 9 · Güven Aralığı, Trend Analizi ve Klasik Trend Analiz Yöntemleri",
+   "Hafta 10 · Modern Trend Analiz Yöntemleri, Yenilikçi Trend Analizi ve Türevleri",
+   "Hafta 11 · Varyans, Korelasyon, Regresyon",
+   "Hafta 12 · Olasılık, Toplam Olasılık ve Olasılık Dağılım Fonksiyonları",
+   "Hafta 13 · Risk Analizi, Taşkın ve Kuraklık Frekans Analizi",
+   "Hafta 14 · Risk Analizi, Taşkın ve Kuraklık Frekans Analizi Üzerine Uygulamalar"
   ],
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Temel olasılık kavramları",
+    "topic": "Temel Olasılık ve İstatistik Kavramları, İstatistiğin Esasları",
     "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Toplam olasılık ve Bayes teoremi",
+    "topic": "Olasılık ve İstatistik Kavramlarının Uygulamalı Yorumlanması",
     "outcomes": "1-2"
    },
    {
     "week": 3,
-    "topic": "Bayes karar teorisi",
-    "outcomes": "2"
+    "topic": "Toplam olasılık ve Bayes teoremi, Bayes karar teorisi",
+    "outcomes": "1-2-3"
    },
    {
     "week": 4,
-    "topic": "Markov zincirleri",
-    "outcomes": "3"
+    "topic": "İstatistiksel ve İhtimali Standardizasyon, Normalizasyon",
+    "outcomes": "3-4"
    },
    {
     "week": 5,
-    "topic": "İstatistiğin esasları",
-    "outcomes": "4"
+    "topic": "Standardize Yağış İndisi ve Kuraklık Analizi",
+    "outcomes": "1-3-4"
    },
    {
     "week": 6,
-    "topic": "Parametrelerin tahmini",
-    "outcomes": "4"
+    "topic": "Olasılık Dağılımda Çarpıklık, Çarpıklık Katsayıları ve Basıklık",
+    "outcomes": "1-2-5"
    },
    {
     "week": 7,
-    "topic": "Frekans analizi",
-    "outcomes": "4"
+    "topic": "Hipotez testleri, Dağılım fonksiyonları ve testler",
+    "outcomes": "5"
    },
    {
     "week": 8,
-    "topic": "Güven aralığı",
-    "outcomes": "5"
+    "topic": "Zaman Serileri, Aykırı Değer Analizi ve IQR Yöntemi",
+    "outcomes": "3-4"
    },
    {
     "week": 9,
-    "topic": "Hipotez testleri",
-    "outcomes": "5"
+    "topic": "Güven Aralığı, Trend Analizi ve Klasik Trend Analiz Yöntemleri",
+    "outcomes": "3-4-5"
    },
    {
     "week": 10,
-    "topic": "Dağılım fonksiyonları ve testler",
+    "topic": "Modern Trend Analiz Yöntemleri, Yenilikçi Trend Analizi ve Türevleri",
     "outcomes": "5"
    },
    {
     "week": 11,
-    "topic": "Varyans analizi",
+    "topic": "Varyans, Korelasyon, Regresyon",
     "outcomes": "6"
    },
    {
     "week": 12,
-    "topic": "Korelasyon ve regresyon",
-    "outcomes": "4"
+    "topic": "Olasılık, Toplam Olasılık ve Olasılık Dağılım Fonksiyonları",
+    "outcomes": "1-2"
    },
    {
     "week": 13,
-    "topic": "Zaman serileri",
-    "outcomes": "7"
+    "topic": "Risk Analizi, Taşkın ve Kuraklık Frekans Analizi",
+    "outcomes": "1-2-5"
    },
    {
     "week": 14,
-    "topic": "ARMA Modelleri"
+    "topic": "Risk Analizi, Taşkın ve Kuraklık Frekans Analizi Üzerine Uygulamalar",
+    "outcomes": "1-2-3-5"
    }
   ],
   "textbooks": [
    "Bayazıt, M., İnşaat Mühendiliğinde Olasılık Yöntemleri, İTÜ İnşaat Fak. Matbaası, 1996.",
    "Ang, H-S.A., Tang, W.H., Probability Concepts in Engineering:Emphasis on Applications to Civil and Environmental Engineering, John Wiley and Sons, 2006.",
    "Box, G.E.P., Jenkins, G.C.R., Time Series Analysis: Forecasting and Control, Wiley Series,2008.",
-   "Ang, H-S.A., Tang, W.H., Probability Concepts in Engineering Planning and Design, Vol. I, John Wiley & Sons, 1975.",
-   "Ang, H-S.A., Tang, W.H., Probability Concepts in Engineering Planning and Design, Vol. II, John Wiley & Sons, 1984.",
-   "Benjamin, J.R., Cornell, C.A., Probability, Statistics and Decision for Civil Engineers, McGraw-Hill, 1970."
+   "Şen, Zekai. İstatistik veri işleme yöntemleri:(hidroloji ve meteoroloji). Su Vakfı Yayınları, 2002."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HSK&dersNo=526"
  },

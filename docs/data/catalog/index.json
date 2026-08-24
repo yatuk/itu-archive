@@ -70,7 +70,7 @@
   },
   {
    "branch": "BLG",
-   "courses": 118
+   "courses": 119
   },
   {
    "branch": "BLU",
@@ -97,6 +97,10 @@
    "courses": 12
   },
   {
+   "branch": "BYM",
+   "courses": 5
+  },
+  {
    "branch": "CAB",
    "courses": 465
   },
@@ -114,7 +118,7 @@
   },
   {
    "branch": "CHE",
-   "courses": 4
+   "courses": 5
   },
   {
    "branch": "CHZ",
@@ -174,7 +178,7 @@
   },
   {
    "branch": "DTM",
-   "courses": 6
+   "courses": 7
   },
   {
    "branch": "DUI",
@@ -182,7 +186,7 @@
   },
   {
    "branch": "DUM",
-   "courses": 18
+   "courses": 20
   },
   {
    "branch": "DUY",
@@ -210,7 +214,7 @@
   },
   {
    "branch": "EEE",
-   "courses": 11
+   "courses": 12
   },
   {
    "branch": "EEF",
@@ -450,7 +454,7 @@
   },
   {
    "branch": "JDM",
-   "courses": 14
+   "courses": 16
   },
   {
    "branch": "JEF",
@@ -514,7 +518,7 @@
   },
   {
    "branch": "MAK",
-   "courses": 172
+   "courses": 184
   },
   {
    "branch": "MAL",
@@ -549,6 +553,10 @@
    "courses": 2
   },
   {
+   "branch": "MDK",
+   "courses": 3
+  },
+  {
    "branch": "MDN",
    "courses": 4
   },
@@ -577,8 +585,12 @@
    "courses": 5
   },
   {
+   "branch": "MIA",
+   "courses": 7
+  },
+  {
    "branch": "MIM",
-   "courses": 251
+   "courses": 252
   },
   {
    "branch": "MIT",
@@ -589,6 +601,10 @@
    "courses": 11
   },
   {
+   "branch": "MKC",
+   "courses": 3
+  },
+  {
    "branch": "MKM",
    "courses": 7
   },
@@ -597,12 +613,24 @@
    "courses": 1
   },
   {
+   "branch": "MKS",
+   "courses": 7
+  },
+  {
    "branch": "MMD",
    "courses": 29
   },
   {
+   "branch": "MMI",
+   "courses": 6
+  },
+  {
    "branch": "MOD",
    "courses": 26
+  },
+  {
+   "branch": "MOT",
+   "courses": 4
   },
   {
    "branch": "MRE",
@@ -615,6 +643,10 @@
   {
    "branch": "MST",
    "courses": 44
+  },
+  {
+   "branch": "MTA",
+   "courses": 4
   },
   {
    "branch": "MTH",
@@ -630,11 +662,11 @@
   },
   {
    "branch": "MTR",
-   "courses": 80
+   "courses": 81
   },
   {
    "branch": "MTS",
-   "courses": 13
+   "courses": 14
   },
   {
    "branch": "MTT",
@@ -662,7 +694,7 @@
   },
   {
    "branch": "MYE",
-   "courses": 18
+   "courses": 19
   },
   {
    "branch": "MYL",
@@ -902,7 +934,7 @@
   },
   {
    "branch": "UZB",
-   "courses": 50
+   "courses": 51
   },
   {
    "branch": "UZM",
@@ -957,7 +989,11 @@
    "courses": 11
   }
  ],
- "generatedAt": "2026-08-17T06:10:41Z",
- "groups": 6185,
- "withContent": 7407
+ "courses": 7471,
+ "freshContent": 6178,
+ "generatedAt": "2026-08-24T06:14:16Z",
+ "groups": 6243,
+ "retainedContent": 0,
+ "retainedCourses": 4,
+ "withContent": 6178
 }

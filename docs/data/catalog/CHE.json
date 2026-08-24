@@ -205,6 +205,110 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHE&dersNo=123"
  },
+ "CHE 123EL": {
+  "code": "CHE 123EL",
+  "name": "Genel Kimya I",
+  "nameEn": "General Chemistry I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Madde: Özellikleri ve ölçümü, Atomlar ve Atom kuramı, Atomun Elektron Yapısı, Periyodik Çizelge ve Atom Özellikleri, Kimyasal Bileşikler, Kimyasal Tepkimeler, Sulu Çözelti Tepkimelerine Giriş, Gazlar, Termokimya, Kimyasal Bağlar (Temel kavramlar ve Bağ Kuramları), Moleküller arası Kuvvetler: Sıvılar ve Katılar, Çözeltiler ve Fiziksel Özellikleri, Kimyasal Denge ve Prensipleri, Asitler ve Bazlar, İstemli Değişme: Entropi ve Gibbs Enerji. Matter: Its properties and Measurements, Atoms and the Atomic Theory, Electrons in Atoms, Periodic Table and Some Atomic Properties, Chemical Compounds, Chemical Reactions, Introduction to Reactions in Aqueous Solutions, Gases, Thermochemistry, Chemical Bonding (Basic concepts, Valance bond and Molecular Orbital Theories), Intermolecular Forces in Liquids and Solids, Solutions and Their Physical Properties, Principles of Chemical Equilibrium, Acids and Bases, Spontaneous Change: Entropy and Gibbs Energy.",
+  "outcomes": [
+   "1. Atomun yapısı ve atom ile ilgili teoriler, periyodik cetvel hakkında yorum ve uygulama yapabilir.",
+   "2. Kimyasal reaksiyonlarda stokiyometriyi kullanarak hesaplamalar yapabilir.",
+   "3. Sıvı çözeltiler ve gazlar ile ilgili farklı teori uygulamaları yapar ve problem çözebilir.",
+   "4. Isı,iş, entalpi ve iç enerji değişimleri ile ilgili uygulamalar yapabilir.",
+   "5. Bağ kavramı ve bağ kavramı ile ilgili çeşitli teorileri kullanarak, kimyasal bileşiklerin üç boyutlu yapılarını gösterebilir.",
+   "6. Katıların kristal yapılarını tanımlayıp yorumlayabilir ve katı hal kimyasıyla ilgili problem çözme becerileri sergileyebilir",
+   "7. Termodinamik, denge, asitlik, bazlık kavramları ve konsantrasyon ile ilgili problemleri çözebilir.",
+   "8. Tüm bu bilgilerini güncel hayattan gerçek örneklerle destekleyebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Maddenin Özellikleri, Atomlar ve Atom Kuramı, Atomun Elektronik Yapısı",
+   "Hafta 2 · Periyodik Tablo, Kimyasal Bileşikler, Kimyasal Tepkimeler",
+   "Hafta 3 · Kimyasal Tepkimeler ve Sulu Çözeltilerde Tepkimeler",
+   "Hafta 4 · Gazlar",
+   "Hafta 5 · Termokimya",
+   "Hafta 6 · Kimyasal Bağlar-I",
+   "Hafta 7 · Kimyasal Bağlar-II",
+   "Hafta 8 · Sıvılar, Katılar ve Moleküllerarası kuvvetler",
+   "Hafta 9 · Sıvılar, Katılar ve Moleküllerarası kuvvetler",
+   "Hafta 10 · Çözeltiler ve Özellikleri",
+   "Hafta 11 · Kimyasal Denge",
+   "Hafta 12 · Asitler ve Bazlar",
+   "Hafta 13 · Asitler ve Bazlar",
+   "Hafta 14 · İstemli Değişme:Entropi ve Serbest Enerji"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Maddenin Özellikleri, Atomlar ve Atom Kuramı, Atomun Elektronik Yapısı"
+   },
+   {
+    "week": 2,
+    "topic": "Periyodik Tablo, Kimyasal Bileşikler, Kimyasal Tepkimeler"
+   },
+   {
+    "week": 3,
+    "topic": "Kimyasal Tepkimeler ve Sulu Çözeltilerde Tepkimeler"
+   },
+   {
+    "week": 4,
+    "topic": "Gazlar"
+   },
+   {
+    "week": 5,
+    "topic": "Termokimya"
+   },
+   {
+    "week": 6,
+    "topic": "Kimyasal Bağlar-I"
+   },
+   {
+    "week": 7,
+    "topic": "Kimyasal Bağlar-II"
+   },
+   {
+    "week": 8,
+    "topic": "Sıvılar, Katılar ve Moleküllerarası kuvvetler"
+   },
+   {
+    "week": 9,
+    "topic": "Sıvılar, Katılar ve Moleküllerarası kuvvetler"
+   },
+   {
+    "week": 10,
+    "topic": "Çözeltiler ve Özellikleri"
+   },
+   {
+    "week": 11,
+    "topic": "Kimyasal Denge"
+   },
+   {
+    "week": 12,
+    "topic": "Asitler ve Bazlar"
+   },
+   {
+    "week": 13,
+    "topic": "Asitler ve Bazlar"
+   },
+   {
+    "week": 14,
+    "topic": "İstemli Değişme:Entropi ve Serbest Enerji"
+   }
+  ],
+  "textbooks": [
+   "Genel Kimya, Prensipleri ve Modern Uygulamaları, R. H. Petrucci, W.S.",
+   "Harwood, Herring, Prentice Hall International, Inc., 2023, 12. Baskı (General Chemistry, Principles & Modern Applications; R. H. Petrucci, F. G.",
+   "Herring, J. D. Madura, C Bissonnette; Pearson Canada, Inc., 2023, Twelfth Ed. ISBN-13: 978-1-292-72613-7)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=CHE&dersNo=123"
+ },
  "CHE 123L": {
   "code": "CHE 123L",
   "name": "Genel Kimya I",

@@ -1,0 +1,831 @@
+{
+ "MIA 501E": {
+  "code": "MIA 501E",
+  "name": "Engineering Mathematics",
+  "nameEn": "Engineering Mathematics",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Matrisler ve lineer denklem takımları, özdeğer problemleri, adi diferansiyal denklemler, seri çözümleri, özel fonksiyonlar, kısmi diferansiyal denklemler (eliptik, parabolik ve hiperbolik denklemler), değişkenlerine ayırma, Laplace dönüşümü, Fourier dönüşümü, Green’s fonksiyonu, pertürbasyon yöntemleri. Matrices and system of linear equations, eigenvalue problems, ordinary differential equations, series solution, special functions, partial differential equations: elliptic, parabolic and hyperbolic equations, separation of variables, Laplace transforms, Fourier transforms, Green’s function, perturbation methods.",
+  "outcomes": [
+   "Matris sistemlerini anlama ve çeşitli cebirsel denklemlerin çözümünde gerekli sağlam altyapı.",
+   "Önemli fonksiyonların ve bunların mühendislik problemlerinin çözümündeki kullanımı ile ilgili sağlam altyapı.",
+   "Doğrusal olmayan adi diferansyal denklemlere seri çözüm yöntemlerini uygulayabilme becerisi.",
+   "Kısmi diferansiyal denklemleri değişkenlerine ayırma yöntemleri ile çözebilme becerisi.",
+   "Kısmi diferansiyal denklemleri uygun integral transform yöntemini seçerek çözebilme becerisi.",
+   "Doğrusal olmayan denklemlere pertürbasyon teknikleri uygulayabilme becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Matrisler ve cebri denklem sistemlerinin çözümü. Özdeğerler.",
+   "Hafta 2 · Adi diferansiyal denklemler. Doğrusal adi diferansiyal denklemler sistemleri.",
+   "Hafta 3 · Adi diferansiyal denklemler: Kuvvet serileri ile yaklaşık çözümler.",
+   "Hafta 4 · Adi diferansiyal denklemler: Tekil nokta etrafında çözüm, Frobenius serileri.",
+   "Hafta 5 · Özel fonksiyonlar: Gamma fonksiyonu, hata fonksiyonu, Bessel fonksiyonları.",
+   "Hafta 6 · Modifiye Bessel fonksiyonları, Legendre polinomiyali. Uygulamalar.",
+   "Hafta 7 · Kısmi diferansiyal denklemler: Sınıflandırma. Değişkenlerine ayırma.",
+   "Hafta 8 · Kanonik problemler: Laplace denklemi, difüzyon denklemi, dalga denklemi.",
+   "Hafta 9 · Özel fonksiyonlar kullanarak kısmi diferansiyal denklem çözümü.",
+   "Hafta 10 · Homojen olmayan problemlerin çözümü: Kaynaklı ısı akış problemi ve homojen olmayan sınır koşulları.",
+   "Hafta 11 · Laplace dönüşümü ve uygulamaları.",
+   "Hafta 12 · Fourier dönüşümü ve uygulamaları.",
+   "Hafta 13 · Green fonksiyonu ve uygulamaları.",
+   "Hafta 14 · Pertürbasyon yöntemlerine giriş."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Matrisler ve cebri denklem sistemlerinin çözümü. Özdeğerler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Adi diferansiyal denklemler. Doğrusal adi diferansiyal denklemler sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Adi diferansiyal denklemler: Kuvvet serileri ile yaklaşık çözümler.",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Adi diferansiyal denklemler: Tekil nokta etrafında çözüm, Frobenius serileri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Özel fonksiyonlar: Gamma fonksiyonu, hata fonksiyonu, Bessel fonksiyonları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Modifiye Bessel fonksiyonları, Legendre polinomiyali. Uygulamalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Kısmi diferansiyal denklemler: Sınıflandırma. Değişkenlerine ayırma.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kanonik problemler: Laplace denklemi, difüzyon denklemi, dalga denklemi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Özel fonksiyonlar kullanarak kısmi diferansiyal denklem çözümü.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Homojen olmayan problemlerin çözümü: Kaynaklı ısı akış problemi ve homojen olmayan sınır koşulları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Laplace dönüşümü ve uygulamaları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Fourier dönüşümü ve uygulamaları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Green fonksiyonu ve uygulamaları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Pertürbasyon yöntemlerine giriş."
+   }
+  ],
+  "textbooks": [
+   "Erwin Kreyszig, \"Advanced Engineering Mathematics\" John Wiley & Sons, Inc. New York, 9. Baskı, 2006. (Erwin Kreyszig, \"Advanced Engineering Mathematics\" John Wiley & Sons, Inc. New York, 9th Edition, 2006.)",
+   "Advanced Engineering Mathematics, Wylie, C.R., L.C. Barrett, McGraw-Hill, New York, 1995",
+   "Elementary Applied Partial Differential Equations, Haberman, R., Prentice-Hall Inc., Englewood Cliffs, 1983.",
+   "Advanced Mathematical Methods for Engineering and Science Students, Stephenson, G., P.M. Radmore, Cambridge University Press, Cambridge, 1990"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=501"
+ },
+ "MIA 503E": {
+  "code": "MIA 503E",
+  "name": "Advanced Fluid Dynamics",
+  "nameEn": "Advanced Fluid Dynamics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Temel kavramlar, tanımlar. Akış kinematiği. Sürtünmeli akışların korunum denklemleri. Denklemlerin boyutsuz şekilleri, boyutsuz parametreler. Çevrinti transport denklemi. Düşük Reynolds sayılı akışlar. Sürtünmeli akış problemlerinin tam çözümleri: Couette ve Poiseuille akışları, Stokes problemleri, düzlemsel durma noktası akışı, gözenekli cidar üzerinde akış. Laminer sınır tabakalar, benzerlik çözümleri. Momentum integral formülasyonu. Sınır tabaka ayrılması, laminar jetler, serbest kayma tabakaları. Akış kararlılığı ve türbülansa giriş. Basic concepts, definitions. Flow kinematics. Conservation equations of viscous flows. Dimensionless form of governing equations, dimensionless parameters in viscous flows. Vorticity transport equation. Low-Reynolds number flows. Exact solution of viscous flow problems: Couette and Poiseulle flows, Stokes' problems, plane stagnation point flow, flow over a porous wall. Laminar boundary layers, Similarity solutions. Momentum Integral formulation. Boundary layer separation, Laminar jets, free shear layers. Introduction to flow stability and turbulence.",
+  "outcomes": [
+   "Sürtünmeli akışları karakterize eden denklemleri ve olayın fiziğini anlamak.",
+   "Sürtünmeli akışlarda boyutsuz sayıları belirleyebilme becerisi.",
+   "Düşük Reynolds sayılı akışları formüle etme ve çözme becerisi.",
+   "Kartezyen ve kartezyen olmayan koordinat sistemlerinde bazı basit sürtünmeli akış problemleri için Navier-Stokes denklemlerini basitleştirme ve tam çözümleri elde etme becerisi.",
+   "Diferansiyel ve integral formundaki sınır tabaka denklemlerini türetme ve çözme becerisi.",
+   "Sınır tabaka denklemlerinin geçerli olmadığı koşulları belirleyebilme becerisi.",
+   "Akış kararlılığı ve türbülanslı akışlar hakkında temelleri anlamak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel kavramlar,tanımlar, süreklilik yaklaşımı, viskozite, sürtünmeli akışlara ait bazı örnekler. Akış kinematiği, maddesel türev. Akışkan hareketinin sınıflandırılması. Çevrinti.",
+   "Hafta 2 · Sürtünmeli akış denklemlerinin gözden geçirilmesi: Süreklilik denklemi, Navier-Stokes denklemleri. Enerji denklemi.",
+   "Hafta 3 · Temel denklerin matematiksel karakteristikleri. Yönetici denklemlerin boyutsuz şekilleri. Sürtünmeli akışlardaki boyutsuz parametreler. Çevrinti transport denleminin türetilmesi. Çevrinti-Akım fonksiyonu formülasyonu.",
+   "Hafta 4 · Düşük Reynolds sayılı akışlar ( Sürünme akışı): Bir küre etrafındaki Stokes çözümü.",
+   "Hafta 5 · Sürtünmeli akış problemlerinin tam çözümü: Couette akışı, Poiseuille akışı vs.",
+   "Hafta 6 · Eşeksenli dönen silindirler arasındaki akış, Stokes’un birinci ve ikinci problemleri.",
+   "Hafta 7 · Düzlemsel durma akışı, bir gözenekli yüzey üzerindeki akış, Dönen disk civarındaki akış.",
+   "Hafta 8 · Laminer sınır tabakalar, Benzerlik dönüşümünün orijini.",
+   "Hafta 9 · Blasius çözümü, Falkner-Skan çözümleri.",
+   "Hafta 10 · Momentum İntegral formülasyonu. Yaklaşık çözümler.",
+   "Hafta 11 · Sınır tabaka ayrılması. Laminer jetler, serbest kayma tabakaları.",
+   "Hafta 12 · Akış kararlılığına giriş.",
+   "Hafta 13 · Türbülansa giriş",
+   "Hafta 14 · Türbülanslı sınır tabakalar."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar,tanımlar, süreklilik yaklaşımı, viskozite, sürtünmeli akışlara ait bazı örnekler. Akış kinematiği, maddesel türev. Akışkan hareketinin sınıflandırılması. Çevrinti.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sürtünmeli akış denklemlerinin gözden geçirilmesi: Süreklilik denklemi, Navier-Stokes denklemleri. Enerji denklemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel denklerin matematiksel karakteristikleri. Yönetici denklemlerin boyutsuz şekilleri. Sürtünmeli akışlardaki boyutsuz parametreler. Çevrinti transport denleminin türetilmesi. Çevrinti-Akım fonksiyonu formülasyonu.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Düşük Reynolds sayılı akışlar ( Sürünme akışı): Bir küre etrafındaki Stokes çözümü.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sürtünmeli akış problemlerinin tam çözümü: Couette akışı, Poiseuille akışı vs.",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Eşeksenli dönen silindirler arasındaki akış, Stokes’un birinci ve ikinci problemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Düzlemsel durma akışı, bir gözenekli yüzey üzerindeki akış, Dönen disk civarındaki akış.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Laminer sınır tabakalar, Benzerlik dönüşümünün orijini.",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Blasius çözümü, Falkner-Skan çözümleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Momentum İntegral formülasyonu. Yaklaşık çözümler.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Sınır tabaka ayrılması. Laminer jetler, serbest kayma tabakaları.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Akış kararlılığına giriş.",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Türbülansa giriş",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Türbülanslı sınır tabakalar."
+   }
+  ],
+  "textbooks": [
+   "White, F.M., 2006. Viscous Fluid Flow, Third Edition, McGraw-Hill.",
+   "Kundu, P.K., Cohen, I.M., 2004. Fluid Mechanics, 4th ed, Elsevier",
+   "Graebel, W. P.,2007. Advanced Fluid Mechanics, Elsevier",
+   "Currie, I.G., 1993. Fundamental Mechanics of Fluids, McGraw_hill.",
+   "Schlichting, H. and Gersten, K. 2000. Boundary Layer Theory Springer-Berlin..",
+   "Course Notes."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=503"
+ },
+ "MIA 505E": {
+  "code": "MIA 505E",
+  "name": "Design of Thermal Systems",
+  "nameEn": "Design of Thermal Systems",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Isıl sistemlerin tasarımı. Enerji ve iş. Fiziksel ve kimyasal ekserji. Kapalı ve açık sistemler için kullanılabilirlik. Mühendislik süreçlerinin ekserji çözümlemesi. Yatırımların değerlendirme yöntemleri. Yakıt ve donanım maliyetleri. Maliyet denge denklemi. Isı ve işin fiyatlandırması.Termoekonomik optimizasyon. Isı değiştiricisi ağlarının optimizasyonu. Design of thermal systems.Energy and work. Reversibility. Physical and chemical exergy. Availability equation for closed and open systems. Exergy analysis of engineering processes and cycles. Economic evaluation methods. Cost of fuel and equipment. Cost balance equation and costing of heat and work. Thermoeconomic optimization.",
+  "outcomes": [
+   "Ekserji kavramının anlaşılması ve ekserji bileşenlerinin hesaplama yöntemlerinin öğrenilmesi.",
+   "Yatırımları parasal bazda karşılaştırma yöntemlerinin öğrenilmesi.",
+   "Maliyet denge denkleminin öğrenilmesi ve uygulanması.",
+   "Isıl sistemlerin ekserji kullanılarak termoekonomik optimizasyonunun öğrenilmesi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Isıl Sistemler. Isı ve iş etkileşimleri.",
+   "Hafta 2 · Fiziksel ve kimyasal ekserji. Nemli havanın ekserjisi.",
+   "Hafta 3 · Açık ve kapalı sistemler için ekserji denge denklemi. Tersinmezlik.",
+   "Hafta 4 · Mühendislik sistemlerinin ekserji çözümlemesi : Türbinler, kompresörler, pompalar,",
+   "Hafta 5 · Mühendislik sistemlerinin ekserji çözümlemesi : Isı değiştiricileri.",
+   "Hafta 6 · Mühendislik sistemlerinin ekserji çözümlemesi : Yanma, buhar donanımları.",
+   "Hafta 7 · Sistem çözümlemesine örnek : Bileşik ısı-güç üretimi (kojenerasyon).",
+   "Hafta 8 · Mühendislik ekonomisine giriş. Amortizman. Ödeme eşitlemesi. Girdi ve donanım maliyetleri.",
+   "Hafta 9 · Yatırım seçeneklerinin değerlendirilmesi.",
+   "Hafta 10 · Maliyet denge denklemi.",
+   "Hafta 11 · Mühendislik sistemlerinin eksergoekonomik çözümlemesi.",
+   "Hafta 12 · Matematiksel modelleme. Optimizasyon problemlerinin çözüm yöntemleri.",
+   "Hafta 13 · Termoekonomik optimizasyon. Amaç fonksiyonu ve kısıtlar.",
+   "Hafta 14 · Örnek : Isı değiştirici ağları."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Isıl Sistemler. Isı ve iş etkileşimleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Fiziksel ve kimyasal ekserji. Nemli havanın ekserjisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Açık ve kapalı sistemler için ekserji denge denklemi. Tersinmezlik.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mühendislik sistemlerinin ekserji çözümlemesi : Türbinler, kompresörler, pompalar,",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Mühendislik sistemlerinin ekserji çözümlemesi : Isı değiştiricileri.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Mühendislik sistemlerinin ekserji çözümlemesi : Yanma, buhar donanımları.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Sistem çözümlemesine örnek : Bileşik ısı-güç üretimi (kojenerasyon).",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Mühendislik ekonomisine giriş. Amortizman. Ödeme eşitlemesi. Girdi ve donanım maliyetleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Yatırım seçeneklerinin değerlendirilmesi.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Maliyet denge denklemi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Mühendislik sistemlerinin eksergoekonomik çözümlemesi.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Matematiksel modelleme. Optimizasyon problemlerinin çözüm yöntemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Termoekonomik optimizasyon. Amaç fonksiyonu ve kısıtlar.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 14,
+    "topic": "Örnek : Isı değiştirici ağları."
+   }
+  ],
+  "textbooks": [
+   "Bejan, A., G. Tsatsaronis, M. Moran, Thermal Design and Optimization, John Wiley and Sons, New York, 1996.",
+   "Kotas, T.J., The Exergy Method of Thermal Plant Analysis, Krieger Pub. Co., Malabar, 1995.",
+   "Boehm, R.F., Developments in the Design of Thermal Systems, Cambridge University Press, Cambridge, 1997."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=505"
+ },
+ "MIA 509": {
+  "code": "MIA 509",
+  "name": "Isı-Akış Olaylarında Den. Yönt",
+  "nameEn": "Experimental Methods in Heat And Fluid Flow",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ölçme sinyallerinin statik ve dinamik karakteri. Ölçme sistemi davranışı. Hata ve belirsizlik çözümlemesi. Örnekleme, dijital cihazlar ve veri toplama. Sıcaklık ölçümü. Basınç ve hız ölçümü. Isı-akış olaylarının görünürleştirilmesi. Static and Dynamic Characteristics of Signals. Measurement Systems Behavior. Error and Uncertainty Analysis. Sampling, Digital Devices, and Data Acquisition. Temperature Measurements. Pressure and Velocity Measurements.Visualization of Thermofluids Phenomena.",
+  "outcomes": [
+   "Ölçme sistemlerinin çeşitli karakterdeki sinyallere cevap davranışını değerlendirebilme becerisi.",
+   "Deneysel araştırmada güvenilir ve anlamlı ölçme verileri elde edebilmek için ölçme sistemi tasarlama becerisi.",
+   "Deney sistemi tasarımı yapma becerisi.",
+   "Isı-akış olayları ile ilgili temel ölçme yöntemlerini kullanmada başlıca hatalı uygulamaları anlama ve bunları önleme becerisi.",
+   "Isı-akış olaylarının sonda kullanmaksızın nicelik ve nitelik açısından görünürleştirmesi için teknikleri kullanma bilgisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Ölçme sinyallerinin statik ve dinamik karakteri.",
+   "Hafta 2 · Ölçme sistemlerin davranışı.",
+   "Hafta 3 · Hata ve belirsizlik çözümlemesi.",
+   "Hafta 4 · Örnekleme, dijital cihazlar ve veri toplama.",
+   "Hafta 5 · Temel sıcaklık ölçüm yöntemleri ve cihazları.",
+   "Hafta 6 · Temel basınç ölçüm yöntemleri ve cihazları.",
+   "Hafta 7 · Temel hız ve akış ölçüm yöntemleri ve cihazları.",
+   "Hafta 8 · Sıcak tel hız ölçeri",
+   "Hafta 9 · Sıcak tel hız ölçeri",
+   "Hafta 10 · Laser Doppler hız ölçeri",
+   "Hafta 11 · Akışa madde veya enerji katarak akış görünürleştirme",
+   "Hafta 12 · Akışa madde veya enerji katarak akış görünürleştirme",
+   "Hafta 13 · Optik akış görünürleştirme yöntemleri",
+   "Hafta 14 · Optik akış görünürleştirme yöntemleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ölçme sinyallerinin statik ve dinamik karakteri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Ölçme sistemlerin davranışı.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Hata ve belirsizlik çözümlemesi.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Örnekleme, dijital cihazlar ve veri toplama.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Temel sıcaklık ölçüm yöntemleri ve cihazları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Temel basınç ölçüm yöntemleri ve cihazları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Temel hız ve akış ölçüm yöntemleri ve cihazları.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Sıcak tel hız ölçeri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Sıcak tel hız ölçeri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Laser Doppler hız ölçeri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Akışa madde veya enerji katarak akış görünürleştirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Akışa madde veya enerji katarak akış görünürleştirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Optik akış görünürleştirme yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Optik akış görünürleştirme yöntemleri"
+   }
+  ],
+  "textbooks": [
+   "E. O. Doebelin, Measurement Systems: Application and Design, Fifth Ed., McGraw-Hill, 2003.",
+   "R. J. Emrich, Methods of Experimental Physics: Fluid Dynamics, Vol. 18 Parts A and B, Academic Press, 1981.",
+   "W. Merzkirch, Flow Visualization, Academic Press, 1987.",
+   "W. J. Yang, HB of Flow Visualization, Hemisphere Pub.Co., 1989.",
+   "B. M. Watrasiewicz, and M. J. Rudd, Laser Doppler Measurements, Butterworths, 1976.",
+   "P. Bradshaw, An Introduction to Turbulence and its Measurement, Pergamon Press, 1971."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=509"
+ },
+ "MIA 515": {
+  "code": "MIA 515",
+  "name": "Isı İletimi",
+  "nameEn": "Heat Conduction",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İletimle ısı transferi mekanizması. Diferansiyel ve integral formulasyon. Enerji üretimi içeren sistemler. Katılarda sürekli ve geçici ısı iletimi, sayısal yöntemler. Mechanisms of conduction heat transfer. Differential and integral formulations of conduction in solids with special emphasis on systems involving energy generation. Steady and transient conduction in solids, numerical methods.",
+  "outcomes": [
+   "Isı İletimini kavramlarının öğrenilmesi",
+   "Sınır şartlarının öğrenilmesi.",
+   "Değişken kesitli genişletilmiş yüzeyler",
+   "Zamana bağlı problemler",
+   "Isı iletimi problemlerinin nümerik çözümü"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Isı Geçişi Şekilleri. Taşınım. Işınım",
+   "Hafta 2 · Isı iletimi. Isı iletim katsayısı",
+   "Hafta 3 · Isı iletiminin diferansiyel formülasyonu, Sınır şartları ve uygulamaları",
+   "Hafta 4 · Bir boyutlu ısı iletimi, Isı üretimi ve hareketli yüzeyler",
+   "Hafta 5 · Genişletilmiş yüzeyler, Değişken kesitli kanatlar",
+   "Hafta 6 · Bessel fonksiyonları ve analitik çözüm",
+   "Hafta 7 · Çok boyutlu ısı iletimi",
+   "Hafta 8 · Değişkenlerine ayırma yöntemi",
+   "Hafta 9 · Zamana bağlı ısı iletimi",
+   "Hafta 10 · Zamana bağlı ısı iletimi",
+   "Hafta 11 · Nümerik çözüm yöntemleri",
+   "Hafta 12 · Sonlu farklar yöntemi",
+   "Hafta 13 · Uygulamalar",
+   "Hafta 14 · Uygulamalar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Isı Geçişi Şekilleri. Taşınım. Işınım",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Isı iletimi. Isı iletim katsayısı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Isı iletiminin diferansiyel formülasyonu, Sınır şartları ve uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Bir boyutlu ısı iletimi, Isı üretimi ve hareketli yüzeyler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Genişletilmiş yüzeyler, Değişken kesitli kanatlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Bessel fonksiyonları ve analitik çözüm",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Çok boyutlu ısı iletimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Değişkenlerine ayırma yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Zamana bağlı ısı iletimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Zamana bağlı ısı iletimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Nümerik çözüm yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sonlu farklar yöntemi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Uygulamalar",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalar"
+   }
+  ],
+  "textbooks": [
+   "Arpacı, V.S. “Conduction Heat Transfer”, Addison-Wesley Publ.",
+   "Kakaç, S. “Isı İletimi”, ODTÜ",
+   "Genceli, O.F., “Çözümlü Isı İletimi Problemleri”, Birsen Yayınevi, 2000",
+   "Öztürk A. ve H..Yavuz, “Uygulamalarla Isı Geçişi”, Çağlayan Kitabevi, 1995.",
+   "Incropera, P.F. ve DeWitt, P.D. “Introduction to Heat Transfer”, 2nd Ed. Wiley, 1995",
+   "Myers, G.E. “Analytical Methods in Conduction Heat Transfer”, McGraw Hill, 1971"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=515"
+ },
+ "MIA 517": {
+  "code": "MIA 517",
+  "name": "Genel Termodinamik",
+  "nameEn": "General Thermodynamics",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Termodinamiğin yasaları. Kullanılabilirlik analizi. Hal denklemleri. Termodinamik bağıntılar. Homojen karışımlar. Çok bileşenli karışımlar. Kimyasal reaksiyonlar ve kimyasal denge. Laws of thermodynamics. Availibility analysis. Equations of state. Thermodynamic relations. Homogenenous mixtures. Multiphase multicomponent systems. Chemical reactions and chemical equilibrium.",
+  "outcomes": [
+   "Termodinamik kavramların öğrenilmesi",
+   "Kullanılabilirliğin öğrenilmesi ve termodinamik sistemlere uygulayabilme becerisi",
+   "Termodinamik bağıntıların öğrenilmesi ve problemlere uygulayabilme becerisi",
+   "Homojen karışımların öğrenilmesi ve gerçek problemlere uygulayabilme becerisi.",
+   "Çok bileşenli karışımların termodinamiği ve uygulayabilme becerisi.",
+   "Kimyasal reaksiyonlar ve kimyasal denge konularının öğrenilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel kavramlar. Isı, İş. Termodinamiğin Birinci kanunu",
+   "Hafta 2 · Maddesel türev ve Green-Gauss Teoremleri için kısa açıklama. Reynolds Nakil teoremi, Kontrol hacmi için termodinamiğin birinci kanunu",
+   "Hafta 3 · Termodinamiğin ikinci yasası Clausius eşitsizliği. Kontrol kütlesi ve kontrol hacmi için termonun 2. kanunu. Isı geçişinde entropi üretimi. Basit çevrimlerde entropi üretimi",
+   "Hafta 4 · Kullanılabilirlik analizi",
+   "Hafta 5 · Kullanılabilirlik analizi",
+   "Hafta 6 · Hal denklemleri. Termodinamik bağıntılar",
+   "Hafta 7 · Termodinamik bağıntılar",
+   "Hafta 8 · Tabloların elde edilmesi. Homojen karışımların termodinamik özelikleri",
+   "Hafta 9 · Homojen karışımların termodinamik özelikleri",
+   "Hafta 10 · Çok bileşenli karışımlar",
+   "Hafta 11 · Kimyasal reaksiyonlar",
+   "Hafta 12 · Kimyasal reaksiyonlar",
+   "Hafta 13 · Kimyasal reaksiyonlar, kimyasal denge",
+   "Hafta 14 · Kimyasal denge"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar. Isı, İş. Termodinamiğin Birinci kanunu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Maddesel türev ve Green-Gauss Teoremleri için kısa açıklama. Reynolds Nakil teoremi, Kontrol hacmi için termodinamiğin birinci kanunu",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Termodinamiğin ikinci yasası Clausius eşitsizliği. Kontrol kütlesi ve kontrol hacmi için termonun 2. kanunu. Isı geçişinde entropi üretimi. Basit çevrimlerde entropi üretimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kullanılabilirlik analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kullanılabilirlik analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hal denklemleri. Termodinamik bağıntılar",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Termodinamik bağıntılar",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Tabloların elde edilmesi. Homojen karışımların termodinamik özelikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Homojen karışımların termodinamik özelikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Çok bileşenli karışımlar",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kimyasal reaksiyonlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Kimyasal reaksiyonlar",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Kimyasal reaksiyonlar, kimyasal denge",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Kimyasal denge"
+   }
+  ],
+  "textbooks": [
+   "Kenneth Wark, Jr. “Advanced Thermodynamics for Engineers”, McGraw-Hill, 1995.",
+   "G.J.Van Wylen, R.E.Sonntag ve C. Borgnakke, “Fundamentals of Classical Thermodynamics”,4th Edition, Wiley, 1992",
+   "G.N. Hatsapoulos, and J.H.Keenan, \"Principles of General Thermodynamics”, John Wiley&Sons, 1965"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=517"
+ },
+ "MIA 596": {
+  "code": "MIA 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Research, Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=596"
+ }
+}

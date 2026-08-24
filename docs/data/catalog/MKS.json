@@ -1,0 +1,633 @@
+{
+ "MKS 501E": {
+  "code": "MKS 501E",
+  "name": "Engineering Mathematics",
+  "nameEn": "Engineering Mathematics",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=501"
+ },
+ "MKS 530E": {
+  "code": "MKS 530E",
+  "name": "Viskoelastisite",
+  "nameEn": "Viscoelasticity",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=530"
+ },
+ "MKS 533": {
+  "code": "MKS 533",
+  "name": "Transport Tekn. İleri Konular",
+  "nameEn": "Transport Tekn. İleri Konular",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Transport makinalarının kullanım amacına göre sınıflandırılması ve elemanlarının yapıları. Transport makinaların imalinde kullanılan malzemelerin seçimi ve etkiyen kuvvetler. Transport makinalarının işletme koşulları ve performansları. Transport makinalarının dengeleme problemleri ve devrilme koşulları. Peryodik kontrol ve bakım esasları. Classification of Transport according to its purpose machines and structures. Forces acting on the choice of materials used in the manufacture of machines and transport. Transport performance of machines and operating conditions. Balancing machines, and roll-over conditions of transport problems. Periodic inspection and maintenance procedures.",
+  "outcomes": [
+   "Sanayide taşınacak mallara göre transport sistemlerini belirleyebilir.",
+   "Ürünün ekonomik olarak taşıma yöntemini belirleyebilir.",
+   "Transport makinalarının tasarımnı yapabilir.",
+   "Endüstri tesislerinde kullanılan transport siatemlerinin projelendirme ve maliyet analizi yapabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Yük tutma elemanları",
+   "Hafta 2 · Transport sistemlerinde temel tasarım kabulleri",
+   "Hafta 3 · Transport sistemlerinde kullanıllan malzemelerin seçimi",
+   "Hafta 4 · Transport sistemlerine etkiyen kuvvetler",
+   "Hafta 5 · Transport sistemlerinin isşletme şartları ve performansları",
+   "Hafta 6 · Transport sistemlerin dinamiği",
+   "Hafta 7 · Rüzgar yükleri",
+   "Hafta 8 · Transport sistemlerinde denge problemleri ve devrilme koşulları",
+   "Hafta 9 · Optimum güvenirlilik şartlarının belirlenmesi",
+   "Hafta 10 · Transport sistemlerinin maliyet hesapları",
+   "Hafta 11 · Pratik konstrüksiyon esasları",
+   "Hafta 12 · FEM ve DIN normları ile transport sistemlerinin projelendirilmesi",
+   "Hafta 13 · Transport sistemlerinde peryodik kontrol ve bakım esasları.",
+   "Hafta 14 · Transport sistemlerinde bilgisayar uygulamaları."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yük tutma elemanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Transport sistemlerinde temel tasarım kabulleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Transport sistemlerinde kullanıllan malzemelerin seçimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Transport sistemlerine etkiyen kuvvetler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Transport sistemlerinin isşletme şartları ve performansları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Transport sistemlerin dinamiği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Rüzgar yükleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Transport sistemlerinde denge problemleri ve devrilme koşulları",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Optimum güvenirlilik şartlarının belirlenmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Transport sistemlerinin maliyet hesapları",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Pratik konstrüksiyon esasları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "FEM ve DIN normları ile transport sistemlerinin projelendirilmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Transport sistemlerinde peryodik kontrol ve bakım esasları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Transport sistemlerinde bilgisayar uygulamaları."
+   }
+  ],
+  "textbooks": [
+   "İ.Gerdemeli, Transport Tekniğinde İleri Konular, Ders Notları, 2010.",
+   "Kulwiec,R. Materials Handling Handbook, John Willey&Sons, 1995.",
+   "Robinson, R., Handbook of Materials Handling, Ellis Horwood Ltd. 1986.",
+   "Kogan, J., Crane Desing, Theory and Calculations of Reliability, Willey & Sons, 1986.",
+   "Friderich, H., Fachbuch Fur Hebezegführer, Verlag Technik 1990."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=533"
+ },
+ "MKS 535": {
+  "code": "MKS 535",
+  "name": "Konstrüksiyon Sistematiği",
+  "nameEn": "Design Methodology",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sistematik Konstrüksiyon kavramı, Mamul fikrinin oluşması. Ödevin Analizi, istekler listesi, Fonksiyonel Sentez ve Tasarım, Çözüm Arama Yöntemleri, Değerlendirme, Fayda Değer analizi, Mamul Planlaması, Niceliksel Şekillendirme, Konstrüksiyonda kendi kendine yardım prensibi, yapı dizileri, modüler konstrüksiyon, detaylandırma The Scope of Systematic Design, Fundamentals of Technical Systems, Fundamentals of Systematic Approach, Process of Planning and Designing: General Problem-Solving Process, General methods for Finding and Evaluating Solutions, Product Planning and Clarifying the Task, requirement list, Conceptual Design, modular design, Embodiment Design",
+  "outcomes": [
+   "Konstrüksiyon faaliyetinde sistematik takip etme yeteneği",
+   "İstekler listesi oluşturma becerisi",
+   "Çözüm Arama Yöntemleri hakkında bilgi",
+   "Verilen bir ödevi sistematik konstrüksiyon yaklaşımı ile tasarlama becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş, Sistematik Konstrüksiyon Nedir?",
+   "Hafta 2 · Mamul Fikrinin Oluşması",
+   "Hafta 3 · Ödevin Tanımı ve Analizi",
+   "Hafta 4 · Fonksiyonel Sentez ve Tasarım",
+   "Hafta 5 · Çözüm Arama Yöntemler",
+   "Hafta 6 · Değerlendirme",
+   "Hafta 7 · Fayda-Değer Analizi, Mamul Planlaması",
+   "Hafta 8 · Fayda-Değer Analizi, Mamul Planlaması",
+   "Hafta 9 · Şekillendirme, niceliksel konstrüksiyon",
+   "Hafta 10 · Kendi kendine yardım prensibi",
+   "Hafta 11 · Genel şekillendirme kuralları",
+   "Hafta 12 · Yapı dizileri, modüler konstrüksiyon",
+   "Hafta 13 · Öğrenci Proje Sunumları",
+   "Hafta 14 · Öğrenci Proje Sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Sistematik Konstrüksiyon Nedir?",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mamul Fikrinin Oluşması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ödevin Tanımı ve Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Fonksiyonel Sentez ve Tasarım",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Çözüm Arama Yöntemler",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Değerlendirme",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Fayda-Değer Analizi, Mamul Planlaması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Fayda-Değer Analizi, Mamul Planlaması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Şekillendirme, niceliksel konstrüksiyon",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kendi kendine yardım prensibi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Genel şekillendirme kuralları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Yapı dizileri, modüler konstrüksiyon",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Öğrenci Proje Sunumları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Öğrenci Proje Sunumları"
+   }
+  ],
+  "textbooks": [
+   "Konstruktionslehre \", G.Pahl and W. Beitz, Springer Verlag",
+   "Entwickeln und Konstruiren mit System\", E.Gerhard, Expert V.,1998.",
+   "Engineering Design\", G.Pahl, W. Beitz, J. Feldhusen, K.H. Grote, Springer Verlag, Third.Edition, 2007",
+   "Engineering Design, George E. DIETER, Linda C . SchmidtMcGraw-Hill, New York, 2009",
+   "The Mechanical Design Process, David G. ULLMAN, McGraw-Hill, New York, 1992",
+   "Machine Design Fundamentals, Joseph E. SHIGLEY, Charles R. MISCHKE, McGraw-Hill, New York, 1989"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=535"
+ },
+ "MKS 537E": {
+  "code": "MKS 537E",
+  "name": "Intro.to Compt.Aided Engineer",
+  "nameEn": "Intro.to Compt.Aided Engineer",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu derste, mühendislik tasarımı ve tasarım adımları; bilgisayar destekli mühendislik için donanım; bilgisayar destekli çizim ve tasarım; mühendislik uygulamarı için goemetrik modellemei; katı modelleme teknikleri; sayısal yöntemler (FEM ve BEM); bilgisayar destekli proje planlama ve kontrol; sistem simülasyonu; bilgisayarla tümleşik imalat ve fabrika iletişimi ele alınmaktadır. In this course, engineering design and the design process; computer aided engineering hardware; computer aided draughting and design; geometric modelling for engineering applications; solid modelling techniques; numerical methods (FEM & BEM) ; computer aided project planning and control; system simulation; computer integrated manufacturing, and factory communications",
+  "outcomes": [
+   "bilgisayar destekli tasarım temelleri hakkında genel bilgilenmesi",
+   "katı modelleme tekniklerini uygulayabilmesi",
+   "sayısal metodların kapsam ve amacını tartışabilmesi",
+   "bilgisayarla bütünleşik imalat uygulamaları ve operasyonlarını tartışabilmesi",
+   "eşzamanlı mühendislik konularında bilgi sahibi olması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Mühendislik tasarımı ve tasarım adımları",
+   "Hafta 2 · Bilgisayar destekli mühendisliğe giriş",
+   "Hafta 3 · Bilgisayar destekli mühendislik için donanım : tasarım bürosu",
+   "Hafta 4 · Bilgisayar destekli mühendislik için donanım : imalat sahası",
+   "Hafta 5 · Bilgisayar destekli çizim ve tasarım",
+   "Hafta 6 · Mühendislik uygulamaları için geometrik modelleme",
+   "Hafta 7 · Katı modelleme teknikleri",
+   "Hafta 8 · Katı modelleme teknikleri",
+   "Hafta 9 · Sayısal metodlar : sonlu elemanlar metodu",
+   "Hafta 10 · Sayısal metodlar : sınır elemanlar metodu",
+   "Hafta 11 · Bilgisayar destekli proje planlama ve kontrol",
+   "Hafta 12 · Sistem simulasyonu",
+   "Hafta 13 · Bilgisayarla bütünleşik imalat",
+   "Hafta 14 · Fabrika iletişimi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik tasarımı ve tasarım adımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayar destekli mühendisliğe giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Bilgisayar destekli mühendislik için donanım : tasarım bürosu",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Bilgisayar destekli mühendislik için donanım : imalat sahası",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Bilgisayar destekli çizim ve tasarım",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 6,
+    "topic": "Mühendislik uygulamaları için geometrik modelleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Katı modelleme teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Katı modelleme teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Sayısal metodlar : sonlu elemanlar metodu",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Sayısal metodlar : sınır elemanlar metodu",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Bilgisayar destekli proje planlama ve kontrol",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Sistem simulasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Bilgisayarla bütünleşik imalat",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Fabrika iletişimi"
+   }
+  ],
+  "textbooks": [
+   "Tizzard, An Intro. to Computer-Aided Engineering, McGraw Hill Book, London, 1994",
+   "CAD/CAM Theory and Practice, İ. Zeid, McGraw Hill Book, New York, 1991.",
+   "Engineering Design, C.Dym, P. Little, John Wiley& Sons Inc, New York, 2000.",
+   "Principles of CAD/CAM/CAE Systems, K. Lee, Addison-Wesley, 1999.",
+   "Engineering Design, G.E. Dieter, McGraw Hill, New York, New York, 2000."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=537"
+ },
+ "MKS 541": {
+  "code": "MKS 541",
+  "name": "Güç İletimi",
+  "nameEn": "Mechanical Power Transmission",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Motor elemanlarının ve döndürülen makinaların hız-moment karakteristikleri ve diğer belirleyici özellikleri. Hız değiştirici makinalara genel bakış. Hız ayarı amacı ile kullanılan mekanizmalar , kademeli ve kademesiz hız ayarı. Güç iletiminde daimi ve geçici davranışların modellenmesi, hareket denklemleri. Elektrik motoru ile tahrikte ilk hareket problemi ve çözümleri. Güç iletiminde hidrodinamik elemanlar. Hidrostatik güç iletimi. Torque-speed characteristics of prime movers and driven machines. Their characteristic properties. A general introduction to speed reducers. Mechanisms used for speed reducing. Drives with constant velocity ratio and drives with variable velocity ratio. Modelling of system behavior in transient and steady state. Equations of motions. Hyrodynamic components in power transmission. Hyrostatic power transmission.",
+  "outcomes": [
+   "Güç İletim sistemlerinin tanınması.",
+   "Güç iletim sistem ve elemanlarının karakteristiklerinin tespiti ve uygun yapıların tespiti.",
+   "Güç iletim sistemlerinin tasarlanması ve genel problemlerinin çözümü hakkında temel bilginin kavranması.",
+   "Denklemlerin elde edilmesi ve kullanımı ve yorumlanması."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Güç iletim sistemlerine giriş",
+   "Hafta 2 · Elektrik, mekanik ve akışkan güç sistemlerinin genel incelemesi",
+   "Hafta 3 · Elektrik motorları ve karakteristikleri",
+   "Hafta 4 · İçten yanmalı motor karakteristikleri",
+   "Hafta 5 · Hidrolik ve pnömatik pompa ve motorlar, servovalfler ve karakteristikleri",
+   "Hafta 6 · Tahrik sistemlerinin karşılaştırmalı analizi",
+   "Hafta 7 · Kavramalar ve kavrama seçimi",
+   "Hafta 8 · Dişli kutuları ve sistem cevabına ve yapısına etkileri",
+   "Hafta 9 · Aktarma organları ve sistem karakteristiğine etkileri",
+   "Hafta 10 · Güç iletim sistemi tasarımında dikkat edilmesi gereken hususlar",
+   "Hafta 11 · Elemanların matematik modellere etkileri",
+   "Hafta 12 · Tasarlanan bir sistemin modelinin oluşturulması",
+   "Hafta 13 · Tasarlanmış sistemlerde ortaya çıkan problemler",
+   "Hafta 14 · Sistemde oluşan problemlerin giderilmesinde genel yaklaşım ve kavramlar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güç iletim sistemlerine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektrik, mekanik ve akışkan güç sistemlerinin genel incelemesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Elektrik motorları ve karakteristikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "İçten yanmalı motor karakteristikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Hidrolik ve pnömatik pompa ve motorlar, servovalfler ve karakteristikleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Tahrik sistemlerinin karşılaştırmalı analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kavramalar ve kavrama seçimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Dişli kutuları ve sistem cevabına ve yapısına etkileri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Aktarma organları ve sistem karakteristiğine etkileri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Güç iletim sistemi tasarımında dikkat edilmesi gereken hususlar",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Elemanların matematik modellere etkileri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarlanan bir sistemin modelinin oluşturulması",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarlanmış sistemlerde ortaya çıkan problemler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Sistemde oluşan problemlerin giderilmesinde genel yaklaşım ve kavramlar"
+   }
+  ],
+  "textbooks": [
+   "South, D.W. and Mancuso J.R., Mechanical power transmission components, Marcel Dekker, c1994.",
+   "Yeaple, Franklin D., Fluid power design handbook, New York : M. Dekker, c1996.",
+   "Korn, J., Hyrostatic Transmission Systems, Intertext Books, 1969.",
+   "Krutz, G.W., Schueller, J.K. and Claar, P.W., Machine Design for Mobile and Industrial Applications."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=541"
+ },
+ "MKS 596": {
+  "code": "MKS 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethic and Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=596"
+ }
+}

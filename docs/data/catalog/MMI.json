@@ -1,0 +1,688 @@
+{
+ "MMI 565": {
+  "code": "MMI 565",
+  "name": "Malzemelerin Mekanik Davranışı",
+  "nameEn": "Mechanical Behavior of Materials",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Elastik ve plastik deformasyon. Malzemelerde dayanım arttırıcı mekanizmalar. Sünek ve gevrek kırılma. Doğrusal elastik kırılma mekaniğine giriş. Malzemelerde yorulma ve kırılma. Sürünme ve yüksek sıcaklık malzemeleri. Malzemelerin mekanik özelliklerine ortamın etkisi. Temel hasar bilgileri. (Elastic and plastic deformation. Strengthening mechanisms in engineering materials. Ductile and brittle fracture. Introduction to LEFM. Fatigue and fracture in Materials. Creep and high temperature Materials. Degradation effect of environment to the mechanical performance of Materials. Principles of failure analysis.)",
+  "outcomes": [
+   "Temel mukavemet prensiplerini kullanabilecek,",
+   "Kristal yapılı malzemelerde deformasyon mekanizmalarını açıklayabilecek,",
+   "Kristal yapılı malzemelerde dayanım arttırıcı mekanizmaları açıklayabilecek,",
+   "Doğrusal Elastik Kırılma Mekaniği prensiplerini anlayacak ve tasarım problemlerinde kullanabilecek,",
+   "Yorulmanın prensiplerini anlayabilecek ve mühendislik tasarımlarında bu bilgileri kullanabilecek,",
+   "Sürünme mekanizmalarını anlayacak ve bu bilgileri yüksek sıcaklık tasarımlarında kullanabilecektir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Elastik davranış ve akma kriterleri",
+   "Hafta 2 · Temel plastisite, kristal yapılı malzemelerde (metallerde) plastik şekil değişimi",
+   "Hafta 3 · Dislokasyonlar ve plastik şekil değişimindeki rolü",
+   "Hafta 4 · Dayanım arttırıcı mekanizmalar, katı çözelti ve çökelme sertleşmesi",
+   "Hafta 5 · Deformasyon sertleşmesi, martenzitik dönüşüm, Dispersiyon sertleşmesi",
+   "Hafta 6 · Belirgin akma olayı, deformasyon yaşlanması, kompozit malzemeler",
+   "Hafta 7 · Malzemelerde hasar, Doğrusal elastik kırılma mekaniğine giriş",
+   "Hafta 8 · Kırılma tokluğu-yapı ilişkisi, tasarımlarda DEKM uygulaması",
+   "Hafta 9 · Malzemelerde yorulma, yorulmaya karşı tasarım prensipleri",
+   "Hafta 10 · Yorulma çatlak ilerlemesi, kısa ömürlü yorulma, diğer yorulma türleri",
+   "Hafta 11 · Sürünme ve mekanizmaları, yüksek sıcaklık malzemeleri",
+   "Hafta 12 · Uzun süreler için sürünme özelliklerini tayin etme, Larson Miller parametresi",
+   "Hafta 13 · Malzemelere ortam etkisi, hidrojen gevrekleşmesi, gerilmeli korozyon",
+   "Hafta 14 · Polimer ve seramiklerin mekanik özellikleri, hasar analizi için temel bilgiler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elastik davranış ve akma kriterleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel plastisite, kristal yapılı malzemelerde (metallerde) plastik şekil değişimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Dislokasyonlar ve plastik şekil değişimindeki rolü",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Dayanım arttırıcı mekanizmalar, katı çözelti ve çökelme sertleşmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Deformasyon sertleşmesi, martenzitik dönüşüm, Dispersiyon sertleşmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Belirgin akma olayı, deformasyon yaşlanması, kompozit malzemeler",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Malzemelerde hasar, Doğrusal elastik kırılma mekaniğine giriş",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kırılma tokluğu-yapı ilişkisi, tasarımlarda DEKM uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Malzemelerde yorulma, yorulmaya karşı tasarım prensipleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Yorulma çatlak ilerlemesi, kısa ömürlü yorulma, diğer yorulma türleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Sürünme ve mekanizmaları, yüksek sıcaklık malzemeleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Uzun süreler için sürünme özelliklerini tayin etme, Larson Miller parametresi",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Malzemelere ortam etkisi, hidrojen gevrekleşmesi, gerilmeli korozyon",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Polimer ve seramiklerin mekanik özellikleri, hasar analizi için temel bilgiler"
+   }
+  ],
+  "textbooks": [
+   "Malzemelerin Mekanik Davranışı, Mehmet Demirkol, Ders Notları, ITU, 2004 (Mechanical Behavior of Materials, Mehmet Demirkol, Course Notes (in Turkish), ITU, 2004",
+   "Mechanical Metallurgy, G. Dieter, McGraw Hill,1988",
+   "Deformation and Farcture Mechanics of Engineering Materials, R.W.Hertzberg, John Wiley, 1989",
+   "Mechanical Behavior of Materials, N.E.Dowling, Prentice-Hall, 1993"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MMI&dersNo=565"
+ },
+ "MMI 567": {
+  "code": "MMI 567",
+  "name": "Ölçme Sistemleri ve Metroloji",
+  "nameEn": "Ölçme Sistemleri ve Metroloji",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ölçmeye giriş. Ölçme standartları, toleranslar ve ölçme hatalarının kaynakları. İmalatta kullanılan ölçme teknikleri, Temel boyutsal ölçüm aletleri. Mastar bloklar, Kalibrasyon:Kalibrasyonda hata, prosedürler. Açısal ölçmeler, düzlemsellik, düzgünlük, diklik ve yuvarlaklık ölçümleri. Laser mikrometresi, ve Enterferometreler, Sınır mastarları. Vida mastarları. Optik Ölçmeler, Optik Profil Projektör, Koordinat ölçme Makinaları Introduction to Metrology, The Importance of Standards, Tolerances and origin of measurement errors, Measurement methods in manufacturing, Fundamental Dimensional Measurement Instruments, Gage Blocks, Calibration, Errors in Calibration, procedures, Angular measurements, flatness, straightness, roundness cylindiricity measurements, Laser micrometer and interferometric measurements, Gauging, Optical Comparators., CMM.",
+  "outcomes": [
+   "Ölçmenin gerekliliğini tanımlayabilme ve ölçme hatalarının kaynaklarını açıklayabilme.",
+   "Temel ölçme aletleriyle bir ölçme cihazının kalibrasyonunu yapabilme.",
+   "Yüzey metrolojisinin prensiplerini tanımlayabilme ve değişik yöntemlerle yüzey pürüzlülüğü hesaplayabilme.",
+   "Laser interferometresin kullanımını anlama.",
+   "Temel ölçme cihazlarının prensiplerini açıklayabilme.",
+   "Koordinat ölçme makinasını tanıma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Ölçmeye giriş. Ölçme tekniğinin temel kavramları.",
+   "Hafta 2 · Temel ölçme aletleri, birim sistemleri, hata hesabı.",
+   "Hafta 3 · Ölçme tekniği: Ölçme sistemlerinin temelleri ve özellikleri",
+   "Hafta 4 · Kalibrasyon. Uzunluk standartlarının kalibrasyonu. Kalibrasyonda hata ve Prosedürler.",
+   "Hafta 5 · Boyut kontrolu. Sınır mastarlar. Mastarların prensibi. Standart mastar tasarımı.",
+   "Hafta 6 · Açısal ölçmeler. Diklik , yuvarlaklık ölçümleri. Koniklik mastarları. Mastar malzemeleri.",
+   "Hafta 7 · Sınır mastarlarının alternatifleri. Proses sırasında ölçme.",
+   "Hafta 8 · Vida dişi spesifikasyonları ve toleransları. Vida mastyarları ve ölçme. Vida standartları.",
+   "Hafta 9 · Yüzey pürüzlülüğü ölçümü.",
+   "Hafta 10 · Dolaylı ölçme. Doğrusallık testi. Düzlemsellik testi.",
+   "Hafta 11 · İmalatta kullanılan ölçme teknikleri. Laser interferometresi ile ölçme yöntemi.",
+   "Hafta 12 · Opto elektronik ölçme ve sensor tekniği. Laser mikrometresi.",
+   "Hafta 13 · Optik Profil Projektürle Ölçme",
+   "Hafta 14 · Koordinat ölçme tekniği. Koordinat ölçme cihazları yapısı ve fonksiyonu. Ölçme değeri."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ölçmeye giriş. Ölçme tekniğinin temel kavramları.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel ölçme aletleri, birim sistemleri, hata hesabı.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Ölçme tekniği: Ölçme sistemlerinin temelleri ve özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kalibrasyon. Uzunluk standartlarının kalibrasyonu. Kalibrasyonda hata ve Prosedürler.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Boyut kontrolu. Sınır mastarlar. Mastarların prensibi. Standart mastar tasarımı.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Açısal ölçmeler. Diklik , yuvarlaklık ölçümleri. Koniklik mastarları. Mastar malzemeleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Sınır mastarlarının alternatifleri. Proses sırasında ölçme.",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Vida dişi spesifikasyonları ve toleransları. Vida mastyarları ve ölçme. Vida standartları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Yüzey pürüzlülüğü ölçümü.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Dolaylı ölçme. Doğrusallık testi. Düzlemsellik testi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "İmalatta kullanılan ölçme teknikleri. Laser interferometresi ile ölçme yöntemi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Opto elektronik ölçme ve sensor tekniği. Laser mikrometresi.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Optik Profil Projektürle Ölçme",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Koordinat ölçme tekniği. Koordinat ölçme cihazları yapısı ve fonksiyonu. Ölçme değeri."
+   }
+  ],
+  "textbooks": [
+   "Bush , T., 1998. Fundamentals of Dimensional Metrology,3rd Edi.,Delmar Publishers.",
+   "Derste dağıtılacak notlar"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MMI&dersNo=567"
+ },
+ "MMI 569": {
+  "code": "MMI 569",
+  "name": "Malzeme ve Yapılarda Yorulma",
+  "nameEn": "Fatigue Of Materials and Structures",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu derste, yorulmanın temel konularına değinilecektir. Yorulmanın safhaları irdelenecek, mikro ve makro yorulma özellikleri ele alınacaktır. Yorulma, gerilme – ömür ve genleme – ömür yöntemi yaklaşımları açısından incelenecektir. LEFM yöntemi tanıtılacaktır. Çentiklerin yorulmaya etkisi irdelenecek ve kalıntı gerilmelerin önemi üzerine durulacaktır. Değişken genlikli yükleme tipleri incelenecek ve çok eksenli gerilme altında yorulma araştırılacaktır In this course, fundamentals of fatigue will be introduced. Phases of fatigue, micro and macro fatigue mechanisms will be presented. Fatigue mechanism will be focused under the aspects of strain – life and stress - -life. LEFM method will be introduced. The effect of notches on fatigue analyses and the importance of relief stress will be explained. Variable strain loading types will investigated and fatigue under multiaxial stress will be researched.",
+  "outcomes": [
+   "Yorulma mekanizmaları tasarım esasları konusunda bilgi sahibi olmak",
+   "Malzemelerin yorulmaya karşı hesabında kullanılan yaklaşımları öğrenmek",
+   "Yapıların yorulmaya karşı hesabında kullanılan yaklaşımları öğrenmek",
+   "Yorulma hesabı yapabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş ve tanımlar",
+   "Hafta 2 · Yorulma Tasarımı",
+   "Hafta 3 · Yorulmanın mikro ve makro özellikleri",
+   "Hafta 4 · Gerilme – Ömür yöntemi",
+   "Hafta 5 · Genleme – Ömür yöntemi",
+   "Hafta 6 · LEFM Yöntemi",
+   "Hafta 7 · Çentikler",
+   "Hafta 8 · Kalıntı gerilmeler",
+   "Hafta 9 · Değişken genlikli yükleme",
+   "Hafta 10 · Değişken genlikli yükleme",
+   "Hafta 11 · Değişken genlikli yükleme",
+   "Hafta 12 · Çok eksenli gerilme altında yorulma",
+   "Hafta 13 · Çok eksenli gerilme altında yorulma",
+   "Hafta 14 · Ders konuların gözden geçirilmesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yorulma Tasarımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Yorulmanın mikro ve makro özellikleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gerilme – Ömür yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Genleme – Ömür yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "LEFM Yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Çentikler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Kalıntı gerilmeler",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Değişken genlikli yükleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Değişken genlikli yükleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Değişken genlikli yükleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Çok eksenli gerilme altında yorulma",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Çok eksenli gerilme altında yorulma",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Ders konuların gözden geçirilmesi"
+   }
+  ],
+  "textbooks": [
+   "DERS NOTLARI",
+   "MECHANICAL BEHAVIOUR OF MATERIALS, N.E. DOWLING, PRENTICE HALL, 1993.",
+   "FATIGUE OF MATERIALS, S. SURESH, CAMBRIDGE PRESS, 1998."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MMI&dersNo=569"
+ },
+ "MMI 576E": {
+  "code": "MMI 576E",
+  "name": "Finite Eleme.Analy.in Manufac.",
+  "nameEn": "Finite Eleme.Analy.in Manufac.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Fiziksel esasları tanımlama ve bünye denklemlerini ile temel eşitlikleri tanıtma. İmalat işlemlerinin değişkenlerini belirleme. Doğrusal olmayan sonlu elemanlar yöntemini, malzeme ve geometriden kaynaklanan doğrusallıktan sapmaları, zamana bağlı problemleri tanıtma. İki durumu bir arada ele alan problemleri tanıtmak. Isıl esaslı işlemlerde sonlu elemanlar yöntemi. Büyük şekil değişimlerinde sonlu elamanlar yöntemi ve ısıl-mekanik işlemlerde sonlu elamanlar yöntemi. Identification of physical phenomena and introduction of governing equations and constitutive laws. Definition of process variables and objectives in manufacturing. Introduction to non-linear finite element methods, material and geometric non-linearity, transient and coupled problems. FEM in thermal processes. Finite element method in large deformation and thermo-mechanical processes.",
+  "outcomes": [
+   "Sonlu elemanlar yöntemini ve imal usulleri problemlerinde kullanımını tanımak",
+   "Sonlu elemanlar yönteminin ileri bilgileri öğrenme ve problem çözmede bu bilgilerin kullanımı.",
+   "Gerilme analizleri, rejim halindeki ısıl analizler, zaman bağlı ısı geçişi, plastik şekil değişimleri, ısıl-mekanik şekillendirme işlemleri, temas yüzeylerinin hesaba katılması konularında ayrıntılı bilgiler.",
+   "İmalat işlemlerinin sonlu elemanlar yöntemi ile analizlerinde doğru model kurma ve sonuçları doğru yorumlama becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İmal usullerinin tanıtımı: Fiziksel esasların tanımlanması. Geçerli kuram ve denklemlerin tanıtımı. İmalat süreçlerinin bağımlı ve bağımsız değişkenlerinin belirlenmesi.",
+   "Hafta 2 · Sonlu elemanlar yönteminin tanıtımı: Temel esaslar, eleman türleri ve elemen türü seçiminin önemi",
+   "Hafta 3 · Sonlu elemanlar yönteminin tanıtımı: Temel esaslar, eleman türleri ve elemen türü seçiminin önemi",
+   "Hafta 4 · Rijitlik matrisi ve sınır koşullarına bağlı olarak düzenlenmesi",
+   "Hafta 5 · Doğrusal olmayan sonlu elemanlar yönteminin tanıtımı: Newton-Raphson yöntemi ve uyarlanması, malzeme ve geometriye bağlı doğrusal olmama halleri, zamana bağlı ve çift değişkenli problemler",
+   "Hafta 6 · Temas problemleri ve temas elamanlarının kullanımı",
+   "Hafta 7 · Isıl analizler, zaman bağlım ısı geçişi: Isıl işlemler, döküm ve benzeri ısıl imalat süreçleri",
+   "Hafta 8 · Yapısal analizler ve ısıl-mekanik esaslı şekillendirme analizleri: Küçük deformasyonlu ısıl-mekanik şekillendirme işlemleri, ezme ve benzeri.",
+   "Hafta 9 · Büyük deformasyonlu analizler: Dövme, ekstrüzyon, haddeleme ve benzeri.",
+   "Hafta 10 · Büyük deformasyonlu analizler: Dövme, ekstrüzyon, haddeleme ve benzeri.",
+   "Hafta 11 · Büyük deformasyonlu analizler: Dövme, ekstrüzyon, haddeleme ve benzeri.",
+   "Hafta 12 · Vaka incelemeleri",
+   "Hafta 13 · Vaka incelemeleri",
+   "Hafta 14 · Vaka incelemeleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İmal usullerinin tanıtımı: Fiziksel esasların tanımlanması. Geçerli kuram ve denklemlerin tanıtımı. İmalat süreçlerinin bağımlı ve bağımsız değişkenlerinin belirlenmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sonlu elemanlar yönteminin tanıtımı: Temel esaslar, eleman türleri ve elemen türü seçiminin önemi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 3,
+    "topic": "Sonlu elemanlar yönteminin tanıtımı: Temel esaslar, eleman türleri ve elemen türü seçiminin önemi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 4,
+    "topic": "Rijitlik matrisi ve sınır koşullarına bağlı olarak düzenlenmesi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal olmayan sonlu elemanlar yönteminin tanıtımı: Newton-Raphson yöntemi ve uyarlanması, malzeme ve geometriye bağlı doğrusal olmama halleri, zamana bağlı ve çift değişkenli problemler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Temas problemleri ve temas elamanlarının kullanımı",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Isıl analizler, zaman bağlım ısı geçişi: Isıl işlemler, döküm ve benzeri ısıl imalat süreçleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Yapısal analizler ve ısıl-mekanik esaslı şekillendirme analizleri: Küçük deformasyonlu ısıl-mekanik şekillendirme işlemleri, ezme ve benzeri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Büyük deformasyonlu analizler: Dövme, ekstrüzyon, haddeleme ve benzeri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Büyük deformasyonlu analizler: Dövme, ekstrüzyon, haddeleme ve benzeri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Büyük deformasyonlu analizler: Dövme, ekstrüzyon, haddeleme ve benzeri.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Vaka incelemeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Vaka incelemeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Vaka incelemeleri"
+   }
+  ],
+  "textbooks": [
+   "E. R. Champion, Finite Element Analysis in Manufacturing Engineering, McGraw-Hill Publ. New York, 1992, ISBN0-07-010510-3",
+   "R.D. Cook, D.S. Malkus, and M.E. Plesha. Conceps and Applications of Finite Element Analysis. Wiley, NY 1989.",
+   "T.R. Chandrupatla and A.D. Belegundu. Introdcution to Finite Elements in Engineering. Prentice Hall, NJ 1997.",
+   "S. Kobayashi, S. Oh, T. Altan, Metal Forming and The Finite Element Method, Oxford University press, Oxford, 1989",
+   "V. P. Astakhov, Metal cutting mechanics, , CRC Press, New York,1999",
+   "G.W. Rowe, C.E.N. Sturgess, P.Hartley,I. Pillinger, Finite Element Plasticity and Metalforming Analysis, Cambridge Uni. Pres, 1991"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MMI&dersNo=576"
+ },
+ "MMI 579E": {
+  "code": "MMI 579E",
+  "name": "Micro Electro-Mech. Sensors",
+  "nameEn": "Micro Electro-Mech. Sensors",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "MEMS üretim teknikleri. Yüzey mikro işleme. Gövde mikroişleme. Polimer mikroişleme. Doplama, PVD ve CVD teknikleri. MEMS teknolojinde kullanılan malzemeler. Ölçeklendirme prensipleri. Üretim örnekleri. MEMS sensörlerinin güvenilirliği. Çoklu-wafer üretim teknolojisi ve üretim alternatifleri. MEMS paketleme. MEMS fabrication technology. Surface micromachining. Bulk micromachining. Polymer micromachining. Dopig, PVD and CVD techniques. Use of materials in MEMS technology. Scaling issues. Case studies in fabrication. Reliability of MEMS sensors. Multi-wafer fabrication technology and fabrication options. MEMS packaging.",
+  "outcomes": [
+   "MEMS üretim teknikleri öğrenecek (ii, iv)",
+   "MEMS tasarım prensiplerini öğrenecek (i, ii, iii)",
+   "Mikrosensörlerin üretiminde malzeme ve üretim yaklaşımını öğrenecek (ii, iv)",
+   "MEMS sensörünün tasarım-üretim-paketleme süreçini öğrenecek (i, ii, v)"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · MEMS giriş",
+   "Hafta 2 · MEMS malzemeleri ve kullanımı",
+   "Hafta 3 · Kaplama ve vakumteknololojisi I",
+   "Hafta 4 · Kaplama ve vakumteknololojisi II",
+   "Hafta 5 · Lithografi",
+   "Hafta 6 · Islak ve kuru aşındırma",
+   "Hafta 7 · Yüzey mikroişleme",
+   "Hafta 8 · Gövde Mikroişleme",
+   "Hafta 9 · Ölçeklendirme",
+   "Hafta 10 · Tasarım temelleri ve örnekler I",
+   "Hafta 11 · Tasarım temelleri ve örnekler II",
+   "Hafta 12 · Tasarım temelleri ve örnekler III",
+   "Hafta 13 · MEMS güvenilirliği",
+   "Hafta 14 · MEMS paketlemesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "MEMS giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "MEMS malzemeleri ve kullanımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Kaplama ve vakumteknololojisi I",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "Kaplama ve vakumteknololojisi II",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Lithografi",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Islak ve kuru aşındırma",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yüzey mikroişleme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Gövde Mikroişleme",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ölçeklendirme",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarım temelleri ve örnekler I",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarım temelleri ve örnekler II",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Tasarım temelleri ve örnekler III",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "MEMS güvenilirliği",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "MEMS paketlemesi"
+   }
+  ],
+  "textbooks": [
+   "MEMS and microsystems : design and manufacture, Tai-Ran Hsu, MacGraw Hill, 2001",
+   "The MEMS handbook, edited by Mohamed Gad-el-Hak, CRC Press, 2001",
+   "Microsystem Design, Stephen D. Senturia, Springer, 2000"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MMI&dersNo=579"
+ },
+ "MMI 581E": {
+  "code": "MMI 581E",
+  "name": "Malzeme&İmalata Özel Konular",
+  "nameEn": "Special Top.in Mater.&Manu.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Derste malzeme ve imalat ile ilgili temel teorik konuların incelenmesine ek olarak, günümüzde endüstriyel açıdan da yenilikçi malzemeler ve imal yöntemleri örneklerle incelenecektir. The course treats the up-to-date important topics in the field of materials and manufacturing. In addition to examining the basic theoretical issues related to materials and manufacturing, today's industrially innovative materials and manufacturing methods will be examined with examples.",
+  "outcomes": [
+   "Temel malzeme modellerini ve bunların hangi tür malzemelerin mekanik davranışını tanımlamada kullanılacağı öğreneceklerdir.",
+   "Kompozit malzemelerde homojenizasyon yöntemleri üzerine çalışabileceklerdir.",
+   "İmal edilen malzemelerde gerçekleştirilen termal, termomekanik, iç yapı vb. deneysel karakterizasyonları yorumlayabileceklerdir.",
+   "Tasarıma uygun malzeme seçebileceklerdir.",
+   "Kompozit malzemelerin ve polimerlerin kullanım alanları ve imal yöntemleri hakkında geniş fikir sahibi olacaklardır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş, Malzeme bünye denklemleri, malzeme modelleri – I",
+   "Hafta 2 · Malzeme bünye denklemleri, malzeme modelleri – II",
+   "Hafta 3 · Kırılma mekaniği ve hasar kriterleri",
+   "Hafta 4 · Kompozitlerde yorulma hasarı ve karakterizasyonu",
+   "Hafta 5 · Polimerlerin yapısı ve fiziği",
+   "Hafta 6 · Polimerlerin prosesi ve çevresel faktörlere dayanım",
+   "Hafta 7 · Çok fonksiyonlu kompozit malzemeler ve prosesi",
+   "Hafta 8 · Kompozit malzemelerde modelleme ve homojenizasyon",
+   "Hafta 9 · Biyotaklit ve hiyerarşik yapılar",
+   "Hafta 10 · Eklemeli imalat teknikleri, Üç boyutlu yazıcılar",
+   "Hafta 11 · Deneysel Karakterizasyon Teknikleri I",
+   "Hafta 12 · Deneysel Karakterizasyon Teknikleri II",
+   "Hafta 13 · Tasarım odaklı malzeme seçimi I",
+   "Hafta 14 · Tasarım odaklı malzeme seçimi II"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, Malzeme bünye denklemleri, malzeme modelleri – I",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Malzeme bünye denklemleri, malzeme modelleri – II",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kırılma mekaniği ve hasar kriterleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Kompozitlerde yorulma hasarı ve karakterizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Polimerlerin yapısı ve fiziği",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Polimerlerin prosesi ve çevresel faktörlere dayanım",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Çok fonksiyonlu kompozit malzemeler ve prosesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Kompozit malzemelerde modelleme ve homojenizasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Biyotaklit ve hiyerarşik yapılar",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "Eklemeli imalat teknikleri, Üç boyutlu yazıcılar",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Deneysel Karakterizasyon Teknikleri I",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Deneysel Karakterizasyon Teknikleri II",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım odaklı malzeme seçimi I",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım odaklı malzeme seçimi II"
+   }
+  ],
+  "textbooks": [
+   "Anderson, T.L. (2017). Fracture Mechanics: Fundamentals and Applications, Fourth Edition (4th ed.). CRC Press.",
+   "Solid Mechanics Theory, Modeling, and Problems Authors: Bertram, Albrecht, Glüge, Rainer, Springer, (2015)",
+   "Solid Mechanics Lecture Notes by Piaras Kelly Publisher: The University of Auckland 2013"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MMI&dersNo=581"
+ }
+}

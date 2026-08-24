@@ -1,0 +1,461 @@
+{
+ "MTA 551E": {
+  "code": "MTA 551E",
+  "name": "Data Acquis.&Signal Processing",
+  "nameEn": "Data Acquis.&Signal Processing",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Veri toplam ve sinyal işleme konularına giriş. Sinyal türleri. Ölçüm zincirindeki elemanlar. Örnekleme teorisi. Çözünürlik ve hassasiyet. Zaman alanında sinyal işleme: istatiksel analiz, korelasyon, konvolusyon ve digital filtreleme. Frekans alanında sinyal işleme: Fourier serisi, frekans çözünürlüğü ve pencereleme, Ayrık Fourier analizi, yanılsama, öznel spektrum, çapraz spektrum, Uyumluluk, Frekans Tepki Fonksiyonu, Digital Filtreleme. Introduction to data acquisition and signal processing. Types of signals. Components in the measurement chain. Sampling theorem, Resolution and accuracy. Time Domain Processing: Statistical analysis, correlation, convolution and digital filtering. Frequency Domain Processing: Fourier series, frequency resolution and windowing, Discrete Fourier analysis, aliasing, autospectrum, cross spectrum, Coherence, Frequency Response (Transfer) Function, Digital Filtering.",
+  "outcomes": [
+   "Ölçüm zincirindeki elemanlar hakkında temel bilgiler edinirler.",
+   "Bir deneyi tasarlayabilme ve ‘doğru’ donanımları seçebilme kabiliyeti kazanırlar.",
+   "Modern sinyal işleme yöntemleri hakkında teorik ve pratik bilgi ve bu bilgileri kullanabilme becerisi kazannırlar.",
+   "Ölçüm verilerini ve işlenmiş sonuçları yorumlayabilme ve raporlayabilme becerileri kazananırlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş: Veri toplamam ve sinyal işleme",
+   "Hafta 2 · Ölçüm zinciri elemanları, Part I",
+   "Hafta 3 · Ölçüm zinciri elemanları, Part II",
+   "Hafta 4 · Örnekleme teorisi, çözünürlik ve hassasiyet.",
+   "Hafta 5 · Sensörler",
+   "Hafta 6 · Sinyal türleri, Zaman alanında sinyal işleme",
+   "Hafta 7 · İstatiksel analiz, korolasyon ve konvolusyon",
+   "Hafta 8 · Frekans alanında sinyal işleme, Fourier serisi",
+   "Hafta 9 · Ayrık Fourier Transform ve Pencereleme",
+   "Hafta 10 · Frekans Tepki Fonksiyonu, koherans",
+   "Hafta 11 · DSP sistemleri, z-transform.",
+   "Hafta 12 · Konvolusyon, Dijital filtreleme",
+   "Hafta 13 · Filtre tasarımı",
+   "Hafta 14 · Proje sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Veri toplamam ve sinyal işleme",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ölçüm zinciri elemanları, Part I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Ölçüm zinciri elemanları, Part II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Örnekleme teorisi, çözünürlik ve hassasiyet.",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Sensörler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Sinyal türleri, Zaman alanında sinyal işleme",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "İstatiksel analiz, korolasyon ve konvolusyon",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Frekans alanında sinyal işleme, Fourier serisi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ayrık Fourier Transform ve Pencereleme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Frekans Tepki Fonksiyonu, koherans",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "DSP sistemleri, z-transform.",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Konvolusyon, Dijital filtreleme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Filtre tasarımı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları"
+   }
+  ],
+  "textbooks": [
+   "Stearns, S. D, Digital signal processing with examples in MATLAB, CRC Press, 2003",
+   "Stearns S. D. and David, R. A., Signal Processing Algorithms in Matlab, Prentice-Hall Inc, 1996"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTA&dersNo=551"
+ },
+ "MTA 554": {
+  "code": "MTA 554",
+  "name": "Mekanik Sistemler Dinamiği",
+  "nameEn": "Dynamics of Mechanical Systems",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Mekanik Sistemler Dinamiği’nin mekanik esasları. Lagrange Denklemleri. Lagrange Çarpanları Metodu. Hamilton Prensibi. Hamilton Fonksiyonu. Hamilton Kanonik Denklemleri. Routh Metodu. Fundamentals of Dynamics of Mechanical Systems. Lagrange Equations. Lagrange Multipliers Method. Hamilton’s Principle. Hamiltonian Function. Hamiltonian Canonical Equations. Routh Method.",
+  "outcomes": [
+   "Mekanik esaslara ilişkin temel kavramları öğrenebilme,",
+   "Sonlu serbestlik dereceli ve lineer mekanik sistemlerin dinamik etüdünü gerçekleştirebilme,",
+   "Sistemlerin hareket denklemlerini değişik yöntemlerle teşkil edebilme,",
+   "Sistemlerdeki ilgili bağ kuvvetlerini hesaplayabilme, becerilerinin elde edilmesi amaçlanmaktadır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Mekanik Esaslar :Genell. Koord., Serbestlik Derecesi, Bağlar, Kuvvetler, Sistemler",
+   "Hafta 2 · Mekanik Esaslar : Virtüel İşler Prensibi, D’Alembert Prensibi,Lagrange Prensibi",
+   "Hafta 3 · Lagrange Denklemleri : Çıkarılışı, Potansiyel Fonksiyonu, Konservatif Sistemler",
+   "Hafta 4 · Lagrange Denklemleri : Örnekler, Bağ Kuvvetleri",
+   "Hafta 5 · Lagrange Denklemleri : Sürt. Sis., Disipasyon Fonk., Ani Darbe Problemleri",
+   "Hafta 6 · Lagrange Çarpanları Metodu : 1.neviden Lagrange Denklemleri , Lagrange Çarpanlarının fiziksel anlamı ,Örnekler",
+   "Hafta 7 · Hamilton Prensibi : Varyasyon hesabının esasları",
+   "Hafta 8 · Hamilton Prensibi : Hamilton Prensibinin Lagrange Prensibinden çıkartılması, Lagrange Denklemlerinin Hamilton Prensibinden çıkartılışı",
+   "Hafta 9 · Hamilton Prensibi : Uygulama örnekleri",
+   "Hafta 10 · Analitik Mekanikten İlave Konular : Kinetik Enerjinin Yapısı",
+   "Hafta 11 · Analitik Mekanikten İlave Konular : Dönen Levha Örneği",
+   "Hafta 12 · Analitik Mekanikten İlave Konular : Ham. Fonk., Ham. Kanonik Denklemleri",
+   "Hafta 13 · Analitik Mekanikten İlave Konular : İlk İntegraller, İgnorabl Koordinatlar",
+   "Hafta 14 · Analitik Mekanikten İlave Konular: Routh Metodu, Korunum Kanunları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mekanik Esaslar :Genell. Koord., Serbestlik Derecesi, Bağlar, Kuvvetler, Sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mekanik Esaslar : Virtüel İşler Prensibi, D’Alembert Prensibi,Lagrange Prensibi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Lagrange Denklemleri : Çıkarılışı, Potansiyel Fonksiyonu, Konservatif Sistemler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Lagrange Denklemleri : Örnekler, Bağ Kuvvetleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Lagrange Denklemleri : Sürt. Sis., Disipasyon Fonk., Ani Darbe Problemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Lagrange Çarpanları Metodu : 1.neviden Lagrange Denklemleri , Lagrange Çarpanlarının fiziksel anlamı ,Örnekler",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Hamilton Prensibi : Varyasyon hesabının esasları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Hamilton Prensibi : Hamilton Prensibinin Lagrange Prensibinden çıkartılması, Lagrange Denklemlerinin Hamilton Prensibinden çıkartılışı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Hamilton Prensibi : Uygulama örnekleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Analitik Mekanikten İlave Konular : Kinetik Enerjinin Yapısı",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Analitik Mekanikten İlave Konular : Dönen Levha Örneği",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Analitik Mekanikten İlave Konular : Ham. Fonk., Ham. Kanonik Denklemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Analitik Mekanikten İlave Konular : İlk İntegraller, İgnorabl Koordinatlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Analitik Mekanikten İlave Konular: Routh Metodu, Korunum Kanunları"
+   }
+  ],
+  "textbooks": [
+   "L.Meirovitch : “Methods of Analytical Dynamics”, New-York, McGraw-Hill, 1970.",
+   "D.A.Wells : “Theory and Problems of Lagrangian Dynamics”,Schaum’s Outline Series,New York : McGraw-Hill,1967",
+   "D.T.Greenwood : “Principles of Dynamics”, Sec.Ed., New Jersey, Prentice-Hall, 1988.",
+   "G.R. Fowles / G.L.Cassiday : “ Analytical Mechanics”, 6th Ed. Fort Worth ,Saunders College Publishing,1999.",
+   "E. Rızaoğlu / N. Sünel : “ Klasik Mekanik”, Tokat: Seçkin Yayıncılık, 2006",
+   "R. D. Gregory : “Classical Mechanics”, Cambridge, Cambridge University Press, 2010."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTA&dersNo=554"
+ },
+ "MTA 555": {
+  "code": "MTA 555",
+  "name": "Gürültü Ve Titreşim Kontrolü",
+  "nameEn": "Noise and Vibration Control",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Temel kavramlar. Akustik gürültü ve titreşim ölçüm yöntemleri. Dış ortamda sesin yayılması. Kapalı ortamların akustiği. Yaşam alanlarında gürültü ve gürültü kontrolu. Ses yutucu malzemeler ve ses absorberleri. Sesin yapı ile etkileşimi. Gürültünün ve titreşimlerin insanlar üzerindeki etkileri. Makinaların gürültü ve titreşim düzeyleri. Fundamentals of acoustics and vibration. Acoustic noise and vibration measurement methods. Outdoor sound propagation. Sound in small enclosures. Noise in rooms. Sound absorbing materials and sound absorbers. Interaction of sound waves with solid structures. Criteria for noise and vibration in human bodies. Machinery noise and vibrations.",
+  "outcomes": [
+   "Ses bilgisi, akustik ve titreşimlerin teorik esaslarının anlaşılması,",
+   "Ses ve titreşimlerin insanlar ve sistemler üzerindeki etkilerinin anlaşılması ve değerlendirme becerisinin kazanılması,",
+   "Ses ve titreşim ölçüm teknikleri konusunda beceri kazanılması,",
+   "Endüstriyel gürültü ve titreşim kontrolu konusunda tecrübe kazanılması amaçlanmaktadır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel kavramlar",
+   "Hafta 2 · Ses gücü düzeyinin ve ses kaynaklarının yöneliminin belirlenmesi",
+   "Hafta 3 · Dış ortamda sesin yayılması",
+   "Hafta 4 · Küçük kapalı ortamların akustiği",
+   "Hafta 5 · Yaşam alanlarında gürültü ve gürültü kontrolu",
+   "Hafta 6 · Ses yutucu malzemeler ve susturucular",
+   "Hafta 7 · Sesin yapı ile etkileşimi",
+   "Hafta 8 · Akışkan kaynaklı ses ve gürültü",
+   "Hafta 9 · Aktif gürültü kontrolu",
+   "Hafta 10 · Taşıtlar, binalar ve toplu yaşam alanları için gürültü ve titreşim kriterleri",
+   "Hafta 11 · Makinalarda gürültü ve titreşim düzeyleri",
+   "Hafta 12 · İçten yanmalı motorlarda titreşim ve gürültü kontrolu",
+   "Hafta 13 · Elektrik motorlarında titreşim ve gürültü kontrolu",
+   "Hafta 14 · Dişli çarklarda titreşimler ve gürültü"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ses gücü düzeyinin ve ses kaynaklarının yöneliminin belirlenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Dış ortamda sesin yayılması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Küçük kapalı ortamların akustiği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Yaşam alanlarında gürültü ve gürültü kontrolu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Ses yutucu malzemeler ve susturucular",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sesin yapı ile etkileşimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Akışkan kaynaklı ses ve gürültü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Aktif gürültü kontrolu",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Taşıtlar, binalar ve toplu yaşam alanları için gürültü ve titreşim kriterleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Makinalarda gürültü ve titreşim düzeyleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "İçten yanmalı motorlarda titreşim ve gürültü kontrolu",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Elektrik motorlarında titreşim ve gürültü kontrolu",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Dişli çarklarda titreşimler ve gürültü"
+   }
+  ],
+  "textbooks": [
+   "Noise and Vibration Control Enginnering Principles and Applications, L.L. Beranek, L.V. Istvan, John Wiley and Sons, Inc., 1992.",
+   "Engineering Noise Control, Theory and Practice, D.A.Bies, C.H.Hansen, Unwin Hyman, London, 1988.",
+   "Noise control management, Howard K. Pelton, New York : Van Nostrand Reinhold, 1993.",
+   "Noise control in industry, Sudbury [Eng.] : Sound Research Laboratories, 1991."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTA&dersNo=555"
+ },
+ "MTA 558": {
+  "code": "MTA 558",
+  "name": "Optimizasyon Yöntemleri",
+  "nameEn": "Optimization Methods",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Temel kavramlar. Tek ve çok boyutlu, kısıtlı ve kısıtsız problemler. Parametre optimizasyonu ve Mini-Maks kuramı. Lineer olmayan programlama ve arama teknikleri. Lineer programlama ve Simpleks yöntemi. Fonksiyon optimizasyonu ve Varyasyonlar hesabı. Uni and multi-dimensional, constrained and unconstrained problems. Parameter optimization and mini-max theory. Non-linear programming and search techniques. Linear programming and the simplex method. Function optimization and the calculus of variations.",
+  "outcomes": [
+   "Maksimum ve minimumlar kuramı konusunda bilgi",
+   "Nonlineer programlama problemlerini formüle etme ve elde ve bilgisayarda çözme becerisi",
+   "Lineer programlama problemlerini formüle etme ve elde ve bilgisayarda çözme becerisi",
+   "Varyasyonlar hesabı problemlerini formüle etme ve çözme becerisi",
+   "Varyasyonlar hesabı problemlerinin doğrudan çözüm yöntemleri konusunda bilgi ve uygulama becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Terminoloji, temel kavram ve tanımlar. Parametre Optimizasyonu: Mini-Maks Kuramı. Tek ve çok boyutlu problemler.",
+   "Hafta 2 · Eşitlik kısıtları. Yerine Koyma. Lagrange Çarpanları.",
+   "Hafta 3 · Eşitsizlik kısıtları. Değişken dönüşümü. Karush-Kuhn-Tucker koşulları.",
+   "Hafta 4 · Dışbükey Problemler ve Genel Minimum. En Küçük Kareler Yöntemi.",
+   "Hafta 5 · İntegrallerin ekstremumunun bulunması. Bir uygulama: Galerkin Yöntemi. Parametre optimizasyonu problemlerinin bazı özellikleri.",
+   "Hafta 6 · Lineer olmayan programlama. Arama teknikleri. Tek boyutlu problemler. Newton yöntemi. İkinci dereceden eğri uydurma ve Powell yöntemi. Aralık Yarılama, Altın Oranlı Arama ve Fibonacci araması.",
+   "Hafta 7 · Çok boyutlu problemler. Newton Yöntemi. En Dik İniş Yöntemi. Eşlenik Gradiyentler Yöntemi, Nelder ve Mead Yöntemi, Hooke ve Jeeves yöntemi, vb.",
+   "Hafta 8 · Lineer programlama. Problemin formülasyonu ve temel özellikleri.",
+   "Hafta 9 · Lineer programlama problemlerinin çözümü. Simpleks yöntemi.",
+   "Hafta 10 · Fonksiyon Optimizasyonu: Varyasyonlar hesabı. Temel problem. Çok sayıda bilinmeyen fonksiyon, çok sayıda bağımsız parametre ve yüksek türevler içeren problemler.",
+   "Hafta 11 · Varyasyonlar hesabının sınır koşulları belirsiz problemleri.",
+   "Hafta 12 · Varyasyonlar hesabının kısıtlı problemleri.",
+   "Hafta 13 · Varyasyonlar hesabı problemlerinin doğrudan çözümü. Ritz yöntemi.",
+   "Hafta 14 · Optimizasyonda farklı yaklaşımlar."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Terminoloji, temel kavram ve tanımlar. Parametre Optimizasyonu: Mini-Maks Kuramı. Tek ve çok boyutlu problemler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Eşitlik kısıtları. Yerine Koyma. Lagrange Çarpanları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Eşitsizlik kısıtları. Değişken dönüşümü. Karush-Kuhn-Tucker koşulları.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dışbükey Problemler ve Genel Minimum. En Küçük Kareler Yöntemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İntegrallerin ekstremumunun bulunması. Bir uygulama: Galerkin Yöntemi. Parametre optimizasyonu problemlerinin bazı özellikleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Lineer olmayan programlama. Arama teknikleri. Tek boyutlu problemler. Newton yöntemi. İkinci dereceden eğri uydurma ve Powell yöntemi. Aralık Yarılama, Altın Oranlı Arama ve Fibonacci araması.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Çok boyutlu problemler. Newton Yöntemi. En Dik İniş Yöntemi. Eşlenik Gradiyentler Yöntemi, Nelder ve Mead Yöntemi, Hooke ve Jeeves yöntemi, vb.",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Lineer programlama. Problemin formülasyonu ve temel özellikleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Lineer programlama problemlerinin çözümü. Simpleks yöntemi.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Fonksiyon Optimizasyonu: Varyasyonlar hesabı. Temel problem. Çok sayıda bilinmeyen fonksiyon, çok sayıda bağımsız parametre ve yüksek türevler içeren problemler.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Varyasyonlar hesabının sınır koşulları belirsiz problemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Varyasyonlar hesabının kısıtlı problemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Varyasyonlar hesabı problemlerinin doğrudan çözümü. Ritz yöntemi.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Optimizasyonda farklı yaklaşımlar."
+   }
+  ],
+  "textbooks": [
+   "TURHAN, Ö. Optimizasyon Yöntemleri Ders Notları",
+   "ARORA, J.S. (2004), Introduction to Optimum Design, Elsevier Academic Press.",
+   "PIERRE, D. A.( 1969), Optimization Theory With Applications, Wiley.",
+   "CHONG, E.K.P., ZAK, S.H. (2001). An Introduction to Optimization, Wiley.",
+   "BUNDAY, B.D. (1984). Basic Linear Programming, Edward Arnold.",
+   "GELFAND, I.M., FOMIN, S.V. (1963). Calculus of Variations, Prentice-Hall."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTA&dersNo=558"
+ }
+}

@@ -1,0 +1,450 @@
+{
+ "BYM 501E": {
+  "code": "BYM 501E",
+  "name": "Biyomedikal Enstrümantasyon",
+  "nameEn": "Biomedical Instrumentation",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Biyolojik/sağlık bilimlerinde kullanılan düzeneklerin incelenmesi ve tasarımı için elektronik mühendisliği yöntemlerinin uygulanması; insan bedeni üzerinde yapılan fizyolojik ölçümler, biyolojik/canlı sistemlerin modellenmesi, biyoelektrik işaretlerin, biyolojik/fizyolojik basınç, akış, akış hızı ve hacminin ölçümü; bu ölçümler için kullanılan algılayıcılar, düzeneklerde kullanılan elektronik devreler, elektriksel güvenlik. Biyomedikal düzeneklerde ve teknolojilerde son gelişmeler. Application of electronics engineering techniques to analysis and instrumentation in biological/medical sciences, physiological systems of the human body, modeling of biological systems, measurement of bioelectrical signals, pressure, flow, volume, and temperature on living systems; biomedical transducers, instrumentation electronics, electrical safety. Recent developments in biomedical instrumentation nd technology.",
+  "outcomes": [
+   "insan bedenindeki fizyolojik sistemleri tanıyacak ve modelleyebilecek,",
+   "bu sistemlerden algılanacak işaretleri ve bunları algılayan düzenleri tanıyacak,",
+   "insan bedeninden elektriksel işaretlerin nasıl algılandığını uygulamalı olarak öğrenecek,",
+   "insan bedenindeki diğer biyolojik işaretlerin (basınç, akış, akış hızı, hacim vb) hangi ölçümlerle izleneceğini öğrenecek,",
+   "biyomedikal ölçümleri yaparken elektriksel güvenlik konusunda bilinç kazanacaktır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş ve dersin genel tanıtımı",
+   "Hafta 2 · Tıbbi enstrümantasyonda temel kavramlar ve tanımlar",
+   "Hafta 3 · Temel algılayıcılar ve çalışma ilkeleri",
+   "Hafta 4 · Güçlendiriciler ve işaret işleme",
+   "Hafta 5 · Biyolojik potansiyeller (biyoelektrik işaretler)",
+   "Hafta 6 · Biyopotansiyel algılayan elektrodlar",
+   "Hafta 7 · Biyopotansiyel güçlendiriciler",
+   "Hafta 8 · Elektriksel güvenlik",
+   "Hafta 9 · Yarıyıl içi sınavı",
+   "Hafta 10 · Kan basıncı ve kalp seslerinin ölçümü",
+   "Hafta 11 · Kan akış hızı ve hacminin ölçümü",
+   "Hafta 12 · Solunum sisteminde ölçümler",
+   "Hafta 13 · Proje sunumları",
+   "Hafta 14 · Proje sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve dersin genel tanıtımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tıbbi enstrümantasyonda temel kavramlar ve tanımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel algılayıcılar ve çalışma ilkeleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Güçlendiriciler ve işaret işleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Biyolojik potansiyeller (biyoelektrik işaretler)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Biyopotansiyel algılayan elektrodlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Biyopotansiyel güçlendiriciler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Elektriksel güvenlik",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Yarıyıl içi sınavı",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kan basıncı ve kalp seslerinin ölçümü",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kan akış hızı ve hacminin ölçümü",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Solunum sisteminde ölçümler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
+  "textbooks": [
+   "\"Medical Instrumentation: Application and Design Fifth Edition,” by John G. Webster (Editor), Amit J. Nimunkar (Editor) Wiley, 2020, ISBN: 978-1119457336."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BYM&dersNo=501"
+ },
+ "BYM 506E": {
+  "code": "BYM 506E",
+  "name": "Electromag. Waves in Medicine",
+  "nameEn": "Electromag. Waves in Medicine",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş; Elektromagnetik temeller; Elektromagnetik dalgaların biyolojik etkileri; Elektromagnetik dalgalar ile maddelerin etkileşimi;Mikrodalga tomografisinin teorisi; Modelleme ve analiz; Yaklaşık ve iteratif yöntemler; Görüntüleme için kullanılan bilgisayar algoritmaları; Teorik ve deneysel sınırlamalar; Dokuların mikrodalga ile ısıtılması ve hipertermiya Introduction, Electromagnetic fundamentals; Biological effects of electromagnetic waves; Interaction of electromagnetic waves and materials. Theory of microwave tomography; Modelling and analysis; Approximate and iterative models; Computer algorithms for image reconstruction; Theoretical and experimental limitations; Microwave heating of tissues and hyperthermia.",
+  "outcomes": [
+   "Elektromagnetik dalgaların biyolojik etkilerini öğrenir,",
+   "Elektromagnetik dalgalar ile maddelerin etkileşimini öğrenir,",
+   "Mikrodalga tomografisinin teorisini anlar,",
+   "Teorik ve deneysel sınırlamaların neler olduğunu bilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş ve dersin genel tanıtımı",
+   "Hafta 2 · EM spektrum, Elektromagnetik temeller",
+   "Hafta 3 · Elektromagnetik dalgaların biyolojik etkileri;",
+   "Hafta 4 · Elektromagnetik dalgalar ile maddelerin etkileşimi;",
+   "Hafta 5 · Mikrodalga tomografisinin teorisi;",
+   "Hafta 6 · Modelleme ve analiz;",
+   "Hafta 7 · Yarıyıl Sınavı",
+   "Hafta 8 · Yaklaşık ve iteratif yöntemler;",
+   "Hafta 9 · Görüntüleme için kullanılan bilgisayar algoritmaları;",
+   "Hafta 10 · Teorik ve deneysel sınırlamalar",
+   "Hafta 11 · Dokuların mikrodalga ile ısıtılması ve hipertermiya.",
+   "Hafta 12 · Proje sunumları",
+   "Hafta 13 · Proje sunumları",
+   "Hafta 14 · Proje sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve dersin genel tanıtımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "EM spektrum, Elektromagnetik temeller",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Elektromagnetik dalgaların biyolojik etkileri;",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Elektromagnetik dalgalar ile maddelerin etkileşimi;",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Mikrodalga tomografisinin teorisi;",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Modelleme ve analiz;",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Yarıyıl Sınavı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yaklaşık ve iteratif yöntemler;",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Görüntüleme için kullanılan bilgisayar algoritmaları;",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Teorik ve deneysel sınırlamalar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Dokuların mikrodalga ile ısıtılması ve hipertermiya.",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
+  "textbooks": [
+   "“Biological and Medical Aspects of Electromagnetic Fields”, 3Ed., Frank S. Barnes and Ben Greenebaum, 2006 ."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BYM&dersNo=506"
+ },
+ "BYM 515": {
+  "code": "BYM 515",
+  "name": "Biyomalzemeler",
+  "nameEn": "Biomaterials",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Biomalzemelere genel bir bakış, malzeme karakterizasyonu, bio uyumlu malzeme olarak kullanılan metal, seramik ve polimerik implant malzemeler, kompozitler, biyomalzemelerin yapı-özellik ilişkileri, biyomalzemeye uygulanan biyolojik testler, yüzey özelliklerinin belirlenmesi ve olçüm teknikleri, yapısal özelliklerin değişiminin fizikokimyasal ve mekanik testlerle belirlenmesi, implantlarda doku uyumluluğu. A review of biomaterials, characterization of materials, metallic, ceramic and polymeric implant materials, composites, absorbable polymers, structure-property relationships of biological materials, testing structural properties of physicochemical tests and mechanical test, tissue response to implants.",
+  "outcomes": [
+   "Biyomalzemeler hakkında temel bilgileri kazanmak.",
+   "Biyomalzemelerin karakterizayonu için ölçüm ve test tekniklerini tanımak.",
+   "Biyomalzemelerin uygulamaları ve implantlar hakkında bilgi kazanmak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Biomalzemelere genel bir bakış",
+   "Hafta 2 · Malzeme karakterizasyonu",
+   "Hafta 4 · Biouyumlu malzeme olarak kullanılan metal, seramik, kompozit ve polimerik implant malzemeler",
+   "Hafta 6 · Biyomalzemelerin yapı-özellik ilişkileri.",
+   "Hafta 8 · Arasınav",
+   "Hafta 9 · Biyomalzemelere uygulanan biyolojik testler, yüzey özelliklerinin belirlenmesi ve ölçüm teknikleri, yapısal özelliklerin değişiminin fizikokimyasal ve mekanik testlerle belirlenmesi",
+   "Hafta 12 · Biyomedikal alanındaki biyomalzeme uygulamaları",
+   "Hafta 13 · İmplantlarda doku uyumluluğu",
+   "Hafta 14 · Proje sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Biomalzemelere genel bir bakış",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Malzeme karakterizasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Biouyumlu malzeme olarak kullanılan metal, seramik, kompozit ve polimerik implant malzemeler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Biyomalzemelerin yapı-özellik ilişkileri.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav"
+   },
+   {
+    "week": 9,
+    "topic": "Biyomalzemelere uygulanan biyolojik testler, yüzey özelliklerinin belirlenmesi ve ölçüm teknikleri, yapısal özelliklerin değişiminin fizikokimyasal ve mekanik testlerle belirlenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "Biyomedikal alanındaki biyomalzeme uygulamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "İmplantlarda doku uyumluluğu",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları"
+   }
+  ],
+  "textbooks": [
+   "1. J. B. Park, Biomaterials: An İntroduction, Plenum Press, 2007.",
+   "2. D.B. Ratner, (Ed) Biomaterials Science, Academic Press, 1996.",
+   "3. L.L. Hench, E.C. Ethridge, Biomaterials, Academic Press Newyork, 1982."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BYM&dersNo=515"
+ },
+ "BYM 596E": {
+  "code": "BYM 596E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BYM&dersNo=596"
+ },
+ "BYM 696E": {
+  "code": "BYM 696E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Sci. Research, Ethic & Seminar",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "- -",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BYM&dersNo=696"
+ }
+}

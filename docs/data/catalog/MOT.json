@@ -1,0 +1,467 @@
+{
+ "MOT 575E": {
+  "code": "MOT 575E",
+  "name": "Vehicle Dynamics",
+  "nameEn": "Vehicle Dynamics",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Pnömatik tekerleğin dinamiği, tekerlek asılışları, yalpa merkezleri ve ekseni, gezi dinamiği: genel denklemler, az ve aşırı dönme, bu karakterler üzerine olan etkiler, non-lineer etkiler, dinamik kararlılık, muhtelif datalı taşıtların karşılaştırılması, arkadan da direksiyon, tek izli taşıtların dinamiği, katarların dinamiği Dynamics of pneumatic tyre, wheel suspensions, roll center and axes, handling of vehicles: general equations of motion, over and under steering, influence of data on over and under steering, comparison of different vehicles, non-linear influences, dynamic stability, dynamics of single track vehicles, rear axle steering, dynamics of articulated vehicles",
+  "outcomes": [
+   "Taşıt dinamiği esasları ile ilgili temel bilgiler,",
+   "Taşıt stabilitesi ile ilgili temel bilgiler,",
+   "Kararlılıkla ile ilgili bilgiler,",
+   "Taşıtların kullanım amaçlarına göre stabilite özelliklerini tayin etme becerisi,",
+   "Taşıt tasarımında dinamik analiz konularını irdeleme becerisi,",
+   "Stabilite konusunda problem çözme becerisini edinme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Ders içeriği ve konular üzerine genel anlatım",
+   "Hafta 2 · Lastik tekerleğin mekaniği",
+   "Hafta 3 · Taşıt yalpası",
+   "Hafta 4 · Direksiyon sistemi ve elastikliği",
+   "Hafta 5 · Gezi Mekaniğine Giriş",
+   "Hafta 6 · Gezi Mekaniği",
+   "Hafta 7 · Gezi mekaniği (Stasyoner viraj davranışı)",
+   "Hafta 8 · Gezi mekaniği (Stasyoner olmayan viraj davranışı)",
+   "Hafta 9 · Gezi mekaniği (Yan rüzgar etkisi)",
+   "Hafta 10 · Gezi mekaniği (Yük değişimi etkisi)",
+   "Hafta 11 · Gezi Mekaniği (Diğer parametreler)",
+   "Hafta 12 · Stabiliteyi etkileyen parametreler",
+   "Hafta 13 · Stabiliteyi etkileyen parametreler (Römork etkisi, katarların dinamiği)",
+   "Hafta 14 · Test, ölçme ve değerlendirme yöntemleri, aktif emniyet ve kaza önleme"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders içeriği ve konular üzerine genel anlatım",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Lastik tekerleğin mekaniği",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Taşıt yalpası",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Direksiyon sistemi ve elastikliği",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Gezi Mekaniğine Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Gezi Mekaniği",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Gezi mekaniği (Stasyoner viraj davranışı)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Gezi mekaniği (Stasyoner olmayan viraj davranışı)",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Gezi mekaniği (Yan rüzgar etkisi)",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Gezi mekaniği (Yük değişimi etkisi)",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Gezi Mekaniği (Diğer parametreler)",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Stabiliteyi etkileyen parametreler",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Stabiliteyi etkileyen parametreler (Römork etkisi, katarların dinamiği)",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Test, ölçme ve değerlendirme yöntemleri, aktif emniyet ve kaza önleme",
+    "outcomes": "6"
+   }
+  ],
+  "textbooks": [
+   "Mitschke, M. (1990). Dynamik Der Kraftfahrzeuge, Band C: Fahrverhalten. Springer Verlag.",
+   "Gillespie, T.D. (1992). Fundamentals Of Vehicle Dynamic. SAE.",
+   "Reimpell J., Stoll H. ve Betzler, J.W. (2001). The Automotive Chasis: Engineering Principles. Elsevier.",
+   "Genta, G. (1997). Motor Vehicle Dynamics - Modeling And Simulation. World Scientific.",
+   "Rill, G. (2011). Road Vehicle Dynamics: Fundamentals and Modeling, CRC Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MOT&dersNo=575"
+ },
+ "MOT 579": {
+  "code": "MOT 579",
+  "name": "Içten Yanmalı Mot.Hes.&Geliş.",
+  "nameEn": "Calculation and Development of Internal Combustion Engines",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İçten yanmalı motorların geçmişi ve önemli özelliklerinin günümüze dek gelişimi. Yeni bir motor modelinin tasarımında ve geliştirilmesinde ana kriterler, matematik modeller ve hesaplama yöntemleri. Motor gerçek çevriminde meydana gelen proseslerin birbirlerine olan etkileri ve alternatiflerin karşılaştırılması yöntemleri. Modelleme, sonuçların değerlendirilmesi ve tasarıma uygulanmasına ait örnekler. Short history of internal combustion engines and the development of their important characteristics to the present day. The main criteria for the design and development of a new engine model, mathematical models and calculation methods. The interaction effects of the real processes occurring in the motor cycle and comparison of alternatives methods. Modeling; evaluation of obtained results and examples of design and its implementations.",
+  "outcomes": [
+   "İYM’ın ilk ortaya çıkışından günümüze kadar geçirdiği evreler ve özelliklerindeki değişimler hakkında bilgi edinilecek, gelecekte motorların sahip olması beklenen özelliklerle ilgili tahminler yürüterek, tasarımı ve geliştirilmesi yapılacak sistem kavranacaktır.",
+   "İYM hesaplama ve geliştirme kriterleri kavramı anlaşılacak ve bu kapsamda motor özellikleri başlığı altına giren konularla ilgili bilgilere sahip olunacaktır.",
+   "İYM hesaplama ve geliştirme hedefleri ile ilgili çelişkiler ve bu çelişkileri olanaklar dahilinde giderme yöntemleri öğrenilecektir.",
+   "Güncel konularda hazırlanacak ödevler kapsamında günümüz tekniği hakkında bilgi edinilirken yapılacak sunumlarla, hazırlanılan bir konunun yazılı ve sözlü sunumu ve aynı zamanda bir sunumun dinlenerek ve sorular sorularak anlaşılması konusunda deneyim kazanılacaktır.",
+   "Ar-Ge ve tasarım konusu ile ilgili güncel makale örneği üzerinde makale deşifre etme uygulaması yapılacak ve \"sürekli gelişme\" kavramı anlaşılacaktır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İYM konusunda geleceğe yönelik perspektif. Hesaplama için kabul edilen şartlar ve verilenler. İş gazları (yakıt-hava karışımı ve yanma ürünleri) miktarı ;",
+   "Hafta 2 · Emme ve aşırı doldurma süreçlerinin parametreleri;",
+   "Hafta 3 · Sıkıştırma sürecinin parametreleri;",
+   "Hafta 4 · Benzin motorlarında homojen karışımın yanma süreci parametreleri. Vuruntu kriteri;",
+   "Hafta 5 · Kademeli dolgulu benzin motorlarında yanma süreci parametreleri;",
+   "Hafta 6 · Dizel motorlarında tutuşma ve difuzyon mekanizması ile yanma süreçleri parametreleri;",
+   "Hafta 7 · Yanma sürecinde kirletici maddelerin (CO, HC, C-is) oluşum mekanizmaları ve hesabı;",
+   "Hafta 8 · Yanma sürecinde Azot Oksidinin (NO) oluşumunun Zeldovic mekanizması ve dNO/dt denklemi;",
+   "Hafta 9 · Genişleme ve egzoz süreçlerin parametreleri;",
+   "Hafta 10 · Motorların indike ve efektif karakteristikleri ve çevrime ait parametrelerle bağıntıları.",
+   "Hafta 11 · Motor performansı, yakıt tüketimi ve egzoz emisyon değerlerini etkileyen parametreler;",
+   "Hafta 12 · Benzin motorlarının geliştirilme yöntemleri;",
+   "Hafta 13 · Dizel motorlarının geliştirilme yöntemleri;",
+   "Hafta 14 · Alternatif motorlar (Wankel, Gaz Türbini, Stirling ve Yakıt Hücresi)."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İYM konusunda geleceğe yönelik perspektif. Hesaplama için kabul edilen şartlar ve verilenler. İş gazları (yakıt-hava karışımı ve yanma ürünleri) miktarı ;",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Emme ve aşırı doldurma süreçlerinin parametreleri;",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Sıkıştırma sürecinin parametreleri;",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Benzin motorlarında homojen karışımın yanma süreci parametreleri. Vuruntu kriteri;",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Kademeli dolgulu benzin motorlarında yanma süreci parametreleri;",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Dizel motorlarında tutuşma ve difuzyon mekanizması ile yanma süreçleri parametreleri;",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Yanma sürecinde kirletici maddelerin (CO, HC, C-is) oluşum mekanizmaları ve hesabı;",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Yanma sürecinde Azot Oksidinin (NO) oluşumunun Zeldovic mekanizması ve dNO/dt denklemi;",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Genişleme ve egzoz süreçlerin parametreleri;",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Motorların indike ve efektif karakteristikleri ve çevrime ait parametrelerle bağıntıları.",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Motor performansı, yakıt tüketimi ve egzoz emisyon değerlerini etkileyen parametreler;",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Benzin motorlarının geliştirilme yöntemleri;",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dizel motorlarının geliştirilme yöntemleri;",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Alternatif motorlar (Wankel, Gaz Türbini, Stirling ve Yakıt Hücresi).",
+    "outcomes": "1"
+   }
+  ],
+  "textbooks": [
+   "Kolchin, A. ve Demidov, V. (1984). Design of Automotive Engines. MIR Publishers. Moscow.",
+   "Khovakh, M. (1977). Motor Vehicle Engines. MIR Publishers. Moscow.",
+   "Bertrand, D. H. (2002). Practical Diesel-Engine Combustion Analysis. SAE Inc.",
+   "Basshuysen, R. ve Schäfer, F. (2004). Internal Combustion Engine Handbook: Basics, Components, Systems and Perspectives. SAE International.",
+   "Mehdiyev, R.İ. (2000). Benzin Motorların Gerçek Çevrim Olaylarının Matematik Modeli ve Hesaplama Programı. AZTÜ. Bakü."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MOT&dersNo=579"
+ },
+ "MOT 581": {
+  "code": "MOT 581",
+  "name": "Taşıt Mot.Araş.&denay Teknikl.",
+  "nameEn": "Research and Experimental Techniques for Vehicle Engines",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Taşıt motorları üzerinde yapılabilecek araştırmaların önemi ve sınıflandırılması, araştırma ve deney prensipleri, motor deneylerinin sınıflandırılması, motorun performans karakteristikleri ile ilgili araştırmalar, motor yükleme ve test donanımları, motor çevrimlerinin deneysel olarak çıkartılması ve analizi, yanma odası basıncı ölçü ve kayıt aletleri, motorlarda sıcaklık ölçümü ve ölçü aletleri, motorlarda vuruntu ve tutuşma gecikmesi araştırmaları. Experimental investigation and analysis of engines, principles of research, classification of engine experiments, engine performance characteristics and measurements, engine dynamometers and test stands, engine cycle analysis, pressure transducers, amplifiers and recorders, temperature measurements in engines, research on the design of combustion.",
+  "outcomes": [
+   "Deneysel araştırma ve geliştirme çalışmalarında matematik, fen bilimleri ve mühendislik bilgilerini uygulama becerisi",
+   "Deney sonuçlarını analiz edip yorumlama becerisi",
+   "Deneysel araştırma ve geliştirme çalışmalarında modern araç, gereç ve teçhizatı kullanabilme becerisi.",
+   "Ölçüm sistemlerinin prensiplerine göre uygulamaları için tanıma becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Taşıt motoru araştırmalarının önemi ve sınıflandırılması",
+   "Hafta 2 · Taşıt motorlarının performans araştırması",
+   "Hafta 3 · Taşıt motorlarının performans araştırması",
+   "Hafta 4 · Taşıt motorlarının performans araştırması",
+   "Hafta 5 · Dönme sayısının ölçülmesi",
+   "Hafta 6 · Yakıt tüketiminin ölçülmesi",
+   "Hafta 7 · Motorlarda emilen hava miktarının ölçülmesi",
+   "Hafta 8 · Motorlarda soğutma suyu debisi ve ısısının ölçümü",
+   "Hafta 9 · Motor araştırmalarında sıcaklık ölçmeleri",
+   "Hafta 10 · Motor araştırmalarında sıcaklık ölçmeleri",
+   "Hafta 11 · Taşıt motorlarında motor çevriminin analizi",
+   "Hafta 12 · Yanma odası tasarımı ile ilgili araştırmalar",
+   "Hafta 13 · Yanma odası tasarımı ile ilgili araştırmalar",
+   "Hafta 14 · Egzoz gazlarının ölçümü ile ilgili araştırmalar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Taşıt motoru araştırmalarının önemi ve sınıflandırılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Taşıt motorlarının performans araştırması",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Taşıt motorlarının performans araştırması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Taşıt motorlarının performans araştırması",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Dönme sayısının ölçülmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yakıt tüketiminin ölçülmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Motorlarda emilen hava miktarının ölçülmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Motorlarda soğutma suyu debisi ve ısısının ölçümü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Motor araştırmalarında sıcaklık ölçmeleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Motor araştırmalarında sıcaklık ölçmeleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Taşıt motorlarında motor çevriminin analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Yanma odası tasarımı ile ilgili araştırmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Yanma odası tasarımı ile ilgili araştırmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Egzoz gazlarının ölçümü ile ilgili araştırmalar"
+   }
+  ],
+  "textbooks": [
+   "Grohe, H. (1987). Messen an Verbrennunsmotoren.Vogel Buchverlag, 3. Baskı.",
+   "Khovakh, M. (1971). Motor Vehicle Engines. MIR Publishers. Moscow.",
+   "BOSCH Automotive Handbook, 5th Edition.",
+   "BOSCH Kraftfahrtechnisches Taschenbuch. CD Rom Edition."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MOT&dersNo=581"
+ },
+ "MOT 582": {
+  "code": "MOT 582",
+  "name": "Taşıtlarda Ömür Testleri",
+  "nameEn": "Life Cycle Testing by Vehicles",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yorulma tasarımına giriş, operasyonel işletme dayanımını etkileyen parametreler, Yol datası toplama, proses etme ve teorik ve deneysel ortamda kullanma teknikleri, Yükleme çeşitleri, Blok-program ve rastlantısal yükleme, yük spektrumu-test spektrumu ilişkisi, Ülke yol şartlarını temsil eden yük spektrumu ve ömür çevrimlerinin elde edilme teknikleri, Taşıt gövde ve komponent bazında ömür testleri, hızlandırılmış ömür testi, Bilgisayar destekli ileri mühendislik uygulamaları ve konuyla ilgili software ve programlar. Introduction to Fatigue Design, Fatigue Strength Tests, Determination of Component Stresses, Determination of load Collectives, Life Time Lines, Endurance Strength Simulation, Function and Fatigue Testing",
+  "outcomes": [
+   "Yorulma esasları ile ilgili temel bilgiler,",
+   "Yol uyarısı (pürüzlülüğü) ile ilgili temel bilgiler,",
+   "Yorulma dayanımı ile ilgili bilgiler,",
+   "Ön gerilmenin etkilerini görme becerisi,",
+   "Yük kolektifi elde etme becerisi,",
+   "Ömür tayini becerisi edinmiş olacaklardır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Ders içeriği ve konular üzerine genel anlatım",
+   "Hafta 2 · Yorulma dayanımı",
+   "Hafta 3 · Tasarım konsepti",
+   "Hafta 4 · Taşıt ömür testleri",
+   "Hafta 5 · Yük kollektifleri",
+   "Hafta 6 · Test kollektifleri",
+   "Hafta 7 · Test kollektifleri",
+   "Hafta 8 · Sayma Yöntemleri",
+   "Hafta 9 · Sayma Yöntemleri",
+   "Hafta 10 · Carlos Modeli",
+   "Hafta 11 · İleri Sayma Yöntemleri",
+   "Hafta 12 · Birikimli Hasar Teorisi",
+   "Hafta 13 · Birikimli Hasar Teorisi",
+   "Hafta 14 · Yorulma testleri ve laboratuar uygulaması"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Ders içeriği ve konular üzerine genel anlatım",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Yorulma dayanımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Tasarım konsepti",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Taşıt ömür testleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Yük kollektifleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Test kollektifleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Test kollektifleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Sayma Yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Sayma Yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Carlos Modeli",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "İleri Sayma Yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Birikimli Hasar Teorisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Birikimli Hasar Teorisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Yorulma testleri ve laboratuar uygulaması",
+    "outcomes": "6"
+   }
+  ],
+  "textbooks": [
+   "Radaj, D. (1995). Ermüdungsfestigkeit. Springer Verlag.",
+   "Wallentowitz, H., (2005). Structural Design of Vehicle, RWTH.",
+   "Sonsino, C. (1997). Fatigue Design and Testing, Seminar Notes for ITU. Freuhofer Institut Darmstadt."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MOT&dersNo=582"
+ }
+}

@@ -9459,6 +9459,25 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=405"
  },
+ "MAK 4050E": {
+  "code": "MAK 4050E",
+  "name": "Isıl Sistem Optimizasyonu",
+  "nameEn": "Optimization of Thermal Syst.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 1,
+   "lab": 0,
+   "local": 2.5,
+   "ects": 5.5
+  },
+  "description": "Mühendislik tasarımının esasları. Ekonomik analiz. Denklem uydurma. Doğrusal ve doğrusal olmayan denklem takınlarının çözümü. Maliyet analizi. Pompa, fan, kompresör, türbin, ikili karışımlar vb elemanların ve proseslerin tasarım ve seçim esasları. Isıl donanımın matematik modellenmesi. Isıl sistemlerin simülasyonu. Optimum sistem tasarımının esasları. Isıl sistemlerin optimizasyonu, endüstriyel uygulamalar. Fundamentals of engineering design. Economic analysis. Equation fitting. Solution of linear and nonlinear equation sets. Cost analysis. Fundamentals of design, and selection of thermal equipment and processes such as heat exchangers, evaporators, condensers, boilers, binary mixtures and turbomachinery. Mathematical modelling of thermal equipment. Simulation of thermal systems. Fundamentals of optimum system design. Optimisation methods and optimisation of thermal systems.",
+  "outcomes": null,
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=4050"
+ },
  "MAK 4051": {
   "code": "MAK 4051",
   "name": "Taşıtlarda Titreşim ve Gürültü",
@@ -12084,5 +12103,1287 @@
    "-"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=492"
+ },
+ "MAK 605": {
+  "code": "MAK 605",
+  "name": "Türbomak.Aero-Termodinamiği",
+  "nameEn": "Aero-Thermodynamics of Turbomachines",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş, boyut analizi, benzerlik, verim tanımları, kanat dizinleri, eksenel türbinler, eksenel kompresörler, pompalar, fanlar (iki boyutlu teori), eksenel makinalardaki üç boyutlu akış, radyal pompalar, fanlar ve kompresörler, radyal girişli türbinler Introduction, similarity, definitions of efficiencies, cascade theory, axial turbines, axial compressors, pump, fans, 3D flow in axial machines, radial pumps and compressors, radial inflow turbines.",
+  "outcomes": [
+   "İki ve üç boyutlu olarak bir türbomakinanın tasarımını yapabilme",
+   "Tasarımı yapılmış olan bir türbomakinanın performans karakteristiklerini teorik olarak belirleyebilme",
+   "Türbomakina içindeki akışı hesaplayan yöntemler hakkında bilgi sahibi olma",
+   "Kayıp korelasyonlarını kullanmayı öğrenme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş – Lisans bilgilerinin hatırlatılması",
+   "Hafta 2 · Boyut analizi, benzeşim, özgül hız, çalışma aralığı, verim tanımları",
+   "Hafta 3 · İki boyutlu kanat dizinleri-giriş",
+   "Hafta 4 · İki boyutlu kanat dizinleri",
+   "Hafta 5 · Eksenel kompresörler, pompalar ve fanlar-iki boyutlu teori:Boyut analizi, reaksiyon derecesi",
+   "Hafta 6 · Eksenel komp. , pompalar ve fanlar-iki boyutlu teori:Performans analizi, meridyenel akış",
+   "Hafta 7 · Eksenel makinalardaki üç boyutlu akış ve ikincil akışların performansa etkileri",
+   "Hafta 8 · Karışık akımlı ve radyal makinalardaki tasarım teknikleri, kayma faktörü",
+   "Hafta 9 · Karışık akımlı ve radyal makinalarda akış analizinde kullanılan konform transformasyonlar",
+   "Hafta 10 · Eksenel fanlar:tasarım teknikleri ve performans analizleri",
+   "Hafta 11 · Uskurlar:tasarım teknikleri ve performans analizleri",
+   "Hafta 12 · Radyal girişli türbinler",
+   "Hafta 13 · Gaz türbinleri",
+   "Hafta 14 · Gaz türbinleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş – Lisans bilgilerinin hatırlatılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Boyut analizi, benzeşim, özgül hız, çalışma aralığı, verim tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İki boyutlu kanat dizinleri-giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "İki boyutlu kanat dizinleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Eksenel kompresörler, pompalar ve fanlar-iki boyutlu teori:Boyut analizi, reaksiyon derecesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Eksenel komp. , pompalar ve fanlar-iki boyutlu teori:Performans analizi, meridyenel akış",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Eksenel makinalardaki üç boyutlu akış ve ikincil akışların performansa etkileri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Karışık akımlı ve radyal makinalardaki tasarım teknikleri, kayma faktörü",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Karışık akımlı ve radyal makinalarda akış analizinde kullanılan konform transformasyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Eksenel fanlar:tasarım teknikleri ve performans analizleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Uskurlar:tasarım teknikleri ve performans analizleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "Radyal girişli türbinler",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "Gaz türbinleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Gaz türbinleri"
+   }
+  ],
+  "textbooks": [
+   "R.I. Lewis; Turbomachinery Performance Analyis, Arnold Publishing Company, 1996 Cohen, Saravanamutto, Rogers; Gas Turbine Theory, Pearson Education, 2001",
+   "S. L. Dixon, Fluid Mechanics and Thermodynamics of Turbomachinery, Pergamon Press, 1978"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=605"
+ },
+ "MAK 608E": {
+  "code": "MAK 608E",
+  "name": "Modelling of Turbulance",
+  "nameEn": "Modelling of Turbulance",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Türbülansın üretimi ve yayılımı, türbülans ölçekleri. Türbülanslı akışlar için momentum, enerji ve bileşenlerin transportu denklemlerinin Reynolds ortalaması için çıkarılması. Transport denklemlerinin her bir teriminin modellenmesi. Model sabitlerinin çıkarılması. Serbest akışlar ve duvarla sınırlandırılmış akışlar için basit kapatma yaklaşımları. Bu yaklaşımların jetlere, borulara, kanallara, sınır tabakalara, kaldırma kuvvetinden kaynaklanan serbest akışlara uygulanması. Duvar fonksiyonları ve duvar yakını için diğer yaklaşımlar. k-epsilon tabanlı modeller, diğer döngü- viskozite yaklaşımlı modeller, ikinci dereceden kapatma yaklaşımları. Büyük döngü simülasyonları. Favre ortalamalı akışlarla ilgili ön bilgiler. Turbulence: its production, dissipation, and scaling . Reynolds averaged equations for momentum, energy, and species transfer. Modeling of transport equations term by term. Determination of model constants. Simple closure approaches for free and bounded turbulent shear flows. Applications to jets, pipe and channel flows, boundary layers, buoyant plumes and thermals. Wall functions and other approaches for near wall turbulence. k-epsilon models, other eddy-viscosity models, second order closure models. Large eddy simulations. Introduction to Favre Averaged Models.",
+  "outcomes": [
+   "Türbülanslı akış, ısı ve kütle transferi",
+   "Transport denklemlerinin yapısı ve kapatma problemi",
+   "Türbülans ölçeklerinin karşılaştırılması",
+   "Model sabitleri ve fonksiyonları",
+   "Türbülans modelleri ile fiziksel durum arasındaki ilişki",
+   "Türbülanslı akışın hesaplamalı yöntemlerle öngörülmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel kavramlar",
+   "Hafta 2 · Sıkıştırılamayan akış için türbülanslı yönetici denklemler",
+   "Hafta 3 · Matematiksel araçlar;kapatma yöntemi; anizotropik homojen türbülans",
+   "Hafta 4 · Reynolds gerilmelerini n modellenmesi; türbülans ölçekleri",
+   "Hafta 5 · İkinci mertebeden modeller",
+   "Hafta 6 · Skaler bağımlı değişkenler için türbülanslı akı modellemesi",
+   "Hafta 7 · Bir duvar ile sınırlandırılmamış akışların modelenmesi",
+   "Hafta 8 · Duvar etkisini belirleme yöntemleri",
+   "Hafta 9 · Eddi-viskozite yaklaşımı: Sıfır ve tek denklemli modeller;iki ve üç denklemli modeller",
+   "Hafta 10 · k-epsilon modellerinde yapılan değişiklikler",
+   "Hafta 11 · Düşük Reynolds sayısı etkileri; kaldırma kuvvetinin etkisi",
+   "Hafta 12 · Karmaşık akışların modelelnmelerinde kaynaklanan problemler",
+   "Hafta 13 · Favre ortalaması",
+   "Hafta 14 · Büyük döngü simülasyonları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "Sıkıştırılamayan akış için türbülanslı yönetici denklemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Matematiksel araçlar;kapatma yöntemi; anizotropik homojen türbülans",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Reynolds gerilmelerini n modellenmesi; türbülans ölçekleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "İkinci mertebeden modeller",
+    "outcomes": "2-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Skaler bağımlı değişkenler için türbülanslı akı modellemesi",
+    "outcomes": "1-2-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Bir duvar ile sınırlandırılmamış akışların modelenmesi",
+    "outcomes": "1-2-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Duvar etkisini belirleme yöntemleri",
+    "outcomes": "1-2-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Eddi-viskozite yaklaşımı: Sıfır ve tek denklemli modeller;iki ve üç denklemli modeller",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "k-epsilon modellerinde yapılan değişiklikler",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Düşük Reynolds sayısı etkileri; kaldırma kuvvetinin etkisi",
+    "outcomes": "2-4-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Karmaşık akışların modelelnmelerinde kaynaklanan problemler",
+    "outcomes": "1-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Favre ortalaması",
+    "outcomes": "1-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Büyük döngü simülasyonları"
+   }
+  ],
+  "textbooks": [
+   "Schiestel R., Modeling and simulation of turbulent flows , NJ, USA : Wiley : ISTE, 2008.",
+   "Lesieur, Marcel ,Turbulence in fluids, Dordrecht ; London : Springer, c2008.",
+   "Pope SB, Cambridge : Cambridge University Press, 2000.",
+   "Bernard PS, Wallace JM, Turbulent Flow,Analysis, Measurement, and Prediction, John Wiley and Sons, New Jersey, 2002.",
+   "Wilcox DC, Turbulence Modeling for CFD, DCW Industries, 1998."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=608"
+ },
+ "MAK 611": {
+  "code": "MAK 611",
+  "name": "Deneysel Mekanik",
+  "nameEn": "Experimental Mechanics",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Gerilme,Bir noktada düzlemsel gerilme durumu, Asal Gerilmeler, Gerilme şekil değiştirme ilişkileri, Birim Şekil Değiştirme-Deformasyon ilişkisi, Asal şekil değiştirmeler ve Mohr çemberi, Deneysel gerilme analizi yöntemleri, Ölçüm sistemleri, Elektrik direnç strain gageler, Elektrik direnç strain gagelerin ölçüm prensibi, Gage konfigurasyonu ve sınıflandırılması, Strain gagelerin yapıştırılması ve ölçüme hazırlık operasyonları, Gage Faktoru ve çapraz duyarlılık katsayısı, Wheatstone köprü devresi, Tam, yarım ve çeyrek Wheatsone köprü devreleri, Strain Gage temelli kuvvet, basınç, potansiyometre ve ivme sensörleri, Strain Gage Rozetleri ve veri analizi, Şant Direnç kalibrasyonu, fotoelastisite, optik ölçüm yöntemleri Stress, Two-Dimensional Stress State at a Point, Principal Stress, Stress-Strain Relations, Strain and Displacement, Principal Strains and Mohr’s Strain Circle, Methods of Experimental Stress Analysis, Measurements Systems, Electrical resistance strain gages, The principle of measuring the electrical resistance strain gage, Strain Gage configurations and classification, Operations in preparation for strain gage bonding and measurement, Gage Factor and cross-sensitivity coefficient, Wheatstone bridge circuit, Full, half and quarter-bridge circuits Wheatsone, Strain gage based force, pressure, acceleration sensors, and potentiometers, Strain Gage Rosette and data analysis, Shunt calibration resistor,photoelasticity, optical measurement methods",
+  "outcomes": [
+   "Strain Gage uygulama ve ölçme tekniğini",
+   "Deneysel mekanikte kullanılan ölçme yöntemlerini",
+   "Alınan verilerden gerilme hesabı yapmayı",
+   "Strain gage temelli transduserlerin tasarımını ve uygulaması"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Gerilme, Bir noktada düzlemsel gerilme durumu",
+   "Hafta 2 · Asal Gerilmeler, Gerilme-şekil değiştirme ilişkileri, Birim Şekil Değiştirme-Deformasyon ilişkisi",
+   "Hafta 3 · Asal şekil değiştirmeler ve Mohr çemberi",
+   "Hafta 4 · Deneysel gerilme analizi yöntemleri",
+   "Hafta 5 · Ölçüm sistemleri, Elektrik direnç strain gageler",
+   "Hafta 6 · Gage konfigurasyonu ve sınıflandırılması, Strain gagelerin yapıştırılması ve ölçüme hazırlık operasyonları",
+   "Hafta 7 · Gage Faktoru ve çapraz duyarlılık katsayısı, Wheatstone köprü devresi",
+   "Hafta 8 · Tam, yarım ve çeyrek Wheatsone köprü devreleri",
+   "Hafta 9 · Strain Gage temelli kuvvet, basınç, potansiyometre ve ivme sensörleri",
+   "Hafta 10 · Strain Gage Rozetleri, Şant Direnç kalibrasyonu",
+   "Hafta 11 · Veri Analizi",
+   "Hafta 12 · Fotoelasticity",
+   "Hafta 13 · Optik Yöntemler",
+   "Hafta 14 · Laboratuar uygulaması"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gerilme, Bir noktada düzlemsel gerilme durumu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Asal Gerilmeler, Gerilme-şekil değiştirme ilişkileri, Birim Şekil Değiştirme-Deformasyon ilişkisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Asal şekil değiştirmeler ve Mohr çemberi",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Deneysel gerilme analizi yöntemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçüm sistemleri, Elektrik direnç strain gageler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Gage konfigurasyonu ve sınıflandırılması, Strain gagelerin yapıştırılması ve ölçüme hazırlık operasyonları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Gage Faktoru ve çapraz duyarlılık katsayısı, Wheatstone köprü devresi",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Tam, yarım ve çeyrek Wheatsone köprü devreleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 9,
+    "topic": "Strain Gage temelli kuvvet, basınç, potansiyometre ve ivme sensörleri",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Strain Gage Rozetleri, Şant Direnç kalibrasyonu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Veri Analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Fotoelasticity",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Optik Yöntemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Laboratuar uygulaması"
+   }
+  ],
+  "textbooks": [
+   "Strain Measurements and Stress Analysis, Akhtar S. Khan, Xinwei Wang, , Prentice Hall, 2001",
+   "Formulas for Stress, Strain, and Structural Matrices, Walter D. Pilkey, Wiley, 2004",
+   "Experimental Stress Analysis, James W. Dally, William F. Riley, Mc Graw Hill, 2009",
+   "Modern Experimental Stress Analysis, James F. Doyle, Wiley, 2004"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=611"
+ },
+ "MAK 612E": {
+  "code": "MAK 612E",
+  "name": "Adv.Finite Elem. Analy.in S.M.",
+  "nameEn": "Adv.Finite Elem. Analy.in S.M.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Doğrusal olmayan sonlu elemanlar yöntemleri, büyük deformasyon problemleri, doğrusal olmayan malzeme modelleri, hibrid ve karışık sonlu elemanlar yöntemleri, Galerkin en küçük kareler yöntemi, adaptif sonlu elemanlar yöntemleri, temas mekaniği. Nonlinear FEM, large deformation problems, nonlinear material models, hybrid and mixed formulations, Galerkin least square method, adaptive FEM, contact mechanics.",
+  "outcomes": [
+   "Doğrusal olmayan mühendislik problemlerini sonlu elemanlar yöntemlerini kullanarak çözümleyebilme.",
+   "Mühendislik analizi esnasında karşılaşılan sorunları araştırma yöntemlerini kullanarak çözümleyebilme",
+   "Problemlerin çözümü esnasında öngörülemeyen karmaşık sorunların çözümü için yeni stratejik yaklaşımlar geliştirebilme",
+   "Sonlu elemanlar yöntemi ile zamana bağlı analiz yapma yeteneği kazandırma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Sonlu Elemanlar Yönteminin Temelleri",
+   "Hafta 2 · Doğrusal Olmayan Problemlere Giriş",
+   "Hafta 3 · Doğrusal Olmayan Sonlu Eleman Formülasyonları",
+   "Hafta 4 · Büyük Deformasyon Problemleri",
+   "Hafta 5 · Doğrusal Olmayan Malzeme Davranışı",
+   "Hafta 6 · Tek Boyutlu Eleman ile Formülasyon",
+   "Hafta 7 · Hibrid Elemanlar",
+   "Hafta 8 · Karışık Çözüm Yöntemleri",
+   "Hafta 9 · Galerkin en küçük kareler yöntemi",
+   "Hafta 10 · Elastoplastik Davranış",
+   "Hafta 11 · Kiriş Tipi Elemanlarda Lineer Olmayan Formülasyonlar",
+   "Hafta 12 · Levha Tipi Elemanlarda Lineer Olmayan Formülasyonlar",
+   "Hafta 13 · Temas Mekaniği",
+   "Hafta 14 · Adaptif sonlu elemanlar yöntemleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sonlu Elemanlar Yönteminin Temelleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Doğrusal Olmayan Problemlere Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal Olmayan Sonlu Eleman Formülasyonları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Büyük Deformasyon Problemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Doğrusal Olmayan Malzeme Davranışı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Tek Boyutlu Eleman ile Formülasyon",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Hibrid Elemanlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Karışık Çözüm Yöntemleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Galerkin en küçük kareler yöntemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Elastoplastik Davranış",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kiriş Tipi Elemanlarda Lineer Olmayan Formülasyonlar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Levha Tipi Elemanlarda Lineer Olmayan Formülasyonlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Temas Mekaniği",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Adaptif sonlu elemanlar yöntemleri"
+   }
+  ],
+  "textbooks": [
+   "J. N. Reddy, An Introduction To Nonlinear Finite Element Analysis, Oxford University Press, 2004",
+   "M. A. Crisfield, Non-linear Finite Element Analysis of Solids and Structures, Cilt 1 ve 2, Wiley,1991.",
+   "T. J. R. Hughes, The Finite Element Method, Dover Publishers, New York, 2000.",
+   "Zienkiewicz, O.C., and Taylor, R.L., The Finite Element Method, McGraw-Hill, 1991.",
+   "P. Wriggers, Nonlinear finite element methods, Springer, 2008.",
+   "T. Belytschko, W. K. Liu, B. Moran, Nonlinear finite elements for continua and structures, Wiley, 2000."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=612"
+ },
+ "MAK 613": {
+  "code": "MAK 613",
+  "name": "Elastik Stabilite Teorisi",
+  "nameEn": "Theory of Elastic Stability",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Elastik stabilite teorisinin temel kavramları, burkulma türleri. Rijit cisimlerin stabilitesi. Elastik kolonların stabilitesi. Kiriş-kolonların stabilitesi. Çerçevelerin burkulması. Büyük yerdeğiştirme teorisi. Kesme kuvvetinin burkulma yüküne etkisi. Gerçek kolon davranışı. Stabilitede enerji yöntemleri. Sayısal yöntemler. Eğri eksenli çubukların burkulması. Basic concepts of the theory of elastic stability, types of buckling. Stability of rigid systems. Stability of elastic column. Stability of beam-columns. Buckling of frames. Large displacement theory. Effects of shear force on the buckling load. Real column behavior. Energy methods in stability theory. Numerical methods. Buckling of curved beams.",
+  "outcomes": [
+   "Elastik stabilitenin tanımı, çeşitleri ve çözüm yöntemleri hakkında bilgi sahibi olacaktır",
+   "Rijit sistemlerin stabilitesi ve bunların analitik ve enerji yöntemleriyle çözümleri hakkında bilgi sahibi olacaktır",
+   "Çeşitli mesnetleme şartlarındaki kolonların burkulma yüklerinin hesabı hakkında bilgi sahibi olacaktır",
+   "Değişken yüklü ve değişken kesitli kolonların burkulma yüklerini hesaplayacaktır",
+   "Büyük yer değiştirme teorisi hakkında bilgi sahibi olacaktır",
+   "Kesme kuvvetinin burkulma yüküne etkisini hesaplayacaktır",
+   "Gerçek kolon davranışını hesaplayacaktır",
+   "Stabilite problemlerinin çözümünde enerji yöntemlerini kullanabilecektir",
+   "Stabilite problemlerinin çözümünde sayısal yöntemleri kullanabilecektir",
+   "Eğri eksenli çubukların burkulma hesabını yapacaktır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Elastik stabilitenin temel kavramları. Burkulma türleri.",
+   "Hafta 2 · Rijit sistemlerin stabilitesi. Stabilite analizinde analitik ve enerji yöntemleri.",
+   "Hafta 3 · Mükemmel olmayan rijit sistemler. Rijit sistemlerde büyük yer değiştirmeler.",
+   "Hafta 4 · Elastik kolonların stabilitesi.Çeşitli mesnetleme şartlarında Euler burkulma yükleri.",
+   "Hafta 5 · Elastik olmayan burkulma, Tetmajer yöntemi. Elastik mesnetli kolonlar.",
+   "Hafta 6 · Çerçevelerin burkulması.",
+   "Hafta 7 · Eksantrik yüklü kolonlar. Ara mesnetli kolonlar.",
+   "Hafta 8 · Değişken eksenel yüklü kolonlar. Değişken kesitli kolonlar.",
+   "Hafta 9 · Büyük yer değiştirme teorisi. Kesme kuvvetinin burkulma yüküne etkisi.",
+   "Hafta 10 · Mükemmel doğrusal olmayan kolonlar. Gerçek kolon davranışı.",
+   "Hafta 11 · Elastik zemine oturan kolonlar.",
+   "Hafta 12 · Stabilitede enerji yöntemi. Ritz yöntemi.",
+   "Hafta 13 · Ardışık yaklaşım yöntemi. Matris yöntemleri",
+   "Hafta 14 · Eğri eksenli çubukların burkulması."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elastik stabilitenin temel kavramları. Burkulma türleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Rijit sistemlerin stabilitesi. Stabilite analizinde analitik ve enerji yöntemleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Mükemmel olmayan rijit sistemler. Rijit sistemlerde büyük yer değiştirmeler.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Elastik kolonların stabilitesi.Çeşitli mesnetleme şartlarında Euler burkulma yükleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Elastik olmayan burkulma, Tetmajer yöntemi. Elastik mesnetli kolonlar.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Çerçevelerin burkulması.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Eksantrik yüklü kolonlar. Ara mesnetli kolonlar.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Değişken eksenel yüklü kolonlar. Değişken kesitli kolonlar.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Büyük yer değiştirme teorisi. Kesme kuvvetinin burkulma yüküne etkisi.",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Mükemmel doğrusal olmayan kolonlar. Gerçek kolon davranışı.",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Elastik zemine oturan kolonlar.",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "Stabilitede enerji yöntemi. Ritz yöntemi.",
+    "outcomes": "8-9"
+   },
+   {
+    "week": 13,
+    "topic": "Ardışık yaklaşım yöntemi. Matris yöntemleri",
+    "outcomes": "9"
+   },
+   {
+    "week": 14,
+    "topic": "Eğri eksenli çubukların burkulması."
+   }
+  ],
+  "textbooks": [
+   "G. J. Simitses, D. Hodges, 2006, Fundamentals of Structural Stability, Elsevier Inc.",
+   "S. P. Timoshenko, 1963, Theory of Elastic Stability, McGraw Hill",
+   "C. M. Wang, C. Y. Wang, J. N. Reddy, 2006, Exact Solutions for Buckling , Second Edition, CRC Press.",
+   "C. H. Yoo, S. C. Lee, 2011, Stability of Structures: Principles and Applications, Elsevier Inc.",
+   "A. Chajes, 1974, Principles of Structural Stability Theory, Prentice Hall."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=613"
+ },
+ "MAK 618E": {
+  "code": "MAK 618E",
+  "name": "Nonlinear Solid Mechanics",
+  "nameEn": "Nonlinear Solid Mechanics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Vektör ve Tensör Denklemleri, Sonlu Deformasyonlarda Hareket, Şekil Değiştirme ve Gerilme Tanımları, Denge Kanunları, Hiperelastik Malzemeler, Kompozitler ve Bünye Denklemleri, Klasik Mekanik ve Biyomekanikte 2 Boyutlu ve Silindirik Problemler, Varyasyonel Formülasyonlar ve Deneysel Yöntemler Vector and Tensor Equations, Large Deformations, Strain and Stress Tensor Fields, Balance Laws, Hyperelastic Materials, Composites and Constitutive Relations, Solutions to 2D Planar and Cylindirical Nonlinear Mechanics and Biomechanics Problems, Variational Formulations and Experimental Methods",
+  "outcomes": [
+   "Büyük deformasyon mekaniğinin temellerini anlama",
+   "Kauçuk benzeri malzeme modellerini öğrenme.",
+   "Büyük deformasyon problemlerinde çeşitli çözüm yöntemlerini öğrenme",
+   "Deneysel yöntemle büyük deformasyon yapan malzemelerin karakterizasyonunu öğrenme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Koordinat Sistemleri, Baz Vektörler",
+   "Hafta 2 · Vektör ve Tensör Denklemleri",
+   "Hafta 3 · Sonlu Hareketler ve Konfigurasyonlar",
+   "Hafta 4 · Esneme ve Birim Şekil Değiştirme Tensör Alanları",
+   "Hafta 5 · Gerilme Tanımları",
+   "Hafta 6 · Denge Kanunları",
+   "Hafta 7 · Hiperelastik Malzemelerde Bünye Denklemleri",
+   "Hafta 8 · Hiperelastik Malzemelerin Enerji Formülasyonları",
+   "Hafta 9 · Hiperelastik Kompozit Malzemeler",
+   "Hafta 10 · Özel Bünye Denklemleri ve Uygulamaları",
+   "Hafta 11 · Klasik Mekanikte Lineer Olmayan 2 Boyutlu ve Silindirik Problemler",
+   "Hafta 12 · Biyomekanikte Lineer Olmayan 2 Boyutlu ve Silindirik Problemler",
+   "Hafta 13 · Büyük Deformasyonlarda Varyasyonel Formülasyonlar",
+   "Hafta 14 · Sonlu Deformasyonlarda Deneysel Yöntemler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Koordinat Sistemleri, Baz Vektörler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Vektör ve Tensör Denklemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Sonlu Hareketler ve Konfigurasyonlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Esneme ve Birim Şekil Değiştirme Tensör Alanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Gerilme Tanımları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Denge Kanunları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Hiperelastik Malzemelerde Bünye Denklemleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Hiperelastik Malzemelerin Enerji Formülasyonları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Hiperelastik Kompozit Malzemeler",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Özel Bünye Denklemleri ve Uygulamaları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Klasik Mekanikte Lineer Olmayan 2 Boyutlu ve Silindirik Problemler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Biyomekanikte Lineer Olmayan 2 Boyutlu ve Silindirik Problemler",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Büyük Deformasyonlarda Varyasyonel Formülasyonlar",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Sonlu Deformasyonlarda Deneysel Yöntemler"
+   }
+  ],
+  "textbooks": [
+   "Y. Başar, Dieter Weichert; Nonlinear Continuum Mechanicsof Solids; Springer, 2010",
+   "G.A. Holzapfel; Nonlinear Solid Mechanics: A Continuum Approach for Eng.; Wiley, 2000",
+   "Chen-To Tai; Generalized Vector and Dyadic Analysis; IEEE (Oxford Univ. Press), 1991",
+   "J.D. Humphrey; Cardiovascular Solid Mechanics; Springer, 1st edition, 2002",
+   "G.A. Holzapfel, R.W. Ogden (Editors); Biomechanical Modelling at the Molecular, Cellular and Tissue Levels (CISM Courses and Lectures, vol.508); SpringerWienNewYork, 2009"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=618"
+ },
+ "MAK 633": {
+  "code": "MAK 633",
+  "name": "Lineer Olmayan Titreşiler",
+  "nameEn": "Lineer Olmayan Titreşiler",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Faz uzayı. Tekil noktalar ve kararlılık. Çatallanmalar. / Kesin çözüm. / Yaklaşık analitik yöntemler. / Korunumlu ve Korunumsuz Sistemlerin Titreşimleri. Frekans Hesabı. / Kendini Besleyen Titreşimler. Limit çevrim. / Zorlanmış Titreşimler. Sıçrama olayı. Harmonik Üstü, Harmonik Altı ve Kombinasyon Rezonansları. / Değişken Parametreli Sistemlerin Titreşimleri. / Parametrik Titreşimler. Floquet Kuramı. Parametrik Rezonanslar ve kararlılık kartı. / Çok serbestlik dereceli sistemlerin titreşimleri. İç Rezonanslar. / Kaotik Titreşimlere giriş. Phase space. Singular points and their stability. Bifurcations. / Exact solution. / Approximate analytical methods. / Vibrations of conservative and non-conservative systems. Natural frequency calculation. / Self sustaining oscillations. Limit cycle. / Forced vibrations. Jump phenomenon. Super-harmonic, sub-harmonic and combination resonances. / Vibrations of varying parameter systems. / Parametric vibrations. The Floquet Theory. Parametric resonances. / Vibrations of multi-degree-of-freedom systems. Internal resonances. / Introduction to chaotic vibrations.",
+  "outcomes": [
+   "Lineer olmayan titreşimler konusunda bilgi.",
+   "Lineer olmayan titreşim problemlerini diğer yaklaşık yöntemlerle ve pertürbasyon yöntemleriyle çözme becerisi.",
+   "Parametrik titreşimler konusunda temel bilgi.",
+   "Verilmiş bir parametrik sistemin kararlılık kartını oluşturma becerisi.",
+   "Kaotik titreşimler hakkında temel bilgi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Lineer sistem-Lineer olmayan sistem ayrımı. Lineer olmayan titreşim sistemi örnekleri. Diferansiyel denklemlerin boyutsuzlaştırılması.",
+   "Hafta 2 · Faz uzayı. Tekil nokta tipleri ve kararlılık. Çatallanmalar. Korunumlu sistemlerde faz portresi-enerji ilişkisi.",
+   "Hafta 3 · Lineer olmayan titreşim denklemlerinin kesin çözümünün bulunabildiği haller. Yaklaşık analitik çözüm yöntemleri. Eşdeğer lineerleştirme yöntemi. Krylov-Bogolyubov yöntemi.",
+   "Hafta 4 · Pertürbasyon yöntemleri: Lindstedt-Poincaré yöntemi. Çift zaman ölçeği yöntemi. Çok ölçek yöntemi. 1.ÖDEV",
+   "Hafta 5 · Pertürbasyon yöntemleri: Lindstedt-Poincaré yöntemi. Çift zaman ölçeği yöntemi. Çok ölçek yöntemi.(Devam)",
+   "Hafta 6 · 1. Yıliçi Sınavı",
+   "Hafta 7 · Kendini besleyen titreşimler. Limit çevrim. Devrilme titreşimleri.",
+   "Hafta 8 · Zorlanmış titreşimler. Duffing sisteminin zorlanmış titreşimleri. Esas rezonans. Sıçrama olayı. Harmonik üstü, harmonik altı ve bileşik rezonanslar.",
+   "Hafta 9 · Değişken parametreli sistemlerin titreşimleri. Genelleştirilmiş çift zaman ölçeği yöntemi. 2.ÖDEV",
+   "Hafta 10 · Parametrik titreşimler. Mathieu-Hill denklemleri. Floquet kuramı.",
+   "Hafta 11 · Dinamik kararlılık ve parametrik rezonans. 3.ÖDEV",
+   "Hafta 12 · Çok Serb. Dereceli Sistemlerin Serbest Titreşimleri. İç rezonans.",
+   "Hafta 13 · 2. Yıliçi Sınavı",
+   "Hafta 14 · Kaotik dinamiğin temelleri. Kaosun tanısı. Poincaré tasvirleri ve Lyapunov üsleri."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lineer sistem-Lineer olmayan sistem ayrımı. Lineer olmayan titreşim sistemi örnekleri. Diferansiyel denklemlerin boyutsuzlaştırılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Faz uzayı. Tekil nokta tipleri ve kararlılık. Çatallanmalar. Korunumlu sistemlerde faz portresi-enerji ilişkisi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer olmayan titreşim denklemlerinin kesin çözümünün bulunabildiği haller. Yaklaşık analitik çözüm yöntemleri. Eşdeğer lineerleştirme yöntemi. Krylov-Bogolyubov yöntemi.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Pertürbasyon yöntemleri: Lindstedt-Poincaré yöntemi. Çift zaman ölçeği yöntemi. Çok ölçek yöntemi. 1.ÖDEV",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Pertürbasyon yöntemleri: Lindstedt-Poincaré yöntemi. Çift zaman ölçeği yöntemi. Çok ölçek yöntemi.(Devam)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "1. Yıliçi Sınavı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Kendini besleyen titreşimler. Limit çevrim. Devrilme titreşimleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Zorlanmış titreşimler. Duffing sisteminin zorlanmış titreşimleri. Esas rezonans. Sıçrama olayı. Harmonik üstü, harmonik altı ve bileşik rezonanslar.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Değişken parametreli sistemlerin titreşimleri. Genelleştirilmiş çift zaman ölçeği yöntemi. 2.ÖDEV",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Parametrik titreşimler. Mathieu-Hill denklemleri. Floquet kuramı.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Dinamik kararlılık ve parametrik rezonans. 3.ÖDEV",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Çok Serb. Dereceli Sistemlerin Serbest Titreşimleri. İç rezonans.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "2. Yıliçi Sınavı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Kaotik dinamiğin temelleri. Kaosun tanısı. Poincaré tasvirleri ve Lyapunov üsleri."
+   }
+  ],
+  "textbooks": [
+   "TURHAN, Ö. Lineer Olmayan Titreşimler Ders Notları",
+   "NAYFEH, A. H., MOOK, D. T. (1979) Nonlinear Oscillations, Wiley.",
+   "AWREJCEWICZ, J., KRYSKO, V.A. (2006) Introduction to Asymptotic Methods, Chapman & Hall.",
+   "NAYFEH, A. H., BALACHANDRAN, B. (1995) Applied Nonlinear Dynamics, Wiley."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=633"
+ },
+ "MAK 682": {
+  "code": "MAK 682",
+  "name": "Plak ve Kabuklar Teorisi",
+  "nameEn": "Theory of Plates and Shells",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Plak teorisine giriş. Dikdörtgen plakların basit eğilmesi. Lateral yüklü dikdörtgen plaklar. Navier tipi çözüm. Levy tipi çözüm. Dairesel plakların temel denklemleri. Dairesel plaklarda simetrik ve asimetrik yükleme halleri. Plak denklemlerinin enerji yöntemleri ve sayısal yöntemler kullanılarak çözümü. Plak titreşimleri. İnce elastik kabuk teorisine giriş. Kabuklarda membran teorisi ve eğilme teorisi. Silindirik kabuklar ve dönel kabuklar. Introduction to theory of plates. Bending of rectangle plates. Laterally loaded rectangular plates. Navier solution. Levy solution. Fundamental equations for circular plates. Circular plates under symmetrical and asymmetrical loads. Application of energy methods and numerical methods. Vibrations of plates. Introduction to thin elastic shell theory. Membrane theory of shells and bending theory. Cylindrical shells and shells in the form of a surface of revolution.",
+  "outcomes": [
+   "Çeşitli sınır ve yükleme şartlarına sahip dikdörtgen ve dairesel plakların çökme, moment ve gerilme hesaplarını yapabilme",
+   "Plak problemlerinin enerji yöntemiyle çözümlerini elde edebilme",
+   "Kesin çözümün bulunamadığı durumlarda plak problemlerinin sayısal yöntemilerle çözebilme",
+   "Kabukların eğilme teorisini kullanarak analiz yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş. Temel Kavramlar. Gerilme – şekil değiştirme ifadeleri",
+   "Hafta 2 · Plak teorisine giriş. Dikdörtgen plakların basit eğilmesi. Çökme, moment ve gerilme ifadeleri.",
+   "Hafta 3 · Lateral yüklü dikdörtgen plaklar.",
+   "Hafta 4 · Sinüzodial yük etkisindeki basit mesnetli plaklar. Basit mesnetli plaklarda Navier çözümü.",
+   "Hafta 5 · Levy tipi çözüm.",
+   "Hafta 6 · Dairesel plaklar. Temel denklemler.",
+   "Hafta 7 · Dairesel plaklarda simetrik yükleme hali.",
+   "Hafta 8 · Dairesel plaklarda asimetrik yükleme hali.",
+   "Hafta 9 · Plak denklemlerinin çözümünde enerji yöntemleri.",
+   "Hafta 10 · Plak denklemlerinin çözümünde sayısal yöntemler. Plak titreşimleri.",
+   "Hafta 11 · İnce elastik kabuk teorisine giriş. Temel tanımlar",
+   "Hafta 12 · Kabuklarda membran teorisi.",
+   "Hafta 13 · Kabuklarda eğilme teorisi.",
+   "Hafta 14 · Silindirik ve dönel yüzey biçimindeki kabuklar."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş. Temel Kavramlar. Gerilme – şekil değiştirme ifadeleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Plak teorisine giriş. Dikdörtgen plakların basit eğilmesi. Çökme, moment ve gerilme ifadeleri.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Lateral yüklü dikdörtgen plaklar.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sinüzodial yük etkisindeki basit mesnetli plaklar. Basit mesnetli plaklarda Navier çözümü.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Levy tipi çözüm.",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Dairesel plaklar. Temel denklemler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Dairesel plaklarda simetrik yükleme hali.",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Dairesel plaklarda asimetrik yükleme hali.",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "Plak denklemlerinin çözümünde enerji yöntemleri.",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Plak denklemlerinin çözümünde sayısal yöntemler. Plak titreşimleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "İnce elastik kabuk teorisine giriş. Temel tanımlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Kabuklarda membran teorisi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kabuklarda eğilme teorisi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Silindirik ve dönel yüzey biçimindeki kabuklar."
+   }
+  ],
+  "textbooks": [
+   "Rudolph Szilard, Theories and Applications of Plate Analysis: Classical, Numerical and Engineering Methods, 2004, John Wiley & Sons.",
+   "Timoshenko, S.P., Woinowsky-Krieger, S., 1959, Theory of Plates and Shells, McGraw-Hill",
+   "Ventsel, E., Krauthammer, T., 2001, Thin Plates and Shells: Theory, Analysis and Applications, Marcel Dekker, Inc. New York, Basel",
+   "Ugural, A., Stresses in Plates and Shells, 1999, McGraw-Hill",
+   "Reddy, J. N., 1999, Theory and Analysis of Elastic Plates, Taylor & Francis, London"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=682"
+ },
+ "MAK 691E": {
+  "code": "MAK 691E",
+  "name": "Türbülans Mekaniği",
+  "nameEn": "Mechanics of Turbulence",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "- -",
+  "outcomes": [
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · -",
+   "Hafta 2 · -",
+   "Hafta 3 · -",
+   "Hafta 4 · -",
+   "Hafta 5 · -",
+   "Hafta 6 · -",
+   "Hafta 7 · -",
+   "Hafta 8 · -",
+   "Hafta 9 · -",
+   "Hafta 10 · -",
+   "Hafta 11 · -",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=691"
+ },
+ "MAK 692E": {
+  "code": "MAK 692E",
+  "name": "Statis.Thermodyn.of Ther.Sys.",
+  "nameEn": "Statis.Thermodyn.of Ther.Sys.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İstatistik Termodinamiğin Temelleri. Dengedeki Sistemlerin Termodinamiği. Gibbs Stabilite Teorisi. Kritik Olaylar ve Şekle Bağlı Isıl Kapasite. Entropi Üretimi. Salınımlar ve Küçük Sistemler. Doğrusal Dengede Olmayan Sistemlerin Termodinamiği. Doğrusal Rejim. Doğrusal Olmayan Rejimlerin Termodinamiği. Yayıcı Yapılar. Elements of Statistical Thermodynamics. Equilibrium Thermodynamics. The Gibbs Stability Theory. Critical Phenomena and Configurational Heat Capacity. Entropy Production Fluctuations and Small Systems. Linear Nonequilibrium Thermodynamics. Linear Regime. Nonlinear Thermodynamics. and Dissipative Structures",
+  "outcomes": [
+   "1-Stabilite ve entropi üretimi arasındaki istatistik ilişki.",
+   "2-Dengede olmayan sistemlerin termodinamiğinin ayrıntıları",
+   "3-Salınımların termodinamik teorisi",
+   "4-Isıl sistem tasarımında yayıcı yapıların kullanılması.",
+   "5-Karmaşık süreçlerin çözümlenmesi için bilgisayar kodlarının kullanılması."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Termodinamikte Temel Kavramların Tekrarı",
+   "Hafta 2 · Dengedeki Sistemlerin Termodinamiğinin Tekrarı",
+   "Hafta 3 · İstatistik Termodinamiğin Temelleri",
+   "Hafta 4 · Gibbs Stabilite Teorisi",
+   "Hafta 5 · Stabilite, Kritik Olaylar ve Şekle Bağlı Isıl Kapasite",
+   "Hafta 6 · Stabilite ve Entropi Üretimi",
+   "Hafta 7 · Salınımlarin Termodinamik Teorisi, Küçük Sistemler, Büyüklüğe Bağlı Özelikler ve Çekirdeklenme",
+   "Hafta 8 · Dengede Olmayan Sistemlerin Termodinamiğinin Temelleri",
+   "Hafta 9 · Doğrusal Fenomonolojik Yasalar, Onsager Bağıntıları ve Simetri İlkesi",
+   "Hafta 10 · Termoelektrik, Difüzyon ve Anizotropik Katılarda Isıl İletkenlik",
+   "Hafta 11 · Elektrokinetik ve Saxen Bağıntıları, Isıl Difüzyon",
+   "Hafta 12 · Dengeden Uzak Sistemler ve Entropi Üretiminin Genel Özellikleri",
+   "Hafta 13 · Dengede Olmayan Durağan Sistemlerin Stabilitesi ve Doğrusal Stabilite Analizi",
+   "Hafta 14 · Yayıcı Yapılar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Termodinamikte Temel Kavramların Tekrarı",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dengedeki Sistemlerin Termodinamiğinin Tekrarı",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "İstatistik Termodinamiğin Temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gibbs Stabilite Teorisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Stabilite, Kritik Olaylar ve Şekle Bağlı Isıl Kapasite",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Stabilite ve Entropi Üretimi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Salınımlarin Termodinamik Teorisi, Küçük Sistemler, Büyüklüğe Bağlı Özelikler ve Çekirdeklenme",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 8,
+    "topic": "Dengede Olmayan Sistemlerin Termodinamiğinin Temelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Doğrusal Fenomonolojik Yasalar, Onsager Bağıntıları ve Simetri İlkesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Termoelektrik, Difüzyon ve Anizotropik Katılarda Isıl İletkenlik",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Elektrokinetik ve Saxen Bağıntıları, Isıl Difüzyon",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Dengeden Uzak Sistemler ve Entropi Üretiminin Genel Özellikleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Dengede Olmayan Durağan Sistemlerin Stabilitesi ve Doğrusal Stabilite Analizi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Yayıcı Yapılar"
+   }
+  ],
+  "textbooks": [
+   "--",
+   "--"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=692"
+ },
+ "MAK 696": {
+  "code": "MAK 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAK&dersNo=696"
  }
 }

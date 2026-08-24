@@ -1,13 +1,13 @@
 {
- "durationSec": 149,
+ "durationSec": 58,
  "failedBranches": null,
- "lastRunAt": "2026-08-24T03:29:10Z",
- "lastSuccessAt": "2026-08-24T03:29:10Z",
- "mode": "tam",
+ "lastRunAt": "2026-08-24T09:04:14Z",
+ "lastSuccessAt": "2026-08-24T09:04:14Z",
+ "mode": "hafif",
  "partial": false,
  "prevSections": 4982,
  "schemaVersion": 1,
- "sections": 4982,
+ "sections": 4981,
  "sources": {
   "calendar": {
    "provider": "İstanbul Teknik Üniversitesi Akademik Takvim",
@@ -17,7 +17,7 @@
   "courses": {
    "provider": "İstanbul Teknik Üniversitesi OBS",
    "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-   "lastSuccessfulAt": "2026-08-24T03:27:39Z"
+   "lastSuccessfulAt": "2026-08-24T09:04:13Z"
   },
   "prerequisites": {
    "provider": "İstanbul Teknik Üniversitesi OBS",

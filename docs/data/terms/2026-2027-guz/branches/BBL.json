@@ -1,32 +1,5 @@
 [
  {
-  "crn": "13483",
-  "code": "BBL 000",
-  "branch": "BBL",
-  "level": "LU",
-  "name": "Tez Çalışması",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Abdulkerim Çapar",
-  "buildings": [
-   "BEB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "13490",
   "code": "BBL 596E",
   "branch": "BBL",
@@ -216,27 +189,6 @@
   "classReq": "-"
  },
  {
-  "crn": "13514",
-  "code": "BBL 000",
-  "branch": "BBL",
-  "level": "LU",
-  "name": "Tez Çalışması",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Sefer Baday",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 200,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "13515",
   "code": "BBL DRT",
   "branch": "BBL",
@@ -272,6 +224,54 @@
   ],
   "rooms": [],
   "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15105",
+  "code": "BBL YLT",
+  "branch": "BBL",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sefer Baday",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15106",
+  "code": "BBL 502E",
+  "branch": "BBL",
+  "level": "LU",
+  "name": "Software Modeling and Design",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Abdulkerim Çapar",
+  "buildings": [
+   "BBB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

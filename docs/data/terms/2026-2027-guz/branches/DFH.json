@@ -298,7 +298,7 @@
   "level": "LS",
   "name": "Maritime Psychology",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Çağlar Karatuğ",
+  "instructor": "-",
   "buildings": [
    "undeclared"
   ],
@@ -311,7 +311,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 30,
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -638,6 +638,36 @@
   "programs": [
    "DUI_LS",
    "DUIE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15119",
+  "code": "DFH 228",
+  "branch": "DFH",
+  "level": "LS",
+  "name": "Denizcilik Psikolojisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çağlar Karatuğ",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS",
+   "GMI_LS"
   ],
   "prereq": "-",
   "classReq": "-"

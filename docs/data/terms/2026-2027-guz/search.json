@@ -64601,6 +64601,7 @@
   "Fiziksel (Yüz yüze)",
   [
    "BIO_LS",
+   "BIOE_LS",
    "CHZ_LS",
    "DEN_LS",
    "ELE_LS",
@@ -64627,6 +64628,7 @@
   "Fiziksel (Yüz yüze)",
   [
    "BIO_LS",
+   "BIOE_LS",
    "CHZ_LS",
    "DEN_LS",
    "ELE_LS",
@@ -70285,7 +70287,7 @@
   "GMI",
   "Tayfun Uyanık",
   "Salı 08:30/10:29",
-  40,
+  0,
   0,
   "LS",
   "Fiziksel (Yüz yüze)",
@@ -90259,7 +90261,7 @@
   "Denizcilik Çalışma.Araş.Yön.",
   "DZC",
   "Pelin Bolat",
-  "",
+  "Çarşamba 10:30/13:29",
   10,
   0,
   "LU",
@@ -90362,9 +90364,9 @@
   "DZC 603E",
   "Maritime Security Intelligence",
   "DZC",
-  "Pelin Bolat",
-  "Çarşamba 12:30/15:29",
-  30,
+  "-",
+  "",
+  0,
   0,
   "LU",
   "Fiziksel (Yüz yüze)",
@@ -102456,7 +102458,7 @@
   30,
   0,
   "LU",
-  "Fiziksel (Yüz yüze)",
+  "Sanal (Çevrimiçi/Online)",
   []
  ],
  [
@@ -110969,9 +110971,9 @@
   "FIZ 431E",
   "Solid State Physics I",
   "FIZ",
-  "Hakan Özgür Özer",
-  "Salı 14:30/17:29 | Çarşamba 11:30/13:29",
-  30,
+  "-",
+  "",
+  0,
   0,
   "LS",
   "Fiziksel (Yüz yüze)",
@@ -128985,7 +128987,7 @@
   "Transportation Sys. Analysis",
   "ULS",
   "Hüseyin Onur Tezcan",
-  "Perşembe 10:30/13:29",
+  "Perşembe 09:30/12:29",
   20,
   0,
   "LU",
@@ -130799,6 +130801,96 @@
   [
    "MAD_LS",
    "MADE_LS"
+  ]
+ ],
+ [
+  "15109",
+  "IEB 210E",
+  "Linear Algebra for Indust.Eng.",
+  "IEB",
+  "Kenan Mengüç",
+  "Perşembe 09:00/11:59",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "IEBE_LS"
+  ]
+ ],
+ [
+  "15110",
+  "IEB 213E",
+  "Data Manag.in Industrial Syst.",
+  "IEB",
+  "Hatice Tekiner Moğulkoç",
+  "Pazartesi 09:00/11:59",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "IEBE_LS"
+  ]
+ ],
+ [
+  "15111",
+  "IEB 252E",
+  "Theory of Probability",
+  "IEB",
+  "Mehmet Güray Güler",
+  "Perşembe 13:00/15:59",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "IEBE_LS"
+  ]
+ ],
+ [
+  "15112",
+  "EKO 201E",
+  "Economics",
+  "EKO",
+  "Şerife Genç İleri",
+  "Pazartesi 13:00/15:59",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "IEBE_LS"
+  ]
+ ],
+ [
+  "15113",
+  "DZC 519",
+  "Denizel Alanda Siber Güvenlik",
+  "DZC",
+  "Gizem Kayişoğlu",
+  "Cuma 14:00/16:59",
+  10,
+  0,
+  "LU",
+  "Fiziksel (Yüz yüze)",
+  []
+ ],
+ [
+  "15114",
+  "FZT 302E",
+  "Solid State Physics I",
+  "FZT",
+  "Hakan Özgür Özer",
+  "Salı 14:30/17:29 | Çarşamba 11:30/13:29",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "FIZ_LS",
+   "FIZ_YD",
+   "FIZE_LS"
   ]
  ],
  [

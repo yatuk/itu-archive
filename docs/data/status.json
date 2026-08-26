@@ -1,9 +1,9 @@
 {
- "durationSec": 58,
+ "durationSec": 152,
  "failedBranches": null,
- "lastRunAt": "2026-08-25T20:45:18Z",
- "lastSuccessAt": "2026-08-25T20:45:18Z",
- "mode": "hafif",
+ "lastRunAt": "2026-08-26T03:30:39Z",
+ "lastSuccessAt": "2026-08-26T03:30:39Z",
+ "mode": "tam",
  "partial": false,
  "prevSections": 4994,
  "schemaVersion": 1,
@@ -12,17 +12,17 @@
   "calendar": {
    "provider": "İstanbul Teknik Üniversitesi Akademik Takvim",
    "endpoint": "https://www.takvim.sis.itu.edu.tr/AkademikTakvim/TR/akademik-takvim/AkademikTakvimTablo.php",
-   "lastSuccessfulAt": "2026-08-25T03:16:07Z"
+   "lastSuccessfulAt": "2026-08-26T03:29:09Z"
   },
   "courses": {
    "provider": "İstanbul Teknik Üniversitesi OBS",
    "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-   "lastSuccessfulAt": "2026-08-25T20:45:16Z"
+   "lastSuccessfulAt": "2026-08-26T03:29:04Z"
   },
   "prerequisites": {
    "provider": "İstanbul Teknik Üniversitesi OBS",
    "endpoint": "https://obs.itu.edu.tr/public/GenelTanimlamalar/OnsartAra",
-   "lastSuccessfulAt": "2026-08-25T03:17:34Z"
+   "lastSuccessfulAt": "2026-08-26T03:30:39Z"
   }
  }
 }

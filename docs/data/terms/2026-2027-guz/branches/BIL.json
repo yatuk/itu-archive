@@ -2234,5 +2234,160 @@
   ],
   "prereq": "-",
   "classReq": "-"
+ },
+ {
+  "crn": "15130",
+  "code": "BIL 100E",
+  "branch": "BIL",
+  "level": "LS",
+  "name": "Intr.to Prog.Language(PYTHON)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cemre Sonuç",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15131",
+  "code": "BIL 100E",
+  "branch": "BIL",
+  "level": "LS",
+  "name": "Intr.to Prog.Language(PYTHON)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Öztopal",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15132",
+  "code": "BIL 112E",
+  "branch": "BIL",
+  "level": "LS",
+  "name": "Intr.to Prog.Language(FORTRAN)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Öztopal",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IBM_LS",
+   "MTO_LS",
+   "MTOE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15133",
+  "code": "BIL 110E",
+  "branch": "BIL",
+  "level": "LS",
+  "name": "Intr. to Prog. Language (C)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Egnar Özdikililer",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "END_LS/5/0 | ENDE_LS/5/0 | Diğer/70/0",
+  "programs": [
+   "END_LS",
+   "ENDE_LS",
+   "UCK_LS",
+   "UZB_LS",
+   "UZBE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15134",
+  "code": "BIL 110E",
+  "branch": "BIL",
+  "level": "LS",
+  "name": "Intr. to Prog. Language (C)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Egnar Özdikililer",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS",
+   "UZB_LS",
+   "UZBE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
  }
 ]

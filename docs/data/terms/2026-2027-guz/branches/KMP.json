@@ -755,5 +755,65 @@
   ],
   "prereq": "-",
   "classReq": "-"
+ },
+ {
+  "crn": "15137",
+  "code": "KMP 321",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Batı Müziği Literatürü I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gizem Alever Sancaktar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "KMP_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15138",
+  "code": "KMP 421",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Batı Müziği Literatürü III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Özkan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "KMP_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
  }
 ]

@@ -68,7 +68,7 @@
    "Cuma"
   ],
   "times": [
-   "08:30/10:29"
+   "14:00/15:59"
   ],
   "rooms": [
    "--"
@@ -765,7 +765,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gizem Alever Sancaktar",
   "buildings": [
-   "undeclared"
+   "TMB"
   ],
   "days": [
    "Pazartesi"
@@ -795,10 +795,74 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mehmet Özkan",
   "buildings": [
-   "undeclared"
+   "TMB"
   ],
   "days": [
    "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "KMP_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15140",
+  "code": "KMP 402",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kompozisyon VIII",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Oğuzhan Balcı",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "KMP_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15141",
+  "code": "KMP 404",
+  "branch": "KMP",
+  "level": "LS",
+  "name": "Kompozisyon Çözümleme IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tayfun Demirbaş",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
   ],
   "times": [
    "10:30/12:29"

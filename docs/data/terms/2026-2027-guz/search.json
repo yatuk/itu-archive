@@ -12789,7 +12789,7 @@
   "ATA",
   "-",
   "Perşembe 13:30/15:29",
-  0,
+  70,
   0,
   "LS",
   "Sanal (Çevrimiçi/Online)",
@@ -71378,7 +71378,7 @@
   "Ship Surveying Procedures",
   "DUI",
   "Gizem Çevik",
-  "Salı 09:30/11:29",
+  "Çarşamba 09:30/11:29",
   35,
   0,
   "LS",
@@ -71554,21 +71554,6 @@
   "Fiziksel (Yüz yüze)",
   [
    "DUI_LS"
-  ]
- ],
- [
-  "11246",
-  "GMI 270E",
-  "Maritime English II",
-  "GMI",
-  "Müjgan Özenir",
-  "Çarşamba 13:30/15:29",
-  40,
-  0,
-  "LS",
-  "Fiziksel (Yüz yüze)",
-  [
-   "GMI_LS"
   ]
  ],
  [
@@ -71822,8 +71807,8 @@
   "DFH 494E",
   "Intercult.Comm.in Marit.Domain",
   "DFH",
-  "Seda Çınar Alabay",
-  "Pazartesi 08:30/10:29",
+  "Müjgan Özenir",
+  "Perşembe 08:30/10:29",
   30,
   0,
   "LS",
@@ -71932,7 +71917,7 @@
   "Profes. Maritime Communication",
   "DFH",
   "Müjgan Özenir",
-  "Pazartesi 10:30/13:29",
+  "Perşembe 10:30/13:29",
   20,
   0,
   "LS",
@@ -73357,7 +73342,7 @@
   "Ses Sistemleri I",
   "MTR",
   "Ufuk Biçak",
-  "Cuma 14:00/15:59",
+  "Cuma 16:00/17:59",
   40,
   0,
   "LS",
@@ -76156,7 +76141,7 @@
   "Form Bilgisi I",
   "KMP",
   "Recep Gül , Gizem Alever Sancaktar",
-  "Cuma 08:30/10:29",
+  "Cuma 14:00/15:59",
   25,
   0,
   "LS",
@@ -86639,6 +86624,8 @@
    "END_LS",
    "ENDE_LS",
    "IND_LS",
+   "ISL_LS",
+   "ISLE_LS",
    "MAT_LS"
   ]
  ],
@@ -87179,7 +87166,9 @@
   [
    "END_LS",
    "ENDE_LS",
-   "IND_LS"
+   "IND_LS",
+   "ISL_LS",
+   "ISLE_LS"
   ]
  ],
  [
@@ -88215,7 +88204,7 @@
   "AFY 583E",
   "Spe.Top.in Disas.&Emerg.Manag.",
   "AFY",
-  "Didem Saloğlu Dertli",
+  "Didem Saloğlu Dertli , İsmail Ahmet Odabaş",
   "Pazartesi 11:30/14:29",
   20,
   0,
@@ -88715,6 +88704,7 @@
   "Fiziksel (Yüz yüze)",
   [
    "ECNE_LS",
+   "ELK_LS",
    "ELKE_LS",
    "ENTE_LS",
    "ISL_LS",
@@ -89155,7 +89145,7 @@
   "YZV 103E",
   "Intr. to AI & Data Eng& Ethics",
   "YZV",
-  "Berna Kiraz",
+  "-",
   "Çarşamba 13:30/15:29",
   60,
   0,
@@ -92940,10 +92930,7 @@
   "Fiziksel (Yüz yüze)",
   [
    "BLG_LS",
-   "EHB_LS",
-   "ELE_LS",
-   "KOM_LS",
-   "TEL_LS"
+   "BLGE_LS"
   ]
  ],
  [
@@ -92993,9 +92980,6 @@
   [
    "BLG_LS",
    "BLGE_LS",
-   "KOM_LS",
-   "KOM_LS",
-   "KOME_LS",
    "YZVE_LS"
   ]
  ],
@@ -120332,6 +120316,7 @@
   "LS",
   "Fiziksel (Yüz yüze)",
   [
+   "EGC_YD",
    "SUS_YD"
   ]
  ],
@@ -129718,7 +129703,8 @@
   "Fiziksel (Yüz yüze)",
   [
    "MBI_LS",
-   "SGI_LS"
+   "SGI_LS",
+   "SIN_LS"
   ]
  ],
  [
@@ -129769,7 +129755,8 @@
   "Fiziksel (Yüz yüze)",
   [
    "MBI_LS",
-   "SGI_LS"
+   "SGI_LS",
+   "SIN_LS"
   ]
  ],
  [
@@ -131442,6 +131429,53 @@
   "KMP",
   "Mehmet Özkan",
   "Çarşamba 10:30/12:29",
+  10,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "BST_LS",
+   "KMP_LS"
+  ]
+ ],
+ [
+  "15139",
+  "BIL 100E",
+  "Intr.to Prog.Language(PYTHON)",
+  "BIL",
+  "Ayşe Elvan Bayraktaroğlu",
+  "Perşembe 09:00/11:59",
+  30,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "IEBE_LS"
+  ]
+ ],
+ [
+  "15140",
+  "KMP 402",
+  "Kompozisyon VIII",
+  "KMP",
+  "Oğuzhan Balcı",
+  "Salı 15:30/17:29 | Perşembe 13:30/15:29",
+  10,
+  0,
+  "LS",
+  "Fiziksel (Yüz yüze)",
+  [
+   "BST_LS",
+   "KMP_LS"
+  ]
+ ],
+ [
+  "15141",
+  "KMP 404",
+  "Kompozisyon Çözümleme IV",
+  "KMP",
+  "Tayfun Demirbaş",
+  "Perşembe 10:30/12:29",
   10,
   0,
   "LS",

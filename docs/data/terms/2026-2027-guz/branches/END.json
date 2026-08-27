@@ -513,11 +513,13 @@
   ],
   "capacity": 50,
   "enrolled": 0,
-  "reserved": "MAT_LS/5/0 | IND_LS/5/0 | Diğer/40/0",
+  "reserved": "MAT_LS/5/0 | IND_LS/5/0 | ISL_LS/1/0 | ISLE_LS/4/0 | Diğer/35/0",
   "programs": [
    "END_LS",
    "ENDE_LS",
    "IND_LS",
+   "ISL_LS",
+   "ISLE_LS",
    "MAT_LS"
   ],
   "prereq": "Detay",
@@ -1412,11 +1414,13 @@
   ],
   "capacity": 50,
   "enrolled": 0,
-  "reserved": "IND_LS/10/0 | Diğer/40/0",
+  "reserved": "IND_LS/10/0 | ISL_LS/1/0 | ISLE_LS/4/0 | Diğer/35/0",
   "programs": [
    "END_LS",
    "ENDE_LS",
-   "IND_LS"
+   "IND_LS",
+   "ISL_LS",
+   "ISLE_LS"
   ],
   "prereq": "-",
   "classReq": "-"

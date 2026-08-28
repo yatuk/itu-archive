@@ -6,17 +6,17 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo, copyText } from '../core/utils.js?v=38c6e1b51679';
-import { methodToCode } from '../core/urlcodes.js?v=38c6e1b51679';
-import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=38c6e1b51679';
-import { state } from '../core/store.js?v=38c6e1b51679';
-import { quotaDisplay } from '../core/chart.js?v=38c6e1b51679';
-import { fillRows } from '../core/table.js?v=38c6e1b51679';
-import * as fav from '../core/favorites.js?v=38c6e1b51679';
-import { toast } from '../core/toast.js?v=38c6e1b51679';
-import { openCourseDetail } from '../core/course-detail.js?v=38c6e1b51679';
-import { I18N } from '../i18n.js?v=38c6e1b51679';
-import { writeLocalState, isPlainObject } from '../core/persistence.js?v=38c6e1b51679';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js?v=48f281c5afc3';
+import { methodToCode } from '../core/urlcodes.js?v=48f281c5afc3';
+import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=48f281c5afc3';
+import { state } from '../core/store.js?v=48f281c5afc3';
+import { quotaDisplay } from '../core/chart.js?v=48f281c5afc3';
+import { fillRows } from '../core/table.js?v=48f281c5afc3';
+import * as fav from '../core/favorites.js?v=48f281c5afc3';
+import { toast } from '../core/toast.js?v=48f281c5afc3';
+import { openCourseDetail } from '../core/course-detail.js?v=48f281c5afc3';
+import { I18N } from '../i18n.js?v=48f281c5afc3';
+import { writeLocalState, isPlainObject } from '../core/persistence.js?v=48f281c5afc3';
 
 const PAGE = 200;
 const MOBILE_GROUP_PAGE = 30;
@@ -541,10 +541,10 @@ function renderTableRows(append) {
     return `
       <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="${I18N.lang === 'en' ? 'Select section' : 'Şubeyi seç'}"${state.selected.has(key) ? ' checked' : ''}></td>
       <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? (I18N.lang === 'en' ? 'Remove from favorites' : 'Favorilerden çıkar') : (I18N.lang === 'en' ? 'Add to favorites' : 'Favorilere ekle')}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
-      <td class="crn" data-label="CRN">${markField(crn, 'crn', hitField('crn'))}<button type="button" class="copy-btn" data-copy="${esc(crn)}" aria-label="CRN kopyala">kopyala</button></td>
-      <td class="code" data-label="Ders"><b>${markField(code, 'code', hitField('code'))}</b><button type="button" class="copy-btn" data-copy="${esc(code)}" aria-label="Ders kodunu kopyala">kopyala</button><small>${esc(branch)}</small></td>
+      <td class="crn" data-label="CRN">${markField(crn, 'crn', hitField('crn'))}</td>
+      <td class="code" data-label="Ders"><b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small></td>
       <td class="course-name" data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button></td>
-      <td class="course-instructor" data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}${instructor && instructor !== '-' ? `<button type="button" class="copy-btn" data-copy="${esc(instructor)}" aria-label="Öğretim üyesini kopyala">kopyala</button>` : ''}</td>
+      <td class="course-instructor" data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
       <td class="when course-schedule" data-label="Zaman">${when
         ? when.split(' | ').map((session) => `<span>${esc(localizeSchedule(session))}</span>`).join('')
         : '<span>·</span>'}</td>
@@ -562,11 +562,6 @@ function renderTableRows(append) {
       // Satırın herhangi bir yerine tıklayınca detay açılır; checkbox tıklaması
       // seçim için ayrıdır ve satır tıklamasını tetiklemez.
       tr.addEventListener('click', () => openDetail(r));
-      tr.querySelectorAll('[data-copy]').forEach((button) => button.addEventListener('click', async (event) => {
-        event.stopPropagation();
-        const ok = await copyText(button.dataset.copy);
-        toast(ok ? 'Kopyalandı' : 'Kopyalanamadı', { kind: ok ? 'ok' : 'warn' });
-      }));
       const cb = tr.querySelector('.row-sel');
       if (cb) {
         cb.addEventListener('click', (ev) => ev.stopPropagation());
@@ -636,13 +631,8 @@ function createMobileSection(row, extra = false) {
       <span class="mobile-schedule">${schedule}</span>
       ${cleanInstructor ? `<span class="mobile-instructor">${markField(cleanInstructor, 'instructor', hits.filter((h) => h.field === 'instructor'))}</span>` : ''}
     </button>
-    <div class="mobile-copy-actions"><button type="button" class="copy-btn" data-copy="${esc(crn)}">CRN kopyala</button><button type="button" class="copy-btn" data-copy="${esc(code)}">Kod kopyala</button>${cleanInstructor ? `<button type="button" class="copy-btn" data-copy="${esc(cleanInstructor)}">Hocayı kopyala</button>` : ''}</div>
     <button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? (I18N.lang === 'en' ? 'Remove from favorites' : 'Favorilerden çıkar') : (I18N.lang === 'en' ? 'Add to favorites' : 'Favorilere ekle')}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button>`;
   li.querySelector('.mobile-section-open').addEventListener('click', () => openDetail(row));
-  li.querySelectorAll('[data-copy]').forEach((button) => button.addEventListener('click', async () => {
-    const ok = await copyText(button.dataset.copy);
-    toast(ok ? 'Kopyalandı' : 'Kopyalanamadı', { kind: ok ? 'ok' : 'warn' });
-  }));
   wireFavoriteButton(li.querySelector('.fav-star'));
   return li;
 }

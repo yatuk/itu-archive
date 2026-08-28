@@ -15,22 +15,22 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=38c6e1b51679';
-import { state } from '../core/store.js?v=38c6e1b51679';
-import { openCourseDetail } from '../core/course-detail.js?v=38c6e1b51679';
-import { quotaDisplay } from '../core/chart.js?v=38c6e1b51679';
-import * as fav from '../core/favorites.js?v=38c6e1b51679';
-import { toast } from '../core/toast.js?v=38c6e1b51679';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=38c6e1b51679';
-import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=38c6e1b51679';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js?v=38c6e1b51679';
-import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=38c6e1b51679';
-import { confirmDialog } from '../core/dialog.js?v=38c6e1b51679';
-import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=38c6e1b51679';
-import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=38c6e1b51679';
-import { I18N } from '../i18n.js?v=38c6e1b51679';
-import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=38c6e1b51679';
-import { compareCurricula } from '../core/curriculum-diff.js?v=38c6e1b51679';
+import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=48f281c5afc3';
+import { state } from '../core/store.js?v=48f281c5afc3';
+import { openCourseDetail } from '../core/course-detail.js?v=48f281c5afc3';
+import { quotaDisplay } from '../core/chart.js?v=48f281c5afc3';
+import * as fav from '../core/favorites.js?v=48f281c5afc3';
+import { toast } from '../core/toast.js?v=48f281c5afc3';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=48f281c5afc3';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=48f281c5afc3';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js?v=48f281c5afc3';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=48f281c5afc3';
+import { confirmDialog } from '../core/dialog.js?v=48f281c5afc3';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=48f281c5afc3';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=48f281c5afc3';
+import { I18N } from '../i18n.js?v=48f281c5afc3';
+import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=48f281c5afc3';
+import { compareCurricula } from '../core/curriculum-diff.js?v=48f281c5afc3';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)

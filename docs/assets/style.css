@@ -2939,7 +2939,6 @@ body.modal-open { overflow: hidden; }
 
 .copy-btn { border: 0; background: transparent; color: var(--link); cursor: pointer; font: inherit; font-size: 10px; margin-left: 6px; padding: 3px 4px; text-decoration: underline; text-underline-offset: 2px; }
 .copy-btn:hover, .copy-btn:focus-visible { background: var(--panel2); border-radius: 4px; outline: 1px solid var(--line); }
-.mobile-copy-actions { display: flex; flex-wrap: wrap; gap: 4px; padding: 0 10px 8px; }
 .dp-recommend, .dp-compare { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; margin: 12px 0; padding: 0 14px; }
 .dp-recommend > summary, .dp-compare > summary { align-items: center; cursor: pointer; display: flex; gap: 12px; min-height: 48px; }
 .dp-recommend > summary span, .dp-compare > summary span { color: var(--fg); font-weight: 700; }
@@ -2964,7 +2963,6 @@ body.modal-open { overflow: hidden; }
 @media (min-width: 900px) { .dp-semesters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 @media (max-width: 600px) {
-  .mobile-copy-actions { display: none; }
   .dp-recommend > summary, .dp-compare > summary { align-items: flex-start; flex-direction: column; gap: 2px; padding: 10px 0; }
   .dp-recommend > summary small, .dp-compare > summary small { margin-left: 0; }
   .dp-recommend-controls, .dp-compare-controls { align-items: stretch; display: grid; }

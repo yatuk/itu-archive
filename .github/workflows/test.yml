@@ -86,7 +86,7 @@ jobs:
       - name: Yerel yayın sunucusu
         shell: bash
         run: |
-          python3 -m http.server 4173 --directory docs > /tmp/itu-http.log 2>&1 &
+          node scripts/lighthouse-server.mjs docs > /tmp/itu-http.log 2>&1 &
           echo $! > /tmp/itu-http.pid
           for attempt in $(seq 1 20); do
             curl -fsS http://127.0.0.1:4173/ >/dev/null && exit 0

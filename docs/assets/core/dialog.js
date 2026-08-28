@@ -1,7 +1,7 @@
 // Stillenmiş onay / metin diyaloğu — tarayıcının native confirm()/prompt()
 // yerine. Tema token'larından beslenir; koyu ve açık temada tutarlı görünür
 // (native diyalog tema dışıydı). confirmDialog → true|null, promptDialog → metin|null.
-import { $, esc } from './utils.js?v=5200cebd4769';
+import { $, esc } from './utils.js?v=38c6e1b51679';
 
 let host = null;
 function ensureHost() {

@@ -1,12 +1,12 @@
 // Geçmiş görünümü: 27 dönemin birleştirilmiş kaydında ders/hoca arama, ders
 // bazlı dönem geçmişi (trend grafiği dahil) ve hoca bazlı ders listesi.
 
-import { $, getJSON, esc, normSearch, searchMatch, debounce, termLabel, setStatus } from '../core/utils.js?v=5200cebd4769';
-import { state } from '../core/store.js?v=5200cebd4769';
-import { fillBar, trendChart } from '../core/chart.js?v=5200cebd4769';
-import { fillRows } from '../core/table.js?v=5200cebd4769';
-import { initReveal } from '../core/reveal.js?v=5200cebd4769';
-import { readLocalState, writeLocalState } from '../core/persistence.js?v=5200cebd4769';
+import { $, getJSON, esc, normSearch, searchMatch, debounce, termLabel, setStatus } from '../core/utils.js?v=38c6e1b51679';
+import { state } from '../core/store.js?v=38c6e1b51679';
+import { fillBar, trendChart } from '../core/chart.js?v=38c6e1b51679';
+import { fillRows } from '../core/table.js?v=38c6e1b51679';
+import { initReveal } from '../core/reveal.js?v=38c6e1b51679';
+import { readLocalState, writeLocalState } from '../core/persistence.js?v=38c6e1b51679';
 
 let inited = false;
 

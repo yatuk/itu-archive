@@ -80,6 +80,7 @@ func run(out string, workers int, rps float64, only string) error {
 	logf("%d/%d program taze çekildi; %d önceki başarılı plan korundu", len(fresh), len(programs), retained)
 
 	index := make([]map[string]string, 0, len(plans))
+	versions := map[string][]map[string]any{}
 	for _, p := range plans {
 		if err := st.WriteJSON(p, "data", "curriculum", p.ProgramCode+".json"); err != nil {
 			return err
@@ -87,8 +88,40 @@ func run(out string, workers int, rps float64, only string) error {
 		index = append(index, map[string]string{
 			"code": p.ProgramCode, "name": p.ProgramName, "faculty": p.Faculty, "level": p.Level,
 		})
+		if p.PlanID > 0 {
+			name := fmt.Sprintf("%s-%d.json", p.ProgramCode, p.PlanID)
+			if err := st.WriteJSON(p, "data", "curriculum", "versions", name); err != nil {
+				return err
+			}
+		}
 	}
 	if err := st.WriteJSON(index, "data", "curriculum", "index.json"); err != nil {
+		return err
+	}
+	// Arşiv, önceki başarılı taramaları korur. Böylece OBS yeni bir plan sürümü
+	// yayımladığında kullanıcı eski ve yeni müfredatı yan yana karşılaştırabilir.
+	entries, _ := os.ReadDir(filepath.Join(out, "data", "curriculum", "versions"))
+	for _, entry := range entries {
+		if entry.IsDir() || !strings.HasSuffix(entry.Name(), ".json") || entry.Name() == "index.json" {
+			continue
+		}
+		raw, err := os.ReadFile(filepath.Join(out, "data", "curriculum", "versions", entry.Name()))
+		if err != nil {
+			continue
+		}
+		var archived curriculum.Plan
+		if json.Unmarshal(raw, &archived) != nil || archived.ProgramCode == "" {
+			continue
+		}
+		versions[archived.ProgramCode] = append(versions[archived.ProgramCode], map[string]any{
+			"id": archived.PlanID, "label": archived.PlanLabel,
+			"file": "data/curriculum/versions/" + entry.Name(), "sourceUrl": archived.SourceURL,
+		})
+	}
+	for code := range versions {
+		sort.Slice(versions[code], func(i, j int) bool { return versions[code][i]["id"].(int) > versions[code][j]["id"].(int) })
+	}
+	if err := st.WriteJSON(versions, "data", "curriculum", "versions", "index.json"); err != nil {
 		return err
 	}
 	logf("bitti")

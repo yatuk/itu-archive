@@ -14,8 +14,8 @@
 // not girer (latestOnly/calcGPA). Seçmeli slotta ders seçilmediyse plan kredisi
 // varsayılandır ve `defaultCredit` işareti taşır.
 
-import { parseRange, canonicalCode } from './plan.js?v=5200cebd4769';
-import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=5200cebd4769';
+import { parseRange, canonicalCode } from './plan.js?v=38c6e1b51679';
+import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=38c6e1b51679';
 
 const KEY = 'itu-grades';
 

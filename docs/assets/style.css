@@ -2936,7 +2936,43 @@ body.modal-open { overflow: hidden; }
 /* Yarıyıl blokları: geniş ekranda iki kolon, her yarıyıl kendi çerçevesinde.
    Dar ekranda tek kolona iner. */
 .dp-semesters { display: grid; gap: 16px; align-items: start; }
+
+.copy-btn { border: 0; background: transparent; color: var(--link); cursor: pointer; font: inherit; font-size: 10px; margin-left: 6px; padding: 3px 4px; text-decoration: underline; text-underline-offset: 2px; }
+.copy-btn:hover, .copy-btn:focus-visible { background: var(--panel2); border-radius: 4px; outline: 1px solid var(--line); }
+.mobile-copy-actions { display: flex; flex-wrap: wrap; gap: 4px; padding: 0 10px 8px; }
+.dp-recommend, .dp-compare { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; margin: 12px 0; padding: 0 14px; }
+.dp-recommend > summary, .dp-compare > summary { align-items: center; cursor: pointer; display: flex; gap: 12px; min-height: 48px; }
+.dp-recommend > summary span, .dp-compare > summary span { color: var(--fg); font-weight: 700; }
+.dp-recommend > summary small, .dp-compare > summary small { color: var(--dim); margin-left: auto; }
+.dp-recommend-controls, .dp-compare-controls { align-items: end; border-top: 1px solid var(--hairline); display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 0; }
+.dp-recommend-controls label, .dp-compare-controls label { color: var(--dim); display: grid; font-size: 11px; gap: 4px; }
+.dp-recommend-note { color: var(--dim); font-size: 11px; margin: 0 0 10px; }
+.dp-recommend-list { display: grid; gap: 6px; }
+.dp-recommend-item { align-items: center; border-top: 1px solid var(--hairline); display: grid; gap: 10px; grid-template-columns: auto minmax(0,1fr) auto; padding: 10px 2px; }
+.dp-recommend-item span { min-width: 0; }
+.dp-recommend-item small { color: var(--dim); display: block; margin-top: 3px; }
+.dp-recommend-item em { color: var(--ok); font-size: 11px; font-style: normal; text-align: right; }
+.dp-recommend-item.needs-review em { color: var(--warn); }
+.dp-recommend-footer { align-items: center; border-top: 1px solid var(--line); display: flex; justify-content: space-between; padding: 12px 0; }
+.dp-diff-list { list-style: none; margin: 4px 0 14px; padding: 0; }
+.dp-diff-list li { border-top: 1px solid var(--hairline); display: flex; gap: 12px; justify-content: space-between; padding: 9px 2px; }
+.dp-diff-list li.added b { color: var(--ok); }
+.dp-diff-list li.removed b { color: var(--danger); }
+.dp-diff-list span { color: var(--dim); font-size: 11px; text-align: right; }
+.pg-source { background: var(--panel2); border: 1px solid var(--hairline); border-radius: 8px; display: grid; gap: 4px; margin: 12px 0; padding: 10px; }
+.pg-source span, .pg-mobile-source { color: var(--dim); font-size: 11px; }
 @media (min-width: 900px) { .dp-semesters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+@media (max-width: 600px) {
+  .mobile-copy-actions { display: none; }
+  .dp-recommend > summary, .dp-compare > summary { align-items: flex-start; flex-direction: column; gap: 2px; padding: 10px 0; }
+  .dp-recommend > summary small, .dp-compare > summary small { margin-left: 0; }
+  .dp-recommend-controls, .dp-compare-controls { align-items: stretch; display: grid; }
+  .dp-recommend-item { align-items: start; grid-template-columns: auto 1fr; }
+  .dp-recommend-item em { grid-column: 2; text-align: left; }
+  .dp-diff-list li { align-items: flex-start; flex-direction: column; }
+  .dp-diff-list span { text-align: left; }
+}
 .dp-sem {
   border: 1px solid var(--hairline); background: var(--panel);
   border-radius: var(--radius-card); padding: 12px 14px 14px;

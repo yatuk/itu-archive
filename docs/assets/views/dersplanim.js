@@ -15,20 +15,22 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=5200cebd4769';
-import { state } from '../core/store.js?v=5200cebd4769';
-import { openCourseDetail } from '../core/course-detail.js?v=5200cebd4769';
-import { quotaDisplay } from '../core/chart.js?v=5200cebd4769';
-import * as fav from '../core/favorites.js?v=5200cebd4769';
-import { toast } from '../core/toast.js?v=5200cebd4769';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge } from '../core/plan.js?v=5200cebd4769';
-import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=5200cebd4769';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js?v=5200cebd4769';
-import { GRADE_POINTS, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=5200cebd4769';
-import { confirmDialog } from '../core/dialog.js?v=5200cebd4769';
-import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=5200cebd4769';
-import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=5200cebd4769';
-import { I18N } from '../i18n.js?v=5200cebd4769';
+import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=38c6e1b51679';
+import { state } from '../core/store.js?v=38c6e1b51679';
+import { openCourseDetail } from '../core/course-detail.js?v=38c6e1b51679';
+import { quotaDisplay } from '../core/chart.js?v=38c6e1b51679';
+import * as fav from '../core/favorites.js?v=38c6e1b51679';
+import { toast } from '../core/toast.js?v=38c6e1b51679';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=38c6e1b51679';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=38c6e1b51679';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js?v=38c6e1b51679';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=38c6e1b51679';
+import { confirmDialog } from '../core/dialog.js?v=38c6e1b51679';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=38c6e1b51679';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=38c6e1b51679';
+import { I18N } from '../i18n.js?v=38c6e1b51679';
+import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=38c6e1b51679';
+import { compareCurricula } from '../core/curriculum-diff.js?v=38c6e1b51679';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
@@ -123,6 +125,20 @@ function ensureHost() {
     <div class="dp-resultbar">
       <p class="resultline" id="dp-result" aria-live="polite">program seçiliyor…</p>
     </div>
+    <details class="dp-recommend" id="dp-recommend">
+      <summary><span>Dönem için ders öner</span><small>Müfredat, notların ve açık şubeler kullanılır</small></summary>
+      <div class="dp-recommend-controls">
+        <label>hedef yarıyıl <select id="dp-recommend-sem"></select></label>
+        <label>en fazla kredi <input id="dp-recommend-credit" type="number" min="1" max="40" value="18"></label>
+        <button type="button" id="dp-recommend-run" class="btn-primary">Öneri oluştur</button>
+      </div>
+      <p class="dp-recommend-note">Öneriler kayıt hakkını garanti etmez. Alternatif önşartlar ve bölüm kuralları için işaretli uyarıları kontrol et.</p>
+      <div id="dp-recommend-result" aria-live="polite"></div>
+    </details>
+    <details class="dp-compare" id="dp-compare">
+      <summary><span>Müfredat sürümlerini karşılaştır</span><small id="dp-compare-preview">Bu planın değişikliklerini gör</small></summary>
+      <div id="dp-compare-body"><p class="empty">Sürümler yükleniyor…</p></div>
+    </details>
     <details class="dp-grades" id="dp-grades">
       <summary><span>GANO ve ilerleme</span><b id="dp-grade-preview">Not girdikçe hesaplanır</b></summary>
       <p class="dp-grades-empty" id="dp-grades-empty">Derslerin yanındaki not alanlarından not girdikçe GANO ve ilerleme burada hesaplanır.</p>
@@ -152,6 +168,9 @@ function ensureHost() {
         <div class="dp-grades-actions">
           <button type="button" id="dp-export" class="btn-ghost">JSON dışa aktar</button>
           <button type="button" id="dp-import" class="btn-ghost">JSON içe aktar</button>
+          <button type="button" id="dp-backup-all" class="btn-ghost">Program + GANO yedeği indir</button>
+          <button type="button" id="dp-restore-all" class="btn-ghost">Tüm yedeği geri yükle</button>
+          <input id="dp-restore-file" type="file" accept="application/json,.json" hidden>
           <button type="button" id="dp-reset" class="btn-ghost">tümünü sıfırla</button>
         </div>
         <p class="dp-privacy">Notların yalnızca bu tarayıcıda saklanır; sunucuya gönderilmez. Bu bir transkript değildir ve sonuçlar OBS ile küçük farklar gösterebilir. Kaynak:
@@ -230,6 +249,7 @@ async function selectProgram(code) {
   await ensureTerm();
   await reloadRows();
   renderAll();
+  loadCurriculumCompare();
   saveState();
   // Seçili seçmeli derslerin kredilerini katalogdan doldur (GANO hesabı için).
   ensureCatalogForPicks();
@@ -468,6 +488,7 @@ function renderAll() {
 
   renderSummary(sems.map((x) => x.s));
   renderSemesterFilter();
+  renderRecommendSemesterOptions();
 
   let openCount = 0, closedCount = 0, slotOpen = 0, slotCount = 0, shown = 0;
 
@@ -1270,9 +1291,111 @@ async function importTranscript() {
   toast(I18N.lang === 'en' ? 'Transcript grades imported' : 'Transkript notları aktarıldı');
 }
 
+function renderRecommendSemesterOptions() {
+  const select = $('#dp-recommend-sem');
+  if (!select || !plan) return;
+  const current = select.value;
+  select.innerHTML = plan.semesters.map((sem, index) => `<option value="${index}">${esc(sem.title)}</option>`).join('');
+  select.value = current && Number(current) < plan.semesters.length ? current : String(Math.min(plan.semesters.length - 1, 0));
+}
+
+function passedCodes() {
+  const done = new Set(getTaken().codes || []);
+  for (const [code, rec] of Object.entries(stored.grades || {})) {
+    if (EXEMPT.includes(rec.grade) || Number(GRADE_POINTS[rec.grade]) > 0) done.add(canonicalCode(code));
+  }
+  for (const rec of Object.values(stored.elective || {})) {
+    if (rec?.code && (EXEMPT.includes(rec.grade) || Number(GRADE_POINTS[rec.grade]) > 0)) done.add(canonicalCode(rec.code));
+  }
+  return done;
+}
+
+async function buildRecommendations() {
+  const box = $('#dp-recommend-result');
+  if (!plan || !rows.length) { box.innerHTML = '<p class="empty">Bu dönem için açık şube verisi yok.</p>'; return; }
+  const target = Number($('#dp-recommend-sem').value || 0);
+  const maxCredits = Math.max(1, Math.min(40, Number($('#dp-recommend-credit').value || 18)));
+  const done = passedCodes();
+  const graph = await getJSON('data/prereq/graph.json').catch(() => ({ edges: [] }));
+  const incoming = new Map();
+  for (const edge of (graph.edges || [])) {
+    const list = incoming.get(edge.to) || [];
+    list.push(edge.from); incoming.set(edge.to, list);
+  }
+  const candidates = [];
+  plan.semesters.forEach((semester, semesterIndex) => (semester.items || []).forEach((item) => {
+    if (!item.course) return;
+    const code = canonicalCode(item.course.code);
+    if (!code || done.has(code)) return;
+    const sections = sectionsForCode(rows, code);
+    if (!sections.length) return;
+    const previous = (stored.grades || {})[code]?.grade;
+    const missing = (incoming.get(code) || []).filter((required) => !done.has(required));
+    const best = sections.slice().sort((a, b) => {
+      const ar = Number(a.cap || 0) - Number(a.enr || 0), br = Number(b.cap || 0) - Number(b.enr || 0);
+      return Number(br > 0) - Number(ar > 0) || br - ar;
+    })[0];
+    candidates.push({ code, name: item.course.name, credits: Number(item.course.credits || 0), semesterIndex, section: best,
+      missing, failed: previous === 'FF' || previous === 'VF' });
+  }));
+  candidates.sort((a, b) => Number(b.failed) - Number(a.failed) || Math.abs(a.semesterIndex - target) - Math.abs(b.semesterIndex - target) || a.semesterIndex - b.semesterIndex);
+  let used = 0;
+  const chosen = candidates.filter((item) => {
+    if (item.semesterIndex > target + 1 || used + item.credits > maxCredits) return false;
+    used += item.credits; return true;
+  });
+  box.innerHTML = chosen.length ? `<div class="dp-recommend-list">${chosen.map((item, index) => `
+    <label class="dp-recommend-item${item.missing.length ? ' needs-review' : ''}">
+      <input type="checkbox" data-rec-index="${index}" ${item.missing.length ? '' : 'checked'}>
+      <span><b>${esc(item.code)}</b> ${esc(item.name || '')}<small>${item.credits} kr · ${esc(item.section.when || 'zaman açıklanmadı')} · CRN ${esc(item.section.crn)}</small></span>
+      <em>${item.failed ? 'Tekrar dersi' : `${item.semesterIndex + 1}. yarıyıl`}${item.missing.length ? ` · önşartı kontrol et: ${esc(item.missing.join(', '))}` : ''}</em>
+    </label>`).join('')}</div>
+    <div class="dp-recommend-footer"><b>${trNum(used)} kredi önerildi</b><button type="button" id="dp-recommend-add" class="btn-primary">Seçilenleri programa ekle</button></div>`
+    : '<p class="empty">Bu dönem, notların ve kredi sınırıyla eşleşen ders bulunamadı.</p>';
+  box._items = chosen;
+  $('#dp-recommend-add')?.addEventListener('click', () => {
+    const items = [...box.querySelectorAll('[data-rec-index]:checked')].map((input) => chosen[Number(input.dataset.recIndex)]?.section).filter(Boolean)
+      .map((section) => ({ branch: section.branch, crn: String(section.crn) }));
+    if (!items.length) { toast('Önce en az bir ders seç', { kind: 'warn' }); return; }
+    window.dispatchEvent(new CustomEvent('itu:goto-program'));
+    setTimeout(() => window.dispatchEvent(new CustomEvent('itu:add-program-items', { detail: { term: termSlug, items } })), 0);
+  });
+}
+
+async function loadCurriculumCompare() {
+  const body = $('#dp-compare-body');
+  if (!body || !progCode) return;
+  const manifest = await getJSON('data/curriculum/versions/index.json').catch(() => ({}));
+  const refs = manifest[progCode] || [];
+  if (refs.length < 2) {
+    $('#dp-compare-preview').textContent = 'Henüz iki arşiv sürümü yok';
+    body.innerHTML = '<p class="empty">Karşılaştırma için en az iki farklı müfredat sürümü gerekir. Sürümler müfredat taramalarında arşivlenir.</p>';
+    return;
+  }
+  body.innerHTML = `<div class="dp-compare-controls"><label>eski sürüm <select id="dp-version-a">${refs.map((r, i) => `<option value="${esc(r.file)}" ${i === 1 ? 'selected' : ''}>${esc(r.label)}</option>`).join('')}</select></label><label>yeni sürüm <select id="dp-version-b">${refs.map((r, i) => `<option value="${esc(r.file)}" ${i === 0 ? 'selected' : ''}>${esc(r.label)}</option>`).join('')}</select></label><button type="button" id="dp-compare-run" class="btn-ghost">Karşılaştır</button></div><div id="dp-compare-result"></div>`;
+  $('#dp-compare-run').addEventListener('click', async () => {
+    const [before, after] = await Promise.all([getJSON($('#dp-version-a').value), getJSON($('#dp-version-b').value)]);
+    const changes = compareCurricula(before, after);
+    const result = $('#dp-compare-result');
+    result.innerHTML = changes.length ? `<ul class="dp-diff-list">${changes.map((change) => {
+      const item = change.after || change.before;
+      const label = change.type === 'added' ? 'Eklendi' : change.type === 'removed' ? 'Kaldırıldı' : 'Değişti';
+      const detail = change.type === 'changed' ? change.fields.map((field) => `${field}: ${change.before[field] || '—'} → ${change.after[field] || '—'}`).join(' · ') : `${item.semester}. yarıyıl`;
+      return `<li class="${change.type}"><b>${label}: ${esc(item.code)}</b><span>${esc(detail)}</span></li>`;
+    }).join('')}</ul>` : '<p class="empty">Bu iki sürüm arasında ders planı farkı yok.</p>';
+  });
+}
+
+function downloadJSON(data, filename) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+  a.download = filename; a.click(); URL.revokeObjectURL(a.href);
+}
+
 // -- olaylar --
 
 function init() {
+  $('#dp-recommend-run').addEventListener('click', buildRecommendations);
   const term = $('#dp-term');
   term.addEventListener('change', async () => {
     termSlug = term.value;
@@ -1452,6 +1575,24 @@ function init() {
     ensureCatalogForPicks();
     renderAll();
     toast('Notlar içe aktarıldı');
+  });
+  $('#dp-backup-all').addEventListener('click', () => {
+    downloadJSON(createBackup(), `itu-ders-yedek-${new Date().toISOString().slice(0, 10)}.json`);
+    toast('Program ve GANO yedeği indirildi');
+  });
+  $('#dp-restore-all').addEventListener('click', () => $('#dp-restore-file').click());
+  $('#dp-restore-file').addEventListener('change', async (event) => {
+    const file = event.target.files?.[0];
+    event.target.value = '';
+    if (!file) return;
+    const parsed = parseBackup(await file.text());
+    if (!parsed) { toast('Geçersiz veya desteklenmeyen yedek', { kind: 'warn' }); return; }
+    const summary = backupSummary(parsed);
+    const yes = await confirmDialog({ title: 'Tüm yedeği geri yükle', message: `${summary.programs} program, ${summary.sections} şube ve ${summary.gpaPrograms} GANO planı mevcut tarayıcı verilerinin yerini alacak.`, okLabel: 'Geri yükle' });
+    if (!yes) return;
+    if (!restoreBackup(parsed)) { toast('Yedek kaydedilemedi', { kind: 'warn' }); return; }
+    toast('Yedek geri yüklendi');
+    location.reload();
   });
   $('#dp-reset').addEventListener('click', () => {
     confirmDialog({

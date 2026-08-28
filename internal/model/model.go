@@ -103,8 +103,14 @@ type PrereqNode struct {
 
 // PrereqEdge: From dersi, To dersinin önşartı.
 type PrereqEdge struct {
-	From string `json:"from"`
-	To   string `json:"to"`
+	From        string `json:"from"`
+	To          string `json:"to"`
+	Requirement string `json:"requirement,omitempty"`
+	ClassReq    string `json:"classReq,omitempty"`
+	SourceURL   string `json:"sourceUrl,omitempty"`
+	SourceTitle string `json:"sourceTitle,omitempty"`
+	Status      string `json:"status,omitempty"`
+	VerifiedAt  string `json:"verifiedAt,omitempty"`
 }
 
 // PrereqGraph, docs/data/prereq/graph.json içeriği.

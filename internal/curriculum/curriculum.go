@@ -47,11 +47,11 @@ const (
 // Level, bir program seviyesinin OBS parametreleri. Seviye tipi ID'leri
 // ProgramKodlariList'e, plan tipi kodları DersPlanlariList'e veriliyor.
 type Level struct {
-	Name      string // "OL", "LS", "YL", "DR"
-	SeviyeID  int    // programSeviyeTipiId
-	PlanTipi  string // planTipiKodu
-	Suffix    string // program kodu soneki
-	Flat      bool   // dönem tabloları yerine tek düz tablo (lisansüstü)
+	Name     string // "OL", "LS", "YL", "DR"
+	SeviyeID int    // programSeviyeTipiId
+	PlanTipi string // planTipiKodu
+	Suffix   string // program kodu soneki
+	Flat     bool   // dönem tabloları yerine tek düz tablo (lisansüstü)
 }
 
 // Levels, desteklenen program seviyeleri. İkinci öğretim (ID 5) dahil değil:
@@ -114,17 +114,19 @@ type Semester struct {
 }
 
 type Plan struct {
-	ProgramCode  string     `json:"programCode"`
-	ProgramName  string     `json:"programName"`
-	Faculty      string     `json:"faculty"`
-	Level        string     `json:"level"`
-	PlanLabel    string     `json:"planLabel"`
-	TotalCredits string     `json:"totalCredits,omitempty"` // sayfa altı "Toplam Kredi"
-	TotalEcts    string     `json:"totalEcts,omitempty"`    // sayfa altı "Toplam AKTS"
+	PlanID       int    `json:"planId,omitempty"`
+	ProgramCode  string `json:"programCode"`
+	ProgramName  string `json:"programName"`
+	Faculty      string `json:"faculty"`
+	Level        string `json:"level"`
+	PlanLabel    string `json:"planLabel"`
+	SourceURL    string `json:"sourceUrl,omitempty"`
+	TotalCredits string `json:"totalCredits,omitempty"` // sayfa altı "Toplam Kredi"
+	TotalEcts    string `json:"totalEcts,omitempty"`    // sayfa altı "Toplam AKTS"
 	// OBS bazı programlarda (özellikle önlisans) AKTS toplamını 0,00 basar;
 	// o zaman kalemlerden toplanır ve bu bayrak "hesaplandı" işareti olur.
-	TotalCreditsComputed bool `json:"totalCreditsComputed,omitempty"`
-	TotalEctsComputed    bool `json:"totalEctsComputed,omitempty"`
+	TotalCreditsComputed bool       `json:"totalCreditsComputed,omitempty"`
+	TotalEctsComputed    bool       `json:"totalEctsComputed,omitempty"`
 	Semesters            []Semester `json:"semesters"`
 }
 
@@ -140,15 +142,15 @@ func New(f *fetch.Client) *Client {
 }
 
 var (
-	rowRe    = regexp.MustCompile(`(?is)<tr>(.*?)</tr>`)
-	cellRe   = regexp.MustCompile(`(?is)<td[^>]*>(.*?)</td>`)
-	tagRe    = regexp.MustCompile(`(?s)<[^>]*>`)
-	spaceRe  = regexp.MustCompile(`\s+`)
-	hrefRe   = regexp.MustCompile(`(?i)href="([^"]+)"`)
-	h2Re     = regexp.MustCompile(`(?is)<h2[^>]*>(.*?)</h2>`)
-	tableRe  = regexp.MustCompile(`(?is)<table[^>]*>(.*?)</table>`)
-	grupIDRe = regexp.MustCompile(`grupId=(\d+)`)
-	planIDRe = regexp.MustCompile(`DersPlanDetay/(\d+)`)
+	rowRe        = regexp.MustCompile(`(?is)<tr>(.*?)</tr>`)
+	cellRe       = regexp.MustCompile(`(?is)<td[^>]*>(.*?)</td>`)
+	tagRe        = regexp.MustCompile(`(?s)<[^>]*>`)
+	spaceRe      = regexp.MustCompile(`\s+`)
+	hrefRe       = regexp.MustCompile(`(?i)href="([^"]+)"`)
+	h2Re         = regexp.MustCompile(`(?is)<h2[^>]*>(.*?)</h2>`)
+	tableRe      = regexp.MustCompile(`(?is)<table[^>]*>(.*?)</table>`)
+	grupIDRe     = regexp.MustCompile(`grupId=(\d+)`)
+	planIDRe     = regexp.MustCompile(`DersPlanDetay/(\d+)`)
 	totalKrediRe = regexp.MustCompile(`(?i)Toplam\s+Kredi[^0-9]*([0-9.,]+)`)
 	totalEctsRe  = regexp.MustCompile(`(?i)Toplam\s+AKTS[^0-9]*([0-9.,]+)`)
 	// Ders kodu hücresindeki bağlantılar: <a href="...bransKodu=SAO&dersNo=101">SAO 101E</a>.
@@ -254,13 +256,13 @@ func (c *Client) Plan(ctx context.Context, p Program) (*Plan, error) {
 		return nil, err
 	}
 	if lv.Flat {
-		return c.parseFlatPlan(ctx, body, p, label)
+		return c.parseFlatPlan(ctx, body, p, label, planID)
 	}
 
 	titles := h2Re.FindAllStringSubmatch(body, -1)
 	tables := tableRe.FindAllStringSubmatch(body, -1)
 
-	plan := &Plan{ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, Level: p.Level, PlanLabel: label}
+	plan := &Plan{PlanID: planID, ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, Level: p.Level, PlanLabel: label, SourceURL: fmt.Sprintf("%s/%d", planDetailURL, planID)}
 	// İlk h2 program adı başlığı, dönem başlıkları ondan sonra geliyor;
 	// ilk tablo da genelde ders bilgisi kutusu değil doğrudan 1. dönem —
 	// sayıyı eşleştirip taşarsa kırpıyoruz.
@@ -314,7 +316,7 @@ func (c *Client) Plan(ctx context.Context, p Program) (*Plan, error) {
 // parseFlatPlan, yüksek lisans ve doktora programlarının tek düz tablosunu
 // tek bir "dönem"e indirger. Bu programlarda dönem ayrımı yok — ders listesi
 // tek tabloda duruyor ve seçmeli gruplar yine "Dersler" satırlarıyla geliyor.
-func (c *Client) parseFlatPlan(ctx context.Context, body string, p Program, label string) (*Plan, error) {
+func (c *Client) parseFlatPlan(ctx context.Context, body string, p Program, label string, planID int) (*Plan, error) {
 	// Sayfada yardımcı tablolar da olabiliyor; en çok satırlı olanı ana liste
 	// sayıyoruz.
 	tables := tableRe.FindAllStringSubmatch(body, -1)
@@ -360,7 +362,7 @@ func (c *Client) parseFlatPlan(ctx context.Context, body string, p Program, labe
 		sem.Items = append(sem.Items, Item{Course: parseCourse(v, cells[0][1])})
 	}
 
-	plan := &Plan{ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, Level: p.Level, PlanLabel: label}
+	plan := &Plan{PlanID: planID, ProgramCode: p.Code, ProgramName: p.Name, Faculty: p.Faculty, Level: p.Level, PlanLabel: label, SourceURL: fmt.Sprintf("%s/%d", planDetailURL, planID)}
 	if len(sem.Items) > 0 {
 		plan.Semesters = append(plan.Semesters, sem)
 	}

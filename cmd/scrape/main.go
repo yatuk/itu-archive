@@ -545,6 +545,9 @@ func scrapePrereqs(ctx context.Context, f *fetch.Client, st *store.Store, worker
 	}
 	graph := prereq.BuildGraph(rows, names)
 	graph.GeneratedAt = time.Now().UTC().Format(time.RFC3339)
+	for i := range graph.Edges {
+		graph.Edges[i].VerifiedAt = graph.GeneratedAt
+	}
 	graph.SchemaVersion = model.DataSchemaVersion
 	graph.Provenance = model.Provenance{
 		Provider:         "İstanbul Teknik Üniversitesi OBS",

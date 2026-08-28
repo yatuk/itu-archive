@@ -105,19 +105,25 @@ func (c *Client) Branches(ctx context.Context) ([]Branch, error) {
 // Row, OnsartAra tablosundaki tek bir satır: bir veya daha fazla hedef ders
 // koduna uygulanan tek bir önşart ifadesi.
 type Row struct {
-	Targets  []string // "AKM 204", "AKM 204E"
-	Name     string   // "Akışkanlar Mekaniği"
-	Text     string   // ham ifade, detay paneli için
-	ClassReq string
-	Required []string // ifadeden çıkarılan ders kodları
+	Targets   []string // "AKM 204", "AKM 204E"
+	Name      string   // "Akışkanlar Mekaniği"
+	Text      string   // ham ifade, detay paneli için
+	ClassReq  string
+	Required  []string // ifadeden çıkarılan ders kodları
+	SourceURL string
 }
 
 func (c *Client) Requirements(ctx context.Context, br Branch) ([]Row, error) {
-	body, err := c.f.Text(ctx, fmt.Sprintf("%s?DersBransKoduId=%d", searchURL, br.ID))
+	source := fmt.Sprintf("%s?DersBransKoduId=%d", searchURL, br.ID)
+	body, err := c.f.Text(ctx, source)
 	if err != nil {
 		return nil, err
 	}
-	return parse(body, br.Code)
+	rows, err := parse(body, br.Code)
+	for i := range rows {
+		rows[i].SourceURL = source
+	}
+	return rows, err
 }
 
 // ScrapeAll, tüm branşları eşzamanlı çeker. Per-branş hataları failed'da
@@ -264,7 +270,8 @@ func BuildGraph(rows []Row, names map[string]string) *model.PrereqGraph {
 				key := req + ">" + target
 				if !edgeSeen[key] {
 					edgeSeen[key] = true
-					edges = append(edges, model.PrereqEdge{From: req, To: target})
+					edges = append(edges, model.PrereqEdge{From: req, To: target, Requirement: r.Text, ClassReq: r.ClassReq,
+						SourceURL: r.SourceURL, SourceTitle: "İTÜ OBS önşart kaydı", Status: "verified"})
 				}
 			}
 		}

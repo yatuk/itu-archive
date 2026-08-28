@@ -15,11 +15,11 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-import { esc, fold, getJSON, termLabel } from './core/utils.js?v=5200cebd4769';
-import { state } from './core/store.js?v=5200cebd4769';
-import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=5200cebd4769';
-import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=5200cebd4769';
-import { I18N } from './i18n.js?v=5200cebd4769';
+import { esc, fold, getJSON, termLabel } from './core/utils.js?v=38c6e1b51679';
+import { state } from './core/store.js?v=38c6e1b51679';
+import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=38c6e1b51679';
+import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=38c6e1b51679';
+import { I18N } from './i18n.js?v=38c6e1b51679';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
@@ -122,7 +122,7 @@ import { I18N } from './i18n.js?v=5200cebd4769';
       this.nodes = nodes.map((n) => ({ ...n, x: 0, y: 0, deg: 0 }));
       this.byCode = new Map(this.nodes.map((n) => [n.code, n]));
       this.edges = edges
-        .map((e) => ({ from: this.byCode.get(e.from), to: this.byCode.get(e.to) }))
+        .map((e) => ({ ...e, from: this.byCode.get(e.from), to: this.byCode.get(e.to) }))
         .filter((e) => e.from && e.to);
 
       this.byFrom = new Map();
@@ -457,11 +457,14 @@ import { I18N } from './i18n.js?v=5200cebd4769';
       // Ham ifade yerine ayrıştırılmış VE/VEYA ağacı: "hepsi gerekli" ile
       // "biri yeterli" ayrımı açıkça görünsün.
       const tree = n.requirement ? parseReq(n.requirement) : null;
+      const sources = this.edges.filter((e) => e.to.code === code && e.sourceUrl);
+      const source = sources[0];
       this.detail.innerHTML = `
         <div class="pg-detail-head"><h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3><button type="button" class="pg-detail-close" aria-label="Detayı kapat">×</button></div>
         ${tree ? `<h4>Önşartı</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
         ${req.length ? `<h4>Gereken dersler (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
         ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}
+        ${source ? `<div class="pg-source"><b>Kaynak ve doğrulama</b><span>${source.status === 'verified' ? 'OBS kaydı doğrulandı' : 'Kaynak kaydı'}${source.verifiedAt ? ` · ${new Date(source.verifiedAt).toLocaleDateString('tr-TR')}` : ''}</span><a href="${esc(source.sourceUrl)}" target="_blank" rel="noopener">İTÜ OBS kaydını aç ↗</a></div>` : ''}
         <button type="button" class="btn-ghost pg-detail-open" data-code="${esc(n.code)}">bu dersi detaylandır</button>`;
       this.detail.querySelectorAll('.pg-chip:not([disabled])').forEach((b) =>
         b.addEventListener('click', () => this.panTo(b.dataset.code)));
@@ -1025,10 +1028,11 @@ import { I18N } from './i18n.js?v=5200cebd4769';
       const before = (currentGraph.byTo.get(code) || []);
       const after = (currentGraph.byFrom.get(code) || []);
       const logic = n.requirement ? (/veya/i.test(n.requirement) ? txt('VEYA · biri yeterli', 'OR · any one is enough') : txt('VE · hepsi gerekli', 'AND · all are required')) : '';
+      const source = (currentGraph.edges || []).find((edge) => edge.to.code === code && edge.sourceUrl);
       box.innerHTML = `<div class="pg-mobile-explorer-head"><button type="button" class="pg-mobile-back">← ${txt('Dönemler', 'Terms')}</button><button type="button" class="pg-mobile-detail" data-detail-code="${esc(code)}">${txt('Ders detayı', 'Course details')}</button></div>
         <div class="pg-mobile-flow">
           <section><h3>${txt('Önce alınması gerekenler', 'Required before')}</h3>${logic ? `<p class="pg-mobile-logic">${esc(logic)}</p>` : ''}${before.length ? before.map((c) => courseButton(c, txt('önşart', 'prerequisite'))).join('') : `<p class="pg-mobile-empty">${txt('Kayıtlı önşart yok.', 'No recorded prerequisite.')}</p>`}</section>
-          <article class="pg-mobile-selected"><span>${txt('Seçili ders', 'Selected course')}</span><b>${esc(n.code)}</b><h2>${esc(n.name || txt('Ders adı arşivde bulunamadı', 'Course name unavailable in archive'))}</h2>${n.requirement ? `<p>${esc(n.requirement)}</p>` : ''}</article>
+          <article class="pg-mobile-selected"><span>${txt('Seçili ders', 'Selected course')}</span><b>${esc(n.code)}</b><h2>${esc(n.name || txt('Ders adı arşivde bulunamadı', 'Course name unavailable in archive'))}</h2>${n.requirement ? `<p>${esc(n.requirement)}</p>` : ''}${source ? `<p class="pg-mobile-source">${txt('Kaynak', 'Source')}: <a href="${esc(source.sourceUrl)}" target="_blank" rel="noopener">İTÜ OBS ↗</a>${source.verifiedAt ? ` · ${new Date(source.verifiedAt).toLocaleDateString('tr-TR')}` : ''}</p>` : ''}</article>
           <section><h3>${txt('Bu dersten sonra açılanlar', 'Courses unlocked after')}</h3>${after.length ? after.map((c) => courseButton(c, txt('bu dersi ister', 'requires this course'))).join('') : `<p class="pg-mobile-empty">${txt('Bu dersi doğrudan isteyen başka ders yok.', 'No course directly requires this course.')}</p>`}</section>
         </div>`;
       wire();

@@ -6,6 +6,25 @@ const cache = new Map();
 
 export const $ = (sel) => document.querySelector(sel);
 
+export async function copyText(text) {
+  const value = String(text ?? '');
+  try {
+    await navigator.clipboard.writeText(value);
+    return true;
+  } catch {
+    const input = document.createElement('textarea');
+    input.value = value;
+    input.setAttribute('readonly', '');
+    input.style.position = 'fixed';
+    input.style.opacity = '0';
+    document.body.appendChild(input);
+    input.select();
+    const ok = document.execCommand('copy');
+    input.remove();
+    return ok;
+  }
+}
+
 // getJSON, aynı yol bir kez çekilir (önbellek) ve başarısızlıkta hata fırlatır.
 // Hatalı (örn. 404) sonuçlar önbellekte tutulmaz: dosya sonradan oluşursa
 // sayfa yenilenmeden de aynı yol tekrar denenebilir.

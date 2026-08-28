@@ -5,15 +5,15 @@
 // kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
 // Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum } from '../core/utils.js?v=5200cebd4769';
-import { state, indexReady } from '../core/store.js?v=5200cebd4769';
-import { quotaDisplay } from '../core/chart.js?v=5200cebd4769';
-import { buildTimetable, parseWhen, openDetail } from './courses.js?v=5200cebd4769';
-import * as fav from '../core/favorites.js?v=5200cebd4769';
-import { toast } from '../core/toast.js?v=5200cebd4769';
-import { confirmDialog, promptDialog } from '../core/dialog.js?v=5200cebd4769';
-import { I18N } from '../i18n.js?v=5200cebd4769';
-import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=5200cebd4769';
+import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum, copyText } from '../core/utils.js?v=38c6e1b51679';
+import { state, indexReady } from '../core/store.js?v=38c6e1b51679';
+import { quotaDisplay } from '../core/chart.js?v=38c6e1b51679';
+import { buildTimetable, parseWhen, openDetail } from './courses.js?v=38c6e1b51679';
+import * as fav from '../core/favorites.js?v=38c6e1b51679';
+import { toast } from '../core/toast.js?v=38c6e1b51679';
+import { confirmDialog, promptDialog } from '../core/dialog.js?v=38c6e1b51679';
+import { I18N } from '../i18n.js?v=38c6e1b51679';
+import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=38c6e1b51679';
 
 let term = null;
 let rows = [];
@@ -152,6 +152,14 @@ export function initProgram() {
   document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && gridContextMenu && !gridContextMenu.hidden) closeGridContextMenu(true);
+  });
+  window.addEventListener('itu:add-program-items', async (event) => {
+    const detail = event.detail || {};
+    if (detail.term && detail.term !== term) await loadTerm(detail.term);
+    let added = 0;
+    for (const item of (detail.items || [])) if (addToActive(item.branch, String(item.crn))) added++;
+    renderProgSelector();
+    toast(added ? `${added} şube programa eklendi` : 'Seçilen şubeler zaten programda', { kind: added ? 'ok' : 'warn' });
   });
   inited = true;
 }
@@ -424,9 +432,9 @@ function renderList(items) {
     const speed = fillSpeedNote(crn);
     return `<div class="p-item${markFull && full ? ' p-full' : ''}" role="row" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
-      <span class="p-crn" role="cell"><span class="p-mobile-label">CRN</span>${esc(crn)}${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
-      <div class="p-code" role="cell"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
-      <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : 'Öğretim üyesi açıklanmadı')}</span>
+      <span class="p-crn" role="cell"><span class="p-mobile-label">CRN</span>${esc(crn)}<button type="button" class="copy-btn" data-copy="${esc(crn)}" data-copy-label="CRN" aria-label="CRN ${esc(crn)} kopyala">kopyala</button>${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
+      <div class="p-code" role="cell"><b>${esc(code)}</b><button type="button" class="copy-btn" data-copy="${esc(code)}" data-copy-label="Ders kodu" aria-label="${esc(code)} ders kodunu kopyala">kopyala</button><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
+      <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : 'Öğretim üyesi açıklanmadı')}${instructor && instructor !== '-' ? `<button type="button" class="copy-btn" data-copy="${esc(instructor)}" data-copy-label="Öğretim üyesi" aria-label="${esc(instructor)} adını kopyala">kopyala</button>` : ''}</span>
       <span class="p-when" role="cell">${esc(when || 'Zaman açıklanmadı')}</span>
       <span class="p-fill" role="cell" aria-label="Kontenjan">${cap ? quotaDisplay(cap, enr) : '·'}</span>
       <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${esc(code)} dersini programdan çıkar">Çıkar</button>
@@ -471,6 +479,12 @@ function renderList(items) {
       removeScheduleItem(btn.dataset.remove);
     });
   });
+
+  box.querySelectorAll('[data-copy]').forEach((btn) => btn.addEventListener('click', async (ev) => {
+    ev.stopPropagation();
+    const ok = await copyText(btn.dataset.copy);
+    toast(ok ? `${btn.dataset.copyLabel} kopyalandı` : 'Kopyalanamadı', { kind: ok ? 'ok' : 'warn' });
+  }));
 
   box.querySelectorAll('.p-menu').forEach((btn) => {
     btn.addEventListener('click', (ev) => {
@@ -1235,12 +1249,6 @@ function share() {
   toast('Paylaşım bağlantısı kopyalandı');
 }
 
-function copyText(txt) {
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(txt).catch(() => fallbackCopy(txt));
-  } else fallbackCopy(txt);
-}
-
 // --- yedek CRN ---
 
 function setBackup(branch, crn) {
@@ -1279,17 +1287,6 @@ function removeBackup(branch, crn) {
   savePrograms(all);
   toast(`Yedek CRN ${old} kaldırıldı`);
   loadTerm(term);
-}
-
-function fallbackCopy(txt) {
-  const ta = document.createElement('textarea');
-  ta.value = txt;
-  ta.style.position = 'fixed';
-  ta.style.opacity = '0';
-  document.body.appendChild(ta);
-  ta.select();
-  try { document.execCommand('copy'); } catch { /* güvenlik */ }
-  ta.remove();
 }
 
 function closeMenus() {

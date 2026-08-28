@@ -8376,7 +8376,7 @@
    "Perşembe"
   ],
   "times": [
-   "11:30/14:29"
+   "12:30/15:29"
   ],
   "rooms": [
    "--"
@@ -8616,7 +8616,7 @@
    "undeclared"
   ],
   "days": [
-   "Salı"
+   "Pazartesi"
   ],
   "times": [
    "13:30/16:29"
@@ -9087,6 +9087,33 @@
   ],
   "rooms": [],
   "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15143",
+  "code": "KIM 526",
+  "branch": "KIM",
+  "level": "LU",
+  "name": "Kimyasal Kinetik",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bahire Filiz Şenkal , Erdem Yavuz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

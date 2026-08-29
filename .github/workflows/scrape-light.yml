@@ -1,10 +1,11 @@
 name: scrape-light
 
 on:
-  schedule:
-    # Hafif tarama — yalnızca ders programı: 11:17 / 17:17 / 23:17 TRT.
-    # Takvim, sınavlar ve önşart tam taramada (günde bir) gelir.
-    - cron: '17 8,14,20 * * *'
+  # Zamanlanmış tetikleyici kaldırıldı: scrape-full zaten günde bir tam tarama
+  # yapıyor, kontenjan.yml da kendi 30 dk'lık döngüsüyle (kayıt haftasında
+  # anlamlı, sakin dönemde no-op) doluluk verisini güncel tutuyor — cmd/quota'nın
+  # kendi yorumunda da "ders programı günde bir kez yeterli" deniyor. Bu hafif
+  # tarama artık yalnızca elle tetiklenir (ör. bir kesintiden sonra ara güncelleme).
   workflow_dispatch:
     inputs:
       backfill:

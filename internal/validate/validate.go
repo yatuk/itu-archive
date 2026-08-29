@@ -1141,6 +1141,13 @@ func (r *Result) checkGeneratedSEOMetadata(root string) {
 		}
 		s := string(b)
 		rel, _ := filepath.Rel(root, path)
+		// noindex sayfalar (ör. status/) arama motoru için değil — operasyonel
+		// durum sayfaları. SEO tamlık kuralları (description/canonical/tekil H1)
+		// bunlara uygulanmaz; kendi robots meta'sıyla zaten kapsam dışı olduğunu
+		// bildiriyorlar.
+		if strings.Contains(s, `name="robots" content="noindex`) {
+			return nil
+		}
 		if m := titleRe.FindStringSubmatch(s); len(m) == 2 {
 			if prev := titles[m[1]]; prev != "" {
 				r.errf("seo meta: mükerrer title %s ve %s", prev, rel)

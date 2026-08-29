@@ -15,22 +15,22 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=48f281c5afc3';
-import { state } from '../core/store.js?v=48f281c5afc3';
-import { openCourseDetail } from '../core/course-detail.js?v=48f281c5afc3';
-import { quotaDisplay } from '../core/chart.js?v=48f281c5afc3';
-import * as fav from '../core/favorites.js?v=48f281c5afc3';
-import { toast } from '../core/toast.js?v=48f281c5afc3';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=48f281c5afc3';
-import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=48f281c5afc3';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from '../core/planstore.js?v=48f281c5afc3';
-import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=48f281c5afc3';
-import { confirmDialog } from '../core/dialog.js?v=48f281c5afc3';
-import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=48f281c5afc3';
-import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=48f281c5afc3';
-import { I18N } from '../i18n.js?v=48f281c5afc3';
-import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=48f281c5afc3';
-import { compareCurricula } from '../core/curriculum-diff.js?v=48f281c5afc3';
+import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=5998daffcf45';
+import { state } from '../core/store.js?v=5998daffcf45';
+import { openCourseDetail } from '../core/course-detail.js?v=5998daffcf45';
+import { quotaDisplay } from '../core/chart.js?v=5998daffcf45';
+import * as fav from '../core/favorites.js?v=5998daffcf45';
+import { toast } from '../core/toast.js?v=5998daffcf45';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=5998daffcf45';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=5998daffcf45';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=5998daffcf45';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=5998daffcf45';
+import { confirmDialog } from '../core/dialog.js?v=5998daffcf45';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=5998daffcf45';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=5998daffcf45';
+import { I18N } from '../i18n.js?v=5998daffcf45';
+import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=5998daffcf45';
+import { compareCurricula } from '../core/curriculum-diff.js?v=5998daffcf45';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
@@ -63,7 +63,9 @@ export async function onShow() {
   const levelSel = $('#dp-level');
   const fac = $('#dp-fac');
   const sel = $('#dp-prog');
-  const want = urlParams.get('prog') || initialParams?.get('prog') || '';
+  // URL'de program yoksa son seçilene düş (sayfa yenilenince not verisi
+  // localStorage'da dururken program seçimi kaybolmasın — bkz. saveLastProgram).
+  const want = urlParams.get('prog') || initialParams?.get('prog') || loadLastProgram() || '';
   applyParams(urlParams);
   // URL programı varsa ilgili seviye/fakülteyi aç; aksi halde Lisans seçili
   // fakat fakülte ve program boş başlar. İlk katalog kaydı artık gizlice seçilmez.
@@ -227,6 +229,7 @@ async function selectProgram(code) {
   progCode = code;
   plan = null;
   stored = loadStored(code);
+  saveLastProgram(code);
   const savedTarget = Number(stored.targetGpa);
   $('#dp-targetgpa').value = Number.isFinite(savedTarget) && savedTarget >= 0 && savedTarget <= 4
     ? String(savedTarget) : '3.00';
@@ -358,7 +361,7 @@ function buildGradeSelect(selected, code, kind = 'course', slotKey = '') {
   sel.tabIndex = 0;
   const none = document.createElement('option');
   none.value = '';
-  none.textContent = 'not';
+  none.textContent = 'Yeni';
   sel.appendChild(none);
   for (const g of GRADE_CHOICES) {
     const o = document.createElement('option');
@@ -399,7 +402,7 @@ function electiveControls(slotKey, e, pick) {
   const pickSel = `<select class="dp-epick" data-slot="${slotKey}" aria-label="Seçmeli ders seç">${defaultOpt}${opts}</select>`;
   const grade = pick?.code
     ? `<span class="dp-grade-wrap"><select class="dp-grade dp-egrade${pick.grade ? ' filled' : ''}" data-gkind="elective" data-gslot="${slotKey}" data-gcode="${esc(pick.code)}" aria-label="${esc(pick.code)} notu" tabindex="0">
-        <option value="">not</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
+        <option value="">Yeni</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
       </select><button type="button" class="dp-grade-clear" data-act="dp-clear" title="notu temizle">×</button></span>`
     : '<span class="dp-grade-hint">önce ders seç</span>';
   return `<div class="dp-elective-inputs">${pickSel}${grade}</div>`;
@@ -670,7 +673,7 @@ function courseRow(c, st, slotKey) {
   rep.title = rec.prev
     ? `tekrar olarak işaretli · önceki: ${rec.prev}`
     : 'tekrar olarak işaretle';
-  rep.textContent = rec.repeat ? '↻' : '↺';
+  rep.textContent = '⇄';
   row.appendChild(rep);
 
   // 4) not: dar select + seçiliyse ×

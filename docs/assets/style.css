@@ -3003,8 +3003,14 @@ body.modal-open { overflow: hidden; }
   gap: 6px 10px; align-items: center; padding: 2px 12px;
 }
 .dp-colhead {
-  color: var(--dimmer); font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  /* "tekrar" başlığı 26px ikon sütununa sığmaz (satırlardaki gerçek içerik
+     yalnızca bir ikon, ama başlık metni ~50px ister) — kendi sütun genişliği. */
+  grid-template-columns: 32px minmax(0, 1fr) 50px auto auto;
+  color: var(--dimmer); font-size: 11px; font-weight: 400; letter-spacing: .08em; text-transform: uppercase;
 }
+/* Fosfor donmuş: nötr sınırlı rozet. Sade temanın dolu renkli daire tasarımı
+   aşağıdaki [data-theme="sade"] .dp-credit kuralında (özgüllüğü daha yüksek,
+   kazanır). */
 .dp-credit {
   min-width: 28px; height: 28px; padding: 0 5px; border-radius: 999px;
   display: inline-flex; align-items: center; justify-content: center;
@@ -3021,22 +3027,38 @@ body.modal-open { overflow: hidden; }
 .dp-repeat-btn {
   font: inherit; font-size: 14px; line-height: 1; cursor: pointer;
   color: var(--dimmer); background: none; border: 1px solid transparent;
-  border-radius: 6px; padding: 3px 4px;
+  border-radius: 999px; min-width: 26px; min-height: 26px;
+  display: inline-flex; align-items: center; justify-content: center;
 }
 .dp-repeat-btn:hover { color: var(--amber); border-color: var(--line-hot); }
 .dp-repeat-btn.on { color: var(--amber); border-color: var(--amber); }
-.dp-grade-wrap { display: inline-flex; align-items: center; gap: 4px; }
+/* Not: açık gri zeminli tek pill — <select> saydam, ok ikonu ve × ayrı düğme
+   aynı hapın içinde. appearance:none + currentColor SVG ok her iki temada
+   otomatik uyarlanır (tarayıcı varsayılan oku yerine). */
+.dp-grade-wrap {
+  display: inline-flex; align-items: center; gap: 0;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 999px;
+  padding: 2px 3px;
+}
 .dp-grade {
-  font: inherit; font-size: 12px; color: var(--fg); background: var(--bg);
-  border: 1px solid var(--line-hot); padding: 3px 4px; width: 64px;
+  font: inherit; font-size: 12px; font-weight: 600; color: var(--fg);
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat right 8px center;
+  background-size: 9px 6px;
+  border: none; border-radius: 999px; cursor: pointer;
+  padding: 4px 20px 4px 10px; width: auto; min-width: 58px;
+  appearance: none; -webkit-appearance: none; -moz-appearance: none;
 }
 .dp-grade:focus { outline: 2px solid var(--acid); outline-offset: 1px; }
-.dp-grade.filled { background: var(--panel-2); border-color: var(--acid); font-weight: 600; }
+.dp-grade.filled { font-weight: 700; }
 .dp-grade-clear {
-  font: inherit; font-size: 13px; line-height: 1; cursor: pointer;
-  color: var(--dim); background: none; border: none; padding: 2px 3px;
+  font: inherit; font-size: 11px; line-height: 1; cursor: pointer;
+  color: var(--dim); background: none; border: none;
+  width: 18px; height: 18px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
 }
-.dp-grade-clear:hover { color: var(--red); }
+.dp-grade-clear:hover { color: var(--red); background: var(--panel); }
 .dp-sec-btn {
   justify-self: end; font: inherit; font-size: 12px; cursor: pointer;
   color: var(--cyan); background: none; border: none; white-space: nowrap; padding: 2px 0;
@@ -3496,19 +3518,24 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 [data-theme="sade"] .dp-summary-main h2 { font-size: 17px; }
 [data-theme="sade"] .dp-grades { border-radius: 8px; }
 [data-theme="sade"] .dp-sem { padding: 10px 12px 4px; box-shadow: none; }
-[data-theme="sade"] .dp-colhead { display: none; }
+/* Sütun başlıkları (kredi | ders | tekrar | not) görünür — küçük, gri, ince
+   harfli (bkz. taban .dp-colhead kuralı); önceden sade'de tamamen gizliydi. */
 [data-theme="sade"] .dp-course,
 [data-theme="sade"] .dp-elective {
   margin: 0; padding: 6px 0; border-width: 0 0 1px; border-radius: 0; background: transparent;
 }
 [data-theme="sade"] .dp-course:last-child,
 [data-theme="sade"] .dp-elective:last-child { border-bottom: 0; }
-[data-theme="sade"] .dp-row { padding: 2px 4px; }
+/* Dikey ritim: her satır aynı yükseklikte (önceden 2px ile sıkışıktı). */
+[data-theme="sade"] .dp-row { padding: 10px 4px; }
+/* Kredi rozeti: dolu lacivert/cyan daire, zemin renginde (açık) yazı — hem
+   tam sayı hem ondalık (1,5 · 3,5) aynı yuvarlak rozete sığar. */
 [data-theme="sade"] .dp-credit {
-  min-width: 0; height: auto; padding: 0; border: 0; border-radius: 0;
-  background: transparent; color: var(--dimmer); font-weight: 500;
+  min-width: 26px; height: 26px; padding: 0 5px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-size: 11px; font-weight: 700;
+  color: var(--bg); background: var(--cyan); border: none;
 }
-[data-theme="sade"] .dp-credit::after { content: ' kr'; font-family: var(--sans); font-size: 10px; }
 [data-theme="sade"] .dp-repeat-btn:not(.on) { opacity: .4; }
 [data-theme="sade"] .dp-sec-btn.closed { color: var(--dimmer); }
 

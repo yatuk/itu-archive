@@ -175,6 +175,29 @@ CEN 335E Analysis of Algorithms I 3,00 CB`).records;
   assert.deepEqual(mergeTranscriptMatch({}, match).grades['CEN 335E'], { grade: 'CB', prev: 'VF', repeat: true });
 });
 
+test('transkript kodu seçmeli havuzda yoksa ders adıyla eşleşir, planın kendi kodu yazılır', () => {
+  // Kampüsler arası farklı numaralandırma: aynı ders (Computer Networks)
+  // ana kampüste BLG 422E, İTÜ-KKTC planında BLG 430E olarak listeleniyor.
+  // Öğrencinin transkriptindeki kod (422E) seçmeli seçenek listesinde
+  // (430E) yok — kod eşleşmezse ad eşleşmesi denenmeli ve depoya planın
+  // kendi kodu (430E) yazılmalı, aksi halde <select> hiçbir şey göstermez.
+  const records = parseOBSTranscript(`2025-2026 / Bahar Dönemi
+BLG 422E Computer Networks 3,00 CC`).records;
+  const plan = { semesters: [{ items: [
+    { elective: { title: '7th Sems. Elect. Course I (MT)', options: [
+      { code: 'BLG 413E', name: 'System Programming' },
+      { code: 'BLG 430E', name: 'Computer Networks' },
+    ] } },
+  ] }] };
+  const match = matchTranscriptToPlan(plan, records);
+  assert.equal(match.unmatched.length, 0);
+  assert.deepEqual(match.electiveAssignments.map((r) => [r.slot, r.code, r.grade]), [
+    ['s0i0', 'BLG 430E', 'CC'],
+  ]);
+  const merged = mergeTranscriptMatch({}, match);
+  assert.deepEqual(merged.elective.s0i0, { code: 'BLG 430E', grade: 'CC', prev: '' });
+});
+
 test('transkript program adı ek nitelemelere rağmen tek program adayı bulur', () => {
   const candidates = transcriptProgramCandidates([
     { code: 'CEN_LS', name: 'Bilgisayar Mühendisliği (İngilizce) (KKTC) Lisans' },

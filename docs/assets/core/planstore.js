@@ -14,8 +14,8 @@
 // not girer (latestOnly/calcGPA). Seçmeli slotta ders seçilmediyse plan kredisi
 // varsayılandır ve `defaultCredit` işareti taşır.
 
-import { parseRange, canonicalCode } from './plan.js?v=48f281c5afc3';
-import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=48f281c5afc3';
+import { parseRange, canonicalCode } from './plan.js?v=5998daffcf45';
+import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=5998daffcf45';
 
 const KEY = 'itu-grades';
 
@@ -36,6 +36,22 @@ export function saveStored(prog, data) {
   });
   all[prog] = { ...data, updatedAt: Date.now() };
   writeLocalState(KEY, all, { validate: isPlainObject });
+}
+
+// Son seçilen program kodu — notlar programa göre saklanır ama hangi programın
+// açık olduğu URL'de değilse hiçbir yerde durmuyordu. Sayfa yenilenince
+// (?prog= olmadan) Ders Planım boş başlıyor, transkriptten aktarılan notlar
+// localStorage'da dururken kullanıcıya kayıp gibi görünüyordu — Program
+// sekmesi kendi aktif kaydını tek blob içinde tuttuğu için bu sorunu
+// yaşamıyordu. Aynı örüntü: son program ayrı, küçük bir anahtarda saklanır.
+const LAST_PROG_KEY = 'itu-grades-last-prog';
+
+export function loadLastProgram() {
+  return readLocalState(LAST_PROG_KEY, { fallback: '', validate: (v) => typeof v === 'string' });
+}
+
+export function saveLastProgram(prog) {
+  writeLocalState(LAST_PROG_KEY, prog, { validate: (v) => typeof v === 'string' });
 }
 
 // Zorunlu ders notunu yazar; mevcut not varsa eskiye taşınır (tekrar işareti).

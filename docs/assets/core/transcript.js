@@ -3,7 +3,7 @@
 // kimlik ve doğum bilgileri hiçbir çıktıya alınmaz; yalnız ders kayıtları,
 // dönem etiketi ve belgedeki son toplam GANO döner.
 
-import { canonicalCode } from './plan.js?v=48f281c5afc3';
+import { canonicalCode } from './plan.js?v=5998daffcf45';
 
 const GRADES = ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'FF', 'VF', 'BL', 'M', 'G', 'P', 'E'];
 const GRADE_PART = GRADES.map((g) => g.replace('+', '\\+')).join('|');
@@ -164,10 +164,21 @@ export function matchTranscriptToPlan(plan, records) {
         const code = canonicalCode(item.course.code);
         required.push({ slot: `s${si}i${ii}`, code, name: item.course.name || '' });
       } else if (item.elective) {
-        const options = new Set((item.elective.options || []).map((o) => canonicalCode(o.code)).filter(Boolean));
+        const optionList = item.elective.options || [];
+        const options = new Set(optionList.map((o) => canonicalCode(o.code)).filter(Boolean));
+        // Ad → planın kendi kodu: seçici <select> yalnızca bu kodları tanır,
+        // transkriptteki kod farklıysa (bkz. aşağıdaki ad eşleşmesi) plana
+        // yazılan kod bu haritadan gelmeli — yoksa seçim boş görünür.
+        const optionCodeByName = new Map();
+        for (const o of optionList) {
+          const key = equivalentNameKey(o.name);
+          const code = canonicalCode(o.code);
+          if (key && code && !optionCodeByName.has(key)) optionCodeByName.set(key, code);
+        }
         electives.push({
           slot: `s${si}i${ii}`,
           options,
+          optionCodeByName,
           pool: electivePool(item.elective.title, options),
         });
       }
@@ -217,6 +228,22 @@ export function matchTranscriptToPlan(plan, records) {
       assignedElectiveCodes.add(record.code);
       electiveAssignments.push({ ...record, slot: slot.slot });
     }
+  }
+
+  // Kod eşleşmezse tam ders adı eşleşmesi denenir: kampüsler arası farklı
+  // numaralandırma aynı dersi başka kodla listeleyebiliyor (ör. İTÜ-KKTC planında
+  // BLG 430E, ana kampüste BLG 422E — ikisi de "Computer Networks"). Yalnız
+  // birebir ad eşleşmesi; NAME_ALIASES dışında tahmin/benzerlik yapılmaz.
+  for (const record of remaining) {
+    if (assignedElectiveCodes.has(record.code)) continue;
+    const key = equivalentNameKey(record.name);
+    if (!key) continue;
+    const slot = electives.find((entry) => !usedSlots.has(entry.slot) && entry.optionCodeByName.has(key));
+    if (!slot) continue;
+    usedSlots.add(slot.slot);
+    assignedElectiveCodes.add(record.code);
+    // Depoya planın kendi kodu yazılır (transkriptteki değil) — seçici bunu tanır.
+    electiveAssignments.push({ ...record, code: slot.optionCodeByName.get(key), slot: slot.slot });
   }
 
   for (const record of remaining) {

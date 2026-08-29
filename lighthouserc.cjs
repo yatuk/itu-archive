@@ -6,7 +6,11 @@ module.exports = {
         'http://127.0.0.1:4173/gano-hesaplama/',
         'http://127.0.0.1:4173/ders-programi-olustur/',
       ],
-      numberOfRuns: 1,
+      // Tek koşu, paylaşımlı Actions runner'ının CPU gürültüsüne karşı savunmasız
+      // (LCP/TBT bütçesi son günlerde ~%3-7 marjla art arda kırmızıydı — gerçek
+      // bir regresyon değil, runner varyansı). 3 koşunun temsili (medyan) sonucu
+      // kullanılır, tek kötü örneklem artık koca gate'i kırmaz.
+      numberOfRuns: 3,
       settings: {
         chromeFlags: '--no-sandbox --headless=new',
         throttlingMethod: 'simulate',

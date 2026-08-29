@@ -6,17 +6,17 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js?v=de58f9ba3069';
-import { methodToCode } from '../core/urlcodes.js?v=de58f9ba3069';
-import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=de58f9ba3069';
-import { state } from '../core/store.js?v=de58f9ba3069';
-import { quotaDisplay } from '../core/chart.js?v=de58f9ba3069';
-import { fillRows } from '../core/table.js?v=de58f9ba3069';
-import * as fav from '../core/favorites.js?v=de58f9ba3069';
-import { toast } from '../core/toast.js?v=de58f9ba3069';
-import { openCourseDetail } from '../core/course-detail.js?v=de58f9ba3069';
-import { I18N } from '../i18n.js?v=de58f9ba3069';
-import { writeLocalState, isPlainObject } from '../core/persistence.js?v=de58f9ba3069';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js?v=f55dd720fb58';
+import { methodToCode } from '../core/urlcodes.js?v=f55dd720fb58';
+import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=f55dd720fb58';
+import { state } from '../core/store.js?v=f55dd720fb58';
+import { quotaDisplay } from '../core/chart.js?v=f55dd720fb58';
+import { fillRows } from '../core/table.js?v=f55dd720fb58';
+import * as fav from '../core/favorites.js?v=f55dd720fb58';
+import { toast } from '../core/toast.js?v=f55dd720fb58';
+import { openCourseDetail } from '../core/course-detail.js?v=f55dd720fb58';
+import { I18N } from '../i18n.js?v=f55dd720fb58';
+import { writeLocalState, isPlainObject } from '../core/persistence.js?v=f55dd720fb58';
 
 const PAGE = 200;
 const MOBILE_GROUP_PAGE = 30;
@@ -768,6 +768,13 @@ function saveState() {
     program: $('#f-program').value, code: $('#f-code').value.trim(), open: $('#f-open').checked,
     sort: state.sort.key, dir: state.sort.dir,
   }, { validate: isPlainObject });
+  // Yaşanmış hata: bu fonksiyon dönem/kontenjan yüklenirken (loadTerm/loadQuota)
+  // boot sırasında Dersler aktif sekme OLMASA BİLE çalışıyordu — URL'i tamamen
+  // bu formun kendi alanlarından yeniden kurduğu için diğer sekmelerin query
+  // parametrelerini (ör. Önşart Haritası'nın ?prog=X'i) sessizce siliyordu.
+  // Paylaşılabilir bir derin bağlantıyla açılan başka bir sekme, birkaç saniye
+  // içinde query'sini kaybediyordu. Yalnızca Dersler gerçekten görünürken yaz.
+  if (document.getElementById('view-dersler')?.hidden) return;
   const qs = p.toString();
   const url = location.pathname + (qs ? '?' + qs : '') + location.hash;
   history.replaceState(null, '', url);

@@ -1,4 +1,4 @@
-import { readLocalState, writeLocalState } from './core/persistence.js?v=de58f9ba3069';
+import { readLocalState, writeLocalState } from './core/persistence.js?v=f55dd720fb58';
 
 // Çok hafif i18n modülü. `?lang=en` parametresinden veya localStorage'dan
 // dil seçimi okur; `t(key)` ile çeviri yapar. Eksik anahtarlar tr'ye düşer.

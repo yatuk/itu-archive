@@ -1,4 +1,4 @@
-import { isPlainObject, readLocalState, writeLocalState } from './persistence.js?v=de58f9ba3069';
+import { isPlainObject, readLocalState, writeLocalState } from './persistence.js?v=f55dd720fb58';
 
 export const BACKUP_FORMAT = 'itu-ders-backup';
 export const BACKUP_VERSION = 1;

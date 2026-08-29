@@ -15,11 +15,11 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-import { esc, fold, getJSON, termLabel } from './core/utils.js?v=de58f9ba3069';
-import { state } from './core/store.js?v=de58f9ba3069';
-import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=de58f9ba3069';
-import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=de58f9ba3069';
-import { I18N } from './i18n.js?v=de58f9ba3069';
+import { esc, fold, getJSON, termLabel } from './core/utils.js?v=f55dd720fb58';
+import { state } from './core/store.js?v=f55dd720fb58';
+import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=f55dd720fb58';
+import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=f55dd720fb58';
+import { I18N } from './i18n.js?v=f55dd720fb58';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
@@ -1231,6 +1231,19 @@ import { I18N } from './i18n.js?v=de58f9ba3069';
               const node = graph.nodes.find((nn) => nn.kind === 'elective' && fold(nn.name) === f);
               if (node) graph.focusNode(node.code);
             });
+          }
+        } else {
+          // İlk ziyaret: ne URL'de ?prog= var ne de hatırlanan bir tercih.
+          // Fakülte zaten (alfabetik) ilkine düşmüş durumda — Ders Planım'daki
+          // fakülte→bölüm davranışıyla tutarlı olsun diye program da ilk
+          // seçeneğe düşer, kullanıcı boş "Bölüm seçiniz…" ile karşılaşmaz.
+          const sel = root.querySelector('.pg-program-select');
+          const first = sel.options[1]; // options[0] = "Bölüm seçiniz…" placeholder
+          if (first) {
+            sel.value = first.value;
+            selectProgram(root, first.value);
+            savePrereqPreference(root);
+            history.replaceState(null, '', `?prog=${encodeURIComponent(first.value)}#onsart`);
           }
         }
 

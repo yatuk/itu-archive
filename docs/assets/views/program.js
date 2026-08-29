@@ -5,15 +5,15 @@
 // kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
 // Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum, copyText } from '../core/utils.js?v=de58f9ba3069';
-import { state, indexReady } from '../core/store.js?v=de58f9ba3069';
-import { quotaDisplay } from '../core/chart.js?v=de58f9ba3069';
-import { buildTimetable, parseWhen, openDetail } from './courses.js?v=de58f9ba3069';
-import * as fav from '../core/favorites.js?v=de58f9ba3069';
-import { toast } from '../core/toast.js?v=de58f9ba3069';
-import { confirmDialog, promptDialog } from '../core/dialog.js?v=de58f9ba3069';
-import { I18N } from '../i18n.js?v=de58f9ba3069';
-import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=de58f9ba3069';
+import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum, copyText } from '../core/utils.js?v=f55dd720fb58';
+import { state, indexReady } from '../core/store.js?v=f55dd720fb58';
+import { quotaDisplay } from '../core/chart.js?v=f55dd720fb58';
+import { buildTimetable, parseWhen, openDetail } from './courses.js?v=f55dd720fb58';
+import * as fav from '../core/favorites.js?v=f55dd720fb58';
+import { toast } from '../core/toast.js?v=f55dd720fb58';
+import { confirmDialog, promptDialog } from '../core/dialog.js?v=f55dd720fb58';
+import { I18N } from '../i18n.js?v=f55dd720fb58';
+import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=f55dd720fb58';
 
 let term = null;
 let rows = [];

@@ -494,7 +494,9 @@ body.reveal-ready .reveal.revealed { opacity: 1; transform: none; }
     width: 100%; border-radius: 16px; overflow-x: auto;
     flex-wrap: nowrap; justify-content: flex-start;
     scrollbar-width: none; -webkit-overflow-scrolling: touch;
-    mask-image: linear-gradient(to right, transparent, #000 14px, #000 calc(100% - 14px), transparent);
+    /* 14px'ten 28px'e: dar kenar solması "kaydırılabilir" ipucunu zayıf
+       veriyordu — kullanıcı bunu "orantısızlık" olarak algıladı. */
+    mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
   }
   .tabs::-webkit-scrollbar { display: none; }
 }
@@ -2971,6 +2973,9 @@ body.modal-open { overflow: hidden; }
 .dp-balanced-list li:first-child { border-top: 0; padding-top: 0; }
 .dp-balanced-list b { color: var(--cyan); }
 .dp-balanced-list small { display: block; color: var(--dim); font-size: 11px; margin-top: 2px; }
+/* 1. dönem: bu dönem açık dersler tıklanabilir — kutu + not aynı satırda. */
+.dp-balanced-pick label { display: flex; align-items: flex-start; gap: 8px; cursor: pointer; }
+.dp-balanced-pick input[type="checkbox"] { margin-top: 3px; flex-shrink: 0; }
 .dp-diff-list { list-style: none; margin: 4px 0 14px; padding: 0; }
 .dp-diff-list li { border-top: 1px solid var(--hairline); display: flex; gap: 12px; justify-content: space-between; padding: 9px 2px; }
 .dp-diff-list li.added b { color: var(--ok); }

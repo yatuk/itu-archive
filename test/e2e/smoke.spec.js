@@ -627,6 +627,14 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     // Kredi tavanı: hiçbir dönem sert tavanı (18) aşmamalı.
     const kredi = await page.locator('.dp-balanced-term-head span').allTextContents();
     for (const k of kredi) expect(Number(k.replace(/[^\d.,]/g, '').replace(',', '.'))).toBeLessThanOrEqual(18);
+
+    // 1. dönemin bu dönem açık dersleri tıklanabilir olmalı: kutucuk +
+    // "Seçilenleri programa ekle" — Program sekmesine gerçekten ders ekler.
+    const checkboxSayisi = await page.locator('[data-balanced-code]').count();
+    expect(checkboxSayisi).toBeGreaterThan(0);
+    await page.locator('#dp-balanced-add').click();
+    await expect(page.locator('#view-program')).toBeVisible();
+    await expect(page.locator('.p-item').first()).toBeVisible({ timeout: 5000 });
   });
 
   test('Ders Planım: fakülte seçimi bölüm listesini daraltır', async ({ page }) => {
@@ -668,6 +676,27 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     const kutu = await ad.boundingBox();
     expect(kutu.width, 'slot adı okunabilir genişlikte olmalı').toBeGreaterThan(120);
     expect(kutu.height, 'slot adı birkaç satıra sarmamalı').toBeLessThan(40);
+  });
+
+  test('Önşart: ?prog= deep-link URL\'de kalıcı, ilk ziyarette program otomatik seçilir', async ({ page }) => {
+    // Yaşanmış hata: courses.js'nin saveState()'i Dersler aktif sekme
+    // OLMASA BİLE boot sırasında (loadTerm/loadQuota içinden) çalışıp URL'i
+    // kendi (boş) form alanlarından yeniden kuruyordu — Önşart Haritası'nın
+    // ?prog= parametresi birkaç saniye içinde sessizce siliniyordu.
+    await page.goto('/?prog=CEN_LS#onsart');
+    await expect.poll(() => page.url(), { timeout: 8000 }).toContain('prog=CEN_LS');
+    await page.waitForTimeout(1000); // gecikmeli boot çağrıları (loadQuota vb.) için ek bekleme
+    expect(page.url()).toContain('prog=CEN_LS');
+
+    // İlk ziyaret (URL'de ?prog= yok, hatırlanan tercih yok): program otomatik
+    // ilk seçeneğe düşer ve bu seçim URL'e yansır (Ders Planım'daki fakülte→
+    // bölüm davranışıyla tutarlı).
+    await page.goto('/#onsart');
+    await expect.poll(
+      async () => page.locator('.pg-program-select').inputValue(),
+      { timeout: 8000 }
+    ).not.toBe('');
+    expect(page.url()).toContain('prog=');
   });
 
   test('Önşart: fakülte seçicisi dolar, bölüm listesi gruplu değil', async ({ page }) => {

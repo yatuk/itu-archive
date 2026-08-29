@@ -7,7 +7,7 @@
 // zinciri"). Seçmeli slotlar sabit bir kod taşımadığı için (havuzdan hangi
 // dersin seçileceği öğrenciye kalır) bu planlayıcının dışındadır.
 
-import { canonicalCode } from './plan.js?v=de58f9ba3069';
+import { canonicalCode } from './plan.js?v=f55dd720fb58';
 
 export const DEFAULT_MIN_CREDITS = 10;
 export const DEFAULT_MAX_CREDITS = 14;

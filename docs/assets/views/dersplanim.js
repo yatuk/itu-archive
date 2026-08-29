@@ -15,23 +15,23 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=de58f9ba3069';
-import { state } from '../core/store.js?v=de58f9ba3069';
-import { openCourseDetail } from '../core/course-detail.js?v=de58f9ba3069';
-import { quotaDisplay } from '../core/chart.js?v=de58f9ba3069';
-import * as fav from '../core/favorites.js?v=de58f9ba3069';
-import { toast } from '../core/toast.js?v=de58f9ba3069';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=de58f9ba3069';
-import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=de58f9ba3069';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=de58f9ba3069';
-import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=de58f9ba3069';
-import { confirmDialog } from '../core/dialog.js?v=de58f9ba3069';
-import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=de58f9ba3069';
-import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=de58f9ba3069';
-import { I18N } from '../i18n.js?v=de58f9ba3069';
-import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=de58f9ba3069';
-import { compareCurricula } from '../core/curriculum-diff.js?v=de58f9ba3069';
-import { buildBalancedPlan } from '../core/planner.js?v=de58f9ba3069';
+import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=f55dd720fb58';
+import { state } from '../core/store.js?v=f55dd720fb58';
+import { openCourseDetail } from '../core/course-detail.js?v=f55dd720fb58';
+import { quotaDisplay } from '../core/chart.js?v=f55dd720fb58';
+import * as fav from '../core/favorites.js?v=f55dd720fb58';
+import { toast } from '../core/toast.js?v=f55dd720fb58';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=f55dd720fb58';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=f55dd720fb58';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=f55dd720fb58';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=f55dd720fb58';
+import { confirmDialog } from '../core/dialog.js?v=f55dd720fb58';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=f55dd720fb58';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=f55dd720fb58';
+import { I18N } from '../i18n.js?v=f55dd720fb58';
+import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=f55dd720fb58';
+import { compareCurricula } from '../core/curriculum-diff.js?v=f55dd720fb58';
+import { buildBalancedPlan } from '../core/planner.js?v=f55dd720fb58';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
@@ -1451,13 +1451,50 @@ async function buildBalancedPlanUI() {
     ? `<p class="dp-recommend-note">Uyarı: ${esc(result.cyclic.join(', '))} için önşart verisinde devirli bir bağımlılık tespit edildi (veri hatası olabilir) — bu dersler sıra gözetmeden yerleştirildi.</p>`
     : '';
 
+  // Yalnızca 1. dönem (bu dönem alınabilecek dersler) tıklanabilir: sonraki
+  // dönemler henüz açılmamış, gerçek şube/CRN'i yok — salt metin kalır.
+  // 1. dönemdeki bir ders bu dönem açık değilse de metin kalır (eklenecek
+  // şube yok).
+  const firstTerm = result.terms[0];
+  const chosen = firstTerm
+    ? firstTerm.courses
+      .map((c) => ({ ...c, sections: sectionsForCode(rows, c.code) }))
+      .filter((c) => c.sections.length)
+      .map((c) => ({
+        ...c,
+        section: c.sections.slice().sort((a, b) => {
+          const ar = Number(a.cap || 0) - Number(a.enr || 0), br = Number(b.cap || 0) - Number(b.enr || 0);
+          return Number(br > 0) - Number(ar > 0) || br - ar;
+        })[0],
+      }))
+    : [];
+  const chosenByCode = new Map(chosen.map((c) => [c.code, c]));
+
   box.innerHTML = cyclicNote + `<div class="dp-balanced-terms">${result.terms.map((t) => `
     <div class="dp-balanced-term">
       <div class="dp-balanced-term-head"><b>${t.index + 1}. dönem</b><span>${trNum(t.totalCredits)} kredi</span></div>
-      <ul class="dp-balanced-list">${t.courses.map((c) => `
-        <li><b>${esc(c.code)}</b> ${esc(c.name || '')}<small>${trNum(c.credits)} kr · ${esc(c.reason)}</small></li>
-      `).join('')}</ul>
-    </div>`).join('')}</div>`;
+      <ul class="dp-balanced-list">${t.courses.map((c) => {
+        const pick = t.index === 0 ? chosenByCode.get(c.code) : null;
+        if (!pick) {
+          return `<li><b>${esc(c.code)}</b> ${esc(c.name || '')}<small>${trNum(c.credits)} kr · ${esc(c.reason)}</small></li>`;
+        }
+        return `<li class="dp-balanced-pick">
+          <label><input type="checkbox" data-balanced-code="${esc(c.code)}" checked>
+          <span><b>${esc(c.code)}</b> ${esc(c.name || '')}<small>${trNum(c.credits)} kr · ${esc(pick.section.when || 'zaman açıklanmadı')} · CRN ${esc(pick.section.crn)}</small></span></label>
+        </li>`;
+      }).join('')}</ul>
+    </div>`).join('')}</div>
+    ${chosen.length ? `<div class="dp-recommend-footer"><b>bu dönem açık ${chosen.length} ders eklenebilir</b><button type="button" id="dp-balanced-add" class="btn-primary">Seçilenleri programa ekle</button></div>` : ''}`;
+
+  $('#dp-balanced-add')?.addEventListener('click', () => {
+    const items = [...box.querySelectorAll('[data-balanced-code]:checked')]
+      .map((input) => chosenByCode.get(input.dataset.balancedCode)?.section)
+      .filter(Boolean)
+      .map((section) => ({ branch: section.branch, crn: String(section.crn) }));
+    if (!items.length) { toast('Önce en az bir ders seç', { kind: 'warn' }); return; }
+    window.dispatchEvent(new CustomEvent('itu:goto-program'));
+    setTimeout(() => window.dispatchEvent(new CustomEvent('itu:add-program-items', { detail: { term: termSlug, items } })), 0);
+  });
 }
 
 async function loadCurriculumCompare() {

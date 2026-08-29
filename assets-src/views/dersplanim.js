@@ -76,6 +76,12 @@ export async function onShow() {
   fac.value = secili ? facultyOf(secili) : '';
   sel.innerHTML = renderProgramOptions(fac.value, levelSel.value);
   sel.value = secili?.code || '';
+  // Yatay geçiş hedef seçici — yalnızca Lisans, seviye seçimi yok.
+  const yfac = $('#dp-yatay-fac');
+  if (yfac && !yfac.options.length) {
+    yfac.innerHTML = renderFacultyOptions('LS');
+    $('#dp-yatay-prog').innerHTML = renderProgramOptions('', 'LS');
+  }
   if (secili) await selectProgram(secili.code);
   else showProgramEmpty();
 }
@@ -187,6 +193,15 @@ function ensureHost() {
         <p class="dp-privacy">Notların yalnızca bu tarayıcıda saklanır; sunucuya gönderilmez. Bu bir transkript değildir ve sonuçlar OBS ile küçük farklar gösterebilir. Kaynak:
         <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">İTÜ not ve başarı yönergesi</a>.</p>
       </details>
+    </details>
+    <details class="dp-recommend" id="dp-yatay">
+      <summary><span>Yatay geçiş ihtimalini gör</span><small id="dp-yatay-preview">2011'den bugüne resmî taban/tavan</small></summary>
+      <div class="dp-recommend-controls">
+        <label>hedef fakülte <select id="dp-yatay-fac"></select></label>
+        <label>hedef program <select id="dp-yatay-prog"></select></label>
+      </div>
+      <p class="dp-recommend-note">Kaynak: <a href="https://www.sis.itu.edu.tr/TR/mevzuat/yatay-cap-yandal-yonerge.php" target="_blank" rel="noopener">İTÜ Yatay Geçiş, ÇAP ve Yandal Yönergesi</a>, MADDE 30(4). Değerlendirme puanı %40 YKS (100'lük karşılığı) + %60 AGNO'dan oluşuyor; YKS'nin 100'lük karşılığının resmî çevrim formülü İTÜ tarafından ayrı bir senato kararına bırakılmış ve yayımlanmamış — bu yüzden nihai puanını burada hesaplayamıyoruz, yalnızca AGNO katkını ve geçmiş yılların taban/tavanını gösteriyoruz. 2023-2024 öncesi sayfalar farklı bir ölçüt (ham AGNO) kullanıyordu; iki dönem doğrudan karşılaştırılamaz.</p>
+      <div id="dp-yatay-result" aria-live="polite"></div>
     </details>
     <div id="dp-semesters" class="dp-semesters"></div>`;
 }
@@ -1011,6 +1026,7 @@ function renderGPA() {
   if (empty) {
     if (preview) preview.textContent = 'Not girdikçe hesaplanır';
     setTargetState(true);
+    renderYatay();
     return;
   }
 
@@ -1027,6 +1043,7 @@ function renderGPA() {
   $('#dp-target').textContent = targetText(st, tot);
   $('#dp-types-progress').textContent = typeProgress();
   setTargetState(st.gpa == null || st.credits === 0);
+  renderYatay();
 }
 
 // Hedef GANO alanı, mevcut GANO yokken sonuç üretemez — pasifleştir ve nedenini yaz.
@@ -1036,6 +1053,92 @@ function setTargetState(off) {
   if (!input) return;
   input.disabled = off;
   if (hint) hint.textContent = off ? 'mevcut GANO yok, önce not gir' : '';
+}
+
+// -- yatay geçiş --
+// MADDE 8 şartları: 3. yy AGNO≥2,50 + 30–59,99 kredi; 5. yy AGNO≥2,60 +
+// 60–94,99 kredi. Tam değerlendirme puanı (MADDE 30(4)) burada hesaplanmıyor
+// — YKS'nin 100'lük karşılığının resmî çevrim formülü yayımlı değil; bunu
+// uydurmak yanlış bir kesinlik izlenimi verir. Yalnızca AGNO katkısı ve
+// geçmiş taban/tavan gösterilir (bkz. panel içindeki not).
+function eligibleSemesters(gpa, credits) {
+  const out = [];
+  if (gpa != null && gpa >= 2.5 && credits >= 30 && credits < 60) out.push(3);
+  if (gpa != null && gpa >= 2.6 && credits >= 60 && credits < 95) out.push(5);
+  return out;
+}
+
+const yatayCache = new Map(); // programCode -> Promise|sonuç|null
+
+async function loadYatayRollup(code) {
+  if (yatayCache.has(code)) return yatayCache.get(code);
+  const promise = getJSON(`data/yatay/by-program/${code}.json`).catch(() => null);
+  yatayCache.set(code, promise);
+  const result = await promise;
+  yatayCache.set(code, result);
+  return result;
+}
+
+function yatayRow(r) {
+  const dp = r.metric === 'degerlendirme';
+  const fmt = (v) => v == null ? '·' : dp ? v.toFixed(5) : fmtTr2(v);
+  return `<tr><td>${esc(r.term)}</td><td>${r.semester}. yy</td>
+    <td class="num">${r.quota ?? '·'}</td><td class="num">${r.placed}</td>
+    <td class="num">${fmt(r.floor)}</td><td class="num">${fmt(r.ceiling)}</td></tr>`;
+}
+
+async function renderYatay() {
+  const box = $('#dp-yatay-result');
+  if (!box) return;
+  const targetCode = $('#dp-yatay-prog')?.value || '';
+  const st = currentState();
+  const elig = eligibleSemesters(st.gpa, st.credits);
+
+  let head = '';
+  if (st.gpa == null) {
+    head = '<p class="dp-recommend-note">Önce not gir — AGNO hesaplanmadan uygunluk kontrol edilemez.</p>';
+  } else if (!elig.length) {
+    head = `<p class="dp-recommend-note">Şu an ${trNum(st.credits)} kredidesin. Yatay geçiş yalnızca 3. yarıyıl (30–59,99 kredi, AGNO ≥ 2,50) veya 5. yarıyıl (60–94,99 kredi, AGNO ≥ 2,60) aralığında başvurulabiliyor.</p>`;
+  } else {
+    head = `<p class="dp-recommend-note">AGNO'n <b>${fmtTr2(st.gpa)}</b> (${trNum(st.credits)} kredi) — ${elig.map((s) => `${s}.`).join(' ve ')} yarıyıl için kredi/AGNO şartını sağlıyorsun. Bu, değerlendirme puanının %60'ını oluşturuyor.</p>`;
+  }
+
+  if (!targetCode) {
+    box.innerHTML = head + '<p class="empty">Hedef program seç.</p>';
+    return;
+  }
+
+  box.innerHTML = head + '<p class="empty">yükleniyor…</p>';
+  const rollup = await loadYatayRollup(targetCode);
+  if ($('#dp-yatay-prog')?.value !== targetCode) return; // seçim değişti, yanıt eski
+  if (!rollup) {
+    box.innerHTML = head + '<p class="empty">Bu program için yatay geçiş verisi yok.</p>';
+    return;
+  }
+
+  const rows = rollup.years.flatMap((y) => {
+    const sems = elig.length ? y.results.filter((r) => elig.includes(r.semester)) : y.results;
+    return sems.map((r) => ({ term: y.term, metric: y.metric, ...r }));
+  });
+  const scoreEra = rows.filter((r) => r.metric === 'degerlendirme').reverse();
+  const agnoEra = rows.filter((r) => r.metric === 'agno').reverse();
+
+  let body = `<p class="dp-recommend-note"><b>${esc(rollup.program)}</b> · ${esc(rollup.faculty)}</p>`;
+  if (scoreEra.length) {
+    body += `<div class="tablewrap"><table class="htable"><thead><tr><th>Yıl</th><th>Yarıyıl</th>
+      <th class="num">Kontenjan</th><th class="num">Yerleşen</th><th class="num">Taban</th><th class="num">Tavan</th></tr></thead>
+      <tbody>${scoreEra.map(yatayRow).join('')}</tbody></table></div>`;
+  }
+  if (agnoEra.length) {
+    body += `<details class="dp-yatay-old"><summary>2011-2022 arası (eski ölçüt — ham AGNO, yukarıdakiyle karşılaştırılamaz)</summary>
+      <div class="tablewrap"><table class="htable"><thead><tr><th>Yıl</th><th>Yarıyıl</th>
+      <th class="num">Yerleşen</th><th class="num">Taban</th><th class="num">Tavan</th></tr></thead>
+      <tbody>${agnoEra.map((r) => `<tr><td>${esc(r.term)}</td><td>${r.semester}. yy</td><td class="num">${r.placed}</td>
+        <td class="num">${r.floor != null ? fmtTr2(r.floor) : '·'}</td><td class="num">${r.ceiling != null ? fmtTr2(r.ceiling) : '·'}</td></tr>`).join('')}</tbody></table></div>
+    </details>`;
+  }
+  if (!scoreEra.length && !agnoEra.length) body += '<p class="empty">Bu yarıyıl için hiç yerleşen olmamış.</p>';
+  box.innerHTML = head + body;
 }
 
 // Tür bazlı eksik: "EC 0/5 kredi" — yalnızca gerçek türler kova olur; türü olmayan
@@ -1537,6 +1640,11 @@ function downloadJSON(data, filename) {
 function init() {
   $('#dp-recommend-run').addEventListener('click', buildRecommendations);
   $('#dp-balanced-run').addEventListener('click', buildBalancedPlanUI);
+  $('#dp-yatay-fac').addEventListener('change', () => {
+    $('#dp-yatay-prog').innerHTML = renderProgramOptions($('#dp-yatay-fac').value, 'LS');
+    renderYatay();
+  });
+  $('#dp-yatay-prog').addEventListener('change', renderYatay);
   const term = $('#dp-term');
   term.addEventListener('change', async () => {
     termSlug = term.value;

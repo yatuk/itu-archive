@@ -18,6 +18,7 @@ import (
 	"log"
 	"os"
 	"os/signal"
+	"sort"
 	"syscall"
 
 	"itu-scraper/internal/fetch"
@@ -58,6 +59,7 @@ func main() {
 	}
 
 	index := make([]map[string]any, 0, len(specs))
+	var fetched []*yatay.Term
 	var failed []string
 	for _, spec := range specs {
 		term, err := c.Fetch(ctx, spec)
@@ -78,6 +80,7 @@ func main() {
 			"count":  len(term.Results),
 			"file":   "data/yatay/" + spec.Term + ".json",
 		})
+		fetched = append(fetched, term)
 		logf("%s: %d kayıt (%s)", term.Term, len(term.Results), term.Metric)
 	}
 
@@ -87,6 +90,25 @@ func main() {
 	if err := st.WriteJSON(index, "data", "yatay", "index.json"); err != nil {
 		log.Fatalf("index.json: %v", err)
 	}
+
+	// -only ile tek yıl çekilirken rollup'ı yeniden yazma: eksik yılların
+	// rollup'ını sessizce siler. Yalnızca tam koşuda (tüm 15 yıl) üret.
+	if *only == "" {
+		rollups := yatay.BuildRollups(fetched)
+		rollupIndex := make([]string, 0, len(rollups))
+		for code, rollup := range rollups {
+			if err := st.WriteJSON(rollup, "data", "yatay", "by-program", code+".json"); err != nil {
+				log.Fatalf("by-program/%s.json: %v", code, err)
+			}
+			rollupIndex = append(rollupIndex, code)
+		}
+		sort.Strings(rollupIndex)
+		if err := st.WriteJSON(rollupIndex, "data", "yatay", "by-program", "index.json"); err != nil {
+			log.Fatalf("by-program/index.json: %v", err)
+		}
+		logf("%d program için rollup yazıldı", len(rollupIndex))
+	}
+
 	logf("bitti: %d/%d yıl", len(index), len(specs))
 	if len(failed) > 0 {
 		os.Exit(1)

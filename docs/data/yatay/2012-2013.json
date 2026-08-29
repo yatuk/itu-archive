@@ -6,6 +6,7 @@
   {
    "faculty": "İnşaat Fakültesi",
    "program": "İnşaat Mühendisliği (% 30 İngilizce)",
+   "programCode": "INS_LS",
    "semester": 3,
    "placed": 6,
    "ceiling": 3.52,
@@ -14,12 +15,14 @@
   {
    "faculty": "İnşaat Fakültesi",
    "program": "İnşaat Mühendisliği (% 30 İngilizce)",
+   "programCode": "INS_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İnşaat Fakültesi",
    "program": "İnşaat Mühendisliği (% 100 İngilizce)",
+   "programCode": "INSE_LS",
    "semester": 3,
    "placed": 3,
    "ceiling": 3.54,
@@ -28,36 +31,42 @@
   {
    "faculty": "İnşaat Fakültesi",
    "program": "İnşaat Mühendisliği (% 100 İngilizce)",
+   "programCode": "INSE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İnşaat Fakültesi",
    "program": "Geomatik Mühendisliği (% 30 İngilizce)",
+   "programCode": "GEO_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "İnşaat Fakültesi",
    "program": "Geomatik Mühendisliği (% 30 İngilizce)",
+   "programCode": "GEO_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İnşaat Fakültesi",
-   "program": "Geomatik  Mühendisliği(% 100 İngilizce)",
+   "program": "Geomatik Mühendisliği(% 100 İngilizce)",
+   "programCode": "GEOE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "İnşaat Fakültesi",
-   "program": "Geomatik  Mühendisliği(% 100 İngilizce)",
+   "program": "Geomatik Mühendisliği(% 100 İngilizce)",
+   "programCode": "GEOE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İnşaat Fakültesi",
    "program": "Çevre Mühendisliği (% 30 İngilizce)",
+   "programCode": "CEV_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 2.61,
@@ -66,24 +75,28 @@
   {
    "faculty": "İnşaat Fakültesi",
    "program": "Çevre Mühendisliği (% 30 İngilizce)",
+   "programCode": "CEV_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İnşaat Fakültesi",
    "program": "Çevre Mühendisliği (% 100 İngilizce)",
+   "programCode": "CEVE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "İnşaat Fakültesi",
    "program": "Çevre Mühendisliği (% 100 İngilizce)",
+   "programCode": "CEVE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "Mimarlık (% 30 İngilizce)",
+   "programCode": "MIM_LS",
    "semester": 3,
    "placed": 8,
    "ceiling": 3.96,
@@ -92,6 +105,7 @@
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "Mimarlık (% 30 İngilizce)",
+   "programCode": "MIM_LS",
    "semester": 5,
    "placed": 4,
    "ceiling": 3.59,
@@ -99,7 +113,8 @@
   },
   {
    "faculty": "Mimarlık Fakültesi",
-   "program": "Mimarlık  (% 100 İngilizce)",
+   "program": "Mimarlık (% 100 İngilizce)",
+   "programCode": "MIME_LS",
    "semester": 3,
    "placed": 4,
    "ceiling": 3.92,
@@ -107,25 +122,29 @@
   },
   {
    "faculty": "Mimarlık Fakültesi",
-   "program": "Mimarlık  (% 100 İngilizce)",
+   "program": "Mimarlık (% 100 İngilizce)",
+   "programCode": "MIME_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "Şehir ve Bölge Planlaması (% 30 İngilizce)",
+   "programCode": "SBP_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "Şehir ve Bölge Planlaması (% 30 İngilizce)",
+   "programCode": "SBP_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
-   "program": "Şehir ve Bölge Planlaması  (% 100 İngilizce)",
+   "program": "Şehir ve Bölge Planlaması (% 100 İngilizce)",
+   "programCode": "SBPE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3,
@@ -133,25 +152,29 @@
   },
   {
    "faculty": "Mimarlık Fakültesi",
-   "program": "Şehir ve Bölge Planlaması  (% 100 İngilizce)",
+   "program": "Şehir ve Bölge Planlaması (% 100 İngilizce)",
+   "programCode": "SBPE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "Endüstri Ürünleri Tasarımı (% 30 İngilizce)",
+   "programCode": "EUT_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "Endüstri Ürünleri Tasarımı (% 30 İngilizce)",
+   "programCode": "EUT_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
-   "program": "Endüstri Ürünleri Tasarımı  (% 100 İngilizce)",
+   "program": "Endüstri Ürünleri Tasarımı (% 100 İngilizce)",
+   "programCode": "EUTE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3.58,
@@ -159,13 +182,15 @@
   },
   {
    "faculty": "Mimarlık Fakültesi",
-   "program": "Endüstri Ürünleri Tasarımı  (% 100 İngilizce)",
+   "program": "Endüstri Ürünleri Tasarımı (% 100 İngilizce)",
+   "programCode": "EUTE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "İç Mimarlık (% 30 İngilizce)",
+   "programCode": "ICM_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3.62,
@@ -174,6 +199,7 @@
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "İç Mimarlık (% 30 İngilizce)",
+   "programCode": "ICM_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 3.18,
@@ -182,30 +208,35 @@
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "Peyzaj Mimarlığı (% 30 İngilizce)",
+   "programCode": "PEM_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
    "program": "Peyzaj Mimarlığı (% 30 İngilizce)",
+   "programCode": "PEM_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
-   "program": "Peyzaj Mimarlığı  (% 100 İngilizce)",
+   "program": "Peyzaj Mimarlığı (% 100 İngilizce)",
+   "programCode": "PEME_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Mimarlık Fakültesi",
-   "program": "Peyzaj Mimarlığı  (% 100 İngilizce)",
+   "program": "Peyzaj Mimarlığı (% 100 İngilizce)",
+   "programCode": "PEME_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Makina Fakültesi",
    "program": "Makina Mühendisliği (% 30 İngilizce)",
+   "programCode": "MAK_LS",
    "semester": 3,
    "placed": 15,
    "ceiling": 3.81,
@@ -214,6 +245,7 @@
   {
    "faculty": "Makina Fakültesi",
    "program": "Makina Mühendisliği (% 30 İngilizce)",
+   "programCode": "MAK_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 3.38,
@@ -221,7 +253,8 @@
   },
   {
    "faculty": "Makina Fakültesi",
-   "program": "Makina Mühendisliği  (% 100 İngilizce)",
+   "program": "Makina Mühendisliği (% 100 İngilizce)",
+   "programCode": "MAKE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3.81,
@@ -229,7 +262,8 @@
   },
   {
    "faculty": "Makina Fakültesi",
-   "program": "Makina Mühendisliği  (% 100 İngilizce)",
+   "program": "Makina Mühendisliği (% 100 İngilizce)",
+   "programCode": "MAKE_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 3.08,
@@ -238,6 +272,7 @@
   {
    "faculty": "Makina Fakültesi",
    "program": "İmalat Mühendisliği (% 30 İngilizce)",
+   "programCode": "IML_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 2.9,
@@ -246,12 +281,14 @@
   {
    "faculty": "Makina Fakültesi",
    "program": "İmalat Mühendisliği (% 30 İngilizce)",
+   "programCode": "IML_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Makina Fakültesi",
-   "program": "İmalat Mühendisliği  (% 100 İngilizce)",
+   "program": "İmalat Mühendisliği (% 100 İngilizce)",
+   "programCode": "IMLE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3.25,
@@ -259,13 +296,15 @@
   },
   {
    "faculty": "Makina Fakültesi",
-   "program": "İmalat Mühendisliği  (% 100 İngilizce)",
+   "program": "İmalat Mühendisliği (% 100 İngilizce)",
+   "programCode": "IMLE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Elektronik ve Haberleşme Mühendisliği (% 30 İngilizce)",
+   "programCode": "EHB_LS",
    "semester": 3,
    "placed": 5,
    "ceiling": 3.79,
@@ -274,6 +313,7 @@
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Elektronik ve Haberleşme Mühendisliği (% 30 İngilizce)",
+   "programCode": "EHB_LS",
    "semester": 5,
    "placed": 5,
    "ceiling": 3.43,
@@ -281,7 +321,8 @@
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
-   "program": "Elektronik ve Haberleşme Mühendisliği (% 100 İngilizce)",
+   "program": "Elektronik ve Haberleşme Mühendisliği (% 100 İngilizce)",
+   "programCode": "EHBE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3.7,
@@ -289,7 +330,8 @@
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
-   "program": "Elektronik ve Haberleşme Mühendisliği (% 100 İngilizce)",
+   "program": "Elektronik ve Haberleşme Mühendisliği (% 100 İngilizce)",
+   "programCode": "EHBE_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 3.11,
@@ -298,6 +340,7 @@
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Elektrik Mühendisliği (% 30 İngilizce)",
+   "programCode": "ELK_LS",
    "semester": 3,
    "placed": 6,
    "ceiling": 3.46,
@@ -306,12 +349,14 @@
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Elektrik Mühendisliği (% 30 İngilizce)",
+   "programCode": "ELK_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
-   "program": "Elektrik Mühendisliği  (% 100 İngilizce)",
+   "program": "Elektrik Mühendisliği (% 100 İngilizce)",
+   "programCode": "ELKE_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 3.35,
@@ -319,25 +364,29 @@
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
-   "program": "Elektrik Mühendisliği  (% 100 İngilizce)",
+   "program": "Elektrik Mühendisliği (% 100 İngilizce)",
+   "programCode": "ELKE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Elektronik Mühendisliği (% 30 İngilizce)",
+   "programCode": "ELE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Elektronik Mühendisliği (% 30 İngilizce)",
+   "programCode": "ELE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Kontrol Mühendisliği (% 30 İngilizce)",
+   "programCode": "KOM_LS",
    "semester": 3,
    "placed": 3,
    "ceiling": 3.41,
@@ -346,6 +395,7 @@
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Kontrol Mühendisliği (% 30 İngilizce)",
+   "programCode": "KOM_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 2.98,
@@ -353,7 +403,8 @@
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
-   "program": "Kontrol Mühendisliği  (% 100 İngilizce)",
+   "program": "Kontrol Mühendisliği (% 100 İngilizce)",
+   "programCode": "KOME_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 2.98,
@@ -361,127 +412,148 @@
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
-   "program": "Kontrol Mühendisliği  (% 100 İngilizce)",
+   "program": "Kontrol Mühendisliği (% 100 İngilizce)",
+   "programCode": "KOME_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Telekomünikasyon Mühendisliği (% 30 İngilizce)",
+   "programCode": "TEL_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Elektrik - Elektronik Fakültesi",
    "program": "Telekomünikasyon Mühendisliği (% 30 İngilizce)",
+   "programCode": "TEL_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Maden Mühendisliği (% 30 İngilizce)",
+   "programCode": "MAD_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Maden Mühendisliği (% 30 İngilizce)",
+   "programCode": "MAD_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
-   "program": "Maden Mühendisliği  (% 100 İngilizce)",
+   "program": "Maden Mühendisliği (% 100 İngilizce)",
+   "programCode": "MADE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
-   "program": "Maden Mühendisliği  (% 100 İngilizce)",
+   "program": "Maden Mühendisliği (% 100 İngilizce)",
+   "programCode": "MADE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Jeoloji Mühendisliği (% 30 İngilizce)",
+   "programCode": "JEO_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Jeoloji Mühendisliği (% 30 İngilizce)",
+   "programCode": "JEO_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
-   "program": "Jeoloji Mühendisliği  (% 100 İngilizce)",
+   "program": "Jeoloji Mühendisliği (% 100 İngilizce)",
+   "programCode": "JEOE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
-   "program": "Jeoloji Mühendisliği  (% 100 İngilizce)",
+   "program": "Jeoloji Mühendisliği (% 100 İngilizce)",
+   "programCode": "JEOE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Jeofizik Mühendisliği (% 30 İngilizce)",
+   "programCode": "JEF_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Jeofizik Mühendisliği (% 30 İngilizce)",
+   "programCode": "JEF_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
-   "program": "Jeofizik Mühendisliği  (% 100 İngilizce)",
+   "program": "Jeofizik Mühendisliği (% 100 İngilizce)",
+   "programCode": "JEFE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
-   "program": "Jeofizik Mühendisliği  (% 100 İngilizce)",
+   "program": "Jeofizik Mühendisliği (% 100 İngilizce)",
+   "programCode": "JEFE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Petrol ve Doğalgaz Mühendisliği (% 30 İngilizce)",
+   "programCode": "PET_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Petrol ve Doğalgaz Mühendisliği (% 30 İngilizce)",
+   "programCode": "PET_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
-   "program": "Petrol ve Doğalgaz Mühendisliği  (% 100 İngilizce)",
+   "program": "Petrol ve Doğalgaz Mühendisliği (% 100 İngilizce)",
+   "programCode": "PETE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
-   "program": "Petrol ve Doğalgaz Mühendisliği  (% 100 İngilizce)",
+   "program": "Petrol ve Doğalgaz Mühendisliği (% 100 İngilizce)",
+   "programCode": "PETE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Cevher Hazırlama Mühendisliği (% 30 İngilizce)",
+   "programCode": "CHZ_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Cevher Hazırlama Mühendisliği (% 30 İngilizce)",
+   "programCode": "CHZ_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 2.82,
@@ -490,18 +562,21 @@
   {
    "faculty": "Maden Fakültesi",
    "program": "Cevher Hazırlama Mühendisliği (% 100 İngilizce)",
+   "programCode": "CHZE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Maden Fakültesi",
    "program": "Cevher Hazırlama Mühendisliği (% 100 İngilizce)",
+   "programCode": "CHZE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
    "program": "Kimya Mühendisliği (% 30 İngilizce)",
+   "programCode": "KMM_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 3.47,
@@ -510,12 +585,14 @@
   {
    "faculty": "Kimya - Metalurji Fakültesi",
    "program": "Kimya Mühendisliği (% 30 İngilizce)",
+   "programCode": "KMM_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
-   "program": "Kimya Mühendisliği  (% 100 İngilizce)",
+   "program": "Kimya Mühendisliği (% 100 İngilizce)",
+   "programCode": "KMME_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 3.23,
@@ -523,13 +600,15 @@
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
-   "program": "Kimya Mühendisliği  (% 100 İngilizce)",
+   "program": "Kimya Mühendisliği (% 100 İngilizce)",
+   "programCode": "KMME_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
    "program": "Metalurji ve Malzeme Mühendisliği (% 30 İngilizce)",
+   "programCode": "MET_LS",
    "semester": 3,
    "placed": 4,
    "ceiling": 3.11,
@@ -538,12 +617,14 @@
   {
    "faculty": "Kimya - Metalurji Fakültesi",
    "program": "Metalurji ve Malzeme Mühendisliği (% 30 İngilizce)",
+   "programCode": "MET_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
-   "program": "Metalurji ve Malzeme Mühendisliği  (% 100 İngilizce)",
+   "program": "Metalurji ve Malzeme Mühendisliği (% 100 İngilizce)",
+   "programCode": "METE_LS",
    "semester": 3,
    "placed": 3,
    "ceiling": 3,
@@ -551,25 +632,29 @@
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
-   "program": "Metalurji ve Malzeme Mühendisliği  (% 100 İngilizce)",
+   "program": "Metalurji ve Malzeme Mühendisliği (% 100 İngilizce)",
+   "programCode": "METE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
    "program": "Gıda Mühendisliği (% 30 İngilizce)",
+   "programCode": "GID_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
    "program": "Gıda Mühendisliği (% 30 İngilizce)",
+   "programCode": "GID_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
-   "program": "Gıda Mühendisliği  (% 100 İngilizce)",
+   "program": "Gıda Mühendisliği (% 100 İngilizce)",
+   "programCode": "GIDE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 2.89,
@@ -577,25 +662,29 @@
   },
   {
    "faculty": "Kimya - Metalurji Fakültesi",
-   "program": "Gıda Mühendisliği  (% 100 İngilizce)",
+   "program": "Gıda Mühendisliği (% 100 İngilizce)",
+   "programCode": "GIDE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İşletme Fakültesi",
    "program": "İşletme Mühendisliği (% 30 İngilizce)",
+   "programCode": "ISL_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "İşletme Fakültesi",
    "program": "İşletme Mühendisliği (% 30 İngilizce)",
+   "programCode": "ISL_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İşletme Fakültesi",
-   "program": "İşletme Mühendisliği  (% 100 İngilizce)",
+   "program": "İşletme Mühendisliği (% 100 İngilizce)",
+   "programCode": "ISLE_LS",
    "semester": 3,
    "placed": 10,
    "ceiling": 3.87,
@@ -603,13 +692,15 @@
   },
   {
    "faculty": "İşletme Fakültesi",
-   "program": "İşletme Mühendisliği  (% 100 İngilizce)",
+   "program": "İşletme Mühendisliği (% 100 İngilizce)",
+   "programCode": "ISLE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İşletme Fakültesi",
    "program": "Endüstri Mühendisliği (% 30 İngilizce)",
+   "programCode": "END_LS",
    "semester": 3,
    "placed": 5,
    "ceiling": 3.99,
@@ -618,12 +709,14 @@
   {
    "faculty": "İşletme Fakültesi",
    "program": "Endüstri Mühendisliği (% 30 İngilizce)",
+   "programCode": "END_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "İşletme Fakültesi",
-   "program": "Endüstri Mühendisliği  (% 100 İngilizce)",
+   "program": "Endüstri Mühendisliği (% 100 İngilizce)",
+   "programCode": "ENDE_LS",
    "semester": 3,
    "placed": 3,
    "ceiling": 3.83,
@@ -631,13 +724,15 @@
   },
   {
    "faculty": "İşletme Fakültesi",
-   "program": "Endüstri Mühendisliği  (% 100 İngilizce)",
+   "program": "Endüstri Mühendisliği (% 100 İngilizce)",
+   "programCode": "ENDE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Gemi İnşaaty ve Deniz Bilimleri Fakültesi",
    "program": "Gemi İnşaatı ve Gemi Makineleri Mühendisliği (% 30 İngilizce)",
+   "programCode": "GEM_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 2.85,
@@ -646,48 +741,56 @@
   {
    "faculty": "Gemi İnşaaty ve Deniz Bilimleri Fakültesi",
    "program": "Gemi İnşaatı ve Gemi Makineleri Mühendisliği (% 30 İngilizce)",
+   "programCode": "GEM_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Gemi İnşaaty ve Deniz Bilimleri Fakültesi",
-   "program": "Gemi İnşaatı ve Gemi Makineleri Müh.  (% 100 İngilizce)",
+   "program": "Gemi İnşaatı ve Gemi Makineleri Müh. (% 100 İngilizce)",
+   "programCode": "GEME_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Gemi İnşaaty ve Deniz Bilimleri Fakültesi",
-   "program": "Gemi İnşaatı ve Gemi Makineleri Müh.  (% 100 İngilizce)",
+   "program": "Gemi İnşaatı ve Gemi Makineleri Müh. (% 100 İngilizce)",
+   "programCode": "GEME_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Gemi İnşaaty ve Deniz Bilimleri Fakültesi",
    "program": "Gemi ve Deniz Teknolojisi Mühendisliği (% 30 İngilizce)",
+   "programCode": "DEN_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Gemi İnşaaty ve Deniz Bilimleri Fakültesi",
    "program": "Gemi ve Deniz Teknolojisi Mühendisliği (% 30 İngilizce)",
+   "programCode": "DEN_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Gemi İnşaaty ve Deniz Bilimleri Fakültesi",
-   "program": "Gemi ve Deniz Teknolojisi Mühendisliği  (% 100 İngilizce)",
+   "program": "Gemi ve Deniz Teknolojisi Mühendisliği (% 100 İngilizce)",
+   "programCode": "DENE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Gemi İnşaaty ve Deniz Bilimleri Fakültesi",
-   "program": "Gemi ve Deniz Teknolojisi Mühendisliği  (% 100 İngilizce)",
+   "program": "Gemi ve Deniz Teknolojisi Mühendisliği (% 100 İngilizce)",
+   "programCode": "DENE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
    "program": "Matematik Mühendisliği (% 30 İngilizce)",
+   "programCode": "MAT_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 2.98,
@@ -696,12 +799,14 @@
   {
    "faculty": "Fen - Edebiyat Fakültesi",
    "program": "Matematik Mühendisliği (% 30 İngilizce)",
+   "programCode": "MAT_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
-   "program": "Matematik Mühendisliği  (% 100 İngilizce)",
+   "program": "Matematik Mühendisliği (% 100 İngilizce)",
+   "programCode": "MATE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3.21,
@@ -709,7 +814,8 @@
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
-   "program": "Matematik Mühendisliği  (% 100 İngilizce)",
+   "program": "Matematik Mühendisliği (% 100 İngilizce)",
+   "programCode": "MATE_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 3.04,
@@ -718,18 +824,21 @@
   {
    "faculty": "Fen - Edebiyat Fakültesi",
    "program": "Fizik Mühendisliği (% 30 İngilizce)",
+   "programCode": "FIZ_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
    "program": "Fizik Mühendisliği (% 30 İngilizce)",
+   "programCode": "FIZ_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
-   "program": "Fizik Mühendisliği  (% 100 İngilizce)",
+   "program": "Fizik Mühendisliği (% 100 İngilizce)",
+   "programCode": "FIZE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 2.88,
@@ -737,13 +846,15 @@
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
-   "program": "Fizik Mühendisliği  (% 100 İngilizce)",
+   "program": "Fizik Mühendisliği (% 100 İngilizce)",
+   "programCode": "FIZE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
    "program": "Kimya (% 30 İngilizce)",
+   "programCode": "KIM_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 2.79,
@@ -752,12 +863,14 @@
   {
    "faculty": "Fen - Edebiyat Fakültesi",
    "program": "Kimya (% 30 İngilizce)",
+   "programCode": "KIM_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
-   "program": "Kimya  (% 100 İngilizce)",
+   "program": "Kimya (% 100 İngilizce)",
+   "programCode": "KIME_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 3.08,
@@ -765,19 +878,22 @@
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
-   "program": "Kimya  (% 100 İngilizce)",
+   "program": "Kimya (% 100 İngilizce)",
+   "programCode": "KIME_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
    "program": "Moleküler Biyoloji ve Genetik (% 30 İngilizce)",
+   "programCode": "BIO_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
    "program": "Moleküler Biyoloji ve Genetik (% 30 İngilizce)",
+   "programCode": "BIO_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 2.68,
@@ -785,7 +901,8 @@
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
-   "program": "Moleküler Biyoloji ve Genetik  (% 100 İngilizce)",
+   "program": "Moleküler Biyoloji ve Genetik (% 100 İngilizce)",
+   "programCode": "BIOE_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 3.6,
@@ -793,13 +910,15 @@
   },
   {
    "faculty": "Fen - Edebiyat Fakültesi",
-   "program": "Moleküler Biyoloji ve Genetik  (% 100 İngilizce)",
+   "program": "Moleküler Biyoloji ve Genetik (% 100 İngilizce)",
+   "programCode": "BIOE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
    "program": "Uçak Mühendisliği (% 30 İngilizce)",
+   "programCode": "UCK_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 3.88,
@@ -808,6 +927,7 @@
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
    "program": "Uçak Mühendisliği (% 30 İngilizce)",
+   "programCode": "UCK_LS",
    "semester": 5,
    "placed": 1,
    "ceiling": 3.53,
@@ -815,7 +935,8 @@
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
-   "program": "Uçak Mühendisliği  (% 100 İngilizce)",
+   "program": "Uçak Mühendisliği (% 100 İngilizce)",
+   "programCode": "UCK_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 3.72,
@@ -823,25 +944,29 @@
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
-   "program": "Uçak Mühendisliği  (% 100 İngilizce)",
+   "program": "Uçak Mühendisliği (% 100 İngilizce)",
+   "programCode": "UCK_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
    "program": "Uzay Mühendisliği (% 30 İngilizce)",
+   "programCode": "UZB_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
    "program": "Uzay Mühendisliği (% 30 İngilizce)",
+   "programCode": "UZB_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
-   "program": "Uzay Mühendisliği  (% 100 İngilizce)",
+   "program": "Uzay Mühendisliği (% 100 İngilizce)",
+   "programCode": "UZBE_LS",
    "semester": 3,
    "placed": 3,
    "ceiling": 3.72,
@@ -849,31 +974,36 @@
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
-   "program": "Uzay Mühendisliği  (% 100 İngilizce)",
+   "program": "Uzay Mühendisliği (% 100 İngilizce)",
+   "programCode": "UZBE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
    "program": "Meteoroloji Mühendisliği (% 30 İngilizce)",
+   "programCode": "MTO_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
    "program": "Meteoroloji Mühendisliği (% 30 İngilizce)",
+   "programCode": "MTO_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
-   "program": "Meteoroloji Mühendisliği  (% 100 İngilizce)",
+   "program": "Meteoroloji Mühendisliği (% 100 İngilizce)",
+   "programCode": "MTOE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Uçak ve Uzay Bilimleri Fakültesi",
-   "program": "Meteoroloji Mühendisliği  (% 100 İngilizce)",
+   "program": "Meteoroloji Mühendisliği (% 100 İngilizce)",
+   "programCode": "MTOE_LS",
    "semester": 5,
    "placed": 0
   },
@@ -892,18 +1022,21 @@
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Müzik Teorisi",
+   "programCode": "MTR_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Müzik Teorisi",
+   "programCode": "MTR_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Ses Eğitimi",
+   "programCode": "SES_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 3.45,
@@ -912,84 +1045,98 @@
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Ses Eğitimi",
+   "programCode": "SES_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Kompozisyon",
+   "programCode": "KMP_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Kompozisyon",
+   "programCode": "KMP_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Müzik Teknolojileri",
+   "programCode": "MUT_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Müzik Teknolojileri",
+   "programCode": "MUT_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Müzikoloji",
+   "programCode": "MUZ_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Müzikoloji",
+   "programCode": "MUZ_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Çalgı",
+   "programCode": "CAB_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Çalgı",
+   "programCode": "CAB_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Türk Halk Oyunları",
+   "programCode": "THO_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Türk Halk Oyunları",
+   "programCode": "THO_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Müzik Teorisi",
+   "programCode": "MTR_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Türk Musikisi Devlet Konservatuarı",
    "program": "Müzik Teorisi",
+   "programCode": "MTR_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Denizcilik Fakültesi",
    "program": "Gemi Makinaları İşletme Mühendisliği (% 30 İngilizce)",
+   "programCode": "GMI_LS",
    "semester": 3,
    "placed": 3,
    "ceiling": 3.41,
@@ -998,60 +1145,70 @@
   {
    "faculty": "Denizcilik Fakültesi",
    "program": "Gemi Makinaları İşletme Mühendisliği (% 30 İngilizce)",
+   "programCode": "GMI_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Denizcilik Fakültesi",
-   "program": "Gemi Makinaları İşletme Mühendisliği  (% 100 İngilizce)",
+   "program": "Gemi Makinaları İşletme Mühendisliği (% 100 İngilizce)",
+   "programCode": "GMIE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Denizcilik Fakültesi",
-   "program": "Gemi Makinaları İşletme Mühendisliği  (% 100 İngilizce)",
+   "program": "Gemi Makinaları İşletme Mühendisliği (% 100 İngilizce)",
+   "programCode": "GMIE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Denizcilik Fakültesi",
    "program": "Deniz Ulaştırma İşletme Mühendisliği (% 30 İngilizce)",
+   "programCode": "DUI_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Denizcilik Fakültesi",
    "program": "Deniz Ulaştırma İşletme Mühendisliği (% 30 İngilizce)",
+   "programCode": "DUI_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Denizcilik Fakültesi",
-   "program": "Deniz Ulaştırma İşletme Mühendisliği  (% 100 İngilizce)",
+   "program": "Deniz Ulaştırma İşletme Mühendisliği (% 100 İngilizce)",
+   "programCode": "DUIE_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Denizcilik Fakültesi",
-   "program": "Deniz Ulaştırma İşletme Mühendisliği  (% 100 İngilizce)",
+   "program": "Deniz Ulaştırma İşletme Mühendisliği (% 100 İngilizce)",
+   "programCode": "DUIE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Tekstil Teknolojileri ve Tasarımı Fakültesi",
    "program": "Tekstil Mühendisliği (% 30 İngilizce)",
+   "programCode": "TEK_LS",
    "semester": 3,
    "placed": 0
   },
   {
    "faculty": "Tekstil Teknolojileri ve Tasarımı Fakültesi",
    "program": "Tekstil Mühendisliği (% 30 İngilizce)",
+   "programCode": "TEK_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Tekstil Teknolojileri ve Tasarımı Fakültesi",
-   "program": "Tekstil Mühendisliği  (% 100 İngilizce)",
+   "program": "Tekstil Mühendisliği (% 100 İngilizce)",
+   "programCode": "TEKE_LS",
    "semester": 3,
    "placed": 1,
    "ceiling": 2.75,
@@ -1059,13 +1216,15 @@
   },
   {
    "faculty": "Tekstil Teknolojileri ve Tasarımı Fakültesi",
-   "program": "Tekstil Mühendisliği  (% 100 İngilizce)",
+   "program": "Tekstil Mühendisliği (% 100 İngilizce)",
+   "programCode": "TEKE_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Bilgisayar ve Bilişim Fakültesi",
    "program": "Bilgisayar Mühendisliği (% 30 İngilizce)",
+   "programCode": "BLG_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3.62,
@@ -1074,12 +1233,14 @@
   {
    "faculty": "Bilgisayar ve Bilişim Fakültesi",
    "program": "Bilgisayar Mühendisliği (% 30 İngilizce)",
+   "programCode": "BLG_LS",
    "semester": 5,
    "placed": 0
   },
   {
    "faculty": "Bilgisayar ve Bilişim Fakültesi",
-   "program": "Bilgisayar Mühendisliği  (% 100 İngilizce)",
+   "program": "Bilgisayar Mühendisliği (% 100 İngilizce)",
+   "programCode": "BLGE_LS",
    "semester": 3,
    "placed": 2,
    "ceiling": 3.81,
@@ -1087,7 +1248,8 @@
   },
   {
    "faculty": "Bilgisayar ve Bilişim Fakültesi",
-   "program": "Bilgisayar Mühendisliği  (% 100 İngilizce)",
+   "program": "Bilgisayar Mühendisliği (% 100 İngilizce)",
+   "programCode": "BLGE_LS",
    "semester": 5,
    "placed": 0
   }

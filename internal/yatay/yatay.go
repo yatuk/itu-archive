@@ -33,7 +33,7 @@ import (
 type Metric string
 
 const (
-	MetricAGNO  Metric = "agno"         // ham ağırlıklı not ortalaması, 4.00 skala
+	MetricAGNO  Metric = "agno"          // ham ağırlıklı not ortalaması, 4.00 skala
 	MetricScore Metric = "degerlendirme" // %40 YKS + %60 AGNO bileşik puanı, 0-1 skala
 )
 
@@ -75,13 +75,14 @@ var Terms = []Spec{
 
 // Result, tek bir program + yarıyıl için taban/tavan kaydı.
 type Result struct {
-	Faculty  string   `json:"faculty"`
-	Program  string   `json:"program"`
-	Semester int      `json:"semester"` // 3 veya 5
-	Quota    int      `json:"quota,omitempty"`
-	Placed   int      `json:"placed"`
-	Ceiling  *float64 `json:"ceiling,omitempty"` // nil = o yarıyıl için yerleşen olmadı
-	Floor    *float64 `json:"floor,omitempty"`
+	Faculty     string   `json:"faculty"`
+	Program     string   `json:"program"`
+	ProgramCode string   `json:"programCode,omitempty"` // arşiv kodu (BLG_LS vb.) — bkz. match.go; KKTC/UOLP hedefleri kasıtlı boş
+	Semester    int      `json:"semester"`              // 3 veya 5
+	Quota       int      `json:"quota,omitempty"`
+	Placed      int      `json:"placed"`
+	Ceiling     *float64 `json:"ceiling,omitempty"` // nil = o yarıyıl için yerleşen olmadı
+	Floor       *float64 `json:"floor,omitempty"`
 }
 
 // Term, bir akademik yılın tüm sonuçları.
@@ -110,13 +111,15 @@ func (c *Client) Fetch(ctx context.Context, spec Spec) (*Term, error) {
 }
 
 var (
-	tagRe = regexp.MustCompile(`(?s)<[^>]*>`)
-	spRe  = regexp.MustCompile(`\s+`)
+	tagRe  = regexp.MustCompile(`(?s)<[^>]*>`)
+	spRe   = regexp.MustCompile(`\s+`)
+	nbspRe = regexp.MustCompile(" ") // &nbsp; -> U+00A0; Go'nun \s'i (RE2) bunu kapsamıyor
 )
 
 func clean(s string) string {
 	s = tagRe.ReplaceAllString(s, " ")
 	s = html.UnescapeString(s)
+	s = nbspRe.ReplaceAllString(s, " ")
 	return strings.TrimSpace(spRe.ReplaceAllString(s, " "))
 }
 

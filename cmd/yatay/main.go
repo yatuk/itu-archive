@@ -12,6 +12,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
@@ -36,6 +37,13 @@ func main() {
 	c := yatay.New(f)
 	st := store.New(*out)
 
+	archivePrograms, err := loadArchivePrograms(st)
+	if err != nil {
+		// Eksikse eşleme atlanır, programCode boş kalır — scraper yine de
+		// çalışsın (cmd/definitions henüz koşmamış olabilir).
+		logf("uyarı: programs.json okunamadı, programCode eşlemesi atlanıyor: %v", err)
+	}
+
 	specs := yatay.Terms
 	if *only != "" {
 		specs = nil
@@ -57,6 +65,9 @@ func main() {
 			logf("%s atlandı: %v", spec.Term, err)
 			failed = append(failed, spec.Term)
 			continue
+		}
+		if len(archivePrograms) > 0 {
+			term.Results = yatay.MatchPrograms(term.Results, archivePrograms)
 		}
 		if err := st.WriteJSON(term, "data", "yatay", spec.Term+".json"); err != nil {
 			log.Fatalf("%s yazılamadı: %v", spec.Term, err)
@@ -84,4 +95,21 @@ func main() {
 
 func logf(format string, args ...any) {
 	fmt.Fprintf(os.Stderr, "· "+format+"\n", args...)
+}
+
+// loadArchivePrograms, cmd/definitions'ın ürettiği docs/data/programs.json'u
+// okur — yatay geçiş program adlarını arşiv koduna bağlamak için (bkz.
+// internal/yatay/match.go).
+func loadArchivePrograms(st *store.Store) ([]yatay.ArchiveProgram, error) {
+	raw, err := os.ReadFile(st.Path("data", "programs.json"))
+	if err != nil {
+		return nil, err
+	}
+	var payload struct {
+		Programs []yatay.ArchiveProgram `json:"programs"`
+	}
+	if err := json.Unmarshal(raw, &payload); err != nil {
+		return nil, err
+	}
+	return payload.Programs, nil
 }

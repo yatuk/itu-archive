@@ -16,6 +16,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -47,6 +48,7 @@ jobs:
   # rağmen boş tablo gibi hatalar yalnızca burada görünür.
   e2e:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -76,6 +78,7 @@ jobs:
 
   lighthouse:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -106,6 +109,7 @@ jobs:
     if: always()
     needs: [test, e2e, lighthouse]
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Yayın kalite kapısı
         shell: bash

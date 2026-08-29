@@ -42,7 +42,7 @@ type lang struct {
 	FootLive            string
 	FootSitemap         string
 	TermSuffix          string // "ders programı ve arşivi" / "course schedule and archive"
-	TermLeadFmt         string // "İTÜ %s — %d ders, %d şube, %d branş."
+	TermLeadFmt         string // "İTÜ %s: %d ders, %d şube, %d branş."
 	TermLiveBadge       string // "aktif dönem · canlı veri" / "active term · live data"
 	TermBranchHeading   string // "Bu dönemde açılan branşlar"
 	TermSearchCTA       string // "bu dönemi canlı ara" / "search this term live"
@@ -54,15 +54,15 @@ type lang struct {
 	StatBranches        string // "branş"
 	StatScanned         string // "son tarama"
 	BranchTitleFmt      string // "%s branşı dersleri ve dönem dökümü"
-	BranchLeadFmt       string // "İTÜ %s branşının tüm dönemlerdeki arşivi — %d ders kodu, %d dönem, %d şube."
+	BranchLeadFmt       string // "İTÜ %s branşının tüm dönemlerdeki arşivi: %d ders kodu, %d dönem, %d şube."
 	BranchH1Fmt         string // "%s branşı"
 	BranchSearchCTA     string // "bu branşı canlı ara"
 	BranchCodeHeading   string // "Ders kodları" / "Course codes"
 	BranchTermHeading   string // "Dönem dökümü"
 	BranchTermCol       string // "Dönem"
 	BranchSecCol        string // "Şube"
-	CourseTitleFmt      string // "%s — ..."
-	CourseLeadFmt       string // "%s (%s) — İTÜ'de %d dönemde..."
+	CourseTitleFmt      string // "%s: ..."
+	CourseLeadFmt       string // "%s (%s): İTÜ'de %d dönemde..."
 	CourseSearchCTA     string
 	CourseStatTerms     string // "toplam dönem"
 	CourseSectHead      string // "Son dönem şubeleri"
@@ -76,7 +76,7 @@ type lang struct {
 	CourseHistCap       string // "Kont"
 	CourseHistEnr       string // "Yazılan"
 	CourseQuotaHead     string // "Kontenjan doluluk geçmişi"
-	InstrTitleFmt       string // "%s — verdiği dersler"
+	InstrTitleFmt       string // "%s: verdiği dersler"
 	InstrLeadFmt        string
 	InstrDescriptionFmt string
 	InstrStatTerms      string // "toplam dönem"
@@ -116,7 +116,7 @@ var langTR = lang{
 	CourseSectHead: "Son dönem şubeleri", CourseSectCRN: "CRN", CourseSectInstr: "Öğretim Üyesi", CourseSectTime: "Zaman", CourseSectCap: "Kont/Yazılan",
 	CourseHistHead: "Dönem geçmişi", CourseHistTerm: "Dönem", CourseHistInstr: "Öğretim Üyesi", CourseHistCap: "Kont", CourseHistEnr: "Yazılan",
 	CourseQuotaHead:     "Kontenjan doluluk geçmişi",
-	InstrTitleFmt:       "%s — İTÜ'de Verdiği Dersler",
+	InstrTitleFmt:       "%s: İTÜ'de Verdiği Dersler",
 	InstrLeadFmt:        "%s için İTÜ Ders Arşivi'nde %d döneme ait %d ders kaydı bulunuyor. %d farklı ders; son kayıt %s.",
 	InstrDescriptionFmt: "%s: İTÜ’de verdiği dersler, açtığı dönemler ve geçmiş kontenjan bilgileri. Arşivde %d dönem ve %d farklı ders; son kayıt %s.",
 	InstrStatTerms:      "toplam dönem", InstrStatRecords: "ders kaydı", InstrStatCourses: "farklı ders", InstrStatLatest: "son kayıt",
@@ -148,7 +148,7 @@ var langEN = lang{
 	CourseSectHead: "Latest term sections", CourseSectCRN: "CRN", CourseSectInstr: "Instructor", CourseSectTime: "Time", CourseSectCap: "Cap/Enr",
 	CourseHistHead: "Term history", CourseHistTerm: "Term", CourseHistInstr: "Instructor", CourseHistCap: "Cap", CourseHistEnr: "Enr",
 	CourseQuotaHead:     "Enrollment history",
-	InstrTitleFmt:       "%s — Courses Taught at İTÜ",
+	InstrTitleFmt:       "%s: Courses Taught at İTÜ",
 	InstrLeadFmt:        "%s has %d terms and %d course records in the İTÜ Course Archive, across %d distinct courses; latest record %s.",
 	InstrDescriptionFmt: "Courses taught by %s at İTÜ, including terms and historical enrollment. %d terms and %d distinct courses; latest record %s.",
 	InstrStatTerms:      "total terms", InstrStatRecords: "course records", InstrStatCourses: "distinct courses", InstrStatLatest: "latest record",
@@ -1543,7 +1543,7 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 		return hi.Rows[i].Code < hi.Rows[j].Code
 	})
 	latestSlug := ""
-	latestLabel := "—"
+	latestLabel := "·"
 	if len(hi.Rows) > 0 {
 		latestSlug = hi.Rows[0].Term
 		latestLabel = latestSlug

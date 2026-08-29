@@ -551,7 +551,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
               const taken = isTaken(o.code);
               const badge = !st ? '<span class="loading">…</span>'
                 : st.open
-                  ? `<span class="open">● açık · ${st.sections.length} şube · ${st.enr}/${st.cap || '—'}</span>`
+                  ? `<span class="open">● açık · ${st.sections.length} şube · ${st.enr}/${st.cap || '·'}</span>`
                   : `<span class="closed">● ${st.last ? 'son ' + esc(termLabel(st.last)) : 'hiç açılmadı'}</span>`;
               return `<div class="pg-pool-row${taken ? ' pg-pool-taken' : ''}">
                 <div class="pg-pool-name"><b>${esc(o.code)}</b><em title="${esc(o.name)}">${esc(o.name || 'Ders adı arşivde bulunamadı')}</em></div>

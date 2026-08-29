@@ -50,8 +50,8 @@ function computeEarliestTerms(remaining, edges) {
 
 function buildReason({ minTerm, placed, isRepeat, hard }) {
   const parts = [];
-  if (isRepeat) parts.push('tekrar dersi — erken ve hafif bir döneme planlandı');
-  if (hard) parts.push('geçmişte kalma oranı yüksek — bu dönemde tek zor ders olarak tutuldu');
+  if (isRepeat) parts.push('tekrar dersi: erken ve hafif bir döneme planlandı');
+  if (hard) parts.push('geçmişte kalma oranı yüksek: bu dönemde tek zor ders olarak tutuldu');
   if (placed > minTerm) {
     parts.push(minTerm > 0
       ? `önşart(lar) ${minTerm}. dönem sonunda biter, kredi dengesi için ${placed + 1}. döneme kaydırıldı`

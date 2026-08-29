@@ -200,7 +200,7 @@ function ensureHost() {
         <label>hedef fakülte <select id="dp-yatay-fac"></select></label>
         <label>hedef program <select id="dp-yatay-prog"></select></label>
       </div>
-      <p class="dp-recommend-note">Kaynak: <a href="https://www.sis.itu.edu.tr/TR/mevzuat/yatay-cap-yandal-yonerge.php" target="_blank" rel="noopener">İTÜ Yatay Geçiş, ÇAP ve Yandal Yönergesi</a>, MADDE 30(4). Değerlendirme puanı %40 YKS (100'lük karşılığı) + %60 AGNO'dan oluşuyor; YKS'nin 100'lük karşılığının resmî çevrim formülü İTÜ tarafından ayrı bir senato kararına bırakılmış ve yayımlanmamış — bu yüzden nihai puanını burada hesaplayamıyoruz, yalnızca AGNO katkını ve geçmiş yılların taban/tavanını gösteriyoruz. 2023-2024 öncesi sayfalar farklı bir ölçüt (ham AGNO) kullanıyordu; iki dönem doğrudan karşılaştırılamaz.</p>
+      <p class="dp-recommend-note">Kaynak: <a href="https://www.sis.itu.edu.tr/TR/mevzuat/yatay-cap-yandal-yonerge.php" target="_blank" rel="noopener">İTÜ Yatay Geçiş, ÇAP ve Yandal Yönergesi</a>, MADDE 30(4). Değerlendirme puanı %40 YKS (100'lük karşılığı) + %60 AGNO'dan oluşuyor. YKS'nin 100'lük karşılığının resmî çevrim formülü İTÜ tarafından ayrı bir senato kararına bırakılmış ve yayımlanmamış, bu yüzden nihai puanını burada hesaplayamıyoruz; yalnızca AGNO katkını ve geçmiş yılların taban/tavanını gösteriyoruz. 2023-2024 öncesi sayfalar farklı bir ölçüt (ham AGNO) kullanıyordu, iki dönem doğrudan karşılaştırılamaz.</p>
       <div id="dp-yatay-result" aria-live="polite"></div>
     </details>
     <div id="dp-semesters" class="dp-semesters"></div>`;
@@ -1096,11 +1096,11 @@ async function renderYatay() {
 
   let head = '';
   if (st.gpa == null) {
-    head = '<p class="dp-recommend-note">Önce not gir — AGNO hesaplanmadan uygunluk kontrol edilemez.</p>';
+    head = '<p class="dp-recommend-note">Önce not gir. AGNO hesaplanmadan uygunluk kontrol edilemez.</p>';
   } else if (!elig.length) {
     head = `<p class="dp-recommend-note">Şu an ${trNum(st.credits)} kredidesin. Yatay geçiş yalnızca 3. yarıyıl (30–59,99 kredi, AGNO ≥ 2,50) veya 5. yarıyıl (60–94,99 kredi, AGNO ≥ 2,60) aralığında başvurulabiliyor.</p>`;
   } else {
-    head = `<p class="dp-recommend-note">AGNO'n <b>${fmtTr2(st.gpa)}</b> (${trNum(st.credits)} kredi) — ${elig.map((s) => `${s}.`).join(' ve ')} yarıyıl için kredi/AGNO şartını sağlıyorsun. Bu, değerlendirme puanının %60'ını oluşturuyor.</p>`;
+    head = `<p class="dp-recommend-note">AGNO'n <b>${fmtTr2(st.gpa)}</b> (${trNum(st.credits)} kredi). ${elig.map((s) => `${s}.`).join(' ve ')} yarıyıl için kredi/AGNO şartını sağlıyorsun; bu, değerlendirme puanının %60'ını oluşturuyor.</p>`;
   }
 
   if (!targetCode) {
@@ -1130,7 +1130,7 @@ async function renderYatay() {
       <tbody>${scoreEra.map(yatayRow).join('')}</tbody></table></div>`;
   }
   if (agnoEra.length) {
-    body += `<details class="dp-yatay-old"><summary>2011-2022 arası (eski ölçüt — ham AGNO, yukarıdakiyle karşılaştırılamaz)</summary>
+    body += `<details class="dp-yatay-old"><summary>2011-2022 arası (eski ölçüt: ham AGNO, yukarıdakiyle karşılaştırılamaz)</summary>
       <div class="tablewrap"><table class="htable"><thead><tr><th>Yıl</th><th>Yarıyıl</th>
       <th class="num">Yerleşen</th><th class="num">Taban</th><th class="num">Tavan</th></tr></thead>
       <tbody>${agnoEra.map((r) => `<tr><td>${esc(r.term)}</td><td>${r.semester}. yy</td><td class="num">${r.placed}</td>
@@ -1556,7 +1556,7 @@ async function buildBalancedPlanUI() {
   }
 
   const cyclicNote = result.cyclic.length
-    ? `<p class="dp-recommend-note">Uyarı: ${esc(result.cyclic.join(', '))} için önşart verisinde devirli bir bağımlılık tespit edildi (veri hatası olabilir) — bu dersler sıra gözetmeden yerleştirildi.</p>`
+    ? `<p class="dp-recommend-note">Uyarı: ${esc(result.cyclic.join(', '))} için önşart verisinde devirli bir bağımlılık tespit edildi (veri hatası olabilir); bu dersler sıra gözetmeden yerleştirildi.</p>`
     : '';
 
   // Yalnızca 1. dönem (bu dönem alınabilecek dersler) tıklanabilir: sonraki
@@ -1623,7 +1623,7 @@ async function loadCurriculumCompare() {
     result.innerHTML = changes.length ? `<ul class="dp-diff-list">${changes.map((change) => {
       const item = change.after || change.before;
       const label = change.type === 'added' ? 'Eklendi' : change.type === 'removed' ? 'Kaldırıldı' : 'Değişti';
-      const detail = change.type === 'changed' ? change.fields.map((field) => `${field}: ${change.before[field] || '—'} → ${change.after[field] || '—'}`).join(' · ') : `${item.semester}. yarıyıl`;
+      const detail = change.type === 'changed' ? change.fields.map((field) => `${field}: ${change.before[field] || '·'} → ${change.after[field] || '·'}`).join(' · ') : `${item.semester}. yarıyıl`;
       return `<li class="${change.type}"><b>${label}: ${esc(item.code)}</b><span>${esc(detail)}</span></li>`;
     }).join('')}</ul>` : '<p class="empty">Bu iki sürüm arasında ders planı farkı yok.</p>';
   });

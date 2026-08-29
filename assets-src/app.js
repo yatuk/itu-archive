@@ -49,7 +49,7 @@ async function boot() {
   state.stale = state.scrapedAt ? (Date.now() - new Date(state.scrapedAt).getTime()) / 36e5 > 48 : false;
   $('#stat-status').textContent = I18N.t('statOnline');
   $('#stat-status').className = 'ok';
-  $('#stat-term').textContent = ix.currentTerm || '—';
+  $('#stat-term').textContent = ix.currentTerm || '·';
   $('#stat-scraped').textContent = fmtDate(ix.scrapedAt);
   $('#stat-terms').textContent = `${ix.terms.filter((t) => !t.missing).length} dönem · ${ix.calendars.length} takvim yılı`;
   // Geçmiş sekmesi notundaki dönem sayısı (statik kopya bayatlamasın).

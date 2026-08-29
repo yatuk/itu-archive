@@ -1,12 +1,12 @@
 // Geçmiş görünümü: 27 dönemin birleştirilmiş kaydında ders/hoca arama, ders
 // bazlı dönem geçmişi (trend grafiği dahil) ve hoca bazlı ders listesi.
 
-import { $, getJSON, esc, normSearch, searchMatch, debounce, termLabel, setStatus } from '../core/utils.js?v=f55dd720fb58';
-import { state } from '../core/store.js?v=f55dd720fb58';
-import { fillBar, trendChart } from '../core/chart.js?v=f55dd720fb58';
-import { fillRows } from '../core/table.js?v=f55dd720fb58';
-import { initReveal } from '../core/reveal.js?v=f55dd720fb58';
-import { readLocalState, writeLocalState } from '../core/persistence.js?v=f55dd720fb58';
+import { $, getJSON, esc, normSearch, searchMatch, debounce, termLabel, setStatus, isViewVisible } from '../core/utils.js?v=d0ca68eb0d19';
+import { state } from '../core/store.js?v=d0ca68eb0d19';
+import { fillBar, trendChart } from '../core/chart.js?v=d0ca68eb0d19';
+import { fillRows } from '../core/table.js?v=d0ca68eb0d19';
+import { initReveal } from '../core/reveal.js?v=d0ca68eb0d19';
+import { readLocalState, writeLocalState } from '../core/persistence.js?v=d0ca68eb0d19';
 
 let inited = false;
 
@@ -51,9 +51,14 @@ export async function searchHistory() {
   if (!state.hist) return;
   const q = normSearch($('#hq').value.trim());
   writeLocalState('itu-history-search', $('#hq').value.trim(), { validate: (value) => typeof value === 'string' });
-  const params = new URLSearchParams();
-  if ($('#hq').value.trim()) params.set('hq', $('#hq').value.trim());
-  history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}#gecmis`);
+  // Yaşanmış hata (courses.js/exams.js'te bulunan aynı sınıf): loadHistory()
+  // asenkron — kullanıcı ilk açılışta veri gelmeden başka sekmeye geçerse geç
+  // gelen yanıt URL'i (hash dahil) #gecmis'e geri yazabiliyordu.
+  if (isViewVisible('gecmis')) {
+    const params = new URLSearchParams();
+    if ($('#hq').value.trim()) params.set('hq', $('#hq').value.trim());
+    history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}#gecmis`);
+  }
   const box = $('#hmatches');
   $('#hdetail').innerHTML = '';
 

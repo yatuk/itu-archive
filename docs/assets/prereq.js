@@ -15,11 +15,11 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-import { esc, fold, getJSON, termLabel } from './core/utils.js?v=f55dd720fb58';
-import { state } from './core/store.js?v=f55dd720fb58';
-import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=f55dd720fb58';
-import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=f55dd720fb58';
-import { I18N } from './i18n.js?v=f55dd720fb58';
+import { esc, fold, getJSON, termLabel } from './core/utils.js?v=d0ca68eb0d19';
+import { state } from './core/store.js?v=d0ca68eb0d19';
+import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=d0ca68eb0d19';
+import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=d0ca68eb0d19';
+import { I18N } from './i18n.js?v=d0ca68eb0d19';
 
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',

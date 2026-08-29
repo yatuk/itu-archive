@@ -1011,6 +1011,47 @@ test.describe('Önşart haritası', () => {
   });
 });
 
+test.describe('Sekme URL izolasyonu', () => {
+  // Yaşanmış hata sınıfı (courses.js'te bulundu, exams.js/history.js/
+  // dersplanim.js'de de vardı): bir sekmenin asenkron veri yüklemesi
+  // (loadExams/loadHistory/plan fetch) kullanıcı BAŞKA bir sekmeye geçtikten
+  // SONRA tamamlanırsa, geç gelen yanıt URL'i (hash dahil) kendi sekmesine
+  // geri yazıyordu — paylaşılabilir/geri tuşu URL'i sessizce bozuluyordu.
+  async function yavaslat(page, pattern) {
+    await page.route(pattern, async (route) => {
+      await new Promise((r) => setTimeout(r, 1200));
+      await route.continue();
+    });
+  }
+
+  test('Sınavlar: geç gelen veri başka sekmedeyken URL\'i bozmaz', async ({ page }) => {
+    await yavaslat(page, '**/data/exams/**');
+    await page.goto('/#sinavlar');
+    await page.waitForTimeout(200);
+    await page.locator('#tab-onsart').click();
+    await page.waitForTimeout(1800);
+    expect(page.url()).not.toContain('#sinavlar');
+  });
+
+  test('Geçmiş: geç gelen veri başka sekmedeyken URL\'i bozmaz', async ({ page }) => {
+    await yavaslat(page, '**/data/history/**');
+    await page.goto('/#gecmis');
+    await page.waitForTimeout(200);
+    await page.locator('#tab-onsart').click();
+    await page.waitForTimeout(1800);
+    expect(page.url()).not.toContain('#gecmis');
+  });
+
+  test('Ders Planım: geç gelen veri başka sekmedeyken URL\'i bozmaz', async ({ page }) => {
+    await yavaslat(page, '**/data/curriculum/**');
+    await page.goto('/?prog=CEN_LS#dersplanim');
+    await page.waitForTimeout(200);
+    await page.locator('#tab-onsart').click();
+    await page.waitForTimeout(2000);
+    expect(page.url()).not.toContain('#dersplanim');
+  });
+});
+
 test.describe('SEO sayfaları', () => {
   for (const { yol, beklenenH1 } of SEO_SAYFALARI) {
     test(`${yol} · tek h1, stilli nav, konsol temiz`, async ({ page }) => {

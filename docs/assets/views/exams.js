@@ -1,11 +1,11 @@
 // Sınavlar görünümü: aktif dönemin sınav takvimini ders/bina/tür üzerinden
 // arar. Bina filtresi yer alanından çıkarılır (yeni kazıma yok).
 
-import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate } from '../core/utils.js?v=f55dd720fb58';
-import { state } from '../core/store.js?v=f55dd720fb58';
-import { fillRows } from '../core/table.js?v=f55dd720fb58';
-import { toast } from '../core/toast.js?v=f55dd720fb58';
-import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=f55dd720fb58';
+import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate, isViewVisible } from '../core/utils.js?v=d0ca68eb0d19';
+import { state } from '../core/store.js?v=d0ca68eb0d19';
+import { fillRows } from '../core/table.js?v=d0ca68eb0d19';
+import { toast } from '../core/toast.js?v=d0ca68eb0d19';
+import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=d0ca68eb0d19';
 
 let inited = false;
 let currentHits = []; // son filtre sonucu — .ics dışa aktarımı için
@@ -28,6 +28,10 @@ function saveExamPreference() {
     building: $('#f-building').value, branch: $('#f-ebranch').value,
   };
   writeLocalState('itu-exam-filters', data, { validate: isPlainObject });
+  // Yaşanmış hata (courses.js'te bulunan aynı sınıf): loadExams() asenkron —
+  // kullanıcı veri gelmeden başka sekmeye geçerse geç gelen yanıt renderExams()
+  // üzerinden buraya düşüp URL'i (hash dahil) #sinavlar'a geri yazabiliyordu.
+  if (!isViewVisible('sinavlar')) return;
   const p = new URLSearchParams();
   if (data.q) p.set('eq', data.q);
   if (data.type) p.set('etype', data.type);

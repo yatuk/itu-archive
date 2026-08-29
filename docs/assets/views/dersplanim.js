@@ -15,23 +15,23 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=f55dd720fb58';
-import { state } from '../core/store.js?v=f55dd720fb58';
-import { openCourseDetail } from '../core/course-detail.js?v=f55dd720fb58';
-import { quotaDisplay } from '../core/chart.js?v=f55dd720fb58';
-import * as fav from '../core/favorites.js?v=f55dd720fb58';
-import { toast } from '../core/toast.js?v=f55dd720fb58';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=f55dd720fb58';
-import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=f55dd720fb58';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=f55dd720fb58';
-import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=f55dd720fb58';
-import { confirmDialog } from '../core/dialog.js?v=f55dd720fb58';
-import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=f55dd720fb58';
-import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=f55dd720fb58';
-import { I18N } from '../i18n.js?v=f55dd720fb58';
-import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=f55dd720fb58';
-import { compareCurricula } from '../core/curriculum-diff.js?v=f55dd720fb58';
-import { buildBalancedPlan } from '../core/planner.js?v=f55dd720fb58';
+import { $, getJSON, esc, trNum, termLabel, debounce, isViewVisible } from '../core/utils.js?v=d0ca68eb0d19';
+import { state } from '../core/store.js?v=d0ca68eb0d19';
+import { openCourseDetail } from '../core/course-detail.js?v=d0ca68eb0d19';
+import { quotaDisplay } from '../core/chart.js?v=d0ca68eb0d19';
+import * as fav from '../core/favorites.js?v=d0ca68eb0d19';
+import { toast } from '../core/toast.js?v=d0ca68eb0d19';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=d0ca68eb0d19';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=d0ca68eb0d19';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=d0ca68eb0d19';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=d0ca68eb0d19';
+import { confirmDialog } from '../core/dialog.js?v=d0ca68eb0d19';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=d0ca68eb0d19';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=d0ca68eb0d19';
+import { I18N } from '../i18n.js?v=d0ca68eb0d19';
+import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=d0ca68eb0d19';
+import { compareCurricula } from '../core/curriculum-diff.js?v=d0ca68eb0d19';
+import { buildBalancedPlan } from '../core/planner.js?v=d0ca68eb0d19';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
@@ -476,7 +476,12 @@ function renderTypeFilter() {
 }
 
 // URL'ye yazar; sekme değişince app.js görünüme ait olmayanları düşürür.
+// Yaşanmış hata (courses.js/exams.js/history.js'te bulunan aynı sınıf): bu
+// fonksiyon plan/müfredat gibi asenkron yüklemelerden sonra da çağrılıyor —
+// kullanıcı veri gelmeden başka sekmeye geçmişse geç gelen çağrı URL'i
+// (hash dahil) #dersplanim'e geri yazabiliyordu.
 function saveState() {
+  if (!isViewVisible('dersplanim')) return;
   const p = new URLSearchParams();
   if (progCode) p.set('prog', progCode);
   if (termSlug && termSlug !== state.index?.currentSlug) p.set('term', termSlug);

@@ -5,13 +5,13 @@
 // Tablo satırından açıldığında ilgili CRN'nin Şubeler görünümü; doğrudan bağlantıda
 // ise karar özeti öne gelir. Uzun program ve arşiv listeleri kontrollü açılır.
 
-import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum, formatInt } from './utils.js?v=f55dd720fb58';
-import { state } from './store.js?v=f55dd720fb58';
-import { fillBar, quotaDisplay, trendChart } from './chart.js?v=f55dd720fb58';
-import { parseReq, renderReqTree } from '../prereq.js?v=f55dd720fb58';
-import { codeToSlug } from './urlcodes.js?v=f55dd720fb58';
-import { loadProgramMap } from './programs.js?v=f55dd720fb58';
-import { TAKEN_CHANGED, getTaken } from './taken.js?v=f55dd720fb58';
+import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum, formatInt } from './utils.js?v=d0ca68eb0d19';
+import { state } from './store.js?v=d0ca68eb0d19';
+import { fillBar, quotaDisplay, trendChart } from './chart.js?v=d0ca68eb0d19';
+import { parseReq, renderReqTree } from '../prereq.js?v=d0ca68eb0d19';
+import { codeToSlug } from './urlcodes.js?v=d0ca68eb0d19';
+import { loadProgramMap } from './programs.js?v=d0ca68eb0d19';
+import { TAKEN_CHANGED, getTaken } from './taken.js?v=d0ca68eb0d19';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)

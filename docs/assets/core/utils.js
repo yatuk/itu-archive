@@ -6,6 +6,18 @@ const cache = new Map();
 
 export const $ = (sel) => document.querySelector(sel);
 
+// Bir görünümün şu an gerçekten görünür olup olmadığını söyler (app.js her
+// .view bölümünü aktif değilken hidden yapar). Yaşanmış hata sınıfı: bir
+// görünümün kendi URL/tercih yazan fonksiyonu, o görünüme ait ASENKRON bir
+// veri yüklemesi tamamlandığında (loadExams, loadHistory, courses.js'nin
+// loadTerm/loadQuota'sı vb.) çağrılıyordu — kullanıcı o sırada BAŞKA bir
+// sekmeye geçmişse, geç gelen yanıt URL'i (hatta hash'i) sessizce eski
+// görünüme geri yazıyordu. Bu tür her fonksiyon history.replaceState'ten
+// önce bunu kontrol etmeli.
+export function isViewVisible(view) {
+  return !document.getElementById(`view-${view}`)?.hidden;
+}
+
 export async function copyText(text) {
   const value = String(text ?? '');
   try {

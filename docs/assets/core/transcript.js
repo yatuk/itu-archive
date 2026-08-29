@@ -3,7 +3,7 @@
 // kimlik ve doğum bilgileri hiçbir çıktıya alınmaz; yalnız ders kayıtları,
 // dönem etiketi ve belgedeki son toplam GANO döner.
 
-import { canonicalCode } from './plan.js?v=f55dd720fb58';
+import { canonicalCode } from './plan.js?v=d0ca68eb0d19';
 
 const GRADES = ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'FF', 'VF', 'BL', 'M', 'G', 'P', 'E'];
 const GRADE_PART = GRADES.map((g) => g.replace('+', '\\+')).join('|');

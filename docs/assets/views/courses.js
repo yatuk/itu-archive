@@ -6,17 +6,17 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo } from '../core/utils.js?v=f55dd720fb58';
-import { methodToCode } from '../core/urlcodes.js?v=f55dd720fb58';
-import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=f55dd720fb58';
-import { state } from '../core/store.js?v=f55dd720fb58';
-import { quotaDisplay } from '../core/chart.js?v=f55dd720fb58';
-import { fillRows } from '../core/table.js?v=f55dd720fb58';
-import * as fav from '../core/favorites.js?v=f55dd720fb58';
-import { toast } from '../core/toast.js?v=f55dd720fb58';
-import { openCourseDetail } from '../core/course-detail.js?v=f55dd720fb58';
-import { I18N } from '../i18n.js?v=f55dd720fb58';
-import { writeLocalState, isPlainObject } from '../core/persistence.js?v=f55dd720fb58';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo, isViewVisible } from '../core/utils.js?v=d0ca68eb0d19';
+import { methodToCode } from '../core/urlcodes.js?v=d0ca68eb0d19';
+import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=d0ca68eb0d19';
+import { state } from '../core/store.js?v=d0ca68eb0d19';
+import { quotaDisplay } from '../core/chart.js?v=d0ca68eb0d19';
+import { fillRows } from '../core/table.js?v=d0ca68eb0d19';
+import * as fav from '../core/favorites.js?v=d0ca68eb0d19';
+import { toast } from '../core/toast.js?v=d0ca68eb0d19';
+import { openCourseDetail } from '../core/course-detail.js?v=d0ca68eb0d19';
+import { I18N } from '../i18n.js?v=d0ca68eb0d19';
+import { writeLocalState, isPlainObject } from '../core/persistence.js?v=d0ca68eb0d19';
 
 const PAGE = 200;
 const MOBILE_GROUP_PAGE = 30;
@@ -774,7 +774,7 @@ function saveState() {
   // parametrelerini (ör. Önşart Haritası'nın ?prog=X'i) sessizce siliyordu.
   // Paylaşılabilir bir derin bağlantıyla açılan başka bir sekme, birkaç saniye
   // içinde query'sini kaybediyordu. Yalnızca Dersler gerçekten görünürken yaz.
-  if (document.getElementById('view-dersler')?.hidden) return;
+  if (!isViewVisible('dersler')) return;
   const qs = p.toString();
   const url = location.pathname + (qs ? '?' + qs : '') + location.hash;
   history.replaceState(null, '', url);

@@ -3,20 +3,20 @@
    her sekmenin mantığı views/ altındaki kendi modülünde. Tüm veri docs/data
    altındaki statik JSON'lardan geliyor; sunucu tarafı yok. */
 
-import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js?v=f55dd720fb58';
-import { state, markIndexReady } from './core/store.js?v=f55dd720fb58';
-import { I18N } from './i18n.js?v=f55dd720fb58';
-import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=f55dd720fb58';
-import { initCourses, loadTerm, applyFilters, syncProgramFilter, restoreCourseSort } from './views/courses.js?v=f55dd720fb58';
-import { initCourseDetail, openCourseDetail } from './core/course-detail.js?v=f55dd720fb58';
-import { initHistory, onShow as historyShow, searchHistory } from './views/history.js?v=f55dd720fb58';
-import { initExams, onShow as examsShow } from './views/exams.js?v=f55dd720fb58';
-import { initCalendar, onShow as calendarShow } from './views/calendar.js?v=f55dd720fb58';
-import { renderTerms } from './views/terms.js?v=f55dd720fb58';
-import { onShow as programShow } from './views/program.js?v=f55dd720fb58';
-import { onShow as dersplanimShow } from './views/dersplanim.js?v=f55dd720fb58';
-import { PrereqGraph } from './prereq.js?v=f55dd720fb58';
-import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=f55dd720fb58';
+import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js?v=d0ca68eb0d19';
+import { state, markIndexReady } from './core/store.js?v=d0ca68eb0d19';
+import { I18N } from './i18n.js?v=d0ca68eb0d19';
+import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=d0ca68eb0d19';
+import { initCourses, loadTerm, applyFilters, syncProgramFilter, restoreCourseSort } from './views/courses.js?v=d0ca68eb0d19';
+import { initCourseDetail, openCourseDetail } from './core/course-detail.js?v=d0ca68eb0d19';
+import { initHistory, onShow as historyShow, searchHistory } from './views/history.js?v=d0ca68eb0d19';
+import { initExams, onShow as examsShow } from './views/exams.js?v=d0ca68eb0d19';
+import { initCalendar, onShow as calendarShow } from './views/calendar.js?v=d0ca68eb0d19';
+import { renderTerms } from './views/terms.js?v=d0ca68eb0d19';
+import { onShow as programShow } from './views/program.js?v=d0ca68eb0d19';
+import { onShow as dersplanimShow } from './views/dersplanim.js?v=d0ca68eb0d19';
+import { PrereqGraph } from './prereq.js?v=d0ca68eb0d19';
+import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=d0ca68eb0d19';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.

@@ -1,9 +1,9 @@
 // Dönemler görünümü: tüm dönemlerin listesi; canlı/arşiv ayrımı ve CSV/meta
 // indirme bağlantıları. Yalnızca index.json'a bağlı, ekstra veri çekmez.
 
-import { $, esc, fmtDate } from '../core/utils.js?v=f55dd720fb58';
-import { state } from '../core/store.js?v=f55dd720fb58';
-import { initReveal } from '../core/reveal.js?v=f55dd720fb58';
+import { $, esc, fmtDate } from '../core/utils.js?v=d0ca68eb0d19';
+import { state } from '../core/store.js?v=d0ca68eb0d19';
+import { initReveal } from '../core/reveal.js?v=d0ca68eb0d19';
 
 // Bilinen arşiv boşlukları — README "Eksikler" bölümüyle eşleşir (Faz 6).
 const KNOWN_GAPS = {

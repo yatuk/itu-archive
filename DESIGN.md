@@ -9,8 +9,10 @@ colors:
   sade-fg: "#1e2b23"
   sade-dim: "#45564c"
   sade-dimmer: "#5a6b61"
-  sade-acid: "#1a7a55"
-  sade-cyan: "#1f6f8b"
+  sade-acid: "#805f1a"
+  sade-acid-vivid: "#c9a227"
+  sade-on-accent: "#241c04"
+  sade-cyan: "#1f3f6b"
   sade-amber: "#8a5f00"
   sade-red: "#c2303a"
   sade-line: "#cdd7cf"
@@ -21,34 +23,33 @@ colors:
   fosfor-fg: "#c8f7dd"
   fosfor-dim: "#6da086"
   fosfor-dimmer: "#5b8f78"
-  fosfor-acid: "#00ff9c"
-  fosfor-cyan: "#35e0ff"
+  fosfor-acid: "#c9a227"
+  fosfor-acid-vivid: "#c9a227"
+  fosfor-cyan: "#6f9fd8"
   fosfor-amber: "#ffc857"
   fosfor-red: "#ff4f6d"
   fosfor-line: "#16281d"
-  fosfor-line-hot: "#1f3f2c"
+  fosfor-line-hot: "#3f351a"
   # zemin/efekt varyantları (rgba örtücülerin RGB'si — alfa ayrı katman)
-  canvas-bg: "#030503"
-  canvas-bg-alt: "#030504"
-  detail-bg: "#071009"
-  glow-bg: "#0b1a12"
-  now-bg-dark: "#0d1f15"
-  row-hover-dark: "#0e1a13"
-  tt-onboard-bg: "#0e2e22"
+  # altın vurguyla uyumlu sıcak ton — eski asit yeşilinin soğuk tonu değil
+  canvas-bg: "#050402"
+  detail-bg: "#0c0a05"
+  glow-bg: "#1c1608"
+  now-bg-dark: "#241c08"
+  row-hover-dark: "#14120a"
+  tt-onboard-bg: "#2a2008"
   tt-bg: "#1a1a1a"
-  line-hot-alt: "#1e3c2d"
-  chart-teal: "#5eead4"
-  chart-axis: "#8ca096"
   tt-line-sade: "#c2cec5"
-  now-bg-light: "#e8f2ec"
-  row-hover-light: "#eef2ef"
-  detail-bg-light: "#f7f9f7"
-  canvas-bg-light: "#fbfcfb"
+  chart-gold: "#c9a227"
+  chart-axis: "#a09687"
+  now-bg-light: "#f5ecd2"
+  row-hover-light: "#f2efe6"
+  detail-bg-light: "#f9f7f1"
+  canvas-bg-light: "#fcfbf7"
   data-ink: "#1e2b23"
   data-white: "#ffffff"
   black: "#000000"
   red-soft: "#ff2828"
-  obs-pulse-teal: "#2ecc9f"
 typography:
   scale:
     micro: "9px"
@@ -107,35 +108,38 @@ components:
 
 İTÜ Ders Arşivi, OBS'nin yayınlamayı bıraktığı ders verisini kalıcılaştıran bir **açık veri arşivi**dir. Kimlik, veriyi "arşiv" metaforuyla taşıyan bir **terminal-arşiv dili**dir: monospace veri hücreleri, `>` istem ön eki, `//` başlıklar, "DERS ARŞİVİ" masthead. Bu kimlik iki temaya bölünür:
 
-- **fosfor** (koyu, `data-theme` yok / `dark`): sitenin **başlangıç kimliği** — siyaha yakın zemin + asit yeşili vurgu, scanlines/tanecik/neon dekordanları. **Dondurulmuştur; piksel düzeyinde aynı kalacaktır.**
-- **sade** (açık, varsayılan `[data-theme="sade"]`): genel kitleye yüz; terminal dekorasyonlarını kapatır ama **veri monospace kalır**. İyileştirme yüzeyi budur.
+- **fosfor** (koyu, `data-theme` yok / `dark`): sitenin **başlangıç kimliği** — siyaha yakın zemin, scanlines/tanecik/neon dekorasyonları.
+- **sade** (açık, varsayılan `[data-theme="sade"]`): genel kitleye yüz; terminal dekorasyonlarını kapatır ama **veri monospace kalır**.
 
-Değişiklik kuralı: her türlü görsel değişiklik yalnızca sade yüzeyine ve iki temada ortak paylaşılan sınıflara dokunur; fosfor token değerleri ve dekorasyonları değiştirilmez.
+**2026-08 güncellemesi:** vurgu rengi İTÜ'nün kurumsal kimliğine (Pantone 872 altın, Pantone 295 lacivert) taşındı; her iki tema da aynı altını paylaşıyor. "Fosfor piksel düzeyinde donmuştur" kuralı bu değişiklikle **kaldırıldı** — bundan sonraki görsel değişiklikler yine sade + paylaşılan sınıflarla sınırlı tutulur (fosforun kendine özgü dekorasyonları — scanlines, tanecik, neon gölge — hâlâ yalnızca kasıtlı bir kararla değişir), ama vurgu rengi artık iki temada da ortak ve dondurulmuş değil.
 
 ## Colors
 
 Token adları tek kaynaktır (`assets-src/style.css` — `docs/assets/style.css` küçültülmüş üretilen çıktıdır, elle düzenlenmez); iki tema aynı adları farklı değerlerle ezdirir.
 
-| Token | sade (açık) | fosfor (koyu, donmuş) |
+| Token | sade (açık) | fosfor (koyu) |
 |---|---|---|
 | `--bg` | `#f4f6f4` | `#050806` |
 | `--panel` | `#ffffff` | `#0a100c` |
 | `--panel-2` | `#eef1ee` | `#0d1611` |
 | `--line` | `#cdd7cf` (dekoratif, ~1.5:1) | `#16281d` |
-| `--line-hot` | `#73877b` (form kenarlığı ≥3:1) | `#1f3f2c` |
+| `--line-hot` | `#73877b` (form kenarlığı ≥3:1) | `#3f351a` |
 | `--fg` | `#1e2b23` (14.7:1) | `#c8f7dd` |
 | `--dim` | `#45564c` (ikincil ~7:1) | `#6da086` |
 | `--dimmer` | `#5a6b61` (etiket ~5:1) | `#5b8f78` |
-| `--acid` | `#1a7a55` (vurgu ≥4.5:1) | `#00ff9c` |
-| `--cyan` | `#1f6f8b` (bağlantı/odak) | `#35e0ff` |
+| `--acid` | `#805f1a` (metin/kenarlık ≥5.4:1) | `#c9a227` (8.3:1) |
+| `--acid-vivid` | `#c9a227` (yalnızca dolgu, ≥6:1 için `--on-accent` ile) | `#c9a227` (metinle de güvenli) |
+| `--on-accent` | `#241c04` (`--acid-vivid` dolgusu üstü metin) | `--bg` (zaten koyu) |
+| `--cyan` | `#1f3f6b` (bağlantı/odak, 10.6:1) | `#6f9fd8` (7.3:1) |
 | `--amber` | `#8a5f00` (uyarı) | `#ffc857` |
 | `--red` | `#c2303a` | `#ff4f6d` |
 
 Renk kuralları:
 
 - **Kırmızı yalnızca ders çakışması ve %100 dolu kontenjan içindir.** Başka hiçbir yerde kullanılmaz (hata metni hariç).
-- **Asit yeşili (`--acid`) sade'de koyu, fosfor'da neon yeşildir.** Sade'de fosfor neon'u taklit etmek yasak.
-- `--amber` "dolu/kritik" ve nötr uyarılar; `--cyan` odak/bağlantı.
+- **`--acid` İTÜ'nün kurumsal altını (Pantone 872), her iki temada aynı köke sahip** — sade'de metin/kenarlık için koyulaştırılmış (`#805f1a`, ham `#c9a227` beyaz zeminde 2.2:1 vererek AA'yı geçemiyor), fosforda ham tonun kendisi zaten güvenli. Ham/parlak ton (`--acid-vivid`) yalnızca koyu metinli büyük dolgularda (rozet, aktif sekme, buton) kullanılır — o dolgunun üstündeki metin `--on-accent` olur, `--bg` değil.
+- `--cyan` artık İTÜ lacivertidir (Pantone 295) — bağlantı/odak rolünü sürdürüyor, yalnızca rengi değişti.
+- `--amber` "dolu/kritik" ve nötr uyarılar.
 - Hafta sonu, bayat veri gibi "ikincil" durumlar amber veya soluk zeminle; kırmızı değil.
 
 ## Typography
@@ -190,7 +194,7 @@ Renk kuralları:
 - Veri için monospace; gövde için sans (sade).
 - Kırmızıyı yalnızca çakışma ve %100 doluya sakla; çakışma yoksa amber.
 - Dürüst veri etiketleri: "en son X önce ölçüldü", "geçen sefer X sonra doldu", boş durumlar neden söyler.
-- Fosfor temasına dokunma; değişiklikleri sade + paylaşılan sınıflarla sınırla.
+- Fosforun kendi dekorasyonlarına (scanlines, tanecik, neon gölge, mono gövde) dokunma; vurgu rengi artık ortak olsa da bu kimlik unsurları kasıtlı bir kararla değişir.
 
 **Don't**
 - **Anti-referanslar:** krem zemin + yüksek kontrastlı serif + terrakota üçlüsü; gazete/broadsheet taklidi (saç teli çizgi, sıfır köşe yarıçapı, sıkışık kolon); SaaS dashboard şablonu (büyük sayı + küçük etiket + gradyan aksan kartları); her şeyi karta sarmak (kart içinde kart); Inter ve sistem varsayılanlarını kimlik olarak dayatmak.

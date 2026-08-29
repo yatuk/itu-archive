@@ -41,28 +41,33 @@
   --panel: #0a100c;
   --panel-2: #0d1611;
   --line: #16281d;
-  --line-hot: #1f3f2c;
+  --line-hot: #3f351a;
   --fg: #c8f7dd;
   --dim: #6da086;
   --dimmer: #5b8f78;
-  --acid: #00ff9c;
-  --cyan: #35e0ff;
+  /* İTÜ kurumsal altını (Pantone 872'ye yakın) — metin/kenarlık/dolgu
+     hepsinde güvenli (bg'de 8.3:1, panelde 8.0:1), o yüzden fosforda vurgu
+     ve dolgu aynı değeri paylaşır (bkz. --acid-vivid, sade'de bundan ayrılır). */
+  --acid: #c9a227;
+  --acid-vivid: #c9a227;
+  --on-accent: var(--bg); /* dolgu üstü metin — fosforda zaten koyu */
+  --cyan: #6f9fd8;        /* İTÜ lacivertinin (Pantone 295) açık tonu — bağlantı/odak */
   --amber: #ffc857;
   --red: #ff4f6d;
   /* İnce tonlar — görünümler ve grafikler buradan beslenir. */
-  --row-hover: #0e1a13;
-  --detail-bg: #071009;
-  --canvas-bg: #030503;
-  --now-bg: #0d1f15;
-  --chart-cap: rgba(94, 234, 212, .14);
-  --chart-cap-edge: rgba(94, 234, 212, .55);
-  --chart-axis: rgba(140, 160, 150, .75);
-  --glow: #0b1a12;
+  --row-hover: #14120a;
+  --detail-bg: #0c0a05;
+  --canvas-bg: #050402;
+  --now-bg: #241c08;
+  --chart-cap: rgba(201, 162, 39, .16);
+  --chart-cap-edge: rgba(201, 162, 39, .6);
+  --chart-axis: rgba(160, 150, 135, .75);
+  --glow: #1c1608;
   --mono: ui-monospace, "JetBrains Mono", "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --tt-bg: #1a1a1a;
   --tt-fg: #fff;
-  --tt-onboard-bg: #0e2e22;
+  --tt-onboard-bg: #2a2008;
   /* Zaman çizelgesi ızgarası çizgi tonları (fosfor mevcut --line tonunu korur). */
   --tt-line: var(--line);
   --tt-line-soft: color-mix(in srgb, var(--line) 55%, transparent);
@@ -103,22 +108,28 @@
   --fg: #1e2b23;            /* gövde · #fff'te 14.7:1 */
   --dim: #45564c;           /* ikincil metin · #fff'te 7.8:1, bg'de 7.2:1 (~7:1) */
   --dimmer: #5a6b61;        /* etiket/başlık/placeholder · #fff'te 5.7:1, bg'de 5.2:1 */
-  --acid: #1a7a55;          /* vurgu · #fff'te 5.3:1, bg'de 4.9:1 */
-  --cyan: #1f6f8b;          /* bağlantı/odak · #fff'te 5.7:1 */
+  /* İTÜ kurumsal altını (Pantone 872'ye yakın). Ham ton (#c9a227, --acid-vivid)
+     beyaz zeminde düz metin/kenarlık olarak yalnızca 2.2:1 verir (AA'nın altında) —
+     o yüzden metin/kenarlık için koyulaştırılmış --acid kullanılır, ham ton yalnızca
+     koyu metinli büyük dolgularda (rozet, buton, aktif sekme) --acid-vivid ile kalır. */
+  --acid: #805f1a;          /* vurgu (metin/kenarlık) · #fff'te 5.9:1, bg'de 5.4:1 */
+  --acid-vivid: #c9a227;    /* dolgu (rozet/buton/aktif sekme) — fosforla aynı ton */
+  --on-accent: #241c04;     /* --acid-vivid dolgusu üstü metin · 7.0:1 */
+  --cyan: #1f3f6b;          /* İTÜ lacivert (Pantone 295) — bağlantı/odak · #fff'te 10.6:1 */
   --amber: #8a5f00;         /* uyarı · #fff'te 5.7:1, bg'de 5.2:1 */
   --red: #c2303a;           /* çakışma · #fff'te 5.6:1 */
-  --row-hover: #eef2ef;
-  --detail-bg: #f7f9f7;
-  --canvas-bg: #fbfcfb;
-  --now-bg: #e8f2ec;
+  --row-hover: #f2efe6;
+  --detail-bg: #f9f7f1;
+  --canvas-bg: #fcfbf7;
+  --now-bg: #f5ecd2;
   /* Zaman çizelgesi ızgarası çizgileri — yönlendirici, metin değil (~1.5:1). */
   --tt-line: #c2cec5;
   --tt-line-soft: color-mix(in srgb, #c2cec5 55%, transparent);
   /* Sade modal perdesi: fosforun siyahı yerine hafif nötr ton — kimlikle çelişmez. */
   --scrim: rgba(30, 43, 35, .22);
-  --chart-cap: rgba(26, 122, 85, .14);
-  --chart-cap-edge: rgba(26, 122, 85, .5);
-  --chart-axis: rgba(76, 95, 83, .6);
+  --chart-cap: rgba(128, 95, 26, .16);
+  --chart-cap-edge: rgba(128, 95, 26, .55);
+  --chart-axis: rgba(90, 85, 72, .6);
   --glow: #ffffff;
   --hairline: rgba(0, 0, 0, .08);
   --hairline-strong: rgba(0, 0, 0, .14);
@@ -128,19 +139,24 @@
   --inset-lo: inset 0 -1px 0 rgba(0, 0, 0, .05);
   --grain-opacity: 0;
 }
-/* Sade'de CRT taraması, film tanesi ve terminal istemi kapalı; başlık düz. */
-[data-theme="sade"] .scanlines,
-[data-theme="sade"] body::after { display: none; }
-[data-theme="sade"] .brand .prompt,
-[data-theme="sade"] .brand .path,
-[data-theme="sade"] .brand .caret { display: none; }
-[data-theme="sade"] .brand h1,
-[data-theme="sade"] .brand .brand-title { color: var(--fg); text-shadow: none; }
-[data-theme="sade"] .brand h1::after,
-[data-theme="sade"] .brand .brand-title::after { content: ""; animation: none; }
-/* Sade'de gövde metni sans; veri (kod, CRN, saat, sayı) hâlâ monospace —
-   sayı hizalaması ve "veri" hissi için. */
-[data-theme="sade"] body { font-family: var(--sans); }
+/* dark, sade'nin siyah sürümü: film tanesi kapalı (yalnızca ilk fosfor
+   kimliğine özeldi), renk token'ları :root'tan (zaten koyu) geliyor. */
+[data-theme="dark"] { --grain-opacity: 0; }
+/* Terminal istemi, CRT taraması ve neon parıltısı yalnızca ilk (fosfor)
+   kimliğe özeldi; artık iki temada da kapalı — dark, sade'nin siyah
+   sürümü: aynı yapı, yalnızca renk token'ları koyu. */
+[data-theme="sade"] .scanlines, [data-theme="dark"] .scanlines,
+[data-theme="sade"] body::after, [data-theme="dark"] body::after { display: none; }
+[data-theme="sade"] .brand .prompt, [data-theme="dark"] .brand .prompt,
+[data-theme="sade"] .brand .path, [data-theme="dark"] .brand .path,
+[data-theme="sade"] .brand .caret, [data-theme="dark"] .brand .caret { display: none; }
+[data-theme="sade"] .brand h1, [data-theme="dark"] .brand h1,
+[data-theme="sade"] .brand .brand-title, [data-theme="dark"] .brand .brand-title { color: var(--fg); text-shadow: none; }
+[data-theme="sade"] .brand h1::after, [data-theme="dark"] .brand h1::after,
+[data-theme="sade"] .brand .brand-title::after, [data-theme="dark"] .brand .brand-title::after { content: ""; animation: none; }
+/* Gövde metni artık iki temada da sans; veri (kod, CRN, saat, sayı) hâlâ
+   monospace — sayı hizalaması ve "veri" hissi için. */
+[data-theme="sade"] body, [data-theme="dark"] body { font-family: var(--sans); }
 /* Yatay kayan veri/sekme rayları kendi kapsayıcısında kalır; özellikle metin
    büyütmede sticky sekme çocukları belgeyi yana kaydıramaz. `clip`, sticky
    davranışını bozacak yeni bir scroll container oluşturmaz. */
@@ -376,9 +392,10 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 .prompt { color: var(--acid); }
 .path { color: var(--cyan); }
 .caret { color: var(--dim); }
-/* itü_ari logosu — yalnızca sade temada; fosfor/CRT'de o alanı terminal istemi tutar. */
+/* itü_ari logosu — artık iki temada da görünür; terminal istemi kaldırıldığı
+   için o alanı tutan tek şey bu oldu. */
 .brand-logo { display: none; width: 30px; height: 30px; object-fit: contain; align-self: center; margin-right: 2px; border-radius: 6px; }
-[data-theme="sade"] .brand-logo { display: inline-block; }
+[data-theme="sade"] .brand-logo, [data-theme="dark"] .brand-logo { display: inline-block; }
 
 /* SPA'da masthead sayfanın h1'idir; SEO sayfalarında içerik başlığı h1 olur,
    marka .brand-title'a düşer (sayfa başına tek h1). Görünüm aynı. */
@@ -435,7 +452,7 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 }
 .theme-name { display: none; }
 .theme-btn:hover { color: var(--fg); transform: scale(1.08); }
-.theme-btn[aria-pressed="true"] { color: var(--bg); background: var(--acid); }
+.theme-btn[aria-pressed="true"] { color: var(--on-accent); background: var(--acid-vivid); }
 .theme-btn:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
 
 /* ---------- sekmeler: yapışkan cam hap ("Fluid Island") ---------- */
@@ -463,7 +480,7 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 .tab-number { margin-right: .55em; }
 .tabs button:hover, .tabs a:hover { color: var(--fg); background: var(--panel-2); }
 .tabs button[aria-selected="true"], .tabs a[aria-selected="true"], .tabs a[aria-current="page"] {
-  color: var(--bg); background: var(--acid); font-weight: 700;
+  color: var(--on-accent); background: var(--acid-vivid); font-weight: 700;
 }
 .tabs button:focus-visible, .tabs a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
 
@@ -897,7 +914,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
   letter-spacing: .06em; opacity: .55;
 }
 .pg-level:hover { color: var(--cyan); border-color: var(--cyan); opacity: 1; }
-.pg-level.active { color: var(--bg); background: var(--acid); border-color: var(--acid); opacity: 1; }
+.pg-level.active { color: var(--on-accent); background: var(--acid-vivid); border-color: var(--acid-vivid); opacity: 1; }
 .pg-level:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
 
 /* Önşart mantık lejantı + branş renk lejantı */
@@ -1308,7 +1325,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .calgroup { margin: 26px 0; border: 1px solid var(--line); background: var(--panel); }
 .calgroup h3 {
   margin: 0; padding: 12px 14px; font-size: 12px; letter-spacing: .18em;
-  text-transform: uppercase; color: var(--bg); background: var(--acid);
+  text-transform: uppercase; color: var(--on-accent); background: var(--acid-vivid);
 }
 .calgroup ol { list-style: none; margin: 0; padding: 0; }
 .calgroup li {
@@ -1349,7 +1366,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
   font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
   border: 1px solid var(--line-hot); color: var(--dim); padding: 2px 6px; margin-left: 8px;
 }
-.badge.live { color: var(--bg); background: var(--acid); border-color: var(--acid); }
+.badge.live { color: var(--on-accent); background: var(--acid-vivid); border-color: var(--acid-vivid); }
 @media (max-width: 640px) { .termcard { grid-template-columns: 1fr; } }
 
 .note {
@@ -2785,7 +2802,7 @@ body.modal-open { overflow: hidden; }
 .seo-stats dd { color: var(--acid); font-size: 16px; margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
 
 .seo-badge {
-  display: inline-block; background: var(--acid); color: var(--bg);
+  display: inline-block; background: var(--acid-vivid); color: var(--on-accent);
   font-size: 11px; padding: 2px 8px; border-radius: 3px;
   text-transform: uppercase; letter-spacing: .1em; margin: 4px 0 12px;
 }
@@ -2921,8 +2938,8 @@ body.modal-open { overflow: hidden; }
 }
 .dp-type:hover { color: var(--fg); border-color: var(--acid); }
 .dp-type.on, .dp-type[aria-pressed="true"] {
-  color: var(--bg); background: var(--acid); border-color: var(--acid);
-  font-weight: 700; box-shadow: 0 0 0 1px var(--acid);
+  color: var(--on-accent); background: var(--acid-vivid); border-color: var(--acid-vivid);
+  font-weight: 700; box-shadow: 0 0 0 1px var(--acid-vivid);
 }
 .dp-type-label { color: var(--dimmer); font-size: 12px; margin-right: 2px; }
 
@@ -2945,12 +2962,12 @@ body.modal-open { overflow: hidden; }
 
 .copy-btn { border: 0; background: transparent; color: var(--link); cursor: pointer; font: inherit; font-size: 10px; margin-left: 6px; padding: 3px 4px; text-decoration: underline; text-underline-offset: 2px; }
 .copy-btn:hover, .copy-btn:focus-visible { background: var(--panel2); border-radius: 4px; outline: 1px solid var(--line); }
-.dp-recommend, .dp-compare { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; margin: 12px 0; padding: 0 14px; }
-.dp-recommend > summary, .dp-compare > summary { align-items: center; cursor: pointer; display: flex; gap: 12px; min-height: 48px; }
-.dp-recommend > summary span, .dp-compare > summary span { color: var(--fg); font-weight: 700; }
-.dp-recommend > summary small, .dp-compare > summary small { color: var(--dim); margin-left: auto; }
-.dp-recommend-controls, .dp-compare-controls { align-items: end; border-top: 1px solid var(--hairline); display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 0; }
-.dp-recommend-controls label, .dp-compare-controls label { color: var(--dim); display: grid; font-size: 11px; gap: 4px; }
+.dp-recommend { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; margin: 12px 0; padding: 0 14px; }
+.dp-recommend > summary { align-items: center; cursor: pointer; display: flex; gap: 12px; min-height: 48px; }
+.dp-recommend > summary span { color: var(--fg); font-weight: 700; }
+.dp-recommend > summary small { color: var(--dim); margin-left: auto; }
+.dp-recommend-controls { align-items: end; border-top: 1px solid var(--hairline); display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 0; }
+.dp-recommend-controls label { color: var(--dim); display: grid; font-size: 11px; gap: 4px; }
 /* "en fazla kredi" girdisi: diğer form alanlarıyla aynı aile (.f-in), yalnızca
    2 haneli sayı için daha dar. Önceden stilsiz tarayıcı varsayılanıydı. */
 .dp-credit-input { width: 64px; }
@@ -2976,23 +2993,16 @@ body.modal-open { overflow: hidden; }
 /* 1. dönem: bu dönem açık dersler tıklanabilir — kutu + not aynı satırda. */
 .dp-balanced-pick label { display: flex; align-items: flex-start; gap: 8px; cursor: pointer; }
 .dp-balanced-pick input[type="checkbox"] { margin-top: 3px; flex-shrink: 0; }
-.dp-diff-list { list-style: none; margin: 4px 0 14px; padding: 0; }
-.dp-diff-list li { border-top: 1px solid var(--hairline); display: flex; gap: 12px; justify-content: space-between; padding: 9px 2px; }
-.dp-diff-list li.added b { color: var(--ok); }
-.dp-diff-list li.removed b { color: var(--danger); }
-.dp-diff-list span { color: var(--dim); font-size: 11px; text-align: right; }
 .pg-source { background: var(--panel2); border: 1px solid var(--hairline); border-radius: 8px; display: grid; gap: 4px; margin: 12px 0; padding: 10px; }
 .pg-source span, .pg-mobile-source { color: var(--dim); font-size: 11px; }
 @media (min-width: 900px) { .dp-semesters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 @media (max-width: 600px) {
-  .dp-recommend > summary, .dp-compare > summary { align-items: flex-start; flex-direction: column; gap: 2px; padding: 10px 0; }
-  .dp-recommend > summary small, .dp-compare > summary small { margin-left: 0; }
-  .dp-recommend-controls, .dp-compare-controls { align-items: stretch; display: grid; }
+  .dp-recommend > summary { align-items: flex-start; flex-direction: column; gap: 2px; padding: 10px 0; }
+  .dp-recommend > summary small { margin-left: 0; }
+  .dp-recommend-controls { align-items: stretch; display: grid; }
   .dp-recommend-item { align-items: start; grid-template-columns: auto 1fr; }
   .dp-recommend-item em { grid-column: 2; text-align: left; }
-  .dp-diff-list li { align-items: flex-start; flex-direction: column; }
-  .dp-diff-list span { text-align: left; }
 }
 .dp-sem {
   border: 1px solid var(--hairline); background: var(--panel);
@@ -3484,7 +3494,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 [data-theme="sade"] .tabs button,
 [data-theme="sade"] .tabs a,
 [data-theme="sade"] .tabs summary { padding: 7px 13px; letter-spacing: .03em; }
-[data-theme="sade"] .tab-number { display: none; }
+[data-theme="sade"] .tab-number, [data-theme="dark"] .tab-number { display: none; }
 [data-theme="sade"] .tabs-more { display: block; position: relative; }
 [data-theme="sade"] .tabs-more summary {
   list-style: none; cursor: pointer; color: var(--dim); border-radius: 999px;

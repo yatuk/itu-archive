@@ -30,7 +30,6 @@ import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v
 import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=dde1e9339338';
-import { compareCurricula } from '../core/curriculum-diff.js?v=dde1e9339338';
 import { buildBalancedPlan } from '../core/planner.js?v=dde1e9339338';
 
 let inited = false;
@@ -152,10 +151,6 @@ function ensureHost() {
       <p class="dp-recommend-note">Kalan zorunlu dersleri, önşart sırasını bozmadan çok döneme dağıtır: tekrar dersleri erken ve hafif dönemlere, geçmişte kalma oranı yüksek dersler ayrı dönemlere konur, kredi hedefi dönem başına 10–14. Seçmeli slotlar bu plana dahil değildir.</p>
       <div id="dp-balanced-result" aria-live="polite"></div>
     </details>
-    <details class="dp-compare" id="dp-compare">
-      <summary><span>Müfredat sürümlerini karşılaştır</span><small id="dp-compare-preview">Bu planın değişikliklerini gör</small></summary>
-      <div id="dp-compare-body"><p class="empty">Sürümler yükleniyor…</p></div>
-    </details>
     <details class="dp-grades" id="dp-grades">
       <summary><span>GANO ve ilerleme</span><b id="dp-grade-preview">Not girdikçe hesaplanır</b></summary>
       <p class="dp-grades-empty" id="dp-grades-empty">Derslerin yanındaki not alanlarından not girdikçe GANO ve ilerleme burada hesaplanır.</p>
@@ -276,7 +271,6 @@ async function selectProgram(code) {
   await ensureTerm();
   await reloadRows();
   renderAll();
-  loadCurriculumCompare();
   saveState();
   // Seçili seçmeli derslerin kredilerini katalogdan doldur (GANO hesabı için).
   ensureCatalogForPicks();
@@ -1602,30 +1596,6 @@ async function buildBalancedPlanUI() {
     if (!items.length) { toast('Önce en az bir ders seç', { kind: 'warn' }); return; }
     window.dispatchEvent(new CustomEvent('itu:goto-program'));
     setTimeout(() => window.dispatchEvent(new CustomEvent('itu:add-program-items', { detail: { term: termSlug, items } })), 0);
-  });
-}
-
-async function loadCurriculumCompare() {
-  const body = $('#dp-compare-body');
-  if (!body || !progCode) return;
-  const manifest = await getJSON('data/curriculum/versions/index.json').catch(() => ({}));
-  const refs = manifest[progCode] || [];
-  if (refs.length < 2) {
-    $('#dp-compare-preview').textContent = 'Henüz iki arşiv sürümü yok';
-    body.innerHTML = '<p class="empty">Karşılaştırma için en az iki farklı müfredat sürümü gerekir. Sürümler müfredat taramalarında arşivlenir.</p>';
-    return;
-  }
-  body.innerHTML = `<div class="dp-compare-controls"><label>eski sürüm <select id="dp-version-a">${refs.map((r, i) => `<option value="${esc(r.file)}" ${i === 1 ? 'selected' : ''}>${esc(r.label)}</option>`).join('')}</select></label><label>yeni sürüm <select id="dp-version-b">${refs.map((r, i) => `<option value="${esc(r.file)}" ${i === 0 ? 'selected' : ''}>${esc(r.label)}</option>`).join('')}</select></label><button type="button" id="dp-compare-run" class="btn-ghost">Karşılaştır</button></div><div id="dp-compare-result"></div>`;
-  $('#dp-compare-run').addEventListener('click', async () => {
-    const [before, after] = await Promise.all([getJSON($('#dp-version-a').value), getJSON($('#dp-version-b').value)]);
-    const changes = compareCurricula(before, after);
-    const result = $('#dp-compare-result');
-    result.innerHTML = changes.length ? `<ul class="dp-diff-list">${changes.map((change) => {
-      const item = change.after || change.before;
-      const label = change.type === 'added' ? 'Eklendi' : change.type === 'removed' ? 'Kaldırıldı' : 'Değişti';
-      const detail = change.type === 'changed' ? change.fields.map((field) => `${field}: ${change.before[field] || '·'} → ${change.after[field] || '·'}`).join(' · ') : `${item.semester}. yarıyıl`;
-      return `<li class="${change.type}"><b>${label}: ${esc(item.code)}</b><span>${esc(detail)}</span></li>`;
-    }).join('')}</ul>` : '<p class="empty">Bu iki sürüm arasında ders planı farkı yok.</p>';
   });
 }
 

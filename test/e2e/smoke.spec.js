@@ -326,10 +326,10 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#view-gecmis')).toBeVisible();
     await expect(page.locator('#tabs-more-label')).toContainText('Geçmiş');
 
-    // Fosfor temasının dokuzlu terminal dizisi korunur.
+    // dark, sade'nin siyah sürümü: numaralı terminal dizisi burada da kapalı.
     await page.locator('.theme-btn[data-theme="dark"]').click();
-    await expect(page.locator('#tab-dersplanim .tab-number')).toBeVisible();
-    await expect(page.locator('#tab-dersplanim')).toHaveText('03DERS PLANIM/GPA');
+    await expect(page.locator('#tab-dersplanim .tab-number')).toBeHidden();
+    await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('DERS PLANIM/GPA');
   });
 
   test('yeni sadeleştirme metinleri TR/EN geçişini izler', async ({ page }) => {

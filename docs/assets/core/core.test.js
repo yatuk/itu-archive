@@ -24,7 +24,6 @@ import { formatProgramLabel, normalizeProgramLevel, programLevelLabel } from './
 import { parseOBSTranscript, transcriptLatest, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from './transcript.js';
 import { versionedKey, readLocalState, writeLocalState, isPlainObject } from './persistence.js';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from './backup.js';
-import { compareCurricula } from './curriculum-diff.js';
 import { buildBalancedPlan } from './planner.js';
 
 test('tek yedek dosyası program ve GANO durumunu doğrular ve geri yükler', () => {
@@ -39,14 +38,6 @@ test('tek yedek dosyası program ve GANO durumunu doğrular ve geri yükler', ()
   assert.equal(restoreBackup(backup, (key, value) => { restored[key] = value; return true; }), true);
   assert.equal(restored['itu-programs'].programs[0].items[0].crn, '1');
   assert.equal(parseBackup('{"format":"wrong"}'), null);
-});
-
-test('müfredat karşılaştırması eklenen, kaldırılan ve dönem değiştiren dersi ayırır', () => {
-  const before = { semesters: [{ items: [{ course: { code: 'MAT 101', name: 'Mat', credits: 3, ects: 5 } }] }, { items: [{ course: { code: 'FIZ 101', name: 'Fiz', credits: 3 } }] }] };
-  const after = { semesters: [{ items: [{ course: { code: 'BLG 101', name: 'Bilgi', credits: 2 } }] }, { items: [{ course: { code: 'MAT 101', name: 'Mat', credits: 4, ects: 5 } }] }] };
-  const changes = compareCurricula(before, after);
-  assert.deepEqual(changes.map((x) => x.type).sort(), ['added', 'changed', 'removed']);
-  assert.deepEqual(changes.find((x) => x.type === 'changed').fields, ['semester', 'credits']);
 });
 
 test('program etiketleri kod, ad ve açık seviye adıyla her zaman doludur', () => {

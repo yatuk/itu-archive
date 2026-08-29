@@ -1030,11 +1030,19 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .pg-pool-group summary::-webkit-details-marker { display: none; }
 .pg-pool-group summary::after { content: "▾"; color: var(--dimmer); font-size: 10px; }
 .pg-pool-group[open] summary::after { content: "▴"; }
+/* Havuz paneli .pg-workspace'te sabit 300-340px (bkz. .pg-root.pg-has-detail
+   .pg-workspace) — masaüstünde bile dar. "1fr auto auto" tek satırda rozet
+   (~99px) + eylemler (~125px) genişliği ders adına ~40px bırakıyordu; ad
+   overflow-wrap:anywhere ile harf harf dikey akıyordu (yaşanmış hata). Satır
+   her genişlikte istiflenir: ad üstte, rozet+eylemler altta. */
 .pg-pool-row {
-  display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px;
+  grid-template-areas: "name status" "actions actions";
   padding: 6px 10px; border-top: 1px solid var(--hairline); font-size: 12px;
 }
-.pg-pool-name { display: grid; gap: 1px; min-width: 0; }
+.pg-pool-name { grid-area: name; display: grid; gap: 1px; min-width: 0; }
+.pg-pool-status-badge { grid-area: status; align-self: start; }
+.pg-pool-actions { grid-area: actions; }
 .pg-pool-name b { color: var(--fg); white-space: nowrap; }
 .pg-pool-name em { color: var(--dimmer); font-style: normal; overflow-wrap: anywhere; line-height: 1.35; }
 .pg-pool-status-badge { white-space: nowrap; font-size: 11px; }
@@ -1255,13 +1263,8 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
   .pg-map-meta { align-items: flex-start; }
   .pg-guide > div { position: fixed; left: 16px; right: 16px; top: auto; width: auto; flex-direction: column; }
   .pg-root.pg-has-detail .pg-workspace { grid-template-columns: 1fr; }
-  .pg-pool-row {
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas: "name status" "actions actions";
-  }
-  .pg-pool-name { grid-area: name; }
-  .pg-pool-status-badge { grid-area: status; }
-  .pg-pool-actions { grid-area: actions; }
+  /* .pg-pool-row istiflemesi artık taban kuralda (bkz. yukarısı) — burada
+     tekrarlanmıyor. */
   .pg-workspace { display: none; }
   .pg-root.pg-has-detail:not(.pg-mobile-full) .pg-workspace { display: block; }
   .pg-root.pg-has-detail:not(.pg-mobile-full) .pg-map { display: none; }

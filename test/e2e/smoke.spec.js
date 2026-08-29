@@ -913,6 +913,25 @@ test.describe('Önşart haritası', () => {
     }
     expect(new URL(page.url()).searchParams.has('pool')).toBe(false);
   });
+
+  test('havuz satırında ders adı rozet/eylem sütunlarına ezilmez', async ({ page }) => {
+    // Kullanıcı bildirimi: masaüstünde havuz paneli her zaman dar (bkz.
+    // .pg-root.pg-has-detail .pg-workspace: 300-340px sabit — pencere
+    // genişlemez). "1fr auto auto" tek satırda rozet (~99px) + eylemler
+    // (~125px) ad sütununu ~40px'e eziyordu; overflow-wrap:anywhere ile
+    // ders adı harf harf dikey akıyordu ("S/e/ç/m/e/l/i" gibi).
+    await haritayiAc(page, '&pool=TM%20Elective%20III');
+    await expect(page.locator('.pg-pool-status')).toContainText('alternatif', { timeout: 20000 });
+
+    const ad = page.locator('.pg-pool-row .pg-pool-name').first();
+    await expect(ad).toBeVisible();
+    const kutu = await ad.boundingBox();
+    expect(kutu.width, 'ders adı sütunu okunabilir genişlikte olmalı').toBeGreaterThan(100);
+
+    const em = page.locator('.pg-pool-row .pg-pool-name em').first();
+    const emKutu = await em.boundingBox();
+    expect(emKutu.height, 'ders adı birkaç satıra sarmamalı (tek/iki satır)').toBeLessThan(40);
+  });
 });
 
 test.describe('SEO sayfaları', () => {

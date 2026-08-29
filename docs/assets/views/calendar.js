@@ -1,10 +1,10 @@
 // Akademik takvim görünümü: seçilen yılın takvimini tabloya göre gruplar,
 // geçmiş etkinlikleri isteğe bağlı gizler.
 
-import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, hashShort } from '../core/utils.js?v=d0ca68eb0d19';
-import { state } from '../core/store.js?v=d0ca68eb0d19';
-import { initReveal } from '../core/reveal.js?v=d0ca68eb0d19';
-import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=d0ca68eb0d19';
+import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, hashShort } from '../core/utils.js?v=dde1e9339338';
+import { state } from '../core/store.js?v=dde1e9339338';
+import { initReveal } from '../core/reveal.js?v=dde1e9339338';
+import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 
 let inited = false;
 

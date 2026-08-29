@@ -2,7 +2,7 @@
 // Frontend kod → okunur ad + seviye çözer (G7); listede olmayan kodlar
 // "kapanmış/grafik dışı" sayılır. Önbellekli.
 
-import { getJSON } from './utils.js?v=d0ca68eb0d19';
+import { getJSON } from './utils.js?v=dde1e9339338';
 
 let _map = null;
 export const PROGRAM_LEVELS = {

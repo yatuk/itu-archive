@@ -780,7 +780,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 
 .more {
   display: flex; width: 100%; margin-top: 14px; padding: 12px 20px;
-  font: inherit; letter-spacing: .12em; cursor: pointer;
+  font: inherit; letter-spacing: .04em; cursor: pointer;
   background: var(--panel); color: var(--acid); border: 1px dashed var(--line-hot);
   border-radius: 999px; align-items: center; justify-content: center; gap: 10px;
 }
@@ -2059,8 +2059,8 @@ body.modal-open { overflow: hidden; }
   .mobile-crn > span {
     margin-right: 4px;
     color: var(--dimmer);
-    font: 600 9px/1 var(--sans);
-    letter-spacing: .06em;
+    font: 600 11px/1 var(--sans);
+    letter-spacing: .04em;
   }
   .mobile-quota {
     min-width: 0;

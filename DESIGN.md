@@ -114,7 +114,7 @@ Değişiklik kuralı: her türlü görsel değişiklik yalnızca sade yüzeyine 
 
 ## Colors
 
-Token adları tek kaynaktır (`docs/assets/style.css`); iki tema aynı adları farklı değerlerle ezdirir.
+Token adları tek kaynaktır (`assets-src/style.css` — `docs/assets/style.css` küçültülmüş üretilen çıktıdır, elle düzenlenmez); iki tema aynı adları farklı değerlerle ezdirir.
 
 | Token | sade (açık) | fosfor (koyu, donmuş) |
 |---|---|---|

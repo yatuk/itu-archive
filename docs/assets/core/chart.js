@@ -1,105 +1,14 @@
-// Görselleştirme yardımcıları: doluluk çubuğu ve dönem trend grafiği.
-// Saf string üreticileri — DOM'a dokunmazlar, test edilebilirler.
-
-import { termLabel, esc, formatInt } from './utils.js?v=dde1e9339338';
-
-// fillBar, dondurulmuş fosfor temasının yüzde + çubuk motifidir. full/tight
-// sınıfları doluluk durumunu taşır. detail:true → "yazılan / kapasite · %pct";
-// aksi halde "%pct". Sade tema quotaDisplay içindeki metin temsilini kullanır.
-export function fillBar(cap, enr, { detail = false } = {}) {
-  if (!cap) return '·';
-  const pct = Math.min(100, Math.round((enr / cap) * 100));
-  const cls = pct >= 100 ? 'full' : pct >= 85 ? 'tight' : '';
-  const label = detail ? `${formatInt(enr)} / ${formatInt(cap)} · %${pct}` : `%${pct}`;
-  return `<span class="fill">${label}<span class="bar ${cls}"><i style="width:${pct}%"></i></span></span>`;
-}
-
-// Kontenjanın anlamını görsel sunumdan ayırır. Yüzde sıralama/durum hesabında
-// kalır; sade temada aynı sayıyı yüzde + oran + çubuk olarak tekrarlamayız.
-export function quotaState(cap, enr) {
-  const capacity = Number(cap) || 0;
-  const enrolled = Number(enr) || 0;
-  if (capacity <= 0) {
-    return { capacity, enrolled, remaining: 0, pct: 0, kind: 'unknown' };
-  }
-  const remaining = Math.max(0, capacity - enrolled);
-  const pct = Math.round((enrolled / capacity) * 100);
-  const kind = enrolled >= capacity ? 'full' : pct >= 85 ? 'tight' : 'open';
-  return { capacity, enrolled, remaining, pct, kind };
-}
-
-// İki temanın bilgi yoğunluğu bilinçli olarak farklıdır. Fosfor görünümü
-// dondurulduğu için eski fillBar çıktısını korur; sade görünüm tek sayısal temsil
-// ve yalnızca karar gerektiren durumda kısa bir metin gösterir.
-export function quotaDisplay(cap, enr, { detail = false, legacyCounts = false, lang } = {}) {
-  const q = quotaState(cap, enr);
-  if (q.kind === 'unknown') return '·';
-  const english = (lang || (typeof document !== 'undefined' ? document.documentElement.lang : 'tr')) === 'en';
-
-  let state = '';
-  if (q.kind === 'full') state = english ? 'full' : 'dolu';
-  else if (q.kind === 'tight') state = `${formatInt(q.remaining)} ${english ? 'seats' : 'yer'}`;
-
-  const counts = detail
-    ? `${formatInt(q.enrolled)} ${english ? 'enrolled' : 'kayıtlı'} · ${formatInt(q.capacity)} ${english ? 'capacity' : 'kontenjan'}`
-    : `${formatInt(q.enrolled)} / ${formatInt(q.capacity)}`;
-  const sade = `${counts}${state ? ` · <span class="quota-state ${q.kind}">${state}</span>` : ''}`;
-  const legacy = legacyCounts
-    ? `${formatInt(q.enrolled)}/${formatInt(q.capacity)} · ${fillBar(q.capacity, q.enrolled)}`
-    : fillBar(q.capacity, q.enrolled, { detail });
-  const aria = `${formatInt(q.enrolled)} ${english ? 'enrolled' : 'kayıtlı'}, ${formatInt(q.capacity)} ${english ? 'capacity' : 'kontenjan'}${state ? `, ${state}` : ''}`;
-
-  return `<span class="quota-sade quota-${q.kind}" aria-label="${aria}">${sade}</span>` +
-    `<span class="quota-fosfor">${legacy}</span>`;
-}
-
-// trendChart (Faz: panel elden geçirme): iç içe (nested) çubuk — açık çerçeve
-// kontenjan, içindeki dolu kısım yazılan. Kronolojik (eski solda), sıfır tabanlı,
-// %100 referans çizgisi, yaz dönemi işareti. Varsayılan son 8 dönem; limit<=0
-// hepsini çizer. Renkler CSS değişkenlerinden.
-export function trendChart(byTerm, limit = 8) {
-  const agg = [...byTerm].map(([slug, rows]) => ({
-    slug,
-    cap: rows.reduce((s, r) => s + r.cap, 0),
-    enr: rows.reduce((s, r) => s + r.enr, 0),
-  }));
-  agg.sort((a, b) => a.slug.localeCompare(b.slug)); // kronolojik
-
-  const max = Math.max(1, ...agg.map((a) => a.cap));
-  const W = 720, H = 92, pad = 10;
-  const visible = limit > 0 ? agg.slice(-limit) : agg;
-  const rest = limit > 0 ? agg.length - visible.length : 0;
-  const n = visible.length;
-  const gap = 8;
-  const barW = n ? Math.min(52, (W - pad * 2 - gap * (n - 1)) / n) : 0;
-
-  const seasonFull = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' };
-  const refY = H - 14 - (H - 26); // %100 referansı — sıfır tabanlı tepe
-  let bars = '';
-  visible.forEach((a, i) => {
-    const x = pad + i * (barW + gap);
-    const capH = Math.round((a.cap / max) * (H - 26));
-    const enrH = Math.round((a.enr / max) * (H - 26));
-    const yBase = H - 14;
-    const full = a.cap > 0 && a.enr >= a.cap;
-    const [, y2, season] = a.slug.split('-');
-    const label = `${y2} ${seasonFull[season] || ''}`.trim();
-    bars += `
-      <g class="t-bar" tabindex="0" data-caption="${esc(termLabel(a.slug))} · kontenjan ${a.cap} · yazılan ${a.enr} · %${a.cap ? Math.round((a.enr / a.cap) * 100) : 0}">
-        <rect x="${x}" y="${yBase - capH}" width="${barW}" height="${capH}" fill="var(--chart-cap)" stroke="var(--chart-cap-edge)"/>
-        <rect x="${x}" y="${yBase - enrH}" width="${barW}" height="${enrH}" fill="${full ? 'var(--red)' : 'var(--acid)'}"/>
-        ${season === 'yaz' ? `<line x1="${x}" y1="${H - 2}" x2="${x + barW}" y2="${H - 2}" stroke="var(--amber)"/>` : ''}
-        <text x="${x + barW / 2}" y="${H - 3}" text-anchor="middle" font-size="9" fill="var(--chart-axis)">${esc(label)}</text>
-      </g>`;
-  });
-  const refLine = `<line x1="${pad}" y1="${refY}" x2="${W - pad}" y2="${refY}" stroke="var(--chart-axis)" stroke-dasharray="3 3"/>`;
-
-  return `<figure class="trend">
+import{termLabel,esc,formatInt}from"./utils.js?v=dde1e9339338";export function fillBar(e,t,{detail:n=!1}={}){if(!e)return"·";const s=Math.min(100,Math.round(t/e*100)),o=s>=100?"full":s>=85?"tight":"",i=n?`${formatInt(t)} / ${formatInt(e)} · %${s}`:`%${s}`;return`<span class="fill">${i}<span class="bar ${o}"><i style="width:${s}%"></i></span></span>`}export function quotaState(e,t){const n=Number(e)||0,s=Number(t)||0;if(n<=0)return{capacity:n,enrolled:s,remaining:0,pct:0,kind:"unknown"};const i=Math.max(0,n-s),o=Math.round(s/n*100),a=s>=n?"full":o>=85?"tight":"open";return{capacity:n,enrolled:s,remaining:i,pct:o,kind:a}}export function quotaDisplay(e,t,{detail:n=!1,legacyCounts:s=!1,lang:o}={}){const i=quotaState(e,t);if(i.kind==="unknown")return"·";const a=(o||(typeof document!="undefined"?document.documentElement.lang:"tr"))==="en";let r="";i.kind==="full"?r=a?"full":"dolu":i.kind==="tight"&&(r=`${formatInt(i.remaining)} ${a?"seats":"yer"}`);const c=n?`${formatInt(i.enrolled)} ${a?"enrolled":"kayıtlı"} · ${formatInt(i.capacity)} ${a?"capacity":"kontenjan"}`:`${formatInt(i.enrolled)} / ${formatInt(i.capacity)}`,l=`${c}${r?` · <span class="quota-state ${i.kind}">${r}</span>`:""}`,d=s?`${formatInt(i.enrolled)}/${formatInt(i.capacity)} · ${fillBar(i.capacity,i.enrolled)}`:fillBar(i.capacity,i.enrolled,{detail:n}),u=`${formatInt(i.enrolled)} ${a?"enrolled":"kayıtlı"}, ${formatInt(i.capacity)} ${a?"capacity":"kontenjan"}${r?`, ${r}`:""}`;return`<span class="quota-sade quota-${i.kind}" aria-label="${u}">${l}</span>`+`<span class="quota-fosfor">${d}</span>`}export function trendChart(e,t=8){const o=[...e].map(([e,t])=>({slug:e,cap:t.reduce((e,t)=>e+t.cap,0),enr:t.reduce((e,t)=>e+t.enr,0)}));o.sort((e,t)=>e.slug.localeCompare(t.slug));const l=Math.max(1,...o.map(e=>e.cap)),a=720,n=92,i=10,r=t>0?o.slice(-t):o,d=t>0?o.length-r.length:0,c=r.length,u=8,s=c?Math.min(52,(a-i*2-u*(c-1))/c):0,f={guz:"Güz",bahar:"Bahar",yaz:"Yaz"},h=n-14-(n-26);let m="";r.forEach((e,t)=>{const[,p,d]=e.slug.split("-"),o=i+t*(s+u),a=Math.round(e.cap/l*(n-26)),r=Math.round(e.enr/l*(n-26)),c=n-14,h=e.cap>0&&e.enr>=e.cap,g=`${p} ${f[d]||""}`.trim();m+=`
+      <g class="t-bar" tabindex="0" data-caption="${esc(termLabel(e.slug))} · kontenjan ${e.cap} · yazılan ${e.enr} · %${e.cap?Math.round(e.enr/e.cap*100):0}">
+        <rect x="${o}" y="${c-a}" width="${s}" height="${a}" fill="var(--chart-cap)" stroke="var(--chart-cap-edge)"/>
+        <rect x="${o}" y="${c-r}" width="${s}" height="${r}" fill="${h?"var(--red)":"var(--acid)"}"/>
+        ${d==="yaz"?`<line x1="${o}" y1="${n-2}" x2="${o+s}" y2="${n-2}" stroke="var(--amber)"/>`:""}
+        <text x="${o+s/2}" y="${n-3}" text-anchor="middle" font-size="9" fill="var(--chart-axis)">${esc(g)}</text>
+      </g>`});const p=`<line x1="${i}" y1="${h}" x2="${a-i}" y2="${h}" stroke="var(--chart-axis)" stroke-dasharray="3 3"/>`;return`<figure class="trend">
     <div class="t-chart">
-      <svg viewBox="0 0 ${W} ${H}" aria-hidden="true">${refLine}${bars}</svg>
+      <svg viewBox="0 0 ${a} ${n}" aria-hidden="true">${p}${m}</svg>
       <p class="t-caption" aria-live="polite"></p>
     </div>
-    ${rest ? `<button type="button" class="btn-ghost t-more">${rest} dönemin hepsini göster</button>` : ''}
+    ${d?`<button type="button" class="btn-ghost t-more">${d} dönemin hepsini göster</button>`:""}
     <figcaption class="sr-only">Kontenjan ve doluluk zaman çizelgesi · ayrıntı için dönem tablosu.</figcaption>
-  </figure>`;
-}
+  </figure>`}

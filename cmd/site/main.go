@@ -26,7 +26,17 @@ func main() {
 	out := flag.String("out", "docs", "çıktı kök dizini (GitHub Pages kaynağı)")
 	lang := flag.String("lang", "tr,en", "dil kodu (tr,en veya virgülle ayrılmış)")
 	ver := flag.String("version", "", "asset sürümü — boşsa çalışma-zamanı CSS/JS içeriğinden üretilir")
+	assetsSrc := flag.String("assets-src", "assets-src", "elle yazılan CSS/JS kaynağı (küçültülüp -out/assets altına yazılır)")
 	flag.Parse()
+
+	// docs/assets/*.js ve style.css artık üretilen çıktı — elle yazılan kaynak
+	// assets-src/ altında. Sürüm hash'i ve import yamaları küçültülmüş içeriği
+	// görmeli, o yüzden bu adım her şeyden önce çalışır.
+	if _, err := os.Stat(*assetsSrc); err == nil {
+		if err := minifyAssets(*assetsSrc, filepath.Join(*out, "assets")); err != nil {
+			log.Fatalf("asset küçültme başarısız: %v", err)
+		}
+	}
 
 	// Asset önbellek kırma: açık bir -version verilmediyse yayınlanan CSS ve
 	// çalışma-zamanı JS dosyalarının normalize edilmiş içeriğinden üret. Git SHA

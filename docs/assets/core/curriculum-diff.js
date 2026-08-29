@@ -1,4 +1,4 @@
-import { canonicalCode } from './plan.js?v=5998daffcf45';
+import { canonicalCode } from './plan.js?v=de58f9ba3069';
 
 function flatten(plan) {
   const out = new Map();

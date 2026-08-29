@@ -2949,6 +2949,9 @@ body.modal-open { overflow: hidden; }
 .dp-recommend > summary small, .dp-compare > summary small { color: var(--dim); margin-left: auto; }
 .dp-recommend-controls, .dp-compare-controls { align-items: end; border-top: 1px solid var(--hairline); display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 0; }
 .dp-recommend-controls label, .dp-compare-controls label { color: var(--dim); display: grid; font-size: 11px; gap: 4px; }
+/* "en fazla kredi" girdisi: diğer form alanlarıyla aynı aile (.f-in), yalnızca
+   2 haneli sayı için daha dar. Önceden stilsiz tarayıcı varsayılanıydı. */
+.dp-credit-input { width: 64px; }
 .dp-recommend-note { color: var(--dim); font-size: 11px; margin: 0 0 10px; }
 .dp-recommend-list { display: grid; gap: 6px; }
 .dp-recommend-item { align-items: center; border-top: 1px solid var(--hairline); display: grid; gap: 10px; grid-template-columns: auto minmax(0,1fr) auto; padding: 10px 2px; }
@@ -2957,6 +2960,17 @@ body.modal-open { overflow: hidden; }
 .dp-recommend-item em { color: var(--ok); font-size: 11px; font-style: normal; text-align: right; }
 .dp-recommend-item.needs-review em { color: var(--warn); }
 .dp-recommend-footer { align-items: center; border-top: 1px solid var(--line); display: flex; justify-content: space-between; padding: 12px 0; }
+/* Dengeli plan sonucu: dönem başına kart, aynı .dp-sem grid'iyle aynı gutter. */
+.dp-balanced-terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin: 4px 0; }
+.dp-balanced-term { border: 1px solid var(--hairline); border-radius: var(--radius-card); padding: 10px 12px; min-width: 0; }
+.dp-balanced-term-head { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 6px; }
+.dp-balanced-term-head b { color: var(--fg); }
+.dp-balanced-term-head span { color: var(--dim); font-size: 12px; font-variant-numeric: tabular-nums; }
+.dp-balanced-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.dp-balanced-list li { border-top: 1px solid var(--hairline); padding-top: 8px; }
+.dp-balanced-list li:first-child { border-top: 0; padding-top: 0; }
+.dp-balanced-list b { color: var(--cyan); }
+.dp-balanced-list small { display: block; color: var(--dim); font-size: 11px; margin-top: 2px; }
 .dp-diff-list { list-style: none; margin: 4px 0 14px; padding: 0; }
 .dp-diff-list li { border-top: 1px solid var(--hairline); display: flex; gap: 12px; justify-content: space-between; padding: 9px 2px; }
 .dp-diff-list li.added b { color: var(--ok); }

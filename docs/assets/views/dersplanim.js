@@ -15,22 +15,23 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=5998daffcf45';
-import { state } from '../core/store.js?v=5998daffcf45';
-import { openCourseDetail } from '../core/course-detail.js?v=5998daffcf45';
-import { quotaDisplay } from '../core/chart.js?v=5998daffcf45';
-import * as fav from '../core/favorites.js?v=5998daffcf45';
-import { toast } from '../core/toast.js?v=5998daffcf45';
-import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=5998daffcf45';
-import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=5998daffcf45';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=5998daffcf45';
-import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=5998daffcf45';
-import { confirmDialog } from '../core/dialog.js?v=5998daffcf45';
-import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=5998daffcf45';
-import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=5998daffcf45';
-import { I18N } from '../i18n.js?v=5998daffcf45';
-import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=5998daffcf45';
-import { compareCurricula } from '../core/curriculum-diff.js?v=5998daffcf45';
+import { $, getJSON, esc, trNum, termLabel, debounce } from '../core/utils.js?v=de58f9ba3069';
+import { state } from '../core/store.js?v=de58f9ba3069';
+import { openCourseDetail } from '../core/course-detail.js?v=de58f9ba3069';
+import { quotaDisplay } from '../core/chart.js?v=de58f9ba3069';
+import * as fav from '../core/favorites.js?v=de58f9ba3069';
+import { toast } from '../core/toast.js?v=de58f9ba3069';
+import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=de58f9ba3069';
+import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=de58f9ba3069';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=de58f9ba3069';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=de58f9ba3069';
+import { confirmDialog } from '../core/dialog.js?v=de58f9ba3069';
+import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=de58f9ba3069';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=de58f9ba3069';
+import { I18N } from '../i18n.js?v=de58f9ba3069';
+import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=de58f9ba3069';
+import { compareCurricula } from '../core/curriculum-diff.js?v=de58f9ba3069';
+import { buildBalancedPlan } from '../core/planner.js?v=de58f9ba3069';
 
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
@@ -131,11 +132,19 @@ function ensureHost() {
       <summary><span>Dönem için ders öner</span><small>Müfredat, notların ve açık şubeler kullanılır</small></summary>
       <div class="dp-recommend-controls">
         <label>hedef yarıyıl <select id="dp-recommend-sem"></select></label>
-        <label>en fazla kredi <input id="dp-recommend-credit" type="number" min="1" max="40" value="18"></label>
+        <label>en fazla kredi <input id="dp-recommend-credit" class="f-in dp-credit-input" type="number" min="1" max="40" value="18"></label>
         <button type="button" id="dp-recommend-run" class="btn-primary">Öneri oluştur</button>
       </div>
       <p class="dp-recommend-note">Öneriler kayıt hakkını garanti etmez. Alternatif önşartlar ve bölüm kuralları için işaretli uyarıları kontrol et.</p>
       <div id="dp-recommend-result" aria-live="polite"></div>
+    </details>
+    <details class="dp-recommend" id="dp-balanced">
+      <summary><span>Dengeli plan oluştur</span><small>Önşart zinciri, tekrar dersleri ve geçmiş zorluk kullanılır</small></summary>
+      <div class="dp-recommend-controls">
+        <button type="button" id="dp-balanced-run" class="btn-primary">Dengeli plan oluştur</button>
+      </div>
+      <p class="dp-recommend-note">Kalan zorunlu dersleri, önşart sırasını bozmadan çok döneme dağıtır: tekrar dersleri erken ve hafif dönemlere, geçmişte kalma oranı yüksek dersler ayrı dönemlere konur, kredi hedefi dönem başına 10–14. Seçmeli slotlar bu plana dahil değildir.</p>
+      <div id="dp-balanced-result" aria-live="polite"></div>
     </details>
     <details class="dp-compare" id="dp-compare">
       <summary><span>Müfredat sürümlerini karşılaştır</span><small id="dp-compare-preview">Bu planın değişikliklerini gör</small></summary>
@@ -1305,10 +1314,10 @@ function renderRecommendSemesterOptions() {
 function passedCodes() {
   const done = new Set(getTaken().codes || []);
   for (const [code, rec] of Object.entries(stored.grades || {})) {
-    if (EXEMPT.includes(rec.grade) || Number(GRADE_POINTS[rec.grade]) > 0) done.add(canonicalCode(code));
+    if (EXEMPT.has(rec.grade) || Number(GRADE_POINTS[rec.grade]) > 0) done.add(canonicalCode(code));
   }
   for (const rec of Object.values(stored.elective || {})) {
-    if (rec?.code && (EXEMPT.includes(rec.grade) || Number(GRADE_POINTS[rec.grade]) > 0)) done.add(canonicalCode(rec.code));
+    if (rec?.code && (EXEMPT.has(rec.grade) || Number(GRADE_POINTS[rec.grade]) > 0)) done.add(canonicalCode(rec.code));
   }
   return done;
 }
@@ -1365,6 +1374,92 @@ async function buildRecommendations() {
   });
 }
 
+// Kalan zorunlu derslerin geçmiş kalma oranını (FF+VF/toplam) branş bazlı
+// not dağılımı arşivinden hesaplar (docs/data/grades/<BRANŞ>.json) — tüm
+// dönemler toplanır. Veri yoksa (yeni/nadir açılan ders) o kod haritada
+// olmaz; planlayıcı bunu "zor değil" (nötr) sayar, tahmin yapmaz.
+async function loadDifficulty(codes) {
+  const branches = new Set([...codes].map(branchOf).filter(Boolean));
+  const perCode = new Map(); // code -> { ff_vf, total }
+  await Promise.all([...branches].map(async (branch) => {
+    const rows = await getJSON(`data/grades/${branch}.json`).catch(() => []);
+    if (!Array.isArray(rows)) return;
+    for (const row of rows) {
+      const code = canonicalCode(row.code);
+      if (!codes.has(code)) continue;
+      const g = row.grades || {};
+      const failCount = (g.FF || 0) + (g.VF || 0);
+      const cur = perCode.get(code) || { failVf: 0, total: 0 };
+      cur.failVf += failCount;
+      cur.total += Number(row.total) || 0;
+      perCode.set(code, cur);
+    }
+  }));
+  const difficulty = new Map();
+  for (const [code, { failVf, total }] of perCode) {
+    if (total > 0) difficulty.set(code, { failRate: failVf / total });
+  }
+  return difficulty;
+}
+
+async function buildBalancedPlanUI() {
+  const box = $('#dp-balanced-result');
+  if (!plan || !plan.semesters) { box.innerHTML = '<p class="empty">Önce programını seç.</p>'; return; }
+  box.innerHTML = '<p class="empty">hesaplanıyor…</p>';
+
+  const done = passedCodes();
+  // Kalan zorunlu dersler: müfredattaki her .course girdisi, henüz geçilmemişse
+  // (aynı kod tekrar ediyorsa — örn. iki farklı dönemde aynı slot — bir kez sayılır).
+  const seen = new Set();
+  const remaining = [];
+  for (const sem of plan.semesters) {
+    for (const item of sem.items || []) {
+      if (!item.course) continue;
+      const code = canonicalCode(item.course.code);
+      if (!code || done.has(code) || seen.has(code)) continue;
+      seen.add(code);
+      remaining.push({ code, name: item.course.name || '', credits: item.course.credits || 0 });
+    }
+  }
+  if (!remaining.length) {
+    box.innerHTML = '<p class="empty">Tüm zorunlu dersler tamamlanmış görünüyor.</p>';
+    return;
+  }
+
+  const failedCodes = new Set(
+    remaining.map((r) => r.code).filter((code) => {
+      const g = (stored.grades || {})[code]?.grade;
+      return g === 'FF' || g === 'VF';
+    })
+  );
+
+  const [graph, difficulty] = await Promise.all([
+    getJSON('data/prereq/graph.json').catch(() => ({ edges: [] })),
+    loadDifficulty(new Set(remaining.map((r) => r.code))),
+  ]);
+
+  const result = buildBalancedPlan({
+    remaining, failedCodes, edges: graph.edges || [], difficulty,
+  });
+
+  if (!result.terms.length) {
+    box.innerHTML = '<p class="empty">Plan oluşturulamadı.</p>';
+    return;
+  }
+
+  const cyclicNote = result.cyclic.length
+    ? `<p class="dp-recommend-note">Uyarı: ${esc(result.cyclic.join(', '))} için önşart verisinde devirli bir bağımlılık tespit edildi (veri hatası olabilir) — bu dersler sıra gözetmeden yerleştirildi.</p>`
+    : '';
+
+  box.innerHTML = cyclicNote + `<div class="dp-balanced-terms">${result.terms.map((t) => `
+    <div class="dp-balanced-term">
+      <div class="dp-balanced-term-head"><b>${t.index + 1}. dönem</b><span>${trNum(t.totalCredits)} kredi</span></div>
+      <ul class="dp-balanced-list">${t.courses.map((c) => `
+        <li><b>${esc(c.code)}</b> ${esc(c.name || '')}<small>${trNum(c.credits)} kr · ${esc(c.reason)}</small></li>
+      `).join('')}</ul>
+    </div>`).join('')}</div>`;
+}
+
 async function loadCurriculumCompare() {
   const body = $('#dp-compare-body');
   if (!body || !progCode) return;
@@ -1399,6 +1494,7 @@ function downloadJSON(data, filename) {
 
 function init() {
   $('#dp-recommend-run').addEventListener('click', buildRecommendations);
+  $('#dp-balanced-run').addEventListener('click', buildBalancedPlanUI);
   const term = $('#dp-term');
   term.addEventListener('change', async () => {
     termSlug = term.value;

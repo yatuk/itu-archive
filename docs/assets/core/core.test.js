@@ -25,6 +25,7 @@ import { parseOBSTranscript, transcriptLatest, matchTranscriptToPlan, mergeTrans
 import { versionedKey, readLocalState, writeLocalState, isPlainObject } from './persistence.js';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from './backup.js';
 import { compareCurricula } from './curriculum-diff.js';
+import { buildBalancedPlan } from './planner.js';
 
 test('tek yedek dosyası program ve GANO durumunu doğrular ve geri yükler', () => {
   const source = {
@@ -1398,4 +1399,114 @@ test('examDateMatchesTerm Güz, Bahar ve Yaz tarih sınırlarını ayırır', ()
   assert.equal(examDateMatchesTerm('15 Ocak 2027', '2026-2027-guz'), true);
   assert.equal(examDateMatchesTerm('20 Haziran 2027', '2026-2027-bahar'), true);
   assert.equal(examDateMatchesTerm('13 Ağustos 2027', '2026-2027-yaz'), true);
+});
+
+test('buildBalancedPlan önşart zincirini bozmaz: B, A tamamlanmadan bir dönem önce gelmez', () => {
+  const remaining = [
+    { code: 'MAT 101', name: 'Matematik I', credits: 4 },
+    { code: 'MAT 102', name: 'Matematik II', credits: 4 },
+    { code: 'FIZ 101', name: 'Fizik I', credits: 3 },
+  ];
+  const edges = [{ from: 'MAT 101', to: 'MAT 102' }];
+  const result = buildBalancedPlan({ remaining, edges });
+  const termOf = (code) => result.terms.find((t) => t.courses.some((c) => c.code === code)).index;
+  assert.ok(termOf('MAT 102') > termOf('MAT 101'), 'MAT 102, MAT 101 dönemi geçmeden yerleşemez');
+  assert.equal(result.cyclic.length, 0);
+});
+
+test('buildBalancedPlan tasarım dersleri gibi ardışık çiftleri (önşart üzerinden) ayrı dönemlere koyar', () => {
+  const remaining = [
+    { code: 'MMD 301', name: 'Tasarım I', credits: 4 },
+    { code: 'MMD 302', name: 'Tasarım II', credits: 4 },
+  ];
+  const edges = [{ from: 'MMD 301', to: 'MMD 302' }];
+  const result = buildBalancedPlan({ remaining, edges });
+  const termOf = (code) => result.terms.find((t) => t.courses.some((c) => c.code === code)).index;
+  assert.notEqual(termOf('MMD 301'), termOf('MMD 302'));
+});
+
+test('buildBalancedPlan tekrar dersini olabildiğince erken ve hafif bir döneme koyar', () => {
+  const remaining = [
+    { code: 'BLG 101', name: 'Ders 1', credits: 4 },
+    { code: 'BLG 102', name: 'Ders 2', credits: 4 },
+    { code: 'BLG 103', name: 'Ders 3 (tekrar)', credits: 3 },
+    { code: 'BLG 104', name: 'Ders 4', credits: 4 },
+    { code: 'BLG 105', name: 'Ders 5', credits: 3 },
+  ];
+  const result = buildBalancedPlan({
+    remaining, failedCodes: new Set(['BLG 103']), minCredits: 10, maxCredits: 14,
+  });
+  const term0 = result.terms[0];
+  assert.ok(term0.courses.some((c) => c.code === 'BLG 103'), 'tekrar dersi ilk dönemde olmalı');
+  assert.ok(term0.totalCredits <= 10, `ilk dönem hafif olmalı, ${term0.totalCredits} kredi çıktı`);
+  const repeatCourse = term0.courses.find((c) => c.code === 'BLG 103');
+  assert.match(repeatCourse.reason, /tekrar dersi/);
+});
+
+test('buildBalancedPlan aynı dönemde iki zor dersi yan yana koymaz', () => {
+  const remaining = [
+    { code: 'BLG 201', name: 'Zor A', credits: 3 },
+    { code: 'BLG 202', name: 'Zor B', credits: 3 },
+    { code: 'BLG 203', name: 'Kolay C', credits: 3 },
+    { code: 'BLG 204', name: 'Kolay D', credits: 3 },
+  ];
+  const difficulty = new Map([
+    ['BLG 201', { failRate: 0.35 }],
+    ['BLG 202', { failRate: 0.30 }],
+  ]);
+  const result = buildBalancedPlan({ remaining, difficulty, minCredits: 10, maxCredits: 14 });
+  for (const term of result.terms) {
+    const hardCount = term.courses.filter((c) => difficulty.get(c.code)?.failRate >= 0.15).length;
+    assert.ok(hardCount <= 1, `${term.index}. dönemde ${hardCount} zor ders var`);
+  }
+  assert.ok(result.terms.some((t) => t.courses.some((c) => c.code === 'BLG 201')));
+  assert.ok(result.terms.some((t) => t.courses.some((c) => c.code === 'BLG 202')));
+});
+
+test('buildBalancedPlan dönem kredisini hedef aralığa (varsayılan 10-14) yaklaştırır', () => {
+  const remaining = Array.from({ length: 8 }, (_, i) => ({
+    code: `BLG ${100 + i}`, name: `Ders ${i}`, credits: 3,
+  }));
+  const result = buildBalancedPlan({ remaining, minCredits: 10, maxCredits: 14 });
+  for (const term of result.terms) {
+    assert.ok(term.totalCredits <= 14, `${term.index}. dönem ${term.totalCredits} kredi — tavanı aşıyor`);
+  }
+  // 8 ders × 3 kredi = 24 kredi; 10-14 hedefiyle 2 döneme sığmalı (12+12).
+  assert.equal(result.terms.length, 2);
+});
+
+test('buildBalancedPlan devirli önşart verisinde sonsuz döngüye girmez, cyclic işaretler', () => {
+  const remaining = [
+    { code: 'X 101', name: 'X', credits: 3 },
+    { code: 'X 102', name: 'Y', credits: 3 },
+  ];
+  const edges = [{ from: 'X 101', to: 'X 102' }, { from: 'X 102', to: 'X 101' }];
+  const result = buildBalancedPlan({ remaining, edges });
+  assert.ok(result.cyclic.length > 0);
+  assert.equal(result.terms.reduce((n, t) => n + t.courses.length, 0), 2);
+});
+
+test('buildBalancedPlan boş girdide boş sonuç döner', () => {
+  assert.deepEqual(buildBalancedPlan({ remaining: [] }), { terms: [], cyclic: [] });
+  assert.deepEqual(buildBalancedPlan({}), { terms: [], cyclic: [] });
+});
+
+test('buildBalancedPlan 0 kredili dersi (ör. ATA) yüksek VF oranına rağmen zor saymaz', () => {
+  // Yaşanmış hata: ATA/TUR gibi idari zorunlu derslerde VF oranı yüksek
+  // olabiliyor (ders çakışması vb. idari sebepler) ama 0 kredi olduğundan
+  // GANO/iş yükü riski yok — "tek zor ders" kısıtı yüzünden kendine özel
+  // dönem harcamamalı.
+  const remaining = [
+    { code: 'ATA 121', name: 'Atatürk İlkeleri I', credits: 0 },
+    { code: 'CEN 112E', name: 'Ayrık Matematik', credits: 3 },
+    { code: 'FIZ 101E', name: 'Fizik I', credits: 3 },
+  ];
+  const difficulty = new Map([
+    ['ATA 121', { failRate: 0.35 }], // yüksek VF ama 0 kredi
+    ['FIZ 101E', { failRate: 0.28 }],
+  ]);
+  const result = buildBalancedPlan({ remaining, difficulty });
+  assert.equal(result.terms.length, 1, 'hepsi tek dönemde toplanabilmeli');
+  const ata = result.terms[0].courses.find((c) => c.code === 'ATA 121');
+  assert.doesNotMatch(ata.reason, /zor ders/);
 });

@@ -581,6 +581,54 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     expect(await page.locator('.transcript-dlg').count()).toBe(0);
   });
 
+  test('Ders Planım: BL/M/G/P notu girilince "Dönem için ders öner" çökmez', async ({ page }) => {
+    // Yaşanmış hata: EXEMPT bir Set ama passedCodes() EXEMPT.includes()
+    // çağırıyordu (Array metodu). Kullanıcının gerçek transkriptinde bile
+    // "BL" notlu ders var (TUR/DAN gibi muaf dersler) — bu satır her tetiklendiğinde
+    // TypeError fırlatıp öneri panelini sessizce kırıyordu.
+    await page.goto('/?prog=BLGE_LS#dersplanim');
+    await page.waitForTimeout(1500);
+    await page.evaluate(() => {
+      localStorage.setItem('itu-grades:v1', JSON.stringify({
+        version: 1,
+        data: { BLGE_LS: { grades: { 'TUR 121': { grade: 'BL', prev: '' } }, elective: {}, updatedAt: Date.now() } },
+      }));
+    });
+    await page.reload();
+    await page.waitForTimeout(1500);
+    const hatalar = [];
+    page.on('pageerror', (e) => hatalar.push(String(e)));
+    await page.locator('#dp-recommend > summary').click();
+    await page.locator('#dp-recommend-run').click();
+    await page.waitForTimeout(800);
+    expect(hatalar.filter((h) => /EXEMPT/.test(h))).toEqual([]);
+    await expect(page.locator('#dp-recommend-result')).not.toBeEmpty();
+  });
+
+  test('Ders Planım: "Dengeli plan oluştur" önşart sırasını koruyan çok dönemli bir plan üretir', async ({ page }) => {
+    await page.goto('/?prog=CEN_LS#dersplanim');
+    await page.waitForTimeout(1500);
+    await page.locator('#dp-balanced > summary').click();
+    await page.locator('#dp-balanced-run').click();
+    await expect.poll(
+      async () => page.locator('.dp-balanced-term').count(),
+      { timeout: 15000, message: 'dengeli plan dönemleri render edilmeli' }
+    ).toBeGreaterThan(0);
+
+    // Önşart sırası: MAT 103E (1. dönem) her zaman MAT 104E'den (2. dönem) önce gelmeli.
+    const donemler = await page.locator('#dp-balanced-result').evaluate((el) =>
+      [...el.querySelectorAll('.dp-balanced-term')].map((t) =>
+        [...t.querySelectorAll('.dp-balanced-list b')].map((b) => b.textContent))
+    );
+    const donemOf = (code) => donemler.findIndex((d) => d.includes(code));
+    const mat103 = donemOf('MAT 103E'), mat104 = donemOf('MAT 104E');
+    if (mat103 >= 0 && mat104 >= 0) expect(mat104).toBeGreaterThan(mat103);
+
+    // Kredi tavanı: hiçbir dönem sert tavanı (18) aşmamalı.
+    const kredi = await page.locator('.dp-balanced-term-head span').allTextContents();
+    for (const k of kredi) expect(Number(k.replace(/[^\d.,]/g, '').replace(',', '.'))).toBeLessThanOrEqual(18);
+  });
+
   test('Ders Planım: fakülte seçimi bölüm listesini daraltır', async ({ page }) => {
     await page.goto('/');
     await page.locator('#tab-dersplanim').click();

@@ -1897,10 +1897,11 @@ body.modal-open { overflow: hidden; }
   content-visibility: auto;
   contain-intrinsic-size: auto 92px;
 }
+/* Odaklı bölüm: gerçek border yerine inset gölge — layout kaydırmaz, satır
+   684'teki hover göstergesiyle aynı 2px konvansiyonu kullanır. */
 .d-sec.is-focus {
-  margin-left: -1px;
-  padding-left: 13px;
-  border-left: 3px solid var(--acid);
+  padding-left: 12px;
+  box-shadow: inset 2px 0 0 var(--acid);
   background: var(--now-bg);
 }
 .d-sec-head {
@@ -2608,7 +2609,7 @@ body.modal-open { overflow: hidden; }
   cursor: pointer;
 }
 .p-item:hover { background: var(--row-hover); }
-.p-item.p-full { border-color: var(--amber); box-shadow: inset 3px 0 0 var(--amber); }
+.p-item.p-full { border-color: var(--amber); box-shadow: inset 2px 0 0 var(--amber); }
 .p-grip { grid-area: grip; align-self: center; }
 .p-code { grid-area: code; min-width: 0; overflow: hidden; }
 .p-code b { display: inline; font-size: 13px; }
@@ -3697,7 +3698,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
     border-radius: 10px;
     background: var(--panel);
   }
-  .d-sec.is-focus { padding-left: 12px; border-left: 3px solid var(--acid); }
+  .d-sec.is-focus { padding-left: 12px; box-shadow: inset 2px 0 0 var(--acid); }
   .d-sec-head {
     grid-template-columns: auto minmax(0, 1fr);
     gap: 6px 10px;

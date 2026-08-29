@@ -406,7 +406,6 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
   letter-spacing: .04em;
   font-weight: 700;
   color: var(--acid);
-  text-shadow: 0 0 18px rgba(0, 255, 156, .35);
 }
 .brand h1::after, .brand .brand-title::after {
   content: "█";
@@ -2403,8 +2402,8 @@ body.modal-open { overflow: hidden; }
 #p-obs:active { cursor: grabbing; }
 #p-obs.is-disabled { opacity: .45; cursor: not-allowed; animation: none; }
 @keyframes p-obs-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(46, 204, 159, .45); }
-  50% { box-shadow: 0 0 0 8px rgba(46, 204, 159, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 162, 39, .45); }
+  50% { box-shadow: 0 0 0 8px rgba(201, 162, 39, 0); }
 }
 
 .ttip {

@@ -18,7 +18,11 @@ permissions:
 jobs:
   curriculum:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # 342 program × (plan listesi + detay + seçmeli grup sayfaları) — OBS'nin
+    # DersPlan uçları zaman zaman çok yavaş/kararsız (context deadline exceeded
+    # art arda geliyor); ilk canlı koşu 20 dk'da yarılanmadan iptal edildi.
+    # Aylık, arka planda çalışan bir iş olduğundan süre kısıtı düşük öncelik.
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:

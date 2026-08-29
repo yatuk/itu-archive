@@ -1,0 +1,61 @@
+name: yatay-gecis
+
+# İTÜ içi yatay geçiş taban/tavan sonuçları (sis.itu.edu.tr). Yılda bir kez
+# açıklanıyor ve geçmiş yıllar hiç değişmiyor; ayda bir kontrol etmek fazlasıyla
+# yeterli. 15 statik sayfa, tek istek — OBS'ye hiç dokunmuyor.
+on:
+  schedule:
+    - cron: '13 6 1 * *' # ayın 1'inde 06:13 UTC (aylık)
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Yalnızca bu akademik yılı çek (örn. 2025-2026); boşsa tümü'
+        type: string
+        default: ''
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  yatay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Yatay geçiş sonuçlarını çek
+        run: go run ./cmd/yatay ${{ inputs.only && format('-only {0}', inputs.only) || '' }}
+
+      - name: Doğrula
+        run: go run ./cmd/validate -quiet -skip-site
+
+      - name: SEO sayfalarını veriden üret
+        run: go run ./cmd/site
+
+      - name: Commit
+        run: |
+          if git diff --quiet -- docs; then
+            echo 'Yatay geçiş verisinde değişiklik yok.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name  'itu-scraper[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs
+          git commit -m "yatay geçiş: $(date -u +'%Y-%m-%d') aylık taraması"
+          for wait in 5 10 20 40; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep "$wait"
+          done
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push
+          exit $?

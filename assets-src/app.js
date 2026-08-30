@@ -3,7 +3,7 @@
    her sekmenin mantığı views/ altındaki kendi modülünde. Tüm veri docs/data
    altındaki statik JSON'lardan geliyor; sunucu tarafı yok. */
 
-import { $, getJSON, fmtDate, esc, setStatus } from './core/utils.js?v=dde1e9339338';
+import { $, getJSON, fmtDate, esc, setStatus, formatInt } from './core/utils.js?v=dde1e9339338';
 import { state, markIndexReady } from './core/store.js?v=dde1e9339338';
 import { I18N } from './i18n.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=dde1e9339338';
@@ -77,6 +77,27 @@ async function boot() {
     if (state.rows.length) applyFilters();
   }).catch(() => {});
 
+  // Masthead'deki gerçek ziyaret sayısı: Cloudflare Analytics'i doğrudan
+  // sorgulayamayız (API token'ı tarayıcıya konulamaz) — ayrı, salt-okunur
+  // bir Worker (cloudflare/stats-worker/) bu sayıyı sunucu tarafında
+  // hesaplayıp döner. Worker deploy edilmemişse ya da erişilemiyorsa satır
+  // gizli kalır; sahte/tahmini bir sayı asla gösterilmez. Yalnızca gerçek
+  // alan adında denenir — yerelde/test'te var olmayan bir alt alan adına
+  // fetch atmak, hiç yakalanamayan bir tarayıcı konsol hatası bırakır
+  // (try/catch ağ hatasının kendisini gizlemez, yalnız reddi).
+  if (location.hostname === 'itu-ders.com' || location.hostname === 'www.itu-ders.com') {
+    fetch('https://stats.itu-ders.com/', { mode: 'cors' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!d || !Number.isFinite(d.visits30d)) return;
+        const row = $('#stat-visits-row');
+        const cell = $('#stat-visits');
+        if (!row || !cell) return;
+        cell.textContent = `${formatInt(d.visits30d)}+`;
+        row.hidden = false;
+      })
+      .catch(() => {});
+  }
 
   // Dönem seçici (dersler görünümüne ait) + paylaşılabilir URL durumu.
   const termSel = $('#f-term');

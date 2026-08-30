@@ -15,7 +15,7 @@
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
 //   - programa ekle → core/favorites.js addToSchedule
 
-import { $, getJSON, esc, trNum, termLabel, debounce, isViewVisible } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, esc, trNum, termLabel, debounce, isViewVisible, staggerReveal } from '../core/utils.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
 import { openCourseDetail } from '../core/course-detail.js?v=dde1e9339338';
 import { quotaDisplay } from '../core/chart.js?v=dde1e9339338';
@@ -1466,6 +1466,7 @@ async function buildRecommendations() {
     </label>`).join('')}</div>
     <div class="dp-recommend-footer"><b>${trNum(used)} kredi önerildi</b><button type="button" id="dp-recommend-add" class="btn-primary">Seçilenleri programa ekle</button></div>`
     : '<p class="empty">Bu dönem, notların ve kredi sınırıyla eşleşen ders bulunamadı.</p>';
+  staggerReveal(box, '.dp-recommend-item');
   box._items = chosen;
   $('#dp-recommend-add')?.addEventListener('click', () => {
     const items = [...box.querySelectorAll('[data-rec-index]:checked')].map((input) => chosen[Number(input.dataset.recIndex)]?.section).filter(Boolean)
@@ -1587,6 +1588,7 @@ async function buildBalancedPlanUI() {
       }).join('')}</ul>
     </div>`).join('')}</div>
     ${chosen.length ? `<div class="dp-recommend-footer"><b>bu dönem açık ${chosen.length} ders eklenebilir</b><button type="button" id="dp-balanced-add" class="btn-primary">Seçilenleri programa ekle</button></div>` : ''}`;
+  staggerReveal(box, '.dp-balanced-term');
 
   $('#dp-balanced-add')?.addEventListener('click', () => {
     const items = [...box.querySelectorAll('[data-balanced-code]:checked')]

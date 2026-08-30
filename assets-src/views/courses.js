@@ -6,7 +6,7 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo, isViewVisible } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo, isViewVisible, tickCount } from '../core/utils.js?v=dde1e9339338';
 import { methodToCode } from '../core/urlcodes.js?v=dde1e9339338';
 import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
@@ -338,13 +338,20 @@ export function applyFilters() {
   const scrapeFreshness = scrapedAgo
     ? ` · <span class="${state.stale ? 'data-stale' : ''}">${I18N.lang === 'en' ? 'last scrape' : 'son tarama'} ${esc(scrapedAgo)}</span>`
     : '';
+  // Sonuç sayısı jump-cut yerine eski değerden yeni değere yuvarlanır: HTML
+  // eski sayıyla basılır (hedefle basılırsa tickCount'un ilk rAF'ı çalışana
+  // dek doğru değer bir kare parlayıp geri yuvarlanırdı), sonra animasyon onu
+  // hedefe taşır.
+  const prevCount = Number($('#resultline b')?.textContent);
+  const startCount = Number.isFinite(prevCount) ? prevCount : n;
   $('#resultline').innerHTML = (n === total
     ? (I18N.lang === 'en'
-      ? `<b>${n}</b> sections · ${state.meta.courses} courses · ${state.meta.branches.length} branches`
-      : `<b>${n}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} bölüm`)
+      ? `<b>${startCount}</b> sections · ${state.meta.courses} courses · ${state.meta.branches.length} branches`
+      : `<b>${startCount}</b> şube · ${state.meta.courses} ders · ${state.meta.branches.length} bölüm`)
     : (I18N.lang === 'en'
-      ? `<b>${n}</b> / ${total} sections matched${hint}`
-      : `<b>${n}</b> / ${total} şube eşleşti${hint}`)) + scrapeFreshness + quotaFreshness;
+      ? `<b>${startCount}</b> / ${total} sections matched${hint}`
+      : `<b>${startCount}</b> / ${total} şube eşleşti${hint}`)) + scrapeFreshness + quotaFreshness;
+  tickCount($('#resultline b'), prevCount, n);
   // Mobil filtre düğmesi etiketi: aktif filtre sayısı (dönem sayılmaz).
   const activeCount = [
     branch, day, time, level, method, program, code.trim(),

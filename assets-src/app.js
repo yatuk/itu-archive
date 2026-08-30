@@ -280,7 +280,31 @@ function wireTabs() {
     ? { gecmis: 'History', donemler: 'Terms', hakkinda: 'About' }
     : { gecmis: 'Geçmiş', donemler: 'Dönemler', hakkinda: 'Hakkında' };
 
+  // Kayan hap: aktif sekmenin arkasında sürüklenip boyut değiştirir.
+  // Sade temada Daha fazla altına gizlenen bir sekme aktifse (offsetParent
+  // yok) hap görünmez sekmeyi kovalamak yerine sadece solar.
+  const pill = document.querySelector('.tabs-pill');
+  let activeView = null;
+  const movePill = () => {
+    if (!pill) return;
+    const btn = buttons.find((b) => b.dataset.view === activeView);
+    if (!btn || btn.offsetParent === null) {
+      pill.classList.remove('is-visible');
+      return;
+    }
+    // offsetLeft/Top: .tabs sticky konumlandığı için offsetParent'tır — çok
+    // satırlı (flex-wrap) durumda da doğru satırı/konumu verir.
+    pill.style.transform = `translate(${btn.offsetLeft}px, ${btn.offsetTop}px)`;
+    pill.style.width = `${btn.offsetWidth}px`;
+    pill.style.height = `${btn.offsetHeight}px`;
+    pill.classList.add('is-visible');
+  };
+  if (pill) {
+    window.addEventListener('resize', movePill);
+  }
+
   const show = (view, push) => {
+    activeView = view;
     for (const b of buttons) {
       const active = b.dataset.view === view;
       b.setAttribute('aria-selected', String(active));
@@ -317,6 +341,7 @@ function wireTabs() {
     // Program oluşturucu ve Ders Planım daha geniş alan kullanır.
     const mainEl = document.querySelector('main.wrap');
     if (mainEl) mainEl.classList.toggle('wide', view === 'program' || view === 'dersplanim');
+    movePill();
     writeViewUrl(view, push);
   };
   showView = show;

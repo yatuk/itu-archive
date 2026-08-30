@@ -18,6 +18,42 @@ export function isViewVisible(view) {
   return !document.getElementById(`view-${view}`)?.hidden;
 }
 
+// Az önce hesaplanmış sonuç kartlarına (öneri/plan listeleri) kademeli
+// fade-up uygular — hepsi birden değil, hafif bir kaskad. container.innerHTML
+// yazıldıktan HEMEN sonra çağrılmalı. stepMs sonrası gecikmeler bir üst
+// sınırda (maxDelayMs) topaklanır — uzun listeler sonsuza dek beklemesin.
+export function staggerReveal(container, selector, { stepMs = 40, maxDelayMs = 320 } = {}) {
+  if (!container) return;
+  const els = container.querySelectorAll(selector);
+  els.forEach((el, i) => {
+    el.style.animationDelay = `${Math.min(i * stepMs, maxDelayMs)}ms`;
+    el.classList.add('stagger-in');
+  });
+}
+
+// "3445 / 5010 şube eşleşti" gibi bir sonuç sayacını eski değerden yeni
+// değere doğru yuvarlar (jump-cut yerine). el metnini DOĞRUDAN sayıya çevirir
+// (ör. "3.445" değil salt "3445") — çağıran taraf biçimlendirmeyi (ayraç,
+// birim) kendi elle yazar; bu yalnız rakamı canlandırır.
+export function tickCount(el, from, to, { duration = 280 } = {}) {
+  if (!el) return;
+  from = Number(from); to = Number(to);
+  if (!Number.isFinite(from) || !Number.isFinite(to) || from === to
+    || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+    el.textContent = String(to);
+    return;
+  }
+  const start = performance.now();
+  const step = (now) => {
+    const t = Math.min(1, (now - start) / duration);
+    const eased = 1 - (1 - t) ** 3; // ease-out-cubic
+    el.textContent = String(Math.round(from + (to - from) * eased));
+    if (t < 1) requestAnimationFrame(step);
+    else el.textContent = String(to);
+  };
+  requestAnimationFrame(step);
+}
+
 export async function copyText(text) {
   const value = String(text ?? '');
   try {

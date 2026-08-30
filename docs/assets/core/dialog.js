@@ -1,4 +1,4 @@
-import{$,esc}from"./utils.js?v=dde1e9339338";let host=null;function ensureHost(){return host||(host=document.createElement("div"),host.className="dlg",host.hidden=!0,host.innerHTML=`<div class="dlg-box" role="dialog" aria-modal="true" aria-labelledby="dlg-title">
+import{$,esc}from"./utils.js?v=b10031bfc078";let host=null;function ensureHost(){return host||(host=document.createElement("div"),host.className="dlg",host.hidden=!0,host.innerHTML=`<div class="dlg-box" role="dialog" aria-modal="true" aria-labelledby="dlg-title">
     <button type="button" class="dlg-close" aria-label="Kapat">✕</button>
     <h3 class="dlg-title" id="dlg-title"></h3>
     <p class="dlg-msg"></p>

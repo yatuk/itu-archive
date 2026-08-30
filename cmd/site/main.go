@@ -76,7 +76,11 @@ func main() {
 	}
 }
 
-var localJSVersionRE = regexp.MustCompile(`((?:from\s+|import\s*\(\s*|import\s+)["'](?:\.\.?/)[^"']+\.js)(?:\?v=[^"']*)?`)
+// \s* (not \s+) sonrasında: küçültme "from "..."" içindeki boşluğu kaldırıp
+// "from"..."" yapar (geçerli JS) — \s+ bunu eşleştiremediği için içe içe ES
+// modül importlarının sürümü hiç yamanmıyordu (dersplanim.js?v=... deploy'lar
+// arası hep aynı kalıyordu — kalıcı tarayıcı önbelleği riski).
+var localJSVersionRE = regexp.MustCompile(`((?:from\s*|import\s*\(\s*|import\s*)["'](?:\.\.?/)[^"']+\.js)(?:\?v=[^"']*)?`)
 
 // normalizedRuntimeJS, yalnız import URL'lerindeki sürüm parçasını çıkarır.
 // Böylece sürümün kendisi içerik hash'ini her çalıştırmada değiştirmez.

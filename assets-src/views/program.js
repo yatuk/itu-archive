@@ -14,6 +14,7 @@ import { toast } from '../core/toast.js?v=dde1e9339338';
 import { confirmDialog, promptDialog } from '../core/dialog.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
+import { findAlternatives, presetPrefs, WEEKDAYS } from '../core/altfind.js?v=dde1e9339338';
 
 let term = null;
 let rows = [];
@@ -144,6 +145,7 @@ export function initProgram() {
   $('#p-obs').addEventListener('mouseenter', () => showTip());
   $('#p-obs').addEventListener('mouseleave', () => hideTip());
   $('#p-favs').addEventListener('click', addFavorites);
+  $('#p-altfind').addEventListener('click', openAltFind);
   $('#p-full').addEventListener('change', () => { saveProgramView(); render(); });
   // Izgara görünüm seçenekleri (hafta sonu sütunları / tam gün aralığı / ızgara).
   $('#p-gridview').addEventListener('change', (e) => { showGrid = e.target.checked; saveProgramView(); render(); });
@@ -1298,4 +1300,298 @@ function closeMenus() {
     if (button) button.setAttribute('aria-expanded', 'false');
     openMenuKey = null;
   }
+}
+
+// --- Alternatif Bul: mevcut programdaki dersler için çakışmasız, tercihlere
+// uyan alternatif şube kombinasyonları arar (bkz. core/altfind.js). ---
+
+const AF_PRESETS = [
+  { key: 'mergeCampusDays', label: 'Kampüs günlerini birleştir' },
+  { key: 'compact', label: 'Az gün, dolu gün' },
+  { key: 'spread', label: 'Dengeli' },
+  { key: 'lateStart', label: 'Geç başla' },
+  { key: 'earlyEnd', label: 'Erken çık' },
+  { key: 'fridayFree', label: 'Cuma boş' },
+  { key: 'reduceGaps', label: 'Boşlukları azalt' },
+  { key: 'shortDays', label: 'Kısa günler' },
+  { key: 'midweekBreather', label: 'Çarşamba nefesi' },
+];
+const AF_DAY_LABEL = { any: 'farketmez', free: 'boş', busy: 'dolu' };
+const AF_DAY_NEXT = { any: 'free', free: 'busy', busy: 'any' };
+const AF_MIN = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+
+let afHost = null;
+let afStep = 'prefs';
+let afPrefs = null;
+let afLockedGroups = new Set();
+let afCodes = new Set();
+let afCurrentByCode = new Map();
+let afResult = null;
+
+function afDefaultPrefs() { return presetPrefs(null); }
+
+function afMatchedPreset() {
+  for (const p of AF_PRESETS) {
+    if (JSON.stringify(presetPrefs(p.key)) === JSON.stringify(afPrefs)) return p.key;
+  }
+  return null;
+}
+
+function ensureAltFindHost() {
+  if (afHost) return afHost;
+  afHost = document.createElement('div');
+  afHost.className = 'dlg af-dlg';
+  afHost.hidden = true;
+  afHost.innerHTML = '<div class="dlg-box af-box" role="dialog" aria-modal="true" aria-labelledby="af-title">'
+    + '<button type="button" class="dlg-close" id="af-close" aria-label="Kapat">✕</button>'
+    + '<div id="af-body"></div></div>';
+  document.body.appendChild(afHost);
+  afHost.querySelector('#af-close').addEventListener('click', closeAltFind);
+  afHost.addEventListener('click', (e) => { if (e.target === afHost) closeAltFind(); });
+  afHost.addEventListener('click', onAltFindClick);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && afHost && !afHost.hidden) closeAltFind(); });
+  return afHost;
+}
+
+function closeAltFind() {
+  if (afHost) afHost.hidden = true;
+  document.body.classList.remove('modal-open');
+}
+
+function openAltFind() {
+  const items = currentItems();
+  if (items.length < 2) { toast('Programında en az iki ders olmalı', { kind: 'warn' }); return; }
+  afCodes = new Set(items.map(({ row }) => row[1]));
+  afCurrentByCode = new Map(items.map(({ row }) => [row[1], row[0]]));
+  afPrefs = afDefaultPrefs();
+  afLockedGroups = new Set();
+  afStep = 'prefs';
+  afResult = null;
+  ensureAltFindHost();
+  afHost.hidden = false;
+  document.body.classList.add('modal-open');
+  renderAltFind();
+}
+
+function afStepsHtml() {
+  return `<div class="af-steps">
+    <span class="af-step${afStep === 'prefs' ? ' active' : ' done'}"><em>1</em>Tercihler</span>
+    <span class="af-step-line"></span>
+    <span class="af-step${afStep === 'results' ? ' active' : ''}"><em>2</em>Sonuçlar</span>
+  </div>`;
+}
+
+function afPillRow(label, key, options) {
+  const cur = afPrefs[key];
+  return `<div class="af-row"><b>${esc(label)}</b><div class="af-pills">${options.map(([val, text]) =>
+    `<button type="button" class="af-pill${cur === val ? ' active' : ''}" data-af-set="${key}" data-af-val='${esc(JSON.stringify(val))}'>${esc(text)}</button>`).join('')}</div></div>`;
+}
+
+function afGroupHead(label, group, summary) {
+  const locked = afLockedGroups.has(group);
+  return `<div class="af-group-head"><span>${esc(label)}</span><em>${esc(summary)}</em>
+    <button type="button" class="af-lock${locked ? ' on' : ''}" data-af-lock="${group}"
+      title="Bu grubu değişmeye kilitle (kilitliyse alternatif bulunamazsa esnetilmez)">${locked ? '🔒' : '🔓'}</button></div>`;
+}
+
+function afGunlerSummary() {
+  const parts = WEEKDAYS.filter((d) => afPrefs.days[d] !== 'any').map((d) => `${d.slice(0, 3)} ${AF_DAY_LABEL[afPrefs.days[d]]}`);
+  return parts.length ? parts.join(', ') : 'Farketmez';
+}
+function afYogunlukSummary() {
+  const parts = [];
+  if (afPrefs.density === 'compact') parts.push('az güne sıkıştır');
+  if (afPrefs.density === 'spread') parts.push('günlere yay');
+  if (afPrefs.singleCourseDaysReduce) parts.push('tek dersli günleri azalt');
+  return parts.length ? parts.join(', ') : 'Farketmez';
+}
+function afSaatlerSummary() {
+  const parts = [];
+  if (afPrefs.earliest != null) parts.push(`en erken ${AF_MIN(afPrefs.earliest)}`);
+  if (afPrefs.latest != null) parts.push(`en geç ${AF_MIN(afPrefs.latest)}`);
+  if (afPrefs.lunchFree) parts.push('öğle arası boş');
+  if (afPrefs.half !== 'any') parts.push(afPrefs.half === 'morning' ? 'öğleden önce' : 'öğleden sonra');
+  if (afPrefs.gap != null) parts.push(afPrefs.gap === 0 ? 'boşluk yok' : `en fazla ${afPrefs.gap / 60} saat boşluk`);
+  if (afPrefs.dailySpan != null) parts.push(`en fazla ${afPrefs.dailySpan / 60} saat/gün`);
+  return parts.length ? parts.join(', ') : 'Farketmez';
+}
+
+function renderAltFindPrefs() {
+  const matched = afMatchedPreset();
+  const body = $('#af-body');
+  body.innerHTML = `
+    <h3 id="af-title">Alternatif Bul</h3>
+    ${afStepsHtml()}
+    <div class="af-presets-head"><b>Hazır ayarlar</b><button type="button" id="af-reset" class="af-reset-link">Tercihleri sıfırla</button></div>
+    <p class="af-hint">Birini seç, istersen sonra değiştir.</p>
+    <div class="af-preset-grid">${AF_PRESETS.map((p) =>
+      `<button type="button" class="af-preset${matched === p.key ? ' active' : ''}" data-af-preset="${p.key}">${esc(p.label)}</button>`).join('')}</div>
+    <details class="af-details" open>
+      <summary>Ayrıntılar <span>İsteğe bağlı</span></summary>
+      <div class="af-group">
+        ${afGroupHead('Günler', 'gunler', afGunlerSummary())}
+        <div class="af-days">${WEEKDAYS.map((d) =>
+          `<button type="button" class="af-day" data-af-day="${d}"><b>${d.slice(0, 3)}</b><small>${AF_DAY_LABEL[afPrefs.days[d]]}</small></button>`).join('')}</div>
+      </div>
+      <div class="af-group">
+        ${afGroupHead('Yoğunluk', 'yogunluk', afYogunlukSummary())}
+        ${afPillRow('Haftalık dağılım', 'density', [['any', 'Farketmez'], ['compact', 'Az güne sıkıştır'], ['spread', 'Günlere yay']])}
+        ${afPillRow('Tek dersli günler', 'singleCourseDaysReduce', [[false, 'Farketmez'], [true, 'Azalt']])}
+      </div>
+      <div class="af-group">
+        ${afGroupHead('Saatler', 'saatler', afSaatlerSummary())}
+        ${afPillRow('En erken', 'earliest', [[null, 'Farketmez'], [570, '09:30'], [630, '10:30'], [690, '11:30']])}
+        ${afPillRow('En geç', 'latest', [[null, 'Farketmez'], [870, '14:30'], [930, '15:30'], [990, '16:30'], [1050, '17:30']])}
+        ${afPillRow('Öğle arası', 'lunchFree', [[false, 'Farketmez'], [true, '12:30–13:30 boş']])}
+        ${afPillRow('Günün yarısı', 'half', [['any', 'Farketmez'], ['morning', 'Öğleden önce'], ['afternoon', 'Öğleden sonra']])}
+        ${afPillRow('Dersler arası boşluk', 'gap', [[null, 'Farketmez'], [0, 'Boşluk yok'], [60, 'En fazla 1 saat'], [120, 'En fazla 2 saat']])}
+        ${afPillRow('Günlük süre', 'dailySpan', [[null, 'Farketmez'], [360, 'En fazla 6 saat'], [420, 'En fazla 7 saat'], [480, 'En fazla 8 saat']])}
+      </div>
+    </details>
+    <button type="button" id="af-run" class="btn-primary af-run">Alternatifleri bul</button>
+    <p class="af-foot">Kilitli tercihler korunur; diğerleri gerekirse esnetilir.</p>`;
+}
+
+const AF_RELAXED_LABEL = {
+  earliest: 'en erken saat', latest: 'en geç saat', lunchFree: 'öğle arası boş',
+  half: 'günün yarısı', gap: 'dersler arası boşluk', dailySpan: 'günlük süre',
+  singleCourseDaysReduce: 'tek dersli günleri azaltma', density: 'haftalık dağılım',
+};
+function afRelaxedLabel(key) {
+  if (key.startsWith('day:')) return `${key.slice(4)} tercihi`;
+  return AF_RELAXED_LABEL[key] || key;
+}
+
+function afResultCard(combo, idx) {
+  const byDay = new Map();
+  for (const sec of combo.sections) {
+    for (const s of sec.sessions) {
+      if (!WEEKDAYS.includes(s.day)) continue;
+      const cur = byDay.get(s.day) || { start: Infinity, end: -Infinity };
+      cur.start = Math.min(cur.start, s.start); cur.end = Math.max(cur.end, s.end);
+      byDay.set(s.day, cur);
+    }
+  }
+  const days = [...byDay.values()];
+  const range = days.length ? `${AF_MIN(Math.min(...days.map((d) => d.start)))}–${AF_MIN(Math.max(...days.map((d) => d.end)))}` : '·';
+  const preview = WEEKDAYS.map((d) => {
+    const busy = combo.sections.some((sec) => sec.sessions.some((s) => s.day === d));
+    return `<span class="af-mini${busy ? ' on' : ''}"></span>`;
+  }).join('');
+  const note = combo.changed === 0 ? 'Mevcut programınla aynı şubeler' : `${combo.changed} ders değişiyor`;
+  return `<div class="af-card">
+    <div class="af-card-head"><div class="af-mini-row">${preview}</div>
+      <div><b>${byDay.size} gün</b> · ${range}</div></div>
+    <p class="af-card-note">${esc(note)}</p>
+    <div class="af-card-actions">
+      <button type="button" class="btn-primary" data-af-apply="${idx}">Uygula</button>
+      <button type="button" class="btn-ghost" data-af-save="${idx}">Alternatif kaydet</button>
+    </div>
+  </div>`;
+}
+
+function renderAltFindResults() {
+  const body = $('#af-body');
+  const { combos, relaxed, unavailable } = afResult;
+  if (unavailable.length) {
+    body.innerHTML = `<h3 id="af-title">Alternatif bulunamadı</h3>${afStepsHtml()}
+      <button type="button" id="af-back" class="af-back-link">← Tercihleri düzenle</button>
+      <p class="empty">${esc(unavailable.join(', '))} için taranan dönemde açık şube verisi yok — bu ders değiştirilemiyor.</p>`;
+    return;
+  }
+  const relaxedNote = relaxed.length
+    ? `<p class="af-relaxed-note">Tam eşleşme yoktu, şunlar gevşetildi: ${relaxed.map(afRelaxedLabel).join(', ')}.</p>` : '';
+  body.innerHTML = `<h3 id="af-title">${combos.length} alternatif program bulundu</h3>
+    ${afStepsHtml()}
+    <button type="button" id="af-back" class="af-back-link">← Tercihleri düzenle</button>
+    ${relaxedNote}
+    ${combos.length
+      ? `<div class="af-results">${combos.map((c, i) => afResultCard(c, i)).join('')}</div>`
+      : '<p class="empty">Bu tercihlerle eşleşen çakışmasız kombinasyon yok. Kilitli grupları gözden geçir.</p>'}`;
+}
+
+function renderAltFind() {
+  ensureAltFindHost();
+  if (afStep === 'prefs') renderAltFindPrefs();
+  else renderAltFindResults();
+}
+
+function afSetPref(key, val) {
+  afPrefs = { ...afPrefs, [key]: val };
+  renderAltFind();
+}
+
+function afLockedGroupKeys() {
+  const keys = new Set();
+  if (afLockedGroups.has('saatler')) for (const k of ['earliest', 'latest', 'lunchFree', 'half', 'gap', 'dailySpan']) keys.add(k);
+  if (afLockedGroups.has('yogunluk')) { keys.add('density'); keys.add('singleCourseDaysReduce'); }
+  if (afLockedGroups.has('gunler')) for (const d of WEEKDAYS) keys.add(`day:${d}`);
+  return keys;
+}
+
+function afRunSearch() {
+  afResult = findAlternatives(rows, afCodes, afPrefs, { locked: afLockedGroupKeys(), currentByCode: afCurrentByCode, limit: 30 });
+  afStep = 'results';
+  renderAltFind();
+}
+
+function afRowCode(branch, crn) {
+  const r = rows.find((x) => x[3] === branch && x[0] === crn);
+  return r ? r[1] : null;
+}
+
+function afApplyCombo(idx) {
+  const combo = afResult.combos[idx];
+  if (!combo) return;
+  const kept = progItems().filter((it) => !afCodes.has(afRowCode(it.branch, it.crn)));
+  setProgItems([...kept, ...combo.sections.map((s) => ({ branch: s.branch, crn: s.crn }))]);
+  renderProgSelector();
+  closeAltFind();
+  toast('Alternatif uygulandı');
+}
+
+function afSaveCombo(idx) {
+  const combo = afResult.combos[idx];
+  if (!combo) return;
+  const ps = loadPrograms();
+  const active = ps.programs.find((p) => p.id === ps.active);
+  const id = Math.max(0, ...ps.programs.map((p) => p.id)) + 1;
+  const otherTerms = active ? active.items.filter((it) => it.term !== term) : [];
+  const sameTermOther = active ? active.items.filter((it) => it.term === term && !afCodes.has(afRowCode(it.branch, it.crn))) : [];
+  const name = `${active ? active.name : 'Program'} (alternatif)`;
+  ps.programs.push({
+    id, name,
+    items: [...otherTerms, ...sameTermOther, ...combo.sections.map((s) => ({ term, branch: s.branch, crn: s.crn }))],
+  });
+  savePrograms(ps);
+  renderProgSelector();
+  toast(`"${name}" olarak kaydedildi`);
+}
+
+function onAltFindClick(e) {
+  const preset = e.target.closest('[data-af-preset]');
+  if (preset) { afPrefs = presetPrefs(preset.dataset.afPreset); renderAltFind(); return; }
+  const day = e.target.closest('[data-af-day]');
+  if (day) {
+    const d = day.dataset.afDay;
+    afPrefs = { ...afPrefs, days: { ...afPrefs.days, [d]: AF_DAY_NEXT[afPrefs.days[d]] } };
+    renderAltFind();
+    return;
+  }
+  const setBtn = e.target.closest('[data-af-set]');
+  if (setBtn) { afSetPref(setBtn.dataset.afSet, JSON.parse(setBtn.dataset.afVal)); return; }
+  const lock = e.target.closest('[data-af-lock]');
+  if (lock) {
+    const g = lock.dataset.afLock;
+    if (afLockedGroups.has(g)) afLockedGroups.delete(g); else afLockedGroups.add(g);
+    renderAltFind();
+    return;
+  }
+  if (e.target.closest('#af-reset')) { afPrefs = afDefaultPrefs(); afLockedGroups = new Set(); renderAltFind(); return; }
+  if (e.target.closest('#af-run')) { afRunSearch(); return; }
+  if (e.target.closest('#af-back')) { afStep = 'prefs'; renderAltFind(); return; }
+  const apply = e.target.closest('[data-af-apply]');
+  if (apply) { afApplyCombo(Number(apply.dataset.afApply)); return; }
+  const save = e.target.closest('[data-af-save]');
+  if (save) { afSaveCombo(Number(save.dataset.afSave)); return; }
 }

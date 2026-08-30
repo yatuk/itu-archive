@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=45343f3456fd">
+<link rel="stylesheet" href="assets/style.css?v=b10031bfc078">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -154,6 +154,7 @@
 
 <h2 class="sr-only">Bölümler</h2>
 <nav class="tabs wrap" role="tablist" aria-label="Bölümler" data-i18n-aria-label="sectionsLabel">
+ <div class="tabs-pill" aria-hidden="true"></div>
  <a role="tab" aria-selected="true" aria-current="page" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" href="/#dersler"><span class="tab-number" aria-hidden="true">01</span><span data-i18n="tabDersler">DERSLER</span></a>
  <a role="tab" aria-selected="false" id="tab-gecmis" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" href="/#gecmis"><span class="tab-number" aria-hidden="true">02</span><span data-i18n="tabGecmis">GEÇMİŞ</span></a>
  <a role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" href="/#dersplanim"><span class="tab-number" aria-hidden="true">03</span><span data-i18n="tabDersplanim">DERS PLANIM/GPA</span></a>
@@ -440,6 +441,7 @@
     <button type="button" id="p-prog-copy" class="btn-ghost">Kopyala</button>
     <button type="button" id="p-prog-del" class="btn-ghost p-danger">Programı sil</button>
    </div>
+   <button type="button" id="p-altfind" class="btn-ghost" title="Programındaki dersler için çakışmasız alternatif kombinasyonlar ara">Alternatif bul</button>
    <span class="p-credits" title="Toplam kredi ve AKTS"><span>Toplam</span><b id="p-credits-val">·</b></span>
   </div>
 
@@ -634,7 +636,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  veri kaynağı İstanbul Teknik Üniversitesi
 </footer>
 
-<script type="module" src="assets/app.js?v=45343f3456fd"></script>
+<script type="module" src="assets/app.js?v=b10031bfc078"></script>
 <script>
 (function () {
   var root = document.documentElement;

@@ -25,6 +25,7 @@ import { parseOBSTranscript, transcriptLatest, matchTranscriptToPlan, mergeTrans
 import { versionedKey, readLocalState, writeLocalState, isPlainObject } from './persistence.js';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from './backup.js';
 import { buildBalancedPlan } from './planner.js';
+import { parseSessions, candidatesByCode, evaluate, findAlternatives, presetPrefs, WEEKDAYS } from './altfind.js';
 
 test('tek yedek dosyası program ve GANO durumunu doğrular ve geri yükler', () => {
   const source = {
@@ -1500,4 +1501,77 @@ test('buildBalancedPlan 0 kredili dersi (ör. ATA) yüksek VF oranına rağmen z
   assert.equal(result.terms.length, 1, 'hepsi tek dönemde toplanabilmeli');
   const ata = result.terms[0].courses.find((c) => c.code === 'ATA 121');
   assert.doesNotMatch(ata.reason, /zor ders/);
+});
+
+// --- altfind: Program → "Alternatif Bul" ---
+
+test('parseSessions "Gün BB:BB/BB:BB" biçimini dakikaya çevirir, boş/ters aralığı atar', () => {
+  assert.deepEqual(parseSessions('Pazartesi 09:00/10:29'), [{ day: 'Pazartesi', start: 540, end: 629 }]);
+  assert.equal(parseSessions('').length, 0);
+  assert.equal(parseSessions('Pazartesi 10:00/10:00').length, 0); // end>start değil
+});
+
+const AF_ROWS = [
+  ['A1', 'AAA 100', 'A dersi', 'AAA', '-', 'Pazartesi 09:00/10:29', 40, 0, 'LS', 'Fiziksel'],
+  ['A2', 'AAA 100', 'A dersi', 'AAA', '-', 'Salı 09:00/10:29', 40, 0, 'LS', 'Fiziksel'],
+  ['B1', 'BBB 200', 'B dersi', 'BBB', '-', 'Pazartesi 09:30/10:59', 40, 0, 'LS', 'Fiziksel'],
+  ['B2', 'BBB 200', 'B dersi', 'BBB', '-', 'Çarşamba 09:00/10:29', 40, 0, 'LS', 'Fiziksel'],
+];
+
+test('candidatesByCode yalnız istenen kodları gruplar', () => {
+  const map = candidatesByCode(AF_ROWS, new Set(['AAA 100']));
+  assert.equal(map.size, 1);
+  assert.equal(map.get('AAA 100').length, 2);
+});
+
+test('findAlternatives mevcut çakışan seçimden çakışmasız bir kombinasyona geçer', () => {
+  const codes = new Set(['AAA 100', 'BBB 200']);
+  const currentByCode = new Map([['AAA 100', 'A1'], ['BBB 200', 'B1']]); // A1+B1 Pazartesi'de çakışır
+  const { combos } = findAlternatives(AF_ROWS, codes, presetPrefs(null), { currentByCode, limit: 10 });
+  assert.ok(combos.length > 0, 'çakışmasız en az bir kombinasyon bulunmalı');
+  for (const c of combos) {
+    const aCrn = c.sections.find((s) => s.code === 'AAA 100').crn;
+    const bCrn = c.sections.find((s) => s.code === 'BBB 200').crn;
+    assert.ok(!(aCrn === 'A1' && bCrn === 'B1'), 'A1+B1 çakışan kombinasyon sonuçta olmamalı');
+  }
+});
+
+// AAA 100'ün tek şubesi var (A1); BBB 200'ün Çarşamba-dışı tek şubesi (B1)
+// A1 ile çakışır — Çarşamba boş kilitliyken hiçbir kombinasyon geçerli olamaz.
+const AF_ROWS_LOCKED = [
+  ['A1', 'AAA 100', 'A dersi', 'AAA', '-', 'Pazartesi 09:00/10:29', 40, 0, 'LS', 'Fiziksel'],
+  ['B1', 'BBB 200', 'B dersi', 'BBB', '-', 'Pazartesi 09:30/10:59', 40, 0, 'LS', 'Fiziksel'],
+  ['B2', 'BBB 200', 'B dersi', 'BBB', '-', 'Çarşamba 09:00/10:29', 40, 0, 'LS', 'Fiziksel'],
+];
+
+test('findAlternatives kilitli "gunler" tercihini gevşetmez — eşleşme yoksa boş döner', () => {
+  const codes = new Set(['AAA 100', 'BBB 200']);
+  const prefs = { ...presetPrefs(null), days: { ...presetPrefs(null).days, Çarşamba: 'free' } };
+  const { combos, relaxed } = findAlternatives(AF_ROWS_LOCKED, codes, prefs, { locked: new Set(['day:Çarşamba']), limit: 10 });
+  assert.equal(combos.length, 0);
+  assert.ok(!relaxed.includes('day:Çarşamba'), 'kilitli tercih gevşetme listesinde görünmemeli');
+});
+
+test('findAlternatives kilitsizken aynı durumda tercihi gevşetip sonuç bulur', () => {
+  const codes = new Set(['AAA 100', 'BBB 200']);
+  const prefs = { ...presetPrefs(null), days: { ...presetPrefs(null).days, Çarşamba: 'free' } };
+  const { combos, relaxed } = findAlternatives(AF_ROWS_LOCKED, codes, prefs, { limit: 10 });
+  assert.ok(combos.length > 0);
+  assert.ok(relaxed.includes('day:Çarşamba'));
+});
+
+test('presetPrefs "fridayFree" Cuma\'yı boş, diğer günleri farketmez bırakır', () => {
+  const p = presetPrefs('fridayFree');
+  assert.equal(p.days.Cuma, 'free');
+  for (const d of WEEKDAYS) if (d !== 'Cuma') assert.equal(p.days[d], 'any');
+});
+
+test('evaluate: "en fazla 1 saat boşluk" aşan günü elemeli', () => {
+  const combo = [
+    { code: 'X', sessions: [{ day: 'Pazartesi', start: 540, end: 629 }] },
+    { code: 'Y', sessions: [{ day: 'Pazartesi', start: 720, end: 809 }] }, // 91dk boşluk
+  ];
+  const { pass, failed } = evaluate(combo, { gap: 60 });
+  assert.equal(pass, false);
+  assert.ok(failed.has('gap'));
 });

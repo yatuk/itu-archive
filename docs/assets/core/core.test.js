@@ -11,7 +11,7 @@ import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList, groupCourseRows, cachedGroupCourseRows } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
-import { examDateMatchesTerm, examScheduleMatchesTerm, examToIcs } from '../views/exams.js';
+import { examDateMatchesTerm, examScheduleMatchesTerm, examToIcs, examMapsQuery } from '../views/exams.js';
 import { topByCount } from '../views/history.js';
 import { icsText, hashShort, foldLine, formatInt } from './utils.js';
 import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
@@ -869,6 +869,15 @@ test('icsText VEVENT satırları üretir', () => {
   assert.ok(out.endsWith('END:VCALENDAR'));
 });
 
+test('icsText LOCATION satırını yalnız verilmişse ekler', () => {
+  const withLoc = icsText([
+    { uid: 'a', title: 'Sınav', startISO: '2026-08-13T09:00:00', endISO: '2026-08-13T11:00:00', location: 'https://www.google.com/maps/search/?api=1&query=x' },
+  ]);
+  assert.ok(withLoc.includes('LOCATION:https://www.google.com/maps/search/?api=1&query=x'));
+  const withoutLoc = icsText([{ uid: 'b', title: 'Ders', startISO: '2026-09-07T09:00:00', endISO: '2026-09-07T11:00:00' }]);
+  assert.ok(!withoutLoc.includes('LOCATION'));
+});
+
 test('icsText RRULE satırını ekler (Faz 4.5 yinelenen oturum)', () => {
   const out = icsText([
     { uid: 'x', title: 'Ders', startISO: '2026-09-07T09:00:00', endISO: '2026-09-07T11:00:00', rrule: 'FREQ=WEEKLY;COUNT=14' },
@@ -1359,6 +1368,29 @@ test('examToIcs Türkçe tarih + saat aralığını ISO zamanlı etkinliğe çev
   assert.ok(ev.title.includes('SSI 518'));
   assert.equal(examToIcs({ date: 'çözülemez', time: '09:00-11:00' }), null);
   assert.equal(examToIcs({ date: '13 Ağustos 2026', time: 'bozuk' }), null);
+});
+
+test('examToIcs konumu düz metin yerine Google Maps arama linki olarak yazar', () => {
+  const ev = examToIcs({
+    crn: '30054', code: 'SSI 518', name: 'Pazarlama Yönetimi', type: 'Final Sınavı',
+    place: 'Ayazağa/İnşaat Binası-B101 Ayazağa/İnşaat Binası-B103',
+    date: '13 Ağustos 2026', time: '09:00-11:00',
+  });
+  assert.ok(ev.location.startsWith('https://www.google.com/maps/search/?api=1&query='));
+  assert.ok(decodeURIComponent(ev.location).includes('İTÜ Ayazağa İnşaat Binası'));
+  assert.ok(ev.desc.includes('Ayazağa/İnşaat Binası-B101'), 'ham yer metni açıklamada da kalmalı');
+});
+
+test('examToIcs yer bilgisi yoksa/açıklanacaksa konum linki üretmez', () => {
+  assert.equal(examToIcs({ date: '13 Ağustos 2026', time: '09:00-11:00', place: 'İlgili Bölümce Açıklanacak' }).location, '');
+  assert.equal(examToIcs({ date: '13 Ağustos 2026', time: '09:00-11:00', place: '-' }).location, '');
+  assert.equal(examToIcs({ date: '13 Ağustos 2026', time: '09:00-11:00' }).location, '');
+});
+
+test('examMapsQuery oda numarasını atar, yalnız kampüs/bina kalır', () => {
+  assert.equal(examMapsQuery('Taşkışla/Mimarlık Binası-303'), 'İTÜ Taşkışla Mimarlık Binası');
+  assert.equal(examMapsQuery(''), '');
+  assert.equal(examMapsQuery(null), '');
 });
 
 test('examScheduleMatchesTerm geçen dönemin cachelenmiş sınavlarını reddeder', () => {

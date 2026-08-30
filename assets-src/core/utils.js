@@ -473,6 +473,7 @@ export function icsText(events, stamp = new Date().toISOString().slice(0, 19)) {
     lines.push(`DTEND:${dt(e.endISO || e.startISO, allDay)}`);
     lines.push(`SUMMARY:${escTxt(e.title)}`);
     if (e.desc) lines.push(`DESCRIPTION:${escTxt(e.desc)}`);
+    if (e.location) lines.push(`LOCATION:${escTxt(e.location)}`);
     if (e.rrule) lines.push(`RRULE:${String(e.rrule)}`); // değer sözdizimi ';' içerir · escape edilmez
     lines.push('END:VEVENT');
   }

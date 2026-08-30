@@ -243,13 +243,30 @@ export function examToIcs(e) {
   const p = (n) => String(n).padStart(2, '0');
   const iso = (h, mi) => `${start.getFullYear()}-${p(start.getMonth() + 1)}-${p(start.getDate())}T${p(h)}:${p(mi)}:00`;
   const place = e.place && e.place !== '-' && e.place !== 'İlgili Bölümce Açıklanacak' ? e.place : '';
+  const query = examMapsQuery(place);
   return {
     uid: `${e.crn}-${e.code}-${e.date}`,
     title: `${e.code}: ${e.name} (${e.type})`,
     startISO: iso(+m[1], +m[2]),
     endISO: iso(+m[3], +m[4]),
     desc: [e.instructor, place].filter(Boolean).join(' · '),
+    location: query ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}` : '',
   };
+}
+
+// "Ayazağa/İnşaat Binası-B101 Ayazağa/İnşaat Binası-B103" gibi bir sınav
+// yerinden Google Maps araması için bina düzeyinde bir sorgu üretir — oda
+// numarası haritada aranamaz, o yüzden yalnızca kampüs/bina kısmı kalır
+// (birden çok salon varsa ilk oturum yeri esas alınır). Saf — test edilebilir.
+export function examMapsQuery(place) {
+  const p = String(place || '').trim();
+  if (!p) return '';
+  // Bina adı kendi içinde boşluk (ve bazen tire: "Fen-Edebiyat") taşıyabildiği
+  // için düz boşluk bölmesi yanlış keser — yalnızca "-Oda" sonrası gelen bir
+  // boşluğu, ardından yeni bir "Kampüs/..." başlıyorsa ayraç sayar.
+  const first = p.split(/(?<=-[^\s-]+)\s+(?=[^\s/]+\/)/)[0];
+  const building = first.replace(/-[^-]*$/, '').replace(/\//g, ' ').trim();
+  return building ? `İTÜ ${building}` : '';
 }
 
 // Faz 4.5b: filtrelenmiş sınav listesini .ics olarak dışa aktarır.

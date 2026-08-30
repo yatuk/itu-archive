@@ -460,13 +460,20 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
   display: flex; gap: 2px; flex-wrap: wrap; width: max-content; max-width: 100%;
   justify-content: center; align-items: center;
   margin: 26px auto 0; padding: 4px; border-radius: 999px;
-  background: var(--panel);
-  background: color-mix(in srgb, var(--panel) 82%, transparent);
   border: 1px solid var(--hairline);
   box-shadow: var(--shadow-card);
+  position: sticky; top: 12px; z-index: 30;
+}
+/* Bulanıklaştırılmış zemin AYRI bir ::before katmanında: backdrop-filter'ı
+   doğrudan .tabs üzerine koymak, transform ile taşınan .tabs-pill'i bazı
+   Chromium sürümlerinde İÇİ BOŞ (dolgusuz, yalnız kenarlık) çiziyordu —
+   filtre kendi child'ını yanlış kompoze ediyor. Zemini ayırmak bunu çözer. */
+.tabs::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit;
+  background: var(--panel);
+  background: color-mix(in srgb, var(--panel) 82%, transparent);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  position: sticky; top: 12px; z-index: 30;
 }
 /* SPA sekmeleri <button>, SEO sayfalarınınki <a> (taranabilir olmalı) —
    ikisi de aynı hapı paylaşır. z-index:1, kayan .tabs-pill'in üstünde kalsın. */

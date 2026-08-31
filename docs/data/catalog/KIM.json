@@ -10062,7 +10062,7 @@
  },
  "KIM 326E": {
   "code": "KIM 326E",
-  "name": "Introduction to Biochemistry",
+  "name": "Biyokimyaya Giriş",
   "nameEn": "Introduction to Biochemistry",
   "language": "English/Türkçe",
   "credits": {
@@ -16209,6 +16209,121 @@
    "Fritz J.S., Gjerde D.T., 2000: Ion Chromatography, Third, completely revised and enlarged edition, Wiley-VCH, Germany"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KIM&dersNo=525"
+ },
+ "KIM 526": {
+  "code": "KIM 526",
+  "name": "Kimyasal Kinetik",
+  "nameEn": "Chemical Kinetics",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giris. Kinetik hız yasaları ve reaksiyon hızının deneysel verilerden hesaplama yöntemleri. Elementer reaksiyonların mekanizmaları. Aktivasyon enerjisi. Çarpısmanın kinetik teorisi. Kimyasal dengenin istatistiksel mekaniği. Reaksiyon hız teorileri. Elementer gaz fazı reaksiyonları. Çözeltide elementer reaksiyonlar. Çözeltideki reaksiyon hızlarını belirleyici faktörler. Đyonlar arasındaki reaksiyonlara uygulanan modeller ve hesaplamaları. Gaz fazında yürütülen bazı reaksiyonların mekanizması. Gaz fazında otooksidasyon reaksiyonları. Homojen kataliz. Yüzeyde ve katı fazda reaksiyonlar. Introduction. Kinetic rate laws and calculation of reaction rate by using experimental data. Elementary reaction mechanism. Energy of activation. Kinetic theory of collisions. Statistical mechanics of chemical equilibria. Reaction rate theories. Elementary gas-phase reactions. Elementary reactions in solutions. Factors influencing reaction rates in solution. Models and calculations applied on reactions between ions. Mechanism of some gas-phase reaction. Otooxidation reaction in gas-phase. Homogeneous catalysis. Reactions on surfaces and in the solid state.",
+  "outcomes": [
+   "Deneysel verilerini kullanarak reaksiyon hızlarını ve aktivasyon enerjisini hesaplamayı öğrenir.",
+   "Kimyasal reaksiyonun baslangıç maddelerinin fiziksel büyüklüklerini kullanarak deney yapmadan, teorik hesaplama yöntemlerini ile reaksiyon hızlarını ve aktivasyon enerjisini belirlemeyi öğrenir.",
+   "Gaz fazı veya çözelti fazında reaksiyona etki eden değisenleri kullanarak hangi parametrelerle reaksiyon hızını değistirebileceğini öğrenir.",
+   "Reaksiyonun baslangıç maddeleri ve ürünleri ile deneysel sonuçları kullanarak reaksiyonun ilerleyis basamaklarını (mekanizmasını) yazabilmeyi öğrenir.",
+   "Homojen katalizi enzim reaksiyonlarına, heterojen katalizi adsorpsiyon reaksiyonlarına uygulayarak deneysel verilerden hesap yapmayı öğrenir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giris (Kimyasal kinetikte temel kavramlar)",
+   "Hafta 2 · Kinetik hız yasaları ve reaksiyon hızının deneysel verilerden hesaplama yöntemleri",
+   "Hafta 3 · Elementer reaksiyonların mekanizmaları",
+   "Hafta 4 · Aktivasyon enerjisi. Çarpısmanın Kinetik Teorisi",
+   "Hafta 5 · Kimyasal dengenin istatistiksel mekaniği",
+   "Hafta 6 · Reaksiyon hız teorileri",
+   "Hafta 7 · Elementer gaz fazı reaksiyonları",
+   "Hafta 8 · Çözeltide elementer reaksiyonlar",
+   "Hafta 9 · Çözeltideki reaksiyon hızlarını belirleyici faktörler",
+   "Hafta 10 · Đyonlar arasındaki reaksiyonlara uygulanan modeller ve hesaplamaları",
+   "Hafta 11 · Gaz fazında yürütülen bazı reaksiyonların mekanizması",
+   "Hafta 12 · Gaz fazında otooksidasyon reaksiyonları",
+   "Hafta 13 · Homojen kataliz",
+   "Hafta 14 · Yüzeyde ve katı fazda reaksiyonlar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giris (Kimyasal kinetikte temel kavramlar)",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kinetik hız yasaları ve reaksiyon hızının deneysel verilerden hesaplama yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Elementer reaksiyonların mekanizmaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Aktivasyon enerjisi. Çarpısmanın Kinetik Teorisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kimyasal dengenin istatistiksel mekaniği",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Reaksiyon hız teorileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Elementer gaz fazı reaksiyonları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Çözeltide elementer reaksiyonlar",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Çözeltideki reaksiyon hızlarını belirleyici faktörler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Đyonlar arasındaki reaksiyonlara uygulanan modeller ve hesaplamaları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Gaz fazında yürütülen bazı reaksiyonların mekanizması",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gaz fazında otooksidasyon reaksiyonları",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Homojen kataliz",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Yüzeyde ve katı fazda reaksiyonlar"
+   }
+  ],
+  "textbooks": [
+   "Chemical Kinetics, 3/E, K.J.Laidler, 3. Baskı, Benjamin Cummings, 1997.",
+   "Chemical Kinetics and Reaction Dynamics, S.K. Upadhyay, Springer, 2006.",
+   "Chemical Kinetics: From Molecular Structure to Chemical Reactivity, L.G.Arnaut, Elsevier, 2007.",
+   "Chemical Kinetics: Fundamentals and New Developments, E.T.Denisov, Elsevier, 2003."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KIM&dersNo=526"
  },
  "KIM 529": {
   "code": "KIM 529",

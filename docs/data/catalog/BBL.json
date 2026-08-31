@@ -18,6 +18,124 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=000"
  },
+ "BBL 502E": {
+  "code": "BBL 502E",
+  "name": "Software Modeling and Design",
+  "nameEn": "Software Modeling and Design",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İsteklerin ve problemin çözümlenmesi.Sistemin, işbirliği yapan nesneler halinde nesneye dayalı olarak nasıl tasarlanması Analiz ve tasarımların ifade UML kullanılması.GRASP kalıpları ve yaygın biçimde kabul gören GoF tasarım kalıplarıYazılım kalitesinin ölçülmesinde ve değerlendirilmesinde kullanılan yazılım metrikleri. Requirement and problem domain analysis.Object oriented designUsing the UML to express software artifacts.GRASP and GoF software design patternsMetrics to evaluate the design quality of software",
+  "outcomes": [
+   "Öğrenciler yazılım kullanım durumları yazabilirler.",
+   "Öğrenciler yazılım kullanım durumları yazabilirler.",
+   "Öğrenciler problem uzayını analiz edilebilirler",
+   "Öğrenciler problem uzayını analiz edilebilirler",
+   "Öğrenciler bir yazılım sisteminin nesneye dayalı olarak tasarlanmasında neler yapılması gerektiğini bilirler.",
+   "Öğrenciler bir yazılım sisteminin nesneye dayalı olarak tasarlanmasında neler yapılması gerektiğini bilirler.",
+   "Öğrenciler önemli yazılım tasarım kalıplarını tanırlar ve kullanılmasını bilirler",
+   "Öğrenciler önemli yazılım tasarım kalıplarını tanırlar ve kullanılmasını bilirler",
+   "Öğrenciler önemli yazılım değerlendirme metriklerini bilirler.",
+   "Öğrenciler önemli yazılım değerlendirme metriklerini bilirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · GİRİŞ Nesneye Dayalı Programlama temel kavramlar",
+   "Hafta 2 · Tümleştirilmiş Yazılım Geliştirme Süreci",
+   "Hafta 3 · Kullanım Durumları",
+   "Hafta 4 · Problem Uzayının Modellenmesi, Analiz",
+   "Hafta 5 · UML sınıf ve etkileşim diyagramları",
+   "Hafta 6 · Yazılım tasarımın aşamaları",
+   "Hafta 7 · GRASP Kalıpları (4 adet)",
+   "Hafta 8 · GRASP Kalıpları kullanılarak örnek tasarımları yapılması",
+   "Hafta 9 · Kodlama ve birim sınama",
+   "Hafta 10 · GRASP Kalıpları (devamı, 5 adet)",
+   "Hafta 11 · GoF Tasarım Kalıpları (5 adet)",
+   "Hafta 12 · GoF Tasarım Kalıpları (devamı, 5 adet)",
+   "Hafta 13 · GoF Tasarım Kalıpları kullanılarak örnek tasarımları yapılması",
+   "Hafta 14 · Yazılım değerlendirmede kullanılan temel ölçütler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "GİRİŞ Nesneye Dayalı Programlama temel kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Tümleştirilmiş Yazılım Geliştirme Süreci",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kullanım Durumları",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Problem Uzayının Modellenmesi, Analiz",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "UML sınıf ve etkileşim diyagramları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yazılım tasarımın aşamaları",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "GRASP Kalıpları (4 adet)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "GRASP Kalıpları kullanılarak örnek tasarımları yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kodlama ve birim sınama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "GRASP Kalıpları (devamı, 5 adet)",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "GoF Tasarım Kalıpları (5 adet)",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "GoF Tasarım Kalıpları (devamı, 5 adet)",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "GoF Tasarım Kalıpları kullanılarak örnek tasarımları yapılması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Yazılım değerlendirmede kullanılan temel ölçütler"
+   }
+  ],
+  "textbooks": [
+   "Craig Larman, Applying UML and Patterns , An Introduction to OOA/D and Iterative Development, 3/e, Prentice Hall PTR, 2005.",
+   "Craig Larman, Applying UML and Patterns , An Introduction to OOA/D and Iterative Development, 3/e, Prentice Hall PTR, 2005."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BBL&dersNo=502"
+ },
  "BBL 539E": {
   "code": "BBL 539E",
   "name": "Kuantum Haberleşme",

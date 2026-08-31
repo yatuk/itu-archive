@@ -89,7 +89,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Funda Bozkurt Saygı",
   "buildings": [
-   "TMB",
+   "undeclared",
    "TMB"
   ],
   "days": [
@@ -104,7 +104,7 @@
    "--",
    "--"
   ],
-  "capacity": 15,
+  "capacity": 12,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -137,7 +137,7 @@
    "--",
    "--"
   ],
-  "capacity": 15,
+  "capacity": 12,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -170,7 +170,7 @@
    "--",
    "--"
   ],
-  "capacity": 15,
+  "capacity": 12,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -199,7 +199,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 20,
+  "capacity": 25,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -232,7 +232,7 @@
    "--",
    "--"
   ],
-  "capacity": 20,
+  "capacity": 25,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -405,24 +405,14 @@
   "level": "LS",
   "name": "Sahne Projesi I (Kredisiz)",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Funda Bozkurt Saygı",
-  "buildings": [
-   "TMB",
-   "TMB"
-  ],
-  "days": [
-   "Perşembe",
-   "Perşembe"
-  ],
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
   "times": [
-   "13:30/15:29",
-   "15:30/17:29"
+   "-/-"
   ],
-  "rooms": [
-   "--",
-   "--"
-  ],
-  "capacity": 5,
+  "rooms": [],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -1191,6 +1181,39 @@
    "--"
   ],
   "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15145",
+  "code": "THO 117",
+  "branch": "THO",
+  "level": "LS",
+  "name": "Kondisyon Ve Esneme I (Krdsz)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Funda Bozkurt Saygı",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 12,
   "enrolled": 0,
   "reserved": "-",
   "programs": [

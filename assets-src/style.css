@@ -37,14 +37,18 @@
 }
 
 :root {
-  --bg: #050806;
-  --panel: #0a100c;
-  --panel-2: #0d1611;
-  --line: #16281d;
+  /* Koyu tema artık nötr/sıcak siyah — eski "fosfor" yeşil tonu tamamen
+     kaldırıldı (itutakvim.com'un koyu temasıyla karşılaştırılıp ölçülmüş
+     gerçek değerler: bg #0a0a0a, metin #f2ede1, panel #141412, kenarlık
+     #2a2a26, soluk metin #9a958a). */
+  --bg: #0a0a0a;
+  --panel: #141412;
+  --panel-2: #1c1c19;
+  --line: #2a2a26;
   --line-hot: #3f351a;
-  --fg: #c8f7dd;
-  --dim: #6da086;
-  --dimmer: #5b8f78;
+  --fg: #f2ede1;
+  --dim: #9a958a;
+  --dimmer: #847f75; /* panel'de 4.63:1 · bg'de 4.97:1 — AA metin sınırını korur */
   /* İTÜ kurumsal altını (Pantone 872'ye yakın) — metin/kenarlık/dolgu
      hepsinde güvenli (bg'de 8.3:1, panelde 8.0:1), o yüzden fosforda vurgu
      ve dolgu aynı değeri paylaşır (bkz. --acid-vivid, sade'de bundan ayrılır). */
@@ -72,7 +76,7 @@
   --tt-line: var(--line);
   --tt-line-soft: color-mix(in srgb, var(--line) 55%, transparent);
   /* Modal karartısı — fosfor değeri donmuştur; sade açık temada hafif perdeye iner. */
-  --scrim: rgba(3, 5, 4, .72);
+  --scrim: rgba(5, 5, 5, .72);
   --w: 1180px;
   /* Faz 1 — premium tasarım token'ları */
   --hairline: rgba(255, 255, 255, .08);
@@ -173,27 +177,10 @@
 [data-theme="sade"] code,
 [data-theme="sade"] pre { font-family: var(--mono); }
 
-/* Açık temalarda küçük/harf aralıklı etiket tipografisi düzeltilir:
-   koyu ve yüksek kontrast temasındaki görünüm PİKSEL DEĞİŞMEZ (yalnızca
-   light/sade için geçersiz kılınır). */
-[data-theme="sade"] thead th {
-  font-weight: 600; letter-spacing: .05em; font-size: 12px;
-}
-[data-theme="sade"] .statbar dt { letter-spacing: .06em; }
-[data-theme="sade"] .eyebrow { font-size: 12px; letter-spacing: .05em; }
-/* Küçük/harf aralıklı etiketlerde wide-tracking azaltılır (koyu tema korunur). */
-[data-theme="sade"] .detail dt { letter-spacing: .06em; }
-[data-theme="sade"] .badge { letter-spacing: .08em; }
-[data-theme="sade"] .req-op { letter-spacing: .08em; }
-[data-theme="sade"] .p-crnstrip-label { letter-spacing: .05em; }
-[data-theme="sade"] .tt-chip { letter-spacing: .02em; }
-/* Terminal "// " başlık önekleri sade'de kalkar (.h-disc ile tutarlı); Hakkında
-   başlıklarının .2em harf aralığı da geniş-tracking düzeltmesiyle sakinleşir. */
-[data-theme="sade"] .mh::before,
-[data-theme="sade"] .prose h2::before { content: ""; }
-[data-theme="sade"] .prose h2 { letter-spacing: .05em; }
-/* Izgara blok saat metni 9px — sade'de okunurluk için bir kademe büyür. */
-[data-theme="sade"] .tt-block .tt-time { font-size: 10px; }
+/* Eskiden yalnız sade'de geçersiz kılınan "wide-tracking düzeltmesi" artık
+   TEMEL değer — koyu tema, sade'nin siyahı olduğundan (renk dışında hiçbir
+   yapısal fark yok) burada tekrar tanımlamaya gerek kalmadı; bkz. temel
+   .statbar dt / .eyebrow / .badge / .req-op vb. kuralları. */
 /* Detay paneli — sade yüzeyi: şube kartları beyaz üstüne soluk çizgiyle kayboluyor;
    hafif panel-2 zemini + belirgin kenarlık verilir (fosfor beyaz kartını korur). */
 [data-theme="sade"] .d-sec,
@@ -427,7 +414,7 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
   border: 1px solid var(--line);
 }
 .statbar > div { background: var(--panel); padding: 12px 14px; }
-.statbar dt { color: var(--dimmer); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+.statbar dt { color: var(--dimmer); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
 .statbar dd { margin: 4px 0 0; color: var(--fg); font-size: 15px; }
 .statbar dd.ok { color: var(--acid); }
 
@@ -731,7 +718,7 @@ thead th {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: var(--dimmer);
-  text-align: left; font-weight: 500; letter-spacing: .14em;
+  text-align: left; font-weight: 500; letter-spacing: .05em;
   text-transform: uppercase; font-size: 11px;
   padding: 11px 12px; border-bottom: 1px solid var(--hairline-strong); white-space: nowrap;
 }
@@ -777,7 +764,7 @@ table.tt td.tt-conflict {
   box-shadow: inset 0 0 0 1px var(--red);
 }
 .tt-chip {
-  display: block; width: 100%; text-align: left; font: inherit; font-size: 11px; cursor: pointer;
+  display: block; width: 100%; text-align: left; font: inherit; font-size: 11px; letter-spacing: .02em; cursor: pointer;
   background: var(--panel-2); color: var(--cyan); border: 1px solid var(--line-hot);
   padding: 1px 4px; margin: 1px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
@@ -822,7 +809,7 @@ td.when { color: var(--dim); white-space: pre-line; }
 
 tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line-hot); }
 .detail dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 0; }
-.detail dt { color: var(--dimmer); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+.detail dt { color: var(--dimmer); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
 .detail dd { margin: 0; color: var(--fg); word-break: break-word; }
 .detail .tags { display: flex; flex-wrap: wrap; gap: 4px; }
 @media (max-width: 760px) {
@@ -879,19 +866,18 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .d-secs h4,
 .d-hist h4,
 .d-cat h4 {
-  font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+  font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
   color: var(--dimmer);
   display: inline-block; padding: 3px 10px; border-radius: 999px;
   background: var(--panel-2); border: 1px solid var(--hairline);
 }
 .mh { margin: 22px 0 10px; }
-.mh::before { content: "// "; }
+.mh::before { content: ""; }
 
 /* Geçmiş keşif başlıkları: cümle düzeni, okunur kontrast (≥4.5:1). "//" yalnızca
    fosfor temasında (terminal kimliği); sade'de kalkar. */
 .h-disc { margin: 20px 0 10px; font-size: 13px; font-weight: 600; color: var(--fg); }
-.h-disc::before { content: "// "; color: var(--dim); }
-[data-theme="sade"] .h-disc::before { content: ""; }
+.h-disc::before { content: ""; color: var(--dim); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
@@ -1052,7 +1038,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
   border-left: 1px solid var(--line-hot);
 }
 .req-item { margin: 2px 0; }
-.req-op { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+.req-op { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 .req-or > .req-op { color: var(--amber); }
 .req-and > .req-op { color: var(--cyan); }
 .req-code { color: var(--cyan); }
@@ -1402,7 +1388,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .termcard.missing { border-style: dashed; opacity: .65; }
 .termcard.missing h3 { color: var(--dimmer); }
 .badge {
-  font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
   border: 1px solid var(--line-hot); color: var(--dim); padding: 2px 6px; margin-left: 8px;
 }
 .badge.live { color: var(--on-accent); background: var(--acid-vivid); border-color: var(--acid-vivid); }
@@ -1418,10 +1404,10 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 
 .prose { max-width: 76ch; }
 .prose h2 {
-  font-size: 13px; letter-spacing: .2em; text-transform: uppercase;
+  font-size: 13px; letter-spacing: .05em; text-transform: uppercase;
   color: var(--acid); margin: 30px 0 10px;
 }
-.prose h2::before { content: "// "; color: var(--dimmer); }
+.prose h2::before { content: ""; color: var(--dimmer); }
 .prose p, .prose li { color: var(--dim); }
 .prose code { color: var(--cyan); }
 .prose pre {
@@ -1607,7 +1593,7 @@ footer {
 /* Bu dersi önşart isteyenler */
 .d-req-by { margin: 0 0 16px; }
 .d-req-by h4 {
-  margin: 0 0 8px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  margin: 0 0 8px; font-size: 11px; letter-spacing: .05em; text-transform: uppercase;
   color: var(--dimmer);
 }
 .d-req-list { display: flex; flex-wrap: wrap; gap: 5px; }
@@ -2437,7 +2423,7 @@ body.modal-open { overflow: hidden; }
   display: flex; flex-direction: column; gap: 1px;
   transition: filter 140ms var(--ease-out-expo), transform 140ms var(--ease-spring);
 }
-.tt-block .tt-time { font-size: 9px; letter-spacing: .02em; }
+.tt-block .tt-time { font-size: 10px; letter-spacing: .02em; }
 .tt-block .tt-code { font-weight: 600; font-size: 11px; overflow: hidden; text-overflow: ellipsis; }
 .tt-block .tt-crn { font-size: 9px; }
 /* Dar blok (≤ ~1 saat): yalnızca kod kalır; saat/CRN tooltip'te (E). */
@@ -2563,7 +2549,7 @@ body.modal-open { overflow: hidden; }
   display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
   margin: 8px 0 12px; padding: 6px 12px; border: 1px dashed var(--line-hot); border-radius: 6px;
 }
-.p-crnstrip-label { color: var(--dimmer); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+.p-crnstrip-label { color: var(--dimmer); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
 .p-crnlist { display: flex; flex-wrap: wrap; gap: 4px; }
 .p-crnchip {
   font-size: 11px; color: var(--fg); background: var(--panel-2);
@@ -3591,35 +3577,38 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 .result-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 .data-stale { color: var(--amber); }
 
-[data-theme="sade"] .tagline-fosfor,
-[data-theme="sade"] .statbar,
-[data-theme="sade"] #tab-gecmis,
-[data-theme="sade"] #tab-donemler,
-[data-theme="sade"] #tab-hakkinda { display: none; }
-[data-theme="sade"] .tagline-sade { display: inline; }
-[data-theme="sade"] .masthead { padding-top: 22px; }
-[data-theme="sade"] .tagline { margin: 8px 0 0; }
-[data-theme="sade"] .tabs {
+/* Bu blok eskiden yalnız sade'de geçerliydi ("yoğunluğu azaltılmış arama
+   yüzeyi") — koyu tema artık sade'nin yalnızca siyah hali olduğundan
+   (renk dışında hiçbir yapısal fark yok) aynı kurallar dark'ta da geçerli. */
+[data-theme="sade"] .tagline-fosfor, [data-theme="dark"] .tagline-fosfor,
+[data-theme="sade"] .statbar, [data-theme="dark"] .statbar,
+[data-theme="sade"] #tab-gecmis, [data-theme="dark"] #tab-gecmis,
+[data-theme="sade"] #tab-donemler, [data-theme="dark"] #tab-donemler,
+[data-theme="sade"] #tab-hakkinda, [data-theme="dark"] #tab-hakkinda { display: none; }
+[data-theme="sade"] .tagline-sade, [data-theme="dark"] .tagline-sade { display: inline; }
+[data-theme="sade"] .masthead, [data-theme="dark"] .masthead { padding-top: 22px; }
+[data-theme="sade"] .tagline, [data-theme="dark"] .tagline { margin: 8px 0 0; }
+[data-theme="sade"] .tabs, [data-theme="dark"] .tabs {
   margin-top: 14px; padding: 3px; box-shadow: none;
   backdrop-filter: none; -webkit-backdrop-filter: none;
 }
-[data-theme="sade"] .tabs button,
-[data-theme="sade"] .tabs a,
-[data-theme="sade"] .tabs summary { padding: 7px 13px; letter-spacing: .03em; }
+[data-theme="sade"] .tabs button, [data-theme="dark"] .tabs button,
+[data-theme="sade"] .tabs a, [data-theme="dark"] .tabs a,
+[data-theme="sade"] .tabs summary, [data-theme="dark"] .tabs summary { padding: 7px 13px; letter-spacing: .03em; }
 [data-theme="sade"] .tab-number, [data-theme="dark"] .tab-number { display: none; }
-[data-theme="sade"] .tabs-more { display: block; position: relative; }
-[data-theme="sade"] .tabs-more summary {
+[data-theme="sade"] .tabs-more, [data-theme="dark"] .tabs-more { display: block; position: relative; }
+[data-theme="sade"] .tabs-more summary, [data-theme="dark"] .tabs-more summary {
   list-style: none; cursor: pointer; color: var(--dim); border-radius: 999px;
   white-space: nowrap; user-select: none;
 }
-[data-theme="sade"] .tabs-more summary::-webkit-details-marker { display: none; }
-[data-theme="sade"] .tabs-more summary::after { content: ' ▾'; color: var(--dimmer); }
-[data-theme="sade"] .tabs-more summary:hover,
-[data-theme="sade"] .tabs-more summary.active { color: var(--fg); background: var(--panel-2); }
+[data-theme="sade"] .tabs-more summary::-webkit-details-marker, [data-theme="dark"] .tabs-more summary::-webkit-details-marker { display: none; }
+[data-theme="sade"] .tabs-more summary::after, [data-theme="dark"] .tabs-more summary::after { content: ' ▾'; color: var(--dimmer); }
+[data-theme="sade"] .tabs-more summary:hover, [data-theme="dark"] .tabs-more summary:hover,
+[data-theme="sade"] .tabs-more summary.active, [data-theme="dark"] .tabs-more summary.active { color: var(--fg); background: var(--panel-2); }
 /* Açılış "island" gibi büyüsün: <details> her zaman DOM'da kalır (display
    override), kapalıyken yaza küçültülüp saydamlaşır — native display:none↔
    block sıçraması yerine transform/opacity geçişi. */
-[data-theme="sade"] .tabs-more-menu {
+[data-theme="sade"] .tabs-more-menu, [data-theme="dark"] .tabs-more-menu {
   display: block; position: absolute; right: 0; top: calc(100% + 8px); z-index: 70;
   min-width: 150px; padding: 4px; background: var(--panel);
   border: 1px solid var(--hairline-strong); border-radius: 10px;
@@ -3629,14 +3618,14 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   opacity: 0; pointer-events: none;
   transition: transform 320ms var(--ease-spring), opacity 160ms var(--ease-out-expo);
 }
-[data-theme="sade"] .tabs-more[open] .tabs-more-menu {
+[data-theme="sade"] .tabs-more[open] .tabs-more-menu, [data-theme="dark"] .tabs-more[open] .tabs-more-menu {
   transform: scale(1) translateY(0);
   opacity: 1; pointer-events: auto;
 }
 @media (prefers-reduced-motion: reduce) {
-  [data-theme="sade"] .tabs-more-menu { transform: none; transition: opacity 120ms linear; }
+  [data-theme="sade"] .tabs-more-menu, [data-theme="dark"] .tabs-more-menu { transform: none; transition: opacity 120ms linear; }
 }
-[data-theme="sade"] .tabs-more-menu button {
+[data-theme="sade"] .tabs-more-menu button, [data-theme="dark"] .tabs-more-menu button {
   display: block; width: 100%; text-align: left; border-radius: 7px;
   color: var(--fg); letter-spacing: 0;
 }
@@ -3700,21 +3689,21 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .result-actions #tt-toggle { order: 2; }
   .result-actions #csv { order: 3; }
   .mobile-sort { order: 1; }
-  [data-theme="sade"] .tabs:has(.tabs-more[open]) {
+  [data-theme="sade"] .tabs:has(.tabs-more[open]), [data-theme="dark"] .tabs:has(.tabs-more[open]) {
     overflow: visible; flex-wrap: wrap; mask-image: none;
   }
-  [data-theme="sade"] .tabs-more[open] {
+  [data-theme="sade"] .tabs-more[open], [data-theme="dark"] .tabs-more[open] {
     flex-basis: 100%;
   }
-  [data-theme="sade"] .tabs-more[open] summary {
+  [data-theme="sade"] .tabs-more[open] summary, [data-theme="dark"] .tabs-more[open] summary {
     width: max-content; margin-left: auto;
   }
-  [data-theme="sade"] .tabs-more-menu {
+  [data-theme="sade"] .tabs-more-menu, [data-theme="dark"] .tabs-more-menu {
     position: static; display: flex; width: 100%; min-width: 0;
     margin-top: 4px; padding: 4px 0 0; gap: 4px;
     border-width: 1px 0 0; border-radius: 0; box-shadow: none;
   }
-  [data-theme="sade"] .tabs-more-menu button {
+  [data-theme="sade"] .tabs-more-menu button, [data-theme="dark"] .tabs-more-menu button {
     width: auto; flex: 1; text-align: center;
   }
   [data-theme="sade"] .filters-more {
@@ -3815,8 +3804,8 @@ body { padding-bottom: env(safe-area-inset-bottom); }
     scrollbar-width: none;
   }
   /* Metin %200 büyütüldüğünde max-content genişliği belgeyi itmesin; sekmeler
-     kendi rayında yatay kayar. Yalnız iyileştirme yüzeyi, fosfor değişmez. */
-  [data-theme="sade"] .tabs {
+     kendi rayında yatay kayar. */
+  [data-theme="sade"] .tabs, [data-theme="dark"] .tabs {
     width: auto;
     min-width: 0;
     max-width: calc(100vw - 28px);
@@ -3826,8 +3815,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .tabs::-webkit-scrollbar { display: none; }
   .tabs button,
   .tabs a,
-  [data-theme="sade"] .tabs button,
-  [data-theme="sade"] .tabs summary {
+  .tabs summary {
     padding-inline: 12px;
     font-size: 13px;
   }

@@ -171,7 +171,7 @@ function initTheme() {
     document.documentElement.setAttribute('data-theme', t);
     // Tarayıcı çubuğu sayfa zeminiyle aynı kalsın (mobilde görünür).
     const meta = document.querySelector('meta[name=theme-color]');
-    if (meta) meta.setAttribute('content', t === 'dark' ? '#050806' : '#f4f6f4');
+    if (meta) meta.setAttribute('content', t === 'dark' ? '#0a0a0a' : '#f4f6f4');
     applyTabLabels();
     for (const b of btns) {
       b.setAttribute('aria-pressed', String(b.dataset.theme === t));

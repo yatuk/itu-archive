@@ -844,7 +844,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#f4f6f4">
-<script>(function(){try{var t=localStorage.getItem('itu-theme')==='dark'?'dark':'sade';document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='dark'?'#050806':'#f4f6f4')}catch(e){}})()</script>
+<script>(function(){try{var t=localStorage.getItem('itu-theme')==='dark'?'dark':'sade';document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='dark'?'#0a0a0a':'#f4f6f4')}catch(e){}})()</script>
 <title>{{.Title}} | {{.Lang.SiteTitle}}</title>
 <meta name="description" content="{{.Description}}">
 <link rel="canonical" href="{{.Canonical}}">

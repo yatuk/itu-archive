@@ -151,11 +151,11 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('meta[name=theme-color]')).toHaveAttribute('content', '#f4f6f4');
     await expect(page.locator('#statbar')).toBeHidden();
 
-    // Fosfora geç.
+    // Koyu temaya geç — sade'nin yalnızca siyah hali, statbar burada da gizli.
     await page.locator('.theme-btn[data-theme="dark"]').click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
-    await expect(page.locator('meta[name=theme-color]')).toHaveAttribute('content', '#050806');
-    await expect(page.locator('#statbar')).toBeVisible();
+    await expect(page.locator('meta[name=theme-color]')).toHaveAttribute('content', '#0a0a0a');
+    await expect(page.locator('#statbar')).toBeHidden();
   });
 
   test('mobil header ve gruplanmış ders listesi sıkışmadan çalışır', async ({ page }) => {
@@ -326,10 +326,18 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#view-gecmis')).toBeVisible();
     await expect(page.locator('#tabs-more-label')).toContainText('Geçmiş');
 
-    // dark, sade'nin siyah sürümü: numaralı terminal dizisi burada da kapalı.
+    // dark, sade'nin siyah sürümü: numaralı terminal dizisi ve Daha fazla
+    // gruplaması burada da aynı — renk dışında yapısal fark yok.
     await page.locator('.theme-btn[data-theme="dark"]').click();
     await expect(page.locator('#tab-dersplanim .tab-number')).toBeHidden();
     await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('DERS PLANIM/GPA');
+    await expect(page.locator('#tab-gecmis')).toBeHidden();
+    await expect(page.locator('.statbar')).toBeHidden();
+    await expect(page.locator('.tagline-sade')).toBeVisible();
+    await expect(page.locator('.tagline-fosfor')).toBeHidden();
+    await page.locator('#tabs-more-label').click();
+    await page.locator('.tabs-more [data-nav-view="gecmis"]').click();
+    await expect(page.locator('#view-gecmis')).toBeVisible();
   });
 
   test('yeni sadeleştirme metinleri TR/EN geçişini izler', async ({ page }) => {

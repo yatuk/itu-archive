@@ -5,6 +5,7 @@ import { $, getJSON, esc, setStatus, calendarDayState, fmtDate, downloadICS, has
 import { state } from '../core/store.js?v=dde1e9339338';
 import { initReveal } from '../core/reveal.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
+import { I18N } from '../i18n.js?v=dde1e9339338';
 
 let inited = false;
 
@@ -29,15 +30,15 @@ function saveCalendarPreference() {
   history.replaceState(null, '', `${location.pathname}${p.size ? `?${p}` : ''}#takvim`);
 }
 
-// Tür slug → görünür etiket. Liste kodda sabit değil — hangi türlerin
+// Tür slug → i18n anahtarı. Liste kodda sabit değil — hangi türlerin
 // seçileceğini index.json (seçili yılın types'ı) belirler (P0-4).
-const CAL_TYPE_LABELS = {
-  lisans: 'Lisans',
-  'yatay-cap-yandal': 'Yatay Geçiş / ÇAP / Yandal',
-  onkayit: 'Önkayıt',
-  hazirlik: 'İngilizce Hazırlık',
-  lisansustu: 'Lisansüstü',
-  'ikinci-ogretim-lisansustu': 'II. Öğretim Lisansüstü',
+const CAL_TYPE_KEYS = {
+  lisans: 'calTypeLisans',
+  'yatay-cap-yandal': 'calTypeYatayCapYandal',
+  onkayit: 'calTypeOnkayit',
+  hazirlik: 'calTypeHazirlik',
+  lisansustu: 'calTypeLisansustu',
+  'ikinci-ogretim-lisansustu': 'calTypeIkinciOgretimLisansustu',
 };
 
 // Tür seçicisini seçili yılın index.json'da ilan edilen türlerinden doldurur:
@@ -46,8 +47,8 @@ function populateTypes(yearId) {
   const sel = $('#f-caltype');
   const cal = (state.index?.calendars || []).find((c) => c.yearId === yearId);
   const types = cal?.types || [];
-  sel.innerHTML = '<option value="">tümü</option>' +
-    types.map((slug) => `<option value="${esc(slug)}">${esc(CAL_TYPE_LABELS[slug] || slug)}</option>`).join('');
+  sel.innerHTML = `<option value="">${esc(I18N.t('filterAll'))}</option>` +
+    types.map((slug) => `<option value="${esc(slug)}">${esc(CAL_TYPE_KEYS[slug] ? I18N.t(CAL_TYPE_KEYS[slug]) : slug)}</option>`).join('');
   if (!types.includes(sel.value)) sel.value = '';
 }
 
@@ -76,7 +77,7 @@ export function onShow() {
 }
 
 export async function loadCalendar(yearId, type) {
-  $('#calendar').innerHTML = '<p class="empty">yükleniyor…</p>';
+  $('#calendar').innerHTML = `<p class="empty">${esc(I18N.t('statLoading'))}</p>`;
   try {
     // Tür seçildiyse türe özgü dosya (slug yol-güvenli); yoksa birleşik (geriye uyumlu).
     const path = type
@@ -84,7 +85,7 @@ export async function loadCalendar(yearId, type) {
       : `data/calendar/${yearId}.json`;
     state.calendar = await getJSON(path);
   } catch (e) {
-    $('#calendar').innerHTML = `<p class="empty error">takvim yüklenemedi (${esc(e.message)})</p>`;
+    $('#calendar').innerHTML = `<p class="empty error">${esc(I18N.t('calLoadError'))} (${esc(e.message)})</p>`;
     return;
   }
   renderCalendar();
@@ -99,7 +100,7 @@ function renderCalendar() {
   for (const ev of cal.events) {
     // Scraper'ın ISO start/end'i varsa ona güven (JS'in çözemediği gömülü-saatli
     // aralıklar dahil); yoksa Türkçe metni ayrıştır.
-    const st = calendarDayState(ev.date, new Date(), ev.start && ev.end ? { start: ev.start, end: ev.end } : null);
+    const st = calendarDayState(ev.date, new Date(), ev.start && ev.end ? { start: ev.start, end: ev.end } : null, I18N.lang);
     if (upcomingOnly && st.past) continue;
     if (!groups.has(ev.table)) groups.set(ev.table, []);
     // Etiket canlı hesaptan; tarih çözümlenemediyse kazıyıcının etiketine düş.
@@ -107,8 +108,8 @@ function renderCalendar() {
   }
 
   if (!groups.size) {
-    $('#calendar').innerHTML = '<p class="empty">bu akademik yıl için gelecek etkinlik yok' +
-      (cal.scrapedAt ? ` · son tarama ${fmtDate(cal.scrapedAt)}` : '') + '</p>';
+    $('#calendar').innerHTML = `<p class="empty">${esc(I18N.t('calNoUpcomingEvents'))}` +
+      (cal.scrapedAt ? ` · ${esc(I18N.t('statScraped'))} ${fmtDate(cal.scrapedAt)}` : '') + '</p>';
     return;
   }
 

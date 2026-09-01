@@ -372,7 +372,7 @@ export function parseTurkishDateRange(str) {
 // isoOpsiyonel: scraper'ın yazdığı makinece okunur { start, end } (ISO "2006-01-02").
 // Varsa Türkçe metin ayrıştırmaya tercih edilir · scraper bazı biçimleri
 // (gömülü saatli aralıklar) JS'ten daha sağlam çözer.
-export function calendarDayState(dateStr, today = new Date(), iso) {
+export function calendarDayState(dateStr, today = new Date(), iso, lang = 'tr') {
   let r = null;
   if (iso && iso.start && iso.end) {
     const p = (v) => { const [y, m, d] = String(v).split('-').map(Number); return new Date(y, m - 1, d); };
@@ -385,11 +385,11 @@ export function calendarDayState(dateStr, today = new Date(), iso) {
   const diff = (d) => Math.round((start - d) / 86400000); // >0 geçmiş, 0 bugün, <0 gelecek
   const ds = diff(r.start);
   const de = diff(r.end);
-  if (de > 0) return { past: true, now: false, label: de === 1 ? 'Dün bitti' : `${de} gün geçti` };
-  if (ds > 0) return { past: false, now: true, label: 'Devam ediyor' };
+  if (de > 0) return { past: true, now: false, label: de === 1 ? (lang === 'en' ? 'Ended yesterday' : 'Dün bitti') : (lang === 'en' ? `${de} days ago` : `${de} gün geçti`) };
+  if (ds > 0) return { past: false, now: true, label: lang === 'en' ? 'Ongoing' : 'Devam ediyor' };
   const ahead = -ds;
-  if (ahead === 0) return { past: false, now: true, label: 'Bugün' };
-  return { past: false, now: false, label: ahead === 1 ? 'Yarın' : `${ahead} gün kaldı` };
+  if (ahead === 0) return { past: false, now: true, label: lang === 'en' ? 'Today' : 'Bugün' };
+  return { past: false, now: false, label: ahead === 1 ? (lang === 'en' ? 'Tomorrow' : 'Yarın') : (lang === 'en' ? `${ahead} days left` : `${ahead} gün kaldı`) };
 }
 
 // Oturum sürelerini toplar: ["08:30/11:29", "13:00/15:59"] -> 6 sa/hafta.

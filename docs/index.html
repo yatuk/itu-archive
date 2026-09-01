@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=1786184272f7">
+<link rel="stylesheet" href="assets/style.css?v=051ff8163f6f">
 <!-- Google "Tercih Edilen Kaynak" rozeti (Hakkında sekmesi) — bkz. https://kobiseo.com/araclar/google-onerilen-kaynak/ -->
 <link rel="stylesheet" href="https://kobiseo.com/rozet/rozet.css">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -427,10 +427,10 @@
 
  <section id="view-takvim" class="view" role="tabpanel" aria-labelledby="tab-takvim" hidden>
   <div class="console">
-   <label>akademik yıl <select id="f-year"></select></label>
-   <label>tür <select id="f-caltype"><option value="">tümü</option></select></label>
-   <label class="check"><input type="checkbox" id="f-upcoming" checked> yalnızca gelecek etkinlikler</label>
-   <button type="button" id="cal-ics" class="btn-ghost">takvimi dışa aktar (.ics)</button>
+   <label><span data-i18n="calYearLabel">akademik yıl</span> <select id="f-year"></select></label>
+   <label><span data-i18n="calTypeLabel">tür</span> <select id="f-caltype"><option value="" data-i18n="filterAll">tümü</option></select></label>
+   <label class="check"><input type="checkbox" id="f-upcoming" checked> <span data-i18n="calUpcomingOnly">yalnızca gelecek etkinlikler</span></label>
+   <button type="button" id="cal-ics" class="btn-ghost" data-i18n="calExportICS">takvimi dışa aktar (.ics)</button>
   </div>
   <div id="calendar"></div>
  </section>
@@ -674,7 +674,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=1786184272f7"></script>
+<script type="module" src="assets/app.js?v=051ff8163f6f"></script>
 <script>
 (function () {
   var root = document.documentElement;

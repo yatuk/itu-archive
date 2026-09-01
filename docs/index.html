@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=b8b2bcf82b4e">
+<link rel="stylesheet" href="assets/style.css?v=0f5a0f14dc12">
 <!-- Google "Tercih Edilen Kaynak" rozeti (Hakkında sekmesi) — bkz. https://kobiseo.com/araclar/google-onerilen-kaynak/ -->
 <link rel="stylesheet" href="https://kobiseo.com/rozet/rozet.css">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -332,15 +332,15 @@
 
  <section id="view-gecmis" class="view" role="tabpanel" aria-labelledby="tab-gecmis" hidden>
   <p class="note">
-   <span id="hist-note-count">…</span> dönemin birleştirilmiş kaydı. OBS'de sorulamayan şeyler burada sorulabiliyor:
-   bir dersi yıllar içinde <strong>kim verdi</strong>, ders <strong>hangi dönemlerde açılıyor</strong>,
-   bir öğretim üyesi <strong>hangi dersleri veriyor</strong>.
+   <span id="hist-note-count">…</span><span data-i18n="histNoteLead"> dönemin birleştirilmiş kaydı. OBS'de sorulamayan şeyler burada sorulabiliyor: </span><strong data-i18n="histNoteWho">bir dersi yıllar içinde kim verdi</strong>, <strong data-i18n="histNoteWhen">ders hangi dönemlerde açılıyor</strong>,
+   <strong data-i18n="histNoteWhat">bir öğretim üyesi hangi dersleri veriyor</strong>.
   </p>
   <div class="console">
    <label class="query">
     <span class="sigil">&gt;</span>
     <input id="hq" type="search" autocomplete="off" spellcheck="false"
-           placeholder="ders kodu (BLG 102) veya öğretim üyesi adı…" aria-label="Geçmişte ara">
+           placeholder="ders kodu (BLG 102) veya öğretim üyesi adı…" aria-label="Geçmişte ara"
+           data-i18n-placeholder="histSearchPlaceholder" data-i18n-aria-label="histSearchLabel">
    </label>
   </div>
   <p class="resultline" id="hresultline" aria-live="polite"></p>
@@ -404,33 +404,34 @@
    <label class="query">
     <span class="sigil">&gt;</span>
     <input id="eq" type="search" autocomplete="off" spellcheck="false"
-           placeholder="ders kodu, ad, CRN veya akademisyen…" aria-label="Sınav ara">
+           placeholder="ders kodu, ad, CRN veya akademisyen…" aria-label="Sınav ara"
+           data-i18n-placeholder="examPlaceholder" data-i18n-aria-label="examSearchAriaLabel">
    </label>
    <div class="filters">
-    <label>tür <select id="f-etype"><option value="">hepsi</option></select></label>
-    <label>bina <select id="f-building"><option value="">hepsi</option></select></label>
-    <label>bölüm <select id="f-ebranch"><option value="">hepsi</option></select></label>
-    <button type="button" id="e-ics" class="btn-ghost" title="Filtrelenmiş sınavları takvime aktar">.ics</button>
+    <label><span data-i18n="examType">tür</span> <select id="f-etype"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+    <label><span data-i18n="examBuilding">bina</span> <select id="f-building"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+    <label><span data-i18n="filterBranch">bölüm</span> <select id="f-ebranch"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+    <button type="button" id="e-ics" class="btn-ghost" title="Filtrelenmiş sınavları takvime aktar" data-i18n-title="examIcsTitle">.ics</button>
    </div>
   </div>
   <p class="resultline" id="eresultline" aria-live="polite"></p>
    <div class="tablewrap">
-    <table aria-label="Sınav listesi" id="etable">
+    <table aria-label="Sınav listesi" id="etable" data-i18n-aria-label="examTableAriaLabel">
      <thead>
-      <tr><th>CRN</th><th>Ders</th><th>Adı</th><th>Akademisyen</th><th>Tür</th><th class="yer-col">Yer</th><th>Tarih</th><th>Saat</th></tr>
+      <tr><th data-i18n="examColCRN">CRN</th><th data-i18n="examColCourse">Ders</th><th data-i18n="examColName">Adı</th><th data-i18n="examColInstructor">Akademisyen</th><th data-i18n="examColType">Tür</th><th class="yer-col" data-i18n="examColPlace">Yer</th><th data-i18n="examColDate">Tarih</th><th data-i18n="examColTime">Saat</th></tr>
      </thead>
      <tbody id="erows"></tbody>
     </table>
    </div>
-   <button type="button" id="emore" class="more" hidden>daha fazla göster</button>
+   <button type="button" id="emore" class="more" hidden data-i18n="more">daha fazla göster</button>
  </section>
 
  <section id="view-takvim" class="view" role="tabpanel" aria-labelledby="tab-takvim" hidden>
   <div class="console">
-   <label>akademik yıl <select id="f-year"></select></label>
-   <label>tür <select id="f-caltype"><option value="">tümü</option></select></label>
-   <label class="check"><input type="checkbox" id="f-upcoming" checked> yalnızca gelecek etkinlikler</label>
-   <button type="button" id="cal-ics" class="btn-ghost">takvimi dışa aktar (.ics)</button>
+   <label><span data-i18n="calYearLabel">akademik yıl</span> <select id="f-year"></select></label>
+   <label><span data-i18n="calTypeLabel">tür</span> <select id="f-caltype"><option value="" data-i18n="filterAll">tümü</option></select></label>
+   <label class="check"><input type="checkbox" id="f-upcoming" checked> <span data-i18n="calUpcomingOnly">yalnızca gelecek etkinlikler</span></label>
+   <button type="button" id="cal-ics" class="btn-ghost" data-i18n="calExportICS">takvimi dışa aktar (.ics)</button>
   </div>
   <div id="calendar"></div>
  </section>
@@ -673,7 +674,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=b8b2bcf82b4e"></script>
+<script type="module" src="assets/app.js?v=0f5a0f14dc12"></script>
 <script>
 (function () {
   var root = document.documentElement;

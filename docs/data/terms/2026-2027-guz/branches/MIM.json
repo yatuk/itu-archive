@@ -1214,39 +1214,6 @@
   "classReq": "-"
  },
  {
-  "crn": "13981",
-  "code": "MIM 213",
-  "branch": "MIM",
-  "level": "LS",
-  "name": "Yapısal Analiz ve Tasarım II",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Seden Acun Özgünler , Seda Erdem",
-  "buildings": [
-   "undeclared",
-   "undeclared"
-  ],
-  "days": [
-   "Salı",
-   "Perşembe"
-  ],
-  "times": [
-   "10:00/11:59",
-   "10:30/12:29"
-  ],
-  "rooms": [
-   "--",
-   "--"
-  ],
-  "capacity": 100,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MIM_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "13982",
   "code": "MIM 231E",
   "branch": "MIM",
@@ -4881,6 +4848,39 @@
    "ARC_LS",
    "MIM_LS",
    "MIME_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15180",
+  "code": "MIM 231",
+  "branch": "MIM",
+  "level": "LS",
+  "name": "Yapı Malzemesi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seden Acun Özgünler , Seda Erdem",
+  "buildings": [
+   "MMB",
+   "MMB"
+  ],
+  "days": [
+   "Salı",
+   "Perşembe"
+  ],
+  "times": [
+   "10:00/11:59",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MIM_LS"
   ],
   "prereq": "-",
   "classReq": "-"

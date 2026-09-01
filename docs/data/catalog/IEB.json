@@ -111,5 +111,331 @@
    "Obi, S.C. 2013, Introduction to Manufacturing Systems, AuthorHouse Press."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IEB&dersNo=112"
+ },
+ "IEB 210E": {
+  "code": "IEB 210E",
+  "name": "End. Müh.için Doğrusal Cebir",
+  "nameEn": "Linear Algebra for Indust.Eng.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Doğrusal Denklemler ve Matrisler: Doğrusal denklem sistemleri, matrisler, matris çarpımı, matris işlemlerinin cebirsel özellikleri, özel tipte matrisler (kare, simetrik, dikey, üçgen, köşegen vs.); Doğrusal Sistemlerin Çözümü: Bir matrisin basamak formu ve rankı, doğrusal sistemlerin çözümü, elemanter matrisler, bir matrisin tersi, denk matrisler; Determinantlar: Determinantın tanımı ve özellikleri, kofaktör açılımı ve matris tersi, determinantın diğer uygulamaları, Cramer Kuralı; Reel Vektör Uzayları: Düzlemde ve üç boyutlu uzayda vektörler, vektör uzayının tanımı, alt uzaylar, germe, doğrusal bağımsızlık, taban (baz), boyut, ortonormalleştirme (Gram-Schmidt Yöntemi), projeksiyon matrisi; Özdeğer ve Özvektörler: Köşegenleştirme ve bir matrisin kuvveti, pozitif ve yarı-pozitif tanımlı matrisler, Tekil Değer Ayrışması. Linear Equations and Matrices: Linear systems of equations, matrices, matrix product, algebraic properties of matrix operations, special matrices (square, symmetric, orthogonal, triangular, diagonal, etc.); Solving Linear Systems: Echelon form of a matrix and its rank, solving linear systems, elementary matrices, matrix inverses, equivalent matrices; Determinants: Definition and properties of the determinant, cofactor expansion and finding the inverse of a matrix, applications of the determinant, Cramer’s rule; Real Vector Spaces: Vectors in two- and three-dimensional spaces, definition of a vector space, subspaces, spanning, linear independence, basis, dimension, orthonormalization (Gram-Schmidt process), projection matrix; Eigenvalues and eigenvectors: Diagonalization and the matrix power, positive definite and semi-definite matrices, the Singular Value Decomposition.",
+  "outcomes": [
+   "Çeşitli yöntemler kullanarak doğrusal denklem sistemleri çözmek ve sonuçları yorumlamak.",
+   "Matris tersi ve determinant dahil olmak üzere matris işlemlerini yapmak ve yorumlamak.",
+   "e matris işlemlerini yapmak ve yorumlamak.",
+   "Doğrusal bağımsızlığı, geren kümeleri ve tabanları kavramak.",
+   "Özdeğerler ve özvektörleri kavramak, özdeğer problemlerini çözmek.",
+   "Matris cebrinin ilkelerini doğrusal dönüşümlere uygulamak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Doğrusal denklem sistemleri, Matrisler, Matris çarpımı.",
+   "Hafta 2 · Matris işlemlerinin cebirsel özellikleri, Özel tipte matrisler.",
+   "Hafta 3 · Bir matrisin basamak formu ve rankı, Lineer sistemlerin çözümü.",
+   "Hafta 4 · Elemanter matrisler, Ters matris, Denk matrisler.",
+   "Hafta 5 · Determinant ve özellikleri, Kofaktör açılımı ve matris tersi.",
+   "Hafta 6 · Determinantların diğer uygulamaları, Cramer Kuralı.",
+   "Hafta 7 · Düzlemde ve üç boyutlu uzayda vektörler, Vektör uzayının tanımı, Alt uzaylar.",
+   "Hafta 8 · Germe, Lineer bağımsızlık, Taban (Baz), Boyut",
+   "Hafta 9 · Ortonormalleştirme: Gram-Schmidt Yöntemi, Projeksiyon matrisi ve istatistikte bir uygulaması (En Küçük Kareler Yöntemi).",
+   "Hafta 10 · Özdeğerler, Özvektörler ve stokastik modellemede uygulamaları (Markov geçiş matrisi).",
+   "Hafta 11 · Köşegenleştirme ve bir matrisin kuvveti, Pozitif ve yarı-pozitif tanımlı matrisler.",
+   "Hafta 12 · Tekil Değer Ayrışması.",
+   "Hafta 13 · Doğrusal dönüşümler ve görüntü işlemede uygulamaları.",
+   "Hafta 14 · Kapsayıcı bir endüstri mühendisliği uygulaması: Simpleks Yöntemi."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Doğrusal denklem sistemleri, Matrisler, Matris çarpımı."
+   },
+   {
+    "week": 2,
+    "topic": "Matris işlemlerinin cebirsel özellikleri, Özel tipte matrisler."
+   },
+   {
+    "week": 3,
+    "topic": "Bir matrisin basamak formu ve rankı, Lineer sistemlerin çözümü."
+   },
+   {
+    "week": 4,
+    "topic": "Elemanter matrisler, Ters matris, Denk matrisler."
+   },
+   {
+    "week": 5,
+    "topic": "Determinant ve özellikleri, Kofaktör açılımı ve matris tersi."
+   },
+   {
+    "week": 6,
+    "topic": "Determinantların diğer uygulamaları, Cramer Kuralı."
+   },
+   {
+    "week": 7,
+    "topic": "Düzlemde ve üç boyutlu uzayda vektörler, Vektör uzayının tanımı, Alt uzaylar."
+   },
+   {
+    "week": 8,
+    "topic": "Germe, Lineer bağımsızlık, Taban (Baz), Boyut"
+   },
+   {
+    "week": 9,
+    "topic": "Ortonormalleştirme: Gram-Schmidt Yöntemi, Projeksiyon matrisi ve istatistikte bir uygulaması (En Küçük Kareler Yöntemi)."
+   },
+   {
+    "week": 10,
+    "topic": "Özdeğerler, Özvektörler ve stokastik modellemede uygulamaları (Markov geçiş matrisi)."
+   },
+   {
+    "week": 11,
+    "topic": "Köşegenleştirme ve bir matrisin kuvveti, Pozitif ve yarı-pozitif tanımlı matrisler."
+   },
+   {
+    "week": 12,
+    "topic": "Tekil Değer Ayrışması."
+   },
+   {
+    "week": 13,
+    "topic": "Doğrusal dönüşümler ve görüntü işlemede uygulamaları."
+   },
+   {
+    "week": 14,
+    "topic": "Kapsayıcı bir endüstri mühendisliği uygulaması: Simpleks Yöntemi."
+   }
+  ],
+  "textbooks": [
+   "Strang, G. (2005). Linear Algebra and Its Applications, 4th ed. USA: Cengage Learning."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IEB&dersNo=210"
+ },
+ "IEB 213E": {
+  "code": "IEB 213E",
+  "name": "Endüstriyel Sistemlerde Bilgi Yönetimi",
+  "nameEn": "Data Manag.in Industrial Syst.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "İşletmelerdeki bilişim sistemlerini anlamak ve analiz etmek. Bilişim sistemlerini tasarlamak için temel yetkinlikleri kazanmak. To understand the information systems in businesses. To analyze the information systems in businesses. To gain the fundamental qualifications to design information systems in businesses.",
+  "outcomes": [
+   "Yönetim bilişim sistemleri yapısını anlamak",
+   "MS Access veritabanı yazılımını kullanmak",
+   "Yönetim bilişim sistemleri tasarlama becerisi geliştirmek.",
+   "İşletmede ERP, CRM sistemi seçiminde temel alınacak noktaları kavramak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel terminoloji, veri yönetimi ve çevresi",
+   "Hafta 2 · Endüstriyel Sistemlerde bilişim sistemleri, veri kaynakları, veri tabanı tarihi ve bugünü",
+   "Hafta 3 · Endüstriyel sistemlerde veri modellemeye giriş",
+   "Hafta 4 · Kavramsal ve mantıksal veri modelleri",
+   "Hafta 5 · Fiziksel veri modellemeye giriş",
+   "Hafta 6 · Fiziksel tasarım bileşenleri: veri tipleri, kısıtlar, saklı yordam ve tetikleyiciler",
+   "Hafta 7 · SQL diline giriş",
+   "Hafta 8 · SQL ile çok tablolu sorgular oluşturma",
+   "Hafta 9 · Rapor tipleri ve raporlamaya giriş",
+   "Hafta 10 · Veri ambarı tanımı ve endüstriyel sistemlerde raporlama örnekleri",
+   "Hafta 11 · Büyük veriye giriş ve yeni nesil veri tabanlarına giriş",
+   "Hafta 12 · NoSQL veri tabanı örnekleri",
+   "Hafta 13 · Veri Analitiğine giriş ve endüstriyel uygulamaları",
+   "Hafta 14 · Endüstriyel büyük veri analitiği uygulamaları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel terminoloji, veri yönetimi ve çevresi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Endüstriyel Sistemlerde bilişim sistemleri, veri kaynakları, veri tabanı tarihi ve bugünü",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Endüstriyel sistemlerde veri modellemeye giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kavramsal ve mantıksal veri modelleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Fiziksel veri modellemeye giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Fiziksel tasarım bileşenleri: veri tipleri, kısıtlar, saklı yordam ve tetikleyiciler",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "SQL diline giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "SQL ile çok tablolu sorgular oluşturma",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Rapor tipleri ve raporlamaya giriş",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Veri ambarı tanımı ve endüstriyel sistemlerde raporlama örnekleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Büyük veriye giriş ve yeni nesil veri tabanlarına giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "NoSQL veri tabanı örnekleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Veri Analitiğine giriş ve endüstriyel uygulamaları",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Endüstriyel büyük veri analitiği uygulamaları",
+    "outcomes": "2-3"
+   }
+  ],
+  "textbooks": [
+   "Jeff Hoffer, Ramesh Venkataraman 2016, Modern Database Management.",
+   "Andy Oppel 2009, A Begginer’s Guide to Data Modeling.",
+   "Ulrich-Fuller, Laurie, 2017, Access 2016 for Dummies."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IEB&dersNo=213"
+ },
+ "IEB 252E": {
+  "code": "IEB 252E",
+  "name": "Olasılık Teorisi",
+  "nameEn": "Theory of Probability",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Endüstri Mühendisliği’nin önemli bir alanı olan Olasılık Teorisi’ne temel bir giriş yapmak. Konuların teorik anlatımına ek olarak örnekler yoluyla olası uygulamaları göstermek. Making a basic introduction to the Theory of Probability which is an important foundation of Industrial Engineering. Showing possible applications, in addition to the theoretical presentation of the subjects, through examples.",
+  "outcomes": [
+   "Olasılık Teorisi için temel teorik altyapı bilgisini öğrenmek",
+   "Rassal değişkenleri ve kullanımını öğrenmek",
+   "Beklenen değeri geniş bir bakış açısıyla öğrenmek",
+   "Olasılıklarda bazı sınırları bulmayı öğrenmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Kombinasyonal Analiz",
+   "Hafta 2 · Olasılık Aksiyomları",
+   "Hafta 3 · Koşullu Olasılık ve Bağımsızlık",
+   "Hafta 4 · Tekrar",
+   "Hafta 5 · Rassal DEğişkenler (Kesikli)",
+   "Hafta 6 · Rassal Değişkenler (Kesikli ve Sürekli)",
+   "Hafta 7 · Rassal Değişkenler (Sürekli)",
+   "Hafta 8 · Tekrar",
+   "Hafta 9 · Bileşik Dağılımlı Rassal Değişkenler",
+   "Hafta 10 · Bileşik Dağılımlı Rassal Değişkenler",
+   "Hafta 11 · Beklenen Değerin Özellikleri",
+   "Hafta 12 · Tekrar",
+   "Hafta 13 · Markov Zincirleri",
+   "Hafta 14 · Limit Teoremleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kombinasyonal Analiz",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık Aksiyomları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Koşullu Olasılık ve Bağımsızlık",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Tekrar",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Rassal DEğişkenler (Kesikli)",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Rassal Değişkenler (Kesikli ve Sürekli)",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Rassal Değişkenler (Sürekli)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Tekrar",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Bileşik Dağılımlı Rassal Değişkenler",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Bileşik Dağılımlı Rassal Değişkenler",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Beklenen Değerin Özellikleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Tekrar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Markov Zincirleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Limit Teoremleri",
+    "outcomes": "4"
+   }
+  ],
+  "textbooks": [
+   "Sheldon Ross; A First Course in Probability, 7th Edition, Prentice Hall International Inc., 2005."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IEB&dersNo=252"
  }
 }

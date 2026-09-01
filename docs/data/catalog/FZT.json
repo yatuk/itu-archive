@@ -112,5 +112,119 @@
    "J. Bünemann, Group Theory in Physics, Springer, 2024."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FZT&dersNo=203"
+ },
+ "FZT 302E": {
+  "code": "FZT 302E",
+  "name": "Katı Hal Fiziği I",
+  "nameEn": "Solid State Physics I",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 2,
+   "local": 4,
+   "ects": 8
+  },
+  "description": "Atomlar arası kuvvetler, bağlanma ve kristal yapılar, Kristallerde Kırınımlar, kristal yapının belirlenmesi, Örgü Titreşimleri: Termal, Akustik ve Optik Özellikler, Metaller: Serbest Elektron Modeli, Katılarda Enerji Bantları: yaklaşık serbest elektron teorisi ve sıkı bağlanma yaklaşıklığı, Yarı İletkenler Interatomic forces, binding and crystal structures and, Diffraction in crystals, determination of crystal structure, Lattice vibrations: Thermal, Acoustic, and Optical properties, Metals: The Free electron model, Energy bands in solids: nearly free electron mocel and tight-binding approximation, Semiconductors",
+  "outcomes": [
+   "Kristal malzemeleri örgü ve birim hücre cinsinden tanımlamak ve ilgili kristal yapıların bağlanma enerjilerini hesaplamak",
+   "Kristal yapıda kırınım olaylarını anlayabilmek ve böylece malzemenin kristal yapısını belirleyebilmek",
+   "Örgü titreşim kiplerinin kollektif doğasını anlamak ve malzemenin ısıl özelliklerini bu titreşimlerle ilişkilendirebilmek.",
+   "Serbest elektron modelini kavramak ve bu modelin katıların elektronik özelliklerini açıklamadaki yetersizlikleri ve yetkinlikleri hakkında net bir anlayışa sahip olmak.",
+   "Katının elektronik özelliklerini neredeyse serbest elektron ve sıkı bağlanma modeli çercevesinde açıklayabilmek.",
+   "Yarı iletkenlerin temel özelliklerini anlayabilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Kristal yapı: Temel Kristalografi, Kristal örgü ve yapı birimi, kristal düzlemleri ve doğrultular",
+   "Hafta 2 · Örnek kristal yapılar: Kübik ve sıkı paket yapılar, Wigner-Seitz hücresi",
+   "Hafta 3 · Kristallerdeki Kırınımlar: Bragg ve von Laue çıkarımları, ters örgü, Brillouin alanı",
+   "Hafta 4 · Kristallerdeki Kırınımlar: Geometrik ve örgü yapı faktörü hesaplamaları",
+   "Hafta 5 · Atomlar arası kuvvetler, Van-der-Waals, İyonik, Kovalent, Metalik bağlanmalar, Madelung Enerji",
+   "Hafta 6 · Kristal dinamiği, örgü titreşimleri: özdeş atomların zimciri, iki tür atomlu zincir",
+   "Hafta 7 · Salınım kipleri, fononlar, titreşimlerden kaynaklanan ısı sığası, fonon durum yoğunluğu, Debye ve Einstein yaklaşıklıkları",
+   "Hafta 8 · Harmonik olmayan etkiler: ısısal genleşme. Fononlarla ısı iletimi",
+   "Hafta 9 · Metallerde serbest elektronlar: Serbest Elektron Modeli, Serbest elektron gazının taban durumu, sonlu sıcaklıkta serbest elektron gazı, serbest elektron gazının ısı sığası",
+   "Hafta 10 · İletim Elektronlarının Taşınma Özellikleri: Elektronların hareket denklemi, Elektriksel iletkenlik, Isıl iletkenlik ve Wiedeman-Franz yasası, Hall olayı",
+   "Hafta 11 · Enerji Bantları: Periyodik Örgü Potansiyelinin Etkisi, Yaklaşık serbest elektron teorisi; Metal, yalıtkan ve yarıiletken sınıflandırılması",
+   "Hafta 12 · Enerji Bantları: Sıkı bağlanma yaklaşıklığı ve diğer bant yapısı hesaplama yöntemleri, bant yapısının deneysel ölçüm yöntemleri",
+   "Hafta 13 · Fermi yüzeyleri, Bloch elektronu, Elektrik alan içinde elektron dinamiği, bant yapısı etkin kütlele",
+   "Hafta 14 · Yarı İletkenlere giriş: elektron ve deşik, katkısız ve katkılı yarıiletkenler, taşıyıcı konsantrasyonları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kristal yapı: Temel Kristalografi, Kristal örgü ve yapı birimi, kristal düzlemleri ve doğrultular",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Örnek kristal yapılar: Kübik ve sıkı paket yapılar, Wigner-Seitz hücresi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kristallerdeki Kırınımlar: Bragg ve von Laue çıkarımları, ters örgü, Brillouin alanı",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kristallerdeki Kırınımlar: Geometrik ve örgü yapı faktörü hesaplamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Atomlar arası kuvvetler, Van-der-Waals, İyonik, Kovalent, Metalik bağlanmalar, Madelung Enerji",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Kristal dinamiği, örgü titreşimleri: özdeş atomların zimciri, iki tür atomlu zincir",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Salınım kipleri, fononlar, titreşimlerden kaynaklanan ısı sığası, fonon durum yoğunluğu, Debye ve Einstein yaklaşıklıkları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Harmonik olmayan etkiler: ısısal genleşme. Fononlarla ısı iletimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Metallerde serbest elektronlar: Serbest Elektron Modeli, Serbest elektron gazının taban durumu, sonlu sıcaklıkta serbest elektron gazı, serbest elektron gazının ısı sığası",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "İletim Elektronlarının Taşınma Özellikleri: Elektronların hareket denklemi, Elektriksel iletkenlik, Isıl iletkenlik ve Wiedeman-Franz yasası, Hall olayı",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Enerji Bantları: Periyodik Örgü Potansiyelinin Etkisi, Yaklaşık serbest elektron teorisi; Metal, yalıtkan ve yarıiletken sınıflandırılması",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Enerji Bantları: Sıkı bağlanma yaklaşıklığı ve diğer bant yapısı hesaplama yöntemleri, bant yapısının deneysel ölçüm yöntemleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Fermi yüzeyleri, Bloch elektronu, Elektrik alan içinde elektron dinamiği, bant yapısı etkin kütlele",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Yarı İletkenlere giriş: elektron ve deşik, katkısız ve katkılı yarıiletkenler, taşıyıcı konsantrasyonları",
+    "outcomes": "6"
+   }
+  ],
+  "textbooks": [
+   "Introduction to Solid State Physics/ Charles Kittel- 8th ed. John Wiley and Sons Inc, 2019."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FZT&dersNo=302"
  }
 }

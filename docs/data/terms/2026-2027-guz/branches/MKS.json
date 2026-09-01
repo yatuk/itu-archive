@@ -60,7 +60,7 @@
   "level": "LU",
   "name": "Transport Tekn. İleri Konular",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Adem Candaş",
+  "instructor": "Adem Candaş , Eren Kalay",
   "buildings": [
    "undeclared"
   ],
@@ -114,7 +114,7 @@
   "level": "LU",
   "name": "Intro.to Compt.Aided Engineer",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cevat Erdem İmrak",
+  "instructor": "Cevat Erdem İmrak , Adem Candaş",
   "buildings": [
    "undeclared"
   ],
@@ -197,6 +197,33 @@
   ],
   "rooms": [],
   "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15154",
+  "code": "MKS 593",
+  "branch": "MKS",
+  "level": "LU",
+  "name": "Konstrüksiyon.Tolerans Analizi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Serpil Kurt Habiboğlu , Umut Şahin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

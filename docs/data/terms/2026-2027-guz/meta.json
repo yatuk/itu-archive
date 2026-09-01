@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-08-31T08:44:07Z"
+  "lastSuccessfulAt": "2026-09-01T07:53:01Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-08-31T08:44:07Z",
+ "scrapedAt": "2026-09-01T07:53:01Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5013,
- "courses": 3502,
+ "sections": 5043,
+ "courses": 3524,
  "branches": [
   {
    "code": "ABM",
@@ -272,7 +272,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 22
+   "sections": 26
   },
   {
    "code": "DNK",
@@ -293,7 +293,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 47
+   "sections": 49
   },
   {
    "code": "DUM",
@@ -444,7 +444,7 @@
     "LS",
     "LU"
    ],
-   "sections": 207
+   "sections": 208
   },
   {
    "code": "FRA",
@@ -488,7 +488,7 @@
     "LS",
     "LU"
    ],
-   "sections": 114
+   "sections": 113
   },
   {
    "code": "GGP",
@@ -639,6 +639,13 @@
    "sections": 6
   },
   {
+   "code": "ISH",
+   "levels": [
+    "LS"
+   ],
+   "sections": 3
+  },
+  {
    "code": "ISL",
    "levels": [
     "LS",
@@ -672,7 +679,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 56
+   "sections": 57
   },
   {
    "code": "ITY",
@@ -744,7 +751,7 @@
     "LS",
     "LU"
    ],
-   "sections": 169
+   "sections": 172
   },
   {
    "code": "KMM",
@@ -832,7 +839,7 @@
     "LS",
     "LU"
    ],
-   "sections": 119
+   "sections": 120
   },
   {
    "code": "MBA",
@@ -959,14 +966,14 @@
    "levels": [
     "LU"
    ],
-   "sections": 8
+   "sections": 9
   },
   {
    "code": "MMD",
    "levels": [
     "LS"
    ],
-   "sections": 2
+   "sections": 17
   },
   {
    "code": "MMI",
@@ -1364,14 +1371,14 @@
    "levels": [
     "LS"
    ],
-   "sections": 41
+   "sections": 42
   },
   {
    "code": "THO",
    "levels": [
     "LS"
    ],
-   "sections": 39
+   "sections": 38
   },
   {
    "code": "TKY",
@@ -1529,11 +1536,11 @@
   }
  ],
  "stats": {
-  "sections": 5013,
-  "courses": 3502,
-  "branches": 213,
-  "instructors": 1721,
-  "capacity": 243665,
+  "sections": 5043,
+  "courses": 3524,
+  "branches": 214,
+  "instructors": 1730,
+  "capacity": 245593,
   "enrolled": 1204
  }
 }

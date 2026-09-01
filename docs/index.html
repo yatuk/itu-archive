@@ -120,6 +120,11 @@
       "@type": "Question",
       "name": "İTÜ ders arşivi verisi ne sıklıkla güncelleniyor?",
       "acceptedAnswer": { "@type": "Answer", "text": "Ders programı günde bir kez, kontenjan doluluğu kayıt haftalarında yarım saatte bir otomatik olarak taranır ve arşive eklenir." }
+    },
+    {
+      "@type": "Question",
+      "name": "İTÜ'de ders programı nasıl oluşturulur?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Program sekmesinde CRN girmeden, seçtiğiniz derslere göre çakışmasız bir haftalık program kurabilirsiniz. Alternatif Bul aracı, seçtiğiniz kısıtlara uyan alternatif şube kombinasyonlarını otomatik hesaplar." }
     }
   ]
 }
@@ -597,6 +602,14 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
     akademik yıl için listelenir.
    </p>
 
+   <h2>İTÜ ders programı oluşturma</h2>
+   <p>
+    Program sekmesinde CRN girmeden, seçtiğiniz derslere göre çakışmasız bir haftalık
+    program kurabilirsiniz. "Alternatif Bul" aracı aynı dersin farklı şubeleri arasından
+    seçilen kısıtlara (gün, saat aralığı, öğretim üyesi) uyan alternatif programları otomatik
+    hesaplar ve karşılaştırmalı olarak listeler.
+   </p>
+
    <h2>Sık sorulanlar</h2>
    <p><strong>İTÜ'de geçmiş dönemlerin ders programına nasıl bakılır?</strong><br>
    OBS (obs.itu.edu.tr) yalnızca içinde bulunulan dönemi gösterir, geçmiş dönemler resmî
@@ -610,6 +623,10 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
    <p><strong>İTÜ ders arşivi verisi ne sıklıkla güncelleniyor?</strong><br>
    Ders programı günde bir kez, kontenjan doluluğu kayıt haftalarında yarım saatte bir
    otomatik olarak taranır ve arşive eklenir.</p>
+   <p><strong>İTÜ'de ders programı nasıl oluşturulur?</strong><br>
+   Program sekmesinde CRN girmeden, seçtiğiniz derslere göre çakışmasız bir haftalık program
+   kurabilirsiniz. Alternatif Bul aracı, seçtiğiniz kısıtlara uyan alternatif şube
+   kombinasyonlarını otomatik hesaplar.</p>
 
    <h2>Uyarı</h2>
     <p>

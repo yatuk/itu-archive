@@ -863,7 +863,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
   <div class="mast-top">
    <div class="brand">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
-    <img class="brand-logo" src="/itü_ari.png" alt="" aria-hidden="true" width="32" height="31">
+    <picture><source srcset="/itü_ari.webp" type="image/webp"><img class="brand-logo" src="/itü_ari.png" alt="" aria-hidden="true" width="32" height="31"></picture>
     <p class="brand-title" translate="no"><a href="/">{{.Lang.SiteTitle}}</a></p>
    </div>
   </div>

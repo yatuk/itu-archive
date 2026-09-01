@@ -3332,6 +3332,11 @@ body.modal-open { overflow: hidden; }
   font: 12px/1.5 var(--mono);
 }
 .transcript-input:focus { outline: 2px solid var(--cyan); outline-offset: 1px; }
+.transcript-file-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: -4px; }
+.transcript-file-sep { color: var(--dimmer); font-size: 12px; }
+.transcript-file-btn { font-size: 12px; padding: 6px 12px; }
+.transcript-file-status { font-size: 12px; color: var(--dim); }
+.transcript-file-status.error { color: var(--red); }
 .transcript-preview { min-height: 44px; padding: 9px 11px; border: 1px solid var(--hairline); color: var(--dim); font-size: 12px; line-height: 1.5; }
 .transcript-preview.ready { color: var(--fg); border-color: var(--acid); }
 .transcript-preview.error { color: var(--red); border-color: var(--red); }

@@ -28,6 +28,7 @@ import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtT
 import { confirmDialog } from '../core/dialog.js?v=dde1e9339338';
 import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=dde1e9339338';
 import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=dde1e9339338';
+import { extractPdfText } from '../core/pdf-extract.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=dde1e9339338';
 import { buildBalancedPlan } from '../core/planner.js?v=dde1e9339338';
@@ -1294,6 +1295,12 @@ function openTranscriptDialog() {
     <p class="transcript-privacy"><strong>${en ? 'Privacy:' : 'Gizlilik:'}</strong> ${en ? 'Parsing happens only in this browser. The raw transcript is not uploaded or saved; after confirmation, only course codes and grades remain in this browser.' : 'Ayrıştırma yalnız bu tarayıcıda yapılır. Ham transkript yüklenmez ve kaydedilmez; onaydan sonra yalnız ders kodları ve notlar bu tarayıcıda kalır.'}</p>
     <label class="transcript-label" for="transcript-input">${en ? 'Transcript text' : 'Transkript metni'}</label>
     <textarea id="transcript-input" class="transcript-input" rows="9" spellcheck="false" autocomplete="off" placeholder="${en ? 'Paste the copied transcript here…' : 'Kopyaladığın transkripti buraya yapıştır…'}"></textarea>
+    <div class="transcript-file-row">
+      <span class="transcript-file-sep">${en ? 'or' : 'ya da'}</span>
+      <button type="button" class="btn-ghost transcript-file-btn" id="transcript-file-btn">${en ? 'Upload transcript PDF' : 'Transkript PDF yükle'}</button>
+      <input type="file" id="transcript-file" accept="application/pdf" hidden>
+      <span id="transcript-file-status" class="transcript-file-status"></span>
+    </div>
     <div class="transcript-preview" id="transcript-preview" aria-live="polite">${en ? 'No text pasted yet.' : 'Henüz metin yapıştırılmadı.'}</div>
     <div class="dlg-actions">
       <button type="button" class="dlg-cancel btn-ghost">${en ? 'Cancel' : 'Vazgeç'}</button>
@@ -1306,6 +1313,9 @@ function openTranscriptDialog() {
   const input = host.querySelector('#transcript-input');
   const preview = host.querySelector('#transcript-preview');
   const ok = host.querySelector('.dlg-ok');
+  const fileInput = host.querySelector('#transcript-file');
+  const fileBtn = host.querySelector('#transcript-file-btn');
+  const fileStatus = host.querySelector('#transcript-file-status');
   let parsed = null;
   let inferredCode = '';
   let settled = false;
@@ -1359,6 +1369,25 @@ function openTranscriptDialog() {
     };
 
     input.addEventListener('input', refresh);
+    fileBtn.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', async () => {
+      const file = fileInput.files?.[0];
+      if (!file) return;
+      fileStatus.textContent = en ? 'Reading…' : 'Okunuyor…';
+      fileStatus.className = 'transcript-file-status';
+      try {
+        input.value = await extractPdfText(file);
+        refresh();
+        fileStatus.textContent = en ? `Read from ${file.name}.` : `${file.name} dosyasından okundu.`;
+      } catch {
+        fileStatus.textContent = en
+          ? 'Could not read this PDF — paste the text instead.'
+          : 'Bu PDF okunamadı — bunun yerine metni yapıştır.';
+        fileStatus.className = 'transcript-file-status error';
+      } finally {
+        fileInput.value = '';
+      }
+    });
     host.querySelector('.dlg-close').addEventListener('click', () => close(null));
     host.querySelector('.dlg-cancel').addEventListener('click', () => close(null));
     ok.addEventListener('click', () => {

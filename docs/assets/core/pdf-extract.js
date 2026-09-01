@@ -1,0 +1,4 @@
+let pdfjsPromise=null;function loadPdfjs(){return pdfjsPromise||(pdfjsPromise=import("../vendor/pdfjs/pdf.min.mjs").then(e=>(e.GlobalWorkerOptions.workerSrc=new URL("../vendor/pdfjs/pdf.worker.min.mjs",import.meta.url).href,e))),pdfjsPromise}async function pageLines(e){const i=await e.getTextContent(),s=[];let n=null,t=[];const o=()=>{t.length&&(t.sort((e,t)=>e.x-t.x),s.push(t.map(e=>e.str).join(" "))),t=[]};for(const e of i.items){const s=e.transform[5];(n===null||Math.abs(s-n)>2)&&(o(),n=s),t.push({str:e.str,x:e.transform[4]})}return o(),s}export async function extractPdfText(e){const s=await loadPdfjs(),o=await e.arrayBuffer(),t=await s.getDocument({data:o,isEvalSupported:!1}).promise,n=[];for(let e=1;e<=t.numPages;e++)n.push((await pageLines(await t.getPage(e))).join(`
+`));return n.join(`
+
+`)}

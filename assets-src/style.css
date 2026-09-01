@@ -496,12 +496,16 @@ button:active, .chip:active, .chip-x:active, .th-sort:active, .row-toggle:active
 .tabs-pill {
   position: absolute; top: 0; left: 0; height: 0; width: 0;
   border-radius: 999px; background: var(--acid-vivid);
-  transition: transform 320ms var(--ease-spring), width 320ms var(--ease-spring),
-    height 320ms var(--ease-spring), opacity 180ms var(--ease-out-expo);
+  /* Yalnız transform (+opacity) animasyonlu — width/height JS'ten anında
+     "snap" olur. width'i transform'la BİRLİKTE animasyonlu tutmak (önceki
+     sürüm) bazı Chromium sürümlerinde ara kareyi içi boş/konumsuz çiziyordu
+     (layout + compositor animasyonu aynı elementte karışınca oluşan bilinen
+     bir yarış durumu) — width'i çıkarmak konum kaymasını korurken bu
+     yarışı tamamen ortadan kaldırır. */
+  transition: transform 320ms var(--ease-spring), opacity 180ms var(--ease-out-expo);
   opacity: 0; pointer-events: none; z-index: 0;
 }
 .tabs-pill.is-visible { opacity: 1; }
-.tabs-pill.is-jumping { transition: opacity 180ms var(--ease-out-expo); }
 @media (prefers-reduced-motion: reduce) {
   .tabs-pill { transition: opacity 120ms linear; }
 }
@@ -3447,23 +3451,26 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .label-mobile { display: inline; }
 }
 
-/* Program mobil GÜN LİSTESİ (varsayılan; "ızgara görünümü" ile değişir). */
-.dp-daylist { display: flex; flex-direction: column; gap: 12px; }
-.dp-day h4 {
-  color: var(--dim); font-size: 12px; letter-spacing: .08em;
-  text-transform: uppercase; margin: 0 0 6px;
+/* Program mobil TEK GÜN SEKMESİ (varsayılan; "ızgara görünümü" ile tam
+   haftaya değişir) — asıl izgara kodunu paylaşır, yalnız tek sütuna daralır. */
+.tt-daytabs {
+  display: flex; gap: 4px; overflow-x: auto; padding: 2px 0 10px;
+  -webkit-overflow-scrolling: touch;
 }
-.dp-sess {
-  display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline;
-  width: 100%; text-align: left; font: inherit; font-size: 14px;
-  background: var(--panel); border: 1px solid var(--hairline-strong);
-  border-radius: 8px; padding: 10px 12px; margin-bottom: 6px; color: var(--fg);
-  min-height: 44px;
+.tt-daytab {
+  flex: 1 1 0; min-width: 44px; padding: 8px 4px; border-radius: 8px;
+  border: 1px solid var(--hairline-strong); background: var(--panel);
+  color: var(--dim); font: inherit; font-weight: 600; font-size: 13px;
+  text-align: center; position: relative;
 }
-.dp-sess b { color: var(--cyan); font-weight: 700; }
-.dp-sess > span { color: var(--dim); }
-.dp-sess-conf { border-color: var(--red); box-shadow: inset 0 0 0 1px var(--red); }
-.dp-sess-conf-tag { color: var(--red); font-size: 11px; font-style: normal; margin-left: auto; }
+.tt-daytab.has-session::after {
+  content: ""; position: absolute; bottom: 4px; left: 50%; translate: -50% 0;
+  width: 4px; height: 4px; border-radius: 999px; background: var(--acid-vivid);
+}
+.tt-daytab.active {
+  color: var(--on-accent); background: var(--acid-vivid); border-color: transparent; font-weight: 700;
+}
+.tt-daytab.active.has-session::after { background: var(--on-accent); }
 /* Mobilde ders çıkarma/özet önce, çizelge sonra gelir. */
 @media (max-width: 860px) {
   .p-layout .p-panel { order: 1; }

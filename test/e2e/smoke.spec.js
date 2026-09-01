@@ -800,7 +800,7 @@ test.describe('Haftalık program kurucu', () => {
     await expect(satir.locator('.p-code')).toContainText('MAT 271E');
     await expect(satir.locator('.p-crn')).toContainText(/CRN\s*\d+/);
     await expect(satir.locator('.p-when')).not.toHaveText('Zaman açıklanmadı');
-    await expect(page.locator('#p-grid .dp-daylist')).toBeVisible();
+    await expect(page.locator('#p-grid .tt-daytabs')).toBeVisible();
 
     const removeBox = await satir.locator('.p-remove').boundingBox();
     expect(removeBox.width).toBeGreaterThanOrEqual(44);
@@ -820,7 +820,7 @@ test.describe('Haftalık program kurucu', () => {
     await expect(page.locator('#p-list .empty')).toBeVisible();
     await page.locator('.toast-action', { hasText: 'geri al' }).click();
     await expect(page.locator('#p-list .p-item')).toHaveCount(1);
-    await expect(page.locator('#p-grid .dp-daylist')).toBeVisible();
+    await expect(page.locator('#p-grid .tt-daytabs')).toBeVisible();
   });
 
   test('bölümden seçim, yeni program, adlandırma, kopyalama ve silme çalışır', async ({ page }) => {

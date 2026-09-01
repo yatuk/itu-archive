@@ -406,12 +406,12 @@ func (b *Builder) Generate() error {
 		if err := b.writeIndexPage(terms); err != nil {
 			return err
 		}
-	} else {
-		// İniş sayfaları ("İTÜ ders planı", "GANO hesaplama" vb.) — yalnızca TR.
-		for _, p := range landingPages {
-			if err := b.writeLandingPage(p); err != nil {
-				return err
-			}
+	}
+	// İniş sayfaları ("İTÜ ders planı", "GANO hesaplama" vb.) — çoğu yalnızca
+	// TR; EN karşılığı olanlar writeLandingPage içinde kendiliğinden üretilir.
+	for _, p := range landingPages {
+		if err := b.writeLandingPage(p); err != nil {
+			return err
 		}
 	}
 
@@ -615,6 +615,12 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 		}
 		for _, code := range brCodes {
 			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/brans/%s/", baseURL, code), Lastmod: latestBranchDate(b.aggs[code], termDates, rootDate)})
+		}
+		for _, p := range landingPages {
+			if p.titleEN == "" {
+				continue
+			}
+			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/%s/", baseURL, p.slug), Lastmod: landingContentUpdated})
 		}
 		data := renderURLSet(entries)
 		if err := os.WriteFile(filepath.Join(b.outRoot, "sitemap.xml"), data, 0o644); err != nil {
@@ -996,6 +1002,16 @@ type landingPage struct {
 	secondary   []landingAction
 	queries     []string // Bu URL'nin sahip olduğu ana arama niyetleri; kanibalizasyon denetiminde kullanılır.
 	features    []string // Yalnızca gerçekte var olan, WebApplication ve sayfa içeriğinde ortak kullanılan yetenekler.
+
+	// EN alanları boşsa (titleEN == "") bu sayfanın İngilizce karşılığı
+	// üretilmez — çoğu iniş sayfası hâlâ yalnızca TR.
+	titleEN       string
+	descriptionEN string
+	h1EN          string
+	bodyEN        []string
+	primaryEN     landingAction
+	secondaryEN   []landingAction
+	featuresEN    []string
 }
 
 type landingAction struct {
@@ -1053,6 +1069,18 @@ var landingPages = []landingPage{
 		},
 		primary:   landingAction{href: "/#dersplanim", label: "GPA / GANO hesaplayıcıyı aç", detail: "Bölümünü seçip ders notlarını gir; dönem ortalaması ve genel ortalama aynı yerde hesaplansın."},
 		secondary: []landingAction{{href: "/ders-plani/", label: "Ders planını görüntüle"}, {href: "/not-ortalamasi/", label: "Harf notu katsayılarını gör"}},
+
+		titleEN: "ITU GPA Calculator", h1EN: "ITU GPA calculator",
+		descriptionEN: "Calculate your ITU GPA: enter course credits and letter grades to see your term average and cumulative weighted GPA together.",
+		featuresEN: []string{"Calculates letter grades weighted by credit", "Shows the term average separately from the cumulative GPA", "Imports grades in your browser by pasting your OBS transcript text or uploading a transcript PDF"},
+		bodyEN: []string{
+			"Your cumulative GPA is on İTÜ's 4.00 scale. Each letter grade carries a coefficient: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0; FF and VF 0.0.",
+			"Enter your grades course by course in the My Plan view; your term averages and cumulative GPA are calculated automatically. If you have transfer credits or an existing GPA, enter them in the boxes above.",
+			"You can paste your transcript text from OBS or upload a transcript PDF directly; both are processed only in your browser and never sent to a server.",
+			"This is not an official transcript — check the student information system for your official GPA.",
+		},
+		primaryEN:   landingAction{href: "/#dersplanim", label: "Open the GPA calculator", detail: "Pick your program and enter your grades; term average and cumulative GPA are calculated in one place."},
+		secondaryEN: []landingAction{{href: "/#dersplanim", label: "View your course plan"}, {href: "/en/ders-programi-olustur/", label: "Build your weekly course schedule"}},
 	},
 	{
 		slug: "not-ortalamasi", title: "İTÜ not ortalaması ve harf notları",
@@ -1091,6 +1119,17 @@ var landingPages = []landingPage{
 		},
 		primary:   landingAction{href: "/#program", label: "Haftalık program oluşturmaya başla", detail: "Şubelerini ekle; gün/saat çakışmalarını ve toplam krediyi tek çizelgede gör."},
 		secondary: []landingAction{{href: "/ders-programi/", label: "Açık dersleri ve CRN'leri ara"}, {href: "/sinav-programi/", label: "Final çakışmalarını kontrol et"}},
+
+		titleEN: "ITU Course Schedule Builder", h1EN: "Build your ITU course schedule",
+		descriptionEN: "Build your ITU weekly course schedule by adding sections and CRNs, automatically find conflict-free alternative schedules, and export it as an image or calendar file.",
+		featuresEN: []string{"Adds sections and CRNs to a weekly grid and flags time conflicts", "Find Alternatives: automatically computes alternative section combinations that fit your constraints", "Exports your schedule as an image or .ics calendar file"},
+		bodyEN: []string{
+			"Search open sections by course code, name, or CRN and add them to your weekly grid. Courses at the same time are flagged as conflicts.",
+			"The Find Alternatives tool automatically computes different section combinations for your courses that fit constraints like day, time range, or instructor, and lists them side by side.",
+			"Download your finished schedule as an image or .ics calendar file, or copy the selected CRNs for OBS registration.",
+		},
+		primaryEN:   landingAction{href: "/#program", label: "Start building your weekly schedule", detail: "Add your sections; see day/time conflicts and total credits in one grid."},
+		secondaryEN: []landingAction{{href: "/#dersler", label: "Search open courses and CRNs"}, {href: "/en/gano-hesaplama/", label: "Calculate your GPA"}},
 	},
 	{
 		slug: "kontenjan", title: "İTÜ ders kontenjanları ve doluluk",
@@ -1174,22 +1213,37 @@ var landingPages = []landingPage{
 }
 
 func (b *Builder) writeLandingPage(p landingPage) error {
-	if b.l.Code == "en" {
-		return nil // iniş sayfaları yalnızca TR (EN karşılığı yok)
+	en := b.l.Code == "en"
+	if en && p.titleEN == "" {
+		return nil // bu sayfanın İngilizce karşılığı yok
 	}
-	canonical := fmt.Sprintf("%s/%s/", baseURL, p.slug)
+	title, description, h1 := p.title, p.description, p.h1
+	body, primary, secondary, features := p.body, p.primary, p.secondary, p.features
+	inLang, browserReq, howToHead, toolsHead, relatedHead, ariaLaunch, homeHref := "tr-TR",
+		"JavaScript destekleyen güncel bir web tarayıcısı", "Nasıl kullanılır?", "Bu sayfada ne yapabilirsin?",
+		"İlgili araçlar", "Aracı aç", "/"
+	urlPrefix := baseURL
+	if en {
+		title, description, h1 = p.titleEN, p.descriptionEN, p.h1EN
+		body, primary, secondary, features = p.bodyEN, p.primaryEN, p.secondaryEN, p.featuresEN
+		inLang, browserReq, howToHead, toolsHead, relatedHead, ariaLaunch, homeHref = "en",
+			"A modern web browser with JavaScript enabled", "How it works", "What can you do on this page?",
+			"Related tools", "Open the tool", "/en/"
+		urlPrefix = baseURL + "/en"
+	}
+	canonical := fmt.Sprintf("%s/%s/", urlPrefix, p.slug)
 	var paras strings.Builder
-	for _, t := range p.body {
+	for _, t := range body {
 		paras.WriteString("<p>" + template.HTMLEscapeString(t) + "</p>\n")
 	}
 	var related strings.Builder
-	if len(p.secondary) > 0 {
-		related.WriteString(`<h2>İlgili araçlar</h2><ul class="seo-action-list">`)
-		for _, action := range p.secondary {
+	if len(secondary) > 0 {
+		related.WriteString(`<h2>` + template.HTMLEscapeString(relatedHead) + `</h2><ul class="seo-action-list">`)
+		for _, action := range secondary {
 			fmt.Fprintf(&related, `<li><a href="%s"><strong>%s</strong>`,
 				template.HTMLEscapeString(action.href), template.HTMLEscapeString(action.label))
 			detail := action.detail
-			if detail == "" {
+			if detail == "" && !en {
 				detail = landingActionDetails[action.href]
 			}
 			if detail != "" {
@@ -1200,31 +1254,31 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		related.WriteString(`</ul>`)
 	}
 	var capabilities strings.Builder
-	if len(p.features) > 0 {
-		capabilities.WriteString(`<h2>Bu sayfada ne yapabilirsin?</h2><ul>`)
-		for _, feature := range p.features {
+	if len(features) > 0 {
+		capabilities.WriteString(`<h2>` + template.HTMLEscapeString(toolsHead) + `</h2><ul>`)
+		for _, feature := range features {
 			capabilities.WriteString(`<li>` + template.HTMLEscapeString(feature) + `</li>`)
 		}
 		capabilities.WriteString(`</ul>`)
 	}
 	content := template.HTML(buildContent(
-		`<nav class="crumb" aria-label="Breadcrumb"><a href="/">İTÜ Ders Arşivi</a> › <span>`+template.HTMLEscapeString(p.h1)+`</span></nav>`,
-		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(p.h1)),
-		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(p.description)),
-		fmt.Sprintf(`<section class="seo-tool-launch" aria-label="Aracı aç"><div><strong>%s</strong><p>%s</p></div><a class="btn-primary" href="%s">%s</a></section>`,
-			template.HTMLEscapeString(p.primary.label), template.HTMLEscapeString(p.primary.detail),
-			template.HTMLEscapeString(p.primary.href), template.HTMLEscapeString(p.primary.label)),
-		`<h2>Nasıl kullanılır?</h2>`,
+		`<nav class="crumb" aria-label="Breadcrumb"><a href="`+homeHref+`">`+template.HTMLEscapeString(b.l.SiteTitle)+`</a> › <span>`+template.HTMLEscapeString(h1)+`</span></nav>`,
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(h1)),
+		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(description)),
+		fmt.Sprintf(`<section class="seo-tool-launch" aria-label="%s"><div><strong>%s</strong><p>%s</p></div><a class="btn-primary" href="%s">%s</a></section>`,
+			template.HTMLEscapeString(ariaLaunch), template.HTMLEscapeString(primary.label), template.HTMLEscapeString(primary.detail),
+			template.HTMLEscapeString(primary.href), template.HTMLEscapeString(primary.label)),
+		`<h2>`+template.HTMLEscapeString(howToHead)+`</h2>`,
 		paras.String(),
 		capabilities.String(),
 		related.String(),
 	))
 	webPageSchema := map[string]any{
 		"@context": "https://schema.org", "@type": "WebPage", "@id": canonical + "#webpage",
-		"url": canonical, "name": p.title, "description": p.description,
-		"inLanguage": "tr-TR", "dateModified": landingContentUpdated,
+		"url": canonical, "name": title, "description": description,
+		"inLanguage": inLang, "dateModified": landingContentUpdated,
 	}
-	if len(p.features) > 0 {
+	if len(features) > 0 {
 		webPageSchema["mainEntity"] = map[string]any{"@id": canonical + "#application"}
 	}
 	schema := []any{
@@ -1232,24 +1286,24 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		map[string]any{
 			"@context": "https://schema.org", "@type": "BreadcrumbList",
 			"itemListElement": []any{
-				map[string]any{"@type": "ListItem", "position": 1, "name": "İTÜ Ders Arşivi", "item": baseURL + "/"},
-				map[string]any{"@type": "ListItem", "position": 2, "name": p.h1, "item": canonical},
+				map[string]any{"@type": "ListItem", "position": 1, "name": b.l.SiteTitle, "item": urlPrefix + "/"},
+				map[string]any{"@type": "ListItem", "position": 2, "name": h1, "item": canonical},
 			},
 		},
 	}
-	if len(p.features) > 0 {
+	if len(features) > 0 {
 		schema = append(schema, map[string]any{
 			"@context": "https://schema.org", "@type": "WebApplication", "@id": canonical + "#application",
-			"url": canonical, "name": p.h1, "description": p.description,
+			"url": canonical, "name": h1, "description": description,
 			"applicationCategory": "EducationalApplication", "operatingSystem": "Any",
-			"browserRequirements": "JavaScript destekleyen güncel bir web tarayıcısı",
-			"inLanguage":          "tr-TR", "isAccessibleForFree": true, "featureList": p.features,
+			"browserRequirements": browserReq,
+			"inLanguage":          inLang, "isAccessibleForFree": true, "featureList": features,
 			"offers": map[string]any{"@type": "Offer", "price": 0, "priceCurrency": "TRY"},
 		})
 	}
 	jsonld := jsonldScript(schema)
 	return b.writePage(filepath.Join(b.outRoot, p.slug, "index.html"),
-		p.title, p.description, canonical, landingContentUpdated, content, jsonld, false)
+		title, description, canonical, landingContentUpdated, content, jsonld, p.titleEN != "")
 }
 
 // --- helpers ---

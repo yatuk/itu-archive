@@ -264,7 +264,7 @@ func TestPriorityLandingRendersCanonicalWebApplicationSchema(t *testing.T) {
 	b := &Builder{root: root, outRoot: root, l: langTR, version: "test"}
 	var target landingPage
 	for _, page := range landingPages {
-		if page.slug == "gano-hesaplama" {
+		if page.slug == "ders-programi" {
 			target = page
 			break
 		}
@@ -278,12 +278,12 @@ func TestPriorityLandingRendersCanonicalWebApplicationSchema(t *testing.T) {
 	}
 	html := string(body)
 	for _, want := range []string{
-		`<link rel="canonical" href="` + baseURL + `/gano-hesaplama/">`,
+		`<link rel="canonical" href="` + baseURL + `/ders-programi/">`,
 		`"@type":"WebApplication"`,
 		`"applicationCategory":"EducationalApplication"`,
 		`"isAccessibleForFree":true`,
 		`"@type":"BreadcrumbList"`,
-		`href="/#dersplanim"`,
+		`href="/#dersler"`,
 	} {
 		if !strings.Contains(html, want) {
 			t.Errorf("landing çıktısı eksik: %s", want)
@@ -296,6 +296,57 @@ func TestPriorityLandingRendersCanonicalWebApplicationSchema(t *testing.T) {
 		if strings.Contains(html, forbidden) {
 			t.Errorf("kısıtlı/deprecated schema eklenmiş: %s", forbidden)
 		}
+	}
+}
+
+func TestBilingualLandingPagesLinkToEachOther(t *testing.T) {
+	root := t.TempDir()
+	var target landingPage
+	for _, page := range landingPages {
+		if page.slug == "gano-hesaplama" {
+			target = page
+			break
+		}
+	}
+	if target.titleEN == "" {
+		t.Fatal("gano-hesaplama artık bir EN karşılığına sahip olmalı")
+	}
+
+	trRoot := filepath.Join(root, "tr")
+	bTR := &Builder{root: trRoot, outRoot: trRoot, l: langTR, version: "test"}
+	if err := bTR.writeLandingPage(target); err != nil {
+		t.Fatal(err)
+	}
+	trHTML, err := os.ReadFile(filepath.Join(trRoot, target.slug, "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(trHTML), `hreflang="en" href="`+baseURL+`/en/gano-hesaplama/"`) {
+		t.Error("TR sayfası EN karşılığına hreflang vermeli")
+	}
+
+	enRoot := filepath.Join(root, "en")
+	bEN := &Builder{root: enRoot, outRoot: enRoot, l: langEN, version: "test"}
+	if err := bEN.writeLandingPage(target); err != nil {
+		t.Fatal(err)
+	}
+	enHTML, err := os.ReadFile(filepath.Join(enRoot, target.slug, "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	html := string(enHTML)
+	for _, want := range []string{
+		`<link rel="canonical" href="` + baseURL + `/en/gano-hesaplama/">`,
+		`hreflang="tr" href="` + baseURL + `/gano-hesaplama/"`,
+		`"inLanguage":"en"`,
+		"ITU GPA Calculator",
+	} {
+		if !strings.Contains(html, want) {
+			t.Errorf("EN landing çıktısı eksik: %s", want)
+		}
+	}
+	if strings.Contains(html, "İTÜ GPA ve GANO Hesaplama") {
+		t.Error("EN sayfa TR başlığını sızdırmamalı")
 	}
 }
 

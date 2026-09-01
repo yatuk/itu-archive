@@ -6,6 +6,7 @@ import { state } from '../core/store.js?v=dde1e9339338';
 import { fillRows } from '../core/table.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
+import { I18N } from '../i18n.js?v=dde1e9339338';
 
 let inited = false;
 let currentHits = []; // son filtre sonucu — .ics dışa aktarımı için
@@ -74,7 +75,7 @@ export function onShow() {
 }
 
 async function loadExams() {
-  setStatus($('#eresultline'), 'yükleniyor…', { busy: true });
+  setStatus($('#eresultline'), I18N.t('statLoading'), { busy: true });
   try {
     // Silinen bir önceki dönem dosyası CDN'de günlerce 200 dönebilir. Her veri
     // taramasında değişen sorgu, eski cache anahtarını kullanmamamızı sağlar.
@@ -99,17 +100,17 @@ async function loadExams() {
     state.exams = sched;
     state.examHay = sched.exams.map((e) => fold(`${e.crn} ${e.code} ${e.name} ${e.instructor}`));
     const types = [...new Set(sched.exams.map((e) => e.type))].sort();
-    $('#f-etype').innerHTML = '<option value="">hepsi</option>' +
+    $('#f-etype').innerHTML = `<option value="">${esc(I18N.t('filterAll'))}</option>` +
       types.map((t) => `<option>${esc(t)}</option>`).join('');
 
     const buildings = [...new Set(sched.exams.map((e) => buildingOf(e.place)).filter(Boolean))]
       .sort((a, b) => a.localeCompare(b, 'tr'));
-    $('#f-building').innerHTML = '<option value="">hepsi</option>' +
+    $('#f-building').innerHTML = `<option value="">${esc(I18N.t('filterAll'))}</option>` +
       buildings.map((b) => `<option>${esc(b)}</option>`).join('');
     // Faz B (G9): branş filtresi — e.branch veride vardı, şimdi kullanılıyor.
     const branches = [...new Set(sched.exams.map((e) => e.branch).filter(Boolean))]
       .sort((a, b) => a.localeCompare(b, 'tr'));
-    $('#f-ebranch').innerHTML = '<option value="">hepsi</option>' +
+    $('#f-ebranch').innerHTML = `<option value="">${esc(I18N.t('filterAll'))}</option>` +
       branches.map((b) => `<option>${esc(b)}</option>`).join('');
     const pref = examPreference();
     if ([...$('#f-etype').options].some((o) => o.value === pref.type)) $('#f-etype').value = pref.type;
@@ -125,7 +126,7 @@ async function loadExams() {
     // Aktif dönemin takvimi henüz yoksa 404 olağan bir boş durumdur. Gerçek ağ
     // ve veri hataları ise tanı koyabilmek için görünür kalır.
     if (!/HTTP 404\b/.test(String(e.message || e))) {
-      setStatus($('#eresultline'), `sınav takvimi yüklenemedi (${e.message})`, { error: true });
+      setStatus($('#eresultline'), `${I18N.t('examLoadError')} (${e.message})`, { error: true });
     }
   }
   renderExams();
@@ -201,27 +202,29 @@ function renderExams(append) {
   if (etable) etable.classList.toggle('hide-yer', !showPlace);
 
   let resultLine = state.exams.exams.length
-    ? `<b>${hits.length}</b> / ${state.exams.exams.length} sınav · ${esc(state.exams.term || '')}`
-    : 'Bu dönem için sınav takvimi henüz ilan edilmemiş.';
+    ? `<b>${hits.length}</b> / ${state.exams.exams.length} ${I18N.t('examCountUnit')} · ${esc(state.exams.term || '')}`
+    : I18N.t('examNoScheduleYet');
   if (!showPlace && hits.length) {
-    resultLine += ' · yer: İlgili Bölümce Açıklanacak';
+    resultLine += ` · ${I18N.t('examPlaceTbdNote')}`;
   }
   $('#eresultline').innerHTML = resultLine;
 
   const rows = fillRows($('#erows'), hits.slice(0, examsShown), (e) => `
-    <tr><td class="crn" data-label="CRN">${esc(e.crn)}</td>
-        <td class="code" data-label="Ders"><button type="button" class="row-toggle x-detail" data-code="${esc(e.code)}"><b>${esc(e.code)}</b></button></td>
-        <td data-label="Adı">${esc(e.name)}</td>
-        <td data-label="Akademisyen">${esc(e.instructor || '·')}</td>
-        <td data-label="Tür">${esc(e.type)}</td>
-        ${showPlace ? `<td class="when yer-col" data-label="Yer">${esc(e.place || '·')}</td>` : ''}
-        <td data-label="Tarih">${esc(e.date)}</td>
-        <td class="when" data-label="Saat">${esc(e.day)} ${esc(e.time)}</td></tr>`,
-  { empty: 'eşleşen sınav yok', colspan: showPlace ? 8 : 7 });
+    <tr><td class="crn" data-label="${esc(I18N.t('examColCRN'))}">${esc(e.crn)}</td>
+        <td class="code" data-label="${esc(I18N.t('examColCourse'))}"><button type="button" class="row-toggle x-detail" data-code="${esc(e.code)}"><b>${esc(e.code)}</b></button></td>
+        <td data-label="${esc(I18N.t('examColName'))}">${esc(e.name)}</td>
+        <td data-label="${esc(I18N.t('examColInstructor'))}">${esc(e.instructor || '·')}</td>
+        <td data-label="${esc(I18N.t('examColType'))}">${esc(e.type)}</td>
+        ${showPlace ? `<td class="when yer-col" data-label="${esc(I18N.t('examColPlace'))}">${esc(e.place || '·')}</td>` : ''}
+        <td data-label="${esc(I18N.t('examColDate'))}">${esc(e.date)}</td>
+        <td class="when" data-label="${esc(I18N.t('examColTime'))}">${esc(e.day)} ${esc(e.time)}</td></tr>`,
+  { empty: I18N.t('examEmptyRow'), colspan: showPlace ? 8 : 7 });
   const emore = $('#emore');
   if (emore) {
     emore.hidden = hits.length <= examsShown;
-    emore.textContent = `daha fazla göster (${hits.length - examsShown} kaldı)`;
+    emore.textContent = I18N.lang === 'en'
+      ? `${I18N.t('more')} (${hits.length - examsShown} remaining)`
+      : `${I18N.t('more')} (${hits.length - examsShown} kaldı)`;
   }
   if (rows) {
     rows.forEach((tr) => {
@@ -271,8 +274,8 @@ export function examMapsQuery(place) {
 
 // Faz 4.5b: filtrelenmiş sınav listesini .ics olarak dışa aktarır.
 function exportExamsICS() {
-  if (!currentHits.length) { toast('Sınav yok', { kind: 'warn' }); return; }
+  if (!currentHits.length) { toast(I18N.t('examNoneToast'), { kind: 'warn' }); return; }
   const events = currentHits.map(examToIcs).filter(Boolean);
   downloadICS(`itu-final-${state.index.currentSlug}.ics`, events);
-  toast(`${events.length} sınav .ics'e aktarıldı`);
+  toast(`${events.length} ${I18N.t('examIcsExportedSuffix')}`);
 }

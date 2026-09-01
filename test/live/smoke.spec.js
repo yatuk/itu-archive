@@ -3,15 +3,11 @@ import { test, expect } from '@playwright/test';
 test('yayın aynı asset sürümüyle açılır ve temel görünümler çalışır', async ({ page }, testInfo) => {
   const errors = [];
   const expectedMissingData = /data\/(?:quota\/.*|exams\/[^/]+)\.json/;
-  // stats.itu-ders.com: masthead ziyaret sayacının Worker'ı (cloudflare/stats-worker/)
-  // henüz deploy edilmedi; DNS çözülemiyor. Worker canlıya alınınca bu satır kaldırılmalı.
-  const expectedStatsWorkerDown = /stats\.itu-ders\.com/;
   page.on('pageerror', (error) => errors.push(error.stack || String(error)));
   page.on('console', (message) => {
     if (message.type() !== 'error') return;
     const location = message.location().url || '';
     if (expectedMissingData.test(location) || expectedMissingData.test(message.text())) return;
-    if (expectedStatsWorkerDown.test(location) || expectedStatsWorkerDown.test(message.text())) return;
     errors.push(`${location || 'console'}: ${message.text()}`);
   });
 

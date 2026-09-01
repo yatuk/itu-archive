@@ -7,6 +7,7 @@ import { fillBar, trendChart } from '../core/chart.js?v=dde1e9339338';
 import { fillRows } from '../core/table.js?v=dde1e9339338';
 import { initReveal } from '../core/reveal.js?v=dde1e9339338';
 import { readLocalState, writeLocalState } from '../core/persistence.js?v=dde1e9339338';
+import { I18N } from '../i18n.js?v=dde1e9339338';
 
 let inited = false;
 
@@ -41,7 +42,7 @@ async function loadHistory() {
       nameHay: names.map((n) => normSearch(n[0])),
     };
   } catch (e) {
-    setStatus($('#hresultline'), `geçmiş verisi yüklenemedi (${e.message})`, { error: true });
+    setStatus($('#hresultline'), `${I18N.t('histLoadError')} (${e.message})`, { error: true });
   }
 }
 
@@ -64,9 +65,10 @@ export async function searchHistory() {
 
   if (q.length < 2) {
     box.innerHTML = discoveryHtml();
+    const locale = I18N.lang === 'en' ? 'en' : 'tr';
     $('#hresultline').innerHTML =
-      `<b>${state.hist.codes.length.toLocaleString('tr')}</b> ders · ` +
-      `<b>${state.hist.names.length.toLocaleString('tr')}</b> öğretim üyesi indekslendi`;
+      `<b>${state.hist.codes.length.toLocaleString(locale)}</b> ${I18N.t('histUnitCourses')} · ` +
+      `<b>${state.hist.names.length.toLocaleString(locale)}</b> ${I18N.t('histUnitPeopleIndexed')}`;
     for (const b of box.querySelectorAll('.chip')) {
       b.addEventListener('click', () => b.dataset.kind === 'course'
         ? showCourse(b.dataset.key, b.dataset.branch)
@@ -80,20 +82,20 @@ export async function searchHistory() {
   const people = [];
   state.hist.nameHay.forEach((h, i) => { if (people.length < 40 && searchMatch(q, h)) people.push(state.hist.names[i]); });
 
-  $('#hresultline').innerHTML = `<b>${courses.length}</b> ders, <b>${people.length}</b> öğretim üyesi eşleşti`;
+  $('#hresultline').innerHTML = `<b>${courses.length}</b> ${I18N.t('histUnitCourses')}, <b>${people.length}</b> ${I18N.t('histUnitPeopleMatched')}`;
 
   let html = '';
   if (courses.length) {
-    html += '<h3 class="mh">Dersler</h3><div class="chips">' + courses.map((c) =>
+    html += `<h3 class="mh">${esc(I18N.t('histSectionCourses'))}</h3><div class="chips">` + courses.map((c) =>
       `<button class="chip" data-kind="course" data-key="${esc(c[0])}" data-branch="${esc(c[2])}">
-         <b>${esc(c[0])}</b><span>${esc(c[1])}</span><em>${c[3]} dönem</em></button>`).join('') + '</div>';
+         <b>${esc(c[0])}</b><span>${esc(c[1])}</span><em>${c[3]} ${esc(I18N.t('histUnitTerms'))}</em></button>`).join('') + '</div>';
   }
   if (people.length) {
-    html += '<h3 class="mh">Öğretim üyeleri</h3><div class="chips">' + people.map((n) =>
+    html += `<h3 class="mh">${esc(I18N.t('histSectionInstructors'))}</h3><div class="chips">` + people.map((n) =>
       `<button class="chip" data-kind="person" data-key="${esc(n[0])}" data-bucket="${esc(n[1])}">
-         <b>${esc(n[0])}</b><em>${n[2]} dönem · ${n[3]} şube</em></button>`).join('') + '</div>';
+         <b>${esc(n[0])}</b><em>${n[2]} ${esc(I18N.t('histUnitTerms'))} · ${n[3]} ${esc(I18N.t('prgSube'))}</em></button>`).join('') + '</div>';
   }
-  box.innerHTML = html || '<p class="empty">eşleşme yok</p>';
+  box.innerHTML = html || `<p class="empty">${esc(I18N.t('emptyRow'))}</p>`;
 
   for (const b of box.querySelectorAll('.chip')) {
     b.addEventListener('click', () => b.dataset.kind === 'course'
@@ -122,16 +124,16 @@ function discoveryHtml() {
   const topPeople = topByCount(h.names, 3, 6);
   if (!topCourses.length && !topPeople.length) return '';
   const courseChips = topCourses.length
-    ? `<h3 class="h-disc">En çok dönem açılan dersler</h3><div class="chips">` +
+    ? `<h3 class="h-disc">${esc(I18N.t('histTopCourses'))}</h3><div class="chips">` +
       topCourses.map((c) => `<button class="chip" data-kind="course" data-key="${esc(c[0])}" data-branch="${esc(c[2])}">
-        <b>${esc(c[0])}</b><span>${esc(c[1])} · ${c[3]} dönem</span></button>`).join('') + '</div>'
+        <b>${esc(c[0])}</b><span>${esc(c[1])} · ${c[3]} ${esc(I18N.t('histUnitTerms'))}</span></button>`).join('') + '</div>'
     : '';
   const personChips = topPeople.length
-    ? `<h3 class="h-disc">En çok şubesi olan öğretim üyeleri</h3><div class="chips">` +
+    ? `<h3 class="h-disc">${esc(I18N.t('histTopInstructors'))}</h3><div class="chips">` +
       topPeople.map((n) => `<button class="chip" data-kind="person" data-key="${esc(n[0])}" data-bucket="${esc(n[1])}">
-        <b>${esc(n[0])}</b><span>${n[3]} şube · ${n[2]} dönem</span></button>`).join('') + '</div>'
+        <b>${esc(n[0])}</b><span>${n[3]} ${esc(I18N.t('prgSube'))} · ${n[2]} ${esc(I18N.t('histUnitTerms'))}</span></button>`).join('') + '</div>'
     : '';
-  return `<p class="h-intro">Bir dersin kodunu, adını ya da bir öğretim üyesini ara. Ne arayacağını bilmiyorsan:</p>
+  return `<p class="h-intro">${esc(I18N.t('histIntro'))}</p>
     ${courseChips}${personChips}`;
 }
 
@@ -147,7 +149,7 @@ async function showCourse(code, branch) {
     byTerm.get(slug).push({ instructor, cap, enr, days });
   }
 
-  const seasons = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' };
+  const seasons = { guz: I18N.t('histSeasonFall'), bahar: I18N.t('histSeasonSpring'), yaz: I18N.t('histSeasonSummer') };
   const openIn = new Set([...byTerm.keys()].map((s) => s.split('-')[2]));
   const rhythm = [...openIn].map((s) => seasons[s] || s).join(', ');
 
@@ -157,14 +159,15 @@ async function showCourse(code, branch) {
     secs.forEach((r, i) => rows.push({ slug, termFirst: i === 0, ...r }));
   }
 
+  const openedText = I18N.lang === 'en' ? `Opened in ${byTerm.size} terms` : `${byTerm.size} dönemde açıldı`;
   $('#hdetail').innerHTML = `
     <article class="hcard reveal">
       <h3>${esc(c.code)} <span>${esc(c.name)}</span></h3>
-      <p class="meta">${byTerm.size} dönemde açıldı · açıldığı dönemler: ${esc(rhythm)}
-        <button type="button" class="btn-ghost h-detail" data-code="${esc(c.code)}">bu dersi detaylandır</button></p>
+      <p class="meta">${esc(openedText)} · ${esc(I18N.t('histSeasonsLabel'))} ${esc(rhythm)}
+        <button type="button" class="btn-ghost h-detail" data-code="${esc(c.code)}">${esc(I18N.t('histDetailButton'))}</button></p>
       ${trendChart(byTerm)}
-      <div class="tablewrap"><table class="htable" aria-label="${esc(c.code)} dönem geçmişi">
-        <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th>Gün</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num quota-legacy-col">Doluluk</th></tr></thead>
+      <div class="tablewrap"><table class="htable" aria-label="${esc(c.code)} ${esc(I18N.t('histTermHistoryLabel'))}">
+        <thead><tr><th>${esc(I18N.t('histColTerm'))}</th><th>${esc(I18N.t('thInstr'))}</th><th>${esc(I18N.t('histColDay'))}</th><th class="num">${esc(I18N.t('thCap'))}</th><th class="num">${esc(I18N.t('thEnr'))}</th><th class="num quota-legacy-col">${esc(I18N.t('thFill'))}</th></tr></thead>
         <tbody></tbody>
       </table></div>
     </article>`;
@@ -199,9 +202,9 @@ async function showPerson(name, bucket) {
   $('#hdetail').innerHTML = `
     <article class="hcard reveal">
       <h3>${esc(name)}</h3>
-      <p class="meta">${byCourse.size} farklı ders · ${p.rows.length} şube · ${p.terms} dönem</p>
-      <div class="tablewrap"><table class="htable" aria-label="${esc(name)} ders listesi">
-        <thead><tr><th>Ders</th><th>Adı</th><th class="num">Kaç dönem</th><th>Dönemler</th></tr></thead>
+      <p class="meta">${byCourse.size} ${esc(I18N.t('histDistinctCourses'))} · ${p.rows.length} ${esc(I18N.t('prgSube'))} · ${p.terms} ${esc(I18N.t('histUnitTerms'))}</p>
+      <div class="tablewrap"><table class="htable" aria-label="${esc(name)} ${esc(I18N.t('histCourseListLabel'))}">
+        <thead><tr><th>${esc(I18N.t('thCode'))}</th><th>${esc(I18N.t('thName'))}</th><th class="num">${esc(I18N.t('histColTermCount'))}</th><th>${esc(I18N.t('histColTerms'))}</th></tr></thead>
         <tbody></tbody>
       </table></div>
     </article>`;

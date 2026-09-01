@@ -1,6 +1,7 @@
 # itu-ders-stats Worker
 
-Masthead'deki (`.statbar`) "ziyaret (30g)" rakamının kaynağı. GitHub Pages
+Sayfa altındaki footer'ın (`#foot-visits-row`) "ziyaret (30g)" rakamının
+kaynağı. GitHub Pages
 statik olduğu için API token'ı doğrudan siteye koyamayız — bu Worker sunucu
 tarafında Cloudflare'ın kendi Analytics verisini sorup yalnızca bir sayı
 döner; gerçek token tarayıcıya hiç gitmez.

@@ -77,7 +77,7 @@ async function boot() {
     if (state.rows.length) applyFilters();
   }).catch(() => {});
 
-  // Masthead'deki gerçek ziyaret sayısı: Cloudflare Analytics'i doğrudan
+  // Footer'daki gerçek ziyaret sayısı: Cloudflare Analytics'i doğrudan
   // sorgulayamayız (API token'ı tarayıcıya konulamaz) — ayrı, salt-okunur
   // bir Worker (cloudflare/stats-worker/) bu sayıyı sunucu tarafında
   // hesaplayıp döner. Worker deploy edilmemişse ya da erişilemiyorsa satır
@@ -90,8 +90,8 @@ async function boot() {
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => {
         if (!d || !Number.isFinite(d.visits30d)) return;
-        const row = $('#stat-visits-row');
-        const cell = $('#stat-visits');
+        const row = $('#foot-visits-row');
+        const cell = $('#foot-visits');
         if (!row || !cell) return;
         cell.textContent = `${formatInt(d.visits30d)}+`;
         row.hidden = false;

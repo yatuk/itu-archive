@@ -4196,21 +4196,17 @@
   "level": "LS",
   "name": "Sayısal Yöntemler",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "İsmail Yalçın",
+  "instructor": "Cihad Delen",
   "buildings": [
-   "MEDC",
    "MEDC"
   ],
   "days": [
-   "Salı",
-   "Perşembe"
+   "Cuma"
   ],
   "times": [
-   "12:30/14:29",
-   "09:30/10:29"
+   "14:00/16:59"
   ],
   "rooms": [
-   "1D6",
    "1D6"
   ],
   "capacity": 45,
@@ -6269,6 +6265,40 @@
    "MTM_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15195",
+  "code": "MAT 210E",
+  "branch": "MAT",
+  "level": "LS",
+  "name": "Engineering Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sabire Cömert",
+  "buildings": [
+   "DZB",
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

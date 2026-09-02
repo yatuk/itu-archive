@@ -707,7 +707,7 @@
   "level": "LS",
   "name": "Basic Swimming Skills",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Selim Aksoy",
+  "instructor": "Hakan Çap",
   "buildings": [
    "DZB"
   ],
@@ -750,6 +750,213 @@
    "--"
   ],
   "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15184",
+  "code": "DFH 113E",
+  "branch": "DFH",
+  "level": "LS",
+  "name": "Maritime Safety I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hakan Çap , Sinan Çakır",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15185",
+  "code": "DFH 113E",
+  "branch": "DFH",
+  "level": "LS",
+  "name": "Maritime Safety I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İsmail Kandemir , Muhammed Fatih Gülen",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/17:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15193",
+  "code": "DFH 222E",
+  "branch": "DFH",
+  "level": "LS",
+  "name": "Maritime English II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seda Çınar Alabay",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15200",
+  "code": "DFH 201E",
+  "branch": "DFH",
+  "level": "LS",
+  "name": "Basic Swimming Skills",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hakan Çap",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15208",
+  "code": "DFH 202E",
+  "branch": "DFH",
+  "level": "LS",
+  "name": "Ship Emergency Response",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Lutfi Tunçel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "15240",
+  "code": "DFH 361E",
+  "branch": "DFH",
+  "level": "LS",
+  "name": "Ship Supply Chain Management",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Selim Aksoy",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15241",
+  "code": "DFH 212E",
+  "branch": "DFH",
+  "level": "LS",
+  "name": "Human Resources Management in Maritime",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Leyla Tavacıoğlu",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
   "enrolled": 0,
   "reserved": "-",
   "programs": [

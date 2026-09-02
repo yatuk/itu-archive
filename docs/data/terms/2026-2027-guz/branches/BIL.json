@@ -11,10 +11,10 @@
    "KMB"
   ],
   "days": [
-   "Salı"
+   "Pazartesi"
   ],
   "times": [
-   "13:30/16:29"
+   "09:30/12:29"
   ],
   "rooms": [
    "BIL.LAB.1"
@@ -2415,6 +2415,66 @@
   "reserved": "-",
   "programs": [
    "IEBE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15197",
+  "code": "BIL 113E",
+  "branch": "BIL",
+  "level": "LS",
+  "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ata Bilgili",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15198",
+  "code": "BIL 113E",
+  "branch": "BIL",
+  "level": "LS",
+  "name": "Intr.to Sci& Eng.Comp.(MATLAB)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ata Bilgili",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
   ],
   "prereq": "-",
   "classReq": "-"

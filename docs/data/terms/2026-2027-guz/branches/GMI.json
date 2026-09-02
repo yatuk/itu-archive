@@ -420,7 +420,7 @@
    "Salı"
   ],
   "times": [
-   "09:30/11:29"
+   "11:30/13:29"
   ],
   "rooms": [
    "--"
@@ -1184,6 +1184,656 @@
   "programs": [
    "GMI_LS",
    "GMIE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15186",
+  "code": "GMI 114E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Materials Scie.&Manufact.Mth.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yasin Arslanoğlu",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15187",
+  "code": "GMI 118E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Introduction to Marine Engineering and Ethics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Merve Gül Çıvgın",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15204",
+  "code": "GMI 206E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Mechanical Workshop",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çağlar Karatuğ",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15206",
+  "code": "GMI 320E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Naval Architecture&Stability",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Melek Ertogan",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15207",
+  "code": "GMI 254E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Auxiliary Machinery I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kemal Demirel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15219",
+  "code": "GMI 341E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Automatic Control Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tayfun Uyanık",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15220",
+  "code": "GMI 301E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Maritime Law",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Arda Özkan",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15221",
+  "code": "GMI 313E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Boilers and Operation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15222",
+  "code": "GMI 333E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Diesel Engines II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15223",
+  "code": "GMI 324E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Ship Machinery Operation and Maintenance",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Samet Biçen",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15224",
+  "code": "GMI 342E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Maritime Rules & Regulations",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fırat Bolat",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15225",
+  "code": "GMI 352E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Heat Transfer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yalçın Durmuşoğlu",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15226",
+  "code": "GMI 384E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Engine Room Simulator (ERS) I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kemal Demirel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15227",
+  "code": "GMI 384E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Engine Room Simulator (ERS) I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kemal Demirel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15233",
+  "code": "GMI 393E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Long Term Sea Training (6 ay)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15242",
+  "code": "GMI 454E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Auxiliary Machinery II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kemal Demirel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15243",
+  "code": "GMI 457E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Electrotechnics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tayfun Uyanık",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15244",
+  "code": "GMI 473E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Diesel Engines III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yalçın Durmuşoğlu",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15245",
+  "code": "GMI 4901E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Engineering Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Selim Aksoy",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "15246",
+  "code": "GMI 270E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Maritime English II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Müjgan Özenir",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15247",
+  "code": "GMI 474E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Quality&Safety Management Sys.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İsmail Kandemir",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15248",
+  "code": "GMI 476E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Deck Machinery",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15251",
+  "code": "GMI 4902E",
+  "branch": "GMI",
+  "level": "LS",
+  "name": "Marine Engineering Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Selim Aksoy",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

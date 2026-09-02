@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-01T07:53:01Z"
+  "lastSuccessfulAt": "2026-09-02T07:10:13Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-01T07:53:01Z",
+ "scrapedAt": "2026-09-02T07:10:13Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5043,
- "courses": 3524,
+ "sections": 5111,
+ "courses": 3562,
  "branches": [
   {
    "code": "ABM",
@@ -102,7 +102,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 40
+   "sections": 42
   },
   {
    "code": "BIO",
@@ -272,7 +272,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 26
+   "sections": 33
   },
   {
    "code": "DNK",
@@ -293,14 +293,14 @@
    "levels": [
     "LS"
    ],
-   "sections": 49
+   "sections": 68
   },
   {
    "code": "DUM",
    "levels": [
     "LU"
    ],
-   "sections": 23
+   "sections": 24
   },
   {
    "code": "DUY",
@@ -444,7 +444,7 @@
     "LS",
     "LU"
    ],
-   "sections": 208
+   "sections": 210
   },
   {
    "code": "FRA",
@@ -480,7 +480,7 @@
     "LS",
     "LU"
    ],
-   "sections": 68
+   "sections": 67
   },
   {
    "code": "GEO",
@@ -517,7 +517,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 42
+   "sections": 65
   },
   {
    "code": "GSB",
@@ -545,7 +545,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 12
+   "sections": 15
   },
   {
    "code": "HUK",
@@ -839,7 +839,7 @@
     "LS",
     "LU"
    ],
-   "sections": 120
+   "sections": 121
   },
   {
    "code": "MBA",
@@ -892,6 +892,13 @@
   },
   {
    "code": "MEK",
+   "levels": [
+    "LS"
+   ],
+   "sections": 5
+  },
+  {
+   "code": "MEN",
    "levels": [
     "LS"
    ],
@@ -1025,6 +1032,13 @@
    "sections": 9
   },
   {
+   "code": "MTM",
+   "levels": [
+    "LS"
+   ],
+   "sections": 4
+  },
+  {
    "code": "MTO",
    "levels": [
     "LS",
@@ -1072,7 +1086,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 39
+   "sections": 40
   },
   {
    "code": "MUZ",
@@ -1399,7 +1413,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 58
+   "sections": 59
   },
   {
    "code": "UAH",
@@ -1413,7 +1427,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 27
+   "sections": 28
   },
   {
    "code": "ULP",
@@ -1441,7 +1455,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 31
+   "sections": 30
   },
   {
    "code": "UZB",
@@ -1536,11 +1550,11 @@
   }
  ],
  "stats": {
-  "sections": 5043,
-  "courses": 3524,
-  "branches": 214,
-  "instructors": 1730,
-  "capacity": 245593,
+  "sections": 5111,
+  "courses": 3562,
+  "branches": 216,
+  "instructors": 1735,
+  "capacity": 249085,
   "enrolled": 1204
  }
 }

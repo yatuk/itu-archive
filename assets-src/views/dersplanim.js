@@ -33,6 +33,13 @@ import { I18N } from '../i18n.js?v=dde1e9339338';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=dde1e9339338';
 import { buildBalancedPlan } from '../core/planner.js?v=dde1e9339338';
 
+// Basit {placeholder} yer değiştirmeli çeviri: I18N sözlüğü placeholder desteklemez.
+function tf(key, vars) {
+  let s = I18N.t(key);
+  for (const [k, v] of Object.entries(vars)) s = s.replaceAll(`{${k}}`, v);
+  return s;
+}
+
 let inited = false;
 let progIndex = [];     // curriculum/index.json (fakülte → program listesi)
 let plan = null;        // seçili programın müfredatı
@@ -97,19 +104,19 @@ function ensureHost() {
       ${t('Programını ve dönemi seç; müfredatı, açık şubeleri ve not planını birlikte gör.', 'Choose your program and term to see the curriculum, open sections, and grade plan together.')}
     </p>
     <div class="console dp-console">
-      <div class="dp-program-pick" role="group" aria-label="Program seçimi">
+      <div class="dp-program-pick" role="group" aria-label="${t('Program seçimi', 'Program selection')}">
         <span class="sigil" aria-hidden="true">&gt;</span>
         <label><span class="dp-field-label">${t('seviye', 'level')}</span>
-        <select id="dp-level" class="dp-level-select" aria-label="Program seviyesi seç">
+        <select id="dp-level" class="dp-level-select" aria-label="${t('Program seviyesi seç', 'Choose program level')}">
           <option value="OL">${t('Önlisans', 'Associate')}</option><option value="LS" selected>${t('Lisans', 'Bachelor')}</option>
           <option value="YL">${t('Yüksek Lisans', 'Master')}</option><option value="DR">${t('Doktora', 'Doctorate')}</option>
         </select>
         </label>
         <label><span class="dp-field-label">${t('fakülte', 'faculty')}</span>
-        <select id="dp-fac" class="dp-fac-select" aria-label="Fakülte seç"></select>
+        <select id="dp-fac" class="dp-fac-select" aria-label="${t('Fakülte seç', 'Choose faculty')}"></select>
         </label>
         <label><span class="dp-field-label">${t('program', 'program')}</span>
-        <select id="dp-prog" class="dp-prog-select" aria-label="Bölüm seç"></select>
+        <select id="dp-prog" class="dp-prog-select" aria-label="${t('Bölüm seç', 'Choose department')}"></select>
         </label>
       </div>
       <label class="dp-term-pick"><span class="dp-field-label">${t('dönem', 'term')}</span><select id="dp-term" aria-label="${t('Dönem seç', 'Choose term')}"></select></label>
@@ -119,42 +126,42 @@ function ensureHost() {
       <p>${t('Önce seviyeyi, ardından fakülte ve programı seç. GANO ve dönem dersleri seçiminin ardından burada açılır.', 'Choose a level, faculty, and program. GPA tools and term courses will appear after your selection.')}</p>
       <button type="button" class="btn-ghost dp-transcript-open">${t('OBS transkriptinden aktar', 'Import from OBS transcript')}</button>
     </div>
-    <div class="dp-filterbar" role="group" aria-label="Ders Planım filtreleri">
+    <div class="dp-filterbar" role="group" aria-label="${esc(I18N.t('planFilterbarAria'))}">
       <div class="dp-filter-primary">
-        <label class="check"><input type="checkbox" id="dp-open"> yalnızca açık dersler</label>
-        <label class="check"><input type="checkbox" id="dp-cap"> kontenjanı olanlar</label>
-        <button type="button" id="dp-filter-toggle" class="btn-ghost" aria-expanded="false" aria-controls="dp-filter-more">Yarıyıl ve tür</button>
+        <label class="check"><input type="checkbox" id="dp-open"> ${I18N.t('planOnlyOpen')}</label>
+        <label class="check"><input type="checkbox" id="dp-cap"> ${I18N.t('planWithCapacity')}</label>
+        <button type="button" id="dp-filter-toggle" class="btn-ghost" aria-expanded="false" aria-controls="dp-filter-more">${I18N.t('planSemType')}</button>
       </div>
       <div class="dp-filter-more" id="dp-filter-more" hidden>
-        <span class="dp-sems" id="dp-sems" role="group" aria-label="Yarıyıl seçimi"></span>
-        <span class="dp-type-filter" id="dp-types" role="group" aria-label="Türe göre filtrele"></span>
+        <span class="dp-sems" id="dp-sems" role="group" aria-label="${esc(I18N.t('planSemSelectAria'))}"></span>
+        <span class="dp-type-filter" id="dp-types" role="group" aria-label="${esc(I18N.t('planTypeFilterAria'))}"></span>
       </div>
     </div>
     <div id="dp-summary" class="dp-summary"></div>
     <div class="dp-resultbar">
-      <p class="resultline" id="dp-result" aria-live="polite">program seçiliyor…</p>
+      <p class="resultline" id="dp-result" aria-live="polite">${I18N.t('planSelectingProgram')}</p>
     </div>
     <details class="dp-recommend" id="dp-recommend">
-      <summary><span>Dönem için ders öner</span><small>Müfredat, notların ve açık şubeler kullanılır</small></summary>
+      <summary><span>${I18N.t('planSuggestTerm')}</span><small>${I18N.t('planSuggestTermHint')}</small></summary>
       <div class="dp-recommend-controls">
-        <label>hedef yarıyıl <select id="dp-recommend-sem"></select></label>
-        <label>en fazla kredi <input id="dp-recommend-credit" class="f-in dp-credit-input" type="number" min="1" max="40" value="18"></label>
-        <button type="button" id="dp-recommend-run" class="btn-primary">Öneri oluştur</button>
+        <label>${I18N.t('planTargetSemester')} <select id="dp-recommend-sem"></select></label>
+        <label>${I18N.t('planMaxCredit')} <input id="dp-recommend-credit" class="f-in dp-credit-input" type="number" min="1" max="40" value="18"></label>
+        <button type="button" id="dp-recommend-run" class="btn-primary">${I18N.t('planGenerateSuggestion')}</button>
       </div>
-      <p class="dp-recommend-note">Öneriler kayıt hakkını garanti etmez. Alternatif önşartlar ve bölüm kuralları için işaretli uyarıları kontrol et.</p>
+      <p class="dp-recommend-note">${I18N.t('planSuggestNote')}</p>
       <div id="dp-recommend-result" aria-live="polite"></div>
     </details>
     <details class="dp-recommend" id="dp-balanced">
-      <summary><span>Dengeli plan oluştur</span><small>Önşart zinciri, tekrar dersleri ve geçmiş zorluk kullanılır</small></summary>
+      <summary><span>${I18N.t('planBalancedPlan')}</span><small>${I18N.t('planBalancedHint')}</small></summary>
       <div class="dp-recommend-controls">
-        <button type="button" id="dp-balanced-run" class="btn-primary">Dengeli plan oluştur</button>
+        <button type="button" id="dp-balanced-run" class="btn-primary">${I18N.t('planBalancedPlan')}</button>
       </div>
-      <p class="dp-recommend-note">Kalan zorunlu dersleri, önşart sırasını bozmadan çok döneme dağıtır: tekrar dersleri erken ve hafif dönemlere, geçmişte kalma oranı yüksek dersler ayrı dönemlere konur, kredi hedefi dönem başına 10–14. Seçmeli slotlar bu plana dahil değildir.</p>
+      <p class="dp-recommend-note">${I18N.t('planBalancedNote')}</p>
       <div id="dp-balanced-result" aria-live="polite"></div>
     </details>
     <details class="dp-grades" id="dp-grades">
-      <summary><span>GANO ve ilerleme</span><b id="dp-grade-preview">Not girdikçe hesaplanır</b></summary>
-      <p class="dp-grades-empty" id="dp-grades-empty">Derslerin yanındaki not alanlarından not girdikçe GANO ve ilerleme burada hesaplanır.</p>
+      <summary><span>${I18N.t('planGpaProgress')}</span><b id="dp-grade-preview">${I18N.t('planGpaPreviewEmpty')}</b></summary>
+      <p class="dp-grades-empty" id="dp-grades-empty">${I18N.t('planGpaEmptyHint')}</p>
       <div class="dp-transcript-callout">
         <div>
           <strong>${t('OBS transkriptinden notları aktar', 'Import grades from an OBS transcript')}</strong>
@@ -165,38 +172,38 @@ function ensureHost() {
       <p id="dp-transcript-result" class="dp-transcript-result" hidden aria-live="polite"></p>
       <div class="dp-grades-body">
         <div class="dp-grades-grid">
-          <div class="dp-metric"><em>GANO</em><b id="dp-gano">yok</b><small>girdiğin notlara göre</small></div>
-          <div class="dp-metric"><em>ilerleme</em><b id="dp-progress">0/0 kredi</b><small id="dp-progress-sub"></small></div>
-          <div class="dp-metric"><em>hedef</em><b id="dp-target">yok</b><small id="dp-target-sub"></small></div>
+          <div class="dp-metric"><em>${I18N.t('planGanoLabel')}</em><b id="dp-gano">${I18N.t('planNone')}</b><small>${I18N.t('planBasedOnGrades')}</small></div>
+          <div class="dp-metric"><em>${I18N.t('planProgressLabel')}</em><b id="dp-progress">0/0 ${I18N.t('planCreditUnit')}</b><small id="dp-progress-sub"></small></div>
+          <div class="dp-metric"><em>${I18N.t('planTargetLabel')}</em><b id="dp-target">${I18N.t('planNone')}</b><small id="dp-target-sub"></small></div>
         </div>
         <div class="dp-types-progress" id="dp-types-progress" aria-live="polite"></div>
         <div class="dp-transfer">
-          <label>şimdiye kadarki kredi <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0–250"></label>
-          <label>mevcut GANO <input id="dp-tgpa" type="number" min="0" max="4" step="0.01" inputmode="decimal" placeholder="0–4"></label>
-          <label class="dp-target-gpa">hedef GANO <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00" placeholder="0–4"> <span class="dp-target-hint" id="dp-target-hint"></span></label>
+          <label>${I18N.t('planCreditsSoFar')} <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0–250"></label>
+          <label>${I18N.t('planCurrentGpa')} <input id="dp-tgpa" type="number" min="0" max="4" step="0.01" inputmode="decimal" placeholder="0–4"></label>
+          <label class="dp-target-gpa">${I18N.t('planTargetGpa')} <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00" placeholder="0–4"> <span class="dp-target-hint" id="dp-target-hint"></span></label>
         </div>
       </div>
       <details class="dp-data-tools">
-        <summary>Veri ve gizlilik</summary>
+        <summary>${I18N.t('planDataPrivacy')}</summary>
         <div class="dp-grades-actions">
-          <button type="button" id="dp-export" class="btn-ghost">JSON dışa aktar</button>
-          <button type="button" id="dp-import" class="btn-ghost">JSON içe aktar</button>
-          <button type="button" id="dp-backup-all" class="btn-ghost">Program + GANO yedeği indir</button>
-          <button type="button" id="dp-restore-all" class="btn-ghost">Tüm yedeği geri yükle</button>
+          <button type="button" id="dp-export" class="btn-ghost">${I18N.t('planExportJson')}</button>
+          <button type="button" id="dp-import" class="btn-ghost">${I18N.t('planImportJson')}</button>
+          <button type="button" id="dp-backup-all" class="btn-ghost">${I18N.t('planDownloadBackup')}</button>
+          <button type="button" id="dp-restore-all" class="btn-ghost">${I18N.t('planRestoreBackup')}</button>
           <input id="dp-restore-file" type="file" accept="application/json,.json" hidden>
-          <button type="button" id="dp-reset" class="btn-ghost">tümünü sıfırla</button>
+          <button type="button" id="dp-reset" class="btn-ghost">${I18N.t('planResetAll')}</button>
         </div>
-        <p class="dp-privacy">Notların yalnızca bu tarayıcıda saklanır; sunucuya gönderilmez. Bu bir transkript değildir ve sonuçlar OBS ile küçük farklar gösterebilir. Kaynak:
-        <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">İTÜ not ve başarı yönergesi</a>.</p>
+        <p class="dp-privacy">${I18N.t('planPrivacyNote')}
+        <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">${I18N.t('planPrivacyNoteLink')}</a>.</p>
       </details>
     </details>
     <details class="dp-recommend" id="dp-yatay">
-      <summary><span>Yatay geçiş ihtimalini gör</span><small id="dp-yatay-preview">2011'den bugüne resmî taban/tavan</small></summary>
+      <summary><span>${I18N.t('planTransferChance')}</span><small id="dp-yatay-preview">${I18N.t('planTransferPreview')}</small></summary>
       <div class="dp-recommend-controls">
-        <label>hedef fakülte <select id="dp-yatay-fac"></select></label>
-        <label>hedef program <select id="dp-yatay-prog"></select></label>
+        <label>${I18N.t('planTargetFaculty')} <select id="dp-yatay-fac"></select></label>
+        <label>${I18N.t('planTargetProgram')} <select id="dp-yatay-prog"></select></label>
       </div>
-      <p class="dp-recommend-note">Kaynak: <a href="https://www.sis.itu.edu.tr/TR/mevzuat/yatay-cap-yandal-yonerge.php" target="_blank" rel="noopener">İTÜ Yatay Geçiş, ÇAP ve Yandal Yönergesi</a>, MADDE 30(4). Değerlendirme puanı %40 YKS (100'lük karşılığı) + %60 AGNO'dan oluşuyor. YKS'nin 100'lük karşılığının resmî çevrim formülü İTÜ tarafından ayrı bir senato kararına bırakılmış ve yayımlanmamış, bu yüzden nihai puanını burada hesaplayamıyoruz; yalnızca AGNO katkını ve geçmiş yılların taban/tavanını gösteriyoruz. 2023-2024 öncesi sayfalar farklı bir ölçüt (ham AGNO) kullanıyordu, iki dönem doğrudan karşılaştırılamaz.</p>
+      <p class="dp-recommend-note">${I18N.t('planTransferNoteSource')} <a href="https://www.sis.itu.edu.tr/TR/mevzuat/yatay-cap-yandal-yonerge.php" target="_blank" rel="noopener">${I18N.t('planTransferNoteLink')}</a>, ${I18N.t('planTransferNoteBody')}</p>
       <div id="dp-yatay-result" aria-live="polite"></div>
     </details>
     <div id="dp-semesters" class="dp-semesters"></div>`;
@@ -208,7 +215,7 @@ function ensureHost() {
 // 22 fakültenin arasından seçmek, uzun gruplu listede kaydırmaktan hızlı.
 
 function facultyOf(p) {
-  return p.faculty || 'Diğer';
+  return p.faculty || I18N.t('planOtherFaculty');
 }
 
 function renderFacultyOptions(level = 'LS') {
@@ -254,17 +261,17 @@ async function selectProgram(code) {
   $('#dp-targetgpa').value = Number.isFinite(savedTarget) && savedTarget >= 0 && savedTarget <= 4
     ? String(savedTarget) : '3.00';
   catalogMap.clear();
-  setDPResult('yükleniyor…', { busy: true });
+  setDPResult(I18N.t('statLoading'), { busy: true });
   try {
     plan = await getJSON(`data/curriculum/${code}.json`);
   } catch {
-    setDPResult(`müfredat yüklenemedi (${esc(code)})`, { error: true });
+    setDPResult(`${I18N.t('planCurriculumLoadFailed')} (${esc(code)})`, { error: true });
     plan = null;
     return;
   }
   // Programın planı yoksa (kapanmış program, eksik plan) açık mesaj — boş liste değil.
   if (!plan || !plan.semesters || !plan.semesters.length) {
-    $('#dp-semesters').innerHTML = `<p class="empty">Bu programa ait bir ders planı bulunamadı (${esc(code)}).</p>`;
+    $('#dp-semesters').innerHTML = `<p class="empty">${I18N.t('planNoCurriculum')} (${esc(code)}).</p>`;
     $('#dp-summary').innerHTML = '';
     setDPResult('');
     return;
@@ -380,7 +387,7 @@ function buildGradeSelect(selected, code, kind = 'course', slotKey = '') {
   sel.tabIndex = 0;
   const none = document.createElement('option');
   none.value = '';
-  none.textContent = 'Yeni';
+  none.textContent = I18N.t('planNewGradeOption');
   sel.appendChild(none);
   for (const g of GRADE_CHOICES) {
     const o = document.createElement('option');
@@ -399,7 +406,7 @@ function makeClearBtn() {
   b.className = 'dp-grade-clear';
   b.dataset.act = 'dp-clear';
   b.textContent = '×';
-  b.title = 'notu temizle';
+  b.title = I18N.t('planClearGradeTitle');
   return b;
 }
 
@@ -417,13 +424,13 @@ function electiveControls(slotKey, e, pick) {
   const opts = (e.options || []).map((o) =>
     `<option value="${esc(o.code)}" ${pick?.code === o.code ? 'selected' : ''}>${esc(o.code)} · ${esc(o.name || '')}</option>`
   ).join('');
-  const defaultOpt = `<option value="" ${!pick?.code ? 'selected' : ''}>· ders seç ·</option>`;
-  const pickSel = `<select class="dp-epick" data-slot="${slotKey}" aria-label="Seçmeli ders seç">${defaultOpt}${opts}</select>`;
+  const defaultOpt = `<option value="" ${!pick?.code ? 'selected' : ''}>${esc(I18N.t('planChooseCoursePlaceholder'))}</option>`;
+  const pickSel = `<select class="dp-epick" data-slot="${slotKey}" aria-label="${esc(I18N.lang === 'en' ? 'Choose elective course' : 'Seçmeli ders seç')}">${defaultOpt}${opts}</select>`;
   const grade = pick?.code
-    ? `<span class="dp-grade-wrap"><select class="dp-grade dp-egrade${pick.grade ? ' filled' : ''}" data-gkind="elective" data-gslot="${slotKey}" data-gcode="${esc(pick.code)}" aria-label="${esc(pick.code)} notu" tabindex="0">
-        <option value="">Yeni</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
-      </select><button type="button" class="dp-grade-clear" data-act="dp-clear" title="notu temizle">×</button></span>`
-    : '<span class="dp-grade-hint">önce ders seç</span>';
+    ? `<span class="dp-grade-wrap"><select class="dp-grade dp-egrade${pick.grade ? ' filled' : ''}" data-gkind="elective" data-gslot="${slotKey}" data-gcode="${esc(pick.code)}" aria-label="${esc(pick.code)} ${esc(I18N.t('planColGrade'))}" tabindex="0">
+        <option value="">${esc(I18N.t('planNewGradeOption'))}</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
+      </select><button type="button" class="dp-grade-clear" data-act="dp-clear" title="${esc(I18N.t('planClearGradeTitle'))}">×</button></span>`
+    : `<span class="dp-grade-hint">${esc(I18N.t('planChooseCourseFirst'))}</span>`;
   return `<div class="dp-elective-inputs">${pickSel}${grade}</div>`;
 }
 
@@ -445,7 +452,7 @@ function updateFilterDisclosure() {
   const toggle = $('#dp-filter-toggle');
   if (!toggle) return;
   const count = filters.semesters.size + filters.types.size;
-  toggle.textContent = `Yarıyıl ve tür${count ? ` (${count})` : ''}`;
+  toggle.textContent = `${I18N.t('planSemType')}${count ? ` (${count})` : ''}`;
 }
 
 function renderSemesterFilter() {
@@ -469,7 +476,7 @@ function renderTypeFilter() {
   const wrap = $('#dp-types');
   if (!wrap) return;
   const types = ['ITB', 'TB', 'TM', 'MT', 'EC'];
-  wrap.innerHTML = '<span class="dp-type-label">tür:</span>' + types.map((t) =>
+  wrap.innerHTML = `<span class="dp-type-label">${I18N.t('planTypeLabel')}</span>` + types.map((t) =>
     `<button type="button" class="dp-type ${filters.types.has(t) ? 'on' : ''}" data-type="${t}" aria-pressed="${filters.types.has(t)}">${t}</button>`
   ).join('');
   wrap.querySelectorAll('.dp-type').forEach((b) =>
@@ -544,8 +551,8 @@ function renderAll() {
     if (avg != null) {
       const avgEl = document.createElement('span');
       avgEl.className = 'dp-sem-avg';
-      avgEl.title = 'Bu yarıyılın ortalaması (girdiğin notlara göre)';
-      avgEl.textContent = `ort ${fmtTr2(avg)}`;
+      avgEl.title = I18N.t('planSemAvgTitle');
+      avgEl.textContent = `${I18N.t('planAvgPrefix')} ${fmtTr2(avg)}`;
       head.appendChild(avgEl);
     }
     sem.appendChild(head);
@@ -589,7 +596,7 @@ function renderAll() {
   else {
     const p = document.createElement('p');
     p.className = 'empty';
-    p.textContent = 'Bu filtrelerle eşleşen ders yok.';
+    p.textContent = I18N.t('planNoMatchFilters');
     root.replaceChildren(p);
   }
 
@@ -604,9 +611,9 @@ function renderAll() {
 function buildColHead() {
   const h = document.createElement('div');
   h.className = 'dp-colhead';
-  for (const lbl of ['kredi', 'ders', 'tekrar', 'not']) {
+  for (const lbl of ['planColCredit', 'planColCourse', 'planColRepeat', 'planColGrade']) {
     const s = document.createElement('span');
-    s.textContent = lbl;
+    s.textContent = I18N.t(lbl);
     h.appendChild(s);
   }
   h.appendChild(document.createElement('span'));
@@ -623,10 +630,10 @@ function matchesElectiveType(e, types) {
 }
 
 function planSummaryLine(open, closed, slotOpen, slotCount, shown) {
-  const parts = [`<b>${open}</b> ders açık`];
-  parts.push(`<b>${shown - slotCount}</b> ders gösteriliyor`);
-  if (slotCount) parts.push(`<b>${slotOpen}/${slotCount}</b> seçmeli açık`);
-  if (closed) parts.push(`${closed} kapalı`);
+  const parts = [`<b>${open}</b> ${I18N.t('planSummaryCoursesOpen')}`];
+  parts.push(`<b>${shown - slotCount}</b> ${I18N.t('planSummaryCoursesShown')}`);
+  if (slotCount) parts.push(`<b>${slotOpen}/${slotCount}</b> ${I18N.t('planSummaryElectivesOpen')}`);
+  if (closed) parts.push(`${closed} ${I18N.t('planSummaryClosedSuffix')}`);
   return parts.join(' · ');
 }
 
@@ -669,7 +676,7 @@ function courseRow(c, st, slotKey) {
   const credit = document.createElement('span');
   credit.className = 'dp-credit';
   credit.textContent = creditBadge(c);
-  credit.title = `${trNum(c.credits ?? 0)} kredi`;
+  credit.title = `${trNum(c.credits ?? 0)} ${I18N.t('planCreditUnit')}`;
   row.appendChild(credit);
 
   // 2) ders: kod (kalın buton) + ad (normal) — tek satır, taşarsa alt satıra
@@ -695,8 +702,8 @@ function courseRow(c, st, slotKey) {
   rep.dataset.gcode = code;
   rep.setAttribute('aria-pressed', rec.repeat ? 'true' : 'false');
   rep.title = rec.prev
-    ? `tekrar olarak işaretli · önceki: ${rec.prev}`
-    : 'tekrar olarak işaretle';
+    ? `${I18N.t('planMarkedRepeatPrev')} ${rec.prev}`
+    : I18N.t('planMarkRepeat');
   rep.textContent = '⇄';
   row.appendChild(rep);
 
@@ -716,16 +723,16 @@ function courseRow(c, st, slotKey) {
     btn.dataset.act = 'dp-sec';
     btn.setAttribute('aria-expanded', 'false');
     const totalCap = st.sections.reduce((s, x) => s + (x.cap || 0), 0);
-    btn.title = `${st.sections.length} şube · toplam kontenjan ${trNum(totalCap)}`;
-    btn.textContent = `${st.sections.length} şube`;
+    btn.title = `${st.sections.length} ${I18N.t('prgSube')} · ${I18N.t('planTotalCapacity')} ${trNum(totalCap)}`;
+    btn.textContent = `${st.sections.length} ${I18N.t('prgSube')}`;
     row.appendChild(btn);
   } else {
     const span = document.createElement('span');
     span.className = 'dp-sec-btn closed';
-    span.textContent = st.state === 'closed' ? 'kapalı' : 'veri yok';
+    span.textContent = st.state === 'closed' ? I18N.t('planClosed') : I18N.t('planNoData');
     span.title = st.state === 'closed'
-      ? `bu dönem açık değil · son ${termLabel(st.lastTerm)}`
-      : 'bu dönem açık değil';
+      ? `${I18N.t('planNotOpenThisTerm')} · ${I18N.t('planLastOffered')} ${termLabel(st.lastTerm)}`
+      : I18N.t('planNotOpenThisTerm');
     row.appendChild(span);
   }
 
@@ -763,7 +770,7 @@ function renderSections(sections) {
     more.dataset.act = 'dp-more';
     more.setAttribute('aria-expanded', 'false');
     more.dataset.count = String(restCount);
-    more.textContent = `${restCount} şube daha göster`;
+    more.textContent = `${restCount} ${I18N.t('prgSube')} ${I18N.t('planShowMore')}`;
     wrap.appendChild(more);
     const moreWrap = document.createElement('div');
     moreWrap.className = 'dp-more-wrap';
@@ -791,7 +798,7 @@ function sectionGroupRow(g, hasInstr) {
     crn.append(' ');
     const badge = document.createElement('span');
     badge.className = 'dp-crn-count';
-    badge.textContent = `${g.count} şube`;
+    badge.textContent = `${g.count} ${I18N.t('prgSube')}`;
     crn.appendChild(badge);
   }
   row.appendChild(crn);
@@ -805,7 +812,7 @@ function sectionGroupRow(g, hasInstr) {
   }
   const when = document.createElement('span');
   when.className = 'dp-when';
-  when.textContent = g.when || 'saat yok';
+  when.textContent = g.when || I18N.t('planNoTimeInfo');
   row.appendChild(when);
   const fill = document.createElement('span');
   fill.className = 'dp-fill';
@@ -815,11 +822,11 @@ function sectionGroupRow(g, hasInstr) {
       fill.append(' ');
       const full = document.createElement('span');
       full.className = 'dp-full quota-fosfor-only';
-      full.textContent = 'dolu';
+      full.textContent = I18N.t('planFullBadge');
       fill.appendChild(full);
     }
   } else {
-    fill.textContent = 'kontenjan yok';
+    fill.textContent = I18N.t('planNoCapacityInfo');
   }
   row.appendChild(fill);
   const actions = document.createElement('span');
@@ -828,15 +835,15 @@ function sectionGroupRow(g, hasInstr) {
   det.type = 'button';
   det.dataset.act = 'detail';
   det.dataset.code = g.code;
-  det.textContent = 'detay';
+  det.textContent = I18N.t('prgMenuDetail');
   actions.appendChild(det);
   const add = document.createElement('button');
   add.type = 'button';
   add.dataset.act = 'add';
   add.dataset.branch = g.branch;
   add.dataset.crn = g.crns[0];
-  add.title = `${g.crns[0]} şubesini programa ekle`;
-  add.textContent = 'programa ekle';
+  add.title = `${g.crns[0]} ${I18N.t('planAddSectionTitle')}`;
+  add.textContent = I18N.t('detailAddProg');
   actions.appendChild(add);
   row.appendChild(actions);
   return row;
@@ -859,7 +866,7 @@ function electiveRow(e, open, slotKey) {
 
   const title = document.createElement('span');
   title.className = 'dp-title dp-elective-name';
-  title.textContent = e.title || 'Seçmeli';
+  title.textContent = e.title || I18N.t('planElectiveDefaultTitle');
   row.appendChild(title);
 
   const repCell = document.createElement('span');
@@ -876,10 +883,11 @@ function electiveRow(e, open, slotKey) {
   btn.className = 'dp-sec-btn ' + (open ? 'open' : 'closed');
   btn.dataset.act = 'pool';
   if (e.title) btn.dataset.title = e.title;
-  btn.textContent = open ? `${open} açık` : 'kapalı';
+  const enElective = I18N.lang === 'en';
+  btn.textContent = open ? `${open} ${I18N.t('planOpenWord')}` : I18N.t('planClosed');
   btn.title = open
-    ? `${total} alternatiften ${open} tanesi açık · havuzu aç`
-    : 'bu dönem açık değil · havuzu aç';
+    ? (enElective ? `${open} of ${total} alternatives open · ${I18N.t('planOpenPool')}` : `${total} alternatiften ${open} tanesi açık · ${I18N.t('planOpenPool')}`)
+    : `${I18N.t('planNotOpenThisTerm')} · ${I18N.t('planOpenPool')}`;
   row.appendChild(btn);
 
   el.appendChild(row);
@@ -889,7 +897,7 @@ function electiveRow(e, open, slotKey) {
 function fmtSemLoad(load) {
   const k = typeof load.credits === 'object' ? `${trNum(load.credits.min)}–${trNum(load.credits.max)}` : trNum(load.credits);
   const e = typeof load.ects === 'object' ? `${trNum(load.ects.min)}–${trNum(load.ects.max)}` : trNum(load.ects);
-  return `${k} kr · ${e} AKTS`;
+  return `${k} ${I18N.t('planCreditAbbr')} · ${e} ${I18N.t('planEctsAbbr')}`;
 }
 
 // -- özet şeridi --
@@ -923,20 +931,20 @@ function renderSummary(sems) {
   const el = $('#dp-summary');
   if (!el) return;
   const tot = planTotal();
-  const total = `${trNum(tot.credits)} kredi · ${trNum(tot.ects)} AKTS`;
-  const computed = (tot.creditsComputed || tot.ectsComputed) ? ' · hesaplandı' : '';
+  const total = `${trNum(tot.credits)} ${I18N.t('planCreditsFull')} · ${trNum(tot.ects)} ${I18N.t('planEctsAbbr')}`;
+  const computed = (tot.creditsComputed || tot.ectsComputed) ? I18N.t('planComputedSuffix') : '';
   const load = sems.length === 1
-    ? `seçili yarıyıl ${fmtSemLoad(semesterLoad(sems[0]))}`
-    : sems.length > 1 ? `${sems.length} yarıyıl` : 'tüm plan';
+    ? `${I18N.t('planSelectedSemesterLoad')} ${fmtSemLoad(semesterLoad(sems[0]))}`
+    : sems.length > 1 ? `${sems.length} ${I18N.t('planSemesterUnit')}` : I18N.t('planWholePlan');
   const prog = plan.programName || progCode;
   const remain = remainingRequired();
-  const remainHtml = remain > 0 ? `<div><dt>kalan</dt><dd>${remain} zorunlu ders</dd></div>` : '';
+  const remainHtml = remain > 0 ? `<div><dt>${I18N.t('planRemainingLabel')}</dt><dd>${remain} ${I18N.t('planRequiredCoursesUnit')}</dd></div>` : '';
   el.innerHTML = `<div class="dp-summary-main">
       <h2>${esc(prog)}</h2>
     </div>
     <dl class="dp-summary-meta">
-      <div><dt>program toplamı${esc(computed)}</dt><dd>${esc(total)}</dd></div>
-      <div><dt>görünüm</dt><dd>${esc(load)}</dd></div>
+      <div><dt>${I18N.t('planProgramTotal')}${esc(computed)}</dt><dd>${esc(total)}</dd></div>
+      <div><dt>${I18N.t('planViewLabel')}</dt><dd>${esc(load)}</dd></div>
       ${remainHtml}
     </dl>`;
 }
@@ -1019,22 +1027,22 @@ function renderGPA() {
   $('#dp-tcredits').value = t.credits ?? '';
   $('#dp-tgpa').value = t.gpa ?? '';
   if (empty) {
-    if (preview) preview.textContent = 'Not girdikçe hesaplanır';
+    if (preview) preview.textContent = I18N.t('planGpaPreviewEmpty');
     setTargetState(true);
     renderYatay();
     return;
   }
 
   const st = currentState();
-  $('#dp-gano').textContent = st.gpa == null ? 'yok' : fmtTr2(st.gpa);
+  $('#dp-gano').textContent = st.gpa == null ? I18N.t('planNone') : fmtTr2(st.gpa);
   if (preview) preview.textContent = st.gpa == null
-    ? `${trNum(st.credits)} kredi girildi`
-    : `${fmtTr2(st.gpa)} GANO · ${trNum(st.credits)} kredi`;
+    ? `${trNum(st.credits)} ${I18N.t('planCreditsEnteredSuffix')}`
+    : `${fmtTr2(st.gpa)} ${I18N.t('planGanoLabel')} · ${trNum(st.credits)} ${I18N.t('planCreditsFull')}`;
   const tot = planTotal();
   const p = progress(allEntries(), { credits: tot.credits, ects: tot.ects }, stored.transfer);
-  $('#dp-progress').textContent = `${p.credits.done}/${p.credits.total} kredi`;
+  $('#dp-progress').textContent = `${p.credits.done}/${p.credits.total} ${I18N.t('planCreditsFull')}`;
   const sub = $('#dp-progress-sub');
-  if (sub) sub.textContent = tot.ects > 0 ? `${p.ects.done}/${p.ects.total} AKTS` : '';
+  if (sub) sub.textContent = tot.ects > 0 ? `${p.ects.done}/${p.ects.total} ${I18N.t('planEctsAbbr')}` : '';
   $('#dp-target').textContent = targetText(st, tot);
   $('#dp-types-progress').textContent = typeProgress();
   setTargetState(st.gpa == null || st.credits === 0);
@@ -1047,7 +1055,7 @@ function setTargetState(off) {
   const hint = $('#dp-target-hint');
   if (!input) return;
   input.disabled = off;
-  if (hint) hint.textContent = off ? 'mevcut GANO yok, önce not gir' : '';
+  if (hint) hint.textContent = off ? I18N.t('planNoCurrentGpaHint') : '';
 }
 
 // -- yatay geçiş --
@@ -1077,7 +1085,7 @@ async function loadYatayRollup(code) {
 function yatayRow(r) {
   const dp = r.metric === 'degerlendirme';
   const fmt = (v) => v == null ? '·' : dp ? v.toFixed(5) : fmtTr2(v);
-  return `<tr><td>${esc(r.term)}</td><td>${r.semester}. yy</td>
+  return `<tr><td>${esc(r.term)}</td><td>${r.semester}. ${esc(I18N.t('planSemesterAbbr'))}</td>
     <td class="num">${r.quota ?? '·'}</td><td class="num">${r.placed}</td>
     <td class="num">${fmt(r.floor)}</td><td class="num">${fmt(r.ceiling)}</td></tr>`;
 }
@@ -1091,23 +1099,24 @@ async function renderYatay() {
 
   let head = '';
   if (st.gpa == null) {
-    head = '<p class="dp-recommend-note">Önce not gir. AGNO hesaplanmadan uygunluk kontrol edilemez.</p>';
+    head = `<p class="dp-recommend-note">${I18N.t('planEnterGradesFirst')}</p>`;
   } else if (!elig.length) {
-    head = `<p class="dp-recommend-note">Şu an ${trNum(st.credits)} kredidesin. Yatay geçiş yalnızca 3. yarıyıl (30–59,99 kredi, AGNO ≥ 2,50) veya 5. yarıyıl (60–94,99 kredi, AGNO ≥ 2,60) aralığında başvurulabiliyor.</p>`;
+    head = `<p class="dp-recommend-note">${tf('planTransferNotEligible', { credits: trNum(st.credits) })}</p>`;
   } else {
-    head = `<p class="dp-recommend-note">AGNO'n <b>${fmtTr2(st.gpa)}</b> (${trNum(st.credits)} kredi). ${elig.map((s) => `${s}.`).join(' ve ')} yarıyıl için kredi/AGNO şartını sağlıyorsun; bu, değerlendirme puanının %60'ını oluşturuyor.</p>`;
+    const semList = I18N.lang === 'en' ? elig.join(', ') : elig.map((s) => `${s}.`).join(' ve ');
+    head = `<p class="dp-recommend-note">${tf('planTransferEligible', { gpa: fmtTr2(st.gpa), credits: trNum(st.credits), semesters: semList })}</p>`;
   }
 
   if (!targetCode) {
-    box.innerHTML = head + '<p class="empty">Hedef program seç.</p>';
+    box.innerHTML = head + `<p class="empty">${I18N.t('planChooseTargetProgram')}</p>`;
     return;
   }
 
-  box.innerHTML = head + '<p class="empty">yükleniyor…</p>';
+  box.innerHTML = head + `<p class="empty">${I18N.t('statLoading')}</p>`;
   const rollup = await loadYatayRollup(targetCode);
   if ($('#dp-yatay-prog')?.value !== targetCode) return; // seçim değişti, yanıt eski
   if (!rollup) {
-    box.innerHTML = head + '<p class="empty">Bu program için yatay geçiş verisi yok.</p>';
+    box.innerHTML = head + `<p class="empty">${I18N.t('planNoTransferDataForProgram')}</p>`;
     return;
   }
 
@@ -1120,19 +1129,19 @@ async function renderYatay() {
 
   let body = `<p class="dp-recommend-note"><b>${esc(rollup.program)}</b> · ${esc(rollup.faculty)}</p>`;
   if (scoreEra.length) {
-    body += `<div class="tablewrap"><table class="htable"><thead><tr><th>Yıl</th><th>Yarıyıl</th>
-      <th class="num">Kontenjan</th><th class="num">Yerleşen</th><th class="num">Taban</th><th class="num">Tavan</th></tr></thead>
+    body += `<div class="tablewrap"><table class="htable"><thead><tr><th>${I18N.t('planYatayColYear')}</th><th>${I18N.t('planYatayColSemester')}</th>
+      <th class="num">${I18N.t('planYatayColQuota')}</th><th class="num">${I18N.t('planYatayColPlaced')}</th><th class="num">${I18N.t('planYatayColFloor')}</th><th class="num">${I18N.t('planYatayColCeiling')}</th></tr></thead>
       <tbody>${scoreEra.map(yatayRow).join('')}</tbody></table></div>`;
   }
   if (agnoEra.length) {
-    body += `<details class="dp-yatay-old"><summary>2011-2022 arası (eski ölçüt: ham AGNO, yukarıdakiyle karşılaştırılamaz)</summary>
-      <div class="tablewrap"><table class="htable"><thead><tr><th>Yıl</th><th>Yarıyıl</th>
-      <th class="num">Yerleşen</th><th class="num">Taban</th><th class="num">Tavan</th></tr></thead>
-      <tbody>${agnoEra.map((r) => `<tr><td>${esc(r.term)}</td><td>${r.semester}. yy</td><td class="num">${r.placed}</td>
+    body += `<details class="dp-yatay-old"><summary>${I18N.t('planOldMetricSummary')}</summary>
+      <div class="tablewrap"><table class="htable"><thead><tr><th>${I18N.t('planYatayColYear')}</th><th>${I18N.t('planYatayColSemester')}</th>
+      <th class="num">${I18N.t('planYatayColPlaced')}</th><th class="num">${I18N.t('planYatayColFloor')}</th><th class="num">${I18N.t('planYatayColCeiling')}</th></tr></thead>
+      <tbody>${agnoEra.map((r) => `<tr><td>${esc(r.term)}</td><td>${r.semester}. ${esc(I18N.t('planSemesterAbbr'))}</td><td class="num">${r.placed}</td>
         <td class="num">${r.floor != null ? fmtTr2(r.floor) : '·'}</td><td class="num">${r.ceiling != null ? fmtTr2(r.ceiling) : '·'}</td></tr>`).join('')}</tbody></table></div>
     </details>`;
   }
-  if (!scoreEra.length && !agnoEra.length) body += '<p class="empty">Bu yarıyıl için hiç yerleşen olmamış.</p>';
+  if (!scoreEra.length && !agnoEra.length) body += `<p class="empty">${I18N.t('planNoYearlyPlacement')}</p>`;
   box.innerHTML = head + body;
 }
 
@@ -1143,24 +1152,24 @@ function typeProgress() {
   if (!buckets.size) return '';
   return [...buckets.entries()]
     .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([t, b]) => `${t} ${b.done}/${b.total} kredi`)
+    .map(([t, b]) => `${t} ${b.done}/${b.total} ${I18N.t('planCreditsFull')}`)
     .join(' · ');
 }
 
 function targetText(st, tot) {
-  if (st.gpa === null) return 'önce not gir, mevcut GANO yok';
+  if (st.gpa === null) return I18N.t('planEnterGradeFirstShort');
   const target = parseFloat(String($('#dp-targetgpa').value || '3').replace(',', '.'));
   if (isNaN(target)) return '';
   const total = tot.credits;
   const remaining = Math.max(0, total - st.credits);
-  if (remaining === 0) return 'tüm plan kredisi girilmiş, hedef hesabı kalmadı';
+  if (remaining === 0) return I18N.t('planAllCreditsEntered');
   const r = targetNeeded({ gpa: st.gpa, credits: st.credits }, target, remaining);
   if (!r) return '';
   const rem = Math.round(remaining);
   if (r.needed > 4.0) {
-    return `GANO'yu ${fmtTr2(target)} yapmak için kalan ${rem} kredide ortalama ${fmtTr2(r.needed)} gerekir, 4,00'ü aşmak gerekir, ulaşılamaz`;
+    return tf('planTargetGoalNeedOver', { target: fmtTr2(target), rem, needed: fmtTr2(r.needed) });
   }
-  return `GANO'yu ${fmtTr2(target)} yapmak için kalan ${rem} kredide ortalama ${fmtTr2(r.needed)} gerekir`;
+  return tf('planTargetGoalNeed', { target: fmtTr2(target), rem, needed: fmtTr2(r.needed) });
 }
 
 // Not değişince listeyi yeniden kurmadan yarıyıl ortalamaları + GANO tazelenir
@@ -1199,7 +1208,7 @@ function commitGrade(select) {
   // Tekrar butonunun tooltip'i: önceki not varsa göster.
   const rec = stored.grades[gcode];
   const rep = select.closest('.dp-row')?.querySelector('.dp-repeat-btn');
-  if (rep) rep.title = rec?.prev ? `tekrar olarak işaretli · önceki: ${rec.prev}` : 'tekrar olarak işaretle';
+  if (rep) rep.title = rec?.prev ? `${I18N.t('planMarkedRepeatPrev')} ${rec.prev}` : I18N.t('planMarkRepeat');
 }
 
 // Klavye (delege): harf → kademeli döngü (b → BA → BA+ → …); Tab → sıradaki
@@ -1455,7 +1464,7 @@ function passedCodes() {
 
 async function buildRecommendations() {
   const box = $('#dp-recommend-result');
-  if (!plan || !rows.length) { box.innerHTML = '<p class="empty">Bu dönem için açık şube verisi yok.</p>'; return; }
+  if (!plan || !rows.length) { box.innerHTML = `<p class="empty">${I18N.t('planNoSectionData')}</p>`; return; }
   const target = Number($('#dp-recommend-sem').value || 0);
   const maxCredits = Math.max(1, Math.min(40, Number($('#dp-recommend-credit').value || 18)));
   const done = passedCodes();
@@ -1487,20 +1496,21 @@ async function buildRecommendations() {
     if (item.semesterIndex > target + 1 || used + item.credits > maxCredits) return false;
     used += item.credits; return true;
   });
+  const semOrdinal = (n) => I18N.lang === 'en' ? `Semester ${n}` : `${n}. yarıyıl`;
   box.innerHTML = chosen.length ? `<div class="dp-recommend-list">${chosen.map((item, index) => `
     <label class="dp-recommend-item${item.missing.length ? ' needs-review' : ''}">
       <input type="checkbox" data-rec-index="${index}" ${item.missing.length ? '' : 'checked'}>
-      <span><b>${esc(item.code)}</b> ${esc(item.name || '')}<small>${item.credits} kr · ${esc(item.section.when || 'zaman açıklanmadı')} · CRN ${esc(item.section.crn)}</small></span>
-      <em>${item.failed ? 'Tekrar dersi' : `${item.semesterIndex + 1}. yarıyıl`}${item.missing.length ? ` · önşartı kontrol et: ${esc(item.missing.join(', '))}` : ''}</em>
+      <span><b>${esc(item.code)}</b> ${esc(item.name || '')}<small>${item.credits} ${I18N.t('planCreditAbbr')} · ${esc(item.section.when || I18N.t('planTimeUnannounced'))} · CRN ${esc(item.section.crn)}</small></span>
+      <em>${item.failed ? I18N.t('planRepeatCourse') : semOrdinal(item.semesterIndex + 1)}${item.missing.length ? ` ${I18N.t('planCheckPrereq')} ${esc(item.missing.join(', '))}` : ''}</em>
     </label>`).join('')}</div>
-    <div class="dp-recommend-footer"><b>${trNum(used)} kredi önerildi</b><button type="button" id="dp-recommend-add" class="btn-primary">Seçilenleri programa ekle</button></div>`
-    : '<p class="empty">Bu dönem, notların ve kredi sınırıyla eşleşen ders bulunamadı.</p>';
+    <div class="dp-recommend-footer"><b>${trNum(used)} ${I18N.t('planCreditsRecommendedSuffix')}</b><button type="button" id="dp-recommend-add" class="btn-primary">${I18N.t('planAddSelectedToSchedule')}</button></div>`
+    : `<p class="empty">${I18N.t('planNoSemesterMatch')}</p>`;
   staggerReveal(box, '.dp-recommend-item');
   box._items = chosen;
   $('#dp-recommend-add')?.addEventListener('click', () => {
     const items = [...box.querySelectorAll('[data-rec-index]:checked')].map((input) => chosen[Number(input.dataset.recIndex)]?.section).filter(Boolean)
       .map((section) => ({ branch: section.branch, crn: String(section.crn) }));
-    if (!items.length) { toast('Önce en az bir ders seç', { kind: 'warn' }); return; }
+    if (!items.length) { toast(I18N.t('planChooseAtLeastOne'), { kind: 'warn' }); return; }
     window.dispatchEvent(new CustomEvent('itu:goto-program'));
     setTimeout(() => window.dispatchEvent(new CustomEvent('itu:add-program-items', { detail: { term: termSlug, items } })), 0);
   });
@@ -1536,8 +1546,8 @@ async function loadDifficulty(codes) {
 
 async function buildBalancedPlanUI() {
   const box = $('#dp-balanced-result');
-  if (!plan || !plan.semesters) { box.innerHTML = '<p class="empty">Önce programını seç.</p>'; return; }
-  box.innerHTML = '<p class="empty">hesaplanıyor…</p>';
+  if (!plan || !plan.semesters) { box.innerHTML = `<p class="empty">${I18N.t('planChooseProgramFirst')}</p>`; return; }
+  box.innerHTML = `<p class="empty">${I18N.t('planCalculating')}</p>`;
 
   const done = passedCodes();
   // Kalan zorunlu dersler: müfredattaki her .course girdisi, henüz geçilmemişse
@@ -1554,7 +1564,7 @@ async function buildBalancedPlanUI() {
     }
   }
   if (!remaining.length) {
-    box.innerHTML = '<p class="empty">Tüm zorunlu dersler tamamlanmış görünüyor.</p>';
+    box.innerHTML = `<p class="empty">${I18N.t('planAllRequiredDone')}</p>`;
     return;
   }
 
@@ -1575,12 +1585,12 @@ async function buildBalancedPlanUI() {
   });
 
   if (!result.terms.length) {
-    box.innerHTML = '<p class="empty">Plan oluşturulamadı.</p>';
+    box.innerHTML = `<p class="empty">${I18N.t('planCouldNotBuildPlan')}</p>`;
     return;
   }
 
   const cyclicNote = result.cyclic.length
-    ? `<p class="dp-recommend-note">Uyarı: ${esc(result.cyclic.join(', '))} için önşart verisinde devirli bir bağımlılık tespit edildi (veri hatası olabilir); bu dersler sıra gözetmeden yerleştirildi.</p>`
+    ? `<p class="dp-recommend-note">${tf('planCyclicWarning', { codes: esc(result.cyclic.join(', ')) })}</p>`
     : '';
 
   // Yalnızca 1. dönem (bu dönem alınabilecek dersler) tıklanabilir: sonraki
@@ -1604,19 +1614,19 @@ async function buildBalancedPlanUI() {
 
   box.innerHTML = cyclicNote + `<div class="dp-balanced-terms">${result.terms.map((t) => `
     <div class="dp-balanced-term">
-      <div class="dp-balanced-term-head"><b>${t.index + 1}. dönem</b><span>${trNum(t.totalCredits)} kredi</span></div>
+      <div class="dp-balanced-term-head"><b>${tf('planTermOrdinal', { n: t.index + 1 })}</b><span>${trNum(t.totalCredits)} ${I18N.t('planCreditsFull')}</span></div>
       <ul class="dp-balanced-list">${t.courses.map((c) => {
         const pick = t.index === 0 ? chosenByCode.get(c.code) : null;
         if (!pick) {
-          return `<li><b>${esc(c.code)}</b> ${esc(c.name || '')}<small>${trNum(c.credits)} kr · ${esc(c.reason)}</small></li>`;
+          return `<li><b>${esc(c.code)}</b> ${esc(c.name || '')}<small>${trNum(c.credits)} ${I18N.t('planCreditAbbr')} · ${esc(c.reason)}</small></li>`;
         }
         return `<li class="dp-balanced-pick">
           <label><input type="checkbox" data-balanced-code="${esc(c.code)}" checked>
-          <span><b>${esc(c.code)}</b> ${esc(c.name || '')}<small>${trNum(c.credits)} kr · ${esc(pick.section.when || 'zaman açıklanmadı')} · CRN ${esc(pick.section.crn)}</small></span></label>
+          <span><b>${esc(c.code)}</b> ${esc(c.name || '')}<small>${trNum(c.credits)} ${I18N.t('planCreditAbbr')} · ${esc(pick.section.when || I18N.t('planTimeUnannounced'))} · CRN ${esc(pick.section.crn)}</small></span></label>
         </li>`;
       }).join('')}</ul>
     </div>`).join('')}</div>
-    ${chosen.length ? `<div class="dp-recommend-footer"><b>bu dönem açık ${chosen.length} ders eklenebilir</b><button type="button" id="dp-balanced-add" class="btn-primary">Seçilenleri programa ekle</button></div>` : ''}`;
+    ${chosen.length ? `<div class="dp-recommend-footer"><b>${tf('planCanAddThisTerm', { n: chosen.length })}</b><button type="button" id="dp-balanced-add" class="btn-primary">${I18N.t('planAddSelectedToSchedule')}</button></div>` : ''}`;
   staggerReveal(box, '.dp-balanced-term');
 
   $('#dp-balanced-add')?.addEventListener('click', () => {
@@ -1624,7 +1634,7 @@ async function buildBalancedPlanUI() {
       .map((input) => chosenByCode.get(input.dataset.balancedCode)?.section)
       .filter(Boolean)
       .map((section) => ({ branch: section.branch, crn: String(section.crn) }));
-    if (!items.length) { toast('Önce en az bir ders seç', { kind: 'warn' }); return; }
+    if (!items.length) { toast(I18N.t('planChooseAtLeastOne'), { kind: 'warn' }); return; }
     window.dispatchEvent(new CustomEvent('itu:goto-program'));
     setTimeout(() => window.dispatchEvent(new CustomEvent('itu:add-program-items', { detail: { term: termSlug, items } })), 0);
   });
@@ -1696,16 +1706,16 @@ function init() {
       openCourseDetail(act.dataset.code, { term: termSlug, source: 'dersplanim' });
     } else if (a === 'add') {
       const ok = fav.addToSchedule(termSlug, act.dataset.branch, act.dataset.crn);
-      toast(ok ? 'programa eklendi' : 'zaten listede');
+      toast(ok ? I18N.t('planAddedToScheduleToast') : I18N.t('prgDup'));
       act.disabled = true;
-      act.textContent = ok ? '✓ eklendi' : 'listedeydi';
+      act.textContent = ok ? I18N.t('planCheckAdded') : I18N.t('planWasInList');
     } else if (a === 'dp-more') {
       // "N şube daha göster" — sonraki grup satırlarını aç/kapat.
       const wrap = act.nextElementSibling;
       const open = wrap ? !wrap.hidden : false;
       if (wrap) {
         wrap.hidden = open;
-        act.textContent = open ? 'daha az göster' : `${act.dataset.count || ''} şube daha göster`;
+        act.textContent = open ? I18N.t('planShowLess') : `${act.dataset.count || ''} ${I18N.t('prgSube')} ${I18N.t('planShowMore')}`;
         act.setAttribute('aria-expanded', String(!open));
       }
     } else if (a === 'dp-sec') {
@@ -1731,8 +1741,8 @@ function init() {
       act.setAttribute('aria-pressed', String(!cur.repeat));
       act.textContent = !cur.repeat ? '↻' : '↺';
       act.title = cur.prev
-        ? `tekrar olarak işaretli · önceki: ${cur.prev}`
-        : 'tekrar olarak işaretle';
+        ? `${I18N.t('planMarkedRepeatPrev')} ${cur.prev}`
+        : I18N.t('planMarkRepeat');
     } else if (a === 'pool') {
       // Seçmeli havuz panelini mevcut akışla aç: URL'yi kur, önşart sekmesine git.
       // Sayfa, ?prog+&pool= URL mekanizmasını çalıştırır — ikinci bir liste yazılmaz.
@@ -1812,11 +1822,11 @@ function init() {
     URL.revokeObjectURL(a.href);
   });
   $('#dp-import').addEventListener('click', () => {
-    const val = window.prompt("Daha önce dışa aktardığın JSON'u yapıştır:");
+    const val = window.prompt(I18N.t('planPromptImport'));
     if (!val) return;
     const parsed = importJSON(val);
-    if (!parsed) { toast('Geçersiz dosya', { kind: 'warn' }); return; }
-    if (parsed.program !== progCode) { toast('Bu dosya başka bir programın notlarını içeriyor', { kind: 'warn' }); return; }
+    if (!parsed) { toast(I18N.t('planInvalidFile'), { kind: 'warn' }); return; }
+    if (parsed.program !== progCode) { toast(I18N.t('planWrongProgramFile'), { kind: 'warn' }); return; }
     stored = parsed.data;
     saveStored(progCode, stored);
     const target = Number(stored.targetGpa);
@@ -1824,11 +1834,11 @@ function init() {
     catalogMap.clear();
     ensureCatalogForPicks();
     renderAll();
-    toast('Notlar içe aktarıldı');
+    toast(I18N.t('planGradesImported'));
   });
   $('#dp-backup-all').addEventListener('click', () => {
     downloadJSON(createBackup(), `itu-ders-yedek-${new Date().toISOString().slice(0, 10)}.json`);
-    toast('Program ve GANO yedeği indirildi');
+    toast(I18N.t('planBackupDownloaded'));
   });
   $('#dp-restore-all').addEventListener('click', () => $('#dp-restore-file').click());
   $('#dp-restore-file').addEventListener('change', async (event) => {
@@ -1836,19 +1846,19 @@ function init() {
     event.target.value = '';
     if (!file) return;
     const parsed = parseBackup(await file.text());
-    if (!parsed) { toast('Geçersiz veya desteklenmeyen yedek', { kind: 'warn' }); return; }
+    if (!parsed) { toast(I18N.t('planInvalidBackup'), { kind: 'warn' }); return; }
     const summary = backupSummary(parsed);
-    const yes = await confirmDialog({ title: 'Tüm yedeği geri yükle', message: `${summary.programs} program, ${summary.sections} şube ve ${summary.gpaPrograms} GANO planı mevcut tarayıcı verilerinin yerini alacak.`, okLabel: 'Geri yükle' });
+    const yes = await confirmDialog({ title: I18N.t('planRestoreAllTitle'), message: `${summary.programs} ${I18N.t('planColCourse')}, ${summary.sections} ${I18N.t('prgSube')} ${I18N.lang === 'en' ? 'and' : 've'} ${summary.gpaPrograms} ${I18N.t('planGanoLabel')} ${I18N.t('planRestoreConfirmMessage')}`, okLabel: I18N.t('planRestoreOk') });
     if (!yes) return;
-    if (!restoreBackup(parsed)) { toast('Yedek kaydedilemedi', { kind: 'warn' }); return; }
-    toast('Yedek geri yüklendi');
+    if (!restoreBackup(parsed)) { toast(I18N.t('planRestoreFailed'), { kind: 'warn' }); return; }
+    toast(I18N.t('planBackupRestored'));
     location.reload();
   });
   $('#dp-reset').addEventListener('click', () => {
     confirmDialog({
-      title: 'Tümünü sıfırla',
-      message: `${progCode} için girilen tüm notlar ve transfer bilgisi silinecek. Geri alınamaz.`,
-      okLabel: 'Sıfırla',
+      title: I18N.t('planResetAllTitle'),
+      message: `${progCode} ${I18N.t('planResetConfirmMessage')}`,
+      okLabel: I18N.t('planResetOk'),
       danger: true,
     }).then((yes) => {
       if (!yes) return;
@@ -1856,7 +1866,7 @@ function init() {
       saveStored(progCode, stored);
       $('#dp-targetgpa').value = '3.00';
       renderAll();
-      toast('Notlar sıfırlandı');
+      toast(I18N.t('planGradesReset'));
     });
   });
 }

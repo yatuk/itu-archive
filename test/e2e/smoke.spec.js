@@ -193,7 +193,9 @@ test.describe('SPA (ana sayfa)', () => {
 
     await page.locator('.theme-btn[data-theme="dark"]').click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
-    await expect(first.locator('.bar').first()).toBeVisible();
+    // Dark, sade'nin yalnızca siyah hâli: kontenjan aynı tek temsille kalır, fosfor çubuğu geri gelmez.
+    await expect(first.locator('.mobile-quota').first()).toBeVisible();
+    await expect(first.locator('.bar')).toHaveCount(0);
   });
 
   test('mobilde aynı dersin şubeleri tek başlıkta toplanır ve favori korunur', async ({ page }) => {

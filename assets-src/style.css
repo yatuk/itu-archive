@@ -788,20 +788,18 @@ td.when { color: var(--dim); white-space: pre-line; }
 
 .fill { display: inline-flex; align-items: center; gap: 8px; justify-content: flex-end; }
 .fill-measured { color: var(--dimmer); font-size: 11px; font-weight: 400; white-space: nowrap; }
-.quota-sade { display: none; }
-.quota-fosfor { display: contents; }
+/* "Fosfor" iki-kolonlu/çubuklu kontenjan sunumu kaldırıldı — sade/dark artık
+   aynı tek sayısal temsili paylaşır (quotaDisplay, core/chart.js). */
+.quota-fosfor, .quota-fosfor-only, .quota-legacy-col { display: none; }
 .quota-state.tight { color: var(--amber); }
 .quota-state.full { color: var(--red); }
-[data-theme="sade"] .quota-fosfor,
-[data-theme="sade"] .quota-fosfor-only,
-.quota-legacy-col { display: none; }
-[data-theme="sade"] .quota-sade {
+.quota-sade {
   display: inline;
   font-family: var(--mono);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-[data-theme="sade"] #results { min-width: 760px; }
+#results { min-width: 760px; }
 .bar { width: 46px; height: 6px; background: var(--line-hot); position: relative; overflow: hidden; }
 .bar i { position: absolute; inset: 0 auto 0 0; background: var(--acid); }
 .bar.full i { background: var(--amber); }

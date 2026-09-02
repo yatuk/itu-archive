@@ -351,23 +351,21 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('COURSES');
   });
 
-  test('sade kontenjanı tek temsile indirir, fosfor eski çubuğu korur', async ({ page }) => {
+  test('kontenjan iki temada da tek temsile iner (fosfor çubuklu görünümü kaldırıldı)', async ({ page }) => {
     await page.goto('/');
     const mobile = page.viewportSize().width <= 640;
     const scope = mobile ? page.locator('#course-groups') : page.locator('#results');
     await expect(mobile ? scope.locator('.mobile-course-group').first() : scope.locator('tbody tr').first()).toBeVisible({ timeout: 15000 });
 
-    // Sade: Kont./Yazılan/Doluluk üçlüsü tek Kontenjan kolonuna iner.
-    await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 8);
-    await expect(scope.locator(mobile ? '.mobile-quota' : 'tbody .quota-main-col').filter({ hasText: '/' }).first()).toBeVisible();
-    await expect(scope.locator('.bar:visible')).toHaveCount(0);
-    await expect(scope.locator('.fill-measured')).toHaveCount(0);
-
-    // Fosfor dondurulmuş görünümü: iki sayı kolonu ve yüzde + bar geri gelir.
-    await page.locator('.theme-btn[data-theme="dark"]').click();
-    await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 10);
-    await expect(scope.locator('.bar:visible').first()).toBeVisible();
-    await expect(scope.locator('.quota-fosfor').filter({ hasText: '%' }).first()).toBeVisible();
+    for (const theme of ['sade', 'dark']) {
+      await page.locator(`.theme-btn[data-theme="${theme}"]`).click();
+      // Kont./Yazılan/Doluluk üçlüsü tek Kontenjan kolonuna iner — iki temada da aynı.
+      await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 8);
+      await expect(scope.locator(mobile ? '.mobile-quota' : 'tbody .quota-main-col').filter({ hasText: '/' }).first()).toBeVisible();
+      await expect(scope.locator('.bar:visible')).toHaveCount(0);
+      await expect(scope.locator('.fill-measured')).toHaveCount(0);
+      await expect(scope.locator('.quota-fosfor:visible')).toHaveCount(0);
+    }
   });
 
   test('Sınavlar eski Yaz takvimi CDN cacheinden gelse bile Güz diye göstermez', async ({ page }) => {

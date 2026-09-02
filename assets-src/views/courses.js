@@ -557,7 +557,7 @@ function renderTableRows(append) {
         : '<span>·</span>'}</td>
       <td class="num quota-legacy-col" data-label="Kont.">${formatInt(cap)}</td>
       <td class="num quota-legacy-col" data-label="Yazılan">${formatInt(enr)}</td>
-      <td class="num quota-main-col" data-label="Kontenjan">${quotaDisplay(cap, enr, { legacyCounts: true })}</td>`;
+      <td class="num quota-main-col" data-label="Kontenjan">${quotaDisplay(cap, enr)}</td>`;
   }, { append });
 
   if (rows) {
@@ -624,7 +624,7 @@ function createMobileSection(row, extra = false) {
     ? when.split(' | ').map((session) => `<span>${esc(localizeSchedule(session))}</span>`).join('')
     : `<span class="mobile-data-missing">${I18N.lang === 'en' ? 'Time not announced' : 'Zaman açıklanmadı'}</span>`;
   const quota = Number(cap) > 0
-    ? quotaDisplay(cap, enr, { legacyCounts: true })
+    ? quotaDisplay(cap, enr)
     : `<span class="quota-unknown">${I18N.lang === 'en' ? 'capacity not announced' : 'kontenjan açıklanmadı'}</span>`;
   const li = document.createElement('li');
   li.className = `mobile-section${extra ? ' mobile-section-extra' : ''}`;

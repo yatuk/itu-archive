@@ -550,11 +550,11 @@ test('quotaState karar için kalan yeri ve durumu hesaplar', () => {
   assert.equal(quotaState(50, 52).remaining, 0);
 });
 
-test('quotaDisplay sade metni tek oranla, fosforu eski çubukla üretir', () => {
-  const open = quotaDisplay(50, 34, { legacyCounts: true });
+test('quotaDisplay tek sayısal temsil üretir (fosfor çubuk çıktısı kaldırıldı)', () => {
+  const open = quotaDisplay(50, 34);
   assert.ok(open.includes('34 / 50'));
-  assert.ok(!open.match(/quota-sade[^>]*>[^<]*%68/));
-  assert.ok(open.includes('34/50 · <span class="fill">%68'));
+  assert.ok(!open.includes('quota-fosfor'));
+  assert.ok(!open.includes('class="fill"'));
 
   const tight = quotaDisplay(50, 47);
   assert.ok(tight.includes('47 / 50 · <span class="quota-state tight">3 yer</span>'));

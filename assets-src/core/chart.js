@@ -28,10 +28,10 @@ export function quotaState(cap, enr) {
   return { capacity, enrolled, remaining, pct, kind };
 }
 
-// İki temanın bilgi yoğunluğu bilinçli olarak farklıdır. Fosfor görünümü
-// dondurulduğu için eski fillBar çıktısını korur; sade görünüm tek sayısal temsil
-// ve yalnızca karar gerektiren durumda kısa bir metin gösterir.
-export function quotaDisplay(cap, enr, { detail = false, legacyCounts = false, lang } = {}) {
+// Kontenjan tek sayısal temsille gösterilir; iki tema (sade/dark) artık
+// aynı görünümü paylaşır (bkz. "fosfor" tema kaldırıldı — dark, sade'nin
+// yalnızca siyah hâli). Yalnızca karar gerektiren durumda kısa bir metin eklenir.
+export function quotaDisplay(cap, enr, { detail = false, lang } = {}) {
   const q = quotaState(cap, enr);
   if (q.kind === 'unknown') return '·';
   const english = (lang || (typeof document !== 'undefined' ? document.documentElement.lang : 'tr')) === 'en';
@@ -44,13 +44,9 @@ export function quotaDisplay(cap, enr, { detail = false, legacyCounts = false, l
     ? `${formatInt(q.enrolled)} ${english ? 'enrolled' : 'kayıtlı'} · ${formatInt(q.capacity)} ${english ? 'capacity' : 'kontenjan'}`
     : `${formatInt(q.enrolled)} / ${formatInt(q.capacity)}`;
   const sade = `${counts}${state ? ` · <span class="quota-state ${q.kind}">${state}</span>` : ''}`;
-  const legacy = legacyCounts
-    ? `${formatInt(q.enrolled)}/${formatInt(q.capacity)} · ${fillBar(q.capacity, q.enrolled)}`
-    : fillBar(q.capacity, q.enrolled, { detail });
   const aria = `${formatInt(q.enrolled)} ${english ? 'enrolled' : 'kayıtlı'}, ${formatInt(q.capacity)} ${english ? 'capacity' : 'kontenjan'}${state ? `, ${state}` : ''}`;
 
-  return `<span class="quota-sade quota-${q.kind}" aria-label="${aria}">${sade}</span>` +
-    `<span class="quota-fosfor">${legacy}</span>`;
+  return `<span class="quota-sade quota-${q.kind}" aria-label="${aria}">${sade}</span>`;
 }
 
 // trendChart (Faz: panel elden geçirme): iç içe (nested) çubuk — açık çerçeve

@@ -47,7 +47,7 @@ function loadPrograms() {
     validate: (value) => isPlainObject(value) && Array.isArray(value.programs) && value.programs.length > 0,
   });
   if (p) return p;
-  return { programs: [{ id: 1, name: 'Program 1', items: [] }], active: 1 };
+  return { programs: [{ id: 1, name: `${I18N.t('progNewProgramWord')} 1`, items: [] }], active: 1 };
 }
 function savePrograms(ps) {
   writeLocalState(PROG_KEY, ps, {
@@ -129,16 +129,18 @@ export function initProgram() {
   $('#p-prog-rename').addEventListener('click', progRename);
   $('#p-clear').addEventListener('click', () => {
     // Tek tıkla program silinmesin — onay iste (Critique P2).
+    const en = I18N.lang === 'en';
     confirmDialog({
-      title: 'Programı temizle',
-      message: `${progItems().length} şube silinecek. Geri alınamaz.`,
-      okLabel: 'Temizle',
+      title: I18N.t('progClearConfirmTitle'),
+      message: en ? `${progItems().length} sections will be deleted. This can't be undone.`
+        : `${progItems().length} şube silinecek. Geri alınamaz.`,
+      okLabel: I18N.t('progClearConfirmOk'),
       danger: true,
     }).then((yes) => {
       if (!yes) return;
       setProgItems([]);
       renderProgSelector();
-      toast('Program temizlendi');
+      toast(I18N.t('prgCleared'));
     });
   });
   $('#p-csv').addEventListener('click', exportCSV);
@@ -164,7 +166,7 @@ export function initProgram() {
     let added = 0;
     for (const item of (detail.items || [])) if (addToActive(item.branch, String(item.crn))) added++;
     renderProgSelector();
-    toast(added ? `${added} şube programa eklendi` : 'Seçilen şubeler zaten programda', { kind: added ? 'ok' : 'warn' });
+    toast(added ? `${added} ${I18N.t('progEventAddedSuffix')}` : I18N.t('progEventAlreadyIn'), { kind: added ? 'ok' : 'warn' });
   });
   inited = true;
 }
@@ -174,34 +176,35 @@ export function initProgram() {
 function progNew() {
   const ps = loadPrograms();
   const id = Math.max(0, ...ps.programs.map((p) => p.id)) + 1;
-  const name = `Program ${ps.programs.length + 1}`;
+  const name = `${I18N.t('progNewProgramWord')} ${ps.programs.length + 1}`;
   ps.programs.push({ id, name, items: [] });
   ps.active = id;
   savePrograms(ps);
   renderProgSelector();
-  toast(`Yeni program "${name}" oluşturuldu`);
+  toast(I18N.lang === 'en' ? `New schedule "${name}" created` : `Yeni program "${name}" oluşturuldu`);
 }
 function progCopy() {
   const ps = loadPrograms();
   const p = ps.programs.find((x) => x.id === ps.active);
   if (!p) return;
   const id = Math.max(0, ...ps.programs.map((x) => x.id)) + 1;
-  ps.programs.push({ id, name: p.name + ' (kopya)', items: JSON.parse(JSON.stringify(p.items)) });
+  ps.programs.push({ id, name: p.name + I18N.t('progCopySuffix'), items: JSON.parse(JSON.stringify(p.items)) });
   ps.active = id;
   savePrograms(ps);
   renderProgSelector();
-  toast('Program kopyalandı');
+  toast(I18N.t('progCopiedProgramToast'));
 }
 function progDel() {
   const ps = loadPrograms();
-  if (ps.programs.length <= 1) { toast('En az bir program kalmalı', { kind: 'warn' }); return; }
+  if (ps.programs.length <= 1) { toast(I18N.t('progMinOneProgram'), { kind: 'warn' }); return; }
   const i = ps.programs.findIndex((x) => x.id === ps.active);
   if (i < 0) return;
   // Native confirm yerine stillenmiş onay (Critique P2 — tema dışı diyalog yok).
+  const en = I18N.lang === 'en';
   confirmDialog({
-    title: 'Programı sil',
-    message: `"${ps.programs[i].name}" silinsin mi?`,
-    okLabel: 'Sil',
+    title: I18N.t('progDeleteConfirmTitle'),
+    message: en ? `Delete "${ps.programs[i].name}"?` : `"${ps.programs[i].name}" silinsin mi?`,
+    okLabel: en ? 'Delete' : 'Sil',
     danger: true,
   }).then((yes) => {
     if (!yes) return;
@@ -209,7 +212,7 @@ function progDel() {
     ps.active = ps.programs[0].id;
     savePrograms(ps);
     renderProgSelector();
-    toast('Program silindi');
+    toast(I18N.t('progDeleteToast'));
   });
 }
 function progRename() {
@@ -217,8 +220,8 @@ function progRename() {
   const p = ps.programs.find((x) => x.id === ps.active);
   if (!p) return;
   promptDialog({
-    title: 'Programı yeniden adlandır',
-    message: 'Yeni program adı:',
+    title: I18N.t('progRenameConfirmTitle'),
+    message: I18N.t('progRenameConfirmMsg'),
     value: p.name,
     validate: (v) => v.trim().length > 0,
   }).then((name) => {
@@ -226,7 +229,7 @@ function progRename() {
     p.name = name.trim();
     savePrograms(ps);
     renderProgSelector();
-    toast('Program yeniden adlandırıldı');
+    toast(I18N.t('progRenamedToast'));
   });
 }
 
@@ -240,14 +243,14 @@ function addRowEntry() {
   div.className = 'p-row';
   div.dataset.id = id;
   div.innerHTML = `
-    <select class="p-row-branch" data-id="${id}"><option value="">Bölüm seç</option></select>
-    <select class="p-row-course" data-id="${id}" disabled><option value="">Ders seç</option></select>
-    <select class="p-row-crn" data-id="${id}" disabled><option value="">Şube (CRN) seç</option></select>
-    <button type="button" class="p-row-del p-danger" data-id="${id}">Dersi Sil</button>`;
+    <select class="p-row-branch" data-id="${id}"><option value="">${esc(I18N.t('progSelectBranchOption'))}</option></select>
+    <select class="p-row-course" data-id="${id}" disabled><option value="">${esc(I18N.t('progSelectCourseOption'))}</option></select>
+    <select class="p-row-crn" data-id="${id}" disabled><option value="">${esc(I18N.t('progSelectCRNOption'))}</option></select>
+    <button type="button" class="p-row-del p-danger" data-id="${id}">${esc(I18N.t('progDeleteCourseBtn'))}</button>`;
   wrap.appendChild(div);
   const branchSel = div.querySelector('.p-row-branch');
   const branches = [...new Set(rows.map((r) => r[3]))].sort();
-  branchSel.innerHTML = '<option value="">Bölüm seç</option>' +
+  branchSel.innerHTML = `<option value="">${esc(I18N.t('progSelectBranchOption'))}</option>` +
     branches.map((b) => `<option value="${esc(b)}">${esc(b)}</option>`).join('');
   branchSel.addEventListener('change', () => fillCourseSelect(id, branchSel.value));
   div.querySelector('.p-row-del').addEventListener('click', () => div.remove());
@@ -259,13 +262,13 @@ function fillCourseSelect(id, branch) {
   if (!div) return;
   const courseSel = div.querySelector('.p-row-course');
   const crnSel = div.querySelector('.p-row-crn');
-  courseSel.innerHTML = '<option value="">Ders seç</option>';
-  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>';
+  courseSel.innerHTML = `<option value="">${esc(I18N.t('progSelectCourseOption'))}</option>`;
+  crnSel.innerHTML = `<option value="">${esc(I18N.t('progSelectCRNOption'))}</option>`;
   courseSel.disabled = !branch;
   crnSel.disabled = true;
   if (!branch) return;
   const codes = [...new Set(rows.filter((r) => r[3] === branch).map((r) => r[1]))].sort();
-  courseSel.innerHTML = '<option value="">Ders seç</option>' +
+  courseSel.innerHTML = `<option value="">${esc(I18N.t('progSelectCourseOption'))}</option>` +
     codes.map((c) => {
       const name = rows.find((r) => r[1] === c)?.[2] || '';
       return `<option value="${esc(c)}">${esc(c)} - ${esc(name)}</option>`;
@@ -277,11 +280,11 @@ function fillCRNSelect(id, branch, code) {
   const div = document.querySelector(`.p-row[data-id="${id}"]`);
   if (!div) return;
   const crnSel = div.querySelector('.p-row-crn');
-  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>';
+  crnSel.innerHTML = `<option value="">${esc(I18N.t('progSelectCRNOption'))}</option>`;
   crnSel.disabled = !code;
   if (!code) return;
   const secs = rows.filter((r) => r[3] === branch && r[1] === code);
-  crnSel.innerHTML = '<option value="">Şube (CRN) seç</option>' +
+  crnSel.innerHTML = `<option value="">${esc(I18N.t('progSelectCRNOption'))}</option>` +
     secs.map((r) => `<option value="${esc(r[0])}">${esc(r[0])}: ${esc(r[5] || '·')} · ${esc(r[4] || '·')} · ${r[6] ? `${r[7]}/${r[6]}` : '·'}</option>`).join('');
   // CRN seçilince ekle ve satırı kaldır.
   crnSel.addEventListener('change', () => {
@@ -289,7 +292,7 @@ function fillCRNSelect(id, branch, code) {
     const r = rows.find((x) => x[0] === crnSel.value);
     if (r) {
       const added = addToActive(r[3], r[0]);
-      toast(added ? `${r[1]} eklendi` : `${r[1]} zaten listede`, { kind: added ? 'ok' : 'warn' });
+      toast(added ? `${r[1]} ${I18N.t('prgAdded')}` : `${r[1]} ${I18N.t('prgDup')}`, { kind: added ? 'ok' : 'warn' });
       render();
       renderProgSelector();
     }
@@ -301,7 +304,7 @@ export async function onShow() {
   initProgram();
   if (!state.index) await indexReady;
   if (!state.index) {
-    toast('Veriler yüklenemedi, sayfayı yenile.', { kind: 'err' });
+    toast(I18N.t('toastVeriYok'), { kind: 'err' });
     return;
   }
   const params = new URLSearchParams(location.search);
@@ -309,7 +312,7 @@ export async function onShow() {
     const sel = $('#p-term');
     sel.innerHTML = state.index.terms
       .filter((t) => !t.missing)
-      .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ' · canlı' : ''}</option>`).join('');
+      .map((t) => `<option value="${t.slug}">${t.label}${t.live ? ` · ${I18N.t('termBadgeLive')}` : ''}</option>`).join('');
     sel.value = state.index.currentSlug;
     if (params.has('term')) {
       const want = params.get('term');
@@ -326,7 +329,7 @@ export async function onShow() {
       const r = rows.find((x) => x[0] === crn);
       if (r && addToActive(r[3], crn)) added++;
     }
-    if (added) toast(`${added} şube paylaşılan programdan yüklendi`);
+    if (added) toast(`${added} ${I18N.t('prgLoaded')}`);
   }
   renderProgSelector();
   render();
@@ -338,7 +341,7 @@ async function loadTerm(slug) {
     rows = await getJSON(`data/terms/${slug}/search.json`);
   } catch (e) {
     rows = [];
-    toast(`Dönem verisi yüklenemedi (${e.message})`, { kind: 'err' });
+    toast(`${I18N.t('toastTermFail')} (${e.message})`, { kind: 'err' });
   }
   render();
 }
@@ -357,7 +360,7 @@ function search() {
     <button type="button" class="p-result" data-i="${idx}">
       <b>${esc(r[1])}</b><span>${esc(r[2])}</span>
       <em>${esc(r[5] || '·')}</em><em>${r[6] ? `${r[7]}/${r[6]}` : '·'}</em>
-    </button>`).join('') || '<p class="empty">eşleşme yok</p>';
+    </button>`).join('') || `<p class="empty">${esc(I18N.t('emptyRow'))}</p>`;
 }
 
 function hideResults() {
@@ -367,7 +370,7 @@ function hideResults() {
 
 function addRow(r) {
   const added = addToActive(r[3], r[0]);
-  toast(added ? `${r[1]} eklendi` : `${r[1]} zaten listede`, { kind: added ? 'ok' : 'warn' });
+  toast(added ? `${r[1]} ${I18N.t('prgAdded')}` : `${r[1]} ${I18N.t('prgDup')}`, { kind: added ? 'ok' : 'warn' });
   render();
   renderProgSelector();
 }
@@ -415,9 +418,10 @@ async function renderCredits(items) {
     const c = map && map[row[1]] && map[row[1]].credits;
     const item = box.querySelector(`.p-item[data-idx="${i}"]`);
     if (!item || !c) continue;
+    const en = I18N.lang === 'en';
     const parts = [];
-    if (c.local != null) parts.push(`${trNum(c.local)} kr`);
-    if (c.ects) parts.push(`${trNum(c.ects)} AKTS`);
+    if (c.local != null) parts.push(`${trNum(c.local)} ${en ? 'cr' : 'kr'}`);
+    if (c.ects) parts.push(`${trNum(c.ects)} ${I18N.t('progECTSWord')}`);
     if (!parts.length) continue;
     const small = document.createElement('small');
     small.className = 'p-cred';
@@ -430,6 +434,8 @@ async function renderCredits(items) {
 function renderList(items) {
   const box = $('#p-list');
   const markFull = $('#p-full').checked;
+  const en = I18N.lang === 'en';
+  const copyLbl = I18N.t('detailCopy');
   const rowsHtml = items.map(({ rec, row }, idx) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = row;
     const full = cap > 0 && enr >= cap;
@@ -437,22 +443,22 @@ function renderList(items) {
     const speed = fillSpeedNote(crn);
     return `<div class="p-item${markFull && full ? ' p-full' : ''}" role="row" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
-      <span class="p-crn" role="cell"><span class="p-mobile-label">CRN</span>${esc(crn)}<button type="button" class="copy-btn" data-copy="${esc(crn)}" data-copy-label="CRN" aria-label="CRN ${esc(crn)} kopyala">kopyala</button>${rec.backup ? `<small class="p-backup">yedek: ${esc(rec.backup)}</small>` : ''}</span>
-      <div class="p-code" role="cell"><b>${esc(code)}</b><button type="button" class="copy-btn" data-copy="${esc(code)}" data-copy-label="Ders kodu" aria-label="${esc(code)} ders kodunu kopyala">kopyala</button><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
-      <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : 'Öğretim üyesi açıklanmadı')}${instructor && instructor !== '-' ? `<button type="button" class="copy-btn" data-copy="${esc(instructor)}" data-copy-label="Öğretim üyesi" aria-label="${esc(instructor)} adını kopyala">kopyala</button>` : ''}</span>
-      <span class="p-when" role="cell">${esc(when || 'Zaman açıklanmadı')}</span>
-      <span class="p-fill" role="cell" aria-label="Kontenjan">${cap ? quotaDisplay(cap, enr) : '·'}</span>
-      <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${esc(code)} dersini programdan çıkar">Çıkar</button>
-      <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${esc(code)} için diğer eylemler" aria-haspopup="menu" aria-expanded="false">⋮</button>
+      <span class="p-crn" role="cell"><span class="p-mobile-label">${esc(I18N.t('thCrn'))}</span>${esc(crn)}<button type="button" class="copy-btn" data-copy="${esc(crn)}" data-copy-label="CRN" aria-label="${en ? `Copy CRN ${crn}` : `CRN ${esc(crn)} kopyala`}">${esc(copyLbl)}</button>${rec.backup ? `<small class="p-backup">${esc(I18N.t('progBackupPrefix'))}: ${esc(rec.backup)}</small>` : ''}</span>
+      <div class="p-code" role="cell"><b>${esc(code)}</b><button type="button" class="copy-btn" data-copy="${esc(code)}" data-copy-label="${esc(I18N.t('progCourseCodeCopyLabel'))}" aria-label="${en ? `Copy course code ${code}` : `${esc(code)} ders kodunu kopyala`}">${esc(copyLbl)}</button><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
+      <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : I18N.t('progInstructorUnknown'))}${instructor && instructor !== '-' ? `<button type="button" class="copy-btn" data-copy="${esc(instructor)}" data-copy-label="${esc(I18N.t('progInstructorCopyLabel'))}" aria-label="${en ? `Copy instructor ${instructor}` : `${esc(instructor)} adını kopyala`}">${esc(copyLbl)}</button>` : ''}</span>
+      <span class="p-when" role="cell">${esc(when || I18N.t('progTimeUnknown'))}</span>
+      <span class="p-fill" role="cell" aria-label="${esc(I18N.t('progQuotaAria'))}">${cap ? quotaDisplay(cap, enr) : '·'}</span>
+      <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${en ? `Remove ${code} from schedule` : `${esc(code)} dersini programdan çıkar`}">${esc(I18N.t('progRemoveBtn'))}</button>
+      <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${en ? `More actions for ${code}` : `${esc(code)} için diğer eylemler`}" aria-haspopup="menu" aria-expanded="false">⋮</button>
       <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
     </div>`;
   }).join('');
   box.innerHTML = items.length ? `
     <div class="p-list-head" role="row">
-      <span role="columnheader">Ders ve şube</span>
-      <span role="columnheader">Kontenjan / işlem</span>
+      <span role="columnheader">${esc(I18N.t('progColHeadCourse'))}</span>
+      <span role="columnheader">${esc(I18N.t('progColHeadQuota'))}</span>
     </div>${rowsHtml}`
-    : '<p class="empty">Henüz ders eklenmedi. Yukarıdan ders kodu, ad veya CRN arayarak ekle.</p>';
+    : `<p class="empty">${esc(I18N.t('prgEmpty'))}</p>`;
 
   box.querySelectorAll('.p-item').forEach((item) => {
     const idx = Number(item.dataset.idx);
@@ -488,7 +494,8 @@ function renderList(items) {
   box.querySelectorAll('[data-copy]').forEach((btn) => btn.addEventListener('click', async (ev) => {
     ev.stopPropagation();
     const ok = await copyText(btn.dataset.copy);
-    toast(ok ? `${btn.dataset.copyLabel} kopyalandı` : 'Kopyalanamadı', { kind: ok ? 'ok' : 'warn' });
+    const en = I18N.lang === 'en';
+    toast(ok ? (en ? `${btn.dataset.copyLabel} copied` : `${btn.dataset.copyLabel} kopyalandı`) : I18N.t('progCopyFailed'), { kind: ok ? 'ok' : 'warn' });
   }));
 
   box.querySelectorAll('.p-menu').forEach((btn) => {
@@ -503,13 +510,13 @@ function renderList(items) {
       btn.setAttribute('aria-expanded', 'true');
       const rec = items.find((it) => fav.favKeyOf(it.rec.branch, it.rec.crn) === key);
       pop.innerHTML = `
-        <button type="button" data-act="detail" data-key="${key}">detay</button>
-        <button type="button" data-act="copy" data-key="${key}">CRN kopyala</button>
-        <button type="button" data-act="obs" data-key="${key}">OBS'de ara</button>
+        <button type="button" data-act="detail" data-key="${key}">${esc(I18N.t('prgMenuDetail'))}</button>
+        <button type="button" data-act="copy" data-key="${key}">${esc(I18N.t('prgMenuCopy'))}</button>
+        <button type="button" data-act="obs" data-key="${key}">${esc(I18N.t('prgMenuObs'))}</button>
         ${rec && rec.rec.backup
-          ? `<button type="button" data-act="rmbackup" data-key="${key}">yedek CRN kaldır</button>`
-          : `<button type="button" data-act="backup" data-key="${key}">yedek CRN belirle</button>`}
-        <button type="button" data-act="remove" data-key="${key}">Programdan çıkar</button>`;
+          ? `<button type="button" data-act="rmbackup" data-key="${key}">${esc(I18N.t('progMenuRemoveBackup'))}</button>`
+          : `<button type="button" data-act="backup" data-key="${key}">${esc(I18N.t('progMenuSetBackup'))}</button>`}
+        <button type="button" data-act="remove" data-key="${key}">${esc(I18N.t('prgMenuRemove'))}</button>`;
       wireMenuActions(pop);
     });
   });
@@ -525,7 +532,7 @@ function wireMenuActions(pop) {
       if (b.dataset.act === 'remove') {
         removeScheduleItem(actionKey);
       } else if (b.dataset.act === 'copy') {
-        copyText(cr); toast(`CRN ${cr} kopyalandı`);
+        copyText(cr); toast(I18N.lang === 'en' ? `CRN ${cr} copied` : `CRN ${cr} kopyalandı`);
       } else if (b.dataset.act === 'detail') {
         if (row) openDetail(row, term);
       } else if (b.dataset.act === 'obs') {
@@ -546,8 +553,8 @@ function removeScheduleItem(key) {
   if (!removed) return;
   setProgItems(before.filter((rec) => fav.favKeyOf(rec.branch, rec.crn) !== key));
   renderProgSelector();
-  toast(`${removed.crn} çıkarıldı`, {
-    action: { label: 'geri al', fn: () => { setProgItems(before); renderProgSelector(); } },
+  toast(`${removed.crn} ${I18N.t('prgRemoved')}`, {
+    action: { label: I18N.t('progUndo'), fn: () => { setProgItems(before); renderProgSelector(); } },
   });
 }
 
@@ -561,7 +568,7 @@ function reorderSchedule(from, to) {
   vis.splice(to, 0, moved);
   setProgItems(vis);
   render();
-  toast('Sıralama güncellendi');
+  toast(I18N.t('prgOrdered'));
 }
 
 // Renk atama: aynı ders kodu aynı rengi kullanır (sabit), çakışma kırmızı kenar.
@@ -610,10 +617,10 @@ function renderGrid(itemRows) {
   // Zaman bilgisi olmayan şubeyi sessizce yutma — ızgaranın altına not düş (G).
   const noTime = itemRows.filter((r) => !parseWhen(r[5]).length);
   const noTimeNote = noTime.length
-    ? `<p class="tt-no-time">⚠ ${noTime.length} şubenin zaman bilgisi yok: ${noTime.map((r) => `${esc(r[1])} (${esc(r[0])})`).join(', ')}</p>`
+    ? `<p class="tt-no-time">⚠ ${noTime.length} ${I18N.t('progNoTimeWarningPrefix')}: ${noTime.map((r) => `${esc(r[1])} (${esc(r[0])})`).join(', ')}</p>`
     : '';
   if (!t || !t.all.length) {
-    wrap.innerHTML = '<p class="empty">Zaman bilgisi olan ders eklenmedi.</p>' + noTimeNote;
+    wrap.innerHTML = `<p class="empty">${esc(I18N.t('prgNoTime'))}</p>` + noTimeNote;
     return;
   }
   // Mobilde varsayılan tek-gün sekmeleri (izgaranın kendisi korunur — renkli
@@ -622,7 +629,8 @@ function renderGrid(itemRows) {
   const mobileMode = window.matchMedia('(max-width: 600px)').matches && !showGrid;
   placedRefs = [];
   const FULL = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
-  const TTD = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+  const TTD = [I18N.t('progDayAbbrMon'), I18N.t('progDayAbbrTue'), I18N.t('progDayAbbrWed'), I18N.t('progDayAbbrThu'),
+    I18N.t('progDayAbbrFri'), I18N.t('progDayAbbrSat'), I18N.t('progDayAbbrSun')];
   const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
   const ROW = 28;
 
@@ -638,7 +646,7 @@ function renderGrid(itemRows) {
       mobileDay = weekVisIdx.includes(todayIdx) ? todayIdx : (weekVisIdx.find((i) => hasDay[i]) ?? weekVisIdx[0]);
     }
     visIdx = [mobileDay];
-    tabsHtml = `<div class="tt-daytabs" role="tablist" aria-label="Gün seç">${weekVisIdx.map((di) => `
+    tabsHtml = `<div class="tt-daytabs" role="tablist" aria-label="${esc(I18N.t('progDaySelectAria'))}">${weekVisIdx.map((di) => `
       <button type="button" role="tab" aria-selected="${di === mobileDay}" class="tt-daytab${di === mobileDay ? ' active' : ''}${hasDay[di] ? ' has-session' : ''}" data-day="${di}">${TTD[di]}</button>`).join('')}</div>`;
   }
 
@@ -680,7 +688,7 @@ function renderGrid(itemRows) {
   const isSade = document.documentElement.dataset.theme === 'sade';
 
   let html = tabsHtml;
-  html += `<p class="tt-note"><b>${t.all.length}</b> oturum · <b>${itemRows.length}</b> şube</p>`;
+  html += `<p class="tt-note"><b>${t.all.length}</b> ${I18N.t('prgSessions')} · <b>${itemRows.length}</b> ${I18N.t('prgSube')}</p>`;
   html += `<div class="tt-scroll">`;
   // Başlık satırı scroll kapsayıcının doğrudan çocuğu — sticky-top bu sayede
   // çalışır (grid item'a hapsolmaz); corner yatay kaydırmada sticky-left (F).
@@ -722,7 +730,7 @@ function renderGrid(itemRows) {
         <span class="tt-time">${fmtMin(p.start)} - ${fmtMin(p.end)}</span>
         <span class="tt-code">${esc(p.row[1])}</span>
         <span class="tt-crn">CRN ${esc(p.row[0])}</span>
-        ${p.conflict ? '<span class="tt-conf-icon" title="Çakışma">⚠</span>' : ''}
+        ${p.conflict ? `<span class="tt-conf-icon" title="${esc(I18N.t('progConflictTitle'))}">⚠</span>` : ''}
       </button>`;
     }
     html += `</div>`;
@@ -771,10 +779,10 @@ function openGridContextMenu(row, trigger, x, y) {
   menu.setAttribute('aria-label', `${row[1]} ${en ? 'actions' : 'işlemleri'}`);
   menu.innerHTML = `
     <p><b>${esc(row[1])}</b><span>CRN ${esc(row[0])}</span></p>
-    <button type="button" role="menuitem" data-act="detail" data-key="${esc(key)}">${en ? 'Open course details' : 'Ders ayrıntısını aç'}</button>
-    <button type="button" role="menuitem" data-act="copy" data-key="${esc(key)}">${en ? 'Copy CRN' : "CRN'yi kopyala"}</button>
-    <button type="button" role="menuitem" data-act="obs" data-key="${esc(key)}">${en ? 'Find on OBS' : "OBS'de ara"}</button>
-    <button type="button" role="menuitem" class="danger" data-act="remove" data-key="${esc(key)}">${en ? 'Remove from schedule' : 'Programdan çıkar'}</button>`;
+    <button type="button" role="menuitem" data-act="detail" data-key="${esc(key)}">${esc(I18N.t('prgMenuDetail'))}</button>
+    <button type="button" role="menuitem" data-act="copy" data-key="${esc(key)}">${esc(I18N.t('prgMenuCopy'))}</button>
+    <button type="button" role="menuitem" data-act="obs" data-key="${esc(key)}">${esc(I18N.t('prgMenuObs'))}</button>
+    <button type="button" role="menuitem" class="danger" data-act="remove" data-key="${esc(key)}">${esc(I18N.t('prgMenuRemove'))}</button>`;
   document.body.appendChild(menu);
   gridContextMenu = menu;
   gridContextReturnFocus = trigger;
@@ -819,10 +827,10 @@ function renderSummary(items) {
       if (codes.length > 1) pairs.add(codes.join(' × '));
     }
   }
-  let html = `<p><b>${items.length}</b> şube · <b>${t ? t.all.length : 0}</b> oturum</p>`;
-  if (full) html += `<p class="p-warn">⚠ ${full} dolu şube</p>`;
+  let html = `<p><b>${items.length}</b> ${I18N.t('prgSube')} · <b>${t ? t.all.length : 0}</b> ${I18N.t('prgSessions')}</p>`;
+  if (full) html += `<p class="p-warn">⚠ ${full} ${I18N.t('prgFullBadge')}</p>`;
   if (pairs.size) {
-    html += `<p class="p-conf">⚠ Çakışan dersler:</p><ul class="p-conf-list">${[...pairs].map((p) => `<li>${esc(p)}</li>`).join('')}</ul>`;
+    html += `<p class="p-conf">${esc(I18N.t('prgConflict'))}</p><ul class="p-conf-list">${[...pairs].map((p) => `<li>${esc(p)}</li>`).join('')}</ul>`;
   }
   // Faz 4.1: final çakışması — exams verisi yüklenmişse asenkron ekler.
   loadFinalsNote(items, box);
@@ -844,7 +852,7 @@ async function loadFinalsNote(items, box) {
     const pairs = conf.map(([a, b]) => `${esc(a.code)} × ${esc(b.code)} (${esc(a.date)} ${esc(a.time)})`);
     const wrap = document.createElement('div');
     wrap.className = 'p-conf';
-    wrap.innerHTML = `⚠ Final çakışması:<ul class="p-conf-list">${pairs.map((p) => `<li>${p}</li>`).join('')}</ul>`;
+    wrap.innerHTML = `${esc(I18N.t('progFinalConflictPrefix'))}<ul class="p-conf-list">${pairs.map((p) => `<li>${p}</li>`).join('')}</ul>`;
     box.appendChild(wrap);
   } catch { /* finals verisi yoksa sessiz */ }
 }
@@ -884,7 +892,7 @@ async function loadMidtermNote(items, box) {
       .map(([k, n]) => `${k} (${n})`).join(' · ');
     const wrap = document.createElement('div');
     wrap.className = 'p-conf';
-    wrap.innerHTML = `📝 Vize yoğunluğu: ${esc(parts)}`;
+    wrap.innerHTML = `${esc(I18N.t('progMidtermIntensityPrefix'))} ${esc(parts)}`;
     box.appendChild(wrap);
   } catch { /* katalog yoksa sessiz */ }
 }
@@ -896,18 +904,18 @@ function updateCredits(items) {
   const ps = loadPrograms();
   const p = ps.programs.find((x) => x.id === ps.active);
   if (p && p.credits != null) { el.textContent = p.credits; return; }
-  el.textContent = items.length ? '·' : '0 kredi · 0 AKTS';
+  el.textContent = items.length ? '·' : I18N.t('progZeroCredits');
   if (!items.length) return;
   creditTotals(items).then((r) => {
     if (!r.ectsKnown && !r.localKnown) return;
     const parts = [];
-    if (r.localKnown) parts.push(`Kredi ${trNum(r.local)}${r.localKnown < r.all ? '+' : ''}`);
-    if (r.ectsKnown) parts.push(`AKTS ${trNum(r.ects)}`);
+    if (r.localKnown) parts.push(`${I18N.t('progCreditWord')} ${trNum(r.local)}${r.localKnown < r.all ? '+' : ''}`);
+    if (r.ectsKnown) parts.push(`${I18N.t('progECTSWord')} ${trNum(r.ects)}`);
     let txt = parts.join(' · ');
     const unkLocal = r.all - r.localKnown;
-    if (unkLocal > 0) txt += ` (${unkLocal} dersin kredisi bilinmiyor)`;
+    if (unkLocal > 0) txt += ` (${unkLocal} ${I18N.t('progUnknownCreditsSuffix')})`;
     if (r.ectsKnown && r.ects > 30) {
-      el.innerHTML = `${esc(txt)} <span class="ects-warn" title="Toplam AKTS 30'u aşıyor">AKTS 30+</span>`;
+      el.innerHTML = `${esc(txt)} <span class="ects-warn" title="${esc(I18N.t('progECTSExceedsTitle'))}">${esc(I18N.t('progECTSExceedsBadge'))}</span>`;
     } else {
       el.textContent = txt;
     }
@@ -976,18 +984,20 @@ export function fillSpeedNote(crn) {
   const q = state.quota?.get(String(crn));
   if (!q || !q.filledAt) return '';
   const m = q.fillMinutes;
-  if (!m) return 'geçen sefer ilk ölçümde doluydu';
+  if (!m) return I18N.t('progFillSpeedFirst');
   const h = Math.floor(m / 60);
   const rest = m % 60;
-  const span = h ? `${h} sa${rest ? ` ${rest} dk` : ''}` : `${rest} dk`;
-  return `geçen sefer ${span} sonra doldu`;
+  const hourU = I18N.t('progHourAbbr'), minU = I18N.t('progMinAbbr');
+  const span = h ? `${h} ${hourU}${rest ? ` ${rest} ${minU}` : ''}` : `${rest} ${minU}`;
+  const suffix = I18N.t('progFillSpeedAfterSuffix');
+  return `${I18N.t('progFillSpeedAfterPrefix')} ${span}${suffix ? ` ${suffix}` : ''}`;
 }
 
 function addFavorites() {
   const favs = fav.loadFavorites().filter((f) => f.term === term);
   let added = 0;
   for (const f of favs) if (addToActive(f.branch, f.crn)) added++;
-  toast(added ? `${added} favori programa eklendi` : 'Bu dönem için favori yok', { kind: added ? 'ok' : 'warn' });
+  toast(added ? `${added} ${I18N.t('prgFavAdded')}` : I18N.t('prgFavNone'), { kind: added ? 'ok' : 'warn' });
   render(); renderProgSelector();
 }
 
@@ -1003,17 +1013,18 @@ export function buildSnippet(crns) {
 function showOBS() {
   const items = currentItems();
   const crns = items.map((i) => i.row[0]);
-  if (!crns.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  if (!crns.length) { toast(I18N.t('prgWarn'), { kind: 'warn' }); return; }
   const code = buildSnippet(crns);
-  const backups = items.filter((i) => i.rec.backup).map((i) => `${i.row[0]} → yedek: ${i.rec.backup}`);
+  const backupLbl = I18N.t('progBackupPrefix');
+  const backups = items.filter((i) => i.rec.backup).map((i) => `${i.row[0]} → ${backupLbl}: ${i.rec.backup}`);
   const box = $('#p-obs-code');
   box.hidden = false;
-  box.innerHTML = `<h2 class="eyebrow">OBS kayıt sayfası için CRN doldurma</h2>
-    <p>Bu kodu OBS'nin ders seçme sayfasında konsola yapıştırıp çalıştır, ya da tarayıcı yer imi olarak kaydet. ${crns.length} CRN doldurur.</p>
-    ${backups.length ? `<p class="p-backup-note">Yedek CRN'ler: ${esc(backups.join(' · '))}</p>` : ''}
+  box.innerHTML = `<h2 class="eyebrow">${esc(I18N.t('obsTitle'))}</h2>
+    <p>${esc(I18N.t('obsDesc'))} ${crns.length} ${esc(I18N.t('progOBSInstructionsSuffix'))}</p>
+    ${backups.length ? `<p class="p-backup-note">${esc(I18N.t('progBackupNoteLabel'))}: ${esc(backups.join(' · '))}</p>` : ''}
     <pre class="p-code"><code>${esc(code)}</code></pre>
-    <button type="button" id="p-copy" class="btn-ghost">kopyala</button>`;
-  $('#p-copy').addEventListener('click', () => { copyText(code); toast('CRN kodu kopyalandı'); });
+    <button type="button" id="p-copy" class="btn-ghost">${esc(I18N.t('obsBtn'))}</button>`;
+  $('#p-copy').addEventListener('click', () => { copyText(code); toast(I18N.t('prgCRNCodeCopied')); });
 }
 
 // Bookmarklet href'ini seçili CRN'lerle tazele (her render'da çağrılır).
@@ -1029,7 +1040,7 @@ function updateBookmarklet(items) {
   a.classList.remove('is-disabled');
   // Bookmarklet: seçili CRN'ler gömülü. OBS kayıt sayfasında çalışır.
   a.setAttribute('href', 'javascript:' + buildSnippet(crns));
-  a.title = 'Sürükleyip OBS kayıt ekranında tıklamanız yeterli';
+  a.title = I18N.t('progOBSDragHint');
 }
 
 // --- tooltip ---
@@ -1044,11 +1055,12 @@ function hideTip() {
 
 function exportCSV() {
   const items = currentItems();
-  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  if (!items.length) { toast(I18N.t('prgWarn'), { kind: 'warn' }); return; }
+  const en = I18N.lang === 'en';
   downloadCSV(`program-${term}.csv`,
-    ['CRN', 'Ders Kodu', 'Bölüm', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan'],
+    [I18N.t('detailCrn'), I18N.t('detailCode'), en ? 'Department' : 'Bölüm', I18N.t('detailName'), I18N.t('detailInstr'), I18N.t('detailWhen'), I18N.t('detailCap'), I18N.t('detailEnr')],
     items.map(({ row: r }) => [r[0], r[1], r[3], r[2], r[4], r[5], r[6], r[7]]));
-  toast('CSV indirildi');
+  toast(I18N.t('prgCSVDone'));
 }
 
 const P_DAYS = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
@@ -1073,7 +1085,7 @@ function mondayOfThisWeek() {
 function exportScheduleICS() {
   const items = currentItems();
   const t = buildTimetable(items.map((i) => i.row));
-  if (!t || !t.all.length) { toast('Zaman bilgisi olan ders yok', { kind: 'warn' }); return; }
+  if (!t || !t.all.length) { toast(I18N.t('prgNoTime'), { kind: 'warn' }); return; }
   const monday = mondayOfThisWeek();
   const events = t.all.map((s) => {
     const day = P_DAYS.indexOf(s.day);
@@ -1090,16 +1102,16 @@ function exportScheduleICS() {
     };
   }).filter(Boolean);
   downloadICS(`itu-program-${term}.ics`, events);
-  toast('Program .ics indirildi');
+  toast(I18N.lang === 'en' ? 'Schedule .ics downloaded' : 'Program .ics indirildi');
 }
 
 // Takvimi PNG olarak indirir (canvas çizimi).
 function downloadPNG() {
   const items = currentItems();
-  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  if (!items.length) { toast(I18N.t('prgWarn'), { kind: 'warn' }); return; }
   const wrap = $('#p-grid');
   const rect = wrap.getBoundingClientRect();
-  if (rect.width < 100 || rect.height < 100) { toast('Takvim hazır değil', { kind: 'warn' }); return; }
+  if (rect.width < 100 || rect.height < 100) { toast(I18N.lang === 'en' ? 'Calendar not ready' : 'Takvim hazır değil', { kind: 'warn' }); return; }
   const scale = 2;
   const canvas = document.createElement('canvas');
   canvas.width = rect.width * scale;
@@ -1120,7 +1132,8 @@ function downloadPNG() {
 
   const t = buildTimetable(items.map((i) => i.row));
   const days = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
-  const TTD = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+  const TTD = [I18N.t('progDayAbbrMon'), I18N.t('progDayAbbrTue'), I18N.t('progDayAbbrWed'), I18N.t('progDayAbbrThu'),
+    I18N.t('progDayAbbrFri'), I18N.t('progDayAbbrSat'), I18N.t('progDayAbbrSun')];
   const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
   const W = rect.width, H = rect.height;
   const timeW = 46, headH = 22, dayW = (W - timeW) / 7;
@@ -1199,26 +1212,26 @@ function downloadPNG() {
     a.download = `program-${term}.png`;
     a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-    toast('PNG indirildi');
+    toast(I18N.lang === 'en' ? 'PNG downloaded' : 'PNG indirildi');
   }, 'image/png');
 }
 
 function share() {
   const items = currentItems();
-  if (!items.length) { toast('Önce şube ekle', { kind: 'warn' }); return; }
+  if (!items.length) { toast(I18N.t('prgWarn'), { kind: 'warn' }); return; }
   const p = new URLSearchParams();
   if (term !== state.index?.currentSlug) p.set('term', term); // aktif dönemi yazma
   p.set('crns', items.map((i) => i.row[0]).join(','));
   copyText(`${location.origin}${location.pathname}?${p.toString()}#program`);
-  toast('Paylaşım bağlantısı kopyalandı');
+  toast(I18N.t('prgCopied'));
 }
 
 // --- yedek CRN ---
 
 function setBackup(branch, crn) {
   promptDialog({
-    title: 'Yedek CRN',
-    message: 'Yedek CRN girin (aynı ders koduna ait olmalı):',
+    title: I18N.t('progBackupDialogTitle'),
+    message: I18N.t('progBackupDialogMsg'),
     validate: (v) => v.trim().length > 0,
   }).then((input) => {
     if (!input) return;
@@ -1230,12 +1243,12 @@ function setBackup(branch, crn) {
   if (idx < 0) return;
   const key = fav.favKeyOf(branch, backup);
   if (p.items.some((f) => f.term === term && fav.favKeyOf(f.branch, f.crn) === key)) {
-    toast('Bu CRN zaten listede', { kind: 'warn' });
+    toast(I18N.t('progBackupAlreadyListed'), { kind: 'warn' });
     return;
   }
   p.items[idx].backup = backup;
   savePrograms(all);
-  toast(`Yedek CRN ${backup} eklendi`);
+  toast(I18N.lang === 'en' ? `Backup CRN ${backup} added` : `Yedek CRN ${backup} eklendi`);
   loadTerm(term);
   });
 }
@@ -1249,7 +1262,7 @@ function removeBackup(branch, crn) {
   const old = p.items[idx].backup;
   delete p.items[idx].backup;
   savePrograms(all);
-  toast(`Yedek CRN ${old} kaldırıldı`);
+  toast(I18N.lang === 'en' ? `Backup CRN ${old} removed` : `Yedek CRN ${old} kaldırıldı`);
   loadTerm(term);
 }
 
@@ -1268,19 +1281,24 @@ function closeMenus() {
 // uyan alternatif şube kombinasyonları arar (bkz. core/altfind.js). ---
 
 const AF_PRESETS = [
-  { key: 'mergeCampusDays', label: 'Kampüs günlerini birleştir' },
-  { key: 'compact', label: 'Az gün, dolu gün' },
-  { key: 'spread', label: 'Dengeli' },
-  { key: 'lateStart', label: 'Geç başla' },
-  { key: 'earlyEnd', label: 'Erken çık' },
-  { key: 'fridayFree', label: 'Cuma boş' },
-  { key: 'reduceGaps', label: 'Boşlukları azalt' },
-  { key: 'shortDays', label: 'Kısa günler' },
-  { key: 'midweekBreather', label: 'Çarşamba nefesi' },
+  { key: 'mergeCampusDays', label: I18N.t('progAFPresetMergeCampusDays') },
+  { key: 'compact', label: I18N.t('progAFPresetCompact') },
+  { key: 'spread', label: I18N.t('progAFPresetSpread') },
+  { key: 'lateStart', label: I18N.t('progAFPresetLateStart') },
+  { key: 'earlyEnd', label: I18N.t('progAFPresetEarlyEnd') },
+  { key: 'fridayFree', label: I18N.t('progAFPresetFridayFree') },
+  { key: 'reduceGaps', label: I18N.t('progAFPresetReduceGaps') },
+  { key: 'shortDays', label: I18N.t('progAFPresetShortDays') },
+  { key: 'midweekBreather', label: I18N.t('progAFPresetMidweekBreather') },
 ];
-const AF_DAY_LABEL = { any: 'farketmez', free: 'boş', busy: 'dolu' };
+const AF_DAY_LABEL = { any: I18N.t('progAFDayAny'), free: I18N.t('progAFDayFree'), busy: I18N.t('progAFDayBusy') };
 const AF_DAY_NEXT = { any: 'free', free: 'busy', busy: 'any' };
 const AF_MIN = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+const AF_DAY_ABBR_KEYS = {
+  Pazartesi: 'progDayAbbrMon', Salı: 'progDayAbbrTue', Çarşamba: 'progDayAbbrWed', Perşembe: 'progDayAbbrThu',
+  Cuma: 'progDayAbbrFri', Cumartesi: 'progDayAbbrSat', Pazar: 'progDayAbbrSun',
+};
+const afDayAbbr = (d) => I18N.t(AF_DAY_ABBR_KEYS[d] || d);
 
 let afHost = null;
 let afStep = 'prefs';
@@ -1305,7 +1323,7 @@ function ensureAltFindHost() {
   afHost.className = 'dlg af-dlg';
   afHost.hidden = true;
   afHost.innerHTML = '<div class="dlg-box af-box" role="dialog" aria-modal="true" aria-labelledby="af-title">'
-    + '<button type="button" class="dlg-close" id="af-close" aria-label="Kapat">✕</button>'
+    + `<button type="button" class="dlg-close" id="af-close" aria-label="${esc(I18N.t('progAFClose'))}">✕</button>`
     + '<div id="af-body"></div></div>';
   document.body.appendChild(afHost);
   afHost.querySelector('#af-close').addEventListener('click', closeAltFind);
@@ -1322,7 +1340,7 @@ function closeAltFind() {
 
 function openAltFind() {
   const items = currentItems();
-  if (items.length < 2) { toast('Programında en az iki ders olmalı', { kind: 'warn' }); return; }
+  if (items.length < 2) { toast(I18N.t('progAFMinTwoCourses'), { kind: 'warn' }); return; }
   afCodes = new Set(items.map(({ row }) => row[1]));
   afCurrentByCode = new Map(items.map(({ row }) => [row[1], row[0]]));
   afPrefs = afDefaultPrefs();
@@ -1337,9 +1355,9 @@ function openAltFind() {
 
 function afStepsHtml() {
   return `<div class="af-steps">
-    <span class="af-step${afStep === 'prefs' ? ' active' : ' done'}"><em>1</em>Tercihler</span>
+    <span class="af-step${afStep === 'prefs' ? ' active' : ' done'}"><em>1</em>${esc(I18N.t('progAFStepPrefs'))}</span>
     <span class="af-step-line"></span>
-    <span class="af-step${afStep === 'results' ? ' active' : ''}"><em>2</em>Sonuçlar</span>
+    <span class="af-step${afStep === 'results' ? ' active' : ''}"><em>2</em>${esc(I18N.t('progAFStepResults'))}</span>
   </div>`;
 }
 
@@ -1353,74 +1371,77 @@ function afGroupHead(label, group, summary) {
   const locked = afLockedGroups.has(group);
   return `<div class="af-group-head"><span>${esc(label)}</span><em>${esc(summary)}</em>
     <button type="button" class="af-lock${locked ? ' on' : ''}" data-af-lock="${group}"
-      title="Bu grubu değişmeye kilitle (kilitliyse alternatif bulunamazsa esnetilmez)">${locked ? '🔒' : '🔓'}</button></div>`;
+      title="${esc(I18N.t('progAFLockTitle'))}">${locked ? '🔒' : '🔓'}</button></div>`;
 }
 
 function afGunlerSummary() {
-  const parts = WEEKDAYS.filter((d) => afPrefs.days[d] !== 'any').map((d) => `${d.slice(0, 3)} ${AF_DAY_LABEL[afPrefs.days[d]]}`);
-  return parts.length ? parts.join(', ') : 'Farketmez';
+  const parts = WEEKDAYS.filter((d) => afPrefs.days[d] !== 'any').map((d) => `${afDayAbbr(d)} ${AF_DAY_LABEL[afPrefs.days[d]]}`);
+  return parts.length ? parts.join(', ') : I18N.t('progAFAnyOpt');
 }
 function afYogunlukSummary() {
+  const en = I18N.lang === 'en';
   const parts = [];
-  if (afPrefs.density === 'compact') parts.push('az güne sıkıştır');
-  if (afPrefs.density === 'spread') parts.push('günlere yay');
-  if (afPrefs.singleCourseDaysReduce) parts.push('tek dersli günleri azalt');
-  return parts.length ? parts.join(', ') : 'Farketmez';
+  if (afPrefs.density === 'compact') parts.push(en ? 'fit into fewer days' : 'az güne sıkıştır');
+  if (afPrefs.density === 'spread') parts.push(en ? 'spread across days' : 'günlere yay');
+  if (afPrefs.singleCourseDaysReduce) parts.push(en ? 'reduce single-course days' : 'tek dersli günleri azalt');
+  return parts.length ? parts.join(', ') : I18N.t('progAFAnyOpt');
 }
 function afSaatlerSummary() {
+  const en = I18N.lang === 'en';
   const parts = [];
-  if (afPrefs.earliest != null) parts.push(`en erken ${AF_MIN(afPrefs.earliest)}`);
-  if (afPrefs.latest != null) parts.push(`en geç ${AF_MIN(afPrefs.latest)}`);
-  if (afPrefs.lunchFree) parts.push('öğle arası boş');
-  if (afPrefs.half !== 'any') parts.push(afPrefs.half === 'morning' ? 'öğleden önce' : 'öğleden sonra');
-  if (afPrefs.gap != null) parts.push(afPrefs.gap === 0 ? 'boşluk yok' : `en fazla ${afPrefs.gap / 60} saat boşluk`);
-  if (afPrefs.dailySpan != null) parts.push(`en fazla ${afPrefs.dailySpan / 60} saat/gün`);
-  return parts.length ? parts.join(', ') : 'Farketmez';
+  if (afPrefs.earliest != null) parts.push(`${en ? 'earliest' : 'en erken'} ${AF_MIN(afPrefs.earliest)}`);
+  if (afPrefs.latest != null) parts.push(`${en ? 'latest' : 'en geç'} ${AF_MIN(afPrefs.latest)}`);
+  if (afPrefs.lunchFree) parts.push(en ? 'lunch break free' : 'öğle arası boş');
+  if (afPrefs.half !== 'any') parts.push(afPrefs.half === 'morning' ? (en ? 'morning' : 'öğleden önce') : (en ? 'afternoon' : 'öğleden sonra'));
+  if (afPrefs.gap != null) parts.push(afPrefs.gap === 0 ? (en ? 'no gap' : 'boşluk yok') : (en ? `at most ${afPrefs.gap / 60}h gap` : `en fazla ${afPrefs.gap / 60} saat boşluk`));
+  if (afPrefs.dailySpan != null) parts.push(en ? `at most ${afPrefs.dailySpan / 60}h/day` : `en fazla ${afPrefs.dailySpan / 60} saat/gün`);
+  return parts.length ? parts.join(', ') : I18N.t('progAFAnyOpt');
 }
 
 function renderAltFindPrefs() {
   const matched = afMatchedPreset();
   const body = $('#af-body');
+  const t = (k) => I18N.t(k);
   body.innerHTML = `
-    <h3 id="af-title">Alternatif Bul</h3>
+    <h3 id="af-title">${esc(t('progAFTitle'))}</h3>
     ${afStepsHtml()}
-    <div class="af-presets-head"><b>Hazır ayarlar</b><button type="button" id="af-reset" class="af-reset-link">Tercihleri sıfırla</button></div>
-    <p class="af-hint">Birini seç, istersen sonra değiştir.</p>
+    <div class="af-presets-head"><b>${esc(t('progAFPresetsHeading'))}</b><button type="button" id="af-reset" class="af-reset-link">${esc(t('progAFResetPrefs'))}</button></div>
+    <p class="af-hint">${esc(t('progAFPresetHint'))}</p>
     <div class="af-preset-grid">${AF_PRESETS.map((p) =>
       `<button type="button" class="af-preset${matched === p.key ? ' active' : ''}" data-af-preset="${p.key}">${esc(p.label)}</button>`).join('')}</div>
     <details class="af-details" open>
-      <summary>Ayrıntılar <span>İsteğe bağlı</span></summary>
+      <summary>${esc(t('progAFDetailsSummary'))} <span>${esc(t('progAFOptional'))}</span></summary>
       <div class="af-group">
-        ${afGroupHead('Günler', 'gunler', afGunlerSummary())}
+        ${afGroupHead(t('progAFGroupDays'), 'gunler', afGunlerSummary())}
         <div class="af-days">${WEEKDAYS.map((d) =>
-          `<button type="button" class="af-day" data-af-day="${d}"><b>${d.slice(0, 3)}</b><small>${AF_DAY_LABEL[afPrefs.days[d]]}</small></button>`).join('')}</div>
+          `<button type="button" class="af-day" data-af-day="${d}"><b>${afDayAbbr(d)}</b><small>${AF_DAY_LABEL[afPrefs.days[d]]}</small></button>`).join('')}</div>
       </div>
       <div class="af-group">
-        ${afGroupHead('Yoğunluk', 'yogunluk', afYogunlukSummary())}
-        ${afPillRow('Haftalık dağılım', 'density', [['any', 'Farketmez'], ['compact', 'Az güne sıkıştır'], ['spread', 'Günlere yay']])}
-        ${afPillRow('Tek dersli günler', 'singleCourseDaysReduce', [[false, 'Farketmez'], [true, 'Azalt']])}
+        ${afGroupHead(t('progAFGroupIntensity'), 'yogunluk', afYogunlukSummary())}
+        ${afPillRow(t('progAFWeeklyDist'), 'density', [['any', t('progAFAnyOpt')], ['compact', t('progAFCompactOpt')], ['spread', t('progAFSpreadOpt')]])}
+        ${afPillRow(t('progAFSingleCourseDays'), 'singleCourseDaysReduce', [[false, t('progAFAnyOpt')], [true, t('progAFReduceOpt')]])}
       </div>
       <div class="af-group">
-        ${afGroupHead('Saatler', 'saatler', afSaatlerSummary())}
-        ${afPillRow('En erken', 'earliest', [[null, 'Farketmez'], [570, '09:30'], [630, '10:30'], [690, '11:30']])}
-        ${afPillRow('En geç', 'latest', [[null, 'Farketmez'], [870, '14:30'], [930, '15:30'], [990, '16:30'], [1050, '17:30']])}
-        ${afPillRow('Öğle arası', 'lunchFree', [[false, 'Farketmez'], [true, '12:30–13:30 boş']])}
-        ${afPillRow('Günün yarısı', 'half', [['any', 'Farketmez'], ['morning', 'Öğleden önce'], ['afternoon', 'Öğleden sonra']])}
-        ${afPillRow('Dersler arası boşluk', 'gap', [[null, 'Farketmez'], [0, 'Boşluk yok'], [60, 'En fazla 1 saat'], [120, 'En fazla 2 saat']])}
-        ${afPillRow('Günlük süre', 'dailySpan', [[null, 'Farketmez'], [360, 'En fazla 6 saat'], [420, 'En fazla 7 saat'], [480, 'En fazla 8 saat']])}
+        ${afGroupHead(t('progAFGroupHours'), 'saatler', afSaatlerSummary())}
+        ${afPillRow(t('progAFEarliest'), 'earliest', [[null, t('progAFAnyOpt')], [570, '09:30'], [630, '10:30'], [690, '11:30']])}
+        ${afPillRow(t('progAFLatest'), 'latest', [[null, t('progAFAnyOpt')], [870, '14:30'], [930, '15:30'], [990, '16:30'], [1050, '17:30']])}
+        ${afPillRow(t('progAFLunchBreak'), 'lunchFree', [[false, t('progAFAnyOpt')], [true, t('progAFLunchFreeOpt')]])}
+        ${afPillRow(t('progAFDayHalf'), 'half', [['any', t('progAFAnyOpt')], ['morning', t('progAFMorningOpt')], ['afternoon', t('progAFAfternoonOpt')]])}
+        ${afPillRow(t('progAFGapBetween'), 'gap', [[null, t('progAFAnyOpt')], [0, t('progAFNoGapOpt')], [60, t('progAFMax1h')], [120, t('progAFMax2h')]])}
+        ${afPillRow(t('progAFDailySpan'), 'dailySpan', [[null, t('progAFAnyOpt')], [360, t('progAFMax6h')], [420, t('progAFMax7h')], [480, t('progAFMax8h')]])}
       </div>
     </details>
-    <button type="button" id="af-run" class="btn-primary af-run">Alternatifleri bul</button>
-    <p class="af-foot">Kilitli tercihler korunur; diğerleri gerekirse esnetilir.</p>`;
+    <button type="button" id="af-run" class="btn-primary af-run">${esc(t('progAFRunBtn'))}</button>
+    <p class="af-foot">${esc(t('progAFLockedFoot'))}</p>`;
 }
 
 const AF_RELAXED_LABEL = {
-  earliest: 'en erken saat', latest: 'en geç saat', lunchFree: 'öğle arası boş',
-  half: 'günün yarısı', gap: 'dersler arası boşluk', dailySpan: 'günlük süre',
-  singleCourseDaysReduce: 'tek dersli günleri azaltma', density: 'haftalık dağılım',
+  earliest: I18N.t('progAFRelaxedEarliest'), latest: I18N.t('progAFRelaxedLatest'), lunchFree: I18N.t('progAFRelaxedLunchFree'),
+  half: I18N.t('progAFRelaxedHalf'), gap: I18N.t('progAFRelaxedGap'), dailySpan: I18N.t('progAFRelaxedDailySpan'),
+  singleCourseDaysReduce: I18N.t('progAFRelaxedSingleCourseDays'), density: I18N.t('progAFRelaxedDensity'),
 };
 function afRelaxedLabel(key) {
-  if (key.startsWith('day:')) return `${key.slice(4)} tercihi`;
+  if (key.startsWith('day:')) return `${key.slice(4)} ${I18N.t('progAFDayPrefSuffix')}`;
   return AF_RELAXED_LABEL[key] || key;
 }
 
@@ -1440,14 +1461,14 @@ function afResultCard(combo, idx) {
     const busy = combo.sections.some((sec) => sec.sessions.some((s) => s.day === d));
     return `<span class="af-mini${busy ? ' on' : ''}"></span>`;
   }).join('');
-  const note = combo.changed === 0 ? 'Mevcut programınla aynı şubeler' : `${combo.changed} ders değişiyor`;
+  const note = combo.changed === 0 ? I18N.t('progAFSameAsCurrent') : `${combo.changed} ${I18N.t('progAFCoursesChangingSuffix')}`;
   return `<div class="af-card">
     <div class="af-card-head"><div class="af-mini-row">${preview}</div>
-      <div><b>${byDay.size} gün</b> · ${range}</div></div>
+      <div><b>${byDay.size} ${esc(I18N.t('progAFDayWord'))}${I18N.lang === 'en' && byDay.size !== 1 ? 's' : ''}</b> · ${range}</div></div>
     <p class="af-card-note">${esc(note)}</p>
     <div class="af-card-actions">
-      <button type="button" class="btn-primary" data-af-apply="${idx}">Uygula</button>
-      <button type="button" class="btn-ghost" data-af-save="${idx}">Alternatif kaydet</button>
+      <button type="button" class="btn-primary" data-af-apply="${idx}">${esc(I18N.t('progAFApplyBtn'))}</button>
+      <button type="button" class="btn-ghost" data-af-save="${idx}">${esc(I18N.t('progAFSaveBtn'))}</button>
     </div>
   </div>`;
 }
@@ -1456,20 +1477,20 @@ function renderAltFindResults() {
   const body = $('#af-body');
   const { combos, relaxed, unavailable } = afResult;
   if (unavailable.length) {
-    body.innerHTML = `<h3 id="af-title">Alternatif bulunamadı</h3>${afStepsHtml()}
-      <button type="button" id="af-back" class="af-back-link">← Tercihleri düzenle</button>
-      <p class="empty">${esc(unavailable.join(', '))} için taranan dönemde açık şube verisi yok — bu ders değiştirilemiyor.</p>`;
+    body.innerHTML = `<h3 id="af-title">${esc(I18N.t('progAFNoAltHeading'))}</h3>${afStepsHtml()}
+      <button type="button" id="af-back" class="af-back-link">${esc(I18N.t('progAFBackLink'))}</button>
+      <p class="empty">${esc(unavailable.join(', '))} ${esc(I18N.t('progAFUnavailableMsgSuffix'))}</p>`;
     return;
   }
   const relaxedNote = relaxed.length
-    ? `<p class="af-relaxed-note">Tam eşleşme yoktu, şunlar gevşetildi: ${relaxed.map(afRelaxedLabel).join(', ')}.</p>` : '';
-  body.innerHTML = `<h3 id="af-title">${combos.length} alternatif program bulundu</h3>
+    ? `<p class="af-relaxed-note">${esc(I18N.t('progAFRelaxedPrefix'))} ${relaxed.map(afRelaxedLabel).join(', ')}.</p>` : '';
+  body.innerHTML = `<h3 id="af-title">${combos.length} ${esc(I18N.t('progAFAltFoundSuffix'))}</h3>
     ${afStepsHtml()}
-    <button type="button" id="af-back" class="af-back-link">← Tercihleri düzenle</button>
+    <button type="button" id="af-back" class="af-back-link">${esc(I18N.t('progAFBackLink'))}</button>
     ${relaxedNote}
     ${combos.length
       ? `<div class="af-results">${combos.map((c, i) => afResultCard(c, i)).join('')}</div>`
-      : '<p class="empty">Bu tercihlerle eşleşen çakışmasız kombinasyon yok. Kilitli grupları gözden geçir.</p>'}`;
+      : `<p class="empty">${esc(I18N.t('progAFNoCombo'))}</p>`}`;
 }
 
 function renderAltFind() {
@@ -1509,7 +1530,7 @@ function afApplyCombo(idx) {
   setProgItems([...kept, ...combo.sections.map((s) => ({ branch: s.branch, crn: s.crn }))]);
   renderProgSelector();
   closeAltFind();
-  toast('Alternatif uygulandı');
+  toast(I18N.t('progAFAppliedToast'));
 }
 
 function afSaveCombo(idx) {
@@ -1520,14 +1541,14 @@ function afSaveCombo(idx) {
   const id = Math.max(0, ...ps.programs.map((p) => p.id)) + 1;
   const otherTerms = active ? active.items.filter((it) => it.term !== term) : [];
   const sameTermOther = active ? active.items.filter((it) => it.term === term && !afCodes.has(afRowCode(it.branch, it.crn))) : [];
-  const name = `${active ? active.name : 'Program'} (alternatif)`;
+  const name = `${active ? active.name : I18N.t('progNewProgramWord')}${I18N.t('progAFAlternativeSuffix')}`;
   ps.programs.push({
     id, name,
     items: [...otherTerms, ...sameTermOther, ...combo.sections.map((s) => ({ term, branch: s.branch, crn: s.crn }))],
   });
   savePrograms(ps);
   renderProgSelector();
-  toast(`"${name}" olarak kaydedildi`);
+  toast(I18N.lang === 'en' ? `Saved as "${name}"` : `"${name}" olarak kaydedildi`);
 }
 
 function onAltFindClick(e) {

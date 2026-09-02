@@ -451,55 +451,56 @@
  <section id="view-program" class="view" role="tabpanel" aria-labelledby="tab-program" hidden>
   <div class="p-toolbar">
    <div class="p-workspace-title">
-    <span class="eyebrow">Aktif program</span>
+    <span class="eyebrow" data-i18n="progActiveProgram">Aktif program</span>
     <div class="p-progsel">
-     <select id="p-prog" class="p-prog-select" aria-label="Program seç"></select>
-     <button type="button" id="p-prog-rename" class="btn-ghost">Adlandır</button>
+     <select id="p-prog" class="p-prog-select" data-i18n-aria-label="progSelectProgramAria" aria-label="Program seç"></select>
+     <button type="button" id="p-prog-rename" class="btn-ghost" data-i18n="progRename">Adlandır</button>
     </div>
    </div>
    <div class="p-progtools" aria-label="Program işlemleri">
-    <button type="button" id="p-prog-new" class="btn-ghost">Yeni</button>
-    <button type="button" id="p-prog-copy" class="btn-ghost">Kopyala</button>
-    <button type="button" id="p-prog-del" class="btn-ghost p-danger">Programı sil</button>
+    <button type="button" id="p-prog-new" class="btn-ghost" data-i18n="progNewBtn">Yeni</button>
+    <button type="button" id="p-prog-copy" class="btn-ghost" data-i18n="progCopyProgramBtn">Kopyala</button>
+    <button type="button" id="p-prog-del" class="btn-ghost p-danger" data-i18n="progDeleteProgramBtn">Programı sil</button>
    </div>
-   <button type="button" id="p-altfind" class="btn-ghost" title="Programındaki dersler için çakışmasız alternatif kombinasyonlar ara">Alternatif bul</button>
-   <span class="p-credits" title="Toplam kredi ve AKTS"><span>Toplam</span><b id="p-credits-val">·</b></span>
+   <button type="button" id="p-altfind" class="btn-ghost" data-i18n="progAltFindBtn" data-i18n-title="progAltFindBtnTitle" title="Programındaki dersler için çakışmasız alternatif kombinasyonlar ara">Alternatif bul</button>
+   <span class="p-credits" data-i18n-title="progCreditsTitle" title="Toplam kredi ve AKTS"><span data-i18n="progTotalLabel">Toplam</span><b id="p-credits-val">·</b></span>
   </div>
 
   <section class="p-add" aria-labelledby="p-add-title">
    <div class="p-add-head">
-    <div><h2 id="p-add-title">Ders ekle</h2><p>Kod, ad, CRN veya öğretim üyesiyle ara.</p></div>
-    <label>dönem <select id="p-term"></select></label>
+    <div><h2 id="p-add-title" data-i18n="progAddTitle">Ders ekle</h2><p data-i18n="progAddHint">Kod, ad, CRN veya öğretim üyesiyle ara.</p></div>
+    <label><span data-i18n="prgTerm">dönem</span> <select id="p-term"></select></label>
    </div>
    <div class="p-add-search">
     <label class="query">
      <span class="sigil">&gt;</span>
      <input id="p-q" type="search" autocomplete="off" spellcheck="false"
-            placeholder="Örn. MAT 271E, Probability, 30154…" aria-label="Ders ara ve programa ekle">
+            data-i18n-placeholder="progSearchPlaceholder" placeholder="Örn. MAT 271E, Probability, 30154…"
+            data-i18n-aria-label="progSearchAria" aria-label="Ders ara ve programa ekle">
     </label>
-    <button type="button" id="p-addrow" class="btn-ghost">Bölümden seç</button>
+    <button type="button" id="p-addrow" class="btn-ghost" data-i18n="progSelectBranchBtn">Bölümden seç</button>
    </div>
   </section>
   <div id="p-results" class="p-results" hidden></div>
 
-  <div id="p-rows" class="p-rows" aria-label="Ders satırları"></div>
+  <div id="p-rows" class="p-rows" data-i18n-aria-label="progRowsAria" aria-label="Ders satırları"></div>
 
   <div class="p-layout">
    <aside class="p-panel">
     <div class="p-panel-head">
-     <div><h2>Eklenen dersler <span id="p-count">0</span></h2><p class="p-panel-hint"><span class="label-desktop">Sürükleyerek sıralayabilirsin.</span><span class="label-mobile">Programındaki şubeler burada görünür.</span></p></div>
-     <button type="button" id="p-clear" class="p-clear-link">Tümünü temizle</button>
+     <div><h2><span data-i18n="progAddedCoursesHeading">Eklenen dersler</span> <span id="p-count">0</span></h2><p class="p-panel-hint"><span class="label-desktop" data-i18n="progDragHint">Sürükleyerek sıralayabilirsin.</span><span class="label-mobile" data-i18n="progMobileHint">Programındaki şubeler burada görünür.</span></p></div>
+     <button type="button" id="p-clear" class="p-clear-link" data-i18n="prgClear">Tümünü temizle</button>
     </div>
-    <label class="check p-full"><input type="checkbox" id="p-full"> dolu şubeleri işaretle</label>
-    <div id="p-list" class="p-list" role="table" aria-label="Programa eklenen dersler" aria-live="polite"></div>
-    <button type="button" id="p-favs" class="btn-ghost p-favs">Favorilerimi ekle</button>
+    <label class="check p-full"><input type="checkbox" id="p-full"> <span data-i18n="prgFull">dolu şubeleri işaretle</span></label>
+    <div id="p-list" class="p-list" role="table" data-i18n-aria-label="progListAria" aria-label="Programa eklenen dersler" aria-live="polite"></div>
+    <button type="button" id="p-favs" class="btn-ghost p-favs" data-i18n="prgFavs">Favorilerimi ekle</button>
     <details class="p-export">
-     <summary>Dışa aktar ve paylaş</summary>
+     <summary data-i18n="progExportShare">Dışa aktar ve paylaş</summary>
      <div class="p-actions p-actions-bot">
-      <button type="button" id="p-dl" class="btn-ghost" title="Takvimi görsel olarak indir">PNG</button>
-      <button type="button" id="p-csv" class="btn-ghost">CSV</button>
-      <button type="button" id="p-ics" class="btn-ghost" title="Seçili şubeleri haftalık takvim olarak dışa aktar">Takvim (.ics)</button>
-      <button type="button" id="p-share" class="btn-ghost">Bağlantıyı kopyala</button>
+      <button type="button" id="p-dl" class="btn-ghost" data-i18n-title="progPNGTitle" title="Takvimi görsel olarak indir">PNG</button>
+      <button type="button" id="p-csv" class="btn-ghost" data-i18n="prgCSV">CSV</button>
+      <button type="button" id="p-ics" class="btn-ghost" data-i18n="progICSBtn" data-i18n-title="progICSTitle" title="Seçili şubeleri haftalık takvim olarak dışa aktar">Takvim (.ics)</button>
+      <button type="button" id="p-share" class="btn-ghost" data-i18n="prgShare">Bağlantıyı kopyala</button>
      </div>
     </details>
     <div id="p-obs-code" class="p-obs-code" hidden></div>
@@ -509,15 +510,15 @@
      <div id="p-summary" class="p-summary"></div>
      <div class="p-main-actions">
       <div class="p-obs-wrap">
-       <a id="p-obs" class="btn-primary" href="javascript:void(0)" draggable="true" aria-describedby="p-obs-tt">OBS için CRN hazırla</a>
-       <div id="p-obs-tt" class="ttip" role="tooltip">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</div>
+       <a id="p-obs" class="btn-primary" href="javascript:void(0)" draggable="true" aria-describedby="p-obs-tt" data-i18n="prgObs">OBS için CRN hazırla</a>
+       <div id="p-obs-tt" class="ttip" role="tooltip" data-i18n="progOBSDragHint">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</div>
       </div>
      </div>
     </div>
-    <div class="p-gridopts" aria-label="Takvim görünümü">
-     <label class="check p-gridview-toggle"><input type="checkbox" id="p-gridview"> Izgara</label>
-     <label class="check"><input type="checkbox" id="p-weekend"> Hafta sonu</label>
-     <label class="check"><input type="checkbox" id="p-fullday"> Tüm gün</label>
+    <div class="p-gridopts" data-i18n-aria-label="progGridOptsAria" aria-label="Takvim görünümü">
+     <label class="check p-gridview-toggle"><input type="checkbox" id="p-gridview"> <span data-i18n="progGridCheckbox">Izgara</span></label>
+     <label class="check"><input type="checkbox" id="p-weekend"> <span data-i18n="progWeekendCheckbox">Hafta sonu</span></label>
+     <label class="check"><input type="checkbox" id="p-fullday"> <span data-i18n="progFullDayCheckbox">Tüm gün</span></label>
     </div>
     <div id="p-grid" class="p-grid"></div>
    </div>

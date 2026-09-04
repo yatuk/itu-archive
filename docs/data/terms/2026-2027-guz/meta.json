@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-03T07:14:49Z"
+  "lastSuccessfulAt": "2026-09-04T07:17:57Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-03T07:14:49Z",
+ "scrapedAt": "2026-09-04T07:17:57Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5109,
- "courses": 3562,
+ "sections": 5126,
+ "courses": 3569,
  "branches": [
   {
    "code": "ABM",
@@ -32,7 +32,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 1
+   "sections": 2
   },
   {
    "code": "ALM",
@@ -47,6 +47,13 @@
     "LU"
    ],
    "sections": 4
+  },
+  {
+   "code": "ARC",
+   "levels": [
+    "LS"
+   ],
+   "sections": 1
   },
   {
    "code": "ATA",
@@ -503,7 +510,7 @@
     "LS",
     "LU"
    ],
-   "sections": 39
+   "sections": 41
   },
   {
    "code": "GIT",
@@ -608,7 +615,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 196
+   "sections": 206
   },
   {
    "code": "INS",
@@ -1044,7 +1051,7 @@
     "LS",
     "LU"
    ],
-   "sections": 65
+   "sections": 66
   },
   {
    "code": "MTR",
@@ -1316,6 +1323,13 @@
    "sections": 8
   },
   {
+   "code": "STA",
+   "levels": [
+    "LS"
+   ],
+   "sections": 2
+  },
+  {
    "code": "STD",
    "levels": [
     "LU"
@@ -1550,11 +1564,11 @@
   }
  ],
  "stats": {
-  "sections": 5109,
-  "courses": 3562,
-  "branches": 216,
-  "instructors": 1735,
-  "capacity": 249145,
+  "sections": 5126,
+  "courses": 3569,
+  "branches": 218,
+  "instructors": 1739,
+  "capacity": 249440,
   "enrolled": 1204
  }
 }

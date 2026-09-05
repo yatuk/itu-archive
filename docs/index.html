@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=6dfc75bd63b3">
+<link rel="stylesheet" href="assets/style.css?v=316d2b28835c">
 <!-- Google "Tercih Edilen Kaynak" rozeti (Hakkında sekmesi) — bkz. https://kobiseo.com/araclar/google-onerilen-kaynak/ -->
 <link rel="stylesheet" href="https://kobiseo.com/rozet/rozet.css">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -140,7 +140,7 @@
  if (location.protocol === 'file:') document.getElementById('file-warning').hidden = false;
 </script>
 
-<header class="masthead">
+<header class="masthead masthead-refined">
  <div class="wrap">
   <div class="mast-top">
    <a class="brand brand-home" href="/#dersler" aria-label="Dersler ana sayfasına git" data-i18n-aria-label="homeLabel">
@@ -449,23 +449,6 @@
  </section>
 
  <section id="view-program" class="view" role="tabpanel" aria-labelledby="tab-program" hidden>
-  <div class="p-toolbar">
-   <div class="p-workspace-title">
-    <span class="eyebrow" data-i18n="progActiveProgram">Aktif program</span>
-    <div class="p-progsel">
-     <select id="p-prog" class="p-prog-select" data-i18n-aria-label="progSelectProgramAria" aria-label="Program seç"></select>
-     <button type="button" id="p-prog-rename" class="btn-ghost" data-i18n="progRename">Adlandır</button>
-    </div>
-   </div>
-   <div class="p-progtools" aria-label="Program işlemleri">
-    <button type="button" id="p-prog-new" class="btn-ghost" data-i18n="progNewBtn">Yeni</button>
-    <button type="button" id="p-prog-copy" class="btn-ghost" data-i18n="progCopyProgramBtn">Kopyala</button>
-    <button type="button" id="p-prog-del" class="btn-ghost p-danger" data-i18n="progDeleteProgramBtn">Programı sil</button>
-   </div>
-   <button type="button" id="p-altfind" class="btn-ghost" data-i18n="progAltFindBtn" data-i18n-title="progAltFindBtnTitle" title="Programındaki dersler için çakışmasız alternatif kombinasyonlar ara">Alternatif bul</button>
-   <span class="p-credits" data-i18n-title="progCreditsTitle" title="Toplam kredi ve AKTS"><span data-i18n="progTotalLabel">Toplam</span><b id="p-credits-val">·</b></span>
-  </div>
-
   <section class="p-add" aria-labelledby="p-add-title">
    <div class="p-add-head">
     <div><h2 id="p-add-title" data-i18n="progAddTitle">Ders ekle</h2><p data-i18n="progAddHint">Kod, ad, CRN veya öğretim üyesiyle ara.</p></div>
@@ -482,6 +465,25 @@
    </div>
   </section>
   <div id="p-results" class="p-results" hidden></div>
+  <div class="p-toolbar">
+   <div class="p-workspace-title">
+    <span class="eyebrow" data-i18n="progActiveProgram">Aktif program</span>
+    <div class="p-progsel">
+     <select id="p-prog" class="p-prog-select" data-i18n-aria-label="progSelectProgramAria" aria-label="Program seç"></select>
+    </div>
+   </div>
+   <button type="button" id="p-altfind" class="btn-ghost" data-i18n="progAltFindBtn" data-i18n-title="progAltFindBtnTitle" title="Programındaki dersler için çakışmasız alternatif kombinasyonlar ara">Alternatif bul</button>
+   <span class="p-credits" data-i18n-title="progCreditsTitle" title="Toplam kredi ve AKTS"><span data-i18n="progTotalLabel">Toplam</span><b id="p-credits-val">·</b></span>
+   <details class="p-progmenu">
+    <summary aria-label="Program işlemleri" data-i18n-aria-label="progActionsAria"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg></summary>
+    <div class="p-progtools">
+     <button type="button" id="p-prog-rename" data-i18n="progRename">Adlandır</button>
+     <button type="button" id="p-prog-new" data-i18n="progNewBtn">Yeni</button>
+     <button type="button" id="p-prog-copy" data-i18n="progCopyProgramBtn">Kopyala</button>
+     <button type="button" id="p-prog-del" class="p-danger" data-i18n="progDeleteProgramBtn">Programı sil</button>
+    </div>
+   </details>
+  </div>
 
   <div id="p-rows" class="p-rows" data-i18n-aria-label="progRowsAria" aria-label="Ders satırları"></div>
 
@@ -661,7 +663,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
 
 </main>
 
-<div id="detail-panel" class="detail-panel" hidden role="dialog" aria-modal="true" aria-labelledby="detail-title">
+<div id="detail-panel" class="detail-panel course-reader" hidden role="dialog" aria-modal="true" aria-labelledby="detail-title">
  <div class="detail-box">
   <button type="button" class="detail-close" id="detail-close" aria-label="Kapat">✕</button>
   <div id="detail-content"></div>
@@ -675,7 +677,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=6dfc75bd63b3"></script>
+<script type="module" src="assets/app.js?v=316d2b28835c"></script>
 <script>
 (function () {
   var root = document.documentElement;

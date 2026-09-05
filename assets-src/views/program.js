@@ -87,6 +87,13 @@ function addToActive(branch, crn) {
   if (p.items.some((f) => f.term === term && fav.favKeyOf(f.branch, f.crn) === key)) return false;
   p.items.push({ term, branch, crn });
   savePrograms(ps);
+  // Mobil tek-gün görünümünde yeni eklenen şubenin ilk oturumunu aç.
+  const addedRow = rows.find((r) => r[3] === branch && String(r[0]) === String(crn));
+  const firstSession = addedRow ? parseWhen(addedRow[5])[0] : null;
+  if (firstSession) {
+    const dayIndex = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'].indexOf(firstSession.day);
+    if (dayIndex >= 0) mobileDay = dayIndex;
+  }
   return true;
 }
 function renderProgSelector() {
@@ -97,6 +104,8 @@ function renderProgSelector() {
   sel.value = String(ps.active);
   const p = ps.programs.find((x) => x.id === ps.active);
   $('#p-credits-val').textContent = p ? (p.credits != null ? p.credits : '·') : '·';
+  const del = $('#p-prog-del');
+  if (del) del.disabled = ps.programs.length <= 1;
   render();
 }
 
@@ -127,6 +136,9 @@ export function initProgram() {
   $('#p-prog-copy').addEventListener('click', progCopy);
   $('#p-prog-del').addEventListener('click', progDel);
   $('#p-prog-rename').addEventListener('click', progRename);
+  $('.p-progmenu')?.addEventListener('click', (e) => {
+    if (e.target.closest('.p-progtools button')) e.currentTarget.open = false;
+  });
   $('#p-clear').addEventListener('click', () => {
     // Tek tıkla program silinmesin — onay iste (Critique P2).
     const en = I18N.lang === 'en';
@@ -156,9 +168,19 @@ export function initProgram() {
   $('#p-gridview').addEventListener('change', (e) => { showGrid = e.target.checked; saveProgramView(); render(); });
   $('#p-weekend').addEventListener('change', (e) => { showWeekend = e.target.checked; saveProgramView(); render(); });
   $('#p-fullday').addEventListener('change', (e) => { showFullDay = e.target.checked; saveProgramView(); render(); });
-  document.addEventListener('click', () => { if (openMenuKey) closeMenus(); });
+  document.addEventListener('click', (e) => {
+    if (openMenuKey) closeMenus();
+    if (!e.target.closest('.p-progmenu')) $('.p-progmenu').open = false;
+  });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && gridContextMenu && !gridContextMenu.hidden) closeGridContextMenu(true);
+    if (e.key === 'Escape' && openMenuKey) {
+      const trigger = document.querySelector(`[data-menu="${openMenuKey}"]`);
+      closeMenus();
+      trigger?.focus();
+    }
+    const menu = $('.p-progmenu');
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
   });
   window.addEventListener('itu:add-program-items', async (event) => {
     const detail = event.detail || {};
@@ -399,6 +421,11 @@ function render() {
     const control = $(`#${id}`);
     if (control) control.disabled = empty;
   }
+  const alt = $('#p-altfind');
+  if (alt) {
+    alt.disabled = items.length < 2;
+    alt.setAttribute('aria-disabled', String(items.length < 2));
+  }
 }
 
 // Seçili şube satırlarının altına küçük punto kredi/AKTS: "3 kr · 6 AKTS".
@@ -435,7 +462,6 @@ function renderList(items) {
   const box = $('#p-list');
   const markFull = $('#p-full').checked;
   const en = I18N.lang === 'en';
-  const copyLbl = I18N.t('detailCopy');
   const rowsHtml = items.map(({ rec, row }, idx) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = row;
     const full = cap > 0 && enr >= cap;
@@ -443,9 +469,9 @@ function renderList(items) {
     const speed = fillSpeedNote(crn);
     return `<div class="p-item${markFull && full ? ' p-full' : ''}" role="row" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
-      <span class="p-crn" role="cell"><span class="p-mobile-label">${esc(I18N.t('thCrn'))}</span>${esc(crn)}<button type="button" class="copy-btn" data-copy="${esc(crn)}" data-copy-label="CRN" aria-label="${en ? `Copy CRN ${crn}` : `CRN ${esc(crn)} kopyala`}">${esc(copyLbl)}</button>${rec.backup ? `<small class="p-backup">${esc(I18N.t('progBackupPrefix'))}: ${esc(rec.backup)}</small>` : ''}</span>
-      <div class="p-code" role="cell"><b>${esc(code)}</b><button type="button" class="copy-btn" data-copy="${esc(code)}" data-copy-label="${esc(I18N.t('progCourseCodeCopyLabel'))}" aria-label="${en ? `Copy course code ${code}` : `${esc(code)} ders kodunu kopyala`}">${esc(copyLbl)}</button><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
-      <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : I18N.t('progInstructorUnknown'))}${instructor && instructor !== '-' ? `<button type="button" class="copy-btn" data-copy="${esc(instructor)}" data-copy-label="${esc(I18N.t('progInstructorCopyLabel'))}" aria-label="${en ? `Copy instructor ${instructor}` : `${esc(instructor)} adını kopyala`}">${esc(copyLbl)}</button>` : ''}</span>
+      <span class="p-crn" role="cell"><span class="p-mobile-label">${esc(I18N.t('thCrn'))}</span>${esc(crn)}${rec.backup ? `<small class="p-backup">${esc(I18N.t('progBackupPrefix'))}: ${esc(rec.backup)}</small>` : ''}</span>
+      <div class="p-code" role="cell"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
+      <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : I18N.t('progInstructorUnknown'))}</span>
       <span class="p-when" role="cell">${esc(when || I18N.t('progTimeUnknown'))}</span>
       <span class="p-fill" role="cell" aria-label="${esc(I18N.t('progQuotaAria'))}">${cap ? quotaDisplay(cap, enr) : '·'}</span>
       <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${en ? `Remove ${code} from schedule` : `${esc(code)} dersini programdan çıkar`}">${esc(I18N.t('progRemoveBtn'))}</button>
@@ -491,13 +517,6 @@ function renderList(items) {
     });
   });
 
-  box.querySelectorAll('[data-copy]').forEach((btn) => btn.addEventListener('click', async (ev) => {
-    ev.stopPropagation();
-    const ok = await copyText(btn.dataset.copy);
-    const en = I18N.lang === 'en';
-    toast(ok ? (en ? `${btn.dataset.copyLabel} copied` : `${btn.dataset.copyLabel} kopyalandı`) : I18N.t('progCopyFailed'), { kind: ok ? 'ok' : 'warn' });
-  }));
-
   box.querySelectorAll('.p-menu').forEach((btn) => {
     btn.addEventListener('click', (ev) => {
       ev.stopPropagation();
@@ -509,9 +528,12 @@ function renderList(items) {
       pop.hidden = false;
       btn.setAttribute('aria-expanded', 'true');
       const rec = items.find((it) => fav.favKeyOf(it.rec.branch, it.rec.crn) === key);
+      const menuRow = rec?.row;
       pop.innerHTML = `
         <button type="button" data-act="detail" data-key="${key}">${esc(I18N.t('prgMenuDetail'))}</button>
-        <button type="button" data-act="copy" data-key="${key}">${esc(I18N.t('prgMenuCopy'))}</button>
+        <button type="button" data-act="copy-crn" data-key="${key}">${esc(I18N.t('prgMenuCopy'))}</button>
+        <button type="button" data-act="copy-code" data-key="${key}">${esc(en ? 'Copy course code' : 'Ders kodunu kopyala')}</button>
+        ${menuRow && menuRow[4] && menuRow[4] !== '-' ? `<button type="button" data-act="copy-instructor" data-key="${key}">${esc(en ? 'Copy instructor' : 'Öğretim üyesini kopyala')}</button>` : ''}
         <button type="button" data-act="obs" data-key="${key}">${esc(I18N.t('prgMenuObs'))}</button>
         ${rec && rec.rec.backup
           ? `<button type="button" data-act="rmbackup" data-key="${key}">${esc(I18N.t('progMenuRemoveBackup'))}</button>`
@@ -531,8 +553,10 @@ function wireMenuActions(pop) {
       const row = rows.find((x) => x[3] === br && x[0] === cr);
       if (b.dataset.act === 'remove') {
         removeScheduleItem(actionKey);
-      } else if (b.dataset.act === 'copy') {
-        copyText(cr); toast(I18N.lang === 'en' ? `CRN ${cr} copied` : `CRN ${cr} kopyalandı`);
+      } else if (b.dataset.act.startsWith('copy-')) {
+        const value = b.dataset.act === 'copy-crn' ? cr : (b.dataset.act === 'copy-code' ? row?.[1] : row?.[4]);
+        const label = b.dataset.act === 'copy-crn' ? 'CRN' : (b.dataset.act === 'copy-code' ? I18N.t('progCourseCodeCopyLabel') : I18N.t('progInstructorCopyLabel'));
+        if (value) copyText(value).then((ok) => toast(ok ? (I18N.lang === 'en' ? `${label} copied` : `${label} kopyalandı`) : I18N.t('progCopyFailed'), { kind: ok ? 'ok' : 'warn' }));
       } else if (b.dataset.act === 'detail') {
         if (row) openDetail(row, term);
       } else if (b.dataset.act === 'obs') {
@@ -643,7 +667,7 @@ function renderGrid(itemRows) {
     const weekVisIdx = visIdx;
     const todayIdx = (new Date().getDay() + 6) % 7;
     if (mobileDay == null || !weekVisIdx.includes(mobileDay)) {
-      mobileDay = weekVisIdx.includes(todayIdx) ? todayIdx : (weekVisIdx.find((i) => hasDay[i]) ?? weekVisIdx[0]);
+      mobileDay = hasDay[todayIdx] ? todayIdx : (weekVisIdx.find((i) => hasDay[i]) ?? weekVisIdx[0]);
     }
     visIdx = [mobileDay];
     tabsHtml = `<div class="tt-daytabs" role="tablist" aria-label="${esc(I18N.t('progDaySelectAria'))}">${weekVisIdx.map((di) => `
@@ -1306,7 +1330,9 @@ let afPrefs = null;
 let afLockedGroups = new Set();
 let afCodes = new Set();
 let afCurrentByCode = new Map();
+let afCurrentRowByCode = new Map();
 let afResult = null;
+let afReturnFocus = null;
 
 function afDefaultPrefs() { return presetPrefs(null); }
 
@@ -1322,20 +1348,31 @@ function ensureAltFindHost() {
   afHost = document.createElement('div');
   afHost.className = 'dlg af-dlg';
   afHost.hidden = true;
-  afHost.innerHTML = '<div class="dlg-box af-box" role="dialog" aria-modal="true" aria-labelledby="af-title">'
+  afHost.innerHTML = '<div class="dlg-box af-box" role="dialog" aria-modal="true" aria-labelledby="af-title" tabindex="-1">'
     + `<button type="button" class="dlg-close" id="af-close" aria-label="${esc(I18N.t('progAFClose'))}">✕</button>`
     + '<div id="af-body"></div></div>';
   document.body.appendChild(afHost);
   afHost.querySelector('#af-close').addEventListener('click', closeAltFind);
   afHost.addEventListener('click', (e) => { if (e.target === afHost) closeAltFind(); });
   afHost.addEventListener('click', onAltFindClick);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && afHost && !afHost.hidden) closeAltFind(); });
+  afHost.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { e.preventDefault(); closeAltFind(); return; }
+    if (e.key !== 'Tab') return;
+    const focusable = [...afHost.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])')]
+      .filter((el) => !el.hidden && el.getClientRects().length);
+    if (!focusable.length) { e.preventDefault(); afHost.querySelector('.af-box')?.focus(); return; }
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
   return afHost;
 }
 
 function closeAltFind() {
   if (afHost) afHost.hidden = true;
   document.body.classList.remove('modal-open');
+  if (afReturnFocus && document.contains(afReturnFocus)) afReturnFocus.focus();
+  afReturnFocus = null;
 }
 
 function openAltFind() {
@@ -1343,14 +1380,17 @@ function openAltFind() {
   if (items.length < 2) { toast(I18N.t('progAFMinTwoCourses'), { kind: 'warn' }); return; }
   afCodes = new Set(items.map(({ row }) => row[1]));
   afCurrentByCode = new Map(items.map(({ row }) => [row[1], row[0]]));
+  afCurrentRowByCode = new Map(items.map(({ row }) => [row[1], row]));
   afPrefs = afDefaultPrefs();
   afLockedGroups = new Set();
   afStep = 'prefs';
   afResult = null;
+  afReturnFocus = document.activeElement;
   ensureAltFindHost();
   afHost.hidden = false;
   document.body.classList.add('modal-open');
   renderAltFind();
+  queueMicrotask(() => afHost.querySelector('[data-af-preset], #af-close')?.focus());
 }
 
 function afStepsHtml() {
@@ -1462,10 +1502,27 @@ function afResultCard(combo, idx) {
     return `<span class="af-mini${busy ? ' on' : ''}"></span>`;
   }).join('');
   const note = combo.changed === 0 ? I18N.t('progAFSameAsCurrent') : `${combo.changed} ${I18N.t('progAFCoursesChangingSuffix')}`;
+  const changed = combo.sections.filter((sec) => String(afCurrentByCode.get(sec.code)) !== String(sec.crn));
+  const changes = changed.map((sec) => {
+    const before = afCurrentRowByCode.get(sec.code);
+    const after = sec.row;
+    const beforeQuota = before?.[6] ? quotaDisplay(before[6], before[7]) : '·';
+    const afterQuota = after?.[6] ? quotaDisplay(after[6], after[7]) : '·';
+    const label = (tr, en) => I18N.lang === 'en' ? en : tr;
+    return `<li><b>${esc(sec.code)}</b>
+      <dl>
+        <div><dt>CRN</dt><dd>${esc(before?.[0] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[0] || '·')}</dd></div>
+        <div><dt>${label('Hoca', 'Instructor')}</dt><dd>${esc(before?.[4] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[4] || '·')}</dd></div>
+        <div><dt>${label('Saat', 'Time')}</dt><dd>${esc(before?.[5] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[5] || '·')}</dd></div>
+        <div><dt>${label('Kontenjan', 'Quota')}</dt><dd>${esc(beforeQuota)} <span aria-hidden="true">→</span> ${esc(afterQuota)}</dd></div>
+      </dl>
+    </li>`;
+  }).join('');
   return `<div class="af-card">
     <div class="af-card-head"><div class="af-mini-row">${preview}</div>
       <div><b>${byDay.size} ${esc(I18N.t('progAFDayWord'))}${I18N.lang === 'en' && byDay.size !== 1 ? 's' : ''}</b> · ${range}</div></div>
     <p class="af-card-note">${esc(note)}</p>
+    ${changes ? `<ul class="af-diff" aria-label="${esc(I18N.lang === 'en' ? 'Changes in this alternative' : 'Bu alternatifteki değişiklikler')}">${changes}</ul>` : ''}
     <div class="af-card-actions">
       <button type="button" class="btn-primary" data-af-apply="${idx}">${esc(I18N.t('progAFApplyBtn'))}</button>
       <button type="button" class="btn-ghost" data-af-save="${idx}">${esc(I18N.t('progAFSaveBtn'))}</button>
@@ -1495,8 +1552,14 @@ function renderAltFindResults() {
 
 function renderAltFind() {
   ensureAltFindHost();
+  const focused = document.activeElement;
+  const attrs = focused && afHost.contains(focused) ? [...focused.attributes].filter((a) => a.name === 'id' || a.name.startsWith('data-af-')) : [];
   if (afStep === 'prefs') renderAltFindPrefs();
   else renderAltFindResults();
+  if (focused && !focused.isConnected) {
+    const replacement = [...afHost.querySelectorAll('button')].find((el) => attrs.length && attrs.every((a) => el.getAttribute(a.name) === a.value));
+    (replacement || afHost.querySelector('#af-close')).focus();
+  }
 }
 
 function afSetPref(key, val) {

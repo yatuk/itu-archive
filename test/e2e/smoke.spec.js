@@ -415,6 +415,25 @@ test.describe('SPA (ana sayfa)', () => {
 });
 
 test.describe('Ders detay paneli', () => {
+  test('yenilenen başlık dar ekranda taşmaz ve azaltılmış hareketi korur', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 740 });
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto('/?term=2025-2026-yaz#ders/MAT-271E');
+    await expect(page.locator('.course-reader .d-name')).toBeVisible();
+    await expect(page.locator('.course-reader .d-obs')).toBeVisible();
+    expect(await page.locator('.course-reader .detail-box').evaluate(el => getComputedStyle(el).animationName)).toBe('none');
+    await page.locator('[data-dtab="overview"]').focus();
+    await page.keyboard.press('ArrowRight');
+    await expect(page.locator('[data-dtab="sections"]')).toBeFocused();
+    await expect(page.locator('[data-dpanel="sections"]')).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(page.locator('#detail-panel')).toBeHidden();
+    const controls = await page.locator('.masthead-refined .mast-controls').boundingBox();
+    const brand = await page.locator('.masthead-refined .brand-home').boundingBox();
+    expect(controls.x + controls.width).toBeLessThanOrEqual(320);
+    expect(brand.y + brand.height).toBeLessThanOrEqual(controls.y);
+  });
+
   test('tek uzun belge yerine dört erişilebilir sekme kullanır', async ({ page }) => {
     const hatalar = konsolHatalari(page);
     await page.goto('/?term=2025-2026-yaz#ders/MAT-271E');
@@ -505,6 +524,11 @@ test.describe('Program seçimi (fakülte → bölüm)', () => {
     await expect(page.locator('#dp-filter-more')).toBeHidden();
     await page.locator('#dp-filter-toggle').click();
     await expect(page.locator('#dp-filter-more')).toBeVisible();
+
+    const order = await page.evaluate(() =>
+      [...document.querySelectorAll('#dp-summary, #dp-semesters, #dp-grades, #dp-tools')].map((el) => el.id));
+    expect(order).toEqual(['dp-summary', 'dp-semesters', 'dp-grades', 'dp-tools']);
+    await expect(page.locator('#dp-tools')).not.toHaveAttribute('open', '');
 
     const gpa = page.locator('#dp-grades');
     await expect(gpa).not.toHaveAttribute('open', '');
@@ -606,6 +630,7 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     await page.waitForTimeout(1500);
     const hatalar = [];
     page.on('pageerror', (e) => hatalar.push(String(e)));
+    await page.locator('#dp-tools > summary').click();
     await page.locator('#dp-recommend > summary').click();
     await page.locator('#dp-recommend-run').click();
     await page.waitForTimeout(800);
@@ -616,6 +641,7 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
   test('Ders Planım: "Dengeli plan oluştur" önşart sırasını koruyan çok dönemli bir plan üretir', async ({ page }) => {
     await page.goto('/?prog=CEN_LS#dersplanim');
     await page.waitForTimeout(1500);
+    await page.locator('#dp-tools > summary').click();
     await page.locator('#dp-balanced > summary').click();
     await page.locator('#dp-balanced-run').click();
     await expect.poll(
@@ -726,6 +752,46 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
 });
 
 test.describe('Haftalık program kurucu', () => {
+  test('alternatifler gerçek şube farkını gösterir ve klavye odağını korur', async ({ page }) => {
+    const rows = [
+      ['90001', 'MAT 271E', 'Probability', 'MAT', 'First Instructor', 'Pazartesi 09:30/11:29', 40, 10, 'LS', ''],
+      ['90002', 'MAT 271E', 'Probability', 'MAT', 'Second Instructor', 'Perşembe 13:30/15:29', 50, 20, 'LS', ''],
+      ['90003', 'FIZ 101E', 'Physics', 'FIZ', 'Physics Instructor', 'Pazartesi 09:30/11:29', 60, 30, 'LS', ''],
+    ];
+    await page.route('**/data/terms/2025-2026-yaz/search.json*', (route) => route.fulfill({ json: rows }));
+    await page.goto('/?term=2025-2026-yaz#program');
+    await expect(page.locator('#p-altfind')).toBeDisabled();
+    for (const crn of ['90001', '90003']) {
+      await page.locator('#p-q').fill(crn);
+      await page.locator('.p-result').first().click();
+    }
+    await page.locator('#p-altfind').click();
+    const dialog = page.locator('.af-dlg');
+    await expect(dialog).toBeVisible();
+    await expect(page.locator('#af-close')).toBeFocused();
+    await page.keyboard.press('Shift+Tab');
+    await expect(page.locator('#af-run')).toBeFocused();
+    await page.keyboard.press('Tab');
+    await expect(page.locator('#af-close')).toBeFocused();
+    await page.locator('[data-af-preset="compact"]').click();
+    await expect(page.locator('[data-af-preset="compact"]')).toBeFocused();
+    await page.locator('#af-run').click();
+    const diff = page.locator('.af-diff').first();
+    await expect(diff).toContainText('90001 → 90002');
+    await expect(diff).toContainText('First Instructor → Second Instructor');
+    await expect(diff).toContainText('Perşembe');
+    await expect(diff).toContainText('20');
+    await page.keyboard.press('Escape');
+    await expect(dialog).toBeHidden();
+    await expect(page.locator('#p-altfind')).toBeFocused();
+    await expect(page.locator('.p-crn').first()).toContainText('90001');
+    await page.locator('#p-altfind').click();
+    await page.locator('#af-run').click();
+    await page.locator('[data-af-apply]').first().click();
+    await expect(dialog).toBeHidden();
+    await expect(page.locator('#p-list')).toContainText('90002');
+    await expect(page.locator('#p-altfind')).toBeFocused();
+  });
   async function programiAc(page) {
     await page.goto('/?term=2025-2026-yaz#program');
     await expect(page.locator('#p-q')).toBeVisible();
@@ -737,6 +803,12 @@ test.describe('Haftalık program kurucu', () => {
     await expect(page.locator('#p-results .p-result').first()).toBeVisible();
     await page.locator('#p-results .p-result').first().click();
     await expect(page.locator('#p-list .p-item')).toHaveCount(1);
+  }
+
+  async function programIslemi(page, selector) {
+    const menu = page.locator('.p-progmenu');
+    if (!(await menu.evaluate((el) => el.open))) await menu.locator(':scope > summary').click();
+    await page.locator(selector).click();
   }
 
   test('ders ekleme, tekrar engeli, görünür çıkarma, geri alma ve temizleme çalışır', async ({ page }) => {
@@ -809,6 +881,16 @@ test.describe('Haftalık program kurucu', () => {
     await expect(satir.locator('.p-crn')).toContainText(/CRN\s*\d+/);
     await expect(satir.locator('.p-when')).not.toHaveText('Zaman açıklanmadı');
     await expect(page.locator('#p-grid .tt-daytabs')).toBeVisible();
+    await expect(satir.locator('[data-copy]')).toHaveCount(0);
+    const firstDay = (await satir.locator('.p-when').innerText()).trim().split(/\s+/)[0];
+    const expectedDay = { Pazartesi: 'Pzt', Salı: 'Sal', Çarşamba: 'Çar', Perşembe: 'Per', Cuma: 'Cum', Cumartesi: 'Cmt', Pazar: 'Paz' }[firstDay];
+    await expect(page.locator('.tt-daytab.active')).toHaveText(expectedDay);
+
+    await satir.locator('.p-menu').click();
+    await expect(satir.locator('[data-act="copy-crn"]')).toBeVisible();
+    await expect(satir.locator('[data-act="copy-code"]')).toBeVisible();
+    await expect(satir.locator('[data-act="copy-instructor"]')).toBeVisible();
+    await page.keyboard.press('Escape');
 
     const removeBox = await satir.locator('.p-remove').boundingBox();
     expect(removeBox.width).toBeGreaterThanOrEqual(44);
@@ -845,21 +927,21 @@ test.describe('Haftalık program kurucu', () => {
     await page.locator('.p-row-crn').selectOption({ index: 1 });
     await expect(page.locator('#p-list .p-item')).toHaveCount(1);
 
-    await page.locator('#p-prog-new').click();
+    await programIslemi(page, '#p-prog-new');
     await expect(page.locator('#p-prog option')).toHaveCount(2);
     await expect(page.locator('#p-list .p-item')).toHaveCount(0);
-    await page.locator('#p-prog-rename').click();
+    await programIslemi(page, '#p-prog-rename');
     await page.locator('.dlg-input').fill('Salı Planı');
     await page.locator('.dlg-ok').click();
     await expect(page.locator('#p-prog option:checked')).toHaveText('Salı Planı');
 
     await arayipEkle(page);
-    await page.locator('#p-prog-copy').click();
+    await programIslemi(page, '#p-prog-copy');
     await expect(page.locator('#p-prog option')).toHaveCount(3);
     await expect(page.locator('#p-prog option:checked')).toContainText('(kopya)');
     await expect(page.locator('#p-list .p-item')).toHaveCount(1);
 
-    await page.locator('#p-prog-del').click();
+    await programIslemi(page, '#p-prog-del');
     await expect(page.locator('.dlg-title')).toHaveText('Programı sil');
     await page.locator('.dlg-ok').click();
     await expect(page.locator('#p-prog option')).toHaveCount(2);

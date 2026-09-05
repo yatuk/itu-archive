@@ -244,7 +244,7 @@ function detailShell({ code, name, branch, level, method, obsLink, term, secs, c
       <div class="d-title-block"><h3 id="detail-title"><span class="d-code">${esc(code)}</span><span class="d-name">${esc(name || code)}</span></h3>
         <div class="d-meta">${[branch, level, method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
       </div>
-      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener">OBS kataloğu ↗</a>` : ''}
+      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener">OBS kataloğu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4h6v6M20 4l-9 9M10 4H4v16h16v-6"/></svg></a>` : ''}
     </header>
     <nav class="d-tabs" role="tablist" aria-label="Ders detayı bölümleri">
       ${tab('overview', 'Özet')}

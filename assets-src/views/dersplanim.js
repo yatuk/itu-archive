@@ -141,24 +141,7 @@ function ensureHost() {
     <div class="dp-resultbar">
       <p class="resultline" id="dp-result" aria-live="polite">${I18N.t('planSelectingProgram')}</p>
     </div>
-    <details class="dp-recommend" id="dp-recommend">
-      <summary><span>${I18N.t('planSuggestTerm')}</span><small>${I18N.t('planSuggestTermHint')}</small></summary>
-      <div class="dp-recommend-controls">
-        <label>${I18N.t('planTargetSemester')} <select id="dp-recommend-sem"></select></label>
-        <label>${I18N.t('planMaxCredit')} <input id="dp-recommend-credit" class="f-in dp-credit-input" type="number" min="1" max="40" value="18"></label>
-        <button type="button" id="dp-recommend-run" class="btn-primary">${I18N.t('planGenerateSuggestion')}</button>
-      </div>
-      <p class="dp-recommend-note">${I18N.t('planSuggestNote')}</p>
-      <div id="dp-recommend-result" aria-live="polite"></div>
-    </details>
-    <details class="dp-recommend" id="dp-balanced">
-      <summary><span>${I18N.t('planBalancedPlan')}</span><small>${I18N.t('planBalancedHint')}</small></summary>
-      <div class="dp-recommend-controls">
-        <button type="button" id="dp-balanced-run" class="btn-primary">${I18N.t('planBalancedPlan')}</button>
-      </div>
-      <p class="dp-recommend-note">${I18N.t('planBalancedNote')}</p>
-      <div id="dp-balanced-result" aria-live="polite"></div>
-    </details>
+    <div id="dp-semesters" class="dp-semesters"></div>
     <details class="dp-grades" id="dp-grades">
       <summary><span>${I18N.t('planGpaProgress')}</span><b id="dp-grade-preview">${I18N.t('planGpaPreviewEmpty')}</b></summary>
       <p class="dp-grades-empty" id="dp-grades-empty">${I18N.t('planGpaEmptyHint')}</p>
@@ -197,6 +180,27 @@ function ensureHost() {
         <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">${I18N.t('planPrivacyNoteLink')}</a>.</p>
       </details>
     </details>
+    <details class="dp-tools" id="dp-tools">
+      <summary><span>${t('Planlama araçları', 'Planning tools')}</span><small>${t('Ders önerisi, dengeli plan ve yatay geçiş', 'Course suggestions, balanced planning, and transfer')}</small></summary>
+      <div class="dp-tools-body">
+    <details class="dp-recommend" id="dp-recommend">
+      <summary><span>${I18N.t('planSuggestTerm')}</span><small>${I18N.t('planSuggestTermHint')}</small></summary>
+      <div class="dp-recommend-controls">
+        <label>${I18N.t('planTargetSemester')} <select id="dp-recommend-sem"></select></label>
+        <label>${I18N.t('planMaxCredit')} <input id="dp-recommend-credit" class="f-in dp-credit-input" type="number" min="1" max="40" value="18"></label>
+        <button type="button" id="dp-recommend-run" class="btn-primary">${I18N.t('planGenerateSuggestion')}</button>
+      </div>
+      <p class="dp-recommend-note">${I18N.t('planSuggestNote')}</p>
+      <div id="dp-recommend-result" aria-live="polite"></div>
+    </details>
+    <details class="dp-recommend" id="dp-balanced">
+      <summary><span>${I18N.t('planBalancedPlan')}</span><small>${I18N.t('planBalancedHint')}</small></summary>
+      <div class="dp-recommend-controls">
+        <button type="button" id="dp-balanced-run" class="btn-primary">${I18N.t('planBalancedPlan')}</button>
+      </div>
+      <p class="dp-recommend-note">${I18N.t('planBalancedNote')}</p>
+      <div id="dp-balanced-result" aria-live="polite"></div>
+    </details>
     <details class="dp-recommend" id="dp-yatay">
       <summary><span>${I18N.t('planTransferChance')}</span><small id="dp-yatay-preview">${I18N.t('planTransferPreview')}</small></summary>
       <div class="dp-recommend-controls">
@@ -206,7 +210,8 @@ function ensureHost() {
       <p class="dp-recommend-note">${I18N.t('planTransferNoteSource')} <a href="https://www.sis.itu.edu.tr/TR/mevzuat/yatay-cap-yandal-yonerge.php" target="_blank" rel="noopener">${I18N.t('planTransferNoteLink')}</a>, ${I18N.t('planTransferNoteBody')}</p>
       <div id="dp-yatay-result" aria-live="polite"></div>
     </details>
-    <div id="dp-semesters" class="dp-semesters"></div>`;
+      </div>
+    </details>`;
 }
 
 // -- program seçici --

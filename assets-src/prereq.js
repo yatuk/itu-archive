@@ -258,10 +258,10 @@ import { I18N } from './i18n.js?v=dde1e9339338';
         ctx.font = '13px ui-monospace, monospace';
         ctx.textAlign = 'center';
         ctx.fillStyle = c.emptyDim;
-        ctx.fillText('> bir bölüm seçin', w / 2, h / 2 - 6);
+        ctx.fillText(I18N.t('pgEmptyStateLine1'), w / 2, h / 2 - 6);
         ctx.font = '11px ui-monospace, monospace';
         ctx.fillStyle = c.emptyFaint;
-        ctx.fillText('dönem sütunlarında önşart okları burada çizilir', w / 2, h / 2 + 14);
+        ctx.fillText(I18N.t('pgEmptyStateLine2'), w / 2, h / 2 + 14);
         return;
       }
       const focused = !!this.related;
@@ -436,7 +436,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       this.root.classList.remove('pg-has-detail');
       const reset = this.root.querySelector('.pg-reset');
       if (reset) reset.disabled = true;
-      this.status.textContent = 'bir bölüm seçin';
+      this.status.textContent = I18N.t('pgSelectProgramPrompt');
       this.draw();
       this.queueResize();
     }
@@ -460,12 +460,12 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       const sources = this.edges.filter((e) => e.to.code === code && e.sourceUrl);
       const source = sources[0];
       this.detail.innerHTML = `
-        <div class="pg-detail-head"><h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3><button type="button" class="pg-detail-close" aria-label="Detayı kapat">×</button></div>
-        ${tree ? `<h4>Önşartı</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : '<p class="pg-empty">Bu programda kayıtlı önşartı yok.</p>'}
-        ${req.length ? `<h4>Gereken dersler (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
-        ${dep.length ? `<h4>Bunu önşart olarak isteyenler (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}
-        ${source ? `<div class="pg-source"><b>Kaynak ve doğrulama</b><span>${source.status === 'verified' ? 'OBS kaydı doğrulandı' : 'Kaynak kaydı'}${source.verifiedAt ? ` · ${new Date(source.verifiedAt).toLocaleDateString('tr-TR')}` : ''}</span><a href="${esc(source.sourceUrl)}" target="_blank" rel="noopener">İTÜ OBS kaydını aç ↗</a></div>` : ''}
-        <button type="button" class="btn-ghost pg-detail-open" data-code="${esc(n.code)}">bu dersi detaylandır</button>`;
+        <div class="pg-detail-head"><h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3><button type="button" class="pg-detail-close" aria-label="${esc(I18N.t('pgDetailCloseAriaLabel'))}">×</button></div>
+        ${tree ? `<h4>${esc(I18N.t('detailPrereq'))}</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : `<p class="pg-empty">${esc(I18N.t('pgNoPrereqInProgram'))}</p>`}
+        ${req.length ? `<h4>${esc(I18N.t('pgRequiredCourses'))} (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
+        ${dep.length ? `<h4>${esc(I18N.t('pgRequestedBy'))} (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}
+        ${source ? `<div class="pg-source"><b>${esc(I18N.t('pgSourceVerification'))}</b><span>${source.status === 'verified' ? esc(I18N.t('pgObsVerified')) : esc(I18N.t('pgSourceRecord'))}${source.verifiedAt ? ` · ${new Date(source.verifiedAt).toLocaleDateString(I18N.lang === 'en' ? 'en-GB' : 'tr-TR')}` : ''}</span><a href="${esc(source.sourceUrl)}" target="_blank" rel="noopener">${esc(I18N.t('pgOpenObsRecord'))}</a></div>` : ''}
+        <button type="button" class="btn-ghost pg-detail-open" data-code="${esc(n.code)}">${esc(I18N.t('pgViewCourseDetail'))}</button>`;
       this.detail.querySelectorAll('.pg-chip:not([disabled])').forEach((b) =>
         b.addEventListener('click', () => this.panTo(b.dataset.code)));
       const dOpen = this.detail.querySelector('.pg-detail-open');
@@ -486,17 +486,17 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       const opts = (n.options || []).slice();
       const version = (this.poolVersion = (this.poolVersion || 0) + 1);
       this.detail.innerHTML = `
-        <div class="pg-detail-head"><h3>${esc(n.name)} <span>seçmeli havuz</span></h3><button type="button" class="pg-detail-close" aria-label="Havuzu kapat">×</button></div>
+        <div class="pg-detail-head"><h3>${esc(n.name)} <span>${esc(I18N.t('pgElectivePool'))}</span></h3><button type="button" class="pg-detail-close" aria-label="${esc(I18N.t('pgClosePoolAriaLabel'))}">×</button></div>
         <div class="pg-pool-head">
-          <input type="search" class="pg-pool-search" placeholder="ara: kod veya ad…" aria-label="Havuzda ara">
-          <select class="pg-pool-sort" aria-label="Sıralama">
-            <option value="code">koda göre</option>
-            <option value="name">ada göre</option>
-            <option value="open">bu dönem açık olanlar önce</option>
-            <option value="cap">kontenjanı olanlar önce</option>
+          <input type="search" class="pg-pool-search" placeholder="${esc(I18N.t('pgPoolSearchPlaceholder'))}" aria-label="${esc(I18N.t('pgPoolSearchAriaLabel'))}">
+          <select class="pg-pool-sort" aria-label="${esc(I18N.t('pgSortAriaLabel'))}">
+            <option value="code">${esc(I18N.t('pgSortByCode'))}</option>
+            <option value="name">${esc(I18N.t('pgSortByName'))}</option>
+            <option value="open">${esc(I18N.t('pgSortOpenFirst'))}</option>
+            <option value="cap">${esc(I18N.t('pgSortSeatsFirst'))}</option>
           </select>
         </div>
-        <p class="pg-pool-status">${opts.length} alternatif, durum taranıyor…</p>
+        <p class="pg-pool-status">${opts.length} ${esc(I18N.t('pgAlternativesWord'))}, ${esc(I18N.t('pgScanningStatus'))}</p>
         <div class="pg-pool-groups"></div>`;
       this.detail.querySelector('.pg-detail-close')?.addEventListener('click', () => this.clearFocus());
 
@@ -551,20 +551,20 @@ import { I18N } from './i18n.js?v=dde1e9339338';
               const taken = isTaken(o.code);
               const badge = !st ? '<span class="loading">…</span>'
                 : st.open
-                  ? `<span class="open">● açık · ${st.sections.length} şube · ${st.enr}/${st.cap || '·'}</span>`
-                  : `<span class="closed">● ${st.last ? 'son ' + esc(termLabel(st.last)) : 'hiç açılmadı'}</span>`;
+                  ? `<span class="open">● ${esc(I18N.t('pgOpenBadge'))} · ${st.sections.length} ${esc(I18N.t('prgSube'))} · ${st.enr}/${st.cap || '·'}</span>`
+                  : `<span class="closed">● ${st.last ? esc(I18N.t('pgLastOpenedPrefix')) + ' ' + esc(termLabel(st.last)) : esc(I18N.t('pgNeverOpened'))}</span>`;
               return `<div class="pg-pool-row${taken ? ' pg-pool-taken' : ''}">
-                <div class="pg-pool-name"><b>${esc(o.code)}</b><em title="${esc(o.name)}">${esc(o.name || 'Ders adı arşivde bulunamadı')}</em></div>
-                <span class="pg-pool-status-badge">${taken ? '<span class="taken-mark">✓ aldım</span>' : ''}${badge}</span>
+                <div class="pg-pool-name"><b>${esc(o.code)}</b><em title="${esc(o.name)}">${esc(o.name || I18N.t('pgCourseNameUnavailable'))}</em></div>
+                <span class="pg-pool-status-badge">${taken ? `<span class="taken-mark">${esc(I18N.t('pgTakenMark'))}</span>` : ''}${badge}</span>
                 <span class="pg-pool-actions">
-                  <button data-act="detay" data-code="${esc(o.code)}">detay</button>
-                  <button data-act="courses" data-code="${esc(o.code)}">derslerde aç</button>
+                  <button data-act="detay" data-code="${esc(o.code)}">${esc(I18N.t('pgDetailButton'))}</button>
+                  <button data-act="courses" data-code="${esc(o.code)}">${esc(I18N.t('pgOpenInCourses'))}</button>
                 </span>
               </div>`;
             }).join('')}
           </details>`).join('');
         const openCount = [...status.values()].filter((s) => s.open).length;
-        statusEl.textContent = `${opts.length} alternatif · ${openCount} tanesi bu dönem açık`;
+        statusEl.textContent = `${opts.length} ${I18N.t('pgAlternativesWord')} · ${openCount} ${I18N.t('pgOpenThisTermWord')}`;
       };
 
       this.detail.querySelector('.pg-pool-search').addEventListener('input', (e) => { q = e.target.value; render(); });
@@ -624,7 +624,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       // düğümü ekrandaki konuma göre yönlendirir. role="img" statik olmaktan
       // çıkar — arama kutusu zaten aynı focusNode'a gider.
       c.tabIndex = 0;
-      c.setAttribute('aria-label', 'Önşart haritası: odaklanmak için ok tuşlarını kullan');
+      c.setAttribute('aria-label', I18N.t('pgCanvasKeyboardAriaLabel'));
       c.addEventListener('keydown', (e) => {
         if (!this.nodes || !this.focus) return;
         const cur = this.byCode.get(this.focus);
@@ -713,7 +713,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
           this.tip.style.left = (e.clientX - rect.left + 14) + 'px';
           this.tip.style.top = (e.clientY - rect.top + 10) + 'px';
           this.tip.textContent = n.kind === 'elective'
-            ? `${n.name} · ${(n.options || []).length} seçenek`
+            ? `${n.name} · ${(n.options || []).length} ${I18N.t('pgOptionsWord')}`
             : (n.name ? `${n.code}: ${n.name}` : n.code);
         } else {
           this.tip.hidden = true;
@@ -834,7 +834,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       return `<li class="req-item req-code${taken ? ' req-taken' : ' req-untaken'}">${esc(tree.code)}${tree.detail ? ` <em>${esc(tree.detail)}</em>` : ''}</li>`;
     }
     if (tree.type === 'text') return `<li class="req-item req-text">${esc(tree.raw)}</li>`;
-    const label = tree.type === 'or' ? 'VEYA: biri yeterli' : 'VE: hepsi gerekli';
+    const label = tree.type === 'or' ? I18N.t('pgOrOneEnough') : I18N.t('pgAndAllRequired');
     const cls = tree.type === 'or' ? 'req-or' : 'req-and';
     const codes = collectCodes(tree);
     const satisfied = tree.type === 'or'
@@ -921,8 +921,9 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     const hit = rec && rec[code];
     return hit && hit.terms && hit.terms.length ? hit.terms[0] : null;
   }
-  const LEVEL_TR = { OL: 'Önlisans', LS: 'Lisans', YL: 'Yüksek Lisans', DR: 'Doktora' };
+  const LEVEL_KEY = { OL: 'levelAssociate', LS: 'levelBachelor', YL: 'levelMaster', DR: 'levelDoctorate' };
   const LEVEL_ORDER = ['OL', 'LS', 'YL', 'DR'];
+  const levelLabel = (lv) => I18N.t(LEVEL_KEY[lv] || 'levelBachelor');
 
   async function ensureData(root) {
     if (!graph) graph = new PlanGraph(root);
@@ -933,10 +934,20 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     return { graph, programs };
   }
 
+  // laneTitle, müfredat verisindeki "N. Yarıyıl" başlığını görüntü diline çevirir:
+  // TR'de "N. Dönem", EN'de "Term N". Başında sayı yoksa (beklenmeyen veri) ham
+  // başlık aynen döner.
+  function laneTitle(title) {
+    const m = String(title || '').match(/^(\d+)/);
+    if (!m) return String(title || '');
+    const word = I18N.t('pgTermWord');
+    return I18N.lang === 'en' ? `${word} ${m[1]}` : `${m[1]}. ${word}`;
+  }
+
   function buildProgramGraph(plan, prereqEdges, reqMap) {
     const nodes = [];
     const seen = new Set();
-    const laneTitles = plan.semesters.map((s) => s.title.replace('. Yarıyıl', '. Dönem'));
+    const laneTitles = plan.semesters.map((s) => laneTitle(s.title));
     plan.semesters.forEach((sem, laneIdx) => {
       sem.items.forEach((item, slot) => {
         if (item.course) {
@@ -966,7 +977,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
   async function selectProgram(root, code) {
     const { graph } = await ensureData(root);
     const statusEl = root.querySelector('.pg-status');
-    statusEl.textContent = 'müfredat indiriliyor…';
+    statusEl.textContent = I18N.t('pgLoadingCurriculum');
     statusEl.classList.add('busy');
     const [plan, g] = await Promise.all([
       fetch(`data/curriculum/${code}.json`).then((r) => r.json()),
@@ -985,7 +996,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     root.querySelector('.pg-plan-label').textContent = plan.planLabel || '';
     renderBranchLegend(root, nodes);
     renderSemesterList(root, plan, reqByCode);
-    await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ders/slot, bir düğüme tıkla`);
+    await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ${I18N.t('pgCourseSlotWord')}, ${I18N.t('pgClickNodeHint')}`);
     renderMobileExplorer(root, plan, graph);
     statusEl.classList.remove('busy');
   }
@@ -1058,15 +1069,15 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       const items = (sem.items || []).map((it) => {
         if (it.course) {
           const req = reqByCode?.req?.get(it.course.code);
-          return `<li><code>${esc(it.course.code)}</code>: ${esc(it.course.name)}${req ? `<span class="pg-list-req"> · önşart: ${esc(req)}</span>` : ''}</li>`;
+          return `<li><code>${esc(it.course.code)}</code>: ${esc(it.course.name)}${req ? `<span class="pg-list-req"> · ${esc(I18N.t('detailPrereq'))}: ${esc(req)}</span>` : ''}</li>`;
         }
         if (it.elective) {
           const n = it.elective.options ? it.elective.options.length : 0;
-          return `<li><span class="pg-list-elect">Seçmeli havuz:</span> ${esc(it.elective.title)} (${n} seçenek)</li>`;
+          return `<li><span class="pg-list-elect">${esc(I18N.t('pgLegendElectivePool'))}:</span> ${esc(it.elective.title)} (${n} ${esc(I18N.t('pgOptionsWord'))})</li>`;
         }
         return '';
       }).filter(Boolean).join('');
-      return items ? `<li><h3>${esc(sem.title)}</h3><ul>${items}</ul></li>` : '';
+      return items ? `<li><h3>${esc(laneTitle(sem.title))}</h3><ul>${items}</ul></li>` : '';
     }).filter(Boolean).join('');
   }
 
@@ -1079,20 +1090,20 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     btn.addEventListener('click', () => {
       const mobile = window.matchMedia('(max-width: 700px)').matches;
       const on = mobile ? root.classList.toggle('pg-mobile-full') : root.classList.toggle('pg-list-mode');
-      btn.textContent = mobile ? (on ? 'Odak görünümü' : 'Tam grafik') : (on ? 'Grafik görünümü' : 'Liste görünümü');
+      btn.textContent = mobile ? I18N.t(on ? 'pgFocusView' : 'pgFullGraph') : I18N.t(on ? 'pgGraphView' : 'pgListViewLabel');
       btn.setAttribute('aria-pressed', String(on));
       if (!mobile) box.classList.toggle('sr-only', !on);
       savePrereqPreference(root);
     });
     const mobile = window.matchMedia('(max-width: 700px)').matches;
-    if (mobile) btn.textContent = 'Tam grafik';
+    if (mobile) btn.textContent = I18N.t('pgFullGraph');
     if (prereqPreference.view === 'list') {
       if (mobile) root.classList.add('pg-mobile-full');
       else {
         root.classList.add('pg-list-mode');
         box.classList.remove('sr-only');
       }
-      btn.textContent = mobile ? 'Odak görünümü' : 'Grafik görünümü';
+      btn.textContent = I18N.t(mobile ? 'pgFocusView' : 'pgGraphView');
       btn.setAttribute('aria-pressed', 'true');
     }
   }
@@ -1127,7 +1138,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
 
   function renderLevelFilter(box) {
     box.innerHTML = LEVEL_ORDER.map((lv) =>
-      `<button type="button" class="pg-level${activeLevels.has(lv) ? ' active' : ''}" data-level="${lv}" aria-pressed="${activeLevels.has(lv)}">${LEVEL_TR[lv]}</button>`).join('');
+      `<button type="button" class="pg-level${activeLevels.has(lv) ? ' active' : ''}" data-level="${lv}" aria-pressed="${activeLevels.has(lv)}">${esc(levelLabel(lv))}</button>`).join('');
   }
 
   // Önce fakülte, sonra bölüm: tek uzun gruplu liste yerine iki adım.
@@ -1140,7 +1151,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
   // Seçili fakülteyi korur; o fakülte artık görünmüyorsa ilkine düşer.
   function renderFacultyPicker(root) {
     const sel = root.querySelector('.pg-faculty-select');
-    const facs = [...new Set(visibleProgs().map((p) => p.faculty || 'Diğer'))]
+    const facs = [...new Set(visibleProgs().map((p) => p.faculty || I18N.t('planOtherFaculty')))]
       .sort((a, b) => a.localeCompare(b, 'tr'));
     const prev = sel.value;
     sel.innerHTML = facs.map((f) => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
@@ -1153,9 +1164,9 @@ import { I18N } from './i18n.js?v=dde1e9339338';
   function renderProgramPicker(root) {
     const faculty = renderFacultyPicker(root);
     const sel = root.querySelector('.pg-program-select');
-    const ps = visibleProgs().filter((p) => (p.faculty || 'Diğer') === faculty);
-    const lvlAdi = (p) => LEVEL_TR[p.level] || p.level || 'Lisans';
-    const html = '<option value="">Bölüm seçiniz…</option>' +
+    const ps = visibleProgs().filter((p) => (p.faculty || I18N.t('planOtherFaculty')) === faculty);
+    const lvlAdi = (p) => LEVEL_KEY[p.level] ? I18N.t(LEVEL_KEY[p.level]) : (p.level || I18N.t('levelBachelor'));
+    const html = `<option value="">${esc(I18N.t('pgSelectDepartmentPlaceholder'))}</option>` +
       ps.map((p) => `<option value="${esc(p.code)}">${esc(p.name)} · ${esc(lvlAdi(p))}</option>`).join('');
     const prev = sel.value;
     sel.innerHTML = html;
@@ -1195,7 +1206,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
           if (!graph || !graph.nodes) { results.innerHTML = ''; return; }
           const hits = graph.search(e.target.value);
           results.innerHTML = hits.map((n) => n.kind === 'elective'
-            ? `<button class="pg-chip" data-code="${esc(n.code)}">${esc(n.name)}<em>seçmeli slot</em></button>`
+            ? `<button class="pg-chip" data-code="${esc(n.code)}">${esc(n.name)}<em>${esc(I18N.t('pgElectiveSlot'))}</em></button>`
             : `<button class="pg-chip" data-code="${esc(n.code)}">${esc(n.code)}<em>${esc(n.name || '')}</em></button>`
           ).join('');
           results.querySelectorAll('.pg-chip').forEach((b) =>
@@ -1214,7 +1225,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
           const hedef = programs.find((p) => p.code === wantProg);
           if (hedef) {
             const facSel = root.querySelector('.pg-faculty-select');
-            const fac = hedef.faculty || 'Diğer';
+            const fac = hedef.faculty || I18N.t('planOtherFaculty');
             if ([...facSel.options].some((o) => o.value === fac)) {
               facSel.value = fac;
               renderProgramPicker(root);

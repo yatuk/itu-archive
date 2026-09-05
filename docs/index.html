@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=ef0988658a29">
+<link rel="stylesheet" href="assets/style.css?v=4197a94621be">
 <!-- Google "Tercih Edilen Kaynak" rozeti (Hakkında sekmesi) — bkz. https://kobiseo.com/araclar/google-onerilen-kaynak/ -->
 <link rel="stylesheet" href="https://kobiseo.com/rozet/rozet.css">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -351,48 +351,48 @@
  <section id="view-onsart" class="view" role="tabpanel" aria-labelledby="tab-onsart" hidden>
   <div id="pg-root" class="pg-root">
    <header class="pg-head">
-    <div class="pg-head-copy"><h2>Önşart haritası</h2><p>Bir program seç; derslerin dönem sırasını ve birbirine nasıl bağlandığını gör.</p></div>
+    <div class="pg-head-copy"><h2 data-i18n="pgHeading">Önşart haritası</h2><p data-i18n="pgIntro">Bir program seç; derslerin dönem sırasını ve birbirine nasıl bağlandığını gör.</p></div>
     <span class="pg-plan-label"></span>
    </header>
-   <section class="pg-picker" aria-label="Program seçimi">
+   <section class="pg-picker" aria-label="Program seçimi" data-i18n-aria-label="pgPickerAriaLabel">
     <div class="pg-picker-fields">
-     <label><span>Fakülte</span>
-     <select class="pg-faculty-select" aria-label="Fakülte seç"><option>yükleniyor…</option></select>
+     <label><span data-i18n="pgFacultyLabel">Fakülte</span>
+     <select class="pg-faculty-select" aria-label="Fakülte seç" data-i18n-aria-label="pgFacultySelectAriaLabel"><option data-i18n="statLoading">yükleniyor…</option></select>
      </label>
-     <label><span>Program</span>
-     <select class="pg-program-select" aria-label="Bölüm seç"><option>yükleniyor…</option></select>
+     <label><span data-i18n="pgProgramLabel">Program</span>
+     <select class="pg-program-select" aria-label="Bölüm seç" data-i18n-aria-label="pgProgramSelectAriaLabel"><option data-i18n="statLoading">yükleniyor…</option></select>
      </label>
     </div>
-    <div class="pg-level-wrap"><span>Seviye</span><div class="pg-levels" role="group" aria-label="Program seviyesi" title="Yalnızca seçili seviyelerin programları listelenir"></div></div>
+    <div class="pg-level-wrap"><span data-i18n="pgLevelLabel">Seviye</span><div class="pg-levels" role="group" aria-label="Program seviyesi" data-i18n-aria-label="pgLevelGroupAriaLabel" title="Yalnızca seçili seviyelerin programları listelenir" data-i18n-title="pgLevelGroupTitle"></div></div>
    </section>
    <div class="pg-tools">
     <label class="query">
      <span class="sigil">&gt;</span>
      <input class="pg-search" type="search" autocomplete="off" spellcheck="false"
-            placeholder="Bu programda ders kodu veya adı ara…" aria-label="Ders planında ara">
+            placeholder="Bu programda ders kodu veya adı ara…" aria-label="Ders planında ara" data-i18n-placeholder="pgSearchPlaceholder" data-i18n-aria-label="pgSearchAriaLabel">
     </label>
     <div class="pg-tool-actions">
-     <button type="button" class="pg-reset btn-ghost" disabled>Odağı temizle</button>
-     <button type="button" class="pg-list-toggle btn-ghost" aria-pressed="false">Liste görünümü</button>
+     <button type="button" class="pg-reset btn-ghost" disabled data-i18n="pgClearFocus">Odağı temizle</button>
+     <button type="button" class="pg-list-toggle btn-ghost" aria-pressed="false" data-i18n="pgListViewLabel">Liste görünümü</button>
     </div>
    </div>
    <div class="pg-results" aria-live="polite"></div>
    <div class="pg-map-meta">
-    <p class="pg-status">Bir program seçin</p>
+    <p class="pg-status" data-i18n="pgSelectProgramPrompt">Bir program seçin</p>
     <details class="pg-guide">
-     <summary>Haritayı okuma</summary>
-     <div><span><i class="pg-line-solid"></i>Zorunlu önşart</span><span><i class="pg-line-dash"></i>Alternatif; biri yeterli</span><span><i class="pg-diamond"></i>Seçmeli havuz</span></div>
+     <summary data-i18n="pgGuideSummary">Haritayı okuma</summary>
+     <div><span><i class="pg-line-solid"></i><span data-i18n="pgLegendRequired">Zorunlu önşart</span></span><span><i class="pg-line-dash"></i><span data-i18n="pgLegendAlternative">Alternatif; biri yeterli</span></span><span><i class="pg-diamond"></i><span data-i18n="pgLegendElectivePool">Seçmeli havuz</span></span></div>
     </details>
    </div>
-   <section class="pg-mobile-explorer" aria-label="Mobil önşart gezgini" hidden></section>
+   <section class="pg-mobile-explorer" aria-label="Mobil önşart gezgini" data-i18n-aria-label="pgMobileExplorerAriaLabel" hidden></section>
    <div class="pg-workspace">
     <div class="pg-map">
      <div class="pg-branches" aria-hidden="true"></div>
      <div class="pg-canvas-wrap">
-      <canvas aria-label="Ders planı önşart haritası: müfredat dönem sütunlarında, önşartlar oklarla. Detay için düğümlere tıklayın." role="img"></canvas>
+      <canvas aria-label="Ders planı önşart haritası: müfredat dönem sütunlarında, önşartlar oklarla. Detay için düğümlere tıklayın." data-i18n-aria-label="pgCanvasAriaLabel" role="img"></canvas>
       <div class="pg-tooltip" hidden></div>
      </div>
-     <ol class="pg-semester-list sr-only" aria-label="Müfredat dönem dönem liste görünümü"></ol>
+     <ol class="pg-semester-list sr-only" aria-label="Müfredat dönem dönem liste görünümü" data-i18n-aria-label="pgSemesterListAriaLabel"></ol>
     </div>
     <aside class="pg-detail" aria-live="polite"></aside>
    </div>
@@ -677,7 +677,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=ef0988658a29"></script>
+<script type="module" src="assets/app.js?v=4197a94621be"></script>
 <script>
 (function () {
   var root = document.documentElement;

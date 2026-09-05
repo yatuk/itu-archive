@@ -17,6 +17,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
+	"unicode"
 
 	"itu-scraper/internal/model"
 	"itu-scraper/internal/term"
@@ -415,6 +416,16 @@ func (b *Builder) Generate() error {
 		}
 	}
 
+	// Fakülte/program dizini ("Program/Bölüm Haritası") — docs/data/curriculum/
+	// altındaki tüm müfredat dosyalarından türetilir; TR ve EN ikisinde de üretilir.
+	faculties, err := loadFacultyDirectory(b.root)
+	if err != nil {
+		return fmt.Errorf("fakülte dizini okunamadı: %w", err)
+	}
+	if err := b.writeDirectoryPage(faculties); err != nil {
+		return err
+	}
+
 	if err := b.writeSitemap(terms, brCodes, courseSlugs, instrSlugs); err != nil {
 		return err
 	}
@@ -622,6 +633,7 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 			}
 			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/%s/", baseURL, p.slug), Lastmod: landingContentUpdated})
 		}
+		entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/bolumler/", baseURL), Lastmod: directoryContentUpdated})
 		data := renderURLSet(entries)
 		if err := os.WriteFile(filepath.Join(b.outRoot, "sitemap.xml"), data, 0o644); err != nil {
 			return err
@@ -639,6 +651,7 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 			Lastmod: landingContentUpdated,
 		})
 	}
+	pages = append(pages, sitemapEntry{Loc: fmt.Sprintf("%s/bolumler/", baseURL), Lastmod: directoryContentUpdated})
 	if err := writeSitemapComponent(componentDir, "pages.xml", pages); err != nil {
 		return err
 	}
@@ -1304,6 +1317,266 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 	jsonld := jsonldScript(schema)
 	return b.writePage(filepath.Join(b.outRoot, p.slug, "index.html"),
 		title, description, canonical, landingContentUpdated, content, jsonld, p.titleEN != "")
+}
+
+// --- fakülte / program dizini (/bolumler/) ---
+// "Program/Bölüm Haritası": docs/data/curriculum/<KOD>.json dosyalarından
+// türetilen, fakülteye göre gruplanmış program listesi. Her program doğrudan
+// canlı SPA'nın ders planı (?prog=KOD#dersplanim) ve önşart haritası
+// (?prog=KOD#onsart) görünümlerine bağlanır. writeLandingPage ile aynı
+// canonical/hreflang/JSON-LD iskeletini kullanır; içerik iç içe bir liste
+// olduğundan ayrı bir fonksiyonda üretilir.
+
+// Bu tarih yalnızca sayfa metni veya bilgi mimarisi değiştiğinde elle
+// ilerletilir; veri taraması her çalıştığında sahte bir lastmod üretmez.
+const directoryContentUpdated = "2026-09-05"
+
+// curriculumProgramMeta, bir müfredat dosyasından /bolumler/ için gereken
+// alanlar. Dosyaların çoğu tek bir nesne, birkaçı tek elemanlı bir dizi
+// olarak yayınlanır; readCurriculumMeta ikisini de kabul eder.
+type curriculumProgramMeta struct {
+	ProgramCode string `json:"programCode"`
+	ProgramName string `json:"programName"`
+	Faculty     string `json:"faculty"`
+	Level       string `json:"level"` // "OL", "LS", "YL", "DR"
+}
+
+func readCurriculumMeta(path string) (curriculumProgramMeta, error) {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return curriculumProgramMeta{}, err
+	}
+	if trimmed := strings.TrimSpace(string(data)); strings.HasPrefix(trimmed, "[") {
+		var arr []curriculumProgramMeta
+		if err := json.Unmarshal(data, &arr); err != nil {
+			return curriculumProgramMeta{}, err
+		}
+		if len(arr) == 0 {
+			return curriculumProgramMeta{}, fmt.Errorf("boş dizi")
+		}
+		return arr[0], nil
+	}
+	var p curriculumProgramMeta
+	if err := json.Unmarshal(data, &p); err != nil {
+		return curriculumProgramMeta{}, err
+	}
+	return p, nil
+}
+
+// facultyProgramEntry, bir fakülte altında listelenen tek program.
+type facultyProgramEntry struct {
+	code  string
+	name  string
+	level string // "OL", "LS", "YL", "DR"
+}
+
+// facultyDirEntry, bir fakültenin lisans/önlisans ve lisansüstü programları.
+type facultyDirEntry struct {
+	name      string
+	undergrad []facultyProgramEntry // OL + LS
+	graduate  []facultyProgramEntry // YL + DR
+}
+
+// loadFacultyDirectory, docs/data/curriculum/*.json içindeki tüm program
+// müfredat dosyalarını okuyup gerçek `faculty` alanına göre gruplar.
+// /bolumler/ sayfasının tek veri kaynağıdır — fakülte listesi hiçbir yerde
+// elle sabitlenmez.
+func loadFacultyDirectory(root string) ([]facultyDirEntry, error) {
+	dir := filepath.Join(root, "data", "curriculum")
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		return nil, err
+	}
+	byFaculty := map[string]*facultyDirEntry{}
+	for _, e := range entries {
+		if e.IsDir() || e.Name() == "index.json" || !strings.HasSuffix(e.Name(), ".json") {
+			continue
+		}
+		meta, err := readCurriculumMeta(filepath.Join(dir, e.Name()))
+		if err != nil {
+			return nil, fmt.Errorf("%s: %w", e.Name(), err)
+		}
+		if meta.Faculty == "" || meta.ProgramCode == "" {
+			continue
+		}
+		fd := byFaculty[meta.Faculty]
+		if fd == nil {
+			fd = &facultyDirEntry{name: meta.Faculty}
+			byFaculty[meta.Faculty] = fd
+		}
+		entry := facultyProgramEntry{code: meta.ProgramCode, name: meta.ProgramName, level: meta.Level}
+		switch meta.Level {
+		case "YL", "DR":
+			fd.graduate = append(fd.graduate, entry)
+		default: // "LS", "OL" ve tanınmayan değerler lisans/önlisans grubunda gösterilir
+			fd.undergrad = append(fd.undergrad, entry)
+		}
+	}
+	out := make([]facultyDirEntry, 0, len(byFaculty))
+	for _, fd := range byFaculty {
+		sort.Slice(fd.undergrad, func(i, j int) bool {
+			return trCollateKey(fd.undergrad[i].name) < trCollateKey(fd.undergrad[j].name)
+		})
+		sort.Slice(fd.graduate, func(i, j int) bool {
+			return trCollateKey(fd.graduate[i].name) < trCollateKey(fd.graduate[j].name)
+		})
+		out = append(out, *fd)
+	}
+	sort.Slice(out, func(i, j int) bool { return trCollateKey(out[i].name) < trCollateKey(out[j].name) })
+	return out, nil
+}
+
+// trAlphabetIndex, Türkçe alfabe sırasındaki (ı/i, ç, ğ, ö, ş, ü ayrımı dahil)
+// her küçük harfin konumunu tutar; trCollateKey bunu kullanır.
+var trAlphabetIndex = func() map[rune]int {
+	letters := []rune("abcçdefgğhıijklmnoöprsştuüvyz")
+	m := make(map[rune]int, len(letters))
+	for i, r := range letters {
+		m[r] = i
+	}
+	return m
+}()
+
+// trCollateKey, Türkçe alfabe sırasına göre karşılaştırılabilir bir anahtar
+// üretir (golang.org/x/text/collate bağımlılığı eklemeden). Yalnızca fakülte
+// ve program adlarını sıralamak için kullanılan basit, deterministik bir
+// yaklaşımdır — tam Unicode koleksiyon kuralları hedeflenmez.
+func trCollateKey(s string) string {
+	var out strings.Builder
+	for _, r := range s {
+		switch r {
+		case 'İ':
+			r = 'i'
+		case 'I':
+			r = 'ı'
+		default:
+			r = unicode.ToLower(r)
+		}
+		if idx, ok := trAlphabetIndex[r]; ok {
+			fmt.Fprintf(&out, "0%03d", idx)
+		} else {
+			fmt.Fprintf(&out, "1%06d", r)
+		}
+	}
+	return out.String()
+}
+
+// levelDisplayLabel, müfredat verisindeki seviye kodunu (OL/LS/YL/DR)
+// görüntülenecek TR/EN etikete çevirir.
+func levelDisplayLabel(code string, en bool) string {
+	switch code {
+	case "OL":
+		if en {
+			return "Associate"
+		}
+		return "Önlisans"
+	case "LS":
+		if en {
+			return "Bachelor's"
+		}
+		return "Lisans"
+	case "YL":
+		if en {
+			return "Master's"
+		}
+		return "Yüksek Lisans"
+	case "DR":
+		if en {
+			return "Doctorate"
+		}
+		return "Doktora"
+	default:
+		return code
+	}
+}
+
+// writeDirectoryPage, /bolumler/ (ve /en/bolumler/) sayfasını üretir: İTÜ'nün
+// tüm fakülte ve programlarını listeler, her programı doğrudan canlı SPA'nın
+// ders planı ve önşart haritası görünümüne bağlar. Ders/program içeriği
+// üzerinde arama/filtre gibi istemci taraflı JS içermez — sayfa tamamen
+// statiktir, tarayıcının kendi bul (Ctrl+F) özelliği yeterlidir.
+func (b *Builder) writeDirectoryPage(faculties []facultyDirEntry) error {
+	en := b.l.Code == "en"
+	const slug = "bolumler"
+	urlPrefix := baseURL
+	homeHref := "/"
+	title := "İTÜ Fakülte ve Program Haritası"
+	description := "İTÜ'deki tüm fakülte ve programları listele; doğrudan ders planına veya önşart haritasına git."
+	h1 := "Fakülte ve program haritası"
+	lead := "İTÜ'deki tüm fakülte ve programları burada bulabilir, doğrudan ders planına veya önşart haritasına gidebilirsin."
+	undergradHead := "Lisans / Önlisans"
+	graduateHead := "Yüksek Lisans / Doktora"
+	planLabel := "Ders Planı"
+	prereqLabel := "Önşart Haritası"
+	inLang := "tr-TR"
+	if en {
+		urlPrefix = baseURL + "/en"
+		homeHref = "/en/"
+		title = "İTÜ Faculty and Program Directory"
+		description = "Browse every İTÜ faculty and program and jump straight to its course plan or prerequisite map."
+		h1 = "Faculty and program directory"
+		lead = "You can find every İTÜ faculty and program here, and jump straight to its course plan or prerequisite map."
+		undergradHead = "Undergraduate"
+		graduateHead = "Graduate"
+		planLabel = "Course Plan"
+		prereqLabel = "Prerequisite Map"
+		inLang = "en"
+	}
+	canonical := fmt.Sprintf("%s/%s/", urlPrefix, slug)
+
+	renderPrograms := func(list []facultyProgramEntry) string {
+		if len(list) == 0 {
+			return ""
+		}
+		var sb strings.Builder
+		sb.WriteString("<ul>")
+		for _, p := range list {
+			fmt.Fprintf(&sb, `<li>%s <span class="level">(%s)</span> — <a href="/?prog=%s#dersplanim">%s</a> · <a href="/?prog=%s#onsart">%s</a></li>`,
+				template.HTMLEscapeString(p.name), template.HTMLEscapeString(levelDisplayLabel(p.level, en)),
+				template.HTMLEscapeString(p.code), template.HTMLEscapeString(planLabel),
+				template.HTMLEscapeString(p.code), template.HTMLEscapeString(prereqLabel))
+		}
+		sb.WriteString("</ul>")
+		return sb.String()
+	}
+
+	var facultyHTML strings.Builder
+	for _, f := range faculties {
+		fmt.Fprintf(&facultyHTML, `<section class="faculty-group"><h2>%s</h2>`, template.HTMLEscapeString(f.name))
+		if len(f.undergrad) > 0 {
+			fmt.Fprintf(&facultyHTML, `<h3>%s</h3>%s`, template.HTMLEscapeString(undergradHead), renderPrograms(f.undergrad))
+		}
+		if len(f.graduate) > 0 {
+			fmt.Fprintf(&facultyHTML, `<h3>%s</h3>%s`, template.HTMLEscapeString(graduateHead), renderPrograms(f.graduate))
+		}
+		facultyHTML.WriteString(`</section>`)
+	}
+
+	content := template.HTML(buildContent(
+		`<nav class="crumb" aria-label="Breadcrumb"><a href="`+homeHref+`">`+template.HTMLEscapeString(b.l.SiteTitle)+`</a> › <span>`+template.HTMLEscapeString(h1)+`</span></nav>`,
+		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(h1)),
+		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(lead)),
+		facultyHTML.String(),
+	))
+
+	webPageSchema := map[string]any{
+		"@context": "https://schema.org", "@type": "WebPage", "@id": canonical + "#webpage",
+		"url": canonical, "name": title, "description": description,
+		"inLanguage": inLang, "dateModified": directoryContentUpdated,
+	}
+	schema := []any{
+		webPageSchema,
+		map[string]any{
+			"@context": "https://schema.org", "@type": "BreadcrumbList",
+			"itemListElement": []any{
+				map[string]any{"@type": "ListItem", "position": 1, "name": b.l.SiteTitle, "item": urlPrefix + "/"},
+				map[string]any{"@type": "ListItem", "position": 2, "name": h1, "item": canonical},
+			},
+		},
+	}
+	jsonld := jsonldScript(schema)
+	return b.writePage(filepath.Join(b.outRoot, slug, "index.html"),
+		title, description, canonical, directoryContentUpdated, content, jsonld, true)
 }
 
 // --- helpers ---

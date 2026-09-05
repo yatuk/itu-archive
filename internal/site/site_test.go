@@ -1,6 +1,7 @@
 package site
 
 import (
+	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
@@ -438,5 +439,112 @@ func TestLandingPageIntentsStayDistinct(t *testing.T) {
 		if !strings.Contains(haystack, strings.ToLower(phrase)) {
 			t.Errorf("%s niyeti %q ifadesini taşımıyor", slug, phrase)
 		}
+	}
+}
+
+// TestFacultyDirectoryPageListsFacultiesAndSitemaps, /bolumler/ (ve
+// /en/bolumler/) sayfasının docs/data/curriculum/*.json verisinden doğru
+// şekilde üretildiğini, EN sayfanın TR'ye doğru hreflang verdiğini ve her iki
+// sayfanın da kendi dilinin sitemap'ine eklendiğini doğrular.
+func TestFacultyDirectoryPageListsFacultiesAndSitemaps(t *testing.T) {
+	root := t.TempDir()
+	curDir := filepath.Join(root, "data", "curriculum")
+	if err := os.MkdirAll(curDir, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	writeCurriculum := func(name, code, progName, faculty, level string) {
+		data := fmt.Sprintf(`{"programCode":%q,"programName":%q,"faculty":%q,"level":%q}`, code, progName, faculty, level)
+		if err := os.WriteFile(filepath.Join(curDir, name), []byte(data), 0o644); err != nil {
+			t.Fatal(err)
+		}
+	}
+	writeCurriculum("BLG_LS.json", "BLG_LS", "Bilgisayar Mühendisliği Lisans", "Bilgisayar ve Bilişim Fakültesi", "LS")
+	writeCurriculum("BLG_HB_YL.json", "BLG_HB_YL", "Bilgisayar Mühendisliği Yüksek Lisans", "Bilgisayar ve Bilişim Fakültesi", "YL")
+	// Bazı gerçek müfredat dosyaları tek nesne yerine tek elemanlı dizi olarak
+	// yayınlanır; loadFacultyDirectory bunu da desteklemeli.
+	if err := os.WriteFile(filepath.Join(curDir, "ARC_LS.json"),
+		[]byte(`[{"programCode":"ARC_LS","programName":"Mimarlık Lisans","faculty":"Mimarlık Fakültesi","level":"LS"}]`), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	// index.json bir program dosyası değildir; atlanmalı.
+	if err := os.WriteFile(filepath.Join(curDir, "index.json"), []byte(`[]`), 0o644); err != nil {
+		t.Fatal(err)
+	}
+
+	faculties, err := loadFacultyDirectory(root)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(faculties) != 2 {
+		t.Fatalf("2 fakülte bekleniyordu, %d geldi", len(faculties))
+	}
+
+	bTR := &Builder{root: root, outRoot: root, l: langTR, version: "test"}
+	if err := bTR.writeDirectoryPage(faculties); err != nil {
+		t.Fatal(err)
+	}
+	trBody, err := os.ReadFile(filepath.Join(root, "bolumler", "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	trHTML := string(trBody)
+	for _, want := range []string{
+		"Bilgisayar ve Bilişim Fakültesi",
+		"Mimarlık Fakültesi",
+		`href="/?prog=BLG_LS#dersplanim"`,
+		`href="/?prog=BLG_LS#onsart"`,
+		`<link rel="canonical" href="` + baseURL + `/bolumler/">`,
+		`hreflang="en" href="` + baseURL + `/en/bolumler/"`,
+		`"@type":"BreadcrumbList"`,
+	} {
+		if !strings.Contains(trHTML, want) {
+			t.Errorf("TR dizin sayfası eksik: %s", want)
+		}
+	}
+
+	enRoot := filepath.Join(root, "en")
+	bEN := &Builder{root: root, outRoot: enRoot, l: langEN, version: "test"}
+	if err := bEN.writeDirectoryPage(faculties); err != nil {
+		t.Fatal(err)
+	}
+	enBody, err := os.ReadFile(filepath.Join(enRoot, "bolumler", "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	enHTML := string(enBody)
+	for _, want := range []string{
+		"Bilgisayar ve Bilişim Fakültesi", // gerçek fakülte/program adları çevrilmez
+		"Faculty and program directory",
+		`<link rel="canonical" href="` + baseURL + `/en/bolumler/">`,
+		`hreflang="tr" href="` + baseURL + `/bolumler/"`,
+	} {
+		if !strings.Contains(enHTML, want) {
+			t.Errorf("EN dizin sayfası eksik: %s", want)
+		}
+	}
+	if strings.Contains(enHTML, "Fakülte ve program haritası") {
+		t.Error("EN sayfa TR başlığını sızdırmamalı")
+	}
+
+	if err := bTR.writeSitemap(nil, nil, map[string]string{}, map[string]string{}); err != nil {
+		t.Fatal(err)
+	}
+	pagesXML, err := os.ReadFile(filepath.Join(root, "sitemaps", "pages.xml"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(pagesXML), baseURL+"/bolumler/") {
+		t.Error("TR sitemap /bolumler/ girdisini içermeli")
+	}
+
+	if err := bEN.writeSitemap(nil, nil, map[string]string{}, map[string]string{}); err != nil {
+		t.Fatal(err)
+	}
+	enSitemap, err := os.ReadFile(filepath.Join(enRoot, "sitemap.xml"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(enSitemap), baseURL+"/en/bolumler/") {
+		t.Error("EN sitemap /en/bolumler/ girdisini içermeli")
 	}
 }

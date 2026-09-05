@@ -402,7 +402,7 @@
   "level": "LS",
   "name": "Design of Machine Elements",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Halit Süleyman Türkmen",
+  "instructor": "Onur Tunçer",
   "buildings": [
    "MEDC"
   ],
@@ -798,5 +798,35 @@
   ],
   "prereq": "-",
   "classReq": "Detay"
+ },
+ {
+  "crn": "15202",
+  "code": "UCK 423E",
+  "branch": "UCK",
+  "level": "LS",
+  "name": "Princip. of Aircraft Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Halit Süleyman Türkmen",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "1D6"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS",
+   "UCK_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
  }
 ]

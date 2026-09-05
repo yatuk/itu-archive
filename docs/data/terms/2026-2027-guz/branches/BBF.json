@@ -459,13 +459,14 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
+  "capacity": 90,
   "enrolled": 0,
-  "reserved": "ECNE_LS/10/0 | Diğer/60/0",
+  "reserved": "ECNE_LS/10/0 | YZVE_LS/20/0 | Diğer/60/0",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
-   "ECNE_LS"
+   "ECNE_LS",
+   "YZVE_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

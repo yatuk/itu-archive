@@ -93,7 +93,7 @@
   "level": "LS",
   "name": "Marine Communication",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Oğuzhan Gürel",
+  "instructor": "Alaaddin Yıldıray Ertaş",
   "buildings": [
    "undeclared"
   ],
@@ -122,7 +122,7 @@
   "level": "LS",
   "name": "Marine Communication",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Oğuzhan Gürel",
+  "instructor": "Alaaddin Yıldıray Ertaş",
   "buildings": [
    "undeclared"
   ],
@@ -1394,6 +1394,540 @@
    "MTM_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15189",
+  "code": "DUI 231E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Marine Communication",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Alaaddin Yıldıray Ertaş",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15190",
+  "code": "DUI 251E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Meteorology",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ayşe Nak",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15191",
+  "code": "DUI 215E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Terrestrial Navigation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tuba Keçeci",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15192",
+  "code": "DUI 213E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Ship Constrct.and Stability",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Melek Ertogan",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15194",
+  "code": "DUI 202E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Electronic Navigation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Serdar Kum",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15211",
+  "code": "DUI 371E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Watchkeeping II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Selim Aksoy",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/13:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15212",
+  "code": "DUI 321E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Maritime Law I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Arda Özkan",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15213",
+  "code": "DUI 341E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Maritime Practical Studies",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Serdar Kum",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/17:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15214",
+  "code": "DUI 341E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Maritime Practical Studies",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yunus Emre Şenol",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/17:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15215",
+  "code": "DUI 311E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Celestial Navigation",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Orhan Gönel",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15216",
+  "code": "DUI 361E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Technical Ship Management",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gizem Çevik",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15217",
+  "code": "DUI 305E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Ship Hndl.and Manouvering",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cenk Ay",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15218",
+  "code": "DUI 385E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Environmental Management for Ship Operations",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tanzer Satır",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/13:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15234",
+  "code": "DUI 393E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Long Term SeaTraining(6Months)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Selim Aksoy",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15236",
+  "code": "DUI 461E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Ship Surveying Procedures",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Fırat Bolat",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MEN_LS",
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15237",
+  "code": "DUI 407E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Cargo Handl and Stowage",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tanzer Satır",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15238",
+  "code": "DUI 405E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Marine Engines",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cumali Seçkin Mengeçin",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15239",
+  "code": "DUI 4901E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "MaritimeTrans.Mng.Eng.Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Selim Aksoy",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "15252",
+  "code": "DUI 4902E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "MaritimeTrans.Mng.Eng.DesignII",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Selim Aksoy",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTM_LS"
+  ],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

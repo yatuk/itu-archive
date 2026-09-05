@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-01T07:53:01Z"
+  "lastSuccessfulAt": "2026-09-04T07:17:57Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-01T07:53:01Z",
+ "scrapedAt": "2026-09-04T07:17:57Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5043,
- "courses": 3524,
+ "sections": 5126,
+ "courses": 3569,
  "branches": [
   {
    "code": "ABM",
@@ -32,7 +32,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 1
+   "sections": 2
   },
   {
    "code": "ALM",
@@ -47,6 +47,13 @@
     "LU"
    ],
    "sections": 4
+  },
+  {
+   "code": "ARC",
+   "levels": [
+    "LS"
+   ],
+   "sections": 1
   },
   {
    "code": "ATA",
@@ -102,7 +109,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 40
+   "sections": 42
   },
   {
    "code": "BIO",
@@ -173,7 +180,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 168
+   "sections": 167
   },
   {
    "code": "CBM",
@@ -272,7 +279,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 26
+   "sections": 33
   },
   {
    "code": "DNK",
@@ -293,21 +300,21 @@
    "levels": [
     "LS"
    ],
-   "sections": 49
+   "sections": 68
   },
   {
    "code": "DUM",
    "levels": [
     "LU"
    ],
-   "sections": 23
+   "sections": 24
   },
   {
    "code": "DUY",
    "levels": [
     "LUI"
    ],
-   "sections": 9
+   "sections": 8
   },
   {
    "code": "DZC",
@@ -444,7 +451,7 @@
     "LS",
     "LU"
    ],
-   "sections": 208
+   "sections": 210
   },
   {
    "code": "FRA",
@@ -472,7 +479,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 11
+   "sections": 12
   },
   {
    "code": "GEM",
@@ -480,7 +487,7 @@
     "LS",
     "LU"
    ],
-   "sections": 68
+   "sections": 67
   },
   {
    "code": "GEO",
@@ -503,7 +510,7 @@
     "LS",
     "LU"
    ],
-   "sections": 39
+   "sections": 41
   },
   {
    "code": "GIT",
@@ -517,7 +524,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 42
+   "sections": 65
   },
   {
    "code": "GSB",
@@ -545,7 +552,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 12
+   "sections": 15
   },
   {
    "code": "HUK",
@@ -608,7 +615,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 196
+   "sections": 206
   },
   {
    "code": "INS",
@@ -839,7 +846,7 @@
     "LS",
     "LU"
    ],
-   "sections": 120
+   "sections": 121
   },
   {
    "code": "MBA",
@@ -892,6 +899,13 @@
   },
   {
    "code": "MEK",
+   "levels": [
+    "LS"
+   ],
+   "sections": 5
+  },
+  {
+   "code": "MEN",
    "levels": [
     "LS"
    ],
@@ -1025,12 +1039,19 @@
    "sections": 9
   },
   {
+   "code": "MTM",
+   "levels": [
+    "LS"
+   ],
+   "sections": 4
+  },
+  {
    "code": "MTO",
    "levels": [
     "LS",
     "LU"
    ],
-   "sections": 65
+   "sections": 66
   },
   {
    "code": "MTR",
@@ -1072,7 +1093,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 39
+   "sections": 40
   },
   {
    "code": "MUZ",
@@ -1302,6 +1323,13 @@
    "sections": 8
   },
   {
+   "code": "STA",
+   "levels": [
+    "LS"
+   ],
+   "sections": 2
+  },
+  {
    "code": "STD",
    "levels": [
     "LU"
@@ -1327,7 +1355,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 13
+   "sections": 12
   },
   {
    "code": "SUS",
@@ -1399,7 +1427,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 58
+   "sections": 59
   },
   {
    "code": "UAH",
@@ -1413,7 +1441,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 27
+   "sections": 28
   },
   {
    "code": "ULP",
@@ -1441,7 +1469,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 31
+   "sections": 30
   },
   {
    "code": "UZB",
@@ -1536,11 +1564,11 @@
   }
  ],
  "stats": {
-  "sections": 5043,
-  "courses": 3524,
-  "branches": 214,
-  "instructors": 1730,
-  "capacity": 245593,
+  "sections": 5126,
+  "courses": 3569,
+  "branches": 218,
+  "instructors": 1739,
+  "capacity": 249440,
   "enrolled": 1204
  }
 }

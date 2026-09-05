@@ -553,7 +553,7 @@
   "level": "LS",
   "name": "Physics of Upper Atmosphere",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Zerefşan Kaymaz",
+  "instructor": "Zerefşan Kaymaz , Emine Ceren Eyigüler",
   "buildings": [
    "MEDC"
   ],
@@ -1811,6 +1811,33 @@
   ],
   "rooms": [],
   "capacity": 200,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15258",
+  "code": "MTO 577",
+  "branch": "MTO",
+  "level": "LU",
+  "name": "Mesoscale Dynamics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emrah Tuncay Özdemir",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

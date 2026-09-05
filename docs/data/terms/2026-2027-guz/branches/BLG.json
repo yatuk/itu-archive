@@ -182,12 +182,18 @@
   "name": "Robot Intelligence",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sanem Sarıel Uzer",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "undeclared"
   ],
-  "rooms": [],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 20,
   "enrolled": 0,
   "reserved": "BLG_BG_YL/12/0 | BLG_BG_DR/3/0 | Diğer/5/0",
@@ -1061,7 +1067,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -1297,7 +1303,7 @@
    "Salı"
   ],
   "times": [
-   "08:30/11:29"
+   "09:30/12:29"
   ],
   "rooms": [
    "--"
@@ -1516,12 +1522,13 @@
   "rooms": [
    "--"
   ],
-  "capacity": 50,
+  "capacity": 60,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "YZVE_LS/10/0 | Diğer/50/0",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "YZVE_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -1815,7 +1822,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 20,
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -1842,7 +1849,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 20,
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

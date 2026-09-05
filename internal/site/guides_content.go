@@ -269,7 +269,7 @@ func (b *Builder) writeRegistrationGuideEN(p landingPage) error {
 		{q: "What happens if two courses overlap?",
 			a: `The system will not accept two courses at the same hour. Swap one CRN for another section of the same course, and check the overlap in the <a href="/#program">schedule tool</a> before registration.`},
 		{q: "What should I do if a section is full?",
-			a: `Switch to the backup CRN you picked earlier. Seats can open during add/drop as people leave courses, and you can see how fast a course filled in past terms in the <a href="/en/ders-arsivi/">course archive</a>.`},
+			a: `Switch to the backup CRN you picked earlier. Seats can open during add/drop as people leave courses, and you can see how fast a course filled in past terms in the <a href="/#gecmis">course archive</a>.`},
 		{q: "I transferred from another university, will my credits count?",
 			a: `That goes through the credit transfer and exemption process and is evaluated separately. Stay registered in every first-semester course until it is decided.`},
 		{q: "Who takes the English placement course?",
@@ -371,7 +371,7 @@ func (b *Builder) writeScheduleGuideEN(p landingPage) error {
 			title: "Compare sections and CRNs",
 			paras: []string{
 				`Search by course code, name or instructor in the <a href="/#dersler">courses view</a>. Each section lists its day, time, building, ` + crn + ` and remaining capacity side by side.`,
-				`The <a href="/en/ders-arsivi/">course archive</a> shows how quickly a course filled in past terms, which helps when you pick a backup section.`,
+				`The <a href="/#gecmis">course archive</a> shows how quickly a course filled in past terms, which helps when you pick a backup section.`,
 			},
 		},
 		{

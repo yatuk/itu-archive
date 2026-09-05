@@ -1246,7 +1246,7 @@ var landingPages = []landingPage{
 
 		titleEN: "How Course Registration Works at ITU", h1EN: "How course registration works at ITU",
 		descriptionEN: "How does ITU course registration work? A step-by-step guide from setting up your password to finding your plan, picking CRNs, conflict-free registration, and credit transfer.",
-		primaryEN:     landingAction{href: "/en/akademik-takvim/", label: "Check the Academic Calendar", detail: "See current registration, add/drop, and exam dates in one place."},
+		primaryEN:     landingAction{href: "/#takvim", label: "Check the Academic Calendar", detail: "See current registration, add/drop, and exam dates in one place."},
 		secondaryEN: []landingAction{
 			{href: "/en/ders-programi-nasil-hazirlanir/", label: "Learn how to build your schedule", detail: "Follow the path from your curriculum plan to a conflict-free weekly schedule."},
 			{href: "/en/terimler-sozlugu/", label: "Check the ITU glossary", detail: "See what abbreviations like CRN, OBS, and SIS mean."},
@@ -1274,7 +1274,7 @@ var landingPages = []landingPage{
 		secondaryEN: []landingAction{
 			{href: "/en/bolumler/", label: "Find your program's curriculum", detail: "Pick your faculty and program to browse its plan semester by semester."},
 			{href: "/#onsart", label: "Check prerequisites", detail: "Trace a course's prerequisite links backward in the prerequisite map."},
-			{href: "/en/ders-arsivi/", label: "Check capacity and fill-rate history", detail: "See how quickly a course has filled up in past terms."},
+			{href: "/#gecmis", label: "Check capacity and fill-rate history", detail: "See how quickly a course has filled up in past terms."},
 			{href: "/en/ders-programi-olustur/", label: "See the full schedule builder", detail: "Explore Find Alternatives and calendar export."},
 			{href: "/en/ders-kaydi-nasil-yapilir/", label: "Learn how registration works", detail: "Follow the official OBS/SIS registration process step by step."},
 		},
@@ -1598,9 +1598,24 @@ func levelDisplayLabel(code string, en bool) string {
 // ders planı ve önşart haritası görünümüne bağlar. Ders/program içeriği
 // üzerinde arama/filtre gibi istemci taraflı JS içermez — sayfa tamamen
 // statiktir, tarayıcının kendi bul (Ctrl+F) özelliği yeterlidir.
+const bolumlerSlug = "bolumler"
+
+// LandingSlugs, kök dizinde <slug>/index.html olarak üretilen tüm sayfaların
+// slug listesini döner: landingPages'teki iniş sayfaları artı writeDirectoryPage
+// ile ayrıca üretilen /bolumler/. internal/validate'in landingSlugs listesiyle
+// aynı kalmalı; internal/validate/landing_sync_test.go bunu denetler.
+func LandingSlugs() []string {
+	slugs := make([]string, 0, len(landingPages)+1)
+	for _, p := range landingPages {
+		slugs = append(slugs, p.slug)
+	}
+	slugs = append(slugs, bolumlerSlug)
+	return slugs
+}
+
 func (b *Builder) writeDirectoryPage(faculties []facultyDirEntry) error {
 	en := b.l.Code == "en"
-	const slug = "bolumler"
+	const slug = bolumlerSlug
 	urlPrefix := baseURL
 	homeHref := "/"
 	title := "İTÜ Fakülte ve Program Haritası"

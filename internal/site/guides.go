@@ -313,9 +313,12 @@ func (b *Builder) glossaryLink(anchor, label string) string {
 
 // calendarHref, tarih geçen her yerin işaret ettiği akademik takvim sayfası.
 // Rehberlerde hiçbir somut tarih yazılmaz; tarihler her dönem değişir.
+// akademik-takvim iniş sayfasının İngilizce karşılığı yok (çoğu iniş sayfası
+// gibi TR-only), bu yüzden İngilizce rehberlerden doğrudan takvim aracına
+// (#takvim) bağlanılır; SPA kendi dil anahtarını okur, /en/ öneki gerekmez.
 func (b *Builder) calendarHref() string {
 	if b.l.Code == "en" {
-		return "/en/akademik-takvim/"
+		return "/#takvim"
 	}
 	return "/akademik-takvim/"
 }

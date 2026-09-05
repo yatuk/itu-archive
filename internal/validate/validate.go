@@ -31,6 +31,19 @@ type Result struct {
 	Warnings []string
 }
 
+// LandingSlugs, internal/site'taki LandingSlugs() ile aynı kalmalı: kök
+// dizinde <slug>/index.html olarak üretilen tüm sayfaların listesi. Elle
+// senkron tutulur çünkü internal/validate, üretim koduna (internal/site)
+// bağımlı olmadan CI'da çalışabilmeli; internal/site/landing_sync_test.go
+// bu iki listeyi karşılaştırıp drift olursa testi kırar.
+var LandingSlugs = []string{
+	"ders-plani", "gano-hesaplama", "not-ortalamasi", "ders-programi",
+	"ders-programi-olustur", "kontenjan", "ders-secimi", "onsart-haritasi",
+	"sinav-programi", "akademik-takvim", "ders-arsivi",
+	"ders-kaydi-nasil-yapilir", "ders-programi-nasil-hazirlanir", "terimler-sozlugu",
+	"bolumler",
+}
+
 func (r *Result) errf(format string, args ...any) {
 	r.Errors = append(r.Errors, fmt.Sprintf(format, args...))
 }
@@ -125,11 +138,18 @@ func (r *Result) checkTerm(dir, slug string) {
 			if s.Code != "" && !strings.HasPrefix(s.Code, branch) {
 				r.warnf("%s/%s: CRN %q: kod %q branş %q ile başlamıyor", slug, branch, s.CRN, s.Code, branch)
 			}
-			if len(s.Days) != len(s.Times) || len(s.Days) != len(s.Rooms) || len(s.Days) != len(s.Buildings) {
+			if len(s.Days) != len(s.Times) || len(s.Days) != len(s.Buildings) {
 				// Günü olmayan saatli dersler (çevrimiçi/asenkron) meşru; bu yüzden
 				// hata değil, not.
-				r.warnf("%s/%s: CRN %q: oturum dizileri farklı uzunlukta (gün %d, saat %d, derslik %d, bina %d)",
-					slug, branch, s.CRN, len(s.Days), len(s.Times), len(s.Rooms), len(s.Buildings))
+				r.warnf("%s/%s: CRN %q: oturum dizileri farklı uzunlukta (gün %d, saat %d, bina %d)",
+					slug, branch, s.CRN, len(s.Days), len(s.Times), len(s.Buildings))
+			}
+			// Derslik (oda) numarası OBS'de sıkça yayınlanmaz; hiç yoksa bu
+			// beklenen bir durumdur, ayrı ve daha nadir görülmesi gereken bir
+			// uyarıya ayrılır ki gerçek bir tutarsızlık 53 binin altında kaybolmasın.
+			if len(s.Rooms) > 0 && len(s.Rooms) != len(s.Days) {
+				r.warnf("%s/%s: CRN %q: derslik dizisi diğerleriyle uyuşmuyor (gün %d, derslik %d)",
+					slug, branch, s.CRN, len(s.Days), len(s.Rooms))
 			}
 			if s.Capacity > 0 && s.Enrolled > s.Capacity {
 				r.warnf("%s/%s: CRN %q: yazılan (%d) kontenjandan (%d) fazla", slug, branch, s.CRN, s.Enrolled, s.Capacity)
@@ -1024,15 +1044,8 @@ func (r *Result) checkSitePages(root string) {
 
 	// İniş sayfaları ("İTÜ ders planı", "GANO hesaplama" vb.) — site.go'daki
 	// landingPages ile aynı slug listesi; kök dizininde <slug>/index.html.
-	landingSlugs := []string{
-		"ders-plani", "gano-hesaplama", "not-ortalamasi", "ders-programi",
-		"ders-programi-olustur", "kontenjan", "ders-secimi", "onsart-haritasi",
-		"sinav-programi", "akademik-takvim", "ders-arsivi",
-		"ders-kaydi-nasil-yapilir", "ders-programi-nasil-hazirlanir", "terimler-sozlugu",
-		"bolumler",
-	}
 	gotLanding := map[string]bool{}
-	for _, s := range landingSlugs {
+	for _, s := range LandingSlugs {
 		gotLanding[s] = true
 		checkPage(root, s, false)
 	}

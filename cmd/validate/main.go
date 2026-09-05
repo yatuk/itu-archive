@@ -51,6 +51,7 @@ var warnCategories = []struct {
 }{
 	{regexp.MustCompile(`yazılan \(\d+\) kontenjandan`), "kontenjan aşımı"},
 	{regexp.MustCompile(`oturum dizileri farklı uzunlukta`), "oturum dizisi tutarsızlığı"},
+	{regexp.MustCompile(`derslik dizisi diğerleriyle uyuşmuyor`), "derslik dizisi tutarsızlığı"},
 	{regexp.MustCompile(`kod .+ ile başlamıyor`), "kod/branş uyuşmazlığı"},
 	{regexp.MustCompile(`dolma süresi negatif`), "quota (negatif dolma süresi)"},
 	{regexp.MustCompile(`hiç dönem içermiyor`), "müfredat (boş program)"},

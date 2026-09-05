@@ -167,7 +167,12 @@ test.describe('SPA (ana sayfa)', () => {
     const brand = page.locator('.brand');
     const controls = page.locator('.mast-controls');
     const [brandBox, controlsBox] = await Promise.all([brand.boundingBox(), controls.boundingBox()]);
-    expect(brandBox.y + brandBox.height).toBeLessThanOrEqual(controlsBox.y + 1);
+    // masthead-refined'da marka ve kontroller genişliğe göre ya yan yana
+    // (2 sütun, X çakışmasız) ya da alt alta (dar ekran, Y çakışmasız)
+    // yerleşir — hangisi olursa olsun üst üste binmemeleri yeterli.
+    const sideBySide = brandBox.x + brandBox.width <= controlsBox.x + 1 || controlsBox.x + controlsBox.width <= brandBox.x + 1;
+    const stacked = brandBox.y + brandBox.height <= controlsBox.y + 1 || controlsBox.y + controlsBox.height <= brandBox.y + 1;
+    expect(sideBySide || stacked, 'marka ve kontroller üst üste binmemeli').toBe(true);
     await expect(page.locator('.theme-name')).toHaveText(['Açık', 'Koyu']);
     await expect(page.locator('#lang-btn')).toBeVisible();
 

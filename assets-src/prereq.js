@@ -1029,7 +1029,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
             }
             return '';
           }).join('');
-          return items ? `<details class="pg-mobile-semester" ${semIndex === 0 ? 'open' : ''}><summary>${esc(sem.title)}<span>${(sem.items || []).length} ${txt('ders/slot', 'courses/slots')}</span></summary>${items}</details>` : '';
+          return items ? `<details class="pg-mobile-semester" ${semIndex === 0 ? 'open' : ''}><summary>${esc(laneTitle(sem.title))}<span>${(sem.items || []).length} ${txt('ders/slot', 'courses/slots')}</span></summary>${items}</details>` : '';
         }).join('');
       wire();
     };

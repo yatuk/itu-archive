@@ -535,6 +535,8 @@ const I18N = (() => {
       progAFRelaxedSingleCourseDays: 'tek dersli günleri azaltma',
       progAFRelaxedDensity: 'haftalık dağılım',
       progAFDayPrefSuffix: 'tercihi',
+      dlgOk: 'Tamam',
+      dlgCancel: 'Vazgeç',
     },
     en: {
       statLoading: 'loading…',
@@ -1067,6 +1069,8 @@ const I18N = (() => {
       progAFRelaxedSingleCourseDays: 'reducing single-course days',
       progAFRelaxedDensity: 'weekly distribution',
       progAFDayPrefSuffix: 'preference',
+      dlgOk: 'OK',
+      dlgCancel: 'Cancel',
     }
   };
 

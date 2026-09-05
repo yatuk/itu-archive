@@ -16,6 +16,7 @@
 
 import { parseRange, canonicalCode } from './plan.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=dde1e9339338';
+import { I18N } from '../i18n.js?v=dde1e9339338';
 
 const KEY = 'itu-grades';
 
@@ -141,7 +142,7 @@ export function buildEntries(plan, stored, catalogMap = new Map()) {
           });
         } else {
           entries.push({
-            code: item.elective.title || 'Seçmeli',
+            code: item.elective.title || I18N.t('planElectiveDefaultTitle'),
             credits: slotDefaultCredits(item.elective),
             ects: slotDefaultEcts(item.elective),
             grade: '',

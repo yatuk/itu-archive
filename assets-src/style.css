@@ -4146,15 +4146,15 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   box-shadow: var(--shadow-card);
 }
 .guide-flow svg { display: block; width: 100%; height: auto; }
-.guide-flow-v { display: none; }
+.guide-flow svg.guide-flow-v { display: none; }
 .guide-flow-node { fill: var(--panel-2); stroke: var(--acid); stroke-width: 1.5; }
 .guide-flow-num { fill: var(--acid); font-family: var(--mono); font-size: 15px; font-weight: 700; }
 .guide-flow-lbl { fill: var(--dim); font-family: var(--mono); font-size: 12.5px; }
 .guide-flow-link { stroke: var(--line-hot); stroke-width: 1.5; fill: none; }
 .guide-flow-arrow { stroke: var(--line-hot); stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 @media (max-width: 720px) {
-  .guide-flow-h { display: none; }
-  .guide-flow-v { display: block; max-width: 280px; margin: 0 auto; }
+  .guide-flow svg.guide-flow-h { display: none; }
+  .guide-flow svg.guide-flow-v { display: block; max-width: 280px; margin: 0 auto; }
 }
 
 /* sistem şeması: hangi işlem hangi sistemde yapılır */

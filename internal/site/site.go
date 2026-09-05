@@ -411,7 +411,7 @@ func (b *Builder) Generate() error {
 	// İniş sayfaları ("İTÜ ders planı", "GANO hesaplama" vb.) — çoğu yalnızca
 	// TR; EN karşılığı olanlar writeLandingPage içinde kendiliğinden üretilir.
 	for _, p := range landingPages {
-		if err := b.writeLandingPage(p); err != nil {
+		if err := b.writeLandingRoute(p); err != nil {
 			return err
 		}
 	}
@@ -631,7 +631,7 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 			if p.titleEN == "" {
 				continue
 			}
-			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/%s/", baseURL, p.slug), Lastmod: landingContentUpdated})
+			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/%s/", baseURL, p.slug), Lastmod: landingLastmod(p)})
 		}
 		entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/bolumler/", baseURL), Lastmod: directoryContentUpdated})
 		data := renderURLSet(entries)
@@ -648,7 +648,7 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	for _, p := range landingPages {
 		pages = append(pages, sitemapEntry{
 			Loc:     fmt.Sprintf("%s/%s/", baseURL, p.slug),
-			Lastmod: landingContentUpdated,
+			Lastmod: landingLastmod(p),
 		})
 	}
 	pages = append(pages, sitemapEntry{Loc: fmt.Sprintf("%s/bolumler/", baseURL), Lastmod: directoryContentUpdated})
@@ -1234,21 +1234,8 @@ var landingPages = []landingPage{
 		description: "İTÜ ders kaydı nasıl yapılır? Şifre kurulumundan ders planını bulmaya, CRN ile şube seçmeye, çakışmasız kayda ve intibak sürecine kadar adım adım rehber.",
 		h1:          "İTÜ ders kaydı nasıl yapılır?",
 		queries:     []string{"İTÜ ders kaydı nasıl yapılır", "İTÜ ders kaydı", "İTÜ CRN nedir", "İTÜ intibak muafiyet"},
-		body: []string{
-			"Bu rehber, İTÜ'de ilk kez ders kaydı yapacak yeni öğrenciler ve süreci hatırlamak isteyen herkes için hazırlandı.",
-			"1. Kayıttan önce hazırlan: İTÜ kullanıcı adını ve şifreni Bilgi İşlem Daire Başkanlığı (BİDB) üzerinden oluştur — ÖBS ve SİS dahil tüm dijital işlemlerde kullanacağın tek kimlik budur. Kayıt gününden önce giriş yapabildiğini test et.",
-			"2. Ders planını bul: Fakülte ve bölümünü seçerek ÖBS'deki Ders Planı sayfasını aç; birden fazla plan varsa en güncelini kullan. 1. sınıf 1. yarıyıl öğrencisiysen, planının birinci yarıyılındaki derslerin TAMAMINA yazılman gerekir — üst yarıyıl dersi alma.",
-			"3. Ders programını oku: Güncel dönem programından dersinin gün, saat ve binasını gör. Her satırda o dersin o dönemki belirli şubesini tanımlayan 5 haneli bir CRN vardır — not al. 'Dersi Alabilen Programlar' kısmında kendi program kodunun yer aldığından emin ol. İlk yarıyıl derslerinde genelde önşart yoktur; sonraki dönemlerde önşart haritasını kontrol et.",
-			"4. Çakışmasız program kur: Seçtiğin derslerin saatleri çakışmamalı; farklı kampüslerdeki dersler arasında ulaşım süresini hesaba kat. Her ders için mümkünse 1-2 yedek CRN belirle.",
-			"5. Kayıt anında: Belirlenen saatte SİS'teki ders kayıt menüsüne gir, CRN'leri yaz ve ekle. Sistem yoğunluktan birkaç saniye bekletebilir — bu normaldir, tekrar tekrar basma. Bir ders eklenemezse ekranda neden gösterilir; yedek CRN'ine geç.",
-			"6. Kaydını kontrol et: 'Kayıtlı Dersler' sayfasından tüm derslerinin göründüğünü doğrula. 1. sınıf 1. yarıyıl öğrencisiysen planındaki TÜM derslere kayıtlı olduğunu teyit et.",
-			"7. Başka kurumdan ders aldıysan (intibak/muafiyet): bu ayrı bir süreçtir ve genelde kayıttan sonra sonuçlanır. Yine de ilk yarıyıl derslerinin tamamına kayıt ol; sonuç açıklandıktan sonra add/drop döneminde programını güncelle. Güncel koşullar için SİS duyurularını takip et.",
-			"Bu rehberde tarih verilmez; kayıt, ders ekle-bırak ve sınav tarihleri dönemden döneme değişir. Güncel tarihler için Akademik Takvim'i kontrol et.",
-			"Sık sorulan sorular. CRN nedir ve nereden bulurum? Course Registration Number'ın kısaltmasıdır; ders programı sayfasında her şubenin yanında görünen 5 haneli koddur, SİS'e kayıt olurken bu kodu girersin.",
-			"Ders çakışırsa ne olur? SİS aynı saate gelen iki dersi aynı anda kabul etmez; CRN'lerden birini farklı bir şubeyle değiştirmen gerekir.",
-			"Kontenjan dolarsa ne yapmalıyım? Önceden belirlediğin yedek CRN'e geç veya add/drop döneminde tekrar dene; bazı şubelerde bu dönemde yer boşalır.",
-			"Yurt dışından veya başka bir üniversiteden geldim, derslerim sayılır mı? Bu intibak/muafiyet sürecine tabidir ve ayrı değerlendirilir; sonuçlanana kadar ilk yarıyıl derslerinin tamamına kayıtlı kal ve sonucu SİS üzerinden takip et.",
-		},
+		// Gövde artık writeRegistrationGuidePage'de (guides_content.go): adım
+		// kartları, akış şeması, sistem kutuları ve örnek arayüzler.
 		primary: landingAction{href: "/akademik-takvim/", label: "Akademik Takvimi kontrol et", detail: "Güncel kayıt, ders ekle-bırak ve sınav tarihlerini tek yerde gör."},
 		secondary: []landingAction{
 			{href: "/ders-secimi/", label: "Ders seçimi adımlarını gör", detail: "Dersleri arayıp programını kurmadan önce izleyeceğin dört adımı gör."},
@@ -1259,22 +1246,7 @@ var landingPages = []landingPage{
 
 		titleEN: "How Course Registration Works at ITU", h1EN: "How course registration works at ITU",
 		descriptionEN: "How does ITU course registration work? A step-by-step guide from setting up your password to finding your plan, picking CRNs, conflict-free registration, and credit transfer.",
-		bodyEN: []string{
-			"This guide is for new students registering for courses at ITU for the first time, and for anyone who needs a refresher.",
-			"1. Before registration: Set up your ITU username and password through the IT department (BİDB) — this one account is used for every digital system, including OBS and SIS. Test logging in before registration day.",
-			"2. Find your curriculum plan: Select your faculty and program to open the Course Plan page in OBS; if multiple plans exist, use the most recent one. If this is your first semester as a freshman, you must register for EVERY course in the first semester of your plan — do not take higher-semester courses.",
-			"3. Read the course schedule: See the day, time, and building for each course in the current term's schedule. Each row has a CRN, a 5-digit code identifying that term's specific section — write it down. Confirm your program code appears under 'Programs allowed to take this course'. First-semester courses usually have no prerequisites; check the prerequisite map for later terms.",
-			"4. Build a conflict-free schedule: Your chosen courses' times must not overlap; factor in travel time between courses on different campuses. Note 1-2 backup CRNs per course where possible.",
-			"5. During registration: At the scheduled time, open the registration menu in SIS, enter your CRNs, and add them. The system may pause a few seconds under load — this is normal, don't repeatedly click. If a course fails to add, the reason is shown on screen — switch to your backup CRN.",
-			"6. Double-check your registration: Confirm everything appears on the 'Registered Courses' page. Freshmen: confirm ALL of your plan's first-semester courses are registered.",
-			"7. If you completed courses elsewhere (credit transfer): this is a separate process, usually finalized after registration. Still register for all first-semester courses; adjust during the add/drop window once results are announced. Follow SIS announcements for current requirements.",
-			"This guide intentionally gives no dates: registration, add/drop, and exam dates change every term. Check the Academic Calendar for current dates.",
-			"Frequently asked questions. What is a CRN and where do I find it? Short for Course Registration Number; it's the 5-digit code shown next to each section on the course schedule, and it's what you enter to register in SIS.",
-			"What happens if two courses overlap? SIS won't let you register for two courses at the same time; you need to swap one of the CRNs for a different section.",
-			"What if a course section is full? Switch to a backup CRN you picked in advance, or try again during the add/drop window — seats often open up.",
-			"I transferred from another university — will my credits count? That goes through a separate credit-transfer/exemption process evaluated on its own timeline; stay registered in all first-semester courses until it's decided, and track the result through SIS.",
-		},
-		primaryEN: landingAction{href: "/en/akademik-takvim/", label: "Check the Academic Calendar", detail: "See current registration, add/drop, and exam dates in one place."},
+		primaryEN:     landingAction{href: "/en/akademik-takvim/", label: "Check the Academic Calendar", detail: "See current registration, add/drop, and exam dates in one place."},
 		secondaryEN: []landingAction{
 			{href: "/en/ders-programi-nasil-hazirlanir/", label: "Learn how to build your schedule", detail: "Follow the path from your curriculum plan to a conflict-free weekly schedule."},
 			{href: "/en/terimler-sozlugu/", label: "Check the ITU glossary", detail: "See what abbreviations like CRN, OBS, and SIS mean."},
@@ -1286,16 +1258,7 @@ var landingPages = []landingPage{
 		description: "İTÜ ders programı nasıl hazırlanır? Ders planını bulmaktan CRN ile şube seçmeye, önşart kontrolüne ve çakışmasız haftalık programa giden yolu bu rehberde izle.",
 		h1:          "İTÜ ders programı nasıl hazırlanır?",
 		queries:     []string{"İTÜ ders programı nasıl hazırlanır", "İTÜ çakışmasız program"},
-		body: []string{
-			"Ders programını hazır bir tarif gibi düşün: önce hangi dersleri alman gerektiğini (ders planı) öğren, sonra bu derslerin hangi şubelerinin (CRN) sana uygun saatte olduğunu bul, sonra bunları çakışmayacak şekilde bir araya getir.",
-			"1. Ders planını bul: Bölümünü Fakülte ve Program Haritası'ndan seç veya Ders Planım'ı aç; bu dönem hangi dersleri alman gerektiğini yarıyıl yarıyıl gör.",
-			"2. Önşartları kontrol et: Önşart Haritası'nda dersin geriye doğru zorunlu ve alternatif önşart bağlantılarını incele; önce hangi dersleri tamamlaman gerektiğini gör.",
-			"3. Şubeleri ve CRN'leri karşılaştır: Dersler sekmesinde ders kodu, ad veya hocayla ara; şubelerin gün/saatini ve kontenjan doluluğunu gör. Bir dersin geçmiş dönemlerde ne kadar hızlı dolduğunu Ders Arşivi'nden kontrol edebilirsin.",
-			"4. Çakışmasız programı kur: Program aracında seçtiğin şubeleri haftalık çizelgeye ekle; çakışan saatler otomatik işaretlenir. Alternatif Bul aracı, kısıtlarına (gün, saat aralığı, öğretim üyesi) uyan farklı şube kombinasyonlarını otomatik hesaplar.",
-			"Kampüsler arası ulaşım süresini unutma: art arda gelen derslerin farklı kampüslerde olması durumunda aralarında yeterli boşluk bırak.",
-			"Her ders için mümkünse 1-2 yedek CRN belirle; kayıt sırasında bir şube dolarsa hızlıca değiştirebilirsin.",
-			"Hazırladığın programı görsel veya .ics takvim dosyası olarak indirebilir, seçtiğin CRN'leri SİS kayıt ekranına kopyalayabilirsin.",
-		},
+		// Gövde artık writeScheduleGuidePage'de (guides_content.go).
 		primary: landingAction{href: "/#program", label: "Program aracını aç", detail: "Şubeleri haftalık çizelgeye ekle; çakışmaları ve toplam krediyi anında gör."},
 		secondary: []landingAction{
 			{href: "/bolumler/", label: "Bölümünün ders planını bul", detail: "Fakülte ve bölüm seçerek müfredatını yarıyıl yarıyıl incele."},
@@ -1307,17 +1270,7 @@ var landingPages = []landingPage{
 
 		titleEN: "How to Build Your ITU Course Schedule", h1EN: "How to build your ITU course schedule",
 		descriptionEN: "How do you build your ITU course schedule? Follow the path from finding your curriculum plan to picking CRNs, checking prerequisites, and building a conflict-free weekly schedule.",
-		bodyEN: []string{
-			"Think of your course schedule like a recipe: first learn which courses you need (your curriculum plan), then find which sections (CRNs) fit your available time, then combine them without conflicts.",
-			"1. Find your curriculum plan: Pick your program from the faculty and program directory, or open My Plan to see which courses you need this term, semester by semester.",
-			"2. Check prerequisites: In the Prerequisite Map, trace a course's required and alternative prerequisite links backward to see what you need to complete first.",
-			"3. Compare sections and CRNs: Search by course code, name, or instructor in the Courses tab to see each section's day/time and capacity. Check the Course Archive to see how quickly a course has filled up in past terms.",
-			"4. Build a conflict-free schedule: Add your chosen sections to the weekly grid in the schedule tool; overlapping times are flagged automatically. The Find Alternatives tool automatically computes different section combinations that fit constraints like day, time range, or instructor.",
-			"Don't forget travel time between campuses: leave enough of a gap between back-to-back courses held on different campuses.",
-			"Note 1-2 backup CRNs per course where possible, so you can switch quickly if a section fills up during registration.",
-			"Download your finished schedule as an image or .ics calendar file, or copy the selected CRNs for the SIS registration screen.",
-		},
-		primaryEN: landingAction{href: "/#program", label: "Open the schedule tool", detail: "Add sections to your weekly grid; see conflicts and total credits instantly."},
+		primaryEN:     landingAction{href: "/#program", label: "Open the schedule tool", detail: "Add sections to your weekly grid; see conflicts and total credits instantly."},
 		secondaryEN: []landingAction{
 			{href: "/en/bolumler/", label: "Find your program's curriculum", detail: "Pick your faculty and program to browse its plan semester by semester."},
 			{href: "/#onsart", label: "Check prerequisites", detail: "Trace a course's prerequisite links backward in the prerequisite map."},
@@ -1331,17 +1284,8 @@ var landingPages = []landingPage{
 		description: "İTÜ terimler sözlüğü: CRN, ÖBS, SİS, Ninova, BİDB, intibak/muafiyet, program kodu ve bina kodu gibi kısaltmaların ne anlama geldiğini kısa ve net açıklar.",
 		h1:          "İTÜ terimler sözlüğü",
 		queries:     []string{"İTÜ terimler sözlüğü", "İTÜ CRN nedir", "İTÜ ÖBS SİS ne demek"},
-		body: []string{
-			"İTÜ'de sık karşılaşılan kısaltma ve terimlerin kısa açıklamaları.",
-			"ÖBS: Öğrenci Bilgi Sistemi — ders planı, program ve bina kodları gibi genel bilgilerin tutulduğu sistem.",
-			"SİS: Öğrenci İşleri Daire Başkanlığı'nın ders kayıt işlemlerinin yapıldığı portalı.",
-			"Ninova: İTÜ'nün ders yönetim sistemi; ödev, duyuru ve ders materyallerinin paylaşıldığı platform.",
-			"BİDB: Bilgi İşlem Daire Başkanlığı — İTÜ kullanıcı adı ve şifreni oluşturduğun birim.",
-			"CRN: Course Registration Number'ın kısaltması; bir dönemde açılan belirli bir dersin gün, saat, derslik ve kontenjanını tanımlayan 5 haneli kod.",
-			"İntibak / Muafiyet: Başka bir kurumda alınmış bir dersin İTÜ'de saydırılması süreci.",
-			"Program Kodu: Bir bölüm veya programın resmî kısaltması; 'dersi alabilen programlar' kısıtında kullanılır.",
-			"Bina Kodu: Ders yerinin bina kısaltması, örneğin MED, MKB, İNB, MİM.",
-		},
+		// Gövde artık writeGlossaryPage'de (guides_content.go): her terim kendi
+		// id'siyle tanım listesinde üretilir.
 		primary: landingAction{href: "/#dersler", label: "Ders programını ara", detail: "Açık şubeleri ders kodu, ad, CRN veya öğretim üyesiyle ara."},
 		secondary: []landingAction{
 			{href: "/ders-kaydi-nasil-yapilir/", label: "Ders kaydı nasıl yapılır", detail: "Hazırlıktan kayıt anına kadar resmî süreci adım adım gör."},
@@ -1351,23 +1295,37 @@ var landingPages = []landingPage{
 
 		titleEN: "ITU Glossary (CRN, OBS, SIS)", h1EN: "ITU glossary",
 		descriptionEN: "ITU glossary: short, clear explanations of abbreviations like CRN, OBS, SIS, Ninova, BIDB, credit transfer/exemption, program code, and building code.",
-		bodyEN: []string{
-			"Short explanations of abbreviations and terms you'll run into at ITU.",
-			"OBS (ÖBS): Student Information System — where curriculum plans and program/building codes live.",
-			"SIS (SİS): The Student Affairs portal where course registration itself happens.",
-			"Ninova: ITU's course management platform (assignments, announcements, materials).",
-			"BIDB (BİDB): The IT department — where you set up your ITU account password.",
-			"CRN: Course Registration Number — a 5-digit code identifying one specific offering (day, time, room, capacity) of a course in a given term.",
-			"Credit transfer / exemption (İntibak / Muafiyet): The process of getting credit for a course completed at another institution.",
-			"Program code: The official abbreviation for a department or program, used to check eligibility for a course.",
-			"Building code: The building abbreviation shown in the schedule, e.g. MED, MKB.",
-		},
-		primaryEN: landingAction{href: "/#dersler", label: "Search the course schedule", detail: "Search open sections by course code, name, CRN, or instructor."},
+		primaryEN:     landingAction{href: "/#dersler", label: "Search the course schedule", detail: "Search open sections by course code, name, CRN, or instructor."},
 		secondaryEN: []landingAction{
 			{href: "/en/ders-kaydi-nasil-yapilir/", label: "How course registration works", detail: "Follow the official registration process step by step."},
 			{href: "/en/ders-programi-nasil-hazirlanir/", label: "How to build your schedule", detail: "Follow the path from your curriculum plan to a conflict-free schedule."},
 		},
 	},
+}
+
+// writeLandingRoute, bir iniş sayfasını doğru üreticiye yönlendirir. Rehber
+// sayfaları (adım kartı, akış şeması, örnek arayüz içerenler) düz paragraf
+// üreticisini kullanamaz; kendi fonksiyonlarına gider (bkz. guides.go).
+func (b *Builder) writeLandingRoute(p landingPage) error {
+	switch p.slug {
+	case "ders-kaydi-nasil-yapilir":
+		return b.writeRegistrationGuidePage(p)
+	case "ders-programi-nasil-hazirlanir":
+		return b.writeScheduleGuidePage(p)
+	case "terimler-sozlugu":
+		return b.writeGlossaryPage(p)
+	}
+	return b.writeLandingPage(p)
+}
+
+// landingLastmod, bir iniş sayfasının sitemap tarihini verir. Rehber sayfaları
+// kendi içerik tarihlerini taşır; geri kalanlar ortak landing tarihini kullanır.
+func landingLastmod(p landingPage) string {
+	switch p.slug {
+	case "ders-kaydi-nasil-yapilir", "ders-programi-nasil-hazirlanir", "terimler-sozlugu":
+		return guideContentUpdated
+	}
+	return landingContentUpdated
 }
 
 func (b *Builder) writeLandingPage(p landingPage) error {

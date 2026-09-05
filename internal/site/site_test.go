@@ -589,7 +589,7 @@ func TestNewGuidePagesRenderBilingualAndSitemapped(t *testing.T) {
 		root := t.TempDir()
 		trRoot := filepath.Join(root, "tr")
 		bTR := &Builder{root: trRoot, outRoot: trRoot, l: langTR, version: "test"}
-		if err := bTR.writeLandingPage(page); err != nil {
+		if err := bTR.writeLandingRoute(page); err != nil {
 			t.Fatal(err)
 		}
 		trHTML, err := os.ReadFile(filepath.Join(trRoot, slug, "index.html"))
@@ -607,7 +607,7 @@ func TestNewGuidePagesRenderBilingualAndSitemapped(t *testing.T) {
 
 		enRoot := filepath.Join(root, "en")
 		bEN := &Builder{root: enRoot, outRoot: enRoot, l: langEN, version: "test"}
-		if err := bEN.writeLandingPage(page); err != nil {
+		if err := bEN.writeLandingRoute(page); err != nil {
 			t.Fatal(err)
 		}
 		enHTML, err := os.ReadFile(filepath.Join(enRoot, slug, "index.html"))

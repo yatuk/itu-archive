@@ -4119,3 +4119,179 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .masthead-refined .brand-logo { width: 24px; height: 24px; }
   .masthead-refined .mast-controls { justify-content: flex-start; }
 }
+
+/* ---------- rehber sayfaları (/ders-kaydi-nasil-yapilir/, /ders-programi-nasil-hazirlanir/, /terimler-sozlugu/) ----------
+   Bu üç sayfa düz paragraf yığını değil: akış şeridi, sistem kutuları, numaralı
+   adım kartları, bilgi/uyarı kutuları ve örnek arayüz çizimleri. Renk, kenarlık
+   ve yarıçap değerleri tamamen token'lardan gelir; dark tema sade'nin siyah
+   ikizi olarak aynı yapıyı gösterir. */
+
+.guide-lead {
+  color: var(--fg); font-size: 16px; line-height: 1.6;
+  margin: 6px 0 20px; max-width: 62ch;
+}
+.guide-section { margin: 34px 0; }
+.guide-section > h2 {
+  margin: 0 0 14px; font-size: 19px; line-height: 1.3;
+  letter-spacing: -.01em; color: var(--fg);
+}
+.guide-para { color: var(--dim); line-height: 1.65; max-width: 68ch; margin: 0; }
+.guide-section a, .guide-step a, .guide-note a, .guide-warn a { color: var(--cyan); }
+.guide-section a:hover, .guide-step a:hover { color: var(--acid); }
+
+/* akış şeridi: tüm sürecin tek bakışlık özeti */
+.guide-flow {
+  border: 1px solid var(--line); background: var(--panel);
+  border-radius: var(--radius-card); padding: 20px 18px; margin: 4px 0 22px;
+  box-shadow: var(--shadow-card);
+}
+.guide-flow svg { display: block; width: 100%; height: auto; }
+.guide-flow-v { display: none; }
+.guide-flow-node { fill: var(--panel-2); stroke: var(--acid); stroke-width: 1.5; }
+.guide-flow-num { fill: var(--acid); font-family: var(--mono); font-size: 15px; font-weight: 700; }
+.guide-flow-lbl { fill: var(--dim); font-family: var(--mono); font-size: 12.5px; }
+.guide-flow-link { stroke: var(--line-hot); stroke-width: 1.5; fill: none; }
+.guide-flow-arrow { stroke: var(--line-hot); stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 720px) {
+  .guide-flow-h { display: none; }
+  .guide-flow-v { display: block; max-width: 280px; margin: 0 auto; }
+}
+
+/* sistem şeması: hangi işlem hangi sistemde yapılır */
+.guide-systems {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+.guide-system {
+  border: 1px solid var(--line); background: var(--panel);
+  border-radius: var(--radius-card); padding: 14px 16px;
+}
+.guide-system-badge {
+  display: inline-block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--dimmer); border: 1px solid var(--line); border-radius: 999px;
+  padding: 2px 9px; background: var(--panel-2);
+}
+.guide-system h3 { margin: 10px 0 6px; font-size: 15px; color: var(--fg); }
+.guide-system p { margin: 0; color: var(--dim); font-size: 13px; line-height: 1.55; }
+
+/* adım kartları */
+.guide-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.guide-step {
+  position: relative; border: 1px solid var(--line); background: var(--panel);
+  border-radius: var(--radius-card); padding: 18px 22px 20px 72px;
+  box-shadow: var(--shadow-card);
+}
+.guide-step-num {
+  position: absolute; left: 20px; top: 18px;
+  width: 34px; height: 34px; display: grid; place-items: center;
+  border-radius: 10px; background: var(--acid-vivid); color: var(--on-accent);
+  font-family: var(--mono); font-size: 15px; font-weight: 700;
+}
+.guide-step h3 { margin: 6px 0 10px; font-size: 16px; line-height: 1.35; color: var(--fg); }
+.guide-step p { margin: 0 0 10px; color: var(--dim); line-height: 1.65; max-width: 68ch; }
+.guide-step > p:last-child { margin-bottom: 0; }
+
+/* bilgi ve uyarı kutuları */
+.guide-note, .guide-warn {
+  display: grid; grid-template-columns: 18px 1fr; gap: 10px; align-items: start;
+  border: 1px solid var(--line); border-left: 3px solid var(--cyan);
+  background: var(--panel-2); border-radius: 10px;
+  padding: 11px 14px; margin: 12px 0;
+}
+.guide-warn { border-left-color: var(--amber); }
+.guide-note p, .guide-warn p { margin: 0; color: var(--fg); font-size: 13px; line-height: 1.6; }
+.guide-callout-icon {
+  width: 18px; height: 18px; margin-top: 1px; fill: none; stroke: var(--cyan);
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+}
+.guide-warn .guide-callout-icon { stroke: var(--amber); }
+
+/* örnek görseller: gerçek ekran görüntüsü değil, sitenin kendi token'larıyla
+   çizilmiş temsili arayüzler. Köşedeki etiket bunu her seferinde söyler. */
+.guide-figure { margin: 16px 0 4px; }
+.guide-figure figcaption {
+  margin-top: 8px; color: var(--dimmer); font-size: 12.5px; line-height: 1.5; max-width: 62ch;
+}
+.guide-mock {
+  border: 1px solid var(--line-hot); background: var(--panel-2);
+  border-radius: var(--radius-card); overflow: hidden;
+}
+.guide-mock-bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 8px 12px; border-bottom: 1px solid var(--line); background: var(--panel);
+}
+.guide-mock-title { color: var(--dim); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+.guide-mock-tag {
+  color: var(--dimmer); font-size: 11px; border: 1px dashed var(--line-hot);
+  border-radius: 999px; padding: 2px 9px; white-space: nowrap;
+}
+.guide-mock-form { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 16px 14px; }
+.guide-mock-label { color: var(--dimmer); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.guide-mock-input {
+  font-family: var(--mono); font-size: 15px; color: var(--fg);
+  border: 1px solid var(--line-hot); border-radius: 8px; background: var(--panel);
+  padding: 8px 12px; min-width: 120px; display: inline-flex; align-items: center; gap: 2px;
+}
+.guide-mock-caret { width: 1px; height: 16px; background: var(--cyan); display: inline-block; }
+.guide-mock-btn { cursor: default; }
+.guide-mock .seo-tablewrap { margin: 0; }
+.guide-mini-table { background: var(--panel); }
+.guide-mini-table th, .guide-mini-table td { padding: 9px 14px; }
+.guide-mini-table td { color: var(--fg); font-family: var(--mono); font-size: 13px; }
+.guide-mini-table th:last-child, .guide-mini-table td:last-child { text-align: right; }
+.guide-crn-mark {
+  display: inline-block; border: 2px solid var(--acid); border-radius: 8px;
+  padding: 2px 10px; color: var(--acid); font-weight: 700;
+}
+.guide-annot {
+  display: flex; align-items: center; justify-content: flex-end; gap: 10px;
+  padding: 4px 14px 12px;
+}
+.guide-annot-text { margin: 0; color: var(--dim); font-size: 12.5px; text-align: right; max-width: 42ch; }
+.guide-annot-arrow {
+  width: 120px; height: 44px; flex: none; fill: none; stroke: var(--acid);
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+}
+.guide-state-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; padding: 14px; }
+.guide-state {
+  display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--panel); padding: 12px 14px;
+}
+.guide-state p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--fg); }
+.guide-state-icon { width: 20px; height: 20px; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.guide-state-ok { border-color: var(--acid); }
+.guide-state-ok .guide-state-icon { stroke: var(--acid); }
+.guide-state-err { border-color: var(--amber); }
+.guide-state-err .guide-callout-icon { width: 20px; height: 20px; stroke: var(--amber); }
+
+/* sık sorulan sorular */
+.guide-faq { display: grid; gap: 10px; }
+.guide-faq-item {
+  border: 1px solid var(--line); background: var(--panel);
+  border-radius: var(--radius-card); padding: 14px 18px;
+}
+.guide-faq-item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.4; color: var(--fg); }
+.guide-faq-item p { margin: 0; color: var(--dim); font-size: 13.5px; line-height: 1.65; max-width: 68ch; }
+.guide-faq-item a { color: var(--cyan); }
+.guide-faq-item a:hover { color: var(--acid); }
+
+/* terimler sözlüğü: her terim kendi id'siyle bağlanabilir */
+.guide-glossary { display: grid; gap: 10px; margin: 0; }
+.guide-glossary-item {
+  border: 1px solid var(--line); background: var(--panel);
+  border-radius: var(--radius-card); padding: 14px 18px;
+}
+.guide-glossary-item dt { color: var(--acid); font-weight: 700; font-size: 15px; }
+.guide-glossary-item dd { margin: 6px 0 0; color: var(--dim); line-height: 1.6; font-size: 13.5px; max-width: 68ch; }
+.guide-glossary-item:target { border-color: var(--acid); background: var(--panel-2); }
+
+@media (max-width: 640px) {
+  .guide-step { padding: 16px 16px 18px; }
+  .guide-step-num { position: static; margin-bottom: 10px; }
+  .guide-step h3 { margin-top: 0; }
+  .guide-annot { justify-content: flex-start; padding-inline: 12px; }
+  .guide-annot-text { text-align: left; }
+  .guide-annot-arrow { display: none; }
+  .guide-flow { padding: 16px 12px; }
+}

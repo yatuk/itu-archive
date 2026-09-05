@@ -8,6 +8,7 @@
 // dersin seçileceği öğrenciye kalır) bu planlayıcının dışındadır.
 
 import { canonicalCode } from './plan.js?v=dde1e9339338';
+import { I18N } from '../i18n.js?v=dde1e9339338';
 
 export const DEFAULT_MIN_CREDITS = 10;
 export const DEFAULT_MAX_CREDITS = 14;
@@ -50,16 +51,16 @@ function computeEarliestTerms(remaining, edges) {
 
 function buildReason({ minTerm, placed, isRepeat, hard }) {
   const parts = [];
-  if (isRepeat) parts.push('tekrar dersi: erken ve hafif bir döneme planlandı');
-  if (hard) parts.push('geçmişte kalma oranı yüksek: bu dönemde tek zor ders olarak tutuldu');
+  if (isRepeat) parts.push(I18N.t('planReasonRepeat'));
+  if (hard) parts.push(I18N.t('planReasonHard'));
   if (placed > minTerm) {
     parts.push(minTerm > 0
-      ? `önşart(lar) ${minTerm}. dönem sonunda biter, kredi dengesi için ${placed + 1}. döneme kaydırıldı`
-      : `kredi dengesi için ${placed + 1}. döneme kaydırıldı`);
+      ? I18N.t('planReasonPrereqShift', { min: minTerm, term: placed + 1 })
+      : I18N.t('planReasonCreditShift', { term: placed + 1 }));
   } else if (minTerm > 0) {
-    parts.push(`önşart(lar) ${minTerm}. dönem sonunda tamamlanmış olmalı`);
+    parts.push(I18N.t('planReasonPrereqDone', { min: minTerm }));
   }
-  return parts.length ? parts.join(' · ') : 'önşart uygun, kredi dengesinde yer var';
+  return parts.length ? parts.join(' · ') : I18N.t('planReasonDefault');
 }
 
 /**

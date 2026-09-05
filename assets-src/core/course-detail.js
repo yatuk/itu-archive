@@ -12,6 +12,7 @@ import { parseReq, renderReqTree } from '../prereq.js?v=dde1e9339338';
 import { codeToSlug } from './urlcodes.js?v=dde1e9339338';
 import { loadProgramMap } from './programs.js?v=dde1e9339338';
 import { TAKEN_CHANGED, getTaken } from './taken.js?v=dde1e9339338';
+import { I18N } from '../i18n.js?v=dde1e9339338';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
@@ -28,11 +29,26 @@ function fillNote(crn) {
   const q = state.quota?.get(crn);
   if (!q || !q.filledAt) return '';
   const m = q.fillMinutes;
-  if (!m) return 'ilk ölçümde zaten doluydu';
+  if (!m) return I18N.t('cdFillPrefilled');
   const h = Math.floor(m / 60);
   const rest = m % 60;
-  const span = h ? `${h} sa${rest ? ` ${rest} dk` : ''}` : `${rest} dk`;
-  return `ilk ölçümden ${span} sonra doldu`;
+  const hAbbr = I18N.t('progHourAbbr');
+  const mAbbr = I18N.t('progMinAbbr');
+  const span = h ? `${h} ${hAbbr}${rest ? ` ${rest} ${mAbbr}` : ''}` : `${rest} ${mAbbr}`;
+  return I18N.lang === 'en' ? `filled ${span} after first measurement` : `ilk ölçümden ${span} sonra doldu`;
+}
+
+// "haftada X sa" / "X h/week" — hour/week caption used across the section list,
+// section card and overview stat. Word order differs by language, hence a helper.
+function weeklyHoursLabel(hrs) {
+  if (!hrs) return '';
+  const abbr = I18N.t('progHourAbbr');
+  return I18N.lang === 'en' ? `${hrs} ${abbr}/week` : `haftada ${hrs} ${abbr}`;
+}
+
+// "{n} şube daha göster" / "Show {n} more sections" — word order differs.
+function moreSectionsLabel(n) {
+  return I18N.lang === 'en' ? `Show ${n} more ${I18N.t('prgSube')}` : `${n} ${I18N.t('prgSube')} daha göster`;
 }
 
 // "A, B" / "A; B" / "A | B" → ["A", "B"]. Boşluk-önemsiz. Tek isimde tek eleman.
@@ -105,7 +121,7 @@ function secCard(s, buildings, showMeta = true) {
   const names = splitInstructors(s.instructor);
   const instructors = names
     .filter((n) => n !== '-' && n !== '***')
-    .map((n) => `<button type="button" class="d-instr-history" data-name="${esc(n)}" title="${esc(n)} geçmişinde ara">${esc(n)}</button>`)
+    .map((n) => `<button type="button" class="d-instr-history" data-name="${esc(n)}" title="${esc(I18N.lang === 'en' ? `search ${n}'s history` : `${n} geçmişinde ara`)}">${esc(n)}</button>`)
     .join('');
   const sessions = sessionsHtml(s, buildings);
   // Sade tema tek sayısal temsil kullanır; fosfor eski yüzde + çubuğu korur.
@@ -117,13 +133,13 @@ function secCard(s, buildings, showMeta = true) {
         <span class="d-sec-instr">${instructors || esc(s.instructor || '·')}</span>
         <span class="d-sec-stats">${stats}${note ? ` · ${esc(note)}` : ''}${measured(s.crn) ? `<small class="fill-measured"> · ${esc(measured(s.crn))}</small>` : ''}</span>
       </div>
-      ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa` : ''].filter(Boolean).join(' · ')}</div>` : ''}
+      ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? weeklyHoursLabel(hrs) : ''].filter(Boolean).join(' · ')}</div>` : ''}
       ${sessions ? `<div class="d-sec-when">${sessions}</div>` : ''}
-      <button type="button" class="btn-primary d-add-program" data-add-crn="${esc(s.crn)}">${document.documentElement.lang === 'en' ? 'Add to schedule' : 'Programa ekle'}</button>
-      ${(s.prereq && s.prereq !== '-') || (s.classReq && s.classReq !== '-') || (s.reserved && s.reserved !== '-') ? `<details class="d-sec-rules"><summary>Kayıt koşulları</summary>
-        ${s.prereq && s.prereq !== '-' ? `<p><b>Önşart</b>${esc(s.prereq)}</p>` : ''}
-        ${s.classReq && s.classReq !== '-' ? `<p><b>Sınıf / kredi</b>${esc(s.classReq)}</p>` : ''}
-        ${s.reserved && s.reserved !== '-' ? `<p><b>Rezervasyon</b>${esc(s.reserved)}</p>` : ''}
+      <button type="button" class="btn-primary d-add-program" data-add-crn="${esc(s.crn)}">${I18N.t('detailAddProg')}</button>
+      ${(s.prereq && s.prereq !== '-') || (s.classReq && s.classReq !== '-') || (s.reserved && s.reserved !== '-') ? `<details class="d-sec-rules"><summary>${I18N.t('cdRegRequirements')}</summary>
+        ${s.prereq && s.prereq !== '-' ? `<p><b>${I18N.t('detailPrereq')}</b>${esc(s.prereq)}</p>` : ''}
+        ${s.classReq && s.classReq !== '-' ? `<p><b>${I18N.t('detailClassReq')}</b>${esc(s.classReq)}</p>` : ''}
+        ${s.reserved && s.reserved !== '-' ? `<p><b>${I18N.t('cdReserved')}</b>${esc(s.reserved)}</p>` : ''}
       </details>` : ''}
     </article>`;
 }
@@ -142,9 +158,9 @@ function renderSecList(secs, buildings, focusCrn = '') {
   const uniformHrs = [...new Set(secs.map((s) => sessionHours(s.times)))].length <= 1;
   const hrs = uniformHrs ? sessionHours(secs[0].times) : 0;
   const head = [];
-  if (uniformMethod && secs[0].method) head.push(secs[0].method === 'Fiziksel (Yüz yüze)' ? 'yüz yüze' : secs[0].method);
-  if (uniformHrs && hrs) head.push(`haftada ${hrs} sa`);
-  const listHeader = head.length ? `<p class="d-secs-head">${secs.length} şube · ${esc(head.join(' · '))}</p>` : '';
+  if (uniformMethod && secs[0].method) head.push(secs[0].method === 'Fiziksel (Yüz yüze)' ? I18N.t('cdMethodF2F') : secs[0].method);
+  if (uniformHrs && hrs) head.push(weeklyHoursLabel(hrs));
+  const listHeader = head.length ? `<p class="d-secs-head">${secs.length} ${I18N.t('prgSube')} · ${esc(head.join(' · '))}</p>` : '';
 
   const card = (s) => secCard(s, buildings, !uniformMethod || !uniformHrs)
     .replace('class="d-sec"', `class="d-sec${String(s.crn) === String(focusCrn) ? ' is-focus' : ''}"`);
@@ -152,7 +168,7 @@ function renderSecList(secs, buildings, focusCrn = '') {
   const showAll = ordered.length > MAX;
   const html = ordered.slice(0, MAX).map(card).join('') +
     (showAll ? `<div class="d-secs-more" hidden>${ordered.slice(MAX).map(card).join('')}</div>
-      <button type="button" class="btn-ghost d-secs-toggle">${ordered.length - MAX} şube daha göster</button>` : '');
+      <button type="button" class="btn-ghost d-secs-toggle">${moreSectionsLabel(ordered.length - MAX)}</button>` : '');
 
   return `<div class="d-sec-list">${listHeader}${html}</div>`;
 }
@@ -168,21 +184,22 @@ function histHtml(hist) {
     byTerm.get(slug).push({ instructor, cap, enr });
   }
   if (!byTerm.size) {
-    return `<section class="d-hist"><h4>Geçmiş dönemler</h4>
-      <p class="empty">2019 öncesi dönemlerde dönem bazlı kayıt veri tabanında yok.</p></section>`;
+    return `<section class="d-hist"><h4>${I18N.t('cdPastTerms')}</h4>
+      <p class="empty">${I18N.t('cdPastNoData')}</p></section>`;
   }
   lastHistTerms = byTerm; // trend "hepsini göster" yeniden çizimi için
-  const seasons = { guz: 'Güz', bahar: 'Bahar', yaz: 'Yaz' };
+  const seasons = { guz: I18N.t('cdSeasonFall'), bahar: I18N.t('cdSeasonSpring'), yaz: I18N.t('cdSeasonSummer') };
   const openIn = [...new Set([...byTerm.keys()].map((s) => s.split('-')[2]))].map((s) => seasons[s] || s);
   const rows = [];
   for (const [slug, secs] of byTerm) secs.forEach((r, i) => rows.push({ slug, termFirst: i === 0, ...r }));
+  const openedIn = I18N.lang === 'en' ? `opened in ${byTerm.size} terms` : `${byTerm.size} dönemde açıldı`;
   return `<section class="d-hist">
-    <div class="d-section-head"><div><h4>Geçmiş dönemler</h4><p>${byTerm.size} dönemde açıldı · ${esc(openIn.join(', '))}</p></div></div>
+    <div class="d-section-head"><div><h4>${I18N.t('cdPastTerms')}</h4><p>${openedIn} · ${esc(openIn.join(', '))}</p></div></div>
     ${trendChart(byTerm, isMobile() ? 6 : 8)}
     <details class="d-history-records">
-      <summary>Dönem kayıtları <span>${rows.length}</span></summary>
-      <div class="tablewrap"><table class="htable" aria-label="Dönem geçmişi">
-        <thead><tr><th>Dönem</th><th>Öğretim üyesi</th><th class="num">Kont.</th><th class="num">Yazılan</th><th class="num quota-legacy-col">Doluluk</th></tr></thead>
+      <summary>${I18N.t('cdTermRecords')} <span>${rows.length}</span></summary>
+      <div class="tablewrap"><table class="htable" aria-label="${esc(I18N.t('cdHistAriaLabel'))}">
+        <thead><tr><th>${I18N.t('cdColTerm')}</th><th>${I18N.t('detailInstr')}</th><th class="num">${I18N.t('cdColCapAbbr')}</th><th class="num">${I18N.t('detailEnr')}</th><th class="num quota-legacy-col">${I18N.t('cdColFill')}</th></tr></thead>
         <tbody>${rows.map((r) => `<tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
           <td>${esc(r.instructor || '·')}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td>
           <td class="num quota-legacy-col">${fillBar(r.cap, r.enr)}</td></tr>`).join('')}</tbody>
@@ -193,17 +210,17 @@ function histHtml(hist) {
 
 function programsHtml(programs, hasTermData) {
   if (!hasTermData) {
-    return `<div class="d-progs d-progs-none"><span>Program bilgisi yok</span><p>Ders bu dönemde açılmadığı için program kısıtları listelenemiyor.</p></div>`;
+    return `<div class="d-progs d-progs-none"><span>${I18N.t('cdProgNoTermDataTitle')}</span><p>${I18N.t('cdProgNoTermDataBody')}</p></div>`;
   }
   if (!programs.length) {
-    return `<div class="d-progs d-progs-none"><span>Program kısıtı yok</span><p>Tüm programlar bu dersi alabilir.</p></div>`;
+    return `<div class="d-progs d-progs-none"><span>${I18N.t('cdProgNoRestrictionTitle')}</span><p>${I18N.t('cdProgNoRestrictionBody')}</p></div>`;
   }
   return `<details class="d-progs">
-    <summary><span>Alabilen programlar</span><b>${programs.length}</b></summary>
+    <summary><span>${I18N.t('detailPrograms')}</span><b>${programs.length}</b></summary>
     <div class="d-progs-body">
-      ${programs.length > 12 ? `<label class="d-prog-search-wrap"><span class="sr-only">Programlarda ara</span><input type="search" class="d-prog-search" placeholder="program ara…" autocomplete="off"></label>` : ''}
-      <div class="d-prog-list">${programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="Derslerde bu programa göre filtrele">${esc(p)}</button>`).join('')}</div>
-      <p class="d-prog-empty" hidden>Eşleşen program yok.</p>
+      ${programs.length > 12 ? `<label class="d-prog-search-wrap"><span class="sr-only">${I18N.t('cdProgSearchLabel')}</span><input type="search" class="d-prog-search" placeholder="${esc(I18N.t('cdProgSearchPlaceholder'))}" autocomplete="off"></label>` : ''}
+      <div class="d-prog-list">${programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="${esc(I18N.t('cdProgFilterTitle'))}">${esc(p)}</button>`).join('')}</div>
+      <p class="d-prog-empty" hidden>${I18N.t('cdProgNoMatch')}</p>
     </div>
   </details>`;
 }
@@ -213,17 +230,17 @@ function overviewHtml({ code, term, secs, cat, gr, hist, programs }) {
   const hrs = secs.length ? sessionHours(secs[0].times) : 0;
   const credits = cat?.credits || {};
   const creditText = credits.local != null
-    ? `${trNum(credits.local)} kredi${credits.ects ? ` · ${trNum(credits.ects)} AKTS` : ''}`
-    : 'Katalog bilgisi yok';
+    ? `${trNum(credits.local)} ${I18N.t('planCreditsFull')}${credits.ects ? ` · ${trNum(credits.ects)} ${I18N.t('progECTSWord')}` : ''}`
+    : I18N.t('cdNoCatalogInfo');
   return `<div class="d-overview-stats">
-      <div><span>Bu dönem</span><b>${secs.length ? `${secs.length} şube` : 'Açık değil'}</b><small>${esc(termLabel(term))}${hrs ? ` · haftada ${hrs} sa` : ''}</small></div>
-      <div><span>Kredi</span><b>${esc(creditText)}</b><small>${esc(cat?.language || 'dil bilgisi yok')}</small></div>
-      <div><span>Arşiv</span><b>${termCount ? `${termCount} dönem` : 'Kayıt yok'}</b><small>${termCount ? 'geçmiş açılışlar' : 'dönem verisi bulunamadı'}</small></div>
+      <div><span>${I18N.t('cdThisTerm')}</span><b>${secs.length ? `${secs.length} ${I18N.t('prgSube')}` : I18N.t('cdNotOffered')}</b><small>${esc(termLabel(term))}${hrs ? ` · ${weeklyHoursLabel(hrs)}` : ''}</small></div>
+      <div><span>${I18N.t('planCreditsFull')}</span><b>${esc(creditText)}</b><small>${esc(cat?.language || I18N.t('cdNoLangInfo'))}</small></div>
+      <div><span>${I18N.t('cdArchive')}</span><b>${termCount ? `${termCount} ${I18N.lang === 'en' ? 'terms' : 'dönem'}` : I18N.t('cdNoRecords')}</b><small>${termCount ? I18N.t('cdPastOfferings') : I18N.t('cdNoTermData')}</small></div>
     </div>
     <div class="d-overview-relations">
-      <section class="d-relation"><h4>Önşart</h4><div class="d-req-fwd" data-code="${esc(code)}"><p class="empty">yükleniyor…</p></div></section>
-      <details class="d-relation d-relation-more"><summary>Bu dersi önşart isteyenler <span data-req-count>…</span></summary>
-        <div class="d-req-by" data-code="${esc(code)}"><p class="empty">yükleniyor…</p></div>
+      <section class="d-relation"><h4>${I18N.t('detailPrereq')}</h4><div class="d-req-fwd" data-code="${esc(code)}"><p class="empty">${I18N.t('statLoading')}</p></div></section>
+      <details class="d-relation d-relation-more"><summary>${I18N.t('cdReverseReqSummary')} <span data-req-count>…</span></summary>
+        <div class="d-req-by" data-code="${esc(code)}"><p class="empty">${I18N.t('statLoading')}</p></div>
       </details>
     </div>
     ${gradesHtml(gr)}
@@ -235,9 +252,9 @@ function detailShell({ code, name, branch, level, method, obsLink, term, secs, c
   const panels = {
     overview: overviewHtml({ code, term, secs, cat, gr, hist, programs }),
     sections: secs.length
-      ? `<section class="d-secs"><div class="d-section-head"><div><h4>Bu dönemki şubeler</h4><p>${esc(termLabel(term))} · ${secs.length} şube</p></div></div>${renderSecList(secs, buildings, crn)}</section>`
-      : `<p class="empty">Bu ders <b>${esc(termLabel(term))}</b> döneminde açık değil.</p>`,
-    catalog: catalogHtml(cat) || '<p class="empty">Bu ders için katalog kaydı bulunamadı.</p>',
+      ? `<section class="d-secs"><div class="d-section-head"><div><h4>${I18N.t('cdSectionsThisTerm')}</h4><p>${esc(termLabel(term))} · ${secs.length} ${I18N.t('prgSube')}</p></div></div>${renderSecList(secs, buildings, crn)}</section>`
+      : `<p class="empty">${I18N.lang === 'en' ? `This course is not offered in <b>${esc(termLabel(term))}</b>.` : `Bu ders <b>${esc(termLabel(term))}</b> döneminde açık değil.`}</p>`,
+    catalog: catalogHtml(cat) || `<p class="empty">${I18N.t('cdNoCatalogRecord')}</p>`,
     history: histHtml(hist),
   };
   const tab = (key, label, extra = '') => `<button type="button" role="tab" id="d-tab-${key}" aria-controls="d-panel-${key}" aria-selected="${active === key}" tabindex="${active === key ? '0' : '-1'}" data-dtab="${key}">${label}${extra}</button>`;
@@ -245,13 +262,13 @@ function detailShell({ code, name, branch, level, method, obsLink, term, secs, c
       <div class="d-title-block"><h3 id="detail-title"><span class="d-code">${esc(code)}</span><span class="d-name">${esc(name || code)}</span></h3>
         <div class="d-meta">${[branch, level, method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
       </div>
-      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener">OBS kataloğu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4h6v6M20 4l-9 9M10 4H4v16h16v-6"/></svg></a>` : ''}
+      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener">${I18N.t('cdObsCatalog')} <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4h6v6M20 4l-9 9M10 4H4v16h16v-6"/></svg></a>` : ''}
     </header>
-    <nav class="d-tabs" role="tablist" aria-label="Ders detayı bölümleri">
-      ${tab('overview', 'Özet')}
-      ${tab('sections', 'Şubeler', `<span>${secs.length}</span>`)}
-      ${tab('catalog', 'Katalog')}
-      ${tab('history', 'Geçmiş')}
+    <nav class="d-tabs" role="tablist" aria-label="${esc(I18N.t('cdSectionsAriaLabel'))}">
+      ${tab('overview', I18N.t('cdTabOverview'))}
+      ${tab('sections', I18N.t('cdTabSections'), `<span>${secs.length}</span>`)}
+      ${tab('catalog', I18N.t('cdTabCatalog'))}
+      ${tab('history', I18N.t('detailHist'))}
     </nav>
     <div class="d-panels">
       ${Object.entries(panels).map(([key, html]) => `<section role="tabpanel" id="d-panel-${key}" aria-labelledby="d-tab-${key}" data-dpanel="${key}"${active === key ? '' : ' hidden'}>${html}</section>`).join('')}
@@ -288,10 +305,10 @@ function wireProgramSearch(content) {
   const input = content.querySelector('.d-prog-search');
   if (!input) return;
   input.addEventListener('input', () => {
-    const q = input.value.trim().toLocaleLowerCase('tr');
+    const q = input.value.trim().toLocaleLowerCase(I18N.lang === 'en' ? 'en' : 'tr');
     let shown = 0;
     for (const button of content.querySelectorAll('.d-prog[data-program]')) {
-      const visible = !q || button.textContent.toLocaleLowerCase('tr').includes(q);
+      const visible = !q || button.textContent.toLocaleLowerCase(I18N.lang === 'en' ? 'en' : 'tr').includes(q);
       button.hidden = !visible;
       if (visible) shown++;
     }
@@ -309,7 +326,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   const content = $('#detail-content');
   panel.hidden = false;
   document.body.classList.add('modal-open');
-  content.innerHTML = '<p class="empty">yükleniyor…</p>';
+  content.innerHTML = `<p class="empty">${I18N.t('statLoading')}</p>`;
   $('#detail-close').focus();
   // Paylaşılabilir detay bağlantısı: #ders/<kod>. Kapatınca dönülecek görünümü
   // hatırla (örn. önşart sekmesinden açıldıysa oraya dön). Bağlantıdan
@@ -356,7 +373,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
       const more = content.querySelector('.d-secs-more');
       const open = more.hidden;
       more.hidden = !open;
-      secToggle.textContent = open ? 'daha az göster' : `${content.querySelectorAll('.d-secs-more .d-sec').length} şube daha göster`;
+      secToggle.textContent = open ? I18N.t('cdShowLess') : moreSectionsLabel(content.querySelectorAll('.d-secs-more .d-sec').length);
       secToggle.setAttribute('aria-expanded', String(open));
     });
   }
@@ -388,11 +405,11 @@ async function enrichProgLabels(content) {
         b.textContent = `${code} · ${p.name}`;
       } else {
         b.classList.add('d-prog-stale');
-        b.title = 'Bu program kodu resmî listede yok (kapanmış/grafik dışı olabilir)';
+        b.title = I18N.t('cdProgStaleTitle');
       }
       if (taken.program && code === taken.program) {
         b.classList.add('d-prog-mine');
-        b.title = 'Senin programın';
+        b.title = I18N.t('cdProgMineTitle');
       }
     }
   } catch { /* liste yoksa sessiz — yalnız kodlar görünür */ }
@@ -439,7 +456,7 @@ async function loadPrereqTree(box, code) {
     const node = (g?.nodes || []).find((n) => n.code === code);
     const req = node?.requirement;
     if (!req) {
-      box.innerHTML = '<p class="empty">Kayıtlı önşartı yok.</p>';
+      box.innerHTML = `<p class="empty">${I18N.t('cdNoPrereqRegistered')}</p>`;
       return;
     }
     box.innerHTML = `<ul class="req-tree">${renderReqTree(parseReq(req))}</ul>`;
@@ -462,40 +479,40 @@ function catalogHtml(cat) {
   const c = cat.credits || {};
   const parts = [];
   if (c.theory || c.practice || c.lab) parts.push(`${c.theory || 0}+${c.practice || 0}+${c.lab || 0}`);
-  if (c.local != null) parts.push(`yerel ${trNum(c.local)}`);
-  if (c.ects) parts.push(`AKTS ${trNum(c.ects)}`);
+  if (c.local != null) parts.push(`${I18N.t('cdLocalCredits')} ${trNum(c.local)}`);
+  if (c.ects) parts.push(`${I18N.t('progECTSWord')} ${trNum(c.ects)}`);
   const details = (title, open, body) => `<details class="d-cat-details"${open ? ' open' : ''}><summary>${title}</summary>${body}</details>`;
   const list = (items) => items.map((x) => `<li>${esc(x)}</li>`).join('');
   // Faz 4.2: vize haftası göstergesi — "Hafta N — ... Ara Sınav ..." satırlarını
   // sayar. Katalog planı yoksa bölüm sessiz.
   const midterms = (cat.weeklyTopics || []).filter((t) => /ara\s*sınav/i.test(t));
   const midtermLine = midterms.length
-    ? `<p class="d-cat-midterm">vize: ${esc(midterms.map((t) => t.split(' · ')[0] || t).join(', '))}</p>`
+    ? `<p class="d-cat-midterm">${I18N.t('cdMidtermPrefix')} ${esc(midterms.map((t) => t.split(' · ')[0] || t).join(', '))}</p>`
     : '';
   // Faz 3.5: haftalık plan tablosu (hafta/konu/çıktı). Yapılandırılmış veri yoksa
   // geriye uyumlu <ol> listesine düş.
   const hasOut = (cat.weeklyPlan || []).some((w) => w.outcomes);
   const planHtml = (cat.weeklyPlan || []).length
-    ? `<div class="tablewrap"><table class="d-cat-plan" aria-label="Haftalık ders planı">
-        <thead><tr><th class="num">Hafta</th><th>Konu</th>${hasOut ? '<th>Çıktılar</th>' : ''}</tr></thead>
-        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ' class="d-cat-mid" title="Ara sınav haftası"' : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '·')}</td>` : ''}</tr>`).join('')}</tbody>
+    ? `<div class="tablewrap"><table class="d-cat-plan" aria-label="${esc(I18N.t('cdWeeklyPlanAria'))}">
+        <thead><tr><th class="num">${I18N.t('cdColWeek')}</th><th>${I18N.t('cdColTopic')}</th>${hasOut ? `<th>${I18N.t('cdColOutcomes')}</th>` : ''}</tr></thead>
+        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ` class="d-cat-mid" title="${esc(I18N.t('cdMidtermWeekTitle'))}"` : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '·')}</td>` : ''}</tr>`).join('')}</tbody>
       </table></div>`
     : (cat.weeklyTopics || []).length ? `<ol>${list(cat.weeklyTopics)}</ol>` : '';
   // Faz 3.5: denklikler — tıklanınca o dersin detayı açılır.
   const eqs = cat.equivalents || [];
   const eqHtml = eqs.length
-    ? `<div class="d-cat-eq"><h4>Ders denklikleri</h4><div class="d-eq-list">${eqs.map((e) => `<button type="button" class="d-eq" data-eq="${esc(e)}">${esc(e)}</button>`).join('')}</div></div>`
+    ? `<div class="d-cat-eq"><h4>${I18N.t('cdEquivalents')}</h4><div class="d-eq-list">${eqs.map((e) => `<button type="button" class="d-eq" data-eq="${esc(e)}">${esc(e)}</button>`).join('')}</div></div>`
     : '';
   return `<section class="d-cat">
-    <h4>Katalog</h4>
-    ${parts.length ? `<p class="d-cat-credits">${esc(parts.join(' · '))}${cat.language ? ` · dil: ${esc(cat.language)}` : ''}</p>` : ''}
+    <h4>${I18N.t('cdTabCatalog')}</h4>
+    ${parts.length ? `<p class="d-cat-credits">${esc(parts.join(' · '))}${cat.language ? ` · ${I18N.lang === 'en' ? 'language' : 'dil'}: ${esc(cat.language)}` : ''}</p>` : ''}
     ${midtermLine}
     ${eqHtml}
-    ${cat.description ? details('Ders içeriği', false, `<p>${esc(cat.description)}</p>`) : ''}
-    ${(cat.outcomes || []).length ? details(`Öğrenme çıktıları (${cat.outcomes.length})`, !isMobile(), `<ul>${list(cat.outcomes)}</ul>`) : ''}
-    ${planHtml ? details(`Haftalık plan (${(cat.weeklyPlan || cat.weeklyTopics || []).length})`, false, planHtml) : ''}
-    ${(cat.textbooks || []).length ? details('Kaynak kitaplar', false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
-    ${cat.sourceUrl ? `<p class="d-cat-src">kaynak: <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">OBS katalog formu</a></p>` : ''}
+    ${cat.description ? details(I18N.t('cdCourseContent'), false, `<p>${esc(cat.description)}</p>`) : ''}
+    ${(cat.outcomes || []).length ? details(`${I18N.t('cdLearningOutcomes')} (${cat.outcomes.length})`, !isMobile(), `<ul>${list(cat.outcomes)}</ul>`) : ''}
+    ${planHtml ? details(`${I18N.t('cdWeeklyPlan')} (${(cat.weeklyPlan || cat.weeklyTopics || []).length})`, false, planHtml) : ''}
+    ${(cat.textbooks || []).length ? details(I18N.t('cdTextbooks'), false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
+    ${cat.sourceUrl ? `<p class="d-cat-src">${I18N.t('cdSourcePrefix')} <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">${I18N.t('cdObsCatalogForm')}</a></p>` : ''}
   </section>`;
 }
 
@@ -534,7 +551,7 @@ function gradesHtml(gr) {
     const max = Math.max(...Object.values(term.grades), 1);
     const order = GRADE_ORDER.filter((g) => term.grades[g]);
     return `<div class="d-grade-bars">${order.map((g) => `
-      <div class="d-grade" title="${esc(g)} · ${term.grades[g]} kişi">
+      <div class="d-grade" title="${esc(g)} · ${term.grades[g]} ${I18N.t('cdPeopleCount')}">
         <span class="d-grade-l">${esc(g)}</span>
         <span class="d-grade-bar"><i style="width:${Math.round((term.grades[g] / max) * 100)}%"></i></span>
         <span class="d-grade-n">${term.grades[g]}</span>
@@ -544,7 +561,7 @@ function gradesHtml(gr) {
     const pct = gradePassPct(term.grades, term.total);
     const mode = gradeMode(term.grades, term.total);
     const modeTxt = `${mode.grade} (%${mode.pct})`;
-    return `<p class="d-grade-stat">geçme ≥CC+ %${pct} · en sık ${esc(modeTxt)} · ${term.total} öğrenci</p>`;
+    return `<p class="d-grade-stat">${I18N.t('cdPassRateWord')} ≥CC+ %${pct} · ${I18N.t('cdMostCommon')} ${esc(modeTxt)} · ${term.total} ${I18N.t('cdStudentsCount')}</p>`;
   };
   // Birden çok dönem varsa en yenisi (donem kodu büyük) üstte; diğerleri
   // katlanabilir listeye.
@@ -554,10 +571,10 @@ function gradesHtml(gr) {
   const pct = gradePassPct(latest.grades, latest.total);
   const mode = gradeMode(latest.grades, latest.total);
   return `<details class="d-grades">
-    <summary><span><b>Not dağılımı</b><small>${esc(latest.term)}</small></span><strong>≥CC+ %${pct} · en sık ${esc(mode.grade)}</strong></summary>
+    <summary><span><b>${I18N.t('cdGradeDist')}</b><small>${esc(latest.term)}</small></span><strong>≥CC+ %${pct} · ${I18N.t('cdMostCommon')} ${esc(mode.grade)}</strong></summary>
     <div class="d-grades-body">${statLine(latest)}
     ${gradeBars(latest)}
-    ${older.length ? `<details class="d-grades-more"><summary>önceki dönemler (${older.length})</summary>
+    ${older.length ? `<details class="d-grades-more"><summary>${I18N.t('cdPreviousTerms')} (${older.length})</summary>
       ${older.map((tm) => `<h5>${esc(tm.term)}</h5>${statLine(tm)}${gradeBars(tm)}`).join('')}
     </details>` : ''}</div>
   </details>`;

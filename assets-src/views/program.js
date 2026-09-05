@@ -184,11 +184,16 @@ export function initProgram() {
   });
   window.addEventListener('itu:add-program-items', async (event) => {
     const detail = event.detail || {};
-    if (detail.term && detail.term !== term) await loadTerm(detail.term);
+    if (detail.term && detail.term !== term) {
+      term = detail.term;
+      $('#p-term').value = term;
+      await loadTerm(term);
+    }
     let added = 0;
     for (const item of (detail.items || [])) if (addToActive(item.branch, String(item.crn))) added++;
     renderProgSelector();
     toast(added ? `${added} ${I18N.t('progEventAddedSuffix')}` : I18N.t('progEventAlreadyIn'), { kind: added ? 'ok' : 'warn' });
+    render();
   });
   inited = true;
 }
@@ -710,6 +715,22 @@ function renderGrid(itemRows) {
 
   // Sade temada blok zeminini koyulaştırıp metin kontrastını ≥4.5:1'e garantile.
   const isSade = document.documentElement.dataset.theme === 'sade';
+
+  if (mobileMode) {
+    const sessions = place(byDay[mobileDay]);
+    wrap.innerHTML = tabsHtml + `<div class="p-agenda" aria-live="polite">${sessions.length ? sessions.map((s, i) => `
+      <button type="button" class="p-agenda-session${s.conflict ? ' is-conflict' : ''}" data-session="${i}">
+        <span class="p-agenda-time">${fmtMin(s.start)}<small>${fmtMin(s.end)}</small></span>
+        <span><b>${esc(s.row[1])}</b><span class="p-agenda-name">${esc(s.row[2])}</span><small>${esc(s.row[4] || '')} · CRN ${esc(s.row[0])}</small>${s.conflict ? `<strong class="p-agenda-conflict">${esc(I18N.t('progConflictTitle'))}</strong>` : ''}</span>
+      </button>`).join('') : `<p class="empty">${I18N.lang === 'en' ? 'No classes on this day.' : 'Bu gün dersin yok.'}</p>`}</div>` + noTimeNote;
+    wrap.querySelectorAll('.tt-daytab').forEach(btn => btn.addEventListener('click', () => {
+      mobileDay = Number(btn.dataset.day);
+      render();
+      wrap.querySelector(`.tt-daytab[data-day="${mobileDay}"]`)?.focus({ preventScroll: true });
+    }));
+    wrap.querySelectorAll('[data-session]').forEach(btn => btn.addEventListener('click', () => openDetail(sessions[Number(btn.dataset.session)].row, term)));
+    return;
+  }
 
   let html = tabsHtml;
   html += `<p class="tt-note"><b>${t.all.length}</b> ${I18N.t('prgSessions')} · <b>${itemRows.length}</b> ${I18N.t('prgSube')}</p>`;

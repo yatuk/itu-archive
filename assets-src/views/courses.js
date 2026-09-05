@@ -6,7 +6,7 @@
 // [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
 // son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo, isViewVisible, tickCount } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo, isViewVisible, tickCount, termLabel } from '../core/utils.js?v=dde1e9339338';
 import { methodToCode } from '../core/urlcodes.js?v=dde1e9339338';
 import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
@@ -449,10 +449,9 @@ function renderChips() {
   if ($('#f-program').value) chips.push({ key: 'program', label: `${I18N.t('filterProgram')}: ${$('#f-program').value}` });
   if ($('#f-open').checked) chips.push({ key: 'open', label: I18N.t('filterOpen') });
 
-  box.hidden = !chips.length;
-  if (!chips.length) { box.innerHTML = ''; return; }
-  box.innerHTML = chips.map((c) =>
-    `<button type="button" class="chip-x" data-key="${c.key}" title="${I18N.lang === 'en' ? 'Remove filter' : 'Filtreyi kaldır'}">${esc(c.label)} ✕</button>`).join('');
+  box.hidden = false;
+  box.innerHTML = `<span class="filter-term">${esc(termLabel(state.termSlug))}</span>` + chips.map((c) =>
+    `<button type="button" class="chip-x" data-key="${c.key}" title="${I18N.lang === 'en' ? 'Remove filter' : 'Filtreyi kaldır'}">${esc(c.label)} ✕</button>`).join('') + (!state.filtered.length ? `<p class="filter-help">${I18N.lang === 'en' ? 'No matches. Remove a filter above, shorten your search, or choose another term.' : 'Sonuç bulunamadı. Yukarıdaki filtrelerden birini kaldır, aramayı kısalt veya başka bir dönem seç.'}</p>` : '');
   box.querySelectorAll('.chip-x').forEach((b) =>
     b.addEventListener('click', async () => { await clearFilter(b.dataset.key); applyFilters(); }));
 }
@@ -464,7 +463,7 @@ async function clearFilter(key) {
     case 'code': $('#f-code').value = ''; break;
     case 'day': $('#f-day').value = ''; break;
     case 'time': $('#f-time').value = ''; break;
-    case 'level': $('#f-level').value = 'LS'; await syncProgramFilter(); break;
+    case 'level': $('#f-level').value = ''; await syncProgramFilter(); break;
     case 'method': $('#f-method').value = ''; break;
     case 'program': $('#f-program').value = ''; break;
     case 'open': $('#f-open').checked = false; break;

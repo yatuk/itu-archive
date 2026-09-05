@@ -119,6 +119,7 @@ function secCard(s, buildings, showMeta = true) {
       </div>
       ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? `haftada ${hrs} sa` : ''].filter(Boolean).join(' · ')}</div>` : ''}
       ${sessions ? `<div class="d-sec-when">${sessions}</div>` : ''}
+      <button type="button" class="btn-primary d-add-program" data-add-crn="${esc(s.crn)}">${document.documentElement.lang === 'en' ? 'Add to schedule' : 'Programa ekle'}</button>
       ${(s.prereq && s.prereq !== '-') || (s.classReq && s.classReq !== '-') || (s.reserved && s.reserved !== '-') ? `<details class="d-sec-rules"><summary>Kayıt koşulları</summary>
         ${s.prereq && s.prereq !== '-' ? `<p><b>Önşart</b>${esc(s.prereq)}</p>` : ''}
         ${s.classReq && s.classReq !== '-' ? `<p><b>Sınıf / kredi</b>${esc(s.classReq)}</p>` : ''}
@@ -336,6 +337,14 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     obsLink, term: t, secs, cat, gr, hist, programs, buildings, crn,
   });
   wireDetailTabs(content);
+  content.querySelectorAll('[data-add-crn]').forEach(button => button.addEventListener('click', async () => {
+    button.disabled = true;
+    try {
+      const program = await import('../views/program.js?v=dde1e9339338');
+      await program.onShow();
+      window.dispatchEvent(new CustomEvent('itu:add-program-items', { detail: { term: t, items: [{ branch, crn: button.dataset.addCrn }] } }));
+    } finally { button.disabled = false; }
+  }));
   wireHistButtons(content);
   wireProgButtons(content);
   wireProgramSearch(content);

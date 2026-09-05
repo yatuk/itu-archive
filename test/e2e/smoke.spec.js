@@ -415,6 +415,53 @@ test.describe('SPA (ana sayfa)', () => {
 });
 
 test.describe('Ders detay paneli', () => {
+  test('şubeden programa ekleme ve mobil günlük liste', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('/?term=2025-2026-yaz#ders/MAT-271E');
+    await page.locator('[data-dtab="sections"]').click();
+    const add = page.locator('[data-add-crn]').first();
+    const crn = await add.getAttribute('data-add-crn');
+    await add.click();
+    await expect(page.locator('.toast').last()).toBeVisible();
+    await page.locator('#detail-close').click();
+    await page.locator('#tab-program').click();
+    await expect(page.locator('#p-list')).toContainText(crn);
+    await expect(page.locator('.p-agenda-session').first()).toBeVisible();
+    await page.locator('#p-gridview').check();
+    await expect(page.locator('#p-grid .tt-block').first()).toBeVisible();
+    await page.locator('#tab-dersler').click();
+    await page.locator('#q').fill('no-such-course-zzzz');
+    await expect(page.locator('.filter-help')).toBeVisible();
+    await page.locator('#chips [data-key="q"]').click();
+    await expect(page.locator('.filter-help')).toHaveCount(0);
+  });
+
+  test('ana sekme seçimi hover ile örtülmez ve gezinme genişliğini değiştirmez', async ({ page }) => {
+    await page.goto('/#dersler');
+    await expect(page.locator('#tab-dersler')).toHaveAttribute('aria-selected', 'true');
+    await expect(page.locator('.tabs-pill')).toHaveCount(0);
+    for (const theme of ['dark', 'sade']) {
+      await page.locator(`.theme-btn[data-theme="${theme}"]`).click();
+      const width = (await page.locator('#tab-dersplanim').boundingBox()).width;
+      for (const id of ['dersplanim', 'onsart', 'dersplanim']) {
+        const tab = page.locator(`#tab-${id}`);
+        await tab.click();
+        await expect(tab).toHaveAttribute('aria-selected', 'true');
+        const colors = await tab.evaluate(el => {
+          const s = getComputedStyle(el);
+          const probe = document.createElement('span');
+          probe.style.backgroundColor = 'var(--acid-vivid)';
+          el.append(probe);
+          const expected = getComputedStyle(probe).backgroundColor;
+          probe.remove();
+          return { actual: s.backgroundColor, expected };
+        });
+        expect(colors.actual).toBe(colors.expected);
+      }
+      expect((await page.locator('#tab-dersplanim').boundingBox()).width).toBeCloseTo(width, 0);
+    }
+  });
+
   test('yenilenen başlık dar ekranda taşmaz ve azaltılmış hareketi korur', async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 740 });
     await page.emulateMedia({ reducedMotion: 'reduce' });

@@ -321,7 +321,7 @@ test.describe('SPA (ana sayfa)', () => {
   test('sade navigasyon düşük öncelikli sayfaları Daha fazla altında toplar', async ({ page }) => {
     await page.goto('/');
     await expect(page.locator('.tabs .tab-number:visible')).toHaveCount(0);
-    await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('DERS PLANIM/GPA');
+    await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('Müfredat ve GPA');
     await expect(page.locator('#tab-gecmis')).toBeHidden();
     await page.locator('#tabs-more-label').click();
     await page.locator('.tabs-more [data-nav-view="gecmis"]').click();
@@ -332,7 +332,7 @@ test.describe('SPA (ana sayfa)', () => {
     // gruplaması burada da aynı — renk dışında yapısal fark yok.
     await page.locator('.theme-btn[data-theme="dark"]').click();
     await expect(page.locator('#tab-dersplanim .tab-number')).toBeHidden();
-    await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('DERS PLANIM/GPA');
+    await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('Müfredat ve GPA');
     await expect(page.locator('#tab-gecmis')).toBeHidden();
     await expect(page.locator('.statbar')).toBeHidden();
     await expect(page.locator('.tagline-sade')).toBeVisible();
@@ -350,7 +350,7 @@ test.describe('SPA (ana sayfa)', () => {
     if (page.viewportSize().width <= 600) await page.locator('#f-filter-btn').click();
     await expect(page.locator('#f-more-toggle')).toHaveText('More filters (1)');
     await expect(page.locator('#tabs-more-label')).toHaveText('More');
-    await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('COURSES');
+    await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('Courses');
   });
 
   test('kontenjan iki temada da tek temsile iner (fosfor çubuklu görünümü kaldırıldı)', async ({ page }) => {

@@ -1535,7 +1535,7 @@ function afResultCard(combo, idx) {
         <div><dt>CRN</dt><dd>${esc(before?.[0] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[0] || '·')}</dd></div>
         <div><dt>${label('Hoca', 'Instructor')}</dt><dd>${esc(before?.[4] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[4] || '·')}</dd></div>
         <div><dt>${label('Saat', 'Time')}</dt><dd>${esc(before?.[5] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[5] || '·')}</dd></div>
-        <div><dt>${label('Kontenjan', 'Quota')}</dt><dd>${esc(beforeQuota)} <span aria-hidden="true">→</span> ${esc(afterQuota)}</dd></div>
+        <div><dt>${label('Kontenjan', 'Quota')}</dt><dd>${beforeQuota} <span aria-hidden="true">→</span> ${afterQuota}</dd></div>
       </dl>
     </li>`;
   }).join('');

@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-04T07:17:57Z"
+  "lastSuccessfulAt": "2026-09-05T06:59:23Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-04T07:17:57Z",
+ "scrapedAt": "2026-09-05T06:59:23Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5126,
- "courses": 3569,
+ "sections": 5158,
+ "courses": 3592,
  "branches": [
   {
    "code": "ABM",
@@ -124,7 +124,7 @@
     "LS",
     "LU"
    ],
-   "sections": 66
+   "sections": 77
   },
   {
    "code": "BLU",
@@ -286,7 +286,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 8
+   "sections": 10
   },
   {
    "code": "DTM",
@@ -487,7 +487,7 @@
     "LS",
     "LU"
    ],
-   "sections": 67
+   "sections": 72
   },
   {
    "code": "GEO",
@@ -571,9 +571,10 @@
   {
    "code": "ICM",
    "levels": [
-    "LS"
+    "LS",
+    "LU"
    ],
-   "sections": 43
+   "sections": 46
   },
   {
    "code": "IEB",
@@ -831,7 +832,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 6
+   "sections": 8
   },
   {
    "code": "MAM",
@@ -846,7 +847,7 @@
     "LS",
     "LU"
    ],
-   "sections": 121
+   "sections": 122
   },
   {
    "code": "MBA",
@@ -1131,6 +1132,13 @@
    "sections": 15
   },
   {
+   "code": "NAE",
+   "levels": [
+    "LS"
+   ],
+   "sections": 7
+  },
+  {
    "code": "NSE",
    "levels": [
     "LU"
@@ -1327,7 +1335,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 2
+   "sections": 3
   },
   {
    "code": "STD",
@@ -1564,11 +1572,11 @@
   }
  ],
  "stats": {
-  "sections": 5126,
-  "courses": 3569,
-  "branches": 218,
-  "instructors": 1739,
-  "capacity": 249440,
+  "sections": 5158,
+  "courses": 3592,
+  "branches": 219,
+  "instructors": 1743,
+  "capacity": 250390,
   "enrolled": 1204
  }
 }

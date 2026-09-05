@@ -597,6 +597,8 @@ const I18N = (() => {
       cdMostCommon: 'en sık',
       cdStudentsCount: 'öğrenci',
       cdPreviousTerms: 'önceki dönemler',
+      dlgOk: 'Tamam',
+      dlgCancel: 'Vazgeç',
     },
     en: {
       statLoading: 'loading…',
@@ -1191,6 +1193,8 @@ const I18N = (() => {
       cdMostCommon: 'most common',
       cdStudentsCount: 'students',
       cdPreviousTerms: 'previous terms',
+      dlgOk: 'OK',
+      dlgCancel: 'Cancel',
     }
   };
 

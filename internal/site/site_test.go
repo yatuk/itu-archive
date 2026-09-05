@@ -107,17 +107,20 @@ func TestSitemapOmitsIgnoredPriorityAndChangefreq(t *testing.T) {
 
 func TestLandingPagesRouteSearchIntentToWorkingViews(t *testing.T) {
 	want := map[string]string{
-		"ders-plani":            "/#dersplanim",
-		"gano-hesaplama":        "/#dersplanim",
-		"not-ortalamasi":        "/#dersplanim",
-		"ders-programi":         "/#dersler",
-		"ders-programi-olustur": "/#program",
-		"kontenjan":             "/#dersler",
-		"ders-secimi":           "/#program",
-		"onsart-haritasi":       "/#onsart",
-		"sinav-programi":        "/#sinavlar",
-		"akademik-takvim":       "/#takvim",
-		"ders-arsivi":           "/#gecmis",
+		"ders-plani":                     "/#dersplanim",
+		"gano-hesaplama":                 "/#dersplanim",
+		"not-ortalamasi":                 "/#dersplanim",
+		"ders-programi":                  "/#dersler",
+		"ders-programi-olustur":          "/#program",
+		"kontenjan":                      "/#dersler",
+		"ders-secimi":                    "/#program",
+		"onsart-haritasi":                "/#onsart",
+		"sinav-programi":                 "/#sinavlar",
+		"akademik-takvim":                "/#takvim",
+		"ders-arsivi":                    "/#gecmis",
+		"ders-kaydi-nasil-yapilir":       "/akademik-takvim/",
+		"ders-programi-nasil-hazirlanir": "/#program",
+		"terimler-sozlugu":               "/#dersler",
 	}
 	seen := map[string]bool{}
 	for _, page := range landingPages {
@@ -546,5 +549,113 @@ func TestFacultyDirectoryPageListsFacultiesAndSitemaps(t *testing.T) {
 	}
 	if !strings.Contains(string(enSitemap), baseURL+"/en/bolumler/") {
 		t.Error("EN sitemap /en/bolumler/ girdisini içermeli")
+	}
+}
+
+// TestNewGuidePagesRenderBilingualAndSitemapped, ders-kaydi-nasil-yapilir,
+// ders-programi-nasil-hazirlanir ve terimler-sozlugu sayfalarının: mevcut
+// slug'larla çakışmadığını, her ikisinin de TR+EN üretildiğini, doğru
+// hreflang çiftini taşıdığını ve her iki dilin sitemap'inde göründüğünü
+// doğrular.
+func TestNewGuidePagesRenderBilingualAndSitemapped(t *testing.T) {
+	newSlugs := []string{"ders-kaydi-nasil-yapilir", "ders-programi-nasil-hazirlanir", "terimler-sozlugu"}
+	existingSlugs := map[string]bool{
+		"ders-plani": true, "gano-hesaplama": true, "not-ortalamasi": true,
+		"ders-programi": true, "ders-programi-olustur": true, "kontenjan": true,
+		"ders-secimi": true, "onsart-haritasi": true, "sinav-programi": true,
+		"akademik-takvim": true, "ders-arsivi": true, "bolumler": true,
+	}
+	for _, slug := range newSlugs {
+		if existingSlugs[slug] {
+			t.Fatalf("yeni slug %q var olan bir sayfayla çakışıyor", slug)
+		}
+	}
+
+	byNewSlug := map[string]landingPage{}
+	for _, page := range landingPages {
+		if page.slug == "ders-kaydi-nasil-yapilir" || page.slug == "ders-programi-nasil-hazirlanir" || page.slug == "terimler-sozlugu" {
+			byNewSlug[page.slug] = page
+		}
+	}
+	for _, slug := range newSlugs {
+		page, ok := byNewSlug[slug]
+		if !ok {
+			t.Fatalf("beklenen yeni iniş sayfası eksik: %s", slug)
+		}
+		if page.titleEN == "" || page.descriptionEN == "" || page.h1EN == "" {
+			t.Fatalf("%s için EN karşılığı eksik", slug)
+		}
+
+		root := t.TempDir()
+		trRoot := filepath.Join(root, "tr")
+		bTR := &Builder{root: trRoot, outRoot: trRoot, l: langTR, version: "test"}
+		if err := bTR.writeLandingPage(page); err != nil {
+			t.Fatal(err)
+		}
+		trHTML, err := os.ReadFile(filepath.Join(trRoot, slug, "index.html"))
+		if err != nil {
+			t.Fatal(err)
+		}
+		if !strings.Contains(string(trHTML), `hreflang="en" href="`+baseURL+"/en/"+slug+`/"`) {
+			t.Errorf("%s TR sayfası EN karşılığına hreflang vermeli", slug)
+		}
+		for _, forbidden := range []string{`"@type":"FAQPage"`, `"@type":"HowTo"`} {
+			if strings.Contains(string(trHTML), forbidden) {
+				t.Errorf("%s kısıtlı/deprecated schema içeriyor: %s", slug, forbidden)
+			}
+		}
+
+		enRoot := filepath.Join(root, "en")
+		bEN := &Builder{root: enRoot, outRoot: enRoot, l: langEN, version: "test"}
+		if err := bEN.writeLandingPage(page); err != nil {
+			t.Fatal(err)
+		}
+		enHTML, err := os.ReadFile(filepath.Join(enRoot, slug, "index.html"))
+		if err != nil {
+			t.Fatal(err)
+		}
+		if !strings.Contains(string(enHTML), `hreflang="tr" href="`+baseURL+"/"+slug+`/"`) {
+			t.Errorf("%s EN sayfası TR karşılığına hreflang vermeli", slug)
+		}
+		if !strings.Contains(string(enHTML), `<link rel="canonical" href="`+baseURL+"/en/"+slug+`/">`) {
+			t.Errorf("%s EN canonical eksik", slug)
+		}
+		if strings.Contains(string(enHTML), page.title) {
+			t.Errorf("%s EN sayfa TR başlığını sızdırmamalı", slug)
+		}
+	}
+
+	// Sitemap: her yeni slug hem TR hem EN sitemap'inde görünmeli.
+	root := t.TempDir()
+	bTR := &Builder{root: root, outRoot: root, l: langTR, version: "test"}
+	if err := bTR.writeSitemap(nil, nil, map[string]string{}, map[string]string{}); err != nil {
+		t.Fatal(err)
+	}
+	pagesXML, err := os.ReadFile(filepath.Join(root, "sitemaps", "pages.xml"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, slug := range newSlugs {
+		if !strings.Contains(string(pagesXML), baseURL+"/"+slug+"/") {
+			t.Errorf("TR sitemap %s girdisini içermeli", slug)
+		}
+	}
+
+	enRoot := filepath.Join(root, "en")
+	if err := os.MkdirAll(enRoot, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	bEN := &Builder{root: root, outRoot: enRoot, l: langEN, version: "test"}
+	if err := bEN.writeSitemap(nil, nil, map[string]string{}, map[string]string{}); err != nil {
+		t.Fatal(err)
+	}
+	enSitemap, err := os.ReadFile(filepath.Join(enRoot, "sitemap.xml"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, slug := range newSlugs {
+		if !strings.Contains(string(enSitemap), baseURL+"/en/"+slug+"/") {
+			t.Errorf("EN sitemap %s girdisini içermeli", slug)
+		}
 	}
 }

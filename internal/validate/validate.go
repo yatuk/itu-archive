@@ -1028,6 +1028,8 @@ func (r *Result) checkSitePages(root string) {
 		"ders-plani", "gano-hesaplama", "not-ortalamasi", "ders-programi",
 		"ders-programi-olustur", "kontenjan", "ders-secimi", "onsart-haritasi",
 		"sinav-programi", "akademik-takvim", "ders-arsivi",
+		"ders-kaydi-nasil-yapilir", "ders-programi-nasil-hazirlanir", "terimler-sozlugu",
+		"bolumler",
 	}
 	gotLanding := map[string]bool{}
 	for _, s := range landingSlugs {

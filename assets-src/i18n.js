@@ -664,6 +664,12 @@ const I18N = (() => {
       pgAndAllRequired: 'VE: hepsi gerekli',
       pgOrOneEnough: 'VEYA: biri yeterli',
       pgElectiveSlot: 'seçmeli slot',
+      planReasonRepeat: 'tekrar dersi: erken ve hafif bir döneme planlandı',
+      planReasonHard: 'geçmişte kalma oranı yüksek: bu dönemde tek zor ders olarak tutuldu',
+      planReasonPrereqShift: 'önşart(lar) {min}. dönem sonunda biter, kredi dengesi için {term}. döneme kaydırıldı',
+      planReasonCreditShift: 'kredi dengesi için {term}. döneme kaydırıldı',
+      planReasonPrereqDone: 'önşart(lar) {min}. dönem sonunda tamamlanmış olmalı',
+      planReasonDefault: 'önşart uygun, kredi dengesinde yer var',
     },
     en: {
       statLoading: 'loading…',
@@ -1325,6 +1331,12 @@ const I18N = (() => {
       pgAndAllRequired: 'AND: all required',
       pgOrOneEnough: 'OR: one is enough',
       pgElectiveSlot: 'elective slot',
+      planReasonRepeat: 'repeat course: scheduled into an early, lighter term',
+      planReasonHard: 'high past fail rate: kept as the only hard course this term',
+      planReasonPrereqShift: 'prerequisite(s) finish at the end of term {min}, shifted to term {term} for credit balance',
+      planReasonCreditShift: 'shifted to term {term} for credit balance',
+      planReasonPrereqDone: 'prerequisite(s) must be completed by the end of term {min}',
+      planReasonDefault: 'prerequisites are fine, there is room in the credit balance',
     }
   };
 
@@ -1339,8 +1351,10 @@ const I18N = (() => {
     });
   }
 
-  function t(key) {
-    return (strings[lang] && strings[lang][key]) || (strings.tr && strings.tr[key]) || key;
+  function t(key, vars) {
+    let s = (strings[lang] && strings[lang][key]) || (strings.tr && strings.tr[key]) || key;
+    if (vars) for (const [k, v] of Object.entries(vars)) s = s.replace(`{${k}}`, v);
+    return s;
   }
 
   // statik HTML içindeki data-i18n attribute'lerini çevir

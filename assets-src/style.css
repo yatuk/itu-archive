@@ -4343,6 +4343,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
    bu sınıf yalnızca "Yazdır / PDF" tıklanınca window.print() öncesi eklenir
    (bkz. printSchedule, views/program.js) ve yazdırma bitince kaldırılır. */
 @media print {
+  @page { size: landscape; margin: 10mm; }
   body.print-program .masthead,
   body.print-program .tabs,
   body.print-program .tool-directory,
@@ -4356,6 +4357,27 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   body.print-program .view:not(#view-program) { display: none !important; }
   body.print-program #view-program { padding: 0; }
   body.print-program .p-main { width: 100%; }
+  /* KRİTİK: .tt-scroll ekranda 68vh/760px'e sabitlenip taşan içeriği kaydırma
+     çubuğuyla gizler (bkz. 2374. satır). Yazdırırken kaydırma diye bir şey
+     yok; bu sınır kaldırılmazsa saat 10:00'dan sonrası hiç basılmaz ve
+     tarayıcı görünmez kaydırma çubuğunu statik bir şekil olarak sayfaya
+     çizer (üst üste binen, "hayalet" gibi görünen metnin asıl sebebi budur). */
+  body.print-program .p-grid .tt-scroll {
+    max-height: none !important; overflow: visible !important; border: none;
+  }
+  /* position: sticky, sayfalara bölünen yazdırmada başlığı/saat sütununu
+     yanlış yerde tekrar çizdirebilir; yazdırırken normal akışa döndürülür. */
+  body.print-program .tt-headrow,
+  body.print-program .tt-timecol,
+  body.print-program .tt-corner {
+    position: static !important;
+  }
+  /* 720px min-width, sayfa genişliğinden dar kaldığında yatay kaydırmaya
+     zorluyordu (yazdırmada kaydırma çalışmaz, içerik kırpılırdı). */
+  body.print-program .tt-headrow,
+  body.print-program .tt-body {
+    min-width: 0 !important;
+  }
   /* Blok zemin rengi ve dolgu rengi tarayıcı varsayılanında yazdırılmaz. */
   body.print-program .tt-block,
   body.print-program .tt-day.tt-wknd {

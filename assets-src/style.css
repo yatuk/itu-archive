@@ -2943,6 +2943,22 @@ body.modal-open { overflow: hidden; }
 .seo-table td { padding: 5px 10px; border-bottom: 1px solid var(--hairline); }
 .seo-table a { color: var(--cyan); }
 
+/* hoca sayfası: not dağılımı barları */
+.seo-grade-bars { display: flex; flex-direction: column; gap: 5px; margin: 12px 0 8px; }
+.seo-grade-row { display: grid; grid-template-columns: 42px 1fr 40px; align-items: center; gap: 10px; }
+.seo-grade-label { font-family: var(--mono); font-size: 12px; color: var(--dim); }
+.seo-grade-track {
+  background: var(--panel-2); border: 1px solid var(--hairline);
+  border-radius: 2px; height: 10px; overflow: hidden;
+}
+.seo-grade-fill { display: block; height: 100%; background: var(--acid); }
+.seo-grade-fill.fail { background: var(--red); }
+.seo-grade-pct {
+  font-family: var(--mono); font-size: 12px; color: var(--dimmer);
+  text-align: right; font-variant-numeric: tabular-nums;
+}
+.seo-grade-summary { margin: 10px 0 0; color: var(--fg); font-size: 14px; }
+
 .crumb { color: var(--dimmer); font-size: 13px; margin-bottom: 8px; }
 .crumb a { color: var(--dim); }
 

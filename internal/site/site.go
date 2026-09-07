@@ -94,6 +94,9 @@ type lang struct {
 	InstrColTerm        string // "Dönem"
 	InstrColCap         string // "Kont"
 	InstrColEnr         string // "Yazılan"
+	InstrGradesHead       string // "Not dağılımı"
+	InstrGradesNote       string // yalnızca tek başına verdiği dönemler dahil uyarısı
+	InstrGradesSummaryFmt string // "%d not kaydına göre notların %%%d'i AA veya BA, %%%d'i FF ya da VF."
 }
 
 var langTR = lang{
@@ -117,15 +120,18 @@ var langTR = lang{
 	CourseSectHead: "Son dönem şubeleri", CourseSectCRN: "CRN", CourseSectInstr: "Öğretim Üyesi", CourseSectTime: "Zaman", CourseSectCap: "Kont/Yazılan",
 	CourseHistHead: "Dönem geçmişi", CourseHistTerm: "Dönem", CourseHistInstr: "Öğretim Üyesi", CourseHistCap: "Kont", CourseHistEnr: "Yazılan",
 	CourseQuotaHead:     "Kontenjan doluluk geçmişi",
-	InstrTitleFmt:       "%s: İTÜ'de Verdiği Dersler",
+	InstrTitleFmt:       "%s: not dağılımı ve İTÜ'de verdiği dersler",
 	InstrLeadFmt:        "%s için İTÜ Ders Arşivi'nde %d döneme ait %d ders kaydı bulunuyor. %d farklı ders; son kayıt %s.",
-	InstrDescriptionFmt: "%s: İTÜ’de verdiği dersler, açtığı dönemler ve geçmiş kontenjan bilgileri. Arşivde %d dönem ve %d farklı ders; son kayıt %s.",
+	InstrDescriptionFmt: "%s: İTÜ'de verdiği derslerin not dağılımı, açtığı dönemler ve geçmiş kontenjan bilgileri. Arşivde %d dönem ve %d farklı ders; son kayıt %s.",
 	InstrStatTerms:      "toplam dönem", InstrStatRecords: "ders kaydı", InstrStatCourses: "farklı ders", InstrStatLatest: "son kayıt",
 	InstrFrequentHead: "En sık verdiği dersler", InstrHistoryHead: "Dönemlere göre ders geçmişi",
 	InstrBranchesHead: "İlgili branşlar",
 	InstrDataNote:     "Bu sayfa resmî personel profili değildir; İTÜ ders programı kayıtlarını özetler.",
 	InstrTableHead:    "Tüm ders kayıtları",
 	InstrColCourse:    "Ders", InstrColName: "Adı", InstrColTerm: "Dönem", InstrColCap: "Kont", InstrColEnr: "Yazılan",
+	InstrGradesHead:       "Not dağılımı",
+	InstrGradesNote:       "Yalnızca bu hocanın tek başına verdiği ders ve dönemlerin resmî not dağılımına dayanır; aynı dersi aynı dönemde başka hocalarla birlikte verdiği kayıtlar karışmasın diye dahil edilmez.",
+	InstrGradesSummaryFmt: "AA veya BA oranı %%%d, FF ya da VF oranı %%%d (%d not kaydına dayanıyor).",
 }
 
 var langEN = lang{
@@ -149,15 +155,18 @@ var langEN = lang{
 	CourseSectHead: "Latest term sections", CourseSectCRN: "CRN", CourseSectInstr: "Instructor", CourseSectTime: "Time", CourseSectCap: "Cap/Enr",
 	CourseHistHead: "Term history", CourseHistTerm: "Term", CourseHistInstr: "Instructor", CourseHistCap: "Cap", CourseHistEnr: "Enr",
 	CourseQuotaHead:     "Enrollment history",
-	InstrTitleFmt:       "%s: Courses Taught at İTÜ",
+	InstrTitleFmt:       "%s: grade distribution and courses taught at İTÜ",
 	InstrLeadFmt:        "%s has %d terms and %d course records in the İTÜ Course Archive, across %d distinct courses; latest record %s.",
-	InstrDescriptionFmt: "Courses taught by %s at İTÜ, including terms and historical enrollment. %d terms and %d distinct courses; latest record %s.",
+	InstrDescriptionFmt: "Grade distribution and courses taught by %s at İTÜ, including terms and historical enrollment. %d terms and %d distinct courses; latest record %s.",
 	InstrStatTerms:      "total terms", InstrStatRecords: "course records", InstrStatCourses: "distinct courses", InstrStatLatest: "latest record",
 	InstrFrequentHead: "Most frequently taught courses", InstrHistoryHead: "Course history by term",
 	InstrBranchesHead: "Related branches",
 	InstrDataNote:     "This is not an official staff profile; it summarizes İTÜ course schedule records.",
 	InstrTableHead:    "All course records",
 	InstrColCourse:    "Course", InstrColName: "Name", InstrColTerm: "Term", InstrColCap: "Cap", InstrColEnr: "Enr",
+	InstrGradesHead:       "Grade distribution",
+	InstrGradesNote:       "Based only on the official grade distribution for courses and terms this instructor taught alone; terms shared with another instructor are excluded so the numbers are not mixed with someone else's grading.",
+	InstrGradesSummaryFmt: "AA/BA rate is %d%%, FF/VF rate is %d%% (based on %d graded records).",
 }
 
 var trMonths = []string{
@@ -178,6 +187,8 @@ type Builder struct {
 	instructors        map[string]*histInstr
 	instructorProfiles map[string]*histInstr // canonical slug -> merged deterministic profile
 	quotaSeries        map[string][]quotaPoint
+	gradesIndex        map[string]map[string]gradeFileRow // ders kodu -> dönem etiketi -> not dağılımı
+	codeTermInstrCount map[string]int                     // "kod\x00dönemSlug" -> o kayıtta kaç farklı hoca var
 }
 
 type branchAgg struct {
@@ -333,6 +344,9 @@ func (b *Builder) Generate() error {
 			return err
 		}
 		instrSlugs = b.prepareInstructorProfiles()
+		if err := b.loadGradesIndex(); err != nil {
+			return err
+		}
 	} else {
 		b.instructors = map[string]*histInstr{}
 		b.instructorProfiles = map[string]*histInstr{}
@@ -1973,6 +1987,23 @@ func (b *Builder) prepareInstructorProfiles() map[string]string {
 		profile.Terms = len(seenTerms)
 		b.instructorProfiles[slug] = profile
 	}
+
+	// Bir (kod, dönem) çiftini kaç farklı hocanın verdiğini sayar. Not dağılımı
+	// verisi OBS'te ders+dönem bazında yayınlanır, şube/hoca bazında değil; bu
+	// yüzden bir hocanın kişisel not profilini yalnızca o dönem o dersi TEK
+	// başına verdiği kayıtlardan çıkarabiliriz (bkz. instructorGradeProfile).
+	b.codeTermInstrCount = map[string]int{}
+	for _, hi := range b.instructorProfiles {
+		seenPairs := map[string]bool{}
+		for _, row := range hi.Rows {
+			key := row.Code + "\x00" + row.Term
+			if seenPairs[key] {
+				continue // aynı hocanın aynı dönemde birden çok şubesi: tek kez say
+			}
+			seenPairs[key] = true
+			b.codeTermInstrCount[key]++
+		}
+	}
 	return instrSlugs
 }
 
@@ -2072,6 +2103,8 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 		))
 	}
 
+	gradesHTML := renderInstructorGrades(b.l, b.instructorGradeProfile(hi, termLabels))
+
 	content := template.HTML(buildContent(
 		fmt.Sprintf(`<nav class="crumb" aria-label="Breadcrumb"><a href="/">%s</a> › <span>%s</span></nav>`, template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(hi.Name)),
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(hi.Name)),
@@ -2082,6 +2115,7 @@ func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string,
 			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, b.l.InstrStatCourses, courseCount)+
 			fmt.Sprintf(`<div><dt>%s</dt><dd><a href="/dersler/%s/">%s</a></dd></div>`, b.l.InstrStatLatest, template.HTMLEscapeString(latestSlug), template.HTMLEscapeString(latestLabel))+
 			`</dl>`,
+		gradesHTML,
 		frequentHTML,
 		branchesHTML,
 		`<h2>`+b.l.InstrHistoryHead+`</h2>`,

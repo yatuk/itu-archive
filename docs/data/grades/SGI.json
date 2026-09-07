@@ -1,18 +1,6 @@
 [
  {
   "code": "SGI 101",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 17,
-  "grades": {
-   "AA": 7,
-   "BA": 3,
-   "BA+": 7
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=101&yil=2026"
- },
- {
-  "code": "SGI 101",
   "term": "2024-2025 Güz Dönemi",
   "donem": "202510",
   "total": 14,
@@ -26,17 +14,16 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=101&yil=2025"
  },
  {
-  "code": "SGI 102",
+  "code": "SGI 101",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
   "total": 17,
   "grades": {
    "AA": 7,
    "BA": 3,
-   "BB": 2,
-   "BB+": 5
+   "BA+": 7
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=102&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=101&yil=2026"
  },
  {
   "code": "SGI 102",
@@ -53,6 +40,19 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=102&yil=2025"
  },
  {
+  "code": "SGI 102",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 17,
+  "grades": {
+   "AA": 7,
+   "BA": 3,
+   "BB": 2,
+   "BB+": 5
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=102&yil=2026"
+ },
+ {
   "code": "SGI 103",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
@@ -64,6 +64,23 @@
    "BB+": 2
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=103&yil=2026"
+ },
+ {
+  "code": "SGI 112",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 14,
+  "grades": {
+   "AA": 3,
+   "BA": 1,
+   "BB": 3,
+   "CB": 2,
+   "CB+": 1,
+   "CC": 1,
+   "CC+": 1,
+   "DC": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=112&yil=2025"
  },
  {
   "code": "SGI 112",
@@ -87,21 +104,21 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=112&yil=2026"
  },
  {
-  "code": "SGI 112",
+  "code": "SGI 201",
   "term": "2024-2025 Bahar Dönemi",
   "donem": "202520",
-  "total": 14,
+  "total": 13,
   "grades": {
-   "AA": 3,
+   "AA": 4,
    "BA": 1,
-   "BB": 3,
-   "CB": 2,
-   "CB+": 1,
+   "BB": 1,
    "CC": 1,
-   "CC+": 1,
-   "DC": 2
+   "CC+": 2,
+   "DC": 2,
+   "DC+": 1,
+   "DD": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=112&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=201&yil=2025"
  },
  {
   "code": "SGI 201",
@@ -118,23 +135,6 @@
    "VF": 9
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=201&yil=2026"
- },
- {
-  "code": "SGI 201",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 13,
-  "grades": {
-   "AA": 4,
-   "BA": 1,
-   "BB": 1,
-   "CC": 1,
-   "CC+": 2,
-   "DC": 2,
-   "DC+": 1,
-   "DD": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=SGI&dersNo=201&yil=2025"
  },
  {
   "code": "SGI 202",

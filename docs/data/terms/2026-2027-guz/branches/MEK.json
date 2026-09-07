@@ -105,7 +105,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "D360"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -143,6 +143,36 @@
   "programs": [
    "MEN_LS",
    "MTM_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15309",
+  "code": "MEK 205",
+  "branch": "MEK",
+  "level": "LS",
+  "name": "Mühendislik Mekaniği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erol Demirkan",
+  "buildings": [
+   "MDB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "JEF_LS",
+   "MAD_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

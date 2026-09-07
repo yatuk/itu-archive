@@ -1,22 +1,23 @@
 [
  {
   "code": "MKM 503E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 23,
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 35,
   "grades": {
-   "AA": 1,
-   "BA": 5,
-   "BA+": 1,
-   "BB": 4,
+   "AA": 2,
+   "BA": 2,
+   "BA+": 2,
+   "BB": 2,
    "BB+": 1,
-   "CB": 1,
+   "CB": 3,
    "CB+": 2,
-   "CC": 2,
-   "FF": 2,
-   "VF": 4
+   "CC": 4,
+   "CC+": 4,
+   "FF": 4,
+   "VF": 9
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=503&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=503&yil=2024"
  },
  {
   "code": "MKM 503E",
@@ -40,23 +41,22 @@
  },
  {
   "code": "MKM 503E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 35,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 23,
   "grades": {
-   "AA": 2,
-   "BA": 2,
-   "BA+": 2,
-   "BB": 2,
+   "AA": 1,
+   "BA": 5,
+   "BA+": 1,
+   "BB": 4,
    "BB+": 1,
-   "CB": 3,
+   "CB": 1,
    "CB+": 2,
-   "CC": 4,
-   "CC+": 4,
-   "FF": 4,
-   "VF": 9
+   "CC": 2,
+   "FF": 2,
+   "VF": 4
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=503&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=503&yil=2026"
  },
  {
   "code": "MKM 504E",
@@ -68,29 +68,6 @@
    "FF": 3
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=504&yil=2026"
- },
- {
-  "code": "MKM 505E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 42,
-  "grades": {
-   "AA": 38,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=505&yil=2026"
- },
- {
-  "code": "MKM 505E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 44,
-  "grades": {
-   "AA": 38,
-   "BA+": 1,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=505&yil=2025"
  },
  {
   "code": "MKM 505E",
@@ -106,19 +83,27 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=505&yil=2024"
  },
  {
-  "code": "MKM 509",
+  "code": "MKM 505E",
   "term": "2024-2025 Güz Dönemi",
   "donem": "202510",
-  "total": 16,
+  "total": 44,
   "grades": {
-   "BA": 1,
-   "CB": 3,
-   "CB+": 2,
-   "CC": 1,
-   "CC+": 2,
-   "FF": 7
+   "AA": 38,
+   "BA+": 1,
+   "FF": 4
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=509&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=505&yil=2025"
+ },
+ {
+  "code": "MKM 505E",
+  "term": "2025-2026 Fall Semester",
+  "donem": "202610",
+  "total": 42,
+  "grades": {
+   "AA": 38,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=505&yil=2026"
  },
  {
   "code": "MKM 509",
@@ -136,16 +121,41 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=509&yil=2024"
  },
  {
-  "code": "MKM 511",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 10,
+  "code": "MKM 509",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 16,
   "grades": {
-   "AA": 8,
-   "BA+": 1,
-   "FF": 1
+   "BA": 1,
+   "CB": 3,
+   "CB+": 2,
+   "CC": 1,
+   "CC+": 2,
+   "FF": 7
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=511&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=509&yil=2025"
+ },
+ {
+  "code": "MKM 511",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 19,
+  "grades": {
+   "AA": 19
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=511&yil=2025"
+ },
+ {
+  "code": "MKM 511",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 13,
+  "grades": {
+   "AA": 11,
+   "BA": 1,
+   "BA+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=511&yil=2025"
  },
  {
   "code": "MKM 511",
@@ -162,58 +172,26 @@
  },
  {
   "code": "MKM 511",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 13,
-  "grades": {
-   "AA": 11,
-   "BA": 1,
-   "BA+": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=511&yil=2025"
- },
- {
-  "code": "MKM 511",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 19,
-  "grades": {
-   "AA": 19
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=511&yil=2025"
- },
- {
-  "code": "MKM 596",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
-  "total": 11,
+  "total": 10,
   "grades": {
-   "BL": 10,
-   "BZ": 1
+   "AA": 8,
+   "BA+": 1,
+   "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=596&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=511&yil=2026"
  },
  {
   "code": "MKM 596",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 16,
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 17,
   "grades": {
    "BL": 13,
-   "BZ": 3
+   "BZ": 4
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=596&yil=2026"
- },
- {
-  "code": "MKM 596",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 12,
-  "grades": {
-   "BL": 9,
-   "BZ": 3
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=596&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=596&yil=2024"
  },
  {
   "code": "MKM 596",
@@ -228,13 +206,35 @@
  },
  {
   "code": "MKM 596",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 17,
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 12,
+  "grades": {
+   "BL": 9,
+   "BZ": 3
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=596&yil=2025"
+ },
+ {
+  "code": "MKM 596",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 16,
   "grades": {
    "BL": 13,
-   "BZ": 4
+   "BZ": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=596&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=596&yil=2026"
+ },
+ {
+  "code": "MKM 596",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 11,
+  "grades": {
+   "BL": 10,
+   "BZ": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MKM&dersNo=596&yil=2026"
  }
 ]

@@ -1,21 +1,6 @@
 [
  {
   "code": "DTM 505E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 15,
-  "grades": {
-   "AA": 5,
-   "BA": 2,
-   "BA+": 3,
-   "CC": 1,
-   "FF": 2,
-   "VF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=505&yil=2026"
- },
- {
-  "code": "DTM 505E",
   "term": "2023-2024 Güz Dönemi",
   "donem": "202410",
   "total": 12,
@@ -28,17 +13,19 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=505&yil=2024"
  },
  {
-  "code": "DTM 507E",
+  "code": "DTM 505E",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
-  "total": 14,
+  "total": 15,
   "grades": {
-   "AA": 11,
-   "BA": 1,
-   "BA+": 1,
-   "FF": 1
+   "AA": 5,
+   "BA": 2,
+   "BA+": 3,
+   "CC": 1,
+   "FF": 2,
+   "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=507&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=505&yil=2026"
  },
  {
   "code": "DTM 507E",
@@ -56,6 +43,19 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=507&yil=2025"
  },
  {
+  "code": "DTM 507E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 14,
+  "grades": {
+   "AA": 11,
+   "BA": 1,
+   "BA+": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=507&yil=2026"
+ },
+ {
   "code": "DTM 533",
   "term": "2023-2024 Güz Dönemi",
   "donem": "202410",
@@ -64,6 +64,19 @@
    "AA": 10
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=533&yil=2024"
+ },
+ {
+  "code": "DTM 610E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 12,
+  "grades": {
+   "BA": 1,
+   "BB+": 2,
+   "CC": 1,
+   "FF": 8
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=610&yil=2025"
  },
  {
   "code": "DTM 610E",
@@ -78,18 +91,5 @@
    "FF": 8
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=610&yil=2026"
- },
- {
-  "code": "DTM 610E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 12,
-  "grades": {
-   "BA": 1,
-   "BB+": 2,
-   "CC": 1,
-   "FF": 8
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DTM&dersNo=610&yil=2025"
  }
 ]

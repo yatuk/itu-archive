@@ -1,24 +1,18 @@
 [
  {
   "code": "BUS 101",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 24,
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 19,
   "grades": {
-   "AA": 1,
-   "BA": 1,
+   "BA": 5,
    "BA+": 3,
-   "BB": 1,
+   "BB": 3,
    "BB+": 4,
-   "CB": 3,
-   "CB+": 3,
-   "CC": 1,
-   "CC+": 1,
-   "DC+": 2,
-   "DD+": 1,
-   "FF": 3
+   "CB+": 2,
+   "FF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=101&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=101&yil=2024"
  },
  {
   "code": "BUS 101",
@@ -40,6 +34,27 @@
  },
  {
   "code": "BUS 101",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 24,
+  "grades": {
+   "AA": 1,
+   "BA": 1,
+   "BA+": 3,
+   "BB": 1,
+   "BB+": 4,
+   "CB": 3,
+   "CB+": 3,
+   "CC": 1,
+   "CC+": 1,
+   "DC+": 2,
+   "DD+": 1,
+   "FF": 3
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=101&yil=2026"
+ },
+ {
+  "code": "BUS 101E",
   "term": "2023-2024 Güz Dönemi",
   "donem": "202410",
   "total": 19,
@@ -52,6 +67,24 @@
    "FF": 2
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=101&yil=2024"
+ },
+ {
+  "code": "BUS 101E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 24,
+  "grades": {
+   "AA": 1,
+   "BA+": 1,
+   "BB": 3,
+   "BB+": 3,
+   "CB": 2,
+   "CB+": 7,
+   "CC": 4,
+   "CC+": 1,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=101&yil=2025"
  },
  {
   "code": "BUS 101E",
@@ -75,51 +108,18 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=101&yil=2026"
  },
  {
-  "code": "BUS 101E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 24,
-  "grades": {
-   "AA": 1,
-   "BA+": 1,
-   "BB": 3,
-   "BB+": 3,
-   "CB": 2,
-   "CB+": 7,
-   "CC": 4,
-   "CC+": 1,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=101&yil=2025"
- },
- {
-  "code": "BUS 101E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 19,
-  "grades": {
-   "BA": 5,
-   "BA+": 3,
-   "BB": 3,
-   "BB+": 4,
-   "CB+": 2,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=101&yil=2024"
- },
- {
   "code": "BUS 102",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 35,
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 21,
   "grades": {
-   "AA": 13,
-   "BA": 5,
-   "BA+": 15,
-   "CB": 1,
+   "AA": 10,
+   "BA+": 7,
+   "BB+": 1,
+   "CB": 2,
    "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=102&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=102&yil=2024"
  },
  {
   "code": "BUS 102",
@@ -136,20 +136,6 @@
  },
  {
   "code": "BUS 102",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 21,
-  "grades": {
-   "AA": 10,
-   "BA+": 7,
-   "BB+": 1,
-   "CB": 2,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=102&yil=2024"
- },
- {
-  "code": "BUS 102E",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
   "total": 35,
@@ -161,6 +147,20 @@
    "FF": 1
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=102&yil=2026"
+ },
+ {
+  "code": "BUS 102E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 21,
+  "grades": {
+   "AA": 10,
+   "BA+": 7,
+   "BB+": 1,
+   "CB": 2,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=102&yil=2024"
  },
  {
   "code": "BUS 102E",
@@ -177,59 +177,17 @@
  },
  {
   "code": "BUS 102E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 21,
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 35,
   "grades": {
-   "AA": 10,
-   "BA+": 7,
-   "BB+": 1,
-   "CB": 2,
+   "AA": 13,
+   "BA": 5,
+   "BA+": 15,
+   "CB": 1,
    "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=102&yil=2024"
- },
- {
-  "code": "BUS 103",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 31,
-  "grades": {
-   "AA": 1,
-   "BA": 1,
-   "BA+": 1,
-   "BB": 1,
-   "BB+": 5,
-   "CB": 3,
-   "CB+": 1,
-   "CC": 1,
-   "CC+": 2,
-   "DC": 5,
-   "DC+": 4,
-   "DD": 3,
-   "DD+": 1,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2026"
- },
- {
-  "code": "BUS 103",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 26,
-  "grades": {
-   "AA": 2,
-   "BA": 2,
-   "BA+": 1,
-   "BB": 4,
-   "CB": 3,
-   "CB+": 6,
-   "CC+": 2,
-   "DD": 1,
-   "DD+": 3,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=102&yil=2026"
  },
  {
   "code": "BUS 103",
@@ -255,7 +213,26 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2024"
  },
  {
-  "code": "BUS 103E",
+  "code": "BUS 103",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 26,
+  "grades": {
+   "AA": 2,
+   "BA": 2,
+   "BA+": 1,
+   "BB": 4,
+   "CB": 3,
+   "CB+": 6,
+   "CC+": 2,
+   "DD": 1,
+   "DD+": 3,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2025"
+ },
+ {
+  "code": "BUS 103",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
   "total": 31,
@@ -276,25 +253,6 @@
    "FF": 2
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2026"
- },
- {
-  "code": "BUS 103E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 26,
-  "grades": {
-   "AA": 2,
-   "BA": 2,
-   "BA+": 1,
-   "BB": 4,
-   "CB": 3,
-   "CB+": 6,
-   "CC+": 2,
-   "DD": 1,
-   "DD+": 3,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2025"
  },
  {
   "code": "BUS 103E",
@@ -320,24 +278,64 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2024"
  },
  {
-  "code": "BUS 110",
+  "code": "BUS 103E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 26,
+  "grades": {
+   "AA": 2,
+   "BA": 2,
+   "BA+": 1,
+   "BB": 4,
+   "CB": 3,
+   "CB+": 6,
+   "CC+": 2,
+   "DD": 1,
+   "DD+": 3,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2025"
+ },
+ {
+  "code": "BUS 103E",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
   "total": 31,
   "grades": {
-   "AA": 4,
-   "BA": 4,
-   "BA+": 4,
-   "BB": 3,
-   "BB+": 6,
-   "CB": 1,
-   "CB+": 2,
+   "AA": 1,
+   "BA": 1,
+   "BA+": 1,
+   "BB": 1,
+   "BB+": 5,
+   "CB": 3,
+   "CB+": 1,
    "CC": 1,
-   "CC+": 3,
-   "DC": 2,
-   "FF": 1
+   "CC+": 2,
+   "DC": 5,
+   "DC+": 4,
+   "DD": 3,
+   "DD+": 1,
+   "FF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=110&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=103&yil=2026"
+ },
+ {
+  "code": "BUS 110",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 29,
+  "grades": {
+   "AA": 6,
+   "BA": 3,
+   "BA+": 2,
+   "BB": 3,
+   "BB+": 4,
+   "CB+": 3,
+   "CC+": 5,
+   "DC": 2,
+   "DC+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=110&yil=2024"
  },
  {
   "code": "BUS 110",
@@ -361,24 +359,6 @@
  },
  {
   "code": "BUS 110",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 29,
-  "grades": {
-   "AA": 6,
-   "BA": 3,
-   "BA+": 2,
-   "BB": 3,
-   "BB+": 4,
-   "CB+": 3,
-   "CC+": 5,
-   "DC": 2,
-   "DC+": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=110&yil=2024"
- },
- {
-  "code": "BUS 110E",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
   "total": 31,
@@ -396,6 +376,24 @@
    "FF": 1
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=110&yil=2026"
+ },
+ {
+  "code": "BUS 110E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 29,
+  "grades": {
+   "AA": 6,
+   "BA": 3,
+   "BA+": 2,
+   "BB": 3,
+   "BB+": 4,
+   "CB+": 3,
+   "CC+": 5,
+   "DC": 2,
+   "DC+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=110&yil=2024"
  },
  {
   "code": "BUS 110E",
@@ -419,57 +417,23 @@
  },
  {
   "code": "BUS 110E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 29,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 31,
   "grades": {
-   "AA": 6,
-   "BA": 3,
-   "BA+": 2,
+   "AA": 4,
+   "BA": 4,
+   "BA+": 4,
    "BB": 3,
-   "BB+": 4,
-   "CB+": 3,
-   "CC+": 5,
+   "BB+": 6,
+   "CB": 1,
+   "CB+": 2,
+   "CC": 1,
+   "CC+": 3,
    "DC": 2,
-   "DC+": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=110&yil=2024"
- },
- {
-  "code": "BUS 112",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 35,
-  "grades": {
-   "AA": 5,
-   "BA": 4,
-   "BA+": 5,
-   "BB": 4,
-   "BB+": 7,
-   "CB": 3,
-   "CB+": 1,
-   "CC": 1,
-   "DC": 1,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=112&yil=2026"
- },
- {
-  "code": "BUS 112",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 21,
-  "grades": {
-   "AA": 5,
-   "BA": 2,
-   "BB+": 4,
-   "CB": 5,
-   "CB+": 2,
-   "CC+": 1,
-   "DC+": 1,
    "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=112&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=110&yil=2026"
  },
  {
   "code": "BUS 112",
@@ -491,7 +455,24 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=112&yil=2024"
  },
  {
-  "code": "BUS 112E",
+  "code": "BUS 112",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 21,
+  "grades": {
+   "AA": 5,
+   "BA": 2,
+   "BB+": 4,
+   "CB": 5,
+   "CB+": 2,
+   "CC+": 1,
+   "DC+": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=112&yil=2025"
+ },
+ {
+  "code": "BUS 112",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
   "total": 35,
@@ -508,6 +489,25 @@
    "FF": 4
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=112&yil=2026"
+ },
+ {
+  "code": "BUS 112E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 25,
+  "grades": {
+   "AA": 3,
+   "BA": 2,
+   "BA+": 3,
+   "BB": 5,
+   "BB+": 3,
+   "CB+": 2,
+   "CC+": 2,
+   "DC": 1,
+   "DD": 1,
+   "FF": 3
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=112&yil=2024"
  },
  {
   "code": "BUS 112E",
@@ -528,44 +528,42 @@
  },
  {
   "code": "BUS 112E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 25,
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 35,
   "grades": {
-   "AA": 3,
-   "BA": 2,
-   "BA+": 3,
-   "BB": 5,
-   "BB+": 3,
-   "CB+": 2,
-   "CC+": 2,
+   "AA": 5,
+   "BA": 4,
+   "BA+": 5,
+   "BB": 4,
+   "BB+": 7,
+   "CB": 3,
+   "CB+": 1,
+   "CC": 1,
    "DC": 1,
-   "DD": 1,
-   "FF": 3
+   "FF": 4
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=112&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=112&yil=2026"
  },
  {
   "code": "BUS 201",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
   "total": 24,
   "grades": {
    "AA": 1,
-   "BA": 3,
+   "BA": 1,
    "BA+": 2,
    "BB": 3,
-   "BB+": 2,
-   "CB": 1,
-   "CB+": 1,
+   "BB+": 1,
+   "CB": 3,
+   "CB+": 3,
    "CC": 2,
-   "CC+": 1,
    "DC": 1,
-   "DC+": 1,
-   "DD+": 2,
-   "VF": 4
+   "DD": 5,
+   "FF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=201&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=201&yil=2024"
  },
  {
   "code": "BUS 201",
@@ -591,26 +589,6 @@
  },
  {
   "code": "BUS 201",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 24,
-  "grades": {
-   "AA": 1,
-   "BA": 1,
-   "BA+": 2,
-   "BB": 3,
-   "BB+": 1,
-   "CB": 3,
-   "CB+": 3,
-   "CC": 2,
-   "DC": 1,
-   "DD": 5,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=201&yil=2024"
- },
- {
-  "code": "BUS 201E",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
   "total": 24,
@@ -630,6 +608,26 @@
    "VF": 4
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=201&yil=2026"
+ },
+ {
+  "code": "BUS 201E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 24,
+  "grades": {
+   "AA": 1,
+   "BA": 1,
+   "BA+": 2,
+   "BB": 3,
+   "BB+": 1,
+   "CB": 3,
+   "CB+": 3,
+   "CC": 2,
+   "DC": 1,
+   "DD": 5,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=201&yil=2024"
  },
  {
   "code": "BUS 201E",
@@ -655,9 +653,231 @@
  },
  {
   "code": "BUS 201E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 24,
+  "grades": {
+   "AA": 1,
+   "BA": 3,
+   "BA+": 2,
+   "BB": 3,
+   "BB+": 2,
+   "CB": 1,
+   "CB+": 1,
+   "CC": 2,
+   "CC+": 1,
+   "DC": 1,
+   "DC+": 1,
+   "DD+": 2,
+   "VF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=201&yil=2026"
+ },
+ {
+  "code": "BUS 202",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 15,
+  "grades": {
+   "AA": 6,
+   "BA": 4,
+   "BA+": 3,
+   "CC": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2024"
+ },
+ {
+  "code": "BUS 202",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 16,
+  "grades": {
+   "AA": 2,
+   "BA": 4,
+   "BA+": 4,
+   "BB": 1,
+   "BB+": 3,
+   "CB": 1,
+   "CC": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2025"
+ },
+ {
+  "code": "BUS 202",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 18,
+  "grades": {
+   "AA": 10,
+   "BA": 3,
+   "BA+": 2,
+   "BB+": 3
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2026"
+ },
+ {
+  "code": "BUS 202E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 15,
+  "grades": {
+   "AA": 6,
+   "BA": 4,
+   "BA+": 3,
+   "CC": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2024"
+ },
+ {
+  "code": "BUS 202E",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 16,
+  "grades": {
+   "AA": 2,
+   "BA": 4,
+   "BA+": 4,
+   "BB": 1,
+   "BB+": 3,
+   "CB": 1,
+   "CC": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2025"
+ },
+ {
+  "code": "BUS 202E",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 18,
+  "grades": {
+   "AA": 10,
+   "BA": 3,
+   "BA+": 2,
+   "BB+": 3
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2026"
+ },
+ {
+  "code": "BUS 203",
   "term": "2023-2024 Güz Dönemi",
   "donem": "202410",
   "total": 24,
+  "grades": {
+   "BA": 4,
+   "BA+": 2,
+   "BB": 5,
+   "CB+": 1,
+   "CC": 3,
+   "DC": 1,
+   "DC+": 1,
+   "DD": 3,
+   "DD+": 2,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2024"
+ },
+ {
+  "code": "BUS 203",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 25,
+  "grades": {
+   "AA": 1,
+   "BA+": 2,
+   "BB": 2,
+   "BB+": 4,
+   "CB": 3,
+   "CB+": 2,
+   "CC+": 4,
+   "DC+": 1,
+   "DD": 1,
+   "DD+": 3,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2025"
+ },
+ {
+  "code": "BUS 203",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 26,
+  "grades": {
+   "BA": 1,
+   "BB+": 4,
+   "CB": 5,
+   "CC": 1,
+   "CC+": 2,
+   "DC+": 1,
+   "DD": 5,
+   "DD+": 3,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2026"
+ },
+ {
+  "code": "BUS 203E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 24,
+  "grades": {
+   "BA": 4,
+   "BA+": 2,
+   "BB": 5,
+   "CB+": 1,
+   "CC": 3,
+   "DC": 1,
+   "DC+": 1,
+   "DD": 3,
+   "DD+": 2,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2024"
+ },
+ {
+  "code": "BUS 203E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 25,
+  "grades": {
+   "AA": 1,
+   "BA+": 2,
+   "BB": 2,
+   "BB+": 4,
+   "CB": 3,
+   "CB+": 2,
+   "CC+": 4,
+   "DC+": 1,
+   "DD": 1,
+   "DD+": 3,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2025"
+ },
+ {
+  "code": "BUS 203E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 26,
+  "grades": {
+   "BA": 1,
+   "BB+": 4,
+   "CB": 5,
+   "CC": 1,
+   "CC+": 2,
+   "DC+": 1,
+   "DD": 5,
+   "DD+": 3,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2026"
+ },
+ {
+  "code": "BUS 207",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 21,
   "grades": {
    "AA": 1,
    "BA": 1,
@@ -665,235 +885,15 @@
    "BB": 3,
    "BB+": 1,
    "CB": 3,
-   "CB+": 3,
-   "CC": 2,
-   "DC": 1,
-   "DD": 5,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=201&yil=2024"
- },
- {
-  "code": "BUS 202",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 18,
-  "grades": {
-   "AA": 10,
-   "BA": 3,
-   "BA+": 2,
-   "BB+": 3
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2026"
- },
- {
-  "code": "BUS 202",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 16,
-  "grades": {
-   "AA": 2,
-   "BA": 4,
-   "BA+": 4,
-   "BB": 1,
-   "BB+": 3,
-   "CB": 1,
-   "CC": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2025"
- },
- {
-  "code": "BUS 202",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 15,
-  "grades": {
-   "AA": 6,
-   "BA": 4,
-   "BA+": 3,
-   "CC": 1,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2024"
- },
- {
-  "code": "BUS 202E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 18,
-  "grades": {
-   "AA": 10,
-   "BA": 3,
-   "BA+": 2,
-   "BB+": 3
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2026"
- },
- {
-  "code": "BUS 202E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 16,
-  "grades": {
-   "AA": 2,
-   "BA": 4,
-   "BA+": 4,
-   "BB": 1,
-   "BB+": 3,
-   "CB": 1,
-   "CC": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2025"
- },
- {
-  "code": "BUS 202E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 15,
-  "grades": {
-   "AA": 6,
-   "BA": 4,
-   "BA+": 3,
-   "CC": 1,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=202&yil=2024"
- },
- {
-  "code": "BUS 203",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 26,
-  "grades": {
-   "BA": 1,
-   "BB+": 4,
-   "CB": 5,
-   "CC": 1,
-   "CC+": 2,
-   "DC+": 1,
-   "DD": 5,
-   "DD+": 3,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2026"
- },
- {
-  "code": "BUS 203",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 25,
-  "grades": {
-   "AA": 1,
-   "BA+": 2,
-   "BB": 2,
-   "BB+": 4,
-   "CB": 3,
-   "CB+": 2,
-   "CC+": 4,
-   "DC+": 1,
-   "DD": 1,
-   "DD+": 3,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2025"
- },
- {
-  "code": "BUS 203",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 24,
-  "grades": {
-   "BA": 4,
-   "BA+": 2,
-   "BB": 5,
    "CB+": 1,
-   "CC": 3,
+   "CC": 1,
    "DC": 1,
-   "DC+": 1,
-   "DD": 3,
+   "DC+": 2,
+   "DD": 2,
    "DD+": 2,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2024"
- },
- {
-  "code": "BUS 203E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 26,
-  "grades": {
-   "BA": 1,
-   "BB+": 4,
-   "CB": 5,
-   "CC": 1,
-   "CC+": 2,
-   "DC+": 1,
-   "DD": 5,
-   "DD+": 3,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2026"
- },
- {
-  "code": "BUS 203E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 25,
-  "grades": {
-   "AA": 1,
-   "BA+": 2,
-   "BB": 2,
-   "BB+": 4,
-   "CB": 3,
-   "CB+": 2,
-   "CC+": 4,
-   "DC+": 1,
-   "DD": 1,
-   "DD+": 3,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2025"
- },
- {
-  "code": "BUS 203E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 24,
-  "grades": {
-   "BA": 4,
-   "BA+": 2,
-   "BB": 5,
-   "CB+": 1,
-   "CC": 3,
-   "DC": 1,
-   "DC+": 1,
-   "DD": 3,
-   "DD+": 2,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=203&yil=2024"
- },
- {
-  "code": "BUS 207",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 21,
-  "grades": {
-   "BA": 2,
-   "BA+": 1,
-   "BB": 4,
-   "BB+": 2,
-   "CB": 1,
-   "CB+": 1,
-   "CC": 3,
-   "CC+": 1,
-   "DC": 2,
-   "DC+": 1,
-   "DD": 1,
-   "DD+": 1,
    "VF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=207&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=207&yil=2024"
  },
  {
   "code": "BUS 207",
@@ -919,28 +919,6 @@
  },
  {
   "code": "BUS 207",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 21,
-  "grades": {
-   "AA": 1,
-   "BA": 1,
-   "BA+": 2,
-   "BB": 3,
-   "BB+": 1,
-   "CB": 3,
-   "CB+": 1,
-   "CC": 1,
-   "DC": 1,
-   "DC+": 2,
-   "DD": 2,
-   "DD+": 2,
-   "VF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=207&yil=2024"
- },
- {
-  "code": "BUS 207E",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
   "total": 21,
@@ -960,6 +938,28 @@
    "VF": 1
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=207&yil=2026"
+ },
+ {
+  "code": "BUS 207E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 21,
+  "grades": {
+   "AA": 1,
+   "BA": 1,
+   "BA+": 2,
+   "BB": 3,
+   "BB+": 1,
+   "CB": 3,
+   "CB+": 1,
+   "CC": 1,
+   "DC": 1,
+   "DC+": 2,
+   "DD": 2,
+   "DD+": 2,
+   "VF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=207&yil=2024"
  },
  {
   "code": "BUS 207E",
@@ -985,66 +985,25 @@
  },
  {
   "code": "BUS 207E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
   "total": 21,
   "grades": {
-   "AA": 1,
-   "BA": 1,
-   "BA+": 2,
-   "BB": 3,
-   "BB+": 1,
-   "CB": 3,
+   "BA": 2,
+   "BA+": 1,
+   "BB": 4,
+   "BB+": 2,
+   "CB": 1,
    "CB+": 1,
-   "CC": 1,
-   "DC": 1,
-   "DC+": 2,
-   "DD": 2,
-   "DD+": 2,
+   "CC": 3,
+   "CC+": 1,
+   "DC": 2,
+   "DC+": 1,
+   "DD": 1,
+   "DD+": 1,
    "VF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=207&yil=2024"
- },
- {
-  "code": "BUS 209",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 35,
-  "grades": {
-   "AA": 1,
-   "BA": 1,
-   "BA+": 4,
-   "BB": 2,
-   "BB+": 3,
-   "CB": 2,
-   "CB+": 4,
-   "CC+": 3,
-   "DC+": 1,
-   "DD": 5,
-   "DD+": 1,
-   "FF": 8
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2026"
- },
- {
-  "code": "BUS 209",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 27,
-  "grades": {
-   "AA": 3,
-   "BA": 1,
-   "BA+": 2,
-   "BB": 1,
-   "CB": 1,
-   "CB+": 2,
-   "CC": 2,
-   "CC+": 6,
-   "DC": 3,
-   "DC+": 3,
-   "FF": 3
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=207&yil=2026"
  },
  {
   "code": "BUS 209",
@@ -1068,7 +1027,27 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2024"
  },
  {
-  "code": "BUS 209E",
+  "code": "BUS 209",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 27,
+  "grades": {
+   "AA": 3,
+   "BA": 1,
+   "BA+": 2,
+   "BB": 1,
+   "CB": 1,
+   "CB+": 2,
+   "CC": 2,
+   "CC+": 6,
+   "DC": 3,
+   "DC+": 3,
+   "FF": 3
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2025"
+ },
+ {
+  "code": "BUS 209",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
   "total": 35,
@@ -1087,26 +1066,6 @@
    "FF": 8
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2026"
- },
- {
-  "code": "BUS 209E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 27,
-  "grades": {
-   "AA": 3,
-   "BA": 1,
-   "BA+": 2,
-   "BB": 1,
-   "CB": 1,
-   "CB+": 2,
-   "CC": 2,
-   "CC+": 6,
-   "DC": 3,
-   "DC+": 3,
-   "FF": 3
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2025"
  },
  {
   "code": "BUS 209E",
@@ -1130,223 +1089,249 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2024"
  },
  {
-  "code": "BUS 210",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 22,
+  "code": "BUS 209E",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 27,
   "grades": {
-   "BA": 3,
-   "BA+": 3,
-   "BB": 4,
-   "BB+": 3,
-   "CB": 3,
-   "CB+": 2,
-   "CC+": 2,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2026"
- },
- {
-  "code": "BUS 210",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 28,
-  "grades": {
-   "AA": 2,
-   "BA": 2,
-   "BA+": 2,
-   "BB": 5,
-   "BB+": 3,
-   "CB": 5,
-   "CB+": 5,
-   "CC": 2,
-   "DD": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2025"
- },
- {
-  "code": "BUS 210",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 20,
-  "grades": {
-   "BA": 4,
-   "BA+": 4,
-   "BB": 5,
-   "BB+": 3,
-   "FF": 2,
-   "VF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2024"
- },
- {
-  "code": "BUS 210E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 22,
-  "grades": {
-   "BA": 3,
-   "BA+": 3,
-   "BB": 4,
-   "BB+": 3,
-   "CB": 3,
-   "CB+": 2,
-   "CC+": 2,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2026"
- },
- {
-  "code": "BUS 210E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 28,
-  "grades": {
-   "AA": 2,
-   "BA": 2,
-   "BA+": 2,
-   "BB": 5,
-   "BB+": 3,
-   "CB": 5,
-   "CB+": 5,
-   "CC": 2,
-   "DD": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2025"
- },
- {
-  "code": "BUS 210E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 20,
-  "grades": {
-   "BA": 4,
-   "BA+": 4,
-   "BB": 5,
-   "BB+": 3,
-   "FF": 2,
-   "VF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2024"
- },
- {
-  "code": "BUS 302",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 22,
-  "grades": {
-   "AA": 5,
-   "BA+": 2,
-   "BB": 1,
-   "CB": 2,
-   "CB+": 2,
-   "CC": 4,
-   "CC+": 1,
-   "DC": 1,
-   "DC+": 3,
-   "DD": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2026"
- },
- {
-  "code": "BUS 302",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 14,
-  "grades": {
-   "AA": 2,
-   "BA": 3,
-   "BA+": 1,
-   "BB": 2,
-   "BB+": 1,
-   "CB+": 1,
-   "CC": 2,
-   "DC+": 1,
-   "DD+": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2025"
- },
- {
-  "code": "BUS 302",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 13,
-  "grades": {
-   "AA": 1,
-   "BA+": 2,
-   "CB": 1,
-   "DC": 2,
-   "DC+": 1,
-   "FF": 6
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2024"
- },
- {
-  "code": "BUS 302E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 22,
-  "grades": {
-   "AA": 5,
-   "BA+": 2,
-   "BB": 1,
-   "CB": 2,
-   "CB+": 2,
-   "CC": 4,
-   "CC+": 1,
-   "DC": 1,
-   "DC+": 3,
-   "DD": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2026"
- },
- {
-  "code": "BUS 302E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 14,
-  "grades": {
-   "AA": 2,
-   "BA": 3,
-   "BA+": 1,
-   "BB": 2,
-   "BB+": 1,
-   "CB+": 1,
-   "CC": 2,
-   "DC+": 1,
-   "DD+": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2025"
- },
- {
-  "code": "BUS 302E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 13,
-  "grades": {
-   "AA": 1,
-   "BA+": 2,
-   "CB": 1,
-   "DC": 2,
-   "DC+": 1,
-   "FF": 6
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2024"
- },
- {
-  "code": "BUS 304",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 10,
-  "grades": {
-   "AA": 2,
+   "AA": 3,
    "BA": 1,
-   "BB": 3,
+   "BA+": 2,
+   "BB": 1,
+   "CB": 1,
+   "CB+": 2,
    "CC": 2,
-   "DD": 1,
-   "FF": 1
+   "CC+": 6,
+   "DC": 3,
+   "DC+": 3,
+   "FF": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=304&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2025"
+ },
+ {
+  "code": "BUS 209E",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 35,
+  "grades": {
+   "AA": 1,
+   "BA": 1,
+   "BA+": 4,
+   "BB": 2,
+   "BB+": 3,
+   "CB": 2,
+   "CB+": 4,
+   "CC+": 3,
+   "DC+": 1,
+   "DD": 5,
+   "DD+": 1,
+   "FF": 8
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=209&yil=2026"
+ },
+ {
+  "code": "BUS 210",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 20,
+  "grades": {
+   "BA": 4,
+   "BA+": 4,
+   "BB": 5,
+   "BB+": 3,
+   "FF": 2,
+   "VF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2024"
+ },
+ {
+  "code": "BUS 210",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 28,
+  "grades": {
+   "AA": 2,
+   "BA": 2,
+   "BA+": 2,
+   "BB": 5,
+   "BB+": 3,
+   "CB": 5,
+   "CB+": 5,
+   "CC": 2,
+   "DD": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2025"
+ },
+ {
+  "code": "BUS 210",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 22,
+  "grades": {
+   "BA": 3,
+   "BA+": 3,
+   "BB": 4,
+   "BB+": 3,
+   "CB": 3,
+   "CB+": 2,
+   "CC+": 2,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2026"
+ },
+ {
+  "code": "BUS 210E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 20,
+  "grades": {
+   "BA": 4,
+   "BA+": 4,
+   "BB": 5,
+   "BB+": 3,
+   "FF": 2,
+   "VF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2024"
+ },
+ {
+  "code": "BUS 210E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 28,
+  "grades": {
+   "AA": 2,
+   "BA": 2,
+   "BA+": 2,
+   "BB": 5,
+   "BB+": 3,
+   "CB": 5,
+   "CB+": 5,
+   "CC": 2,
+   "DD": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2025"
+ },
+ {
+  "code": "BUS 210E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 22,
+  "grades": {
+   "BA": 3,
+   "BA+": 3,
+   "BB": 4,
+   "BB+": 3,
+   "CB": 3,
+   "CB+": 2,
+   "CC+": 2,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=210&yil=2026"
+ },
+ {
+  "code": "BUS 302",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 13,
+  "grades": {
+   "AA": 1,
+   "BA+": 2,
+   "CB": 1,
+   "DC": 2,
+   "DC+": 1,
+   "FF": 6
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2024"
+ },
+ {
+  "code": "BUS 302",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 14,
+  "grades": {
+   "AA": 2,
+   "BA": 3,
+   "BA+": 1,
+   "BB": 2,
+   "BB+": 1,
+   "CB+": 1,
+   "CC": 2,
+   "DC+": 1,
+   "DD+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2025"
+ },
+ {
+  "code": "BUS 302",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 22,
+  "grades": {
+   "AA": 5,
+   "BA+": 2,
+   "BB": 1,
+   "CB": 2,
+   "CB+": 2,
+   "CC": 4,
+   "CC+": 1,
+   "DC": 1,
+   "DC+": 3,
+   "DD": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2026"
+ },
+ {
+  "code": "BUS 302E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 13,
+  "grades": {
+   "AA": 1,
+   "BA+": 2,
+   "CB": 1,
+   "DC": 2,
+   "DC+": 1,
+   "FF": 6
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2024"
+ },
+ {
+  "code": "BUS 302E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 14,
+  "grades": {
+   "AA": 2,
+   "BA": 3,
+   "BA+": 1,
+   "BB": 2,
+   "BB+": 1,
+   "CB+": 1,
+   "CC": 2,
+   "DC+": 1,
+   "DD+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2025"
+ },
+ {
+  "code": "BUS 302E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 22,
+  "grades": {
+   "AA": 5,
+   "BA+": 2,
+   "BB": 1,
+   "CB": 2,
+   "CB+": 2,
+   "CC": 4,
+   "CC+": 1,
+   "DC": 1,
+   "DC+": 3,
+   "DD": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=302&yil=2026"
  },
  {
   "code": "BUS 304",
@@ -1365,7 +1350,7 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=304&yil=2024"
  },
  {
-  "code": "BUS 304E",
+  "code": "BUS 304",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
   "total": 10,
@@ -1396,160 +1381,133 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=304&yil=2024"
  },
  {
-  "code": "BUS 305",
+  "code": "BUS 304E",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
-  "total": 21,
+  "total": 10,
   "grades": {
    "AA": 2,
-   "BA": 3,
-   "BA+": 1,
-   "BB": 2,
-   "BB+": 2,
-   "CB": 4,
-   "CB+": 2,
-   "CC": 1,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2026"
- },
- {
-  "code": "BUS 305",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 28,
-  "grades": {
-   "AA": 2,
-   "BA": 3,
-   "BA+": 3,
-   "BB": 2,
-   "BB+": 2,
-   "CB": 2,
-   "CB+": 3,
+   "BA": 1,
+   "BB": 3,
    "CC": 2,
-   "DC": 3,
-   "DC+": 2,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2025"
- },
- {
-  "code": "BUS 305",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 20,
-  "grades": {
-   "AA": 2,
-   "BA": 1,
-   "BA+": 2,
-   "BB": 2,
-   "BB+": 3,
-   "CB": 2,
-   "CB+": 1,
-   "CC": 1,
-   "DC": 2,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2024"
- },
- {
-  "code": "BUS 305E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 21,
-  "grades": {
-   "AA": 2,
-   "BA": 3,
-   "BA+": 1,
-   "BB": 2,
-   "BB+": 2,
-   "CB": 4,
-   "CB+": 2,
-   "CC": 1,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2026"
- },
- {
-  "code": "BUS 305E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 28,
-  "grades": {
-   "AA": 2,
-   "BA": 3,
-   "BA+": 3,
-   "BB": 2,
-   "BB+": 2,
-   "CB": 2,
-   "CB+": 3,
-   "CC": 2,
-   "DC": 3,
-   "DC+": 2,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2025"
- },
- {
-  "code": "BUS 305E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 20,
-  "grades": {
-   "AA": 2,
-   "BA": 1,
-   "BA+": 2,
-   "BB": 2,
-   "BB+": 3,
-   "CB": 2,
-   "CB+": 1,
-   "CC": 1,
-   "DC": 2,
-   "FF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2024"
- },
- {
-  "code": "BUS 306",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 26,
-  "grades": {
-   "AA": 4,
-   "BA": 1,
-   "BB": 2,
-   "BB+": 2,
-   "CB": 1,
-   "CB+": 2,
-   "CC": 4,
-   "CC+": 4,
-   "DC": 2,
-   "DC+": 2,
    "DD": 1,
-   "DD+": 1
+   "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=306&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=304&yil=2026"
  },
  {
-  "code": "BUS 306",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 19,
+  "code": "BUS 305",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 20,
   "grades": {
-   "AA": 1,
+   "AA": 2,
    "BA": 1,
    "BA+": 2,
-   "BB": 1,
-   "BB+": 1,
-   "CB": 1,
+   "BB": 2,
+   "BB+": 3,
+   "CB": 2,
    "CB+": 1,
-   "CC+": 4,
-   "DC": 1,
-   "DD+": 1,
-   "FF": 1,
-   "VF": 4
+   "CC": 1,
+   "DC": 2,
+   "FF": 4
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=306&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2024"
+ },
+ {
+  "code": "BUS 305",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 28,
+  "grades": {
+   "AA": 2,
+   "BA": 3,
+   "BA+": 3,
+   "BB": 2,
+   "BB+": 2,
+   "CB": 2,
+   "CB+": 3,
+   "CC": 2,
+   "DC": 3,
+   "DC+": 2,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2025"
+ },
+ {
+  "code": "BUS 305",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 21,
+  "grades": {
+   "AA": 2,
+   "BA": 3,
+   "BA+": 1,
+   "BB": 2,
+   "BB+": 2,
+   "CB": 4,
+   "CB+": 2,
+   "CC": 1,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2026"
+ },
+ {
+  "code": "BUS 305E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 20,
+  "grades": {
+   "AA": 2,
+   "BA": 1,
+   "BA+": 2,
+   "BB": 2,
+   "BB+": 3,
+   "CB": 2,
+   "CB+": 1,
+   "CC": 1,
+   "DC": 2,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2024"
+ },
+ {
+  "code": "BUS 305E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 28,
+  "grades": {
+   "AA": 2,
+   "BA": 3,
+   "BA+": 3,
+   "BB": 2,
+   "BB+": 2,
+   "CB": 2,
+   "CB+": 3,
+   "CC": 2,
+   "DC": 3,
+   "DC+": 2,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2025"
+ },
+ {
+  "code": "BUS 305E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 21,
+  "grades": {
+   "AA": 2,
+   "BA": 3,
+   "BA+": 1,
+   "BB": 2,
+   "BB+": 2,
+   "CB": 4,
+   "CB+": 2,
+   "CC": 1,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=305&yil=2026"
  },
  {
   "code": "BUS 306",
@@ -1575,7 +1533,28 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=306&yil=2024"
  },
  {
-  "code": "BUS 306E",
+  "code": "BUS 306",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 19,
+  "grades": {
+   "AA": 1,
+   "BA": 1,
+   "BA+": 2,
+   "BB": 1,
+   "BB+": 1,
+   "CB": 1,
+   "CB+": 1,
+   "CC+": 4,
+   "DC": 1,
+   "DD+": 1,
+   "FF": 1,
+   "VF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=306&yil=2025"
+ },
+ {
+  "code": "BUS 306",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
   "total": 26,
@@ -1594,6 +1573,29 @@
    "DD+": 1
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=306&yil=2026"
+ },
+ {
+  "code": "BUS 306E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 24,
+  "grades": {
+   "AA": 2,
+   "BA": 2,
+   "BA+": 1,
+   "BB": 2,
+   "BB+": 1,
+   "CB": 2,
+   "CB+": 1,
+   "CC": 4,
+   "CC+": 1,
+   "DC": 1,
+   "DC+": 1,
+   "DD": 3,
+   "DD+": 1,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=306&yil=2024"
  },
  {
   "code": "BUS 306E",
@@ -1618,26 +1620,24 @@
  },
  {
   "code": "BUS 306E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 24,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 26,
   "grades": {
-   "AA": 2,
-   "BA": 2,
-   "BA+": 1,
+   "AA": 4,
+   "BA": 1,
    "BB": 2,
-   "BB+": 1,
-   "CB": 2,
-   "CB+": 1,
+   "BB+": 2,
+   "CB": 1,
+   "CB+": 2,
    "CC": 4,
-   "CC+": 1,
-   "DC": 1,
-   "DC+": 1,
-   "DD": 3,
-   "DD+": 1,
-   "FF": 2
+   "CC+": 4,
+   "DC": 2,
+   "DC+": 2,
+   "DD": 1,
+   "DD+": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=306&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=306&yil=2026"
  },
  {
   "code": "BUS 308",
@@ -1665,23 +1665,22 @@
  },
  {
   "code": "BUS 311",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 20,
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 19,
   "grades": {
-   "AA": 1,
-   "BA": 3,
-   "BA+": 2,
-   "BB": 3,
-   "BB+": 1,
-   "CB": 2,
-   "CB+": 1,
-   "CC": 2,
-   "CC+": 2,
-   "DC": 1,
-   "DD": 2
+   "AA": 4,
+   "BA": 2,
+   "BA+": 1,
+   "BB": 4,
+   "BB+": 2,
+   "CB": 1,
+   "CB+": 2,
+   "CC+": 1,
+   "DC+": 1,
+   "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=311&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=311&yil=2024"
  },
  {
   "code": "BUS 311",
@@ -1706,25 +1705,6 @@
  },
  {
   "code": "BUS 311",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 19,
-  "grades": {
-   "AA": 4,
-   "BA": 2,
-   "BA+": 1,
-   "BB": 4,
-   "BB+": 2,
-   "CB": 1,
-   "CB+": 2,
-   "CC+": 1,
-   "DC+": 1,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=311&yil=2024"
- },
- {
-  "code": "BUS 311E",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
   "total": 20,
@@ -1742,6 +1722,25 @@
    "DD": 2
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=311&yil=2026"
+ },
+ {
+  "code": "BUS 311E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 19,
+  "grades": {
+   "AA": 4,
+   "BA": 2,
+   "BA+": 1,
+   "BB": 4,
+   "BB+": 2,
+   "CB": 1,
+   "CB+": 2,
+   "CC+": 1,
+   "DC+": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=311&yil=2024"
  },
  {
   "code": "BUS 311E",
@@ -1766,113 +1765,97 @@
  },
  {
   "code": "BUS 311E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 19,
-  "grades": {
-   "AA": 4,
-   "BA": 2,
-   "BA+": 1,
-   "BB": 4,
-   "BB+": 2,
-   "CB": 1,
-   "CB+": 2,
-   "CC+": 1,
-   "DC+": 1,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=311&yil=2024"
- },
- {
-  "code": "BUS 314",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 17,
-  "grades": {
-   "AA": 4,
-   "BA": 3,
-   "BA+": 3,
-   "BB+": 2,
-   "CB+": 5
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2026"
- },
- {
-  "code": "BUS 314",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 11,
-  "grades": {
-   "AA": 11
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2025"
- },
- {
-  "code": "BUS 314",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 15,
-  "grades": {
-   "AA": 7,
-   "BA+": 4,
-   "BB+": 3,
-   "VF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2024"
- },
- {
-  "code": "BUS 314E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 17,
-  "grades": {
-   "AA": 4,
-   "BA": 3,
-   "BA+": 3,
-   "BB+": 2,
-   "CB+": 5
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2026"
- },
- {
-  "code": "BUS 314E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 11,
-  "grades": {
-   "AA": 11
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2025"
- },
- {
-  "code": "BUS 314E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 15,
-  "grades": {
-   "AA": 7,
-   "BA+": 4,
-   "BB+": 3,
-   "VF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2024"
- },
- {
-  "code": "BUS 315",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 13,
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 20,
   "grades": {
    "AA": 1,
-   "BA": 4,
-   "BA+": 1,
-   "BB": 2,
+   "BA": 3,
+   "BA+": 2,
+   "BB": 3,
+   "BB+": 1,
    "CB": 2,
    "CB+": 1,
-   "CC": 1,
-   "FF": 1
+   "CC": 2,
+   "CC+": 2,
+   "DC": 1,
+   "DD": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=315&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=311&yil=2026"
+ },
+ {
+  "code": "BUS 314",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 15,
+  "grades": {
+   "AA": 7,
+   "BA+": 4,
+   "BB+": 3,
+   "VF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2024"
+ },
+ {
+  "code": "BUS 314",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 11,
+  "grades": {
+   "AA": 11
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2025"
+ },
+ {
+  "code": "BUS 314",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 17,
+  "grades": {
+   "AA": 4,
+   "BA": 3,
+   "BA+": 3,
+   "BB+": 2,
+   "CB+": 5
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2026"
+ },
+ {
+  "code": "BUS 314E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 15,
+  "grades": {
+   "AA": 7,
+   "BA+": 4,
+   "BB+": 3,
+   "VF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2024"
+ },
+ {
+  "code": "BUS 314E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 11,
+  "grades": {
+   "AA": 11
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2025"
+ },
+ {
+  "code": "BUS 314E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 17,
+  "grades": {
+   "AA": 4,
+   "BA": 3,
+   "BA+": 3,
+   "BB+": 2,
+   "CB+": 5
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=314&yil=2026"
  },
  {
   "code": "BUS 315",
@@ -1891,7 +1874,7 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=315&yil=2024"
  },
  {
-  "code": "BUS 315E",
+  "code": "BUS 315",
   "term": "2024-2025 Bahar Dönemi",
   "donem": "202520",
   "total": 13,
@@ -1924,100 +1907,103 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=315&yil=2024"
  },
  {
-  "code": "BUS 321",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 14,
-  "grades": {
-   "AA": 7,
-   "BA": 1,
-   "BA+": 5,
-   "CB": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2026"
- },
- {
-  "code": "BUS 321",
+  "code": "BUS 315E",
   "term": "2024-2025 Bahar Dönemi",
   "donem": "202520",
-  "total": 20,
-  "grades": {
-   "AA": 14,
-   "BA": 1,
-   "BA+": 5
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2025"
- },
- {
-  "code": "BUS 321",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 19,
-  "grades": {
-   "AA": 4,
-   "BA": 3,
-   "BA+": 2,
-   "BB": 2,
-   "BB+": 6,
-   "CC+": 1,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2024"
- },
- {
-  "code": "BUS 321E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 14,
-  "grades": {
-   "AA": 7,
-   "BA": 1,
-   "BA+": 5,
-   "CB": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2026"
- },
- {
-  "code": "BUS 321E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 20,
-  "grades": {
-   "AA": 14,
-   "BA": 1,
-   "BA+": 5
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2025"
- },
- {
-  "code": "BUS 321E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 19,
-  "grades": {
-   "AA": 4,
-   "BA": 3,
-   "BA+": 2,
-   "BB": 2,
-   "BB+": 6,
-   "CC+": 1,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2024"
- },
- {
-  "code": "BUS 322",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 10,
+  "total": 13,
   "grades": {
    "AA": 1,
+   "BA": 4,
    "BA+": 1,
-   "BB": 3,
-   "BB+": 4,
-   "CC+": 1
+   "BB": 2,
+   "CB": 2,
+   "CB+": 1,
+   "CC": 1,
+   "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=322&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=315&yil=2025"
+ },
+ {
+  "code": "BUS 321",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 19,
+  "grades": {
+   "AA": 4,
+   "BA": 3,
+   "BA+": 2,
+   "BB": 2,
+   "BB+": 6,
+   "CC+": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2024"
+ },
+ {
+  "code": "BUS 321",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 20,
+  "grades": {
+   "AA": 14,
+   "BA": 1,
+   "BA+": 5
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2025"
+ },
+ {
+  "code": "BUS 321",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 14,
+  "grades": {
+   "AA": 7,
+   "BA": 1,
+   "BA+": 5,
+   "CB": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2026"
+ },
+ {
+  "code": "BUS 321E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 19,
+  "grades": {
+   "AA": 4,
+   "BA": 3,
+   "BA+": 2,
+   "BB": 2,
+   "BB+": 6,
+   "CC+": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2024"
+ },
+ {
+  "code": "BUS 321E",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 20,
+  "grades": {
+   "AA": 14,
+   "BA": 1,
+   "BA+": 5
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2025"
+ },
+ {
+  "code": "BUS 321E",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 14,
+  "grades": {
+   "AA": 7,
+   "BA": 1,
+   "BA+": 5,
+   "CB": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=321&yil=2026"
  },
  {
   "code": "BUS 322",
@@ -2034,5 +2020,19 @@
    "CC+": 1
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=322&yil=2024"
+ },
+ {
+  "code": "BUS 322",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 10,
+  "grades": {
+   "AA": 1,
+   "BA+": 1,
+   "BB": 3,
+   "BB+": 4,
+   "CC+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=BUS&dersNo=322&yil=2025"
  }
 ]

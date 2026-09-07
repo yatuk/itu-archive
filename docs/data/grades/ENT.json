@@ -1,24 +1,26 @@
 [
  {
   "code": "ENT 211E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
   "total": 71,
   "grades": {
-   "AA": 8,
-   "BA": 11,
-   "BA+": 3,
-   "BB": 14,
-   "BB+": 10,
-   "CB": 8,
-   "CB+": 7,
-   "CC": 1,
+   "AA": 17,
+   "BA": 3,
+   "BA+": 13,
+   "BB": 4,
+   "BB+": 6,
+   "CB": 10,
+   "CB+": 6,
    "CC+": 2,
-   "DC": 1,
+   "DC": 3,
    "DC+": 1,
-   "DD+": 3
+   "DD": 1,
+   "DD+": 2,
+   "FF": 1,
+   "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=211&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=211&yil=2024"
  },
  {
   "code": "ENT 211E",
@@ -43,26 +45,55 @@
  },
  {
   "code": "ENT 211E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
   "total": 71,
   "grades": {
-   "AA": 17,
-   "BA": 3,
-   "BA+": 13,
-   "BB": 4,
-   "BB+": 6,
-   "CB": 10,
-   "CB+": 6,
+   "AA": 8,
+   "BA": 11,
+   "BA+": 3,
+   "BB": 14,
+   "BB+": 10,
+   "CB": 8,
+   "CB+": 7,
+   "CC": 1,
    "CC+": 2,
-   "DC": 3,
+   "DC": 1,
    "DC+": 1,
-   "DD": 1,
-   "DD+": 2,
-   "FF": 1,
-   "VF": 2
+   "DD+": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=211&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=211&yil=2026"
+ },
+ {
+  "code": "ENT 212E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 67,
+  "grades": {
+   "AA": 36,
+   "BA": 5,
+   "BA+": 17,
+   "BB": 3,
+   "BB+": 1,
+   "VF": 5
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=212&yil=2024"
+ },
+ {
+  "code": "ENT 212E",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 92,
+  "grades": {
+   "AA": 15,
+   "BA": 14,
+   "BA+": 16,
+   "BB": 13,
+   "BB+": 26,
+   "CB+": 3,
+   "VF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=212&yil=2025"
  },
  {
   "code": "ENT 212E",
@@ -83,57 +114,27 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=212&yil=2026"
  },
  {
-  "code": "ENT 212E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 92,
-  "grades": {
-   "AA": 15,
-   "BA": 14,
-   "BA+": 16,
-   "BB": 13,
-   "BB+": 26,
-   "CB+": 3,
-   "VF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=212&yil=2025"
- },
- {
-  "code": "ENT 212E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
+  "code": "ENT 213E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
   "total": 67,
   "grades": {
-   "AA": 36,
-   "BA": 5,
-   "BA+": 17,
-   "BB": 3,
-   "BB+": 1,
-   "VF": 5
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=212&yil=2024"
- },
- {
-  "code": "ENT 213E",
-  "term": "2025-2026 Fall Semester",
-  "donem": "202610",
-  "total": 77,
-  "grades": {
-   "AA": 1,
-   "BA": 8,
+   "BA": 3,
    "BA+": 1,
-   "BB": 18,
-   "BB+": 9,
-   "CB": 3,
-   "CB+": 12,
-   "CC": 1,
-   "CC+": 1,
+   "BB": 9,
+   "BB+": 4,
+   "CB": 11,
+   "CB+": 11,
+   "CC": 2,
+   "CC+": 2,
    "DC": 4,
-   "DC+": 5,
-   "DD+": 10,
-   "FF": 4
+   "DC+": 4,
+   "DD": 1,
+   "DD+": 9,
+   "FF": 5,
+   "VF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=213&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=213&yil=2024"
  },
  {
   "code": "ENT 213E",
@@ -161,65 +162,64 @@
  },
  {
   "code": "ENT 213E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 67,
-  "grades": {
-   "BA": 3,
-   "BA+": 1,
-   "BB": 9,
-   "BB+": 4,
-   "CB": 11,
-   "CB+": 11,
-   "CC": 2,
-   "CC+": 2,
-   "DC": 4,
-   "DC+": 4,
-   "DD": 1,
-   "DD+": 9,
-   "FF": 5,
-   "VF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=213&yil=2024"
- },
- {
-  "code": "ENT 230E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 28,
-  "grades": {
-   "AA": 6,
-   "BA": 1,
-   "BA+": 1,
-   "BB": 1,
-   "BB+": 2,
-   "CB+": 2,
-   "CC+": 1,
-   "DC": 1,
-   "DC+": 3,
-   "DD": 4,
-   "DD+": 2,
-   "VF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=230&yil=2026"
- },
- {
-  "code": "ENT 230E",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
-  "total": 30,
+  "total": 77,
   "grades": {
-   "AA": 13,
-   "BA": 4,
-   "BA+": 2,
-   "BB+": 4,
-   "CB": 1,
-   "CB+": 2,
+   "AA": 1,
+   "BA": 8,
+   "BA+": 1,
+   "BB": 18,
+   "BB+": 9,
+   "CB": 3,
+   "CB+": 12,
+   "CC": 1,
    "CC+": 1,
-   "DC": 1,
+   "DC": 4,
+   "DC+": 5,
+   "DD+": 10,
+   "FF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=213&yil=2026"
+ },
+ {
+  "code": "ENT 230E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 31,
+  "grades": {
+   "AA": 5,
+   "BA": 3,
+   "BA+": 2,
+   "BB": 6,
+   "BB+": 1,
+   "CB": 1,
+   "CB+": 3,
+   "CC": 2,
+   "CC+": 2,
+   "DC+": 4,
    "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=230&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=230&yil=2024"
+ },
+ {
+  "code": "ENT 230E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 27,
+  "grades": {
+   "AA": 1,
+   "BA+": 3,
+   "BB": 5,
+   "BB+": 2,
+   "CB": 2,
+   "CB+": 7,
+   "CC": 1,
+   "CC+": 2,
+   "DC": 2,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=230&yil=2025"
  },
  {
   "code": "ENT 230E",
@@ -243,42 +243,68 @@
  },
  {
   "code": "ENT 230E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 27,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 30,
   "grades": {
-   "AA": 1,
-   "BA+": 3,
-   "BB": 5,
-   "BB+": 2,
-   "CB": 2,
-   "CB+": 7,
-   "CC": 1,
-   "CC+": 2,
-   "DC": 2,
-   "FF": 1
+   "AA": 13,
+   "BA": 4,
+   "BA+": 2,
+   "BB+": 4,
+   "CB": 1,
+   "CB+": 2,
+   "CC+": 1,
+   "DC": 1,
+   "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=230&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=230&yil=2026"
  },
  {
   "code": "ENT 230E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 31,
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 28,
   "grades": {
-   "AA": 5,
-   "BA": 3,
-   "BA+": 2,
-   "BB": 6,
-   "BB+": 1,
-   "CB": 1,
-   "CB+": 3,
-   "CC": 2,
-   "CC+": 2,
-   "DC+": 4,
-   "VF": 2
+   "AA": 6,
+   "BA": 1,
+   "BA+": 1,
+   "BB": 1,
+   "BB+": 2,
+   "CB+": 2,
+   "CC+": 1,
+   "DC": 1,
+   "DC+": 3,
+   "DD": 4,
+   "DD+": 2,
+   "VF": 4
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=230&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=230&yil=2026"
+ },
+ {
+  "code": "ENT 233E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 30,
+  "grades": {
+   "AA": 17,
+   "BA": 2,
+   "BA+": 4,
+   "BB+": 6,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=233&yil=2024"
+ },
+ {
+  "code": "ENT 233E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 30,
+  "grades": {
+   "AA": 27,
+   "BA+": 2,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=233&yil=2025"
  },
  {
   "code": "ENT 233E",
@@ -299,74 +325,21 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=233&yil=2026"
  },
  {
-  "code": "ENT 233E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 30,
-  "grades": {
-   "AA": 27,
-   "BA+": 2,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=233&yil=2025"
- },
- {
-  "code": "ENT 233E",
+  "code": "ENT 237E",
   "term": "2023-2024 Güz Dönemi",
   "donem": "202410",
   "total": 30,
   "grades": {
-   "AA": 17,
-   "BA": 2,
-   "BA+": 4,
-   "BB+": 6,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=233&yil=2024"
- },
- {
-  "code": "ENT 237E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 31,
-  "grades": {
-   "AA": 5,
-   "BA": 10,
-   "BA+": 9,
-   "BB+": 2,
-   "CB+": 1,
-   "VF": 4
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=237&yil=2026"
- },
- {
-  "code": "ENT 237E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 21,
-  "grades": {
    "AA": 6,
    "BA": 3,
-   "BA+": 6,
-   "BB+": 2,
-   "VF": 3
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=237&yil=2026"
- },
- {
-  "code": "ENT 237E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 35,
-  "grades": {
-   "AA": 8,
-   "BA": 8,
-   "BA+": 11,
+   "BA+": 7,
    "BB": 1,
-   "BB+": 4,
-   "VF": 1
+   "BB+": 7,
+   "CB+": 2,
+   "CC+": 2,
+   "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=237&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=237&yil=2024"
  },
  {
   "code": "ENT 237E",
@@ -386,35 +359,47 @@
  },
  {
   "code": "ENT 237E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 30,
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 35,
+  "grades": {
+   "AA": 8,
+   "BA": 8,
+   "BA+": 11,
+   "BB": 1,
+   "BB+": 4,
+   "VF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=237&yil=2025"
+ },
+ {
+  "code": "ENT 237E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 21,
   "grades": {
    "AA": 6,
    "BA": 3,
-   "BA+": 7,
-   "BB": 1,
-   "BB+": 7,
-   "CB+": 2,
-   "CC+": 2,
-   "VF": 2
+   "BA+": 6,
+   "BB+": 2,
+   "VF": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=237&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=237&yil=2026"
  },
  {
-  "code": "ENT 314E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 24,
+  "code": "ENT 237E",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 31,
   "grades": {
-   "AA": 8,
-   "BA": 4,
-   "BA+": 5,
-   "BB": 1,
-   "BB+": 4,
-   "FF": 1
+   "AA": 5,
+   "BA": 10,
+   "BA+": 9,
+   "BB+": 2,
+   "CB+": 1,
+   "VF": 4
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=314&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=237&yil=2026"
  },
  {
   "code": "ENT 314E",
@@ -432,62 +417,19 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=314&yil=2025"
  },
  {
-  "code": "ENT 334E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 34,
-  "grades": {
-   "AA": 11,
-   "BA": 4,
-   "BA+": 15,
-   "BB+": 3,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2026"
- },
- {
-  "code": "ENT 334E",
+  "code": "ENT 314E",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
-  "total": 31,
-  "grades": {
-   "AA": 2,
-   "BA": 6,
-   "BA+": 10,
-   "BB": 2,
-   "BB+": 9
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2026"
- },
- {
-  "code": "ENT 334E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
   "total": 24,
   "grades": {
-   "AA": 7,
+   "AA": 8,
    "BA": 4,
-   "BA+": 12,
-   "CC+": 1
+   "BA+": 5,
+   "BB": 1,
+   "BB+": 4,
+   "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2025"
- },
- {
-  "code": "ENT 334E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 35,
-  "grades": {
-   "AA": 14,
-   "BA": 5,
-   "BA+": 10,
-   "BB+": 1,
-   "CB": 1,
-   "CB+": 1,
-   "DC+": 2,
-   "DD": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=314&yil=2026"
  },
  {
   "code": "ENT 334E",
@@ -509,35 +451,62 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2024"
  },
  {
-  "code": "ENT 335E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 33,
-  "grades": {
-   "AA": 17,
-   "BA": 7,
-   "BA+": 5,
-   "BB+": 2,
-   "CB+": 1,
-   "FF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=335&yil=2025"
- },
- {
-  "code": "ENT 335E",
+  "code": "ENT 334E",
   "term": "2023-2024 Bahar Dönemi",
   "donem": "202420",
-  "total": 60,
+  "total": 35,
   "grades": {
-   "AA": 22,
-   "BA": 8,
-   "BA+": 2,
-   "BB": 9,
-   "CC": 5,
-   "DD": 3,
-   "FF": 11
+   "AA": 14,
+   "BA": 5,
+   "BA+": 10,
+   "BB+": 1,
+   "CB": 1,
+   "CB+": 1,
+   "DC+": 2,
+   "DD": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=335&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2024"
+ },
+ {
+  "code": "ENT 334E",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 24,
+  "grades": {
+   "AA": 7,
+   "BA": 4,
+   "BA+": 12,
+   "CC+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2025"
+ },
+ {
+  "code": "ENT 334E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 31,
+  "grades": {
+   "AA": 2,
+   "BA": 6,
+   "BA+": 10,
+   "BB": 2,
+   "BB+": 9
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2026"
+ },
+ {
+  "code": "ENT 334E",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 34,
+  "grades": {
+   "AA": 11,
+   "BA": 4,
+   "BA+": 15,
+   "BB+": 3,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=334&yil=2026"
  },
  {
   "code": "ENT 335E",
@@ -559,17 +528,35 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=335&yil=2024"
  },
  {
-  "code": "ENT 339E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 14,
+  "code": "ENT 335E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 60,
   "grades": {
-   "BA": 1,
-   "BA+": 4,
-   "BB": 4,
-   "BB+": 5
+   "AA": 22,
+   "BA": 8,
+   "BA+": 2,
+   "BB": 9,
+   "CC": 5,
+   "DD": 3,
+   "FF": 11
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=339&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=335&yil=2024"
+ },
+ {
+  "code": "ENT 335E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 33,
+  "grades": {
+   "AA": 17,
+   "BA": 7,
+   "BA+": 5,
+   "BB+": 2,
+   "CB+": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=335&yil=2025"
  },
  {
   "code": "ENT 339E",
@@ -587,20 +574,17 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=339&yil=2025"
  },
  {
-  "code": "ENT 343E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 30,
+  "code": "ENT 339E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 14,
   "grades": {
-   "BA": 7,
-   "BA+": 3,
-   "BB": 8,
-   "BB+": 9,
-   "CB": 1,
-   "CB+": 1,
-   "FF": 1
+   "BA": 1,
+   "BA+": 4,
+   "BB": 4,
+   "BB+": 5
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=343&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=339&yil=2026"
  },
  {
   "code": "ENT 343E",
@@ -621,16 +605,47 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=343&yil=2024"
  },
  {
+  "code": "ENT 343E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 30,
+  "grades": {
+   "BA": 7,
+   "BA+": 3,
+   "BB": 8,
+   "BB+": 9,
+   "CB": 1,
+   "CB+": 1,
+   "FF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=343&yil=2024"
+ },
+ {
   "code": "ENT 345E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
   "total": 29,
   "grades": {
-   "AA": 22,
-   "BA": 5,
-   "BA+": 2
+   "AA": 21,
+   "BA": 1,
+   "BA+": 3,
+   "BB+": 1,
+   "DD": 1,
+   "FF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=345&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=345&yil=2024"
+ },
+ {
+  "code": "ENT 345E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 30,
+  "grades": {
+   "AA": 17,
+   "BA": 6,
+   "BA+": 7
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=345&yil=2025"
  },
  {
   "code": "ENT 345E",
@@ -649,46 +664,32 @@
  },
  {
   "code": "ENT 345E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 30,
-  "grades": {
-   "AA": 17,
-   "BA": 6,
-   "BA+": 7
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=345&yil=2025"
- },
- {
-  "code": "ENT 345E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
   "total": 29,
   "grades": {
-   "AA": 21,
-   "BA": 1,
-   "BA+": 3,
-   "BB+": 1,
-   "DD": 1,
-   "FF": 2
+   "AA": 22,
+   "BA": 5,
+   "BA+": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=345&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=345&yil=2026"
  },
  {
   "code": "ENT 347E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 21,
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 15,
   "grades": {
-   "AA": 2,
-   "BA": 3,
-   "BA+": 2,
-   "BB": 3,
-   "BB+": 3,
-   "CC+": 5,
-   "VF": 1
+   "AA": 5,
+   "BA": 2,
+   "BB": 2,
+   "BB+": 1,
+   "CB": 2,
+   "CB+": 1,
+   "DC": 1,
+   "FF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=347&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=347&yil=2024"
  },
  {
   "code": "ENT 347E",
@@ -708,20 +709,19 @@
  },
  {
   "code": "ENT 347E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 15,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 21,
   "grades": {
-   "AA": 5,
-   "BA": 2,
-   "BB": 2,
-   "BB+": 1,
-   "CB": 2,
-   "CB+": 1,
-   "DC": 1,
-   "FF": 1
+   "AA": 2,
+   "BA": 3,
+   "BA+": 2,
+   "BB": 3,
+   "BB+": 3,
+   "CC+": 5,
+   "VF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=347&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=347&yil=2026"
  },
  {
   "code": "ENT 348E",
@@ -743,16 +743,6 @@
  },
  {
   "code": "ENT 350E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 28,
-  "grades": {
-   "AA": 26
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=350&yil=2025"
- },
- {
-  "code": "ENT 350E",
   "term": "2023-2024 Bahar Dönemi",
   "donem": "202420",
   "total": 30,
@@ -765,19 +755,28 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=350&yil=2024"
  },
  {
-  "code": "ENT 354E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 30,
+  "code": "ENT 350E",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 28,
   "grades": {
-   "AA": 9,
-   "BA": 6,
-   "BA+": 6,
-   "BB+": 4,
-   "CB": 1,
-   "VF": 4
+   "AA": 26
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=354&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=350&yil=2025"
+ },
+ {
+  "code": "ENT 354E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 31,
+  "grades": {
+   "AA": 14,
+   "BA": 4,
+   "BA+": 9,
+   "BB": 1,
+   "BB+": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=354&yil=2025"
  },
  {
   "code": "ENT 354E",
@@ -798,32 +797,31 @@
  },
  {
   "code": "ENT 354E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 31,
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 30,
   "grades": {
-   "AA": 14,
-   "BA": 4,
-   "BA+": 9,
-   "BB": 1,
-   "BB+": 2
+   "AA": 9,
+   "BA": 6,
+   "BA+": 6,
+   "BB+": 4,
+   "CB": 1,
+   "VF": 4
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=354&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=354&yil=2026"
  },
  {
   "code": "ENT 355E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 29,
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 54,
   "grades": {
-   "AA": 12,
-   "BA": 8,
-   "BA+": 4,
-   "BB+": 3,
-   "CC": 1,
+   "AA": 40,
+   "BA": 6,
+   "BA+": 7,
    "VF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=355&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=355&yil=2024"
  },
  {
   "code": "ENT 355E",
@@ -842,28 +840,18 @@
  },
  {
   "code": "ENT 355E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 54,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 29,
   "grades": {
-   "AA": 40,
-   "BA": 6,
-   "BA+": 7,
+   "AA": 12,
+   "BA": 8,
+   "BA+": 4,
+   "BB+": 3,
+   "CC": 1,
    "VF": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=355&yil=2024"
- },
- {
-  "code": "ENT 356E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 32,
-  "grades": {
-   "AA": 17,
-   "BA": 2,
-   "BA+": 13
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=356&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=355&yil=2026"
  },
  {
   "code": "ENT 356E",
@@ -882,6 +870,18 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=356&yil=2025"
  },
  {
+  "code": "ENT 356E",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 32,
+  "grades": {
+   "AA": 17,
+   "BA": 2,
+   "BA+": 13
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=356&yil=2026"
+ },
+ {
   "code": "ENT 357E",
   "term": "2023-2024 Bahar Dönemi",
   "donem": "202420",
@@ -897,6 +897,18 @@
  },
  {
   "code": "ENT 365E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 29,
+  "grades": {
+   "AA": 10,
+   "BA+": 13,
+   "BB": 5
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=365&yil=2025"
+ },
+ {
+  "code": "ENT 365E",
   "term": "2025-2026 Güz Dönemi",
   "donem": "202610",
   "total": 30,
@@ -907,18 +919,6 @@
    "FF": 2
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=365&yil=2026"
- },
- {
-  "code": "ENT 365E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 29,
-  "grades": {
-   "AA": 10,
-   "BA+": 13,
-   "BB": 5
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=365&yil=2025"
  },
  {
   "code": "ENT 371E",
@@ -933,6 +933,24 @@
    "VF": 2
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=371&yil=2025"
+ },
+ {
+  "code": "ENT 374E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 29,
+  "grades": {
+   "AA": 3,
+   "BA": 7,
+   "BA+": 4,
+   "BB": 2,
+   "BB+": 7,
+   "CB": 2,
+   "CC+": 1,
+   "DD+": 1,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=374&yil=2024"
  },
  {
   "code": "ENT 374E",
@@ -955,37 +973,16 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=374&yil=2026"
  },
  {
-  "code": "ENT 374E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 29,
-  "grades": {
-   "AA": 3,
-   "BA": 7,
-   "BA+": 4,
-   "BB": 2,
-   "BB+": 7,
-   "CB": 2,
-   "CC+": 1,
-   "DD+": 1,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=374&yil=2024"
- },
- {
   "code": "ENT 383E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 28,
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 20,
   "grades": {
-   "AA": 17,
-   "BA+": 4,
-   "BB+": 1,
-   "CB+": 2,
-   "CC+": 3,
-   "DC": 1
+   "AA": 16,
+   "BA+": 2,
+   "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=383&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=383&yil=2024"
  },
  {
   "code": "ENT 383E",
@@ -1009,15 +1006,33 @@
  },
  {
   "code": "ENT 383E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 20,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 28,
   "grades": {
-   "AA": 16,
-   "BA+": 2,
-   "VF": 2
+   "AA": 17,
+   "BA+": 4,
+   "BB+": 1,
+   "CB+": 2,
+   "CC+": 3,
+   "DC": 1
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=383&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=383&yil=2026"
+ },
+ {
+  "code": "ENT 429E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 30,
+  "grades": {
+   "AA": 5,
+   "BA": 5,
+   "BA+": 9,
+   "BB": 7,
+   "CB": 1,
+   "VF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=429&yil=2025"
  },
  {
   "code": "ENT 429E",
@@ -1034,19 +1049,23 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=429&yil=2026"
  },
  {
-  "code": "ENT 429E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 30,
+  "code": "ENT 431E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 32,
   "grades": {
    "AA": 5,
-   "BA": 5,
-   "BA+": 9,
-   "BB": 7,
-   "CB": 1,
-   "VF": 1
+   "BA": 1,
+   "BA+": 10,
+   "BB": 3,
+   "BB+": 5,
+   "CB": 2,
+   "CB+": 2,
+   "DD": 1,
+   "DD+": 1,
+   "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=429&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=431&yil=2024"
  },
  {
   "code": "ENT 431E",
@@ -1071,38 +1090,6 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=431&yil=2026"
  },
  {
-  "code": "ENT 431E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 32,
-  "grades": {
-   "AA": 5,
-   "BA": 1,
-   "BA+": 10,
-   "BB": 3,
-   "BB+": 5,
-   "CB": 2,
-   "CB+": 2,
-   "DD": 1,
-   "DD+": 1,
-   "VF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=431&yil=2024"
- },
- {
-  "code": "ENT 433E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 25,
-  "grades": {
-   "BA": 7,
-   "BA+": 5,
-   "BB+": 5,
-   "VF": 7
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=433&yil=2026"
- },
- {
   "code": "ENT 433E",
   "term": "2024-2025 Bahar Dönemi",
   "donem": "202520",
@@ -1118,17 +1105,17 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=433&yil=2025"
  },
  {
-  "code": "ENT 434E",
+  "code": "ENT 433E",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
-  "total": 20,
+  "total": 25,
   "grades": {
    "BA": 7,
-   "BA+": 3,
-   "BB+": 4,
-   "VF": 6
+   "BA+": 5,
+   "BB+": 5,
+   "VF": 7
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=434&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=433&yil=2026"
  },
  {
   "code": "ENT 434E",
@@ -1144,24 +1131,35 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=434&yil=2025"
  },
  {
-  "code": "ENT 436E",
+  "code": "ENT 434E",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
-  "total": 25,
+  "total": 20,
   "grades": {
-   "AA": 1,
-   "BA+": 2,
-   "BB": 3,
-   "CB": 3,
-   "CB+": 4,
-   "CC": 2,
-   "CC+": 3,
-   "DC": 1,
-   "DD+": 2,
-   "FF": 1,
-   "VF": 3
+   "BA": 7,
+   "BA+": 3,
+   "BB+": 4,
+   "VF": 6
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=436&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=434&yil=2026"
+ },
+ {
+  "code": "ENT 436E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 30,
+  "grades": {
+   "AA": 4,
+   "BA": 4,
+   "BA+": 9,
+   "BB": 3,
+   "BB+": 4,
+   "CB+": 2,
+   "CC": 1,
+   "DC+": 1,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=436&yil=2024"
  },
  {
   "code": "ENT 436E",
@@ -1185,43 +1183,44 @@
  },
  {
   "code": "ENT 436E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 30,
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 25,
   "grades": {
-   "AA": 4,
-   "BA": 4,
-   "BA+": 9,
+   "AA": 1,
+   "BA+": 2,
    "BB": 3,
-   "BB+": 4,
-   "CB+": 2,
-   "CC": 1,
-   "DC+": 1,
-   "FF": 2
+   "CB": 3,
+   "CB+": 4,
+   "CC": 2,
+   "CC+": 3,
+   "DC": 1,
+   "DD+": 2,
+   "FF": 1,
+   "VF": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=436&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=436&yil=2026"
  },
  {
   "code": "ENT 441E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 89,
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 79,
   "grades": {
    "AA": 7,
    "BA": 7,
    "BA+": 9,
-   "BB": 7,
-   "BB+": 16,
-   "CB": 4,
-   "CB+": 12,
-   "CC": 3,
-   "CC+": 11,
-   "DC": 2,
-   "DC+": 7,
-   "DD+": 1,
-   "VF": 3
+   "BB": 5,
+   "BB+": 12,
+   "CB": 7,
+   "CB+": 8,
+   "CC": 6,
+   "CC+": 10,
+   "DC": 1,
+   "DC+": 4,
+   "FF": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=441&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=441&yil=2024"
  },
  {
   "code": "ENT 441E",
@@ -1247,49 +1246,45 @@
  },
  {
   "code": "ENT 441E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 79,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 89,
   "grades": {
    "AA": 7,
    "BA": 7,
    "BA+": 9,
-   "BB": 5,
-   "BB+": 12,
-   "CB": 7,
-   "CB+": 8,
-   "CC": 6,
-   "CC+": 10,
-   "DC": 1,
-   "DC+": 4,
-   "FF": 3
+   "BB": 7,
+   "BB+": 16,
+   "CB": 4,
+   "CB+": 12,
+   "CC": 3,
+   "CC+": 11,
+   "DC": 2,
+   "DC+": 7,
+   "DD+": 1,
+   "VF": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=441&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=441&yil=2026"
  },
  {
   "code": "ENT 446E",
-  "term": "2025-2026 Bahar Dönemi",
-  "donem": "202620",
-  "total": 27,
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 30,
   "grades": {
-   "AA": 12,
-   "BA": 6,
-   "BA+": 8,
-   "BB+": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=446&yil=2026"
- },
- {
-  "code": "ENT 446E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 25,
-  "grades": {
-   "AA": 22,
+   "AA": 4,
+   "BA": 4,
+   "BA+": 2,
    "BB": 1,
-   "VF": 2
+   "BB+": 2,
+   "CB": 2,
+   "CB+": 1,
+   "CC": 4,
+   "CC+": 4,
+   "DC": 3,
+   "DC+": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=446&yil=2026"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=446&yil=2024"
  },
  {
   "code": "ENT 446E",
@@ -1313,23 +1308,28 @@
  },
  {
   "code": "ENT 446E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 30,
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 25,
   "grades": {
-   "AA": 4,
-   "BA": 4,
-   "BA+": 2,
+   "AA": 22,
    "BB": 1,
-   "BB+": 2,
-   "CB": 2,
-   "CB+": 1,
-   "CC": 4,
-   "CC+": 4,
-   "DC": 3,
-   "DC+": 3
+   "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=446&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=446&yil=2026"
+ },
+ {
+  "code": "ENT 446E",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 27,
+  "grades": {
+   "AA": 12,
+   "BA": 6,
+   "BA+": 8,
+   "BB+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=446&yil=2026"
  },
  {
   "code": "ENT 447E",
@@ -1378,38 +1378,24 @@
  },
  {
   "code": "ENT 456E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 28,
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 34,
   "grades": {
-   "AA": 9,
-   "BA": 3,
-   "BA+": 7,
+   "AA": 4,
+   "BA": 5,
+   "BA+": 4,
    "BB": 1,
-   "BB+": 3,
-   "CC+": 1,
-   "FF": 3,
-   "VF": 1
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=456&yil=2025"
- },
- {
-  "code": "ENT 456E",
-  "term": "2024-2025 Güz Dönemi",
-  "donem": "202510",
-  "total": 22,
-  "grades": {
-   "AA": 3,
-   "BA": 6,
-   "BA+": 2,
-   "BB": 3,
    "BB+": 2,
-   "CB": 1,
-   "CB+": 1,
-   "CC": 1,
-   "CC+": 2
+   "CB": 3,
+   "CB+": 4,
+   "CC": 2,
+   "DC+": 4,
+   "DD+": 1,
+   "FF": 1,
+   "VF": 3
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=456&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=456&yil=2024"
  },
  {
   "code": "ENT 456E",
@@ -1433,76 +1419,38 @@
  },
  {
   "code": "ENT 456E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 34,
-  "grades": {
-   "AA": 4,
-   "BA": 5,
-   "BA+": 4,
-   "BB": 1,
-   "BB+": 2,
-   "CB": 3,
-   "CB+": 4,
-   "CC": 2,
-   "DC+": 4,
-   "DD+": 1,
-   "FF": 1,
-   "VF": 3
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=456&yil=2024"
- },
- {
-  "code": "ENT 462E",
-  "term": "2025-2026 Güz Dönemi",
-  "donem": "202610",
-  "total": 28,
-  "grades": {
-   "AA": 5,
-   "BA": 4,
-   "BB": 1,
-   "BB+": 3,
-   "CB": 3,
-   "CB+": 1,
-   "CC+": 1,
-   "DC": 1,
-   "DC+": 2,
-   "VF": 7
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=462&yil=2026"
- },
- {
-  "code": "ENT 462E",
   "term": "2024-2025 Güz Dönemi",
   "donem": "202510",
-  "total": 11,
-  "grades": {
-   "AA": 4,
-   "BA": 1,
-   "BB+": 2,
-   "CC": 1,
-   "DC+": 1,
-   "FF": 2
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=462&yil=2025"
- },
- {
-  "code": "ENT 462E",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 29,
+  "total": 22,
   "grades": {
    "AA": 3,
-   "BA": 7,
-   "BA+": 4,
-   "BB": 1,
-   "BB+": 4,
-   "CB": 5,
-   "DC": 2,
-   "DD": 1,
-   "FF": 2
+   "BA": 6,
+   "BA+": 2,
+   "BB": 3,
+   "BB+": 2,
+   "CB": 1,
+   "CB+": 1,
+   "CC": 1,
+   "CC+": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=462&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=456&yil=2025"
+ },
+ {
+  "code": "ENT 456E",
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 28,
+  "grades": {
+   "AA": 9,
+   "BA": 3,
+   "BA+": 7,
+   "BB": 1,
+   "BB+": 3,
+   "CC+": 1,
+   "FF": 3,
+   "VF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=456&yil=2025"
  },
  {
   "code": "ENT 462E",
@@ -1524,23 +1472,75 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=462&yil=2024"
  },
  {
-  "code": "ENT 475E",
-  "term": "2024-2025 Bahar Dönemi",
-  "donem": "202520",
-  "total": 15,
+  "code": "ENT 462E",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 29,
   "grades": {
-   "BA": 1,
+   "AA": 3,
+   "BA": 7,
+   "BA+": 4,
    "BB": 1,
-   "CB": 2,
+   "BB+": 4,
+   "CB": 5,
+   "DC": 2,
+   "DD": 1,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=462&yil=2024"
+ },
+ {
+  "code": "ENT 462E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 11,
+  "grades": {
+   "AA": 4,
+   "BA": 1,
+   "BB+": 2,
    "CC": 1,
+   "DC+": 1,
+   "FF": 2
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=462&yil=2025"
+ },
+ {
+  "code": "ENT 462E",
+  "term": "2025-2026 Güz Dönemi",
+  "donem": "202610",
+  "total": 28,
+  "grades": {
+   "AA": 5,
+   "BA": 4,
+   "BB": 1,
+   "BB+": 3,
+   "CB": 3,
+   "CB+": 1,
    "CC+": 1,
    "DC": 1,
    "DC+": 2,
-   "DD": 1,
-   "FF": 2,
-   "VF": 2
+   "VF": 7
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=475&yil=2025"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=462&yil=2026"
+ },
+ {
+  "code": "ENT 475E",
+  "term": "2023-2024 Güz Dönemi",
+  "donem": "202410",
+  "total": 31,
+  "grades": {
+   "AA": 5,
+   "BA+": 5,
+   "BB": 6,
+   "BB+": 5,
+   "CB": 2,
+   "CB+": 2,
+   "CC": 1,
+   "CC+": 1,
+   "DC+": 3,
+   "VF": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=475&yil=2024"
  },
  {
   "code": "ENT 475E",
@@ -1562,21 +1562,21 @@
  },
  {
   "code": "ENT 475E",
-  "term": "2023-2024 Güz Dönemi",
-  "donem": "202410",
-  "total": 31,
+  "term": "2024-2025 Bahar Dönemi",
+  "donem": "202520",
+  "total": 15,
   "grades": {
-   "AA": 5,
-   "BA+": 5,
-   "BB": 6,
-   "BB+": 5,
+   "BA": 1,
+   "BB": 1,
    "CB": 2,
-   "CB+": 2,
    "CC": 1,
    "CC+": 1,
-   "DC+": 3,
-   "VF": 1
+   "DC": 1,
+   "DC+": 2,
+   "DD": 1,
+   "FF": 2,
+   "VF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=475&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=ENT&dersNo=475&yil=2025"
  }
 ]

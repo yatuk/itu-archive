@@ -1,6 +1,18 @@
 [
  {
   "code": "DUY 501",
+  "term": "2023-2024 Yaz Dönemi",
+  "donem": "202430",
+  "total": 13,
+  "grades": {
+   "AA": 10,
+   "BB": 2,
+   "BB+": 1
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=501&yil=2024"
+ },
+ {
+  "code": "DUY 501",
   "term": "2024-2025 Yaz Dönemi",
   "donem": "202530",
   "total": 13,
@@ -15,16 +27,17 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=501&yil=2025"
  },
  {
-  "code": "DUY 501",
-  "term": "2023-2024 Yaz Dönemi",
-  "donem": "202430",
-  "total": 13,
+  "code": "DUY 504",
+  "term": "2023-2024 Bahar Dönemi",
+  "donem": "202420",
+  "total": 15,
   "grades": {
-   "AA": 10,
+   "AA": 8,
    "BB": 2,
-   "BB+": 1
+   "BB+": 3,
+   "FF": 2
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=501&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=504&yil=2024"
  },
  {
   "code": "DUY 504",
@@ -40,17 +53,14 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=504&yil=2025"
  },
  {
-  "code": "DUY 504",
-  "term": "2023-2024 Bahar Dönemi",
-  "donem": "202420",
-  "total": 15,
+  "code": "DUY 515",
+  "term": "2023-2024 Yaz Dönemi",
+  "donem": "202430",
+  "total": 13,
   "grades": {
-   "AA": 8,
-   "BB": 2,
-   "BB+": 3,
-   "FF": 2
+   "AA": 13
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=504&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=515&yil=2024"
  },
  {
   "code": "DUY 515",
@@ -68,14 +78,14 @@
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=515&yil=2025"
  },
  {
-  "code": "DUY 515",
+  "code": "DUY 599",
   "term": "2023-2024 Yaz Dönemi",
   "donem": "202430",
-  "total": 13,
+  "total": 11,
   "grades": {
-   "AA": 13
+   "BL": 11
   },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=515&yil=2024"
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=599&yil=2024"
  },
  {
   "code": "DUY 599",
@@ -86,15 +96,5 @@
    "BL": 10
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=599&yil=2025"
- },
- {
-  "code": "DUY 599",
-  "term": "2023-2024 Yaz Dönemi",
-  "donem": "202430",
-  "total": 11,
-  "grades": {
-   "BL": 11
-  },
-  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=DUY&dersNo=599&yil=2024"
  }
 ]

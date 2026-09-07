@@ -498,6 +498,123 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=541"
  },
+ "MKS 593": {
+  "code": "MKS 593",
+  "name": "Konstrüksiyon.Tolerans Analizi",
+  "nameEn": "Mechanical Tolerance Analysis in Design",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu derste, öğrenciler montaj parçaları arasında boyutun ve toleransların montajın çalışmasına etkisini tolerans analizi kullanarak çözümlemeyi öğrenecektir. Mühendisler eş çalışan parçaların ve montajların fonksiyonlarını yerine getirebilmeleri için şekil ve geçme toleranlarının uyumlu olmasına karar vermek durumundadır. Üretim, kontrol, montaj ve servis işlemlerinde var olan konstrüksiyonların problemlerini çözümlemek için tolerans teknikleri bilinmelidir. In this course, students are introduced to using of Tolerance Analysis to study how tolerances and assembly methods affect dimensional stack-up between two features of an assembly. The design engineer can ensure that the form and fit of related parts and assemblies will satisfy their intended function. Manufacturing, inspection, assembly and service personnel can use these techniques to troubleshoot problems on existing design.",
+  "outcomes": [
+   "Fonksiyonel toleranslandırma yapabilir.",
+   "Üretimde tolerans analizi hesaplaması yapabilir.",
+   "Elle tolerans tablosu yapabilir.",
+   "Bilgisayar yardımıyla tolerans analizi yapabilir.",
+   "Mastar tasarımı yapıp, projelendirebilir.",
+   "Doğru toleranslandırma ve maliyet analizi yapabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Konstrüksiyonda boyut ve geometric toleranslandırma esasları",
+   "Hafta 2 · Tolerans analizi ve grafik analiz",
+   "Hafta 3 · İstatistiksel tolerans analizi",
+   "Hafta 4 · Çap ve radius toleranslamanın esasları",
+   "Hafta 5 · Malzeme şartları değişkenlerinin analizi",
+   "Hafta 6 · Geometrik boyut ve toleranslandırmanın Gelişmiş boyut toleraslandırma metoduyla analizi",
+   "Hafta 7 · Parça toleranslarının hesabı",
+   "Hafta 8 · Montajda son tolerans analizi",
+   "Hafta 9 · Boşluklu ve sabit bağlama elemanları formülleri",
+   "Hafta 10 · Tolerans hesaplamasında raporlama şekilleri",
+   "Hafta 11 · Tolerans toplamında şekil toleransları",
+   "Hafta 12 · Tolerans yönü ve trigonometrik tolerans hesabı",
+   "Hafta 13 · Montajda istenilen toleransla parçaların toleranslarını hesaplama",
+   "Hafta 14 · Geometrik boyutlandırma ve toleranların imalatta ölçülmesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Konstrüksiyonda boyut ve geometric toleranslandırma esasları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tolerans analizi ve grafik analiz",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İstatistiksel tolerans analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Çap ve radius toleranslamanın esasları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Malzeme şartları değişkenlerinin analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Geometrik boyut ve toleranslandırmanın Gelişmiş boyut toleraslandırma metoduyla analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Parça toleranslarının hesabı",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Montajda son tolerans analizi",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Boşluklu ve sabit bağlama elemanları formülleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Tolerans hesaplamasında raporlama şekilleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Tolerans toplamında şekil toleransları",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Tolerans yönü ve trigonometrik tolerans hesabı",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Montajda istenilen toleransla parçaların toleranslarını hesaplama",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Geometrik boyutlandırma ve toleranların imalatta ölçülmesi"
+   }
+  ],
+  "textbooks": [
+   "Meadows J. D. (2009), Geometric Dimensioning and Tolerancing Applications and Measurement, ASME Press, New York. . ISBN: 978-0-9714401-6-6, TS172.M43",
+   "Cogorno, Gene. (2010), Geometric Dimensioning and Tolerancing for Mechanical Design McGrawHill: New York. ISBN: 9780071491822",
+   "Fischer, Bryan R.,(2004), Mechanical Tolerance Stackup and Analysis, Marcel Dekker, Inc., New York. . ISBN: 0-8247-5379-8, TS172.F57",
+   "Meadows J. D. (1994), Measurement of Geometric Tolerances in Manufacturing, ASME Press, New York. . ISBN: 0-8247-0163-1",
+   "Foster, L.W. (1994) Geo-Metrics IIIm, The Metric Application of Geometric Dimensioning and Tolerancing Techniques, Addison-Wesley: Reading, ISBN: 0-201-63343-4"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=593"
+ },
  "MKS 596": {
   "code": "MKS 596",
   "name": "Bilimsel Araş.,Etik ve Seminer",

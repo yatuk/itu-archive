@@ -246,9 +246,88 @@
    "ects": 7.5
   },
   "description": "Tıbbi bilişim konusunda temel kavramlar. Tıpta bilgisayar destekli programlar, insan-bilgisayar arabirimi. Tıpta bilgisayar uygulamaları. Tıbbi kayıtlar, veri-tabanları, veri temsilleri, veri toplama ve sunumu. Biyolojik işaret işleme. Bilgi tabanlı sistemler. Tıpta yapay zeka. Tıpta karar ve analiz. Tıbbi bilişim sistemlerine giriş: Haberleşme ve ağlar. Tele-tıp ve İnternet uygulamaları. Tıbbi bilişimde ileri konular. An introduction to the fundamental principles of medical informatics. Computer-based tools in health care, human computer interfaces. An introduction to computer applications in medicine. Medical records, database, data representation, data acquisition and presentation. Biological signal processing. Knowledge-based systems. Medical artificial intelligence. Medical decision and analysis. Introduction to health information systems: communication and networks. Telemedicine and Internet applications. Advance topics in biomedical informatics.",
-  "outcomes": null,
+  "outcomes": [
+   "Tıbbi veri, enformasyon ve bilgi hiyerarşisini anlama",
+   "Tıpta bilgi yönetimi ve bilgi teknolojilerini öğrenme",
+   "Tıpta karar verme süreçlerini tanımlama",
+   "Tıbbi bilişimde makine öğrenmesinin rolünü değerlendirme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş",
+   "Hafta 2 · Veri, Enformasyon, Bilgi , Erdem Hiyerarşisi",
+   "Hafta 3 · Elektronik Medikal Kayıt",
+   "Hafta 4 · Hastane Bilgi Sistemleri (HBS)",
+   "Hafta 5 · Interoperabilite (HL7, Medikal terminoloji… )",
+   "Hafta 6 · Klinik destek sistemleri",
+   "Hafta 7 · Vize",
+   "Hafta 8 · HBS modelleme",
+   "Hafta 9 · Tıp Bilişim Standartları",
+   "Hafta 10 · Sağlıkta karar destek sistemleri",
+   "Hafta 11 · Teletıp",
+   "Hafta 12 · Mahremiyet ve güvenlik",
+   "Hafta 13 · Proje sunumları",
+   "Hafta 14 · Proje sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Veri, Enformasyon, Bilgi , Erdem Hiyerarşisi"
+   },
+   {
+    "week": 3,
+    "topic": "Elektronik Medikal Kayıt"
+   },
+   {
+    "week": 4,
+    "topic": "Hastane Bilgi Sistemleri (HBS)"
+   },
+   {
+    "week": 5,
+    "topic": "Interoperabilite (HL7, Medikal terminoloji… )"
+   },
+   {
+    "week": 6,
+    "topic": "Klinik destek sistemleri"
+   },
+   {
+    "week": 7,
+    "topic": "Vize"
+   },
+   {
+    "week": 8,
+    "topic": "HBS modelleme"
+   },
+   {
+    "week": 9,
+    "topic": "Tıp Bilişim Standartları"
+   },
+   {
+    "week": 10,
+    "topic": "Sağlıkta karar destek sistemleri"
+   },
+   {
+    "week": 11,
+    "topic": "Teletıp"
+   },
+   {
+    "week": 12,
+    "topic": "Mahremiyet ve güvenlik"
+   },
+   {
+    "week": 13,
+    "topic": "Proje sunumları"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları"
+   }
+  ],
   "textbooks": [
-   "-"
+   "1. Tim Benson, Principles of Health Interoperability: HL7 and SNOMED, Springer 2009 978-1-84882-802-5."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=510"
  },
@@ -606,8 +685,82 @@
    "1. Bilişim Uygulamalarındaki özel konularda bilgi edinme",
    "2. Edinilen bilgilerin çeşitli uygulamalarla pekiştirilmesi"
   ],
+  "weeklyTopics": [
+   "Hafta 1 · Kablosuz Haberleşme",
+   "Hafta 2 · 1G-5G ve 6G",
+   "Hafta 3 · 5G İlkeleri / Devrimi",
+   "Hafta 4 · 5G İlkeleri / Devrimi",
+   "Hafta 5 · 4G-5G Karşılaştırması",
+   "Hafta 6 · 5G'yi Mümkün Kılan Teknolojiler",
+   "Hafta 7 · 5G Güvenliği",
+   "Hafta 8 · 5G Protokol Yığını",
+   "Hafta 9 · 5G Çekirdek Ağı",
+   "Hafta 10 · 5G Katmanlı Tasarımı",
+   "Hafta 11 · 6G'yi Mümkün Kılan Teknolojiler",
+   "Hafta 12 · Kablosuz Haberleşmede Yeni Konular (Ağ Dijital İkizi)",
+   "Hafta 13 · Kablosuz Haberleşmede Yeni Konular (Otonom Ağ)",
+   "Hafta 14 · Sunum"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kablosuz Haberleşme"
+   },
+   {
+    "week": 2,
+    "topic": "1G-5G ve 6G"
+   },
+   {
+    "week": 3,
+    "topic": "5G İlkeleri / Devrimi"
+   },
+   {
+    "week": 4,
+    "topic": "5G İlkeleri / Devrimi"
+   },
+   {
+    "week": 5,
+    "topic": "4G-5G Karşılaştırması"
+   },
+   {
+    "week": 6,
+    "topic": "5G'yi Mümkün Kılan Teknolojiler"
+   },
+   {
+    "week": 7,
+    "topic": "5G Güvenliği"
+   },
+   {
+    "week": 8,
+    "topic": "5G Protokol Yığını"
+   },
+   {
+    "week": 9,
+    "topic": "5G Çekirdek Ağı"
+   },
+   {
+    "week": 10,
+    "topic": "5G Katmanlı Tasarımı"
+   },
+   {
+    "week": 11,
+    "topic": "6G'yi Mümkün Kılan Teknolojiler"
+   },
+   {
+    "week": 12,
+    "topic": "Kablosuz Haberleşmede Yeni Konular (Ağ Dijital İkizi)"
+   },
+   {
+    "week": 13,
+    "topic": "Kablosuz Haberleşmede Yeni Konular (Otonom Ağ)"
+   },
+   {
+    "week": 14,
+    "topic": "Sunum"
+   }
+  ],
   "textbooks": [
-   "-"
+   "T. S. Rappaport, Wireless Communications: Principles and Practice, Pearson."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=539"
  },
@@ -642,10 +795,88 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "- -",
-  "outcomes": null,
+  "description": "Hukuki Çerçeve ve Etik İlkeler, ISO-IEC 27037 Standartları, Adli Bilişim Araç ve Yazılımları, Sabit Disk ve Mobil Cihazlarda Adli Bilişim İncelenmesi, Adli Bilişimde Ses ve Görüntü Analzi, Avrupa Konseyi Elektronik Delil Yönetmeliği, Bulut Bilişimde Adli Bilişim, Adli Bilişimde Güncel Yenilikler ve Gelişmeler Legal Framework and Ethical Principles, ISO-IEC 27037 Standards, Tools and Software in Digital Forensics, Digital Forensic Analysis on Hard Disks and Mobile Devices, Image and Audio Analysis in Digital Forensics, Council of Europe Electronic Evidence Guidelines, Cloud Computing in Digital Forensics, Recent Innovations and Developments in Digital Forensics",
+  "outcomes": [
+   "1) Adli bilişim kavramı ve türleri,",
+   "2) ISO-IEC 27037 Standartları,",
+   "3) AB Avrupa Konseyi Dijital Delil Esasları (COE-EEG),"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Adli Bilişim Kavramları",
+   "Hafta 2 · Adli Bilişimde Hukuki Çerçeve ve Etik İlkeler",
+   "Hafta 3 · Adli Bilişim Araç ve Yazılımları",
+   "Hafta 4 · Adli Bilişimde ISO-IEC 27037 Standartları",
+   "Hafta 5 · Vaka Analizi: Dijital Delillerin Toplanması ve İncelenmesi",
+   "Hafta 6 · Sabit Disk ve Mobil Cihazlarda Adli Bilişim İncelenmesi",
+   "Hafta 7 · Adli Bilişimde Ses ve Görüntü Analizi",
+   "Hafta 8 · Siber Suç Araştırmalarında Adli Bilişim Yaklaşımı",
+   "Hafta 9 · Avrupa Konseyi Elektronik Delil Yönetmeliği",
+   "Hafta 10 · Dijital Delillerin Yönetimi: AB Düzenlemeleri ve Küresel Yaklaşımlar",
+   "Hafta 11 · Türkiye’de Dijital Delil Yönetimi: Uluslararası Düzenlemelere Uyum",
+   "Hafta 12 · Bulut Bilişimde Adli Bilişim",
+   "Hafta 13 · Vaka Analizi Dijital Delillerin Analiz ve Raporlanması",
+   "Hafta 14 · Adli Bilişimde Güncel Yenilikler ve Gelişmeler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Adli Bilişim Kavramları"
+   },
+   {
+    "week": 2,
+    "topic": "Adli Bilişimde Hukuki Çerçeve ve Etik İlkeler"
+   },
+   {
+    "week": 3,
+    "topic": "Adli Bilişim Araç ve Yazılımları"
+   },
+   {
+    "week": 4,
+    "topic": "Adli Bilişimde ISO-IEC 27037 Standartları"
+   },
+   {
+    "week": 5,
+    "topic": "Vaka Analizi: Dijital Delillerin Toplanması ve İncelenmesi"
+   },
+   {
+    "week": 6,
+    "topic": "Sabit Disk ve Mobil Cihazlarda Adli Bilişim İncelenmesi"
+   },
+   {
+    "week": 7,
+    "topic": "Adli Bilişimde Ses ve Görüntü Analizi"
+   },
+   {
+    "week": 8,
+    "topic": "Siber Suç Araştırmalarında Adli Bilişim Yaklaşımı"
+   },
+   {
+    "week": 9,
+    "topic": "Avrupa Konseyi Elektronik Delil Yönetmeliği"
+   },
+   {
+    "week": 10,
+    "topic": "Dijital Delillerin Yönetimi: AB Düzenlemeleri ve Küresel Yaklaşımlar"
+   },
+   {
+    "week": 11,
+    "topic": "Türkiye’de Dijital Delil Yönetimi: Uluslararası Düzenlemelere Uyum"
+   },
+   {
+    "week": 12,
+    "topic": "Bulut Bilişimde Adli Bilişim"
+   },
+   {
+    "week": 13,
+    "topic": "Vaka Analizi Dijital Delillerin Analiz ve Raporlanması"
+   },
+   {
+    "week": 14,
+    "topic": "Adli Bilişimde Güncel Yenilikler ve Gelişmeler"
+   }
+  ],
   "textbooks": [
-   "-"
+   "1) Gerard Johansen. (2020). Digital Forensics and Incident Response: Incident Detection and Response. 1st Edition. Packt Publishing."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=546"
  },
@@ -664,20 +895,12 @@
   "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
   "outcomes": [
    "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
-   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
-   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
    "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
    "3. Literatür taraması ve analizi yapabilmek",
-   "3. Literatür taraması ve analizi yapabilmek",
-   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
    "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
    "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
-   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
-   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
    "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
    "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
-   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
-   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
    "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
   ],
   "weeklyTopics": [
@@ -769,14 +992,9 @@
   ],
   "textbooks": [
    "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
-   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
-   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
    "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
    "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
-   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
    "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
-   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
-   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=596"
@@ -797,7 +1015,8 @@
   "outcomes": [
    "1. Elektromanyetik kavramlar, statik ve zamanla değişen elektromanyetik alanlar",
    "2. İleri elektromanyetik teorinin gerçek hayattaki uygulama örnekleri",
-   "3. Anten teorisindeki analitik ve sayısal tekniklerin kullanıldığı pratik uygulamalar"
+   "3. Anten teorisindeki analitik ve sayısal tekniklerin kullanıldığı pratik uygulamalar",
+   "4. RF kablosuz iletişim, uydu haberleşmesi ve mikrodalga radar sistemleri için uygun anten tasarımları"
   ],
   "weeklyTopics": [
    "Hafta 1 · Antenler için elektromanyetik teorinin gözden geçirilmesi",
@@ -895,8 +1114,82 @@
    "1. Bilişim Uygulamalarındaki özel konularda bilgi edinme",
    "2. Edinilen bilgilerin çeşitli uygulamalarla pekiştirilmesi"
   ],
+  "weeklyTopics": [
+   "Hafta 1 · 1, 2 and 3 Electromagnetic sources.",
+   "Hafta 2 · Diffraction by the lattice",
+   "Hafta 3 · Diffraction by the PEC elliptical cylinder",
+   "Hafta 4 · Diffraction by the dielectric elliptical cylinder",
+   "Hafta 5 · Diffraction by the PEC sphere",
+   "Hafta 6 · Diffraction by the dielectric sphere",
+   "Hafta 7 · Diffraction by the arbitrary 3d shape dielectric (like human head)",
+   "Hafta 8 · Inverse problem solution for 2D case",
+   "Hafta 9 · Inverse problem solution for 3D case",
+   "Hafta 10 · Error estimation in 2D diffraction problems",
+   "Hafta 11 · Error estimation in 3D diffraction problems",
+   "Hafta 12 · Visualisation of 2D far field pattern",
+   "Hafta 13 · Visualisation of 3D far field pattern",
+   "Hafta 14 · Diffraction problem solution for metalo dielectric objects (Like room)"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "1, 2 and 3 Electromagnetic sources."
+   },
+   {
+    "week": 2,
+    "topic": "Diffraction by the lattice"
+   },
+   {
+    "week": 3,
+    "topic": "Diffraction by the PEC elliptical cylinder"
+   },
+   {
+    "week": 4,
+    "topic": "Diffraction by the dielectric elliptical cylinder"
+   },
+   {
+    "week": 5,
+    "topic": "Diffraction by the PEC sphere"
+   },
+   {
+    "week": 6,
+    "topic": "Diffraction by the dielectric sphere"
+   },
+   {
+    "week": 7,
+    "topic": "Diffraction by the arbitrary 3d shape dielectric (like human head)"
+   },
+   {
+    "week": 8,
+    "topic": "Inverse problem solution for 2D case"
+   },
+   {
+    "week": 9,
+    "topic": "Inverse problem solution for 3D case"
+   },
+   {
+    "week": 10,
+    "topic": "Error estimation in 2D diffraction problems"
+   },
+   {
+    "week": 11,
+    "topic": "Error estimation in 3D diffraction problems"
+   },
+   {
+    "week": 12,
+    "topic": "Visualisation of 2D far field pattern"
+   },
+   {
+    "week": 13,
+    "topic": "Visualisation of 3D far field pattern"
+   },
+   {
+    "week": 14,
+    "topic": "Diffraction problem solution for metalo dielectric objects (Like room)"
+   }
+  ],
   "textbooks": [
-   "-"
+   ". R. Zaridze, G. Bit-Babik, D. Karkashadze, R. Jobava, D. Economou and N. Uzunoglu, THE METHOD OF AUXILIARY SOURCES (MAS) Solution of Propagation, Diffraction and Inverse Problems Using MAS, Tbilisi – Athens 1998."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=610"
  },
@@ -916,7 +1209,8 @@
   "outcomes": [
    "1. Uygulamalı elektromanyetikteki karışık sınır değer problemlerinin analiz yöntemlerinin temellerini anlamaya yönelik sistematik ve teorik yaklaşımlar ve bunlara yönelik yeni tekniklerin geliştirilmesi",
    "2. Özgün yöntem oluşturma süreçleri",
-   "3. Analitik düşünme ve problem çözme yaklaşımları"
+   "3. Analitik düşünme ve problem çözme yaklaşımları",
+   "4. Problemlerin modellenmesi ve çözümü"
   ],
   "weeklyTopics": [
    "Hafta 1 · Elektromanyetik problemlerin sınıflandırılması",
@@ -1128,20 +1422,12 @@
   "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
   "outcomes": [
    "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
-   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
-   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
    "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
    "3. Literatür taraması ve analizi yapabilmek",
-   "3. Literatür taraması ve analizi yapabilmek",
-   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
    "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
    "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
-   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
-   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
    "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
    "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
-   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
-   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
    "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
   ],
   "weeklyTopics": [
@@ -1233,14 +1519,9 @@
   ],
   "textbooks": [
    "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
-   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
-   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
    "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
    "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
-   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
    "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
-   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
-   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
    "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=696"

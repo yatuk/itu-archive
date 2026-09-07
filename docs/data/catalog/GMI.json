@@ -6046,6 +6046,118 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GMI&dersNo=324"
  },
+ "GMI 324E": {
+  "code": "GMI 324E",
+  "name": "Gemi Mak. Operasyon&Bakımı",
+  "nameEn": "Ship Machinery Operation and Maintenance",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 1,
+   "practice": 0,
+   "lab": 1,
+   "local": 1.5,
+   "ects": 3
+  },
+  "description": "Operasyon ve bakım kavramları. Bakım teknikleri. Planlı bakım sistemi. Bakım planlama yazılımları. Kondisyon/arıza izleme sistemleri. Çalışma yeri emniyet önlemleri. Bakım prosedürleri. Ölçüm araçları ve kontrol cihazları. Metrolojik doğrulama. Krankşaft, layner vb. parçaların ölçülerinin alınması ve değerlendirilmesi. Valf, yakıt pompası, enjektör, kaver vb. parçaların bakım-tutumu. Pompa bakımları. Performans diyagramları. Yağlama yağı, yakıt ve su testleri. Gemi makineleri ve sistemlerinde arıza çözümü. Operation and maintenance fundamentals. Maintenance techniques. Planned maintenance system. Maintenance planning softwares. Condition/failure monitoring systems. Workplace safety precautions. Maintenance procedures. Measuring instruments and control devices. Metrological confirmation. Measuring of crankshaft, cylinder liner, etc. and evaluation. Maintenance of valves, fuel injection pumps and valves, cylinder heads etc. Pump overhauls. Performance diagrams. Testing of lubricating oil, fuel oil and water. Marine engines and systems troubleshooting.",
+  "outcomes": [
+   "I. Sistem operasyon ve bakım-onarım prensiplerini öğrenir.",
+   "II. Ölçü ve kontrol cihazlarını kullanabilir.",
+   "III. Yağlama yağı, yakıt ve su testlerini yapar ve analiz eder.",
+   "IV. Gemi makineleri ve sistemlerindeki arızaları çözebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Operasyon ve bakım kavramları",
+   "Hafta 2 · Bakım teknikleri, planlı bakım sistemi, bakım yönetimi yazılımları",
+   "Hafta 3 · Kondisyon ve arıza izleme sistemleri",
+   "Hafta 4 · Çalışma yeri emniyeti ve bakım prosedürleri",
+   "Hafta 5 · Ölçüm araçları ve kontrol cihazları",
+   "Hafta 6 · Metrolojik doğrulama",
+   "Hafta 7 · Krankşaft, layner vb. parçaların ölçülerinin alınması ve değerlendirilmesi",
+   "Hafta 8 · Valf, yakıt pompası, enjektör, kaver vb. parçaların bakım-tutumu",
+   "Hafta 9 · Pompa onarımları",
+   "Hafta 10 · Performans diyagramları",
+   "Hafta 11 · Yağlama yağı, yakıt ve su testleri",
+   "Hafta 12 · Acil/rutin bakım-tutumların emniyetle yürütülme yöntemleri",
+   "Hafta 13 · Gemi makineleri ve sistemlerinde arıza çözümleri",
+   "Hafta 14 · Gemi makineleri ve sistemlerinde arıza çözümleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Operasyon ve bakım kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bakım teknikleri, planlı bakım sistemi, bakım yönetimi yazılımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kondisyon ve arıza izleme sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Çalışma yeri emniyeti ve bakım prosedürleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Ölçüm araçları ve kontrol cihazları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Metrolojik doğrulama",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Krankşaft, layner vb. parçaların ölçülerinin alınması ve değerlendirilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Valf, yakıt pompası, enjektör, kaver vb. parçaların bakım-tutumu",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Pompa onarımları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 10,
+    "topic": "Performans diyagramları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yağlama yağı, yakıt ve su testleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Acil/rutin bakım-tutumların emniyetle yürütülme yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Gemi makineleri ve sistemlerinde arıza çözümleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Gemi makineleri ve sistemlerinde arıza çözümleri",
+    "outcomes": "4"
+   }
+  ],
+  "textbooks": [
+   "H. Meier-Peter, F. Bernhardt; G. Ackermann Compendium marine engineering: operation, monitoring, maintenance, Hamburg, Seehafen Verlag, 2009."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GMI&dersNo=324"
+ },
  "GMI 325E": {
   "code": "GMI 325E",
   "name": "Deniz Sigortaları",
@@ -6161,6 +6273,119 @@
  },
  "GMI 333": {
   "code": "GMI 333",
+  "name": "Gemi Dizel Makineleri II",
+  "nameEn": "Marine Diesel Engines II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 4
+  },
+  "description": "Yakıt sistemleri. Yağlama ve yağlama sistemleri. Soğutma sistemleri. Hava sistemleri. Egzoz sistemleri. İlk hareket ve tornistan yöntemleri. Yanma ürünleri ve çevre. Planlı bakım sistemleri. Vardiya tutma esasları. Sevk sistemleri. Emisyon kontrolü. Fuel systems. Lubricating and lubricating oil systems. Cooling systems. Air systems. Exhaust systems. Starting and reversing methods. Combustion products and environment. Planned maintenance systems. Watchkeeping principles. Propulsion systems.Emission control.",
+  "outcomes": [
+   "I. Gemi dizel makinelerinin tüm sistemlerini öğrenir.",
+   "II. Gemi dizel makinelerinde ilk hareket ve tornistan yöntemleri ile sevk sistemlerini öğrenir.",
+   "III. Gemi dizel makinelerinin yanma ürünleri ve çevresel etkilerini öğrenir.",
+   "IV. Vardiya tutma ve planlı bakım-tutum sistemlerini öğrenir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Gemi dizel makinelerinde yakıt sistemleri",
+   "Hafta 2 · Gemi dizel makinelerinde yakıt sistemleri",
+   "Hafta 3 · Gemi dizel makinelerinde yağlama ve yağlama sistemleri",
+   "Hafta 4 · Gemi dizel makinelerinde yağlama ve yağlama sistemleri",
+   "Hafta 5 · Gemi dizel makinelerinde soğutma sistemleri",
+   "Hafta 6 · Gemi dizel makinelerinde soğutma sistemleri",
+   "Hafta 7 · Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri",
+   "Hafta 8 · Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri, sevk sistemleri",
+   "Hafta 9 · Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri, sevk sistemleri",
+   "Hafta 10 · Gemi dizel makinelerinde yanma ve egzoz sistemleri",
+   "Hafta 11 · Gemi dizel makinelerinde yanma ve egzoz sistemleri",
+   "Hafta 12 · Vardiya tutma, planlı bakım-tutum sistemleri ve vardiya tutma esnasında güvenlik önlemleri",
+   "Hafta 13 · Emisyon kontrolü",
+   "Hafta 14 · Emisyon kontrolü"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Gemi dizel makinelerinde yakıt sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gemi dizel makinelerinde yakıt sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Gemi dizel makinelerinde yağlama ve yağlama sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Gemi dizel makinelerinde yağlama ve yağlama sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Gemi dizel makinelerinde soğutma sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Gemi dizel makinelerinde soğutma sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri, sevk sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Gemi dizel makinelerinde hava sistemleri, ilk hareket ve tornistan yöntemleri, sevk sistemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Gemi dizel makinelerinde yanma ve egzoz sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi dizel makinelerinde yanma ve egzoz sistemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Vardiya tutma, planlı bakım-tutum sistemleri ve vardiya tutma esnasında güvenlik önlemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Emisyon kontrolü",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "Emisyon kontrolü",
+    "outcomes": "3"
+   }
+  ],
+  "textbooks": [
+   "1. Fahrettin Küçükşahin, Dizel Motorları, Birsen Yayınevi, İstanbul 2008.",
+   "2. A. J. Wharton, Diesel Engines, Butterworth-Heinemann, 2001."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GMI&dersNo=333"
+ },
+ "GMI 333E": {
+  "code": "GMI 333E",
   "name": "Gemi Dizel Makineleri II",
   "nameEn": "Marine Diesel Engines II",
   "language": "Türkçe/English",

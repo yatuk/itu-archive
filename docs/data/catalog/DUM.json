@@ -1874,6 +1874,122 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=615"
  },
+ "DUM 623E": {
+  "code": "DUM 623E",
+  "name": "Maching Lear.in Marit.Indus.",
+  "nameEn": "Maching Lear.in Marit.Indus.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu derste yapay öğrenmeye dair temel teori, algoritmalar ve uygulamalar ele alınmaktadır. Hesaplamalı (bilgisayarlı) sistemlerin performanslarını gözlemlenen verileri yapay öğrenme teknikleri kullanarak artırmak mümkündür. Bu teknikler: Öğrenme teorisi (bias/variance tradeoffs; VC teorisi; büyük marjinler); gözetimli öğrenme (discriminative/generative öğrenme, yapay sinir ağları, destek vector makinaları); gözetimsiz öğrenme (kümeleme, boyut düşürme); ansambl öğrenme (bagging, boosting). Derslerde bu tekniklerdeki genel konular ve oluşturulmuş algoritmalar tartışılacaktır. Yapay öğrenme algoritmaları genellikle şu alanlarda sıkça uygulanmaktadır: Akıllı robot yapımı (algılama, control), metin anlama (web arama, anti-spam), bilgisayarlı görü, medical enformatik, ses analizi,veri madenciliği. This course covers the basic theory, algorithms, and applications of machine learning (ML). Computational systems can improve their performance with observed data using the machine learning techniques. These techniques include: learning theory (bias/variance tradeoffs; VC theory; large margins); supervised learning (discriminative/generative learning, neural networks, support vector machines); unsupervised learning (clustering, dimensionality reduction); ensemble learning (bagging, boosting). Lectures will discuss general issues in these topics and well-established algorithms. ML algorithms are generally applied to building smart robots (perception, control), text understanding (web search, anti-spam), computer vision, medical informatics, audio, database mining.",
+  "outcomes": [
+   "Yapay öğrenmenin altında yatan esas teoriyi anlar.",
+   "Farklı uygulamalar için yapay öğrenme tekniklerini anlar.",
+   "Yapay öğrenme algoritmalarını güçlü ve zayıf yönleriyle anlar.",
+   "Orta dereceli zorluktaki problemlere yapay öğrenme algoritmalarını uygulayabilir.",
+   "Konuyla alakalı güncel makaleleri okuduğunda anlayabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Yapay Öğrenmeye Giriş",
+   "Hafta 2 · Lineer Modeller",
+   "Hafta 3 · Lineer Modeller 2 (Lojistik Regresyon, En Çok Olabilirlik, Gradyant Düşüş)",
+   "Hafta 4 · Regularizasyon ve Aşırıuyum",
+   "Hafta 5 · Hata ve Gürültü Analizi",
+   "Hafta 6 · Model Seçme, Öğretme-test ilişkisi, Bias/variance Tradeoff",
+   "Hafta 7 · Destek Vektör Makinaları",
+   "Hafta 8 · Kümeleme",
+   "Hafta 9 · Boyut Düşürme",
+   "Hafta 10 · Yapay Sinir Ağları",
+   "Hafta 11 · Anomali Tesbiti",
+   "Hafta 12 · Radyal Temelli Fonksiyonlar (RBF)",
+   "Hafta 13 · Karar Ağaçları",
+   "Hafta 14 · Rastgele Ormanlar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yapay Öğrenmeye Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Lineer Modeller",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer Modeller 2 (Lojistik Regresyon, En Çok Olabilirlik, Gradyant Düşüş)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Regularizasyon ve Aşırıuyum",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Hata ve Gürültü Analizi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Model Seçme, Öğretme-test ilişkisi, Bias/variance Tradeoff",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Destek Vektör Makinaları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Kümeleme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Boyut Düşürme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yapay Sinir Ağları",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Anomali Tesbiti",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Radyal Temelli Fonksiyonlar (RBF)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Karar Ağaçları",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Rastgele Ormanlar"
+   }
+  ],
+  "textbooks": [
+   "Mitchell, T.M. (1997), Machine Learning, McGraw-Hill Series in Computer Science.",
+   "Alpaydın, E. (2009), Introduction to Machine Learning, The MIT Press.",
+   "Abu-Mostafa Y.S., Magdon-Ismail, M., Lin.,H. (2012), Learning from Data, AMLBook.",
+   "Murphy, K.P. (2012), Machine Learning: A Probabilistic Perspective, The MIT Press.",
+   "Theodoridis, S., Koutroumbas, K.,(2008), Pattern Recognition, 4th Ed., Academic Press ."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DUM&dersNo=623"
+ },
  "DUM 624E": {
   "code": "DUM 624E",
   "name": "Modelling&Simulati.in Mariti.",

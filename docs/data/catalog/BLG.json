@@ -6429,6 +6429,121 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=443"
  },
+ "BLG 444E": {
+  "code": "BLG 444E",
+  "name": "Bilgisayarda Grafik",
+  "nameEn": "Computer Graphics",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 2,
+   "ects": 5
+  },
+  "description": "Giriş (uygulamalar, gerçek zamanlı çizim ardışık düzeni, gölgelendiriciler, doku haritalama), OpenGL ve glut, doğrusal ve afin dönüşümler, çerçeveler, düğüm ve parça gölgelendiriciler yardımıyla 3B çizim, düğüm ve indisli tampon bellek nesneleri, katı cisim dönüşümleri (quaternionlar ve yaytopları), ölçekler, ve sıradüzensel dönüşüm (sahne çizelgesi), splinelar ve anahtar çerçeve hareketlendirme, izdüşüm ve derinlik, tarama süreci, tonlar ve gölgelendirme Introduction (applications, realtime rendering pipeline, shaders, texture mapping), OpenGL and glut, linear and affine transforms, frames, drawing 3D with vertex and fragment shaders, vertex and indexed buffer objects, rigid body transformations (quaternions and arcball), scales and hierarchical transformation (scene graph), splines and keyframe animation, projection and depth, rasterization process, shades and shading",
+  "outcomes": [
+   "Katı cisim dönüşümlerini ve ölçeklemeyi sıradüzensel bir şekilde bir nesne (robot) üzerinde uygulamak.",
+   "Eğri ve yüzeyleri aradeğerlemek.",
+   "Nesneleri ekrana çizmek.",
+   "Ekrana çizim yaparken ışığın yüzeylerden yansımasının benzetimini yapmak.",
+   "OpenGL kütüphane çağrıları ve glut kullanmak.",
+   "Üçgen telfile yüzey modellerini anlama ve işlemek",
+   "Takım olarak 1.-6. çıktıları konu alan bir proje çalışması yapmak ve sunmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş",
+   "Hafta 2 · OpenGL ve Glut temel bilgisi",
+   "Hafta 3 · Doğrusal ve afin dönüşümler",
+   "Hafta 4 · Çerçeveler",
+   "Hafta 5 · OpenGL kullanarak 3B nesnelerin çizimi",
+   "Hafta 6 · Quaternionlar , katı cisim dönüşümleri ve yaytopu",
+   "Hafta 7 · Ölçekler ve nesne bağımlılıklarının sıradüzeni: sahne çizelgesi",
+   "Hafta 8 · Eğriler ve yüzeylerin aradeğerlemesi: bezier eğrileri ve Catmull Rom splineları",
+   "Hafta 9 · İzdüşüm",
+   "Hafta 10 · Derinlik",
+   "Hafta 11 · Sınıf çalışması",
+   "Hafta 12 · Düğümden piksele yol",
+   "Hafta 13 · Malzeme ve temel gölgelendirme",
+   "Hafta 14 · Proje sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 2,
+    "topic": "OpenGL ve Glut temel bilgisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal ve afin dönüşümler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Çerçeveler",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "OpenGL kullanarak 3B nesnelerin çizimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Quaternionlar , katı cisim dönüşümleri ve yaytopu",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Ölçekler ve nesne bağımlılıklarının sıradüzeni: sahne çizelgesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Eğriler ve yüzeylerin aradeğerlemesi: bezier eğrileri ve Catmull Rom splineları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "İzdüşüm",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Derinlik",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Sınıf çalışması",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Düğümden piksele yol",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Malzeme ve temel gölgelendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-3-4"
+   }
+  ],
+  "textbooks": [
+   "S.J. Gortler, “3d Bilgisayar Grafiğinin Temelleri”, Mit Press, Temmuz 2012."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=444"
+ },
  "BLG 447": {
   "code": "BLG 447",
   "name": "Derleyici Tasarımı",

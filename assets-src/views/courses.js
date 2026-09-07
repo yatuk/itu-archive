@@ -2,9 +2,11 @@
 // çizelgesi, detay paneli, CSV indirme ve paylaşılabilir URL durumu.
 //
 // Tüm veri state.rows (arama indeksi) üzerinden çalışır; tam kayıt yalnızca
-// detay açılınca ilgili branş dosyasından gelir. Arama indeksi 10 alanlıdır:
-// [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem] —
-// son iki alan tarihsel dönemlerde olmayabilir, filtrelerde "yoksa geç" yapılır.
+// detay açılınca ilgili branş dosyasından gelir. Arama indeksi 12 alanlıdır:
+// [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem,
+// alabilen programlar[], yer] — son üç alan tarihsel dönemlerde olmayabilir,
+// filtrelerde "yoksa geç" yapılır. "yer" (bina+derslik) "zaman" ile aynı
+// sırada " | " ile ayrılmış oturum listesidir (bkz. sessionsWithLocation).
 
 import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo, isViewVisible, tickCount, termLabel } from '../core/utils.js?v=dde1e9339338';
 import { methodToCode } from '../core/urlcodes.js?v=dde1e9339338';
@@ -158,7 +160,7 @@ export async function loadTerm(slug) {
   updateSelection();
   setStatus($('#resultline'), 'dönem yükleniyor…', { busy: true });
   // Faz 5.4: iskelet — dönem verisi gelene kadar shimmer satırları.
-  $('#rows').innerHTML = '<tr class="skel-row"><td colspan="10"><div class="skel">' +
+  $('#rows').innerHTML = '<tr class="skel-row"><td colspan="11"><div class="skel">' +
     '<div class="skel-line wide"></div>'.repeat(5) +
     '</div></td></tr>';
   $('#course-groups').innerHTML = '<div class="mobile-course-skeleton skel">' +
@@ -491,9 +493,9 @@ function clearSelection() {
 }
 
 function rowsToCSV(rows, filename) {
-  const headers = ['CRN', 'Ders Kodu', 'Bölüm', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Kontenjan', 'Yazılan', 'Doluluk (%)'];
+  const headers = ['CRN', 'Ders Kodu', 'Bölüm', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Yer', 'Kontenjan', 'Yazılan', 'Doluluk (%)'];
   const data = rows.map((r) => [
-    r[0], r[1], r[3], r[2], r[4], r[5], r[6], r[7],
+    r[0], r[1], r[3], r[2], r[4], r[5], r[11] || '', r[6], r[7],
     r[6] ? Math.round((r[7] / r[6]) * 100) : '',
   ]);
   downloadCSV(filename, headers, data);
@@ -532,13 +534,14 @@ function renderTableRows(append) {
   const slice = state.filtered.slice(state.shown, state.shown + PAGE);
 
   if (!slice.length && !state.shown) {
-    fillRows(tbody, [], null, { empty: I18N.lang === 'en' ? 'No matching courses' : 'eşleşen ders yok', colspan: 10 });
+    fillRows(tbody, [], null, { empty: I18N.lang === 'en' ? 'No matching courses' : 'eşleşen ders yok', colspan: 11 });
     $('#more').hidden = true;
     return;
   }
 
   const rows = fillRows(tbody, slice, (r) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = r;
+    const where = r[11] || '';
     const key = selKey(r);
     const starred = fav.isFavorite(state.termSlug, branch, crn);
     // Arama eşleşmesini <mark> ile göster — "neden çıktı" görünür olsun.
@@ -553,6 +556,9 @@ function renderTableRows(append) {
       <td class="course-instructor" data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
       <td class="when course-schedule" data-label="Zaman">${when
         ? when.split(' | ').map((session) => `<span>${esc(localizeSchedule(session))}</span>`).join('')
+        : '<span>·</span>'}</td>
+      <td class="course-location" data-label="Yer">${where
+        ? where.split(' | ').map((loc) => `<span>${esc(loc.trim() || '·')}</span>`).join('')
         : '<span>·</span>'}</td>
       <td class="num quota-legacy-col" data-label="Kont.">${formatInt(cap)}</td>
       <td class="num quota-legacy-col" data-label="Yazılan">${formatInt(enr)}</td>
@@ -615,6 +621,7 @@ export function cachedGroupCourseRows(rows) {
 
 function createMobileSection(row, extra = false) {
   const [crn, code, name, branch, instructor, when, cap, enr] = row;
+  const where = row[11] || '';
   const key = selKey(row);
   const starred = fav.isFavorite(state.termSlug, branch, crn);
   const hits = state.marks?.get(key)?.hits || [];
@@ -622,6 +629,9 @@ function createMobileSection(row, extra = false) {
   const schedule = when
     ? when.split(' | ').map((session) => `<span>${esc(localizeSchedule(session))}</span>`).join('')
     : `<span class="mobile-data-missing">${I18N.lang === 'en' ? 'Time not announced' : 'Zaman açıklanmadı'}</span>`;
+  const location = where
+    ? where.split(' | ').map((loc) => `<span>${esc(loc.trim() || '·')}</span>`).join('')
+    : '';
   const quota = Number(cap) > 0
     ? quotaDisplay(cap, enr)
     : `<span class="quota-unknown">${I18N.lang === 'en' ? 'capacity not announced' : 'kontenjan açıklanmadı'}</span>`;
@@ -635,6 +645,7 @@ function createMobileSection(row, extra = false) {
         <span class="mobile-quota">${quota}</span>
       </span>
       <span class="mobile-schedule">${schedule}</span>
+      ${location ? `<span class="mobile-location">${location}</span>` : ''}
       ${cleanInstructor ? `<span class="mobile-instructor">${markField(cleanInstructor, 'instructor', hits.filter((h) => h.field === 'instructor'))}</span>` : ''}
     </button>
     <button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? (I18N.lang === 'en' ? 'Remove from favorites' : 'Favorilerden çıkar') : (I18N.lang === 'en' ? 'Add to favorites' : 'Favorilere ekle')}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button>`;
@@ -849,12 +860,63 @@ function fmtMin(m) {
 
 const TT_DAYS = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
 
+// "gün|saat" oturumlarıyla aynı sırada duran "yer" (bina+derslik) dizisini
+// hizalı biçimde eşler. Bir "gün|saat" parçası parseWhen'de reddedilirse
+// (bozuk biçim) karşılık gelen "yer" parçası da atlanır ki indeksler kaymasın.
+function sessionsWithLocation(when, where) {
+  const whenParts = String(when || '').split(' | ');
+  const whereParts = String(where || '').split(' | ');
+  const out = [];
+  whenParts.forEach((part, i) => {
+    const m = part.trim().match(/^(\S+)\s+(\d{2}:\d{2})\/(\d{2}:\d{2})$/);
+    if (!m) return;
+    const start = toMin(m[2]), end = toMin(m[3]);
+    if (end <= start) return;
+    out.push({ day: m[1], start, end, where: (whereParts[i] || '').trim() });
+  });
+  return out;
+}
+
+// "MED B36" -> "MED": uyarı bina bazında kıyaslar, derslik numarası dahil
+// değil (aynı binada derslik değiştirmek birkaç dakika sürer, bina değişmek
+// kampüs içi yürüyüş gerektirebilir).
+function locationBuilding(where) {
+  return String(where || '').trim().split(/\s+/)[0] || '';
+}
+
+// Aynı günde art arda gelen, biri bitmeden diğeri başlamayan (çakışma değil)
+// ama arada eşiğin altında boşluk olan ve FARKLI binada geçen ders çiftlerini
+// bulur. Bina bilgisi olmayan (eski dönem, "yer" alanı boş) oturumlar
+// karşılaştırmaya girmez — yanlış pozitif üretmemek önceliklidir. Saf
+// fonksiyon — test edilebilir.
+export function buildingGapWarnings(all, thresholdMin = 20) {
+  const byDay = new Map();
+  for (const s of all) {
+    if (!locationBuilding(s.where)) continue;
+    if (!byDay.has(s.day)) byDay.set(s.day, []);
+    byDay.get(s.day).push(s);
+  }
+  const out = [];
+  for (const [day, sessions] of byDay) {
+    sessions.sort((a, b) => a.start - b.start);
+    for (let i = 1; i < sessions.length; i++) {
+      const prev = sessions[i - 1], cur = sessions[i];
+      const gap = cur.start - prev.end;
+      if (gap < 0 || gap > thresholdMin) continue; // çakışma ya da yeterli boşluk
+      const fromBuilding = locationBuilding(prev.where), toBuilding = locationBuilding(cur.where);
+      if (fromBuilding === toBuilding) continue;
+      out.push({ day, gap, fromCode: prev.row[1], toCode: cur.row[1], fromWhere: prev.where, toWhere: cur.where });
+    }
+  }
+  return out;
+}
+
 // Oturumları gün × 30dk slot ızgarasına yerleştirir; çakışma (aynı hücrede
 // birden çok farklı ders) buradan görünür. Saf fonksiyon — test edilebilir.
 export function buildTimetable(rows) {
   const all = [];
   for (const r of rows) {
-    for (const s of parseWhen(r[5])) all.push({ ...s, row: r });
+    for (const s of sessionsWithLocation(r[5], r[11])) all.push({ ...s, row: r });
   }
   if (!all.length) return null;
   const startSlot = Math.floor(Math.min(...all.map((s) => s.start)) / 30) * 30;

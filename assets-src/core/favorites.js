@@ -63,7 +63,7 @@ export function removeFromSchedule(term, branch, crn) {
 export function clearSchedule() { saveSchedule([]); }
 
 // {term, branch, crn} kaydını o dönemin arama satırına çevirir (yoksa null).
-// Satır biçimi: [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem, programlar]
+// Satır biçimi: [crn, kod, ad, branş, hoca, zaman, kontenjan, yazılan, seviye, yöntem, programlar, yer]
 export async function rowFor(rec) {
   try {
     const rows = await getJSON(`data/terms/${rec.term}/search.json`);

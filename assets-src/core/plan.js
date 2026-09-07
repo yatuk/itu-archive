@@ -11,7 +11,7 @@
 
 import { trNum } from './utils.js?v=dde1e9339338';
 
-// search.json satırı: [crn, kod, ad, branş, hoca, zaman, kont, yazılan, seviye, yöntem, programlar]
+// search.json satırı: [crn, kod, ad, branş, hoca, zaman, kont, yazılan, seviye, yöntem, programlar, yer]
 // Şube bilgisini okunur nesneye toplar (Faz E: courses.js satır bileşenine giriş).
 export function rowToSection(r) {
   return {

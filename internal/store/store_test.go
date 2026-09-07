@@ -122,6 +122,38 @@ func TestReplaceTermPublishesCompleteSnapshotAndMetadata(t *testing.T) {
 	}
 }
 
+// TestWriteSearchIndexIncludesLocation, search.json'daki "yer" alanının
+// (bina+derslik) "gün|saat" oturumlarıyla aynı sırada, oturum sayısı kadar
+// üretildiğini denetler. Derslik OBS'te sık sık yayınlanmaz; o durumda yalnız
+// bina kalmalı, boşluk taşmamalı.
+func TestWriteSearchIndexIncludesLocation(t *testing.T) {
+	root := t.TempDir()
+	st := New(root)
+	secs := []model.Section{{
+		CRN: "10001", Branch: "BLG", Code: "BLG 102E", Name: "Intr.to Prog.",
+		Days: []string{"Pazartesi", "Çarşamba"}, Times: []string{"10:30/11:29", "13:30/15:29"},
+		Buildings: []string{"MED", "MED"}, Rooms: []string{"B36", ""},
+	}}
+	if _, err := st.ReplaceTerm("Dönem", "2026-2027-guz", "2026-08-01T00:00:00Z", true, secs); err != nil {
+		t.Fatal(err)
+	}
+	b, err := os.ReadFile(filepath.Join(root, "data", "terms", "2026-2027-guz", "search.json"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	var idx [][]any
+	if err := json.Unmarshal(b, &idx); err != nil {
+		t.Fatal(err)
+	}
+	if len(idx) != 1 || len(idx[0]) != 12 {
+		t.Fatalf("beklenmedik satır: %+v", idx)
+	}
+	where, ok := idx[0][11].(string)
+	if !ok || where != "MED B36 | MED" {
+		t.Fatalf("yer alanı yanlış: %+v", idx[0][11])
+	}
+}
+
 func TestReplaceTermRecoversInterruptedBackup(t *testing.T) {
 	root := t.TempDir()
 	st := New(root)

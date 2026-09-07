@@ -760,6 +760,7 @@ td.crn { color: var(--dimmer); }
 td.code b { color: var(--cyan); font-weight: 700; white-space: nowrap; }
 td.code small { display: block; color: var(--dimmer); font-size: 11px; }
 td.when { color: var(--dim); white-space: pre-line; }
+td.course-location { color: var(--dim); white-space: pre-line; font-size: 12px; }
 
 .row-toggle {
   all: unset; cursor: pointer; display: block; width: 100%;
@@ -2176,6 +2177,14 @@ body.modal-open { overflow: hidden; }
     font: 12px/1.45 var(--mono);
   }
   .mobile-schedule span { overflow-wrap: anywhere; }
+  .mobile-location {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    gap: 2px 10px;
+    color: var(--dimmer);
+    font: 12px/1.4 var(--sans);
+  }
   .mobile-instructor {
     overflow-wrap: anywhere;
     color: var(--dim);
@@ -2335,6 +2344,8 @@ body.modal-open { overflow: hidden; }
 .p-warn { color: var(--amber); }
 .p-conf { color: var(--red); }
 .p-conf-list { margin: 4px 0 0; padding-left: 18px; color: var(--red); font-size: 12px; }
+.p-building-warn { color: var(--amber); }
+.p-building-list { margin: 4px 0 0; padding-left: 18px; color: var(--amber); font-size: 12px; }
 
 .p-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 
@@ -2415,9 +2426,15 @@ body.modal-open { overflow: hidden; }
 }
 .tt-block .tt-time { font-size: 10px; letter-spacing: .02em; }
 .tt-block .tt-code { font-weight: 600; font-size: 11px; overflow: hidden; text-overflow: ellipsis; }
+.tt-block .tt-where {
+  display: flex; align-items: center; gap: 3px;
+  font-size: 9px; opacity: .85; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.tt-block .tt-where svg { flex: none; width: 9px; height: 9px; }
 .tt-block .tt-crn { font-size: 9px; }
-/* Dar blok (≤ ~1 saat): yalnızca kod kalır; saat/CRN tooltip'te (E). */
+/* Dar blok (≤ ~1 saat): yalnızca kod kalır; saat/yer/CRN tooltip'te (E). */
 .tt-block-narrow .tt-time,
+.tt-block-narrow .tt-where,
 .tt-block-narrow .tt-crn { display: none; }
 .tt-block:hover { filter: brightness(1.1); transform: scale(1.02); }
 .tt-block:focus-visible { outline: 2px solid var(--acid); outline-offset: 1px; }
@@ -4012,9 +4029,15 @@ body { padding-bottom: env(safe-area-inset-bottom); }
 .p-agenda-session:hover { background: var(--panel-2); }
 .p-agenda-session:focus-visible { outline: 2px solid var(--cyan); outline-offset: -2px; }
 .p-agenda-session b { color: var(--cyan); }
-.p-agenda-session small { display: block; color: var(--dim); font-size: 12px; }
 .p-agenda-time { font-family: var(--mono); font-variant-numeric: tabular-nums; }
 .p-agenda-name { display: block; margin: 3px 0 7px; overflow-wrap: anywhere; }
+.p-agenda-meta { display: flex; flex-wrap: wrap; gap: 5px 12px; margin-top: 2px; }
+.p-agenda-tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  color: var(--dim); font-size: 12px; white-space: nowrap;
+}
+.p-agenda-tag svg { flex: none; color: var(--dimmer); }
+.p-agenda-crn { font-family: var(--mono); }
 .p-agenda-conflict { display: block; color: var(--red); font-size: 12px; margin-top: 6px; }
 @media (max-width: 600px) {
   #p-grid .tt-daytabs { position: sticky; top: 66px; z-index: 5; background: var(--panel); padding-block: 8px; }
@@ -4313,4 +4336,30 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .guide-annot-text { text-align: left; }
   .guide-annot-arrow { display: none; }
   .guide-flow { padding: 16px 12px; }
+}
+
+/* ---------- haftalık program: yazdır / PDF (body.print-program) ----------
+   Ayrı bir PDF kütüphanesi yerine tarayıcının yazdırma diyaloğu kullanılır;
+   bu sınıf yalnızca "Yazdır / PDF" tıklanınca window.print() öncesi eklenir
+   (bkz. printSchedule, views/program.js) ve yazdırma bitince kaldırılır. */
+@media print {
+  body.print-program .masthead,
+  body.print-program .tabs,
+  body.print-program .tool-directory,
+  body.print-program footer,
+  body.print-program .p-panel,
+  body.print-program .p-main-actions,
+  body.print-program .p-gridopts,
+  body.print-program .tt-daytabs {
+    display: none !important;
+  }
+  body.print-program .view:not(#view-program) { display: none !important; }
+  body.print-program #view-program { padding: 0; }
+  body.print-program .p-main { width: 100%; }
+  /* Blok zemin rengi ve dolgu rengi tarayıcı varsayılanında yazdırılmaz. */
+  body.print-program .tt-block,
+  body.print-program .tt-day.tt-wknd {
+    print-color-adjust: exact; -webkit-print-color-adjust: exact;
+  }
+  body.print-program .tt-block-narrow .tt-where { display: block; }
 }

@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=2881bcd5407c">
+<link rel="stylesheet" href="assets/style.css?v=cb936babdfd1">
 <!-- Google "Tercih Edilen Kaynak" rozeti (Hakkında sekmesi) — bkz. https://kobiseo.com/araclar/google-onerilen-kaynak/ -->
 <link rel="stylesheet" href="https://kobiseo.com/rozet/rozet.css">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -293,6 +293,7 @@
       <th data-sort="name" class="sortable" scope="col"><button type="button" class="th-sort">Adı</button></th>
       <th data-sort="instructor" class="sortable" scope="col"><button type="button" class="th-sort">Öğretim Üyesi</button></th>
       <th data-sort="when" class="sortable" scope="col"><button type="button" class="th-sort">Zaman</button></th>
+      <th scope="col">Yer</th>
       <th data-sort="cap" class="sortable num quota-legacy-col" scope="col"><button type="button" class="th-sort">Kont.</button></th>
       <th data-sort="enr" class="sortable num quota-legacy-col" scope="col"><button type="button" class="th-sort">Yazılan</button></th>
       <th data-sort="fill" class="sortable num quota-main-col" scope="col"><button type="button" class="th-sort"><span class="quota-sade">Kontenjan</span><span class="quota-fosfor">Doluluk</span></button></th>
@@ -500,6 +501,7 @@
      <summary data-i18n="progExportShare">Dışa aktar ve paylaş</summary>
      <div class="p-actions p-actions-bot">
       <button type="button" id="p-dl" class="btn-ghost" data-i18n-title="progPNGTitle" title="Takvimi görsel olarak indir">PNG</button>
+      <button type="button" id="p-print" class="btn-ghost" data-i18n="progPrintBtn" data-i18n-title="progPrintTitle" title="Takvimi yazdır veya PDF olarak kaydet">Yazdır / PDF</button>
       <button type="button" id="p-csv" class="btn-ghost" data-i18n="prgCSV">CSV</button>
       <button type="button" id="p-ics" class="btn-ghost" data-i18n="progICSBtn" data-i18n-title="progICSTitle" title="Seçili şubeleri haftalık takvim olarak dışa aktar">Takvim (.ics)</button>
       <button type="button" id="p-share" class="btn-ghost" data-i18n="prgShare">Bağlantıyı kopyala</button>
@@ -689,7 +691,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=2881bcd5407c"></script>
+<script type="module" src="assets/app.js?v=cb936babdfd1"></script>
 <script>
 (function () {
   var root = document.documentElement;
@@ -722,7 +724,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
       status.className = 'error';
     }
     if (rows && !rows.querySelector('tr:not(.skel-row)')) {
-      rows.innerHTML = '<tr><td colspan="10" class="empty error">' +
+      rows.innerHTML = '<tr><td colspan="11" class="empty error">' +
         (english ? 'Course data could not be loaded. Use “Try again” above.' : 'Ders verileri yüklenemedi. Yukarıdaki “Yeniden dene” düğmesini kullan.') +
         '</td></tr>';
     }

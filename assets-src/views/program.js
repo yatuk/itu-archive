@@ -8,13 +8,18 @@
 import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum, copyText } from '../core/utils.js?v=dde1e9339338';
 import { state, indexReady } from '../core/store.js?v=dde1e9339338';
 import { quotaDisplay } from '../core/chart.js?v=dde1e9339338';
-import { buildTimetable, parseWhen, openDetail } from './courses.js?v=dde1e9339338';
+import { buildTimetable, buildingGapWarnings, parseWhen, openDetail } from './courses.js?v=dde1e9339338';
 import * as fav from '../core/favorites.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
 import { confirmDialog, promptDialog } from '../core/dialog.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 import { findAlternatives, presetPrefs, WEEKDAYS } from '../core/altfind.js?v=dde1e9339338';
+
+// Ajanda kartı ve ızgara bloğunda öğretim üyesi/konum satırlarının önündeki
+// küçük ikonlar (bkz. core/course-detail.js'teki aynı stroke ikon deseni).
+const ICON_PERSON = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>';
+const ICON_PIN = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.3 7-12a7 7 0 1 0-14 0c0 4.7 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>';
 
 let term = null;
 let rows = [];
@@ -131,6 +136,8 @@ export function initProgram() {
   });
   $('#p-addrow').addEventListener('click', addRowEntry);
   $('#p-dl').addEventListener('click', downloadPNG);
+  $('#p-print').addEventListener('click', printSchedule);
+  window.addEventListener('afterprint', () => document.body.classList.remove('print-program'));
   $('#p-prog').addEventListener('change', (e) => { const ps = loadPrograms(); ps.active = Number(e.target.value); savePrograms(ps); renderProgSelector(); });
   $('#p-prog-new').addEventListener('click', progNew);
   $('#p-prog-copy').addEventListener('click', progCopy);
@@ -422,7 +429,7 @@ function render() {
   renderCredits(items); // satır başına "3 kr · 6 AKTS" (katalog asenkron)
   updateBookmarklet(items);
   const empty = items.length === 0;
-  for (const id of ['p-clear', 'p-dl', 'p-csv', 'p-ics', 'p-share']) {
+  for (const id of ['p-clear', 'p-dl', 'p-print', 'p-csv', 'p-ics', 'p-share']) {
     const control = $(`#${id}`);
     if (control) control.disabled = empty;
   }
@@ -718,11 +725,22 @@ function renderGrid(itemRows) {
 
   if (mobileMode) {
     const sessions = place(byDay[mobileDay]);
-    wrap.innerHTML = tabsHtml + `<div class="p-agenda" aria-live="polite">${sessions.length ? sessions.map((s, i) => `
+    wrap.innerHTML = tabsHtml + `<div class="p-agenda" aria-live="polite">${sessions.length ? sessions.map((s, i) => {
+      const instructor = s.row[4] && s.row[4] !== '-' ? s.row[4] : '';
+      return `
       <button type="button" class="p-agenda-session${s.conflict ? ' is-conflict' : ''}" data-session="${i}">
         <span class="p-agenda-time">${fmtMin(s.start)}<small>${fmtMin(s.end)}</small></span>
-        <span><b>${esc(s.row[1])}</b><span class="p-agenda-name">${esc(s.row[2])}</span><small>${esc(s.row[4] || '')} · CRN ${esc(s.row[0])}</small>${s.conflict ? `<strong class="p-agenda-conflict">${esc(I18N.t('progConflictTitle'))}</strong>` : ''}</span>
-      </button>`).join('') : `<p class="empty">${I18N.lang === 'en' ? 'No classes on this day.' : 'Bu gün dersin yok.'}</p>`}</div>` + noTimeNote;
+        <span class="p-agenda-body">
+          <b>${esc(s.row[1])}</b><span class="p-agenda-name">${esc(s.row[2])}</span>
+          <span class="p-agenda-meta">
+            ${instructor ? `<span class="p-agenda-tag">${ICON_PERSON}${esc(instructor)}</span>` : ''}
+            ${s.where ? `<span class="p-agenda-tag">${ICON_PIN}${esc(s.where)}</span>` : ''}
+            <span class="p-agenda-tag p-agenda-crn">CRN ${esc(s.row[0])}</span>
+          </span>
+          ${s.conflict ? `<strong class="p-agenda-conflict">${esc(I18N.t('progConflictTitle'))}</strong>` : ''}
+        </span>
+      </button>`;
+    }).join('') : `<p class="empty">${I18N.lang === 'en' ? 'No classes on this day.' : 'Bu gün dersin yok.'}</p>`}</div>` + noTimeNote;
     wrap.querySelectorAll('.tt-daytab').forEach(btn => btn.addEventListener('click', () => {
       mobileDay = Number(btn.dataset.day);
       render();
@@ -770,10 +788,13 @@ function renderGrid(itemRows) {
       const color = colorFor(p.row[1]);
       const { bg, fg } = isSade ? blockContrast(color) : { bg: color, fg: fgFor(color) };
       const narrow = height <= 56; // ≤ 1 saat: yalnızca kod, gerisi tooltip (E)
+      const instructor = p.row[4] && p.row[4] !== '-' ? p.row[4] : '';
+      const tooltip = [p.row[1], p.row[5], instructor, p.where, `CRN ${p.row[0]}`].filter(Boolean).join(' · ');
       placedRefs.push(p.row);
-      html += `<button type="button" class="tt-block${p.conflict ? ' tt-block-conf' : ''}${narrow ? ' tt-block-narrow' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px;--ttc:${bg};--tt-fg:${fg}" title="${esc(p.row[1])} · ${esc(p.row[5])} · CRN ${esc(p.row[0])}">
+      html += `<button type="button" class="tt-block${p.conflict ? ' tt-block-conf' : ''}${narrow ? ' tt-block-narrow' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px;--ttc:${bg};--tt-fg:${fg}" title="${esc(tooltip)}">
         <span class="tt-time">${fmtMin(p.start)} - ${fmtMin(p.end)}</span>
         <span class="tt-code">${esc(p.row[1])}</span>
+        ${p.where ? `<span class="tt-where">${ICON_PIN}${esc(p.where)}</span>` : ''}
         <span class="tt-crn">CRN ${esc(p.row[0])}</span>
         ${p.conflict ? `<span class="tt-conf-icon" title="${esc(I18N.t('progConflictTitle'))}">⚠</span>` : ''}
       </button>`;
@@ -876,6 +897,10 @@ function renderSummary(items) {
   if (full) html += `<p class="p-warn">⚠ ${full} ${I18N.t('prgFullBadge')}</p>`;
   if (pairs.size) {
     html += `<p class="p-conf">${esc(I18N.t('prgConflict'))}</p><ul class="p-conf-list">${[...pairs].map((p) => `<li>${esc(p)}</li>`).join('')}</ul>`;
+  }
+  const buildingGaps = t ? buildingGapWarnings(t.all) : [];
+  if (buildingGaps.length) {
+    html += `<p class="p-building-warn">${esc(I18N.t('prgBuildingGap'))}</p><ul class="p-building-list">${buildingGaps.map((g) => `<li>${esc(g.fromCode)} (${esc(g.fromWhere)}) → ${esc(g.toCode)} (${esc(g.toWhere)}): ${g.gap} ${I18N.t('prgMinutesAbbr')}</li>`).join('')}</ul>`;
   }
   // Faz 4.1: final çakışması — exams verisi yüklenmişse asenkron ekler.
   loadFinalsNote(items, box);
@@ -1150,6 +1175,17 @@ function exportScheduleICS() {
   toast(I18N.lang === 'en' ? 'Schedule .ics downloaded' : 'Program .ics indirildi');
 }
 
+// Yazdır/PDF: tarayıcının yazdırma diyaloğunu açar. Ayrı bir PDF kütüphanesi
+// eklemek yerine mevcut sayfayı @media print kurallarıyla (bkz. style.css)
+// yalnızca ızgara/ajanda kalacak şekilde sadeleştiriyoruz; "PDF olarak kaydet"
+// tarayıcının kendi yazdırma diyaloğunda zaten bir hedef.
+function printSchedule() {
+  const items = currentItems();
+  if (!items.length) { toast(I18N.t('prgWarn'), { kind: 'warn' }); return; }
+  document.body.classList.add('print-program');
+  window.print();
+}
+
 // Takvimi PNG olarak indirir (canvas çizimi).
 function downloadPNG() {
   const items = currentItems();
@@ -1247,6 +1283,16 @@ function downloadPNG() {
       ctx.fillText(p.row[1], x + 4, top + 12);
       ctx.font = '8px sans-serif';
       ctx.fillText(`${fmtMin(p.start)}-${fmtMin(p.end)}`, x + 4, top + 22);
+      // Kısa bloklarda (≤ ~1 saat) yalnızca kod+saat sığar; daha uzun
+      // bloklarda hoca, yer ve CRN de eklenir (ekrandaki .tt-block ile aynı
+      // eşik — bkz. renderGrid'deki narrow tanımı).
+      if (height > 56) {
+        const instructor = p.row[4] && p.row[4] !== '-' ? p.row[4] : '';
+        let ly = top + 32;
+        if (instructor) { ctx.fillText(instructor, x + 4, ly); ly += 10; }
+        if (p.where) { ctx.fillText(p.where, x + 4, ly); ly += 10; }
+        ctx.fillText(`CRN ${p.row[0]}`, x + 4, ly);
+      }
     }
   }
 

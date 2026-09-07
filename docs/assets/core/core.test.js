@@ -8,7 +8,7 @@ import assert from 'node:assert/strict';
 import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, quotaDisplay, quotaState, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
-import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, programList, groupCourseRows, cachedGroupCourseRows } from '../views/courses.js';
+import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, buildingGapWarnings, programList, groupCourseRows, cachedGroupCourseRows } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
 import { examDateMatchesTerm, examScheduleMatchesTerm, examToIcs, examMapsQuery } from '../views/exams.js';
@@ -821,6 +821,56 @@ test('buildTimetable çakışmayan derslerde boş hücre bırakır', () => {
       assert.ok(codes.length <= 1, `çakışma olmamalı: gün ${d} slot ${si}`);
     }
   }
+});
+
+test('buildTimetable "yer" alanını (r[11]) oturumlarla hizalı taşır', () => {
+  const withLoc = (crn, code, when, where) => [crn, code, code, 'BLG', 'Hoca', when, 10, 0, '', '', [], where];
+  const rows = [
+    withLoc('1', 'BLG 101', 'Pazartesi 08:30/10:29 | Çarşamba 13:30/15:29', 'MED B36 | GDB'),
+    withLoc('2', 'MAT 101', 'Salı 08:30/10:29', ''), // yer verisi yok — eski dönem
+  ];
+  const t = buildTimetable(rows);
+  assert.equal(t.all.length, 3);
+  assert.equal(t.all[0].where, 'MED B36');
+  assert.equal(t.all[1].where, 'GDB');
+  assert.equal(t.all[2].where, '');
+});
+
+test('buildingGapWarnings farklı binada kısa boşluğu yakalar, aynı binada ve yeterli boşlukta susar', () => {
+  // İTÜ ders saatleri her zaman 30 dakikalık ızgaraya hizalıdır (…:00/:30
+  // başlar, …:29/:59 biter); testler de bu gerçek biçimi kullanır.
+  const withLoc = (crn, code, when, where) => [crn, code, code, 'BLG', 'Hoca', when, 10, 0, '', '', [], where];
+  // MED 10:29'da biter, GDB 10:30'da başlar: art arda (1 dk), farklı bina — uyarı.
+  const tight = buildTimetable([
+    withLoc('1', 'BLG 101', 'Pazartesi 08:30/10:29', 'MED B36'),
+    withLoc('2', 'BLG 102', 'Pazartesi 10:30/12:29', 'GDB'),
+  ]);
+  const warn = buildingGapWarnings(tight.all);
+  assert.equal(warn.length, 1);
+  assert.equal(warn[0].fromCode, 'BLG 101');
+  assert.equal(warn[0].toCode, 'BLG 102');
+  assert.equal(warn[0].gap, 1);
+
+  // Aynı bina: uyarı yok.
+  const sameBuilding = buildTimetable([
+    withLoc('1', 'BLG 101', 'Pazartesi 08:30/10:29', 'MED B36'),
+    withLoc('2', 'BLG 102', 'Pazartesi 10:30/12:29', 'MED B12'),
+  ]);
+  assert.equal(buildingGapWarnings(sameBuilding.all).length, 0);
+
+  // Yeterli boşluk (31 dk, eşiğin üstünde): uyarı yok.
+  const wideGap = buildTimetable([
+    withLoc('1', 'BLG 101', 'Pazartesi 08:30/10:29', 'MED B36'),
+    withLoc('2', 'BLG 102', 'Pazartesi 11:00/12:29', 'GDB'),
+  ]);
+  assert.equal(buildingGapWarnings(wideGap.all).length, 0);
+
+  // Yer verisi olmayan (eski dönem) oturumlar karşılaştırmaya girmez.
+  const noLoc = buildTimetable([
+    withLoc('1', 'BLG 101', 'Pazartesi 08:30/10:29', ''),
+    withLoc('2', 'BLG 102', 'Pazartesi 10:30/12:29', 'GDB'),
+  ]);
+  assert.equal(buildingGapWarnings(noLoc.all).length, 0);
 });
 
 test('parseTimeRange "HH:MM-HH:MM"i dakikaya çevirir', () => {

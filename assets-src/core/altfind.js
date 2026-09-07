@@ -32,7 +32,7 @@ function overlaps(a, b) {
   return a.day === b.day && a.start < b.end && b.start < a.end;
 }
 
-// row: [crn, code, name, branch, instructor, when, cap, enr, level, method]
+// row: [crn, code, name, branch, instructor, when, cap, enr, level, method, programs[], where]
 // section: satırın kendisi + önceden ayrıştırılmış oturumlar.
 export function toSection(row) {
   return { row, code: row[1], branch: row[3], crn: row[0], sessions: parseSessions(row[5]) };

@@ -239,23 +239,36 @@ func (s *Store) ReplaceTermQuality(label, slug, scrapedAt string, live bool, sec
 // writeSearchIndex, tarayıcıda anlık arama için sıkıştırılmış bir dizi yazar.
 // Nesne yerine dizi kullanmak dosyayı yaklaşık yarıya indiriyor.
 // Alanlar: [crn, kod, ad, branş, öğretim üyesi, gün|saat, kontenjan, yazılan,
-// seviye, yöntem, alabilen programlar[]]
-// Son üç alan filtreler için; tarihsel dönemlerde boş olabilir ve önceki veride
-// hiç bulunmayabilir — istemci yoksa yokmuş gibi davranır.
+// seviye, yöntem, alabilen programlar[], yer|yer]
+// Son dört alan filtreler/görünüm için; tarihsel dönemlerde boş olabilir ve
+// önceki veride hiç bulunmayabilir — istemci yoksa yokmuş gibi davranır. "yer"
+// dizisi "gün|saat" ile aynı sırada durur (her oturum için bina+derslik);
+// OBS derslik numarasını sık sık yayınlamaz, o zaman yalnızca bina kalır.
 func (s *Store) writeSearchIndex(slug string, sections []model.Section) error {
 	idx := make([][]any, 0, len(sections))
 	for _, sec := range sections {
 		when := make([]string, 0, len(sec.Days))
+		where := make([]string, 0, len(sec.Days))
 		for i, d := range sec.Days {
 			t := ""
 			if i < len(sec.Times) {
 				t = sec.Times[i]
 			}
 			when = append(when, strings.TrimSpace(d+" "+t))
+
+			building, room := "", ""
+			if i < len(sec.Buildings) {
+				building = sec.Buildings[i]
+			}
+			if i < len(sec.Rooms) {
+				room = sec.Rooms[i]
+			}
+			where = append(where, strings.TrimSpace(building+" "+room))
 		}
 		idx = append(idx, []any{
 			sec.CRN, sec.Code, sec.Name, sec.Branch, sec.Instructor,
 			strings.Join(when, " | "), sec.Capacity, sec.Enrolled, sec.Level, sec.Method, sec.Programs,
+			strings.Join(where, " | "),
 		})
 	}
 	return s.WriteJSON(idx, "data", "terms", slug, "search.json")

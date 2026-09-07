@@ -367,7 +367,8 @@ test.describe('SPA (ana sayfa)', () => {
     for (const theme of ['sade', 'dark']) {
       await page.locator(`.theme-btn[data-theme="${theme}"]`).click();
       // Kont./Yazılan/Doluluk üçlüsü tek Kontenjan kolonuna iner — iki temada da aynı.
-      await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 8);
+      // (9 kolon: sel, fav, CRN, Ders, Adı, Öğretim Üyesi, Zaman, Yer, Kontenjan)
+      await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 9);
       await expect(scope.locator(mobile ? '.mobile-quota' : 'tbody .quota-main-col').filter({ hasText: '/' }).first()).toBeVisible();
       await expect(scope.locator('.bar:visible')).toHaveCount(0);
       await expect(scope.locator('.fill-measured')).toHaveCount(0);

@@ -39,7 +39,7 @@ async function boot() {
   } catch (e) {
     markIndexReady(); // yükleme başarısız olsa da bekleyenleri serbest bırak
     setStatus($('#stat-status'), I18N.t('statVeriYok'), { error: true });
-    $('#rows').innerHTML = `<tr><td colspan="10" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
+    $('#rows').innerHTML = `<tr><td colspan="11" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
     window.__ituAppFailed?.('data');
     return;
   }

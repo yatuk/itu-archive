@@ -27,76 +27,81 @@ const baseURL = "https://itu-ders.com"
 
 // lang, sayfa şablonundaki tüm sabit metinlerin çevirisini taşır.
 type lang struct {
-	Code                string // "tr" veya "en"
-	SiteTitle           string
-	SiteTagline         string
-	NavDersler          string
-	NavGecmis           string
-	NavOnsart           string
-	NavSinavlar         string
-	NavTakvim           string
-	NavProgram          string
-	NavHakkinda         string
-	CrumbHome           string
-	SkipToContent       string // klavye kullanıcısı için ilk odak bağlantısı
-	FootScanned         string
-	FootLive            string
-	FootSitemap         string
-	TermSuffix          string // "ders programı ve arşivi" / "course schedule and archive"
-	TermLeadFmt         string // "İTÜ %s: %d ders, %d şube, %d branş."
-	TermLiveBadge       string // "aktif dönem · canlı veri" / "active term · live data"
-	TermBranchHeading   string // "Bu dönemde açılan branşlar"
-	TermSearchCTA       string // "bu dönemi canlı ara" / "search this term live"
-	TermDataCSV         string // "CSV"
-	TermDataJSON        string // "JSON (arama indeksi)"
-	TermDataPrefix      string // "Tüm veri:" / "All data:"
-	StatSections        string // "şube"
-	StatCourses         string // "ders"
-	StatBranches        string // "branş"
-	StatScanned         string // "son tarama"
-	BranchTitleFmt      string // "%s branşı dersleri ve dönem dökümü"
-	BranchLeadFmt       string // "İTÜ %s branşının tüm dönemlerdeki arşivi: %d ders kodu, %d dönem, %d şube."
-	BranchH1Fmt         string // "%s branşı"
-	BranchSearchCTA     string // "bu branşı canlı ara"
-	BranchCodeHeading   string // "Ders kodları" / "Course codes"
-	BranchTermHeading   string // "Dönem dökümü"
-	BranchTermCol       string // "Dönem"
-	BranchSecCol        string // "Şube"
-	CourseTitleFmt      string // "%s: ..."
-	CourseLeadFmt       string // "%s (%s): İTÜ'de %d dönemde..."
-	CourseSearchCTA     string
-	CourseStatTerms     string // "toplam dönem"
-	CourseSectHead      string // "Son dönem şubeleri"
-	CourseSectCRN       string
-	CourseSectInstr     string
-	CourseSectTime      string
-	CourseSectCap       string
-	CourseHistHead      string // "Dönem geçmişi"
-	CourseHistTerm      string // "Dönem"
-	CourseHistInstr     string // "Öğretim Üyesi"
-	CourseHistCap       string // "Kont"
-	CourseHistEnr       string // "Yazılan"
-	CourseQuotaHead     string // "Kontenjan doluluk geçmişi"
-	InstrTitleFmt       string // "%s: verdiği dersler"
-	InstrLeadFmt        string
-	InstrDescriptionFmt string
-	InstrStatTerms      string // "toplam dönem"
-	InstrStatRecords    string // "ders kaydı"
-	InstrStatCourses    string // "farklı ders"
-	InstrStatLatest     string // "son kayıt"
-	InstrFrequentHead   string // "En sık verdiği dersler"
-	InstrBranchesHead   string // "İlgili branşlar"
-	InstrHistoryHead    string // "Dönemlere göre ders geçmişi"
-	InstrDataNote       string // veri kaynağı / resmî profil uyarısı
-	InstrTableHead      string // "Verdiği dersler"
-	InstrColCourse      string // "Ders"
-	InstrColName        string // "Adı"
-	InstrColTerm        string // "Dönem"
-	InstrColCap         string // "Kont"
-	InstrColEnr         string // "Yazılan"
-	InstrGradesHead       string // "Not dağılımı"
-	InstrGradesNote       string // yalnızca tek başına verdiği dönemler dahil uyarısı
-	InstrGradesSummaryFmt string // "%d not kaydına göre notların %%%d'i AA veya BA, %%%d'i FF ya da VF."
+	Code                   string // "tr" veya "en"
+	SiteTitle              string
+	SiteTagline            string
+	NavDersler             string
+	NavGecmis              string
+	NavOnsart              string
+	NavSinavlar            string
+	NavTakvim              string
+	NavProgram             string
+	NavHakkinda            string
+	CrumbHome              string
+	SkipToContent          string // klavye kullanıcısı için ilk odak bağlantısı
+	FootScanned            string
+	FootLive               string
+	FootSitemap            string
+	TermSuffix             string // "ders programı ve arşivi" / "course schedule and archive"
+	TermLeadFmt            string // "İTÜ %s: %d ders, %d şube, %d branş."
+	TermLiveBadge          string // "aktif dönem · canlı veri" / "active term · live data"
+	TermBranchHeading      string // "Bu dönemde açılan branşlar"
+	TermSearchCTA          string // "bu dönemi canlı ara" / "search this term live"
+	TermDataCSV            string // "CSV"
+	TermDataJSON           string // "JSON (arama indeksi)"
+	TermDataPrefix         string // "Tüm veri:" / "All data:"
+	StatSections           string // "şube"
+	StatCourses            string // "ders"
+	StatBranches           string // "branş"
+	StatScanned            string // "son tarama"
+	BranchTitleFmt         string // "%s branşı dersleri ve dönem dökümü"
+	BranchLeadFmt          string // "İTÜ %s branşının tüm dönemlerdeki arşivi: %d ders kodu, %d dönem, %d şube."
+	BranchH1Fmt            string // "%s branşı"
+	BranchSearchCTA        string // "bu branşı canlı ara"
+	BranchCodeHeading      string // "Ders kodları" / "Course codes"
+	BranchTermHeading      string // "Dönem dökümü"
+	BranchTermCol          string // "Dönem"
+	BranchSecCol           string // "Şube"
+	CourseTitleFmt         string // "%s: ..."
+	CourseLeadFmt          string // "%s (%s): İTÜ'de %d dönemde..."
+	CourseSearchCTA        string
+	CourseStatTerms        string // "toplam dönem"
+	CourseSectHead         string // "Son dönem şubeleri"
+	CourseSectCRN          string
+	CourseSectInstr        string
+	CourseSectTime         string
+	CourseSectCap          string
+	CourseHistHead         string // "Dönem geçmişi"
+	CourseHistTerm         string // "Dönem"
+	CourseHistInstr        string // "Öğretim Üyesi"
+	CourseHistCap          string // "Kont"
+	CourseHistEnr          string // "Yazılan"
+	CourseQuotaHead        string // "Kontenjan doluluk geçmişi"
+	InstrTitleFmt          string // "%s: verdiği dersler"
+	InstrLeadFmt           string
+	InstrDescriptionFmt    string
+	InstrStatTerms         string // "toplam dönem"
+	InstrStatRecords       string // "ders kaydı"
+	InstrStatCourses       string // "farklı ders"
+	InstrStatLatest        string // "son kayıt"
+	InstrFrequentHead      string // "En sık verdiği dersler"
+	InstrBranchesHead      string // "İlgili branşlar"
+	InstrHistoryHead       string // "Dönemlere göre ders geçmişi"
+	InstrDataNote          string // veri kaynağı / resmî profil uyarısı
+	InstrTableHead         string // "Verdiği dersler"
+	InstrColCourse         string // "Ders"
+	InstrColName           string // "Adı"
+	InstrColTerm           string // "Dönem"
+	InstrColCap            string // "Kont"
+	InstrColEnr            string // "Yazılan"
+	InstrGradesHead        string // "Not dağılımı"
+	InstrGradesNote        string // yalnızca tek başına verdiği dönemler dahil uyarısı
+	InstrGradesSummaryFmt  string // "%d not kaydına göre notların %%%d'i AA veya BA, %%%d'i FF ya da VF."
+	InstrGradesHistorical  string
+	InstrGradesCoverageFmt string
+	InstrGradesDetails     string
+	InstrGradesColTerms    string
+	InstrGradesColGrades   string
 }
 
 var langTR = lang{
@@ -129,9 +134,14 @@ var langTR = lang{
 	InstrDataNote:     "Bu sayfa resmî personel profili değildir; İTÜ ders programı kayıtlarını özetler.",
 	InstrTableHead:    "Tüm ders kayıtları",
 	InstrColCourse:    "Ders", InstrColName: "Adı", InstrColTerm: "Dönem", InstrColCap: "Kont", InstrColEnr: "Yazılan",
-	InstrGradesHead:       "Not dağılımı",
-	InstrGradesNote:       "Yalnızca bu hocanın tek başına verdiği ders ve dönemlerin resmî not dağılımına dayanır; aynı dersi aynı dönemde başka hocalarla birlikte verdiği kayıtlar karışmasın diye dahil edilmez.",
-	InstrGradesSummaryFmt: "AA veya BA oranı %%%d, FF ya da VF oranı %%%d (%d not kaydına dayanıyor).",
+	InstrGradesHead:        "Not dağılımı",
+	InstrGradesNote:        "Yalnızca bu hocanın tek başına verdiği ders ve dönemlerin resmî not dağılımına dayanır; aynı dersi aynı dönemde başka hocalarla birlikte verdiği kayıtlar karışmasın diye dahil edilmez.",
+	InstrGradesSummaryFmt:  "AA veya BA oranı %%%d, FF ya da VF oranı %%%d (%d not kaydına dayanıyor).",
+	InstrGradesHistorical:  "Geçmiş OBS kayıtlarının özeti; gelecek dönem notu veya hoca değerlendirmesi değildir.",
+	InstrGradesCoverageFmt: "Kapsam: %d/%d benzersiz ders-dönem kaydı, %d farklı ders. %d ortak hocalı, %d not verisi bulunmayan kayıt dışarıda.",
+	InstrGradesDetails:     "Ders ve dönem bazında kapsamı gör",
+	InstrGradesColTerms:    "Dahil edilen dönemler",
+	InstrGradesColGrades:   "Not kaydı",
 }
 
 var langEN = lang{
@@ -164,9 +174,14 @@ var langEN = lang{
 	InstrDataNote:     "This is not an official staff profile; it summarizes İTÜ course schedule records.",
 	InstrTableHead:    "All course records",
 	InstrColCourse:    "Course", InstrColName: "Name", InstrColTerm: "Term", InstrColCap: "Cap", InstrColEnr: "Enr",
-	InstrGradesHead:       "Grade distribution",
-	InstrGradesNote:       "Based only on the official grade distribution for courses and terms this instructor taught alone; terms shared with another instructor are excluded so the numbers are not mixed with someone else's grading.",
-	InstrGradesSummaryFmt: "AA/BA rate is %d%%, FF/VF rate is %d%% (based on %d graded records).",
+	InstrGradesHead:        "Grade distribution",
+	InstrGradesNote:        "Based only on the official grade distribution for courses and terms this instructor taught alone; terms shared with another instructor are excluded so the numbers are not mixed with someone else's grading.",
+	InstrGradesSummaryFmt:  "AA/BA rate is %d%%, FF/VF rate is %d%% (based on %d graded records).",
+	InstrGradesHistorical:  "A summary of historical OBS records, not a prediction of future grades or an instructor rating.",
+	InstrGradesCoverageFmt: "Coverage: %d of %d unique course-term records across %d courses. %d shared-instructor and %d missing-grade records are excluded.",
+	InstrGradesDetails:     "View coverage by course and term",
+	InstrGradesColTerms:    "Included terms",
+	InstrGradesColGrades:   "Grades",
 }
 
 var trMonths = []string{

@@ -6,6 +6,7 @@ import (
 	"html/template"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 )
 
@@ -71,37 +72,73 @@ func (b *Builder) loadGradesIndex() error {
 // kayıt, notları hangi hocaya ait olduğu belirsiz kalacağı için dahil
 // edilmez.
 type instructorGradeProfile struct {
+	Counts         map[string]int
+	Total          int
+	Records        int // kaç farklı (kod, dönem) kaydı katkı verdi
+	CandidatePairs int // hocanın arşivdeki benzersiz (kod, dönem) kaydı
+	SharedExcluded int // aynı ders+dönemde birden fazla hoca olduğu için dışlanan
+	MissingGrades  int // tek hocalı olsa da resmî not dağılımı bulunmayan
+	Courses        []instructorGradeCourse
+}
+
+type instructorGradeCourse struct {
+	Code    string
 	Counts  map[string]int
 	Total   int
-	Records int // kaç farklı (kod, dönem) kaydı katkı verdi
+	Records int
+	Terms   []string
 }
 
 func (b *Builder) instructorGradeProfile(hi *histInstr, termLabels map[string]string) instructorGradeProfile {
 	gp := instructorGradeProfile{Counts: map[string]int{}}
 	seenPairs := map[string]bool{}
+	byCourse := map[string]*instructorGradeCourse{}
 	for _, row := range hi.Rows {
 		key := row.Code + "\x00" + row.Term
 		if seenPairs[key] {
 			continue
 		}
 		seenPairs[key] = true
+		gp.CandidatePairs++
 		if b.codeTermInstrCount[key] != 1 {
+			gp.SharedExcluded++
 			continue
 		}
 		label := termLabels[row.Term]
 		if label == "" {
+			gp.MissingGrades++
 			continue
 		}
 		rec, ok := b.gradesIndex[row.Code][label]
 		if !ok || rec.Total == 0 {
+			gp.MissingGrades++
 			continue
+		}
+		course := byCourse[row.Code]
+		if course == nil {
+			course = &instructorGradeCourse{Code: row.Code, Counts: map[string]int{}}
+			byCourse[row.Code] = course
 		}
 		for letter, n := range rec.Grades {
 			gp.Counts[letter] += n
+			course.Counts[letter] += n
 		}
 		gp.Total += rec.Total
 		gp.Records++
+		course.Total += rec.Total
+		course.Records++
+		course.Terms = append(course.Terms, label)
 	}
+	for _, course := range byCourse {
+		sort.Sort(sort.Reverse(sort.StringSlice(course.Terms)))
+		gp.Courses = append(gp.Courses, *course)
+	}
+	sort.Slice(gp.Courses, func(i, j int) bool {
+		if gp.Courses[i].Total != gp.Courses[j].Total {
+			return gp.Courses[i].Total > gp.Courses[j].Total
+		}
+		return gp.Courses[i].Code < gp.Courses[j].Code
+	})
 	return gp
 }
 
@@ -132,9 +169,27 @@ func renderInstructorGrades(l lang, gp instructorGradeProfile) string {
 	topPct := (gp.Counts["AA"] + gp.Counts["BA+"] + gp.Counts["BA"]) * 100 / gp.Total
 	failPct := (gp.Counts["FF"] + gp.Counts["VF"]) * 100 / gp.Total
 	summary := fmt.Sprintf(l.InstrGradesSummaryFmt, topPct, failPct, gp.Total)
+	coverage := fmt.Sprintf(l.InstrGradesCoverageFmt, gp.Records, gp.CandidatePairs, len(gp.Courses), gp.SharedExcluded, gp.MissingGrades)
+
+	var courseRows strings.Builder
+	for _, course := range gp.Courses {
+		courseTopPct := (course.Counts["AA"] + course.Counts["BA+"] + course.Counts["BA"]) * 100 / course.Total
+		courseFailPct := (course.Counts["FF"] + course.Counts["VF"]) * 100 / course.Total
+		fmt.Fprintf(&courseRows,
+			`<tr><td><a href="/ders/%s/">%s</a></td><td>%s</td><td>%d</td><td>%%%d</td><td>%%%d</td></tr>`,
+			courseSlug(course.Code), template.HTMLEscapeString(course.Code),
+			template.HTMLEscapeString(strings.Join(course.Terms, ", ")), course.Total, courseTopPct, courseFailPct)
+	}
+	breakdown := `<details class="seo-grade-breakdown"><summary>` + template.HTMLEscapeString(l.InstrGradesDetails) + `</summary>` +
+		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>` + template.HTMLEscapeString(l.InstrColCourse) + `</th><th>` +
+		template.HTMLEscapeString(l.InstrGradesColTerms) + `</th><th>` + template.HTMLEscapeString(l.InstrGradesColGrades) + `</th><th>AA/BA</th><th>FF/VF</th></tr></thead><tbody>` +
+		courseRows.String() + `</tbody></table></div></details>`
 
 	return `<h2>` + l.InstrGradesHead + `</h2>` +
+		`<p class="seo-grade-context">` + template.HTMLEscapeString(l.InstrGradesHistorical) + `</p>` +
 		`<div class="seo-grade-bars">` + bars.String() + `</div>` +
 		`<p class="seo-grade-summary">` + template.HTMLEscapeString(summary) + `</p>` +
+		`<p class="seo-grade-coverage">` + template.HTMLEscapeString(coverage) + `</p>` +
+		breakdown +
 		`<p class="seo-data-note">` + template.HTMLEscapeString(l.InstrGradesNote) + `</p>`
 }

@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-07T07:24:04Z"
+  "lastSuccessfulAt": "2026-09-08T07:18:49Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-07T07:24:04Z",
+ "scrapedAt": "2026-09-08T07:18:49Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5163,
- "courses": 3593,
+ "sections": 5166,
+ "courses": 3598,
  "branches": [
   {
    "code": "ABM",
@@ -53,7 +53,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 1
+   "sections": 2
   },
   {
    "code": "ATA",
@@ -180,7 +180,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 167
+   "sections": 170
   },
   {
    "code": "CBM",
@@ -223,7 +223,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 11
+   "sections": 10
   },
   {
    "code": "CMP",
@@ -265,7 +265,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 42
+   "sections": 39
   },
   {
    "code": "DEP",
@@ -875,7 +875,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 8
+   "sections": 9
   },
   {
    "code": "MDK",
@@ -918,7 +918,7 @@
     "LS",
     "LU"
    ],
-   "sections": 48
+   "sections": 49
   },
   {
    "code": "MHN",
@@ -946,7 +946,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 149
+   "sections": 151
   },
   {
    "code": "MIT",
@@ -1456,7 +1456,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 23
+   "sections": 22
   },
   {
    "code": "ULS",
@@ -1572,11 +1572,11 @@
   }
  ],
  "stats": {
-  "sections": 5163,
-  "courses": 3593,
+  "sections": 5166,
+  "courses": 3598,
   "branches": 219,
-  "instructors": 1744,
-  "capacity": 250725,
+  "instructors": 1750,
+  "capacity": 250982,
   "enrolled": 1204
  }
 }

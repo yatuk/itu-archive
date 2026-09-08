@@ -4571,7 +4571,7 @@
   ],
   "times": [
    "13:30/17:29",
-   "14:00/17:59"
+   "08:30/12:29"
   ],
   "rooms": [
    "--",
@@ -4883,6 +4883,60 @@
    "MIM_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15318",
+  "code": "MIM 4011",
+  "branch": "MIM",
+  "level": "LS",
+  "name": "Fotoğraf",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Aras Neftçi",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15320",
+  "code": "MIM 4031E",
+  "branch": "MIM",
+  "level": "LS",
+  "name": "Architect Sinan",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

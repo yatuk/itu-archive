@@ -15,6 +15,7 @@ import (
 type gradeFileRow struct {
 	Code   string         `json:"code"`
 	Term   string         `json:"term"` // görünen etiket, ör. "2023-2024 Güz Dönemi"
+	Donem  string         `json:"donem"`
 	Total  int            `json:"total"`
 	Grades map[string]int `json:"grades"`
 }
@@ -192,4 +193,94 @@ func renderInstructorGrades(l lang, gp instructorGradeProfile) string {
 		`<p class="seo-grade-coverage">` + template.HTMLEscapeString(coverage) + `</p>` +
 		breakdown +
 		`<p class="seo-data-note">` + template.HTMLEscapeString(l.InstrGradesNote) + `</p>`
+}
+
+func renderCourseGrades(l lang, records map[string]gradeFileRow) string {
+	rows := make([]gradeFileRow, 0, len(records))
+	for _, record := range records {
+		if record.Total > 0 {
+			rows = append(rows, record)
+		}
+	}
+	if len(rows) == 0 {
+		return ""
+	}
+	sort.Slice(rows, func(i, j int) bool {
+		if rows[i].Donem != rows[j].Donem {
+			return rows[i].Donem > rows[j].Donem
+		}
+		return rows[i].Term > rows[j].Term
+	})
+
+	latest := rows[0]
+	latestLabel := localizedGradeTerm(latest.Term, l.Code)
+	latestTop, latestFail := gradeHeadlineRates(latest.Grades, latest.Total)
+	var history strings.Builder
+	for _, record := range rows {
+		top, fail := gradeHeadlineRates(record.Grades, record.Total)
+		fmt.Fprintf(&history,
+			`<tr><td>%s</td><td>%d</td><td>%%%d</td><td>%%%d</td><td>%s</td></tr>`,
+			template.HTMLEscapeString(localizedGradeTerm(record.Term, l.Code)), record.Total, top, fail,
+			template.HTMLEscapeString(gradeMode(record.Grades)))
+	}
+
+	return `<h2>` + template.HTMLEscapeString(l.CourseGradesHead) + `</h2>` +
+		`<p class="seo-grade-context">` + template.HTMLEscapeString(fmt.Sprintf(l.CourseGradesLatestFmt, latestLabel, latest.Total)) + `</p>` +
+		`<div class="seo-grade-bars">` + gradeBarsHTML(latest.Grades, latest.Total) + `</div>` +
+		`<p class="seo-grade-summary">` + template.HTMLEscapeString(fmt.Sprintf(l.CourseGradesSummaryFmt, latestTop, latestFail)) + `</p>` +
+		`<details class="seo-grade-breakdown"><summary>` + template.HTMLEscapeString(fmt.Sprintf(l.CourseGradesHistoryFmt, len(rows))) + `</summary>` +
+		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>` + template.HTMLEscapeString(l.CourseHistTerm) + `</th><th>` +
+		template.HTMLEscapeString(l.CourseGradesColGrades) + `</th><th>AA/BA</th><th>FF/VF</th><th>` + template.HTMLEscapeString(l.CourseGradesColCommon) +
+		`</th></tr></thead><tbody>` + history.String() + `</tbody></table></div></details>` +
+		`<p class="seo-data-note">` + template.HTMLEscapeString(l.CourseGradesNote) + `</p>`
+}
+
+func gradeBarsHTML(counts map[string]int, total int) string {
+	if total <= 0 {
+		return ""
+	}
+	var bars strings.Builder
+	for _, letter := range gradeLetterOrder {
+		n := counts[letter]
+		if n == 0 {
+			continue
+		}
+		pct := n * 100 / total
+		fillClass := "seo-grade-fill"
+		if letter == "FF" || letter == "VF" {
+			fillClass += " fail"
+		}
+		fmt.Fprintf(&bars, `<div class="seo-grade-row"><span class="seo-grade-label">%s</span><span class="seo-grade-track"><span class="%s" style="width:%d%%"></span></span><span class="seo-grade-pct">%%%d</span></div>`,
+			template.HTMLEscapeString(letter), fillClass, pct, pct)
+	}
+	return bars.String()
+}
+
+func gradeHeadlineRates(counts map[string]int, total int) (int, int) {
+	if total <= 0 {
+		return 0, 0
+	}
+	return (counts["AA"] + counts["BA+"] + counts["BA"]) * 100 / total,
+		(counts["FF"] + counts["VF"]) * 100 / total
+}
+
+func gradeMode(counts map[string]int) string {
+	best, bestCount := "·", 0
+	for _, letter := range gradeLetterOrder {
+		if counts[letter] > bestCount {
+			best, bestCount = letter, counts[letter]
+		}
+	}
+	return best
+}
+
+func localizedGradeTerm(label, langCode string) string {
+	if langCode != "en" {
+		return label
+	}
+	return strings.NewReplacer(
+		" Güz Dönemi", " Fall Term",
+		" Bahar Dönemi", " Spring Term",
+		" Yaz Dönemi", " Summer Term",
+	).Replace(label)
 }

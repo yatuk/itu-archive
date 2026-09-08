@@ -77,6 +77,13 @@ type lang struct {
 	CourseHistCap          string // "Kont"
 	CourseHistEnr          string // "Yazılan"
 	CourseQuotaHead        string // "Kontenjan doluluk geçmişi"
+	CourseGradesHead       string
+	CourseGradesLatestFmt  string
+	CourseGradesSummaryFmt string
+	CourseGradesHistoryFmt string
+	CourseGradesColGrades  string
+	CourseGradesColCommon  string
+	CourseGradesNote       string
 	InstrTitleFmt          string // "%s: verdiği dersler"
 	InstrLeadFmt           string
 	InstrDescriptionFmt    string
@@ -124,11 +131,18 @@ var langTR = lang{
 	CourseSearchCTA: "bu dersi canlı ara", CourseStatTerms: "toplam dönem",
 	CourseSectHead: "Son dönem şubeleri", CourseSectCRN: "CRN", CourseSectInstr: "Öğretim Üyesi", CourseSectTime: "Zaman", CourseSectCap: "Kont/Yazılan",
 	CourseHistHead: "Dönem geçmişi", CourseHistTerm: "Dönem", CourseHistInstr: "Öğretim Üyesi", CourseHistCap: "Kont", CourseHistEnr: "Yazılan",
-	CourseQuotaHead:     "Kontenjan doluluk geçmişi",
-	InstrTitleFmt:       "%s: not dağılımı ve İTÜ'de verdiği dersler",
-	InstrLeadFmt:        "%s için İTÜ Ders Arşivi'nde %d döneme ait %d ders kaydı bulunuyor. %d farklı ders; son kayıt %s.",
-	InstrDescriptionFmt: "%s: İTÜ'de verdiği derslerin not dağılımı, açtığı dönemler ve geçmiş kontenjan bilgileri. Arşivde %d dönem ve %d farklı ders; son kayıt %s.",
-	InstrStatTerms:      "toplam dönem", InstrStatRecords: "ders kaydı", InstrStatCourses: "farklı ders", InstrStatLatest: "son kayıt",
+	CourseQuotaHead:        "Kontenjan doluluk geçmişi",
+	CourseGradesHead:       "Dönemlere göre not dağılımı",
+	CourseGradesLatestFmt:  "%s için OBS'de açıklanan %d notun dağılımı.",
+	CourseGradesSummaryFmt: "AA veya BA oranı %%%d; FF ya da VF oranı %%%d.",
+	CourseGradesHistoryFmt: "Tüm dönemleri karşılaştır (%d)",
+	CourseGradesColGrades:  "Not kaydı",
+	CourseGradesColCommon:  "En sık",
+	CourseGradesNote:       "Resmî OBS not dağılımı arşividir. Yalnızca açıklanan notları içerir; başarı tahmini veya öğretim üyesi değerlendirmesi değildir.",
+	InstrTitleFmt:          "%s: not dağılımı ve İTÜ'de verdiği dersler",
+	InstrLeadFmt:           "%s için İTÜ Ders Arşivi'nde %d döneme ait %d ders kaydı bulunuyor. %d farklı ders; son kayıt %s.",
+	InstrDescriptionFmt:    "%s: İTÜ'de verdiği derslerin not dağılımı, açtığı dönemler ve geçmiş kontenjan bilgileri. Arşivde %d dönem ve %d farklı ders; son kayıt %s.",
+	InstrStatTerms:         "toplam dönem", InstrStatRecords: "ders kaydı", InstrStatCourses: "farklı ders", InstrStatLatest: "son kayıt",
 	InstrFrequentHead: "En sık verdiği dersler", InstrHistoryHead: "Dönemlere göre ders geçmişi",
 	InstrBranchesHead: "İlgili branşlar",
 	InstrDataNote:     "Bu sayfa resmî personel profili değildir; İTÜ ders programı kayıtlarını özetler.",
@@ -164,11 +178,18 @@ var langEN = lang{
 	CourseSearchCTA: "search this course live", CourseStatTerms: "total terms",
 	CourseSectHead: "Latest term sections", CourseSectCRN: "CRN", CourseSectInstr: "Instructor", CourseSectTime: "Time", CourseSectCap: "Cap/Enr",
 	CourseHistHead: "Term history", CourseHistTerm: "Term", CourseHistInstr: "Instructor", CourseHistCap: "Cap", CourseHistEnr: "Enr",
-	CourseQuotaHead:     "Enrollment history",
-	InstrTitleFmt:       "%s: grade distribution and courses taught at İTÜ",
-	InstrLeadFmt:        "%s has %d terms and %d course records in the İTÜ Course Archive, across %d distinct courses; latest record %s.",
-	InstrDescriptionFmt: "Grade distribution and courses taught by %s at İTÜ, including terms and historical enrollment. %d terms and %d distinct courses; latest record %s.",
-	InstrStatTerms:      "total terms", InstrStatRecords: "course records", InstrStatCourses: "distinct courses", InstrStatLatest: "latest record",
+	CourseQuotaHead:        "Enrollment history",
+	CourseGradesHead:       "Grade distribution by term",
+	CourseGradesLatestFmt:  "%s: distribution of %d grades published in OBS.",
+	CourseGradesSummaryFmt: "AA/BA rate is %d%%; FF/VF rate is %d%%.",
+	CourseGradesHistoryFmt: "Compare all terms (%d)",
+	CourseGradesColGrades:  "Grades",
+	CourseGradesColCommon:  "Most common",
+	CourseGradesNote:       "Official OBS grade-distribution archive. It contains only published grades and is neither a performance forecast nor an instructor rating.",
+	InstrTitleFmt:          "%s: grade distribution and courses taught at İTÜ",
+	InstrLeadFmt:           "%s has %d terms and %d course records in the İTÜ Course Archive, across %d distinct courses; latest record %s.",
+	InstrDescriptionFmt:    "Grade distribution and courses taught by %s at İTÜ, including terms and historical enrollment. %d terms and %d distinct courses; latest record %s.",
+	InstrStatTerms:         "total terms", InstrStatRecords: "course records", InstrStatCourses: "distinct courses", InstrStatLatest: "latest record",
 	InstrFrequentHead: "Most frequently taught courses", InstrHistoryHead: "Course history by term",
 	InstrBranchesHead: "Related branches",
 	InstrDataNote:     "This is not an official staff profile; it summarizes İTÜ course schedule records.",
@@ -359,12 +380,12 @@ func (b *Builder) Generate() error {
 			return err
 		}
 		instrSlugs = b.prepareInstructorProfiles()
-		if err := b.loadGradesIndex(); err != nil {
-			return err
-		}
 	} else {
 		b.instructors = map[string]*histInstr{}
 		b.instructorProfiles = map[string]*histInstr{}
+	}
+	if err := b.loadGradesIndex(); err != nil {
+		return err
 	}
 	// Kontenjan zaman serisi (grafikler için).
 	b.loadQuotaSeries()
@@ -2566,13 +2587,12 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 	}
 
 	canonical := fmt.Sprintf("%s/ders/%s/", baseURL, slug)
-	title := code + ": " + hc.Name
+	title := fmt.Sprintf(b.l.CourseTitleFmt, code, hc.Name)
 	branch := code
 	if idx := strings.IndexByte(code, ' '); idx > 0 {
 		branch = code[:idx]
 	}
-	desc := fmt.Sprintf("%s (%s): İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
-		code, hc.Name, len(hc.Terms))
+	desc := fmt.Sprintf(b.l.CourseLeadFmt, code, hc.Name, len(hc.Terms))
 
 	jsonld := jsonldScript([]any{
 		map[string]any{
@@ -2582,13 +2602,13 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			"url":         canonical,
 			"name":        code + " " + hc.Name,
 			"description": hc.Name,
-			"inLanguage":  "tr-TR",
+			"inLanguage":  map[bool]string{true: "en", false: "tr-TR"}[b.l.Code == "en"],
 			"provider":    map[string]string{"@type": "CollegeOrUniversity", "name": "İstanbul Teknik Üniversitesi", "url": "https://www.itu.edu.tr/"},
 		},
 		map[string]any{
 			"@context": "https://schema.org", "@type": "BreadcrumbList",
 			"itemListElement": []any{
-				map[string]any{"@type": "ListItem", "position": 1, "name": "İTÜ Ders Arşivi", "item": baseURL + "/"},
+				map[string]any{"@type": "ListItem", "position": 1, "name": b.l.CrumbHome, "item": baseURL + "/"},
 				map[string]any{"@type": "ListItem", "position": 2, "name": branch, "item": baseURL + "/brans/" + branch + "/"},
 				map[string]any{"@type": "ListItem", "position": 3, "name": code, "item": canonical},
 			},
@@ -2608,8 +2628,10 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 				s.Capacity, s.Enrolled,
 			))
 		}
-		sectHTML = `<h2>Son dönem şubeleri</h2>` +
-			`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>CRN</th><th>Öğretim Üyesi</th><th>Zaman</th><th>Kont/Yazılan</th></tr></thead><tbody>` +
+		sectHTML = `<h2>` + template.HTMLEscapeString(b.l.CourseSectHead) + `</h2>` +
+			`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>` + template.HTMLEscapeString(b.l.CourseSectCRN) + `</th><th>` +
+			template.HTMLEscapeString(b.l.CourseSectInstr) + `</th><th>` + template.HTMLEscapeString(b.l.CourseSectTime) + `</th><th>` +
+			template.HTMLEscapeString(b.l.CourseSectCap) + `</th></tr></thead><tbody>` +
 			strings.Join(rows, "") + `</tbody></table></div>`
 	}
 
@@ -2624,8 +2646,9 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 		}
 	}
 	if quotaHTML != "" {
-		quotaHTML = `<h2>Kontenjan doluluk geçmişi</h2><p class="seo-spark-line">` + quotaHTML + `</p>`
+		quotaHTML = `<h2>` + template.HTMLEscapeString(b.l.CourseQuotaHead) + `</h2><p class="seo-spark-line">` + quotaHTML + `</p>`
 	}
+	gradesHTML := renderCourseGrades(b.l, b.gradesIndex[code])
 
 	// Dönem geçmişi.
 	var histRows []string
@@ -2644,19 +2667,22 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 	}
 
 	content := template.HTML(buildContent(
-		fmt.Sprintf(`<nav class="crumb"><a href="/">Ders Arşivi</a> › <a href="/brans/%s/">%s</a> › <span>%s</span></nav>`,
-			template.HTMLEscapeString(branch), template.HTMLEscapeString(branch), template.HTMLEscapeString(code)),
+		fmt.Sprintf(`<nav class="crumb" aria-label="Breadcrumb"><a href="/">%s</a> › <a href="/brans/%s/">%s</a> › <span>%s</span></nav>`,
+			template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(branch), template.HTMLEscapeString(branch), template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(hc.Name)),
-		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&code=%s">bu dersi canlı ara</a></p>`,
-			b.index.CurrentSlug, template.HTMLEscapeString(code)),
+		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&code=%s">%s</a></p>`,
+			b.index.CurrentSlug, template.HTMLEscapeString(code), template.HTMLEscapeString(b.l.CourseSearchCTA)),
 		`<dl class="seo-stats">`+
-			fmt.Sprintf(`<div><dt>toplam dönem</dt><dd>%d</dd></div>`, len(hc.Terms))+
+			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.CourseStatTerms), len(hc.Terms))+
 			`</dl>`,
 		sectHTML,
+		gradesHTML,
 		quotaHTML,
-		`<h2>Dönem geçmişi</h2>`,
-		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>Dönem</th><th>Öğretim Üyesi</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
+		`<h2>`+template.HTMLEscapeString(b.l.CourseHistHead)+`</h2>`,
+		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>`+template.HTMLEscapeString(b.l.CourseHistTerm)+`</th><th>`+
+			template.HTMLEscapeString(b.l.CourseHistInstr)+`</th><th>`+template.HTMLEscapeString(b.l.CourseHistCap)+`</th><th>`+
+			template.HTMLEscapeString(b.l.CourseHistEnr)+`</th></tr></thead><tbody>`+
 			strings.Join(histRows, "")+`</tbody></table></div>`,
 	))
 

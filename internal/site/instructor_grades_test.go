@@ -43,3 +43,20 @@ func TestInstructorGradeProfileReportsCoverageAndCourseContext(t *testing.T) {
 		}
 	}
 }
+
+func TestRenderCourseGradesUsesLatestTermAndLocalizesEnglish(t *testing.T) {
+	records := map[string]gradeFileRow{
+		"old": {Term: "2023-2024 Güz Dönemi", Donem: "202410", Total: 10, Grades: map[string]int{"CC": 10}},
+		"new": {Term: "2024-2025 Bahar Dönemi", Donem: "202520", Total: 20, Grades: map[string]int{"AA": 8, "FF": 4}},
+	}
+
+	html := renderCourseGrades(langEN, records)
+	for _, want := range []string{"2024-2025 Spring Term", "distribution of 20 grades", "AA/BA rate is 40%", "Compare all terms (2)"} {
+		if !strings.Contains(html, want) {
+			t.Errorf("çıktı %q içermeli", want)
+		}
+	}
+	if strings.Index(html, "2024-2025 Spring Term") > strings.Index(html, "2023-2024 Fall Term") {
+		t.Fatal("en yeni dönem geçmiş tablosunda önce gelmeli")
+	}
+}

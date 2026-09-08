@@ -2,23 +2,25 @@
 // kodu için tüm açık şubeler arasından, tercih edilen gün/yoğunluk/saat
 // kısıtlarını karşılayan ÇAKIŞMASIZ kombinasyonlar arar. Saf modül: DOM/ağ
 // erişimi yoktur; şube listesi ve tercihler çağıran taraftan (views/program.js)
-// gelir. Kampüs/bina verisi taranan şube listesinde yok (yalnız "online" /
-// "yüz yüze" yöntemi var) — bu yüzden "kampüs günü" gibi bina bazlı bir
-// kısıt burada YOKTUR; var olmayan veriyi uydurmaktansa kapsam dışı bırakıldı.
+// gelir. Yer alanı bulunan yeni dönemlerde kampüs geçiş tamponlarını uygular;
+// eski dönemlerde eksik konum yüzünden adayları yanlışlıkla elemez.
+
+import { campusForLocation, isRemoteMethod, transitionIssue } from './campus.js';
 
 export const WEEKDAYS = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma'];
 
 // "Pazartesi 08:30/12:29 | Çarşamba 13:00/16:59" -> oturum listesi (dakika).
 // views/courses.js#parseWhen ile aynı biçimi ayrıştırır; core modülü views'a
 // bağımlı olmasın diye küçük bir kopyası burada tutulur.
-export function parseSessions(when) {
+export function parseSessions(when, where = '') {
   const out = [];
   if (!when) return out;
-  for (const part of String(when).split(' | ')) {
+  const whereParts = String(where || '').split(' | ');
+  for (const [i, part] of String(when).split(' | ').entries()) {
     const m = part.trim().match(/^(\S+)\s+(\d{2}:\d{2})\/(\d{2}:\d{2})$/);
     if (!m) continue;
     const start = toMin(m[2]), end = toMin(m[3]);
-    if (end > start) out.push({ day: m[1], start, end });
+    if (end > start) out.push({ day: m[1], start, end, where: (whereParts[i] || '').trim() });
   }
   return out;
 }
@@ -35,7 +37,8 @@ function overlaps(a, b) {
 // row: [crn, code, name, branch, instructor, when, cap, enr, level, method, programs[], where]
 // section: satırın kendisi + önceden ayrıştırılmış oturumlar.
 export function toSection(row) {
-  return { row, code: row[1], branch: row[3], crn: row[0], sessions: parseSessions(row[5]) };
+  const where = isRemoteMethod(row[9]) ? '' : row[11];
+  return { row, code: row[1], branch: row[3], crn: row[0], sessions: parseSessions(row[5], where) };
 }
 
 // codes: program'daki ders kodları kümesi. Döner: Map<code, section[]>
@@ -123,6 +126,14 @@ export function evaluate(combo, prefs) {
   if (prefs.dailySpan != null) {
     for (const d of byDay.values()) if (d.end - d.start > prefs.dailySpan) failed.add('dailySpan');
   }
+  if (prefs.travelBuffer !== false) {
+    for (const d of byDay.values()) {
+      for (let i = 1; i < d.sessions.length; i++) {
+        const prev = d.sessions[i - 1], cur = d.sessions[i];
+        if (transitionIssue(prev.where, cur.where, cur.start - prev.end)) failed.add('travelBuffer');
+      }
+    }
+  }
   if (prefs.singleCourseDaysReduce) {
     // Sert filtre değil — "tek dersli gün" varlığı skor cezası olarak
     // değerlendirilir (evaluate çağıranı score() içinde kullanır).
@@ -144,6 +155,9 @@ export function score(combo, prefs, currentByCode) {
     const singleCourse = new Set(d.sessions.map((x) => x.day)).size && d.codes.size === 1;
     if (prefs.singleCourseDaysReduce && singleCourse) s += 50;
     for (let i = 1; i < d.sessions.length; i++) s += Math.max(0, d.sessions[i].start - d.sessions[i - 1].end);
+    const campuses = new Set(d.sessions.map((x) => campusForLocation(x.where)).filter(Boolean));
+    const extraCampuses = Math.max(0, campuses.size - 1);
+    s += extraCampuses * (prefs.campusDayReduce ? 250 : 40);
   }
   if (currentByCode) {
     for (const sec of combo) if (currentByCode.get(sec.code) !== sec.crn) s += 20;
@@ -241,6 +255,7 @@ export function presetPrefs(name) {
   const base = () => ({
     days: Object.fromEntries(WEEKDAYS.map((d) => [d, 'any'])),
     density: 'any', singleCourseDaysReduce: false,
+    campusDayReduce: false, travelBuffer: true,
     earliest: null, latest: null, lunchFree: false, half: 'any', gap: null, dailySpan: null,
   });
   const p = base();
@@ -253,7 +268,7 @@ export function presetPrefs(name) {
     case 'reduceGaps': p.gap = 60; break; // Boşlukları azalt
     case 'shortDays': p.dailySpan = 6 * 60; break; // Kısa günler
     case 'midweekBreather': p.days.Çarşamba = 'free'; break; // Çarşamba nefesi
-    case 'mergeCampusDays': p.density = 'compact'; p.singleCourseDaysReduce = true; break; // Kampüs günlerini birleştir (bina verisi yok — yoğunluk+tek-ders ile en yakın karşılık)
+    case 'mergeCampusDays': p.density = 'compact'; p.singleCourseDaysReduce = true; p.campusDayReduce = true; break;
     default: break;
   }
   return p;

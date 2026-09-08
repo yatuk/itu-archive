@@ -1066,6 +1066,11 @@ func (r *Result) checkSitePages(root string) {
 		if walkErr != nil || d.IsDir() || d.Name() != "index.html" {
 			return nil
 		}
+		// Eski slug'dan yeniye statik yönlendirme sayfaları (bkz. writeRedirectPage)
+		// kasıtlı olarak sitemap'te değil — noindex, arama motoru için değil.
+		if b, err := os.ReadFile(path); err == nil && strings.Contains(string(b), `name="robots" content="noindex`) {
+			return nil
+		}
 		rel, err := filepath.Rel(root, filepath.Dir(path))
 		if err != nil {
 			return nil

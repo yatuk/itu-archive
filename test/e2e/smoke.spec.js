@@ -805,6 +805,31 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
 });
 
 test.describe('Haftalık program kurucu', () => {
+  test('kampüs geçişini açıklar ve Alternatif Bul güvenli binayı önerir', async ({ page }) => {
+    const rows = [
+      ['91001', 'AAA 100', 'A dersi', 'AAA', 'Birinci Hoca', 'Pazartesi 09:00/10:29', 40, 10, 'LS', 'Fiziksel', [], 'MED B36'],
+      ['92001', 'BBB 200', 'B dersi', 'BBB', 'İkinci Hoca', 'Pazartesi 11:00/12:29', 40, 10, 'LS', 'Fiziksel', [], 'MKB D318'],
+      ['92002', 'BBB 200', 'B dersi', 'BBB', 'Üçüncü Hoca', 'Pazartesi 11:00/12:29', 40, 10, 'LS', 'Fiziksel', [], 'GDB 101'],
+    ];
+    await page.route('**/data/terms/2025-2026-yaz/search.json*', (route) => route.fulfill({ json: rows }));
+    await page.goto('/?term=2025-2026-yaz#program');
+    for (const crn of ['91001', '92001']) {
+      await page.locator('#p-q').fill(crn);
+      await page.locator('.p-result').first().click();
+    }
+
+    const warning = page.locator('.p-building-list');
+    await expect(warning).toContainText('Ayazağa');
+    await expect(warning).toContainText('Gümüşsuyu');
+    await expect(warning).toContainText('en az 60 dk');
+
+    await page.locator('#p-altfind').click();
+    await page.locator('#af-run').click();
+    const diff = page.locator('.af-diff').first();
+    await expect(diff).toContainText('92001 → 92002');
+    await expect(diff).toContainText('MKB D318 → GDB 101');
+  });
+
   test('alternatifler gerçek şube farkını gösterir ve klavye odağını korur', async ({ page }) => {
     const rows = [
       ['90001', 'MAT 271E', 'Probability', 'MAT', 'First Instructor', 'Pazartesi 09:30/11:29', 40, 10, 'LS', ''],

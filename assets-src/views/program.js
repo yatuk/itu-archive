@@ -900,7 +900,13 @@ function renderSummary(items) {
   }
   const buildingGaps = t ? buildingGapWarnings(t.all) : [];
   if (buildingGaps.length) {
-    html += `<p class="p-building-warn">${esc(I18N.t('prgBuildingGap'))}</p><ul class="p-building-list">${buildingGaps.map((g) => `<li>${esc(g.fromCode)} (${esc(g.fromWhere)}) → ${esc(g.toCode)} (${esc(g.toWhere)}): ${g.gap} ${I18N.t('prgMinutesAbbr')}</li>`).join('')}</ul>`;
+    const campusCount = buildingGaps.filter((g) => g.kind === 'campus').length;
+    const heading = campusCount ? I18N.t('prgCampusGap') : I18N.t('prgBuildingGap');
+    html += `<p class="p-building-warn">${esc(heading)}</p><ul class="p-building-list">${buildingGaps.map((g) => {
+      const from = g.fromCampus ? `${g.fromWhere} · ${g.fromCampus}` : g.fromWhere;
+      const to = g.toCampus ? `${g.toWhere} · ${g.toCampus}` : g.toWhere;
+      return `<li>${esc(g.fromCode)} (${esc(from)}) → ${esc(g.toCode)} (${esc(to)}): ${esc(I18N.t('prgTransitionGapDetail', { gap: g.gap, required: g.required }))}</li>`;
+    }).join('')}</ul>`;
   }
   // Faz 4.1: final çakışması — exams verisi yüklenmişse asenkron ekler.
   loadFinalsNote(items, box);
@@ -1491,6 +1497,7 @@ function afYogunlukSummary() {
   if (afPrefs.density === 'compact') parts.push(en ? 'fit into fewer days' : 'az güne sıkıştır');
   if (afPrefs.density === 'spread') parts.push(en ? 'spread across days' : 'günlere yay');
   if (afPrefs.singleCourseDaysReduce) parts.push(en ? 'reduce single-course days' : 'tek dersli günleri azalt');
+  if (afPrefs.campusDayReduce) parts.push(en ? 'reduce campus changes' : 'kampüs değişimini azalt');
   return parts.length ? parts.join(', ') : I18N.t('progAFAnyOpt');
 }
 function afSaatlerSummary() {
@@ -1581,6 +1588,7 @@ function afResultCard(combo, idx) {
         <div><dt>CRN</dt><dd>${esc(before?.[0] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[0] || '·')}</dd></div>
         <div><dt>${label('Hoca', 'Instructor')}</dt><dd>${esc(before?.[4] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[4] || '·')}</dd></div>
         <div><dt>${label('Saat', 'Time')}</dt><dd>${esc(before?.[5] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[5] || '·')}</dd></div>
+        <div><dt>${label('Yer', 'Location')}</dt><dd>${esc(before?.[11] || '·')} <span aria-hidden="true">→</span> ${esc(after?.[11] || '·')}</dd></div>
         <div><dt>${label('Kontenjan', 'Quota')}</dt><dd>${beforeQuota} <span aria-hidden="true">→</span> ${afterQuota}</dd></div>
       </dl>
     </li>`;
@@ -1637,7 +1645,7 @@ function afSetPref(key, val) {
 function afLockedGroupKeys() {
   const keys = new Set();
   if (afLockedGroups.has('saatler')) for (const k of ['earliest', 'latest', 'lunchFree', 'half', 'gap', 'dailySpan']) keys.add(k);
-  if (afLockedGroups.has('yogunluk')) { keys.add('density'); keys.add('singleCourseDaysReduce'); }
+  if (afLockedGroups.has('yogunluk')) { keys.add('density'); keys.add('singleCourseDaysReduce'); keys.add('campusDayReduce'); }
   if (afLockedGroups.has('gunler')) for (const d of WEEKDAYS) keys.add(`day:${d}`);
   return keys;
 }

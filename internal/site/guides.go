@@ -263,11 +263,13 @@ func (b *Builder) writeGuideShell(p landingPage, h1, lead, relatedHead string, s
 	en := b.l.Code == "en"
 	title, description := p.title, p.description
 	urlPrefix, homeHref, inLang := baseURL, "/", "tr-TR"
+	outSlug := p.slug
 	if en {
 		title, description = p.titleEN, p.descriptionEN
 		urlPrefix, homeHref, inLang = baseURL+"/en", "/en/", "en"
+		outSlug = p.enSlug()
 	}
-	canonical := fmt.Sprintf("%s/%s/", urlPrefix, p.slug)
+	canonical := fmt.Sprintf("%s/%s/", urlPrefix, outSlug)
 
 	parts := []string{
 		`<nav class="crumb" aria-label="Breadcrumb"><a href="` + homeHref + `">` +
@@ -295,14 +297,16 @@ func (b *Builder) writeGuideShell(p landingPage, h1, lead, relatedHead string, s
 			},
 		},
 	}
-	return b.writePage(filepath.Join(b.outRoot, p.slug, "index.html"),
-		title, description, canonical, guideContentUpdated, content, jsonldScript(schema), true)
+	trURL := fmt.Sprintf("%s/%s/", baseURL, p.slug)
+	enURL := fmt.Sprintf("%s/en/%s/", baseURL, p.enSlug())
+	return b.writePageCrossSlug(filepath.Join(b.outRoot, outSlug, "index.html"),
+		title, description, canonical, trURL, enURL, guideContentUpdated, content, jsonldScript(schema))
 }
 
 // glossaryHref, sözlükteki bir terime dil doğru bağlantı üretir.
 func (b *Builder) glossaryHref(anchor string) string {
 	if b.l.Code == "en" {
-		return "/en/terimler-sozlugu/#" + anchor
+		return "/en/glossary/#" + anchor
 	}
 	return "/terimler-sozlugu/#" + anchor
 }

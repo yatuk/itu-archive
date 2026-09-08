@@ -212,7 +212,7 @@ func (b *Builder) writeRegistrationGuideEN(p landingPage) error {
 			title: "Find your curriculum plan",
 			paras: []string{
 				`Pick your faculty and program to open the course plan page in ` + obs + `. If several plan versions exist for your program, use the most recent one.`,
-				`You can also reach your program's plan from the <a href="/en/bolumler/">faculty and program directory</a>.`,
+				`You can also reach your program's plan from the <a href="/en/programs/">faculty and program directory</a>.`,
 			},
 			callouts: []guideCallout{
 				{warn: true, text: "As a first-semester freshman you have to register for every course in the first semester of your plan. No higher-semester courses this term."},
@@ -358,7 +358,7 @@ func (b *Builder) writeScheduleGuideEN(p landingPage) error {
 		{
 			title: "Find your curriculum plan",
 			paras: []string{
-				`Pick your program from the <a href="/en/bolumler/">faculty and program directory</a>, or open the <a href="/#dersplanim">my plan</a> view directly. You will see which courses this term expects from you, semester by semester.`,
+				`Pick your program from the <a href="/en/programs/">faculty and program directory</a>, or open the <a href="/#dersplanim">my plan</a> view directly. You will see which courses this term expects from you, semester by semester.`,
 			},
 		},
 		{
@@ -378,7 +378,7 @@ func (b *Builder) writeScheduleGuideEN(p landingPage) error {
 			title: "Build the conflict-free schedule",
 			paras: []string{
 				`Add your chosen sections to the <a href="/#program">schedule tool</a>. Overlapping hours are flagged on the grid, and total credits and ECTS add up below it.`,
-				`Find Alternatives computes other section combinations that fit constraints like day, time range or instructor. The <a href="/en/ders-programi-olustur/">schedule builder page</a> covers every feature.`,
+				`Find Alternatives computes other section combinations that fit constraints like day, time range or instructor. The <a href="/en/schedule-builder/">schedule builder page</a> covers every feature.`,
 			},
 			callouts: []guideCallout{
 				{warn: true, text: `Do not try to resolve a conflict on the registration screen. ` + sis + ` will not accept two courses at the same hour, and swapping the section on the grid is far quicker.`},
@@ -391,7 +391,7 @@ func (b *Builder) writeScheduleGuideEN(p landingPage) error {
 		{text: `Pick 1-2 backup CRNs per course. When a section fills during registration, a ready list turns the switch into a few seconds.`},
 	})
 
-	export := `<section class="guide-section"><h2>Export your schedule</h2><p class="guide-para">You can download the finished schedule as an image or an .ics calendar file, and copy the selected CRNs for the registration screen. For the registration process itself, see <a href="/en/ders-kaydi-nasil-yapilir/">how course registration works</a>.</p></section>`
+	export := `<section class="guide-section"><h2>Export your schedule</h2><p class="guide-para">You can download the finished schedule as an image or an .ics calendar file, and copy the selected CRNs for the registration screen. For the registration process itself, see <a href="/en/how-to-register-for-courses/">how course registration works</a>.</p></section>`
 
 	return b.writeGuideShell(p, p.h1EN,
 		"Four steps from your curriculum plan to a conflict-free weekly schedule, each tied to the tool you use for it.",

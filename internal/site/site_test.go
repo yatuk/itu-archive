@@ -325,7 +325,7 @@ func TestBilingualLandingPagesLinkToEachOther(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !strings.Contains(string(trHTML), `hreflang="en" href="`+baseURL+`/en/gano-hesaplama/"`) {
+	if !strings.Contains(string(trHTML), `hreflang="en" href="`+baseURL+`/en/gpa-calculator/"`) {
 		t.Error("TR sayfası EN karşılığına hreflang vermeli")
 	}
 
@@ -334,13 +334,13 @@ func TestBilingualLandingPagesLinkToEachOther(t *testing.T) {
 	if err := bEN.writeLandingPage(target); err != nil {
 		t.Fatal(err)
 	}
-	enHTML, err := os.ReadFile(filepath.Join(enRoot, target.slug, "index.html"))
+	enHTML, err := os.ReadFile(filepath.Join(enRoot, target.enSlug(), "index.html"))
 	if err != nil {
 		t.Fatal(err)
 	}
 	html := string(enHTML)
 	for _, want := range []string{
-		`<link rel="canonical" href="` + baseURL + `/en/gano-hesaplama/">`,
+		`<link rel="canonical" href="` + baseURL + `/en/gpa-calculator/">`,
 		`hreflang="tr" href="` + baseURL + `/gano-hesaplama/"`,
 		`"inLanguage":"en"`,
 		"ITU GPA Calculator",
@@ -497,7 +497,7 @@ func TestFacultyDirectoryPageListsFacultiesAndSitemaps(t *testing.T) {
 		`href="/?prog=BLG_LS#dersplanim"`,
 		`href="/?prog=BLG_LS#onsart"`,
 		`<link rel="canonical" href="` + baseURL + `/bolumler/">`,
-		`hreflang="en" href="` + baseURL + `/en/bolumler/"`,
+		`hreflang="en" href="` + baseURL + `/en/programs/"`,
 		`"@type":"BreadcrumbList"`,
 	} {
 		if !strings.Contains(trHTML, want) {
@@ -510,7 +510,7 @@ func TestFacultyDirectoryPageListsFacultiesAndSitemaps(t *testing.T) {
 	if err := bEN.writeDirectoryPage(faculties); err != nil {
 		t.Fatal(err)
 	}
-	enBody, err := os.ReadFile(filepath.Join(enRoot, "bolumler", "index.html"))
+	enBody, err := os.ReadFile(filepath.Join(enRoot, "programs", "index.html"))
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -518,7 +518,7 @@ func TestFacultyDirectoryPageListsFacultiesAndSitemaps(t *testing.T) {
 	for _, want := range []string{
 		"Bilgisayar ve Bilişim Fakültesi", // gerçek fakülte/program adları çevrilmez
 		"Faculty and program directory",
-		`<link rel="canonical" href="` + baseURL + `/en/bolumler/">`,
+		`<link rel="canonical" href="` + baseURL + `/en/programs/">`,
 		`hreflang="tr" href="` + baseURL + `/bolumler/"`,
 	} {
 		if !strings.Contains(enHTML, want) {
@@ -547,8 +547,8 @@ func TestFacultyDirectoryPageListsFacultiesAndSitemaps(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !strings.Contains(string(enSitemap), baseURL+"/en/bolumler/") {
-		t.Error("EN sitemap /en/bolumler/ girdisini içermeli")
+	if !strings.Contains(string(enSitemap), baseURL+"/en/programs/") {
+		t.Error("EN sitemap /en/programs/ girdisini içermeli")
 	}
 }
 
@@ -596,7 +596,8 @@ func TestNewGuidePagesRenderBilingualAndSitemapped(t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		if !strings.Contains(string(trHTML), `hreflang="en" href="`+baseURL+"/en/"+slug+`/"`) {
+		enSlug := page.enSlug()
+		if !strings.Contains(string(trHTML), `hreflang="en" href="`+baseURL+"/en/"+enSlug+`/"`) {
 			t.Errorf("%s TR sayfası EN karşılığına hreflang vermeli", slug)
 		}
 		for _, forbidden := range []string{`"@type":"FAQPage"`, `"@type":"HowTo"`} {
@@ -610,14 +611,14 @@ func TestNewGuidePagesRenderBilingualAndSitemapped(t *testing.T) {
 		if err := bEN.writeLandingRoute(page); err != nil {
 			t.Fatal(err)
 		}
-		enHTML, err := os.ReadFile(filepath.Join(enRoot, slug, "index.html"))
+		enHTML, err := os.ReadFile(filepath.Join(enRoot, enSlug, "index.html"))
 		if err != nil {
 			t.Fatal(err)
 		}
 		if !strings.Contains(string(enHTML), `hreflang="tr" href="`+baseURL+"/"+slug+`/"`) {
 			t.Errorf("%s EN sayfası TR karşılığına hreflang vermeli", slug)
 		}
-		if !strings.Contains(string(enHTML), `<link rel="canonical" href="`+baseURL+"/en/"+slug+`/">`) {
+		if !strings.Contains(string(enHTML), `<link rel="canonical" href="`+baseURL+"/en/"+enSlug+`/">`) {
 			t.Errorf("%s EN canonical eksik", slug)
 		}
 		if strings.Contains(string(enHTML), page.title) {
@@ -654,8 +655,9 @@ func TestNewGuidePagesRenderBilingualAndSitemapped(t *testing.T) {
 		t.Fatal(err)
 	}
 	for _, slug := range newSlugs {
-		if !strings.Contains(string(enSitemap), baseURL+"/en/"+slug+"/") {
-			t.Errorf("EN sitemap %s girdisini içermeli", slug)
+		enSlug := byNewSlug[slug].enSlug()
+		if !strings.Contains(string(enSitemap), baseURL+"/en/"+enSlug+"/") {
+			t.Errorf("EN sitemap %s (enSlug=%s) girdisini içermeli", slug, enSlug)
 		}
 	}
 }

@@ -440,6 +440,24 @@ func (b *Builder) Generate() error {
 		return err
 	}
 
+	// Eski İngilizce slug'lardan (TR slug'ı /en/ altında kullanan sürüm) yeni
+	// İngilizce slug'lara statik yönlendirme — bkz. landingPage.slugEN.
+	// GitHub Pages sunucu taraflı 301 desteklemediği için meta refresh
+	// kullanılır (bkz. writeRedirectPage).
+	if b.l.Code == "en" {
+		for _, p := range landingPages {
+			if p.titleEN == "" || p.slugEN == "" {
+				continue
+			}
+			if err := b.writeRedirectPage(p.slug, fmt.Sprintf("%s/en/%s/", baseURL, p.slugEN)); err != nil {
+				return err
+			}
+		}
+		if err := b.writeRedirectPage(bolumlerSlug, fmt.Sprintf("%s/en/%s/", baseURL, bolumlerSlugEN)); err != nil {
+			return err
+		}
+	}
+
 	if err := b.writeSitemap(terms, brCodes, courseSlugs, instrSlugs); err != nil {
 		return err
 	}
@@ -645,9 +663,9 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 			if p.titleEN == "" {
 				continue
 			}
-			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/%s/", baseURL, p.slug), Lastmod: landingLastmod(p)})
+			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/%s/", baseURL, p.enSlug()), Lastmod: landingLastmod(p)})
 		}
-		entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/bolumler/", baseURL), Lastmod: directoryContentUpdated})
+		entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/programs/", baseURL), Lastmod: directoryContentUpdated})
 		data := renderURLSet(entries)
 		if err := os.WriteFile(filepath.Join(b.outRoot, "sitemap.xml"), data, 0o644); err != nil {
 			return err
@@ -1011,6 +1029,52 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 	})
 }
 
+// writePageCrossSlug, writePage'in hreflang türetmesini (canonical'dan basit
+// /en/ önek değişimiyle karşı dili bulma) atlar: TR ve EN sürümü FARKLI
+// slug kullanan sayfalar (bkz. landingPage.enSlug) için iki dilin URL'sini
+// açıkça alır.
+func (b *Builder) writePageCrossSlug(path, title, desc, canonical, trURL, enURL, scraped string, content, jsonld template.HTML) error {
+	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+		return err
+	}
+	f, err := os.Create(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	alternates := []alternateLink{
+		{Lang: "tr", URL: trURL},
+		{Lang: "en", URL: enURL},
+		{Lang: "x-default", URL: trURL},
+	}
+	return pageTmpl.Execute(f, pageData{
+		Title: title, Description: desc, Canonical: canonical,
+		Scraped: scraped, Content: content, JSONLD: jsonld,
+		Alternates: alternates, AssetV: b.version, Lang: b.l,
+	})
+}
+
+// writeRedirectPage, statik barındırmada (GitHub Pages, sunucu taraflı 301
+// yok) bir slug değişikliğinden sonra eski URL'yi yeniye taşır: meta refresh
+// + canonical + noindex. 301 kadar güçlü bir sinyal değildir ama statik
+// sitede elde en iyi seçenek budur; eski sayfa Google'da kalırsa arayan
+// kullanıcı en azından doğru içeriğe yönlenir.
+func (b *Builder) writeRedirectPage(oldSlug, newURL string) error {
+	path := filepath.Join(b.outRoot, oldSlug, "index.html")
+	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+		return err
+	}
+	html := `<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=` + newURL + `">
+<link rel="canonical" href="` + newURL + `">
+<meta name="robots" content="noindex">
+<title>Redirecting…</title></head>
+<body><p>This page has moved to <a href="` + newURL + `">` + newURL + `</a>.</p></body></html>
+`
+	return os.WriteFile(path, []byte(html), 0o644)
+}
+
 // --- iniş sayfaları (araç/bilgi sayfaları) ---
 // "İTÜ ders planı", "GANO hesaplama" gibi Türkçe arama sorgularına karşılık gelen
 // elle yazılmış içerik sayfaları. CTA ile SPA özelliğine (/#dersplanim vb.) bağlanır.
@@ -1021,6 +1085,7 @@ const landingContentUpdated = "2026-08-23"
 
 type landingPage struct {
 	slug        string
+	slugEN      string // İngilizce sürüm farklı (İngilizce) bir slug kullanıyorsa; boşsa slug ile aynı kalır.
 	title       string
 	description string
 	h1          string
@@ -1039,6 +1104,15 @@ type landingPage struct {
 	primaryEN     landingAction
 	secondaryEN   []landingAction
 	featuresEN    []string
+}
+
+// enSlug, İngilizce sürümün URL'sinde kullanılacak slug'ı döner: slugEN
+// verilmişse onu, yoksa (TR ile aynı slug) slug'ı kullanır.
+func (p landingPage) enSlug() string {
+	if p.slugEN != "" {
+		return p.slugEN
+	}
+	return p.slug
 }
 
 type landingAction struct {
@@ -1086,7 +1160,7 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesapla"}, {href: "/ders-programi-olustur/", label: "Haftalık program oluştur"}, {href: "/onsart-haritasi/", label: "Önşart haritasını aç"}},
 	},
 	{
-		slug: "gano-hesaplama", title: "İTÜ GPA ve GANO Hesaplama",
+		slug: "gano-hesaplama", slugEN: "gpa-calculator", title: "İTÜ GPA ve GANO Hesaplama",
 		description: "İTÜ GPA ve GANO hesaplama aracında ders kredilerini ve harf notlarını gir; dönem ortalamanı ve genel ağırlıklı not ortalamanı birlikte gör.",
 		h1:          "İTÜ GPA ve GANO hesaplama",
 		queries:     []string{"İTÜ ortalama hesapla", "İTÜ GPA hesapla", "İTÜ GANO hesapla", "İTÜ transkript PDF yükle"},
@@ -1110,7 +1184,7 @@ var landingPages = []landingPage{
 			"This is not an official transcript — check the student information system for your official GPA.",
 		},
 		primaryEN:   landingAction{href: "/#dersplanim", label: "Open the GPA calculator", detail: "Pick your program and enter your grades; term average and cumulative GPA are calculated in one place."},
-		secondaryEN: []landingAction{{href: "/#dersplanim", label: "View your course plan"}, {href: "/en/ders-programi-olustur/", label: "Build your weekly course schedule"}},
+		secondaryEN: []landingAction{{href: "/#dersplanim", label: "View your course plan"}, {href: "/en/schedule-builder/", label: "Build your weekly course schedule"}},
 	},
 	{
 		slug: "not-ortalamasi", title: "İTÜ not ortalaması ve harf notları",
@@ -1137,7 +1211,7 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/ders-programi-olustur/", label: "Kişisel haftalık program oluştur"}, {href: "/sinav-programi/", label: "Sınav programını aç"}, {href: "/kontenjan/", label: "Kontenjan doluluğunu incele"}},
 	},
 	{
-		slug: "ders-programi-olustur", title: "İTÜ Ders Programı Oluşturma Aracı",
+		slug: "ders-programi-olustur", slugEN: "schedule-builder", title: "İTÜ Ders Programı Oluşturma Aracı",
 		description: "İTÜ ders programı oluşturma aracıyla şube ve CRN ekle, çakışmasız alternatif programları otomatik bul; programını görsel veya takvim olarak indir.",
 		h1:          "İTÜ ders programı oluştur",
 		queries:     []string{"İTÜ ders programı oluştur", "İTÜ program oluşturucu", "İTÜ alternatif program"},
@@ -1159,7 +1233,7 @@ var landingPages = []landingPage{
 			"Download your finished schedule as an image or .ics calendar file, or copy the selected CRNs for OBS registration.",
 		},
 		primaryEN:   landingAction{href: "/#program", label: "Start building your weekly schedule", detail: "Add your sections; see day/time conflicts and total credits in one grid."},
-		secondaryEN: []landingAction{{href: "/#dersler", label: "Search open courses and CRNs"}, {href: "/en/gano-hesaplama/", label: "Calculate your GPA"}},
+		secondaryEN: []landingAction{{href: "/#dersler", label: "Search open courses and CRNs"}, {href: "/en/gpa-calculator/", label: "Calculate your GPA"}},
 	},
 	{
 		slug: "kontenjan", title: "İTÜ ders kontenjanları ve doluluk",
@@ -1244,7 +1318,7 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/ders-programi/", label: "Güncel ders programını ara"}, {href: "/#donemler", label: "Tüm dönemleri listele"}, {href: "/kontenjan/", label: "Kontenjan geçmişini incele"}},
 	},
 	{
-		slug: "ders-kaydi-nasil-yapilir", title: "İTÜ Ders Kaydı Nasıl Yapılır?",
+		slug: "ders-kaydi-nasil-yapilir", slugEN: "how-to-register-for-courses", title: "İTÜ Ders Kaydı Nasıl Yapılır?",
 		description: "İTÜ ders kaydı nasıl yapılır? Şifre kurulumundan ders planını bulmaya, CRN ile şube seçmeye, çakışmasız kayda ve intibak sürecine kadar adım adım rehber.",
 		h1:          "İTÜ ders kaydı nasıl yapılır?",
 		queries:     []string{"İTÜ ders kaydı nasıl yapılır", "İTÜ ders kaydı", "İTÜ CRN nedir", "İTÜ intibak muafiyet"},
@@ -1262,13 +1336,13 @@ var landingPages = []landingPage{
 		descriptionEN: "How does ITU course registration work? A step-by-step guide from setting up your password to finding your plan, picking CRNs, conflict-free registration, and credit transfer.",
 		primaryEN:     landingAction{href: "/#takvim", label: "Check the Academic Calendar", detail: "See current registration, add/drop, and exam dates in one place."},
 		secondaryEN: []landingAction{
-			{href: "/en/ders-programi-nasil-hazirlanir/", label: "Learn how to build your schedule", detail: "Follow the path from your curriculum plan to a conflict-free weekly schedule."},
-			{href: "/en/terimler-sozlugu/", label: "Check the ITU glossary", detail: "See what abbreviations like CRN, OBS, and SIS mean."},
-			{href: "/en/bolumler/", label: "Find your program's curriculum", detail: "Pick your faculty and program to browse its plan semester by semester."},
+			{href: "/en/how-to-build-your-schedule/", label: "Learn how to build your schedule", detail: "Follow the path from your curriculum plan to a conflict-free weekly schedule."},
+			{href: "/en/glossary/", label: "Check the ITU glossary", detail: "See what abbreviations like CRN, OBS, and SIS mean."},
+			{href: "/en/programs/", label: "Find your program's curriculum", detail: "Pick your faculty and program to browse its plan semester by semester."},
 		},
 	},
 	{
-		slug: "ders-programi-nasil-hazirlanir", title: "İTÜ Ders Programı Nasıl Hazırlanır?",
+		slug: "ders-programi-nasil-hazirlanir", slugEN: "how-to-build-your-schedule", title: "İTÜ Ders Programı Nasıl Hazırlanır?",
 		description: "İTÜ ders programı nasıl hazırlanır? Ders planını bulmaktan CRN ile şube seçmeye, önşart kontrolüne ve çakışmasız haftalık programa giden yolu bu rehberde izle.",
 		h1:          "İTÜ ders programı nasıl hazırlanır?",
 		queries:     []string{"İTÜ ders programı nasıl hazırlanır", "İTÜ çakışmasız program"},
@@ -1286,15 +1360,15 @@ var landingPages = []landingPage{
 		descriptionEN: "How do you build your ITU course schedule? Follow the path from finding your curriculum plan to picking CRNs, checking prerequisites, and building a conflict-free weekly schedule.",
 		primaryEN:     landingAction{href: "/#program", label: "Open the schedule tool", detail: "Add sections to your weekly grid; see conflicts and total credits instantly."},
 		secondaryEN: []landingAction{
-			{href: "/en/bolumler/", label: "Find your program's curriculum", detail: "Pick your faculty and program to browse its plan semester by semester."},
+			{href: "/en/programs/", label: "Find your program's curriculum", detail: "Pick your faculty and program to browse its plan semester by semester."},
 			{href: "/#onsart", label: "Check prerequisites", detail: "Trace a course's prerequisite links backward in the prerequisite map."},
 			{href: "/#gecmis", label: "Check capacity and fill-rate history", detail: "See how quickly a course has filled up in past terms."},
-			{href: "/en/ders-programi-olustur/", label: "See the full schedule builder", detail: "Explore Find Alternatives and calendar export."},
-			{href: "/en/ders-kaydi-nasil-yapilir/", label: "Learn how registration works", detail: "Follow the official OBS/SIS registration process step by step."},
+			{href: "/en/schedule-builder/", label: "See the full schedule builder", detail: "Explore Find Alternatives and calendar export."},
+			{href: "/en/how-to-register-for-courses/", label: "Learn how registration works", detail: "Follow the official OBS/SIS registration process step by step."},
 		},
 	},
 	{
-		slug: "terimler-sozlugu", title: "İTÜ Terimler Sözlüğü",
+		slug: "terimler-sozlugu", slugEN: "glossary", title: "İTÜ Terimler Sözlüğü",
 		description: "İTÜ terimler sözlüğü: CRN, ÖBS, SİS, Ninova, BİDB, intibak/muafiyet, program kodu ve bina kodu gibi kısaltmaların ne anlama geldiğini kısa ve net açıklar.",
 		h1:          "İTÜ terimler sözlüğü",
 		queries:     []string{"İTÜ terimler sözlüğü", "İTÜ CRN nedir", "İTÜ ÖBS SİS ne demek"},
@@ -1311,8 +1385,8 @@ var landingPages = []landingPage{
 		descriptionEN: "ITU glossary: short, clear explanations of abbreviations like CRN, OBS, SIS, Ninova, BIDB, credit transfer/exemption, program code, and building code.",
 		primaryEN:     landingAction{href: "/#dersler", label: "Search the course schedule", detail: "Search open sections by course code, name, CRN, or instructor."},
 		secondaryEN: []landingAction{
-			{href: "/en/ders-kaydi-nasil-yapilir/", label: "How course registration works", detail: "Follow the official registration process step by step."},
-			{href: "/en/ders-programi-nasil-hazirlanir/", label: "How to build your schedule", detail: "Follow the path from your curriculum plan to a conflict-free schedule."},
+			{href: "/en/how-to-register-for-courses/", label: "How course registration works", detail: "Follow the official registration process step by step."},
+			{href: "/en/how-to-build-your-schedule/", label: "How to build your schedule", detail: "Follow the path from your curriculum plan to a conflict-free schedule."},
 		},
 	},
 }
@@ -1353,6 +1427,7 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		"JavaScript destekleyen güncel bir web tarayıcısı", "Nasıl kullanılır?", "Bu sayfada ne yapabilirsin?",
 		"İlgili araçlar", "Aracı aç", "/"
 	urlPrefix := baseURL
+	outSlug := p.slug
 	if en {
 		title, description, h1 = p.titleEN, p.descriptionEN, p.h1EN
 		body, primary, secondary, features = p.bodyEN, p.primaryEN, p.secondaryEN, p.featuresEN
@@ -1360,8 +1435,9 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 			"A modern web browser with JavaScript enabled", "How it works", "What can you do on this page?",
 			"Related tools", "Open the tool", "/en/"
 		urlPrefix = baseURL + "/en"
+		outSlug = p.enSlug()
 	}
-	canonical := fmt.Sprintf("%s/%s/", urlPrefix, p.slug)
+	canonical := fmt.Sprintf("%s/%s/", urlPrefix, outSlug)
 	var paras strings.Builder
 	for _, t := range body {
 		paras.WriteString("<p>" + template.HTMLEscapeString(t) + "</p>\n")
@@ -1432,8 +1508,14 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		})
 	}
 	jsonld := jsonldScript(schema)
-	return b.writePage(filepath.Join(b.outRoot, p.slug, "index.html"),
-		title, description, canonical, landingContentUpdated, content, jsonld, p.titleEN != "")
+	if p.titleEN == "" {
+		return b.writePage(filepath.Join(b.outRoot, outSlug, "index.html"),
+			title, description, canonical, landingContentUpdated, content, jsonld, false)
+	}
+	trURL := fmt.Sprintf("%s/%s/", baseURL, p.slug)
+	enURL := fmt.Sprintf("%s/en/%s/", baseURL, p.enSlug())
+	return b.writePageCrossSlug(filepath.Join(b.outRoot, outSlug, "index.html"),
+		title, description, canonical, trURL, enURL, landingContentUpdated, content, jsonld)
 }
 
 // --- fakülte / program dizini (/bolumler/) ---
@@ -1607,12 +1689,13 @@ func levelDisplayLabel(code string, en bool) string {
 	}
 }
 
-// writeDirectoryPage, /bolumler/ (ve /en/bolumler/) sayfasını üretir: İTÜ'nün
+// writeDirectoryPage, /bolumler/ (ve /en/programs/) sayfasını üretir: İTÜ'nün
 // tüm fakülte ve programlarını listeler, her programı doğrudan canlı SPA'nın
 // ders planı ve önşart haritası görünümüne bağlar. Ders/program içeriği
 // üzerinde arama/filtre gibi istemci taraflı JS içermez — sayfa tamamen
 // statiktir, tarayıcının kendi bul (Ctrl+F) özelliği yeterlidir.
 const bolumlerSlug = "bolumler"
+const bolumlerSlugEN = "programs"
 
 // LandingSlugs, kök dizinde <slug>/index.html olarak üretilen tüm sayfaların
 // slug listesini döner: landingPages'teki iniş sayfaları artı writeDirectoryPage
@@ -1630,6 +1713,7 @@ func LandingSlugs() []string {
 func (b *Builder) writeDirectoryPage(faculties []facultyDirEntry) error {
 	en := b.l.Code == "en"
 	const slug = bolumlerSlug
+	outSlug := slug
 	urlPrefix := baseURL
 	homeHref := "/"
 	title := "İTÜ Fakülte ve Program Haritası"
@@ -1653,8 +1737,9 @@ func (b *Builder) writeDirectoryPage(faculties []facultyDirEntry) error {
 		planLabel = "Course Plan"
 		prereqLabel = "Prerequisite Map"
 		inLang = "en"
+		outSlug = bolumlerSlugEN
 	}
-	canonical := fmt.Sprintf("%s/%s/", urlPrefix, slug)
+	canonical := fmt.Sprintf("%s/%s/", urlPrefix, outSlug)
 
 	renderPrograms := func(list []facultyProgramEntry) string {
 		if len(list) == 0 {
@@ -1707,8 +1792,10 @@ func (b *Builder) writeDirectoryPage(faculties []facultyDirEntry) error {
 		},
 	}
 	jsonld := jsonldScript(schema)
-	return b.writePage(filepath.Join(b.outRoot, slug, "index.html"),
-		title, description, canonical, directoryContentUpdated, content, jsonld, true)
+	trURL := fmt.Sprintf("%s/%s/", baseURL, bolumlerSlug)
+	enURL := fmt.Sprintf("%s/en/%s/", baseURL, bolumlerSlugEN)
+	return b.writePageCrossSlug(filepath.Join(b.outRoot, outSlug, "index.html"),
+		title, description, canonical, trURL, enURL, directoryContentUpdated, content, jsonld)
 }
 
 // --- helpers ---

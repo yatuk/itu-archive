@@ -19,6 +19,7 @@ import { toast } from '../core/toast.js?v=dde1e9339338';
 import { openCourseDetail } from '../core/course-detail.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
+import { isRemoteMethod, transitionIssue } from '../core/campus.js';
 
 const PAGE = 200;
 const MOBILE_GROUP_PAGE = 30;
@@ -877,22 +878,13 @@ function sessionsWithLocation(when, where) {
   return out;
 }
 
-// "MED B36" -> "MED": uyarı bina bazında kıyaslar, derslik numarası dahil
-// değil (aynı binada derslik değiştirmek birkaç dakika sürer, bina değişmek
-// kampüs içi yürüyüş gerektirebilir).
-function locationBuilding(where) {
-  return String(where || '').trim().split(/\s+/)[0] || '';
-}
-
-// Aynı günde art arda gelen, biri bitmeden diğeri başlamayan (çakışma değil)
-// ama arada eşiğin altında boşluk olan ve FARKLI binada geçen ders çiftlerini
-// bulur. Bina bilgisi olmayan (eski dönem, "yer" alanı boş) oturumlar
-// karşılaştırmaya girmez — yanlış pozitif üretmemek önceliklidir. Saf
-// fonksiyon — test edilebilir.
-export function buildingGapWarnings(all, thresholdMin = 20) {
+// Aynı günde art arda gelen dersler arasında bina/kampüs için önerilen tampon
+// yoksa uyarı üretir. Bina bilgisi olmayan eski dönemler karşılaştırmaya
+// girmez; bilinmeyen yeni bina kodlarında 20 dakikalık muhafazakâr eski kural
+// sürer. Saf fonksiyon — test edilebilir.
+export function buildingGapWarnings(all) {
   const byDay = new Map();
   for (const s of all) {
-    if (!locationBuilding(s.where)) continue;
     if (!byDay.has(s.day)) byDay.set(s.day, []);
     byDay.get(s.day).push(s);
   }
@@ -902,10 +894,9 @@ export function buildingGapWarnings(all, thresholdMin = 20) {
     for (let i = 1; i < sessions.length; i++) {
       const prev = sessions[i - 1], cur = sessions[i];
       const gap = cur.start - prev.end;
-      if (gap < 0 || gap > thresholdMin) continue; // çakışma ya da yeterli boşluk
-      const fromBuilding = locationBuilding(prev.where), toBuilding = locationBuilding(cur.where);
-      if (fromBuilding === toBuilding) continue;
-      out.push({ day, gap, fromCode: prev.row[1], toCode: cur.row[1], fromWhere: prev.where, toWhere: cur.where });
+      const issue = transitionIssue(prev.where, cur.where, gap);
+      if (!issue) continue;
+      out.push({ ...issue, day, fromCode: prev.row[1], toCode: cur.row[1], fromWhere: prev.where, toWhere: cur.where });
     }
   }
   return out;
@@ -916,7 +907,8 @@ export function buildingGapWarnings(all, thresholdMin = 20) {
 export function buildTimetable(rows) {
   const all = [];
   for (const r of rows) {
-    for (const s of sessionsWithLocation(r[5], r[11])) all.push({ ...s, row: r });
+    const where = isRemoteMethod(r[9]) ? '' : r[11];
+    for (const s of sessionsWithLocation(r[5], where)) all.push({ ...s, row: r });
   }
   if (!all.length) return null;
   const startSlot = Math.floor(Math.min(...all.map((s) => s.start)) / 30) * 30;

@@ -26,6 +26,7 @@ import { versionedKey, readLocalState, writeLocalState, isPlainObject } from './
 import { createBackup, parseBackup, backupSummary, restoreBackup } from './backup.js';
 import { buildBalancedPlan } from './planner.js';
 import { parseSessions, candidatesByCode, evaluate, findAlternatives, presetPrefs, WEEKDAYS } from './altfind.js';
+import { campusForLocation, isRemoteMethod, minimumTransitionMinutes, transitionIssue } from './campus.js';
 
 test('tek yedek dosyası program ve GANO durumunu doğrular ve geri yükler', () => {
   const source = {
@@ -850,6 +851,9 @@ test('buildingGapWarnings farklı binada kısa boşluğu yakalar, aynı binada v
   assert.equal(warn[0].fromCode, 'BLG 101');
   assert.equal(warn[0].toCode, 'BLG 102');
   assert.equal(warn[0].gap, 1);
+  assert.equal(warn[0].kind, 'building');
+  assert.equal(warn[0].fromCampus, 'Ayazağa');
+  assert.equal(warn[0].required, 10);
 
   // Aynı bina: uyarı yok.
   const sameBuilding = buildTimetable([
@@ -871,6 +875,49 @@ test('buildingGapWarnings farklı binada kısa boşluğu yakalar, aynı binada v
     withLoc('2', 'BLG 102', 'Pazartesi 10:30/12:29', 'GDB'),
   ]);
   assert.equal(buildingGapWarnings(noLoc.all).length, 0);
+});
+
+test('kampüs eşlemesi çevrimiçi/açıklanmamış yeri yok sayar, güvenilir bina kodlarını çözer', () => {
+  assert.equal(campusForLocation('MED B36'), 'Ayazağa');
+  assert.equal(campusForLocation('MKB D318'), 'Gümüşsuyu');
+  assert.equal(campusForLocation('DZB-AKD 101'), 'Tuzla');
+  assert.equal(campusForLocation('Online/Çevrimiçi'), '');
+  assert.equal(campusForLocation('undeclared'), '');
+  assert.equal(isRemoteMethod('Sanal (Çevrimiçi/Online)'), true);
+  assert.equal(isRemoteMethod('Yüz yüze'), false);
+});
+
+test('çevrimiçi dersin OBS tarafından verilen varsayılan binası geçiş uyarısı üretmez', () => {
+  const rows = [
+    ['1', 'TUR 101', 'Türk Dili', 'TUR', '-', 'Pazartesi 09:00/10:29', 40, 0, 'LS', 'Sanal (Çevrimiçi/Online)', [], 'MED --'],
+    ['2', 'MAT 101', 'Matematik', 'MAT', '-', 'Pazartesi 10:30/12:29', 40, 0, 'LS', 'Yüz yüze', [], 'MKB D318'],
+  ];
+  const timetable = buildTimetable(rows);
+  assert.equal(timetable.all[0].where, '');
+  assert.equal(buildingGapWarnings(timetable.all).length, 0);
+});
+
+test('kampüs geçişi için bina geçişinden daha uzun, Tuzla için en uzun tampon gerekir', () => {
+  assert.deepEqual(minimumTransitionMinutes('MED B36', 'GDB 101'), {
+    kind: 'building', required: 10, fromBuilding: 'MED', toBuilding: 'GDB', fromCampus: 'Ayazağa', toCampus: 'Ayazağa',
+  });
+  assert.equal(minimumTransitionMinutes('MED B36', 'MKB D318').required, 60);
+  assert.equal(minimumTransitionMinutes('MMB 106', 'MKB D318').required, 30);
+  assert.equal(minimumTransitionMinutes('MED B36', 'DZB-AKD 101').required, 90);
+  assert.equal(transitionIssue('MED B36', 'MKB D318', 31).kind, 'campus');
+  assert.equal(transitionIssue('MED B36', 'MKB D318', 60), null);
+});
+
+test('buildingGapWarnings kampüsler arası yetersiz boşluğu 20 dakikayı aşsa da yakalar', () => {
+  const withLoc = (crn, code, when, where) => [crn, code, code, 'BLG', 'Hoca', when, 10, 0, '', '', [], where];
+  const crossCampus = buildTimetable([
+    withLoc('1', 'BLG 101', 'Pazartesi 08:30/10:29', 'MED B36'),
+    withLoc('2', 'MAT 101', 'Pazartesi 11:00/12:29', 'MKB D318'),
+  ]);
+  const warning = buildingGapWarnings(crossCampus.all)[0];
+  assert.equal(warning.kind, 'campus');
+  assert.equal(warning.gap, 31);
+  assert.equal(warning.required, 60);
 });
 
 test('parseTimeRange "HH:MM-HH:MM"i dakikaya çevirir', () => {
@@ -1588,7 +1635,11 @@ test('buildBalancedPlan 0 kredili dersi (ör. ATA) yüksek VF oranına rağmen z
 // --- altfind: Program → "Alternatif Bul" ---
 
 test('parseSessions "Gün BB:BB/BB:BB" biçimini dakikaya çevirir, boş/ters aralığı atar', () => {
-  assert.deepEqual(parseSessions('Pazartesi 09:00/10:29'), [{ day: 'Pazartesi', start: 540, end: 629 }]);
+  assert.deepEqual(parseSessions('Pazartesi 09:00/10:29'), [{ day: 'Pazartesi', start: 540, end: 629, where: '' }]);
+  assert.deepEqual(parseSessions('Pazartesi 09:00/10:29 | Salı 11:00/12:29', 'MED B36 | GDB 101'), [
+    { day: 'Pazartesi', start: 540, end: 629, where: 'MED B36' },
+    { day: 'Salı', start: 660, end: 749, where: 'GDB 101' },
+  ]);
   assert.equal(parseSessions('').length, 0);
   assert.equal(parseSessions('Pazartesi 10:00/10:00').length, 0); // end>start değil
 });
@@ -1646,6 +1697,29 @@ test('presetPrefs "fridayFree" Cuma\'yı boş, diğer günleri farketmez bırak�
   const p = presetPrefs('fridayFree');
   assert.equal(p.days.Cuma, 'free');
   for (const d of WEEKDAYS) if (d !== 'Cuma') assert.equal(p.days[d], 'any');
+});
+
+test('findAlternatives yetersiz kampüs geçişli kombinasyonu sonuçlara almaz', () => {
+  const rows = [
+    ['A1', 'AAA 100', 'A', 'AAA', '-', 'Pazartesi 09:00/10:29', 40, 0, 'LS', 'Fiziksel', [], 'MED B36'],
+    ['B1', 'BBB 200', 'B', 'BBB', '-', 'Pazartesi 11:00/12:29', 40, 0, 'LS', 'Fiziksel', [], 'MKB D318'],
+    ['B2', 'BBB 200', 'B', 'BBB', '-', 'Pazartesi 11:00/12:29', 40, 0, 'LS', 'Fiziksel', [], 'GDB 101'],
+  ];
+  const { combos } = findAlternatives(rows, new Set(['AAA 100', 'BBB 200']), presetPrefs(null), { limit: 10 });
+  assert.ok(combos.length > 0);
+  assert.ok(combos.every((combo) => combo.sections.find((s) => s.code === 'BBB 200').crn === 'B2'));
+});
+
+test('Kampüs günlerini birleştir ayarı aynı güne farklı kampüs yığmak yerine kampüs değişimini azaltır', () => {
+  const rows = [
+    ['A1', 'AAA 100', 'A', 'AAA', '-', 'Pazartesi 09:00/10:29', 40, 0, 'LS', 'Fiziksel', [], 'MED B36'],
+    ['B1', 'BBB 200', 'B', 'BBB', '-', 'Pazartesi 12:00/13:29', 40, 0, 'LS', 'Fiziksel', [], 'MKB D318'],
+    ['B2', 'BBB 200', 'B', 'BBB', '-', 'Salı 09:00/10:29', 40, 0, 'LS', 'Fiziksel', [], 'GDB 101'],
+  ];
+  const prefs = presetPrefs('mergeCampusDays');
+  assert.equal(prefs.campusDayReduce, true);
+  const { combos } = findAlternatives(rows, new Set(['AAA 100', 'BBB 200']), prefs, { limit: 10 });
+  assert.equal(combos[0].sections.find((s) => s.code === 'BBB 200').crn, 'B2');
 });
 
 test('evaluate: "en fazla 1 saat boşluk" aşan günü elemeli', () => {

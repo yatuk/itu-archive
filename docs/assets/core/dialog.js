@@ -1,4 +1,4 @@
-import{$,esc}from"./utils.js?v=4b6031ae30bd";import{I18N}from"../i18n.js?v=4b6031ae30bd";let host=null;function ensureHost(){return host||(host=document.createElement("div"),host.className="dlg",host.hidden=!0,host.innerHTML=`<div class="dlg-box" role="dialog" aria-modal="true" aria-labelledby="dlg-title">
+import{$,esc}from"./utils.js?v=1ffc83d91def";import{I18N}from"../i18n.js?v=1ffc83d91def";let host=null;function ensureHost(){return host||(host=document.createElement("div"),host.className="dlg",host.hidden=!0,host.innerHTML=`<div class="dlg-box" role="dialog" aria-modal="true" aria-labelledby="dlg-title">
     <button type="button" class="dlg-close" aria-label="${esc(I18N.t("detailClose"))}">✕</button>
     <h3 class="dlg-title" id="dlg-title"></h3>
     <p class="dlg-msg"></p>

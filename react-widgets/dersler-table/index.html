@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dersler tablosu — yerel geliştirme önizlemesi</title>
+    <!-- Yalnızca yerel önizleme için: gerçek sitenin CSS değişkenlerini
+         (--bg, --fg, --acid, ...) yüklüyor ki widget doğru renklerle
+         görünsün. Üretim çıktısına dahil değil (bkz. vite.config.ts). -->
+    <link rel="stylesheet" href="../../docs/assets/style.css" />
+    <style>
+      body { background: var(--bg); margin: 0; padding: 24px; }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="dersler-table-root"></div>
+    <script type="module" src="/src/dev-preview.tsx"></script>
+  </body>
+</html>

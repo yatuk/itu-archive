@@ -8,12 +8,11 @@
 // filtrelerde "yoksa geç" yapılır. "yer" (bina+derslik) "zaman" ile aynı
 // sırada " | " ile ayrılmış oturum listesidir (bkz. sessionsWithLocation).
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, formatInt, timeAgo, isViewVisible, tickCount, termLabel } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, timeAgo, isViewVisible, tickCount, termLabel } from '../core/utils.js?v=dde1e9339338';
 import { methodToCode } from '../core/urlcodes.js?v=dde1e9339338';
 import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
 import { quotaDisplay } from '../core/chart.js?v=dde1e9339338';
-import { fillRows } from '../core/table.js?v=dde1e9339338';
 import * as fav from '../core/favorites.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
 import { openCourseDetail } from '../core/course-detail.js?v=dde1e9339338';
@@ -60,15 +59,8 @@ export function initCourses() {
   $('#tt-toggle').addEventListener('click', toggleTimetable);
   // Sık kullanılan filtreler ilk sırada; seviye/yöntem/program/kod ikincil
   // disclosure içinde. Açık/kapalı olması filtre değerlerini değiştirmez.
-  $('#sel-all').addEventListener('change', () => {
-    const on = $('#sel-all').checked;
-    for (const r of state.filtered) {
-      if (on) state.selected.add(selKey(r));
-      else state.selected.delete(selKey(r));
-    }
-    for (const cb of document.querySelectorAll('#rows .row-sel')) cb.checked = on;
-    updateSelection();
-  });
+  // "Tümünü seç" artık masaüstünde React tablosunun kendi başlık kutusu
+  // (bkz. renderDesktopTable → onSelectAll); burada ayrı bir #sel-all yok.
   $('#sel-csv').addEventListener('click', exportSelectedCSV);
   $('#sel-clear').addEventListener('click', clearSelection);
   $('#sel-only').addEventListener('change', () => { if (ttOn) renderTimetable(); });
@@ -161,10 +153,19 @@ export async function loadTerm(slug) {
   state.selected.clear(); // seçim döneme özeldir
   updateSelection();
   setStatus($('#resultline'), 'dönem yükleniyor…', { busy: true });
-  // Faz 5.4: iskelet — dönem verisi gelene kadar shimmer satırları.
-  $('#rows').innerHTML = '<tr class="skel-row"><td colspan="11"><div class="skel">' +
-    '<div class="skel-line wide"></div>'.repeat(5) +
-    '</div></td></tr>';
+  // Faz 5.4: iskelet — dönem verisi gelene kadar shimmer satırları. React kökü
+  // önceki dönemden kalmışsa önce kaldırılır, yoksa mount() bu manuel HTML'in
+  // üzerine React'in kendi fiber ağacını kuramaz (bkz. renderDesktopTable).
+  if (derslerTableModule && derslerTableMounted) {
+    derslerTableModule.unmount();
+    derslerTableMounted = false;
+  }
+  const trMount = $('#dersler-table-mount');
+  if (trMount) {
+    trMount.innerHTML = '<div class="skel-row"><div class="skel">' +
+      '<div class="skel-line wide"></div>'.repeat(5) +
+      '</div></div>';
+  }
   $('#course-groups').innerHTML = '<div class="mobile-course-skeleton skel">' +
     '<div class="skel-line wide"></div>'.repeat(4) + '</div>';
   try {
@@ -406,27 +407,14 @@ export function sortValue(r, key) {
   }
 }
 
+// Masaüstü sıralama başlıkları artık React tablosunun kendisinde (bkz.
+// renderDesktopTable → onSortChange); burada yalnızca mobil "sırala"
+// seçicisi state.sort ile senkron tutulur.
 function wireSort() {
-  const headers = [...document.querySelectorAll('#results th[data-sort]')];
-  for (const th of headers) {
-    // Gerçek buton: klavye ve ekran okuyucu erişimi için th yerine buton.
-    th.querySelector('.th-sort').addEventListener('click', () => {
-      const key = th.dataset.sort;
-      if (state.sort.key === key) state.sort.dir *= -1;
-      else state.sort = { key, dir: 1 };
-      updateSortUI();
-      applyFilters();
-    });
-  }
   updateSortUI();
 }
 
 function updateSortUI() {
-  for (const th of document.querySelectorAll('#results th[data-sort]')) {
-    const on = th.dataset.sort === state.sort.key;
-    th.classList.toggle('sorted', on);
-    th.setAttribute('aria-sort', on ? (state.sort.dir === 1 ? 'ascending' : 'descending') : 'none');
-  }
   const ms = $('#mobile-sort');
   if (ms) ms.value = state.sort.key;
 }
@@ -478,19 +466,19 @@ async function clearFilter(key) {
 
 function selKey(r) { return `${r[3]}|${r[0]}`; }
 
+// "Tümünü seç" durumu artık DOM'da ayrı bir checkbox değil, React tablosunun
+// kendi başlık kutusudur — bu yüzden burada değil, renderDesktopTable'ın her
+// çağrısında state.selected'dan yeniden hesaplanır (allSelected prop'u).
 function updateSelection() {
   const n = state.selected.size;
   $('#sepet').hidden = !n;
-  if (!n) { $('#sel-all').checked = false; return; }
-  $('#sel-count').textContent = I18N.lang === 'en' ? `${n} sections selected` : `${n} şube seçili`;
-  $('#sel-all').checked = state.filtered.length > 0 && state.filtered.every((r) => state.selected.has(selKey(r)));
+  if (n) $('#sel-count').textContent = I18N.lang === 'en' ? `${n} sections selected` : `${n} şube seçili`;
 }
 
 function clearSelection() {
   state.selected.clear();
-  for (const cb of document.querySelectorAll('#rows .row-sel')) cb.checked = false;
-  $('#sel-all').checked = false;
   updateSelection();
+  renderDesktopTable();
   if (ttOn) renderTimetable();
 }
 
@@ -531,67 +519,121 @@ function renderRows(append) {
   else renderTableRows(append);
 }
 
-function renderTableRows(append) {
-  const tbody = $('#rows');
-  const slice = state.filtered.slice(state.shown, state.shown + PAGE);
+// Masaüstü tablosu React (shadcn/ui) tarafından çiziliyor (bkz.
+// react-widgets/dersler-table); iş kuralları (arama vurgusu, kontenjan
+// renklendirmesi, mezuniyet/ek sınav rozeti) burada aynı kalır, yalnızca
+// tablo kabuğu ve sıralama/seçim/favori etkileşimi React'e devredilir.
+// Bundle yalnızca masaüstü tabloya ihtiyaç duyulduğunda indirilir.
+let derslerTableModule = null;
+let derslerTableModulePromise = null;
+let derslerTableMounted = false;
+let derslerTableContainer = null;
+let derslerTableRowByKey = new Map();
+const DERSLER_SORT_KEYS = new Set(['crn', 'code', 'name', 'instructor', 'when', 'fill']);
 
-  if (!slice.length && !state.shown) {
-    fillRows(tbody, [], null, { empty: I18N.lang === 'en' ? 'No matching courses' : 'eşleşen ders yok', colspan: 11 });
-    $('#more').hidden = true;
-    return;
-  }
-
-  const rows = fillRows(tbody, slice, (r) => {
-    const [crn, code, name, branch, instructor, when, cap, enr] = r;
-    const where = r[11] || '';
-    const kind = specialSectionKind(r);
-    const kindBadge = kind ? `<span class="section-kind-badge ${kind}" title="${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamHelp' : 'courseGraduationHelp'))}">${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge'))}</span>` : '';
-    const key = selKey(r);
-    const starred = fav.isFavorite(state.termSlug, branch, crn);
-    // Arama eşleşmesini <mark> ile göster — "neden çıktı" görünür olsun.
-    const hits = state.marks?.get(key)?.hits || null;
-    const hitField = (f) => (hits ? hits.filter((h) => h.field === f) : null);
-    return `
-      <td class="sel"><input type="checkbox" class="row-sel" data-key="${esc(key)}" aria-label="${I18N.lang === 'en' ? 'Select section' : 'Şubeyi seç'}"${state.selected.has(key) ? ' checked' : ''}></td>
-      <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? (I18N.lang === 'en' ? 'Remove from favorites' : 'Favorilerden çıkar') : (I18N.lang === 'en' ? 'Add to favorites' : 'Favorilere ekle')}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
-      <td class="crn" data-label="CRN">${markField(crn, 'crn', hitField('crn'))}</td>
-      <td class="code" data-label="Ders"><b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small></td>
-      <td class="course-name" data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button>${kindBadge}</td>
-      <td class="course-instructor" data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
-      <td class="when course-schedule" data-label="Zaman">${when
-        ? when.split(' | ').map((session) => `<span>${esc(localizeSchedule(session))}</span>`).join('')
-        : '<span>·</span>'}</td>
-      <td class="course-location" data-label="Yer">${where
-        ? where.split(' | ').map((loc) => `<span>${esc(loc.trim() || '·')}</span>`).join('')
-        : '<span>·</span>'}</td>
-      <td class="num quota-legacy-col" data-label="Kont.">${formatInt(cap)}</td>
-      <td class="num quota-legacy-col" data-label="Yazılan">${formatInt(enr)}</td>
-      <td class="num quota-main-col" data-label="Kontenjan">${quotaDisplay(cap, enr)}</td>`;
-  }, { append });
-
-  if (rows) {
-    rows.forEach((tr, i) => {
-      const r = slice[i];
-      // Toggle tıklaması satıra kabarcıklanıp openDetail'i iki kez çağırmasın
-      // (ikinci çağrı odak-dönüş kaydını ezdiği için WCAG 2.4.3'ü bozuyordu).
-      tr.querySelector('.row-toggle').addEventListener('click', (ev) => { ev.stopPropagation(); openDetail(r); });
-      // Satırın herhangi bir yerine tıklayınca detay açılır; checkbox tıklaması
-      // seçim için ayrıdır ve satır tıklamasını tetiklemez.
-      tr.addEventListener('click', () => openDetail(r));
-      const cb = tr.querySelector('.row-sel');
-      if (cb) {
-        cb.addEventListener('click', (ev) => ev.stopPropagation());
-        cb.addEventListener('change', () => {
-          if (cb.checked) state.selected.add(cb.dataset.key);
-          else state.selected.delete(cb.dataset.key);
-          updateSelection();
-        });
-      }
-      wireFavoriteButton(tr.querySelector('.fav-star'));
+function loadDerslerTableWidget() {
+  if (!derslerTableModulePromise) {
+    derslerTableModulePromise = import('../react/dersler-table.js').then((mod) => {
+      derslerTableModule = mod;
+      return mod;
     });
   }
+  return derslerTableModulePromise;
+}
 
+function derslerRowFrom(r) {
+  const [crn, code, name, branch, instructor, when] = r;
+  const cap = r[6], enr = r[7];
+  const where = r[11] || '';
+  const kind = specialSectionKind(r);
+  const kindBadge = kind ? `<span class="section-kind-badge ${kind}" title="${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamHelp' : 'courseGraduationHelp'))}">${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge'))}</span>` : '';
+  const key = selKey(r);
+  // Arama eşleşmesini <mark> ile göster — "neden çıktı" görünür olsun.
+  const hits = state.marks?.get(key)?.hits || null;
+  const hitField = (f) => (hits ? hits.filter((h) => h.field === f) : null);
+  return {
+    key,
+    crnHTML: markField(crn, 'crn', hitField('crn')),
+    codeHTML: `<b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small>`,
+    // Odak alabilen düğme klavye/ekran okuyucu erişimini korur; satırın
+    // herhangi bir yerine tıklamak da aynı olayı kabarcıklandığı için açar
+    // (bkz. renderDesktopTable → onRowClick), ikinci bir dinleyiciye gerek yok.
+    nameHTML: `<button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button>${kindBadge}`,
+    instructorHTML: markField(instructor || '·', 'instructor', hitField('instructor')),
+    when: when ? localizeSchedule(when) : '',
+    where,
+    quotaHTML: quotaDisplay(cap, enr),
+    selected: state.selected.has(key),
+    favorite: fav.isFavorite(state.termSlug, branch, crn),
+  };
+}
+
+// Her çağrıda state.filtered/state.shown'dan yeniden okur (parametre almaz),
+// böylece dinamik import henüz çözülmemişken art arda gelen çağrılar
+// (applyFilters, seçim/favori değişiklikleri) yarışa girmeden hep en güncel
+// durumu basar.
+async function renderDesktopTable() {
+  const mod = await loadDerslerTableWidget();
+  if (mobileCourseLayout.matches) return; // düzen mobile geçmişse boşuna kurma
+  const container = derslerTableContainer || (derslerTableContainer = $('#dersler-table-mount'));
+  if (!container) return;
+  const slice = state.filtered.slice(0, state.shown);
+  derslerTableRowByKey = new Map(slice.map((r) => [selKey(r), r]));
+  const props = {
+    rows: slice.map(derslerRowFrom),
+    sortKey: DERSLER_SORT_KEYS.has(state.sort.key) ? state.sort.key : 'crn',
+    sortDir: state.sort.dir === -1 ? -1 : 1,
+    onSortChange: (key) => {
+      if (state.sort.key === key) state.sort.dir *= -1;
+      else state.sort = { key, dir: 1 };
+      updateSortUI();
+      applyFilters();
+    },
+    onRowClick: (key) => {
+      const r = derslerTableRowByKey.get(key);
+      if (r) openDetail(r);
+    },
+    onToggleSelect: (key, checked) => {
+      if (checked) state.selected.add(key);
+      else state.selected.delete(key);
+      updateSelection();
+      renderDesktopTable();
+    },
+    onToggleFavorite: (key) => {
+      toggleFavoriteByKey(key);
+      renderDesktopTable();
+    },
+    allSelected: slice.length > 0 && slice.every((r) => state.selected.has(selKey(r))),
+    onSelectAll: (checked) => {
+      for (const r of state.filtered) {
+        if (checked) state.selected.add(selKey(r));
+        else state.selected.delete(selKey(r));
+      }
+      updateSelection();
+      renderDesktopTable();
+    },
+    emptyMessage: I18N.lang === 'en' ? 'No matching courses' : 'eşleşen ders yok',
+    ariaLabel: I18N.lang === 'en' ? 'Course list' : 'Ders listesi',
+    labels: {
+      crn: 'CRN', code: 'Ders', name: 'Adı', instructor: 'Öğretim Üyesi', when: 'Zaman', where: 'Yer', fill: 'Kontenjan',
+      selectAll: 'Tümünü seç',
+      selectSection: I18N.lang === 'en' ? 'Select section' : 'Şubeyi seç',
+      addFav: I18N.lang === 'en' ? 'Add to favorites' : 'Favorilere ekle',
+      removeFav: I18N.lang === 'en' ? 'Remove from favorites' : 'Favorilerden çıkar',
+    },
+  };
+  if (!derslerTableMounted) {
+    mod.mount(container, props);
+    derslerTableMounted = true;
+  } else {
+    mod.update(props);
+  }
+}
+
+function renderTableRows() {
+  const slice = state.filtered.slice(state.shown, state.shown + PAGE);
   state.shown += slice.length;
+  renderDesktopTable();
   $('#more').hidden = state.shown >= state.filtered.length;
   $('#more').textContent = I18N.lang === 'en'
     ? `show more (${state.filtered.length - state.shown} remaining)`
@@ -741,12 +783,20 @@ function renderMobileGroups(append) {
     : `daha fazla ders göster (${remaining} kaldı)`;
 }
 
+// Favori aç/kapa + toast: mobil (DOM yıldız düğmesi) ve masaüstü (React
+// onToggleFavorite) aynı çekirdek mantığı paylaşır.
+function toggleFavoriteByKey(key) {
+  const [branch, crn] = key.split('|');
+  const on = fav.toggleFavorite(state.termSlug, branch, crn);
+  toast(on ? `Favoriye eklendi (${crn})` : `Favoriden çıkarıldı (${crn})`, { kind: on ? 'ok' : 'warn' });
+  return on;
+}
+
 function wireFavoriteButton(star) {
   if (!star) return;
   star.addEventListener('click', (ev) => {
     ev.stopPropagation();
-    const [branch, crn] = star.dataset.key.split('|');
-    const on = fav.toggleFavorite(state.termSlug, branch, crn);
+    const on = toggleFavoriteByKey(star.dataset.key);
     star.classList.toggle('on', on);
     star.textContent = on ? '★' : '☆';
     star.setAttribute('aria-pressed', String(on));
@@ -756,7 +806,6 @@ function wireFavoriteButton(star) {
     star.classList.remove('pop');
     void star.offsetWidth;
     star.classList.add('pop');
-    toast(on ? `Favoriye eklendi (${crn})` : `Favoriden çıkarıldı (${crn})`, { kind: on ? 'ok' : 'warn' });
   });
 }
 

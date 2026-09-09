@@ -1,0 +1,12 @@
+/* Bu widget assets-src/style.css'in yüklendiği bir sayfaya gömülür; kendi
+   renk/aralık token'ı tanımlamaz, tailwind.config.js sitenin CSS
+   değişkenlerine doğrudan işaret eder. Burada yalnızca Tailwind katmanları
+   ve .dersler-table-root'a özgü küçük düzeltmeler var. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dersler-table-root {
+  font-family: var(--sans);
+  color: var(--fg);
+}

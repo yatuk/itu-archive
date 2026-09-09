@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=4b6031ae30bd">
+<link rel="stylesheet" href="assets/style.css?v=1ffc83d91def">
 <!-- Google "Tercih Edilen Kaynak" rozeti (Hakkında sekmesi) — bkz. https://kobiseo.com/araclar/google-onerilen-kaynak/ -->
 <link rel="stylesheet" href="https://kobiseo.com/rozet/rozet.css">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -283,24 +283,7 @@
   </div>
 
   <div class="tablewrap">
-   <table id="results" aria-label="Ders listesi">
-    <thead>
-     <tr>
-      <th class="sel"><input type="checkbox" id="sel-all" aria-label="Tümünü seç"></th>
-      <th class="fav" aria-hidden="true"></th>
-      <th data-sort="crn" class="sortable" scope="col"><button type="button" class="th-sort">CRN</button></th>
-      <th data-sort="code" class="sortable" scope="col"><button type="button" class="th-sort">Ders</button></th>
-      <th data-sort="name" class="sortable" scope="col"><button type="button" class="th-sort">Adı</button></th>
-      <th data-sort="instructor" class="sortable" scope="col"><button type="button" class="th-sort">Öğretim Üyesi</button></th>
-      <th data-sort="when" class="sortable" scope="col"><button type="button" class="th-sort">Zaman</button></th>
-      <th scope="col">Yer</th>
-      <th data-sort="cap" class="sortable num quota-legacy-col" scope="col"><button type="button" class="th-sort">Kont.</button></th>
-      <th data-sort="enr" class="sortable num quota-legacy-col" scope="col"><button type="button" class="th-sort">Yazılan</button></th>
-      <th data-sort="fill" class="sortable num quota-main-col" scope="col"><button type="button" class="th-sort"><span class="quota-sade">Kontenjan</span><span class="quota-fosfor">Doluluk</span></button></th>
-     </tr>
-    </thead>
-    <tbody id="rows"></tbody>
-   </table>
+   <div id="dersler-table-mount"></div>
   </div>
   <div id="course-groups" class="course-groups" aria-label="Dersler ve şubeleri"></div>
   <button id="more" class="more" hidden>daha fazla göster</button>
@@ -691,7 +674,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=4b6031ae30bd"></script>
+<script type="module" src="assets/app.js?v=1ffc83d91def"></script>
 <script>
 (function () {
   var root = document.documentElement;

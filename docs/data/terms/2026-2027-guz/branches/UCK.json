@@ -1048,7 +1048,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Zahit Mecitoğlu",
   "buildings": [
-   "undeclared"
+   "MEDC"
   ],
   "days": [
    "Salı"
@@ -1057,12 +1057,14 @@
    "13:30/14:29"
   ],
   "rooms": [
-   "--"
+   "ZA1"
   ],
   "capacity": 40,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "UCK_LS"
+  ],
   "prereq": "-",
   "classReq": "-"
  }

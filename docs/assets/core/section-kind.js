@@ -1,0 +1,1 @@
+export function specialSectionKind(e){const n=String(e?.[2]||""),t=String(e?.[9]||"");return/\bek\s*sınav\b/i.test(t)||/\badditional\s+exam\b/i.test(t)?"extra-exam":/\b(bitirme|graduation\s+(?:project|study|design|thesis)|capstone)\b/i.test(n)?"graduation":""}

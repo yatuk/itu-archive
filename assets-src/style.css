@@ -1372,6 +1372,14 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
   border: 1px solid var(--line-hot); color: var(--dim); padding: 2px 6px; margin-left: 8px;
 }
 .badge.live { color: var(--on-accent); background: var(--acid-vivid); border-color: var(--acid-vivid); }
+.section-kind-badge {
+  display: inline-flex; align-items: center; width: fit-content; margin-inline-start: 7px;
+  padding: 2px 7px; border: 1px solid var(--line-hot); border-radius: 999px;
+  color: var(--fg); background: var(--panel-2); font: 600 10px/1.35 var(--sans);
+  letter-spacing: .02em; vertical-align: middle; white-space: nowrap;
+}
+.section-kind-badge.extra-exam { border-color: var(--amber); color: var(--amber); }
+.section-kind-badge.graduation { border-color: var(--cyan); color: var(--cyan); }
 @media (max-width: 640px) { .termcard { grid-template-columns: 1fr; } }
 
 .note {
@@ -2164,10 +2172,13 @@ body.modal-open { overflow: hidden; }
     text-align: right;
     white-space: nowrap;
   }
+  .mobile-section-flags { display: inline-flex; align-items: center; justify-content: flex-end; gap: 7px; min-width: 0; }
+  .mobile-section-flags .section-kind-badge { margin-inline-start: 0; }
   .mobile-quota .quota-state.full { color: var(--red); }
   .mobile-quota .quota-state.tight { color: var(--amber); }
   .quota-unknown,
   .mobile-data-missing { color: var(--dimmer); font-family: var(--sans); }
+  .mobile-special-time { color: var(--dim); font-family: var(--sans); }
   .mobile-schedule {
     display: flex;
     flex-wrap: wrap;
@@ -2319,8 +2330,10 @@ body.modal-open { overflow: hidden; }
 .p-item.p-full { border-color: var(--amber); }
 .p-crn { color: var(--dimmer); font-size: 11px; }
 .p-code b { color: var(--cyan); display: block; }
+.p-code b .section-kind-badge { margin-inline-start: 5px; }
 .p-code small { display: block; color: var(--dim); font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 150px; }
 .p-when { color: var(--dim); font-size: 11px; white-space: pre-line; }
+.p-when-special { color: var(--fg); }
 .p-fill { justify-self: end; }
 .p-menu { all: unset; cursor: pointer; color: var(--dimmer); padding: 0 4px; font-size: 16px; }
 .p-menu:hover { color: var(--acid); }
@@ -2464,6 +2477,14 @@ body.modal-open { overflow: hidden; }
 }
 /* Zaman bilgisi olmayan şube notu (G) — amber, kırmızı değil. */
 .tt-no-time { color: var(--amber); font-size: 12px; margin-top: 8px; }
+.tt-special-records {
+  display: grid; gap: 5px; margin-top: 10px; padding: 10px 12px;
+  border: 1px solid var(--line); border-radius: 8px; background: var(--panel-2);
+  color: var(--dim); font-size: 12px;
+}
+.tt-special-records b { color: var(--fg); }
+.tt-special-records span { display: block; }
+.tt-special-records strong { color: var(--cyan); }
 
 .p-toolbar {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;

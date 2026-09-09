@@ -27,6 +27,13 @@ import { createBackup, parseBackup, backupSummary, restoreBackup } from './backu
 import { buildBalancedPlan } from './planner.js';
 import { parseSessions, candidatesByCode, evaluate, findAlternatives, presetPrefs, WEEKDAYS } from './altfind.js';
 import { campusForLocation, isRemoteMethod, minimumTransitionMinutes, transitionIssue } from './campus.js';
+import { specialSectionKind } from './section-kind.js';
+
+test('OBS özel kayıtlarını normal ders şubesinden ayırır', () => {
+  assert.equal(specialSectionKind(['1', 'BLG 322E', 'Computer Architecture', 'BLG', '', '', 0, 0, 'LS', 'Ek Sınav']), 'extra-exam');
+  assert.equal(specialSectionKind(['2', 'BLG 4901', 'Bitirme Tasarım Projesi', 'BLG', '', '', 10, 0, 'LS', 'Fiziksel (Yüz yüze)']), 'graduation');
+  assert.equal(specialSectionKind(['3', 'BLG 101E', 'Introduction to Computing', 'BLG', '', 'Pazartesi 09:30/12:29', 50, 10, 'LS', 'Fiziksel (Yüz yüze)']), '');
+});
 
 test('tek yedek dosyası program ve GANO durumunu doğrular ve geri yükler', () => {
   const source = {

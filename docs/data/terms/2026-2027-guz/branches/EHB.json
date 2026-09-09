@@ -1986,16 +1986,16 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mehmet Nuri Akıncı",
   "buildings": [
-   "EEB"
+   "undeclared"
   ],
   "days": [
-   "Perşembe"
+   "Salı"
   ],
   "times": [
    "12:30/15:29"
   ],
   "rooms": [
-   "5301"
+   "--"
   ],
   "capacity": 75,
   "enrolled": 0,
@@ -2393,6 +2393,39 @@
    "EHBE_LS",
    "EHS_LS",
    "ELE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15412",
+  "code": "EHB 477E",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Fundm.of Electrmgn.Compt.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Nuri Akıncı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "EHS_LS",
+   "TEL_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

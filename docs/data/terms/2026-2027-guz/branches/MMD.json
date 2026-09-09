@@ -35,20 +35,14 @@
   "level": "LS",
   "name": "Research Methods",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Pelin Bolat",
-  "buildings": [
-   "DZB"
-  ],
-  "days": [
-   "Perşembe"
-  ],
+  "instructor": "Sabire Cömert",
+  "buildings": [],
+  "days": [],
   "times": [
-   "15:30/18:29"
+   "-/-"
   ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 30,
+  "rooms": [],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -98,7 +92,7 @@
    "DZB"
   ],
   "days": [
-   "Pazartesi"
+   "Perşembe"
   ],
   "times": [
    "15:30/18:29"
@@ -483,5 +477,121 @@
   ],
   "prereq": "-",
   "classReq": "Detay"
+ },
+ {
+  "crn": "15416",
+  "code": "MMD 101E",
+  "branch": "MMD",
+  "level": "LS",
+  "name": "Intr.to Maritime Bus.Administ.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kaya Tokmakçıoğlu",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MMD_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15417",
+  "code": "MMD 111E",
+  "branch": "MMD",
+  "level": "LS",
+  "name": "Intr. to Business Analytics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ömer Lütfi Antalyalı",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MMD_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15418",
+  "code": "MMD 211E",
+  "branch": "MMD",
+  "level": "LS",
+  "name": "Accounting&Financial Stat.Anl.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kaya Tokmakçıoğlu",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MMD_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15419",
+  "code": "MMD 305E",
+  "branch": "MMD",
+  "level": "LS",
+  "name": "Operations Research",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ferhan Çebi",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MMD_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
  }
 ]

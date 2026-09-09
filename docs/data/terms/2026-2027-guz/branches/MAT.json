@@ -4694,7 +4694,7 @@
   "code": "MAT 606E",
   "branch": "MAT",
   "level": "LU",
-  "name": "Algebratic Topology",
+  "name": "Algebraic Topology",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Atabey Kaygun",
   "buildings": [
@@ -5628,7 +5628,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "L400"
   ],
   "capacity": 24,
   "enrolled": 0,
@@ -5975,7 +5975,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ergün Yaraneri",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Perşembe"
@@ -5984,7 +5984,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "D103"
   ],
   "capacity": 55,
   "enrolled": 0,
@@ -6121,101 +6121,6 @@
   "classReq": "-"
  },
  {
-  "crn": "15098",
-  "code": "MAT 104E",
-  "branch": "MAT",
-  "level": "LS",
-  "name": "Mathematics II",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
-  "buildings": [
-   "MED",
-   "MED"
-  ],
-  "days": [
-   "Perşembe",
-   "Cuma"
-  ],
-  "times": [
-   "08:30/11:29",
-   "14:30/16:29"
-  ],
-  "rooms": [
-   "A34",
-   "A34"
-  ],
-  "capacity": 120,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "BIO_LS",
-   "BIOE_LS",
-   "BLG_LS",
-   "BLGE_LS",
-   "CEV_LS",
-   "CEVE_LS",
-   "CHZ_LS",
-   "DEN_LS",
-   "DENE_LS",
-   "DUI_LS",
-   "DUIE_LS",
-   "ECNE_LS",
-   "EHB_LS",
-   "EHB_MTM_LS",
-   "EHBE_LS",
-   "ELK_LS",
-   "ELK_MTM_LS",
-   "ELKE_LS",
-   "END_LS",
-   "ENDE_LS",
-   "FIZ_LS",
-   "GEM_LS",
-   "GEME_LS",
-   "GEO_LS",
-   "GEOE_LS",
-   "GID_LS",
-   "GIDE_LS",
-   "GMI_LS",
-   "GMIE_LS",
-   "HTA_LS",
-   "HTAE_LS",
-   "IBM_LS",
-   "IML_LS",
-   "IMLE_LS",
-   "INS_LS",
-   "INSE_LS",
-   "ISL_LS",
-   "ISLE_LS",
-   "JEF_LS",
-   "JEO_LS",
-   "KIM_LS",
-   "KIME_LS",
-   "KMM_LS",
-   "KMME_LS",
-   "KOM_LS",
-   "KOME_LS",
-   "MAD_LS",
-   "MAK_LS",
-   "MAKE_LS",
-   "MET_LS",
-   "METE_LS",
-   "MTO_LS",
-   "PETE_LS",
-   "ROS_LS",
-   "ROSE_LS",
-   "SECE_LS",
-   "TEK_LS",
-   "TEKE_LS",
-   "UCK_LS",
-   "UZB_LS",
-   "UZBE_LS",
-   "VBAE_LS",
-   "YZVE_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "15176",
   "code": "MAT 103E",
   "branch": "MAT",
@@ -6310,6 +6215,81 @@
    "NAE_LS"
   ],
   "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15428",
+  "code": "MAT 281E",
+  "branch": "MAT",
+  "level": "LS",
+  "name": "Linear Algebra and Applicat.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhammed Lütfi Yarar",
+  "buildings": [
+   "BBB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15431",
+  "code": "MAT 210E",
+  "branch": "MAT",
+  "level": "LS",
+  "name": "Engineering Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15432",
+  "code": "MAT 271E",
+  "branch": "MAT",
+  "level": "LS",
+  "name": "Probability and Statistics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İbrahim Papila",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEN_LS"
+  ],
+  "prereq": "-",
   "classReq": "-"
  }
 ]

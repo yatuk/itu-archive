@@ -15,6 +15,7 @@ import { confirmDialog, promptDialog } from '../core/dialog.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 import { findAlternatives, presetPrefs, WEEKDAYS } from '../core/altfind.js?v=dde1e9339338';
+import { specialSectionKind } from '../core/section-kind.js';
 
 // Ajanda kartı ve ızgara bloğunda öğretim üyesi/konum satırlarının önündeki
 // küçük ikonlar (bkz. core/course-detail.js'teki aynı stroke ikon deseni).
@@ -479,12 +480,17 @@ function renderList(items) {
     const full = cap > 0 && enr >= cap;
     const key = fav.favKeyOf(branch, crn);
     const speed = fillSpeedNote(crn);
+    const kind = specialSectionKind(row);
+    const kindLabel = kind ? I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge') : '';
+    const timeLabel = when || (kind === 'extra-exam'
+      ? I18N.t('progExtraExamUntimed')
+      : kind === 'graduation' ? I18N.t('progGraduationUntimed') : I18N.t('progTimeUnknown'));
     return `<div class="p-item${markFull && full ? ' p-full' : ''}" role="row" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
       <span class="p-grip" aria-hidden="true">⋮⋮</span>
       <span class="p-crn" role="cell"><span class="p-mobile-label">${esc(I18N.t('thCrn'))}</span>${esc(crn)}${rec.backup ? `<small class="p-backup">${esc(I18N.t('progBackupPrefix'))}: ${esc(rec.backup)}</small>` : ''}</span>
-      <div class="p-code" role="cell"><b>${esc(code)}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
+      <div class="p-code" role="cell"><b>${esc(code)}${kindLabel ? ` <span class="section-kind-badge ${kind}">${esc(kindLabel)}</span>` : ''}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
       <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : I18N.t('progInstructorUnknown'))}</span>
-      <span class="p-when" role="cell">${esc(when || I18N.t('progTimeUnknown'))}</span>
+      <span class="p-when${kind && !when ? ' p-when-special' : ''}" role="cell">${esc(timeLabel)}</span>
       <span class="p-fill" role="cell" aria-label="${esc(I18N.t('progQuotaAria'))}">${cap ? quotaDisplay(cap, enr) : '·'}</span>
       <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${en ? `Remove ${code} from schedule` : `${esc(code)} dersini programdan çıkar`}">${esc(I18N.t('progRemoveBtn'))}</button>
       <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${en ? `More actions for ${code}` : `${esc(code)} için diğer eylemler`}" aria-haspopup="menu" aria-expanded="false">⋮</button>
@@ -651,12 +657,20 @@ function renderGrid(itemRows) {
   const wrap = $('#p-grid');
   const t = buildTimetable(itemRows);
   // Zaman bilgisi olmayan şubeyi sessizce yutma — ızgaranın altına not düş (G).
-  const noTime = itemRows.filter((r) => !parseWhen(r[5]).length);
+  const noTime = itemRows.filter((r) => !parseWhen(r[5]).length && !specialSectionKind(r));
+  const specialUntimed = itemRows.filter((r) => !parseWhen(r[5]).length && specialSectionKind(r));
   const noTimeNote = noTime.length
-    ? `<p class="tt-no-time">⚠ ${noTime.length} ${I18N.t('progNoTimeWarningPrefix')}: ${noTime.map((r) => `${esc(r[1])} (${esc(r[0])})`).join(', ')}</p>`
+    ? `<p class="tt-no-time">${noTime.length} ${I18N.t('progNoTimeWarningPrefix')}: ${noTime.map((r) => `${esc(r[1])} (${esc(r[0])})`).join(', ')}</p>`
+    : '';
+  const specialNote = specialUntimed.length
+    ? `<div class="tt-special-records"><b>${esc(I18N.t('progSpecialUntimedPrefix'))}</b>${specialUntimed.map((r) => {
+      const kind = specialSectionKind(r);
+      const detail = I18N.t(kind === 'extra-exam' ? 'progExtraExamUntimed' : 'progGraduationUntimed');
+      return `<span><strong>${esc(r[1])}</strong> (${esc(r[0])}) · ${esc(detail)}</span>`;
+    }).join('')}</div>`
     : '';
   if (!t || !t.all.length) {
-    wrap.innerHTML = `<p class="empty">${esc(I18N.t('prgNoTime'))}</p>` + noTimeNote;
+    wrap.innerHTML = specialNote + (noTime.length ? `<p class="empty">${esc(I18N.t('prgNoTime'))}</p>` : '') + noTimeNote;
     return;
   }
   // Mobilde varsayılan tek-gün sekmeleri (izgaranın kendisi korunur — renkli
@@ -740,7 +754,7 @@ function renderGrid(itemRows) {
           ${s.conflict ? `<strong class="p-agenda-conflict">${esc(I18N.t('progConflictTitle'))}</strong>` : ''}
         </span>
       </button>`;
-    }).join('') : `<p class="empty">${I18N.lang === 'en' ? 'No classes on this day.' : 'Bu gün dersin yok.'}</p>`}</div>` + noTimeNote;
+    }).join('') : `<p class="empty">${I18N.lang === 'en' ? 'No classes on this day.' : 'Bu gün dersin yok.'}</p>`}</div>` + specialNote + noTimeNote;
     wrap.querySelectorAll('.tt-daytab').forEach(btn => btn.addEventListener('click', () => {
       mobileDay = Number(btn.dataset.day);
       render();
@@ -802,7 +816,7 @@ function renderGrid(itemRows) {
     html += `</div>`;
   }
   html += `</div></div></div>`;
-  html += noTimeNote;
+  html += specialNote + noTimeNote;
   wrap.innerHTML = html;
 
   // Sütun sayısı görünür gün sayısına göre değişir; tam saat çizgilerinin fazı

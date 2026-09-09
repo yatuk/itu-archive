@@ -20,6 +20,7 @@ import { openCourseDetail } from '../core/course-detail.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 import { isRemoteMethod, transitionIssue } from '../core/campus.js';
+import { specialSectionKind } from '../core/section-kind.js';
 
 const PAGE = 200;
 const MOBILE_GROUP_PAGE = 30;
@@ -543,6 +544,8 @@ function renderTableRows(append) {
   const rows = fillRows(tbody, slice, (r) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = r;
     const where = r[11] || '';
+    const kind = specialSectionKind(r);
+    const kindBadge = kind ? `<span class="section-kind-badge ${kind}" title="${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamHelp' : 'courseGraduationHelp'))}">${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge'))}</span>` : '';
     const key = selKey(r);
     const starred = fav.isFavorite(state.termSlug, branch, crn);
     // Arama eşleşmesini <mark> ile göster — "neden çıktı" görünür olsun.
@@ -553,7 +556,7 @@ function renderTableRows(append) {
       <td class="fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-label="${starred ? (I18N.lang === 'en' ? 'Remove from favorites' : 'Favorilerden çıkar') : (I18N.lang === 'en' ? 'Add to favorites' : 'Favorilere ekle')}" aria-pressed="${starred}">${starred ? '★' : '☆'}</button></td>
       <td class="crn" data-label="CRN">${markField(crn, 'crn', hitField('crn'))}</td>
       <td class="code" data-label="Ders"><b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small></td>
-      <td class="course-name" data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button></td>
+      <td class="course-name" data-label="Adı"><button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button>${kindBadge}</td>
       <td class="course-instructor" data-label="Öğretim Üyesi">${markField(instructor || '·', 'instructor', hitField('instructor'))}</td>
       <td class="when course-schedule" data-label="Zaman">${when
         ? when.split(' | ').map((session) => `<span>${esc(localizeSchedule(session))}</span>`).join('')
@@ -627,9 +630,15 @@ function createMobileSection(row, extra = false) {
   const starred = fav.isFavorite(state.termSlug, branch, crn);
   const hits = state.marks?.get(key)?.hits || [];
   const cleanInstructor = instructor && !['-', '·', '.'].includes(instructor.trim()) ? instructor : '';
+  const kind = specialSectionKind(row);
+  const kindBadge = kind ? `<span class="section-kind-badge ${kind}">${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge'))}</span>` : '';
   const schedule = when
     ? when.split(' | ').map((session) => `<span>${esc(localizeSchedule(session))}</span>`).join('')
-    : `<span class="mobile-data-missing">${I18N.lang === 'en' ? 'Time not announced' : 'Zaman açıklanmadı'}</span>`;
+    : kind === 'extra-exam'
+      ? `<span class="mobile-special-time">${esc(I18N.t('progExtraExamUntimed'))}</span>`
+      : kind === 'graduation'
+        ? `<span class="mobile-special-time">${esc(I18N.t('progGraduationUntimed'))}</span>`
+        : `<span class="mobile-data-missing">${I18N.lang === 'en' ? 'Time not announced' : 'Zaman açıklanmadı'}</span>`;
   const location = where
     ? where.split(' | ').map((loc) => `<span>${esc(loc.trim() || '·')}</span>`).join('')
     : '';
@@ -643,7 +652,7 @@ function createMobileSection(row, extra = false) {
     <button type="button" class="mobile-section-open" aria-haspopup="dialog" aria-label="${esc(code)} ${esc(name)}, CRN ${esc(crn)} ${I18N.lang === 'en' ? 'open details' : 'detayını aç'}">
       <span class="mobile-section-top">
         <span class="mobile-crn"><span>CRN</span> ${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</span>
-        <span class="mobile-quota">${quota}</span>
+        <span class="mobile-section-flags">${kindBadge}<span class="mobile-quota">${quota}</span></span>
       </span>
       <span class="mobile-schedule">${schedule}</span>
       ${location ? `<span class="mobile-location">${location}</span>` : ''}

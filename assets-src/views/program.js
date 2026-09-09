@@ -40,6 +40,12 @@ let showGrid = false;
 let mobileDay = null;
 let gridContextMenu = null;
 let gridContextReturnFocus = null;
+// Haftalık program React adası aynı bundle içindeki Dersler tablosuyla birlikte
+// tembel yüklenir. Program verisi ve bütün eylemler bu dosyada kalmaya devam eder.
+let programScheduleModule = null;
+let programSchedulePromise = null;
+let programScheduleMounted = false;
+let latestProgramScheduleProps = null;
 
 // --- çoklu program (liste) ---
 const PROG_KEY = 'itu-programs';
@@ -653,7 +659,114 @@ function blockContrast(color) {
   return { bg, fg: fgFor(bg) };
 }
 
+function programScheduleProps(itemRows) {
+  const timetable = buildTimetable(itemRows);
+  const fullDays = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+  const dayLabels = [I18N.t('progDayAbbrMon'), I18N.t('progDayAbbrTue'), I18N.t('progDayAbbrWed'), I18N.t('progDayAbbrThu'),
+    I18N.t('progDayAbbrFri'), I18N.t('progDayAbbrSat'), I18N.t('progDayAbbrSun')];
+  const isSade = document.documentElement.dataset.theme === 'sade';
+  const rowByKey = new Map(itemRows.map((row) => [fav.favKeyOf(row[3], row[0]), row]));
+  const sessions = (timetable?.all || []).map((session, index) => {
+    const rowKey = fav.favKeyOf(session.row[3], session.row[0]);
+    const rawColor = colorFor(session.row[1]);
+    const color = isSade ? blockContrast(rawColor) : { bg: rawColor, fg: fgFor(rawColor) };
+    return {
+      key: `${rowKey}|${session.day}|${session.start}|${session.end}|${index}`,
+      rowKey,
+      crn: String(session.row[0] || ''),
+      code: String(session.row[1] || ''),
+      name: String(session.row[2] || ''),
+      instructor: session.row[4] && session.row[4] !== '-' ? String(session.row[4]) : '',
+      where: String(session.where || ''),
+      day: fullDays.indexOf(session.day),
+      start: session.start,
+      end: session.end,
+      color: color.bg,
+      foreground: color.fg,
+    };
+  }).filter((session) => session.day >= 0);
+  const untimed = itemRows.filter((row) => !parseWhen(row[5]).length).map((row, index) => {
+    const kind = specialSectionKind(row);
+    const detail = kind === 'extra-exam'
+      ? I18N.t('progExtraExamUntimed')
+      : kind === 'graduation' ? I18N.t('progGraduationUntimed') : I18N.t('progTimeUnknown');
+    return {
+      key: `${fav.favKeyOf(row[3], row[0])}|untimed|${index}`,
+      code: String(row[1] || ''),
+      crn: String(row[0] || ''),
+      detail,
+      special: Boolean(kind),
+    };
+  });
+  const en = I18N.lang === 'en';
+  return {
+    sessions,
+    untimed,
+    sectionCount: itemRows.length,
+    showWeekend,
+    showFullDay,
+    forceGrid: showGrid,
+    showNow: term === state.index?.currentSlug,
+    dayLabels,
+    labels: {
+      title: en ? 'Weekly schedule' : 'Haftalık program',
+      sessions: I18N.t('prgSessions'),
+      sections: I18N.t('prgSube'),
+      empty: I18N.t('prgEmpty'),
+      emptyDay: en ? 'No classes on this day.' : 'Bu gün dersin yok.',
+      special: I18N.t('progSpecialUntimedPrefix'),
+      unknown: en ? 'Sections awaiting time information' : 'Saat bilgisi beklenen şubeler',
+      conflict: I18N.t('progConflictTitle'),
+      details: I18N.t('prgMenuDetail'),
+      copyCrn: I18N.t('prgMenuCopy'),
+      openObs: I18N.t('prgMenuObs'),
+      remove: I18N.t('prgMenuRemove'),
+      actions: en ? 'actions' : 'işlemleri',
+    },
+    onOpen: (rowKey) => {
+      const row = rowByKey.get(rowKey);
+      if (row) openDetail(row, term);
+    },
+    onCopyCrn: (rowKey) => {
+      const row = rowByKey.get(rowKey);
+      if (!row) return;
+      copyText(String(row[0])).then((ok) => toast(ok
+        ? (en ? 'CRN copied' : 'CRN kopyalandı')
+        : I18N.t('progCopyFailed'), { kind: ok ? 'ok' : 'warn' }));
+    },
+    onOpenObs: () => window.open('https://obs.itu.edu.tr/public/DersProgram', '_blank', 'noopener'),
+    onRemove: removeScheduleItem,
+  };
+}
+
 function renderGrid(itemRows) {
+  const wrap = $('#p-grid');
+  if (!wrap) return;
+  latestProgramScheduleProps = programScheduleProps(itemRows);
+  if (programScheduleModule) {
+    if (programScheduleMounted) programScheduleModule.updateProgram(latestProgramScheduleProps);
+    else {
+      programScheduleModule.mountProgram(wrap, latestProgramScheduleProps);
+      programScheduleMounted = true;
+    }
+    return;
+  }
+  wrap.innerHTML = `<div class="pp-loading" aria-live="polite">${esc(I18N.lang === 'en' ? 'Preparing schedule…' : 'Program hazırlanıyor…')}</div>`;
+  if (!programSchedulePromise) {
+    programSchedulePromise = import('../react/dersler-table.js').then((mod) => {
+      programScheduleModule = mod;
+      if (!latestProgramScheduleProps || !document.contains(wrap)) return;
+      mod.mountProgram(wrap, latestProgramScheduleProps);
+      programScheduleMounted = true;
+    }).catch((error) => {
+      console.warn('Program React görünümü yüklenemedi, klasik görünüm kullanılıyor.', error);
+      programSchedulePromise = null;
+      renderGridLegacy(itemRows);
+    });
+  }
+}
+
+function renderGridLegacy(itemRows) {
   const wrap = $('#p-grid');
   const t = buildTimetable(itemRows);
   // Zaman bilgisi olmayan şubeyi sessizce yutma — ızgaranın altına not düş (G).

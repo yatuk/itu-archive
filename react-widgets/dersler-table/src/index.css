@@ -428,6 +428,64 @@
 .curriculum-plan-root .dp-repeat-btn.on { color: var(--amber); background: color-mix(in srgb, var(--amber) 8%, transparent); }
 .curriculum-plan-root .dp-grade-wrap { border-radius: 7px; }
 .curriculum-plan-root .dp-grade { border-radius: 5px; font-family: var(--mono); }
+.curriculum-plan-root .cp-grade-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  min-width: 65px;
+  min-height: 31px;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--dim);
+  background: var(--panel);
+  font: 700 10px/1 var(--mono);
+  cursor: pointer;
+  transition: border-color 140ms ease, background-color 140ms ease, color 140ms ease;
+}
+.curriculum-plan-root .cp-grade-trigger:hover,
+.curriculum-plan-root .cp-grade-trigger[aria-expanded="true"] { border-color: var(--acid); color: var(--fg); background: color-mix(in srgb, var(--acid) 6%, var(--panel)); }
+.curriculum-plan-root .cp-grade-trigger.filled { border-color: color-mix(in srgb, var(--acid) 58%, var(--line)); color: var(--fg); }
+.curriculum-plan-root .cp-grade-trigger svg { width: 13px; height: 13px; flex: 0 0 auto; transition: transform 140ms ease; }
+.curriculum-plan-root .cp-grade-trigger[aria-expanded="true"] svg { transform: rotate(180deg); }
+.cp-grade-menu {
+  position: fixed;
+  z-index: 10020;
+  top: var(--cp-menu-y);
+  left: var(--cp-menu-x);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 5px;
+  width: 292px;
+  max-width: calc(100vw - 20px);
+  padding: 8px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 11px;
+  background: var(--panel);
+  box-shadow: var(--shadow-float);
+}
+.cp-grade-menu.above { transform: translateY(-100%); }
+.cp-grade-menu button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 34px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  color: var(--dim);
+  background: var(--panel-2);
+  font: 700 10px/1 var(--mono);
+  cursor: pointer;
+}
+.cp-grade-menu button:hover,
+.cp-grade-menu button:focus-visible { border-color: var(--cyan); color: var(--fg); background: color-mix(in srgb, var(--cyan) 7%, var(--panel)); }
+.cp-grade-menu button[aria-selected="true"] { border-color: var(--acid); color: var(--fg); background: color-mix(in srgb, var(--acid) 12%, var(--panel)); }
+.cp-grade-menu button.is-empty { grid-column: 1 / -1; justify-content: flex-start; padding-inline: 10px; }
+.cp-grade-menu button svg { position: absolute; top: 50%; right: 6px; width: 12px; height: 12px; color: var(--acid); transform: translateY(-50%); }
 .curriculum-plan-root .dp-grade-clear svg { display: block; }
 .curriculum-plan-root .dp-sec-btn.open {
   padding: 5px 8px;

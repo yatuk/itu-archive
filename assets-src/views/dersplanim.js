@@ -443,7 +443,13 @@ function buildGradeSelect(selected, code, kind = 'course', slotKey = '') {
     const o = document.createElement('option');
     o.value = g;
     o.textContent = g;
-    if (g === selected) o.selected = true;
+    if (g === selected) {
+      o.selected = true;
+      // React adası müfredat DOM'unu güvenli bir HTML anı olarak taşır.
+      // `selected` canlı DOM özelliği tek başına serialize edilmediği için
+      // transkriptten gelen notlar ekranda "Yeni" görünüyordu.
+      o.defaultSelected = true;
+    }
     sel.appendChild(o);
   }
   if (selected) sel.classList.add('filled');

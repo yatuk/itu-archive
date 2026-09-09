@@ -644,12 +644,14 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
 
     await expect(page.locator('#dp-prog')).toHaveValue('CEN_LS', { timeout: 20000 });
     await expect(page.locator('.dp-grade[data-gcode="CEN 101E"]')).toHaveValue('BA+');
+    await expect(page.locator('.dp-grade[data-gcode="CEN 101E"] + .cp-grade-trigger')).toContainText('BA+');
     await expect(page.locator('.dp-grade[data-gcode="CEN 223E"]')).toHaveValue('CB+');
     await expect(page.locator('.dp-grade[data-gcode="FIZ 101EL"]')).toHaveValue('AA');
     await expect(page.locator('.dp-grade[data-gcode="KIM 101EL"]')).toHaveValue('BB');
     await expect(page.locator('.dp-grade[data-gcode="FIZ 102EL"]')).toHaveValue('BB+');
     await expect(page.locator('.dp-grade[data-gcode="ING 112A"]')).toHaveValue('CC+');
     await expect(page.locator('.dp-grade[data-gcode="CEN 335E"]')).toHaveValue('CB');
+    await expect(page.locator('.dp-grade[data-gcode="CEN 335E"] + .cp-grade-trigger')).toContainText('CB');
     await expect(page.locator('.dp-repeat-btn[data-gcode="CEN 335E"]')).toHaveAttribute('title', /önceki: VF/);
     await expect(page.locator('.dp-epick[data-slot="s3i5"]')).toHaveValue('SNT 102E');
     await expect(page.locator('.dp-epick[data-slot="s6i5"]')).toHaveValue('ITB 205E');

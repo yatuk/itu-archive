@@ -3,7 +3,6 @@
 
 import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate, isViewVisible } from '../core/utils.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
-import { fillRows } from '../core/table.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
@@ -12,6 +11,38 @@ let inited = false;
 let currentHits = []; // son filtre sonucu — .ics dışa aktarımı için
 // Sınav listesi sayfalama: 400'lük tavan yerine "daha fazla" ile artar.
 let examsShown = 400;
+let examsModule = null;
+let examsModulePromise = null;
+let examsMounted = false;
+let latestExamsProps = null;
+
+function renderExamList(props) {
+  const root = $('#exam-list-mount');
+  if (!root) return;
+  latestExamsProps = props;
+  if (examsModule) {
+    if (examsMounted) examsModule.updateExams(props);
+    else {
+      examsModule.mountExams(root, props);
+      examsMounted = true;
+    }
+    return;
+  }
+  root.setAttribute('aria-busy', 'true');
+  if (!examsModulePromise) {
+    examsModulePromise = import('../react/dersler-table.js').then((mod) => {
+      examsModule = mod;
+      root.removeAttribute('aria-busy');
+      if (!latestExamsProps) return;
+      examsModule.mountExams(root, latestExamsProps);
+      examsMounted = true;
+    }).catch((error) => {
+      root.removeAttribute('aria-busy');
+      examsModulePromise = null;
+      console.error('Sınav listesi yüklenemedi', error);
+    });
+  }
+}
 
 function examPreference() {
   const params = new URLSearchParams(location.search);
@@ -198,9 +229,6 @@ function renderExams(append) {
   // Açıklanacak") YER kolonu bilgi taşımıyor — gizle, üstte tek satır not düş.
   const realPlace = (p) => p && p !== '-' && p !== 'İlgili Bölümce Açıklanacak';
   const showPlace = hits.some((e) => realPlace(e.place));
-  const etable = $('#etable');
-  if (etable) etable.classList.toggle('hide-yer', !showPlace);
-
   let resultLine = state.exams.exams.length
     ? `<b>${hits.length}</b> / ${state.exams.exams.length} ${I18N.t('examCountUnit')} · ${esc(state.exams.term || '')}`
     : I18N.t('examNoScheduleYet');
@@ -209,30 +237,42 @@ function renderExams(append) {
   }
   $('#eresultline').innerHTML = resultLine;
 
-  const rows = fillRows($('#erows'), hits.slice(0, examsShown), (e) => `
-    <tr><td class="crn" data-label="${esc(I18N.t('examColCRN'))}">${esc(e.crn)}</td>
-        <td class="code" data-label="${esc(I18N.t('examColCourse'))}"><button type="button" class="row-toggle x-detail" data-code="${esc(e.code)}"><b>${esc(e.code)}</b></button></td>
-        <td data-label="${esc(I18N.t('examColName'))}">${esc(e.name)}</td>
-        <td data-label="${esc(I18N.t('examColInstructor'))}">${esc(e.instructor || '·')}</td>
-        <td data-label="${esc(I18N.t('examColType'))}">${esc(e.type)}</td>
-        ${showPlace ? `<td class="when yer-col" data-label="${esc(I18N.t('examColPlace'))}">${esc(e.place || '·')}</td>` : ''}
-        <td data-label="${esc(I18N.t('examColDate'))}">${esc(e.date)}</td>
-        <td class="when" data-label="${esc(I18N.t('examColTime'))}">${esc(e.day)} ${esc(e.time)}</td></tr>`,
-  { empty: I18N.t('examEmptyRow'), colspan: showPlace ? 8 : 7 });
+  renderExamList({
+    rows: hits.slice(0, examsShown).map((e, index) => ({
+      key: `${e.crn}-${e.code}-${e.date}-${e.time}-${index}`,
+      crn: String(e.crn || ''),
+      code: String(e.code || ''),
+      name: String(e.name || ''),
+      instructor: String(e.instructor || ''),
+      type: String(e.type || ''),
+      place: String(e.place || ''),
+      date: String(e.date || ''),
+      day: String(e.day || ''),
+      time: String(e.time || ''),
+    })),
+    showPlace,
+    emptyMessage: I18N.t('examEmptyRow'),
+    ariaLabel: I18N.t('examTableAriaLabel'),
+    labels: {
+      crn: I18N.t('examColCRN'),
+      course: I18N.t('examColCourse'),
+      name: I18N.t('examColName'),
+      instructor: I18N.t('examColInstructor'),
+      type: I18N.t('examColType'),
+      place: I18N.t('examColPlace'),
+      date: I18N.t('examColDate'),
+      time: I18N.t('examColTime'),
+    },
+    onOpen: (code) => {
+      window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code, source: 'sinavlar' } }));
+    },
+  });
   const emore = $('#emore');
   if (emore) {
     emore.hidden = hits.length <= examsShown;
     emore.textContent = I18N.lang === 'en'
       ? `${I18N.t('more')} (${hits.length - examsShown} remaining)`
       : `${I18N.t('more')} (${hits.length - examsShown} kaldı)`;
-  }
-  if (rows) {
-    rows.forEach((tr) => {
-      const b = tr.querySelector('.x-detail');
-      if (b) b.addEventListener('click', () => {
-        window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: b.dataset.code, source: 'sinavlar' } }));
-      });
-    });
   }
 }
 

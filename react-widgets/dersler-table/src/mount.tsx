@@ -3,6 +3,8 @@ import { createRoot, type Root } from 'react-dom/client';
 
 import { DerslerTable, type DerslerTableProps } from '@/components/ui/dersler-table';
 import { ProgramSchedule, type ProgramScheduleProps } from '@/components/ui/program-schedule';
+import { CurriculumPlan, type CurriculumPlanProps } from '@/components/ui/curriculum-plan';
+import { ExamsList, type ExamsListProps } from '@/components/ui/exams-list';
 // `?inline` ile CSS, ayrı bir .css dosyası yerine bu JS bundle'ının içine
 // string olarak gömülür — courses.js'in docs/index.html'e ayrı bir <link>
 // eklemesine gerek kalmaz ve önbellek kırma (?v=) JS import'unun kendi
@@ -15,6 +17,8 @@ import cssText from './index.css?inline';
 // tarafta tutulur, bkz. dersler-table.tsx'teki manuel sıralama).
 let root: Root | null = null;
 let programRoot: Root | null = null;
+let curriculumRoot: Root | null = null;
+let examsRoot: Root | null = null;
 let styleTag: HTMLStyleElement | null = null;
 
 function ensureStyles(): void {
@@ -63,5 +67,37 @@ export function unmountProgram(): void {
   programRoot = null;
 }
 
+export function mountCurriculum(container: HTMLElement, props: CurriculumPlanProps): void {
+  ensureStyles();
+  curriculumRoot = createRoot(container);
+  curriculumRoot.render(<CurriculumPlan {...props} />);
+}
+
+export function updateCurriculum(props: CurriculumPlanProps): void {
+  curriculumRoot?.render(<CurriculumPlan {...props} />);
+}
+
+export function unmountCurriculum(): void {
+  curriculumRoot?.unmount();
+  curriculumRoot = null;
+}
+
+export function mountExams(container: HTMLElement, props: ExamsListProps): void {
+  ensureStyles();
+  examsRoot = createRoot(container);
+  examsRoot.render(<ExamsList {...props} />);
+}
+
+export function updateExams(props: ExamsListProps): void {
+  examsRoot?.render(<ExamsList {...props} />);
+}
+
+export function unmountExams(): void {
+  examsRoot?.unmount();
+  examsRoot = null;
+}
+
 export type { DerslerTableProps, DerslerRow, SortKey, SortDir } from '@/components/ui/dersler-table';
 export type { ProgramScheduleProps, ProgramSession, UntimedCourse } from '@/components/ui/program-schedule';
+export type { CurriculumPlanProps } from '@/components/ui/curriculum-plan';
+export type { ExamsListProps, ExamRow } from '@/components/ui/exams-list';

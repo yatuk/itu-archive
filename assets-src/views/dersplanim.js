@@ -53,6 +53,49 @@ let initialParams = null; // onShow'da senkron yakalanan URL parametreleri
 
 // Filtre durumu (URL'den okunur, DOM'dan yazılır).
 const filters = { open: false, cap: false, semesters: new Set(), types: new Set() };
+let curriculumModule = null;
+let curriculumModulePromise = null;
+let curriculumMounted = false;
+let latestCurriculumProps = null;
+
+function unmountCurriculum() {
+  if (curriculumMounted && curriculumModule) curriculumModule.unmountCurriculum();
+  curriculumMounted = false;
+  $('#dp-semesters')?.classList.remove('dp-react');
+}
+
+function renderCurriculum(root, fragment, empty = false) {
+  root.classList.add('dp-react');
+  const staging = document.createElement('div');
+  staging.appendChild(fragment.cloneNode(true));
+  latestCurriculumProps = {
+    html: staging.innerHTML,
+    empty,
+    emptyMessage: I18N.t('planNoMatchFilters'),
+    ariaLabel: I18N.lang === 'en' ? 'Curriculum by semester' : 'Yarıyıllara göre ders planı',
+  };
+  if (curriculumModule) {
+    if (curriculumMounted) curriculumModule.updateCurriculum(latestCurriculumProps);
+    else {
+      curriculumModule.mountCurriculum(root, latestCurriculumProps);
+      curriculumMounted = true;
+    }
+    return;
+  }
+  root.replaceChildren(fragment);
+  if (!curriculumModulePromise) {
+    curriculumModulePromise = import('../react/dersler-table.js').then((mod) => {
+      curriculumModule = mod;
+      if (!latestCurriculumProps || !document.contains(root)) return;
+      root.replaceChildren();
+      mod.mountCurriculum(root, latestCurriculumProps);
+      curriculumMounted = true;
+    }).catch((error) => {
+      console.warn('Müfredat React görünümü yüklenemedi, klasik görünüm kullanılıyor.', error);
+      curriculumModulePromise = null;
+    });
+  }
+}
 
 export async function onShow() {
   // URL parametrelerini SENKRON yakala: app.js writeViewUrl, await sırasında
@@ -250,6 +293,7 @@ function showProgramEmpty() {
   if ($('#dp-empty')) $('#dp-empty').hidden = false;
   if ($('#dp-result')) $('#dp-result').textContent = I18N.lang === 'en' ? 'No program selected' : 'Program seçilmedi';
   if ($('#dp-summary')) $('#dp-summary').innerHTML = '';
+  unmountCurriculum();
   if ($('#dp-semesters')) $('#dp-semesters').innerHTML = '';
 }
 
@@ -259,6 +303,7 @@ async function selectProgram(code) {
   $('#view-dersplanim')?.classList.remove('dp-no-program');
   if ($('#dp-empty')) $('#dp-empty').hidden = true;
   progCode = code;
+  unmountCurriculum();
   plan = null;
   stored = loadStored(code);
   saveLastProgram(code);
@@ -410,7 +455,7 @@ function makeClearBtn() {
   b.type = 'button';
   b.className = 'dp-grade-clear';
   b.dataset.act = 'dp-clear';
-  b.textContent = '×';
+  b.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>';
   b.title = I18N.t('planClearGradeTitle');
   return b;
 }
@@ -597,12 +642,14 @@ function renderAll() {
     frag.appendChild(sem);
   }
 
-  if (any) root.replaceChildren(frag);
+  if (any) renderCurriculum(root, frag);
   else {
     const p = document.createElement('p');
     p.className = 'empty';
     p.textContent = I18N.t('planNoMatchFilters');
-    root.replaceChildren(p);
+    const emptyFrag = document.createDocumentFragment();
+    emptyFrag.appendChild(p);
+    renderCurriculum(root, emptyFrag, true);
   }
 
   // "Bu dönem planından N ders açık · M zorunlu · K seçmeli slot"
@@ -709,7 +756,7 @@ function courseRow(c, st, slotKey) {
   rep.title = rec.prev
     ? `${I18N.t('planMarkedRepeatPrev')} ${rec.prev}`
     : I18N.t('planMarkRepeat');
-  rep.textContent = '⇄';
+  rep.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 1 4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="m7 23-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>';
   row.appendChild(rep);
 
   // 4) not: dar select + seçiliyse ×
@@ -1744,7 +1791,6 @@ function init() {
       saveStored(progCode, stored);
       act.classList.toggle('on', !cur.repeat);
       act.setAttribute('aria-pressed', String(!cur.repeat));
-      act.textContent = !cur.repeat ? '↻' : '↺';
       act.title = cur.prev
         ? `${I18N.t('planMarkedRepeatPrev')} ${cur.prev}`
         : I18N.t('planMarkRepeat');

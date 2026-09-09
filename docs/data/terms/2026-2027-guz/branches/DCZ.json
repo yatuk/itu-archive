@@ -1,62 +1,134 @@
 [
  {
-  "crn": "30022",
-  "code": "DCZ 599",
+  "crn": "13368",
+  "code": "DCZ 508",
   "branch": "DCZ",
   "level": "LUI",
-  "name": "Proje",
+  "name": "Denizci.Kalite Sist.&Stan.",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Metin Çelik",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "DZB"
   ],
-  "rooms": [],
-  "capacity": 15,
-  "enrolled": 1,
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
   "classReq": "-"
  },
  {
-  "crn": "30097",
-  "code": "DCZ 599",
+  "crn": "13370",
+  "code": "DCZ 520",
   "branch": "DCZ",
   "level": "LUI",
-  "name": "Proje",
+  "name": "Denizci.Çalışma.Uyg.Proje Yön.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Kadir Çiçek",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13372",
+  "code": "DCZ 521",
+  "branch": "DCZ",
+  "level": "LUI",
+  "name": "Denizcil.Stra.İnsan Kayn.Yön.",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Leyla Tavacıoğlu",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "DZB"
   ],
-  "rooms": [],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 10,
-  "enrolled": 2,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
   "classReq": "-"
  },
  {
-  "crn": "30098",
-  "code": "DCZ 599",
+  "crn": "13374",
+  "code": "DCZ 506",
   "branch": "DCZ",
   "level": "LUI",
-  "name": "Proje",
+  "name": "Denizci.Sektör.Kariyer Plan.",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Bayram Barış Kızılsaç",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "DZB"
   ],
-  "rooms": [],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "20:30/23:29"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 10,
-  "enrolled": 4,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "13396",
+  "code": "DCZ 523",
+  "branch": "DCZ",
+  "level": "LUI",
+  "name": "Denizcilik Sektörü ve Sürdürülebilir Kalkınma Politikaları",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Arda Özkan",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "20:30/23:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",

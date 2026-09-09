@@ -1978,5 +1978,96 @@
   ],
   "prereq": "Detay",
   "classReq": "-"
+ },
+ {
+  "crn": "15373",
+  "code": "GEM 409E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Vibration",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ahmet Ergin",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15374",
+  "code": "GEM 445E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Marine Piping Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Osman Azmi Özsoysal",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15375",
+  "code": "GEM 451E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Automatic Control of Ships",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Sinan Çabuk",
+  "buildings": [
+   "EEB",
+   "EEB"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29",
+   "17:30/18:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
  }
 ]

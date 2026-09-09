@@ -2336,7 +2336,7 @@
   "level": "LS",
   "name": "Mathematics I",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Burak Yıldıran Stodolsky",
+  "instructor": "Seher Melike Aydoğan",
   "buildings": [
    "YDY",
    "YDY"
@@ -3862,7 +3862,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Evren Tanrıöver",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Pazartesi"
@@ -3871,7 +3871,7 @@
    "08:30/12:29"
   ],
   "rooms": [
-   "--"
+   "OBL3"
   ],
   "capacity": 30,
   "enrolled": 0,
@@ -4815,7 +4815,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Evren Tanrıöver",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Pazartesi"
@@ -4824,7 +4824,7 @@
    "13:30/17:29"
   ],
   "rooms": [
-   "--"
+   "OBL3"
   ],
   "capacity": 30,
   "enrolled": 0,
@@ -4844,7 +4844,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sevgi Harman",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Çarşamba"
@@ -4853,7 +4853,7 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "--"
+   "D102"
   ],
   "capacity": 90,
   "enrolled": 0,
@@ -4873,8 +4873,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Fuat Ergezen",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "FEB",
+   "FEB"
   ],
   "days": [
    "Salı",
@@ -4885,8 +4885,8 @@
    "09:30/11:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "D103",
+   "D103"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -4908,8 +4908,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gülçin Çivi Bilir",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "FEB",
+   "FEB"
   ],
   "days": [
    "Salı",
@@ -4920,8 +4920,8 @@
    "09:30/11:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "D204",
+   "D106"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -4943,7 +4943,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Atabey Kaygun",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Perşembe"
@@ -4952,13 +4952,14 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "D202"
   ],
   "capacity": 50,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "MAT_LS"
+   "MAT_LS",
+   "MTT_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -4972,7 +4973,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Atabey Kaygun",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Cuma"
@@ -4981,13 +4982,14 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "D104"
   ],
   "capacity": 50,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "MAT_LS"
+   "MAT_LS",
+   "MTT_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -5001,8 +5003,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Güler Arsan",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "FEB",
+   "FEB"
   ],
   "days": [
    "Salı",
@@ -5013,8 +5015,8 @@
    "14:30/16:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "D304",
+   "D304"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5034,8 +5036,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Aybike Özer",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "FEB",
+   "FEB"
   ],
   "days": [
    "Salı",
@@ -5046,8 +5048,8 @@
    "14:30/16:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "D104",
+   "D104"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5067,7 +5069,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Nalan Antar",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Perşembe"
@@ -5076,7 +5078,7 @@
    "13:30/17:29"
   ],
   "rooms": [
-   "--"
+   "OBL3"
   ],
   "capacity": 30,
   "enrolled": 0,
@@ -5096,7 +5098,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Salı"
@@ -5105,7 +5107,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "D206"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5125,7 +5127,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Salı"
@@ -5134,7 +5136,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "D203"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5154,7 +5156,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gökhan Göksu",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Pazartesi"
@@ -5163,7 +5165,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "D200-C"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5185,7 +5187,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gökhan Göksu",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Salı"
@@ -5194,7 +5196,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "D203"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5216,8 +5218,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gülçin Çivi Bilir",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "FEB",
+   "FEB"
   ],
   "days": [
    "Çarşamba",
@@ -5228,8 +5230,8 @@
    "10:30/12:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "D203",
+   "D203"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -5251,7 +5253,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Burhaneddin İzgi",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Salı"
@@ -5260,7 +5262,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "D202"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5280,26 +5282,27 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "YDY",
+   "FEB"
   ],
   "days": [
-   "Perşembe",
+   "Salı",
    "Cuma"
   ],
   "times": [
-   "08:30/11:29",
+   "09:30/12:29",
    "14:30/16:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "174",
+   "D203"
   ],
   "capacity": 40,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "MAT_LS"
+   "MAT_LS",
+   "MTT_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -5313,8 +5316,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "FEB",
+   "FEB"
   ],
   "days": [
    "Perşembe",
@@ -5325,14 +5328,15 @@
    "14:30/16:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "D103",
+   "D103"
   ],
   "capacity": 40,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "MAT_LS"
+   "MAT_LS",
+   "MTT_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -5346,7 +5350,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Soner Aydınlık",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Pazartesi"
@@ -5355,7 +5359,7 @@
    "10:30/13:29"
   ],
   "rooms": [
-   "--"
+   "D203"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5375,7 +5379,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Rahmiye Ergün",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Cuma"
@@ -5384,7 +5388,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "D204"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -5404,7 +5408,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Evren Tanrıöver",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Perşembe"
@@ -5413,7 +5417,7 @@
    "11:30/14:29"
   ],
   "rooms": [
-   "--"
+   "D102"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5433,7 +5437,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "İzzet Göksel",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Perşembe"
@@ -5442,7 +5446,7 @@
    "11:30/14:29"
   ],
   "rooms": [
-   "--"
+   "D103"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -5462,7 +5466,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "İzzet Göksel",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Salı"
@@ -5471,7 +5475,7 @@
    "13:30/17:29"
   ],
   "rooms": [
-   "--"
+   "OBL3"
   ],
   "capacity": 30,
   "enrolled": 0,
@@ -5493,7 +5497,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Çarşamba"
@@ -5502,13 +5506,14 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "D201"
   ],
   "capacity": 50,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "MAT_LS"
+   "MAT_LS",
+   "MTT_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -5522,7 +5527,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Çarşamba"
@@ -5531,13 +5536,14 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "D105"
   ],
   "capacity": 50,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "MAT_LS"
+   "MAT_LS",
+   "MTT_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -5551,7 +5557,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ersin Özuğurlu",
   "buildings": [
-   "undeclared"
+   "YDY"
   ],
   "days": [
    "Pazartesi"
@@ -5560,7 +5566,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "177"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -5582,7 +5588,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ersin Özuğurlu",
   "buildings": [
-   "undeclared"
+   "YDY"
   ],
   "days": [
    "Perşembe"
@@ -5591,7 +5597,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "177"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -5613,7 +5619,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Saadet Seher Özer",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Perşembe"
@@ -5642,7 +5648,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Muhammed Kurulay",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Perşembe"
@@ -5651,43 +5657,12 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "L400"
   ],
   "capacity": 24,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "MAT_LS",
-   "MATE_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "13792",
-  "code": "MAT 386E",
-  "branch": "MAT",
-  "level": "LS",
-  "name": "Computational Data Science",
-  "method": "Sanal (Çevrimiçi/Online)",
-  "instructor": "Burcu Tunga",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Cuma"
-  ],
-  "times": [
-   "14:00/17:59"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 24,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MAT_LS",
    "MAT_LS",
    "MATE_LS"
   ],
@@ -5703,7 +5678,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Fatma Özdemir",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Çarşamba"
@@ -5712,7 +5687,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "D306"
   ],
   "capacity": 24,
   "enrolled": 0,
@@ -5735,7 +5710,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Semra Ahmetolan",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Pazartesi"
@@ -5744,7 +5719,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "D106"
   ],
   "capacity": 24,
   "enrolled": 0,
@@ -5765,7 +5740,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Murat Sarı",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Salı"
@@ -5774,7 +5749,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "D106"
   ],
   "capacity": 24,
   "enrolled": 0,
@@ -5969,7 +5944,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Füsun Zengin",
   "buildings": [
-   "undeclared"
+   "FEB"
   ],
   "days": [
    "Pazartesi"
@@ -5978,7 +5953,7 @@
    "11:30/14:29"
   ],
   "rooms": [
-   "--"
+   "D101"
   ],
   "capacity": 24,
   "enrolled": 0,
@@ -6016,7 +5991,8 @@
   "reserved": "ECNE_LS/5/0 | Diğer/50/0",
   "programs": [
    "ECNE_LS",
-   "MAT_LS"
+   "MAT_LS",
+   "MTT_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

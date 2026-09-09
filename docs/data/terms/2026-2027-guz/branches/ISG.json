@@ -1,12 +1,12 @@
 [
  {
-  "crn": "30058",
-  "code": "ISG 507",
+  "crn": "15071",
+  "code": "ISG 506",
   "branch": "ISG",
   "level": "LUI",
-  "name": "Ulusal İş Sağlığı ve Güvenliği Mevzuatı",
+  "name": "Uygulamalı Olasılık&İstatistik",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mahmut Kabakcı",
+  "instructor": "Abdussamet Subaşı",
   "buildings": [
    "MED"
   ],
@@ -14,136 +14,94 @@
    "Pazartesi"
   ],
   "times": [
-   "19:00/21:59"
+   "18:00/20:59"
   ],
   "rooms": [
    "--"
   ],
-  "capacity": 5,
-  "enrolled": 3,
+  "capacity": 20,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
   "classReq": "-"
  },
  {
-  "crn": "30059",
-  "code": "ISG 509",
+  "crn": "15072",
+  "code": "ISG 501",
   "branch": "ISG",
   "level": "LUI",
-  "name": "İşletme Hukuku",
+  "name": "İş Sağlığı ve Güvenliğine Giriş",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Esra Baş",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Cumartesi"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15073",
+  "code": "ISG 512",
+  "branch": "ISG",
+  "level": "LUI",
+  "name": "İmalatta İş Güvenliği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hacı Abdullah Taşdemir",
+  "buildings": [
+   "MED"
+  ],
+  "days": [
+   "Cumartesi"
+  ],
+  "times": [
+   "16:00/18:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15074",
+  "code": "ISG 503",
+  "branch": "ISG",
+  "level": "LUI",
+  "name": "İş Hukuku",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mahmut Kabakcı",
   "buildings": [
    "MED"
   ],
   "days": [
-   "Salı"
+   "Çarşamba"
   ],
   "times": [
-   "19:00/21:59"
+   "18:00/20:59"
   ],
   "rooms": [
    "--"
   ],
-  "capacity": 5,
-  "enrolled": 3,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30060",
-  "code": "ISG 514",
-  "branch": "ISG",
-  "level": "LUI",
-  "name": "İnşaat İşlerinde İş Sağlığı ve Güvenliği",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Gürkan Emre Gürcanlı",
-  "buildings": [
-   "ISB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "19:00/21:59"
-  ],
-  "rooms": [
-   "209"
-  ],
-  "capacity": 5,
-  "enrolled": 3,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30061",
-  "code": "ISG 502",
-  "branch": "ISG",
-  "level": "LUI",
-  "name": "İş Sağlığı ve Güven.Risk Yön.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Gürkan Emre Gürcanlı",
-  "buildings": [
-   "ISB"
-  ],
-  "days": [
-   "Cumartesi"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "209"
-  ],
-  "capacity": 5,
-  "enrolled": 3,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30088",
-  "code": "ISG 599",
-  "branch": "ISG",
-  "level": "LUI",
-  "name": "Proje",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mahmut Kabakcı",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 10,
-  "enrolled": 2,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30089",
-  "code": "ISG 599",
-  "branch": "ISG",
-  "level": "LUI",
-  "name": "Proje",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Esra Baş",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 10,
-  "enrolled": 1,
+  "capacity": 20,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",

@@ -647,6 +647,7 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
+   "UCK_LS",
    "UZB_LS",
    "UZB_YD",
    "UZBE_LS"
@@ -807,6 +808,48 @@
   "programs": [
    "UZBE_LS"
   ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15363",
+  "code": "UZB 416E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Spacecraft Systems Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Alim Rüstem Aslan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15364",
+  "code": "UZB 489E",
+  "branch": "UZB",
+  "level": "LS",
+  "name": "Electric Propulsion",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Bülent Tutkun",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
   "prereq": "-",
   "classReq": "-"
  }

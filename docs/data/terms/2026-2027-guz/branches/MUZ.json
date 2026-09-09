@@ -222,7 +222,8 @@
    "KMP_LS",
    "MTR_LS",
    "MUT_LS",
-   "MZT_LS"
+   "MZT_LS",
+   "SES_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -1084,6 +1085,188 @@
   "programs": [
    "BST_LS",
    "KMP_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15323",
+  "code": "MUZ 380",
+  "branch": "MUZ",
+  "level": "LS",
+  "name": "Dini Müzik II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İdris Melih Berse",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "KMP_LS",
+   "MTR_LS",
+   "MUZ_LS",
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15345",
+  "code": "MUZ 322",
+  "branch": "MUZ",
+  "level": "LS",
+  "name": "Alan Araştırma Metodları",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eray Cömert",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS",
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS",
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15358",
+  "code": "MUZ 342",
+  "branch": "MUZ",
+  "level": "LS",
+  "name": "Seminer II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Faruk Çalışkan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MUZ_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15359",
+  "code": "MUZ 442",
+  "branch": "MUZ",
+  "level": "LS",
+  "name": "Seminer IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eylül Doğan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MUZ_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15378",
+  "code": "MUZ 476",
+  "branch": "MUZ",
+  "level": "LS",
+  "name": "Türk Halk Müziği Bilgileri II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Süleyman Şenel",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS",
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS",
+   "THO_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15391",
+  "code": "MUZ 122",
+  "branch": "MUZ",
+  "level": "LS",
+  "name": "Müzik Tarihi II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ozan Baysal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS",
+   "MTR_LS",
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15392",
+  "code": "MUZ 446",
+  "branch": "MUZ",
+  "level": "LS",
+  "name": "Dünya Vokal Kültürleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burcu Yıldız Ataş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SES_LS"
   ],
   "prereq": "-",
   "classReq": "-"

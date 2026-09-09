@@ -1364,7 +1364,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Cem Örnek",
   "buildings": [
-   "undeclared"
+   "KMB"
   ],
   "days": [
    "Çarşamba"
@@ -1373,12 +1373,15 @@
    "09:00/11:59"
   ],
   "rooms": [
-   "--"
+   "BIL.LAB.1"
   ],
-  "capacity": 40,
+  "capacity": 25,
   "enrolled": 0,
   "reserved": "-",
-  "programs": [],
+  "programs": [
+   "MET_LS",
+   "METE_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  }

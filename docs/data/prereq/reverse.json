@@ -50,6 +50,15 @@
   "CEV 242E",
   "CEV 345",
   "CEV 345E",
+  "DEN 310E",
+  "DEN 312",
+  "DEN 312E",
+  "DEN 323E",
+  "DEN 328E",
+  "DEN 411",
+  "DEN 411E",
+  "DEN 421",
+  "DEN 421E",
   "DEN 427",
   "DEN 427E",
   "GEM 320",
@@ -121,6 +130,15 @@
   "CEV 242E",
   "CEV 345",
   "CEV 345E",
+  "DEN 310E",
+  "DEN 312",
+  "DEN 312E",
+  "DEN 323E",
+  "DEN 328E",
+  "DEN 411",
+  "DEN 411E",
+  "DEN 421",
+  "DEN 421E",
   "DEN 427",
   "DEN 427E",
   "GEM 320",
@@ -4387,6 +4405,7 @@
   "EFN 309E",
   "ISL 353",
   "ISL 353E",
+  "ISL 435E",
   "MMD 353E"
  ],
  "ECN 102E": [
@@ -4399,6 +4418,7 @@
   "EFN 309E",
   "ISL 353",
   "ISL 353E",
+  "ISL 435E",
   "MMD 353E"
  ],
  "ECN 105": [
@@ -4539,10 +4559,13 @@
   "END 305E",
   "END 327",
   "END 327E",
+  "END 471",
+  "END 471E",
   "END 476",
   "END 476E",
   "ISL 334",
-  "ISL 334E"
+  "ISL 334E",
+  "VBA 312E"
  ],
  "ECN 211E": [
   "BHB 204E",
@@ -4553,10 +4576,13 @@
   "END 305E",
   "END 327",
   "END 327E",
+  "END 471",
+  "END 471E",
   "END 476",
   "END 476E",
   "ISL 334",
-  "ISL 334E"
+  "ISL 334E",
+  "VBA 312E"
  ],
  "ECN 212": [
   "ECN 301E",
@@ -11221,6 +11247,8 @@
  "ISL 214": [
   "END 448",
   "END 448E",
+  "END 471",
+  "END 471E",
   "IML 335",
   "IML 335E",
   "ISL 334",
@@ -11236,6 +11264,8 @@
  "ISL 214E": [
   "END 448",
   "END 448E",
+  "END 471",
+  "END 471E",
   "IML 335",
   "IML 335E",
   "ISL 334",

@@ -2474,7 +2474,7 @@
   ],
   "times": [
    "10:30/12:29",
-   "08:30/10:29"
+   "10:30/12:29"
   ],
   "rooms": [
    "--",
@@ -2509,7 +2509,7 @@
   ],
   "times": [
    "10:30/12:29",
-   "08:30/10:29"
+   "10:30/12:29"
   ],
   "rooms": [
    "--",
@@ -2877,7 +2877,7 @@
   ],
   "times": [
    "10:30/12:29",
-   "10:30/12:29"
+   "08:30/10:29"
   ],
   "rooms": [
    "--",
@@ -3852,7 +3852,7 @@
    "Perşembe"
   ],
   "times": [
-   "13:30/16:29"
+   "09:30/12:29"
   ],
   "rooms": [
    "--"
@@ -4038,6 +4038,27 @@
    "INS_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15377",
+  "code": "INS 403E",
+  "branch": "INS",
+  "level": "LS",
+  "name": "Earthworks",
+  "method": "Ek Sınav",
+  "instructor": "Sabahat Topuz Kiremitçi",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

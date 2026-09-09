@@ -1,120 +1,33 @@
 [
  {
-  "crn": "30047",
-  "code": "DUY 504",
+  "crn": "14220",
+  "code": "DUY 505",
   "branch": "DUY",
   "level": "LUI",
-  "name": "Denizcilik Ticari İşletmecil.",
+  "name": "Denizcil.Örgüts.Davra.& Lider.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Elif Bal Beşikçi",
-  "buildings": [
-   "DZB-SEM"
-  ],
-  "days": [
-   "Salı"
-  ],
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
   "times": [
-   "20:30/23:29"
+   "-/-"
   ],
-  "rooms": [
-   "SEM1"
-  ],
-  "capacity": 25,
-  "enrolled": 5,
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
   "classReq": "-"
  },
  {
-  "crn": "30048",
-  "code": "DUY 501",
+  "crn": "14229",
+  "code": "DUY 513",
   "branch": "DUY",
   "level": "LUI",
-  "name": "Kiralama ve Brokerlik",
+  "name": "Denizcilik Çevre Yönetimi",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Hasan Bora Usluer",
-  "buildings": [
-   "DZB-SEM"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "17:30/20:29"
-  ],
-  "rooms": [
-   "SEM1"
-  ],
-  "capacity": 25,
-  "enrolled": 5,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30049",
-  "code": "DUY 507",
-  "branch": "DUY",
-  "level": "LUI",
-  "name": "Denizcil.İnsan Kaynak.Yöne.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Leyla Tavacıoğlu",
-  "buildings": [
-   "DZB-SEM"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "17:30/20:29"
-  ],
-  "rooms": [
-   "SEM1"
-  ],
-  "capacity": 25,
-  "enrolled": 3,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30050",
-  "code": "DUY 514",
-  "branch": "DUY",
-  "level": "LUI",
-  "name": "Deniz Lojistiği",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Tuba Keçeci",
-  "buildings": [
-   "DZB-SEM"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "17:30/20:29"
-  ],
-  "rooms": [
-   "SEM1"
-  ],
-  "capacity": 25,
-  "enrolled": 2,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30051",
-  "code": "DUY 515",
-  "branch": "DUY",
-  "level": "LUI",
-  "name": "Denizcilik Mevzuatı",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Metin Çelik",
+  "instructor": "Yasin Arslanoğlu",
   "buildings": [
    "DZB-SEM"
   ],
@@ -125,73 +38,91 @@
    "17:30/20:29"
   ],
   "rooms": [
-   "SEM1"
+   "--"
   ],
-  "capacity": 25,
-  "enrolled": 5,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30052",
-  "code": "DUY 599",
-  "branch": "DUY",
-  "level": "LUI",
-  "name": "Denizcilik Dönem Projesi",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Emre Akyüz",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 25,
-  "enrolled": 3,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "30099",
-  "code": "DUY 599",
-  "branch": "DUY",
-  "level": "LUI",
-  "name": "Denizcilik Dönem Projesi",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Burak Zincir",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
   "capacity": 10,
-  "enrolled": 1,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
   "classReq": "-"
  },
  {
-  "crn": "30100",
-  "code": "DUY 599",
+  "crn": "14231",
+  "code": "DUY 523",
   "branch": "DUY",
   "level": "LUI",
-  "name": "Denizcilik Dönem Projesi",
+  "name": "Denizcilikte Kalite Yönetimi",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Metin Çelik",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "DZB-SEM"
   ],
-  "rooms": [],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 10,
-  "enrolled": 1,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "14234",
+  "code": "DUY 527",
+  "branch": "DUY",
+  "level": "LUI",
+  "name": "Teknik Gemi İşletmeciliği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emre Akyüz",
+  "buildings": [
+   "DZB-SEM"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15257",
+  "code": "DUY 517",
+  "branch": "DUY",
+  "level": "LUI",
+  "name": "Liman ve Terminal Yönetimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tanzer Satır",
+  "buildings": [
+   "DZB-SEM"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",

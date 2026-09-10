@@ -8,6 +8,7 @@ import { CurriculumPlan, type CurriculumPlanProps } from '@/components/ui/curric
 import { ExamsList, type ExamsListProps } from '@/components/ui/exams-list';
 import { ProgramCourseList, type ProgramCourseListProps } from '@/components/ui/program-course-list';
 import { CourseDetailReader, type CourseDetailReaderProps } from '@/components/ui/course-detail-reader';
+import { GpaSummary, type GpaSummaryProps } from '@/components/ui/gpa-summary';
 // `?inline` ile CSS, ayrı bir .css dosyası yerine bu JS bundle'ının içine
 // string olarak gömülür — courses.js'in docs/index.html'e ayrı bir <link>
 // eklemesine gerek kalmaz ve önbellek kırma (?v=) JS import'unun kendi
@@ -24,6 +25,7 @@ let curriculumRoot: Root | null = null;
 let examsRoot: Root | null = null;
 let programListRoot: Root | null = null;
 let courseDetailRoot: Root | null = null;
+let gpaSummaryRoot: Root | null = null;
 let styleTag: HTMLStyleElement | null = null;
 
 function ensureStyles(): void {
@@ -88,6 +90,13 @@ export function mountCourseDetail(container: HTMLElement, props: CourseDetailRea
 }
 export function unmountCourseDetail(): void { courseDetailRoot?.unmount(); courseDetailRoot = null; }
 
+export function mountGpaSummary(container: HTMLElement, props: GpaSummaryProps): void {
+  ensureStyles();
+  if (!gpaSummaryRoot) gpaSummaryRoot = createRoot(container);
+  gpaSummaryRoot.render(<GpaSummary {...props} />);
+}
+export function unmountGpaSummary(): void { gpaSummaryRoot?.unmount(); gpaSummaryRoot = null; }
+
 export function mountCurriculum(container: HTMLElement, props: CurriculumPlanProps): void {
   ensureStyles();
   curriculumRoot = createRoot(container);
@@ -124,3 +133,4 @@ export type { CurriculumPlanProps } from '@/components/ui/curriculum-plan';
 export type { ExamsListProps, ExamRow } from '@/components/ui/exams-list';
 export type { ProgramCourseListProps, ProgramCourseItem } from '@/components/ui/program-course-list';
 export type { CourseDetailReaderProps, CourseDetailPanel } from '@/components/ui/course-detail-reader';
+export type { GpaSummaryProps } from '@/components/ui/gpa-summary';

@@ -57,6 +57,21 @@ let curriculumModule = null;
 let curriculumModulePromise = null;
 let curriculumMounted = false;
 let latestCurriculumProps = null;
+let gpaSummaryMounted = false;
+
+function mountGpaSummary() {
+  const host = $('#dp-gpa-react');
+  if (!host || gpaSummaryMounted) return;
+  import('../react/dersler-table.js').then((mod) => {
+    if (!document.contains(host) || gpaSummaryMounted) return;
+    mod.mountGpaSummary(host, {
+      gpaLabel: I18N.t('planGanoLabel'), gpaValue: I18N.t('planNone'), gpaHint: I18N.t('planBasedOnGrades'),
+      progressLabel: I18N.t('planProgressLabel'), progressValue: `0/0 ${I18N.t('planCreditUnit')}`, progressHint: '',
+      targetLabel: I18N.t('planTargetLabel'), targetValue: I18N.t('planNone'),
+    });
+    gpaSummaryMounted = true;
+  }).catch((error) => console.warn('GANO React özeti yüklenemedi.', error));
+}
 
 function unmountCurriculum() {
   if (curriculumMounted && curriculumModule) curriculumModule.unmountCurriculum();
@@ -197,11 +212,11 @@ function ensureHost() {
       </div>
       <p id="dp-transcript-result" class="dp-transcript-result" hidden aria-live="polite"></p>
       <div class="dp-grades-body">
-        <div class="dp-grades-grid">
+        <div id="dp-gpa-react"><div class="dp-grades-grid">
           <div class="dp-metric"><em>${I18N.t('planGanoLabel')}</em><b id="dp-gano">${I18N.t('planNone')}</b><small>${I18N.t('planBasedOnGrades')}</small></div>
           <div class="dp-metric"><em>${I18N.t('planProgressLabel')}</em><b id="dp-progress">0/0 ${I18N.t('planCreditUnit')}</b><small id="dp-progress-sub"></small></div>
           <div class="dp-metric"><em>${I18N.t('planTargetLabel')}</em><b id="dp-target">${I18N.t('planNone')}</b><small id="dp-target-sub"></small></div>
-        </div>
+        </div></div>
         <div class="dp-types-progress" id="dp-types-progress" aria-live="polite"></div>
         <div class="dp-transfer">
           <label>${I18N.t('planCreditsSoFar')} <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0–250"></label>
@@ -255,6 +270,15 @@ function ensureHost() {
     </details>
       </div>
     </details>`;
+  // GANO özeti, sekiz yarıyıllık listenin ardından değil program özetinin
+  // hemen altında görünür. Panel ilk açılışta hazır gelir.
+  const grades = $('#dp-grades');
+  const semesters = $('#dp-semesters');
+  if (grades && semesters) {
+    semesters.before(grades);
+    grades.open = true;
+  }
+  mountGpaSummary();
 }
 
 // -- program seçici --

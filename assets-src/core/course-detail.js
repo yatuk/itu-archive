@@ -418,6 +418,8 @@ function wireProgramSearch(content) {
 
 // code: "BLG 101E"; term varsayılanı Dersler'deki aktif dönem (state.termSlug).
 // crn yalnızca odak bilgisidir — panel koddaki tüm şubeleri gösterir.
+let detailReactModule = null;
+
 export async function openCourseDetail(code, { term, crn, source } = {}) {
   const t = term || state.termSlug;
   lastDetailFocus = document.activeElement;
@@ -425,6 +427,11 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   const content = $('#detail-content');
   panel.hidden = false;
   document.body.classList.add('modal-open');
+  // React'in yönettiği kapsayıcı innerHTML ile temizlenirse bir sonraki açılışta
+  // unmount removeChild hatası verir ve görünüm eski modal fallback'ine düşer.
+  if (detailReactModule) {
+    try { detailReactModule.unmountCourseDetail(); } catch { /* önceden ayrılmış DOM */ }
+  }
   content.innerHTML = `<p class="empty">${I18N.t('statLoading')}</p>`;
   $('#detail-close').focus();
   // Paylaşılabilir detay bağlantısı: #ders/<kod>. Kapatınca dönülecek görünümü
@@ -454,6 +461,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   };
   try {
     const react = await import('../react/dersler-table.js');
+    detailReactModule = react;
     react.mountCourseDetail(content, detailReactProps(detailData));
   } catch (error) {
     console.warn('Ders detay React görünümü yüklenemedi, klasik görünüm kullanılıyor.', error);
@@ -720,6 +728,10 @@ function wireHistButtons(content) {
 }
 
 export function closeCourseDetail() {
+  if (detailReactModule) {
+    try { detailReactModule.unmountCourseDetail(); } catch { /* panel zaten ayrılmış */ }
+  }
+  $('#detail-content')?.replaceChildren();
   $('#detail-panel').hidden = true;
   document.body.classList.remove('modal-open');
   // Detay bağlantısından gelindiyse kapatınca açıldığı görünüme dön.

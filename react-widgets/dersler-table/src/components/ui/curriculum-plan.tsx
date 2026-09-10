@@ -129,6 +129,13 @@ export function CurriculumPlan({ html, empty, emptyMessage, ariaLabel }: Curricu
     if (!select) return;
     select.value = value;
     select.dispatchEvent(new Event('change', { bubbles: true }));
+    // The native select is the source of truth, but it is visually hidden.
+    // Keep its visible trigger in sync without waiting for a full rerender.
+    const selectedLabel = select.selectedOptions[0]?.textContent || select.options[0]?.textContent || '—';
+    const trigger = triggerRef.current;
+    const triggerLabel = trigger?.querySelector('span');
+    if (triggerLabel) triggerLabel.textContent = selectedLabel;
+    trigger?.classList.toggle('filled', Boolean(value));
     triggerRef.current?.setAttribute('aria-expanded', 'false');
     triggerRef.current?.focus();
     setMenu(null);

@@ -14,6 +14,7 @@ import { TermsGrid, type TermsGridProps } from '@/components/ui/terms-grid';
 import { CalendarTimeline, type CalendarTimelineProps } from '@/components/ui/calendar-timeline';
 import { HistorySearch, type HistorySearchProps } from '@/components/ui/history-search';
 import { HistoryDetail, type HistoryDetailProps } from '@/components/ui/history-detail';
+import { PrereqDetail, type PrereqDetailProps } from '@/components/ui/prereq-detail';
 // `?inline` ile CSS, ayrı bir .css dosyası yerine bu JS bundle'ının içine
 // string olarak gömülür — courses.js'in docs/index.html'e ayrı bir <link>
 // eklemesine gerek kalmaz ve önbellek kırma (?v=) JS import'unun kendi
@@ -36,6 +37,7 @@ let termsRoot: Root | null = null;
 let calendarRoot: Root | null = null;
 let historySearchRoot: Root | null = null;
 let historyDetailRoot: Root | null = null;
+let prereqDetailRoot: Root | null = null;
 let styleTag: HTMLStyleElement | null = null;
 
 function ensureStyles(): void {
@@ -176,6 +178,16 @@ export function mountHistoryDetail(container: HTMLElement, props: HistoryDetailP
 }
 export function unmountHistoryDetail(): void { historyDetailRoot?.unmount(); historyDetailRoot = null; }
 
+// Havuz taraması ilerledikçe (branş başına) veya not/"aldım" değişince
+// prereq.js aynı container için bu fonksiyonu tekrar tekrar çağırır — kök
+// yalnızca ilk çağrıda kurulur, sonrakiler normal React render'ı.
+export function mountPrereqDetail(container: HTMLElement, props: PrereqDetailProps): void {
+  ensureStyles();
+  if (!prereqDetailRoot) prereqDetailRoot = createRoot(container);
+  prereqDetailRoot.render(<PrereqDetail {...props} />);
+}
+export function unmountPrereqDetail(): void { prereqDetailRoot?.unmount(); prereqDetailRoot = null; }
+
 export type { DerslerTableProps, DerslerRow, SortKey, SortDir } from '@/components/ui/dersler-table';
 export type { ProgramScheduleProps, ProgramSession, UntimedCourse } from '@/components/ui/program-schedule';
 export type { CurriculumPlanProps } from '@/components/ui/curriculum-plan';
@@ -188,3 +200,4 @@ export type { TermsGridProps, TermCardData } from '@/components/ui/terms-grid';
 export type { CalendarTimelineProps, CalendarGroupData, CalendarEventData } from '@/components/ui/calendar-timeline';
 export type { HistorySearchProps, HistoryChip } from '@/components/ui/history-search';
 export type { HistoryDetailProps, HistoryCourseDetailData, HistoryPersonDetailData, HistoryCourseRow, HistoryPersonRow } from '@/components/ui/history-detail';
+export type { PrereqDetailProps, PrereqDetailData, PrereqCourseDetailData, PrereqPoolDetailData, PrereqPoolOption, PrereqPoolStatus, PrereqDetailLabels } from '@/components/ui/prereq-detail';

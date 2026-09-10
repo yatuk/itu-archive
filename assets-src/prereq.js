@@ -21,6 +21,53 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=dde1e9339338';
 import { I18N } from './i18n.js?v=dde1e9339338';
 
+  // Düğüm detay paneli (ders önşart ağacı / seçmeli havuz listesi) React'te —
+  // akış şemasının kendisi (canvas çizimi, sürükleme, yakınlaştırma) kasten
+  // vanilla'da kalıyor (bkz. prereq-detail.tsx başındaki not).
+  let prereqModule = null;
+  let prereqModulePromise = null;
+  function loadPrereqWidget() {
+    if (!prereqModulePromise) {
+      prereqModulePromise = import('./react/dersler-table.js').then((mod) => {
+        prereqModule = mod;
+        return mod;
+      });
+    }
+    return prereqModulePromise;
+  }
+
+  function prereqDetailLabels() {
+    return {
+      closeCourseAria: I18N.t('pgDetailCloseAriaLabel'),
+      closePoolAria: I18N.t('pgClosePoolAriaLabel'),
+      prereqHeading: I18N.t('detailPrereq'),
+      noPrereq: I18N.t('pgNoPrereqInProgram'),
+      requiredCourses: I18N.t('pgRequiredCourses'),
+      requestedBy: I18N.t('pgRequestedBy'),
+      sourceVerification: I18N.t('pgSourceVerification'),
+      openObsRecord: I18N.t('pgOpenObsRecord'),
+      viewCourseDetail: I18N.t('pgViewCourseDetail'),
+      electivePool: I18N.t('pgElectivePool'),
+      poolSearchPlaceholder: I18N.t('pgPoolSearchPlaceholder'),
+      poolSearchAria: I18N.t('pgPoolSearchAriaLabel'),
+      sortAria: I18N.t('pgSortAriaLabel'),
+      sortByCode: I18N.t('pgSortByCode'),
+      sortByName: I18N.t('pgSortByName'),
+      sortOpenFirst: I18N.t('pgSortOpenFirst'),
+      sortSeatsFirst: I18N.t('pgSortSeatsFirst'),
+      alternativesWord: I18N.t('pgAlternativesWord'),
+      openThisTermWord: I18N.t('pgOpenThisTermWord'),
+      openBadge: I18N.t('pgOpenBadge'),
+      branchUnit: I18N.t('prgSube'),
+      lastOpenedPrefix: I18N.t('pgLastOpenedPrefix'),
+      neverOpened: I18N.t('pgNeverOpened'),
+      courseNameUnavailable: I18N.t('pgCourseNameUnavailable'),
+      takenMark: I18N.t('pgTakenMark'),
+      detailButton: I18N.t('pgDetailButton'),
+      openInCourses: I18N.t('pgOpenInCourses'),
+    };
+  }
+
   const PALETTE = [
     '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
     '#fb923c', '#facc15', '#a3e635', '#4ade80', '#2dd4bf', '#60a5fa', '#e879f9', '#94a3b8',
@@ -414,6 +461,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     clearFocus() {
       this.focus = null;
       this.related = null;
+      prereqModule?.unmountPrereqDetail();
       this.detail.innerHTML = '';
       this.root.classList.remove('pg-has-detail');
       const reset = this.root.querySelector('.pg-reset');
@@ -432,6 +480,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       this.byCode = null;
       this.focus = null;
       this.related = null;
+      prereqModule?.unmountPrereqDetail();
       this.detail.innerHTML = '';
       this.root.classList.remove('pg-has-detail');
       const reset = this.root.querySelector('.pg-reset');
@@ -447,11 +496,13 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       this.focusNode(code);
     }
 
-    renderDetail(code) {
+    // React'in ürettiği panel yalnızca hazır veriyi çizer (dersler-table.tsx
+    // ile aynı desen) — önşart ağacı üretimi (renderReqTree/parseReq), veri
+    // çekme ve olay kablolaması burada, vanilla'da kalır.
+    async renderDetail(code) {
       const n = this.byCode.get(code);
       if (!n) return;
       if (n.kind === 'elective') { this.renderPool(n); return; }
-      const chip = (c) => `<button class="pg-chip" data-code="${esc(c)}">${esc(c)}</button>`;
       const req = (this.byTo.get(code) || []).sort();
       const dep = (this.byFrom.get(code) || []).sort();
       // Ham ifade yerine ayrıştırılmış VE/VEYA ağacı: "hepsi gerekli" ile
@@ -459,116 +510,61 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       const tree = n.requirement ? parseReq(n.requirement) : null;
       const sources = this.edges.filter((e) => e.to.code === code && e.sourceUrl);
       const source = sources[0];
-      this.detail.innerHTML = `
-        <div class="pg-detail-head"><h3>${esc(n.code)} <span>${esc(n.name || '')}</span></h3><button type="button" class="pg-detail-close" aria-label="${esc(I18N.t('pgDetailCloseAriaLabel'))}">×</button></div>
-        ${tree ? `<h4>${esc(I18N.t('detailPrereq'))}</h4><ul class="req-tree">${renderReqTree(tree)}</ul>` : `<p class="pg-empty">${esc(I18N.t('pgNoPrereqInProgram'))}</p>`}
-        ${req.length ? `<h4>${esc(I18N.t('pgRequiredCourses'))} (${req.length})</h4><div class="pg-chips">${req.map(chip).join('')}</div>` : ''}
-        ${dep.length ? `<h4>${esc(I18N.t('pgRequestedBy'))} (${dep.length})</h4><div class="pg-chips">${dep.map(chip).join('')}</div>` : ''}
-        ${source ? `<div class="pg-source"><b>${esc(I18N.t('pgSourceVerification'))}</b><span>${source.status === 'verified' ? esc(I18N.t('pgObsVerified')) : esc(I18N.t('pgSourceRecord'))}${source.verifiedAt ? ` · ${new Date(source.verifiedAt).toLocaleDateString(I18N.lang === 'en' ? 'en-GB' : 'tr-TR')}` : ''}</span><a href="${esc(source.sourceUrl)}" target="_blank" rel="noopener">${esc(I18N.t('pgOpenObsRecord'))}</a></div>` : ''}
-        <button type="button" class="btn-ghost pg-detail-open" data-code="${esc(n.code)}">${esc(I18N.t('pgViewCourseDetail'))}</button>`;
-      this.detail.querySelectorAll('.pg-chip:not([disabled])').forEach((b) =>
-        b.addEventListener('click', () => this.panTo(b.dataset.code)));
-      const dOpen = this.detail.querySelector('.pg-detail-open');
-      this.detail.querySelector('.pg-detail-close')?.addEventListener('click', () => this.clearFocus());
-      if (dOpen) {
-        dOpen.addEventListener('click', () => {
-          window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: dOpen.dataset.code, source: 'onsart' } }));
-        });
-      }
+      const mod = await loadPrereqWidget();
+      if (this.focus !== code) return; // yükleme sırasında başka düğüme geçildiyse geç kalma
+      mod.mountPrereqDetail(this.detail, {
+        data: {
+          kind: 'course',
+          code: n.code,
+          name: n.name || '',
+          prereqTreeHTML: tree ? renderReqTree(tree) : null,
+          required: req,
+          dependents: dep,
+          source: source ? {
+            verifiedLabel: source.status === 'verified' ? I18N.t('pgObsVerified') : I18N.t('pgSourceRecord'),
+            verifiedAt: source.verifiedAt ? new Date(source.verifiedAt).toLocaleDateString(I18N.lang === 'en' ? 'en-GB' : 'tr-TR') : null,
+            sourceUrl: source.sourceUrl,
+          } : null,
+        },
+        labels: prereqDetailLabels(),
+        onClose: () => this.clearFocus(),
+        onPanTo: (c) => this.panTo(c),
+        onOpenCourseDetail: (c) => window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: c, source: 'onsart' } })),
+        onOpenInCourses: () => {},
+      });
     }
 
     // Seçmeli slotun alternatiflerini aranabilir, branş gruplu, canlı dönem
     // durumlu bir listeye döker. Veri çekme paralel + önbellekli; liste ilk
-    // anda iskeletle gelir, durumlar geldikçe dolar. Kullanıcı başka düğüme
-    // geçerse eski yükleme kendini iptal eder (version + focus guard).
+    // anda iskeletle gelir, durumlar geldikçe dolar (her aşamada React'i
+    // yeniden monte ederek). Kullanıcı başka düğüme geçerse eski yükleme
+    // kendini iptal eder (version + focus guard).
     async renderPool(n) {
       lastPoolNode = n; // TAKEN_CHANGED'te yeniden çizmek için (Faz D)
       const opts = (n.options || []).slice();
       const version = (this.poolVersion = (this.poolVersion || 0) + 1);
-      this.detail.innerHTML = `
-        <div class="pg-detail-head"><h3>${esc(n.name)} <span>${esc(I18N.t('pgElectivePool'))}</span></h3><button type="button" class="pg-detail-close" aria-label="${esc(I18N.t('pgClosePoolAriaLabel'))}">×</button></div>
-        <div class="pg-pool-head">
-          <input type="search" class="pg-pool-search" placeholder="${esc(I18N.t('pgPoolSearchPlaceholder'))}" aria-label="${esc(I18N.t('pgPoolSearchAriaLabel'))}">
-          <select class="pg-pool-sort" aria-label="${esc(I18N.t('pgSortAriaLabel'))}">
-            <option value="code">${esc(I18N.t('pgSortByCode'))}</option>
-            <option value="name">${esc(I18N.t('pgSortByName'))}</option>
-            <option value="open">${esc(I18N.t('pgSortOpenFirst'))}</option>
-            <option value="cap">${esc(I18N.t('pgSortSeatsFirst'))}</option>
-          </select>
-        </div>
-        <p class="pg-pool-status">${opts.length} ${esc(I18N.t('pgAlternativesWord'))}, ${esc(I18N.t('pgScanningStatus'))}</p>
-        <div class="pg-pool-groups"></div>`;
-      this.detail.querySelector('.pg-detail-close')?.addEventListener('click', () => this.clearFocus());
-
-      const groupsEl = this.detail.querySelector('.pg-pool-groups');
-      const statusEl = this.detail.querySelector('.pg-pool-status');
-      const status = new Map();
-      let q = '';
-      let sortKey = 'code';
       const fresh = () => this.poolVersion === version && this.focus === n.code;
-
-      // Olay yetki devri — her render'da yeniden bağlama yok.
-      groupsEl.addEventListener('click', (ev) => {
-        const act = ev.target.closest('[data-act]');
-        if (!act) return;
-        if (act.dataset.act === 'detay') {
-          window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: act.dataset.code } }));
-        } else if (act.dataset.act === 'courses') {
-          window.dispatchEvent(new CustomEvent('itu:goto-courses', { detail: act.dataset.code }));
-        }
-      });
-
+      const mod = await loadPrereqWidget();
+      if (!fresh()) return;
+      const labels = prereqDetailLabels();
+      const status = {};
       const render = () => {
         if (!fresh()) return;
-        const f = fold(q);
-        let list = opts;
-        if (f) list = list.filter((o) => fold(o.code + ' ' + o.name).includes(f));
-        const seat = (s) => (s && s.open && s.cap > 0 ? s.cap - s.enr : -1);
-        const order = {
-          code: (a, b) => a.code.localeCompare(b.code),
-          name: (a, b) => a.name.localeCompare(b.name, 'tr') || a.code.localeCompare(b.code),
-          open: (a, b) => {
-            const oa = status.get(a.code) && status.get(a.code).open ? 0 : 1;
-            const ob = status.get(b.code) && status.get(b.code).open ? 0 : 1;
-            return oa - ob || a.code.localeCompare(b.code);
+        mod.mountPrereqDetail(this.detail, {
+          data: {
+            kind: 'pool',
+            name: n.name,
+            options: opts.map((o) => ({ code: o.code, name: o.name })),
+            status: { ...status },
+            taken: opts.filter((o) => isTaken(o.code)).map((o) => o.code),
           },
-          cap: (a, b) => seat(status.get(b.code)) - seat(status.get(a.code)) || a.code.localeCompare(b.code),
-        }[sortKey];
-        list = list.slice().sort(order);
-
-        const groups = new Map();
-        for (const o of list) {
-          const b = o.code.split(' ')[0];
-          if (!groups.has(b)) groups.set(b, []);
-          groups.get(b).push(o);
-        }
-        const big = opts.length > 30; // büyük havuzda gruplar varsayılan kapalı
-        groupsEl.innerHTML = [...groups].map(([b, items]) => `
-          <details class="pg-pool-group" ${big ? '' : 'open'}>
-            <summary>${esc(b)} <span>${items.length}</span></summary>
-            ${items.map((o) => {
-              const st = status.get(o.code);
-              const taken = isTaken(o.code);
-              const badge = !st ? '<span class="loading">…</span>'
-                : st.open
-                  ? `<span class="open">● ${esc(I18N.t('pgOpenBadge'))} · ${st.sections.length} ${esc(I18N.t('prgSube'))} · ${st.enr}/${st.cap || '·'}</span>`
-                  : `<span class="closed">● ${st.last ? esc(I18N.t('pgLastOpenedPrefix')) + ' ' + esc(termLabel(st.last)) : esc(I18N.t('pgNeverOpened'))}</span>`;
-              return `<div class="pg-pool-row${taken ? ' pg-pool-taken' : ''}">
-                <div class="pg-pool-name"><b>${esc(o.code)}</b><em title="${esc(o.name)}">${esc(o.name || I18N.t('pgCourseNameUnavailable'))}</em></div>
-                <span class="pg-pool-status-badge">${taken ? `<span class="taken-mark">${esc(I18N.t('pgTakenMark'))}</span>` : ''}${badge}</span>
-                <span class="pg-pool-actions">
-                  <button data-act="detay" data-code="${esc(o.code)}">${esc(I18N.t('pgDetailButton'))}</button>
-                  <button data-act="courses" data-code="${esc(o.code)}">${esc(I18N.t('pgOpenInCourses'))}</button>
-                </span>
-              </div>`;
-            }).join('')}
-          </details>`).join('');
-        const openCount = [...status.values()].filter((s) => s.open).length;
-        statusEl.textContent = `${opts.length} ${I18N.t('pgAlternativesWord')} · ${openCount} ${I18N.t('pgOpenThisTermWord')}`;
+          labels,
+          onClose: () => this.clearFocus(),
+          onPanTo: () => {},
+          onOpenCourseDetail: (code) => window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code } })),
+          onOpenInCourses: (code) => window.dispatchEvent(new CustomEvent('itu:goto-courses', { detail: code })),
+        });
       };
-
-      this.detail.querySelector('.pg-pool-search').addEventListener('input', (e) => { q = e.target.value; render(); });
-      this.detail.querySelector('.pg-pool-sort').addEventListener('change', (e) => { sortKey = e.target.value; render(); });
       render();
 
       // Aktif dönem branş dosyalarını paralel çek; her seçeneğin durumunu doldur.
@@ -587,23 +583,23 @@ import { I18N } from './i18n.js?v=dde1e9339338';
         }
         for (const o of items) {
           const mine = byCode.get(o.code) || [];
-          status.set(o.code, {
+          status[o.code] = {
             open: mine.length > 0,
-            sections: mine,
+            sectionsCount: mine.length,
             enr: mine.reduce((a, s) => a + (Number(s.enrolled) || 0), 0),
             cap: mine.reduce((a, s) => a + (Number(s.capacity) || 0), 0),
-          });
+          };
         }
         render();
       }));
       if (!fresh()) return;
 
       // Kapalı olanların geçmişteki son açılışını getir (branş başına bir istek).
-      const closed = opts.filter((o) => status.has(o.code) && !status.get(o.code).open);
+      const closed = opts.filter((o) => status[o.code] && !status[o.code].open);
       await Promise.all(closed.map(async (o) => {
         const last = await lastOpenedTerm(o.code);
-        const st = status.get(o.code);
-        if (st && !st.open) st.last = last;
+        const st = status[o.code];
+        if (st && !st.open) st.last = last ? termLabel(last) : null;
       }));
       render();
     }

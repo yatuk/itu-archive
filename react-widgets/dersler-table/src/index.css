@@ -694,6 +694,79 @@
   .pp-session { transition: none; }
 }
 
+/* Program çalışma alanı: seçili dersler sıkı, taranabilir bir sidebar listesi. */
+.pcl-list { position: relative; display: grid; color: var(--fg); font-family: var(--sans); }
+.pcl-head { display: grid; grid-template-columns: 1fr auto; padding: 8px 2px; color: var(--dimmer); border-bottom: 1px solid var(--line); font: 700 9px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.pcl-item { position: relative; display: grid; grid-template-columns: 16px minmax(0,1fr) auto 30px 30px; gap: 6px; align-items: start; padding: 13px 0; border-bottom: 1px solid var(--line); cursor: pointer; transition: background-color 140ms ease, transform 140ms ease; }
+.pcl-item:hover { background: color-mix(in srgb, var(--acid) 4%, transparent); }
+.pcl-item.is-full { background: color-mix(in srgb, var(--red) 5%, transparent); }
+.pcl-grip { width: 14px; height: 14px; margin-top: 2px; color: var(--dimmer); cursor: grab; }
+.pcl-course { min-width: 0; }
+.pcl-title { display: flex; align-items: center; gap: 6px; }
+.pcl-title strong { color: var(--cyan); font: 800 11px/1.2 var(--mono); }
+.pcl-title > span { padding: 3px 5px; border: 1px solid color-mix(in srgb,var(--acid) 40%,var(--line)); border-radius: 5px; color: var(--acid); font: 700 8px/1 var(--sans); }
+.pcl-course > p { margin: 4px 0 7px; overflow: hidden; color: var(--fg); font-size: 11px; line-height: 1.3; text-overflow: ellipsis; white-space: nowrap; }
+.pcl-meta { display: grid; gap: 4px; color: var(--dim); font-size: 9px; }
+.pcl-meta span { display: flex; align-items: center; gap: 5px; min-width: 0; }
+.pcl-meta svg { width: 11px; height: 11px; flex: 0 0 auto; color: var(--dimmer); }
+.pcl-course small { display: block; margin-top: 6px; color: var(--acid); font: 700 9px/1.2 var(--mono); }
+.pcl-numbers { display: grid; justify-items: end; gap: 5px; font-family: var(--mono); }
+.pcl-numbers b { font-size: 10px; font-variant-numeric: tabular-nums; }
+.pcl-numbers span { color: var(--dimmer); font-size: 8px; }
+.pcl-numbers em { color: var(--amber); font-size: 8px; font-style: normal; }
+.pcl-remove,.pcl-menu-trigger { display: grid; width: 28px; height: 28px; place-items: center; padding: 0; border: 1px solid transparent; border-radius: 7px; color: var(--dimmer); background: transparent; cursor: pointer; }
+.pcl-remove { display: grid; }
+.pcl-menu-trigger:hover,.pcl-menu-trigger:focus-visible { border-color: var(--line-hot); color: var(--fg); background: var(--panel-2); }
+.pcl-menu-trigger svg,.pcl-remove svg { width: 14px; height: 14px; }
+.pcl-menu-wrap { position: relative; }
+.pcl-menu { position: absolute; z-index: 30; top: 31px; right: 0; display: grid; width: 208px; padding: 6px; border: 1px solid var(--line-hot); border-radius: 10px; background: var(--panel); box-shadow: var(--shadow-float); }
+.pcl-menu button { display: flex; align-items: center; gap: 8px; min-height: 34px; padding: 7px 9px; border: 0; border-radius: 6px; color: var(--fg); background: transparent; font: 600 10px/1.2 var(--sans); text-align: left; cursor: pointer; }
+.pcl-menu button:hover,.pcl-menu button:focus-visible { background: var(--panel-2); }
+.pcl-menu button.is-danger { color: var(--red); }
+.pcl-menu svg { width: 13px; height: 13px; }
+.pcl-empty { display: grid; min-height: 150px; place-items: center; align-content: center; gap: 8px; color: var(--dimmer); text-align: center; }
+.pcl-empty svg { width: 24px; height: 24px; }
+.pcl-empty strong { max-width: 25ch; font-size: 11px; }
+
+/* Ders detayı: masaüstünde okuyucu dialogu, mobilde doğal alt sayfa/drawer. */
+.cdr-root { display: flex; min-height: 0; height: 100%; flex-direction: column; color: var(--fg); font-family: var(--sans); }
+.cdr-head { flex: 0 0 auto; }
+.cdr-obs { display: inline-flex; align-items: center; gap: 7px; }
+.cdr-obs svg { width: 14px; height: 14px; order: -1; }
+.cdr-tabs { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 4px; padding: 5px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-2); }
+.cdr-tabs button { display: flex; min-width: 0; min-height: 37px; align-items: center; justify-content: center; gap: 6px; padding: 7px 8px; border: 0; border-radius: 7px; color: var(--dim); background: transparent; font: 700 10px/1 var(--sans); cursor: pointer; }
+.cdr-tabs button svg { width: 13px; height: 13px; }
+.cdr-tabs button > span { min-width: 0; padding: 0; border: 0; border-radius: 0; color: inherit; background: transparent; font: inherit; }
+.cdr-tabs button b { min-width: 18px; padding: 3px 5px; border-radius: 999px; background: color-mix(in srgb,var(--fg) 7%,transparent); font: 700 8px/1 var(--mono); }
+.cdr-tabs button[aria-selected="true"] { color: var(--on-accent); background: var(--acid-vivid); box-shadow: 0 5px 16px color-mix(in srgb,var(--acid) 20%,transparent); }
+.cdr-panels { min-height: 0; flex: 1 1 auto; overflow-y: auto; overscroll-behavior: contain; scrollbar-color: var(--line-hot) transparent; }
+
+.pp-tooltip { position: fixed; z-index: 10030; width: 286px; padding: 12px; border: 1px solid var(--line-hot); border-radius: 11px; color: var(--fg); background: var(--panel); box-shadow: var(--shadow-float); pointer-events: none; transform: translateY(-100%); animation: pp-tooltip-in 130ms cubic-bezier(.2,.8,.2,1); }
+.pp-tooltip[data-side="bottom"] { transform: none; }
+.pp-tooltip-title { display: grid; grid-template-columns: 8px 1fr auto; align-items: center; gap: 7px; }
+.pp-tooltip-title > span { width: 8px; height: 8px; border-radius: 3px; }
+.pp-tooltip-title strong { font: 800 11px/1.2 var(--mono); }
+.pp-tooltip-title b { color: var(--dim); font: 700 9px/1 var(--mono); }
+.pp-tooltip > p { margin: 7px 0 9px; font-size: 11px; font-weight: 700; line-height: 1.35; }
+.pp-tooltip dl { display: grid; gap: 5px; margin: 0; }
+.pp-tooltip dl div { display: grid; grid-template-columns: 16px 1fr; align-items: center; color: var(--dim); font-size: 10px; }
+.pp-tooltip dt,.pp-tooltip dd { margin: 0; }
+.pp-tooltip svg { width: 11px; height: 11px; }
+.pp-tooltip > small { display: block; margin-top: 10px; padding-top: 8px; color: var(--dimmer); border-top: 1px solid var(--line); font-size: 8px; }
+@keyframes pp-tooltip-in { from { opacity: .2; filter: blur(3px); } to { opacity: 1; filter: blur(0); } }
+
+@media (max-width: 600px) {
+  .pcl-item { grid-template-columns: 14px minmax(0,1fr) auto 30px; padding-block: 12px; }
+  .pcl-remove { display: none; }
+  .pcl-course > p { white-space: normal; }
+  .pcl-meta { grid-template-columns: 1fr; }
+  .cdr-tabs { position: sticky; top: 0; z-index: 4; margin-inline: -2px; }
+  .cdr-tabs button { min-height: 44px; padding-inline: 4px; }
+  .cdr-tabs button svg { display: none; }
+  .cdr-title .d-name { font-size: 18px; }
+  .pp-tooltip { display: none; }
+}
+
 @media print {
   .program-planner-root .pp-calendar-scroll { max-height: none; overflow: visible; box-shadow: none; }
   .program-planner-root .pp-calendar { min-width: 0; }

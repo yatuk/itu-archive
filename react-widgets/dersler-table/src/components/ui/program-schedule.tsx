@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type CSSProperties, type MouseEvent as ReactMouseEvent } from 'react';
+import { useEffect, useMemo, useState, type CSSProperties, type FocusEvent, type MouseEvent as ReactMouseEvent } from 'react';
 import {
   AlertTriangle,
   CalendarDays,
@@ -161,6 +161,7 @@ function Agenda({ props, visibleDays }: { props: ProgramScheduleProps; visibleDa
 export function ProgramSchedule(props: ProgramScheduleProps) {
   const compact = useCompact();
   const [menu, setMenu] = useState<{ session: ProgramSession; x: number; y: number } | null>(null);
+  const [tooltip, setTooltip] = useState<{ session: ProgramSession; x: number; y: number; side: 'top' | 'bottom' } | null>(null);
   const hasWeekend = props.sessions.some((session) => session.day >= 5);
   const visibleDays = props.showWeekend || hasWeekend ? [0, 1, 2, 3, 4, 5, 6] : [0, 1, 2, 3, 4];
   const timed = props.sessions.length > 0;
@@ -170,7 +171,7 @@ export function ProgramSchedule(props: ProgramScheduleProps) {
     const last = Math.max(...props.sessions.map((session) => session.end));
     return props.showFullDay
       ? { start: 7 * 60, end: 23 * 60 }
-      : { start: Math.max(0, first - 60), end: Math.min(24 * 60, last + 60) };
+      : { start: Math.min(8 * 60 + 30, first), end: Math.min(24 * 60, last + 60) };
   }, [props.sessions, props.showFullDay, timed]);
   const rowHeight = 34;
   const slots = Math.max(1, Math.ceil((bounds.end - bounds.start) / 30));
@@ -195,6 +196,13 @@ export function ProgramSchedule(props: ProgramScheduleProps) {
     event.preventDefault();
     event.stopPropagation();
     setMenu({ session, x: Math.min(event.clientX, window.innerWidth - 232), y: Math.min(event.clientY, window.innerHeight - 230) });
+  };
+  const showTooltip = (target: HTMLElement, session: ProgramSession) => {
+    const rect = target.getBoundingClientRect();
+    const width = 286;
+    const x = Math.max(10, Math.min(rect.left + rect.width / 2 - width / 2, window.innerWidth - width - 10));
+    const preferBelow = rect.top < 190;
+    setTooltip({ session, x, y: preferBelow ? rect.bottom + 9 : rect.top - 9, side: preferBelow ? 'bottom' : 'top' });
   };
 
   return (
@@ -240,9 +248,13 @@ export function ProgramSchedule(props: ProgramScheduleProps) {
                             '--pp-color': session.color,
                             '--pp-foreground': session.foreground,
                           } as CSSProperties}
-                          title={`${session.code} · ${session.name} · ${fmt(session.start)}–${fmt(session.end)} · CRN ${session.crn}`}
+                          aria-describedby={tooltip?.session.key === session.key ? 'pp-course-tooltip' : undefined}
                           onClick={() => props.onOpen(session.rowKey)}
                           onContextMenu={(event) => openMenu(event, session)}
+                          onMouseEnter={(event) => showTooltip(event.currentTarget, session)}
+                          onMouseLeave={() => setTooltip(null)}
+                          onFocus={(event: FocusEvent<HTMLButtonElement>) => showTooltip(event.currentTarget, session)}
+                          onBlur={() => setTooltip(null)}
                         >
                           <Pin className="pp-pin" aria-hidden="true" />
                           <strong>{session.code}: <span>{session.name}</span></strong>
@@ -273,6 +285,16 @@ export function ProgramSchedule(props: ProgramScheduleProps) {
         <button type="button" role="menuitem" onClick={() => { props.onCopyCrn(menu.session.rowKey); setMenu(null); }}><Copy />{props.labels.copyCrn}</button>
         <button type="button" role="menuitem" onClick={() => { props.onOpenObs(menu.session.rowKey); setMenu(null); }}><ExternalLink />{props.labels.openObs}</button>
         <button type="button" role="menuitem" className="is-danger" onClick={() => { props.onRemove(menu.session.rowKey); setMenu(null); }}><Trash2 />{props.labels.remove}</button>
+      </div>}
+      {tooltip && <div id="pp-course-tooltip" className="pp-tooltip" role="tooltip" style={{ left: tooltip.x, top: tooltip.y }} data-side={tooltip.side}>
+        <div className="pp-tooltip-title"><span style={{ background: tooltip.session.color }} /><strong>{tooltip.session.code}</strong><b>{fmt(tooltip.session.start)}–{fmt(tooltip.session.end)}</b></div>
+        <p>{tooltip.session.name}</p>
+        <dl>
+          <div><dt><Hash aria-hidden="true" /></dt><dd>{tooltip.session.crn}</dd></div>
+          {tooltip.session.instructor && <div><dt><UserRound aria-hidden="true" /></dt><dd>{tooltip.session.instructor}</dd></div>}
+          {tooltip.session.where && <div><dt><MapPin aria-hidden="true" /></dt><dd>{tooltip.session.where}</dd></div>}
+        </dl>
+        <small>{props.labels.details} · sağ tık: {props.labels.actions}</small>
       </div>}
     </section>
   );

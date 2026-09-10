@@ -275,6 +275,27 @@ function detailShell({ code, name, branch, level, method, obsLink, term, secs, c
     </div>`;
 }
 
+function detailReactProps({ code, name, branch, level, method, obsLink, term, secs, cat, gr, hist, programs, buildings, crn }) {
+  const active = crn && secs.length ? 'sections' : 'overview';
+  return {
+    code,
+    name: name || code,
+    meta: [branch, level, method].filter(Boolean),
+    obsLink,
+    obsLabel: I18N.t('cdObsCatalog'),
+    tabLabel: I18N.t('cdSectionsAriaLabel'),
+    active,
+    panels: [
+      { key: 'overview', label: I18N.t('cdTabOverview'), html: overviewHtml({ code, term, secs, cat, gr, hist, programs }) },
+      { key: 'sections', label: I18N.t('cdTabSections'), count: secs.length, html: secs.length
+        ? `<section class="d-secs"><div class="d-section-head"><div><h4>${I18N.t('cdSectionsThisTerm')}</h4><p>${esc(termLabel(term))} · ${secs.length} ${I18N.t('prgSube')}</p></div></div>${renderSecList(secs, buildings, crn)}</section>`
+        : `<p class="empty">${I18N.lang === 'en' ? `This course is not offered in <b>${esc(termLabel(term))}</b>.` : `Bu ders <b>${esc(termLabel(term))}</b> döneminde açık değil.`}</p>` },
+      { key: 'catalog', label: I18N.t('cdTabCatalog'), html: catalogHtml(cat) || `<p class="empty">${I18N.t('cdNoCatalogRecord')}</p>` },
+      { key: 'history', label: I18N.t('detailHist'), html: histHtml(hist) },
+    ],
+  };
+}
+
 function wireDetailTabs(content) {
   const tabs = [...content.querySelectorAll('[data-dtab]')];
   const panels = [...content.querySelectorAll('[data-dpanel]')];
@@ -349,11 +370,18 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   const obsLink = obsDeepLink(code);
   const programs = [...new Set(secs.flatMap((s) => s.programs || []))];
   const name = secs[0]?.name || cat?.name || hist?.name || code;
-  content.innerHTML = detailShell({
+  const detailData = {
     code, name, branch, level: secs[0]?.level, method: secs[0]?.method,
     obsLink, term: t, secs, cat, gr, hist, programs, buildings, crn,
-  });
-  wireDetailTabs(content);
+  };
+  try {
+    const react = await import('../react/dersler-table.js');
+    react.mountCourseDetail(content, detailReactProps(detailData));
+  } catch (error) {
+    console.warn('Ders detay React görünümü yüklenemedi, klasik görünüm kullanılıyor.', error);
+    content.innerHTML = detailShell(detailData);
+    wireDetailTabs(content);
+  }
   content.querySelectorAll('[data-add-crn]').forEach(button => button.addEventListener('click', async () => {
     button.disabled = true;
     try {

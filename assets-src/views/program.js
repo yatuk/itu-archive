@@ -46,6 +46,8 @@ let programScheduleModule = null;
 let programSchedulePromise = null;
 let programScheduleMounted = false;
 let latestProgramScheduleProps = null;
+let programListMounted = false;
+let latestProgramListProps = null;
 
 // --- çoklu program (liste) ---
 const PROG_KEY = 'itu-programs';
@@ -453,6 +455,7 @@ async function renderCredits(items) {
   const box = $('#p-list');
   if (!items.length) return;
   const cache = new Map();
+  let reactCreditsChanged = false;
   for (let i = 0; i < items.length; i++) {
     const { row } = items[i];
     const branch = row[3];
@@ -463,24 +466,67 @@ async function renderCredits(items) {
     }
     const c = map && map[row[1]] && map[row[1]].credits;
     const item = box.querySelector(`.p-item[data-idx="${i}"]`);
-    if (!item || !c) continue;
+    if (!c) continue;
     const en = I18N.lang === 'en';
     const parts = [];
     if (c.local != null) parts.push(`${trNum(c.local)} ${en ? 'cr' : 'kr'}`);
     if (c.ects) parts.push(`${trNum(c.ects)} ${I18N.t('progECTSWord')}`);
     if (!parts.length) continue;
+    if (programListMounted && latestProgramListProps?.items?.[i]) {
+      latestProgramListProps.items[i] = { ...latestProgramListProps.items[i], credit: parts.join(' · ') };
+      reactCreditsChanged = true;
+      continue;
+    }
+    if (!item) continue;
     const small = document.createElement('small');
     small.className = 'p-cred';
     small.textContent = parts.join(' · ');
     const code = item.querySelector('.p-code');
     if (code && !code.querySelector('.p-cred')) code.appendChild(small);
   }
+  if (reactCreditsChanged && programScheduleModule) programScheduleModule.updateProgramList(latestProgramListProps);
 }
 
 function renderList(items) {
   const box = $('#p-list');
   const markFull = $('#p-full').checked;
   const en = I18N.lang === 'en';
+  const byKey = new Map(items.map((item) => [fav.favKeyOf(item.rec.branch, item.rec.crn), item]));
+  latestProgramListProps = {
+    items: items.map(({ rec, row }) => {
+      const [crn, code, name, branch, instructor, when, cap, enr] = row;
+      const kind = specialSectionKind(row);
+      return {
+        key: fav.favKeyOf(branch, crn), crn: String(crn), code: String(code), name: String(name),
+        instructor: instructor && instructor !== '-' ? String(instructor) : I18N.t('progInstructorUnknown'),
+        when: String(when || (kind === 'extra-exam' ? I18N.t('progExtraExamUntimed') : kind === 'graduation' ? I18N.t('progGraduationUntimed') : I18N.t('progTimeUnknown'))),
+        quota: cap ? `${enr} / ${cap}${enr >= cap ? ` · ${en ? 'full' : 'dolu'}` : ''}` : '·', full: Boolean(markFull && cap > 0 && enr >= cap),
+        badge: kind ? I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge') : '',
+        backup: rec.backup ? `${I18N.t('progBackupPrefix')}: ${rec.backup}` : '',
+      };
+    }),
+    labels: {
+      empty: I18N.t('prgEmpty'), course: I18N.t('progColHeadCourse'), quota: I18N.t('progColHeadQuota'),
+      details: I18N.t('prgMenuDetail'), copyCrn: I18N.t('prgMenuCopy'),
+      copyCode: en ? 'Copy course code' : 'Ders kodunu kopyala',
+      copyInstructor: en ? 'Copy instructor' : 'Öğretim üyesini kopyala', openObs: I18N.t('prgMenuObs'),
+      remove: I18N.t('prgMenuRemove'), actions: en ? 'actions' : 'işlemleri',
+    },
+    onOpen: (key) => { const found = byKey.get(key); if (found) openDetail(found.row, term); },
+    onCopy: (key, field) => {
+      const row = byKey.get(key)?.row;
+      const value = field === 'crn' ? row?.[0] : field === 'code' ? row?.[1] : row?.[4];
+      if (value) copyText(String(value)).then((ok) => toast(ok ? (en ? 'Copied' : 'Kopyalandı') : I18N.t('progCopyFailed'), { kind: ok ? 'ok' : 'warn' }));
+    },
+    onOpenObs: () => window.open('https://obs.itu.edu.tr/public/DersProgram', '_blank', 'noopener'),
+    onRemove: removeScheduleItem,
+    onReorder: reorderSchedule,
+  };
+  if (programScheduleModule) {
+    if (programListMounted) programScheduleModule.updateProgramList(latestProgramListProps);
+    else { programScheduleModule.mountProgramList(box, latestProgramListProps); programListMounted = true; }
+    return;
+  }
   const rowsHtml = items.map(({ rec, row }, idx) => {
     const [crn, code, name, branch, instructor, when, cap, enr] = row;
     const full = cap > 0 && enr >= cap;
@@ -758,6 +804,11 @@ function renderGrid(itemRows) {
       if (!latestProgramScheduleProps || !document.contains(wrap)) return;
       mod.mountProgram(wrap, latestProgramScheduleProps);
       programScheduleMounted = true;
+      const list = $('#p-list');
+      if (list && latestProgramListProps) {
+        mod.mountProgramList(list, latestProgramListProps);
+        programListMounted = true;
+      }
     }).catch((error) => {
       console.warn('Program React görünümü yüklenemedi, klasik görünüm kullanılıyor.', error);
       programSchedulePromise = null;

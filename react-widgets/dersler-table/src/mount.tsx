@@ -1,10 +1,13 @@
 import { StrictMode } from 'react';
 import { createRoot, type Root } from 'react-dom/client';
+import { flushSync } from 'react-dom';
 
 import { DerslerTable, type DerslerTableProps } from '@/components/ui/dersler-table';
 import { ProgramSchedule, type ProgramScheduleProps } from '@/components/ui/program-schedule';
 import { CurriculumPlan, type CurriculumPlanProps } from '@/components/ui/curriculum-plan';
 import { ExamsList, type ExamsListProps } from '@/components/ui/exams-list';
+import { ProgramCourseList, type ProgramCourseListProps } from '@/components/ui/program-course-list';
+import { CourseDetailReader, type CourseDetailReaderProps } from '@/components/ui/course-detail-reader';
 // `?inline` ile CSS, ayrı bir .css dosyası yerine bu JS bundle'ının içine
 // string olarak gömülür — courses.js'in docs/index.html'e ayrı bir <link>
 // eklemesine gerek kalmaz ve önbellek kırma (?v=) JS import'unun kendi
@@ -19,6 +22,8 @@ let root: Root | null = null;
 let programRoot: Root | null = null;
 let curriculumRoot: Root | null = null;
 let examsRoot: Root | null = null;
+let programListRoot: Root | null = null;
+let courseDetailRoot: Root | null = null;
 let styleTag: HTMLStyleElement | null = null;
 
 function ensureStyles(): void {
@@ -67,6 +72,22 @@ export function unmountProgram(): void {
   programRoot = null;
 }
 
+export function mountProgramList(container: HTMLElement, props: ProgramCourseListProps): void {
+  ensureStyles();
+  programListRoot = createRoot(container);
+  programListRoot.render(<ProgramCourseList {...props} />);
+}
+export function updateProgramList(props: ProgramCourseListProps): void { programListRoot?.render(<ProgramCourseList {...props} />); }
+export function unmountProgramList(): void { programListRoot?.unmount(); programListRoot = null; }
+
+export function mountCourseDetail(container: HTMLElement, props: CourseDetailReaderProps): void {
+  ensureStyles();
+  courseDetailRoot?.unmount();
+  courseDetailRoot = createRoot(container);
+  flushSync(() => courseDetailRoot?.render(<CourseDetailReader {...props} />));
+}
+export function unmountCourseDetail(): void { courseDetailRoot?.unmount(); courseDetailRoot = null; }
+
 export function mountCurriculum(container: HTMLElement, props: CurriculumPlanProps): void {
   ensureStyles();
   curriculumRoot = createRoot(container);
@@ -101,3 +122,5 @@ export type { DerslerTableProps, DerslerRow, SortKey, SortDir } from '@/componen
 export type { ProgramScheduleProps, ProgramSession, UntimedCourse } from '@/components/ui/program-schedule';
 export type { CurriculumPlanProps } from '@/components/ui/curriculum-plan';
 export type { ExamsListProps, ExamRow } from '@/components/ui/exams-list';
+export type { ProgramCourseListProps, ProgramCourseItem } from '@/components/ui/program-course-list';
+export type { CourseDetailReaderProps, CourseDetailPanel } from '@/components/ui/course-detail-reader';

@@ -916,3 +916,28 @@
 .gpa-summary-card b{color:var(--fg);font-size:18px;line-height:1.25;overflow-wrap:anywhere}.gpa-summary-card small{color:var(--dimmer);font-size:11px;line-height:1.35}
 .gpa-summary-card.is-target b{font-size:13px;line-height:1.45}
 @media(max-width:760px){.gpa-summary-grid{grid-template-columns:1fr}.gpa-summary-card{min-height:76px}}
+
+/* Aktif filtre çipleri — courses.js'teki düz "etiket: değer ✕" metnini
+   etiket/değeri ayıran, kaldırma düğmesi ayrı bir ikon olan bir yapıya taşır.
+   #chips zaten flex/wrap olduğundan (bkz. style.css) burada sarmalayıcı yok,
+   FilterChips doğrudan bu düz çocukları basar. */
+.fc-term { color: var(--fg); font-size: 13px; padding-right: 8px; }
+.fc-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 26px; padding: 0 4px 0 9px;
+  border: 1px solid var(--line-hot); border-radius: 8px;
+  background: var(--panel); color: var(--dim);
+  font-family: var(--sans); font-size: 12px; line-height: 1;
+}
+.fc-divider { width: 1px; height: 13px; background: var(--hairline-strong); }
+.fc-value { color: var(--fg); font-weight: 700; }
+.fc-x {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px; padding: 0; border: 0; border-radius: 6px;
+  background: transparent; color: var(--dim); cursor: pointer;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+.fc-x svg { width: 12px; height: 12px; }
+.fc-x:hover { color: var(--acid); background: color-mix(in srgb, var(--acid) 10%, transparent); }
+.fc-x:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
+@media (prefers-reduced-motion: reduce) { .fc-x { transition: none; } }

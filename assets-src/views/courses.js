@@ -427,25 +427,33 @@ export function restoreCourseSort(key, dir) {
 
 /* ---------- filtre çipleri ---------- */
 
-function renderChips() {
+async function renderChips() {
   const box = $('#chips');
   const chips = [];
   const q = $('#q').value.trim();
-  if (q) chips.push({ key: 'q', label: `"${q}"` });
-  if ($('#f-branch').value) chips.push({ key: 'branch', label: `${I18N.t('filterBranch')}: ${$('#f-branch').value}` });
-  if ($('#f-code').value.trim()) chips.push({ key: 'code', label: `${I18N.t('filterCode')}: ${$('#f-code').value.trim()}` });
-  if ($('#f-day').value) chips.push({ key: 'day', label: `${I18N.t('filterDay')}: ${$('#f-day option:checked').textContent}` });
-  if ($('#f-time').value) chips.push({ key: 'time', label: `${I18N.t('filterTime')}: ${timeLabel($('#f-time').value)}` });
-  if ($('#f-level').value) chips.push({ key: 'level', label: `${I18N.t('filterLevel')}: ${programLevelLabel($('#f-level').value, I18N.lang)}` });
-  if ($('#f-method').value) chips.push({ key: 'method', label: `${I18N.t('filterMethod')}: ${$('#f-method').value}` });
-  if ($('#f-program').value) chips.push({ key: 'program', label: `${I18N.t('filterProgram')}: ${$('#f-program').value}` });
-  if ($('#f-open').checked) chips.push({ key: 'open', label: I18N.t('filterOpen') });
+  if (q) chips.push({ key: 'q', text: `"${q}"` });
+  if ($('#f-branch').value) chips.push({ key: 'branch', label: I18N.t('filterBranch'), value: $('#f-branch').value });
+  if ($('#f-code').value.trim()) chips.push({ key: 'code', label: I18N.t('filterCode'), value: $('#f-code').value.trim() });
+  if ($('#f-day').value) chips.push({ key: 'day', label: I18N.t('filterDay'), value: $('#f-day option:checked').textContent });
+  if ($('#f-time').value) chips.push({ key: 'time', label: I18N.t('filterTime'), value: timeLabel($('#f-time').value) });
+  if ($('#f-level').value) chips.push({ key: 'level', label: I18N.t('filterLevel'), value: programLevelLabel($('#f-level').value, I18N.lang) });
+  if ($('#f-method').value) chips.push({ key: 'method', label: I18N.t('filterMethod'), value: $('#f-method').value });
+  if ($('#f-program').value) chips.push({ key: 'program', label: I18N.t('filterProgram'), value: $('#f-program').value });
+  if ($('#f-open').checked) chips.push({ key: 'open', text: I18N.t('filterOpen') });
 
   box.hidden = false;
-  box.innerHTML = `<span class="filter-term">${esc(termLabel(state.termSlug))}</span>` + chips.map((c) =>
-    `<button type="button" class="chip-x" data-key="${c.key}" title="${I18N.lang === 'en' ? 'Remove filter' : 'Filtreyi kaldır'}">${esc(c.label)} ✕</button>`).join('') + (!state.filtered.length ? `<p class="filter-help">${I18N.lang === 'en' ? 'No matches. Remove a filter above, shorten your search, or choose another term.' : 'Sonuç bulunamadı. Yukarıdaki filtrelerden birini kaldır, aramayı kısalt veya başka bir dönem seç.'}</p>` : '');
-  box.querySelectorAll('.chip-x').forEach((b) =>
-    b.addEventListener('click', async () => { await clearFilter(b.dataset.key); applyFilters(); }));
+  const mod = await loadDerslerTableWidget();
+  mod.mountChips(box, {
+    termLabel: termLabel(state.termSlug),
+    chips,
+    emptyMessage: !state.filtered.length
+      ? (I18N.lang === 'en'
+        ? 'No matches. Remove a filter above, shorten your search, or choose another term.'
+        : 'Sonuç bulunamadı. Yukarıdaki filtrelerden birini kaldır, aramayı kısalt veya başka bir dönem seç.')
+      : null,
+    removeLabel: I18N.lang === 'en' ? 'Remove filter' : 'Filtreyi kaldır',
+    onRemove: async (key) => { await clearFilter(key); applyFilters(); },
+  });
 }
 
 async function clearFilter(key) {

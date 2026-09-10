@@ -9,6 +9,7 @@ import { ExamsList, type ExamsListProps } from '@/components/ui/exams-list';
 import { ProgramCourseList, type ProgramCourseListProps } from '@/components/ui/program-course-list';
 import { CourseDetailReader, type CourseDetailReaderProps } from '@/components/ui/course-detail-reader';
 import { GpaSummary, type GpaSummaryProps } from '@/components/ui/gpa-summary';
+import { FilterChips, type FilterChipsProps } from '@/components/ui/filter-chips';
 // `?inline` ile CSS, ayrı bir .css dosyası yerine bu JS bundle'ının içine
 // string olarak gömülür — courses.js'in docs/index.html'e ayrı bir <link>
 // eklemesine gerek kalmaz ve önbellek kırma (?v=) JS import'unun kendi
@@ -26,6 +27,7 @@ let examsRoot: Root | null = null;
 let programListRoot: Root | null = null;
 let courseDetailRoot: Root | null = null;
 let gpaSummaryRoot: Root | null = null;
+let chipsRoot: Root | null = null;
 let styleTag: HTMLStyleElement | null = null;
 
 function ensureStyles(): void {
@@ -127,6 +129,13 @@ export function unmountExams(): void {
   examsRoot = null;
 }
 
+export function mountChips(container: HTMLElement, props: FilterChipsProps): void {
+  ensureStyles();
+  if (!chipsRoot) chipsRoot = createRoot(container);
+  chipsRoot.render(<FilterChips {...props} />);
+}
+export function unmountChips(): void { chipsRoot?.unmount(); chipsRoot = null; }
+
 export type { DerslerTableProps, DerslerRow, SortKey, SortDir } from '@/components/ui/dersler-table';
 export type { ProgramScheduleProps, ProgramSession, UntimedCourse } from '@/components/ui/program-schedule';
 export type { CurriculumPlanProps } from '@/components/ui/curriculum-plan';
@@ -134,3 +143,4 @@ export type { ExamsListProps, ExamRow } from '@/components/ui/exams-list';
 export type { ProgramCourseListProps, ProgramCourseItem } from '@/components/ui/program-course-list';
 export type { CourseDetailReaderProps, CourseDetailPanel } from '@/components/ui/course-detail-reader';
 export type { GpaSummaryProps } from '@/components/ui/gpa-summary';
+export type { FilterChipsProps, FilterChipData } from '@/components/ui/filter-chips';

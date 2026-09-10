@@ -16,6 +16,7 @@ interface GradeMenuState {
   x: number;
   y: number;
   above: boolean;
+  keyboard: boolean;
 }
 
 // Ders, not ve şube eylemleri dersplanim.js'in #dp-semesters üzerindeki olay
@@ -60,16 +61,20 @@ export function CurriculumPlan({ html, empty, emptyMessage, ariaLabel }: Curricu
     };
     const close = () => setMenu(null);
     window.addEventListener('pointerdown', dismiss);
-    window.addEventListener('scroll', close, true);
+    const anchored = window.matchMedia('(min-width: 561px)').matches;
+    if (anchored) window.addEventListener('scroll', close, true);
     window.addEventListener('resize', close);
+    if (menu.keyboard) {
+      requestAnimationFrame(() => menuRef.current?.querySelector<HTMLButtonElement>('[aria-selected="true"]')?.focus({ preventScroll: true }));
+    }
     return () => {
       window.removeEventListener('pointerdown', dismiss);
-      window.removeEventListener('scroll', close, true);
+      if (anchored) window.removeEventListener('scroll', close, true);
       window.removeEventListener('resize', close);
     };
   }, [menu]);
 
-  const openGradeMenu = (trigger: HTMLButtonElement) => {
+  const openGradeMenu = (trigger: HTMLButtonElement, keyboard = false) => {
     const index = Number(trigger.dataset.gradeIndex);
     const select = gridRef.current?.querySelectorAll<HTMLSelectElement>('select.dp-grade')[index];
     if (!select) return;
@@ -89,6 +94,7 @@ export function CurriculumPlan({ html, empty, emptyMessage, ariaLabel }: Curricu
       x,
       y: above ? rect.top - 7 : rect.bottom + 7,
       above,
+      keyboard,
     });
   };
 
@@ -105,10 +111,16 @@ export function CurriculumPlan({ html, empty, emptyMessage, ariaLabel }: Curricu
   };
 
   const handleKeyDown = (event: KeyboardEvent<HTMLElement>) => {
+    if (event.key === 'Escape' && menu) {
+      event.preventDefault();
+      triggerRef.current?.setAttribute('aria-expanded', 'false');
+      setMenu(null);
+      return;
+    }
     const trigger = (event.target as HTMLElement).closest<HTMLButtonElement>('.cp-grade-trigger');
     if (!trigger || !['Enter', ' ', 'ArrowDown', 'ArrowUp'].includes(event.key)) return;
     event.preventDefault();
-    openGradeMenu(trigger);
+    openGradeMenu(trigger, true);
   };
 
   const chooseGrade = (value: string) => {
@@ -166,7 +178,6 @@ export function CurriculumPlan({ html, empty, emptyMessage, ariaLabel }: Curricu
               className={!option.value ? 'is-empty' : ''}
               key={option.value || 'empty'}
               onClick={() => chooseGrade(option.value)}
-              autoFocus={option.value === menu.value}
             >
               <span>{option.label}</span>{option.value === menu.value && <Check aria-hidden="true" />}
             </button>

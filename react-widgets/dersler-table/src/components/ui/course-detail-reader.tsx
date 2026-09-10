@@ -116,7 +116,7 @@ export function CourseDetailReader(props: CourseDetailReaderProps) {
         </div> : panel.key === 'sections' && props.sections?.length ? <div className="cdr-sections">
           <header className="cdr-section-heading"><div><h4>{props.sectionHeading}</h4><p>{props.sectionCaption}</p></div><span>{props.sections.length}</span></header>
           <div className="cdr-section-list">
-            {props.sections.slice(0, allSections ? undefined : 8).map((section) => <article className={`cdr-section d-sec${section.focus ? ' is-focus' : ''}`} key={section.crn} data-crn={section.crn}>
+            {props.sections.slice(0, allSections ? undefined : 8).map((section, index) => <article className={`cdr-section d-sec stagger-in${section.focus ? ' is-focus' : ''}`} style={{ animationDelay: `${Math.min(index * 30, 200)}ms` }} key={section.crn} data-crn={section.crn}>
               <div className="cdr-section-code"><span>CRN</span><strong>{section.crn}</strong></div>
               <div className="cdr-section-body">
                 <div className="cdr-section-top"><button type="button" className="cdr-instructor d-instr-history" data-name={section.instructors.join(', ')}><UserRound aria-hidden="true" />{section.instructors.join(', ') || '·'}</button><span>{section.quota}</span></div>

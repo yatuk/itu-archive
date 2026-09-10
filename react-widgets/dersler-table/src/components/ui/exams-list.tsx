@@ -59,8 +59,8 @@ function DesktopList({ props }: { props: ExamsListProps }) {
         <span role="columnheader">{props.labels.date} / {props.labels.time}</span>
       </div>
       <div role="rowgroup">
-        {props.rows.map((exam) => (
-          <div className={`ex-row${props.showPlace ? '' : ' without-place'}`} role="row" key={exam.key}>
+        {props.rows.map((exam, index) => (
+          <div className={`ex-row stagger-in${props.showPlace ? '' : ' without-place'}`} style={{ animationDelay: `${Math.min(index * 20, 320)}ms` }} role="row" key={exam.key}>
             <div className="ex-course" role="cell">
               <button type="button" onClick={() => props.onOpen(exam.code)}>{exam.code}</button>
               <strong>{exam.name}</strong>
@@ -98,8 +98,8 @@ function MobileAgenda({ props }: { props: ExamsListProps }) {
 
   return (
     <div className="ex-agenda" aria-label={props.ariaLabel}>
-      {groups.map((group) => (
-        <section className="ex-day" key={group.date}>
+      {groups.map((group, gIndex) => (
+        <section className="ex-day stagger-in" style={{ animationDelay: `${Math.min(gIndex * 40, 320)}ms` }} key={group.date}>
           <header><CalendarDays aria-hidden="true" /><strong>{group.date}</strong><span>{group.day}</span></header>
           <div>
             {group.exams.map((exam) => (

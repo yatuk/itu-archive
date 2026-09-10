@@ -31,8 +31,8 @@ function ChipRow({ headingClass, label, chips, onSelect }: { headingClass: strin
     <>
       <h3 className={headingClass}>{label}</h3>
       <div className="chips">
-        {chips.map((chip) => (
-          <button type="button" className="chip" key={chip.key} onClick={() => onSelect(chip)}>
+        {chips.map((chip, index) => (
+          <button type="button" className="chip stagger-in" style={{ animationDelay: `${Math.min(index * 30, 240)}ms` }} key={chip.key} onClick={() => onSelect(chip)}>
             <b>{chip.code || chip.name}</b>
             {chip.code && <span>{chip.name}</span>}
             <em>{chip.sub}</em>

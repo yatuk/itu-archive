@@ -112,8 +112,13 @@ export function DerslerTable(props: DerslerTableProps) {
           </TableRow>
         </TableHeader>
         <TableBody id="rows">
-          {rows.map((row) => (
-            <TableRow key={row.key} className="dt-cursor-pointer" onClick={() => onRowClick(row.key)}>
+          {rows.map((row, index) => (
+            <TableRow
+              key={row.key}
+              className="dt-cursor-pointer stagger-in"
+              style={{ animationDelay: `${Math.min(index * 20, 320)}ms` }}
+              onClick={() => onRowClick(row.key)}
+            >
               <TableCell className="dt-p-2" onClick={(e) => e.stopPropagation()}>
                 <input
                   type="checkbox"

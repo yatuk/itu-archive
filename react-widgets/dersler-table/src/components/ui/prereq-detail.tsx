@@ -94,13 +94,13 @@ function CourseDetail({ data, labels, onClose, onPanTo, onOpenCourseDetail }: { 
       {data.required.length > 0 && (
         <>
           <h4>{labels.requiredCourses} ({data.required.length})</h4>
-          <div className="pg-chips">{data.required.map((code) => <button className="pg-chip" key={code} onClick={() => onPanTo(code)}>{code}</button>)}</div>
+          <div className="pg-chips">{data.required.map((code, i) => <button className="pg-chip stagger-in" style={{ animationDelay: `${Math.min(i * 30, 180)}ms` }} key={code} onClick={() => onPanTo(code)}>{code}</button>)}</div>
         </>
       )}
       {data.dependents.length > 0 && (
         <>
           <h4>{labels.requestedBy} ({data.dependents.length})</h4>
-          <div className="pg-chips">{data.dependents.map((code) => <button className="pg-chip" key={code} onClick={() => onPanTo(code)}>{code}</button>)}</div>
+          <div className="pg-chips">{data.dependents.map((code, i) => <button className="pg-chip stagger-in" style={{ animationDelay: `${Math.min(i * 30, 180)}ms` }} key={code} onClick={() => onPanTo(code)}>{code}</button>)}</div>
         </>
       )}
       {data.source && (
@@ -169,11 +169,11 @@ function PoolDetail({ data, labels, onClose, onOpenCourseDetail, onOpenInCourses
         {[...groups].map(([branch, items]) => (
           <details className="pg-pool-group" key={branch} open={!big}>
             <summary>{branch} <span>{items.length}</span></summary>
-            {items.map((o) => {
+            {items.map((o, i) => {
               const st = data.status[o.code];
               const taken = takenSet.has(o.code);
               return (
-                <div className={`pg-pool-row${taken ? ' pg-pool-taken' : ''}`} key={o.code}>
+                <div className={`pg-pool-row stagger-in${taken ? ' pg-pool-taken' : ''}`} style={{ animationDelay: `${Math.min(i * 25, 200)}ms` }} key={o.code}>
                   <div className="pg-pool-name"><b>{o.code}</b><em title={o.name}>{o.name || labels.courseNameUnavailable}</em></div>
                   <span className="pg-pool-status-badge">
                     {taken && <span className="taken-mark">{labels.takenMark}</span>}

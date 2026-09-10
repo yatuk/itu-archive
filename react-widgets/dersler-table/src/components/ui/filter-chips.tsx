@@ -24,8 +24,8 @@ export function FilterChips({ termLabel, chips, emptyMessage, removeLabel, onRem
   return (
     <>
       <span className="fc-term">{termLabel}</span>
-      {chips.map((chip) => (
-        <span className="fc-pill" key={chip.key}>
+      {chips.map((chip, index) => (
+        <span className="fc-pill stagger-in" style={{ animationDelay: `${Math.min(index * 40, 200)}ms` }} key={chip.key}>
           {chip.value !== undefined ? (
             <>
               <span className="fc-label">{chip.label}</span>

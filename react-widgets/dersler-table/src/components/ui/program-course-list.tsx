@@ -40,7 +40,8 @@ export function ProgramCourseList({ items, labels, onOpen, onCopy, onOpenObs, on
     <div className="pcl-head p-list-head" role="row"><span role="columnheader">{labels.course}</span><span role="columnheader">{labels.quota}</span></div>
     {items.map((item, index) => <article
       key={item.key}
-      className={`pcl-item p-item${item.full ? ' is-full' : ''}${drag === index ? ' is-dragging' : ''}${dragOver === index && drag !== null && drag !== index ? ' is-drop-target' : ''}`}
+      className={`pcl-item p-item stagger-in${item.full ? ' is-full' : ''}${drag === index ? ' is-dragging' : ''}${dragOver === index && drag !== null && drag !== index ? ' is-drop-target' : ''}`}
+      style={{ animationDelay: `${Math.min(index * 30, 240)}ms` }}
       role="row"
       draggable
       onDragStart={() => setDrag(index)}

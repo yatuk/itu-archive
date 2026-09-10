@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUp, ArrowUpDown } from 'lucide-react';
+import { ArrowDown, ArrowUp, ArrowUpDown, FileClock, GraduationCap, Star } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -23,6 +23,9 @@ export interface DerslerRow {
   crnHTML: string;
   codeHTML: string;
   nameHTML: string;
+  kind?: 'extra-exam' | 'graduation' | '';
+  kindLabel?: string;
+  kindHelp?: string;
   instructorHTML: string;
   when: string;
   where: string;
@@ -128,12 +131,14 @@ export function DerslerTable(props: DerslerTableProps) {
                   aria-pressed={row.favorite}
                   onClick={() => onToggleFavorite(row.key)}
                 >
-                  {row.favorite ? '★' : '☆'}
+                  <Star aria-hidden="true" className="dt-size-4" fill={row.favorite ? 'currentColor' : 'none'} />
                 </button>
               </TableCell>
               <TableCell className="dt-p-2 dt-font-mono dt-text-muted-foreground" dangerouslySetInnerHTML={{ __html: row.crnHTML }} />
               <TableCell className="dt-p-2" dangerouslySetInnerHTML={{ __html: row.codeHTML }} />
-              <TableCell className="dt-p-2" dangerouslySetInnerHTML={{ __html: row.nameHTML }} />
+              <TableCell className="dt-p-2">
+                <div className="dt-course-name"><span dangerouslySetInnerHTML={{ __html: row.nameHTML }} />{row.kind && <span className={`dt-kind-badge ${row.kind}`} title={row.kindHelp}>{row.kind === 'extra-exam' ? <FileClock aria-hidden="true" /> : <GraduationCap aria-hidden="true" />}<b>{row.kindLabel}</b></span>}</div>
+              </TableCell>
               <TableCell className="dt-p-2" dangerouslySetInnerHTML={{ __html: row.instructorHTML }} />
               <TableCell className="dt-p-2 dt-font-mono dt-text-xs">
                 {sessions(row.when).map((line, i) => (

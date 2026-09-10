@@ -546,7 +546,6 @@ function derslerRowFrom(r) {
   const cap = r[6], enr = r[7];
   const where = r[11] || '';
   const kind = specialSectionKind(r);
-  const kindBadge = kind ? `<span class="section-kind-badge ${kind}" title="${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamHelp' : 'courseGraduationHelp'))}">${esc(I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge'))}</span>` : '';
   const key = selKey(r);
   // Arama eşleşmesini <mark> ile göster — "neden çıktı" görünür olsun.
   const hits = state.marks?.get(key)?.hits || null;
@@ -554,11 +553,14 @@ function derslerRowFrom(r) {
   return {
     key,
     crnHTML: markField(crn, 'crn', hitField('crn')),
-    codeHTML: `<b>${markField(code, 'code', hitField('code'))}</b><small>${esc(branch)}</small>`,
+    codeHTML: `<b>${markField(code, 'code', hitField('code'))}</b>`,
     // Odak alabilen düğme klavye/ekran okuyucu erişimini korur; satırın
     // herhangi bir yerine tıklamak da aynı olayı kabarcıklandığı için açar
     // (bkz. renderDesktopTable → onRowClick), ikinci bir dinleyiciye gerek yok.
-    nameHTML: `<button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button>${kindBadge}`,
+    nameHTML: `<button class="row-toggle" type="button" aria-haspopup="dialog">${markField(name, 'name', hitField('name'))}</button>`,
+    kind: kind || '',
+    kindLabel: kind ? I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge') : '',
+    kindHelp: kind ? I18N.t(kind === 'extra-exam' ? 'courseExtraExamHelp' : 'courseGraduationHelp') : '',
     instructorHTML: markField(instructor || '·', 'instructor', hitField('instructor')),
     when: when ? localizeSchedule(when) : '',
     where,

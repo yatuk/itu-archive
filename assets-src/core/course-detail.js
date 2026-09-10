@@ -277,14 +277,78 @@ function detailShell({ code, name, branch, level, method, obsLink, term, secs, c
 
 function detailReactProps({ code, name, branch, level, method, obsLink, term, secs, cat, gr, hist, programs, buildings, crn }) {
   const active = crn && secs.length ? 'sections' : 'overview';
+  const specialKind = /\bek\s*sınav\b|additional\s+exam/i.test(method || '')
+    ? 'extra-exam'
+    : /\b(bitirme|graduation\s+(?:project|study|design|thesis)|capstone)\b/i.test(name || '') ? 'graduation' : '';
+  const ordered = secs.slice().sort((a, b) =>
+    (String(b.crn) === String(crn) ? 1 : 0) - (String(a.crn) === String(crn) ? 1 : 0) ||
+    (a.capacity > 0 ? 0 : 1) - (b.capacity > 0 ? 0 : 1) || Number(a.crn) - Number(b.crn));
+  const sectionRows = ordered.map((s) => {
+    const kind = /\bek\s*sınav\b|additional\s+exam/i.test(s.method || '') ? 'extra-exam'
+      : /\b(bitirme|graduation\s+(?:project|study|design|thesis)|capstone)\b/i.test(name || '') ? 'graduation' : '';
+    const hrs = sessionHours(s.times);
+    const note = [fillNote(s.crn), measured(s.crn)].filter(Boolean).join(' · ');
+    return {
+      crn: String(s.crn),
+      instructors: splitInstructors(s.instructor),
+      quota: s.capacity ? `${formatInt(s.enrolled || 0)} / ${formatInt(s.capacity)}${s.enrolled >= s.capacity ? ` · ${I18N.lang === 'en' ? 'full' : 'dolu'}` : ''}` : '·',
+      note,
+      meta: kind === 'extra-exam' ? I18N.t('courseExtraExamBadge') : kind === 'graduation' ? I18N.t('courseGraduationBadge') : [s.method, hrs ? weeklyHoursLabel(hrs) : ''].filter(Boolean).join(' · '),
+      sessions: (s.days || []).map((day, i) => [day, s.times?.[i], s.rooms?.[i], s.buildings?.[i] ? buildingName(s.buildings[i], buildings) : ''].filter(Boolean).join(' · ')),
+      rules: [
+        s.prereq && s.prereq !== '-' ? { label: I18N.t('detailPrereq'), value: s.prereq } : null,
+        s.classReq && s.classReq !== '-' ? { label: I18N.t('detailClassReq'), value: s.classReq } : null,
+        s.reserved && s.reserved !== '-' ? { label: I18N.t('cdReserved'), value: s.reserved } : null,
+      ].filter(Boolean),
+      focus: String(s.crn) === String(crn),
+      special: kind,
+    };
+  });
+  const historyByTerm = new Map();
+  for (const [slug, instructor, capacity, enrolled] of hist?.rows || []) {
+    if (!historyByTerm.has(slug)) historyByTerm.set(slug, []);
+    historyByTerm.get(slug).push({
+      instructor: instructor || '·', capacity: Number(capacity) || 0, enrolled: Number(enrolled) || 0,
+      fill: capacity ? Math.round((Number(enrolled) || 0) / Number(capacity) * 100) : 0,
+    });
+  }
+  const seasons = { guz: I18N.t('cdSeasonFall'), bahar: I18N.t('cdSeasonSpring'), yaz: I18N.t('cdSeasonSummer') };
+  const historyTerms = [...historyByTerm].sort(([a], [b]) => a.localeCompare(b)).map(([slug, rows]) => {
+    const capacity = rows.reduce((sum, row) => sum + row.capacity, 0);
+    const enrolled = rows.reduce((sum, row) => sum + row.enrolled, 0);
+    const [, year, season] = slug.split('-');
+    return { slug, label: termLabel(slug), shortLabel: `${year} ${seasons[season] || season}`, season, capacity, enrolled, fill: capacity ? Math.round(enrolled / capacity * 100) : 0, rows };
+  });
+  const openedSeasons = [...new Set(historyTerms.map((item) => seasons[item.season] || item.season))];
   return {
     code,
     name: name || code,
-    meta: [branch, level, method].filter(Boolean),
+    meta: [branch, level, specialKind ? '' : method].filter(Boolean),
+    specialKind,
+    specialLabel: specialKind ? I18N.t(specialKind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge') : '',
     obsLink,
     obsLabel: I18N.t('cdObsCatalog'),
     tabLabel: I18N.t('cdSectionsAriaLabel'),
     active,
+    sections: sectionRows,
+    history: {
+      heading: I18N.t('cdPastTerms'),
+      caption: historyTerms.length ? `${I18N.lang === 'en' ? `opened in ${historyTerms.length} terms` : `${historyTerms.length} dönemde açıldı`} · ${openedSeasons.join(', ')}` : '',
+      empty: I18N.t('cdPastNoData'), terms: historyTerms,
+      recordCount: historyTerms.reduce((sum, item) => sum + item.rows.length, 0),
+      labels: {
+        capacity: I18N.lang === 'en' ? 'capacity' : 'kontenjan', enrolled: I18N.lang === 'en' ? 'enrolled' : 'yazılan',
+        records: I18N.t('cdTermRecords'), showAll: I18N.lang === 'en' ? `Show ${Math.max(0, historyTerms.length - 8)} earlier terms` : `${Math.max(0, historyTerms.length - 8)} eski dönemi göster`,
+        showRecent: I18N.lang === 'en' ? 'Show recent terms' : 'Son dönemleri göster', full: I18N.lang === 'en' ? 'full' : 'dolu',
+      },
+    },
+    sectionHeading: I18N.t('cdSectionsThisTerm'),
+    sectionCaption: `${termLabel(term)} · ${secs.length} ${I18N.t('prgSube')}`,
+    labels: {
+      add: I18N.t('detailAddProg'), requirements: I18N.t('cdRegRequirements'),
+      showMore: I18N.lang === 'en' ? 'more sections' : 'şube daha göster', showLess: I18N.t('cdShowLess'),
+      extraExam: I18N.t('courseExtraExamBadge'), graduation: I18N.t('courseGraduationBadge'),
+    },
     panels: [
       { key: 'overview', label: I18N.t('cdTabOverview'), html: overviewHtml({ code, term, secs, cat, gr, hist, programs }) },
       { key: 'sections', label: I18N.t('cdTabSections'), count: secs.length, html: secs.length

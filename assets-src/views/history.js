@@ -1,15 +1,29 @@
 // Geçmiş görünümü: 27 dönemin birleştirilmiş kaydında ders/hoca arama, ders
 // bazlı dönem geçmişi (trend grafiği dahil) ve hoca bazlı ders listesi.
+// Arama/keşif çipleri ve ayrıntı kartının kabuğu React'te (history-search.tsx,
+// history-detail.tsx) — bu dosya veriyi hazırlar, eşleştirme/gruplama
+// mantığını (tek kaynak) taşır ve React'i monte eder.
 
-import { $, getJSON, esc, normSearch, searchMatch, debounce, termLabel, setStatus, isViewVisible } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, normSearch, searchMatch, debounce, termLabel, setStatus, isViewVisible } from '../core/utils.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
 import { fillBar, trendChart } from '../core/chart.js?v=dde1e9339338';
-import { fillRows } from '../core/table.js?v=dde1e9339338';
 import { initReveal } from '../core/reveal.js?v=dde1e9339338';
 import { readLocalState, writeLocalState } from '../core/persistence.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 
 let inited = false;
+
+let historyModule = null;
+let historyModulePromise = null;
+function loadHistoryWidget() {
+  if (!historyModulePromise) {
+    historyModulePromise = import('../react/dersler-table.js').then((mod) => {
+      historyModule = mod;
+      return mod;
+    });
+  }
+  return historyModulePromise;
+}
 
 export function initHistory() {
   if (inited) return;
@@ -46,6 +60,17 @@ async function loadHistory() {
   }
 }
 
+function courseChip(c) {
+  return { key: `c|${c[0]}`, kind: 'course', code: c[0], name: c[1], branch: c[2], sub: `${c[3]} ${I18N.t('histUnitTerms')}` };
+}
+function personChip(n) {
+  return { key: `p|${n[0]}|${n[1]}`, kind: 'person', name: n[0], bucket: n[1], sub: `${n[2]} ${I18N.t('histUnitTerms')} · ${n[3]} ${I18N.t('prgSube')}` };
+}
+
+function onChipSelect(chip) {
+  return chip.kind === 'course' ? showCourse(chip.code, chip.branch) : showPerson(chip.name, chip.bucket);
+}
+
 // Geçmiş sekmesine dışarıdan (örn. detay panelinden) arama yaptırmak için dışa açık.
 export async function searchHistory() {
   await loadHistory();
@@ -61,19 +86,32 @@ export async function searchHistory() {
     history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}#gecmis`);
   }
   const box = $('#hmatches');
+  historyModule?.unmountHistoryDetail();
   $('#hdetail').innerHTML = '';
 
+  const mod = await loadHistoryWidget();
+  const labels = {
+    courseSectionLabel: I18N.t('histSectionCourses'),
+    instructorSectionLabel: I18N.t('histSectionInstructors'),
+  };
+
   if (q.length < 2) {
-    box.innerHTML = discoveryHtml();
+    const topCourses = topByCount(state.hist.codes, 3, 6);
+    const topPeople = topByCount(state.hist.names, 3, 6);
     const locale = I18N.lang === 'en' ? 'en' : 'tr';
     $('#hresultline').innerHTML =
       `<b>${state.hist.codes.length.toLocaleString(locale)}</b> ${I18N.t('histUnitCourses')} · ` +
       `<b>${state.hist.names.length.toLocaleString(locale)}</b> ${I18N.t('histUnitPeopleIndexed')}`;
-    for (const b of box.querySelectorAll('.chip')) {
-      b.addEventListener('click', () => b.dataset.kind === 'course'
-        ? showCourse(b.dataset.key, b.dataset.branch)
-        : showPerson(b.dataset.key, b.dataset.bucket));
-    }
+    mod.mountHistorySearch(box, {
+      mode: 'discovery',
+      intro: (topCourses.length || topPeople.length) ? I18N.t('histIntro') : undefined,
+      courseSectionLabel: I18N.t('histTopCourses'),
+      instructorSectionLabel: I18N.t('histTopInstructors'),
+      courses: topCourses.map(courseChip),
+      people: topPeople.map(personChip),
+      emptyMessage: '',
+      onSelect: onChipSelect,
+    });
     return;
   }
 
@@ -84,24 +122,14 @@ export async function searchHistory() {
 
   $('#hresultline').innerHTML = `<b>${courses.length}</b> ${I18N.t('histUnitCourses')}, <b>${people.length}</b> ${I18N.t('histUnitPeopleMatched')}`;
 
-  let html = '';
-  if (courses.length) {
-    html += `<h3 class="mh">${esc(I18N.t('histSectionCourses'))}</h3><div class="chips">` + courses.map((c) =>
-      `<button class="chip" data-kind="course" data-key="${esc(c[0])}" data-branch="${esc(c[2])}">
-         <b>${esc(c[0])}</b><span>${esc(c[1])}</span><em>${c[3]} ${esc(I18N.t('histUnitTerms'))}</em></button>`).join('') + '</div>';
-  }
-  if (people.length) {
-    html += `<h3 class="mh">${esc(I18N.t('histSectionInstructors'))}</h3><div class="chips">` + people.map((n) =>
-      `<button class="chip" data-kind="person" data-key="${esc(n[0])}" data-bucket="${esc(n[1])}">
-         <b>${esc(n[0])}</b><em>${n[2]} ${esc(I18N.t('histUnitTerms'))} · ${n[3]} ${esc(I18N.t('prgSube'))}</em></button>`).join('') + '</div>';
-  }
-  box.innerHTML = html || `<p class="empty">${esc(I18N.t('emptyRow'))}</p>`;
-
-  for (const b of box.querySelectorAll('.chip')) {
-    b.addEventListener('click', () => b.dataset.kind === 'course'
-      ? showCourse(b.dataset.key, b.dataset.branch)
-      : showPerson(b.dataset.key, b.dataset.bucket));
-  }
+  mod.mountHistorySearch(box, {
+    mode: courses.length || people.length ? 'results' : 'empty',
+    ...labels,
+    courses: courses.map(courseChip),
+    people: people.map(personChip),
+    emptyMessage: I18N.t('emptyRow'),
+    onSelect: onChipSelect,
+  });
 }
 
 // Bir diziyi sayısal alana göre azalan sırayla sıralayıp ilk n öğeyi döner.
@@ -114,27 +142,8 @@ export function topByCount(arr, countIdx, n) {
   }).slice(0, n);
 }
 
-// Boş sorguda keşif kısayolları (P1-12): ne arayacağını bilmeyene başlangıç
-// noktası. Kartlar doğrudan ilgili geçmişe gider (ders veya hoca); alt satır
-// sıralama ölçütünü gösterir — shard/harf değil.
-function discoveryHtml() {
-  const h = state.hist;
-  if (!h) return '';
-  const topCourses = topByCount(h.codes, 3, 6);
-  const topPeople = topByCount(h.names, 3, 6);
-  if (!topCourses.length && !topPeople.length) return '';
-  const courseChips = topCourses.length
-    ? `<h3 class="h-disc">${esc(I18N.t('histTopCourses'))}</h3><div class="chips">` +
-      topCourses.map((c) => `<button class="chip" data-kind="course" data-key="${esc(c[0])}" data-branch="${esc(c[2])}">
-        <b>${esc(c[0])}</b><span>${esc(c[1])} · ${c[3]} ${esc(I18N.t('histUnitTerms'))}</span></button>`).join('') + '</div>'
-    : '';
-  const personChips = topPeople.length
-    ? `<h3 class="h-disc">${esc(I18N.t('histTopInstructors'))}</h3><div class="chips">` +
-      topPeople.map((n) => `<button class="chip" data-kind="person" data-key="${esc(n[0])}" data-bucket="${esc(n[1])}">
-        <b>${esc(n[0])}</b><span>${n[3]} ${esc(I18N.t('prgSube'))} · ${n[2]} ${esc(I18N.t('histUnitTerms'))}</span></button>`).join('') + '</div>'
-    : '';
-  return `<p class="h-intro">${esc(I18N.t('histIntro'))}</p>
-    ${courseChips}${personChips}`;
+function openCourseDetailFromHistory(code) {
+  window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code, source: 'gecmis' } }));
 }
 
 async function showCourse(code, branch) {
@@ -156,33 +165,33 @@ async function showCourse(code, branch) {
   // Dönem sırası yeniden eskiye; her dönemin ilk satırına dönem adını yaz.
   const rows = [];
   for (const [slug, secs] of byTerm) {
-    secs.forEach((r, i) => rows.push({ slug, termFirst: i === 0, ...r }));
+    secs.forEach((r, i) => rows.push({
+      key: `${slug}|${i}`,
+      termLabel: i === 0 ? termLabel(slug) : '',
+      instructor: r.instructor,
+      days: r.days,
+      cap: r.cap,
+      enr: r.enr,
+      fillHTML: fillBar(r.cap, r.enr),
+    }));
   }
 
   const openedText = I18N.lang === 'en' ? `Opened in ${byTerm.size} terms` : `${byTerm.size} dönemde açıldı`;
-  $('#hdetail').innerHTML = `
-    <article class="hcard reveal">
-      <h3>${esc(c.code)} <span>${esc(c.name)}</span></h3>
-      <p class="meta">${esc(openedText)} · ${esc(I18N.t('histSeasonsLabel'))} ${esc(rhythm)}
-        <button type="button" class="btn-ghost h-detail" data-code="${esc(c.code)}">${esc(I18N.t('histDetailButton'))}</button></p>
-      ${trendChart(byTerm)}
-      <div class="tablewrap"><table class="htable" aria-label="${esc(c.code)} ${esc(I18N.t('histTermHistoryLabel'))}">
-        <thead><tr><th>${esc(I18N.t('histColTerm'))}</th><th>${esc(I18N.t('thInstr'))}</th><th>${esc(I18N.t('histColDay'))}</th><th class="num">${esc(I18N.t('thCap'))}</th><th class="num">${esc(I18N.t('thEnr'))}</th><th class="num quota-legacy-col">${esc(I18N.t('thFill'))}</th></tr></thead>
-        <tbody></tbody>
-      </table></div>
-    </article>`;
-  fillRows($('#hdetail tbody'), rows, (r) => `
-    <tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
-        <td>${esc(r.instructor || '·')}</td>
-        <td class="when">${esc(r.days || '·')}</td>
-        <td class="num">${r.cap}</td><td class="num">${r.enr}</td>
-        <td class="num quota-legacy-col">${fillBar(r.cap, r.enr)}</td></tr>`);
-  const dBtn = $('#hdetail .h-detail');
-  if (dBtn) {
-    dBtn.addEventListener('click', () => {
-      window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: dBtn.dataset.code, source: 'gecmis' } }));
-    });
-  }
+  const mod = await loadHistoryWidget();
+  mod.mountHistoryDetail($('#hdetail'), {
+    data: {
+      kind: 'course',
+      code: c.code,
+      name: c.name,
+      openedText,
+      seasonsLabel: I18N.t('histSeasonsLabel'),
+      rhythm,
+      trendHTML: trendChart(byTerm),
+      rows,
+    },
+    labels: detailLabels(),
+    onOpenCourseDetail: openCourseDetailFromHistory,
+  });
   initReveal($('#hdetail'));
   $('#hdetail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
@@ -199,19 +208,33 @@ async function showPerson(name, bucket) {
   }
   const sorted = [...byCourse].sort((a, b) => b[1].terms.length - a[1].terms.length);
 
-  $('#hdetail').innerHTML = `
-    <article class="hcard reveal">
-      <h3>${esc(name)}</h3>
-      <p class="meta">${byCourse.size} ${esc(I18N.t('histDistinctCourses'))} · ${p.rows.length} ${esc(I18N.t('prgSube'))} · ${p.terms} ${esc(I18N.t('histUnitTerms'))}</p>
-      <div class="tablewrap"><table class="htable" aria-label="${esc(name)} ${esc(I18N.t('histCourseListLabel'))}">
-        <thead><tr><th>${esc(I18N.t('thCode'))}</th><th>${esc(I18N.t('thName'))}</th><th class="num">${esc(I18N.t('histColTermCount'))}</th><th>${esc(I18N.t('histColTerms'))}</th></tr></thead>
-        <tbody></tbody>
-      </table></div>
-    </article>`;
-  fillRows($('#hdetail tbody'), sorted, ([code, v]) => `
-    <tr><td><b>${esc(code)}</b></td><td>${esc(v.name)}</td>
-        <td class="num">${v.terms.length}</td>
-        <td class="when">${esc(v.terms.map(termLabel).join(', '))}</td></tr>`);
+  const mod = await loadHistoryWidget();
+  mod.mountHistoryDetail($('#hdetail'), {
+    data: {
+      kind: 'person',
+      name,
+      meta: `${byCourse.size} ${I18N.t('histDistinctCourses')} · ${p.rows.length} ${I18N.t('prgSube')} · ${p.terms} ${I18N.t('histUnitTerms')}`,
+      rows: sorted.map(([code, v]) => ({ code, name: v.name, termCount: v.terms.length, terms: v.terms.map(termLabel).join(', ') })),
+    },
+    labels: detailLabels(),
+    onOpenCourseDetail: openCourseDetailFromHistory,
+  });
   initReveal($('#hdetail'));
   $('#hdetail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function detailLabels() {
+  return {
+    detailButton: I18N.t('histDetailButton'),
+    colTerm: I18N.t('histColTerm'),
+    colInstructor: I18N.t('thInstr'),
+    colDay: I18N.t('histColDay'),
+    colCap: I18N.t('thCap'),
+    colEnr: I18N.t('thEnr'),
+    colFill: I18N.t('thFill'),
+    colCode: I18N.t('thCode'),
+    colName: I18N.t('thName'),
+    colTermCount: I18N.t('histColTermCount'),
+    colTerms: I18N.t('histColTerms'),
+  };
 }

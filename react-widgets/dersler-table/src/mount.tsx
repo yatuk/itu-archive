@@ -12,6 +12,8 @@ import { GpaSummary, type GpaSummaryProps } from '@/components/ui/gpa-summary';
 import { FilterChips, type FilterChipsProps } from '@/components/ui/filter-chips';
 import { TermsGrid, type TermsGridProps } from '@/components/ui/terms-grid';
 import { CalendarTimeline, type CalendarTimelineProps } from '@/components/ui/calendar-timeline';
+import { HistorySearch, type HistorySearchProps } from '@/components/ui/history-search';
+import { HistoryDetail, type HistoryDetailProps } from '@/components/ui/history-detail';
 // `?inline` ile CSS, ayrı bir .css dosyası yerine bu JS bundle'ının içine
 // string olarak gömülür — courses.js'in docs/index.html'e ayrı bir <link>
 // eklemesine gerek kalmaz ve önbellek kırma (?v=) JS import'unun kendi
@@ -32,6 +34,8 @@ let gpaSummaryRoot: Root | null = null;
 let chipsRoot: Root | null = null;
 let termsRoot: Root | null = null;
 let calendarRoot: Root | null = null;
+let historySearchRoot: Root | null = null;
+let historyDetailRoot: Root | null = null;
 let styleTag: HTMLStyleElement | null = null;
 
 function ensureStyles(): void {
@@ -156,6 +160,22 @@ export function mountCalendarTimeline(container: HTMLElement, props: CalendarTim
 }
 export function unmountCalendarTimeline(): void { calendarRoot?.unmount(); calendarRoot = null; }
 
+export function mountHistorySearch(container: HTMLElement, props: HistorySearchProps): void {
+  ensureStyles();
+  if (!historySearchRoot) historySearchRoot = createRoot(container);
+  historySearchRoot.render(<HistorySearch {...props} />);
+}
+export function unmountHistorySearch(): void { historySearchRoot?.unmount(); historySearchRoot = null; }
+
+// flushSync: history.js mount'tan hemen sonra initReveal() + scrollIntoView
+// çağırır, ikisi de gerçek DOM'un senkron hazır olmasını bekler.
+export function mountHistoryDetail(container: HTMLElement, props: HistoryDetailProps): void {
+  ensureStyles();
+  if (!historyDetailRoot) historyDetailRoot = createRoot(container);
+  flushSync(() => historyDetailRoot?.render(<HistoryDetail {...props} />));
+}
+export function unmountHistoryDetail(): void { historyDetailRoot?.unmount(); historyDetailRoot = null; }
+
 export type { DerslerTableProps, DerslerRow, SortKey, SortDir } from '@/components/ui/dersler-table';
 export type { ProgramScheduleProps, ProgramSession, UntimedCourse } from '@/components/ui/program-schedule';
 export type { CurriculumPlanProps } from '@/components/ui/curriculum-plan';
@@ -166,3 +186,5 @@ export type { GpaSummaryProps } from '@/components/ui/gpa-summary';
 export type { FilterChipsProps, FilterChipData } from '@/components/ui/filter-chips';
 export type { TermsGridProps, TermCardData } from '@/components/ui/terms-grid';
 export type { CalendarTimelineProps, CalendarGroupData, CalendarEventData } from '@/components/ui/calendar-timeline';
+export type { HistorySearchProps, HistoryChip } from '@/components/ui/history-search';
+export type { HistoryDetailProps, HistoryCourseDetailData, HistoryPersonDetailData, HistoryCourseRow, HistoryPersonRow } from '@/components/ui/history-detail';

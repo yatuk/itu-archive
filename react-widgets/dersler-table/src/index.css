@@ -382,6 +382,7 @@
   transform: rotate(45deg);
   transition: transform 160ms ease;
 }
+@media (prefers-reduced-motion: reduce) { .curriculum-plan-root .dp-sem-head::after { transition: none; } }
 .curriculum-plan-root .dp-sem:not([open]) .dp-sem-head { margin: 0; padding: 13px 43px 12px 15px; border: 0; }
 .curriculum-plan-root .dp-sem:not([open]) .dp-sem-head::after { margin-top: -2px; transform: rotate(-45deg); }
 .curriculum-plan-root .dp-load { color: var(--dim); font: 10px/1.25 var(--mono); }
@@ -462,6 +463,7 @@
 .curriculum-plan-root .cp-grade-trigger.filled { border-color: color-mix(in srgb, var(--acid) 58%, var(--line)); color: var(--fg); }
 .curriculum-plan-root .cp-grade-trigger svg { width: 13px; height: 13px; flex: 0 0 auto; transition: transform 140ms ease; }
 .curriculum-plan-root .cp-grade-trigger[aria-expanded="true"] svg { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) { .curriculum-plan-root .cp-grade-trigger svg { transition: none; } }
 .cp-grade-menu {
   position: fixed;
   z-index: 10020;
@@ -764,6 +766,7 @@
 .cdr-tabs button > span { min-width: 0; padding: 0; border: 0; border-radius: 0; color: inherit; background: transparent; font: inherit; }
 .cdr-tabs button b { min-width: 19px; padding: 3px 5px; border-radius: 999px; color: var(--dim); background: var(--panel-2); font: 700 8px/1 var(--mono); }
 .cdr-tabs button::after { position: absolute; right: 22%; bottom: -1px; left: 22%; height: 2px; border-radius: 2px 2px 0 0; background: var(--acid); content: ''; opacity: 0; transform: scaleX(.5); transition: opacity 140ms ease,transform 140ms ease; }
+@media (prefers-reduced-motion: reduce) { .cdr-tabs button::after { transition: none; } }
 .cdr-tabs button:hover { color: var(--fg); background: color-mix(in srgb,var(--acid) 3%,transparent); }
 .cdr-tabs button[aria-selected="true"] { color: var(--fg); background: transparent; box-shadow: none; }
 .cdr-tabs button[aria-selected="true"]::after { opacity: 1; transform: scaleX(1); }
@@ -797,6 +800,7 @@
 .cdr-rules { margin-top: 2px; color: var(--dim); font-size: 10px; }
 .cdr-rules summary { display: inline-flex; align-items: center; gap: 5px; color: var(--cyan); cursor: pointer; }
 .cdr-rules summary svg { width: 12px; height: 12px; transition: transform 140ms ease; }
+@media (prefers-reduced-motion: reduce) { .cdr-rules summary svg { transition: none; } }
 .cdr-rules[open] summary svg { transform: rotate(180deg); }
 .cdr-rules p { margin: 7px 0 0; }
 .cdr-rules p b { margin-right: 6px; color: var(--dimmer); }
@@ -831,6 +835,7 @@
 .cdr-history-chart { display: flex; height: 172px; align-items: end; gap: 9px; padding: 17px 10px 0; border: 1px solid var(--line); border-radius: 10px; background-color: color-mix(in srgb,var(--panel-2) 64%,var(--panel)); background-image: radial-gradient(circle,color-mix(in srgb,var(--dim) 18%,transparent) 1px,transparent 1px); background-size: 13px 13px; overflow-x: auto; scrollbar-width: thin; }
 .cdr-history-term { display: grid; min-width: 56px; height: 100%; flex: 1 0 56px; grid-template-rows: minmax(0,1fr) 26px; align-items: end; justify-items: stretch; gap: 7px; padding: 0; border: 0; color: var(--dimmer); background: transparent; cursor: pointer; }
 .cdr-history-bars { display: flex; width: min(100%,52px); height: 100%; min-height: 10px; align-items: end; justify-self: center; justify-content: center; gap: 5px; transition: transform 140ms ease; }
+@media (prefers-reduced-motion: reduce) { .cdr-history-bars { transition: none; } }
 .cdr-history-bars i { display: block; width: 19px; min-height: 3px; border-radius: 5px 5px 1px 1px; box-shadow: inset 0 0 0 1px color-mix(in srgb,var(--fg) 9%,transparent); }
 .cdr-history-bars i.capacity { background: var(--cyan); }
 .cdr-history-bars i.enrolled { border: 1px solid color-mix(in srgb,var(--acid) 72%,var(--line)); background: repeating-linear-gradient(135deg,var(--acid) 0 2px,color-mix(in srgb,var(--acid) 20%,transparent) 2px 5px); }
@@ -850,6 +855,7 @@
 .cdr-history-records > summary span { display: inline-flex; align-items: center; gap: 8px; font-weight: 750; }
 .cdr-history-records > summary b { display: grid; min-width: 24px; height: 24px; place-items: center; border-radius: 7px; color: var(--dim); background: var(--panel-2); font: 750 9px/1 var(--mono); }
 .cdr-history-records > summary > svg { color: var(--dimmer); transition: transform 140ms ease; }
+@media (prefers-reduced-motion: reduce) { .cdr-history-records > summary > svg { transition: none; } }
 .cdr-history-records[open] > summary > svg { transform: rotate(180deg); }
 .cdr-history-record-list { padding: 0 0 14px; }
 .cdr-history-record-list > section { padding: 14px 0; border-top: 1px solid var(--line); }

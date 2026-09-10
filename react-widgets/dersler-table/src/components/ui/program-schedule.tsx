@@ -279,12 +279,12 @@ export function ProgramSchedule(props: ProgramScheduleProps) {
         </div>
       </div>}
 
-      {menu && <div className="pp-context" role="menu" aria-label={`${menu.session.code} ${props.labels.actions}`} style={{ left: menu.x, top: menu.y }} onPointerDown={(event) => event.stopPropagation()}>
+      {menu && <div className="pp-context tt-context-menu" role="menu" aria-label={`${menu.session.code} ${props.labels.actions}`} style={{ left: menu.x, top: menu.y }} onPointerDown={(event) => event.stopPropagation()}>
         <p><strong>{menu.session.code}</strong><span>CRN {menu.session.crn}</span></p>
-        <button type="button" role="menuitem" onClick={() => { props.onOpen(menu.session.rowKey); setMenu(null); }}><CalendarDays />{props.labels.details}</button>
-        <button type="button" role="menuitem" onClick={() => { props.onCopyCrn(menu.session.rowKey); setMenu(null); }}><Copy />{props.labels.copyCrn}</button>
-        <button type="button" role="menuitem" onClick={() => { props.onOpenObs(menu.session.rowKey); setMenu(null); }}><ExternalLink />{props.labels.openObs}</button>
-        <button type="button" role="menuitem" className="is-danger" onClick={() => { props.onRemove(menu.session.rowKey); setMenu(null); }}><Trash2 />{props.labels.remove}</button>
+        <button type="button" role="menuitem" data-act="open" onClick={() => { props.onOpen(menu.session.rowKey); setMenu(null); }}><CalendarDays />{props.labels.details}</button>
+        <button type="button" role="menuitem" data-act="copy-crn" onClick={() => { props.onCopyCrn(menu.session.rowKey); setMenu(null); }}><Copy />{props.labels.copyCrn}</button>
+        <button type="button" role="menuitem" data-act="open-obs" onClick={() => { props.onOpenObs(menu.session.rowKey); setMenu(null); }}><ExternalLink />{props.labels.openObs}</button>
+        <button type="button" role="menuitem" data-act="remove" className="is-danger" onClick={() => { props.onRemove(menu.session.rowKey); setMenu(null); }}><Trash2 />{props.labels.remove}</button>
       </div>}
       {tooltip && <div id="pp-course-tooltip" className="pp-tooltip" role="tooltip" style={{ left: tooltip.x, top: tooltip.y }} data-side={tooltip.side}>
         <div className="pp-tooltip-title"><span style={{ background: tooltip.session.color }} /><strong>{tooltip.session.code}</strong><b>{fmt(tooltip.session.start)}–{fmt(tooltip.session.end)}</b></div>

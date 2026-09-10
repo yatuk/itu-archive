@@ -390,7 +390,7 @@ test.describe('SPA (ana sayfa)', () => {
     }));
     await page.goto('/#sinavlar');
     await expect(page.locator('#eresultline')).toHaveText('Bu dönem için sınav takvimi henüz ilan edilmemiş.');
-    await expect(page.locator('#erows')).not.toContainText('30054');
+    await expect(page.locator('#exam-list-mount')).not.toContainText('30054');
   });
 
   test('"İçeriğe atla" ilk odak durağıdır ve odaklanınca görünür olur', async ({ page }) => {
@@ -580,14 +580,23 @@ test.describe('Program seçimi (fakülte → bölüm)', () => {
 
     const order = await page.evaluate(() =>
       [...document.querySelectorAll('#dp-summary, #dp-semesters, #dp-grades, #dp-tools')].map((el) => el.id));
-    expect(order).toEqual(['dp-summary', 'dp-semesters', 'dp-grades', 'dp-tools']);
+    expect(order).toEqual(['dp-summary', 'dp-grades', 'dp-semesters', 'dp-tools']);
     await expect(page.locator('#dp-tools')).not.toHaveAttribute('open', '');
 
+    // GANO paneli artık yarıyıl listesinin üstünde ve ilk açılışta hazır gelir.
     const gpa = page.locator('#dp-grades');
-    await expect(gpa).not.toHaveAttribute('open', '');
-    await gpa.locator(':scope > summary').click();
     await expect(gpa).toHaveAttribute('open', '');
-    await page.locator('.dp-grade').first().selectOption('AA');
+    // Not seçici artık gizli native <select>'i süren özel bir açılır liste
+    // (cp-grade-trigger/cp-grade-menu); selectOption yerine tetikleyiciyi
+    // tıklayıp menüden seçim yapıyoruz. Menü açıkken sayfa kaydırılırsa
+    // (tasarım gereği) kapanıyor, bu yüzden tetikleyiciyi önce görünüme
+    // kaydırıp kaydırmanın oturmasını bekliyoruz — Playwright'ın kendi
+    // tıklama-öncesi otomatik kaydırması menüyü anında kapatmasın diye.
+    const gradeTrigger = page.locator('.cp-grade-trigger').first();
+    await gradeTrigger.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(200);
+    await gradeTrigger.click();
+    await page.locator('.cp-grade-menu [role="option"]', { hasText: 'AA' }).first().click();
     await expect(page.locator('#dp-grade-preview')).toContainText('GANO');
 
     const semester = page.locator('.dp-sem').first();
@@ -653,6 +662,8 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     await expect(page.locator('.dp-grade[data-gcode="CEN 335E"]')).toHaveValue('CB');
     await expect(page.locator('.dp-grade[data-gcode="CEN 335E"] + .cp-grade-trigger')).toContainText('CB');
     const visibleGrade = page.locator('.dp-grade[data-gcode="CEN 335E"] + .cp-grade-trigger');
+    await visibleGrade.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(200);
     await visibleGrade.click();
     await expect(page.locator('.cp-grade-menu')).toBeVisible();
     await page.keyboard.press('Escape');

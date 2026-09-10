@@ -62,15 +62,25 @@ export function CurriculumPlan({ html, empty, emptyMessage, ariaLabel }: Curricu
     const close = () => setMenu(null);
     window.addEventListener('pointerdown', dismiss);
     const anchored = window.matchMedia('(min-width: 561px)').matches;
-    if (anchored) window.addEventListener('scroll', close, true);
-    window.addEventListener('resize', close);
+    // Menü açılırken tetikleyiciyi görünüme getiren tarayıcı kaydırması
+    // (scroll-margin) henüz oturmamış olabilir; bunu "kullanıcı kaydırdı,
+    // menüyü kapat" sinyaliyle karıştırmamak için dinleyicileri bir sonraki
+    // kareye erteliyoruz.
+    let scrollBound = false;
+    let resizeBound = false;
+    const raf = requestAnimationFrame(() => {
+      if (anchored) { window.addEventListener('scroll', close, true); scrollBound = true; }
+      window.addEventListener('resize', close);
+      resizeBound = true;
+    });
     if (menu.keyboard) {
       requestAnimationFrame(() => menuRef.current?.querySelector<HTMLButtonElement>('[aria-selected="true"]')?.focus({ preventScroll: true }));
     }
     return () => {
+      cancelAnimationFrame(raf);
       window.removeEventListener('pointerdown', dismiss);
-      if (anchored) window.removeEventListener('scroll', close, true);
-      window.removeEventListener('resize', close);
+      if (scrollBound) window.removeEventListener('scroll', close, true);
+      if (resizeBound) window.removeEventListener('resize', close);
     };
   }, [menu]);
 
@@ -86,6 +96,7 @@ export function CurriculumPlan({ html, empty, emptyMessage, ariaLabel }: Curricu
     triggerRef.current?.setAttribute('aria-expanded', 'false');
     triggerRef.current = trigger;
     trigger.setAttribute('aria-expanded', 'true');
+    console.log('[dbg] setMenu called', index);
     setMenu({
       selectIndex: index,
       options: [...select.options].map((option) => ({ value: option.value, label: option.textContent || option.value })),

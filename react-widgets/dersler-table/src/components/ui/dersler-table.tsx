@@ -148,7 +148,7 @@ export function DerslerTable(props: DerslerTableProps) {
               <TableCell className="dt-p-2 dt-text-xs dt-text-muted-foreground">
                 {row.where ? sessions(row.where).map((line, i) => <div key={i}>{line}</div>) : '·'}
               </TableCell>
-              <TableCell className="dt-p-2 dt-text-right dt-tabular-nums" dangerouslySetInnerHTML={{ __html: row.quotaHTML }} />
+              <TableCell className="dt-p-2 dt-text-right dt-tabular-nums quota-main-col" dangerouslySetInnerHTML={{ __html: row.quotaHTML }} />
             </TableRow>
           ))}
         </TableBody>

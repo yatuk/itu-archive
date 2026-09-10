@@ -3681,7 +3681,10 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   display: flex; align-items: center; justify-content: space-between;
   gap: 12px; flex-wrap: wrap; margin: 12px 0 10px;
 }
-.resultbar .resultline { margin: 0; }
+.resultbar .resultline {
+  min-width: 0; flex: 1 1 250px; margin: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
 .result-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 .data-stale { color: var(--amber); }
 

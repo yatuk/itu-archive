@@ -1,7 +1,7 @@
 import { useState, type KeyboardEvent } from 'react';
-import { BookOpen, Building2, CalendarRange, ChevronDown, Clock3, ExternalLink, FileClock, GraduationCap, History, Layers3, LibraryBig, Plus, UserRound, UsersRound } from 'lucide-react';
+import { BookOpen, Building2, CalendarRange, ChevronDown, Clock3, ExternalLink, FileClock, GitBranch, GraduationCap, History, Layers3, LibraryBig, Plus, Route, UserRound, UsersRound } from 'lucide-react';
 
-export interface CourseDetailPanel { key: string; label: string; count?: number; html: string }
+export interface CourseDetailPanel { key: string; label: string; count?: number; html: string; beforeHtml?: string; afterHtml?: string }
 export interface CourseDetailSection {
   crn: string; instructors: string[]; quota: string; note?: string; meta?: string; sessions: string[];
   rules?: Array<{ label: string; value: string }>; focus?: boolean; special?: 'extra-exam' | 'graduation' | '';
@@ -27,12 +27,37 @@ export interface CourseDetailReaderProps {
   panels: CourseDetailPanel[];
   sections?: CourseDetailSection[];
   history?: CourseDetailHistory;
+  prerequisite?: { code: string; requiredLabel: string; unlocksLabel: string; loading: string };
   sectionHeading?: string;
   sectionCaption?: string;
   labels?: { add: string; requirements: string; showMore: string; showLess: string; extraExam: string; graduation: string };
   onAddCrn?: (crn: string) => void;
 }
 const icons = { overview: BookOpen, sections: Layers3, catalog: LibraryBig, history: History };
+
+function PrerequisiteTabs({ data }: { data: NonNullable<CourseDetailReaderProps['prerequisite']> }) {
+  const [active, setActive] = useState<'required' | 'unlocks'>('required');
+  const tabs = [
+    { key: 'required' as const, label: data.requiredLabel, icon: GitBranch },
+    { key: 'unlocks' as const, label: data.unlocksLabel, icon: Route },
+  ];
+  const activateFromKey = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+    setActive(tabs[next].key);
+    requestAnimationFrame(() => document.getElementById(`cdr-req-tab-${tabs[next].key}`)?.focus());
+  };
+  return <section className="cdr-prereq" aria-label={`${data.requiredLabel} / ${data.unlocksLabel}`}>
+    <nav className="cdr-prereq-tabs" role="tablist">
+      {tabs.map((tab, index) => { const Icon = tab.icon; return <button type="button" role="tab" id={`cdr-req-tab-${tab.key}`} aria-controls={`cdr-req-panel-${tab.key}`} aria-selected={active === tab.key} tabIndex={active === tab.key ? 0 : -1} onClick={() => setActive(tab.key)} onKeyDown={(event) => activateFromKey(event, index)} key={tab.key}><Icon aria-hidden="true" /><span>{tab.label}</span>{tab.key === 'unlocks' && <b data-req-count>…</b>}</button>; })}
+    </nav>
+    <div className="cdr-prereq-body">
+      <div role="tabpanel" id="cdr-req-panel-required" aria-labelledby="cdr-req-tab-required" hidden={active !== 'required'}><div className="d-req-fwd" data-code={data.code}><p className="empty">{data.loading}</p></div></div>
+      <div role="tabpanel" id="cdr-req-panel-unlocks" aria-labelledby="cdr-req-tab-unlocks" hidden={active !== 'unlocks'}><div className="d-req-by" data-code={data.code}><p className="empty">{data.loading}</p></div></div>
+    </div>
+  </section>;
+}
 
 function HistoryPanel({ history }: { history: CourseDetailHistory }) {
   const [showAll, setShowAll] = useState(false);
@@ -44,9 +69,10 @@ function HistoryPanel({ history }: { history: CourseDetailHistory }) {
   return <div className="cdr-history">
     <header className="cdr-history-head"><div><h4>{history.heading}</h4><p>{history.caption}</p></div><span><History aria-hidden="true" />{history.terms.length}</span></header>
     <figure className="cdr-history-figure">
+      <div className="cdr-history-legend"><span><i className="capacity" />{history.labels.capacity}</span><span><i className="enrolled" />{history.labels.enrolled}</span></div>
       <div className="cdr-history-chart" role="list" aria-label={history.heading}>
         {terms.map((term) => <button type="button" role="listitem" className={`cdr-history-term${active.slug === term.slug ? ' is-active' : ''}${term.fill >= 100 ? ' is-full' : ''}`} key={term.slug} onMouseEnter={() => setActiveSlug(term.slug)} onFocus={() => setActiveSlug(term.slug)} onClick={() => setActiveSlug(term.slug)} aria-label={`${term.label}, ${history.labels.capacity} ${term.capacity}, ${history.labels.enrolled} ${term.enrolled}, %${term.fill}`}>
-          <span className="cdr-history-bars" style={{ height: `${Math.max(10, Math.round(term.capacity / maxCapacity * 100))}%` }}><i style={{ transform: `scaleY(${Math.min(100, term.fill) / 100})` }} /></span>
+          <span className="cdr-history-bars"><i className="capacity" style={{ height: `${Math.max(7, Math.round(term.capacity / maxCapacity * 100))}%` }} /><i className="enrolled" style={{ height: `${Math.max(term.enrolled ? 7 : 0, Math.round(term.enrolled / maxCapacity * 100))}%` }} /></span>
           <small>{term.shortLabel}</small>
         </button>)}
       </div>
@@ -83,7 +109,11 @@ export function CourseDetailReader(props: CourseDetailReaderProps) {
     </nav>
     <div className="cdr-panels d-panels">
       {props.panels.map((panel) => <section key={panel.key} role="tabpanel" id={`d-panel-${panel.key}`} aria-labelledby={`d-tab-${panel.key}`} data-dpanel={panel.key} hidden={active !== panel.key}>
-        {panel.key === 'history' && props.history ? <HistoryPanel history={props.history} /> : panel.key === 'sections' && props.sections?.length ? <div className="cdr-sections">
+        {panel.key === 'history' && props.history ? <HistoryPanel history={props.history} /> : panel.key === 'overview' && props.prerequisite ? <div className="cdr-overview">
+          {panel.beforeHtml && <div dangerouslySetInnerHTML={{ __html: panel.beforeHtml }} />}
+          <PrerequisiteTabs data={props.prerequisite} />
+          {panel.afterHtml && <div dangerouslySetInnerHTML={{ __html: panel.afterHtml }} />}
+        </div> : panel.key === 'sections' && props.sections?.length ? <div className="cdr-sections">
           <header className="cdr-section-heading"><div><h4>{props.sectionHeading}</h4><p>{props.sectionCaption}</p></div><span>{props.sections.length}</span></header>
           <div className="cdr-section-list">
             {props.sections.slice(0, allSections ? undefined : 8).map((section) => <article className={`cdr-section${section.focus ? ' is-focus' : ''}`} key={section.crn} data-crn={section.crn}>

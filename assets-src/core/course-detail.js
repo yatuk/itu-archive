@@ -90,11 +90,15 @@ async function loadReqBy(sec) {
   const code = sec.dataset.code;
   const reverse = await getJSON('data/prereq/reverse.json').catch(() => null);
   if (!reverse || !reverse[code]) {
-    (sec.closest('.d-relation-more') || sec).hidden = true;
+    const reactWrap = sec.closest('.cdr-prereq');
+    const count = reactWrap?.querySelector('[data-req-count]');
+    if (count) count.textContent = '0';
+    if (reactWrap) sec.innerHTML = '<p class="empty">—</p>';
+    else (sec.closest('.d-relation-more') || sec).hidden = true;
     return;
   }
   const reqs = reverse[code];
-  const count = sec.closest('.d-relation-more')?.querySelector('[data-req-count]');
+  const count = (sec.closest('.cdr-prereq') || sec.closest('.d-relation-more'))?.querySelector('[data-req-count]');
   if (count) count.textContent = String(reqs.length);
   sec.innerHTML = `<div class="d-req-list">${reqs.map((r) => `<button type="button" class="d-req" data-code="${esc(r)}">${esc(r)}</button>`).join('')}</div>`;
   sec.querySelectorAll('.d-req').forEach((b) => b.addEventListener('click', () => {
@@ -225,26 +229,32 @@ function programsHtml(programs, hasTermData) {
   </details>`;
 }
 
-function overviewHtml({ code, term, secs, cat, gr, hist, programs }) {
+function overviewParts({ term, secs, cat, gr, hist, programs }) {
   const termCount = new Set((hist?.rows || []).map((r) => r[0])).size;
   const hrs = secs.length ? sessionHours(secs[0].times) : 0;
   const credits = cat?.credits || {};
   const creditText = credits.local != null
     ? `${trNum(credits.local)} ${I18N.t('planCreditsFull')}${credits.ects ? ` · ${trNum(credits.ects)} ${I18N.t('progECTSWord')}` : ''}`
     : I18N.t('cdNoCatalogInfo');
-  return `<div class="d-overview-stats">
+  const beforeHtml = `<div class="d-overview-stats">
       <div><span>${I18N.t('cdThisTerm')}</span><b>${secs.length ? `${secs.length} ${I18N.t('prgSube')}` : I18N.t('cdNotOffered')}</b><small>${esc(termLabel(term))}${hrs ? ` · ${weeklyHoursLabel(hrs)}` : ''}</small></div>
       <div><span>${I18N.t('planCreditsFull')}</span><b>${esc(creditText)}</b><small>${esc(cat?.language || I18N.t('cdNoLangInfo'))}</small></div>
       <div><span>${I18N.t('cdArchive')}</span><b>${termCount ? `${termCount} ${I18N.lang === 'en' ? 'terms' : 'dönem'}` : I18N.t('cdNoRecords')}</b><small>${termCount ? I18N.t('cdPastOfferings') : I18N.t('cdNoTermData')}</small></div>
-    </div>
+    </div>`;
+  const afterHtml = `${gradesHtml(gr)}${programsHtml(programs, secs.length > 0)}`;
+  return { beforeHtml, afterHtml };
+}
+
+function overviewHtml(data) {
+  const { beforeHtml, afterHtml } = overviewParts(data);
+  const { code } = data;
+  return `${beforeHtml}
     <div class="d-overview-relations">
       <section class="d-relation"><h4>${I18N.t('detailPrereq')}</h4><div class="d-req-fwd" data-code="${esc(code)}"><p class="empty">${I18N.t('statLoading')}</p></div></section>
       <details class="d-relation d-relation-more"><summary>${I18N.t('cdReverseReqSummary')} <span data-req-count>…</span></summary>
         <div class="d-req-by" data-code="${esc(code)}"><p class="empty">${I18N.t('statLoading')}</p></div>
       </details>
-    </div>
-    ${gradesHtml(gr)}
-    ${programsHtml(programs, secs.length > 0)}`;
+    </div>${afterHtml}`;
 }
 
 function detailShell({ code, name, branch, level, method, obsLink, term, secs, cat, gr, hist, programs, buildings, crn }) {
@@ -320,6 +330,7 @@ function detailReactProps({ code, name, branch, level, method, obsLink, term, se
     return { slug, label: termLabel(slug), shortLabel: `${year} ${seasons[season] || season}`, season, capacity, enrolled, fill: capacity ? Math.round(enrolled / capacity * 100) : 0, rows };
   });
   const openedSeasons = [...new Set(historyTerms.map((item) => seasons[item.season] || item.season))];
+  const overview = overviewParts({ term, secs, cat, gr, hist, programs });
   return {
     code,
     name: name || code,
@@ -329,6 +340,9 @@ function detailReactProps({ code, name, branch, level, method, obsLink, term, se
     obsLink,
     obsLabel: I18N.t('cdObsCatalog'),
     tabLabel: I18N.t('cdSectionsAriaLabel'),
+    prerequisite: {
+      code, requiredLabel: I18N.t('detailPrereq'), unlocksLabel: I18N.t('cdReverseReqSummary'), loading: I18N.t('statLoading'),
+    },
     active,
     sections: sectionRows,
     history: {
@@ -350,7 +364,7 @@ function detailReactProps({ code, name, branch, level, method, obsLink, term, se
       extraExam: I18N.t('courseExtraExamBadge'), graduation: I18N.t('courseGraduationBadge'),
     },
     panels: [
-      { key: 'overview', label: I18N.t('cdTabOverview'), html: overviewHtml({ code, term, secs, cat, gr, hist, programs }) },
+      { key: 'overview', label: I18N.t('cdTabOverview'), html: '', beforeHtml: overview.beforeHtml, afterHtml: overview.afterHtml },
       { key: 'sections', label: I18N.t('cdTabSections'), count: secs.length, html: secs.length
         ? `<section class="d-secs"><div class="d-section-head"><div><h4>${I18N.t('cdSectionsThisTerm')}</h4><p>${esc(termLabel(term))} · ${secs.length} ${I18N.t('prgSube')}</p></div></div>${renderSecList(secs, buildings, crn)}</section>`
         : `<p class="empty">${I18N.lang === 'en' ? `This course is not offered in <b>${esc(termLabel(term))}</b>.` : `Bu ders <b>${esc(termLabel(term))}</b> döneminde açık değil.`}</p>` },

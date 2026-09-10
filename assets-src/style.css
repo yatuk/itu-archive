@@ -1405,6 +1405,14 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 .prose pre .host { color: var(--acid); }
 .prose pre .var { color: var(--amber); }
 
+/* Google tercih edilen kaynak rozeti yerel çizilir; üçüncü taraf CSS ilk boyamayı bloklamaz. */
+.ksr-kap { display: inline-flex; margin-top: 18px; }
+.ksr-google { display: inline-flex; min-height: 44px; align-items: center; gap: 10px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--fg); background: var(--panel); font: 650 11px/1.25 var(--sans); text-decoration: none; box-shadow: 0 3px 12px color-mix(in srgb,var(--bg) 12%,transparent); }
+.ksr-google:hover,.ksr-google:focus-visible { border-color: var(--cyan); color: var(--fg); background: var(--panel-2); }
+.ksr-gg { display: grid; width: 25px; height: 25px; flex: 0 0 auto; place-items: center; border-radius: 50%; background: conic-gradient(from -35deg,#4285f4 0 25%,#34a853 0 43%,#fbbc05 0 68%,#ea4335 0 83%,#4285f4 0); }
+.ksr-gg::after { display: grid; width: 17px; height: 17px; place-items: center; border-radius: 50%; color: #4285f4; background: var(--panel); content: 'G'; font: 800 11px/1 Arial,sans-serif; }
+.ksr-g-metin { display: block; }
+
 a { color: var(--cyan); }
 a:hover { color: var(--acid); }
 

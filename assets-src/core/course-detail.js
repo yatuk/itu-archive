@@ -661,13 +661,22 @@ export function gradeMode(grades, total) {
 function gradesHtml(gr) {
   if (!gr || !gr.length) return '';
   const total = gr[0].total;
+  // Çubuk rengi not aralığına göre: ≥CC+ geçer (acid), DD/DC bandı sınırda
+  // (amber), FF/VF kalır (red) — düz tek renk yerine anlamlı kademelendirme.
+  const gradeTier = (g) => {
+    const i = GRADE_ORDER.indexOf(g);
+    if (i < 0) return '';
+    if (i < 8) return 'is-pass';
+    if (i < 13) return 'is-borderline';
+    return 'is-fail';
+  };
   const gradeBars = (term) => {
     const max = Math.max(...Object.values(term.grades), 1);
     const order = GRADE_ORDER.filter((g) => term.grades[g]);
     return `<div class="d-grade-bars">${order.map((g) => `
       <div class="d-grade" title="${esc(g)} · ${term.grades[g]} ${I18N.t('cdPeopleCount')}">
         <span class="d-grade-l">${esc(g)}</span>
-        <span class="d-grade-bar"><i style="width:${Math.round((term.grades[g] / max) * 100)}%"></i></span>
+        <span class="d-grade-bar"><i class="${gradeTier(g)}" style="width:${Math.round((term.grades[g] / max) * 100)}%"></i></span>
         <span class="d-grade-n">${term.grades[g]}</span>
       </div>`).join('')}</div>`;
   };

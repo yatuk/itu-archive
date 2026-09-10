@@ -511,6 +511,7 @@ function renderList(items) {
       copyCode: en ? 'Copy course code' : 'Ders kodunu kopyala',
       copyInstructor: en ? 'Copy instructor' : 'Öğretim üyesini kopyala', openObs: I18N.t('prgMenuObs'),
       remove: I18N.t('prgMenuRemove'), actions: en ? 'actions' : 'işlemleri',
+      open: I18N.t('pgOpenBadge'), full: en ? 'full' : 'dolu',
     },
     onOpen: (key) => { const found = byKey.get(key); if (found) openDetail(found.row, term); },
     onCopy: (key, field) => {

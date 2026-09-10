@@ -85,8 +85,8 @@ export function trendChart(byTerm, limit = 8, { lang } = {}) {
     const label = `${y2} ${seasonFull[season] || ''}`.trim();
     bars += `
       <g class="t-bar" tabindex="0" data-caption="${esc(termLabel(a.slug))} · ${english ? 'capacity' : 'kontenjan'} ${a.cap} · ${english ? 'enrolled' : 'yazılan'} ${a.enr} · %${a.cap ? Math.round((a.enr / a.cap) * 100) : 0}">
-        <rect x="${x}" y="${yBase - capH}" width="${barW}" height="${capH}" fill="var(--chart-cap)" stroke="var(--chart-cap-edge)"/>
-        <rect x="${x}" y="${yBase - enrH}" width="${barW}" height="${enrH}" fill="${full ? 'var(--red)' : 'var(--acid)'}"/>
+        <rect x="${x}" y="${yBase - capH}" width="${barW}" height="${capH}" rx="3" fill="var(--chart-cap)" stroke="var(--chart-cap-edge)"/>
+        <rect x="${x}" y="${yBase - enrH}" width="${barW}" height="${enrH}" rx="3" fill="${full ? 'var(--red)' : 'var(--acid)'}"/>
         ${season === 'yaz' ? `<line x1="${x}" y1="${H - 2}" x2="${x + barW}" y2="${H - 2}" stroke="var(--amber)"/>` : ''}
         <text x="${x + barW / 2}" y="${H - 3}" text-anchor="middle" font-size="9" fill="var(--chart-axis)">${esc(label)}</text>
       </g>`;

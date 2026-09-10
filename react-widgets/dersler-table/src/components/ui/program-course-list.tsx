@@ -17,7 +17,7 @@ export interface ProgramCourseItem {
 
 export interface ProgramCourseListProps {
   items: ProgramCourseItem[];
-  labels: { empty: string; course: string; quota: string; details: string; copyCrn: string; copyCode: string; copyInstructor: string; openObs: string; remove: string; actions: string };
+  labels: { empty: string; course: string; quota: string; details: string; copyCrn: string; copyCode: string; copyInstructor: string; openObs: string; remove: string; actions: string; open: string; full: string };
   onOpen: (key: string) => void;
   onCopy: (key: string, field: 'crn' | 'code' | 'instructor') => void;
   onOpenObs: (key: string) => void;
@@ -51,11 +51,15 @@ export function ProgramCourseList({ items, labels, onOpen, onCopy, onOpenObs, on
     >
       <GripVertical className="pcl-grip" aria-hidden="true" />
       <div className="pcl-course" role="cell">
-        <div className="pcl-title"><strong className="p-code">{item.code}</strong>{item.badge && <span>{item.badge}</span>}</div>
+        <div className="pcl-title">
+          <strong className="p-code">{item.code}</strong>
+          <span className={`pcl-status${item.full ? ' is-full' : ' is-open'}`}>{item.full ? labels.full : labels.open}</span>
+          {item.badge && <span className="pcl-kind-badge">{item.badge}</span>}
+        </div>
         <p>{item.name}</p>
         <div className="pcl-meta">
           <span className="p-when"><Clock3 aria-hidden="true" />{item.when}</span>
-          <span><UserRound aria-hidden="true" />{item.instructor}</span>
+          <span className="pcl-instructor"><span className="pcl-avatar"><UserRound aria-hidden="true" /></span>{item.instructor}</span>
         </div>
         {item.credit && <small>{item.credit}</small>}
       </div>

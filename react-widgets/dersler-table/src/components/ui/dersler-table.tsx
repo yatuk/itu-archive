@@ -69,7 +69,7 @@ function SortButton({
 }) {
   const Icon = !active ? ArrowUpDown : dir === 1 ? ArrowUp : ArrowDown;
   return (
-    <Button variant="ghost" size="sm" onClick={onClick} className="dt--ml-3">
+    <Button variant="ghost" size="sm" onClick={onClick} className="th-sort dt--ml-3">
       {label}
       <Icon className={`dt-ml-1.5 dt-inline dt-size-3.5${active ? '' : ' dt-opacity-40'}`} />
     </Button>
@@ -88,7 +88,7 @@ export function DerslerTable(props: DerslerTableProps) {
   );
 
   return (
-    <div className="dersler-table-root dt-overflow-hidden dt-rounded-lg dt-border dt-border-border">
+    <div id="results" className="dersler-table-root dt-overflow-hidden dt-rounded-lg dt-border dt-border-border">
       <Table aria-label={ariaLabel}>
         <TableHeader>
           <TableRow>
@@ -102,16 +102,16 @@ export function DerslerTable(props: DerslerTableProps) {
               />
             </TableHead>
             <TableHead className="dt-h-9 dt-w-8 dt-p-2" />
-            <TableHead className="dt-h-9 dt-p-2">{sortCol('crn', labels.crn)}</TableHead>
-            <TableHead className="dt-h-9 dt-p-2">{sortCol('code', labels.code)}</TableHead>
-            <TableHead className="dt-h-9 dt-p-2">{sortCol('name', labels.name)}</TableHead>
-            <TableHead className="dt-h-9 dt-p-2">{sortCol('instructor', labels.instructor)}</TableHead>
-            <TableHead className="dt-h-9 dt-p-2">{sortCol('when', labels.when)}</TableHead>
+            <TableHead className="dt-h-9 dt-p-2" data-sort="crn" aria-sort={sortKey === 'crn' ? (sortDir === 1 ? 'ascending' : 'descending') : 'none'}>{sortCol('crn', labels.crn)}</TableHead>
+            <TableHead className="dt-h-9 dt-p-2" data-sort="code" aria-sort={sortKey === 'code' ? (sortDir === 1 ? 'ascending' : 'descending') : 'none'}>{sortCol('code', labels.code)}</TableHead>
+            <TableHead className="dt-h-9 dt-p-2" data-sort="name" aria-sort={sortKey === 'name' ? (sortDir === 1 ? 'ascending' : 'descending') : 'none'}>{sortCol('name', labels.name)}</TableHead>
+            <TableHead className="dt-h-9 dt-p-2" data-sort="instructor" aria-sort={sortKey === 'instructor' ? (sortDir === 1 ? 'ascending' : 'descending') : 'none'}>{sortCol('instructor', labels.instructor)}</TableHead>
+            <TableHead className="dt-h-9 dt-p-2" data-sort="when" aria-sort={sortKey === 'when' ? (sortDir === 1 ? 'ascending' : 'descending') : 'none'}>{sortCol('when', labels.when)}</TableHead>
             <TableHead className="dt-h-9 dt-p-2">{labels.where}</TableHead>
-            <TableHead className="dt-h-9 dt-p-2 dt-text-right">{sortCol('fill', labels.fill)}</TableHead>
+            <TableHead className="dt-h-9 dt-p-2 dt-text-right" data-sort="fill" aria-sort={sortKey === 'fill' ? (sortDir === 1 ? 'ascending' : 'descending') : 'none'}>{sortCol('fill', labels.fill)}</TableHead>
           </TableRow>
         </TableHeader>
-        <TableBody>
+        <TableBody id="rows">
           {rows.map((row) => (
             <TableRow key={row.key} className="dt-cursor-pointer" onClick={() => onRowClick(row.key)}>
               <TableCell className="dt-p-2" onClick={(e) => e.stopPropagation()}>

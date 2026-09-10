@@ -79,9 +79,9 @@ function HistoryPanel({ history }: { history: CourseDetailHistory }) {
       <figcaption className="cdr-history-caption"><span><CalendarRange aria-hidden="true" /><b>{active.label}</b></span><span>{history.labels.capacity} <b>{active.capacity}</b></span><span>{history.labels.enrolled} <b>{active.enrolled}</b></span><strong>%{active.fill}</strong></figcaption>
       {history.terms.length > 8 && <button type="button" className="cdr-history-toggle" aria-expanded={showAll} onClick={() => setShowAll(!showAll)}>{showAll ? history.labels.showRecent : history.labels.showAll}</button>}
     </figure>
-    <details className="cdr-history-records">
+    <details className="cdr-history-records d-history-records">
       <summary><span><UsersRound aria-hidden="true" />{history.labels.records}</span><b>{history.recordCount}</b><ChevronDown aria-hidden="true" /></summary>
-      <div className="cdr-history-record-list">{[...history.terms].reverse().map((term) => <section key={term.slug}>
+      <div className="cdr-history-record-list htable">{[...history.terms].reverse().map((term) => <section key={term.slug}>
         <header><strong>{term.label}</strong><span>{term.enrolled} / {term.capacity} · %{term.fill}</span></header>
         {term.rows.map((row, index) => <div className="cdr-history-record" key={`${term.slug}-${row.instructor}-${index}`}><span>{row.instructor || '·'}</span><small>{history.labels.enrolled} {row.enrolled} · {history.labels.capacity} {row.capacity}</small><b>%{row.fill}</b></div>)}
       </section>)}</div>
@@ -99,7 +99,7 @@ export function CourseDetailReader(props: CourseDetailReaderProps) {
     setActive(props.panels[next].key);
     requestAnimationFrame(() => document.getElementById(`d-tab-${props.panels[next].key}`)?.focus());
   };
-  return <div className="cdr-root">
+  return <div className="cdr-root course-reader">
     <header className="cdr-head d-head">
       <div className="cdr-title d-title-block"><h3 id="detail-title"><span className="d-code">{props.code}</span><span className="d-name">{props.name}</span></h3><div className="d-meta">{props.meta.map((value) => <span className="d-pill" key={value}>{value}</span>)}{props.specialKind && <span className={`cdr-kind ${props.specialKind}`}>{props.specialKind === 'extra-exam' ? <FileClock aria-hidden="true" /> : <GraduationCap aria-hidden="true" />}{props.specialLabel}</span>}</div></div>
       {props.obsLink && <a className="cdr-obs d-obs" href={props.obsLink} target="_blank" rel="noopener"><ExternalLink aria-hidden="true" />{props.obsLabel}</a>}
@@ -116,12 +116,12 @@ export function CourseDetailReader(props: CourseDetailReaderProps) {
         </div> : panel.key === 'sections' && props.sections?.length ? <div className="cdr-sections">
           <header className="cdr-section-heading"><div><h4>{props.sectionHeading}</h4><p>{props.sectionCaption}</p></div><span>{props.sections.length}</span></header>
           <div className="cdr-section-list">
-            {props.sections.slice(0, allSections ? undefined : 8).map((section) => <article className={`cdr-section${section.focus ? ' is-focus' : ''}`} key={section.crn} data-crn={section.crn}>
+            {props.sections.slice(0, allSections ? undefined : 8).map((section) => <article className={`cdr-section d-sec${section.focus ? ' is-focus' : ''}`} key={section.crn} data-crn={section.crn}>
               <div className="cdr-section-code"><span>CRN</span><strong>{section.crn}</strong></div>
               <div className="cdr-section-body">
                 <div className="cdr-section-top"><button type="button" className="cdr-instructor d-instr-history" data-name={section.instructors.join(', ')}><UserRound aria-hidden="true" />{section.instructors.join(', ') || '·'}</button><span>{section.quota}</span></div>
                 {section.meta && <p className="cdr-section-meta">{section.special === 'extra-exam' ? <FileClock aria-hidden="true" /> : section.special === 'graduation' ? <GraduationCap aria-hidden="true" /> : <Building2 aria-hidden="true" />}{section.meta}</p>}
-                {!!section.sessions.length && <div className="cdr-section-times">{section.sessions.map((line) => <span key={line}><Clock3 aria-hidden="true" />{line}</span>)}</div>}
+                {!!section.sessions.length && <div className="cdr-section-times d-sec-when">{section.sessions.map((line) => <span key={line}><Clock3 aria-hidden="true" />{line}</span>)}</div>}
                 {section.note && <small>{section.note}</small>}
                 {!!section.rules?.length && <details className="cdr-rules"><summary>{props.labels?.requirements}<ChevronDown aria-hidden="true" /></summary>{section.rules.map((rule) => <p key={rule.label}><b>{rule.label}</b>{rule.value}</p>)}</details>}
               </div>

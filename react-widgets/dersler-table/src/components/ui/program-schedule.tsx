@@ -125,9 +125,9 @@ function Agenda({ props, visibleDays }: { props: ProgramScheduleProps; visibleDa
   const sessions = placeSessions(props.sessions.filter((session) => session.day === day));
   return (
     <div className="pp-agenda">
-      <div className="pp-day-tabs" role="tablist" aria-label={props.labels.title} style={{ '--pp-days': visibleDays.length } as CSSProperties}>
+      <div className="pp-day-tabs tt-daytabs" role="tablist" aria-label={props.labels.title} style={{ '--pp-days': visibleDays.length } as CSSProperties}>
         {visibleDays.map((index) => (
-          <button key={index} type="button" role="tab" aria-selected={day === index} className={day === index ? 'is-active' : ''} onClick={() => setDay(index)}>
+          <button key={index} type="button" role="tab" aria-selected={day === index} className={day === index ? 'is-active active tt-daytab' : 'tt-daytab'} onClick={() => setDay(index)}>
             {props.dayLabels[index]}
             {props.sessions.some((session) => session.day === index) && <span aria-hidden="true" />}
           </button>
@@ -138,7 +138,7 @@ function Agenda({ props, visibleDays }: { props: ProgramScheduleProps; visibleDa
           <button
             key={session.key}
             type="button"
-            className={`pp-agenda-card${session.conflict ? ' is-conflict' : ''}`}
+            className={`pp-agenda-card p-agenda-session${session.conflict ? ' is-conflict' : ''}`}
             style={{ '--pp-color': session.color } as CSSProperties}
             onClick={() => props.onOpen(session.rowKey)}
           >
@@ -239,7 +239,7 @@ export function ProgramSchedule(props: ProgramScheduleProps) {
                         <button
                           key={session.key}
                           type="button"
-                          className={`pp-session${short ? ' is-short' : ''}${session.conflict ? ' is-conflict' : ''}`}
+                          className={`pp-session tt-block${short ? ' is-short' : ''}${session.conflict ? ' is-conflict' : ''}`}
                           style={{
                             top,
                             height: blockHeight,

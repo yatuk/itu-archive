@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=9dbaeb11b05e">
+<link rel="stylesheet" href="assets/style.css?v=432c2ceeba4d">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -665,7 +665,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=9dbaeb11b05e"></script>
+<script type="module" src="assets/app.js?v=432c2ceeba4d"></script>
 <script>
 (function () {
   var root = document.documentElement;
@@ -673,6 +673,11 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
   var retry = document.getElementById('app-retry');
   var status = document.getElementById('stat-status');
   var rows = document.getElementById('rows');
+  var tableMount = document.getElementById('dersler-table-mount');
+  if (!rows && tableMount) {
+    tableMount.innerHTML = '<div id="rows" role="status"></div>';
+    rows = document.getElementById('rows');
+  }
   var moduleScript = document.querySelector('script[type="module"][src*="assets/app.js"]');
   var release = 'bilinmiyor';
   try { release = new URL(moduleScript.src, location.href).searchParams.get('v') || release; } catch (e) {}
@@ -698,9 +703,10 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
       status.className = 'error';
     }
     if (rows && !rows.querySelector('tr:not(.skel-row)')) {
-      rows.innerHTML = '<tr><td colspan="11" class="empty error">' +
-        (english ? 'Course data could not be loaded. Use “Try again” above.' : 'Ders verileri yüklenemedi. Yukarıdaki “Yeniden dene” düğmesini kullan.') +
-        '</td></tr>';
+      var errorText = english ? 'Course data could not be loaded. Use “Try again” above.' : 'Ders verileri yüklenemedi. Yukarıdaki “Yeniden dene” düğmesini kullan.';
+      rows.innerHTML = rows.tagName === 'TBODY'
+        ? '<tr><td colspan="11" class="empty error">' + errorText + '</td></tr>'
+        : '<p class="empty error">' + errorText + '</p>';
     }
     panel.dataset.failureKind = kind || 'unknown';
     panel.scrollIntoView({ block: 'nearest' });

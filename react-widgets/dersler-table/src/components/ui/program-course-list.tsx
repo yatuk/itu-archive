@@ -28,17 +28,24 @@ export interface ProgramCourseListProps {
 export function ProgramCourseList({ items, labels, onOpen, onCopy, onOpenObs, onRemove, onReorder }: ProgramCourseListProps) {
   const [menu, setMenu] = useState<string | null>(null);
   const [drag, setDrag] = useState<number | null>(null);
+  const [dragOver, setDragOver] = useState<number | null>(null);
   if (!items.length) return <div className="pcl-empty empty"><BookOpen aria-hidden="true" /><strong>{labels.empty}</strong></div>;
-  const drop = (event: DragEvent, to: number) => { event.preventDefault(); if (drag !== null && drag !== to) onReorder(drag, to); setDrag(null); };
+  const drop = (event: DragEvent, to: number) => {
+    event.preventDefault();
+    if (drag !== null && drag !== to) onReorder(drag, to);
+    setDrag(null);
+    setDragOver(null);
+  };
   return <div className="pcl-list" role="table" onKeyDown={(event) => { if (event.key === 'Escape') setMenu(null); }}>
     <div className="pcl-head p-list-head" role="row"><span role="columnheader">{labels.course}</span><span role="columnheader">{labels.quota}</span></div>
     {items.map((item, index) => <article
       key={item.key}
-      className={`pcl-item p-item${item.full ? ' is-full' : ''}`}
+      className={`pcl-item p-item${item.full ? ' is-full' : ''}${drag === index ? ' is-dragging' : ''}${dragOver === index && drag !== null && drag !== index ? ' is-drop-target' : ''}`}
       role="row"
       draggable
       onDragStart={() => setDrag(index)}
-      onDragOver={(event) => event.preventDefault()}
+      onDragOver={(event) => { event.preventDefault(); if (dragOver !== index) setDragOver(index); }}
+      onDragEnd={() => { setDrag(null); setDragOver(null); }}
       onDrop={(event) => drop(event, index)}
       onClick={(event) => { if (!(event.target as HTMLElement).closest('button')) onOpen(item.key); }}
     >

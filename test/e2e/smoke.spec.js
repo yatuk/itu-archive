@@ -791,7 +791,12 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     await page.goto('/?prog=CEN_LS#onsart');
     await expect.poll(() => page.url(), { timeout: 8000 }).toContain('prog=CEN_LS');
     await page.waitForTimeout(1000); // gecikmeli boot çağrıları (loadQuota vb.) için ek bekleme
-    expect(page.url()).toContain('prog=CEN_LS');
+    // page.url() Playwright tarafında frame durumundan okunur; tam paket
+    // yüklüyken (CDP olayları gecikince) history.replaceState'ten hemen sonraki
+    // TEK seferlik bir okuma bayat değer dönebiliyor — location.href birkaç
+    // milisaniye sonra doğruyu gösteriyor. Bu yüzden burada da poll kullanılır
+    // (yalnızca `first-visit` case'inde .not.toBe('') beklemek yetmiyordu).
+    await expect.poll(() => page.url(), { timeout: 8000 }).toContain('prog=CEN_LS');
 
     // İlk ziyaret (URL'de ?prog= yok, hatırlanan tercih yok): program otomatik
     // ilk seçeneğe düşer ve bu seçim URL'e yansır (Ders Planım'daki fakülte→
@@ -801,7 +806,10 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
       async () => page.locator('.pg-program-select').inputValue(),
       { timeout: 8000 }
     ).not.toBe('');
-    expect(page.url()).toContain('prog=');
+    // Yukarıdaki gibi: history.replaceState hemen sonra çalışsa da Playwright'ın
+    // page.url() önbelleği tam paket yüklüyken birkaç milisaniye geride kalabilir
+    // — tek seferlik expect() yerine poll ile doğru değeri bekle.
+    await expect.poll(() => page.url(), { timeout: 8000 }).toContain('prog=');
   });
 
   test('Önşart: fakülte seçicisi dolar, bölüm listesi gruplu değil', async ({ page }) => {

@@ -77,6 +77,9 @@ export function onShow() {
 }
 
 export async function loadCalendar(yearId, type) {
+  // React kökü kurulmuşsa önce sök — aksi halde innerHTML doğrudan React'in
+  // yönettiği DOM'u ezip fiber ağacını bozar.
+  calendarModule?.unmountCalendarTimeline();
   $('#calendar').innerHTML = `<p class="empty">${esc(I18N.t('statLoading'))}</p>`;
   try {
     // Tür seçildiyse türe özgü dosya (slug yol-güvenli); yoksa birleşik (geriye uyumlu).
@@ -85,16 +88,30 @@ export async function loadCalendar(yearId, type) {
       : `data/calendar/${yearId}.json`;
     state.calendar = await getJSON(path);
   } catch (e) {
+    calendarModule?.unmountCalendarTimeline();
     $('#calendar').innerHTML = `<p class="empty error">${esc(I18N.t('calLoadError'))} (${esc(e.message)})</p>`;
     return;
   }
   renderCalendar();
 }
 
-function renderCalendar() {
+let calendarModule = null;
+let calendarModulePromise = null;
+function loadCalendarWidget() {
+  if (!calendarModulePromise) {
+    calendarModulePromise = import('../react/dersler-table.js').then((mod) => {
+      calendarModule = mod;
+      return mod;
+    });
+  }
+  return calendarModulePromise;
+}
+
+async function renderCalendar() {
   const cal = state.calendar;
   if (!cal) return;
   const upcomingOnly = $('#f-upcoming').checked;
+  const container = $('#calendar');
 
   const groups = new Map();
   for (const ev of cal.events) {
@@ -104,26 +121,30 @@ function renderCalendar() {
     if (upcomingOnly && st.past) continue;
     if (!groups.has(ev.table)) groups.set(ev.table, []);
     // Etiket canlı hesaptan; tarih çözümlenemediyse kazıyıcının etiketine düş.
-    groups.get(ev.table).push({ ...ev, past: st.past, now: st.now, left: st.label || ev.remaining });
+    groups.get(ev.table).push({
+      key: `${ev.table}|${ev.title}|${ev.date}`,
+      title: ev.title,
+      date: ev.date,
+      left: st.label || ev.remaining,
+      state: st.now ? 'now' : st.past ? 'past' : 'upcoming',
+    });
   }
 
   if (!groups.size) {
-    $('#calendar').innerHTML = `<p class="empty">${esc(I18N.t('calNoUpcomingEvents'))}` +
+    // React kökü daha önce kurulduysa önce onu söküp öyle innerHTML yazılmalı
+    // — aksi halde React'in yönettiği DOM'u elle silmek fiber ağacını bozar
+    // (bkz. ders ayrıntısı panelindeki aynı sınıf hata, bu oturumda düzeltildi).
+    calendarModule?.unmountCalendarTimeline();
+    container.innerHTML = `<p class="empty">${esc(I18N.t('calNoUpcomingEvents'))}` +
       (cal.scrapedAt ? ` · ${esc(I18N.t('statScraped'))} ${fmtDate(cal.scrapedAt)}` : '') + '</p>';
     return;
   }
 
-  let html = '';
-  for (const [title, evs] of groups) {
-    html += `<section class="calgroup reveal"><h3>${esc(title)}</h3><ol>` +
-      evs.map((e) => `<li class="${e.now ? 'now' : e.past ? 'past' : ''}">
-        <span>${esc(e.title)}</span>
-        <span class="date">${esc(e.date)}</span>
-        <span class="left">${esc(e.left)}</span></li>`).join('') +
-      '</ol></section>';
-  }
-  $('#calendar').innerHTML = html;
-  initReveal($('#calendar'));
+  const mod = await loadCalendarWidget();
+  mod.mountCalendarTimeline(container, {
+    groups: [...groups].map(([title, events]) => ({ key: title, title, events })),
+  });
+  initReveal(container);
 }
 
 // Akademik takvimi .ics olarak dışa aktarır (Faz 4.5). Scraper'ın ISO

@@ -10,6 +10,8 @@ import { ProgramCourseList, type ProgramCourseListProps } from '@/components/ui/
 import { CourseDetailReader, type CourseDetailReaderProps } from '@/components/ui/course-detail-reader';
 import { GpaSummary, type GpaSummaryProps } from '@/components/ui/gpa-summary';
 import { FilterChips, type FilterChipsProps } from '@/components/ui/filter-chips';
+import { TermsGrid, type TermsGridProps } from '@/components/ui/terms-grid';
+import { CalendarTimeline, type CalendarTimelineProps } from '@/components/ui/calendar-timeline';
 // `?inline` ile CSS, ayrı bir .css dosyası yerine bu JS bundle'ının içine
 // string olarak gömülür — courses.js'in docs/index.html'e ayrı bir <link>
 // eklemesine gerek kalmaz ve önbellek kırma (?v=) JS import'unun kendi
@@ -28,6 +30,8 @@ let programListRoot: Root | null = null;
 let courseDetailRoot: Root | null = null;
 let gpaSummaryRoot: Root | null = null;
 let chipsRoot: Root | null = null;
+let termsRoot: Root | null = null;
+let calendarRoot: Root | null = null;
 let styleTag: HTMLStyleElement | null = null;
 
 function ensureStyles(): void {
@@ -136,6 +140,22 @@ export function mountChips(container: HTMLElement, props: FilterChipsProps): voi
 }
 export function unmountChips(): void { chipsRoot?.unmount(); chipsRoot = null; }
 
+// flushSync: initReveal() (core/reveal.js) mount'tan hemen sonra çağrılır ve
+// .reveal elemanlarını senkron biçimde DOM'da bulmayı bekler.
+export function mountTermsGrid(container: HTMLElement, props: TermsGridProps): void {
+  ensureStyles();
+  if (!termsRoot) termsRoot = createRoot(container);
+  flushSync(() => termsRoot?.render(<TermsGrid {...props} />));
+}
+export function unmountTermsGrid(): void { termsRoot?.unmount(); termsRoot = null; }
+
+export function mountCalendarTimeline(container: HTMLElement, props: CalendarTimelineProps): void {
+  ensureStyles();
+  if (!calendarRoot) calendarRoot = createRoot(container);
+  flushSync(() => calendarRoot?.render(<CalendarTimeline {...props} />));
+}
+export function unmountCalendarTimeline(): void { calendarRoot?.unmount(); calendarRoot = null; }
+
 export type { DerslerTableProps, DerslerRow, SortKey, SortDir } from '@/components/ui/dersler-table';
 export type { ProgramScheduleProps, ProgramSession, UntimedCourse } from '@/components/ui/program-schedule';
 export type { CurriculumPlanProps } from '@/components/ui/curriculum-plan';
@@ -144,3 +164,5 @@ export type { ProgramCourseListProps, ProgramCourseItem } from '@/components/ui/
 export type { CourseDetailReaderProps, CourseDetailPanel } from '@/components/ui/course-detail-reader';
 export type { GpaSummaryProps } from '@/components/ui/gpa-summary';
 export type { FilterChipsProps, FilterChipData } from '@/components/ui/filter-chips';
+export type { TermsGridProps, TermCardData } from '@/components/ui/terms-grid';
+export type { CalendarTimelineProps, CalendarGroupData, CalendarEventData } from '@/components/ui/calendar-timeline';

@@ -192,7 +192,7 @@
   "level": "LS",
   "name": "Cost Accounting",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Oktay Taş , Osman Taylan",
+  "instructor": "Oktay Taş , Beyza Mina Ordu Akkaya",
   "buildings": [
    "MSB"
   ],
@@ -1761,5 +1761,35 @@
   "programs": [],
   "prereq": "-",
   "classReq": "-"
+ },
+ {
+  "crn": "15455",
+  "code": "ISL 464E",
+  "branch": "ISL",
+  "level": "LS",
+  "name": "Deep Learning with Business Applications",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tolga Kaya",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ISL_LS",
+   "ISLE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
  }
 ]

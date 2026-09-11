@@ -139,7 +139,7 @@
   "level": "LS",
   "name": "Int.to Architecture and Ethics",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
+  "instructor": "Asiye Nisa Kartal , Tan Kamil Gürer",
   "buildings": [
    "undeclared"
   ],
@@ -3875,41 +3875,6 @@
   "classReq": "-"
  },
  {
-  "crn": "14403",
-  "code": "MIM 411",
-  "branch": "MIM",
-  "level": "LS",
-  "name": "Mimari Proje VII",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Meryem Birgül Çolakoğlu",
-  "buildings": [
-   "undeclared",
-   "undeclared"
-  ],
-  "days": [
-   "Pazartesi",
-   "Perşembe"
-  ],
-  "times": [
-   "13:30/17:29",
-   "13:30/17:29"
-  ],
-  "rooms": [
-   "--",
-   "--"
-  ],
-  "capacity": 15,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "ARC_LS",
-   "MIM_LS",
-   "MIME_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "14404",
   "code": "MIM 4089E",
   "branch": "MIM",
@@ -4936,6 +4901,41 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15451",
+  "code": "MIM 411E",
+  "branch": "MIM",
+  "level": "LS",
+  "name": "Architectural Design VII",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Meryem Birgül Çolakoğlu",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29",
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ARC_LS",
+   "MIM_LS",
+   "MIME_LS"
+  ],
   "prereq": "Detay",
   "classReq": "-"
  }

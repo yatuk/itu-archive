@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-10T07:23:03Z"
+  "lastSuccessfulAt": "2026-09-11T07:21:08Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-10T07:23:03Z",
+ "scrapedAt": "2026-09-11T07:21:08Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5194,
- "courses": 3676,
+ "sections": 5221,
+ "courses": 3696,
  "branches": [
   {
    "code": "ABM",
@@ -33,6 +33,13 @@
     "LS"
    ],
    "sections": 4
+  },
+  {
+   "code": "ALG",
+   "levels": [
+    "LS"
+   ],
+   "sections": 2
   },
   {
    "code": "ALM",
@@ -81,7 +88,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 48
+   "sections": 53
   },
   {
    "code": "BEN",
@@ -124,7 +131,7 @@
     "LS",
     "LU"
    ],
-   "sections": 78
+   "sections": 79
   },
   {
    "code": "BLU",
@@ -272,7 +279,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 39
+   "sections": 47
   },
   {
    "code": "DEP",
@@ -342,7 +349,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 41
+   "sections": 42
   },
   {
    "code": "ECN",
@@ -356,14 +363,14 @@
    "levels": [
     "LS"
    ],
-   "sections": 6
+   "sections": 7
   },
   {
    "code": "EEF",
    "levels": [
     "LS"
    ],
-   "sections": 39
+   "sections": 38
   },
   {
    "code": "EFN",
@@ -384,7 +391,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 74
+   "sections": 76
   },
   {
    "code": "EHN",
@@ -465,7 +472,7 @@
     "LS",
     "LU"
    ],
-   "sections": 210
+   "sections": 211
   },
   {
    "code": "FRA",
@@ -595,7 +602,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 3
+   "sections": 5
   },
   {
    "code": "IKE",
@@ -610,6 +617,13 @@
     "LU"
    ],
    "sections": 5
+  },
+  {
+   "code": "IML",
+   "levels": [
+    "LS"
+   ],
+   "sections": 3
   },
   {
    "code": "IMT",
@@ -630,7 +644,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 206
+   "sections": 207
   },
   {
    "code": "INS",
@@ -673,7 +687,7 @@
     "LS",
     "LU"
    ],
-   "sections": 60
+   "sections": 61
   },
   {
    "code": "ISP",
@@ -795,7 +809,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 48
+   "sections": 46
   },
   {
    "code": "KTB",
@@ -1044,7 +1058,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 13
+   "sections": 15
   },
   {
    "code": "MTM",
@@ -1066,7 +1080,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 53
+   "sections": 54
   },
   {
    "code": "MTS",
@@ -1194,7 +1208,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 12
+   "sections": 13
   },
   {
    "code": "PYY",
@@ -1314,7 +1328,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 53
+   "sections": 51
   },
   {
    "code": "SPA",
@@ -1572,11 +1586,11 @@
   }
  ],
  "stats": {
-  "sections": 5194,
-  "courses": 3676,
-  "branches": 219,
-  "instructors": 1756,
-  "capacity": 251267,
+  "sections": 5221,
+  "courses": 3696,
+  "branches": 221,
+  "instructors": 1763,
+  "capacity": 252119,
   "enrolled": 0
  }
 }

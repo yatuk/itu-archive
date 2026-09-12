@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-11T07:21:08Z"
+  "lastSuccessfulAt": "2026-09-12T07:13:42Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-11T07:21:08Z",
+ "scrapedAt": "2026-09-12T07:13:42Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5221,
- "courses": 3696,
+ "sections": 5243,
+ "courses": 3715,
  "branches": [
   {
    "code": "ABM",
@@ -116,7 +116,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 43
+   "sections": 44
   },
   {
    "code": "BIO",
@@ -279,7 +279,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 47
+   "sections": 52
   },
   {
    "code": "DEP",
@@ -438,6 +438,13 @@
    "sections": 71
   },
   {
+   "code": "ENR",
+   "levels": [
+    "LS"
+   ],
+   "sections": 1
+  },
+  {
    "code": "ENT",
    "levels": [
     "LS"
@@ -508,7 +515,7 @@
     "LS",
     "LU"
    ],
-   "sections": 75
+   "sections": 87
   },
   {
    "code": "GEO",
@@ -644,7 +651,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 207
+   "sections": 208
   },
   {
    "code": "INS",
@@ -868,7 +875,7 @@
     "LS",
     "LU"
    ],
-   "sections": 123
+   "sections": 124
   },
   {
    "code": "MBA",
@@ -931,7 +938,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 4
+   "sections": 5
   },
   {
    "code": "MET",
@@ -1586,11 +1593,11 @@
   }
  ],
  "stats": {
-  "sections": 5221,
-  "courses": 3696,
-  "branches": 221,
-  "instructors": 1763,
-  "capacity": 252119,
+  "sections": 5243,
+  "courses": 3715,
+  "branches": 222,
+  "instructors": 1764,
+  "capacity": 252650,
   "enrolled": 0
  }
 }

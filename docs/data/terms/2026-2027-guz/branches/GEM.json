@@ -2069,5 +2069,301 @@
   ],
   "prereq": "-",
   "classReq": "-"
+ },
+ {
+  "crn": "15479",
+  "code": "GEM 326E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Design",
+  "method": "Ek Sınav",
+  "instructor": "Devrim Bülent Danışman",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15480",
+  "code": "GEM 353E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Work Safety & Health Training in Shipbuilding Industry",
+  "method": "Ek Sınav",
+  "instructor": "Halil Saraçoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15481",
+  "code": "GEM 328E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Hydrodynamics(Propulsion)",
+  "method": "Ek Sınav",
+  "instructor": "Emin Korkut",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15482",
+  "code": "GEM 426E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Hydrodynamic Design of Ships",
+  "method": "Ek Sınav",
+  "instructor": "Devrim Bülent Danışman",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15483",
+  "code": "GEM 416E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Warship Design",
+  "method": "Ek Sınav",
+  "instructor": "Münir Cansın Özden",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15487",
+  "code": "GEM 412E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Shipyard Organization",
+  "method": "Ek Sınav",
+  "instructor": "Erdem Üçer",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15490",
+  "code": "GEM 411",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Tasarımı Projesi I",
+  "method": "Ek Sınav",
+  "instructor": "Selma Ergin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15491",
+  "code": "GEM 422",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Gemi Tasarım Projesi II",
+  "method": "Ek Sınav",
+  "instructor": "Selma Ergin",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15496",
+  "code": "GEM 313E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Marine Engines",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Durmaz",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "13:30/15:29",
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15497",
+  "code": "GEM 325E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Ship Construction",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İbrahim Tuğrul Ardıç",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/10:29",
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15498",
+  "code": "GEM 329E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Maritime and Labor Law",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hasan Murat Demirkıran",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15499",
+  "code": "GEM 443E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Structural Design of Ships",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İbrahim Tuğrul Ardıç",
+  "buildings": [
+   "MEDC",
+   "MEDC"
+  ],
+  "days": [
+   "Çarşamba",
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29",
+   "17:30/18:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
  }
 ]

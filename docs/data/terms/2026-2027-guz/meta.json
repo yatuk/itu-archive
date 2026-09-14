@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-13T07:31:53Z"
+  "lastSuccessfulAt": "2026-09-14T07:58:31Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-13T07:31:53Z",
+ "scrapedAt": "2026-09-14T07:58:31Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5243,
- "courses": 3715,
+ "sections": 5249,
+ "courses": 3722,
  "branches": [
   {
    "code": "ABM",
@@ -552,7 +552,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 71
+   "sections": 72
   },
   {
    "code": "GSB",
@@ -816,7 +816,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 46
+   "sections": 45
   },
   {
    "code": "KTB",
@@ -1065,7 +1065,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 15
+   "sections": 14
   },
   {
    "code": "MTM",
@@ -1363,7 +1363,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 5
+   "sections": 6
   },
   {
    "code": "STD",
@@ -1529,6 +1529,13 @@
    "sections": 13
   },
   {
+   "code": "VIA",
+   "levels": [
+    "LUI"
+   ],
+   "sections": 6
+  },
+  {
    "code": "YAB",
    "levels": [
     "LU"
@@ -1593,11 +1600,11 @@
   }
  ],
  "stats": {
-  "sections": 5243,
-  "courses": 3715,
-  "branches": 222,
-  "instructors": 1764,
-  "capacity": 252325,
+  "sections": 5249,
+  "courses": 3722,
+  "branches": 223,
+  "instructors": 1763,
+  "capacity": 252365,
   "enrolled": 0
  }
 }

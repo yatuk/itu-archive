@@ -135,7 +135,7 @@
   "level": "LS",
   "name": "Statics&Strength of Materials",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Sedat Kömürcü",
+  "instructor": "Yonca Bab",
   "buildings": [
    "MDB"
   ],
@@ -154,6 +154,36 @@
   "programs": [
    "PET_LS",
    "PETE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15500",
+  "code": "STA 204E",
+  "branch": "STA",
+  "level": "LS",
+  "name": "Statics&Strength of Materials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Arcan Yanık",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "ISL_LS",
+   "ISLE_LS"
   ],
   "prereq": "-",
   "classReq": "-"

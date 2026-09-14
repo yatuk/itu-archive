@@ -1,4 +1,409 @@
 {
+ "HGP 501": {
+  "code": "HGP 501",
+  "name": "Araştırma Metotları",
+  "nameEn": "Research Methods",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Araştırmanın tanımı, teorisi ve pratiği, türleri. Hazır giyim ve moda endüstrilerinde araştırma gereksinimi. Hazır giyim ve moda endüstrilerinde yürütülen araştırmalara örnekler. Literatürün araştırılması ve incelenmesi. Araştırmanın analizi. Örnekleme. Araştırma tasarımı. Nicel ve nitel araştırma metotları, verilerin toplanması ve analizi. Bazı istatistiksel metotlar. Anket tasarımı ve testi. Mülakat yapma, foküs gruplar, katılımcı gözlemi. Araştırmanın raporlanması ve iletişimi. Definition of research, theory and practice, types. The need of research for the apparel and fashion industries. Examples of how fashion and apparel companies conduct research. Literature searching and reviewing. Analysis of research. Sampling. Quantitative and qualitative research design, collecting and analyzing the data. Some statistical methods. Questionnaire design & testing. Conducting interviews, focus groups, participant observation. Forecasting trends. Reporting and communicating the research.",
+  "outcomes": [
+   "Bu dersi başarıyla tamamlayan öğrenciler aşağıda belirtilen bilgi ve becerileri kazanacaktır:",
+   "I. Hazır giyim endüstrisi için araştırma metotlarının pratik önemi hakkında anlayış,",
+   "II. Araştırma ile ilgili problemi and hipotezi çerçeveleme ve tanımlama becerisi,",
+   "III. Araştırma konusu ile ilişkili önemli literatürün belirlenmesi ve gözden geçirilmesi,",
+   "IV. Nicel ve/veya nitel metotlara dayalı olarak bir araştırma deseninin tasarlanması",
+   "V. Anlamlı sonuçlar elde etmek üzere verilerin toplanması ve analiz edilmesi becerisi",
+   "VI. Anket ve mülakat geliştirme ve yürütme becerisi",
+   "VII. Tahminlemede bazı istatistik metotlar hakkında bilgi",
+   "VIII. Araştırmanın raporlanması ve iletişimi becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Araştırmanın tanımı. Hazır giyim ve moda endüstrilerinde araştırma gereksinimi. Araştırma yapmanın yolları, teorisi, formatları, bileşenleri.",
+   "Hafta 2 · Literatür araştırması: kütüphane hizmetleri, yayın tipleri, bibliyometrikler, anahtar kelimelerin belirlenmesi ve literatürün gözden geçirilmesi.",
+   "Hafta 3 · Araştırmanın analizi. Literatür özetinin hazırlanması. Araştırmada etik konular.",
+   "Hafta 4 · Araştırmanın tasarımı: nicel, nitel ve karma metotların genel özellikleri.",
+   "Hafta 5 · Örnekleme: prensipler, veri tipleri, kullanılan teknikler, güvenilirlik ve geçerlilik",
+   "Hafta 6 · Örnekleme: temsil edici örnekler, örnek büyüklüğünün belirlenmesi",
+   "Hafta 7 · Nicel araştırma tasarımı: deneysel araştırma metotları",
+   "Hafta 8 · Nicel araştırma tasarımı: anket esaslı araştırma metotları, anket tasarımı ve testi.",
+   "Hafta 9 · Nitel araştırma tasarımı: moda perakende sektöründe kullanılan metotlar. Mülakat yapma, foküs gruplar, katılımcı gözlemi",
+   "Hafta 10 · Veri analizi: tanımlayıcı, yorumlayıcı ve ilişkilendirici istatistikler; hipotez testi; nitel verinin toplanması, analiz edilmesi, kodlanması, sınıflandırılması.",
+   "Hafta 11 · Araştırmanın yazılması ve iletişimi: Araştırma raporlarının sunulması",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Araştırmanın tanımı. Hazır giyim ve moda endüstrilerinde araştırma gereksinimi. Araştırma yapmanın yolları, teorisi, formatları, bileşenleri."
+   },
+   {
+    "week": 2,
+    "topic": "Literatür araştırması: kütüphane hizmetleri, yayın tipleri, bibliyometrikler, anahtar kelimelerin belirlenmesi ve literatürün gözden geçirilmesi."
+   },
+   {
+    "week": 3,
+    "topic": "Araştırmanın analizi. Literatür özetinin hazırlanması. Araştırmada etik konular."
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmanın tasarımı: nicel, nitel ve karma metotların genel özellikleri."
+   },
+   {
+    "week": 5,
+    "topic": "Örnekleme: prensipler, veri tipleri, kullanılan teknikler, güvenilirlik ve geçerlilik"
+   },
+   {
+    "week": 6,
+    "topic": "Örnekleme: temsil edici örnekler, örnek büyüklüğünün belirlenmesi"
+   },
+   {
+    "week": 7,
+    "topic": "Nicel araştırma tasarımı: deneysel araştırma metotları"
+   },
+   {
+    "week": 8,
+    "topic": "Nicel araştırma tasarımı: anket esaslı araştırma metotları, anket tasarımı ve testi."
+   },
+   {
+    "week": 9,
+    "topic": "Nitel araştırma tasarımı: moda perakende sektöründe kullanılan metotlar. Mülakat yapma, foküs gruplar, katılımcı gözlemi"
+   },
+   {
+    "week": 10,
+    "topic": "Veri analizi: tanımlayıcı, yorumlayıcı ve ilişkilendirici istatistikler; hipotez testi; nitel verinin toplanması, analiz edilmesi, kodlanması, sınıflandırılması."
+   },
+   {
+    "week": 11,
+    "topic": "Araştırmanın yazılması ve iletişimi: Araştırma raporlarının sunulması"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "1. Zaccagnini Flynn , J. and M. Foster, I., (2009), 'Research Methods for the Fashion Industry', Fairchild Books, NewYork",
+   "Walliman N. , (2011), Research Methods: The Basics, Routledge is an imprint of the Taylor & Francis Group, London and New York, ISBN 0-203-83607-3 Master e-book ISBN.",
+   "3. Abbott M.L., McKinney J. ,(2013).'Understanding And Applying Research Desıign', John Wiley & Sons, Inc., Hoboken, New Jersey.",
+   "4. Creswell J.W. (Çev. Ed. Demir S.B.), (2017). 'Araştırma Deseni: Nicel, Nitel ve Karma Yöntem Yaklaşımları, 3.baskı', 'Reserch Design: Qualitative, Quantitative, and Mixed Methods Aprroaches' 4.baskıdan çeviri, Eğiten Kitap, Ankara[ISBN: 97-605-4757-28-2]",
+   "5. Creswell J.W. & Plano Clark V.L. (Çev. Ed. Dede, Y., Demir S.B.), (2017). 'Karma Yöntem Yaklaşımları: Tasarımı ve Yürütülmesi, 3.baskı', 'Designing and Conducting Mixed Methods Research', 2.baskıdan çeviri, Anı Yayıncılık, Ankara[ISBN: 978-605-5213-70-1]",
+   "6. Tedlie C. & Tashakkori A. (Çev. Ed. Dede, Y., Demir S.B.), (2015). 'Karma Yöntem Araştırmalarının Temelleri', 'Foundations of Mixed Methods Research', Anı Yayıncılık, Ankara[ISBN: 978-605-170-033-5]",
+   "7. Daşdemir İ., (2016). 'Bilimsel Araştırma Yöntemleri', Nobel Akademik Yayıncılık, Ankara[ISBN: 978-605-320-442-8]",
+   "8. Baş T., Akturan U., (2017). 'Sosyal Bilimlerde Bilgisayar Destekli Nitel Araştırma Yöntemleri', 3.baskı, Seçkin Yayıncılık, Ankara[ISBN: 978-975-02-4087-4]"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HGP&dersNo=501"
+ },
+ "HGP 505": {
+  "code": "HGP 505",
+  "name": "İşletme İktisadı",
+  "nameEn": "Business Economics",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Temel ekonomik aktörlerin (birey ve firmaların) karar prosesleri, piyasa yapısı, firma davranışı ve performansı, tam rekabetçi, tekelci ve tekelci rekabet piyasalarındaki yönetim stratejileri, piyasadaki optimal davranış, ileri iş stratejileri, devlet müdahaleleri ve bilgi yapısının ekonomik çıktılar üzerindeki etkisi. Decision processes of fundamental economic actors (individuals and firms), market structure, behavior of firms and performance, management strategies in competitive, monopolistic, monopolistically competitive, and oligopolistic markets, optimal behavior in each market structure, advanced business strategies, the impact of government interventions, and information structure on economic outcomes.",
+  "outcomes": [
+   "Bu dersi başarıyla tamamlayan öğrenciler aşağıdaki bilgi, beceri ve yetkinlikleri kazanırlar;",
+   "I. Mevcut piyasa yapısını tanıyabilmek ve iş stratejilerini optimize edip rakiplere cevap verebilmek",
+   "II. “Bir alana bir bedava” veya nakit hediyeler gibi fiyat stratejilerini karlı bir şekilde tasarlayabilmek",
+   "III. İşlem maliyetlerini analiz ederek spot piyasalar, kontrat bazlı ilişkiler ve dikey birleşme alternatifleri arasından optimumu seçebilmek",
+   "IV. Verili bir ekonomik parametreler kümesine bağlı olarak hangi açık artırma metodunun iyi olduğunu seçebilmek,",
+   "V. İleri iş stratejilerin girişi engellemek veya çıkışı geciktirmedeki rolünü anlayıp bu stratejilere optimal cevap geliştirebilmek ve böyle stratejilerin yasallığını değerlendirebilmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Yönetim Ekonomisinde Temel Kavramlar",
+   "Hafta 2 · Talep ve Arz",
+   "Hafta 3 · Niceliksel talep analizi",
+   "Hafta 4 · Tüketici Teorisi",
+   "Hafta 5 · Üretim Teorisi",
+   "Hafta 6 · Firma Teorisi",
+   "Hafta 7 · Devlet ve Ekonomi",
+   "Hafta 8 · Tam rekabetçi, tekelci ve tekelci rekabet piyasalardaki yönetim",
+   "Hafta 9 · Oligopole giriş, Temel Oyun Teorisi",
+   "Hafta 10 · Oligopolcü Fiyat Stratejileri",
+   "Hafta 11 · İleri İş Stratejileri",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yönetim Ekonomisinde Temel Kavramlar"
+   },
+   {
+    "week": 2,
+    "topic": "Talep ve Arz"
+   },
+   {
+    "week": 3,
+    "topic": "Niceliksel talep analizi"
+   },
+   {
+    "week": 4,
+    "topic": "Tüketici Teorisi"
+   },
+   {
+    "week": 5,
+    "topic": "Üretim Teorisi"
+   },
+   {
+    "week": 6,
+    "topic": "Firma Teorisi"
+   },
+   {
+    "week": 7,
+    "topic": "Devlet ve Ekonomi"
+   },
+   {
+    "week": 8,
+    "topic": "Tam rekabetçi, tekelci ve tekelci rekabet piyasalardaki yönetim"
+   },
+   {
+    "week": 9,
+    "topic": "Oligopole giriş, Temel Oyun Teorisi"
+   },
+   {
+    "week": 10,
+    "topic": "Oligopolcü Fiyat Stratejileri"
+   },
+   {
+    "week": 11,
+    "topic": "İleri İş Stratejileri"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Baye, M.R., 2022, Managerial Economics & Business Strategy, 10th ed., McGraw Hill.",
+   "Besanko, D., Dranove, D., Shanley, M., Schaefer, S., 2017, Economics of Strategy, 7th edition, Wiley.",
+   "Mankiw, N. G., 2021, Principles of Economics, 9th ed, Cengage Learning",
+   "Walter E. Little, Patricia A. McAnany (eds.), Textile Economies: Power and Value from the Local to the Transnational, AltaMira Press, Year: 2011"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HGP&dersNo=505"
+ },
+ "HGP 507": {
+  "code": "HGP 507",
+  "name": "Moda Yönetimi",
+  "nameEn": "Fashion Management",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Modanın anlamı ve prensipleri. Moda akımları: moda akımları teorileri, moda akımlarını hızlandırıp yavaşlatan faktörler. Moda çevrimi. Moda yaratma ve ticareti: Modanın ürünlerin ön hazırlığı, moda ürünlerin tüketimi. Günümüz moda sektörü, moda endüstrisinin küreselleşmesi. Küresel moda pazarları. Moda perakendeciliği, moda perakendeciliğinde politika ve stratejiler. Moda endüstrisinde kıyaslama. Diğer ülkelerdeki moda üreticileri. Moda pazarının tatmin edilmesi, moda pazarındaki değişime uyum sağlanması, niş pazarlar. Moda endüstrisinin müşteri odaklı organizasyonu. Moda ürünlerde marka: Moda markası, perakende markası, özel markalar. Moda aksesuarları. Meaning and principles of fashion. Fashion movements: theories of fashion movements, factors that speed or slow fashion movement The fashion cycle. The business of making and selling fashion: Fashion pipeline, the consumption of fashion goods. Fashion business in today’s world, globalization of the fashion industry. Global fashion markets. Fashion retailing, the policies and strategies in fashion retailing. Fashion benchmarking: Fashion producers in other countries. Satisfying the fashion market, adapting to change in fashion markets, niche markets. Brands in fashion products: Fashion branding, retail branding and private labels. Fashion accessories.",
+  "outcomes": [
+   "Bu dersi başarıyla tamamlayan öğrenciler aşağıda belirtilen bilgi ve becerileri kazanacaktır;",
+   "I. Moda sektörünün küresel işleyişi ve bu işleyişi etkileyen sosyal, kültürel ve ekonomik faktörler hakkında kapsamlı bilgi,",
+   "II. Moda işinin ve ticaretinin güncel ve yönetsel konuları hakkında bilgi,",
+   "III. Küresel moda pazarları ve moda perakendeciliği hakkında bilgi,",
+   "IV. Moda pazarlarını analiz etme ve pazarda rekabet edebilme koşullarını belirleyebilme becerisi,",
+   "V. Moda ürünlerinde markalaşma stratejileri hakkında farkındalık."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giysi ve modanın anlamı, modanın prensipleri",
+   "Hafta 2 · Moda akımı: Moda akımı teorileri, moda çevrimi, Moda akımlarını hızlandırıp yavaşlatan faktörler",
+   "Hafta 3 · Moda yaratma ve ticareti: Modanın ürünlerin ön hazırlığı, moda ürünlerin tüketimi",
+   "Hafta 4 · Günümüz moda sektörü, moda endüstrisinin küreselleşmesi, Küresel moda pazarları",
+   "Hafta 5 · Moda perakendeciliği, moda perakendeciliğinde politika ve stratejiler",
+   "Hafta 6 · Moda endüstrisinde kıyaslama: Diğer ülkelerdeki moda üreticileri",
+   "Hafta 7 · Moda üreticileri ve moda pazarları ile ilgili vaka analizleri",
+   "Hafta 8 · Moda pazarının tatmin edilmesi, moda pazarındaki değişime uyum sağlanması, niş pazarlar",
+   "Hafta 9 · Müşteri, moda endüstrisinin odağı olarak müşteri",
+   "Hafta 10 · Moda ürünlerde marka: Moda markası, perakende markası, özel markalar.",
+   "Hafta 11 · Moda aksesuarları",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giysi ve modanın anlamı, modanın prensipleri"
+   },
+   {
+    "week": 2,
+    "topic": "Moda akımı: Moda akımı teorileri, moda çevrimi, Moda akımlarını hızlandırıp yavaşlatan faktörler"
+   },
+   {
+    "week": 3,
+    "topic": "Moda yaratma ve ticareti: Modanın ürünlerin ön hazırlığı, moda ürünlerin tüketimi"
+   },
+   {
+    "week": 4,
+    "topic": "Günümüz moda sektörü, moda endüstrisinin küreselleşmesi, Küresel moda pazarları"
+   },
+   {
+    "week": 5,
+    "topic": "Moda perakendeciliği, moda perakendeciliğinde politika ve stratejiler"
+   },
+   {
+    "week": 6,
+    "topic": "Moda endüstrisinde kıyaslama: Diğer ülkelerdeki moda üreticileri"
+   },
+   {
+    "week": 7,
+    "topic": "Moda üreticileri ve moda pazarları ile ilgili vaka analizleri"
+   },
+   {
+    "week": 8,
+    "topic": "Moda pazarının tatmin edilmesi, moda pazarındaki değişime uyum sağlanması, niş pazarlar"
+   },
+   {
+    "week": 9,
+    "topic": "Müşteri, moda endüstrisinin odağı olarak müşteri"
+   },
+   {
+    "week": 10,
+    "topic": "Moda ürünlerde marka: Moda markası, perakende markası, özel markalar."
+   },
+   {
+    "week": 11,
+    "topic": "Moda aksesuarları"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "1. Joachim Zentes, Dirk Morschett, Hanna Schramm-Klein; 'Strategic Retail Management, Text and International Cases', DOI 10.1007/978-3-658-10183-1, Springer Gabler, 2017",
+   "2. Alessandra Vecchi, Advanced Fashion Technology and Operations Management, 2017, IGI Global, USA, ISSN: 2327-3275; eISSN: 2327-3283",
+   "3. Green Fashion Retail, 2017, Springer Series in Fashion Business, ISBN 978-981-10-2439-9, ISBN 978-981-10-2440-5 (eBook), DOI 10.1007/978-981-10-2440-5",
+   "4. PRODUCT INNOVATION IN THE GLOBAL FASHION INDUSTRY, 2018, ISBN 978-1-137-52349-5 (eBook), https://doi.org/10.1057/978-1-137-52349-5",
+   "5. Sustainability in Fashion A Cradle to Upcycle Approach, 2017, DOI 10.1007/978-3-319-51253-2"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HGP&dersNo=507"
+ },
+ "HGP 509": {
+  "code": "HGP 509",
+  "name": "Tekstil&Hazır Giyim Üret.&Yön.",
+  "nameEn": "Textile and Apparel Production and Management",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Liflerin, ipliklerin, kumaşların ve giyisilerin yapısal özellikleri ve üretim metotları. Tekstillerin, hazır giyim, ev tekstilleri ve teknik tekstilleri de kapsayan çok çeşitli kullanım alanlanları. Tekstil ve hazır giyim ticaretinde kullanılan belli başlı birimler ve hesaplamalar. Tekstil ve hazır giyim firmalarının organizasyonları. Hazır giyim üretim yönetimine giriş: üretim paketinin planlanması, montaj ve son işlemler, paketleme ve dağıtımı içeren üretim prosesleri. Hazır giyim endüstrisinin ürün geliştirme, üretim planlama, lojistiğine yönelik mevcut teknolojiler. Structures and production methods for fibers, yarns, fabrics and apparels. Diverse textile end-uses, including apparel, home textiles, technical textiles. Principal units and calculations used in textile and apparel trade. Overview of textile, apparel and fashion industries. Organizations of textile and apparel firms. Intro. to apparel production management: production package planning and production processes including sourcing, assembly and finishing, and packaging and distribution. Current technologies used in the apparel industry for product development, production planning and logistics.",
+  "outcomes": [
+   "I. Tekstil ve hazır giyim malzemeleri ile ürünlerini kullanım alanları ile ilişkili olarak tanıma ve ayırdetme becerisi,",
+   "II. Tekstil ve hazır giyim üretim süreçleri hakkında teknik bilgi,",
+   "III. Tekstil ve hazır giyim ürünlerini kalite karakteristiklerine göre değerlendirme becerisi,",
+   "IV. Tekstil ve hazır giyim ticaretinde kullanılan teknik birimleri kullanma ve hesaplamaları yapabilme becerisi,",
+   "V. Tekstil ve hazır giyim firmalarının organizasyonları ve işleyişleri hakkında genel bilgi,",
+   "VI. Hazır giyim ürün planlama, üretim süreçlerinin işleyişi ve kullanılan teknolojilere yönelik genel bilgi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Tekstil ve hazır giyim ürünlerinin genel özellikleri ve sınıflandırılmaları, kullanım alanları",
+   "Hafta 2 · Tekstil lifleri:doğal, suni ve sentetik lifler, üretimleri ve kalite parametreleri",
+   "Hafta 3 · İplik tipleri: yapısal özellikleri, üretim süreçleri, ve kalite parametreleri",
+   "Hafta 4 · Kumaş tipleri: yapısal özellikleri, üretim süreçleri, ve kalite parametreleri",
+   "Hafta 5 · Tekstil malzemeleri ve ürünlerinin ve alım satımında kullanılan ticari terimler, birimler ve hesaplanmaları",
+   "Hafta 6 · Hazır giyim ürünleri, yardımcı malzemeler ve aksesuarlar; ürün kalite parametreleri",
+   "Hafta 7 · Hazır giyim ürün geliştirme ve üretim süreçlerinin (hazırlık, montaj, son işlemler, paketleme) temelleri",
+   "Hafta 8 · Tekstil, hazır giyim ve moda endüstrilerine genel bakış, hazır giyim firmalarının organizasyonları, organizasyonel davranışları ve işleyişleri",
+   "Hafta 9 · Hazır giyim üretim yönetimine giriş: kaynak, kapasite ve termin planlaması, üretim paketlerinin oluşturulmasına dair firmalardan alınmış gerçek örnekler",
+   "Hafta 10 · Hazır giyim üretim yönetimine giriş: taşıma, lojistik ve dağıtım.",
+   "Hafta 11 · Hazır giyim endüstrisinin ürün geliştirme, üretim planlama, lojistiğine yönelik mevcut teknolojiler; ticari yazılımların genel tanıtımı."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tekstil ve hazır giyim ürünlerinin genel özellikleri ve sınıflandırılmaları, kullanım alanları"
+   },
+   {
+    "week": 2,
+    "topic": "Tekstil lifleri:doğal, suni ve sentetik lifler, üretimleri ve kalite parametreleri"
+   },
+   {
+    "week": 3,
+    "topic": "İplik tipleri: yapısal özellikleri, üretim süreçleri, ve kalite parametreleri"
+   },
+   {
+    "week": 4,
+    "topic": "Kumaş tipleri: yapısal özellikleri, üretim süreçleri, ve kalite parametreleri"
+   },
+   {
+    "week": 5,
+    "topic": "Tekstil malzemeleri ve ürünlerinin ve alım satımında kullanılan ticari terimler, birimler ve hesaplanmaları"
+   },
+   {
+    "week": 6,
+    "topic": "Hazır giyim ürünleri, yardımcı malzemeler ve aksesuarlar; ürün kalite parametreleri"
+   },
+   {
+    "week": 7,
+    "topic": "Hazır giyim ürün geliştirme ve üretim süreçlerinin (hazırlık, montaj, son işlemler, paketleme) temelleri"
+   },
+   {
+    "week": 8,
+    "topic": "Tekstil, hazır giyim ve moda endüstrilerine genel bakış, hazır giyim firmalarının organizasyonları, organizasyonel davranışları ve işleyişleri"
+   },
+   {
+    "week": 9,
+    "topic": "Hazır giyim üretim yönetimine giriş: kaynak, kapasite ve termin planlaması, üretim paketlerinin oluşturulmasına dair firmalardan alınmış gerçek örnekler"
+   },
+   {
+    "week": 10,
+    "topic": "Hazır giyim üretim yönetimine giriş: taşıma, lojistik ve dağıtım."
+   },
+   {
+    "week": 11,
+    "topic": "Hazır giyim endüstrisinin ürün geliştirme, üretim planlama, lojistiğine yönelik mevcut teknolojiler; ticari yazılımların genel tanıtımı."
+   }
+  ],
+  "textbooks": [
+   "1. Kadolph, S.J., (2010)., “Textiles”, Pearson Education Inc., New Jersey",
+   "2. Babu, V.R., (2012), “Industrial Engineering in Apparel Production”, Woodhead Publishing, India.",
+   "3. Myers-McDevitt, Paula J.,(2011), Apparel Production Management and The Technical Package, Fairchild , Oxford : Berg , New York",
+   "4. Peker, E. H., (2011)., ”Tekstilcinin El Kitabı”, Ekin Yayınevi, Bursa"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HGP&dersNo=509"
+ },
  "HGP 515": {
   "code": "HGP 515",
   "name": "Moda ve Lüks Marka Yönetimi",
@@ -86,6 +491,98 @@
    "Okonkwo, U. (2007), 'Luxury Fashion Branding', Palgrave Macmillan"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HGP&dersNo=515"
+ },
+ "HGP 521": {
+  "code": "HGP 521",
+  "name": "Hazır Giyim Ticareti",
+  "nameEn": "Apparel Merchandising",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Hazır giyim ticaretinin gelişimi. Hazır giyim ticaretinin aşamaları ve prosesleri. Hazır giyim ticaretinde bilgi, iletişim ve tasarım teknolojileri. Pazar bilgisi. Hazır giyim perakende ve moda endüstrileri için küresel pazarlar, hazır giyim perakende pazarlarının, tüketicilerin ve rakiplerin analizi. Hazır giyim ticaretinde fiyatlandırma yaklaşımları ve stratejileri. Maliyetlemenin prensipleri ve stratejileri. Koleksiyon ve satış planlama. Hazır giyim ticaretinin planlanması.Ticaret bütçelerinin ve mal asortilerinin planlanması ve kontrolüne yönelik uygulama Evolution of merchandising in the apparel industry. Stages and processes of apparel merchandising. Information, communication, design technologies in apparel merchandising. Market knowledge. Global markets and market dynamics for apparel retail and fashion industries, analyzing apparel retail markets, consumers and competitors. Apparel merchandising perspectives and strategies on pricing. Costing principles and strategies. Merchandise planning. Apparel merchandise planning. Application for planning and controlling merchandise budgets and merchandise assortments",
+  "outcomes": [
+   "Modern hazır giyim ticaretinin işleyişi, sorumlulukları ve teknolojileri hakkında bilgi",
+   "Hazır giyim ürünü geliştirme ve planlanması hakkında bilgi",
+   "Şirket stratejisi, tasarım ve iş hedefleri geliştirme becerisi,",
+   "Hazır giyim perakende ve moda ürünleri ticareti için pazar bilgisini analiz ve yönetme becerisi,",
+   "Hazır giyim ticaretinde maliyetlendirme ve fiyatlandırma prensipleri ve stratejileri hakkında kavrayış",
+   "Hazır giyim ticaretinde, bütçe ve mal asortilerinin planlanması ve kontrolü becerisi",
+   "Hazır giyim perakendesinde ihtiyaca yönelik koleksiyon hazırlama ve bütçelendirme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Hazır giyim ticaretinin gelişimi: dinamik büyüme, yapısal değişiklikler, aktörler",
+   "Hafta 2 · Modern hazır giyim ticareti: ticari faaliyetler yöneticisinin profili ve sorumlulukları, hazır giyim ticaretinin aşamaları ve prosesleri. Hazır giyim ürün geliştirmenin ana hatları",
+   "Hafta 3 · Şirket stratejisi geliştirme: vizyon ve misyon tanımları, uzun dönemli hedefler, ürün, temel ve operasyonel stratejiler. Hazır giyim perakendeciliğinin lider firmaları",
+   "Hafta 4 · Tasarım ve iş hedeflerinin geliştirilmesi: ürün geliştirme sorumluları, stratejik iş üniteleri, marka ve lisansın rolü, karlılığın rolü, ürün hattı kavramı, perakende dükkan tipleri",
+   "Hafta 5 · Ticaret teknolojileri: Bilgi, iletişim ve tasarım teknolojileri",
+   "Hafta 6 · Pazar bilgisi: pazar tanımı, hazır giyim pazarının segmentleri, pazar değeri, pazar rekabeti",
+   "Hafta 7 · Pazar bilgisi: pazar araştırması, öncelikli ve ikincil veri toplama, endüstri bilgi kaynakları, hazır giyim perakende pazarlarının, tüketicilerin ve rakiplerin analizi",
+   "Hafta 8 · Hazır giyim perakende ve moda endüstrileri için küresel pazarlar. Pazarlama karmasının birincil değişkenleri, hedef pazarlar, alternative pazarlama",
+   "Hafta 9 · Maliyetleme ve fiyatlandırma: hazır giyim ticaretinde fiyatlandırma yaklaşımları ve stratejileri, maliyetlemenin prensipleri ve stratejileri",
+   "Hafta 10 · Hazır giyim ticaretinin planlanması: stratejik iş planlama, zaman ve eylem planları, kalenderler, tahminler, raporlar ve sipariş takibi",
+   "Hafta 11 · Vaka çalışması: ticaret bütçelerinin planlanması ve kontrolü, mal asortilerinin planlanması ve kontrolü"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hazır giyim ticaretinin gelişimi: dinamik büyüme, yapısal değişiklikler, aktörler"
+   },
+   {
+    "week": 2,
+    "topic": "Modern hazır giyim ticareti: ticari faaliyetler yöneticisinin profili ve sorumlulukları, hazır giyim ticaretinin aşamaları ve prosesleri. Hazır giyim ürün geliştirmenin ana hatları"
+   },
+   {
+    "week": 3,
+    "topic": "Şirket stratejisi geliştirme: vizyon ve misyon tanımları, uzun dönemli hedefler, ürün, temel ve operasyonel stratejiler. Hazır giyim perakendeciliğinin lider firmaları"
+   },
+   {
+    "week": 4,
+    "topic": "Tasarım ve iş hedeflerinin geliştirilmesi: ürün geliştirme sorumluları, stratejik iş üniteleri, marka ve lisansın rolü, karlılığın rolü, ürün hattı kavramı, perakende dükkan tipleri"
+   },
+   {
+    "week": 5,
+    "topic": "Ticaret teknolojileri: Bilgi, iletişim ve tasarım teknolojileri"
+   },
+   {
+    "week": 6,
+    "topic": "Pazar bilgisi: pazar tanımı, hazır giyim pazarının segmentleri, pazar değeri, pazar rekabeti"
+   },
+   {
+    "week": 7,
+    "topic": "Pazar bilgisi: pazar araştırması, öncelikli ve ikincil veri toplama, endüstri bilgi kaynakları, hazır giyim perakende pazarlarının, tüketicilerin ve rakiplerin analizi"
+   },
+   {
+    "week": 8,
+    "topic": "Hazır giyim perakende ve moda endüstrileri için küresel pazarlar. Pazarlama karmasının birincil değişkenleri, hedef pazarlar, alternative pazarlama"
+   },
+   {
+    "week": 9,
+    "topic": "Maliyetleme ve fiyatlandırma: hazır giyim ticaretinde fiyatlandırma yaklaşımları ve stratejileri, maliyetlemenin prensipleri ve stratejileri"
+   },
+   {
+    "week": 10,
+    "topic": "Hazır giyim ticaretinin planlanması: stratejik iş planlama, zaman ve eylem planları, kalenderler, tahminler, raporlar ve sipariş takibi"
+   },
+   {
+    "week": 11,
+    "topic": "Vaka çalışması: ticaret bütçelerinin planlanması ve kontrolü, mal asortilerinin planlanması ve kontrolü"
+   }
+  ],
+  "textbooks": [
+   "Regan, C. L., (2008).,'Apparel Product Design and Merchandising Strategies', Upper Saddle River, Pearson Prentice Hall, New Jersey",
+   "Rosenau, Jeremy A, (2006), 'Apparel Merchandising : The Line Starts Here', Fairchild Publications",
+   "Granger, M. M., (1996).,'Case Studies in Merchandising Apparel and Soft Goods', Fairchild Publications, New York",
+   "Halepete, J.(2011), 'Retailing in Emerging Markets', Fairchild Books,USA",
+   "Kunz, G.I., (2005), 'Merchandising, Theory, Principles and Practice', Fairchild Publications, NewYork",
+   "Grose, V., (2012), 'Fashion Merchandsing', AVA Publishing, Switzerland",
+   "Liddel, L. Samuels, C.,(2012) Apparel:Design, Textiles & Construction, 10th Edition, The Goodheart-Willcox Company, Inc, Ilinois"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=HGP&dersNo=521"
  },
  "HGP 599": {
   "code": "HGP 599",

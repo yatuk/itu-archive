@@ -110,6 +110,108 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=501"
  },
+ "BGK 502": {
+  "code": "BGK 502",
+  "name": "İşletim Sistemleri Güvenliği",
+  "nameEn": "Operating System Security",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İşletim Sistemi ve yaygın kullanılan işletim sistemlerinin (Unix, Linux, Windows, Pardus, Android, iOS) tanıtımı ve temel özellikleri, İşletim sisteminin sağladığı güvenlik olanakları, İşletim sisteminden kaynaklanan güvenlik açıkları, Süreç güvenliği, Erişim güvenliği, Kullanıcıların tanımlanması, Yetkilendirme, Yetkilerin izlenmesi ve denetimi, Kullanım kayıtlarının tutulması, Güvenlik modelleri Introducing operating systems, common operating systems and their distinctive properties. Security facilities of operating systems. Security flaws caused by operating systems. Process security. Access security. User definition and authorization. Access monitoring and auditability. Logging. Security models.",
+  "outcomes": [
+   "İşletim sistemlerinin yapısı öğretilir",
+   "İşletim sistemlerinde güvenliğin nasıl sağlandığı anlatılır",
+   "İşletim sistemlerinde güvenliği sağlamak için kullanılan reçeteler gösterilir",
+   "İşletim sistemlerinin güvenlik açıkları anlatılır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İşletim sistemlerine giriş",
+   "Hafta 2 · Sık kullanılan işletim sistemleri ve özellikleri",
+   "Hafta 3 · Proses kavramı ve proseslerin veriye erişimi",
+   "Hafta 4 · Proseslerin yalıtımı, proses güvenliği",
+   "Hafta 5 · Erişim güvenliği",
+   "Hafta 6 · G/Ç birimleri ve güvenliği",
+   "Hafta 7 · İşletim sisteminin sunduğu güvenlik olanakları",
+   "Hafta 8 · İşletim sisteminden kaynaklanan güvenlik açıkları",
+   "Hafta 9 · Kullanıcı tanımlama ve yetkilendirme",
+   "Hafta 10 · Yetkilerin izlenmesi ve denetimi",
+   "Hafta 11 · Kütükler ve bunların denetimi",
+   "Hafta 12 · Güvenlik modelleri",
+   "Hafta 13 · Güncel konular",
+   "Hafta 14 · Güncel yayınlar"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İşletim sistemlerine giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Sık kullanılan işletim sistemleri ve özellikleri"
+   },
+   {
+    "week": 3,
+    "topic": "Proses kavramı ve proseslerin veriye erişimi"
+   },
+   {
+    "week": 4,
+    "topic": "Proseslerin yalıtımı, proses güvenliği"
+   },
+   {
+    "week": 5,
+    "topic": "Erişim güvenliği"
+   },
+   {
+    "week": 6,
+    "topic": "G/Ç birimleri ve güvenliği"
+   },
+   {
+    "week": 7,
+    "topic": "İşletim sisteminin sunduğu güvenlik olanakları"
+   },
+   {
+    "week": 8,
+    "topic": "İşletim sisteminden kaynaklanan güvenlik açıkları"
+   },
+   {
+    "week": 9,
+    "topic": "Kullanıcı tanımlama ve yetkilendirme"
+   },
+   {
+    "week": 10,
+    "topic": "Yetkilerin izlenmesi ve denetimi"
+   },
+   {
+    "week": 11,
+    "topic": "Kütükler ve bunların denetimi"
+   },
+   {
+    "week": 12,
+    "topic": "Güvenlik modelleri"
+   },
+   {
+    "week": 13,
+    "topic": "Güncel konular"
+   },
+   {
+    "week": 14,
+    "topic": "Güncel yayınlar"
+   }
+  ],
+  "textbooks": [
+   "Modern Operating Systems, 3rd Ed., Andrew S. Tanenbaum, 2007, Prentice Hall.",
+   "Guide to Operating Systems, 4th Ed., Michael Palmer, Michael Walters, 2011, Cengage Learning.",
+   "Operating System Security, Trent Jaeger, 2008, Morgan and Claypool Publishers.",
+   "Guide to Operating Systems Security, Michael Palmer, 2003, Cengage Learning.",
+   "Computer Security: Principles and Practice, 2nd Ed. William Stallings, Lawrie Brown, 2011, Prentice Hall."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BGK&dersNo=502"
+ },
  "BGK 502E": {
   "code": "BGK 502E",
   "name": "İşletim Sistemleri Güvenliği",

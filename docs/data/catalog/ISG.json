@@ -1,4 +1,102 @@
 {
+ "ISG 501": {
+  "code": "ISG 501",
+  "name": "İş Sağlığı ve Güvenliğine Giriş",
+  "nameEn": "Introduction to Occupational Safety and Health",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İş sağlığı ve güvenliği ile ilgili temel kavramlar, iş kazaları ve meslek hastalıkları, iş sağlığı ve güvenliği risk yönetiminde temel kavramlar, iş sağlığı ve güvenliği ile ulusal ve uluslararası organizasyonlar ve yönetim sistemleri, iş sağlığı ve güvenliğinde risk etmenleri, imalat sektöründe iş sağlığı ve güvenliği ile ilgili temel konular, inşaat sektöründe iş sağlığı ve güvenliği ile ilgili temel konular, maden sektöründe iş sağlığı ve güvenliği ile ilgili temel konular, elektrik işlerinde iş sağlığı ve güvenliği ile ilgili temel konular, iş sağlığı ve güvenliğinde temel mevzuat The basic concepts of occupational safety and health, occupational accidents and diseases, risk management in occupational safety and health, national and international organizations and management systems, risk factors, the basic topics for occupational safety and health in manufacturing industry, construction industry, mining industry and electrical safety in the workplace, introduction to legislation of occupational safety and health",
+  "outcomes": [
+   "İş sağlığı ve güvenliği ile ilgili temel kavramlar ve konular hakkında bilgi",
+   "İş sağlığı ve güvenliği açısından yüksek riskli sektörlerdeki iş sağlığı ve güvenliği yönetimi ile ilgili temel bilgi",
+   "İş sağlığı ve güvenliği alanındaki temel mevzuat konusunda bilgi.",
+   "İş sağlığı ve güvenliği alanındaki araştırma kaynakları ile ilgili bilgi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İş Sağlığı ve Güvenliğinde Temel Kavramlar ve Kaza Teorileri",
+   "Hafta 2 · İş Sağlığı ve Güvenliğinde Temel Kavramlar ve Kaza Teorileri",
+   "Hafta 3 · İş Hijyeni ve Meslek Hastalıkları",
+   "Hafta 4 · İş Hijyeni ve Meslek Hastalıkları",
+   "Hafta 5 · İş Sağlığı ve Güvenliğinde Risk Yönetimi ve İlgili Mevzuat",
+   "Hafta 6 · İş Sağlığı ve Güvenliğinde Ulusal ve Uluslararası Organizasyonlar ve Yönetim Sistemleri",
+   "Hafta 7 · İmalat Sektöründe İş Sağlığı ve Güvenliği ve İlgili Mevzuat",
+   "Hafta 8 · İmalat Sektöründe İş Sağlığı ve Güvenliği ve İlgili Mevzuat",
+   "Hafta 9 · İnşaat Sektöründe İş Sağlığı ve Güvenliği ve İlgili Mevzuat",
+   "Hafta 10 · Maden Sektöründe İş Sağlığı ve Güvenliği ve İlgili Mevzuat",
+   "Hafta 11 · İşyerlerinde Elektrik Güvenliği ve İlgili Mevzuat"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş Sağlığı ve Güvenliğinde Temel Kavramlar ve Kaza Teorileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İş Sağlığı ve Güvenliğinde Temel Kavramlar ve Kaza Teorileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İş Hijyeni ve Meslek Hastalıkları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "İş Hijyeni ve Meslek Hastalıkları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İş Sağlığı ve Güvenliğinde Risk Yönetimi ve İlgili Mevzuat",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "İş Sağlığı ve Güvenliğinde Ulusal ve Uluslararası Organizasyonlar ve Yönetim Sistemleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "İmalat Sektöründe İş Sağlığı ve Güvenliği ve İlgili Mevzuat",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "İmalat Sektöründe İş Sağlığı ve Güvenliği ve İlgili Mevzuat",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "İnşaat Sektöründe İş Sağlığı ve Güvenliği ve İlgili Mevzuat",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Maden Sektöründe İş Sağlığı ve Güvenliği ve İlgili Mevzuat",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "İşyerlerinde Elektrik Güvenliği ve İlgili Mevzuat",
+    "outcomes": "2"
+   }
+  ],
+  "textbooks": [
+   "Friend, M.A., Kohn, J.P., 2010. Fundamental of Occupational Safety and Health, Government Institutes",
+   "Alli, B.O., 2008. Fundamental Principles of Occupational Health and Safety, International Labor Office, Geneva",
+   "http://www.mevzuat.gov.tr",
+   "http://www.ilo.org",
+   "https://osha.europa.eu/"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=501"
+ },
  "ISG 502": {
   "code": "ISG 502",
   "name": "İş Sağlığı ve Güven.Risk Yön.",
@@ -115,6 +213,238 @@
    "Wilson, L. & McCutcheon, C. (2003) Industrial Safety and Risk Management, The University of Alberta Press, ISBN-13: 978-0888643940."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=502"
+ },
+ "ISG 503": {
+  "code": "ISG 503",
+  "name": "İş Hukuku",
+  "nameEn": "Labour Law",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Dersin genel çerçevesini iş hukukunun temel konuları oluşturur. Bu çerçeve bağlamında ele alınacak başlıklar şu şekilde gruplandırılabilir: iş hukukunun gelişimi, temel kavramları (işçi, işveren, işyeri ve iş sözleşmesi gibi) ve kaynakları. This course is composed of the main subjects of labour law. The topics to be dealt with within this framework can be grouped as follows: development, basic principles, basic concepts (such as employee, employer, workplace and employment contract) and sources of this branch of law.",
+  "outcomes": [
+   "İş hukukunun iş yaşamında gerekli olacak temel kavramları ve ilkelerinden yararlanabilme",
+   "İş hukuku ile İş Sağlığı ve Güvenliği Yönetimi Programı arasındaki ilişkiyi anlayabilmek.",
+   "İş sözleşmesinden kaynaklanan hukuki sorunları çözebilmek",
+   "İş güvenliğinden kaynaklanan risklere karşı önlemler alabilmek.",
+   "Hukuki konularda sözlü ve yazılı iletişim kurabilmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İş hukukuna giriş, iş hukukunun tarihsel gelişimi, ilkeleri ve kaynakları",
+   "Hafta 2 · İş hukukunun temel kavramları (işçi, çırak, stajyer, işveren, işveren vekili)",
+   "Hafta 3 · İş hukukunun temel kavramları (alt işveren, işyeri)",
+   "Hafta 4 · İş Kanununun uygulama alanı ve iş sözleşmesinin türleri",
+   "Hafta 5 · İşçinin borçları",
+   "Hafta 6 · İşverenin borçları",
+   "Hafta 7 · İş sözleşmesinin askıya alınması, iş sözleşmesinin sona ermesi ve iş güvencesi",
+   "Hafta 8 · Süreli fesih",
+   "Hafta 9 · Haklı nedenle (derhal) fesih",
+   "Hafta 10 · Kıdem tazminatı",
+   "Hafta 11 · Çalışma süreleri",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş hukukuna giriş, iş hukukunun tarihsel gelişimi, ilkeleri ve kaynakları",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "İş hukukunun temel kavramları (işçi, çırak, stajyer, işveren, işveren vekili)",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 3,
+    "topic": "İş hukukunun temel kavramları (alt işveren, işyeri)",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "İş Kanununun uygulama alanı ve iş sözleşmesinin türleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "İşçinin borçları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "İşverenin borçları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "İş sözleşmesinin askıya alınması, iş sözleşmesinin sona ermesi ve iş güvencesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Süreli fesih",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Haklı nedenle (derhal) fesih",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kıdem tazminatı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Çalışma süreleri",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Eyrenci/Taskent/Ulucan, 2010, Bireysel İş Hukuku, Legal Yayıncılık, ISBN: 9786054420032",
+   "Sarper Süzek, 2013, İş Hukuku, Beta, ISBN: 9786053779766",
+   "Nuri Çelik, 2013, İş Hukuku Dersleri, Beta, ISBN: 978605377950"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=503"
+ },
+ "ISG 506": {
+  "code": "ISG 506",
+  "name": "Uygulamalı Olasılık&İstatistik",
+  "nameEn": "Applied Probability and Statistics",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders, veri toplama, düzenleme ve sergileme, merkezi eğilim ve değişkenlik ölçüleri, olasılığın esasları, rassal değişkenler, olasılık (yoğunluk) fonksiyonu, kesikli ve sürekli olasılık dağılımları, örnekleme teorisi ve istatistiksel kestirim, hipotez testleri, varyans analizi, regresyon analizi ve ki- kare testleri gibi olasılık ve istatistiğin temelini oluşturan kavramlar, varsayımlar ve analizler ile bunların iş sağlığı ve güvenliği alanlarındaki yazılım destekli uygulamalarını içermektedir. This course involves a working knowledge of the basic concepts, assumptions and analyses of probability theory and statistics such as data collection, organization and visualization, numerical descriptive measures, basic probability, random variables, probability (density) function, discrete and continuous probability distributions, sampling and estimation theory, hypothesis testing, analysis of variance, regression analysis, chi-square tests and their applications within the field of occupational safety and health with software packages.",
+  "outcomes": [
+   "Uygun örneklemi belirleme, veri ölçme ve özetleme",
+   "Olasılık aksiyomlarını ve teoremlerini tanımlayabilme,",
+   "Rassal değişkenlerin temel özelliklerini, olasılık dağılımlarını ve uygulama alanlarını tanımlayabilme,",
+   "Örnekleme teorisi ve merkezi limit teoreminin pratik sonuçlarını yorumlayabilme,",
+   "Hipotez geliştirilmesi ve analizi için gerekli istatistiksel teoriyi ve işlemsel prosedürleri açıklayabilme,",
+   "Grup ortalamalarına ilişkin deneyler tasarlayabilme ve anlamlılık testleri ile sınayabilme,",
+   "Bağımsız değişken(ler)deki değişime karşılık gelen bağımlı değişken(ler)deki değişimi modelleyip analiz edebilme,",
+   "Sınıflandırılmış veriler için hipotez geliştirip analiz edebilme,"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Veri Derleme, Düzenleme ve Sergileme, Merkezi Eğilim ve Değişkenlik Ölçüleri",
+   "Hafta 2 · Olasılığın Esasları",
+   "Hafta 3 · Rassal Değişkenler, Olasılık (Yoğunluk) Fonksiyonu, Dağılım Fonksiyonu",
+   "Hafta 4 · Kesikli Olasılık Dağılımları ve İş Güvenliği Alanından Örnekler",
+   "Hafta 5 · Sürekli Olasılık Dağılımları ve İş Güvenliği Alanından Örnekler",
+   "Hafta 6 · Örnekleme Teorisi ve İstatistiksel Kestirim",
+   "Hafta 7 · Hipotez Testleri 1: Tek Anakütle Parametresiyle ilgili Hipotez Testleri",
+   "Hafta 8 · Hipotez Testleri 2: İki Anakütle Parametresiyle ilgili Hipotez Testleri",
+   "Hafta 9 · Varyans Analizi & İş Güvenliği Alanında Bilgisayar Destekli Uygulamaları",
+   "Hafta 10 · Regresyon Analizi & İş Güvenliği Alanında Bilgisayar Destekli Uygulamaları",
+   "Hafta 11 · Ki-Kare Testleri & Bilgisayar Destekli Uygulamaları",
+   "Hafta 12 · Ki-Kare Testleri & Bilgisayar Destekli Uygulamaları",
+   "Hafta 13 · Ki-Kare Testleri & Bilgisayar Destekli Uygulamaları",
+   "Hafta 14 · Ki-Kare Testleri & Bilgisayar Destekli Uygulamaları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Derleme, Düzenleme ve Sergileme, Merkezi Eğilim ve Değişkenlik Ölçüleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılığın Esasları",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Rassal Değişkenler, Olasılık (Yoğunluk) Fonksiyonu, Dağılım Fonksiyonu",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Kesikli Olasılık Dağılımları ve İş Güvenliği Alanından Örnekler",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Sürekli Olasılık Dağılımları ve İş Güvenliği Alanından Örnekler",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Örnekleme Teorisi ve İstatistiksel Kestirim",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Hipotez Testleri 1: Tek Anakütle Parametresiyle ilgili Hipotez Testleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Hipotez Testleri 2: İki Anakütle Parametresiyle ilgili Hipotez Testleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Varyans Analizi & İş Güvenliği Alanında Bilgisayar Destekli Uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Regresyon Analizi & İş Güvenliği Alanında Bilgisayar Destekli Uygulamaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Ki-Kare Testleri & Bilgisayar Destekli Uygulamaları",
+    "outcomes": "8"
+   },
+   {
+    "week": 12,
+    "topic": "Ki-Kare Testleri & Bilgisayar Destekli Uygulamaları",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Ki-Kare Testleri & Bilgisayar Destekli Uygulamaları",
+    "outcomes": "8"
+   },
+   {
+    "week": 14,
+    "topic": "Ki-Kare Testleri & Bilgisayar Destekli Uygulamaları"
+   }
+  ],
+  "textbooks": [
+   "Janicak, C.A., (2007), Applied Statistics in Occupational Safety and Health, Maryland: Government Institutes.",
+   "Janicak, C. A., (2003), Safety Metrics: Tools and Techniques for Measuring Safety Performance, Maryland: Government Institutes.",
+   "Levine D.M., Stephan D.F., Krehbiel T.C., Berenson M.L., (2011), Statistics for Managers Using Microsoft Excel, 6th Global Edition, New Jersey: Pearson Education, Inc.",
+   "Newbold P., Carlson W.L., Thorne B., (2007), Statistics For Business and Economics, 6th Edition, New Jersey: Pearson Education, Inc."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=506"
  },
  "ISG 507": {
   "code": "ISG 507",
@@ -349,6 +679,122 @@
    "Yılmaz Aslan, Doğan Şenyüz, Mevci Ergün, 2005, İşletme Hukuku, Ekin Kitabevi"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=509"
+ },
+ "ISG 512": {
+  "code": "ISG 512",
+  "name": "İmalatta İş Güvenliği",
+  "nameEn": "Occupational Safety in Manufacturing",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Döküm, kaynak, plastik şekil verme, talaşlı imalat, polimer ve seramiklerle imalat süreçlerinde kullanılan makina ve techizatların olası güvenlik riskleri, bunların önlenmesi için alınmasın gereken koruycu tedbirler, tedbirlerin ve iş organizasyonunun tasarlanması, sınır değerlerine uyulması, çalışanların bilgilendirilmesi (işletim talimatı, bilgilendirme), yapılanların ve verilen kararların belgelendirilmesi, çalışan, işveren sorumlulukları konusunda bilgilerdir. Safety risks for machine tools and instruments used in manufacturing processes of casting, welding, forming, machining and in processing of polymer and ceramic materials. Protection policy and design of protection actions and organizations. To fit the limitations for protection policy. To inform the employees. The documentation of protections activities and decisions. The illumination on the responsibilities for employee and employer.",
+  "outcomes": [
+   "İmalatta karşılaşılabilecek çalışan güvenliği risklerini tanıma",
+   "İmalat makina ve techizatlarında karşılaşılabilecek çalışan güvenliği risklerinden korunma teknikleri",
+   "İmalat makina ve techizatlarında karşılaşilabilecek çalışan güvenliği risklerinden korunma faaliyetleri ve bu faaliyetleri yapacak organizasyonu tasarlama bilgisi",
+   "Korunma faaliyetlerinin denetimi bilgisi ve yetkinliği",
+   "Çalışan ve işveren sorumluluk alanlarını tanıma bilgisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Döküm makina ve ocakları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 2 · Döküm makina ve techizatları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 3 · Kaynak makina ve techizatları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 4 · Kaynak makina ve techizatları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 5 · Plastik şekil verme makinaları ve kalıpları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 6 · Plastik şekil verme makinaları ve kalıpları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 7 · Talaşlı imalat tezgahları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 8 · Talaşlı imalat tezgahları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 9 · Plastik enjeksiyon makinalarıve kalıpları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 10 · Seramik malzemelerle imalatta kullanılan makina ve techizatlar, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+   "Hafta 11 · İş güvenliği uygulama ve denetimi organizasyonunda imalata has farklılıklar",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Döküm makina ve ocakları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 2,
+    "topic": "Döküm makina ve techizatları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Kaynak makina ve techizatları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 4,
+    "topic": "Kaynak makina ve techizatları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Plastik şekil verme makinaları ve kalıpları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Plastik şekil verme makinaları ve kalıpları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Talaşlı imalat tezgahları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Talaşlı imalat tezgahları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Plastik enjeksiyon makinalarıve kalıpları, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Seramik malzemelerle imalatta kullanılan makina ve techizatlar, çevre ve insan sağlığı bakımında oluşturduğu riskler, riskleri önleme yöntemleri, ilgili yönetmelikler ve kurallar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "İş güvenliği uygulama ve denetimi organizasyonunda imalata has farklılıklar",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "İlgili Çalışma ve Sosyal Güvenlik Bakanlığı yayınları",
+   "İlgili Makina Mühendisleri Odası Yayınları",
+   "İligili Yönetmelikler",
+   "İlgili İmalat Makinaları Kitapları ve Kitap Bölümlerı",
+   "Ders notları"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISG&dersNo=512"
  },
  "ISG 514": {
   "code": "ISG 514",

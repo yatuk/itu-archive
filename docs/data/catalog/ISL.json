@@ -6078,6 +6078,121 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=462"
  },
+ "ISL 464E": {
+  "code": "ISL 464E",
+  "name": "İşletme Uygulamaları ile Derin Öğrenme",
+  "nameEn": "Deep Learning with Business Applications",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 5
+  },
+  "description": "Derin öğrenmeye ve gerçek dünya iş problemlerinin çözümünde kullanımına uygulamalı bir giriş. Ders; sinir ağlarının yapı taşları; gradyan temelli optimizasyon; yapay öğrenmenin evrensel iş akışı; işletmeye yönelik bilgisayarlı görü uygulamaları için Evrişimsel Sinir Ağları; Yinelemeli Sinir Ağları ile zaman serisi tahmini; metin sınıflandırma, Dönüştürücüler; metin üretimi, Büyük Dil Modelleri, görüntü üretimi ve üretken modeller konularını kapsar. Dönem boyunca konular iş uygulamalarıyla ilişkilendirilir ve gerçek bir iş problemine yönelik bir dönem projesiyle tamamlanır. An applied introduction to deep learning and its use in solving real-world business problems. The course covers; the building blocks of neural networks, gradient-based optimization, the universal machine-learning workflow; Convolutional Neural Networks for business applications of computer vision; timeseries forecasting with Recurrent Neural Networks; text classification, Transformers; text generation, Large Language Models, image generation and generative models. Throughout, methods are grounded in business applications culminating in a term project on a real business problem.",
+  "outcomes": [
+   "Derin öğrenmenin ve üretken yapay zekânın temel kavramlarını, ana sorunlarını ve sınırlamalarını net biçimde anlayabilecek;",
+   "Başlıca derin öğrenme mimarilerinin ve dil modellerinin arkasındaki teorik altyapıyı, varsayımları ve matematiksel yöntemleri açıklayabilecek;",
+   "Derin öğrenme tekniklerini uygulayabilecek ve yapay öğrenmenin evrensel iş akışını kullanarak çalışan modeller geliştirebilecek;",
+   "Alternatif modelleri ve mimarileri uygun araçlar, ölçütler ve yorumlanabilirlik yöntemleriyle eleştirel biçimde değerlendirip karşılaştırabilecek;",
+   "Gerçek bir iş problemi için uçtan uca bir derin öğrenme çözümü tasarlayıp devreye alabilecek ve çözümün yeteneklerini, sınırlarını ve sorumlu kullanım sonuçlarını değerlendirebilecektir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İşletme uygulamalarından örneklerle Derin öğrenmeye giriş.",
+   "Hafta 2 · Yapay öğrenmenin temelleri ve evrensel iş akışı. İşletme Uygulaması (İU): Pazarlama planı: Satışlar ve reklam.",
+   "Hafta 3 · Sinir ağlarının matematiksel yapı taşları: Tensör işlemleri, gradyan inişi ve geri yayılım algoritması.",
+   "Hafta 4 · Sinir ağlarının eğitimi: Kayıp fonksiyonları, erken durdurma, dropout ve düzenlileştirme.",
+   "Hafta 5 · Derin öğrenme çerçeveleri: Keras, TensorFlow, PyTorch ve JAX'e giriş.",
+   "Hafta 6 · Yapay sinir ağları ile sınıflandırma ve regresyon. İU (sınıflandırma): Müşteri kayıp tahmini, İU (regresyon): Gayrimenkul fiyatı tahmini.",
+   "Hafta 7 · CNN'lerle görüntü segmentasyonu. İU: Sigorta hasar değerlendirme.",
+   "Hafta 8 · CNN'lerle görüntü segmentasyonu. İU: Sigorta hasar değerlendirme.",
+   "Hafta 9 · CNN'lerle nesne tespiti. İU: Perakende mağaza analitiği",
+   "Hafta 10 · Yinelemeli Sinir Ağlarına (RNN'ler) giriş. RNN'ler ve Uzun Kısa Süreli Bellek modelleri (LSTM'ler) ile zaman serisi tahmini. İU: Satış, hisse senedi/enerji fiyat tahmini.",
+   "Hafta 11 · RNN'ler ile doğal dil işleme. İU: Müşteri Destek Taleplerinin Sınıflandırılması.",
+   "Hafta 12 · Dil modelleri ve Dönüştürücüler: Dönüştürücü mimarisi ve dikkat mekanizmaları. İU: Finansal rapor özetleme.",
+   "Hafta 13 · Metin üretimi için derin öğrenme: Büyük Dil Modellerine giriş. İU: Müşteri hizmetleri chat-botları.",
+   "Hafta 14 · Görüntü üretimi için derin öğrenme: Varyasyonel otokodlayıcılar ve difüzyon modelleri. İU: Pazarlama/reklam İçeriği Üretimi."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İşletme uygulamalarından örneklerle Derin öğrenmeye giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Yapay öğrenmenin temelleri ve evrensel iş akışı. İşletme Uygulaması (İU): Pazarlama planı: Satışlar ve reklam.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Sinir ağlarının matematiksel yapı taşları: Tensör işlemleri, gradyan inişi ve geri yayılım algoritması.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sinir ağlarının eğitimi: Kayıp fonksiyonları, erken durdurma, dropout ve düzenlileştirme.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Derin öğrenme çerçeveleri: Keras, TensorFlow, PyTorch ve JAX'e giriş.",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Yapay sinir ağları ile sınıflandırma ve regresyon. İU (sınıflandırma): Müşteri kayıp tahmini, İU (regresyon): Gayrimenkul fiyatı tahmini.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "CNN'lerle görüntü segmentasyonu. İU: Sigorta hasar değerlendirme.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "CNN'lerle görüntü segmentasyonu. İU: Sigorta hasar değerlendirme.",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "CNN'lerle nesne tespiti. İU: Perakende mağaza analitiği",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Yinelemeli Sinir Ağlarına (RNN'ler) giriş. RNN'ler ve Uzun Kısa Süreli Bellek modelleri (LSTM'ler) ile zaman serisi tahmini. İU: Satış, hisse senedi/enerji fiyat tahmini.",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "RNN'ler ile doğal dil işleme. İU: Müşteri Destek Taleplerinin Sınıflandırılması.",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Dil modelleri ve Dönüştürücüler: Dönüştürücü mimarisi ve dikkat mekanizmaları. İU: Finansal rapor özetleme.",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 13,
+    "topic": "Metin üretimi için derin öğrenme: Büyük Dil Modellerine giriş. İU: Müşteri hizmetleri chat-botları.",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Görüntü üretimi için derin öğrenme: Varyasyonel otokodlayıcılar ve difüzyon modelleri. İU: Pazarlama/reklam İçeriği Üretimi.",
+    "outcomes": "1-2-4-5"
+   }
+  ],
+  "textbooks": [
+   "Chollet, F., & Watson, M. (2025). Deep learning with Python (3rd ed.). Shelter Island, NY: Manning Publications.",
+   "Huyen, C. (2025). AI engineering: Building applications with foundation models. Sebastopol, CA: O'Reilly Media.",
+   "Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2023). Dive into deep learning. Cambridge: Cambridge University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ISL&dersNo=464"
+ },
  "ISL 465E": {
   "code": "ISL 465E",
   "name": "Girişimcilik ve İnovasyon'a Giriş",

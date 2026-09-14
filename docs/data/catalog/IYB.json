@@ -1,4 +1,200 @@
 {
+ "IYB 501E": {
+  "code": "IYB 501E",
+  "name": "Building Information Modeling",
+  "nameEn": "Building Information Modeling",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bina bilgi modellemesi (BIM) ile ilgili temel bilgiler, dünyada kullanılan BIM seviyeleri, BIM kullanılmasının avantaj ve dezavantajları, inşaat projeleri için BIM adaptasyon stratejileri, BIM tabanlı yazılımların kullanılması, IFC, BIM örnek olayları, BIM uygulamaları. Building information modeling (BIM), levels of BIM utilization in the world, advantages and disadvantages of using BIM in projects, BIM adoption strategies, utilization of BIM based tools, Industry Foundation Classes (IFCs), BIM case studies, BIM applications.",
+  "outcomes": [
+   "BIM hakkında temel bilgi",
+   "BIM’in prensipleri ve uygulama alanları hakkında bilgi sahibi olurlar.",
+   "İnşaatta BIM’in uygulamaya geçirilmesi için gerekli adaptasyon yaklaşımları ve değerlendirme yöntemleri hakkında farkındalık",
+   "İnşaat projelerinde BIM uygulamalarını geliştirme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bina bilgi modellemesine giriş",
+   "Hafta 2 · Bina bilgi modellemesinin ana prensipleri",
+   "Hafta 3 · BIM’in avantajları ve dezavantajları",
+   "Hafta 4 · Dünyada ve Türkiye’de BIM uygulamaları",
+   "Hafta 5 · BIM adaptasyonu ve ana adımları",
+   "Hafta 6 · BIM - Revit ile modelleme -1 (Giriş)",
+   "Hafta 7 · BIM - Revit ile modelleme -2",
+   "Hafta 8 · BIM - Revit ile modelleme -3",
+   "Hafta 9 · BIM - Navisworks ile modelleme -1 (Giriş)",
+   "Hafta 10 · BIM - Navisworks ile modelleme -2",
+   "Hafta 11 · BIM - Navisworks ile modelleme -3"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bina bilgi modellemesine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bina bilgi modellemesinin ana prensipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "BIM’in avantajları ve dezavantajları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Dünyada ve Türkiye’de BIM uygulamaları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "BIM adaptasyonu ve ana adımları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "BIM - Revit ile modelleme -1 (Giriş)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "BIM - Revit ile modelleme -2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "BIM - Revit ile modelleme -3",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "BIM - Navisworks ile modelleme -1 (Giriş)",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "BIM - Navisworks ile modelleme -2",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "BIM - Navisworks ile modelleme -3",
+    "outcomes": "1-2-3-4"
+   }
+  ],
+  "textbooks": [
+   "Eastman, C. M., Teicholz, P., Sacks, R., Liston, K. (2011). BIM Handbook: A Guide to Building Information Modeling for Owners, Managers, Designers, Engineers and Contractors, Wiley; 2nd edition (April 19, 2011)",
+   "Eastman, C. M. (1999). Building product models: computer environments supporting design and construction, CRC Press.",
+   "Jernigan, F.E. (2008). Big BIM Little Bim, 4Site Press, 2 edition (June 19, 2008).",
+   "Kensek, K.,Noble, D. (2014), Building Information Modeling: BIM in Current and Future Practice, Wiley."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=501"
+ },
+ "IYB 505E": {
+  "code": "IYB 505E",
+  "name": "Strategic Management in Const.",
+  "nameEn": "Strategic Management in Const.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders inşaat firmalarında stratejik yönetim konusunu ele almaktadır. Stratejik yönetimin önemi, aşamaları detaylı olarak incelenmektedir. Bu derste stratejik analiz metotları, işletme ve stratejik iş birimi stratejileri, stratejilerin uygulanması, değerlendirilmesi ve kontrolü kapsanmaktadır. This course focuses on strategic management in construction companies. The course covers the following topics: importance and phases of strategic management; strategic analysis methods; companies’ and strategic business units’ strategies; implementation, assessment and control of strategies.",
+  "outcomes": [
+   "Stratejik yönetimin önemini ve kapsamını kavramak.",
+   "Stratejik analiz yöntemlerini kavramak.",
+   "Stratejik iş birimlerinin stratejilerinin analizi ve seçimini yapabilmek.",
+   "Stratejileri uygulamadaki zorlukları kavramak.",
+   "Strateji değerlendirme ve kontrolü yapabilmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Stratejik Yönetime Giriş",
+   "Hafta 2 · Stratejik Yönetim ile ilgili Temel Kavramlar (yönetim, stratejik yönetimin unsurları, strateji, vizyon, misyon, taktik, politika, amaç ve hedef)",
+   "Hafta 3 · Stratejik Yönetim Evreleri (stratejik planlama ve stratejik yönetim)",
+   "Hafta 4 · Stratejik Analiz",
+   "Hafta 5 · Stratejik Analiz Yöntemleri",
+   "Hafta 6 · İşletme veya Stratejik İş Birimlerinin İzleyebilecekleri Stratejik Alternatif Türleri",
+   "Hafta 7 · İşletme ve Stratejik İşbirimi Stratejileri ve Seçim Analizleri",
+   "Hafta 8 · Stratejilerin Uygulanması",
+   "Hafta 9 · Stratejik Değerleme ve Kontrol",
+   "Hafta 10 · Stratejik Yönetim ile ilgili Örnek Olay İncelemeleri",
+   "Hafta 11 · Stratejik Yönetim ile ilgili Örnek Olay İncelemeleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Stratejik Yönetime Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Stratejik Yönetim ile ilgili Temel Kavramlar (yönetim, stratejik yönetimin unsurları, strateji, vizyon, misyon, taktik, politika, amaç ve hedef)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Stratejik Yönetim Evreleri (stratejik planlama ve stratejik yönetim)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Stratejik Analiz",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Stratejik Analiz Yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "İşletme veya Stratejik İş Birimlerinin İzleyebilecekleri Stratejik Alternatif Türleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "İşletme ve Stratejik İşbirimi Stratejileri ve Seçim Analizleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Stratejilerin Uygulanması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Stratejik Değerleme ve Kontrol",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Stratejik Yönetim ile ilgili Örnek Olay İncelemeleri",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Stratejik Yönetim ile ilgili Örnek Olay İncelemeleri",
+    "outcomes": "2-3-4-5"
+   }
+  ],
+  "textbooks": [
+   "Dess, G.G.,Lumpkin, G.T.T. ve Taylor, M.L. (2004). Strategic Management: Creating Competitive Advantages, McGraw-HillCollege, USA.",
+   "Hitt, M.A.,Ireland, R.D. ve Hoskisson, R.D. (2008). Strategic Management: Competitiveness and Globalization: Concepts and Cases, 8th Edition, South-Western Cengage Learning, USA.",
+   "Hitt, M.A.,Ireland, R.D. ve Hoskisson, R.D. (2008).Competing for Advantage Cengage Learning, USA.",
+   "Hill, C.W.L. ve Jones, G.R. (2007). Strategic Management: An Integrated Approach, Cengage Learning, Boston, USA.",
+   "Langford, D.ve Male, S. (2001). Strategic Management in Construction, 2nd Edition, Wiley."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=505"
+ },
  "IYB 515E": {
   "code": "IYB 515E",
   "name": "Special Top.in Const.Manag.",
@@ -195,6 +391,206 @@
    "Wood D. (2011), Chynoweth P., Adshead J., Mason J., Law and the Built Environment, Wiley – Blackwell."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=517"
+ },
+ "IYB 551E": {
+  "code": "IYB 551E",
+  "name": "Managerial&Engineering Economi",
+  "nameEn": "Managerial&Engineering Economi",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Nakit akış diyagramları. Faiz faktörleri. Nominal ve etkin faiz oranları ve sürekli iskontolama. Şimdiki değer analizi. Yıllık nakit akış analizi. Verim oranı analizi. Kazanç / Maliyet oranı analizi. Geri ödeme süresi analizi. Yenileme analizleri. Enflasyon-faiz ilişkileri. Amortisman. Vergi sonrası ekonomik analiz. Başabaş analizi. Bütçe kısıtları altında sermaye bütçeleme. Duyarlılık analizi. Risk altında yatırım analizleri. Cash flow diagrams. Interest factors. Nominal and effective interest rates. Continuous compounding. Present worth analysis. Uniform annual cash flow analysis. Rate of return analysis. Internal and external rates of return. Benefit / cost ratio analysis. Payback period analysis. Replacement analysis. Inflation-interest relations. Depreciation. After-tax economic analysis. Breakeven analysis. Capital budgeting under budget constraints. Sensitivity analysis. Investment analyses under risk.",
+  "outcomes": [
+   "Bileşik faiz oranını kullanarak zaman çizelgesi üzerinde tek nakit akışlarını hareket ettirmek; Bileşik faiz oranını kullanarak zaman çizelgesi üzerinde yıllık nakit akışlarını hareket ettirmek; Bileşik faiz oranını kullanarak zaman çizelgesi üzerinde değişimli nakit akışları hareket ettirmek.",
+   "Nominal ve etkin faiz oranı arasında dönüşüm yapabilmek.",
+   "Nakit akışlarını net şimdiki değere, net gelecek değere, yıllık serilere, artışlı serilere ve yükselen serilere dönüştürmek.",
+   "Net şimdiki değeri kullanarak alternatifleri karşılaştırabilmek.",
+   "İç verim oranını hesaplamak ve karmaşık nakit akışlarından gerçeği yansıtmayan verim oranını belirlemek.",
+   "Alternatifleri verim oranı analizi kullanarak karşılaştırmak.",
+   "Kazançları ve maliyetleri sınıflandırmak ve Fayda / Maliyet oranı analizi yapmak.",
+   "Gelir vergisi, amortisman, enflasyon faktörlerini hesaba katmak.",
+   "Risk ve belirsizlik altında analiz yapabilmek, çok ölçütlü değerlendirme yapabilmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel kavramlar, terim ve grafikler: Karar vermede mühendislik ekonomisinin rolü, faiz hesapları, denklik,",
+   "Hafta 2 · Faiz faktörleri ve kullanımları, çoklu faktörlerin kullanımı, nominal ve etkin faiz oranları ve sürekli iskontolama,",
+   "Hafta 3 · Şimdiki değer analizi, kapitalize edilmiş maliyet analizi, farklı ve sonsuz ömürlü alternatifler",
+   "Hafta 4 · Eşdeğer düzgün yıllık değer analizi, farklı ve sonsuz ömürlü alternatifler, verim oranı hesaplamaları, nakit akışlarında işaret değişimi ve dış yatırım tekniği",
+   "Hafta 5 · Verim oranı artış analizi, kazanç/maliyet oranı analizi, gelecek değer analizi",
+   "Hafta 6 · Yenileme analizi, ekonomik ömür, savunucuya karşı aday teçhizat",
+   "Hafta 7 · Yarıyıl içi Sınavı",
+   "Hafta 8 · Amortisman ve tükenme, gelir vergisi, vergi sonrası ekonomik analiz, enflasyon ve faiz ilişkisi,",
+   "Hafta 9 · Başabaş analizi, bağımsız yatırım alternatifleri arasında sermaye bütçeleme,",
+   "Hafta 10 · Duyarlılık analizi, beklenen değer kararları, karar ağaçları, yatırım alternatiflerinin çok ölçütlü değerlendirilmesi",
+   "Hafta 11 · Risk altında karar verme, risk ve belirsizlik, simülasyon analizi, belirlilik eşdeğeri, riske göre ayarlanmış nakit"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlar, terim ve grafikler: Karar vermede mühendislik ekonomisinin rolü, faiz hesapları, denklik,",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Faiz faktörleri ve kullanımları, çoklu faktörlerin kullanımı, nominal ve etkin faiz oranları ve sürekli iskontolama,",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Şimdiki değer analizi, kapitalize edilmiş maliyet analizi, farklı ve sonsuz ömürlü alternatifler",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Eşdeğer düzgün yıllık değer analizi, farklı ve sonsuz ömürlü alternatifler, verim oranı hesaplamaları, nakit akışlarında işaret değişimi ve dış yatırım tekniği",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 5,
+    "topic": "Verim oranı artış analizi, kazanç/maliyet oranı analizi, gelecek değer analizi",
+    "outcomes": "6"
+   },
+   {
+    "week": 6,
+    "topic": "Yenileme analizi, ekonomik ömür, savunucuya karşı aday teçhizat",
+    "outcomes": "7"
+   },
+   {
+    "week": 7,
+    "topic": "Yarıyıl içi Sınavı"
+   },
+   {
+    "week": 8,
+    "topic": "Amortisman ve tükenme, gelir vergisi, vergi sonrası ekonomik analiz, enflasyon ve faiz ilişkisi,",
+    "outcomes": "8"
+   },
+   {
+    "week": 9,
+    "topic": "Başabaş analizi, bağımsız yatırım alternatifleri arasında sermaye bütçeleme,",
+    "outcomes": "9"
+   },
+   {
+    "week": 10,
+    "topic": "Duyarlılık analizi, beklenen değer kararları, karar ağaçları, yatırım alternatiflerinin çok ölçütlü değerlendirilmesi",
+    "outcomes": "9"
+   },
+   {
+    "week": 11,
+    "topic": "Risk altında karar verme, risk ve belirsizlik, simülasyon analizi, belirlilik eşdeğeri, riske göre ayarlanmış nakit",
+    "outcomes": "9"
+   }
+  ],
+  "textbooks": [
+   "• Blank ve Tarquin A. (2009). Engineering Economy, 6th Edition, McGraw-Hill",
+   "• Riggs, J.L. (1982). Engineering Economics, McGraw Hill",
+   "• Park, C.S. ve Sharp-Bette, G.P. (1990). Advanced Engineering Economics, John Wiley and Sons, Inc.",
+   "• Kurtz, M. (1995). Calculations for Engineering Economic Analysis, McGraw Hill, Inc.",
+   "• Bierman, H.ve Smidt, S. (1990). The Capital Budgeting Decision, Maxwell Macmillan"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=551"
+ },
+ "IYB 557E": {
+  "code": "IYB 557E",
+  "name": "Construction Project Managemen",
+  "nameEn": "Construction Project Managemen",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İnşaat/Proje Yönetimi kavramları. Yönetim süreci ve kavramları. İnşaat yönetimi sürecindeki bilgi alanları, roller, teknikler (kapsam yönetimi, zaman yönetimi, maliyet yönetimi, kalite yönetimi, insan kaynakları yönetimi, bilgi sistemleri yönetimi, sözleşme idaresi, vs); inşaat firmalarının genel yapısı and iş çevreleri; inşaat firmalarının organizayonel yapıları; zaman ve maliyet yönetimi için kullanılan tekniklerin uygulamaları ve tanımları; proje finansı; uluslararası inşaat. Construction/Project Management Concepts. Processes and Concepts of Management. Discipline and knowledge areas involved in the construction management process, roles, techniques (scope management, time management, cost management, quality management, human resource management, information systems management, contract administration, etc..); General structures of construction firms and their business environment; organizational structures; definitions and applications of techniques used in time and cost management; project finance; International construction.",
+  "outcomes": [
+   "İnşaat proje yönetimi sürecini anlamak.",
+   "İnşaat firmalarının genel yapılarını anlamak.",
+   "Zaman ve maliyet yönetimi tekniklerinin uygulamalarını anlamak.",
+   "Uluslararası inşaat projelerinin yönetimini anlamak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Derse giriş Projenin tanımı ve kavramı Proje Yönetimi Bilgi Alanları",
+   "Hafta 2 · Proje Yönetimi Hayat Döngüsü",
+   "Hafta 3 · İnşaat Sektörüne Giriş",
+   "Hafta 4 · Türk İnşaat Sektörü",
+   "Hafta 5 · İnşaat Proje Yönetimi Konuları",
+   "Hafta 6 · Proje Fizibilite İncelemesi",
+   "Hafta 7 · Proje Finansı",
+   "Hafta 8 · Proje Risk Yönetimi",
+   "Hafta 9 · Proje teslim sistemleri",
+   "Hafta 10 · Proje planlama",
+   "Hafta 11 · Uluslararası İnşaat Sektörü"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Derse giriş Projenin tanımı ve kavramı Proje Yönetimi Bilgi Alanları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Yönetimi Hayat Döngüsü",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İnşaat Sektörüne Giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Türk İnşaat Sektörü",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "İnşaat Proje Yönetimi Konuları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Proje Fizibilite İncelemesi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Proje Finansı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Proje Risk Yönetimi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Proje teslim sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Proje planlama",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Uluslararası İnşaat Sektörü",
+    "outcomes": "1-2-3-4"
+   }
+  ],
+  "textbooks": [
+   "Clough, R.H. ve Sears, G.A. (1991). Construction Project Management, 3rd Ed., John Wiley and Sons.",
+   "Fisk, E.R. ve Fisk, E. (1996). Construction Project Administration, Prentice Hall.",
+   "Gould, F.E. ve Joyce, N. (1999). Construction Project Management, Prentice Hall.",
+   "Halpin, D.W. ve Woodhead, R.W.(1997). Construction Management, 2nd Ed., John Wiley and Sons.",
+   "Marchman, D.A. (1997). Construction Scheduling with Primavera Project Planner, Delmar Pub."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IYB&dersNo=557"
  },
  "IYB 561E": {
   "code": "IYB 561E",

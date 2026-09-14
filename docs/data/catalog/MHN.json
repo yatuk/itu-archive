@@ -1,4 +1,457 @@
 {
+ "MHN 500E": {
+  "code": "MHN 500E",
+  "name": "Mühendislik Yönetimi Prensipleri",
+  "nameEn": "Principles of Eng.Management",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders proje ekipleri için geçerli olan planlama, organizasyon ve kontrol gibi temel mühendislik yönetimi fonksiyonlarını ele almaktadır. Mühendislik ve ileri teknoloji projelerinin yönetiminde önemli olan konular tartışılmaktadır. Mühendislik projelerinin ekonomik, zaman ve performans parametreleri organizasyonel ve kaynak perspektifleriyle analiz edilmektedir This course covers the basic engineering management functions of planning, organizing, and controlling, as applied to project teams. Critical issues in the management of engineering and high-technology projects are discussed. Economic, time, and performance parameters of engineering projects are analyzed from the organizational and resource perspectives.",
+  "outcomes": [
+   "Mühendislik yönetiminin temel fonksiyonlarını anlamak ve uygulamak",
+   "Proje tanımlamak: Proje kapsam kontrolü, sponsorluk, öncelik matrisi, İş ayrıştırma yapısı",
+   "Faaliyet zamanları, maliyetleri ve kaynaklarının tahmini",
+   "İyi bir proje planı oluşturmak için proje yönetim tekniklerinin uygulanması",
+   "Proje yönetim ve finansal dokümanlarını oluşturmak için proje yönetim yazılımlarını kullanmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Mühendislik yönetimine giriş",
+   "Hafta 2 · Mühendislik fonksiyonunun organizasyonu",
+   "Hafta 3 · Mühendislik fonksiyonunun planlanması",
+   "Hafta 4 · Mühendislik projelerinin planlanması",
+   "Hafta 5 · Mühendislik projelerinin yönetiminde kullanılan araç ve teknikler",
+   "Hafta 6 · Proje organizasyonunun tanımlanması",
+   "Hafta 7 · Kazanılmış değer sistemleri",
+   "Hafta 8 · Mühendislik çalışmalarının kontrolü ve ölçümü",
+   "Hafta 9 · Teknik program performansının kontrolü",
+   "Hafta 10 · Teknik program performansının kontrolü",
+   "Hafta 11 · Teknik program performansının kontrolü",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mühendislik yönetimine giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mühendislik fonksiyonunun organizasyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Mühendislik fonksiyonunun planlanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Mühendislik projelerinin planlanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Mühendislik projelerinin yönetiminde kullanılan araç ve teknikler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Proje organizasyonunun tanımlanması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kazanılmış değer sistemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Mühendislik çalışmalarının kontrolü ve ölçümü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Teknik program performansının kontrolü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Teknik program performansının kontrolü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Teknik program performansının kontrolü",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Thamhain, H.J., 2005. Management of Technology : Managing Effectively in Technology-Intensive Organizations. Wiley",
+   "Gray, C.F. and Larson, E.W., 2008. Project Management – The Managerial Process, Irwin McGraw-Hill."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=500"
+ },
+ "MHN 501E": {
+  "code": "MHN 501E",
+  "name": "Mühendislikte İstatistiksel Yöntemler",
+  "nameEn": "Statistical Methods in Eng.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu",
+  "outcomes": [
+   "Belirsizlik altında karar vermede problemi olasılık yapısı ile modelleyebilme.",
+   "Betimsel istatistiksel raporlama ve hesaplamaları yapabilme",
+   "Güven aralıklarını hesaplayabilme ve kestirim problemlerini çözebilme",
+   "İstatistiksel hipotezleri tanımlayabilme ve bunları yapabilme",
+   "Kalite kontrol alanında uygulamalar yapabilme",
+   "Regresyon modelleme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Olasılık temel konuları, kesikli ve sürekli olasılık dağılımları",
+   "Hafta 2 · Olasılık temel konuları, kesikli ve sürekli olasılık dağılımları (devam)",
+   "Hafta 3 · Rassal örnekleme ve bunlara ait istatistikler, rassal örneklemeni anlamı, kestirim konuları",
+   "Hafta 4 · Nokta ve aralık kestirimi",
+   "Hafta 5 · Nokta ve aralık kestirimi (devam)",
+   "Hafta 6 · Anlamlılık ve hipotez testleri, uygunluk testleri",
+   "Hafta 7 · Anlamlılık ve hipotez testleri, uygunluk testleri (devam)",
+   "Hafta 8 · İstatisksel kalite kontrol uygulamaları",
+   "Hafta 9 · İstatisksel kalite kontrol uygulamaları (devam)",
+   "Hafta 10 · Regresyon ve korelasyon analizleri",
+   "Hafta 11 · Regresyon ve korelasyon analizleri (devam)",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Olasılık temel konuları, kesikli ve sürekli olasılık dağılımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Olasılık temel konuları, kesikli ve sürekli olasılık dağılımları (devam)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Rassal örnekleme ve bunlara ait istatistikler, rassal örneklemeni anlamı, kestirim konuları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Nokta ve aralık kestirimi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Nokta ve aralık kestirimi (devam)",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Anlamlılık ve hipotez testleri, uygunluk testleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Anlamlılık ve hipotez testleri, uygunluk testleri (devam)",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İstatisksel kalite kontrol uygulamaları",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "İstatisksel kalite kontrol uygulamaları (devam)",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Regresyon ve korelasyon analizleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Regresyon ve korelasyon analizleri (devam)",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Walpole, R.E., R.H. Myers, S. L. Myers, and K. Ye (2007)",
+   "Probability and Statistics for Engineers and Scientists, 8th Ed., Prentice Hall, Inc.",
+   "Sheldon Ross, (2006), A First Course in Probability, 7th Edition, Pearson International Edition.",
+   "Devore , Jay, L., Probability and Statistics for Engineering and the Sciences, 4th Ed., Duxbury Press.",
+   "Bertsekas, D.P. and Tsitsiklis J.N., Introduction to Probability, Belmont: Athena Scientific, 2002."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=501"
+ },
+ "MHN 502E": {
+  "code": "MHN 502E",
+  "name": "Yöneylem Araştırması",
+  "nameEn": "Operations Research",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İşletme, üretim, yönetim, yönetici ve karar verme kavramları; sayısal karar verme; model kurma ve modelleme felsefesi; doğrusal programlama, grafik çözüm ve simpleks algoritma; Büyük M yöntemi; dualite ve ekonomik yorumlar; duyarlılık analizleri; tam sayılı programlama modelleme ve çözüm yöntemleri; ulaştırma modelleri ve çözüm yöntemleri; geçici konaklama ve atama problemleri; lindo ve excel çözücüsü Some concepts concerning with production and management; quantitative decision making; model building and modeling philosophy; linear programming, graphical solution, and simplex algorithm; Big M method; duality and economic analysis; sensitivity analysis; integer programming modeling and solving methods, transportation models and solving methods; transshipment and assignment problems; lindo and excel solver.",
+  "outcomes": [
+   "Farklı matematiksel modelleme tekniklerini kullanabilme,",
+   "Doğrusal programlama ile modellenen bir problemi çözebilme ve çözümü yorumlayabilme",
+   "Çözümün, problemin bazı parametrelerinin değişmesine karşı hassasiyetini belirleyebilme",
+   "Tüm bunları Excel Solver ve Lindo programlarını kullanarak yapabilme,",
+   "Tamsayılı programlama problemlerini modelleme ve çözme",
+   "Ulaştırma ve Atama problemlerini modelleyebilme ve çözebilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Yöneylem Araştırmasına giriş, Temel kavramlar",
+   "Hafta 2 · Modelleme (DP'de Formülasyon)",
+   "Hafta 3 · Grafik Çözüm, Simpleks Algoritması",
+   "Hafta 4 · Büyük M Yöntemi",
+   "Hafta 5 · Dualite ve Duyarlılık Analizi",
+   "Hafta 6 · DP çözümü için yazılım paketleri: Lindo ve Excel Solver eklentisi",
+   "Hafta 7 · Tam sayılı programlama (Formülasyon)",
+   "Hafta 8 · Tam sayılı programlama (Çözüm yöntemleri)",
+   "Hafta 9 · Ulaştırma Problemlerinin Formülasyonu, Temel olurlu çözüm bulma",
+   "Hafta 10 · Ulaştırma Simpleksi",
+   "Hafta 11 · Geçici konaklama ve Atama problemleri",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Yöneylem Araştırmasına giriş, Temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Modelleme (DP'de Formülasyon)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Grafik Çözüm, Simpleks Algoritması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Büyük M Yöntemi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Dualite ve Duyarlılık Analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "DP çözümü için yazılım paketleri: Lindo ve Excel Solver eklentisi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Tam sayılı programlama (Formülasyon)",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 8,
+    "topic": "Tam sayılı programlama (Çözüm yöntemleri)",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Ulaştırma Problemlerinin Formülasyonu, Temel olurlu çözüm bulma",
+    "outcomes": "1-6"
+   },
+   {
+    "week": 10,
+    "topic": "Ulaştırma Simpleksi",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Geçici konaklama ve Atama problemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Winston W.L. (2004) “Operations research: Applications and algorithms”, Brooks/Cole – Thomson Learning",
+   "Hillier, F.S. ve Lieberman G.J. (1995) Introduction to Mathematical Programming, McGraw-Hill Publishing Company.",
+   "Taha, H. (1997) Operations Research, Sixth Edition, Prentice Hall, Inc.,",
+   "Taha, H. (2000) Yöneylem Araştirmasi, 6. Basımdan Çeviri, (Çeviren ve Uyarlayanlar: Ş. Alp Baray ve Şakir Esnaf), Literatür Yayınları:43, İstanbul."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=502"
+ },
+ "MHN 506": {
+  "code": "MHN 506",
+  "name": "Üretim Yönetimi",
+  "nameEn": "Production Management",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Üretim Kavramı, Üretim Sistemleri, Üretim Yönetimi ve Üretim Planlama Kavramı ve Hiyerarşisi, Talep Tahminleri, Stok Kontrol Sistemleri, Toplu Üretim Planlama, Ana Üretim Çizelgeleme, Malzeme Gereksinim Planlaması, Kapasite Planlama. Production Concept, Production Systems, Production Management and Production Planning Concept and Hierarchy, Demand Forecasting, Stock Control Systems, Aggregate Production Planning, Master Production Schedule, Materials Requirements Planning, Capacity Planning.",
+  "outcomes": [
+   "Üretim sistemleri hakkında sınıflandırma yapabilme ve içinde çalışacakları kurumun ne tip bir sistemde üretim yaptıklarını algılayabilme.",
+   "Geçmiş dönem talep yapılarını dikkate alarak geleceği tahmin edebilme.",
+   "Ürün grupları ve ürünler bazında toplu üretim planı yapabilme.",
+   "Stoğa yönelik üretim yapan şirketlerde ekonomik üretim ve ekonomik sipâriş miktarı belirleyebilme.",
+   "Sipâriş üzerine üretim yapan şirketlerde sipâriş parti büyüklüğünü belirleyebilme.",
+   "Fabrika kapasite plânlaması yapabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Üretim Kavramı, Üretim Sistemi ve Sınıflandırması",
+   "Hafta 2 · Geleneksel ve Çağdaş Üretim Sistemleri, Üretim Yönetimi",
+   "Hafta 3 · Üretim Planlama ve Kontrol, Hiyerarşik Üretim Planlama Yaklaşımı",
+   "Hafta 4 · Talep Kavramı, Talep Tahmin Teknikleri",
+   "Hafta 5 · Niteliksel Talep Tahmini Teknikleri ve Uygulamalar",
+   "Hafta 6 · Malzeme Yönetimi",
+   "Hafta 7 · Toplu Üretim Planlama",
+   "Hafta 8 · Toplu Üretim Planlama, Ana Üretim Çizelgeleme",
+   "Hafta 9 · Stok Kontrol, Bağımlı ve Bağımsız Talep Kavramları, Stok Kontrolüne Dayalı Sipâriş Verme Sistemleri",
+   "Hafta 10 · Malzeme Gereksinim Planlamasına Dayalı Sipâriş Verme Sistemleri",
+   "Hafta 11 · Kapasite Gereksinim Planlaması",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Üretim Kavramı, Üretim Sistemi ve Sınıflandırması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Geleneksel ve Çağdaş Üretim Sistemleri, Üretim Yönetimi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Üretim Planlama ve Kontrol, Hiyerarşik Üretim Planlama Yaklaşımı",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Talep Kavramı, Talep Tahmin Teknikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Niteliksel Talep Tahmini Teknikleri ve Uygulamalar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Malzeme Yönetimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Toplu Üretim Planlama",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Toplu Üretim Planlama, Ana Üretim Çizelgeleme",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Stok Kontrol, Bağımlı ve Bağımsız Talep Kavramları, Stok Kontrolüne Dayalı Sipâriş Verme Sistemleri",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Malzeme Gereksinim Planlamasına Dayalı Sipâriş Verme Sistemleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Kapasite Gereksinim Planlaması",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Tanyaş, M., Baskak, M. (2008), Üretim Planlama ve Kontrol, 3. Baskı, İrfan Yayımcılık, 454 sayfa",
+   "Stevenson, W.J. (1999), Production/Operation Management, 6th Ed., Irwın/McGraw-Hill, Boston",
+   "Chase, R.B., Aquilano, N.J., Jacobs, F.R. (1998), Production and Operations Management; Manufacturing and Services, 8th Ed., Irwın/McGraw-Hill, Boston"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=506"
+ },
  "MHN 510E": {
   "code": "MHN 510E",
   "name": "Technology Management",
@@ -108,6 +561,117 @@
    "The Management of Technology and Innovation: A Strategic Approach White, M.A. and Bruton, G.D. South-Western Cengage Learning. (2010)"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=510"
+ },
+ "MHN 515": {
+  "code": "MHN 515",
+  "name": "İnsan Kaynak.&Perform.Yön.",
+  "nameEn": "Human Resource and Performance Management",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders, işletmelerin temel kaynaklarından biri olan insan kaynağının yönetimini ele almaktadır. İnsan kaynakları yönetiminin temel konuları olan kurum kültürü, insan kaynakları planlaması, iş analizi, işe alım süreci, seçim, yerleştirme, oryantasyon, performans değerlendirme, ücret yönetimi, eğitim ve kariyer planlama, takdir ve tanıma sistemleri ve motivasyon konuları tartışılmaktadır. This course covers human resource management which is one of the main sources of enterprises. Corporate culture, human resource planning, work analysis, recruitment process, selection, placement, orientation, performance assessment, compensation management, training and career planning, appreciation and recognition systems, and motivation issues are discussed.",
+  "outcomes": [
+   "Organizasyonlarda insan kaynağının önemini bilir.",
+   "İnsanları temel örgütsel hedefler doğrultusunda yönetmeyi bilir.",
+   "İnsan kaynakları sistemlerini ve nasıl tasarlanacağını bilir",
+   "İnsan kaynakları politika ve stratejilerini kuruluşların özelliklerine göre uygulamayı bilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İnsan Kaynakları Yönetimine giriş, Örgüt Kültürü, Misyon, Vizyon, Değerler",
+   "Hafta 2 · İnsan Kaynakları Sistemleri, İnsan gücü Plânlama ve Norm Kadro Belirleme",
+   "Hafta 3 · Personel Tedârik Sistemi ve Oryantasyon",
+   "Hafta 4 · İş Analizi, İş Değerlendirme",
+   "Hafta 5 · İş Değerlendirme",
+   "Hafta 6 · Performans Değerlendirme",
+   "Hafta 7 · Performans Değerlendirmede Sorunlar ve Çözüm Yolları",
+   "Hafta 8 · Ücret Yönetimi: Piyasa ücret araştımaları, ücretlendirme modelleri",
+   "Hafta 9 · Ücret Yönetimi: Piyasa ücret araştımaları, ücretlendirme modelleri ve örnekleri",
+   "Hafta 10 · Ücret Yönetimi: Piyasa ücret araştımaları, ücretlendirme modelleri ve örnekleri",
+   "Hafta 11 · Ücret Yönetimi: Piyasa ücret araştımaları, ücretlendirme modelleri ve örnekleri",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnsan Kaynakları Yönetimine giriş, Örgüt Kültürü, Misyon, Vizyon, Değerler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "İnsan Kaynakları Sistemleri, İnsan gücü Plânlama ve Norm Kadro Belirleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Personel Tedârik Sistemi ve Oryantasyon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İş Analizi, İş Değerlendirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "İş Değerlendirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Performans Değerlendirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Performans Değerlendirmede Sorunlar ve Çözüm Yolları",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ücret Yönetimi: Piyasa ücret araştımaları, ücretlendirme modelleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Ücret Yönetimi: Piyasa ücret araştımaları, ücretlendirme modelleri ve örnekleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Ücret Yönetimi: Piyasa ücret araştımaları, ücretlendirme modelleri ve örnekleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ücret Yönetimi: Piyasa ücret araştımaları, ücretlendirme modelleri ve örnekleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "John. B. Miner, Donald P. Crane (1995), “Human Resource Management: The Strategic Perspective”, Addison Wesley Pub. Co.",
+   "Luis R. Gomez-Mejia, David B. Balkin, Robert L. Cardy (2001), “Managing Human Resources”, Prentice Hall College Div., 3rd Ed., New York",
+   "Barutçugil, İ. (2004) Stratejik İnsan Kaynaklari Yönetimi, Kariyer Yayinlari / Yönetim Dizisi, İstanbul"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MHN&dersNo=515"
  },
  "MHN 518": {
   "code": "MHN 518",

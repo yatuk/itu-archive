@@ -450,6 +450,123 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEN&dersNo=111"
  },
+ "DEN 204E": {
+  "code": "DEN 204E",
+  "name": "Denizcilik Uygulamalarında Veri analizi",
+  "nameEn": "Data Analysis for Marine Applications",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7
+  },
+  "description": "Çeşitli denizcilik/okyanus veri kaynakları türleri. Veri kümelerinin belirlenmesi ve elde edilmesi. Ön işleme ve görselleştirme. Denizcilik veri analitiği. Denizcilik büyük verisi. Veri yönetimi. Veri kümelerine fiziksel kavrayış ve matematiksel analizin uygulanması. Temel istatistiksel analiz. Nicel bulguların aktarılması. Veri hikâye anlatımı. Types of various maritime/ocean data sources. Identification and retrieval of datasets. Preprocessing and visualizing. Maritime data analytics. Maritime big data. Data management. Application of physical understanding and mathematical analysis to datasets. Basic statistical analysis. Communication of quantitative insights. Data storytelling.",
+  "outcomes": [
+   "Denizcilik, gemi, kıyı, çevre ve iklim verilerinin temel kaynaklarını, özelliklerini ve kullanım alanlarını açıklar.",
+   "Denizcilik uygulamalarında kullanılan farklı veri türlerini elde eder, düzenler ve ön işleme tabi tutar.",
+   "Denizcilik verilerinin analizinde kullanılan istatistiksel yöntemleri uygular ve sonuçlarını yorumlar.",
+   "Veri görselleştirme ve keşifsel veri analizi yöntemlerini kullanarak karmaşık veri kümelerini değerlendirir.",
+   "Veri analitiği ve makine öğrenmesi yöntemlerini gemi performansı, operasyonları ve deniz çevresi ile ilgili problemlere uygular.",
+   "Veri analizinden elde edilen bulguları mühendislik kararlarını destekleyecek şekilde raporlar ve sunar."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Denizcilik Veri Ekosistemi",
+   "Hafta 2 · Gemilerden, Sensörlerden, Deniz Tabanlı Platformlardan, Uydulardan ve Yeniden Analiz Kaynaklarından Veri Elde Edilmesi",
+   "Hafta 3 · Veri Kalitesi, Veri Temizleme ve Öznitelik Mühendisliği",
+   "Hafta 4 · Denizcilik Veri Kümelerinin Keşifsel Analizi",
+   "Hafta 5 · Denizcilik Uygulamaları için İstatistiksel Çıkarım",
+   "Hafta 6 · Denizcilik Verileri için Zaman Serisi Analizi",
+   "Hafta 7 · Denizcilik Verileri için Makine Öğrenmesi",
+   "Hafta 8 · Denizcilik Mühendisliğinde Uygulamalı Makine Öğrenmesi",
+   "Hafta 9 · Mekânsal Veri Analizi ve Coğrafi Bilgi Sistemleri",
+   "Hafta 10 · AIS Verileri Kullanılarak Gemi Trafiği Analizi",
+   "Hafta 11 · Gemi Performansı ve Enerji Verimliliği Analizi",
+   "Hafta 12 · Çevresel, Oşinografik ve İklim Verilerinin Analizi",
+   "Hafta 13 · Veri Hikâyeleştirme ve Bulguların İletişimi",
+   "Hafta 14 · Dijital İkizler ve Yeni Nesil Denizcilik Uygulamaları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizcilik Veri Ekosistemi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Gemilerden, Sensörlerden, Deniz Tabanlı Platformlardan, Uydulardan ve Yeniden Analiz Kaynaklarından Veri Elde Edilmesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Veri Kalitesi, Veri Temizleme ve Öznitelik Mühendisliği",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik Veri Kümelerinin Keşifsel Analizi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "Denizcilik Uygulamaları için İstatistiksel Çıkarım",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Denizcilik Verileri için Zaman Serisi Analizi",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Denizcilik Verileri için Makine Öğrenmesi",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilik Mühendisliğinde Uygulamalı Makine Öğrenmesi",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 9,
+    "topic": "Mekânsal Veri Analizi ve Coğrafi Bilgi Sistemleri",
+    "outcomes": "2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "AIS Verileri Kullanılarak Gemi Trafiği Analizi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Gemi Performansı ve Enerji Verimliliği Analizi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Çevresel, Oşinografik ve İklim Verilerinin Analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Veri Hikâyeleştirme ve Bulguların İletişimi",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Dijital İkizler ve Yeni Nesil Denizcilik Uygulamaları",
+    "outcomes": "4-5"
+   }
+  ],
+  "textbooks": [
+   "Artikis, A. & Zissis, D. (2021). Guide to Maritime Informatics. Springer.",
+   "Thomson, R. E. & Emery, W. J. (2024). Data Analysis Methods in Physical Oceanography. Elsevier.",
+   "Li, C. (2022). Time Series Data Analysis in Oceanography. Cambridge University Press.",
+   "Huang, D., Song, W. & Zou, G. (2019). Marine Big Data. World Scientific."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DEN&dersNo=204"
+ },
  "DEN 208E": {
   "code": "DEN 208E",
   "name": "Const.of Ship&Offshore Strc.",

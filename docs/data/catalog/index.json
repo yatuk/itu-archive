@@ -13,6 +13,10 @@
    "courses": 15
   },
   {
+   "branch": "ALG",
+   "courses": 2
+  },
+  {
    "branch": "ALM",
    "courses": 7
   },
@@ -26,7 +30,7 @@
   },
   {
    "branch": "ARC",
-   "courses": 2
+   "courses": 3
   },
   {
    "branch": "ATA",
@@ -54,7 +58,7 @@
   },
   {
    "branch": "BGK",
-   "courses": 6
+   "courses": 7
   },
   {
    "branch": "BHB",
@@ -102,7 +106,7 @@
   },
   {
    "branch": "CAB",
-   "courses": 465
+   "courses": 466
   },
   {
    "branch": "CBM",
@@ -110,7 +114,7 @@
   },
   {
    "branch": "CEN",
-   "courses": 16
+   "courses": 20
   },
   {
    "branch": "CEV",
@@ -150,7 +154,7 @@
   },
   {
    "branch": "CTT",
-   "courses": 4
+   "courses": 8
   },
   {
    "branch": "DAN",
@@ -158,11 +162,11 @@
   },
   {
    "branch": "DCZ",
-   "courses": 1
+   "courses": 6
   },
   {
    "branch": "DEN",
-   "courses": 94
+   "courses": 95
   },
   {
    "branch": "DEP",
@@ -190,7 +194,7 @@
   },
   {
    "branch": "DUY",
-   "courses": 7
+   "courses": 11
   },
   {
    "branch": "DZC",
@@ -202,7 +206,7 @@
   },
   {
    "branch": "EBT",
-   "courses": 38
+   "courses": 39
   },
   {
    "branch": "ECN",
@@ -222,7 +226,7 @@
   },
   {
    "branch": "EFN",
-   "courses": 14
+   "courses": 18
   },
   {
    "branch": "EGC",
@@ -302,7 +306,7 @@
   },
   {
    "branch": "GEM",
-   "courses": 99
+   "courses": 104
   },
   {
    "branch": "GEO",
@@ -338,7 +342,7 @@
   },
   {
    "branch": "HGP",
-   "courses": 2
+   "courses": 7
   },
   {
    "branch": "HSK",
@@ -366,7 +370,7 @@
   },
   {
    "branch": "IEB",
-   "courses": 4
+   "courses": 6
   },
   {
    "branch": "IKE",
@@ -406,7 +410,7 @@
   },
   {
    "branch": "IPY",
-   "courses": 5
+   "courses": 10
   },
   {
    "branch": "ISE",
@@ -414,7 +418,7 @@
   },
   {
    "branch": "ISG",
-   "courses": 5
+   "courses": 9
   },
   {
    "branch": "ISH",
@@ -422,7 +426,7 @@
   },
   {
    "branch": "ISL",
-   "courses": 75
+   "courses": 76
   },
   {
    "branch": "ISP",
@@ -446,7 +450,7 @@
   },
   {
    "branch": "IYB",
-   "courses": 4
+   "courses": 8
   },
   {
    "branch": "JDF",
@@ -482,7 +486,7 @@
   },
   {
    "branch": "KIM",
-   "courses": 165
+   "courses": 166
   },
   {
    "branch": "KMM",
@@ -534,7 +538,7 @@
   },
   {
    "branch": "MBA",
-   "courses": 9
+   "courses": 14
   },
   {
    "branch": "MBG",
@@ -546,7 +550,7 @@
   },
   {
    "branch": "MBM",
-   "courses": 6
+   "courses": 7
   },
   {
    "branch": "MCH",
@@ -574,11 +578,11 @@
   },
   {
    "branch": "MET",
-   "courses": 100
+   "courses": 101
   },
   {
    "branch": "MHN",
-   "courses": 5
+   "courses": 10
   },
   {
    "branch": "MHY",
@@ -590,7 +594,7 @@
   },
   {
    "branch": "MIM",
-   "courses": 252
+   "courses": 253
   },
   {
    "branch": "MIT",
@@ -618,7 +622,7 @@
   },
   {
    "branch": "MMD",
-   "courses": 36
+   "courses": 37
   },
   {
    "branch": "MMI",
@@ -650,7 +654,7 @@
   },
   {
    "branch": "MTH",
-   "courses": 34
+   "courses": 37
   },
   {
    "branch": "MTM",
@@ -658,7 +662,7 @@
   },
   {
    "branch": "MTO",
-   "courses": 136
+   "courses": 137
   },
   {
    "branch": "MTR",
@@ -754,7 +758,7 @@
   },
   {
    "branch": "PST",
-   "courses": 9
+   "courses": 10
   },
   {
    "branch": "PYY",
@@ -774,7 +778,7 @@
   },
   {
    "branch": "ROT",
-   "courses": 5
+   "courses": 7
   },
   {
    "branch": "RSM",
@@ -819,6 +823,10 @@
   {
    "branch": "SGI",
    "courses": 18
+  },
+  {
+   "branch": "SMK",
+   "courses": 3
   },
   {
    "branch": "SNT",
@@ -914,7 +922,7 @@
   },
   {
    "branch": "UCK",
-   "courses": 71
+   "courses": 72
   },
   {
    "branch": "ULP",
@@ -946,7 +954,7 @@
   },
   {
    "branch": "VIA",
-   "courses": 10
+   "courses": 15
   },
   {
    "branch": "YAB",
@@ -989,11 +997,11 @@
    "courses": 11
   }
  ],
- "courses": 7503,
- "freshContent": 6199,
- "generatedAt": "2026-09-07T10:43:44Z",
- "groups": 6264,
+ "courses": 7588,
+ "freshContent": 6201,
+ "generatedAt": "2026-09-14T11:02:58Z",
+ "groups": 6267,
  "retainedContent": 0,
- "retainedCourses": 11,
- "withContent": 6199
+ "retainedCourses": 89,
+ "withContent": 6201
 }

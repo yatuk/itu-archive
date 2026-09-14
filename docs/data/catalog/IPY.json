@@ -1,4 +1,232 @@
 {
+ "IPY 501": {
+  "code": "IPY 501",
+  "name": "İnşaat Projeleri Yönetim.Giriş",
+  "nameEn": "Introduction to Construction Project Management",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Proje teslim sistemleri, geleneksel, yapım yönetimi, tasarım-yapım proje teslim sistemleri, mal sahibinin proje ve yapım yöneticilerinin temel görevleri, maliyet süre, sözleşme idaresi görevleri, yüklenicilerin merkez ve şantiye yapısı, yüklenicinin proje yöneticisinin temel görevleri, maliyet, süre, malzeme, personel, ekipman, alt yüklenici yönetimi görevleri Project delivery systems, traditional, construction management and design-build project delivery systems, the main duties of owners project manager, cost, time management and contract administration duties, contractor’s home office and site organization, contractors project managers duties, cost, time, material, equipment, personnel, subcontractor management duties.",
+  "outcomes": [
+   "Proje teslim sistemlerinde, proje süreci katılımcılar, katılımcıların görev ve sorumlulukları ve sözleşmeler konusunda bilgi",
+   "Proje teslim sistemlerinde kullanılabilecek sözleşme modelleri konusunda bilgi",
+   "Uygun proje teslim sisteminin seçimi becerisi",
+   "Mal sahibinin ve yüklenicinin proje yöneticilerinin işlevleri konusunda bilgi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Proje Teslim Sistemlerine Genel Bakış",
+   "Hafta 2 · Geleneksel Proje Teslim Sistemi",
+   "Hafta 3 · Danışman Yapım Yönetimi Proje Teslim Sistemi",
+   "Hafta 4 · Yapımcı Yapım Yönetimi Proje Teslim Sistemi",
+   "Hafta 5 · Tasarım - Yapım Proje Teslim Sistemi",
+   "Hafta 6 · Mal Sahibinin Temsilcisi olarak Mimar ve Yapım Yöneticisinin görevleri",
+   "Hafta 7 · Mal Sahibinin Temsilcisi olarak Mimar ve Yapım Yöneticisinin Süre Yönetimi görevleri",
+   "Hafta 8 · Mal Sahibinin Temsilcisi olarak Mimar ve Yapım Yöneticisinin Maliyet Yönetimi görevleri",
+   "Hafta 9 · Mal Sahibinin Temsilcisi olarak Mimar ve Yapım Yöneticisinin Sözleşme İdaresi görevleri",
+   "Hafta 10 · Yüklenici Firmaların Merkez ve şantiye yapısı ve organizasyonu",
+   "Hafta 11 · Yüklenicinin Yapım Yöneticisinin Temel İşlevleri",
+   "Hafta 12 · Yüklenicinin Yapım Yöneticisinin maliyet yönetimi işlevi",
+   "Hafta 13 · Yüklenicinin Yapım Yöneticisinin süre yönetimi işlevi",
+   "Hafta 14 · Yüklenicinin Yapım Yöneticisinin malzeme, ekipman, personel, alt yüklenici yönetimi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Teslim Sistemlerine Genel Bakış",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Geleneksel Proje Teslim Sistemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Danışman Yapım Yönetimi Proje Teslim Sistemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Yapımcı Yapım Yönetimi Proje Teslim Sistemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım - Yapım Proje Teslim Sistemi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Mal Sahibinin Temsilcisi olarak Mimar ve Yapım Yöneticisinin görevleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Mal Sahibinin Temsilcisi olarak Mimar ve Yapım Yöneticisinin Süre Yönetimi görevleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Mal Sahibinin Temsilcisi olarak Mimar ve Yapım Yöneticisinin Maliyet Yönetimi görevleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Mal Sahibinin Temsilcisi olarak Mimar ve Yapım Yöneticisinin Sözleşme İdaresi görevleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Yüklenici Firmaların Merkez ve şantiye yapısı ve organizasyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yüklenicinin Yapım Yöneticisinin Temel İşlevleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Yüklenicinin Yapım Yöneticisinin maliyet yönetimi işlevi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Yüklenicinin Yapım Yöneticisinin süre yönetimi işlevi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Yüklenicinin Yapım Yöneticisinin malzeme, ekipman, personel, alt yüklenici yönetimi",
+    "outcomes": "4"
+   }
+  ],
+  "textbooks": [
+   "AIA, 2008: The Architect’s Handbook of Professional Practice. Wiley",
+   "Gould, F. and Joyce N. E., 2009: Pearson, Construction Project Management, Third Edition. Prentice Hall.",
+   "Schaufelberger, J. E. and Holm, L., 2002: Management of Construction Projects, A Constructor’s Perspective. Prentice Hall.",
+   "Levy, S. M., 2002: Project Management in Construction. McGraw-Hill."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=501"
+ },
+ "IPY 506": {
+  "code": "IPY 506",
+  "name": "İnşaat Proj.İhale Süreci&Söz.",
+  "nameEn": "Procurement and Contracts in Construction Projects",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İnşaat ihale ve sözleşme dokümanlarına giriş, inşaat sözleşmesi tipleri, inşaat sözleşmesi, genel şartname, genel şartnamede inşaat katılımcılarının görev ve sorumlulukları, özel şartname, idari prosedürler ve süreçler, çizimler ve teknik şartnameler, değişiklikler ve zeyilnameler, ihale usulleri, ihale dokümanları, kamu ihaleleri mevzuatı ve ihale ve sözleşme dokümanları, kamuya ait tarihi binalarla ilgili ihale ve sözleşme dokümanları, ihale ve sözleşme dokümanlarının hazırlanması ve kodlanması Introduction to construction bid and contract documents, contract types, construction agreements, general conditions, duties and responsibilities of construction participants in general conditions, supplementary conditions, administrative procedures and processes, drawings and technical specifications, addenda and modifications, procurement methods of construction works, bid documents, public contract law and public bid and contract documents, public bid and contract documents for historical buildings, preparing and codifying bid and contract documents",
+  "outcomes": [
+   "Tüm inşaat ihale ve sözleşme dokümanlarını, bunların içerik ve kapsamlarını bilme",
+   "Standart inşaat ihale ve sözleşme dokümanlarından haberdar olma",
+   "Kamu inşaat ihale ve sözleşme dokümanlarından haberdar olma",
+   "İnşaat ihale ve sözleşme dokümanları hazırlama becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İnşaat ihale ve sözleşme dokümanlarına giriş",
+   "Hafta 2 · İnşaat sözleşmesi tipleri",
+   "Hafta 3 · İnşaat sözleşmesi",
+   "Hafta 4 · Genel şartname",
+   "Hafta 5 · Genel şartnamede inşaat katılımcılarının görev ve sorumlulukları,",
+   "Hafta 6 · Özel şartname",
+   "Hafta 7 · İdari prosedürler ve süreçler",
+   "Hafta 8 · Çizimler ve teknik şartnameler",
+   "Hafta 9 · Değişiklikler ve zeyilnameler",
+   "Hafta 10 · İhale usulleri",
+   "Hafta 11 · İhale dokümanları",
+   "Hafta 12 · Kamu ihaleleri mevzuatı ve ihale ve sözleşme dokümanları",
+   "Hafta 13 · Kamuya ait tarihi binalarla ilgili ihale ve sözleşme dokümanları,",
+   "Hafta 14 · İhale ve sözleşme dokümanlarının hazırlanması ve kodlanması"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İnşaat ihale ve sözleşme dokümanlarına giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "İnşaat sözleşmesi tipleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "İnşaat sözleşmesi",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 4,
+    "topic": "Genel şartname",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 5,
+    "topic": "Genel şartnamede inşaat katılımcılarının görev ve sorumlulukları,",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Özel şartname",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 7,
+    "topic": "İdari prosedürler ve süreçler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Çizimler ve teknik şartnameler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 9,
+    "topic": "Değişiklikler ve zeyilnameler",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "İhale usulleri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "İhale dokümanları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Kamu ihaleleri mevzuatı ve ihale ve sözleşme dokümanları",
+    "outcomes": "3"
+   },
+   {
+    "week": 13,
+    "topic": "Kamuya ait tarihi binalarla ilgili ihale ve sözleşme dokümanları,",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "İhale ve sözleşme dokümanlarının hazırlanması ve kodlanması"
+   }
+  ],
+  "textbooks": [
+   "The Project Resource Manual, 2005: The Construction Specification Institute. McGraw Hill.",
+   "Collier, K., 2011: Construction Contracts. Merrill Prentice Hall",
+   "Poage, W. S., 2000: AIA, CSI, CVS, The Building Professional’s Guide to Contract Documents. RSMeans."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=506"
+ },
  "IPY 511": {
   "code": "IPY 511",
   "name": "İnşaat Pro.Yönet.Enfor.Tekno.",
@@ -114,6 +342,354 @@
    "Williams, T., 2006: Information Technologies for Construction Managers, Architects and Engineers. Thomson Delmar Learning."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=511"
+ },
+ "IPY 512": {
+  "code": "IPY 512",
+  "name": "Şantiye Yönetimi",
+  "nameEn": "Site Management",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İnşaat sektörünün üretim yeri olan şantiyenin bilimsel esaslara uygun olarak kurulması ve yönetilmesi inşa edilecek yapının, öngörülen süre, maliyet ve kalite ile gerçekleştirilmesi bakımından büyük önem taşımaktadır. Projenin özellikleri ve diğer koşullar dikkate alınarak her yeni iş için amaca uygun yeni bir şantiye kuruluş planının hazırlanması ve uygulanması gerekmektedir. Bu ders kapsamında öğrencilere, başarılı bir şantiye kuruluşu ve yönetimi için gereken bilgilerin verilmesi amaçlanmıştır. Mobilization and management of the site; which is defined as the production place of the construction industry, is really important for completing the construction on estimated time, cost and quality. For each new project, it is necessary to prepare and apply a new site mobilization plan considering project characteristics and other conditions. In the context of the course, it is aimed to give students necessary information about mobilization of a successful site and its management",
+  "outcomes": [
+   "İnşaat Şantiye kavramı hakkında fikir sahibi olurlar",
+   "İnşaat Şantiye tesisleri hakkında fikir sahibi olurlar",
+   "Şantiye Tesislerinin yerleşimi ve boyutlandırma esasları hakkında bilgi sahibi olurlar,",
+   "Depo ve Ambar alan hesapları hakkında bilgi sahibi olurlar",
+   "Tesis yerleşim planlarının yapılmasını hakkında bilgi sahibi olurlar,",
+   "Örnek uygulamalar ile farklı tür inşaat şantiye örnekleri hakkında bilgi sahibi olurlar"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Şantiye kavramı ve inşaat üretiminde şantiyenin önemi;",
+   "Hafta 2 · Şantiye kuruluşunda önemli kurallar ve yerleşim planının hazırlanması;",
+   "Hafta 3 · Şantiye yollarının planlanması, ana yolla bağlantı, servis yolları, ikmal yolları;",
+   "Hafta 4 · Su ve elektrik temini ve dağıtım planlarının hazırlanması;",
+   "Hafta 5 · Atık su , ısıtma, haberleşme sistemlerinin planlanması",
+   "Hafta 6 · Resmi başvuru ve gerekli işlemlerin yapılması ve şantiyenin inşası;",
+   "Hafta 7 · Başlıca şantiye ünitelerinin boyutlandırılması ve yasal açıdan , taşımaları gereken özellikler",
+   "Hafta 8 · Yönetim bürosu, yatakhane, yemekhane , gündüz barınağı, kantin , WC ve duşlar",
+   "Hafta 9 · Beton, kalıp, donatı demiri vb. üretim platformlarının boyutlandırılması ve plana işlenmesi;",
+   "Hafta 10 · Malzeme depoları, depo kapasitesinin ve depo alanının hesaplanması",
+   "Hafta 11 · Ambarlar, atölyeler ve diğer üniteler. Tesislerin sökülmesi, şantiyenin kapatılması;",
+   "Hafta 12 · Şantiye planı örnekleri; gerçekleştirilmiş projelere ait, küçük bina, iş merkezi, fabrika, prefabrik okul, yol, köprü, tünel inşaatları şantiye yerleşim planları;",
+   "Hafta 13 · Şantiye yönetim ve organizasyonunun önemi ve temel bilgiler;",
+   "Hafta 14 · Başarılı bir şantiye yönetimi için öncelik taşıyan konular."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Şantiye kavramı ve inşaat üretiminde şantiyenin önemi;",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Şantiye kuruluşunda önemli kurallar ve yerleşim planının hazırlanması;",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Şantiye yollarının planlanması, ana yolla bağlantı, servis yolları, ikmal yolları;",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Su ve elektrik temini ve dağıtım planlarının hazırlanması;",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Atık su , ısıtma, haberleşme sistemlerinin planlanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Resmi başvuru ve gerekli işlemlerin yapılması ve şantiyenin inşası;",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Başlıca şantiye ünitelerinin boyutlandırılması ve yasal açıdan , taşımaları gereken özellikler",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yönetim bürosu, yatakhane, yemekhane , gündüz barınağı, kantin , WC ve duşlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Beton, kalıp, donatı demiri vb. üretim platformlarının boyutlandırılması ve plana işlenmesi;",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Malzeme depoları, depo kapasitesinin ve depo alanının hesaplanması",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Ambarlar, atölyeler ve diğer üniteler. Tesislerin sökülmesi, şantiyenin kapatılması;",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Şantiye planı örnekleri; gerçekleştirilmiş projelere ait, küçük bina, iş merkezi, fabrika, prefabrik okul, yol, köprü, tünel inşaatları şantiye yerleşim planları;",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Şantiye yönetim ve organizasyonunun önemi ve temel bilgiler;",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Başarılı bir şantiye yönetimi için öncelik taşıyan konular.",
+    "outcomes": "6"
+   }
+  ],
+  "textbooks": [
+   "Galipoğulları N., 2001: İnşaat Yönetimi Uygulamaları. Birsen Yayınevi, İstanbul",
+   "Holroyd T.M., 1999: Site Management for Engineers. Thomas Telford Publishing.",
+   "Mincks, W. R., 2010: Construction Jobsite Management, 3rd Ed. Clifton Park, NY: Delmar.",
+   "Khalafallah A., 2010: Construction Site Layouts: An Optimization Approach to Planning and Managing Airport Expansion Projects. VDM Verlag."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=512"
+ },
+ "IPY 513": {
+  "code": "IPY 513",
+  "name": "İnşaat İşletmesi Hukuku",
+  "nameEn": "Construction Business Law",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Hukuk kavramı, Hukukun kaynakları; Hukuk Yaptırımları; Kişiler, Borç ilişkisi, Haksız Fiil; Sözleşme, Sözleşme türleri; Tüketicinin korunması; Tüketici sözleşmeleri; Ticari kurallar; Haksız rekabet; Kıymetli Evrak Tanımı ve Türleri; Emre Muharrer Senet (Bono); Çek ve Özellikleri; Çekle Ödeme ve Sonuçları; Karşılıksız çek; Ticaret Şirketleri; Şahıs işletmesi, Genel olarak anonim şirketler; Anonim şirketler; Limitet Şirketler; Sermaye piyasası; Gayrimenkul yatırım ortaklıkları The concept of law, Sources of law; Legal Sanctions; Legal persons, Obligation relationship, Torts; Contract, Types of contract; Protection of Consumers; Consumer contracts; Commercial rules, Basic concepts; Unfair competition, Acts distorting competition; Negotiable instruments definition and types: Bonds; Cheque, overdraft ; Business entities; Sole proprietorship, Corporations in general; Corporations; Capital markets; Real estate investment companies",
+  "outcomes": [
+   "İnşaat yönetimi hukuku ile ilgili bilgi",
+   "İnşaat yönetimi hukuku ile ilgili kurumlar hakkında bilgi",
+   "Hukuk profesyonelleri ile takım içinde çalışabilme becerisi",
+   "Hukuki belgeler ile ilgili bilgi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Hukuk kavramı, Hukukun kaynakları",
+   "Hafta 2 · Hukuk Yaptırımları (ceza, tazminat, icra, geçersizlik)",
+   "Hafta 3 · Kişiler, Borç ilişkisi, Haksız Fiil",
+   "Hafta 4 · Sözleşme, Sözleşme türleri",
+   "Hafta 5 · Tüketicinin korunması",
+   "Hafta 6 · Tüketici sözleşmeleri",
+   "Hafta 7 · Ticari kurallar, Temel kavramlar",
+   "Hafta 8 · Haksız rekabet, Rekabete aykırı davranışlar",
+   "Hafta 9 · Kıymetli Evrak Tanımı ve Türleri; Emre Muharrer Senet (Bono)",
+   "Hafta 10 · Çek ve Özellikleri; Çekle Ödeme ve Sonuçları; Karşılıksız çek",
+   "Hafta 11 · Ticaret Şirketleri; Şahıs işletmesi, Genel olarak anonim şirketler",
+   "Hafta 12 · Anonim şirketler (Türleri, Organları, Yönetim kurulu, Denetçiler, Genel Kurul, Paylar, Oy Hakkı); Limitet Şirketler",
+   "Hafta 13 · Sermaye piyasası",
+   "Hafta 14 · Gayrimenkul yatırım ortaklıkları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Hukuk kavramı, Hukukun kaynakları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Hukuk Yaptırımları (ceza, tazminat, icra, geçersizlik)",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kişiler, Borç ilişkisi, Haksız Fiil",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Sözleşme, Sözleşme türleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Tüketicinin korunması",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Tüketici sözleşmeleri",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Ticari kurallar, Temel kavramlar",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 8,
+    "topic": "Haksız rekabet, Rekabete aykırı davranışlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Kıymetli Evrak Tanımı ve Türleri; Emre Muharrer Senet (Bono)",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Çek ve Özellikleri; Çekle Ödeme ve Sonuçları; Karşılıksız çek",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ticaret Şirketleri; Şahıs işletmesi, Genel olarak anonim şirketler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Anonim şirketler (Türleri, Organları, Yönetim kurulu, Denetçiler, Genel Kurul, Paylar, Oy Hakkı); Limitet Şirketler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Sermaye piyasası",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Gayrimenkul yatırım ortaklıkları"
+   }
+  ],
+  "textbooks": [
+   "Murdoch J. and Hughes W., 2007: Construction Contracts: Law and Management. Taylor&Francis",
+   "Taşkent, S., 2007: İşletme Hukuku Dersleri. Legal Yayınevi",
+   "Aydemir, E., 2008: Eser Sözleşmesi ve İnşaat Hukuku. Adalet Yayınevi, Ankara",
+   "Duman, İ. H., 2008: İnşaat Hukuku Açıklamalı-İçtihatlı. Beta Yayınları, İstanbul",
+   "Kostakoğlu, C., 2008: İçtihatlı İnşaat Hukuku ve Kat Karşılığı İnşaat Sözleşmeleri. Beta Basım Yayın, İstanbul."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=513"
+ },
+ "IPY 517": {
+  "code": "IPY 517",
+  "name": "İnşaat Proje.İçin Yön.&Organ.",
+  "nameEn": "Management & Organization for Construction Management",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yönetim ve organizasyonun temelleri ve tarihi sürece bir bakış, yönetim çevresi ve durum analizi, yönetim fonksiyonları – planlama ve stratejik yönetim anlayışı; örgütleme ve örgütsel davranışa bakış, insan kaynakları yönetimi; liderlik, motivasyon, iletişim ve ekip çalışması kavramları; ve, kontrol etme ve denetim. İnşaat sektörü ve mimarlık örnek olayları inceleme, değerlendirme, analiz ve raporlama. An overview of foundations and historical perspective of management and organization, management environment and situation analysis, management functions – planning and strategic management perspective; organizing and overview of organizational behavior, human resources management; leadership, motivation, communication and teamwork; and, controlling issues. Cases from construction industry and architecture – examining, evaluation, analysis and reporting.",
+  "outcomes": [
+   "Çağdaş yönetim ve organizasyon sürecini anlamak ve idare etmek için gerekli bilgi ve beceriler,",
+   "Yönetim sürecinin temel kavramları konusunda bilgi,",
+   "Çevre/durum analizi yapabilme bilgi ve becerisi,",
+   "Yönetim fonksiyonları (planlama ve stratejik yönetim, örgütleme, liderlik ve kontrol etme) konusunda bilgi,",
+   "Etik ilkeler, bireysel ve kurumsal değerler, sosyal sorumluluk yönetim anlayışı konusunda bilgi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Temel kavramlarıyla yönetim ve organizasyon.",
+   "Hafta 2 · Tarihi sürece bir bakış ve önemli çıkarımlar",
+   "Hafta 3 · Yönetim çevresi",
+   "Hafta 4 · Çevre/durum analizi. Yönetim fonksiyonlarına giriş",
+   "Hafta 5 · Yönetim fonksiyonları – planlama",
+   "Hafta 6 · Stratejik yönetim anlayışı",
+   "Hafta 7 · Yönetim fonksiyonları – örgütleme",
+   "Hafta 8 · Örgütsel davranış",
+   "Hafta 9 · İnsan kaynakları yönetimi",
+   "Hafta 10 · Yönetim fonksiyonları – önderlik etme ve yönetme",
+   "Hafta 11 · Motivasyon",
+   "Hafta 12 · İletişim. Ekip çalışması",
+   "Hafta 13 · Kontrol etme",
+   "Hafta 14 · Kontrol etme"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Temel kavramlarıyla yönetim ve organizasyon.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Tarihi sürece bir bakış ve önemli çıkarımlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yönetim çevresi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Çevre/durum analizi. Yönetim fonksiyonlarına giriş",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Yönetim fonksiyonları – planlama",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 6,
+    "topic": "Stratejik yönetim anlayışı",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yönetim fonksiyonları – örgütleme",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 8,
+    "topic": "Örgütsel davranış",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "İnsan kaynakları yönetimi",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Yönetim fonksiyonları – önderlik etme ve yönetme",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Motivasyon",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "İletişim. Ekip çalışması",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kontrol etme",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 14,
+    "topic": "Kontrol etme"
+   }
+  ],
+  "textbooks": [
+   "Daft, R. L., 2009: New Era of Management, 9th ed. Dryden Press.",
+   "Hersey, P.H., Blanchard, K.H. and Johnson, D.E., 2008: Management & Organization Behavior, 9th ed. Prentice Hall.",
+   "Brown, D., 2010: Experiential Approach to Organizational Development – International Version, 8th ed., Pearson.",
+   "Robbins, S.P., De Cenzo, D.A. and Coulter, M., 2011: Fundamentals of Management, 7th ed. Prentice Hall.",
+   "Whetten, D.A. and Cameron, K.S., 2011: Developing Management Skills, 8th ed. Prentice Hall."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=IPY&dersNo=517"
  },
  "IPY 523": {
   "code": "IPY 523",

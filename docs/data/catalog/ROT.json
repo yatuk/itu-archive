@@ -1,4 +1,100 @@
 {
+ "ROT 501E": {
+  "code": "ROT 501E",
+  "name": "Engineering Mathematics",
+  "nameEn": "Engineering Mathematics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Modern kontrol kuramına giriş. Klasik (geleneksel) kontrol kuramının temel kavramlarının (Laplace tarnsformu, transfer fonksiyonu, zaman tanım bölgesinde system analizi, sistemin kararlılığı, Routh Hurwitz yöntemi, köklerin yer eğrisi yöntemi) kısaca tekrarlanması. Durum uzayında sistem tanımı. Durum değişkenleri, durum uzayı ve durum uzayındaki denklem formu. Durum uzayındaki sistemlerin dönüşümleri. Özdeğerler ve özvektörler. Kanonik formlar ve çapraz etkileşimsiz sistemler. Durum uzayında tanımlı sistemlerin zaman yanıtı. Durum geçiş matrisi ve Laplace dönüşümü yöntemleri. Kontrol edilebilirlik ve gözlemlenebilirlik. Lyapunov kararlılık analizi. Durum uzayında kontrolcü tasarımı. Kutup atama yöntemi. Ackermann formülü. Durum uzayında gözlemleyici tasarımı. Servo sistemlerin tasarımı. Optimal doğrusal kuadratik regülatör sistemleri. Tasarım örnekleri. Introduction to modern control theory. Brief review of basic concepts of classical (conventional) control theory such as Laplace transformation, transfer function, system analysis in time domain, stability of system, Routh Hurwitz method, root locus method. State-space system descriptions. State variables, state-space and state-space form equations. Transformations of state-space systems. Eigenvalues and eigenvectors. Canonical forms and decoupled systems. Time response of state-space systems. State transition matrix and Laplace transform methods. Controllability and observability. Lyapunov stability analysis. State-space controller design. Pole placement method. Ackermann’s formula. State-space observer design. Design of servo systems. Optimal linear quadratic regulator systems. Design examples",
+  "outcomes": [
+   "türkçe",
+   "english"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Modern kontrol kuramına giriş",
+   "Hafta 2 · Klasik (geleneksel) kontrol kuramının temel kavramlarının (Laplace tarnsformu, transfer fonksiyonu, zaman tanım bölgesinde system analizi, sistemin kararlılığı, Routh Hurwitz yöntemi, köklerin yer eğrisi yöntemi) kısaca tekrarlanması",
+   "Hafta 3 · Durum uzayında sistem tanımı",
+   "Hafta 4 · Durum değişkenleri, durum uzayı ve durum uzayındaki denklem formu",
+   "Hafta 5 · Durum uzayındaki sistemlerin dönüşümleri",
+   "Hafta 6 · Özdeğerler ve özvektörler. Hesaplama yöntemleri",
+   "Hafta 7 · Kanonik formlar ve çapraz etkileşimsiz sistemler",
+   "Hafta 8 · Durum uzayında tanımlı sistemlerin zaman yanıtı",
+   "Hafta 9 · Durum geçiş matrisi ve Laplace dönüşümü yöntemleri",
+   "Hafta 10 · Kontrol edilebilirlik ve gözlemlenebilirlik. Lyapunov kararlılık analizi",
+   "Hafta 11 · Durum uzayında kontrolcü tasarımı. Kutup atama yöntemi. Ackermann formülü",
+   "Hafta 12 · Durum uzayında gözlemleyici tasarımı",
+   "Hafta 13 · Servo sistemlerin tasarımı",
+   "Hafta 14 · Optimal doğrusal kuadratik regülatör sistemleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Modern kontrol kuramına giriş"
+   },
+   {
+    "week": 2,
+    "topic": "Klasik (geleneksel) kontrol kuramının temel kavramlarının (Laplace tarnsformu, transfer fonksiyonu, zaman tanım bölgesinde system analizi, sistemin kararlılığı, Routh Hurwitz yöntemi, köklerin yer eğrisi yöntemi) kısaca tekrarlanması"
+   },
+   {
+    "week": 3,
+    "topic": "Durum uzayında sistem tanımı"
+   },
+   {
+    "week": 4,
+    "topic": "Durum değişkenleri, durum uzayı ve durum uzayındaki denklem formu"
+   },
+   {
+    "week": 5,
+    "topic": "Durum uzayındaki sistemlerin dönüşümleri"
+   },
+   {
+    "week": 6,
+    "topic": "Özdeğerler ve özvektörler. Hesaplama yöntemleri"
+   },
+   {
+    "week": 7,
+    "topic": "Kanonik formlar ve çapraz etkileşimsiz sistemler"
+   },
+   {
+    "week": 8,
+    "topic": "Durum uzayında tanımlı sistemlerin zaman yanıtı"
+   },
+   {
+    "week": 9,
+    "topic": "Durum geçiş matrisi ve Laplace dönüşümü yöntemleri"
+   },
+   {
+    "week": 10,
+    "topic": "Kontrol edilebilirlik ve gözlemlenebilirlik. Lyapunov kararlılık analizi"
+   },
+   {
+    "week": 11,
+    "topic": "Durum uzayında kontrolcü tasarımı. Kutup atama yöntemi. Ackermann formülü"
+   },
+   {
+    "week": 12,
+    "topic": "Durum uzayında gözlemleyici tasarımı"
+   },
+   {
+    "week": 13,
+    "topic": "Servo sistemlerin tasarımı"
+   },
+   {
+    "week": 14,
+    "topic": "Optimal doğrusal kuadratik regülatör sistemleri"
+   }
+  ],
+  "textbooks": [
+   "Ders Kitabı (Textbook)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROT&dersNo=501"
+ },
  "ROT 504E": {
   "code": "ROT 504E",
   "name": "Rotorcraft CFD",
@@ -18,6 +114,25 @@
    "Ders Kitabı (Textbook)"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROT&dersNo=504"
+ },
+ "ROT 507E": {
+  "code": "ROT 507E",
+  "name": "Structural Dynamics",
+  "nameEn": "Structural Dynamics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ayrık sistemlerin titreşimleri. Sürekli sistemlerin elastik titreşimi: Çubuklar, Burulma elemanları, Kirişler; Lagrange denklemleri, Genelleştirilmiş Eigenvalue (özdeğer) problemleri; Kütle ve katılık matrisleri; Modal matrisler and decoupling (ayrıştırma); Duhamel Integrali and Zorlanmış titreşimlerin modal süperpozisyonu. Vibrations of Discrete Systems. Elastic Vibration of Continuous System: Rods, Torsional Elements, Beams; Lagrange's Equations, Generelized Eigenvalue Problems; Mass and Stiffness Matrices; Modal Matrix and Decoupling; Duhamel Integral and Mode Superpositioning for Forced Vibrations.",
+  "outcomes": null,
+  "textbooks": [
+   "Ders Kitabı (Textbook)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ROT&dersNo=507"
  },
  "ROT 511E": {
   "code": "ROT 511E",

@@ -247,10 +247,10 @@
   },
   "description": "Tıbbi bilişim konusunda temel kavramlar. Tıpta bilgisayar destekli programlar, insan-bilgisayar arabirimi. Tıpta bilgisayar uygulamaları. Tıbbi kayıtlar, veri-tabanları, veri temsilleri, veri toplama ve sunumu. Biyolojik işaret işleme. Bilgi tabanlı sistemler. Tıpta yapay zeka. Tıpta karar ve analiz. Tıbbi bilişim sistemlerine giriş: Haberleşme ve ağlar. Tele-tıp ve İnternet uygulamaları. Tıbbi bilişimde ileri konular. An introduction to the fundamental principles of medical informatics. Computer-based tools in health care, human computer interfaces. An introduction to computer applications in medicine. Medical records, database, data representation, data acquisition and presentation. Biological signal processing. Knowledge-based systems. Medical artificial intelligence. Medical decision and analysis. Introduction to health information systems: communication and networks. Telemedicine and Internet applications. Advance topics in biomedical informatics.",
   "outcomes": [
-   "Tıbbi veri, enformasyon ve bilgi hiyerarşisini anlama",
-   "Tıpta bilgi yönetimi ve bilgi teknolojilerini öğrenme",
-   "Tıpta karar verme süreçlerini tanımlama",
-   "Tıbbi bilişimde makine öğrenmesinin rolünü değerlendirme"
+   "Tıp bilişimini tanımlama",
+   "Bilgi yönetimi, bilgi teknolojileri ve bilişimi tanımlama",
+   "Tıp bilişim konseptini tanımlama",
+   "Tıp bilişim projelerini yönetirken kullanılacak en iyi yöntemi seçme"
   ],
   "weeklyTopics": [
    "Hafta 1 · Giriş",
@@ -271,63 +271,79 @@
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Giriş"
+    "topic": "Giriş",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Veri, Enformasyon, Bilgi , Erdem Hiyerarşisi"
+    "topic": "Veri, Enformasyon, Bilgi , Erdem Hiyerarşisi",
+    "outcomes": "1"
    },
    {
     "week": 3,
-    "topic": "Elektronik Medikal Kayıt"
+    "topic": "Elektronik Medikal Kayıt",
+    "outcomes": "1-2"
    },
    {
     "week": 4,
-    "topic": "Hastane Bilgi Sistemleri (HBS)"
+    "topic": "Hastane Bilgi Sistemleri (HBS)",
+    "outcomes": "1-2-3"
    },
    {
     "week": 5,
-    "topic": "Interoperabilite (HL7, Medikal terminoloji… )"
+    "topic": "Interoperabilite (HL7, Medikal terminoloji… )",
+    "outcomes": "1-2"
    },
    {
     "week": 6,
-    "topic": "Klinik destek sistemleri"
+    "topic": "Klinik destek sistemleri",
+    "outcomes": "3-4"
    },
    {
     "week": 7,
-    "topic": "Vize"
+    "topic": "Vize",
+    "outcomes": "1-2-3-4"
    },
    {
     "week": 8,
-    "topic": "HBS modelleme"
+    "topic": "HBS modelleme",
+    "outcomes": "3-4"
    },
    {
     "week": 9,
-    "topic": "Tıp Bilişim Standartları"
+    "topic": "Tıp Bilişim Standartları",
+    "outcomes": "1-2-3"
    },
    {
     "week": 10,
-    "topic": "Sağlıkta karar destek sistemleri"
+    "topic": "Sağlıkta karar destek sistemleri",
+    "outcomes": "3-4"
    },
    {
     "week": 11,
-    "topic": "Teletıp"
+    "topic": "Teletıp",
+    "outcomes": "3"
    },
    {
     "week": 12,
-    "topic": "Mahremiyet ve güvenlik"
+    "topic": "Mahremiyet ve güvenlik",
+    "outcomes": "2-3"
    },
    {
     "week": 13,
-    "topic": "Proje sunumları"
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-3-4"
    },
    {
     "week": 14,
-    "topic": "Proje sunumları"
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-3-4"
    }
   ],
   "textbooks": [
-   "1. Tim Benson, Principles of Health Interoperability: HL7 and SNOMED, Springer 2009 978-1-84882-802-5."
+   "1. Tim Benson, Principles of Health Interoperability: HL7 and SNOMED, Springer 2009 978-1-84882-802-5.",
+   "Joseph Tan, Healthcare Information Systems and Informatics: Research and Practices",
+   "Robert E Hoyt, Nora Bailey, Ann Yoshihashi, Health Informatics: Practical Guide for Healthcare and Information Technology Professionals (Fifth Edition)"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLU&dersNo=510"
  },
@@ -608,59 +624,73 @@
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Veri analizi uygulamaları"
+    "topic": "Veri analizi uygulamaları",
+    "outcomes": "1-2"
    },
    {
     "week": 2,
-    "topic": "Python veri yapıları"
+    "topic": "Python veri yapıları",
+    "outcomes": "1-2"
    },
    {
     "week": 3,
-    "topic": "Dizi objeleri ve örüntü araştırmaları için düzenli ifadeler"
+    "topic": "Dizi objeleri ve örüntü araştırmaları için düzenli ifadeler",
+    "outcomes": "1-2"
    },
    {
     "week": 4,
-    "topic": "Sınıf, dosya yönetimi ve önemli python modülleri"
+    "topic": "Sınıf, dosya yönetimi ve önemli python modülleri",
+    "outcomes": "1-2"
    },
    {
     "week": 5,
-    "topic": "Yapısal olmayan veri üzerinde vaka çalışması"
+    "topic": "Yapısal olmayan veri üzerinde vaka çalışması",
+    "outcomes": "1-2"
    },
    {
     "week": 6,
-    "topic": "Numpy dizi operasyonları"
+    "topic": "Numpy dizi operasyonları",
+    "outcomes": "3-4-5"
    },
    {
     "week": 7,
-    "topic": "PANDAS kütüphanesi ile veri temizliği ve filtrelenmesi"
+    "topic": "PANDAS kütüphanesi ile veri temizliği ve filtrelenmesi",
+    "outcomes": "3-4-5"
    },
    {
     "week": 8,
-    "topic": "PANDAS kütüphanesi ile veri birleştirme ve yeniden şekillendirme"
+    "topic": "PANDAS kütüphanesi ile veri birleştirme ve yeniden şekillendirme",
+    "outcomes": "3-4-5"
    },
    {
     "week": 9,
-    "topic": "PANDAS kütüphanesi ile veri bütünleştirmesi ve grup operasyonları"
+    "topic": "PANDAS kütüphanesi ile veri bütünleştirmesi ve grup operasyonları",
+    "outcomes": "3-4-5"
    },
    {
     "week": 10,
-    "topic": "PANDAS kütüphanesi ile zaman serisi analizleri"
+    "topic": "PANDAS kütüphanesi ile zaman serisi analizleri",
+    "outcomes": "3-4-5"
    },
    {
     "week": 11,
-    "topic": "Hikaye anlatma ve görsel iletişim"
+    "topic": "Hikaye anlatma ve görsel iletişim",
+    "outcomes": "6-7"
    },
    {
     "week": 12,
-    "topic": "Yaygın grafik tiplerinin uygulamaları"
+    "topic": "Yaygın grafik tiplerinin uygulamaları",
+    "outcomes": "6-7"
    },
    {
     "week": 13,
-    "topic": "Çoklu grafik, alt-grafik ve figür oluşturma"
+    "topic": "Çoklu grafik, alt-grafik ve figür oluşturma",
+    "outcomes": "6-7"
    },
    {
     "week": 14,
-    "topic": "Şekil ve stilleri özelleştirme"
+    "topic": "Şekil ve stilleri özelleştirme",
+    "outcomes": "6-7"
    }
   ],
   "textbooks": [
@@ -704,59 +734,73 @@
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Kablosuz Haberleşme"
+    "topic": "Kablosuz Haberleşme",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "1G-5G ve 6G"
+    "topic": "1G-5G ve 6G",
+    "outcomes": "1"
    },
    {
     "week": 3,
-    "topic": "5G İlkeleri / Devrimi"
+    "topic": "5G İlkeleri / Devrimi",
+    "outcomes": "1"
    },
    {
     "week": 4,
-    "topic": "5G İlkeleri / Devrimi"
+    "topic": "5G İlkeleri / Devrimi",
+    "outcomes": "1"
    },
    {
     "week": 5,
-    "topic": "4G-5G Karşılaştırması"
+    "topic": "4G-5G Karşılaştırması",
+    "outcomes": "1"
    },
    {
     "week": 6,
-    "topic": "5G'yi Mümkün Kılan Teknolojiler"
+    "topic": "5G'yi Mümkün Kılan Teknolojiler",
+    "outcomes": "1"
    },
    {
     "week": 7,
-    "topic": "5G Güvenliği"
+    "topic": "5G Güvenliği",
+    "outcomes": "1"
    },
    {
     "week": 8,
-    "topic": "5G Protokol Yığını"
+    "topic": "5G Protokol Yığını",
+    "outcomes": "1"
    },
    {
     "week": 9,
-    "topic": "5G Çekirdek Ağı"
+    "topic": "5G Çekirdek Ağı",
+    "outcomes": "1"
    },
    {
     "week": 10,
-    "topic": "5G Katmanlı Tasarımı"
+    "topic": "5G Katmanlı Tasarımı",
+    "outcomes": "1"
    },
    {
     "week": 11,
-    "topic": "6G'yi Mümkün Kılan Teknolojiler"
+    "topic": "6G'yi Mümkün Kılan Teknolojiler",
+    "outcomes": "1"
    },
    {
     "week": 12,
-    "topic": "Kablosuz Haberleşmede Yeni Konular (Ağ Dijital İkizi)"
+    "topic": "Kablosuz Haberleşmede Yeni Konular (Ağ Dijital İkizi)",
+    "outcomes": "1"
    },
    {
     "week": 13,
-    "topic": "Kablosuz Haberleşmede Yeni Konular (Otonom Ağ)"
+    "topic": "Kablosuz Haberleşmede Yeni Konular (Otonom Ağ)",
+    "outcomes": "1"
    },
    {
     "week": 14,
-    "topic": "Sunum"
+    "topic": "Sunum",
+    "outcomes": "2"
    }
   ],
   "textbooks": [
@@ -776,8 +820,101 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "",
-  "outcomes": null,
+  "description": "Sistem teorisine genel bir bakış. Bilişsel sistemler mühendisliğinin elemanları ve tanımları. Fiziksel ve siber uzaydaki benzetimler: Enerji, enforrnasyon ve bilgi kavramlan. Sibemetik sistemlerinin tanımı. Yapay sinir ağlarının (YSA) topolojileri ve eğitim algoritmalan. YSA içinde enformasyon akışı: Karmaşıklığın tanımı. Sensör ve enformasyon birleştirme. EEG sinyalleri için veri toplama ve ölçme sistemi. Makina-insan etkileşimi. Veriden bilişsel bilgi çıkarımı. Bilişsel sistem yaklaşımı ile kendini ayarlayan denetleyicilerin tasarımı. Akıllı sistemleri kullanarak bilişsel izleme sistemi ve diagnostik. Düzenlenmiş-nesnel indirgeme kuramı mekanizması ve bilincin ortaya çıkması. General view to system theory. Definitions and elements of cognitive systems engineering. Analogies on the physical and cyber spaces: Concepts on energy, information and knowledge. Definition of cybernetic systems. Topologies of the Artificial Neural Networks (ANN) and training algorithms. Information flow in ANN: Definition of complexity. Sensor and information fusion. Data acquisition and measurements for EEG signals. Intetfaces between human and machine. Cognitive knowledge inference from the data. Design of self-tuning controllers by a cognitive system approach. Cognitive monitoring system· using the intelligent systems and diagnostic. ORCH-OR Theory: Orchestrated-objective reduction mechanism to result in conscious awareness and/or choice.",
+  "outcomes": [
+   "Bilişsel sisternlerin prensipleri",
+   "Biyolojik süreçlerin ve nöronların matematiksel modelleri",
+   "Kuantum kuramına göre bilinçlilik mekanizması",
+   "Bilişsel miihendislik sistemlerinin tasarımı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Sistem kuramının genel kavramları",
+   "Hafta 2 · Bilişsel sistem mühendisliğinin tanımları",
+   "Hafta 3 · Fiziksel ve siber uzaydaki benzeşimler",
+   "Hafta 4 · Sibernetik sistemler",
+   "Hafta 5 · Yapay sinir ağları ve öğrenen sistemler",
+   "Hafta 6 · Yapay sinir ağlarında enformasyon kuramı",
+   "Hafta 7 · Kısaca karmaşıklık kuramı",
+   "Hafta 8 · Bilgi birleştirme",
+   "Hafta 9 · EEG (Beyin dalgaları) için veri toplama ve sinyal işleme",
+   "Hafta 10 · Ortak bilişsel sistemler: Makine-insan etkileşimi",
+   "Hafta 11 · Veriden bilişsel bilgi çıkarımı",
+   "Hafta 12 · Denetleme ve izleme için bilişsel tasarım",
+   "Hafta 13 · Kuantum kuramı üzerine kurulmuş bilinçlilik kavramı",
+   "Hafta 14 · ORCH-OR kuramı (Yönetilmiş-Nesne indirgeme)"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sistem kuramının genel kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Bilişsel sistem mühendisliğinin tanımları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Fiziksel ve siber uzaydaki benzeşimler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sibernetik sistemler",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Yapay sinir ağları ve öğrenen sistemler",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Yapay sinir ağlarında enformasyon kuramı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Kısaca karmaşıklık kuramı",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Bilgi birleştirme",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "EEG (Beyin dalgaları) için veri toplama ve sinyal işleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 10,
+    "topic": "Ortak bilişsel sistemler: Makine-insan etkileşimi",
+    "outcomes": "2"
+   },
+   {
+    "week": 11,
+    "topic": "Veriden bilişsel bilgi çıkarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Denetleme ve izleme için bilişsel tasarım",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Kuantum kuramı üzerine kurulmuş bilinçlilik kavramı",
+    "outcomes": "3"
+   },
+   {
+    "week": 14,
+    "topic": "ORCH-OR kuramı (Yönetilmiş-Nesne indirgeme)",
+    "outcomes": "4"
+   }
+  ],
   "textbooks": [
    "-"
   ],
@@ -797,9 +934,11 @@
   },
   "description": "Hukuki Çerçeve ve Etik İlkeler, ISO-IEC 27037 Standartları, Adli Bilişim Araç ve Yazılımları, Sabit Disk ve Mobil Cihazlarda Adli Bilişim İncelenmesi, Adli Bilişimde Ses ve Görüntü Analzi, Avrupa Konseyi Elektronik Delil Yönetmeliği, Bulut Bilişimde Adli Bilişim, Adli Bilişimde Güncel Yenilikler ve Gelişmeler Legal Framework and Ethical Principles, ISO-IEC 27037 Standards, Tools and Software in Digital Forensics, Digital Forensic Analysis on Hard Disks and Mobile Devices, Image and Audio Analysis in Digital Forensics, Council of Europe Electronic Evidence Guidelines, Cloud Computing in Digital Forensics, Recent Innovations and Developments in Digital Forensics",
   "outcomes": [
-   "1) Adli bilişim kavramı ve türleri,",
-   "2) ISO-IEC 27037 Standartları,",
-   "3) AB Avrupa Konseyi Dijital Delil Esasları (COE-EEG),"
+   "Adli bilişim kavramı ve türleri",
+   "ISO-IEC 27037 Standartları",
+   "AB Avrupa Konseyi Dijital Delil Esasları (COE-EEG)",
+   "Dijital delil türleri ve toplanması, tanımlanması ve saklanması",
+   "İlgili mevzuatlar"
   ],
   "weeklyTopics": [
    "Hafta 1 · Adli Bilişim Kavramları",
@@ -820,59 +959,73 @@
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Adli Bilişim Kavramları"
+    "topic": "Adli Bilişim Kavramları",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Adli Bilişimde Hukuki Çerçeve ve Etik İlkeler"
+    "topic": "Adli Bilişimde Hukuki Çerçeve ve Etik İlkeler",
+    "outcomes": "1"
    },
    {
     "week": 3,
-    "topic": "Adli Bilişim Araç ve Yazılımları"
+    "topic": "Adli Bilişim Araç ve Yazılımları",
+    "outcomes": "1-2-3-4"
    },
    {
     "week": 4,
-    "topic": "Adli Bilişimde ISO-IEC 27037 Standartları"
+    "topic": "Adli Bilişimde ISO-IEC 27037 Standartları",
+    "outcomes": "2"
    },
    {
     "week": 5,
-    "topic": "Vaka Analizi: Dijital Delillerin Toplanması ve İncelenmesi"
+    "topic": "Vaka Analizi: Dijital Delillerin Toplanması ve İncelenmesi",
+    "outcomes": "4"
    },
    {
     "week": 6,
-    "topic": "Sabit Disk ve Mobil Cihazlarda Adli Bilişim İncelenmesi"
+    "topic": "Sabit Disk ve Mobil Cihazlarda Adli Bilişim İncelenmesi",
+    "outcomes": "4-5"
    },
    {
     "week": 7,
-    "topic": "Adli Bilişimde Ses ve Görüntü Analizi"
+    "topic": "Adli Bilişimde Ses ve Görüntü Analizi",
+    "outcomes": "4"
    },
    {
     "week": 8,
-    "topic": "Siber Suç Araştırmalarında Adli Bilişim Yaklaşımı"
+    "topic": "Siber Suç Araştırmalarında Adli Bilişim Yaklaşımı",
+    "outcomes": "4-5"
    },
    {
     "week": 9,
-    "topic": "Avrupa Konseyi Elektronik Delil Yönetmeliği"
+    "topic": "Avrupa Konseyi Elektronik Delil Yönetmeliği",
+    "outcomes": "3"
    },
    {
     "week": 10,
-    "topic": "Dijital Delillerin Yönetimi: AB Düzenlemeleri ve Küresel Yaklaşımlar"
+    "topic": "Dijital Delillerin Yönetimi: AB Düzenlemeleri ve Küresel Yaklaşımlar",
+    "outcomes": "3-4"
    },
    {
     "week": 11,
-    "topic": "Türkiye’de Dijital Delil Yönetimi: Uluslararası Düzenlemelere Uyum"
+    "topic": "Türkiye’de Dijital Delil Yönetimi: Uluslararası Düzenlemelere Uyum",
+    "outcomes": "4-5"
    },
    {
     "week": 12,
-    "topic": "Bulut Bilişimde Adli Bilişim"
+    "topic": "Bulut Bilişimde Adli Bilişim",
+    "outcomes": "1"
    },
    {
     "week": 13,
-    "topic": "Vaka Analizi Dijital Delillerin Analiz ve Raporlanması"
+    "topic": "Vaka Analizi Dijital Delillerin Analiz ve Raporlanması",
+    "outcomes": "2-3-4-5"
    },
    {
     "week": 14,
-    "topic": "Adli Bilişimde Güncel Yenilikler ve Gelişmeler"
+    "topic": "Adli Bilişimde Güncel Yenilikler ve Gelişmeler",
+    "outcomes": "4-5"
    }
   ],
   "textbooks": [
@@ -987,7 +1140,8 @@
    },
    {
     "week": 14,
-    "topic": "Dönem ödevi sunumu-7"
+    "topic": "Dönem ödevi sunumu-7",
+    "outcomes": "6-7-8"
    }
   ],
   "textbooks": [
@@ -1037,59 +1191,73 @@
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Antenler için elektromanyetik teorinin gözden geçirilmesi"
+    "topic": "Antenler için elektromanyetik teorinin gözden geçirilmesi",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Kanal karakteristikleri"
+    "topic": "Kanal karakteristikleri",
+    "outcomes": "2"
    },
    {
     "week": 3,
-    "topic": "Dizi teorisi"
+    "topic": "Dizi teorisi",
+    "outcomes": "3"
    },
    {
     "week": 4,
-    "topic": "Akıllı diziler için anten tasarım özellikleri"
+    "topic": "Akıllı diziler için anten tasarım özellikleri",
+    "outcomes": "2"
    },
    {
     "week": 5,
-    "topic": "Varış algoritmaları açısı"
+    "topic": "Varış algoritmaları açısı",
+    "outcomes": "1-2"
    },
    {
     "week": 6,
-    "topic": "Eğitilmiş algoritmalar"
+    "topic": "Eğitilmiş algoritmalar",
+    "outcomes": "2-3"
    },
    {
     "week": 7,
-    "topic": "Eğitilmemiş algoritmalar"
+    "topic": "Eğitilmemiş algoritmalar",
+    "outcomes": "2-3-4"
    },
    {
     "week": 8,
-    "topic": "Akıllı anten uygulmaları"
+    "topic": "Akıllı anten uygulmaları",
+    "outcomes": "2"
    },
    {
     "week": 9,
-    "topic": "Akıllı anten sistemleri tasarımı"
+    "topic": "Akıllı anten sistemleri tasarımı",
+    "outcomes": "4"
    },
    {
     "week": 10,
-    "topic": "Anten dizileri temelleri: 1 boyutta, dairesel ve düzlemsel"
+    "topic": "Anten dizileri temelleri: 1 boyutta, dairesel ve düzlemsel",
+    "outcomes": "2-4"
    },
    {
     "week": 11,
-    "topic": "MIMO (Çok giriş çok çıkışlı)"
+    "topic": "MIMO (Çok giriş çok çıkışlı)",
+    "outcomes": "3"
    },
    {
     "week": 12,
-    "topic": "RF haberleşme ve radar antenleri: Parabolik yansıtıcı, Mercek, Yagi-Uda ve Log periyodik dipol dizileri, GSM ve Radyo bağlantı antenleri"
+    "topic": "RF haberleşme ve radar antenleri: Parabolik yansıtıcı, Mercek, Yagi-Uda ve Log periyodik dipol dizileri, GSM ve Radyo bağlantı antenleri",
+    "outcomes": "2"
    },
    {
     "week": 13,
-    "topic": "GPS, hücresel ve WLAN için uyarlanabilir dizi uygulamaları"
+    "topic": "GPS, hücresel ve WLAN için uyarlanabilir dizi uygulamaları",
+    "outcomes": "2-4"
    },
    {
     "week": 14,
-    "topic": "Sayısal yöntemler (FDTD. MoM, FEM)"
+    "topic": "Sayısal yöntemler (FDTD. MoM, FEM)",
+    "outcomes": "1-2-3-4"
    }
   ],
   "textbooks": [
@@ -1133,59 +1301,73 @@
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "1, 2 and 3 Electromagnetic sources."
+    "topic": "1, 2 and 3 Electromagnetic sources.",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Diffraction by the lattice"
+    "topic": "Diffraction by the lattice",
+    "outcomes": "1"
    },
    {
     "week": 3,
-    "topic": "Diffraction by the PEC elliptical cylinder"
+    "topic": "Diffraction by the PEC elliptical cylinder",
+    "outcomes": "1-2"
    },
    {
     "week": 4,
-    "topic": "Diffraction by the dielectric elliptical cylinder"
+    "topic": "Diffraction by the dielectric elliptical cylinder",
+    "outcomes": "1"
    },
    {
     "week": 5,
-    "topic": "Diffraction by the PEC sphere"
+    "topic": "Diffraction by the PEC sphere",
+    "outcomes": "1"
    },
    {
     "week": 6,
-    "topic": "Diffraction by the dielectric sphere"
+    "topic": "Diffraction by the dielectric sphere",
+    "outcomes": "1"
    },
    {
     "week": 7,
-    "topic": "Diffraction by the arbitrary 3d shape dielectric (like human head)"
+    "topic": "Diffraction by the arbitrary 3d shape dielectric (like human head)",
+    "outcomes": "1"
    },
    {
     "week": 8,
-    "topic": "Inverse problem solution for 2D case"
+    "topic": "Inverse problem solution for 2D case",
+    "outcomes": "1"
    },
    {
     "week": 9,
-    "topic": "Inverse problem solution for 3D case"
+    "topic": "Inverse problem solution for 3D case",
+    "outcomes": "1"
    },
    {
     "week": 10,
-    "topic": "Error estimation in 2D diffraction problems"
+    "topic": "Error estimation in 2D diffraction problems",
+    "outcomes": "1"
    },
    {
     "week": 11,
-    "topic": "Error estimation in 3D diffraction problems"
+    "topic": "Error estimation in 3D diffraction problems",
+    "outcomes": "1-2"
    },
    {
     "week": 12,
-    "topic": "Visualisation of 2D far field pattern"
+    "topic": "Visualisation of 2D far field pattern",
+    "outcomes": "1"
    },
    {
     "week": 13,
-    "topic": "Visualisation of 3D far field pattern"
+    "topic": "Visualisation of 3D far field pattern",
+    "outcomes": "1"
    },
    {
     "week": 14,
-    "topic": "Diffraction problem solution for metalo dielectric objects (Like room)"
+    "topic": "Diffraction problem solution for metalo dielectric objects (Like room)",
+    "outcomes": "1"
    }
   ],
   "textbooks": [
@@ -1231,59 +1413,73 @@
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Elektromanyetik problemlerin sınıflandırılması"
+    "topic": "Elektromanyetik problemlerin sınıflandırılması",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Moment yöntemine (MoM) giriş, MoM için test ve baz fonksiyonları"
+    "topic": "Moment yöntemine (MoM) giriş, MoM için test ve baz fonksiyonları",
+    "outcomes": "2"
    },
    {
     "week": 3,
-    "topic": "İntegral Denklemler: Bessel Fonksiyonlarını İçeren İntegraller ve Seriler."
+    "topic": "İntegral Denklemler: Bessel Fonksiyonlarını İçeren İntegraller ve Seriler.",
+    "outcomes": "2"
    },
    {
     "week": 4,
-    "topic": "Hankel Dönüşümleri ve Assosiye Legendre Fonksiyonları."
+    "topic": "Hankel Dönüşümleri ve Assosiye Legendre Fonksiyonları.",
+    "outcomes": "3"
    },
    {
     "week": 5,
-    "topic": "İlk Temel Problem: Elektrik Yüklü Disk Problemi: Weber Çözümü, Beltrami Simetrik Potansiyelleri."
+    "topic": "İlk Temel Problem: Elektrik Yüklü Disk Problemi: Weber Çözümü, Beltrami Simetrik Potansiyelleri.",
+    "outcomes": "2"
    },
    {
     "week": 6,
-    "topic": "Yatık Spheroidal Koordinatlarda Problemin Formülasyonu ve Çözümü, Corpon Çözümü, Beltrami yöntemi."
+    "topic": "Yatık Spheroidal Koordinatlarda Problemin Formülasyonu ve Çözümü, Corpon Çözümü, Beltrami yöntemi.",
+    "outcomes": "1-2"
    },
    {
     "week": 7,
-    "topic": "Düal İntegral Denklemlerinin Elemanter Çözümü: Harmonik Fonksiyonların İntegral Gösterilimine Dayalı Yöntemler, Düal İntegral Denklemler."
+    "topic": "Düal İntegral Denklemlerinin Elemanter Çözümü: Harmonik Fonksiyonların İntegral Gösterilimine Dayalı Yöntemler, Düal İntegral Denklemler.",
+    "outcomes": "2-3"
    },
    {
     "week": 8,
-    "topic": "Titchmarsh Tipinde Düal İntegral Denklemler, Peter Çözümü, Titchmarsh Çözümü."
+    "topic": "Titchmarsh Tipinde Düal İntegral Denklemler, Peter Çözümü, Titchmarsh Çözümü.",
+    "outcomes": "2-3-4"
    },
    {
     "week": 9,
-    "topic": "Nöble Çözümü, Gordon-Copson Çözümü, Düal İntegral Denklemlerin Çözümünden Türetilen Fonksiyonlar.Özel Durumlar: Hankel Çekirdeği, Keyfi Ağırlık Fonksiyonu."
+    "topic": "Nöble Çözümü, Gordon-Copson Çözümü, Düal İntegral Denklemlerin Çözümünden Türetilen Fonksiyonlar.Özel Durumlar: Hankel Çekirdeği, Keyfi Ağırlık Fonksiyonu.",
+    "outcomes": "2"
    },
    {
     "week": 10,
-    "topic": "Genel Problem: İntegral Gösterilim Yöntemi, Yaklaşık Çözümler. Simültane Denklemler: Düal Seri Denklemleri."
+    "topic": "Genel Problem: İntegral Gösterilim Yöntemi, Yaklaşık Çözümler. Simültane Denklemler: Düal Seri Denklemleri.",
+    "outcomes": "4"
    },
    {
     "week": 11,
-    "topic": "Üçlü Denklemler: Titchmarsh Üçlü İntegral Denklemleri ve Çözümleri."
+    "topic": "Üçlü Denklemler: Titchmarsh Üçlü İntegral Denklemleri ve Çözümleri.",
+    "outcomes": "2-4"
    },
    {
     "week": 12,
-    "topic": "Kobayashi Potansiyelleri: Dovnorovich Çözümü, Galin teoremi, Green Çözümü."
+    "topic": "Kobayashi Potansiyelleri: Dovnorovich Çözümü, Galin teoremi, Green Çözümü.",
+    "outcomes": "3"
    },
    {
     "week": 13,
-    "topic": "Elektrostatik Uygulamaları: Dairesel Levhalı Kondansatör, Love İntegral Denklem Çözümü, Karışık Küresel Geometrilerle İlgili Problemler."
+    "topic": "Elektrostatik Uygulamaları: Dairesel Levhalı Kondansatör, Love İntegral Denklem Çözümü, Karışık Küresel Geometrilerle İlgili Problemler.",
+    "outcomes": "2"
    },
    {
     "week": 14,
-    "topic": "Güncel araştırma problemlerinin tanıtılması. Yeni yöntemlerin tanıtılması."
+    "topic": "Güncel araştırma problemlerinin tanıtılması. Yeni yöntemlerin tanıtılması.",
+    "outcomes": "2-4"
    }
   ],
   "textbooks": [

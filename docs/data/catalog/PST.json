@@ -825,6 +825,123 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=603"
  },
+ "PST 613E": {
+  "code": "PST 613E",
+  "name": "Membrane Technology",
+  "nameEn": "Membrane Technology",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Membran teknolojisi kimya, kimya mühendisliği, polimer bilimi ve mühendisliği ve malzeme bilimi ve mühendisliği gibi çeşitli disiplinlerin ara kesitinde yer almaktadır. Malzeme özelliklerini değiştirerek membranlar belirli bir ayırma işlemini belirli şartlarda gerçekleştirmek üzere özelleştirilebilir. Polimer ve polimer kompozit membranlar günümüzde kullanılan ticari membranların büyük bir bölümünü oluşturmaktadır. Bu dersin ana amacı membran teknolojisinin bir çok yönü hakkında geniş bir perspektif vermektir. Ağırlıklı olarak polimer esaslı membranlar üzerinde durulacaktır. Gözenekli ve gözeneksiz membranlarda taşınımın temelleri, membran malzemeleri, polimerik membranların özellikleri, membran üretimi ve karakterizasyonu, en önemli membran prosesleri ve uygulamaları kapsanacak konular arasındadır. Membrane technology involves various disciplines such as chemical engineering, chemistry, polymer science and engineering, and material science and engineering. By manipulating material properties membranes can be tailor-made for specific separation tasks and conditions. Polymer and polymer composite membranes comprise a large portion of the commercial membranes used today. The main objective of this course is to give a broad overview of the many aspects of membrane technology. Emphasis will be on polymer based membranes. Coverage includes fundamentals of transport in porous and non-porous membranes, membrane materials, properties of polymer membranes, membrane preparation and characterization, basics of the most important membrane processes and their applications.",
+  "outcomes": [
+   "Bu dersi başarıyla tamamlayan öğrenci membran teknolojisinin temel kavramlarını tanımlayabilir, açıklayabilir ve uygulayabilir.",
+   "Bu dersi başarıyla tamamlayan öğrenci çeşitli membran prosesleri ve uygulamaları konusunda bilgi sahibi olduğunu gösterebilir.",
+   "Bu dersi başarıyla tamamlayan öğrenci membran temelli çözümlerin başarılı bir şekilde uygulanabilmesi için gereken operasyonel gereksinimleri saptayabilir.",
+   "Bu dersi başarıyla tamamlayan öğrenci membran hazırlama/üretimi ve membran karakterizasyonu konularında bilgi sahibi olduğunu gösterebilir.",
+   "Bu dersi başarıyla tamamlayan öğrenci membranların kimyasal ve malzeme özellikleri ile ayırma performansları arasındaki ilişkiyi analiz edebilir ve değerlendirebilir.",
+   "Bu dersi başarıyla tamamlayan öğrenci membran teknolojisinin belirli uygulamalar ile ilgili sınırlamalarını ayırdedebilir.",
+   "Bu dersi başarıyla tamamlayan öğrenci polimer bilimi ve mühendisliğinin membran bilimi ve teknolojisindeki rolünü irdeleyebilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Membran Bilimi Ve Teknolojisine Genel Bakış",
+   "Hafta 2 · Membran Yapıları",
+   "Hafta 3 · Membranlarda Taşınım Teorisi",
+   "Hafta 4 · Membran Polimerleri / Membran Üretimi",
+   "Hafta 5 · Membran Karakterizasyonu",
+   "Hafta 6 · Mıkrofiltrasyon (mf)",
+   "Hafta 7 · Ultrafiltrasyon (uf)",
+   "Hafta 8 · Ters Ozmos (ro) Ve Nanofiltrasyon (nf)",
+   "Hafta 9 · Elektrodiyaliz",
+   "Hafta 10 · Gaz Ayırma",
+   "Hafta 11 · Pervaporasyon (pv) / Buhar Geçirimi",
+   "Hafta 12 · Sıvı Membranlar Ve Hızlandırılmış Taşınım",
+   "Hafta 13 · Membranların Tıp Uygulamaları",
+   "Hafta 14 · Membran Teknolojisinin Geleceği"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Membran Bilimi Ve Teknolojisine Genel Bakış",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 2,
+    "topic": "Membran Yapıları",
+    "outcomes": "1-2-5-7"
+   },
+   {
+    "week": 3,
+    "topic": "Membranlarda Taşınım Teorisi",
+    "outcomes": "1-2-5-7"
+   },
+   {
+    "week": 4,
+    "topic": "Membran Polimerleri / Membran Üretimi",
+    "outcomes": "4-7"
+   },
+   {
+    "week": 5,
+    "topic": "Membran Karakterizasyonu",
+    "outcomes": "4-5-7"
+   },
+   {
+    "week": 6,
+    "topic": "Mıkrofiltrasyon (mf)",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 7,
+    "topic": "Ultrafiltrasyon (uf)",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 8,
+    "topic": "Ters Ozmos (ro) Ve Nanofiltrasyon (nf)",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 9,
+    "topic": "Elektrodiyaliz",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 10,
+    "topic": "Gaz Ayırma",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 11,
+    "topic": "Pervaporasyon (pv) / Buhar Geçirimi",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 12,
+    "topic": "Sıvı Membranlar Ve Hızlandırılmış Taşınım",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Membranların Tıp Uygulamaları",
+    "outcomes": "2-3-5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Membran Teknolojisinin Geleceği"
+   }
+  ],
+  "textbooks": [
+   "Baker, R. (2004). Membrane Technology and Applications (2nd ed). New York: Wiley.",
+   "Mulder, M. (1996). Basic Principles of Membrane Technology (2nd ed). Dordrecht: Kluwer Academic Publishers.",
+   "Noble, R. D. & Stern, S. A. (1995). Membrane Separations Technology: Principles and Applications. Amsterdam: Elsevier.",
+   "Boddeker, K. W. (2008). Liquid Separations with Membranes: An Introduction to Barrier Interference. Berlin: Springer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=PST&dersNo=613"
+ },
  "PST 621E": {
   "code": "PST 621E",
   "name": "Supramolecular Polymers",

@@ -1,4 +1,100 @@
 {
+ "VIA 501E": {
+  "code": "VIA 501E",
+  "name": "Advances in Data Science",
+  "nameEn": "Advances in Data Science",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Bu ders veri bilimindeki temel kavramları, teknikleri ve uygulamaları tanıtmaktadır. İstatistikten, makine öğrenmesine, grafik analizi ve paralel programlama tekniklerine, tavsiye sistemi ve duygu analizi gibi uygulamalara yönelik verilerin analizine odaklanır. Yeni kavramlar, gerçek verileri kullanarak vaka çalışmaları ile gösterilmektedir. Soruların çözümleri için Python programlama dili kullanılmaktadır This course introduces to main concepts, techniques, and applications in data science. It focuses on the analysis of data, covering concepts from statistics to machine learning, techniques for graph analysis and parallel programming, and applications such as recommender systems or sentiment analysis. New concepts are are illustrated by practical cases using real data. The solutions to the questions are implemented using Python programming language.",
+  "outcomes": [
+   "Veri bilimindeki temel kavram ve yöntemleri anlama becerisi",
+   "Veri bilimindeki temel yöntem ve teknikleri uygulama becerisi",
+   "Python programlama dili ile uygulama becerisi",
+   "İş dünyasındaki gerçek problemlere veri bilimi ile çözüm geliştirebilme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Veri Bilimine Giriş",
+   "Hafta 2 · Veri Bilimcileri için Python Araçları",
+   "Hafta 3 · Betimsel İstatistik",
+   "Hafta 4 · İstatistiksel Çıkarım",
+   "Hafta 5 · Gözetimli Öğrenme",
+   "Hafta 6 · Regresyon Analizi",
+   "Hafta 7 · Gözetimsiz Öğrenme",
+   "Hafta 8 · Ağ Analizi",
+   "Hafta 9 · Öneri Sistemleri",
+   "Hafta 10 · Sentiment Analizi için İstatiksel Doğal Dil İşleme (NLP)",
+   "Hafta 11 · Paralel Programlama"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri Bilimine Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri Bilimcileri için Python Araçları",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Betimsel İstatistik",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 4,
+    "topic": "İstatistiksel Çıkarım",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Gözetimli Öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Regresyon Analizi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Gözetimsiz Öğrenme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Ağ Analizi",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Öneri Sistemleri",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Sentiment Analizi için İstatiksel Doğal Dil İşleme (NLP)",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Paralel Programlama",
+    "outcomes": "2"
+   }
+  ],
+  "textbooks": [
+   "Laura Igual, Santi Seguí, Introduction to Data Science : A Python Approach to Concepts, Techniques and Applications, Springer, 2017",
+   "Carlo Vercellis, Business Intelligence, Wiley, 2009",
+   "Wes McKinney, Python for Data Analysis, O’Reilly, 2013"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=501"
+ },
  "VIA 502E": {
   "code": "VIA 502E",
   "name": "Data Mining for Business",
@@ -94,6 +190,104 @@
    "Class notes and handouts"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=502"
+ },
+ "VIA 503E": {
+  "code": "VIA 503E",
+  "name": "Applied Statistics",
+  "nameEn": "Applied Statistics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders verilerin analizi ve yorumlanması, tahminler, hipotez testleri, ANOVA, basit regresyon analizi, çoklu regresyon analizi, lojistik regresyon, EKK varsayımları, varsayımların testleri, varsayımların sağlanmadığı durumlarda çözüm yolları gibi tek değişkenli ve çok değişkenli istatistik konularını kapsamaktadır. This course covers data analysis, fundamentals of univariate and multivariate statistics such as; Estimation, tests of hypothesis, ANOVA, simple regression analysis, multiple linear regression models, assumptions of OLS, testing assumptions, remedial measures of violation of assumptions, logit models.",
+  "outcomes": [
+   "statistiğin temel yöntemlerini anladıklarını gösterebilecekler",
+   "Veri analizlerinde istatistik yöntemlerini uygulayabilecekler",
+   "İşletme, ekonomi ve mühendisliğin çeşitli alanlarında istatistik yöntemler kullanarak bağımsız araştırma yapabilecekler",
+   "Araştırma sonuçlarını başarıyla yorumlayabilecekler",
+   "R programlama dili ile uygulama başarısı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Tanımsal istatistik ve R diline giriş",
+   "Hafta 2 · R dilinde veri yapıları",
+   "Hafta 3 · Olasılık dağılımları (Kesikli ve sürekli dağılımlar, Normal dağılım, t-dağılımı)",
+   "Hafta 4 · Aralık tahminleri (tek örnek, iki örnek)",
+   "Hafta 5 · Hipotez testleri (tek örnek, iki örnek",
+   "Hafta 6 · Uyum iyiliği (Ki-kare testi)",
+   "Hafta 7 · Anova",
+   "Hafta 8 · Basit regresyon analizi, EKK yöntemi",
+   "Hafta 9 · Çoklu regresyon analizi",
+   "Hafta 10 · EKK varsayımları, testleri",
+   "Hafta 11 · Lojistik regresyon analizi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Tanımsal istatistik ve R diline giriş",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 2,
+    "topic": "R dilinde veri yapıları",
+    "outcomes": "1-3-5"
+   },
+   {
+    "week": 3,
+    "topic": "Olasılık dağılımları (Kesikli ve sürekli dağılımlar, Normal dağılım, t-dağılımı)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Aralık tahminleri (tek örnek, iki örnek)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Hipotez testleri (tek örnek, iki örnek",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Uyum iyiliği (Ki-kare testi)",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 7,
+    "topic": "Anova",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 8,
+    "topic": "Basit regresyon analizi, EKK yöntemi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Çoklu regresyon analizi",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "EKK varsayımları, testleri",
+    "outcomes": "1-2-3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Lojistik regresyon analizi",
+    "outcomes": "1-2-3-4-5"
+   }
+  ],
+  "textbooks": [
+   "Probability and statistics for engineers and scientists, Walpole, Myers, Myers, Pearson Inc, 2012",
+   "Basic Econometrics, Gujarati and Porter, McGraw-Hill Education; 2008",
+   "Statistics for Business and Economics , Paul Newbold , William Carlson , Betty Thorne, Pearson; 8th Edition, 2012",
+   "Introductory Econometrics: A Modern Approach (Upper Level Economics Titles), Jeffrey M. Wooldridge, South-Western College Pub; 5 edition, 2012"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=503"
  },
  "VIA 504E": {
   "code": "VIA 504E",
@@ -192,6 +386,121 @@
    "Big Data Analytics Beyond Hadoop: Real-Time Applications with Storm, Spark, and More Hadoop Alternatives, Vijay Srinivas Agneeswaran, Pearson Education, 2014."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=504"
+ },
+ "VIA 505E": {
+  "code": "VIA 505E",
+  "name": "Database Management&Big Data",
+  "nameEn": "Database Management&Big Data",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Gelişen teknolojiler ile birlikte günümüzde artık çok farklı kaynaklarda oluşan veriler saklanabilmekte ve işlenebilmektedir. Analitik uygulamalar ise günümüzde veri kaynaklarını etkin kullanabildiği ölçüde değer oluşturabilmektedir. İşletmelerde geleneksel yazılımlar ile oluşan işlem verileri ilişkisel veri tabanlarında tutulurken, büyük veri olarak tanımlayabileceğimiz veriler için yeni veri tabanı modelleri oluşturulmaktadır. Bu ders kapsamında geleneksel ve yeni veri tabanı modelleri anlatılmaktadır. Today, with the help of emerging technologies, the data formed in various sources can be stored and processed easily. Analytical applications create value as the data sources can be used effectively. In the enterprises, while the transaction data generated are stored in relational databases, new database models are created for the big data. In this course, traditional and new data base models are explained.",
+  "outcomes": [
+   "Varlık İlişki Diyagramı okuma ve tasarlama becerisi",
+   "Temel SQL komutlarını anlamak, yazmak ve çalıştırma becerisi",
+   "Veri Ambarı tasarlama ve kullanma becerisi",
+   "Temel raporlama becerisi",
+   "İşletmelerde kullanılabilecek NoSQL veri tabanlarının uygunluğunu değerlendirme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Veri – veri tabanı ve diğer temel kavramların tanıtılması",
+   "Hafta 2 · Veri tabanı geçmişi – ilişkisel veri tabanı temel tanımları ve mimarisi",
+   "Hafta 3 · Temel SQL (Structured Query Language",
+   "Hafta 4 · Temel SQL (Structured Query Language",
+   "Hafta 5 · Advanced SQL: view, trigger, stored procedure",
+   "Hafta 6 · Veri Ambarı ve ETL araçlarına giriş",
+   "Hafta 7 · NOSQL veritabanlarına giriş ve İşletmelerde NoSQL veritabanlarının konumu",
+   "Hafta 8 · NoSQL veri tabanı modelleri",
+   "Hafta 9 · NoSQL Kullanım senaryoları ve örnek uygulama",
+   "Hafta 10 · Raporlama ve Görselleştirme",
+   "Hafta 11 · Proje Sunumları",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Veri – veri tabanı ve diğer temel kavramların tanıtılması",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Veri tabanı geçmişi – ilişkisel veri tabanı temel tanımları ve mimarisi",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Temel SQL (Structured Query Language",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Temel SQL (Structured Query Language",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Advanced SQL: view, trigger, stored procedure",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Veri Ambarı ve ETL araçlarına giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "NOSQL veritabanlarına giriş ve İşletmelerde NoSQL veritabanlarının konumu",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 8,
+    "topic": "NoSQL veri tabanı modelleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "NoSQL Kullanım senaryoları ve örnek uygulama",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Raporlama ve Görselleştirme",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Proje Sunumları",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Fundamentals of Database Systems, 2016, Ramez Elmasri, Shamkant B. Navathe, Peason",
+   "Getting Started with NoSQL, 2013, Gaurav Vaish",
+   "Database Demiysified, 2010, McGrawHill",
+   "NoSQL for Dummies, 2015, Adam Fowler"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=505"
  },
  "VIA 506E": {
   "code": "VIA 506E",
@@ -300,6 +609,103 @@
    "Walker R.C. (1999) \"Introduction to Mathematical Programming\", Prentice Hall Inc."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=506"
+ },
+ "VIA 507E": {
+  "code": "VIA 507E",
+  "name": "Business Analytics for Manager",
+  "nameEn": "Business Analytics for Manager",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "İş analitiği konusu genellikle analitik yöntemler, kullanılan veriler ve araçlar açısından incelenmektedir. Bu kavramın istenen değeri ortaya koyabilmesi için yöneticilerin konuyu ve çevreleyen yapıtaşlarını tanıması ve değerlendirmesi gerekmektedir. Bu derste iş analitiği firmaların çeşitli yönetim seviyelerine etkileri ve alınması gereken kararlar açısından incelenmektedir. Ayrıca doğru projelerin seçilmesi verilebilmesi için temel kavramlar tanıtılmakta ve çeşitli proje değerlendirme yaklaşımları ortaya konulmaktadır. The topic of business analytics is usually analyzed in terms of analytical methods, data and tools used. In order for this concept to reveal the desired value, it is necessary for the managers to identify and evaluate the building and surrounding building blocks. In this course, business analytics is examined in terms of the effects of various management levels and the decisions to be taken. In addition, basic concepts are introduced for the selection of the right projects and various project evaluation approaches are presented.",
+  "outcomes": [
+   "Potansiyel iş analitiği uygulamalarının kurumlara katacağı değerleri belirleyebilmek.",
+   "Farklı iş problemleri için uygun iş analitiği yaklaşımları ve modelleri önerebilmek",
+   "Kurum içinde iş analitiğinin farklı seviyelerde nasıl ele alındığını anlamak",
+   "Kurum içindeki veri kaynaklarını değerlendirmek ve belirlenen veriler ile iş analitiği modelleri kurabilmek",
+   "Alternatif iş analitiği projelerini değerlendirebilmek"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · İş analitiğine giriş ve temel tanımlar",
+   "Hafta 2 · Stratejik seviyede iş analitiği",
+   "Hafta 3 · Fonksiyonel seviyede bilgi oluşturma",
+   "Hafta 4 · Analitik seviyede iş analitiği",
+   "Hafta 5 · Tanımlayıcı analitikler ve uygulamaları",
+   "Hafta 6 · Kestirimci analitikler ve uygulamaları",
+   "Hafta 7 · Çözümleyici analitikler ve uygulamaları",
+   "Hafta 8 · Veri Ambarı seviyesinde iş analitiği",
+   "Hafta 9 · Şirketlerdeki veri kaynakları ve veri kalitesi",
+   "Hafta 10 · İş analitiği projelerinin önceliklendirilmesi",
+   "Hafta 11 · Proje sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "İş analitiğine giriş ve temel tanımlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Stratejik seviyede iş analitiği",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 3,
+    "topic": "Fonksiyonel seviyede bilgi oluşturma",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Analitik seviyede iş analitiği",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Tanımlayıcı analitikler ve uygulamaları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 6,
+    "topic": "Kestirimci analitikler ve uygulamaları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 7,
+    "topic": "Çözümleyici analitikler ve uygulamaları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 8,
+    "topic": "Veri Ambarı seviyesinde iş analitiği",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Şirketlerdeki veri kaynakları ve veri kalitesi",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "İş analitiği projelerinin önceliklendirilmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Proje sunumları",
+    "outcomes": "1-2-5"
+   }
+  ],
+  "textbooks": [
+   "Laursen G.H.N. ve Thorlund J (2017) Business Analytics for Managers, Wiley",
+   "Evans J.R. (2017) Business Analytics: Methods, Models, Decisions, Pearson",
+   "Smith J. (2016) Data Analytics: What Every Business Must Know About Big Data And Data Science, Pinnacle Publishers"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=507"
  },
  "VIA 508E": {
   "code": "VIA 508E",
@@ -686,6 +1092,102 @@
    "Monge, P. R. & Contractor, N. S. (2003). Theories of Communication Networks. New York: Oxford University Press"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=525"
+ },
+ "VIA 527E": {
+  "code": "VIA 527E",
+  "name": "Mathematics for Machine Lear.",
+  "nameEn": "Mathematics for Machine Lear.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Cebir, olasılık, istatistik, bilgi teorisi, optimizasyon, çok değişkenli diferansiyel hesaplama ve olabilirlik fonksiyonları Algebra, probability, statistics, information theory, optimization, multivariate differential calculus, and likelihood functions",
+  "outcomes": [
+   "Olasılık ve istatistik konularında bilgi sahibi olur",
+   "Makine öğrenmesi algoritmalarını optimize edebilir",
+   "Bilgi teorisi hakkında bilgi sahibi olur",
+   "Makine öğrenmesi algoritmalarını kodlayabilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Makine öğrenmesinde matematiğin önemi",
+   "Hafta 2 · Linear cebir",
+   "Hafta 3 · Özvektör ve özdeğer",
+   "Hafta 4 · Matris ayrışımı",
+   "Hafta 5 · Vektörler",
+   "Hafta 6 · Olasılık ve dağılımlar",
+   "Hafta 7 · Optimizayon",
+   "Hafta 8 · Optimizasyon ile linear regresyon parametrelerini hesaplama",
+   "Hafta 9 · Temel bileşim analizi ile değişken indirgeme",
+   "Hafta 10 · Gaussian karışım analizi ile dağılım tahmin etme",
+   "Hafta 11 · Destek vektör makineleri ile sınıflandırma"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Makine öğrenmesinde matematiğin önemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Linear cebir",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Özvektör ve özdeğer",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Matris ayrışımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Vektörler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Olasılık ve dağılımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Optimizayon",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Optimizasyon ile linear regresyon parametrelerini hesaplama",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Temel bileşim analizi ile değişken indirgeme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Gaussian karışım analizi ile dağılım tahmin etme",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Destek vektör makineleri ile sınıflandırma",
+    "outcomes": "2-3-4"
+   }
+  ],
+  "textbooks": [
+   "Deisenroth, Marc Peter, A. Aldo Faisal, and Cheng Soon Ong. Mathematics for machine learning. Cambridge University Press, 2020.",
+   "Bishop, Christopher M. Pattern recognition and machine learning. springer, 2006.",
+   "Class notes and handouts"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=527"
  },
  "VIA 528E": {
   "code": "VIA 528E",

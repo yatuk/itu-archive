@@ -1,4 +1,462 @@
 {
+ "DCZ 506": {
+  "code": "DCZ 506",
+  "name": "Denizci.Sektör.Kariyer Plan.",
+  "nameEn": "Career Planning in Maritime Sector",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kariyer tanımı, kariyer planlaması ve yönetimi, Kariyer planlama ve kariyer gelişimi, modelleri, Kariyer safhaları: Kişisel tercihler, Denizcilikte kariyer eğilimleri, Kariyer kuramları (J. Holland- Ann Roe, E. Schein), Özgeçmiş, kapak yazısı ve teşekkür mektubu hazırlama yöntemleri, Denizcilik sektörünün beklentileri, Etkileyici iş görüşmesi, mülakat teknikleri, Özgeçmiş hazırlanması, internet aracılığıyla iş başvurusu ve şirketlerin web sayfalarındaki iş başvuru formlarının doldurulması, İşe yerleşme ve örgütsel kariyer planlamasının birey ve organizasyon açısından kariyer yönetimi, İnsan kaynakları yönetiminde kariyer planlamasının yeri, çalışanların, yöneticilerin ve İK uzmanlarının kariyer yönetimindeki rolleri, Kariyer planlama sorunları, İş dünyasından profesyonel bir ziyaretçinin derse katılımının sağlanması ve iş görüşmelerinin aktarılması, Sözlü ve yazılı iletişim, profesyonel etik Career definition, career planning and career management, Career planning and career developing modelsCareer stages: personal preferences, Career trends in maritime sector, Career theories (J. Holland- Ann Roe, E. Schein), Resume, cover letter methods, Expectations of maritime sector, Impressive job interview, interview techniques, Filling out resume, companies to apply for jobs via the Internet web pages and filling out job application forms, Organizational work placement, career planning, and career management for individual and organizational, Relationship with human resources management and career planning, organizational career planning, Career planning issues, Professional business man visitors from world of the job, and interview with students in classroom, Interpreting and written communication, professional ethics",
+  "outcomes": [
+   "Bireysel kariyer planlamasını öğrenme.",
+   "Bireysel ve örgütsel kariyer planlamasının nasıl yapıldığını öğrenme.",
+   "Bireysel kariyer planlamasının aşamalarını öğrenme.",
+   "İş görüşmelerinde dikkat edilmesi gereken hususları öğrenme.",
+   "Kendi bireysel kariyer planlamasını yapabilme.",
+   "İş yerlerinde kariyer planlama sorunlarını çözme.",
+   "Denizcilik sektörüne bireysel kariyer planlamasını entegre etme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Kariyer tanımı, kariyer planlaması ve yönetimi",
+   "Hafta 2 · Kariyer planlama ve kariyer gelişimi, modelleri",
+   "Hafta 3 · Kariyer safhaları: Kişisel tercihler",
+   "Hafta 4 · Denizcilikte kariyer eğilimleri, Kariyer kuramları (J. Holland- Ann Roe, E. Schein)",
+   "Hafta 5 · Özgeçmiş, kapak yazısı ve teşekkür mektubu hazırlama yöntemleri",
+   "Hafta 6 · Denizcilik sektörünün beklentileri",
+   "Hafta 7 · Etkileyici iş görüşmesi, mülakat teknikleri, Özgeçmiş hazırlanması, internet aracılığıyla iş başvurusu ve şirketlerin web sayfalarındaki iş başvuru formlarının doldurulması",
+   "Hafta 8 · İşe yerleşme ve örgütsel kariyer planlamasının birey ve organizasyon açısından kariyer yönetimi",
+   "Hafta 9 · İnsan kaynakları yönetiminde kariyer planlamasının yeri, çalışanların, yöneticilerin ve İK uzmanlarının kariyer yönetimindeki rolleri",
+   "Hafta 10 · Kariyer planlama sorunları",
+   "Hafta 11 · İş dünyasından profesyonel bir ziyaretçinin derse katılımının sağlanması ve iş görüşmelerinin aktarılması, Sözlü ve yazılı iletişim, profesyonel etik"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kariyer tanımı, kariyer planlaması ve yönetimi"
+   },
+   {
+    "week": 2,
+    "topic": "Kariyer planlama ve kariyer gelişimi, modelleri"
+   },
+   {
+    "week": 3,
+    "topic": "Kariyer safhaları: Kişisel tercihler"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilikte kariyer eğilimleri, Kariyer kuramları (J. Holland- Ann Roe, E. Schein)"
+   },
+   {
+    "week": 5,
+    "topic": "Özgeçmiş, kapak yazısı ve teşekkür mektubu hazırlama yöntemleri"
+   },
+   {
+    "week": 6,
+    "topic": "Denizcilik sektörünün beklentileri"
+   },
+   {
+    "week": 7,
+    "topic": "Etkileyici iş görüşmesi, mülakat teknikleri, Özgeçmiş hazırlanması, internet aracılığıyla iş başvurusu ve şirketlerin web sayfalarındaki iş başvuru formlarının doldurulması"
+   },
+   {
+    "week": 8,
+    "topic": "İşe yerleşme ve örgütsel kariyer planlamasının birey ve organizasyon açısından kariyer yönetimi"
+   },
+   {
+    "week": 9,
+    "topic": "İnsan kaynakları yönetiminde kariyer planlamasının yeri, çalışanların, yöneticilerin ve İK uzmanlarının kariyer yönetimindeki rolleri"
+   },
+   {
+    "week": 10,
+    "topic": "Kariyer planlama sorunları"
+   },
+   {
+    "week": 11,
+    "topic": "İş dünyasından profesyonel bir ziyaretçinin derse katılımının sağlanması ve iş görüşmelerinin aktarılması, Sözlü ve yazılı iletişim, profesyonel etik"
+   }
+  ],
+  "textbooks": [
+   "Bayram, C. (2008), Kariyer Planlama ve Yönetimi, Kum Saati Yayınları.",
+   "Ellis, D., Toft, D., Stupka, E., Lankowitz, S. (2003), Career Planning, Third Edition, Amazon.com.",
+   "Öner, M. (2012), Kariyer Doktoru, Crea Yayıncılık.",
+   "Schein, E.H., Van Maanen, J. (2013), Career Anchors: The Changing Nature of Career Participant Workbook, 4th Edition, Wiley.",
+   "Sevinç, E. (2010), Kariyer Planlama ve Yönetimi, Etap Yayınevi."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DCZ&dersNo=506"
+ },
+ "DCZ 508": {
+  "code": "DCZ 508",
+  "name": "Denizci.Kalite Sist.&Stan.",
+  "nameEn": "Maritime Quality Systems and Standards",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Standartların ve kalite sistemlerinin üretim ve hizmet sektöründe önemi. TSE ISO Kalite Yönetim Sistemleri’nin tanımı, terimleri, tarifler ve önemi. ,Standart çeşitleri ve hazırlanması.Belgelendirme ve akreditasyon aşamaları, Türk Standartlar Enstitüsü belgelendirme faaliyetleri. Kalite sistemi modeli belirleme. Kalite yönetim sistemi dokümantasyonu, kalite el kitabının hazırlanması, İş talimatı ve görev tanımı kavramı, iş talimatlarının ve görev tanımlarının hazırlanması, kalite yönetim sistemi dokümantasyonunun birbiri ile ilişkilendirilmesi., Süreç yönetim sistemi modelleme, Süreç yönetim sistemi iyileştirme ve etkileşimleri,Kalite Yönetim Sistemlerinde politika ve strateji kavramları ve stratejik yönetim, swot analizi,, vizyon ve misyon kavramı, stratejik amaç kavramı, hedef kavramı, durum analizi), Kalite Yönetim Sistemlerinde SWOT analizi, vizyon ve misyon kavramı, stratejik amaç kavramı ve durum analiziÖlçüm ve kalibrasyon, validasyon, verifikasyon, , Belirsizlik bütçesi, İstatistiki değerlendirmeBir kuruluşun faaliyet alanına göre ilgili standardın idari şartları karşılayan bir kalite sistemi modellemesi The importance of standards and quality systems in manufacturing and service sector. The definition of TSE ISO Quality Management System, terms, descriptions and importance. Standard varieties and preparation., Certification and accreditation stages, TSE certification activities. Identification of the quality system model. Preparation of quality management system documentation and quality handbook. Work instructions and the concept of job definition, preparation of work instructions and job definitions, correlating quality management system documentation.Process modelling, Process improvement and interactions Policy and strategy concepts, strategic management in Quality Management Systems SWOT analysis, vision and mission concepts, strategic goal concept, objective concept, situation analysis in Quality Management Systems Measurement and calibration, validation and verification Suspense budget and statistical evaluation) Modeling a quality system for an establishment based on technical measurements",
+  "outcomes": [
+   "Kalite yönetim sistem standartlarını tanıyabilme.",
+   "Kalite yönetim sistem standartlarının gerekliliklerini karşılayacak yöntemleri öğrenme.",
+   "Standartlar doğrultusunda bir kalite yönetim sistemi kurabilmek için gerekli faaliyetleri oluşturma ve yönetme.",
+   "Ölçüm ve kalibrasyon faaliyetlerinin geçerlilik faaliyetlerini anlayabilme.",
+   "Standardizasyon ile ilgili işlemleri yürütebilme.",
+   "Belgelendirme ve akreditasyon süreçleri için idari ve teknik faaliyetlerde planlama ve takip yapabilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Standartların ve kalite sistemlerinin üretim ve hizmet sektöründe önemi. TSE ISO Kalite Yönetim Sistemleri’nin tanımı, terimleri, tarifler ve önemi.",
+   "Hafta 2 · Standart çeşitleri ve hazırlanması.",
+   "Hafta 3 · Belgelendirme ve akreditasyon aşamaları, Türk Standartlar Enstitüsü belgelendirme faaliyetleri.",
+   "Hafta 4 · Kalite sistemi modeli belirleme. Kalite yönetim sistemi dokümantasyonu, kalite el kitabının hazırlanması.",
+   "Hafta 5 · İş talimatı ve görev tanımı kavramı, iş talimatlarının ve görev tanımlarının hazırlanması, kalite yönetim sistemi dokümantasyonunun birbiri ile ilişkilendirilmesi.",
+   "Hafta 6 · Süreç yönetim sistemi modelleme, Süreç yönetim sistemi iyileştirme ve etkileşimleri",
+   "Hafta 7 · Kalite Yönetim Sistemlerinde politika ve strateji kavramları ve stratejik yönetim, swot analizi, vizyonve misyon kavramı, stratejik amaç kavramı, hedef kavramı, durum analizi)",
+   "Hafta 8 · Kalite Yönetim Sistemlerinde SWOT analizi, vizyon ve misyon kavramı, stratejik amaç kavramı ve durum analizi",
+   "Hafta 9 · Ölçüm ve kalibrasyon, validasyon, verifikasyon,",
+   "Hafta 10 · Belirsizlik bütçesi, İstatistiki değerlendirme",
+   "Hafta 11 · Bir kuruluşun faaliyet alanına göre ilgili standardın idari şartları karşılayan bir kalite sistemi modellemesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Standartların ve kalite sistemlerinin üretim ve hizmet sektöründe önemi. TSE ISO Kalite Yönetim Sistemleri’nin tanımı, terimleri, tarifler ve önemi."
+   },
+   {
+    "week": 2,
+    "topic": "Standart çeşitleri ve hazırlanması."
+   },
+   {
+    "week": 3,
+    "topic": "Belgelendirme ve akreditasyon aşamaları, Türk Standartlar Enstitüsü belgelendirme faaliyetleri."
+   },
+   {
+    "week": 4,
+    "topic": "Kalite sistemi modeli belirleme. Kalite yönetim sistemi dokümantasyonu, kalite el kitabının hazırlanması."
+   },
+   {
+    "week": 5,
+    "topic": "İş talimatı ve görev tanımı kavramı, iş talimatlarının ve görev tanımlarının hazırlanması, kalite yönetim sistemi dokümantasyonunun birbiri ile ilişkilendirilmesi."
+   },
+   {
+    "week": 6,
+    "topic": "Süreç yönetim sistemi modelleme, Süreç yönetim sistemi iyileştirme ve etkileşimleri"
+   },
+   {
+    "week": 7,
+    "topic": "Kalite Yönetim Sistemlerinde politika ve strateji kavramları ve stratejik yönetim, swot analizi, vizyonve misyon kavramı, stratejik amaç kavramı, hedef kavramı, durum analizi)"
+   },
+   {
+    "week": 8,
+    "topic": "Kalite Yönetim Sistemlerinde SWOT analizi, vizyon ve misyon kavramı, stratejik amaç kavramı ve durum analizi"
+   },
+   {
+    "week": 9,
+    "topic": "Ölçüm ve kalibrasyon, validasyon, verifikasyon,"
+   },
+   {
+    "week": 10,
+    "topic": "Belirsizlik bütçesi, İstatistiki değerlendirme"
+   },
+   {
+    "week": 11,
+    "topic": "Bir kuruluşun faaliyet alanına göre ilgili standardın idari şartları karşılayan bir kalite sistemi modellemesi"
+   }
+  ],
+  "textbooks": [
+   "Hoyle, D. (2009), ISO 9000 Quality Systems Handbook, Taylor & Francis Ltd.",
+   "Rocha-Lona, L., Garza-Reyes, J.A., Kumar, V. (2013), Building Quality Management Systems: Selecting the Right Methods and Tools, CRC Press.",
+   "Kim-Soon, NG. (2012), Quality Management and Practices, Intech.",
+   "Van, T.V. (2015), Service Quality and Security Management in Maritime Transport, Lambert Academic Publishing.",
+   "Jaccard, M. (2013), The Objective is Quality: An Introduction to Performance and Sustainability Management Systems, EPFL Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DCZ&dersNo=508"
+ },
+ "DCZ 520": {
+  "code": "DCZ 520",
+  "name": "Denizci.Çalışma.Uyg.Proje Yön.",
+  "nameEn": "Applied Project Management in Maritime Studies",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Program Yönetiminin Tarihçesi, Tanıtım Videoları / Sunumları, Program Yönetimi Tanımları ve Notlar, Neden Projeleri Yönetin? Proje Yöneticilerinin Görevi, Genel Yönetim ve Proje Yönetimi Arasındaki Farklar Kritik Yol Yöntemi, Program Yönetiminde Adımlar, BGBM, Gantt Tabloları, Kritik Yol Tanımlama, Paralel ve Sıralı Görev Bağımlılıklarına Odaklanma, Toplam Boşluk, Boşluk Boşluğu, Proje İhtiyaçları ve Hedefleri, Gereksinim Yönetimi, Proje çevresinin incelenmesi, Proje Parametreleri, Ön Projenin Tanımı Projelerin Doğasının Değiştirilmesi, Proje Başlangıç Riskleri Tanımlama ve Kontrol, Konfigürasyon Kontrolü,Tasarım Yapı Matrisi, İş Gücü Yapısının Geliştirilmesi, Çizelgeleme, Olasılıksal Çizelgeleme, Zaman Yönetimi, Sıralama, Bölme ve Yırtma, Sıralı ve Paralel İterasyon Modelleri, Süreç Analizi ve Yeniden Tasarlama, Risk Yönetimi, Kaynak Tahsisi, Vaka Çalışmaları, Örnek Proje Yönetimi Planı ve Risk Yönetimi Planı, Bütünleşik Ürün ve Süreç Onaylama ve Onaylama, Bütünleşik Takım Toplantıları (ITM), Proje Kapsamı ve Maliyeti, Proje Finansmanı, Finanse Kanalları, Gerçek Maliyet Kontrol Uygulaması, Sistem ve Proje Dinamiğine Giriş, \"Yumuşak\" ve \"Sabit\" Araçlar, Nedensel Döngü Şemaları, Proje Dinamiğinin Kantitatif Modellemesi,Proje Süreçleri ve Uygulaması, İnsanlar ve Projeler, Proje İletişimi, İletişim Engelleri, İzleme ve Raporlama, Durum Toplantıları, Takım Çalışması, Toplantı Vaka Çalışmaları, Proje Yöneticileri için Gerekenler, Kişilik Testleri ve Profilleri (MBTI gibi), Kurumsal Kültür ve Teşvik Etkisi Yapılar, Tipik Proje Yöneticisi Profilleri (Sınıf Anketi Sonuçları), Bölgesel Kanunlar, Düzenlemeler ve Etik, Organizasyonel Kültür, İş Sağlığı ve Güvenliğini Denetleme,Proje Stratejik Konuları, Proje Dinamiği Vaka Çalışmaları, Satın Alma,Proje Ölçüm ve Kontrol, Kalite Belgesi, Muayene, Başarı Faktörleri, İşyeri Tehlike Yönetimi, Yasama İhtiyaçları ve Hazar Yönetimi History of Program Management, Introductory Videos/Presentations, Program Management Definitions & Notes, Why Manage Projects? Function of Project Managers, Differences between General Management & Project Management, Critical Path Method, Steps involved in program management, CPM, Gantt Charts, Critical Path Identification, Focus on Parallel and Sequential Task Dependencies, Total Slack, Free Slack, Project Needs and Objectives, From Needs to the Developing Requirements, Requirements Management, Analyzing the project environment, Project Parameters, Preliminary Project Definition Changing Nature of Projects, Project Initial Risks Identification & Control, Configuration Control Design Structure Matrix, Developing the Work break down Structure (WBS), Scheduling, Probabilistic Scheduling, Time Management, Sequencing, Partitioning and Tearing, Sequential and Parallel Iteration Models, Process Analysis and Redesign. Integrated Product and Process Verification & Validation, Integrated Team Meetings (ITMs), Project Scope & Cost, Project Finance, Funding Channels, Implementing Effective Cost Control, Risk Management, Resource Allocation, Case Studies, Sample Project Management Plan & Risk Management Plan, Introduction to System and Project Dynamics, \"Soft\" and \"Hard\" Tools, Causal Loop Diagrams, Quantitative Modeling of Project Dynamics, Introduction to Vensim, Model Calibration and Parameter Estimation, Simulation Execution, Interpretation of Simulation Results.Cause-Effect Relationships, Stocks and Flows, Productivity and Quality, Project Processes & Implementation, Humans & Project, Project Communications, Barriers to Communications, Tracking & Reporting, Status Meetings, Team Work, Meeting Case Studies, Requirements for Project Managers, Personality Tests and Profiles (e.g. MBTI), Impact of Corporate Culture and Incentive Structures, Typical Project Manager Profiles (Class Survey Results.), Regional Laws, Regulations & Ethics, Organisaitonal Culture, Controlling Occupational Health & Safety, Project Strategic Issues, Project Dynamic Case Studies, Procurement, Project Measurement & Control, Quality Document, Inspections Organizations & Projects, Success Factors, Workplace Hazard Management, Legislative Requirements and Hazar Management",
+  "outcomes": [
+   "Denizcilik sektöründeki problem ve ihtiyaçları tanımlayabilme ve buna göre ölçülebilir çıktılar içeren tanımlanmış proje ve uygulama süreçleri oluşturulabilme",
+   "Başlatılmış bir projeyi anlayabilme ve görev tanımına göre projede uygulama yapabilme.",
+   "Proje, birden fazla proje ve program yönetiminde bulunan prensip ve felsefeleri uygulayabilme",
+   "Proje yönetimi süreçlerinde kullanılan metodları uygulayabilme bilgi ve becerisini gösterebilme",
+   "Proje başlatma ve yürütmedeki belirsizlikleri, riskleri, zorlukları ve bu verilere göre takımı yönetebilme",
+   "Projenin ilerlemesini etkileyen insan kaynağı, finans ve iş gerçekleşmelerini anlama ve karar verme süreçlerini yönetebilme",
+   "Ders içerisinde öğrenilenler ile ve yine ders içerisinde yapılacak uygulamalı örnek proje çalışması ile fonlanabilir proje haline dönüştürülebileceğini gösterme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş ve Genel Bakış, Dersin Hedefleri, Ders Yönetimi, Terim ve Tanımlar, Ders Çerçevesi, Program Yönetiminin Tarihçesi, Tanıtım Videoları / Sunumları, Program Yönetimi Tanımları ve Notlar, Neden Projeleri Yönetin? Proje Yöneticilerinin Görevi, Genel Yönetim ve Proje Yönetimi Arasındaki Farklar",
+   "Hafta 2 · Kritik Yol Yöntemi, Program Yönetiminde Adımlar, BGBM, Gantt Tabloları, Kritik Yol Tanımlama, Paralel ve Sıralı Görev Bağımlılıklarına Odaklanma, Toplam Boşluk, Boşluk Boşluğu",
+   "Hafta 3 · Proje İhtiyaçları ve Hedefleri, Gereksinim Yönetimi",
+   "Hafta 4 · Proje çevresinin incelenmesi, Proje Parametreleri, Ön Projenin Tanımı Projelerin Doğasının Değiştirilmesi, Proje Başlangıç ​​Riskleri Tanımlama ve Kontrol, Konfigürasyon Kontrolü",
+   "Hafta 5 · Tasarım Yapı Matrisi, İş Gücü Yapısının Geliştirilmesi, Çizelgeleme, Olasılıksal Çizelgeleme, Zaman Yönetimi, Sıralama, Bölme ve Yırtma, Sıralı ve Paralel İterasyon Modelleri, Süreç Analizi ve Yeniden Tasarlama..",
+   "Hafta 6 · Risk Yönetimi, Kaynak Tahsisi, Vaka Çalışmaları, Örnek Proje Yönetimi Planı ve Risk Yönetimi Planı, Bütünleşik Ürün ve Süreç Onaylama ve Onaylama, Bütünleşik Takım Toplantıları (ITM)",
+   "Hafta 7 · Proje Kapsamı ve Maliyeti, Proje Finansmanı, Finanse Kanalları, Gerçek Maliyet Kontrol Uygulaması",
+   "Hafta 8 · Sistem ve Proje Dinamiğine Giriş, \"Yumuşak\" ve \"Sabit\" Araçlar, Nedensel Döngü Şemaları, Proje Dinamiğinin Kantitatif Modellemesi,",
+   "Hafta 9 · Proje Süreçleri ve Uygulaması, İnsanlar ve Projeler, Proje İletişimi, İletişim Engelleri, İzleme ve Raporlama, Durum Toplantıları, Takım Çalışması, Toplantı Vaka Çalışmaları, Proje Yöneticileri için Gerekenler, Kişilik Testleri ve Profilleri (MBTI gibi), Kurumsal Kültür ve Teşvik Etkisi Yapılar, Tipik Proje Yöneticisi Profilleri (Sınıf Anketi Sonuçları.)",
+   "Hafta 10 · Bölgesel Kanunlar, Düzenlemeler ve Etik, Organizasyonel Kültür, İş Sağlığı ve Güvenliğini Denetleme, Proje Stratejik Konuları, Proje Dinamiği Vaka Çalışmaları, Satın Alma",
+   "Hafta 11 · Proje Ölçüm ve Kontrol, Kalite Belgesi, Muayene, Başarı Faktörleri, İşyeri Tehlike Yönetimi, Yasama İhtiyaçları ve Hazar Yönetimi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş ve Genel Bakış, Dersin Hedefleri, Ders Yönetimi, Terim ve Tanımlar, Ders Çerçevesi, Program Yönetiminin Tarihçesi, Tanıtım Videoları / Sunumları, Program Yönetimi Tanımları ve Notlar, Neden Projeleri Yönetin? Proje Yöneticilerinin Görevi, Genel Yönetim ve Proje Yönetimi Arasındaki Farklar"
+   },
+   {
+    "week": 2,
+    "topic": "Kritik Yol Yöntemi, Program Yönetiminde Adımlar, BGBM, Gantt Tabloları, Kritik Yol Tanımlama, Paralel ve Sıralı Görev Bağımlılıklarına Odaklanma, Toplam Boşluk, Boşluk Boşluğu"
+   },
+   {
+    "week": 3,
+    "topic": "Proje İhtiyaçları ve Hedefleri, Gereksinim Yönetimi"
+   },
+   {
+    "week": 4,
+    "topic": "Proje çevresinin incelenmesi, Proje Parametreleri, Ön Projenin Tanımı Projelerin Doğasının Değiştirilmesi, Proje Başlangıç ​​Riskleri Tanımlama ve Kontrol, Konfigürasyon Kontrolü"
+   },
+   {
+    "week": 5,
+    "topic": "Tasarım Yapı Matrisi, İş Gücü Yapısının Geliştirilmesi, Çizelgeleme, Olasılıksal Çizelgeleme, Zaman Yönetimi, Sıralama, Bölme ve Yırtma, Sıralı ve Paralel İterasyon Modelleri, Süreç Analizi ve Yeniden Tasarlama.."
+   },
+   {
+    "week": 6,
+    "topic": "Risk Yönetimi, Kaynak Tahsisi, Vaka Çalışmaları, Örnek Proje Yönetimi Planı ve Risk Yönetimi Planı, Bütünleşik Ürün ve Süreç Onaylama ve Onaylama, Bütünleşik Takım Toplantıları (ITM)"
+   },
+   {
+    "week": 7,
+    "topic": "Proje Kapsamı ve Maliyeti, Proje Finansmanı, Finanse Kanalları, Gerçek Maliyet Kontrol Uygulaması"
+   },
+   {
+    "week": 8,
+    "topic": "Sistem ve Proje Dinamiğine Giriş, \"Yumuşak\" ve \"Sabit\" Araçlar, Nedensel Döngü Şemaları, Proje Dinamiğinin Kantitatif Modellemesi,"
+   },
+   {
+    "week": 9,
+    "topic": "Proje Süreçleri ve Uygulaması, İnsanlar ve Projeler, Proje İletişimi, İletişim Engelleri, İzleme ve Raporlama, Durum Toplantıları, Takım Çalışması, Toplantı Vaka Çalışmaları, Proje Yöneticileri için Gerekenler, Kişilik Testleri ve Profilleri (MBTI gibi), Kurumsal Kültür ve Teşvik Etkisi Yapılar, Tipik Proje Yöneticisi Profilleri (Sınıf Anketi Sonuçları.)"
+   },
+   {
+    "week": 10,
+    "topic": "Bölgesel Kanunlar, Düzenlemeler ve Etik, Organizasyonel Kültür, İş Sağlığı ve Güvenliğini Denetleme, Proje Stratejik Konuları, Proje Dinamiği Vaka Çalışmaları, Satın Alma"
+   },
+   {
+    "week": 11,
+    "topic": "Proje Ölçüm ve Kontrol, Kalite Belgesi, Muayene, Başarı Faktörleri, İşyeri Tehlike Yönetimi, Yasama İhtiyaçları ve Hazar Yönetimi"
+   }
+  ],
+  "textbooks": [
+   "Heagney, J. (2011) Fundamentals of Project Management,” Worksmart Series, AMACOM; 4th Edition, ISBN-10: 0814417485, ISBN-13: 978-0814417485.",
+   "Kerzner, H. R. (2013) Project Management: Case Studies,” Publisher: Wiley; 4th Edition, ISBN-10: 1118022289, ISBN-13: 978-1118022283",
+   "Larson, E., Gray, C. (2014) Project Management: The Managerial Process with MS Project, The Mcgraw-Hill Series Operations and Decision Sciences, 6th Edition",
+   "Meredith, J. R. and Mantel Jr., S. J. (2014) Project Management in Practice,” 5th Edition, Wiley, ISBN-10: 1118674669, ISBN-13: 978-1118674666.",
+   "Pint , J.K. (2014) Project Management: Achieving Competitive Advantage (4th Edition) 4th Edition"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DCZ&dersNo=520"
+ },
+ "DCZ 521": {
+  "code": "DCZ 521",
+  "name": "Denizcil.Stra.İnsan Kayn.Yön.",
+  "nameEn": "Strategic Human Resource Management in Maritime Domain",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Strateji ve stratejik yönetim tanımı, Stratejik insan kaynakları yönetimi (KKY): kavram ve süreç, Stratejik insan kaynakları yönetiminin boyutları, Denizcilik organizasyonlarında insan kaynaklarının stratejik önemi, Denizcilik alanındaki insan kaynakları stratejileri, Stratejik insan kaynakları planlaması, Gemiadamlarının stratejik istihdamı ve seçimi, Deniz organizasyonları için stratejik insan kaynakları yönetimindeki roller, İnsan Kaynakları İşleme Sistemleri ve İnsan Kaynakları Stratejisi: Gemiler ve Limanlar, Denizcilik alanı için insan kaynakları stratejisi modelleri, ,Uluslararası ve karşılaştırmalı stratejik insan kaynağı yönetimi, Deniz alanındaki stratejik İKY ile işletme performansını iyileştirmek, Denizcilik için stratejik insan kaynakları gelişimi, Denizcilik için stratejik ödül yönetimi ve motivasyon faktörleri Definition of strategy and strategic management, Strategic human resource management (HRM) : concept and process, Dimensions of strategic human resource management, Strategic importance of human resources in the maritime organization, Human resource strategies in maritime domain, Strategic human resource planning, Strategic recruitment and selection of seafarers, Roles in strategic human resource management for maritime organizations, People Processing Systems and Human Resource Strategy: Ships and Ports, Human resource strategy models for maritime domain, International and comparative strategic human resource management, Improving business performance through strategic HRM in maritime domain, Strategic human resource development for maritime, Strategic reward management and motivation factors for maritime",
+  "outcomes": [
+   "Stratejik insan kaynakları yönetimi kapsamındaki temel kavramlar ve modeller hakkında bilgi sahibi olabilirler.",
+   "Denizcilikte stratejik insan kaynakları yönetimi çıktılarının gemiadamı performansı üzerine etkilerini ifade edebilirler.",
+   "Denizcilikte stratejik insan kaynakları yönetimine ilişkin planlama, ödüllendirme ve gelişim yönetimi konularında analizler yapabilirler",
+   "Uluslararası ve karşılaştırmalı stratejik insan kaynakları yönetimine ilişkin kavramları öğrenebilirler.",
+   "Denizcilik sektörüne yönelik stratejik insan kaynakları yönetimi uygulamalarını değerlendirebilirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Strateji ve stratejik yönetim tanımı, Stratejik insan kaynakları yönetimi (KKY): kavram ve süreç",
+   "Hafta 2 · Stratejik insan kaynakları yönetiminin boyutları",
+   "Hafta 3 · Denizcilik organizasyonlarında insan kaynaklarının stratejik önemi",
+   "Hafta 4 · Denizcilik alanındaki insan kaynakları stratejileri, Stratejik insan kaynakları planlaması",
+   "Hafta 5 · Gemiadamlarının stratejik istihdamı ve seçimi",
+   "Hafta 6 · Deniz organizasyonları için stratejik insan kaynakları yönetimindeki roller",
+   "Hafta 7 · İnsan Kaynakları İşleme Sistemleri ve İnsan Kaynakları Stratejisi: Gemiler ve Limanlar",
+   "Hafta 8 · Denizcilik alanı için insan kaynakları stratejisi modelleri",
+   "Hafta 9 · Uluslararası ve karşılaştırmalı stratejik insan kaynağı yönetimi",
+   "Hafta 10 · Deniz alanındaki stratejik İKY ile işletme performansını iyileştirmek",
+   "Hafta 11 · Denizcilik için stratejik insan kaynakları gelişimi, Denizcilik için stratejik ödül yönetimi ve motivasyon faktörleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Strateji ve stratejik yönetim tanımı, Stratejik insan kaynakları yönetimi (KKY): kavram ve süreç"
+   },
+   {
+    "week": 2,
+    "topic": "Stratejik insan kaynakları yönetiminin boyutları"
+   },
+   {
+    "week": 3,
+    "topic": "Denizcilik organizasyonlarında insan kaynaklarının stratejik önemi"
+   },
+   {
+    "week": 4,
+    "topic": "Denizcilik alanındaki insan kaynakları stratejileri, Stratejik insan kaynakları planlaması"
+   },
+   {
+    "week": 5,
+    "topic": "Gemiadamlarının stratejik istihdamı ve seçimi"
+   },
+   {
+    "week": 6,
+    "topic": "Deniz organizasyonları için stratejik insan kaynakları yönetimindeki roller"
+   },
+   {
+    "week": 7,
+    "topic": "İnsan Kaynakları İşleme Sistemleri ve İnsan Kaynakları Stratejisi: Gemiler ve Limanlar"
+   },
+   {
+    "week": 8,
+    "topic": "Denizcilik alanı için insan kaynakları stratejisi modelleri"
+   },
+   {
+    "week": 9,
+    "topic": "Uluslararası ve karşılaştırmalı stratejik insan kaynağı yönetimi"
+   },
+   {
+    "week": 10,
+    "topic": "Deniz alanındaki stratejik İKY ile işletme performansını iyileştirmek"
+   },
+   {
+    "week": 11,
+    "topic": "Denizcilik için stratejik insan kaynakları gelişimi, Denizcilik için stratejik ödül yönetimi ve motivasyon faktörleri"
+   }
+  ],
+  "textbooks": [
+   "Armstrong, M (2016) Armstrong's Handbook of Strategic Human Resource Managemen, Koganpage press, sixth edition.",
+   "Daley, D. M. (2012). Strategic human resource management. Public Personnel Management.",
+   "Noe, R. A., Hollenbeck, J. R., Gerhart, B., & Wright, P. M. (2006). Human resource management: Gaining a competitive advantage.",
+   "Regis, R. (2008). Strategic human resource management and development. Excel Books India."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DCZ&dersNo=521"
+ },
+ "DCZ 523": {
+  "code": "DCZ 523",
+  "name": "Denizcilik Sektörü ve Sürdürülebilir Kalkınma Politikaları",
+  "nameEn": "Maritime Industry and Sustainable Development Policies",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sürdürülebilirlik kavramı ve ekonomik yaklaşımlarla ilişkileri, çevre koruma yaklaşımları, 1987 tarihli Brundtland Raporu ve sürdürülebilirlik kavramının gelişim süreci, sürdürülebilir kalkınma amaçlarının ölçütleri, sürdürülebilir kalkınma amaçları ve sudaki yaşam, bölgesel düzeyde yürütülen denizcilik faaliyetleri, sürdürülebilir kalkınma kavramının ekonomi politikalarına entegrasyonu, sürdürülebilirliğin deniz ticaretine etkileri, denizcilik ve sürdürülebilirlik, örnek olaylarla sürdürülebilirlik konusunun analizi, yönetsel düzenlemeler, deniz kaynaklarının sürdürülebilirliği, sürdürülebilir kalkınmanın denizcilik politikalarına entegrasyonu. The concept of sustainability and its relations with the economic approaches, environmental protection approaches, the Brundtland Report dated 1987 and the development process of the of sustainability, the criteria of sustainable development goals, sustainable development goals and life in water, maritime activities carried out at regional level, integration of sustainable development concept into economic policies, effects of sustainability on maritime trade, maritime policies and sustainability, analysis of sustainability with case studies, administrative regulations, sustainability of marine resources, sustainable development the integration of policies towards the sector.",
+  "outcomes": [
+   "Sürdürülebilirlik ve sürdürülebilir kalkınmaya ilişkin temel kavramları tanımlayabilir.",
+   "Sürdürülebilir kalkınmaya ilişkin yasal/kurumsal düzenlemeleri yorumlayabilir.",
+   "Sürdürülebilir kalkınmanın denizcilik sektöründe etkilerini tartışabilir.",
+   "Sürdürülebilir kalkınmanın balıkçılık faaliyetleri üzerindeki etkilerini açıklayabilir",
+   "Denizel çevre ve çevre korumaya ilişkin temel kavramları tanımlayabilir.",
+   "Sürdürülebilir denizler konusunda yorum yapabilir.",
+   "Deniz koruma alanlarında deniz hukukunun uygulanması ile ilgili yorum yapabilir.",
+   "Kıyı emniyeti ve deniz alanlarının korunması ile ilgili açıklama yapabilir.",
+   "Ekosistemlerin korunması ve düzeltilmesine ilişkin ilkelerle ile ilgili yorum yapabilir."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Sürdürülebilirlik ve Tarihsel Süreç",
+   "Hafta 2 · Sürdürülebilir Kalkınma Amaçları ve Sudaki Yaşam",
+   "Hafta 3 · Deniz Kirliliğinin Azaltılması ile ilgili Düzenlemeler",
+   "Hafta 4 · Ekosistemlerin Korunması ve Düzeltilmesi",
+   "Hafta 5 · Deniz Koruma Alanları",
+   "Hafta 6 · Deniz Asitlenmesinin Etkileri ve Ölçüm İstasyonları",
+   "Hafta 7 · Sürdürülebilir Balıkçılık ve Bilimsel Yönetim Planları",
+   "Hafta 8 · Kıyı ve Deniz Alanlarının Korunması ile ilgili Düzenlemeler",
+   "Hafta 9 · Aşırı Avlanma ve Yasadışı Balıkçılık Faaliyetlerle Mücadele",
+   "Hafta 10 · Deniz Kaynaklarının Sürdürülebilir Kullanımı ve Ekonomik Fayda",
+   "Hafta 11 · Okyanus Sağlığına Yönelik Bilimsel Bilgi Yönetimi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sürdürülebilirlik ve Tarihsel Süreç",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Sürdürülebilir Kalkınma Amaçları ve Sudaki Yaşam",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Deniz Kirliliğinin Azaltılması ile ilgili Düzenlemeler",
+    "outcomes": "4-5-6"
+   },
+   {
+    "week": 4,
+    "topic": "Ekosistemlerin Korunması ve Düzeltilmesi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Deniz Koruma Alanları",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 6,
+    "topic": "Deniz Asitlenmesinin Etkileri ve Ölçüm İstasyonları",
+    "outcomes": "2-5"
+   },
+   {
+    "week": 7,
+    "topic": "Sürdürülebilir Balıkçılık ve Bilimsel Yönetim Planları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kıyı ve Deniz Alanlarının Korunması ile ilgili Düzenlemeler",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Aşırı Avlanma ve Yasadışı Balıkçılık Faaliyetlerle Mücadele",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Deniz Kaynaklarının Sürdürülebilir Kullanımı ve Ekonomik Fayda",
+    "outcomes": "7-8-9"
+   },
+   {
+    "week": 11,
+    "topic": "Okyanus Sağlığına Yönelik Bilimsel Bilgi Yönetimi",
+    "outcomes": "2-8-9"
+   }
+  ],
+  "textbooks": [
+   "Çelik, A. A., “Sudaki Yaşam”, Sürdürülebilir Kalkınma Amaçları ile Kurumsal Dönüşüm, Canan Madran ve Mustafa Tanyeri (Ed.), Akademisyen Kitabevi, 2020.",
+   "Sarenmalm, I., Sustainable Development in International Law and the Protection of the Global Commons, Uppsala University, Master Thesis, 2017.",
+   "Sürdürülebilir Kalkınma Amaçları: Değerlendirme Raporu, Türkiye Cumhuriyeti Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı, 2019.",
+   "Yaman, E., “Yönetişim Sürecinde Devletin Rolü ve Deniz Ticareti Sektörü”, İGÜSBD, Cilt 2, Sayı 2, Ekim 2015, ss. 111-133."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DCZ&dersNo=523"
+ },
  "DCZ 599": {
   "code": "DCZ 599",
   "name": "Proje",

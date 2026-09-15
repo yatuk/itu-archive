@@ -1,9 +1,9 @@
 {
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "snapshots": 36,
+ "snapshots": 37,
  "first": "2026-09-01T00:30:46Z",
- "last": "2026-09-15T14:47:17Z",
+ "last": "2026-09-15T18:50:07Z",
  "courses": [
   {
    "crn": "10001",
@@ -20,17 +20,17 @@
   {
    "crn": "10003",
    "capacity": 40,
-   "enrolled": 11
+   "enrolled": 14
   },
   {
    "crn": "10004",
    "capacity": 40,
-   "enrolled": 3
+   "enrolled": 4
   },
   {
    "crn": "10005",
    "capacity": 40,
-   "enrolled": 3
+   "enrolled": 4
   },
   {
    "crn": "10006",
@@ -45,7 +45,7 @@
   {
    "crn": "10008",
    "capacity": 60,
-   "enrolled": 50
+   "enrolled": 51
   },
   {
    "crn": "10009",
@@ -67,7 +67,7 @@
   {
    "crn": "10012",
    "capacity": 60,
-   "enrolled": 41
+   "enrolled": 42
   },
   {
    "crn": "10013",
@@ -82,12 +82,12 @@
   {
    "crn": "10015",
    "capacity": 60,
-   "enrolled": 21
+   "enrolled": 22
   },
   {
    "crn": "10016",
    "capacity": 60,
-   "enrolled": 43
+   "enrolled": 47
   },
   {
    "crn": "10017",
@@ -102,12 +102,14 @@
   {
    "crn": "10019",
    "capacity": 60,
-   "enrolled": 15
+   "enrolled": 14
   },
   {
    "crn": "10020",
    "capacity": 60,
-   "enrolled": 59
+   "enrolled": 60,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "10021",
@@ -117,7 +119,7 @@
   {
    "crn": "10022",
    "capacity": 60,
-   "enrolled": 22
+   "enrolled": 24
   },
   {
    "crn": "10023",
@@ -137,7 +139,7 @@
   {
    "crn": "10026",
    "capacity": 60,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "10027",
@@ -167,7 +169,7 @@
   {
    "crn": "10032",
    "capacity": 60,
-   "enrolled": 10
+   "enrolled": 11
   },
   {
    "crn": "10033",
@@ -187,7 +189,7 @@
   {
    "crn": "10036",
    "capacity": 60,
-   "enrolled": 32
+   "enrolled": 31
   },
   {
    "crn": "10037",
@@ -257,7 +259,7 @@
   {
    "crn": "10050",
    "capacity": 70,
-   "enrolled": 1
+   "enrolled": 2
   },
   {
    "crn": "10051",
@@ -352,12 +354,12 @@
   {
    "crn": "10069",
    "capacity": 12,
-   "enrolled": 8
+   "enrolled": 9
   },
   {
    "crn": "10070",
    "capacity": 12,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "10071",
@@ -367,7 +369,7 @@
   {
    "crn": "10072",
    "capacity": 12,
-   "enrolled": 10
+   "enrolled": 9
   },
   {
    "crn": "10073",
@@ -417,12 +419,12 @@
   {
    "crn": "10082",
    "capacity": 20,
-   "enrolled": 1
+   "enrolled": 0
   },
   {
    "crn": "10083",
    "capacity": 12,
-   "enrolled": 1
+   "enrolled": 0
   },
   {
    "crn": "10084",
@@ -457,7 +459,7 @@
   {
    "crn": "10090",
    "capacity": 15,
-   "enrolled": 7
+   "enrolled": 9
   },
   {
    "crn": "10091",
@@ -612,7 +614,7 @@
   {
    "crn": "10121",
    "capacity": 70,
-   "enrolled": 32
+   "enrolled": 35
   },
   {
    "crn": "10122",
@@ -642,7 +644,7 @@
   {
    "crn": "10127",
    "capacity": 70,
-   "enrolled": 12
+   "enrolled": 11
   },
   {
    "crn": "10128",
@@ -677,7 +679,7 @@
   {
    "crn": "10134",
    "capacity": 70,
-   "enrolled": 34
+   "enrolled": 36
   },
   {
    "crn": "10135",
@@ -687,7 +689,7 @@
   {
    "crn": "10136",
    "capacity": 70,
-   "enrolled": 31
+   "enrolled": 32
   },
   {
    "crn": "10137",
@@ -722,12 +724,12 @@
   {
    "crn": "10143",
    "capacity": 70,
-   "enrolled": 26
+   "enrolled": 27
   },
   {
    "crn": "10144",
    "capacity": 70,
-   "enrolled": 20
+   "enrolled": 19
   },
   {
    "crn": "10145",
@@ -867,7 +869,7 @@
   {
    "crn": "10172",
    "capacity": 260,
-   "enrolled": 169
+   "enrolled": 175
   },
   {
    "crn": "10173",
@@ -889,7 +891,7 @@
   {
    "crn": "10176",
    "capacity": 260,
-   "enrolled": 95
+   "enrolled": 94
   },
   {
    "crn": "10177",
@@ -904,7 +906,7 @@
   {
    "crn": "10179",
    "capacity": 770,
-   "enrolled": 404
+   "enrolled": 417
   },
   {
    "crn": "10180",
@@ -986,12 +988,12 @@
   {
    "crn": "10193",
    "capacity": 25,
-   "enrolled": 19
+   "enrolled": 18
   },
   {
    "crn": "10194",
    "capacity": 240,
-   "enrolled": 97
+   "enrolled": 103
   },
   {
    "crn": "10195",
@@ -1018,7 +1020,7 @@
   {
    "crn": "10199",
    "capacity": 550,
-   "enrolled": 124
+   "enrolled": 128
   },
   {
    "crn": "10200",
@@ -1102,7 +1104,7 @@
   {
    "crn": "10213",
    "capacity": 25,
-   "enrolled": 15
+   "enrolled": 21
   },
   {
    "crn": "10214",
@@ -1114,7 +1116,7 @@
   {
    "crn": "10215",
    "capacity": 25,
-   "enrolled": 4
+   "enrolled": 3
   },
   {
    "crn": "10216",
@@ -1124,12 +1126,14 @@
   {
    "crn": "10217",
    "capacity": 25,
-   "enrolled": 24
+   "enrolled": 25,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "10218",
    "capacity": 25,
-   "enrolled": 13
+   "enrolled": 18
   },
   {
    "crn": "10219",
@@ -1141,7 +1145,7 @@
   {
    "crn": "10220",
    "capacity": 25,
-   "enrolled": 8
+   "enrolled": 12
   },
   {
    "crn": "10221",
@@ -1160,19 +1164,21 @@
   {
    "crn": "10223",
    "capacity": 25,
-   "enrolled": 23
+   "enrolled": 25,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "10224",
    "capacity": 260,
-   "enrolled": 260,
+   "enrolled": 259,
    "filledAt": "2026-09-15T14:47:17Z",
    "fillMinutes": 21016
   },
   {
    "crn": "10225",
    "capacity": 25,
-   "enrolled": 17
+   "enrolled": 18
   },
   {
    "crn": "10226",
@@ -1192,7 +1198,7 @@
   {
    "crn": "10229",
    "capacity": 25,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "10230",
@@ -1209,17 +1215,17 @@
   {
    "crn": "10232",
    "capacity": 120,
-   "enrolled": 98
+   "enrolled": 102
   },
   {
    "crn": "10233",
    "capacity": 150,
-   "enrolled": 81
+   "enrolled": 89
   },
   {
    "crn": "10234",
    "capacity": 150,
-   "enrolled": 30
+   "enrolled": 31
   },
   {
    "crn": "10235",
@@ -1284,7 +1290,7 @@
   {
    "crn": "10247",
    "capacity": 300,
-   "enrolled": 107
+   "enrolled": 108
   },
   {
    "crn": "10248",
@@ -1304,7 +1310,7 @@
   {
    "crn": "10251",
    "capacity": 200,
-   "enrolled": 91
+   "enrolled": 94
   },
   {
    "crn": "10252",
@@ -1319,7 +1325,7 @@
   {
    "crn": "10254",
    "capacity": 200,
-   "enrolled": 118
+   "enrolled": 122
   },
   {
    "crn": "10255",
@@ -1334,7 +1340,7 @@
   {
    "crn": "10257",
    "capacity": 200,
-   "enrolled": 84
+   "enrolled": 86
   },
   {
    "crn": "10258",
@@ -1389,7 +1395,7 @@
   {
    "crn": "10268",
    "capacity": 200,
-   "enrolled": 155
+   "enrolled": 156
   },
   {
    "crn": "10269",
@@ -1404,7 +1410,7 @@
   {
    "crn": "10271",
    "capacity": 200,
-   "enrolled": 55
+   "enrolled": 57
   },
   {
    "crn": "10272",
@@ -1419,7 +1425,7 @@
   {
    "crn": "10274",
    "capacity": 200,
-   "enrolled": 40
+   "enrolled": 42
   },
   {
    "crn": "10275",
@@ -1434,17 +1440,17 @@
   {
    "crn": "10277",
    "capacity": 100,
-   "enrolled": 61
+   "enrolled": 63
   },
   {
    "crn": "10278",
    "capacity": 40,
-   "enrolled": 10
+   "enrolled": 11
   },
   {
    "crn": "10279",
    "capacity": 160,
-   "enrolled": 89
+   "enrolled": 92
   },
   {
    "crn": "10280",
@@ -1506,7 +1512,7 @@
   {
    "crn": "10291",
    "capacity": 160,
-   "enrolled": 69
+   "enrolled": 68
   },
   {
    "crn": "10292",
@@ -1546,7 +1552,7 @@
   {
    "crn": "10299",
    "capacity": 120,
-   "enrolled": 95
+   "enrolled": 100
   },
   {
    "crn": "10300",
@@ -1566,7 +1572,7 @@
   {
    "crn": "10303",
    "capacity": 25,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "10304",
@@ -1595,7 +1601,7 @@
   {
    "crn": "10308",
    "capacity": 25,
-   "enrolled": 7
+   "enrolled": 8
   },
   {
    "crn": "10309",
@@ -1605,12 +1611,12 @@
   {
    "crn": "10311",
    "capacity": 25,
-   "enrolled": 8
+   "enrolled": 9
   },
   {
    "crn": "10312",
    "capacity": 25,
-   "enrolled": 7
+   "enrolled": 9
   },
   {
    "crn": "10313",
@@ -1630,7 +1636,7 @@
   {
    "crn": "10318",
    "capacity": 80,
-   "enrolled": 41
+   "enrolled": 40
   },
   {
    "crn": "10319",
@@ -1645,7 +1651,7 @@
   {
    "crn": "10323",
    "capacity": 80,
-   "enrolled": 55
+   "enrolled": 57
   },
   {
    "crn": "10324",
@@ -1670,7 +1676,7 @@
   {
    "crn": "10328",
    "capacity": 80,
-   "enrolled": 31
+   "enrolled": 29
   },
   {
    "crn": "10329",
@@ -1690,7 +1696,7 @@
   {
    "crn": "10332",
    "capacity": 50,
-   "enrolled": 25
+   "enrolled": 26
   },
   {
    "crn": "10333",
@@ -1865,7 +1871,7 @@
   {
    "crn": "10367",
    "capacity": 35,
-   "enrolled": 3
+   "enrolled": 4
   },
   {
    "crn": "10368",
@@ -1940,7 +1946,7 @@
   {
    "crn": "10385",
    "capacity": 40,
-   "enrolled": 0
+   "enrolled": 1
   },
   {
    "crn": "10387",
@@ -2015,7 +2021,7 @@
   {
    "crn": "10407",
    "capacity": 35,
-   "enrolled": 1
+   "enrolled": 0
   },
   {
    "crn": "10408",
@@ -2060,7 +2066,7 @@
   {
    "crn": "10417",
    "capacity": 35,
-   "enrolled": 1
+   "enrolled": 0
   },
   {
    "crn": "10418",
@@ -2070,12 +2076,12 @@
   {
    "crn": "10419",
    "capacity": 35,
-   "enrolled": 6
+   "enrolled": 7
   },
   {
    "crn": "10420",
    "capacity": 35,
-   "enrolled": 0
+   "enrolled": 1
   },
   {
    "crn": "10421",
@@ -2180,7 +2186,7 @@
   {
    "crn": "10441",
    "capacity": 100,
-   "enrolled": 91
+   "enrolled": 90
   },
   {
    "crn": "10442",
@@ -2190,12 +2196,12 @@
   {
    "crn": "10443",
    "capacity": 100,
-   "enrolled": 51
+   "enrolled": 53
   },
   {
    "crn": "10444",
    "capacity": 100,
-   "enrolled": 80
+   "enrolled": 81
   },
   {
    "crn": "10445",
@@ -2210,7 +2216,7 @@
   {
    "crn": "10447",
    "capacity": 100,
-   "enrolled": 66
+   "enrolled": 69
   },
   {
    "crn": "10448",
@@ -2225,7 +2231,7 @@
   {
    "crn": "10450",
    "capacity": 380,
-   "enrolled": 273
+   "enrolled": 278
   },
   {
    "crn": "10451",
@@ -2265,7 +2271,7 @@
   {
    "crn": "10459",
    "capacity": 400,
-   "enrolled": 130
+   "enrolled": 132
   },
   {
    "crn": "10460",
@@ -2305,7 +2311,7 @@
   {
    "crn": "10467",
    "capacity": 340,
-   "enrolled": 263
+   "enrolled": 270
   },
   {
    "crn": "10468",
@@ -2340,7 +2346,7 @@
   {
    "crn": "10474",
    "capacity": 400,
-   "enrolled": 132
+   "enrolled": 138
   },
   {
    "crn": "10475",
@@ -2375,7 +2381,7 @@
   {
    "crn": "10481",
    "capacity": 240,
-   "enrolled": 60
+   "enrolled": 58
   },
   {
    "crn": "10482",
@@ -2400,7 +2406,7 @@
   {
    "crn": "10486",
    "capacity": 200,
-   "enrolled": 0
+   "enrolled": 1
   },
   {
    "crn": "10487",
@@ -2465,7 +2471,7 @@
   {
    "crn": "10499",
    "capacity": 300,
-   "enrolled": 2
+   "enrolled": 3
   },
   {
    "crn": "10500",
@@ -2532,7 +2538,7 @@
   {
    "crn": "10512",
    "capacity": 25,
-   "enrolled": 6
+   "enrolled": 4
   },
   {
    "crn": "10513",
@@ -2542,7 +2548,7 @@
   {
    "crn": "10514",
    "capacity": 25,
-   "enrolled": 9
+   "enrolled": 8
   },
   {
    "crn": "10515",
@@ -2668,7 +2674,7 @@
   {
    "crn": "10536",
    "capacity": 25,
-   "enrolled": 25,
+   "enrolled": 24,
    "filledAt": "2026-09-15T14:47:17Z",
    "fillMinutes": 21016
   },
@@ -2680,12 +2686,14 @@
   {
    "crn": "10538",
    "capacity": 25,
-   "enrolled": 22
+   "enrolled": 25,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "10539",
    "capacity": 25,
-   "enrolled": 10
+   "enrolled": 11
   },
   {
    "crn": "10540",
@@ -2715,7 +2723,7 @@
   {
    "crn": "10545",
    "capacity": 25,
-   "enrolled": 10
+   "enrolled": 11
   },
   {
    "crn": "10546",
@@ -2730,7 +2738,7 @@
   {
    "crn": "10548",
    "capacity": 25,
-   "enrolled": 2
+   "enrolled": 1
   },
   {
    "crn": "10549",
@@ -2755,7 +2763,7 @@
   {
    "crn": "10554",
    "capacity": 25,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "10555",
@@ -2785,7 +2793,7 @@
   {
    "crn": "10560",
    "capacity": 25,
-   "enrolled": 8
+   "enrolled": 9
   },
   {
    "crn": "10561",
@@ -2863,7 +2871,7 @@
   {
    "crn": "10574",
    "capacity": 25,
-   "enrolled": 25,
+   "enrolled": 24,
    "filledAt": "2026-09-15T14:47:17Z",
    "fillMinutes": 21016
   },
@@ -2884,12 +2892,12 @@
   {
    "crn": "10577",
    "capacity": 25,
-   "enrolled": 15
+   "enrolled": 16
   },
   {
    "crn": "10578",
    "capacity": 25,
-   "enrolled": 11
+   "enrolled": 12
   },
   {
    "crn": "10579",
@@ -2914,7 +2922,7 @@
   {
    "crn": "10583",
    "capacity": 25,
-   "enrolled": 2
+   "enrolled": 3
   },
   {
    "crn": "10584",
@@ -2943,7 +2951,9 @@
   {
    "crn": "10588",
    "capacity": 25,
-   "enrolled": 24
+   "enrolled": 25,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "10589",
@@ -2968,7 +2978,7 @@
   {
    "crn": "10593",
    "capacity": 25,
-   "enrolled": 13
+   "enrolled": 14
   },
   {
    "crn": "10594",
@@ -2995,7 +3005,7 @@
   {
    "crn": "10598",
    "capacity": 25,
-   "enrolled": 25,
+   "enrolled": 24,
    "filledAt": "2026-09-15T14:47:17Z",
    "fillMinutes": 21016
   },
@@ -3007,7 +3017,7 @@
   {
    "crn": "10600",
    "capacity": 25,
-   "enrolled": 21
+   "enrolled": 22
   },
   {
    "crn": "10601",
@@ -3017,7 +3027,7 @@
   {
    "crn": "10602",
    "capacity": 25,
-   "enrolled": 10
+   "enrolled": 9
   },
   {
    "crn": "10603",
@@ -3032,7 +3042,7 @@
   {
    "crn": "10605",
    "capacity": 25,
-   "enrolled": 15
+   "enrolled": 17
   },
   {
    "crn": "10606",
@@ -3105,7 +3115,7 @@
   {
    "crn": "10618",
    "capacity": 25,
-   "enrolled": 7
+   "enrolled": 10
   },
   {
    "crn": "10619",
@@ -3115,7 +3125,7 @@
   {
    "crn": "10620",
    "capacity": 25,
-   "enrolled": 12
+   "enrolled": 13
   },
   {
    "crn": "10621",
@@ -3130,7 +3140,7 @@
   {
    "crn": "10623",
    "capacity": 25,
-   "enrolled": 9
+   "enrolled": 10
   },
   {
    "crn": "10624",
@@ -3165,7 +3175,7 @@
   {
    "crn": "10630",
    "capacity": 25,
-   "enrolled": 20
+   "enrolled": 22
   },
   {
    "crn": "10631",
@@ -3210,7 +3220,7 @@
   {
    "crn": "10639",
    "capacity": 25,
-   "enrolled": 17
+   "enrolled": 18
   },
   {
    "crn": "10640",
@@ -3220,7 +3230,7 @@
   {
    "crn": "10641",
    "capacity": 25,
-   "enrolled": 4
+   "enrolled": 5
   },
   {
    "crn": "10642",
@@ -3260,7 +3270,7 @@
   {
    "crn": "10649",
    "capacity": 25,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "10650",
@@ -3272,7 +3282,7 @@
   {
    "crn": "10651",
    "capacity": 25,
-   "enrolled": 11
+   "enrolled": 13
   },
   {
    "crn": "10652",
@@ -3282,7 +3292,7 @@
   {
    "crn": "10653",
    "capacity": 25,
-   "enrolled": 3
+   "enrolled": 5
   },
   {
    "crn": "10654",
@@ -3304,7 +3314,7 @@
   {
    "crn": "10658",
    "capacity": 25,
-   "enrolled": 1
+   "enrolled": 2
   },
   {
    "crn": "10659",
@@ -3344,7 +3354,7 @@
   {
    "crn": "10667",
    "capacity": 25,
-   "enrolled": 3
+   "enrolled": 4
   },
   {
    "crn": "10668",
@@ -3364,7 +3374,7 @@
   {
    "crn": "10671",
    "capacity": 20,
-   "enrolled": 1
+   "enrolled": 0
   },
   {
    "crn": "10672",
@@ -3424,7 +3434,7 @@
   {
    "crn": "10683",
    "capacity": 25,
-   "enrolled": 8
+   "enrolled": 9
   },
   {
    "crn": "10684",
@@ -3449,7 +3459,7 @@
   {
    "crn": "10688",
    "capacity": 20,
-   "enrolled": 1
+   "enrolled": 2
   },
   {
    "crn": "10689",
@@ -3494,12 +3504,12 @@
   {
    "crn": "10697",
    "capacity": 25,
-   "enrolled": 12
+   "enrolled": 14
   },
   {
    "crn": "10698",
    "capacity": 18,
-   "enrolled": 1
+   "enrolled": 2
   },
   {
    "crn": "10699",
@@ -3544,7 +3554,7 @@
   {
    "crn": "10707",
    "capacity": 25,
-   "enrolled": 10
+   "enrolled": 11
   },
   {
    "crn": "10708",
@@ -3669,7 +3679,7 @@
   {
    "crn": "10734",
    "capacity": 40,
-   "enrolled": 8
+   "enrolled": 7
   },
   {
    "crn": "10735",
@@ -3894,7 +3904,7 @@
   {
    "crn": "10780",
    "capacity": 40,
-   "enrolled": 20
+   "enrolled": 21
   },
   {
    "crn": "10781",
@@ -3909,7 +3919,7 @@
   {
    "crn": "10783",
    "capacity": 40,
-   "enrolled": 17
+   "enrolled": 18
   },
   {
    "crn": "10784",
@@ -3929,7 +3939,7 @@
   {
    "crn": "10787",
    "capacity": 100,
-   "enrolled": 24
+   "enrolled": 25
   },
   {
    "crn": "10788",
@@ -4028,8 +4038,8 @@
   },
   {
    "crn": "10807",
-   "capacity": 18,
-   "enrolled": 18,
+   "capacity": 20,
+   "enrolled": 20,
    "filledAt": "2026-09-15T14:47:17Z",
    "fillMinutes": 21016
   },
@@ -4048,7 +4058,7 @@
   {
    "crn": "10810",
    "capacity": 15,
-   "enrolled": 8
+   "enrolled": 9
   },
   {
    "crn": "10811",
@@ -4083,7 +4093,7 @@
   {
    "crn": "10817",
    "capacity": 5,
-   "enrolled": 0
+   "enrolled": 1
   },
   {
    "crn": "10818",
@@ -4128,7 +4138,7 @@
   {
    "crn": "10826",
    "capacity": 5,
-   "enrolled": 0
+   "enrolled": 1
   },
   {
    "crn": "10827",
@@ -4543,7 +4553,7 @@
   {
    "crn": "10912",
    "capacity": 100,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "10913",
@@ -4855,7 +4865,7 @@
   {
    "crn": "10975",
    "capacity": 200,
-   "enrolled": 49
+   "enrolled": 50
   },
   {
    "crn": "10976",
@@ -5090,12 +5100,12 @@
   {
    "crn": "11022",
    "capacity": 30,
-   "enrolled": 18
+   "enrolled": 20
   },
   {
    "crn": "11023",
    "capacity": 30,
-   "enrolled": 18
+   "enrolled": 20
   },
   {
    "crn": "11024",
@@ -5115,12 +5125,12 @@
   {
    "crn": "11027",
    "capacity": 30,
-   "enrolled": 18
+   "enrolled": 20
   },
   {
    "crn": "11028",
    "capacity": 30,
-   "enrolled": 18
+   "enrolled": 20
   },
   {
    "crn": "11029",
@@ -5170,12 +5180,12 @@
   {
    "crn": "11040",
    "capacity": 70,
-   "enrolled": 18
+   "enrolled": 20
   },
   {
    "crn": "11041",
    "capacity": 5,
-   "enrolled": 3
+   "enrolled": 4
   },
   {
    "crn": "11042",
@@ -5200,7 +5210,7 @@
   {
    "crn": "11046",
    "capacity": 5,
-   "enrolled": 1
+   "enrolled": 3
   },
   {
    "crn": "11047",
@@ -5252,7 +5262,7 @@
   {
    "crn": "11056",
    "capacity": 5,
-   "enrolled": 3
+   "enrolled": 4
   },
   {
    "crn": "11057",
@@ -5412,7 +5422,7 @@
   {
    "crn": "11090",
    "capacity": 80,
-   "enrolled": 14
+   "enrolled": 15
   },
   {
    "crn": "11091",
@@ -5572,7 +5582,7 @@
   {
    "crn": "11122",
    "capacity": 20,
-   "enrolled": 17
+   "enrolled": 19
   },
   {
    "crn": "11123",
@@ -6447,7 +6457,7 @@
   {
    "crn": "11315",
    "capacity": 50,
-   "enrolled": 13
+   "enrolled": 14
   },
   {
    "crn": "11316",
@@ -6537,7 +6547,7 @@
   {
    "crn": "11334",
    "capacity": 20,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "11335",
@@ -6567,7 +6577,7 @@
   {
    "crn": "11340",
    "capacity": 20,
-   "enrolled": 4
+   "enrolled": 5
   },
   {
    "crn": "11341",
@@ -6642,12 +6652,14 @@
   {
    "crn": "11361",
    "capacity": 30,
-   "enrolled": 26
+   "enrolled": 30,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "11363",
    "capacity": 30,
-   "enrolled": 21
+   "enrolled": 23
   },
   {
    "crn": "11366",
@@ -6667,7 +6679,7 @@
   {
    "crn": "11382",
    "capacity": 25,
-   "enrolled": 10
+   "enrolled": 15
   },
   {
    "crn": "11383",
@@ -6747,12 +6759,12 @@
   {
    "crn": "11398",
    "capacity": 30,
-   "enrolled": 23
+   "enrolled": 24
   },
   {
    "crn": "11399",
    "capacity": 25,
-   "enrolled": 23
+   "enrolled": 24
   },
   {
    "crn": "11400",
@@ -6767,12 +6779,12 @@
   {
    "crn": "11403",
    "capacity": 25,
-   "enrolled": 17
+   "enrolled": 19
   },
   {
    "crn": "11404",
    "capacity": 30,
-   "enrolled": 16
+   "enrolled": 18
   },
   {
    "crn": "11405",
@@ -7047,7 +7059,7 @@
   {
    "crn": "11461",
    "capacity": 50,
-   "enrolled": 14
+   "enrolled": 15
   },
   {
    "crn": "11462",
@@ -7062,17 +7074,17 @@
   {
    "crn": "11464",
    "capacity": 45,
-   "enrolled": 15
+   "enrolled": 16
   },
   {
    "crn": "11465",
    "capacity": 45,
-   "enrolled": 0
+   "enrolled": 1
   },
   {
    "crn": "11466",
    "capacity": 75,
-   "enrolled": 15
+   "enrolled": 17
   },
   {
    "crn": "11467",
@@ -7172,7 +7184,7 @@
   {
    "crn": "11486",
    "capacity": 30,
-   "enrolled": 0
+   "enrolled": 1
   },
   {
    "crn": "11487",
@@ -7197,7 +7209,7 @@
   {
    "crn": "11491",
    "capacity": 30,
-   "enrolled": 11
+   "enrolled": 17
   },
   {
    "crn": "11492",
@@ -7212,7 +7224,7 @@
   {
    "crn": "11494",
    "capacity": 25,
-   "enrolled": 11
+   "enrolled": 16
   },
   {
    "crn": "11495",
@@ -7222,7 +7234,7 @@
   {
    "crn": "11496",
    "capacity": 25,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "11497",
@@ -7232,7 +7244,7 @@
   {
    "crn": "11498",
    "capacity": 25,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "11499",
@@ -7626,7 +7638,7 @@
   {
    "crn": "11576",
    "capacity": 25,
-   "enrolled": 0
+   "enrolled": 1
   },
   {
    "crn": "11577",
@@ -7636,7 +7648,7 @@
   {
    "crn": "11578",
    "capacity": 25,
-   "enrolled": 16
+   "enrolled": 18
   },
   {
    "crn": "11579",
@@ -7963,7 +7975,9 @@
   {
    "crn": "11643",
    "capacity": 12,
-   "enrolled": 11
+   "enrolled": 12,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "11644",
@@ -7978,17 +7992,17 @@
   {
    "crn": "11646",
    "capacity": 25,
-   "enrolled": 23
+   "enrolled": 24
   },
   {
    "crn": "11647",
    "capacity": 25,
-   "enrolled": 22
+   "enrolled": 23
   },
   {
    "crn": "11648",
    "capacity": 30,
-   "enrolled": 22
+   "enrolled": 23
   },
   {
    "crn": "11649",
@@ -8165,7 +8179,7 @@
   {
    "crn": "11684",
    "capacity": 30,
-   "enrolled": 21
+   "enrolled": 24
   },
   {
    "crn": "11685",
@@ -8187,7 +8201,7 @@
   {
    "crn": "11690",
    "capacity": 40,
-   "enrolled": 27
+   "enrolled": 29
   },
   {
    "crn": "11691",
@@ -8487,12 +8501,12 @@
   {
    "crn": "11752",
    "capacity": 70,
-   "enrolled": 25
+   "enrolled": 26
   },
   {
    "crn": "11753",
    "capacity": 80,
-   "enrolled": 25
+   "enrolled": 26
   },
   {
    "crn": "11754",
@@ -8912,7 +8926,7 @@
   {
    "crn": "11839",
    "capacity": 3500,
-   "enrolled": 554
+   "enrolled": 574
   },
   {
    "crn": "11840",
@@ -9357,12 +9371,12 @@
   {
    "crn": "11928",
    "capacity": 100,
-   "enrolled": 36
+   "enrolled": 37
   },
   {
    "crn": "11929",
    "capacity": 80,
-   "enrolled": 32
+   "enrolled": 33
   },
   {
    "crn": "11930",
@@ -9582,12 +9596,12 @@
   {
    "crn": "11976",
    "capacity": 40,
-   "enrolled": 12
+   "enrolled": 13
   },
   {
    "crn": "11977",
    "capacity": 40,
-   "enrolled": 12
+   "enrolled": 13
   },
   {
    "crn": "11978",
@@ -10699,7 +10713,7 @@
   {
    "crn": "12207",
    "capacity": 40,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "12208",
@@ -10714,7 +10728,7 @@
   {
    "crn": "12210",
    "capacity": 40,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "12211",
@@ -10859,7 +10873,7 @@
   {
    "crn": "12239",
    "capacity": 70,
-   "enrolled": 28
+   "enrolled": 29
   },
   {
    "crn": "12240",
@@ -11889,7 +11903,7 @@
   {
    "crn": "12456",
    "capacity": 80,
-   "enrolled": 64
+   "enrolled": 66
   },
   {
    "crn": "12457",
@@ -11909,7 +11923,7 @@
   {
    "crn": "12460",
    "capacity": 80,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "12461",
@@ -11919,7 +11933,7 @@
   {
    "crn": "12462",
    "capacity": 150,
-   "enrolled": 62
+   "enrolled": 65
   },
   {
    "crn": "12463",
@@ -11934,7 +11948,7 @@
   {
    "crn": "12465",
    "capacity": 70,
-   "enrolled": 18
+   "enrolled": 21
   },
   {
    "crn": "12466",
@@ -12211,7 +12225,7 @@
   {
    "crn": "12524",
    "capacity": 500,
-   "enrolled": 56
+   "enrolled": 58
   },
   {
    "crn": "12525",
@@ -12441,7 +12455,7 @@
   {
    "crn": "12574",
    "capacity": 60,
-   "enrolled": 14
+   "enrolled": 15
   },
   {
    "crn": "12575",
@@ -12531,7 +12545,7 @@
   {
    "crn": "12592",
    "capacity": 45,
-   "enrolled": 32
+   "enrolled": 34
   },
   {
    "crn": "12593",
@@ -12891,7 +12905,7 @@
   {
    "crn": "12669",
    "capacity": 20,
-   "enrolled": 4
+   "enrolled": 5
   },
   {
    "crn": "12670",
@@ -12901,7 +12915,7 @@
   {
    "crn": "12671",
    "capacity": 15,
-   "enrolled": 10
+   "enrolled": 12
   },
   {
    "crn": "12672",
@@ -12921,7 +12935,7 @@
   {
    "crn": "12675",
    "capacity": 45,
-   "enrolled": 23
+   "enrolled": 25
   },
   {
    "crn": "12676",
@@ -12931,7 +12945,7 @@
   {
    "crn": "12677",
    "capacity": 45,
-   "enrolled": 9
+   "enrolled": 11
   },
   {
    "crn": "12678",
@@ -12941,7 +12955,7 @@
   {
    "crn": "12679",
    "capacity": 100,
-   "enrolled": 19
+   "enrolled": 21
   },
   {
    "crn": "12680",
@@ -16096,7 +16110,7 @@
   {
    "crn": "13397",
    "capacity": 50,
-   "enrolled": 31
+   "enrolled": 33
   },
   {
    "crn": "13398",
@@ -16181,7 +16195,7 @@
   {
    "crn": "13414",
    "capacity": 25,
-   "enrolled": 9
+   "enrolled": 10
   },
   {
    "crn": "13415",
@@ -16191,7 +16205,7 @@
   {
    "crn": "13416",
    "capacity": 40,
-   "enrolled": 12
+   "enrolled": 13
   },
   {
    "crn": "13417",
@@ -16241,7 +16255,7 @@
   {
    "crn": "13426",
    "capacity": 40,
-   "enrolled": 7
+   "enrolled": 8
   },
   {
    "crn": "13427",
@@ -16291,7 +16305,7 @@
   {
    "crn": "13437",
    "capacity": 60,
-   "enrolled": 30
+   "enrolled": 33
   },
   {
    "crn": "13438",
@@ -16316,7 +16330,7 @@
   {
    "crn": "13442",
    "capacity": 60,
-   "enrolled": 32
+   "enrolled": 35
   },
   {
    "crn": "13443",
@@ -18276,12 +18290,12 @@
   {
    "crn": "13850",
    "capacity": 30,
-   "enrolled": 12
+   "enrolled": 11
   },
   {
    "crn": "13853",
    "capacity": 30,
-   "enrolled": 7
+   "enrolled": 8
   },
   {
    "crn": "13854",
@@ -20056,12 +20070,12 @@
   {
    "crn": "14221",
    "capacity": 100,
-   "enrolled": 34
+   "enrolled": 35
   },
   {
    "crn": "14222",
    "capacity": 100,
-   "enrolled": 62
+   "enrolled": 64
   },
   {
    "crn": "14223",
@@ -20081,17 +20095,17 @@
   {
    "crn": "14229",
    "capacity": 10,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "14231",
    "capacity": 10,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "14234",
    "capacity": 10,
-   "enrolled": 4
+   "enrolled": 5
   },
   {
    "crn": "14237",
@@ -20621,7 +20635,7 @@
   {
    "crn": "14347",
    "capacity": 75,
-   "enrolled": 17
+   "enrolled": 18
   },
   {
    "crn": "14348",
@@ -20761,12 +20775,12 @@
   {
    "crn": "14377",
    "capacity": 75,
-   "enrolled": 11
+   "enrolled": 12
   },
   {
    "crn": "14378",
    "capacity": 75,
-   "enrolled": 12
+   "enrolled": 13
   },
   {
    "crn": "14380",
@@ -20776,7 +20790,7 @@
   {
    "crn": "14381",
    "capacity": 75,
-   "enrolled": 35
+   "enrolled": 34
   },
   {
    "crn": "14382",
@@ -20806,7 +20820,7 @@
   {
    "crn": "14387",
    "capacity": 75,
-   "enrolled": 21
+   "enrolled": 23
   },
   {
    "crn": "14388",
@@ -21216,17 +21230,17 @@
   {
    "crn": "14472",
    "capacity": 55,
-   "enrolled": 25
+   "enrolled": 26
   },
   {
    "crn": "14473",
    "capacity": 25,
-   "enrolled": 17
+   "enrolled": 19
   },
   {
    "crn": "14474",
    "capacity": 30,
-   "enrolled": 9
+   "enrolled": 10
   },
   {
    "crn": "14475",
@@ -21241,7 +21255,7 @@
   {
    "crn": "14477",
    "capacity": 500,
-   "enrolled": 184
+   "enrolled": 195
   },
   {
    "crn": "14478",
@@ -21271,17 +21285,17 @@
   {
    "crn": "14483",
    "capacity": 45,
-   "enrolled": 10
+   "enrolled": 11
   },
   {
    "crn": "14484",
    "capacity": 45,
-   "enrolled": 16
+   "enrolled": 17
   },
   {
    "crn": "14485",
    "capacity": 45,
-   "enrolled": 33
+   "enrolled": 34
   },
   {
    "crn": "14486",
@@ -21311,7 +21325,7 @@
   {
    "crn": "14491",
    "capacity": 40,
-   "enrolled": 29
+   "enrolled": 30
   },
   {
    "crn": "14492",
@@ -21321,7 +21335,7 @@
   {
    "crn": "14493",
    "capacity": 250,
-   "enrolled": 42
+   "enrolled": 43
   },
   {
    "crn": "14494",
@@ -21331,7 +21345,7 @@
   {
    "crn": "14495",
    "capacity": 50,
-   "enrolled": 26
+   "enrolled": 28
   },
   {
    "crn": "14496",
@@ -21343,7 +21357,7 @@
   {
    "crn": "14497",
    "capacity": 50,
-   "enrolled": 25
+   "enrolled": 24
   },
   {
    "crn": "14498",
@@ -22378,7 +22392,7 @@
   {
    "crn": "14710",
    "capacity": 40,
-   "enrolled": 15
+   "enrolled": 16
   },
   {
    "crn": "14711",
@@ -22648,7 +22662,7 @@
   {
    "crn": "14765",
    "capacity": 60,
-   "enrolled": 29
+   "enrolled": 30
   },
   {
    "crn": "14766",
@@ -22783,7 +22797,7 @@
   {
    "crn": "14793",
    "capacity": 40,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "14794",
@@ -22888,12 +22902,12 @@
   {
    "crn": "14814",
    "capacity": 40,
-   "enrolled": 15
+   "enrolled": 17
   },
   {
    "crn": "14815",
    "capacity": 120,
-   "enrolled": 91
+   "enrolled": 93
   },
   {
    "crn": "14816",
@@ -22923,22 +22937,24 @@
   {
    "crn": "14821",
    "capacity": 40,
-   "enrolled": 26
+   "enrolled": 21
   },
   {
    "crn": "14822",
    "capacity": 40,
-   "enrolled": 30
+   "enrolled": 40,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "14823",
    "capacity": 40,
-   "enrolled": 30
+   "enrolled": 28
   },
   {
    "crn": "14824",
    "capacity": 200,
-   "enrolled": 88
+   "enrolled": 89
   },
   {
    "crn": "14825",
@@ -23068,12 +23084,12 @@
   {
    "crn": "14850",
    "capacity": 45,
-   "enrolled": 8
+   "enrolled": 10
   },
   {
    "crn": "14851",
    "capacity": 40,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "14852",
@@ -23088,7 +23104,7 @@
   {
    "crn": "14854",
    "capacity": 30,
-   "enrolled": 16
+   "enrolled": 17
   },
   {
    "crn": "14855",
@@ -23463,12 +23479,12 @@
   {
    "crn": "14931",
    "capacity": 30,
-   "enrolled": 11
+   "enrolled": 12
   },
   {
    "crn": "14932",
    "capacity": 40,
-   "enrolled": 20
+   "enrolled": 25
   },
   {
    "crn": "14933",
@@ -23578,7 +23594,9 @@
   {
    "crn": "14954",
    "capacity": 100,
-   "enrolled": 96
+   "enrolled": 100,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "14955",
@@ -24058,7 +24076,7 @@
   {
    "crn": "15054",
    "capacity": 80,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "15055",
@@ -24068,17 +24086,17 @@
   {
    "crn": "15056",
    "capacity": 30,
-   "enrolled": 24
+   "enrolled": 26
   },
   {
    "crn": "15057",
    "capacity": 70,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "15058",
    "capacity": 30,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "15059",
@@ -24088,17 +24106,17 @@
   {
    "crn": "15060",
    "capacity": 30,
-   "enrolled": 18
+   "enrolled": 19
   },
   {
    "crn": "15061",
    "capacity": 30,
-   "enrolled": 6
+   "enrolled": 8
   },
   {
    "crn": "15062",
    "capacity": 30,
-   "enrolled": 6
+   "enrolled": 8
   },
   {
    "crn": "15065",
@@ -24268,7 +24286,7 @@
   {
    "crn": "15103",
    "capacity": 50,
-   "enrolled": 18
+   "enrolled": 20
   },
   {
    "crn": "15104",
@@ -24338,7 +24356,7 @@
   {
    "crn": "15117",
    "capacity": 70,
-   "enrolled": 11
+   "enrolled": 12
   },
   {
    "crn": "15118",
@@ -24363,22 +24381,22 @@
   {
    "crn": "15122",
    "capacity": 40,
-   "enrolled": 12
+   "enrolled": 15
   },
   {
    "crn": "15123",
    "capacity": 40,
-   "enrolled": 23
+   "enrolled": 25
   },
   {
    "crn": "15124",
    "capacity": 40,
-   "enrolled": 23
+   "enrolled": 24
   },
   {
    "crn": "15125",
    "capacity": 40,
-   "enrolled": 21
+   "enrolled": 24
   },
   {
    "crn": "15126",
@@ -24403,7 +24421,7 @@
   {
    "crn": "15130",
    "capacity": 30,
-   "enrolled": 14
+   "enrolled": 15
   },
   {
    "crn": "15131",
@@ -24423,7 +24441,7 @@
   {
    "crn": "15134",
    "capacity": 80,
-   "enrolled": 25
+   "enrolled": 27
   },
   {
    "crn": "15135",
@@ -24473,7 +24491,9 @@
   {
    "crn": "15145",
    "capacity": 12,
-   "enrolled": 10
+   "enrolled": 12,
+   "filledAt": "2026-09-15T18:50:07Z",
+   "fillMinutes": 21259
   },
   {
    "crn": "15146",
@@ -24593,7 +24613,7 @@
   {
    "crn": "15169",
    "capacity": 45,
-   "enrolled": 20
+   "enrolled": 19
   },
   {
    "crn": "15170",
@@ -24608,12 +24628,12 @@
   {
    "crn": "15172",
    "capacity": 40,
-   "enrolled": 14
+   "enrolled": 15
   },
   {
    "crn": "15173",
    "capacity": 30,
-   "enrolled": 12
+   "enrolled": 13
   },
   {
    "crn": "15174",
@@ -24623,17 +24643,17 @@
   {
    "crn": "15175",
    "capacity": 40,
-   "enrolled": 14
+   "enrolled": 15
   },
   {
    "crn": "15176",
    "capacity": 80,
-   "enrolled": 27
+   "enrolled": 28
   },
   {
    "crn": "15177",
    "capacity": 30,
-   "enrolled": 19
+   "enrolled": 20
   },
   {
    "crn": "15178",
@@ -24643,7 +24663,7 @@
   {
    "crn": "15179",
    "capacity": 100,
-   "enrolled": 27
+   "enrolled": 28
   },
   {
    "crn": "15180",
@@ -24658,12 +24678,12 @@
   {
    "crn": "15182",
    "capacity": 100,
-   "enrolled": 27
+   "enrolled": 28
   },
   {
    "crn": "15183",
    "capacity": 30,
-   "enrolled": 18
+   "enrolled": 20
   },
   {
    "crn": "15184",
@@ -24673,7 +24693,7 @@
   {
    "crn": "15185",
    "capacity": 30,
-   "enrolled": 2
+   "enrolled": 3
   },
   {
    "crn": "15186",
@@ -25018,7 +25038,7 @@
   {
    "crn": "15257",
    "capacity": 15,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "15259",
@@ -25062,7 +25082,7 @@
   {
    "crn": "15266",
    "capacity": 25,
-   "enrolled": 19
+   "enrolled": 24
   },
   {
    "crn": "15267",
@@ -25267,7 +25287,7 @@
   {
    "crn": "15307",
    "capacity": 55,
-   "enrolled": 15
+   "enrolled": 17
   },
   {
    "crn": "15309",
@@ -25982,7 +26002,7 @@
   {
    "crn": "15456",
    "capacity": 300,
-   "enrolled": 43
+   "enrolled": 45
   },
   {
    "crn": "15457",
@@ -25992,7 +26012,7 @@
   {
    "crn": "15458",
    "capacity": 30,
-   "enrolled": 12
+   "enrolled": 13
   },
   {
    "crn": "15459",
@@ -26294,7 +26314,7 @@
   {
    "crn": "15522",
    "capacity": 20,
-   "enrolled": 2
+   "enrolled": 3
   },
   {
    "crn": "15523",
@@ -26399,7 +26419,7 @@
   {
    "crn": "15544",
    "capacity": 100,
-   "enrolled": 6
+   "enrolled": 8
   },
   {
    "crn": "15545",
@@ -26424,17 +26444,17 @@
   {
    "crn": "15549",
    "capacity": 60,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "15550",
    "capacity": 30,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "15551",
    "capacity": 30,
-   "enrolled": 5
+   "enrolled": 6
   },
   {
    "crn": "15552",
@@ -26444,16 +26464,16 @@
   {
    "crn": "15554",
    "capacity": 0,
-   "enrolled": 4
+   "enrolled": 2
   },
   {
    "crn": "15555",
-   "capacity": 0,
+   "capacity": 50,
    "enrolled": 0
   },
   {
    "crn": "15556",
-   "capacity": 0,
+   "capacity": 50,
    "enrolled": 0
   },
   {
@@ -26463,7 +26483,7 @@
   },
   {
    "crn": "15558",
-   "capacity": 0,
+   "capacity": 30,
    "enrolled": 0
   },
   {
@@ -26509,12 +26529,12 @@
   {
    "crn": "15567",
    "capacity": 45,
-   "enrolled": 1
+   "enrolled": 2
   },
   {
    "crn": "15568",
    "capacity": 45,
-   "enrolled": 1
+   "enrolled": 2
   },
   {
    "crn": "15570",
@@ -26529,22 +26549,22 @@
   {
    "crn": "15572",
    "capacity": 70,
-   "enrolled": 43
+   "enrolled": 45
   },
   {
    "crn": "15573",
    "capacity": 70,
-   "enrolled": 52
+   "enrolled": 55
   },
   {
    "crn": "15574",
    "capacity": 35,
-   "enrolled": 20
+   "enrolled": 22
   },
   {
    "crn": "15575",
    "capacity": 70,
-   "enrolled": 31
+   "enrolled": 32
   },
   {
    "crn": "15576",
@@ -26561,7 +26581,7 @@
   {
    "crn": "15578",
    "capacity": 30,
-   "enrolled": 0
+   "enrolled": 3
   }
  ]
 }

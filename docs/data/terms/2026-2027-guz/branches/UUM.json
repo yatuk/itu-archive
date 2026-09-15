@@ -189,6 +189,33 @@
   "classReq": "-"
  },
  {
+  "crn": "13311",
+  "code": "UUM 543E",
+  "branch": "UUM",
+  "level": "LU",
+  "name": "Spec.Top.in Aeron.&Astron.Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İskender Gökalp",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "ZD2"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
   "crn": "13312",
   "code": "UUM 555",
   "branch": "UUM",
@@ -411,7 +438,7 @@
   "level": "LU",
   "name": "Unsteady Aerodynamics",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Saliha Banu Yılmaz",
+  "instructor": "Saliha Banu Yılmaz , Ülgen Gülçat",
   "buildings": [
    "MEDC"
   ],
@@ -600,7 +627,7 @@
   "level": "LU",
   "name": "Spec.Top.in Aeron.&Astron.Eng.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mete Budaklı",
+  "instructor": "Mete Budaklı , Taylan Ercan",
   "buildings": [
    "MEDC"
   ],
@@ -767,7 +794,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Temel Kotil",
   "buildings": [
-   "undeclared"
+   "MEDC"
   ],
   "days": [
    "Cuma"
@@ -776,8 +803,29 @@
    "09:00/11:59"
   ],
   "rooms": [
-   "--"
+   "2D12"
   ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15563",
+  "code": "UUM 527E",
+  "branch": "UUM",
+  "level": "LU",
+  "name": "Rotorcraft Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
   "capacity": 40,
   "enrolled": 0,
   "reserved": "-",

@@ -419,8 +419,16 @@
   ],
   "capacity": 40,
   "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
+  "reserved": "EEE_LS/5/0 | ELKE_LS/3/0 | Diğer/32/0",
+  "programs": [
+   "EEE_LS",
+   "EHB_LS",
+   "EHBE_LS",
+   "ELK_LS",
+   "ELKE_LS",
+   "KOM_LS",
+   "KOME_LS"
+  ],
   "prereq": "-",
   "classReq": "Detay"
  }

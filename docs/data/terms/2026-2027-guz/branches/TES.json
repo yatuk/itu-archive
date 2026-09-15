@@ -124,7 +124,7 @@
    "--",
    "--"
   ],
-  "capacity": 30,
+  "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -185,7 +185,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/8/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENT_LS",
@@ -359,7 +359,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/8/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENT_LS",
@@ -401,7 +401,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/8/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENT_LS",
@@ -601,7 +601,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/8/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENT_LS",
@@ -650,7 +650,8 @@
   "reserved": "-",
   "programs": [
    "MIM_LS",
-   "MIME_LS"
+   "MIME_LS",
+   "SAS_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -684,7 +685,8 @@
   "reserved": "-",
   "programs": [
    "MIM_LS",
-   "MIME_LS"
+   "MIME_LS",
+   "SAS_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -718,7 +720,8 @@
   "reserved": "-",
   "programs": [
    "MIM_LS",
-   "MIME_LS"
+   "MIME_LS",
+   "SAS_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -752,7 +755,8 @@
   "reserved": "-",
   "programs": [
    "MIM_LS",
-   "MIME_LS"
+   "MIME_LS",
+   "SAS_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -786,7 +790,8 @@
   "reserved": "-",
   "programs": [
    "MIM_LS",
-   "MIME_LS"
+   "MIME_LS",
+   "SAS_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -815,8 +820,20 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
+   "ARC_LS",
+   "ENT_LS",
+   "ENTE_LS",
+   "EUT_LS",
+   "EUTE_LS",
+   "IAD_LS",
+   "ICM_LS",
    "MIM_LS",
-   "MIME_LS"
+   "MIME_LS",
+   "PEM_LS",
+   "PEME_LS",
+   "SAS_LS",
+   "SBP_LS",
+   "SBPE_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -993,7 +1010,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/8/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENT_LS",
@@ -1035,7 +1052,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/8/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENT_LS",
@@ -1077,7 +1094,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/7/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | SAS_LS/1/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENT_LS",
@@ -1252,8 +1269,7 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "ARC_LS",
-   "SAS_LS"
+   "ARC_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -1377,7 +1393,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/7/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | SAS_LS/1/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENTE_LS",
@@ -1388,6 +1404,7 @@
    "MIME_LS",
    "PEM_LS",
    "PEME_LS",
+   "SAS_LS",
    "SBP_LS",
    "SBPE_LS"
   ],
@@ -1416,7 +1433,7 @@
   ],
   "capacity": 45,
   "enrolled": 0,
-  "reserved": "-",
+  "reserved": "ARC_LS/4/0 | ENTE_LS/4/0 | IAD_LS/4/0 | ICM_LS/4/0 | MIM_LS/8/0 | MIME_LS/6/0 | PEME_LS/5/0 | SBP_LS/5/0 | SBPE_LS/5/0 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "ENT_LS",
@@ -1432,6 +1449,39 @@
    "SAS_LS",
    "SBP_LS",
    "SBPE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15522",
+  "code": "TES 111E",
+  "branch": "TES",
+  "level": "LS",
+  "name": "Project I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Evren Ferdağ Göçek Karabey",
+  "buildings": [
+   "MMB",
+   "MMB"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/12:29",
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IAD_LS"
   ],
   "prereq": "-",
   "classReq": "-"

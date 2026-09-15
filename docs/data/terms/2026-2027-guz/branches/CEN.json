@@ -263,5 +263,86 @@
   ],
   "prereq": "Detay",
   "classReq": "-"
+ },
+ {
+  "crn": "15552",
+  "code": "CEN 101E",
+  "branch": "CEN",
+  "level": "LS",
+  "name": "Intr. to Information Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [
+   "TAS_2"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "Amfi"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15553",
+  "code": "CEN 102E",
+  "branch": "CEN",
+  "level": "LS",
+  "name": "Intr to Sci&Eng Comp (C)",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Turgay Altılar",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15554",
+  "code": "CEN 113E",
+  "branch": "CEN",
+  "level": "LS",
+  "name": "Intr.toComp.Eng.and Ethics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nizamettin Aydın , Murat Çakan",
+  "buildings": [
+   "TAS_2"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/11:29"
+  ],
+  "rooms": [
+   "Amfi"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
  }
 ]

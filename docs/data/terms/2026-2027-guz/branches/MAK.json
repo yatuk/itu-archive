@@ -869,7 +869,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 40,
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -1053,12 +1053,12 @@
    "undeclared"
   ],
   "days": [
-   "Çarşamba",
-   "Cuma"
+   "Pazartesi",
+   "Perşembe"
   ],
   "times": [
-   "08:30/10:29",
-   "08:30/10:29"
+   "10:30/12:29",
+   "10:30/12:29"
   ],
   "rooms": [
    "--",
@@ -1810,12 +1810,18 @@
   "name": "Meaurement Laboratory",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "İsmail Yalçın Uralcan",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "undeclared"
   ],
-  "rooms": [],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
@@ -3736,5 +3742,307 @@
   ],
   "prereq": "Detay",
   "classReq": "Detay"
+ },
+ {
+  "crn": "15530",
+  "code": "MAK 4040",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Buhar Kazanları",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yakup Erhan Böke",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15537",
+  "code": "MAK 229E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Fluid Mechanics II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hasan Güneş , Sertaç Çadırcı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15538",
+  "code": "MAK 313E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Heat Transfer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İsmail Yalçın Uralcan",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:30/13:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15539",
+  "code": "MAK 339E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Machine Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali İmre Aydeniz",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba",
+   "Cuma"
+  ],
+  "times": [
+   "10:30/13:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15540",
+  "code": "MAK 333E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "System Dynamics and Control",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Senem Kurşun",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15541",
+  "code": "MAK 353E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Manufacturing Processes",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Gökşenli",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15542",
+  "code": "MAK 342E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Machine Design II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali İmre Aydeniz",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "13:30/15:29",
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15543",
+  "code": "MAK 324E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Theory of Machines",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Osman Taha Şen",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15545",
+  "code": "MAK 312E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Measurement Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İsmail Yalçın Uralcan",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15546",
+  "code": "MAK 405E",
+  "branch": "MAK",
+  "level": "LS",
+  "name": "Innovative Design Methods in Mechanical Engineering",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Zeynep Parlar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MSS_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
  }
 ]

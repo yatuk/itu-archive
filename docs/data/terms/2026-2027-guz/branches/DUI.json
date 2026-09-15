@@ -1292,10 +1292,10 @@
    "undeclared"
   ],
   "days": [
-   "Cuma"
+   "Perşembe"
   ],
   "times": [
-   "14:30/17:29"
+   "08:30/11:29"
   ],
   "rooms": [
    "--"
@@ -1928,6 +1928,35 @@
    "MTM_LS"
   ],
   "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15559",
+  "code": "DUI 103E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Seamanship",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [
+   "TAS_1"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MMD_LS"
+  ],
+  "prereq": "-",
   "classReq": "-"
  }
 ]

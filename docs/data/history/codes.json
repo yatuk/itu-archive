@@ -5613,7 +5613,7 @@
   "CEN 102E",
   "Intr to Sci&Eng Comp (C)",
   "CEN",
-  3
+  4
  ],
  [
   "CEN 112E",
@@ -7491,7 +7491,7 @@
   "DAN 101",
   "Akademik Danışmanlık",
   "DAN",
-  5
+  4
  ],
  [
   "DAN 102",
@@ -10356,6 +10356,12 @@
   1
  ],
  [
+  "EFN 103E",
+  "Markets and Ethics",
+  "EFN",
+  1
+ ],
+ [
   "EFN 105E",
   "Principles of Microeconomics",
   "EFN",
@@ -10407,7 +10413,7 @@
   "EFN 306E",
   "Financial Markets&Institutions",
   "EFN",
-  1
+  2
  ],
  [
   "EFN 307E",
@@ -10430,6 +10436,18 @@
  [
   "EFN 312E",
   "International Finance",
+  "EFN",
+  1
+ ],
+ [
+  "EFN 403E",
+  "Bank Management",
+  "EFN",
+  1
+ ],
+ [
+  "EFN 404E",
+  "Derivatives & Risk Management",
   "EFN",
   1
  ],
@@ -13467,7 +13485,7 @@
   "ETK 101E",
   "Engineering Ethics",
   "ETK",
-  20
+  21
  ],
  [
   "EUT 108E",
@@ -17943,7 +17961,7 @@
   "GMI 462",
   "Buhar & Gaz Türbinleri Operas.",
   "GMI",
-  2
+  3
  ],
  [
   "GMI 462E",
@@ -18507,7 +18525,7 @@
   "IAD 204E",
   "History&Theo.in Inte.Archit.II",
   "IAD",
-  1
+  2
  ],
  [
   "IAD 205E",
@@ -18516,10 +18534,16 @@
   3
  ],
  [
+  "IAD 219E",
+  "Intr. to Research in Design",
+  "IAD",
+  1
+ ],
+ [
   "IAD 233E",
   "Building Materials",
   "IAD",
-  1
+  2
  ],
  [
   "IAD 374E",
@@ -19725,7 +19749,7 @@
   "ING 103SC",
   "Science Communication",
   "ING",
-  9
+  10
  ],
  [
   "ING 104VR",
@@ -28095,7 +28119,7 @@
   "MAK 229E",
   "Fluid Mechanics II",
   "MAK",
-  2
+  3
  ],
  [
   "MAK 230E",
@@ -28203,7 +28227,7 @@
   "MAK 312E",
   "Measurement Systems",
   "MAK",
-  4
+  5
  ],
  [
   "MAK 313",
@@ -28215,7 +28239,7 @@
   "MAK 313E",
   "Heat Transfer",
   "MAK",
-  4
+  5
  ],
  [
   "MAK 314",
@@ -28269,7 +28293,7 @@
   "MAK 324E",
   "Theory of Machines",
   "MAK",
-  5
+  6
  ],
  [
   "MAK 331E",
@@ -28287,7 +28311,7 @@
   "MAK 333E",
   "System Dynamics and Control",
   "MAK",
-  15
+  16
  ],
  [
   "MAK 335",
@@ -28305,7 +28329,7 @@
   "MAK 339E",
   "Machine Design I",
   "MAK",
-  1
+  2
  ],
  [
   "MAK 341",
@@ -28329,7 +28353,7 @@
   "MAK 342E",
   "Machine Design II",
   "MAK",
-  7
+  8
  ],
  [
   "MAK 353",
@@ -28341,7 +28365,7 @@
   "MAK 353E",
   "Manufacturing Processes",
   "MAK",
-  3
+  4
  ],
  [
   "MAK 360",
@@ -28659,7 +28683,7 @@
   "MAK 4040",
   "Buhar Kazanları",
   "MAK",
-  8
+  9
  ],
  [
   "MAK 4042",
@@ -28779,7 +28803,7 @@
   "MAK 405E",
   "Innovative Design Methods in Mechanical Engineering",
   "MAK",
-  1
+  2
  ],
  [
   "MAK 406",
@@ -31122,8 +31146,8 @@
   1
  ],
  [
-  "MHN 506",
-  "Üretim Yönetimi",
+  "MHN 505",
+  "Yönetim ve Organizasyon",
   "MHN",
   1
  ],
@@ -35162,6 +35186,12 @@
  [
   "MTO 515",
   "İleri Dinamik Meteoroloji",
+  "MTO",
+  1
+ ],
+ [
+  "MTO 529",
+  "Güneş&Rüz.Ener.Kaynak.Model.",
   "MTO",
   1
  ],
@@ -40491,7 +40521,7 @@
   "SBP 4017E",
   "Univ.Dsgn.for Urban Environm.",
   "SBP",
-  4
+  3
  ],
  [
   "SBP 4018",
@@ -42489,6 +42519,30 @@
   "SRM YLT",
   "Tez Çalışması",
   "SRM",
+  1
+ ],
+ [
+  "SSI 501",
+  "Etik (Uyum) ve Uluslararası İlişkiler",
+  "SSI",
+  1
+ ],
+ [
+  "SSI 503",
+  "Savunma Ekonomisi",
+  "SSI",
+  1
+ ],
+ [
+  "SSI 504",
+  "Yönetim ve Organizasyon",
+  "SSI",
+  1
+ ],
+ [
+  "SSI 521",
+  "Finansal Muhasebe",
+  "SSI",
   1
  ],
  [
@@ -45558,6 +45612,12 @@
   1
  ],
  [
+  "UUM 527E",
+  "Rotorcraft Design I",
+  "UUM",
+  1
+ ],
+ [
   "UUM 534E",
   "Aircraft Flight Control Systems",
   "UUM",
@@ -46146,8 +46206,32 @@
   1
  ],
  [
+  "VIA 509E",
+  "Machine Learningwith Big Data",
+  "VIA",
+  1
+ ],
+ [
+  "VIA 511E",
+  "Time Series and Forecasting",
+  "VIA",
+  1
+ ],
+ [
+  "VIA 516E",
+  "Customer Analytics",
+  "VIA",
+  1
+ ],
+ [
   "VIA 527E",
   "Mathematics for Machine Lear.",
+  "VIA",
+  1
+ ],
+ [
+  "VIA 529E",
+  "Reinforce.Lear.for Busi.App.",
   "VIA",
   1
  ],

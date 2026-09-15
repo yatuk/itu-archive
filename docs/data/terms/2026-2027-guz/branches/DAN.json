@@ -1,34 +1,5 @@
 [
  {
-  "crn": "12267",
-  "code": "DAN 101",
-  "branch": "DAN",
-  "level": "LS",
-  "name": "Akademik Danışmanlık",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Selma Ergin",
-  "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "3D20"
-  ],
-  "capacity": 100,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "GEM_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "12593",
   "code": "DAN 102",
   "branch": "DAN",
@@ -58,15 +29,15 @@
   "classReq": "-"
  },
  {
-  "crn": "15063",
+  "crn": "15544",
   "code": "DAN 102",
   "branch": "DAN",
   "level": "LS",
   "name": "Girişimcilik & Kariyer Danış.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Kamil Karaçuha",
+  "instructor": "Yakup Erhan Böke",
   "buildings": [
-   "EEB"
+   "MKB"
   ],
   "days": [
    "Çarşamba"
@@ -77,26 +48,27 @@
   "rooms": [
    "--"
   ],
-  "capacity": 150,
+  "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "EHB_LS",
-   "EHBE_LS"
+   "IML_LS",
+   "MAK_LS",
+   "MSS_LS"
   ],
   "prereq": "-",
   "classReq": "-"
  },
  {
-  "crn": "15064",
+  "crn": "15547",
   "code": "DAN 102",
   "branch": "DAN",
   "level": "LS",
   "name": "Girişimcilik & Kariyer Danış.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Suat İlhan",
+  "instructor": "Nizam Onur Sönmez",
   "buildings": [
-   "EEB"
+   "MMB"
   ],
   "days": [
    "Çarşamba"
@@ -107,44 +79,12 @@
   "rooms": [
    "--"
   ],
-  "capacity": 150,
+  "capacity": 100,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
-   "ELK_LS",
-   "ELKE_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "15066",
-  "code": "DAN 102",
-  "branch": "DAN",
-  "level": "LS",
-  "name": "Girişimcilik & Kariyer Danış.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Müjde Güzelkaya",
-  "buildings": [
-   "EEB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 150,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "KOM_LS",
-   "KOME_LS",
-   "ROS_LS",
-   "ROSE_LS"
+   "MIM_LS",
+   "MIME_LS"
   ],
   "prereq": "-",
   "classReq": "-"

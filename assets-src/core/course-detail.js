@@ -451,7 +451,13 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
     getJSON(`data/grades/${branch}.json`).then((all) => (Array.isArray(all) ? all.filter((g) => g.code === code) : [])).catch(() => []),
     loadBuildings(),
   ]);
-  const secs = Array.isArray(list) ? list.filter((s) => s.code === code) : [];
+  // branches/*.json günlük/haftalık katalog taramasından gelir; saatlik kontenjan
+  // ölçümü (state.quota) varsa kapasite/yazılan onunla üzerine yazılır — aksi halde
+  // panel, tablodaki güncel sayıdan çok daha eski bir kontenjan gösterebilir.
+  const secs = (Array.isArray(list) ? list.filter((s) => s.code === code) : []).map((s) => {
+    const live = state.quota?.get(String(s.crn));
+    return live ? { ...s, capacity: live.capacity, enrolled: live.enrolled } : s;
+  });
   const obsLink = obsDeepLink(code);
   const programs = [...new Set(secs.flatMap((s) => s.programs || []))];
   const name = secs[0]?.name || cat?.name || hist?.name || code;

@@ -8,7 +8,7 @@
 import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum, copyText } from '../core/utils.js?v=dde1e9339338';
 import { state, indexReady } from '../core/store.js?v=dde1e9339338';
 import { quotaDisplay } from '../core/chart.js?v=dde1e9339338';
-import { buildTimetable, buildingGapWarnings, parseWhen, openDetail } from './courses.js?v=dde1e9339338';
+import { buildTimetable, buildingGapWarnings, parseWhen, openDetail, effectiveQuota } from './courses.js?v=dde1e9339338';
 import * as fav from '../core/favorites.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
 import { confirmDialog, promptDialog } from '../core/dialog.js?v=dde1e9339338';
@@ -328,7 +328,7 @@ function fillCRNSelect(id, branch, code) {
   if (!code) return;
   const secs = rows.filter((r) => r[3] === branch && r[1] === code);
   crnSel.innerHTML = `<option value="">${esc(I18N.t('progSelectCRNOption'))}</option>` +
-    secs.map((r) => `<option value="${esc(r[0])}">${esc(r[0])}: ${esc(r[5] || '·')} · ${esc(r[4] || '·')} · ${r[6] ? `${r[7]}/${r[6]}` : '·'}</option>`).join('');
+    secs.map((r) => { const [cap, enr] = effectiveQuota(r); return `<option value="${esc(r[0])}">${esc(r[0])}: ${esc(r[5] || '·')} · ${esc(r[4] || '·')} · ${cap ? `${enr}/${cap}` : '·'}</option>`; }).join('');
   // CRN seçilince ekle ve satırı kaldır.
   crnSel.addEventListener('change', () => {
     if (!crnSel.value) return;
@@ -399,11 +399,11 @@ function search() {
     if (hay[i].includes(q)) hits.push(rows[i]);
   }
   box.hidden = false;
-  box.innerHTML = hits.map((r, idx) => `
+  box.innerHTML = hits.map((r, idx) => { const [cap, enr] = effectiveQuota(r); return `
     <button type="button" class="p-result" data-i="${idx}">
       <b>${esc(r[1])}</b><span>${esc(r[2])}</span>
-      <em>${esc(r[5] || '·')}</em><em>${r[6] ? `${r[7]}/${r[6]}` : '·'}</em>
-    </button>`).join('') || `<p class="empty">${esc(I18N.t('emptyRow'))}</p>`;
+      <em>${esc(r[5] || '·')}</em><em>${cap ? `${enr}/${cap}` : '·'}</em>
+    </button>`; }).join('') || `<p class="empty">${esc(I18N.t('emptyRow'))}</p>`;
 }
 
 function hideResults() {
@@ -494,7 +494,8 @@ function renderList(items) {
   const byKey = new Map(items.map((item) => [fav.favKeyOf(item.rec.branch, item.rec.crn), item]));
   latestProgramListProps = {
     items: items.map(({ rec, row }) => {
-      const [crn, code, name, branch, instructor, when, cap, enr] = row;
+      const [crn, code, name, branch, instructor, when] = row;
+      const [cap, enr] = effectiveQuota(row);
       const kind = specialSectionKind(row);
       return {
         key: fav.favKeyOf(branch, crn), crn: String(crn), code: String(code), name: String(name),
@@ -529,7 +530,8 @@ function renderList(items) {
     return;
   }
   const rowsHtml = items.map(({ rec, row }, idx) => {
-    const [crn, code, name, branch, instructor, when, cap, enr] = row;
+    const [crn, code, name, branch, instructor, when] = row;
+    const [cap, enr] = effectiveQuota(row);
     const full = cap > 0 && enr >= cap;
     const key = fav.favKeyOf(branch, crn);
     const speed = fillSpeedNote(crn);
@@ -1063,7 +1065,7 @@ let placedRefs = [];
 
 function renderSummary(items) {
   const box = $('#p-summary');
-  const full = items.filter(({ row }) => row[6] > 0 && row[7] >= row[6]).length;
+  const full = items.filter(({ row }) => { const [cap, enr] = effectiveQuota(row); return cap > 0 && enr >= cap; }).length;
   const t = buildTimetable(items.map((i) => i.row));
   const pairs = new Set();
   if (t) {

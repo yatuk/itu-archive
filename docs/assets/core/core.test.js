@@ -565,7 +565,8 @@ test('quotaDisplay tek sayısal temsil üretir (fosfor çubuk çıktısı kaldı
   assert.ok(!open.includes('class="fill"'));
 
   const tight = quotaDisplay(50, 47);
-  assert.ok(tight.includes('47 / 50 · <span class="quota-state tight">3 yer</span>'));
+  assert.ok(tight.includes('47 / 50'));
+  assert.ok(!tight.includes('quota-state'), 'tight durumda artık ayrı bir "X yer" etiketi gösterilmiyor');
   const full = quotaDisplay(50, 52, { detail: true });
   assert.ok(full.includes('52 kayıtlı · 50 kontenjan'));
   assert.ok(full.includes('quota-state full">dolu'));

@@ -36,9 +36,7 @@ export function quotaDisplay(cap, enr, { detail = false, lang } = {}) {
   if (q.kind === 'unknown') return '·';
   const english = (lang || (typeof document !== 'undefined' ? document.documentElement.lang : 'tr')) === 'en';
 
-  let state = '';
-  if (q.kind === 'full') state = english ? 'full' : 'dolu';
-  else if (q.kind === 'tight') state = `${formatInt(q.remaining)} ${english ? 'seats' : 'yer'}`;
+  const state = q.kind === 'full' ? (english ? 'full' : 'dolu') : '';
 
   const counts = detail
     ? `${formatInt(q.enrolled)} ${english ? 'enrolled' : 'kayıtlı'} · ${formatInt(q.capacity)} ${english ? 'capacity' : 'kontenjan'}`

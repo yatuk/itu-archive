@@ -492,10 +492,10 @@ function clearSelection() {
 
 function rowsToCSV(rows, filename) {
   const headers = ['CRN', 'Ders Kodu', 'Bölüm', 'Ders Adı', 'Öğretim Üyesi', 'Zaman', 'Yer', 'Kontenjan', 'Yazılan', 'Doluluk (%)'];
-  const data = rows.map((r) => [
-    r[0], r[1], r[3], r[2], r[4], r[5], r[11] || '', r[6], r[7],
-    r[6] ? Math.round((r[7] / r[6]) * 100) : '',
-  ]);
+  const data = rows.map((r) => {
+    const [cap, enr] = effectiveQuota(r);
+    return [r[0], r[1], r[3], r[2], r[4], r[5], r[11] || '', cap, enr, cap ? Math.round((enr / cap) * 100) : ''];
+  });
   downloadCSV(filename, headers, data);
 }
 
@@ -549,9 +549,18 @@ function loadDerslerTableWidget() {
   return derslerTableModulePromise;
 }
 
+// Kontenjan/yazılan sayısını gösterirken saatlik kontenjan ölçümü (state.quota),
+// varsa, günlük/haftalık katalog taramasından (r[6]/r[7]) daha güncel olduğu için
+// önceliklidir — aksi halde tabloda "kontenjan ölçümü N sa önce" yazsa da satırlar
+// eski taramanın sayılarını gösterir.
+export function effectiveQuota(r) {
+  const live = state.quota?.get(r[0]);
+  return live ? [live.capacity, live.enrolled] : [r[6], r[7]];
+}
+
 function derslerRowFrom(r) {
   const [crn, code, name, branch, instructor, when] = r;
-  const cap = r[6], enr = r[7];
+  const [cap, enr] = effectiveQuota(r);
   const where = r[11] || '';
   const kind = specialSectionKind(r);
   const key = selKey(r);
@@ -676,7 +685,8 @@ export function cachedGroupCourseRows(rows) {
 }
 
 function createMobileSection(row, extra = false) {
-  const [crn, code, name, branch, instructor, when, cap, enr] = row;
+  const [crn, code, name, branch, instructor, when] = row;
+  const [cap, enr] = effectiveQuota(row);
   const where = row[11] || '';
   const key = selKey(row);
   const starred = fav.isFavorite(state.termSlug, branch, crn);

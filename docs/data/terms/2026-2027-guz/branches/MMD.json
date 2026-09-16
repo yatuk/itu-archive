@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MMD_LS"
@@ -48,7 +48,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 0,
+  "capacity": 30,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -78,7 +78,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MMD_LS"
@@ -169,7 +169,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MMD_LS"
@@ -198,7 +198,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MMD_LS"
@@ -366,7 +366,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MMD_LS"
@@ -395,7 +395,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MMD_LS"
@@ -502,10 +502,10 @@
    "14:30/16:29"
   ],
   "rooms": [
-   "--"
+   "B04"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MMD_LS"
@@ -531,10 +531,10 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "B04"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MMD_LS"
@@ -551,7 +551,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Kaya Tokmakçıoğlu",
   "buildings": [
-   "MSB"
+   "ISB"
   ],
   "days": [
    "Salı"
@@ -560,7 +560,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "209"
   ],
   "capacity": 30,
   "enrolled": 0,
@@ -589,7 +589,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "B11"
   ],
   "capacity": 30,
   "enrolled": 0,
@@ -607,9 +607,9 @@
   "level": "LS",
   "name": "Intr.to Maritime Bus.Administ.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
+  "instructor": "Gizem Kodak",
   "buildings": [
-   "TAS_2"
+   "Gazimagusa-TAS_2"
   ],
   "days": [
    "Salı"
@@ -618,9 +618,9 @@
    "08:30/10:29"
   ],
   "rooms": [
-   "Amfi"
+   "902"
   ],
-  "capacity": 0,
+  "capacity": 30,
   "enrolled": 0,
   "reserved": "-",
   "programs": [

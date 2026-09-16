@@ -53,7 +53,7 @@
    "--"
   ],
   "capacity": 45,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -484,7 +484,7 @@
    "--"
   ],
   "capacity": 130,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1278,7 +1278,9 @@
   "programs": [
    "ARC_LS",
    "MIM_LS",
-   "MIME_LS"
+   "MIME_LS",
+   "SBP_LS",
+   "SBPE_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -2419,7 +2421,7 @@
    "--"
   ],
   "capacity": 110,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "ARC_LS",

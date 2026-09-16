@@ -899,7 +899,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Burak Berk Üstündağ , Gökhan İnce",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -908,10 +908,10 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "--"
+   "KON1"
   ],
   "capacity": 150,
-  "enrolled": 0,
+  "enrolled": 66,
   "reserved": "-",
   "programs": [
    "BLGE_LS"
@@ -928,8 +928,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Yusuf Hüseyin Şahin",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "BBB",
+   "BBB"
   ],
   "days": [
    "Salı",
@@ -940,8 +940,8 @@
    "14:30/16:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "Z-19",
+   "Z-19"
   ],
   "capacity": 80,
   "enrolled": 0,
@@ -961,8 +961,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Yavuz Köroğlu",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "BBB",
+   "BBB"
   ],
   "days": [
    "Salı",
@@ -973,8 +973,8 @@
    "14:30/16:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "Z-18",
+   "Z-18"
   ],
   "capacity": 80,
   "enrolled": 0,
@@ -994,7 +994,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Feza Buzluca",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -1003,7 +1003,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "Z-21"
   ],
   "capacity": 70,
   "enrolled": 0,
@@ -1025,7 +1025,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sanem Kabadayı",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -1034,7 +1034,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "Z-20"
   ],
   "capacity": 70,
   "enrolled": 0,
@@ -1056,7 +1056,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mustafa Ersel Kamaşak",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -1065,7 +1065,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "Z-16"
   ],
   "capacity": 0,
   "enrolled": 0,
@@ -1087,7 +1087,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ayşe Yılmazer Metin",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -1096,7 +1096,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "Z-19"
   ],
   "capacity": 90,
   "enrolled": 0,
@@ -1117,7 +1117,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gökhan İnce",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -1126,7 +1126,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "Z-18"
   ],
   "capacity": 90,
   "enrolled": 0,
@@ -1147,7 +1147,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mustafa Ersel Kamaşak",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -1178,7 +1178,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Muhammet Alkan",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -1209,7 +1209,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Muhammet Alkan",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -1240,7 +1240,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Muhammet Alkan",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -1270,12 +1270,18 @@
   "name": "Principles of Computer Comm.",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Abdül Halim Zaim",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "BBB"
   ],
-  "rooms": [],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "Z-21"
+  ],
   "capacity": 60,
   "enrolled": 0,
   "reserved": "-",
@@ -1297,7 +1303,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mehmet Tahir Sandıkkaya",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -1306,7 +1312,7 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "Z-20"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -1328,7 +1334,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mehmet Baysan",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -1337,7 +1343,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "Z-20"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -1359,7 +1365,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ayşe Tosun Kühn",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -1368,7 +1374,7 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "Z-17"
   ],
   "capacity": 80,
   "enrolled": 0,
@@ -1390,7 +1396,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Tolga Ovatman",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -1399,7 +1405,7 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "Z-19"
   ],
   "capacity": 80,
   "enrolled": 0,
@@ -1421,7 +1427,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Deniz Turgay Altılar",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -1430,7 +1436,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "Z-17"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -1451,7 +1457,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Hazım Kemal Ekenel",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -1460,7 +1466,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "Z-20"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -1481,7 +1487,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Şerif Bahtiyar",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -1490,7 +1496,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "Z-21"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -1511,7 +1517,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Muhammet Alkan",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -1520,7 +1526,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "101"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -1542,7 +1548,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Burak Sağlam",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -1551,7 +1557,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "101"
   ],
   "capacity": 40,
   "enrolled": 0,
@@ -1573,7 +1579,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gökhan Seçinti",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -1582,7 +1588,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "Z-21"
   ],
   "capacity": 60,
   "enrolled": 0,
@@ -1730,7 +1736,7 @@
    "-/-"
   ],
   "rooms": [],
-  "capacity": 200,
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -1750,7 +1756,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Alper Almelek",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -1759,7 +1765,7 @@
    "10:00/12:59"
   ],
   "rooms": [
-   "--"
+   "102"
   ],
   "capacity": 40,
   "enrolled": 0,
@@ -1780,7 +1786,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -1791,7 +1797,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 60,
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -1811,7 +1817,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Deniz Turgay Altılar",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -1820,7 +1826,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "Z-23"
   ],
   "capacity": 0,
   "enrolled": 0,
@@ -1838,7 +1844,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Deniz Türkpençe",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -1847,7 +1853,7 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
   "capacity": 0,
   "enrolled": 0,
@@ -2111,35 +2117,6 @@
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "15438",
-  "code": "BLG 322E",
-  "branch": "BLG",
-  "level": "LS",
-  "name": "Computer Architecture",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Nizamettin Aydın",
-  "buildings": [
-   "BBB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "08:30/11:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CEN_LS"
-  ],
   "prereq": "Detay",
   "classReq": "-"
  },

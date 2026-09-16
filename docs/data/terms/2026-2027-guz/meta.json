@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-15T07:52:00Z"
+  "lastSuccessfulAt": "2026-09-16T07:46:18Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-15T07:52:00Z",
+ "scrapedAt": "2026-09-16T07:46:18Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5281,
- "courses": 3751,
+ "sections": 5294,
+ "courses": 3769,
  "branches": [
   {
    "code": "ABM",
@@ -131,7 +131,7 @@
     "LS",
     "LU"
    ],
-   "sections": 79
+   "sections": 78
   },
   {
    "code": "BLU",
@@ -201,7 +201,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 12
+   "sections": 14
   },
   {
    "code": "CEV",
@@ -224,6 +224,13 @@
     "LU"
    ],
    "sections": 38
+  },
+  {
+   "code": "CIE",
+   "levels": [
+    "LS"
+   ],
+   "sections": 6
   },
   {
    "code": "CIN",
@@ -293,7 +300,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 33
+   "sections": 34
   },
   {
    "code": "DNK",
@@ -363,21 +370,21 @@
    "levels": [
     "LS"
    ],
-   "sections": 7
+   "sections": 6
   },
   {
    "code": "EEF",
    "levels": [
     "LS"
    ],
-   "sections": 38
+   "sections": 37
   },
   {
    "code": "EFN",
    "levels": [
     "LS"
    ],
-   "sections": 10
+   "sections": 12
   },
   {
    "code": "EGC",
@@ -479,7 +486,7 @@
     "LS",
     "LU"
    ],
-   "sections": 214
+   "sections": 212
   },
   {
    "code": "FRA",
@@ -552,7 +559,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 74
+   "sections": 75
   },
   {
    "code": "GSB",
@@ -679,7 +686,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 7
+   "sections": 8
   },
   {
    "code": "ISG",
@@ -730,6 +737,13 @@
     "LS"
    ],
    "sections": 58
+  },
+  {
+   "code": "ITY",
+   "levels": [
+    "LUI"
+   ],
+   "sections": 6
   },
   {
    "code": "IYB",
@@ -794,7 +808,7 @@
     "LS",
     "LU"
    ],
-   "sections": 179
+   "sections": 178
   },
   {
    "code": "KMM",
@@ -802,7 +816,7 @@
     "LS",
     "LU"
    ],
-   "sections": 50
+   "sections": 49
   },
   {
    "code": "KMP",
@@ -960,7 +974,7 @@
    "levels": [
     "LUI"
    ],
-   "sections": 5
+   "sections": 6
   },
   {
    "code": "MHY",
@@ -1614,11 +1628,11 @@
   }
  ],
  "stats": {
-  "sections": 5281,
-  "courses": 3751,
-  "branches": 225,
-  "instructors": 1782,
-  "capacity": 252949,
-  "enrolled": 567
+  "sections": 5294,
+  "courses": 3769,
+  "branches": 227,
+  "instructors": 1789,
+  "capacity": 253378,
+  "enrolled": 16249
  }
 }

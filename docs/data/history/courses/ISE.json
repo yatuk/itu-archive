@@ -27,7 +27,6 @@
   "code": "ISE 101",
   "name": "Intro.to Information Sys. and",
   "terms": [
-   "2026-2027-guz",
    "2023-2024-guz",
    "2022-2023-guz",
    "2021-2022-guz",
@@ -36,13 +35,6 @@
    "2018-2019-guz"
   ],
   "rows": [
-   [
-    "2026-2027-guz",
-    "Mustafa Ersel Kamaşak",
-    45,
-    0,
-    "Çarşamba, Perşembe"
-   ],
    [
     "2023-2024-guz",
     "Mustafa Ersel Kamaşak",
@@ -230,11 +222,26 @@
    ]
   ]
  },
+ "ISE 105E": {
+  "code": "ISE 105E",
+  "name": "Intro.to Information Sys.",
+  "terms": [
+   "2026-2027-guz"
+  ],
+  "rows": [
+   [
+    "2026-2027-guz",
+    "Mustafa Ersel Kamaşak",
+    45,
+    2,
+    "Çarşamba, Perşembe"
+   ]
+  ]
+ },
  "ISE 111": {
   "code": "ISE 111",
   "name": "Linear Algebra",
   "terms": [
-   "2026-2027-guz",
    "2025-2026-yaz",
    "2025-2026-guz",
    "2023-2024-guz",
@@ -243,13 +250,6 @@
    "2020-2021-guz"
   ],
   "rows": [
-   [
-    "2026-2027-guz",
-    "Deniz Turgay Altılar",
-    45,
-    0,
-    "Perşembe"
-   ],
    [
     "2025-2026-yaz",
     "Deniz Turgay Altılar",
@@ -358,6 +358,22 @@
    ]
   ]
  },
+ "ISE 113E": {
+  "code": "ISE 113E",
+  "name": "Linear Algebra",
+  "terms": [
+   "2026-2027-guz"
+  ],
+  "rows": [
+   [
+    "2026-2027-guz",
+    "Deniz Turgay Altılar",
+    45,
+    2,
+    "Perşembe"
+   ]
+  ]
+ },
  "ISE 302": {
   "code": "ISE 302",
   "name": "Operating Systems",
@@ -445,8 +461,8 @@
   "rows": [
    [
     "2026-2027-guz",
-    "-",
-    45,
+    "Abdullah Cihan Ak",
+    0,
     0,
     "Çarşamba"
    ],
@@ -586,6 +602,7 @@
   "code": "ISE 306",
   "name": "Computer Networks",
   "terms": [
+   "2026-2027-guz",
    "2025-2026-bahar",
    "2023-2024-bahar",
    "2022-2023-bahar",
@@ -597,6 +614,13 @@
    "2016-2017-yaz"
   ],
   "rows": [
+   [
+    "2026-2027-guz",
+    "Gökhan Seçinti",
+    45,
+    0,
+    "Cuma"
+   ],
    [
     "2025-2026-bahar",
     "Abdül Halim Zaim",

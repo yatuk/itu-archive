@@ -8,7 +8,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Bayram Barış Kızılsaç",
   "buildings": [
-   "undeclared"
+   "DZB"
   ],
   "days": [
    "Pazartesi"
@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 4,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "SDU_LS",
@@ -50,7 +50,7 @@
    "1301"
   ],
   "capacity": 40,
-  "enrolled": 11,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [
    "EHN_LS"
@@ -83,7 +83,7 @@
    "L400"
   ],
   "capacity": 45,
-  "enrolled": 11,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "MBI_LS",
@@ -117,7 +117,7 @@
    "A301"
   ],
   "capacity": 40,
-  "enrolled": 19,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "SED_LS"
@@ -146,7 +146,7 @@
    "B1_226"
   ],
   "capacity": 30,
-  "enrolled": 19,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [
    "SIS_LS"
@@ -175,7 +175,7 @@
    "A303"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "SIS_LS"
@@ -208,7 +208,7 @@
    "A304"
   ],
   "capacity": 30,
-  "enrolled": 19,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "SGI_LS",
@@ -238,7 +238,7 @@
    "A302"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "STP_LS"
@@ -271,7 +271,7 @@
    "5101"
   ],
   "capacity": 40,
-  "enrolled": 11,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [
    "EHN_LS"
@@ -300,7 +300,7 @@
    "L400"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "FIZ_LS",
@@ -330,7 +330,7 @@
    "--"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -344,7 +344,7 @@
   "branch": "MTH",
   "level": "LS",
   "name": "Uçuş Kontrol Sistemleri",
-  "method": "Sanal (Çevrimiçi/Online)",
+  "method": "Fiziksel (Yüz yüze)",
   "instructor": "İlker Üstoğlu",
   "buildings": [
    "EEB"
@@ -356,10 +356,10 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "5305"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 50,
   "reserved": "-",
   "programs": [
    "KOM_LS"
@@ -388,7 +388,7 @@
    "2D16"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 31,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -415,11 +415,11 @@
    "12:30/15:29"
   ],
   "rooms": [
-   "--"
+   "5305"
   ],
   "capacity": 40,
-  "enrolled": 0,
-  "reserved": "EEE_LS/5/0 | ELKE_LS/3/0 | ELK_LS/2/0 | Diğer/30/0",
+  "enrolled": 26,
+  "reserved": "EEE_LS/5/0 | ELKE_LS/3/3 | ELK_LS/2/2 | Diğer/30/21",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -431,5 +431,34 @@
   ],
   "prereq": "-",
   "classReq": "Detay"
+ },
+ {
+  "crn": "15597",
+  "code": "MTH 415",
+  "branch": "MTH",
+  "level": "LS",
+  "name": "Endüstriyel Tesislerde Emisyon ve Kirletici Giderim Yöntemleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çağlar Karatuğ",
+  "buildings": [
+   "DZB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 50,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [
+   "GMI_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
  }
 ]

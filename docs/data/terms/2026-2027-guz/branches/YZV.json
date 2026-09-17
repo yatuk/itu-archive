@@ -47,10 +47,10 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "104"
+   "Z-18"
   ],
-  "capacity": 0,
-  "enrolled": 0,
+  "capacity": 60,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "YZVE_LS"
@@ -79,7 +79,7 @@
    "Z-17"
   ],
   "capacity": 70,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -109,7 +109,7 @@
    "Z-18"
   ],
   "capacity": 70,
-  "enrolled": 0,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -139,7 +139,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -169,7 +169,7 @@
    "Z-19"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 19,
   "reserved": "-",
   "programs": [
    "YZVE_LS"
@@ -195,10 +195,10 @@
    "12:30/15:29"
   ],
   "rooms": [
-   "Z-18"
+   "104"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "YZVE_LS"
@@ -227,7 +227,7 @@
    "Z-17"
   ],
   "capacity": 75,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -257,10 +257,10 @@
    "104"
   ],
   "capacity": 60,
-  "enrolled": 0,
-  "reserved": "-",
+  "enrolled": 58,
+  "reserved": "YZVE_LS/50/48 | Diğer/10/10",
   "programs": [
-   "YZVE_LS",
+   "BLGE_LS",
    "YZVE_LS"
   ],
   "prereq": "Detay",
@@ -287,7 +287,7 @@
    "104"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 46,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -304,20 +304,14 @@
   "name": "AI &Data Engineering Design I",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Berna Kiraz",
-  "buildings": [
-   "BBB"
-  ],
-  "days": [
-   "Perşembe"
-  ],
+  "buildings": [],
+  "days": [],
   "times": [
-   "11:30/13:29"
+   "-/-"
   ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 0,
-  "enrolled": 0,
+  "rooms": [],
+  "capacity": 40,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -341,7 +335,7 @@
   ],
   "rooms": [],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -371,7 +365,7 @@
    "Z-23"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -401,7 +395,7 @@
    "Z-23"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "YZVE_LS"
@@ -430,7 +424,7 @@
    "Z-22"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "YZVE_LS"
@@ -459,7 +453,7 @@
    "Z-22"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "YZVE_LS",
@@ -489,7 +483,7 @@
    "102"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "YZVE_LS",

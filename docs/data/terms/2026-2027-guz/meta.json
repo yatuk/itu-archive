@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-16T07:46:18Z"
+  "lastSuccessfulAt": "2026-09-17T07:47:35Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-16T07:46:18Z",
+ "scrapedAt": "2026-09-17T07:47:35Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5294,
- "courses": 3769,
+ "sections": 5304,
+ "courses": 3775,
  "branches": [
   {
    "code": "ABM",
@@ -74,7 +74,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 14
+   "sections": 13
   },
   {
    "code": "BBL",
@@ -148,6 +148,13 @@
    "sections": 9
   },
   {
+   "code": "BTK",
+   "levels": [
+    "LS"
+   ],
+   "sections": 2
+  },
+  {
    "code": "BTT",
    "levels": [
     "LU"
@@ -187,7 +194,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 177
+   "sections": 178
   },
   {
    "code": "CBM",
@@ -398,7 +405,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 76
+   "sections": 77
   },
   {
    "code": "EHN",
@@ -442,7 +449,7 @@
     "LS",
     "LU"
    ],
-   "sections": 71
+   "sections": 70
   },
   {
    "code": "ENR",
@@ -545,7 +552,7 @@
     "LS",
     "LU"
    ],
-   "sections": 41
+   "sections": 44
   },
   {
    "code": "GIT",
@@ -559,7 +566,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 75
+   "sections": 76
   },
   {
    "code": "GSB",
@@ -665,7 +672,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 197
+   "sections": 199
   },
   {
    "code": "INS",
@@ -896,7 +903,7 @@
     "LS",
     "LU"
    ],
-   "sections": 127
+   "sections": 128
   },
   {
    "code": "MBA",
@@ -1086,7 +1093,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 14
+   "sections": 15
   },
   {
    "code": "MTM",
@@ -1628,11 +1635,11 @@
   }
  ],
  "stats": {
-  "sections": 5294,
-  "courses": 3769,
-  "branches": 227,
-  "instructors": 1789,
-  "capacity": 253378,
-  "enrolled": 16249
+  "sections": 5304,
+  "courses": 3775,
+  "branches": 228,
+  "instructors": 1798,
+  "capacity": 253702,
+  "enrolled": 50442
  }
 }

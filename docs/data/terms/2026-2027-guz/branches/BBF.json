@@ -24,7 +24,7 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 69,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -60,7 +60,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 20,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -128,7 +128,7 @@
    "Z-17"
   ],
   "capacity": 70,
-  "enrolled": 23,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -161,42 +161,6 @@
   ],
   "capacity": 70,
   "enrolled": 70,
-  "reserved": "-",
-  "programs": [
-   "BLG_LS",
-   "BLGE_LS",
-   "SECE_LS",
-   "YZVE_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12480",
-  "code": "BBF 201E",
-  "branch": "BBF",
-  "level": "LS",
-  "name": "Probability and Statistics",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
-  "buildings": [
-   "BBB",
-   "BBB"
-  ],
-  "days": [
-   "Çarşamba",
-   "Perşembe"
-  ],
-  "times": [
-   "11:30/13:29",
-   "11:30/13:29"
-  ],
-  "rooms": [
-   "Z-22",
-   "Z-22"
-  ],
-  "capacity": 0,
-  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -268,7 +232,7 @@
    "--"
   ],
   "capacity": 70,
-  "enrolled": 0,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -300,11 +264,12 @@
    "Z-17"
   ],
   "capacity": 80,
-  "enrolled": 0,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CES_LS",
    "SECE_LS",
    "YZVE_LS"
   ],
@@ -332,11 +297,12 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CES_LS",
    "SECE_LS",
    "YZVE_LS"
   ],
@@ -364,11 +330,12 @@
    "Z-20"
   ],
   "capacity": 75,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CES_LS",
    "SECE_LS",
    "YZVE_LS"
   ],
@@ -396,11 +363,12 @@
    "Z-16"
   ],
   "capacity": 75,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CES_LS",
    "SECE_LS",
    "YZVE_LS"
   ],
@@ -428,11 +396,12 @@
    "104"
   ],
   "capacity": 75,
-  "enrolled": 0,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CES_LS",
    "SECE_LS",
    "YZVE_LS"
   ],
@@ -460,8 +429,8 @@
    "Z-19"
   ],
   "capacity": 90,
-  "enrolled": 0,
-  "reserved": "ECNE_LS/10/0 | YZVE_LS/20/0 | Diğer/60/0",
+  "enrolled": 36,
+  "reserved": "ECNE_LS/10/2 | YZVE_LS/20/5 | Diğer/60/29",
   "programs": [
    "BLG_LS",
    "BLGE_LS",

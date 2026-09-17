@@ -24,7 +24,7 @@
    "--"
   ],
   "capacity": 260,
-  "enrolled": 182,
+  "enrolled": 191,
   "reserved": "-",
   "programs": [
    "CEV_LS",
@@ -201,7 +201,7 @@
    "--"
   ],
   "capacity": 260,
-  "enrolled": 92,
+  "enrolled": 99,
   "reserved": "-",
   "programs": [
    "CEV_LS",
@@ -378,7 +378,7 @@
    "--"
   ],
   "capacity": 770,
-  "enrolled": 421,
+  "enrolled": 456,
   "reserved": "-",
   "programs": [
    "BIOE_LS",
@@ -1211,7 +1211,7 @@
    "--"
   ],
   "capacity": 240,
-  "enrolled": 106,
+  "enrolled": 136,
   "reserved": "-",
   "programs": [
    "BIOE_LS",
@@ -1523,7 +1523,7 @@
    "--"
   ],
   "capacity": 550,
-  "enrolled": 132,
+  "enrolled": 155,
   "reserved": "-",
   "programs": [
    "BIOE_LS",
@@ -2564,7 +2564,7 @@
    "A14"
   ],
   "capacity": 120,
-  "enrolled": 104,
+  "enrolled": 116,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2606,7 +2606,7 @@
    "A11"
   ],
   "capacity": 150,
-  "enrolled": 92,
+  "enrolled": 106,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2651,7 +2651,7 @@
    "174"
   ],
   "capacity": 150,
-  "enrolled": 35,
+  "enrolled": 46,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2661,6 +2661,7 @@
    "EUTE_LS",
    "IAD_LS",
    "ICM_LS",
+   "IND_LS",
    "MIM_LS",
    "MIME_LS",
    "PEM_LS",
@@ -2697,7 +2698,7 @@
    "--"
   ],
   "capacity": 520,
-  "enrolled": 0,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "BIOE_LS",
@@ -3217,7 +3218,7 @@
    "A36"
   ],
   "capacity": 100,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "CEN_LS",
@@ -3257,7 +3258,7 @@
    "--"
   ],
   "capacity": 550,
-  "enrolled": 0,
+  "enrolled": 19,
   "reserved": "-",
   "programs": [
    "BIOE_LS",
@@ -3877,7 +3878,7 @@
    "OBL3"
   ],
   "capacity": 30,
-  "enrolled": 15,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -3906,7 +3907,7 @@
    "D202"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "KMM_LS",
@@ -3936,7 +3937,7 @@
    "D303"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "KMM_LS",
@@ -3966,7 +3967,7 @@
    "D204"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "KMM_LS"
@@ -3995,7 +3996,7 @@
    "D302"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "METE_LS"
@@ -4024,7 +4025,7 @@
    "ZA3"
   ],
   "capacity": 100,
-  "enrolled": 0,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -4054,7 +4055,7 @@
    "ZA3"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -4089,7 +4090,7 @@
    "ZA1"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "IBM_LS",
@@ -4119,7 +4120,7 @@
    "1D7"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "IBM_LS",
@@ -4150,7 +4151,7 @@
    "2D18"
   ],
   "capacity": 70,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "DEN_LS"
@@ -4183,7 +4184,7 @@
    "1D5"
   ],
   "capacity": 45,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -4212,7 +4213,7 @@
    "1D6"
   ],
   "capacity": 45,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -4245,7 +4246,7 @@
    "A205"
   ],
   "capacity": 90,
-  "enrolled": 0,
+  "enrolled": 22,
   "reserved": "-",
   "programs": [
    "CHZ_LS",
@@ -4288,7 +4289,7 @@
    "A205"
   ],
   "capacity": 90,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "CHZ_LS",
@@ -4331,7 +4332,7 @@
    "--"
   ],
   "capacity": 75,
-  "enrolled": 57,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "DUI_LS",
@@ -4349,8 +4350,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "DZB",
+   "DZB"
   ],
   "days": [
    "Çarşamba",
@@ -4365,7 +4366,7 @@
    "--"
   ],
   "capacity": 75,
-  "enrolled": 16,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "DUI_LS",
@@ -4383,8 +4384,8 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "-",
   "buildings": [
-   "undeclared",
-   "undeclared"
+   "DZB",
+   "DZB"
   ],
   "days": [
    "Salı",
@@ -4467,7 +4468,7 @@
    "--"
   ],
   "capacity": 75,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "DUI_LS",
@@ -4859,7 +4860,7 @@
    "D102"
   ],
   "capacity": 90,
-  "enrolled": 20,
+  "enrolled": 22,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -4892,7 +4893,7 @@
    "D103"
   ],
   "capacity": 50,
-  "enrolled": 13,
+  "enrolled": 18,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -4928,7 +4929,7 @@
    "D106"
   ],
   "capacity": 50,
-  "enrolled": 7,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -4960,10 +4961,12 @@
    "D202"
   ],
   "capacity": 50,
-  "enrolled": 3,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "MAT_LS",
+   "MAT_YD_EC",
+   "MAT_YD_TE",
    "MTT_LS"
   ],
   "prereq": "-",
@@ -4990,10 +4993,12 @@
    "D104"
   ],
   "capacity": 50,
-  "enrolled": 17,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "MAT_LS",
+   "MAT_YD_EC",
+   "MAT_YD_TE",
    "MTT_LS"
   ],
   "prereq": "-",
@@ -5024,7 +5029,7 @@
    "D304"
   ],
   "capacity": 50,
-  "enrolled": 20,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5057,7 +5062,7 @@
    "D104"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5086,7 +5091,7 @@
    "OBL3"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5115,7 +5120,7 @@
    "D206"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5144,10 +5149,13 @@
    "D203"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
-   "MAT_LS"
+   "MAT_LS",
+   "MAT_YD",
+   "MAT_YD_EC",
+   "MAT_YD_UY"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -5173,7 +5181,7 @@
    "D203"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5204,7 +5212,7 @@
    "D203"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5239,7 +5247,7 @@
    "D203"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5271,7 +5279,7 @@
    "D202"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5304,10 +5312,12 @@
    "D203"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "MAT_LS",
+   "MAT_YD_EC",
+   "MAT_YD_TE",
    "MTT_LS"
   ],
   "prereq": "Detay",
@@ -5338,10 +5348,12 @@
    "D103"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "MAT_LS",
+   "MAT_YD_EC",
+   "MAT_YD_TE",
    "MTT_LS"
   ],
   "prereq": "Detay",
@@ -5368,10 +5380,12 @@
    "D203"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
-   "MAT_LS"
+   "MAT_LS",
+   "MAT_YD",
+   "MAT_YD_UY"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -5397,7 +5411,7 @@
    "D204"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5426,7 +5440,7 @@
    "D102"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5455,7 +5469,7 @@
    "D204"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5484,7 +5498,7 @@
    "OBL3"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5515,10 +5529,12 @@
    "D201"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "MAT_LS",
+   "MAT_YD",
+   "MAT_YD_TE",
    "MTT_LS"
   ],
   "prereq": "Detay",
@@ -5545,10 +5561,12 @@
    "D105"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "MAT_LS",
+   "MAT_YD",
+   "MAT_YD_TE",
    "MTT_LS"
   ],
   "prereq": "Detay",
@@ -5575,7 +5593,7 @@
    "177"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5606,7 +5624,7 @@
    "177"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 22,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5637,7 +5655,7 @@
    "L400"
   ],
   "capacity": 24,
-  "enrolled": 0,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5666,7 +5684,7 @@
    "L400"
   ],
   "capacity": 24,
-  "enrolled": 0,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5696,7 +5714,7 @@
    "D306"
   ],
   "capacity": 24,
-  "enrolled": 0,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "FIZ_LS",
@@ -5728,7 +5746,7 @@
    "D106"
   ],
   "capacity": 24,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5758,9 +5776,10 @@
    "D106"
   ],
   "capacity": 24,
-  "enrolled": 0,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
+   "BTK_YD",
    "MAT_LS",
    "MAT_LS",
    "MATE_LS"
@@ -5789,8 +5808,8 @@
    "A34"
   ],
   "capacity": 60,
-  "enrolled": 0,
-  "reserved": "END_LS/3/0 | ENDE_LS/3/0 | ECNE_LS/4/0 | FIZ_LS/2/0 | FIZE_LS/1/0 | Diğer/47/0",
+  "enrolled": 57,
+  "reserved": "END_LS/3/3 | ENDE_LS/3/2 | ECNE_LS/4/4 | FIZ_LS/2/2 | FIZE_LS/1/0 | Diğer/47/46",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -5828,8 +5847,8 @@
    "A32"
   ],
   "capacity": 60,
-  "enrolled": 0,
-  "reserved": "END_LS/2/0 | ENDE_LS/2/0 | ECNE_LS/4/0 | FIZ_LS/2/0 | FIZE_LS/1/0 | Diğer/49/0",
+  "enrolled": 19,
+  "reserved": "END_LS/2/0 | ENDE_LS/2/0 | ECNE_LS/4/2 | FIZ_LS/2/1 | FIZE_LS/1/0 | Diğer/49/16",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -5861,7 +5880,7 @@
   ],
   "rooms": [],
   "capacity": 70,
-  "enrolled": 0,
+  "enrolled": 53,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5885,7 +5904,7 @@
   ],
   "rooms": [],
   "capacity": 70,
-  "enrolled": 0,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5909,7 +5928,7 @@
   ],
   "rooms": [],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5933,7 +5952,7 @@
   ],
   "rooms": [],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -5962,7 +5981,7 @@
    "D101"
   ],
   "capacity": 24,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "MAT_LS",
@@ -5993,11 +6012,13 @@
    "D103"
   ],
   "capacity": 55,
-  "enrolled": 0,
-  "reserved": "ECNE_LS/5/0 | Diğer/50/0",
+  "enrolled": 20,
+  "reserved": "ECNE_LS/5/1 | Diğer/50/19",
   "programs": [
    "ECNE_LS",
    "MAT_LS",
+   "MAT_YD",
+   "MAT_YD_TE",
    "MTT_LS"
   ],
   "prereq": "Detay",
@@ -6024,7 +6045,7 @@
    "101"
   ],
   "capacity": 100,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "ISL_LS",
@@ -6058,7 +6079,7 @@
    "D355"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "TEK_LS",
@@ -6088,7 +6109,7 @@
    "D380A"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "TEK_LS",
@@ -6151,7 +6172,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 29,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "MEN_LS",
@@ -6185,7 +6206,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MEN_LS",
@@ -6215,7 +6236,7 @@
    "--"
   ],
   "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "NAE_LS"
@@ -6296,7 +6317,7 @@
    "--"
   ],
   "capacity": 70,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "CEN_LS",
@@ -6392,7 +6413,7 @@
    "2D17"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -6425,12 +6446,42 @@
    "502"
   ],
   "capacity": 60,
-  "enrolled": 7,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "CEN_LS",
    "EFN_LS",
    "MMD_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15596",
+  "code": "MAT 271E",
+  "branch": "MAT",
+  "level": "LS",
+  "name": "Probability and Statistics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Akif Yazıcı",
+  "buildings": [
+   "BBB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 70,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
   ],
   "prereq": "-",
   "classReq": "-"

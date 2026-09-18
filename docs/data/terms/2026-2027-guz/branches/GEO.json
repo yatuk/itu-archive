@@ -8,13 +8,13 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Serdar Erol",
   "buildings": [
-   "undeclared"
+   "INB"
   ],
   "days": [
-   "Perşembe"
+   "Salı"
   ],
   "times": [
-   "14:30/17:29"
+   "11:30/14:29"
   ],
   "rooms": [
    "--"
@@ -35,7 +35,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Zaide Duran",
   "buildings": [
-   "undeclared"
+   "INB"
   ],
   "days": [
    "Pazartesi"
@@ -44,7 +44,7 @@
    "11:30/14:29"
   ],
   "rooms": [
-   "--"
+   "A3"
   ],
   "capacity": 30,
   "enrolled": 0,
@@ -62,7 +62,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Muhammed Oğuzhan Mete",
   "buildings": [
-   "undeclared"
+   "INB"
   ],
   "days": [
    "Perşembe"
@@ -71,7 +71,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "A3"
   ],
   "capacity": 30,
   "enrolled": 0,
@@ -89,7 +89,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Serdar Bilgi",
   "buildings": [
-   "undeclared"
+   "INB"
   ],
   "days": [
    "Salı"
@@ -98,7 +98,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "B302"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -116,7 +116,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Orhan Akyılmaz",
   "buildings": [
-   "undeclared"
+   "INB"
   ],
   "days": [
    "Perşembe"
@@ -125,7 +125,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "B308"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -866,7 +866,7 @@
    "--"
   ],
   "capacity": 50,
-  "enrolled": 28,
+  "enrolled": 33,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -898,7 +898,7 @@
    "--"
   ],
   "capacity": 50,
-  "enrolled": 5,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -930,7 +930,7 @@
    "--"
   ],
   "capacity": 50,
-  "enrolled": 35,
+  "enrolled": 36,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -962,7 +962,7 @@
    "B204"
   ],
   "capacity": 25,
-  "enrolled": 23,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -992,7 +992,7 @@
    "B206"
   ],
   "capacity": 25,
-  "enrolled": 12,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1022,7 +1022,7 @@
    "B305"
   ],
   "capacity": 25,
-  "enrolled": 10,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1054,7 +1054,7 @@
    "B307"
   ],
   "capacity": 40,
-  "enrolled": 14,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1148,7 +1148,7 @@
    "B201"
   ],
   "capacity": 60,
-  "enrolled": 33,
+  "enrolled": 37,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1178,7 +1178,7 @@
    "A202"
   ],
   "capacity": 60,
-  "enrolled": 37,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1240,7 +1240,7 @@
    "A202"
   ],
   "capacity": 60,
-  "enrolled": 37,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1272,7 +1272,7 @@
    "A202"
   ],
   "capacity": 70,
-  "enrolled": 5,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1302,7 +1302,7 @@
    "B305"
   ],
   "capacity": 40,
-  "enrolled": 1,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1334,7 +1334,7 @@
    "B307"
   ],
   "capacity": 40,
-  "enrolled": 9,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1366,7 +1366,7 @@
    "A203"
   ],
   "capacity": 50,
-  "enrolled": 4,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1396,7 +1396,7 @@
    "B302"
   ],
   "capacity": 40,
-  "enrolled": 10,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1428,7 +1428,7 @@
    "B305"
   ],
   "capacity": 40,
-  "enrolled": 4,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1458,7 +1458,7 @@
    "A1"
   ],
   "capacity": 30,
-  "enrolled": 6,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1520,7 +1520,7 @@
    "A1"
   ],
   "capacity": 30,
-  "enrolled": 2,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1550,7 +1550,7 @@
    "A3"
   ],
   "capacity": 30,
-  "enrolled": 1,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1582,7 +1582,7 @@
    "A101"
   ],
   "capacity": 80,
-  "enrolled": 6,
+  "enrolled": 44,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1612,7 +1612,7 @@
    "A102"
   ],
   "capacity": 80,
-  "enrolled": 7,
+  "enrolled": 49,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1644,7 +1644,7 @@
    "A301"
   ],
   "capacity": 50,
-  "enrolled": 3,
+  "enrolled": 38,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1674,7 +1674,7 @@
    "A302"
   ],
   "capacity": 50,
-  "enrolled": 3,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1704,7 +1704,7 @@
    "A301"
   ],
   "capacity": 60,
-  "enrolled": 5,
+  "enrolled": 42,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1736,7 +1736,7 @@
    "D202"
   ],
   "capacity": 50,
-  "enrolled": 6,
+  "enrolled": 50,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1766,7 +1766,7 @@
    "A105"
   ],
   "capacity": 50,
-  "enrolled": 7,
+  "enrolled": 46,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1792,7 +1792,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 67,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1816,7 +1816,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 39,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1866,7 +1866,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 21,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1898,7 +1898,7 @@
    "A101"
   ],
   "capacity": 50,
-  "enrolled": 9,
+  "enrolled": 41,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1930,7 +1930,7 @@
    "A101"
   ],
   "capacity": 50,
-  "enrolled": 7,
+  "enrolled": 50,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1962,7 +1962,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 6,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -1992,7 +1992,7 @@
    "B303"
   ],
   "capacity": 35,
-  "enrolled": 5,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2024,7 +2024,7 @@
    "B307"
   ],
   "capacity": 35,
-  "enrolled": 1,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2056,7 +2056,7 @@
    "B304"
   ],
   "capacity": 35,
-  "enrolled": 4,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2088,7 +2088,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 5,
+  "enrolled": 47,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2118,7 +2118,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 10,
+  "enrolled": 45,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2150,7 +2150,7 @@
    "A104"
   ],
   "capacity": 60,
-  "enrolled": 11,
+  "enrolled": 42,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2180,7 +2180,7 @@
    "A105"
   ],
   "capacity": 60,
-  "enrolled": 6,
+  "enrolled": 44,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2212,7 +2212,7 @@
    "A201"
   ],
   "capacity": 70,
-  "enrolled": 10,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2242,7 +2242,7 @@
    "A204"
   ],
   "capacity": 70,
-  "enrolled": 9,
+  "enrolled": 52,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2274,7 +2274,7 @@
    "B204"
   ],
   "capacity": 25,
-  "enrolled": 7,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2304,7 +2304,7 @@
    "B206"
   ],
   "capacity": 25,
-  "enrolled": 2,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2334,7 +2334,7 @@
    "A103"
   ],
   "capacity": 40,
-  "enrolled": 7,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2366,7 +2366,7 @@
    "A302"
   ],
   "capacity": 70,
-  "enrolled": 10,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2396,7 +2396,7 @@
    "A303"
   ],
   "capacity": 70,
-  "enrolled": 13,
+  "enrolled": 70,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2428,7 +2428,7 @@
    "A205"
   ],
   "capacity": 60,
-  "enrolled": 11,
+  "enrolled": 45,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2460,7 +2460,7 @@
    "A203"
   ],
   "capacity": 60,
-  "enrolled": 25,
+  "enrolled": 60,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2491,7 +2491,7 @@
   "rooms": [
    "A103"
   ],
-  "capacity": 40,
+  "capacity": 50,
   "enrolled": 40,
   "reserved": "-",
   "programs": [
@@ -2524,7 +2524,7 @@
    "B205"
   ],
   "capacity": 40,
-  "enrolled": 16,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2556,7 +2556,7 @@
    "A302"
   ],
   "capacity": 40,
-  "enrolled": 2,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2588,7 +2588,7 @@
    "A101"
   ],
   "capacity": 60,
-  "enrolled": 14,
+  "enrolled": 38,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2617,8 +2617,8 @@
   "rooms": [
    "A101"
   ],
-  "capacity": 60,
-  "enrolled": 15,
+  "capacity": 70,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2649,8 +2649,8 @@
   "rooms": [
    "A101"
   ],
-  "capacity": 60,
-  "enrolled": 55,
+  "capacity": 70,
+  "enrolled": 60,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2679,8 +2679,8 @@
   "rooms": [
    "A201"
   ],
-  "capacity": 60,
-  "enrolled": 60,
+  "capacity": 70,
+  "enrolled": 61,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2742,7 +2742,7 @@
    "A302"
   ],
   "capacity": 35,
-  "enrolled": 19,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2772,7 +2772,7 @@
    "A303"
   ],
   "capacity": 35,
-  "enrolled": 22,
+  "enrolled": 28,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2804,7 +2804,7 @@
    "A304"
   ],
   "capacity": 35,
-  "enrolled": 25,
+  "enrolled": 31,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2836,7 +2836,7 @@
    "B307"
   ],
   "capacity": 40,
-  "enrolled": 38,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2868,7 +2868,7 @@
    "A1"
   ],
   "capacity": 30,
-  "enrolled": 16,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2900,7 +2900,7 @@
    "A1"
   ],
   "capacity": 30,
-  "enrolled": 29,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2932,7 +2932,7 @@
    "A103"
   ],
   "capacity": 40,
-  "enrolled": 5,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -2964,7 +2964,7 @@
    "A103"
   ],
   "capacity": 30,
-  "enrolled": 8,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3028,7 +3028,7 @@
    "A103"
   ],
   "capacity": 30,
-  "enrolled": 27,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3090,7 +3090,7 @@
    "A1"
   ],
   "capacity": 30,
-  "enrolled": 2,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3120,7 +3120,7 @@
    "A2"
   ],
   "capacity": 30,
-  "enrolled": 24,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3150,7 +3150,7 @@
    "A103"
   ],
   "capacity": 30,
-  "enrolled": 7,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3214,7 +3214,7 @@
    "A201"
   ],
   "capacity": 30,
-  "enrolled": 19,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3244,7 +3244,7 @@
    "A2"
   ],
   "capacity": 30,
-  "enrolled": 11,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3276,7 +3276,7 @@
    "A1"
   ],
   "capacity": 30,
-  "enrolled": 21,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3308,7 +3308,7 @@
    "A303"
   ],
   "capacity": 30,
-  "enrolled": 5,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -3338,7 +3338,39 @@
    "A302"
   ],
   "capacity": 40,
-  "enrolled": 19,
+  "enrolled": 21,
+  "reserved": "-",
+  "programs": [
+   "GEO_LS",
+   "GEOE_LS",
+   "HTA_LS",
+   "HTAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15608",
+  "code": "GEO 322E",
+  "branch": "GEO",
+  "level": "LS",
+  "name": "Land Management",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tahsin Yomralıoğlu",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "B304"
+  ],
+  "capacity": 20,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "GEO_LS",

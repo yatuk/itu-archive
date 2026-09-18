@@ -87,7 +87,7 @@
   "level": "LU",
   "name": "Programming for Games",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Sema Alaçam , Mehmet Tahir Sandıkkaya",
+  "instructor": "Sema Alaçam , Mehmet Tahir Sandıkkaya , Salih Özdemir",
   "buildings": [
    "undeclared"
   ],
@@ -194,7 +194,7 @@
   "branch": "GAM",
   "level": "LU",
   "name": "3D Perception",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "Sanal (Çevrimiçi/Online)",
   "instructor": "Aslı Kanan",
   "buildings": [
    "undeclared"
@@ -263,6 +263,27 @@
    "--"
   ],
   "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15609",
+  "code": "GAM YLT",
+  "branch": "GAM",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sema Alaçam",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

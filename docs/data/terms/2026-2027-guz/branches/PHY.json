@@ -137,8 +137,8 @@
   "rooms": [
    "D103"
   ],
-  "capacity": 30,
-  "enrolled": 30,
+  "capacity": 35,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "MBI_LS",
@@ -171,8 +171,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 30,
-  "enrolled": 30,
+  "capacity": 35,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "MBI_LS",
@@ -205,8 +205,8 @@
   "rooms": [
    "L200"
   ],
-  "capacity": 30,
-  "enrolled": 30,
+  "capacity": 35,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "MBI_LS",
@@ -239,8 +239,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 30,
-  "enrolled": 30,
+  "capacity": 35,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "MBI_LS",
@@ -274,7 +274,7 @@
    "D306"
   ],
   "capacity": 30,
-  "enrolled": 13,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "SBL_LS"
@@ -307,6 +307,74 @@
   "reserved": "-",
   "programs": [
    "SBL_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15606",
+  "code": "PHY 125",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yağız Morova",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MBI_LS",
+   "SDU_LS",
+   "SED_LS",
+   "SGI_LS",
+   "SGM_LS",
+   "SIN_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15607",
+  "code": "PHY 125L",
+  "branch": "PHY",
+  "level": "LS",
+  "name": "Physics I Laboratory",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yağız Morova",
+  "buildings": [
+   "FEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MBI_LS",
+   "SDU_LS",
+   "SED_LS",
+   "SGI_LS",
+   "SGM_LS",
+   "SIN_LS"
   ],
   "prereq": "-",
   "classReq": "-"

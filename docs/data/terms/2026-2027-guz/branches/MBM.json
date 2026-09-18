@@ -177,6 +177,27 @@
   "classReq": "-"
  },
  {
+  "crn": "13225",
+  "code": "MBM 603",
+  "branch": "MBM",
+  "level": "LU",
+  "name": "Malzeme.Kimyasal&Elektro.Davr.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Servet İbrahim Timur",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
   "crn": "15314",
   "code": "MBM 518",
   "branch": "MBM",
@@ -197,6 +218,54 @@
    "D104"
   ],
   "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15610",
+  "code": "MBM 601E",
+  "branch": "MBM",
+  "level": "LU",
+  "name": "Advanc.Character.of Materi.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erçin Çağan Duran",
+  "buildings": [
+   "KMB"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 40,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15611",
+  "code": "MBM YLT",
+  "branch": "MBM",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Duygu Ağaoğulları",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

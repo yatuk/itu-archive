@@ -51,7 +51,7 @@
    "A305"
   ],
   "capacity": 60,
-  "enrolled": 44,
+  "enrolled": 54,
   "reserved": "-",
   "programs": [
    "CEV_LS"
@@ -109,10 +109,40 @@
    "--"
   ],
   "capacity": 60,
-  "enrolled": 32,
+  "enrolled": 36,
   "reserved": "-",
   "programs": [
    "CEVE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15619",
+  "code": "AKM 204E",
+  "branch": "AKM",
+  "level": "LS",
+  "name": "Fluid Mechanics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Şehriban Şen",
+  "buildings": [
+   "INB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "12:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 60,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEVE_LS",
+   "INSE_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -49,7 +49,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 16,
+  "enrolled": 19,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -111,7 +111,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 13,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -140,7 +140,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 5,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -169,7 +169,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 3,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -197,8 +197,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 30,
-  "enrolled": 25,
+  "capacity": 35,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -226,8 +226,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 30,
-  "enrolled": 25,
+  "capacity": 35,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -256,7 +256,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 6,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -285,7 +285,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 13,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -314,7 +314,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 5,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -343,7 +343,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 24,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -372,7 +372,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 24,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -430,7 +430,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 18,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -459,7 +459,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 14,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -488,7 +488,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 3,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "SAO_OL"
@@ -517,6 +517,64 @@
    "--"
   ],
   "capacity": 30,
+  "enrolled": 5,
+  "reserved": "-",
+  "programs": [
+   "SAO_OL"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15620",
+  "code": "SAO 251",
+  "branch": "SAO",
+  "level": "OL",
+  "name": "Kriptolojinin Temelleri",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Anıl Suat Terliksiz",
+  "buildings": [
+   "BEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "317"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SAO_OL"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15621",
+  "code": "SAO 258",
+  "branch": "SAO",
+  "level": "OL",
+  "name": "İnternet Programlama",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Sekmen",
+  "buildings": [
+   "BEB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
   "enrolled": 0,
   "reserved": "-",
   "programs": [

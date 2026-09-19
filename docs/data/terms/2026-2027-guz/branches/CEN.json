@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 10,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [
    "CEN_LS"
@@ -49,7 +49,7 @@
    "--"
   ],
   "capacity": 150,
-  "enrolled": 10,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "CEN_LS"
@@ -82,7 +82,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 14,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "CEN_LS"
@@ -98,12 +98,18 @@
   "name": "Digital Circuits",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mustafa Ersel Kamaşak",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "BBB"
   ],
-  "rooms": [],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
@@ -134,7 +140,7 @@
    "--"
   ],
   "capacity": 90,
-  "enrolled": 3,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "CEN_LS"
@@ -163,7 +169,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 28,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "CEN_LS"
@@ -394,5 +400,28 @@
   ],
   "prereq": "-",
   "classReq": "-"
+ },
+ {
+  "crn": "15613",
+  "code": "CEN 4901E",
+  "branch": "CEN",
+  "level": "LS",
+  "name": "Computer Engineering Design I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nizamettin Aydın",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "Detay"
  }
 ]

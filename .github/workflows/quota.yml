@@ -1,18 +1,14 @@
 name: kontenjan
 
-# Kontenjan doluluğunun zaman serisi. Ders programından ayrı çalışıyor çünkü
-# frekansı farklı: ders programı günde bir kez yeterli, kontenjan kayıt
-# haftasında sık aralıkla anlamlı.
+# Kontenjan doluluğunun zaman serisi. Ders programından ayrı bir iş akışı olarak
+# kalıyor (aynı komuta iki farklı yerden değil, buradan tetiklenmesi için), ama
+# tarama yükünü azaltmak için artık haftada bir çalışıyor.
 #
-# Saatte bir koşuyor ama komut değişen bir şey yoksa dosyaya dokunmuyor,
-# dolayısıyla sakin dönemlerde commit üretmiyor. Kayıt haftasında kendiliğinden
-# yoğunlaşıyor, ayrıca bir ayar gerekmiyor.
-# Not: GitHub, 30 dk gibi alt-saatlik cron'ları yük altında güvenilir
-# tetiklemiyor (gözlemlenen gerçek aralık 30 dk yerine saatlerce sürüyordu) —
-# saatlik zaten GitHub'ın planlayabildiği en kısa aralıklardan biri.
+# Komut değişen bir şey yoksa dosyaya dokunmuyor, dolayısıyla sakin
+# dönemlerde commit üretmiyor.
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 3 * * 1'
   workflow_dispatch:
 
 concurrency:

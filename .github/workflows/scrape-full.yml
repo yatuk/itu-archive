@@ -2,8 +2,8 @@ name: scrape-full
 
 on:
   schedule:
-    # Tam tarama — günde bir: 05:17 TRT (saat başı kuyruğundan kaçınıldı).
-    - cron: '17 2 * * *'
+    # Tam tarama — haftada bir: pazartesi 05:17 TRT (saat başı kuyruğundan kaçınıldı).
+    - cron: '17 2 * * 1'
   workflow_dispatch:
     inputs:
       backfill:

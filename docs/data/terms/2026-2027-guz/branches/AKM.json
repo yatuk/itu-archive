@@ -51,7 +51,7 @@
    "A305"
   ],
   "capacity": 60,
-  "enrolled": 54,
+  "enrolled": 55,
   "reserved": "-",
   "programs": [
    "CEV_LS"
@@ -109,10 +109,12 @@
    "--"
   ],
   "capacity": 60,
-  "enrolled": 36,
-  "reserved": "-",
+  "enrolled": 37,
+  "reserved": "JEF_LS/9/0 | JEFE_LS/1/0 | Diğer/50/37",
   "programs": [
-   "CEVE_LS"
+   "CEVE_LS",
+   "JEF_LS",
+   "JEFE_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -138,7 +140,7 @@
    "--"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "CEVE_LS",

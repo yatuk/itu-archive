@@ -1,9 +1,9 @@
 {
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "snapshots": 60,
+ "snapshots": 61,
  "first": "2026-09-01T00:30:46Z",
- "last": "2026-09-20T15:48:43Z",
+ "last": "2026-09-21T08:17:35Z",
  "courses": [
   {
    "crn": "10001",
@@ -1067,11 +1067,6 @@
    "fillMinutes": 25021
   },
   {
-   "crn": "10172",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10173",
    "capacity": 125,
    "enrolled": 124
@@ -1089,11 +1084,6 @@
    "fillMinutes": 21016
   },
   {
-   "crn": "10176",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10177",
    "capacity": 70,
    "enrolled": 69
@@ -1102,11 +1092,6 @@
    "crn": "10178",
    "capacity": 70,
    "enrolled": 70
-  },
-  {
-   "crn": "10179",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10180",
@@ -1193,11 +1178,6 @@
    "fillMinutes": 25305
   },
   {
-   "crn": "10194",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10195",
    "capacity": 115,
    "enrolled": 111
@@ -1220,11 +1200,6 @@
    "enrolled": 25,
    "filledAt": "2026-09-18T14:16:41Z",
    "fillMinutes": 25305
-  },
-  {
-   "crn": "10199",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10200",
@@ -1377,13 +1352,6 @@
    "fillMinutes": 21259
   },
   {
-   "crn": "10224",
-   "capacity": 0,
-   "enrolled": 10,
-   "filledAt": "2026-09-15T14:47:17Z",
-   "fillMinutes": 21016
-  },
-  {
    "crn": "10225",
    "capacity": 25,
    "enrolled": 25,
@@ -1398,7 +1366,9 @@
   {
    "crn": "10227",
    "capacity": 135,
-   "enrolled": 125
+   "enrolled": 135,
+   "filledAt": "2026-09-21T08:17:35Z",
+   "fillMinutes": 29266
   },
   {
    "crn": "10228",
@@ -1476,11 +1446,6 @@
    "enrolled": 64
   },
   {
-   "crn": "10241",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10242",
    "capacity": 80,
    "enrolled": 72
@@ -1506,11 +1471,6 @@
    "enrolled": 78
   },
   {
-   "crn": "10247",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10248",
    "capacity": 65,
    "enrolled": 65
@@ -1526,11 +1486,6 @@
    "enrolled": 66
   },
   {
-   "crn": "10251",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10252",
    "capacity": 70,
    "enrolled": 69
@@ -1539,11 +1494,6 @@
    "crn": "10253",
    "capacity": 70,
    "enrolled": 70
-  },
-  {
-   "crn": "10254",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10255",
@@ -1556,11 +1506,6 @@
    "enrolled": 82
   },
   {
-   "crn": "10257",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10258",
    "capacity": 74,
    "enrolled": 73
@@ -1569,11 +1514,6 @@
    "crn": "10259",
    "capacity": 74,
    "enrolled": 72
-  },
-  {
-   "crn": "10260",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10261",
@@ -1596,11 +1536,6 @@
    "enrolled": 50
   },
   {
-   "crn": "10265",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10266",
    "capacity": 87,
    "enrolled": 85
@@ -1609,11 +1544,6 @@
    "crn": "10267",
    "capacity": 87,
    "enrolled": 86
-  },
-  {
-   "crn": "10268",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10269",
@@ -1626,11 +1556,6 @@
    "enrolled": 105
   },
   {
-   "crn": "10271",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10272",
    "capacity": 62,
    "enrolled": 60
@@ -1639,16 +1564,6 @@
    "crn": "10273",
    "capacity": 62,
    "enrolled": 61
-  },
-  {
-   "crn": "10274",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
-   "crn": "10275",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10276",
@@ -1664,11 +1579,6 @@
    "crn": "10278",
    "capacity": 40,
    "enrolled": 17
-  },
-  {
-   "crn": "10279",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10280",
@@ -1698,11 +1608,6 @@
    "fillMinutes": 21016
   },
   {
-   "crn": "10285",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10286",
    "capacity": 25,
    "enrolled": 17
@@ -1713,24 +1618,9 @@
    "enrolled": 16
   },
   {
-   "crn": "10288",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
-   "crn": "10289",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10290",
    "capacity": 30,
    "enrolled": 28
-  },
-  {
-   "crn": "10291",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10292",
@@ -1753,24 +1643,9 @@
    "enrolled": 25
   },
   {
-   "crn": "10296",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10297",
    "capacity": 40,
    "enrolled": 40
-  },
-  {
-   "crn": "10298",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
-   "crn": "10299",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10300",
@@ -1841,11 +1716,6 @@
    "enrolled": 13
   },
   {
-   "crn": "10313",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10314",
    "capacity": 26,
    "enrolled": 25
@@ -1856,11 +1726,6 @@
    "enrolled": 25
   },
   {
-   "crn": "10318",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10319",
    "capacity": 30,
    "enrolled": 29
@@ -1869,11 +1734,6 @@
    "crn": "10320",
    "capacity": 30,
    "enrolled": 29
-  },
-  {
-   "crn": "10323",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10324",
@@ -1896,11 +1756,6 @@
    "crn": "10327",
    "capacity": 40,
    "enrolled": 34
-  },
-  {
-   "crn": "10328",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10329",
@@ -2605,13 +2460,6 @@
    "fillMinutes": 25021
   },
   {
-   "crn": "10450",
-   "capacity": 0,
-   "enrolled": 0,
-   "filledAt": "2026-09-18T14:16:41Z",
-   "fillMinutes": 25305
-  },
-  {
    "crn": "10451",
    "capacity": 127,
    "enrolled": 126
@@ -2655,11 +2503,6 @@
    "fillMinutes": 25021
   },
   {
-   "crn": "10459",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10460",
    "capacity": 67,
    "enrolled": 66
@@ -2701,13 +2544,6 @@
    "fillMinutes": 25021
   },
   {
-   "crn": "10467",
-   "capacity": 0,
-   "enrolled": 0,
-   "filledAt": "2026-09-19T10:40:00Z",
-   "fillMinutes": 26529
-  },
-  {
    "crn": "10468",
    "capacity": 115,
    "enrolled": 112
@@ -2742,11 +2578,6 @@
    "enrolled": 23,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
-  },
-  {
-   "crn": "10474",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10475",
@@ -2785,11 +2616,6 @@
    "fillMinutes": 25021
   },
   {
-   "crn": "10481",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10482",
    "capacity": 62,
    "enrolled": 60
@@ -2814,21 +2640,9 @@
    "fillMinutes": 25021
   },
   {
-   "crn": "10486",
-   "capacity": 0,
-   "enrolled": 0,
-   "filledAt": "2026-09-18T14:16:41Z",
-   "fillMinutes": 25305
-  },
-  {
    "crn": "10487",
    "capacity": 105,
    "enrolled": 100
-  },
-  {
-   "crn": "10488",
-   "capacity": 0,
-   "enrolled": 0
   },
   {
    "crn": "10489",
@@ -2855,13 +2669,6 @@
    "enrolled": 28,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
-  },
-  {
-   "crn": "10493",
-   "capacity": 0,
-   "enrolled": 0,
-   "filledAt": "2026-09-18T14:16:41Z",
-   "fillMinutes": 25305
   },
   {
    "crn": "10494",
@@ -2895,11 +2702,6 @@
    "fillMinutes": 25305
   },
   {
-   "crn": "10499",
-   "capacity": 0,
-   "enrolled": 0
-  },
-  {
    "crn": "10500",
    "capacity": 85,
    "enrolled": 85
@@ -2915,13 +2717,6 @@
    "enrolled": 24,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
-  },
-  {
-   "crn": "10503",
-   "capacity": 0,
-   "enrolled": 0,
-   "filledAt": "2026-09-18T14:16:41Z",
-   "fillMinutes": 25305
   },
   {
    "crn": "10504",
@@ -9378,7 +9173,7 @@
   },
   {
    "crn": "11719",
-   "capacity": 90,
+   "capacity": 95,
    "enrolled": 90,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -9555,7 +9350,7 @@
   },
   {
    "crn": "11751",
-   "capacity": 18,
+   "capacity": 20,
    "enrolled": 18,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
@@ -9572,7 +9367,7 @@
   },
   {
    "crn": "11754",
-   "capacity": 50,
+   "capacity": 80,
    "enrolled": 50,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -9591,14 +9386,14 @@
   },
   {
    "crn": "11757",
-   "capacity": 18,
+   "capacity": 20,
    "enrolled": 18,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
   },
   {
    "crn": "11758",
-   "capacity": 63,
+   "capacity": 61,
    "enrolled": 61,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
@@ -9633,14 +9428,14 @@
   },
   {
    "crn": "11763",
-   "capacity": 50,
+   "capacity": 65,
    "enrolled": 50,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
   },
   {
    "crn": "11764",
-   "capacity": 15,
+   "capacity": 20,
    "enrolled": 15,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -9654,7 +9449,7 @@
   },
   {
    "crn": "11766",
-   "capacity": 25,
+   "capacity": 28,
    "enrolled": 25,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -9685,7 +9480,7 @@
   },
   {
    "crn": "11771",
-   "capacity": 30,
+   "capacity": 35,
    "enrolled": 30,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
@@ -11042,21 +10837,21 @@
   },
   {
    "crn": "12038",
-   "capacity": 70,
+   "capacity": 80,
    "enrolled": 70,
    "filledAt": "2026-09-18T14:16:41Z",
    "fillMinutes": 25305
   },
   {
    "crn": "12039",
-   "capacity": 40,
+   "capacity": 45,
    "enrolled": 40,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
   },
   {
    "crn": "12040",
-   "capacity": 40,
+   "capacity": 45,
    "enrolled": 40,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -11075,7 +10870,7 @@
   },
   {
    "crn": "12043",
-   "capacity": 70,
+   "capacity": 80,
    "enrolled": 70,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -11092,14 +10887,14 @@
   },
   {
    "crn": "12046",
-   "capacity": 80,
+   "capacity": 90,
    "enrolled": 80,
    "filledAt": "2026-09-19T10:40:00Z",
    "fillMinutes": 26529
   },
   {
    "crn": "12047",
-   "capacity": 85,
+   "capacity": 90,
    "enrolled": 85,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
@@ -11682,7 +11477,7 @@
   },
   {
    "crn": "12158",
-   "capacity": 50,
+   "capacity": 70,
    "enrolled": 50,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -11696,7 +11491,7 @@
   },
   {
    "crn": "12160",
-   "capacity": 50,
+   "capacity": 70,
    "enrolled": 50,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -17357,11 +17152,6 @@
   },
   {
    "crn": "13358",
-   "capacity": 5,
-   "enrolled": 0
-  },
-  {
-   "crn": "13359",
    "capacity": 5,
    "enrolled": 0
   },
@@ -24662,21 +24452,21 @@
   },
   {
    "crn": "14725",
-   "capacity": 18,
+   "capacity": 22,
    "enrolled": 18,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
   },
   {
    "crn": "14726",
-   "capacity": 18,
+   "capacity": 22,
    "enrolled": 18,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
   },
   {
    "crn": "14727",
-   "capacity": 18,
+   "capacity": 22,
    "enrolled": 18,
    "filledAt": "2026-09-18T09:31:48Z",
    "fillMinutes": 25021
@@ -24807,14 +24597,14 @@
   },
   {
    "crn": "14748",
-   "capacity": 25,
+   "capacity": 31,
    "enrolled": 25,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
   },
   {
    "crn": "14749",
-   "capacity": 25,
+   "capacity": 31,
    "enrolled": 25,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
@@ -26443,7 +26233,7 @@
   },
   {
    "crn": "15056",
-   "capacity": 35,
+   "capacity": 37,
    "enrolled": 35,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
@@ -26455,21 +26245,21 @@
   },
   {
    "crn": "15058",
-   "capacity": 35,
+   "capacity": 37,
    "enrolled": 35,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
   },
   {
    "crn": "15059",
-   "capacity": 35,
+   "capacity": 37,
    "enrolled": 35,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
   },
   {
    "crn": "15060",
-   "capacity": 35,
+   "capacity": 37,
    "enrolled": 35,
    "filledAt": "2026-09-17T11:23:08Z",
    "fillMinutes": 23692
@@ -29157,12 +28947,12 @@
   },
   {
    "crn": "15606",
-   "capacity": 30,
+   "capacity": 0,
    "enrolled": 2
   },
   {
    "crn": "15607",
-   "capacity": 30,
+   "capacity": 0,
    "enrolled": 3
   },
   {
@@ -29242,6 +29032,86 @@
   {
    "crn": "15622",
    "capacity": 3,
+   "enrolled": 0
+  },
+  {
+   "crn": "15623",
+   "capacity": 30,
+   "enrolled": 0
+  },
+  {
+   "crn": "15624",
+   "capacity": 20,
+   "enrolled": 0
+  },
+  {
+   "crn": "15625",
+   "capacity": 0,
+   "enrolled": 0
+  },
+  {
+   "crn": "15626",
+   "capacity": 30,
+   "enrolled": 0
+  },
+  {
+   "crn": "15627",
+   "capacity": 5,
+   "enrolled": 0
+  },
+  {
+   "crn": "15628",
+   "capacity": 30,
+   "enrolled": 0
+  },
+  {
+   "crn": "15629",
+   "capacity": 5,
+   "enrolled": 0
+  },
+  {
+   "crn": "15630",
+   "capacity": 10,
+   "enrolled": 0
+  },
+  {
+   "crn": "15631",
+   "capacity": 15,
+   "enrolled": 0
+  },
+  {
+   "crn": "15632",
+   "capacity": 25,
+   "enrolled": 0
+  },
+  {
+   "crn": "15633",
+   "capacity": 5,
+   "enrolled": 0
+  },
+  {
+   "crn": "15634",
+   "capacity": 25,
+   "enrolled": 0
+  },
+  {
+   "crn": "15635",
+   "capacity": 5,
+   "enrolled": 0
+  },
+  {
+   "crn": "15636",
+   "capacity": 5,
+   "enrolled": 0
+  },
+  {
+   "crn": "15637",
+   "capacity": 15,
+   "enrolled": 0
+  },
+  {
+   "crn": "15638",
+   "capacity": 5,
    "enrolled": 0
   }
  ]

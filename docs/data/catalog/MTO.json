@@ -12704,6 +12704,124 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTO&dersNo=515"
  },
+ "MTO 529": {
+  "code": "MTO 529",
+  "name": "Güneş&Rüz.Ener.Kaynak.Model.",
+  "nameEn": "Güneş&Rüz.Ener.Kaynak.Model.",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yenilenebilir enerji kaynaklarının atmosferik karakteristikleri. Güneş ve rüzgar enerjisinin süreksizlik problemleri veya bu kaynakların alansal ve zamansal değişimleri. Fotovoltaik pillerde giriş ve güç çıkış verilerinin modellenmesi. Rüzgar şiddet verilerinin alan-zamana bağlı olarak jeoistatistiksel yöntemlerle modellenmesi. Güneş ve rüzgar enerjisinin kısa süreli tahminleri, fiziksel/dinamik ve istatiksel modeller. Fotovoltaik pillerin enerji verimine etki eden meteorolojik parametreler. Rüzgar ve Güneş enerjilerinde kullanılan genel haritalama yöntemleri. Rüzgar ve güneş verilerinin hibrid bir sistemde kullanımı. Çıkış verileri ve planlama projeksiyonları. Characteristics of renewable energy sources. Discontinuity problems of solar and wind energies and their temporal and spatial changes. Modeling the input and power output data of photovoltaic batteries. Short-term forecasts of solar and wind energies, physical/dynamic and statistical models. Meteorological parameters that affect the energy efficiency of photovoltaic cells. Common mapping techniques which is used for solar and wind energies. Use of solar and wind energies in a hybrid system. Output data and planning projections.",
+  "outcomes": [
+   "Güneş ışınımı, güneşlenme süresi ve özelliklerini öğrenmek",
+   "Güneş ışınımı değerlerinin alana ve zamana göre modellenmesini öğrenmek",
+   "Kısa süreli güneş ışınımı ve buna bağlı PV elektrik üretimlerinin modellenmesini kavramak",
+   "Rüzgar, kısa süreli rüzgar tahminlerini gerçekleştirmek",
+   "Objektif analiz ve diğer istatistiksel yöntemlerle eksik-sorunlu, rüzgar-güneş verilerini tamamlamak",
+   "Rüzgar hızı ve Güneş ışınımı haritalama yöntemlerini öğrenmek",
+   "Rüzgar ve güneş verilerinin hibrid bir sistemde kullanımak becerilerini kazanır"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Güneş ışınımı ve güneşlenme süresi verileri",
+   "Hafta 2 · Güneş verilerinin zamansal ve alansal özellikleri",
+   "Hafta 3 · Güneş ışınımı ölçüm değerlerinin alan ve zamana göre modellenmesi",
+   "Hafta 4 · Kesikli veri ve özellikleri, lineer parametrik bağıntılarla güneş verisi analizi",
+   "Hafta 5 · Fotovoltaik pillerde giriş ve güç çıkış verilerinin modellenmesi",
+   "Hafta 6 · Kısa süreli rüzgar tahminleri",
+   "Hafta 7 · Rüzgar enerjisinde fiziksel ve istatistiksel modeller",
+   "Hafta 8 · Wind Atlas Analysis and Application Programme (Wasp) ve diğer türbin konuşlandırma modelleri",
+   "Hafta 9 · Rüzgar şiddet verilerinin alan-zamana bağlı olarak jeoistatistiksel yöntemlerle modellenmesi",
+   "Hafta 10 · Türbin güç eğrisi değerlerine gore çıkış verilerinin kısa süreli tahmini",
+   "Hafta 11 · Objektif analiz, rüzgar tarlasında türbinler arası ilişki ve objektif analiz",
+   "Hafta 12 · Rüzgar ve Güneş enerjilerinde kullanılan genel haritalama yöntemleri ve uygulamaları",
+   "Hafta 13 · Rüzgar ve güneş verilerinin hibrid bir sistemde kullanımı",
+   "Hafta 14 · Çıkış verileri ve planlama projeksiyonları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güneş ışınımı ve güneşlenme süresi verileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Güneş verilerinin zamansal ve alansal özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Güneş ışınımı ölçüm değerlerinin alan ve zamana göre modellenmesi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kesikli veri ve özellikleri, lineer parametrik bağıntılarla güneş verisi analizi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Fotovoltaik pillerde giriş ve güç çıkış verilerinin modellenmesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Kısa süreli rüzgar tahminleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Rüzgar enerjisinde fiziksel ve istatistiksel modeller",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Wind Atlas Analysis and Application Programme (Wasp) ve diğer türbin konuşlandırma modelleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Rüzgar şiddet verilerinin alan-zamana bağlı olarak jeoistatistiksel yöntemlerle modellenmesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Türbin güç eğrisi değerlerine gore çıkış verilerinin kısa süreli tahmini",
+    "outcomes": "4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Objektif analiz, rüzgar tarlasında türbinler arası ilişki ve objektif analiz",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Rüzgar ve Güneş enerjilerinde kullanılan genel haritalama yöntemleri ve uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Rüzgar ve güneş verilerinin hibrid bir sistemde kullanımı",
+    "outcomes": "6-7"
+   },
+   {
+    "week": 14,
+    "topic": "Çıkış verileri ve planlama projeksiyonları"
+   }
+  ],
+  "textbooks": [
+   "Belay, E. (2010). Wind Farm: Modeling Wind Farm Suitable Site, VDM Verlag Dr. Müller, ISBN-10: 3639267257 ISBN-13: 9783639267259, 2010.",
+   "Şahin, A. D. and Şen, Z. (2008). Solar Irradiation Estimation Methods from Sunshine and Cloud Cover Data-Chapter in Modeling Solar Radiation at the Earth’s Surface, Badescu V. (Ed.), 145-173, Springer, DOI: 10.1007/978-3-540-77455-6, ISBN: 978-3-540-77454-9 (Print) 978-3-540-77455-6 (Online), 2008.",
+   "Şen, Z. (2008). Solar Energy Fundamentals and Modeling Techniques: Atmosphere, Environment, Climate Change and Renewable Energy, Springer-Verlag, London, ISBN-13: 9781848001336, 2008.",
+   "Blood, P. (2005). Meteorology careers in today's energy trading market, Bulletin of The American Meteorological Society, 86 (2).",
+   "Hoffmann, B., Jørgensen, Ott S., Sørensen, N. N., Mann J., and Badger ,J. (2007). Computational methods in wind power meteorology, Risø National Laboratory Technical University of Denmark, Roskilde, Denmark."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTO&dersNo=529"
+ },
  "MTO 533E": {
   "code": "MTO 533E",
   "name": "Visualiz.&Man.Data in Atm.Sci.",

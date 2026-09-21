@@ -1,4 +1,117 @@
 {
+ "ITY 510": {
+  "code": "ITY 510",
+  "name": "Yönetim ve Organizasyon",
+  "nameEn": "Management and Organization",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yönetim, yöneticilik kavramları, yönetim süreci döngüsü, yönetim düşüncesinin evrimi, plânlama, örgütleme, liderlik, uyumlaştırma ve kontrol işlevleri gibi konuların teknoloji yönelimli örgütlere vurgu yapılarak aktarılması. Management, managerial concepts, management process cycle, evolution of management thinking, planning, organizing, leadership, alignment and control functions, with emphasis on technology-oriented organizations.",
+  "outcomes": [
+   "Yönetim, yönetici ve diğer örgütsel kavramları tanımlayabilme bilgi ve becerisi.",
+   "Örgütlerdeki ve yönetim süreçlerindeki karmaşık durumları analiz edebilme yetkinliği.",
+   "Yönetim ve organizasyon durumlarıyla başa çıkma yolları geliştirme becerisi.",
+   "Kendi bakış açılarının farkına varabilme ve örgütlerdeki başka görüşlere daha hoşgörülü olma becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Çalışma yaşamının anlamı ve önemi, Yönetim bilgisi edinme nedenleri",
+   "Hafta 2 · Temel kavramların güncel anlamları üzerinde düşünme: Dönüşüme yol açan unsurlar",
+   "Hafta 3 · Temel kavramların güncel anlamları üzerinde düşünme: Dönüşüme yol açan unsurlar",
+   "Hafta 4 · Temel kavramların güncel anlamları üzerinde düşünme: Organizasyon, davranış, kültür",
+   "Hafta 5 · Yönetim çevresi",
+   "Hafta 6 · Yönetim düşünüşünün evrimi",
+   "Hafta 7 · Yönetim işlevleri üzerinde düşünme: Planlama, karar verme",
+   "Hafta 8 · Yönetim işlevleri üzerinde düşünme: Örgüt yapısı ve tasarımı",
+   "Hafta 9 · Yönetim işlevleri üzerinde düşünme: Yürütme, kontrol",
+   "Hafta 10 · Davranışsal konulardan bazıları üzerinde düşünme: Liderlik, motivasyon, iletişim",
+   "Hafta 11 · Yönetim ve organizasyonda yeni yönelimler",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Çalışma yaşamının anlamı ve önemi, Yönetim bilgisi edinme nedenleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel kavramların güncel anlamları üzerinde düşünme: Dönüşüme yol açan unsurlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Temel kavramların güncel anlamları üzerinde düşünme: Dönüşüme yol açan unsurlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Temel kavramların güncel anlamları üzerinde düşünme: Organizasyon, davranış, kültür",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Yönetim çevresi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yönetim düşünüşünün evrimi",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yönetim işlevleri üzerinde düşünme: Planlama, karar verme",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yönetim işlevleri üzerinde düşünme: Örgüt yapısı ve tasarımı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yönetim işlevleri üzerinde düşünme: Yürütme, kontrol",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Davranışsal konulardan bazıları üzerinde düşünme: Liderlik, motivasyon, iletişim",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yönetim ve organizasyonda yeni yönelimler",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Koçel, T. (2023), İşletme Yöneticiliği, Beta Basım Yayım, İstanbul.",
+   "Daft, R.L. (2016), Management, 20th Edition, Cengage Learning, USA. (ISBN-978-1-285-86198-2)",
+   "Robbins, S.P.; Coulter, M. and Decenzo, D.A, (2013), Fundamentals of Management: Essential Concepts&Applications, Pearson, ISBN-13: 978-0134238289 (Yönetimin Esasları: Temel Kavramlar ve Uygulamalar, Translation editor: Adem Öğüt; Nobel Akademik Yayıncılık, 2013)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITY&dersNo=510"
+ },
  "ITY 511": {
   "code": "ITY 511",
   "name": "İstatis.Düşünme&Veri Analiz.",
@@ -569,6 +682,347 @@
    "Keskin, M.H. (2018), Lojistik ve Tedarik Zinciri Yönetimi, ISBN: 978-605-5426-35-4, 7. Baskı, NOBEL Akademik Yayıncılık"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITY&dersNo=518"
+ },
+ "ITY 521": {
+  "code": "ITY 521",
+  "name": "Teknoloji, Yenilik&Ar-Ge Yön.",
+  "nameEn": "Management of Tech.&Innov.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Teknoloji, Ar-Ge ve Yenilik Kavramlarının Tanımı, Ar-Ge Yönetimi ve Yeni Teknoloji Geliştirme İlişkisi, Yenilik Türleri ve Amaçları, Ürün Geliştirme Süreci ve Ürün Mimarisi Tasarımı, Teknoloji Ömrü ve Ürün Ömrü İlişkisi, Yenilik Modelleri, Yenilikçi Ar-Ge Organizasyonunun Tasarım Etmenlerini Tanımlamak, Oluşturmak ve Yönetmek, Yenilik Süreci, Teknoloji Transfer Yöntemleri ve Uygun Yöntemin Seçimi, Bir Organizasyon İçin Teknoloji Stratejisinin Hazırlanması. Introduction to Technology, Innovation and R&D Concepts, The Association of R&D Management and New Technology Development, Innovation Types and Objectives, Product Development and Architecture Design, Technology and Product Life Cycle, Innovation Process and Management of Innovation Ideas; Innovation Models, Innovative R&D Organization Design, Technology Transfer Techniques and Selection, Preparation of Technology Strategy for an Organization.",
+  "outcomes": [
+   "Yenilik geliştirme yoluyla pazardaki fırsatlardan yararlanıp tehditlerden korunma becerisi.",
+   "Etkin bir Ar-Ge yönetimi için gereken araç ve teknikleri kullanma becerisi.",
+   "Teknoloji, Ar-Ge ve yenilik yönetimiyle ilgili temel problemleri anlama ve uygun şekilde çözme becerisi.",
+   "Yenilikçi bir Ar-Ge organizasyonu geliştirme ve yönetme yetkinliği."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Teknoloji, Yenilik ve Ar-Ge Kavramları",
+   "Hafta 2 · Ar-Ge Yönetimi ve Yeni Teknoloji Geliştirme",
+   "Hafta 3 · Yenilik Türleri",
+   "Hafta 4 · Ürün Mimarîsi ve Ürün Geliştirme",
+   "Hafta 5 · Teknoloji Ömrü ve Ürün Ömrü İlişkisi",
+   "Hafta 6 · Yenilik Süreci",
+   "Hafta 7 · Yeni Ürün Geliştirmede Fikir Kaynaklarının Yönetimi",
+   "Hafta 8 · Yenilik Modelleri",
+   "Hafta 9 · Yenilikçi Ar-Ge Organizasyonu Tasarımı",
+   "Hafta 10 · Teknoloji Transfer Yöntemleri",
+   "Hafta 11 · Yenilik Stratejisinin Hazırlanması",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Teknoloji, Yenilik ve Ar-Ge Kavramları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ar-Ge Yönetimi ve Yeni Teknoloji Geliştirme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Yenilik Türleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Ürün Mimarîsi ve Ürün Geliştirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Teknoloji Ömrü ve Ürün Ömrü İlişkisi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Yenilik Süreci",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Yeni Ürün Geliştirmede Fikir Kaynaklarının Yönetimi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yenilik Modelleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Yenilikçi Ar-Ge Organizasyonu Tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Teknoloji Transfer Yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yenilik Stratejisinin Hazırlanması",
+    "outcomes": "2"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Trott, P. (2016), Innovation Management and New Product Development, Pearson.",
+   "Galasso, A. (2024) The Management of Innovation: Managing and Creating Technology Capital, Rotman-UTP Publishing",
+   "Çakır S., Yeloğlu H.O., Yıldırım, N. (2022). Teknoloji Yönetimi: Geleceği Yönetmede Teknolojinin Rolü. Arkadaş Yayınevi"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITY&dersNo=521"
+ },
+ "ITY 522": {
+  "code": "ITY 522",
+  "name": "Teknoloji ve Hukuk",
+  "nameEn": "Law in Business&Tech.Manag.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Fikrî Mülkiyet Hakları, Telif Hakları, Marka, Patent, Patent Stratejileri, Internette Fikrî Mülkiyet Hakları ve Kişisel Verilerin Korunması, İşletmelerin Entelektüel Varlıklarının Korunması ve Ticarileştirilmesi, Rekabet Kuralları Karşısında Fikrî Mülkiyet Haklarının Durumu. Intellectual Property Rights: Copyrights, Trademarks and Patents in Particular, Patent Strategies, Protection of Intellectual Property Rights and Personal Freedoms on the Internet, Protection and Commercialization of Intellectual Assets of the Business, Competition Rules and Intellectual Property Rights.",
+  "outcomes": [
+   "Fikrî mülkiyet haklarının türlerini ve temel felsefesini anlayıp tartışma becerisi.",
+   "Farklı fikrî mülkiyet haklarının koruma şartlarını ve tanıdığı hakları anlama bilgi ve becerisi.",
+   "İnternetin fikri mülkiyet hakları üzerindeki etkilerini anlama bilgi ve becerisi.",
+   "Yeni teknolojilerin kişisel özgürlükler üzerindeki etkilerini anlama becerisi.",
+   "Girişimlerde amaca uygun hukukî organizasyon yapılarını tanımlayabilme ve değerlendirebilme becerisi.",
+   "Fikrî mülkiyet haklarının ticarîleştirilmesinde kullanılacak hukukî araçları anlama becerisi.",
+   "Fikrî mülkiyet hakları ile rekabet kuralları arasındaki ilişkiyi anlama bilgi ve becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Fikrî Mülkiyet Hakları; Temel Felsefe",
+   "Hafta 2 · Telif Hakları; Bilgisayar Programlarının Korunması",
+   "Hafta 3 · Marka Hakkı; Markanın Tescili, Markanın Korunması",
+   "Hafta 4 · Patent Hakkı; Ulusal ve Uluslararası Patent Sistemi; Patentin Tescili; Patent Stratejileri",
+   "Hafta 5 · Patent Verilebilirlik Koşulları",
+   "Hafta 6 · Patent Hakkına Tecavüz",
+   "Hafta 7 · İnternet ve Fikrî Mülkiyet Hakları",
+   "Hafta 8 · Kişisel Verilerin Korunması",
+   "Hafta 9 · Teşebbüs Modelleri; Ticari İşletme; Şahıs Firması; Şirketler",
+   "Hafta 10 · Lisans Sözleşmeleri; Teknoloji Transferi Sözleşmeleri",
+   "Hafta 11 · Fikrî Mülkiyet Hakları-Rekabet İlişkisi",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Fikrî Mülkiyet Hakları; Temel Felsefe",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Telif Hakları; Bilgisayar Programlarının Korunması",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Marka Hakkı; Markanın Tescili, Markanın Korunması",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Patent Hakkı; Ulusal ve Uluslararası Patent Sistemi; Patentin Tescili; Patent Stratejileri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Patent Verilebilirlik Koşulları",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Patent Hakkına Tecavüz",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "İnternet ve Fikrî Mülkiyet Hakları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Kişisel Verilerin Korunması",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Teşebbüs Modelleri; Ticari İşletme; Şahıs Firması; Şirketler",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Lisans Sözleşmeleri; Teknoloji Transferi Sözleşmeleri",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Fikrî Mülkiyet Hakları-Rekabet İlişkisi",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Suluk, C.; Karasu, R.; Nal, T. (2018). Fikri Mülkiyet Hukuku, Seçkin Yayınları",
+   "Tatar, D.P. (2014), Mülkiyet ve Fikri Mülkiyetin Felsefi Temelleri, Astana Yayınları, Tez Serisi-I",
+   "WIPO: Intellectual Property Handbook: Policy, Law and Use, Geneva, 2004",
+   "WIPO: Inventing the Future An Introduction to Patents for Small and Medium-sized Enterprises, Geneva 2018",
+   "WIPO: Successful Technology Licensing, Geneva 2015"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITY&dersNo=522"
+ },
+ "ITY 523": {
+  "code": "ITY 523",
+  "name": "Finansal Yönetim",
+  "nameEn": "Financial Management",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 4,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Finansal Yönetim, Muhasebe İlkeleri, Finansal Tablolar ve Analizi, Finansal Plânlama, İşletme Sermayesi ve Finansman Kararları, Finansal Araçlar ve Piyasalar, Paranın Zaman Değeri, Tahvil ve Hisse Senetlerinin Değerlemesi, Faaliyet Kaldıracı ve Finansal Kaldıraç, İşletme Sermayesi Yönetimi, Risk-Getiri İlişkisi, Sermaye Bütçelemesi, Sermaye Mâliyeti. Financial Management, Accounting Concepts, Financial Statements and Their Analysis, Financial Planning, Working Capital and Financing Decision, Financial Markets and Instruments, Time Value of Money, Stock and Bond Valuation, Operational and Financial Leverage, Management of Working Capital, Risk and Return, Capital Budgeting, Cost of Capital.",
+  "outcomes": [
+   "Finansal yönetimin ilkelerini ve araçlarını kavrama becerisi.",
+   "Muhasebe raporlarını oluşturma ve analiz etme becerisi.",
+   "Finansal piyasaların işleyişini kavrama becerisi.",
+   "Finansal varlıkları fiyatlayabilme becerisi.",
+   "Portföy optimizasyonu yapabilme becerisi.",
+   "Sermaye bulmanın mâliyetini hesaplayabilme becerisi.",
+   "Yatırımların ve projelerin uygunluğuna karar verebilme becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Finansal Yönetim ve Muhasebeyle İlgili Kavramlar",
+   "Hafta 2 · Finansal Oranlar ve Analizi",
+   "Hafta 3 · Finansal Piyasalar ve Ürünler",
+   "Hafta 4 · Paranın Zaman Değeri",
+   "Hafta 5 · Tahvil Değerlemesi 1",
+   "Hafta 6 · Tahvil Değerlemesi II",
+   "Hafta 7 · Hisse Senedi Değerlemesi",
+   "Hafta 8 · Risk ve Getiri",
+   "Hafta 9 · Sermaye Mâliyeti",
+   "Hafta 10 · Sermaye Bütçelemesi I",
+   "Hafta 11 · Sermaye Bütçelemesi II",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Finansal Yönetim ve Muhasebeyle İlgili Kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Finansal Oranlar ve Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Finansal Piyasalar ve Ürünler",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Paranın Zaman Değeri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "Tahvil Değerlemesi 1",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Tahvil Değerlemesi II",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Hisse Senedi Değerlemesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Risk ve Getiri",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Sermaye Mâliyeti",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Sermaye Bütçelemesi I",
+    "outcomes": "7"
+   },
+   {
+    "week": 11,
+    "topic": "Sermaye Bütçelemesi II"
+   },
+   {
+    "week": 12,
+    "topic": "-"
+   },
+   {
+    "week": 13,
+    "topic": "-"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "Sayıner, M.A., (2024), Finansal Yönetim, Gazi Kitabevi, Ankara.",
+   "Ceylan, A., Korkmaz, T. (2021), İşletmelerde Finansal Yönetim, 17. Basım, Ekin Basım Yayın, Ankara.",
+   "Ercan, M.K., Ban, Ü. (2021), Finansal Yönetim, 10. Baskı, Gazi Kitabevi, Ankara.",
+   "Aksoy, E.E. (2017), Finansal Yönetim, Gazi Kitabevi, Ankara."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ITY&dersNo=523"
  },
  "ITY 529": {
   "code": "ITY 529",

@@ -933,6 +933,121 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=526"
  },
+ "UUM 527E": {
+  "code": "UUM 527E",
+  "name": "Rotorcraft Design I",
+  "nameEn": "Rotorcraft Design I",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Dönel kanatlı havaaraçları konfigürasyonları, helikopter aerodinamiği gözden geçirme, itki sistemleri gözden geçirme: sistem analizi ve motor karakteristikleri ve seçimi, rotor ve pervane analizi, rotor hub tasarımı, helikopter ön tasarım parametreleri, konfigürasyon seçim teknikleri, görev performans hover tavanı, bireysel tasarım projelerine giriş, yapısal tasarım, kararlılık ve kontrol seçenekleri, dinamik ve kararlılık kontrolü, grup tasarımına giriş, iletim ve sürüş sistemleri, güvenlik ve güvenilirlik, toplam denetleme. Overview of V/STOL Aircraft and where Rotorcraft Fit In, Overview of Rotorcraft Configuration Synthesis, Aerodynamics Review, Propulsion Review, Helicopter Preliminary Design Parametric Analysis, Techniques of Configuration Selection, Introduction to Individual Design Project, Introduction to Rotorcraft Structural Design, Rotorcraft Stability&Control Design Considerations Introduction to Team Design Project, Rotorcraft Transmission/Drive System Design Considerations, Rotorcraft Safety & Reliability Design Considerations, Rotorcraft Life Cycle Cost Design Considerations, Rotorcraft Overall Evaluation Criterion (OEC) Considerations",
+  "outcomes": [
+   "Farklı dönel kanatlı havaaracı sistemlerini tanır",
+   "Konfigürasyon belirlemeye yönelik seçenek belirleme çalışması yapar",
+   "Alt sistem tasarımını yapabilir,",
+   "Takım halinde çalışır",
+   "Görevi belirlenmiş bir helikopterin kavramsal tasarımını yapabilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Döner Kanatlı Hava Araçları, konfigürasyonları ve helikopterler",
+   "Hafta 2 · Tasarım projesine giriş",
+   "Hafta 3 · Helikopter Ön Tasarım Parametrik Analizi",
+   "Hafta 4 · Aerodinamik gözden geçirme",
+   "Hafta 5 · İtki sistemleri gözden geçirme",
+   "Hafta 6 · Sistem seçenek çalışması",
+   "Hafta 7 · Yapısla tasarıma giriş",
+   "Hafta 8 · Transmisyon sistemleri",
+   "Hafta 9 · Kararlılık ve control",
+   "Hafta 10 · Güvenlik ve güvenilirlik",
+   "Hafta 11 · Ömür süreç maliyet analizi",
+   "Hafta 12 · Genel değerlendirme kriterleri",
+   "Hafta 13 · Tasarım gözden geçirme-I",
+   "Hafta 14 · Tasarım gözden geçirme-II"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Döner Kanatlı Hava Araçları, konfigürasyonları ve helikopterler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Tasarım projesine giriş",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 3,
+    "topic": "Helikopter Ön Tasarım Parametrik Analizi",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Aerodinamik gözden geçirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "İtki sistemleri gözden geçirme",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Sistem seçenek çalışması",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yapısla tasarıma giriş",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Transmisyon sistemleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Kararlılık ve control",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Güvenlik ve güvenilirlik",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Ömür süreç maliyet analizi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Genel değerlendirme kriterleri",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Tasarım gözden geçirme-I",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Tasarım gözden geçirme-II"
+   }
+  ],
+  "textbooks": [
+   "Leishman, G., 2006. Principles of Helicopter Aerodynamics, Cambridge Aerospace Series, ISBN 0-521-85860-7.",
+   "- Prouty, R.W., 1986. Helicopter Performance, Stability, and Control, Prindle, Weber & Schmidt, ISBN 0-534-06360-8.",
+   "Stanley, J.D., 1984. Helicopter Design and Data Book, Aviation Publications.",
+   "Engineering Design Handbook, 1974. Helicopter Engineering, Part One - Preliminary Design, AMC Pamphlet 706-201, HQS, U.S. Army Materiel Command, Aug 1974."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=527"
+ },
  "UUM 534E": {
   "code": "UUM 534E",
   "name": "Uçak Uçuş Kontrol Sistemleri",

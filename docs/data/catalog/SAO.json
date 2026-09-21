@@ -1849,6 +1849,228 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=211"
  },
+ "SAO 251": {
+  "code": "SAO 251",
+  "name": "Kriptolojinin Temelleri",
+  "nameEn": "Fundamentals of Cryptology",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "Klasik Şifreleme & Blok Şifreler & Taşıma Teknikleri & Steganografi & Veri Şifreleme Standardı (DES) & Diferansiyel ve Lineer Kriptoanaliz & Sayı Teorisi & Sonlu Alanlar & Gelişmiş Şifreleme Standardları & Psödo-Rassal Sayı Üretimi Classical Encryption & Block Ciphers & Transportation Techniques & Steganography & The Data Encryption Standard (DES) & Differential and Linear Cryptanalysis & Number Theory & Finite Fields & Advanced Encryption Standards & Pseudorandom Nember Generation",
+  "outcomes": [
+   "Kriptolojinin temel kavramlarını, klasik ve modern şifreleme teknikleri de dahil olmak üzere sağlam bir anlayışla kavrama.",
+   "Kriptolojik prensipleri gerçek dünya senaryolarına uygulama, bilgisayar güvenliğinde problem çözme becerilerine hazi olma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Motivasyon ve Temel Kavramlar",
+   "Hafta 2 · Bilgisayar Güvenliği Kavramları",
+   "Hafta 3 · Klasik Şifreleme",
+   "Hafta 4 · Blok Şifreler",
+   "Hafta 5 · Taşıma Teknikleri, Steganografi",
+   "Hafta 6 · Blok Şifreleri",
+   "Hafta 7 · Veri Şifreleme Standardı (DES)",
+   "Hafta 8 · Ara Sınav, Diferansiyel ve Lineer Kriptoanaliz",
+   "Hafta 9 · Sayı Teorisi",
+   "Hafta 10 · Sonlu Alanlar",
+   "Hafta 11 · Gelişmiş Şifreleme Standardı I",
+   "Hafta 12 · Gelişmiş Şifreleme Standardı II",
+   "Hafta 13 · Blok Şifre İşlemi",
+   "Hafta 14 · Psödo-Rassal Sayı Üretimi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Motivasyon ve Temel Kavramlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Bilgisayar Güvenliği Kavramları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Klasik Şifreleme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Blok Şifreler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Taşıma Teknikleri, Steganografi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Blok Şifreleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Veri Şifreleme Standardı (DES)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Ara Sınav, Diferansiyel ve Lineer Kriptoanaliz",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Sayı Teorisi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Sonlu Alanlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Gelişmiş Şifreleme Standardı I",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Gelişmiş Şifreleme Standardı II",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Blok Şifre İşlemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 14,
+    "topic": "Psödo-Rassal Sayı Üretimi",
+    "outcomes": "1-2"
+   }
+  ],
+  "textbooks": [
+   "Stallings, W. Network and internetwork security: principles and practice. Prentice-Hall, Inc.."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=251"
+ },
+ "SAO 258": {
+  "code": "SAO 258",
+  "name": "İnternet Programlama",
+  "nameEn": "Internet Programming",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 6
+  },
+  "description": "- Internet Uygulamaları Mimarisi & HTML5 & CSS & JavaScript & Dinamik Web Sayfaları & Dokuman Nesne Modeli & XML & Ajax - Internet Applications Architecture& HTML5 & CSS & JavaScript & Dynamic Web Pages & Document Object Model & XML & Ajax",
+  "outcomes": [
+   "HTML, CSS, JavaScript gibi temel web tasarımı ögelerini kullanarak web sayfası hazırlayabilme.",
+   "Web sunucularının çalışma ilkelerini ifade edebilme.",
+   "Dinamik web siteleri geliştirebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilgisayar ve İnternete Giriş ve Temel kavramlar",
+   "Hafta 2 · Internet Uygulamaları Mimarisi",
+   "Hafta 3 · HTML5'e Giriş ve Temel Kavramlar",
+   "Hafta 4 · CSS - Basamaklı Stil Sayfalarına Giriş ve Temel Kavramlar",
+   "Hafta 5 · JavaScript: Betik Programlamaya Giriş",
+   "Hafta 6 · JavaScript: Kontrol İfadeleri (if-else, while, atama komutları)",
+   "Hafta 7 · JavaScript: Kontrol İfadeleri (for, switch, do-while, break, continue)",
+   "Hafta 8 · Arasınav, JavaScript: Fonksiyonlar (parametreli / parametresi, değer döndüren / değer döndürmeyen)",
+   "Hafta 9 · JavaScript: Diziler (Tek boyutlu / İki boyutlu) ve Nesneler (Math, String, Date, Document)",
+   "Hafta 10 · JavaScript: Nesneler",
+   "Hafta 11 · JavaScript: Olaylar",
+   "Hafta 12 · Doküman Nesne Modeli",
+   "Hafta 13 · Bootstrap: Giriş ve Temel Kavramlar",
+   "Hafta 14 · XML ve Ajax Giriş"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilgisayar ve İnternete Giriş ve Temel kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Internet Uygulamaları Mimarisi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "HTML5'e Giriş ve Temel Kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "CSS - Basamaklı Stil Sayfalarına Giriş ve Temel Kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "JavaScript: Betik Programlamaya Giriş",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "JavaScript: Kontrol İfadeleri (if-else, while, atama komutları)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "JavaScript: Kontrol İfadeleri (for, switch, do-while, break, continue)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Arasınav, JavaScript: Fonksiyonlar (parametreli / parametresi, değer döndüren / değer döndürmeyen)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "JavaScript: Diziler (Tek boyutlu / İki boyutlu) ve Nesneler (Math, String, Date, Document)",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "JavaScript: Nesneler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 11,
+    "topic": "JavaScript: Olaylar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 12,
+    "topic": "Doküman Nesne Modeli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Bootstrap: Giriş ve Temel Kavramlar",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 14,
+    "topic": "XML ve Ajax Giriş",
+    "outcomes": "1-2-3"
+   }
+  ],
+  "textbooks": [
+   "Ruse Ferguson, Christian Heilmann, Beginning JavaScript with DOM Scripting and Ajax, Apress (2013)",
+   "Jon Duckett, HTML & CSS design and build websites, Wiley (2011)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=258"
+ },
  "SAO 259": {
   "code": "SAO 259",
   "name": "Yapay Zekâ ve Siber Güvenlik",

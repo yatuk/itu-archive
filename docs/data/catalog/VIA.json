@@ -996,6 +996,102 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=511"
  },
+ "VIA 516E": {
+  "code": "VIA 516E",
+  "name": "Customer Analytics",
+  "nameEn": "Customer Analytics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Günümüzde veri analitiğinin etkin olarak kullanıldığı en önemli alanlardan bir tanesi de müşterilerdir. Özellikle ağ, mobil ve konum tabanlı hizmetler sayesinde kasada gerçekleşen satış verisi dışında pek çok veri de toplanabilmekte ve analize konu olabilmektedir. Bu ders kapsamında müşteri tanıma, müşteri hedefleme, müşteri geliştirme ve müşteri elde tutma konularının temelinde farklı veri analitiği uygulamaları anlatılmaktadır. One of the most critical areas where data analysis is used effectively is the customers. Besides transaction data, new types of data from networks, mobile phones and location-based services can be collected. In this course, different data analysis applications are explained based on customer identification, customer targeting, customer development and customer retention",
+  "outcomes": [
+   "Firma içinde tutulan ve tutulabilecek olan verilerin tanımlanabilmesi",
+   "İstenen analizleri gerçekleştirmek üzere toplanması gereken verilerin tespit etme becerisi",
+   "Gerçek veriler ile müşteri analitiği uygulamaları yapabilme becerisi",
+   "Gerçekleştirilen uygulamaların sonuçlarını yorumlama ve aksiyona çevirebilme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Müşteri analitiğine giriş",
+   "Hafta 2 · Müşteri tanıma: müşteri hayat boyu değeri",
+   "Hafta 3 · Müşteri tanıma: müşteri bölümlendirme",
+   "Hafta 4 · Müşteri hedefleme: RFM (güncellik, frekans, tutar) analizi ile müşteri dönüşü tahmini",
+   "Hafta 5 · Müşteri hedefleme: lojistik regresyon ile müşteri dönüşü tahmini",
+   "Hafta 6 · Müşteri hedefleme: karar ağaçları ile müşteri dönüşü tahmini",
+   "Hafta 7 · Müşteri geliştirme: birliktelik analizleri",
+   "Hafta 8 · Müşteri geliştirme: bir sonra alınacak ürün modelleri ve çapraz satış",
+   "Hafta 9 · Müşteri geliştirme: öneri sistemleri",
+   "Hafta 10 · Müşteri elde tutma: müşteri kayıp analizi",
+   "Hafta 11 · Dönem projesi sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Müşteri analitiğine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Müşteri tanıma: müşteri hayat boyu değeri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Müşteri tanıma: müşteri bölümlendirme",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Müşteri hedefleme: RFM (güncellik, frekans, tutar) analizi ile müşteri dönüşü tahmini",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Müşteri hedefleme: lojistik regresyon ile müşteri dönüşü tahmini",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Müşteri hedefleme: karar ağaçları ile müşteri dönüşü tahmini",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 7,
+    "topic": "Müşteri geliştirme: birliktelik analizleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Müşteri geliştirme: bir sonra alınacak ürün modelleri ve çapraz satış",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Müşteri geliştirme: öneri sistemleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Müşteri elde tutma: müşteri kayıp analizi",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem projesi sunumları",
+    "outcomes": "3-4"
+   }
+  ],
+  "textbooks": [
+   "Tsiptsis K.K, Chorianopoulos A. (2010) Data Mining Techniques in CRM: Inside Customer Segmentation, Wiley",
+   "Linoff G.S., Berr M.J. (2011) Data Mining Techniques for Marketing, Sales and Customer Relationship Management",
+   "Sauro J. (2015) Customer analytics for Dummies, Wiley"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=VIA&dersNo=516"
+ },
  "VIA 525E": {
   "code": "VIA 525E",
   "name": "Social Network Analy.for Bus.",

@@ -4587,7 +4587,7 @@
   "level": "LS",
   "name": "Uzun Hava Repertuarı I",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cihangir Terzi",
+  "instructor": "Haydar Tanrıverdi",
   "buildings": [
    "TMB"
   ],
@@ -5150,6 +5150,148 @@
    "SES_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15627",
+  "code": "CAB 452",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Kanun VIII",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Serkan Mesut Halili",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "SES_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15633",
+  "code": "CAB 209",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Buse Sever",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15635",
+  "code": "CAB 187",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Gitar I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tufan Kurdoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15637",
+  "code": "CAB 278",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Piyano IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Devlet Devrim Öztaş",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15638",
+  "code": "CAB 409",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ud VII",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sarper Eroğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS"
+  ],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

@@ -3,15 +3,15 @@
  "provenance": {
   "provider": "İstanbul Teknik Üniversitesi OBS",
   "endpoint": "https://obs.itu.edu.tr/public/DersProgram",
-  "lastSuccessfulAt": "2026-09-20T07:48:22Z"
+  "lastSuccessfulAt": "2026-09-21T07:58:51Z"
  },
  "term": "2026-2027 Güz Dönemi",
  "slug": "2026-2027-guz",
- "scrapedAt": "2026-09-20T07:48:22Z",
+ "scrapedAt": "2026-09-21T07:58:51Z",
  "source": "itu-archive",
  "live": true,
- "sections": 5325,
- "courses": 3788,
+ "sections": 5301,
+ "courses": 3795,
  "branches": [
   {
    "code": "ABM",
@@ -194,7 +194,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 178
+   "sections": 183
   },
   {
    "code": "CBM",
@@ -493,7 +493,7 @@
     "LS",
     "LU"
    ],
-   "sections": 212
+   "sections": 202
   },
   {
    "code": "FRA",
@@ -815,7 +815,7 @@
     "LS",
     "LU"
    ],
-   "sections": 178
+   "sections": 156
   },
   {
    "code": "KMM",
@@ -865,7 +865,7 @@
    "levels": [
     "LU"
    ],
-   "sections": 5
+   "sections": 8
   },
   {
    "code": "MAD",
@@ -903,7 +903,7 @@
     "LS",
     "LU"
    ],
-   "sections": 128
+   "sections": 121
   },
   {
    "code": "MBA",
@@ -1115,7 +1115,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 54
+   "sections": 59
   },
   {
    "code": "MTS",
@@ -1150,7 +1150,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 41
+   "sections": 42
   },
   {
    "code": "MUZ",
@@ -1178,7 +1178,7 @@
    "levels": [
     "LS"
    ],
-   "sections": 18
+   "sections": 19
   },
   {
    "code": "MZJ",
@@ -1635,11 +1635,11 @@
   }
  ],
  "stats": {
-  "sections": 5325,
-  "courses": 3788,
+  "sections": 5301,
+  "courses": 3795,
   "branches": 228,
-  "instructors": 1804,
-  "capacity": 262217,
+  "instructors": 1967,
+  "capacity": 260601,
   "enrolled": 111640
  }
 }

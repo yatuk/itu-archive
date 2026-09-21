@@ -1700,5 +1700,177 @@
   ],
   "prereq": "-",
   "classReq": "-"
+ },
+ {
+  "crn": "15628",
+  "code": "MTR 202",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Makam Teorisi IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali İhsan Alemli",
+  "buildings": [
+   "undeclared",
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29",
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--",
+   "--",
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS",
+   "SES_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15630",
+  "code": "MTR 408",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Eser Çözümleme II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Neşe Yeşim Altınel Çoban",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15631",
+  "code": "MTR 244",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Müzik Teorisi IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Eray Altınbüken",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/10:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 15,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BST_LS",
+   "CAB_LS",
+   "CEB_LS",
+   "KMP_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15632",
+  "code": "MTR 404",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "İleri Müzik Teorisi IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ufuk Biçak",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Salı",
+   "Cuma"
+  ],
+  "times": [
+   "15:30/17:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15634",
+  "code": "MTR 441",
+  "branch": "MTR",
+  "level": "LS",
+  "name": "Dikte Deşifre I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Engin Şafak Gürler",
+  "buildings": [
+   "undeclared",
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba",
+   "Perşembe"
+  ],
+  "times": [
+   "10:30/12:29",
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--",
+   "--"
+  ],
+  "capacity": 25,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "SES_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
  }
 ]

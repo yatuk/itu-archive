@@ -81,7 +81,7 @@
   "rooms": [
    "2D18"
   ],
-  "capacity": 50,
+  "capacity": 80,
   "enrolled": 50,
   "reserved": "-",
   "programs": [
@@ -102,7 +102,7 @@
   "level": "LS",
   "name": "Güneş ve Yer Radyasyonu",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
+  "instructor": "Filiz Türk Katırcıoğlu",
   "buildings": [
    "MEDC"
   ],
@@ -134,7 +134,7 @@
   "level": "LS",
   "name": "Solar & Terrestrial Radiation",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
+  "instructor": "Deniz Demirhan",
   "buildings": [
    "MEDC"
   ],
@@ -179,7 +179,7 @@
   "rooms": [
    "2D11"
   ],
-  "capacity": 18,
+  "capacity": 20,
   "enrolled": 18,
   "reserved": "-",
   "programs": [
@@ -371,7 +371,7 @@
    "ZD1",
    "ZD1"
   ],
-  "capacity": 50,
+  "capacity": 65,
   "enrolled": 50,
   "reserved": "-",
   "programs": [
@@ -401,7 +401,7 @@
   "rooms": [
    "1D6"
   ],
-  "capacity": 15,
+  "capacity": 20,
   "enrolled": 15,
   "reserved": "-",
   "programs": [
@@ -420,7 +420,7 @@
   "level": "LS",
   "name": "Atmosfer Dinamiği I",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
+  "instructor": "Ali Deniz , Bahtiyar Efe",
   "buildings": [
    "MEDC",
    "MEDC"
@@ -456,7 +456,7 @@
   "level": "LS",
   "name": "Atmospheric Dynamics I",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
+  "instructor": "Yurdanur Ünal",
   "buildings": [
    "MEDC",
    "MEDC"
@@ -473,7 +473,7 @@
    "2D14",
    "2D14"
   ],
-  "capacity": 25,
+  "capacity": 28,
   "enrolled": 25,
   "reserved": "-",
   "programs": [
@@ -627,7 +627,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 30,
+  "capacity": 35,
   "enrolled": 30,
   "reserved": "-",
   "programs": [
@@ -789,6 +789,8 @@
   "enrolled": 15,
   "reserved": "-",
   "programs": [
+   "FIZ_LS",
+   "FIZE_LS",
    "IBM_LS",
    "MTO_LS"
   ],
@@ -1363,7 +1365,7 @@
    "-/-"
   ],
   "rooms": [],
-  "capacity": 1,
+  "capacity": 2,
   "enrolled": 1,
   "reserved": "-",
   "programs": [

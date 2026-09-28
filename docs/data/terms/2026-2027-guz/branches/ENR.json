@@ -17,10 +17,33 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "2D13"
   ],
   "capacity": 20,
   "enrolled": 3,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15814",
+  "code": "ENR 321",
+  "branch": "ENR",
+  "level": "LS",
+  "name": "Otomatic Control Systems",
+  "method": "Ek Sınav",
+  "instructor": "Ali Sinan Çabuk",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "NAE_LS"

@@ -8,7 +8,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Senem Kurşun",
   "buildings": [
-   "undeclared"
+   "MKB"
   ],
   "days": [
    "Çarşamba"
@@ -17,10 +17,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "D331"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -35,7 +35,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Korhan Şahin",
   "buildings": [
-   "undeclared"
+   "MKB"
   ],
   "days": [
    "Cuma"
@@ -44,10 +44,10 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "D317"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -62,7 +62,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ayhan Kural",
   "buildings": [
-   "undeclared"
+   "MKB"
   ],
   "days": [
    "Pazartesi"
@@ -71,10 +71,10 @@
    "12:30/15:29"
   ],
   "rooms": [
-   "--"
+   "D331"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -95,6 +95,87 @@
   ],
   "rooms": [],
   "capacity": 100,
+  "enrolled": 25,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15749",
+  "code": "MDK 588E",
+  "branch": "MDK",
+  "level": "LU",
+  "name": "Sensors and Actuators",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Korhan Şahin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15750",
+  "code": "MDK 591E",
+  "branch": "MDK",
+  "level": "LU",
+  "name": "Dynamical Sys.Model.&Simu.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlker Murat Koç",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15751",
+  "code": "MDK 592",
+  "branch": "MDK",
+  "level": "LU",
+  "name": "Mekanik Sist.Bilgis.Kontrolu",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İlker Murat Koç",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

@@ -99,7 +99,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sinem Kırkan , Shahryar Habıbı",
   "buildings": [
-   "undeclared"
+   "MMB"
   ],
   "days": [
    "Çarşamba"
@@ -108,7 +108,7 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "--"
+   "CATI3"
   ],
   "capacity": 20,
   "enrolled": 16,
@@ -140,9 +140,9 @@
   "rooms": [
    "5101"
   ],
-  "capacity": 50,
+  "capacity": 55,
   "enrolled": 50,
-  "reserved": "EEE_LS/5/5 | Diğer/45/45",
+  "reserved": "EEE_LS/5/5 | Diğer/50/45",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -207,7 +207,7 @@
   "rooms": [
    "B306"
   ],
-  "capacity": 30,
+  "capacity": 35,
   "enrolled": 30,
   "reserved": "-",
   "programs": [
@@ -240,7 +240,7 @@
    "L400"
   ],
   "capacity": 32,
-  "enrolled": 31,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "MAT_LS"
@@ -269,7 +269,7 @@
    "D102"
   ],
   "capacity": 24,
-  "enrolled": 24,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "FIZ_LS",
@@ -288,7 +288,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Aslı Ulubaş Hamurcu",
   "buildings": [
-   "undeclared"
+   "MMB"
   ],
   "days": [
    "Çarşamba"
@@ -297,7 +297,7 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "--"
+   "CATI1"
   ],
   "capacity": 20,
   "enrolled": 20,
@@ -318,7 +318,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Murat Yılmaz",
   "buildings": [
-   "undeclared"
+   "INB"
   ],
   "days": [
    "Cuma"
@@ -327,7 +327,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "A204"
   ],
   "capacity": 50,
   "enrolled": 50,
@@ -392,9 +392,9 @@
   "rooms": [
    "2104"
   ],
-  "capacity": 50,
+  "capacity": 55,
   "enrolled": 50,
-  "reserved": "EEE_LS/5/5 | Diğer/45/45",
+  "reserved": "EEE_LS/5/5 | Diğer/50/45",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -429,9 +429,9 @@
   "rooms": [
    "2106"
   ],
-  "capacity": 50,
-  "enrolled": 47,
-  "reserved": "EEE_LS/5/2 | Diğer/45/45",
+  "capacity": 55,
+  "enrolled": 42,
+  "reserved": "EEE_LS/5/1 | Diğer/50/41",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -455,7 +455,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ekrem Cem Alppay",
   "buildings": [
-   "undeclared"
+   "MMB"
   ],
   "days": [
    "Çarşamba"
@@ -486,7 +486,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Safiye Elif Serdar Yakut",
   "buildings": [
-   "undeclared"
+   "MMB"
   ],
   "days": [
    "Çarşamba"
@@ -515,7 +515,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "İmdat As",
   "buildings": [
-   "undeclared"
+   "MMB"
   ],
   "days": [
    "Çarşamba"
@@ -546,7 +546,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Meryem Birgül Çolakoğlu",
   "buildings": [
-   "undeclared"
+   "MMB"
   ],
   "days": [
    "Çarşamba"
@@ -555,7 +555,7 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "--"
+   "CATI2"
   ],
   "capacity": 20,
   "enrolled": 7,
@@ -594,6 +594,35 @@
   "programs": [
    "TEK_YD",
    "TEKE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15678",
+  "code": "MYZ 302E",
+  "branch": "MYZ",
+  "level": "LS",
+  "name": "Artificial Intelligence for Mechanical Engineering",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ersan Üstündağ , Hülya Yalçın",
+  "buildings": [
+   "MKB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "D318"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MAK_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

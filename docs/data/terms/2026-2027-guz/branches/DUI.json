@@ -368,7 +368,7 @@
    "--"
   ],
   "capacity": 35,
-  "enrolled": 15,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "DUI_LS"
@@ -687,7 +687,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 6,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "DUI_LS"
@@ -977,7 +977,7 @@
    "--"
   ],
   "capacity": 50,
-  "enrolled": 39,
+  "enrolled": 37,
   "reserved": "-",
   "programs": [
    "DUI_LS"
@@ -1150,7 +1150,7 @@
   "rooms": [
    "--"
   ],
-  "capacity": 65,
+  "capacity": 70,
   "enrolled": 61,
   "reserved": "-",
   "programs": [
@@ -1847,7 +1847,7 @@
    "--"
   ],
   "capacity": 60,
-  "enrolled": 51,
+  "enrolled": 50,
   "reserved": "-",
   "programs": [
    "MTM_LS"
@@ -1876,7 +1876,7 @@
    "--"
   ],
   "capacity": 40,
-  "enrolled": 21,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [
    "MTM_LS"
@@ -1939,7 +1939,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Hilmi Şahlı",
   "buildings": [
-   "Gazimagusa-TAS_1"
+   "Gazimagusa-TAS_2"
   ],
   "days": [
    "Salı"
@@ -1948,13 +1948,42 @@
    "13:30/17:29"
   ],
   "rooms": [
-   "--"
+   "902"
   ],
   "capacity": 30,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
    "MMD_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15812",
+  "code": "DUI 208E",
+  "branch": "DUI",
+  "level": "LS",
+  "name": "Cargo&Crew Safety",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Esma Uflaz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "DUI_LS"
   ],
   "prereq": "-",
   "classReq": "-"

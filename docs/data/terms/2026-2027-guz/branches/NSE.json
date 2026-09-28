@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -47,7 +47,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -62,7 +62,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "İsmail Koyuncu , Bihter Zeytuncu Gökoğlu",
   "buildings": [
-   "undeclared"
+   "KMB"
   ],
   "days": [
    "Çarşamba"
@@ -71,10 +71,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "D107"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -101,7 +101,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -116,7 +116,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Bihter Zeytuncu Gökoğlu",
   "buildings": [
-   "undeclared"
+   "KMB"
   ],
   "days": [
    "Salı"
@@ -125,10 +125,10 @@
    "15:30/17:29"
   ],
   "rooms": [
-   "--"
+   "D106"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -155,7 +155,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -170,7 +170,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Filiz Altay , Ali Saffet Altay",
   "buildings": [
-   "undeclared"
+   "KMB"
   ],
   "days": [
    "Cuma"
@@ -179,10 +179,10 @@
    "14:00/16:59"
   ],
   "rooms": [
-   "--"
+   "D305"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -209,34 +209,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14923",
-  "code": "NSE 696E",
-  "branch": "NSE",
-  "level": "LU",
-  "name": "Scien.Rese., Ethic&Seminar",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Birgül Benli",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 50,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -257,7 +230,7 @@
   ],
   "rooms": [],
   "capacity": 100,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -278,7 +251,7 @@
   ],
   "rooms": [],
   "capacity": 100,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -299,7 +272,7 @@
   ],
   "rooms": [],
   "capacity": 100,
-  "enrolled": 0,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -326,6 +299,33 @@
    "--"
   ],
   "capacity": 20,
+  "enrolled": 5,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15748",
+  "code": "NSE 505E",
+  "branch": "NSE",
+  "level": "LU",
+  "name": "Properties of Nanomaterials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Faiz Muhaffel",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

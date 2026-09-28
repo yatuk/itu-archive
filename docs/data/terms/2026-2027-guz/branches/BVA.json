@@ -17,10 +17,10 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "210"
   ],
-  "capacity": 25,
-  "enrolled": 0,
+  "capacity": 50,
+  "enrolled": 44,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -47,7 +47,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -62,7 +62,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mehmet Güray Güler",
   "buildings": [
-   "undeclared"
+   "MSB"
   ],
   "days": [
    "Salı"
@@ -71,10 +71,31 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "113"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 25,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15664",
+  "code": "BVA YLT",
+  "branch": "BVA",
+  "level": "LU",
+  "name": "Tez Çalışması",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tuncay Zorlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 200,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [],
   "prereq": "-",

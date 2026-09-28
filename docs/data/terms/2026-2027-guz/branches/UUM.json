@@ -20,7 +20,7 @@
    "1D10"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 60,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -47,7 +47,7 @@
    "1D10"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 60,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -74,7 +74,7 @@
    "1D9"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -101,7 +101,7 @@
    "2D11"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -128,7 +128,7 @@
    "1D8"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -155,7 +155,7 @@
    "1D10"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 60,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -182,7 +182,7 @@
    "1D9"
   ],
   "capacity": 10,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -209,7 +209,7 @@
    "ZD2"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -217,12 +217,12 @@
  },
  {
   "crn": "13312",
-  "code": "UUM 555",
+  "code": "UUM 555E",
   "branch": "UUM",
   "level": "LU",
-  "name": "Eklemeli İmalat&3B Yazıcı Tek.",
+  "name": "Additi.Manuf.&3D Printer Tec.",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
+  "instructor": "Raşid Ahmed Yıldız",
   "buildings": [
    "MEDC"
   ],
@@ -236,7 +236,7 @@
    "1D8"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -263,7 +263,7 @@
    "2D11"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -290,7 +290,7 @@
    "1D9"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -317,7 +317,7 @@
    "1D8"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -344,7 +344,7 @@
    "1D8"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -405,33 +405,6 @@
   "classReq": "-"
  },
  {
-  "crn": "13319",
-  "code": "UUM 696E",
-  "branch": "UUM",
-  "level": "LU",
-  "name": "Scien.Rese., Ethic&Seminar",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "İbrahim Özkol",
-  "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "1D10"
-  ],
-  "capacity": 60,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "13320",
   "code": "UUM 512E",
   "branch": "UUM",
@@ -452,7 +425,7 @@
    "1D8"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -479,7 +452,7 @@
    "1D8"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -506,7 +479,7 @@
    "3D19"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -533,7 +506,7 @@
    "2D17"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 33,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -560,7 +533,7 @@
    "2D17"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -587,7 +560,7 @@
    "ZA4"
   ],
   "capacity": 60,
-  "enrolled": 0,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -614,7 +587,7 @@
    "2D17"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -641,7 +614,7 @@
    "2D17"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -668,7 +641,7 @@
    "ZD2"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -681,7 +654,7 @@
   "level": "LU",
   "name": "Uçaklarda Buzlanma",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
+  "instructor": "Ömer Akbal",
   "buildings": [
    "MEDC"
   ],
@@ -695,7 +668,7 @@
    "1D8"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -716,7 +689,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -737,7 +710,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 54,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -758,28 +731,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13797",
-  "code": "UUM 503E",
-  "branch": "UUM",
-  "level": "LU",
-  "name": "Elasticity",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -806,7 +758,7 @@
    "2D12"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -833,7 +785,7 @@
    "--"
   ],
   "capacity": 40,
-  "enrolled": 0,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",

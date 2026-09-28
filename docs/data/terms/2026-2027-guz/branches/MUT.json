@@ -44,7 +44,7 @@
    "--"
   ],
   "capacity": 40,
-  "enrolled": 25,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -1024,7 +1024,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 11,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "MUT_LS",
@@ -1139,6 +1139,156 @@
   ],
   "rooms": [
    "--",
+   "--"
+  ],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MUT_LS",
+   "MZT_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15777",
+  "code": "MUT 132",
+  "branch": "MUT",
+  "level": "LS",
+  "name": "Akustik II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Tıraş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MUT_LS",
+   "MZT_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15778",
+  "code": "MUT 376",
+  "branch": "MUT",
+  "level": "LS",
+  "name": "Tar Yapımı",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Haşim Açanal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MUT_LS",
+   "MZT_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15779",
+  "code": "MUT 386",
+  "branch": "MUT",
+  "level": "LS",
+  "name": "Serbest Proje Çalışması II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Tangör",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MUT_LS",
+   "MZT_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15780",
+  "code": "MUT 388",
+  "branch": "MUT",
+  "level": "LS",
+  "name": "Müzik Tek.Tasarım & Geliştirme",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Haşim Açanal",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MUT_LS",
+   "MZT_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15781",
+  "code": "MUT 486",
+  "branch": "MUT",
+  "level": "LS",
+  "name": "Serbest Proje Çalışması IV",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Tangör",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MUT_LS",
+   "MZT_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15789",
+  "code": "MUT 474",
+  "branch": "MUT",
+  "level": "LS",
+  "name": "Çalgı Tını Bilgisi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ozan Sarıer",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
    "--"
   ],
   "capacity": 5,

@@ -8,7 +8,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Vahit Mermertaş",
   "buildings": [
-   "undeclared"
+   "MKB"
   ],
   "days": [
    "Salı"
@@ -17,10 +17,10 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "D353"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -35,7 +35,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Erdinç Altuğ",
   "buildings": [
-   "undeclared"
+   "MKB"
   ],
   "days": [
    "Cuma"
@@ -44,10 +44,10 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "D351"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -62,7 +62,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Akif Yavuz",
   "buildings": [
-   "undeclared"
+   "MKB"
   ],
   "days": [
    "Pazartesi"
@@ -71,10 +71,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "D317"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -89,7 +89,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Haluk Erol",
   "buildings": [
-   "undeclared"
+   "MKB"
   ],
   "days": [
    "Çarşamba"
@@ -98,10 +98,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "D368A"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -122,6 +122,87 @@
   ],
   "rooms": [],
   "capacity": 100,
+  "enrolled": 23,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15736",
+  "code": "MTA 551E",
+  "branch": "MTA",
+  "level": "LU",
+  "name": "Data Acquis.&Signal Processing",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Erdinç Altuğ",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15737",
+  "code": "MTA 554",
+  "branch": "MTA",
+  "level": "LU",
+  "name": "Mekanik Sistemler Dinamiği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Vahit Mermertaş",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15738",
+  "code": "MTA 556E",
+  "branch": "MTA",
+  "level": "LU",
+  "name": "Modal Testing",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Osman Taha Şen",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

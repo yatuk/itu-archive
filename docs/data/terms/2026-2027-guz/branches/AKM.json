@@ -51,10 +51,11 @@
    "A305"
   ],
   "capacity": 60,
-  "enrolled": 55,
+  "enrolled": 54,
   "reserved": "-",
   "programs": [
-   "CEV_LS"
+   "CEV_LS",
+   "INS_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -77,12 +78,13 @@
    "12:30/15:29"
   ],
   "rooms": [
-   "--"
+   "A201"
   ],
   "capacity": 60,
-  "enrolled": 60,
+  "enrolled": 56,
   "reserved": "-",
   "programs": [
+   "CEV_LS",
    "INS_LS"
   ],
   "prereq": "Detay",
@@ -106,13 +108,16 @@
    "12:30/15:29"
   ],
   "rooms": [
-   "--"
+   "B203"
   ],
   "capacity": 60,
   "enrolled": 37,
   "reserved": "JEF_LS/9/0 | JEFE_LS/1/0 | Diğer/50/37",
   "programs": [
+   "CEV_LS",
    "CEVE_LS",
+   "INS_LS",
+   "INSE_LS",
    "JEF_LS",
    "JEFE_LS"
   ],
@@ -137,13 +142,15 @@
    "12:30/15:29"
   ],
   "rooms": [
-   "--"
+   "A302"
   ],
   "capacity": 60,
-  "enrolled": 6,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
+   "CEV_LS",
    "CEVE_LS",
+   "INS_LS",
    "INSE_LS"
   ],
   "prereq": "Detay",

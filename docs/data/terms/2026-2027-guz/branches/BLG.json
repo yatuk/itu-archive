@@ -8,7 +8,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gülşen Eryiğit",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -17,11 +17,11 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/5/0 | BLG_BG_YL/12/0 | Diğer/3/0",
+  "capacity": 32,
+  "enrolled": 29,
+  "reserved": "BLG_BG_DR/5/2 | BLG_BG_YL/22/22 | Diğer/5/5",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -38,7 +38,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Cihan Topal",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -47,11 +47,11 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
-  "capacity": 25,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/5/0 | BLG_BG_YL/15/0 | Diğer/5/0",
+  "capacity": 30,
+  "enrolled": 24,
+  "reserved": "BLG_BG_DR/5/3 | BLG_BG_YL/17/13 | Diğer/8/8",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -68,7 +68,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Muhammet Alkan",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -77,11 +77,11 @@
    "14:30/16:29"
   ],
   "rooms": [
-   "--"
+   "Z-20"
   ],
   "capacity": 55,
-  "enrolled": 0,
-  "reserved": "BLG_BG_YL/50/0 | Diğer/5/0",
+  "enrolled": 25,
+  "reserved": "BLG_BG_YL/50/25 | Diğer/5/0",
   "programs": [
    "BLG_BG_YL"
   ],
@@ -97,7 +97,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "İlkay Öksüz",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Pazartesi"
@@ -106,11 +106,11 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "101"
   ],
   "capacity": 40,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/35/0 | Diğer/5/0",
+  "enrolled": 3,
+  "reserved": "BLG_BG_DR/35/2 | Diğer/5/1",
   "programs": [
    "BLG_BG_DR"
   ],
@@ -126,7 +126,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Deniz Turgay Altılar",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -135,10 +135,10 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -153,7 +153,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Şerif Bahtiyar",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -162,11 +162,11 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "101"
   ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "BLG_BG_YL/12/0 | BLG_BG_DR/3/0 | Diğer/5/0",
+  "capacity": 31,
+  "enrolled": 23,
+  "reserved": "BLG_BG_YL/22/16 | BLG_BG_DR/3/1 | Diğer/6/6",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -183,7 +183,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sanem Sarıel Uzer",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -195,8 +195,8 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
-  "reserved": "BLG_BG_YL/12/0 | BLG_BG_DR/3/0 | Diğer/5/0",
+  "enrolled": 10,
+  "reserved": "BLG_BG_YL/12/4 | BLG_BG_DR/3/1 | Diğer/5/5",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -213,7 +213,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Hazım Kemal Ekenel",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -222,10 +222,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "Z-23"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -240,7 +240,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Şule Öğüdücü",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -249,10 +249,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "102"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -267,7 +267,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mehmet Keskinöz",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -276,11 +276,11 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "Z-22"
   ],
-  "capacity": 20,
+  "capacity": 24,
   "enrolled": 0,
-  "reserved": "BLG_BG_YL/12/0 | BLG_BG_DR/5/0 | Diğer/3/0",
+  "reserved": "BLG_BG_YL/12/0 | BLG_BG_DR/5/0 | Diğer/7/0",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -297,7 +297,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Yavuz Köroğlu",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -306,11 +306,11 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "101"
   ],
-  "capacity": 25,
-  "enrolled": 0,
-  "reserved": "BLG_BG_YL/23/0 | BLG_BG_DR/2/0 | Diğer/0/0",
+  "capacity": 35,
+  "enrolled": 31,
+  "reserved": "BLG_BG_YL/33/29 | BLG_BG_DR/2/2 | Diğer/0/0",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -327,7 +327,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Faik Boray Tek",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -336,11 +336,11 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "102"
   ],
-  "capacity": 25,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/2/0 | BLG_BG_YL/23/0 | Diğer/0/0",
+  "capacity": 35,
+  "enrolled": 20,
+  "reserved": "BLG_BG_DR/2/0 | BLG_BG_YL/23/10 | Diğer/10/10",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -357,7 +357,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Mehmet Tahir Sandıkkaya",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Salı"
@@ -366,11 +366,11 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/12/0 | BLG_BG_YL/5/0 | Diğer/3/0",
+  "capacity": 28,
+  "enrolled": 14,
+  "reserved": "BLG_BG_DR/12/3 | BLG_BG_YL/12/7 | Diğer/4/4",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -387,7 +387,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Feza Buzluca",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -399,7 +399,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -414,7 +414,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ayşe Yılmazer Metin",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -423,10 +423,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "104"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -441,7 +441,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Tolga Ovatman",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -450,11 +450,11 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "102"
   ],
   "capacity": 25,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/3/0 | BLG_BG_YL/17/0 | Diğer/5/0",
+  "enrolled": 16,
+  "reserved": "BLG_BG_DR/3/2 | BLG_BG_YL/17/11 | Diğer/5/3",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -471,7 +471,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Abdül Halim Zaim",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -480,10 +480,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "101"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -498,7 +498,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sanem Kabadayı",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba"
@@ -507,41 +507,12 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12358",
-  "code": "BLG 696",
-  "branch": "BLG",
-  "level": "LU",
-  "name": "Bilimsel Araş.,Etik ve Seminer",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ayşe Tosun Kühn",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 45,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/40/0 | Diğer/5/0",
-  "programs": [
-   "BLG_BG_DR"
-  ],
   "prereq": "-",
   "classReq": "-"
  },
@@ -554,7 +525,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Tuğçe Bilen",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -563,11 +534,11 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
-  "capacity": 25,
-  "enrolled": 0,
-  "reserved": "BLG_BG_YL/20/0 | Diğer/5/0",
+  "capacity": 35,
+  "enrolled": 33,
+  "reserved": "BLG_BG_YL/25/23 | Diğer/10/10",
   "programs": [
    "BLG_BG_YL"
   ],
@@ -583,7 +554,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Yusuf Yaslan",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -592,11 +563,11 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "Z-22"
   ],
-  "capacity": 25,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/2/0 | BLG_BG_YL/23/0 | Diğer/0/0",
+  "capacity": 50,
+  "enrolled": 50,
+  "reserved": "BLG_BG_DR/2/2 | BLG_BG_YL/43/43 | Diğer/5/5",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -613,7 +584,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Uluğ Bayazıt",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -622,10 +593,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "Z-23"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -640,7 +611,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Burak Berk Üstündağ",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -649,10 +620,10 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "Z-23"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -667,7 +638,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Berna Kiraz",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -676,11 +647,11 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
-  "capacity": 25,
-  "enrolled": 0,
-  "reserved": "BLG_BG_YL/20/0 | Diğer/5/0",
+  "capacity": 34,
+  "enrolled": 34,
+  "reserved": "BLG_BG_YL/25/25 | Diğer/9/9",
   "programs": [
    "BLG_BG_YL"
   ],
@@ -696,7 +667,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gökhan İnce",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -705,10 +676,10 @@
    "14:00/16:59"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -723,7 +694,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Gökhan Seçinti",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -732,11 +703,11 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "122"
   ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "BLG_BG_DR/2/0 | BLG_BG_YL/18/0 | Diğer/0/0",
+  "capacity": 31,
+  "enrolled": 30,
+  "reserved": "BLG_BG_DR/2/1 | BLG_BG_YL/27/27 | Diğer/2/2",
   "programs": [
    "BLG_BG_DR",
    "BLG_BG_YL"
@@ -753,7 +724,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Behçet Uğur Töreyin",
   "buildings": [
-   "undeclared"
+   "MDB"
   ],
   "days": [
    "Cuma"
@@ -762,10 +733,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "A103"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -780,7 +751,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "İlkay Öksüz",
   "buildings": [
-   "undeclared"
+   "MDB"
   ],
   "days": [
    "Cuma"
@@ -789,10 +760,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "A102"
   ],
-  "capacity": 25,
-  "enrolled": 0,
+  "capacity": 30,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -807,7 +778,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Burak Berk Üstündağ",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Cuma"
@@ -816,11 +787,11 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "--"
+   "102"
   ],
   "capacity": 40,
-  "enrolled": 0,
-  "reserved": "BLG_BG_YL/35/0 | Diğer/5/0",
+  "enrolled": 11,
+  "reserved": "BLG_BG_YL/35/7 | Diğer/5/4",
   "programs": [
    "BLG_BG_YL"
   ],
@@ -842,7 +813,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 41,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -863,7 +834,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -884,7 +855,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -911,7 +882,7 @@
    "KON1"
   ],
   "capacity": 150,
-  "enrolled": 146,
+  "enrolled": 145,
   "reserved": "-",
   "programs": [
    "BLGE_LS"
@@ -944,7 +915,7 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 80,
+  "enrolled": 79,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -979,7 +950,7 @@
    "Z-18"
   ],
   "capacity": 80,
-  "enrolled": 32,
+  "enrolled": 31,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -1009,12 +980,14 @@
   "rooms": [
    "Z-21"
   ],
-  "capacity": 70,
+  "capacity": 90,
   "enrolled": 70,
-  "reserved": "-",
+  "reserved": "END_LS/2/0 | ENDE_LS/3/0 | Diğer/85/70",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "END_LS",
+   "ENDE_LS",
    "SECE_LS"
   ],
   "prereq": "-",
@@ -1040,8 +1013,8 @@
   "rooms": [
    "Z-20"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 80,
+  "enrolled": 63,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -1261,8 +1234,8 @@
    "--"
   ],
   "capacity": 60,
-  "enrolled": 35,
-  "reserved": "CEN_LS/8/8 | CES_LS/8/0 | BLG_LS/2/0 | Diğer/42/27",
+  "enrolled": 32,
+  "reserved": "CEN_LS/8/8 | CES_LS/8/0 | BLG_LS/2/0 | Diğer/42/24",
   "programs": [
    "BLG_LS",
    "BLG_LS",
@@ -1294,12 +1267,13 @@
    "Z-21"
   ],
   "capacity": 60,
-  "enrolled": 54,
+  "enrolled": 50,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLG_LS",
    "BLGE_LS",
+   "CEN_LS",
    "SECE_LS"
   ],
   "prereq": "-",
@@ -1325,12 +1299,13 @@
   "rooms": [
    "Z-20"
   ],
-  "capacity": 60,
-  "enrolled": 60,
+  "capacity": 75,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CEN_LS",
    "CES_LS",
    "SECE_LS"
   ],
@@ -1358,11 +1333,12 @@
    "Z-20"
   ],
   "capacity": 60,
-  "enrolled": 49,
+  "enrolled": 42,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CEN_LS",
    "CES_LS",
    "SECE_LS"
   ],
@@ -1390,8 +1366,8 @@
    "Z-17"
   ],
   "capacity": 80,
-  "enrolled": 80,
-  "reserved": "YZVE_LS/10/10 | Diğer/70/70",
+  "enrolled": 77,
+  "reserved": "YZVE_LS/10/8 | Diğer/70/69",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
@@ -1418,7 +1394,7 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "Z-19"
+   "Z-18"
   ],
   "capacity": 80,
   "enrolled": 80,
@@ -1452,7 +1428,7 @@
    "Z-17"
   ],
   "capacity": 60,
-  "enrolled": 60,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -1481,12 +1457,13 @@
   "rooms": [
    "Z-20"
   ],
-  "capacity": 60,
+  "capacity": 80,
   "enrolled": 60,
   "reserved": "-",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "CEN_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -1511,12 +1488,13 @@
   "rooms": [
    "Z-21"
   ],
-  "capacity": 60,
-  "enrolled": 60,
+  "capacity": 70,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "CEN_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -1541,13 +1519,16 @@
   "rooms": [
    "101"
   ],
-  "capacity": 60,
-  "enrolled": 56,
-  "reserved": "YZVE_LS/10/10 | Diğer/50/46",
+  "capacity": 70,
+  "enrolled": 53,
+  "reserved": "YZVE_LS/10/9 | EHB_LS/5/0 | EHBE_LS/5/0 | Diğer/50/44",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CEN_LS",
    "CES_LS",
+   "EHB_LS",
+   "EHBE_LS",
    "YZVE_LS"
   ],
   "prereq": "-",
@@ -1574,11 +1555,12 @@
    "101"
   ],
   "capacity": 40,
-  "enrolled": 40,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CEN_LS",
    "CES_LS",
    "YZVE_LS"
   ],
@@ -1605,12 +1587,14 @@
   "rooms": [
    "Z-21"
   ],
-  "capacity": 60,
-  "enrolled": 60,
+  "capacity": 80,
+  "enrolled": 55,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CEN_LS",
+   "SECE_LS",
    "YZVE_LS"
   ],
   "prereq": "-",
@@ -1635,7 +1619,8 @@
   "reserved": "-",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "CEN_LS"
   ],
   "prereq": "Detay",
   "classReq": "Detay"
@@ -1655,11 +1640,12 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 125,
+  "enrolled": 124,
   "reserved": "-",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "CEN_LS"
   ],
   "prereq": "Detay",
   "classReq": "Detay"
@@ -1683,7 +1669,8 @@
   "reserved": "-",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "CEN_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -1707,7 +1694,8 @@
   "reserved": "-",
   "programs": [
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "CEN_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -1732,7 +1720,8 @@
   "programs": [
    "BLG_LS",
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "CEN_LS"
   ],
   "prereq": "-",
   "classReq": "Detay"
@@ -1757,7 +1746,8 @@
   "programs": [
    "BLG_LS",
    "BLG_LS",
-   "BLGE_LS"
+   "BLGE_LS",
+   "CEN_LS"
   ],
   "prereq": "-",
   "classReq": "Detay"
@@ -1783,11 +1773,12 @@
    "102"
   ],
   "capacity": 40,
-  "enrolled": 11,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
+   "CEN_LS",
    "CES_LS"
   ],
   "prereq": "-",
@@ -1893,7 +1884,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ali Çakmak",
   "buildings": [
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -1902,10 +1893,10 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "Z-22"
   ],
-  "capacity": 20,
-  "enrolled": 0,
+  "capacity": 23,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -2172,6 +2163,413 @@
    "YZVE_LS"
   ],
   "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15679",
+  "code": "BLG 501E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Discrete Mathematics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İbrahim Özkol",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15680",
+  "code": "BLG 506E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Computer Vision",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Hüseyin Şahin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15681",
+  "code": "BLG 507E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Distributed Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Turgay Altılar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15683",
+  "code": "BLG 514E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Computer Networ. Basic Protoc.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Abdül Halim Zaim",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15684",
+  "code": "BLG 519E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Wireless Network Protocols",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Gökhan Seçinti",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15685",
+  "code": "BLG 527E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Machine Learning",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Keskinöz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15686",
+  "code": "BLG 542E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Safety Critical.Compu.Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Tahir Sandıkkaya",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15687",
+  "code": "BLG 549E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Graph Theory and Algorithms",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Akif Yazıcı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15688",
+  "code": "BLG 596E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Scien.Rese., Ethic&Seminar",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Keskinöz",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:00/14:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15689",
+  "code": "BLG 601E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Pattern Recognition",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Behçet Uğur Töreyin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15690",
+  "code": "BLG 603E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Enhanced Processor Architec.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Nizamettin Aydın",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:00/11:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15691",
+  "code": "BLG 609E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "Advanced Topics in Comp. Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Hazım Kemal Ekenel",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15692",
+  "code": "BLG 634E",
+  "branch": "BLG",
+  "level": "LU",
+  "name": "3D Vision",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Yusuf Hüseyin Şahin",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15794",
+  "code": "BLG 454E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Learning From Data",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "İbrahim Papila",
+  "buildings": [
+   "BBB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "Z-21"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CEN_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15823",
+  "code": "BLG 465E",
+  "branch": "BLG",
+  "level": "LS",
+  "name": "Real-Time Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Deniz Turgay Altılar",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
   "classReq": "-"
  }
 ]

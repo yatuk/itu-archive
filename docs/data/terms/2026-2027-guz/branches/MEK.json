@@ -202,7 +202,7 @@
    "A501"
   ],
   "capacity": 100,
-  "enrolled": 59,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "CHZ_LS",
@@ -226,6 +226,29 @@
    "PET_LS",
    "PETE_LS",
    "TEKE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15725",
+  "code": "MEK 207",
+  "branch": "MEK",
+  "level": "LS",
+  "name": "Mühendislik Mekaniği",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IML_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

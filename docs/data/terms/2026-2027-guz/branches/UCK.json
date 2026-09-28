@@ -20,7 +20,7 @@
    "ZA4"
   ],
   "capacity": 70,
-  "enrolled": 68,
+  "enrolled": 62,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -48,7 +48,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "1D9"
+   "ZA3"
   ],
   "capacity": 70,
   "enrolled": 69,
@@ -82,7 +82,7 @@
    "ZA2"
   ],
   "capacity": 70,
-  "enrolled": 55,
+  "enrolled": 51,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -144,7 +144,7 @@
   "rooms": [
    "3D20"
   ],
-  "capacity": 70,
+  "capacity": 75,
   "enrolled": 70,
   "reserved": "-",
   "programs": [
@@ -175,8 +175,8 @@
   "rooms": [
    "ZA3"
   ],
-  "capacity": 70,
-  "enrolled": 68,
+  "capacity": 75,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -206,8 +206,8 @@
   "rooms": [
    "ZA2"
   ],
-  "capacity": 80,
-  "enrolled": 80,
+  "capacity": 90,
+  "enrolled": 62,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -238,7 +238,7 @@
    "ZA3"
   ],
   "capacity": 80,
-  "enrolled": 80,
+  "enrolled": 78,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -296,10 +296,10 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "3D20"
+   "2D14"
   ],
   "capacity": 45,
-  "enrolled": 30,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -363,10 +363,11 @@
    "2D18"
   ],
   "capacity": 40,
-  "enrolled": 34,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
-   "UCK_LS"
+   "UCK_LS",
+   "UCK_YD"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -392,10 +393,11 @@
    "2D18"
   ],
   "capacity": 40,
-  "enrolled": 30,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
-   "UCK_LS"
+   "UCK_LS",
+   "UCK_YD"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -421,7 +423,7 @@
    "1D7"
   ],
   "capacity": 50,
-  "enrolled": 24,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -484,7 +486,7 @@
   "rooms": [
    "1D10"
   ],
-  "capacity": 60,
+  "capacity": 70,
   "enrolled": 60,
   "reserved": "-",
   "programs": [
@@ -515,8 +517,8 @@
   "rooms": [
    "3D20"
   ],
-  "capacity": 65,
-  "enrolled": 65,
+  "capacity": 70,
+  "enrolled": 64,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -546,8 +548,8 @@
   "rooms": [
    "ZA4"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 85,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -577,7 +579,7 @@
    "1D10"
   ],
   "capacity": 40,
-  "enrolled": 9,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -607,7 +609,7 @@
   "rooms": [
    "2D18"
   ],
-  "capacity": 60,
+  "capacity": 70,
   "enrolled": 55,
   "reserved": "-",
   "programs": [
@@ -669,7 +671,7 @@
    "2D17"
   ],
   "capacity": 40,
-  "enrolled": 15,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -825,7 +827,7 @@
    "1D6"
   ],
   "capacity": 40,
-  "enrolled": 27,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -1061,7 +1063,7 @@
   "level": "LS",
   "name": "Introduction to Aeronautical Engineering and Ethics",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Zahit Mecitoğlu",
+  "instructor": "Zahit Mecitoğlu , Tahir Soyugüzel",
   "buildings": [
    "MEDC"
   ],

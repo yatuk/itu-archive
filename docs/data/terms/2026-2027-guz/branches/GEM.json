@@ -17,7 +17,7 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "3BİL1"
+   "1D9"
   ],
   "capacity": 20,
   "enrolled": 2,
@@ -241,7 +241,7 @@
    "ZA3"
   ],
   "capacity": 45,
-  "enrolled": 36,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -341,7 +341,7 @@
    "2D13"
   ],
   "capacity": 45,
-  "enrolled": 40,
+  "enrolled": 37,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -499,7 +499,7 @@
    "1D10"
   ],
   "capacity": 75,
-  "enrolled": 63,
+  "enrolled": 61,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -588,7 +588,7 @@
    "3D20"
   ],
   "capacity": 40,
-  "enrolled": 40,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -617,7 +617,7 @@
    "2D13"
   ],
   "capacity": 40,
-  "enrolled": 17,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -632,7 +632,7 @@
   "level": "LS",
   "name": "Gemi Hareket ve Manevraları",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cihad Çelik",
+  "instructor": "-",
   "buildings": [
    "MEDC",
    "MEDC"
@@ -807,7 +807,7 @@
    "15:30/17:29"
   ],
   "rooms": [
-   "3BİL1"
+   "--"
   ],
   "capacity": 30,
   "enrolled": 17,
@@ -839,7 +839,7 @@
    "2D13"
   ],
   "capacity": 30,
-  "enrolled": 30,
+  "enrolled": 28,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -897,7 +897,7 @@
    "2D17"
   ],
   "capacity": 30,
-  "enrolled": 8,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -959,29 +959,6 @@
   "name": "Bireysel Bitirme Projesi",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Bahadır Uğurlu",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 3,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "GEM_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12063",
-  "code": "GEM 482",
-  "branch": "GEM",
-  "level": "LS",
-  "name": "Bireysel Bitirme Projesi",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cihad Çelik",
   "buildings": [],
   "days": [],
   "times": [
@@ -1081,7 +1058,7 @@
   ],
   "rooms": [],
   "capacity": 3,
-  "enrolled": 3,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "GEM_LS"
@@ -1434,7 +1411,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 19,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1461,7 +1438,7 @@
    "1D4"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1488,7 +1465,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1515,7 +1492,7 @@
    "1D4"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1542,7 +1519,7 @@
    "1D4"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1569,7 +1546,7 @@
    "2D12"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1596,7 +1573,7 @@
    "2D17"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1623,7 +1600,7 @@
    "ZD2"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1650,7 +1627,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1704,34 +1681,7 @@
    "1D4"
   ],
   "capacity": 30,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12611",
-  "code": "GEM 696E",
-  "branch": "GEM",
-  "level": "LU",
-  "name": "Scien.Rese., Ethic&Seminar",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Şakir Bal",
-  "buildings": [
-   "MEDC"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "2D14"
-  ],
-  "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1752,7 +1702,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1773,7 +1723,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1794,7 +1744,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1818,7 +1768,7 @@
    "09:30/13:29"
   ],
   "rooms": [
-   "--"
+   "3D19"
   ],
   "capacity": 50,
   "enrolled": 0,
@@ -1847,10 +1797,10 @@
    "10:30/12:29"
   ],
   "rooms": [
-   "--"
+   "ZD2"
   ],
   "capacity": 50,
-  "enrolled": 28,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [
    "NAE_LS"
@@ -1879,8 +1829,8 @@
    "10:30/13:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "3BİL1",
+   "3BİL1"
   ],
   "capacity": 40,
   "enrolled": 21,
@@ -1909,10 +1859,10 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "--"
+   "2D17"
   ],
   "capacity": 50,
-  "enrolled": 36,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "NAE_LS"
@@ -1938,7 +1888,7 @@
    "09:00/12:59"
   ],
   "rooms": [
-   "--"
+   "1D3"
   ],
   "capacity": 50,
   "enrolled": 43,
@@ -1967,7 +1917,7 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "3D19"
   ],
   "capacity": 50,
   "enrolled": 36,
@@ -1996,7 +1946,7 @@
    "10:30/12:29"
   ],
   "rooms": [
-   "--"
+   "ZA2"
   ],
   "capacity": 50,
   "enrolled": 29,
@@ -2028,11 +1978,11 @@
    "17:30/18:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "1303",
+   "1303"
   ],
   "capacity": 50,
-  "enrolled": 10,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "NAE_LS"
@@ -2229,8 +2179,8 @@
    "14:00/15:59"
   ],
   "rooms": [
-   "--",
-   "--"
+   "3BİL1",
+   "3D20"
   ],
   "capacity": 50,
   "enrolled": 30,
@@ -2262,8 +2212,8 @@
    "08:30/10:29"
   ],
   "rooms": [
-   "--",
-   "--"
+   "3D19",
+   "2D15"
   ],
   "capacity": 50,
   "enrolled": 11,
@@ -2292,10 +2242,10 @@
    "10:30/12:29"
   ],
   "rooms": [
-   "--"
+   "2D16"
   ],
   "capacity": 50,
-  "enrolled": 24,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "NAE_LS"
@@ -2311,13 +2261,23 @@
   "name": "Structural Design of Ships",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "İbrahim Tuğrul Ardıç",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "MEDC",
+   "MEDC"
   ],
-  "rooms": [],
-  "capacity": 0,
+  "days": [
+   "Pazartesi",
+   "Perşembe"
+  ],
+  "times": [
+   "12:30/14:29",
+   "09:30/10:29"
+  ],
+  "rooms": [
+   "2D17",
+   "2D13"
+  ],
+  "capacity": 50,
   "enrolled": 0,
   "reserved": "-",
   "programs": [
@@ -2347,13 +2307,42 @@
    "2D15"
   ],
   "capacity": 30,
-  "enrolled": 12,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "GEM_LS",
    "GEME_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15656",
+  "code": "GEM 407E",
+  "branch": "GEM",
+  "level": "LS",
+  "name": "Methods of Ship Production",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Murat Durmaz",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "ZA3"
+  ],
+  "capacity": 50,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

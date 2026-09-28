@@ -19,8 +19,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 20,
-  "enrolled": 0,
+  "capacity": 25,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -47,7 +47,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -73,8 +73,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 40,
-  "enrolled": 0,
+  "capacity": 42,
+  "enrolled": 42,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -100,8 +100,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 20,
-  "enrolled": 0,
+  "capacity": 21,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -128,7 +128,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 0,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -155,7 +155,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -167,16 +167,22 @@
   "branch": "LEE",
   "level": "LU",
   "name": "Yükseköğretimde Öğrenme Tasarımı ve Ölçme-Değerlendirme",
-  "method": "Fiziksel (Yüz yüze)",
+  "method": "Sanal (Çevrimiçi/Online)",
   "instructor": "-",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "Online/Çevrimiçi"
   ],
-  "rooms": [],
-  "capacity": 0,
-  "enrolled": 0,
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -202,7 +208,119 @@
   "rooms": [
    "--"
   ],
-  "capacity": 30,
+  "capacity": 40,
+  "enrolled": 40,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15651",
+  "code": "LEE 696E",
+  "branch": "LEE",
+  "level": "LU",
+  "name": "Scientific Research, Ethics, and Seminar",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Görkem Giray",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "İlgili",
+   "Bölümce",
+   "Açıklanacak"
+  ],
+  "capacity": 200,
+  "enrolled": 78,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15652",
+  "code": "LEE 696",
+  "branch": "LEE",
+  "level": "LU",
+  "name": "Bilimsel Araştırma, Etik ve Seminer",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Emel Önder Karaoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "14:30/16:29"
+  ],
+  "rooms": [
+   "İlgili",
+   "Bölümce",
+   "Açıklanacak"
+  ],
+  "capacity": 200,
+  "enrolled": 115,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15654",
+  "code": "LEE 905",
+  "branch": "LEE",
+  "level": "LU",
+  "name": "İnovas.Teknik.&Patent Süreç.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Tahir Soyugüzel",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "14:00/16:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 13,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15728",
+  "code": "LEE 903",
+  "branch": "LEE",
+  "level": "LU",
+  "name": "Proje Döngüsü Yönetimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:00/15:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

@@ -67,5 +67,64 @@
   ],
   "prereq": "Detay",
   "classReq": "-"
+ },
+ {
+  "crn": "15661",
+  "code": "IML 404E",
+  "branch": "IML",
+  "level": "LS",
+  "name": "Comp.Simulations in Manuf.Eng.",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Canan Gamze Güleryüz Parasız",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IML_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "15662",
+  "code": "IML 402",
+  "branch": "IML",
+  "level": "LS",
+  "name": "İmalat Lab II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Canan Gamze Güleryüz Parasız",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "IML_LS",
+   "IMLE_LS"
+  ],
+  "prereq": "-",
+  "classReq": "Detay"
  }
 ]

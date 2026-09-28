@@ -20,7 +20,7 @@
    "D205"
   ],
   "capacity": 45,
-  "enrolled": 10,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "GID_LS"
@@ -139,8 +139,8 @@
    "D203"
   ],
   "capacity": 45,
-  "enrolled": 36,
-  "reserved": "GID_LS/15/15 | Diğer/30/21",
+  "enrolled": 34,
+  "reserved": "GID_LS/15/15 | Diğer/30/19",
   "programs": [
    "CEV_LS",
    "CEVE_LS",
@@ -177,8 +177,8 @@
    "D106"
   ],
   "capacity": 50,
-  "enrolled": 10,
-  "reserved": "GID_LS/40/10 | Diğer/10/0",
+  "enrolled": 9,
+  "reserved": "GID_LS/40/9 | Diğer/10/0",
   "programs": [
    "CEV_LS",
    "CEVE_LS",
@@ -362,7 +362,7 @@
    "177"
   ],
   "capacity": 90,
-  "enrolled": 85,
+  "enrolled": 84,
   "reserved": "-",
   "programs": [
    "CEV_LS",
@@ -723,7 +723,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "D306"
+   "--"
   ],
   "capacity": 40,
   "enrolled": 27,
@@ -788,7 +788,7 @@
    "D101"
   ],
   "capacity": 45,
-  "enrolled": 32,
+  "enrolled": 31,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -850,7 +850,7 @@
    "D106"
   ],
   "capacity": 40,
-  "enrolled": 29,
+  "enrolled": 28,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -877,7 +877,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "D304"
+   "--"
   ],
   "capacity": 40,
   "enrolled": 27,
@@ -965,6 +965,90 @@
    "BIO_LS",
    "BIOE_LS"
   ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15642",
+  "code": "BIO 328E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Biochemistry II",
+  "method": "Ek Sınav",
+  "instructor": "Nevin Gül Karagüler",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15643",
+  "code": "BIO 415EL",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Molecular Biology Lab.",
+  "method": "Ek Sınav",
+  "instructor": "Aslı Kumbasar",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15647",
+  "code": "BIO 451E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Industrial Microbiology",
+  "method": "Ek Sınav",
+  "instructor": "Çiğdem Yılmaz Çolak",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15648",
+  "code": "BIO 417E",
+  "branch": "BIO",
+  "level": "LS",
+  "name": "Molecular Biology",
+  "method": "Ek Sınav",
+  "instructor": "Aslı Kumbasar , Arzu Karabay Korkmaz",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
   "prereq": "Detay",
   "classReq": "-"
  }

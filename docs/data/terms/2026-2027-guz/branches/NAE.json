@@ -138,7 +138,7 @@
    "15:30/17:29"
   ],
   "rooms": [
-   "--"
+   "2D16"
   ],
   "capacity": 50,
   "enrolled": 33,
@@ -167,7 +167,7 @@
    "10:30/13:29"
   ],
   "rooms": [
-   "--"
+   "2D13"
   ],
   "capacity": 50,
   "enrolled": 33,
@@ -176,6 +176,29 @@
    "NAE_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15815",
+  "code": "NAE 341",
+  "branch": "NAE",
+  "level": "LS",
+  "name": "Structural Design of Ships",
+  "method": "Ek Sınav",
+  "instructor": "İbrahim Tuğrul Ardıç",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NAE_LS"
+  ],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

@@ -20,34 +20,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13496",
-  "code": "BBL 696E",
-  "branch": "BBL",
-  "level": "LU",
-  "name": "Scien.Rese., Ethic&Seminar",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Abdulkerim Çapar",
-  "buildings": [
-   "BEB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 22,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -73,8 +46,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 25,
-  "enrolled": 0,
+  "capacity": 28,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -101,7 +74,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 0,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -116,7 +89,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Deniz Türkpençe",
   "buildings": [
-   "BEB"
+   "BBB"
   ],
   "days": [
    "Perşembe"
@@ -128,7 +101,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -155,7 +128,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -182,7 +155,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -203,7 +176,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -224,7 +197,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -245,7 +218,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -272,6 +245,33 @@
    "--"
   ],
   "capacity": 40,
+  "enrolled": 11,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15801",
+  "code": "BBL 540E",
+  "branch": "BBL",
+  "level": "LU",
+  "name": "Quantum Data Structures and Algorithms",
+  "method": "Sanal (Çevrimiçi/Online)",
+  "instructor": "Deniz Türkpençe",
+  "buildings": [
+   "Online/Çevrimiçi"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "17:00/19:59"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

@@ -24,7 +24,7 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 80,
+  "enrolled": 79,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -45,7 +45,7 @@
   "instructor": "Muhammet Alkan",
   "buildings": [
    "BBB",
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Perşembe",
@@ -57,10 +57,10 @@
   ],
   "rooms": [
    "Z-17",
-   "--"
+   "Z-17"
   ],
   "capacity": 80,
-  "enrolled": 80,
+  "enrolled": 79,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -96,7 +96,7 @@
    "Z-18"
   ],
   "capacity": 80,
-  "enrolled": 31,
+  "enrolled": 28,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -128,7 +128,7 @@
    "Z-17"
   ],
   "capacity": 70,
-  "enrolled": 70,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -196,7 +196,7 @@
    "Z-19"
   ],
   "capacity": 70,
-  "enrolled": 70,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -217,7 +217,7 @@
   "instructor": "Behçet Uğur Töreyin",
   "buildings": [
    "BBB",
-   "undeclared"
+   "BBB"
   ],
   "days": [
    "Çarşamba",
@@ -229,7 +229,7 @@
   ],
   "rooms": [
    "Z-17",
-   "--"
+   "Z-17"
   ],
   "capacity": 70,
   "enrolled": 70,
@@ -297,7 +297,7 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 80,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -330,7 +330,7 @@
    "Z-20"
   ],
   "capacity": 75,
-  "enrolled": 70,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -429,12 +429,79 @@
    "Z-19"
   ],
   "capacity": 90,
-  "enrolled": 78,
-  "reserved": "ECNE_LS/10/2 | YZVE_LS/20/16 | Diğer/60/60",
+  "enrolled": 75,
+  "reserved": "ECNE_LS/10/2 | YZVE_LS/20/16 | Diğer/60/57",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
    "ECNE_LS",
+   "SECE_LS",
+   "YZVE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15730",
+  "code": "BBF 303E",
+  "branch": "BBF",
+  "level": "LS",
+  "name": "Analysis of Algorithms II",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Ali Ertürk",
+  "buildings": [
+   "BBB"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "101"
+  ],
+  "capacity": 100,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "CES_LS",
+   "SECE_LS",
+   "YZVE_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15742",
+  "code": "BBF 302E",
+  "branch": "BBF",
+  "level": "LS",
+  "name": "Database Systems",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Abdullah Cihan Ak",
+  "buildings": [
+   "BBB"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "Z-18"
+  ],
+  "capacity": 80,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "CES_LS",
+   "SECE_LS",
    "YZVE_LS"
   ],
   "prereq": "Detay",

@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -47,7 +47,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -74,7 +74,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -101,7 +101,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -128,7 +128,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -155,7 +155,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -182,7 +182,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -209,7 +209,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -236,7 +236,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -263,7 +263,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -290,7 +290,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -317,7 +317,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -371,7 +371,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -398,34 +398,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14176",
-  "code": "DUM 696E",
-  "branch": "DUM",
-  "level": "LU",
-  "name": "Scien.Rese., Ethic&Seminar",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Burak Zincir",
-  "buildings": [
-   "undeclared"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 10,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -446,7 +419,7 @@
   ],
   "rooms": [],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -467,7 +440,7 @@
   ],
   "rooms": [],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -488,7 +461,7 @@
   ],
   "rooms": [],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -515,7 +488,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -542,7 +515,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -569,7 +542,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -596,7 +569,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -623,6 +596,33 @@
    "--"
   ],
   "capacity": 10,
+  "enrolled": 8,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15782",
+  "code": "DUM 535E",
+  "branch": "DUM",
+  "level": "LU",
+  "name": "Maritime Policy",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Muhsin Kadıoğlu",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],

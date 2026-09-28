@@ -1,0 +1,118 @@
+[
+ {
+  "crn": "15657",
+  "code": "NUM 201E",
+  "branch": "NUM",
+  "level": "LS",
+  "name": "Fundamentals of Nuclear Engineering I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Üner Çolak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NUM_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15658",
+  "code": "NUM 411E",
+  "branch": "NUM",
+  "level": "LS",
+  "name": "Nuclear Reactor Theory",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Üner Çolak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NUM_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15659",
+  "code": "NUM 241E",
+  "branch": "NUM",
+  "level": "LS",
+  "name": "Nuclear Fuel and Materials",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Üner Çolak",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NUM_YD"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15660",
+  "code": "NUM 341E",
+  "branch": "NUM",
+  "level": "LS",
+  "name": "Nuclear Fuel Cycle",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sema Erentürk",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "17:30/20:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 30,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "NUM_YD"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ }
+]

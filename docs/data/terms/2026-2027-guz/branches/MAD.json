@@ -166,7 +166,7 @@
    "B207"
   ],
   "capacity": 45,
-  "enrolled": 3,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -256,7 +256,7 @@
    "B208"
   ],
   "capacity": 80,
-  "enrolled": 58,
+  "enrolled": 57,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -468,7 +468,7 @@
    "A204"
   ],
   "capacity": 70,
-  "enrolled": 58,
+  "enrolled": 57,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -605,7 +605,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 14,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "MAD_LS"
@@ -711,7 +711,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -765,7 +765,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -819,7 +819,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -846,7 +846,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -927,7 +927,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1035,7 +1035,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1089,7 +1089,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1123,33 +1123,6 @@
   "classReq": "-"
  },
  {
-  "crn": "13352",
-  "code": "MAD 696",
-  "branch": "MAD",
-  "level": "LU",
-  "name": "Bilimsel Araş.,Etik ve Seminer",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Türker Hüdaverdi",
-  "buildings": [
-   "MDB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 30,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "13353",
   "code": "MAD DRT",
   "branch": "MAD",
@@ -1164,7 +1137,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1206,7 +1179,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1240,6 +1213,29 @@
    "MADE_LS"
   ],
   "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15735",
+  "code": "MAD 302E",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Mining and Environment",
+  "method": "Sınırsız Sınav",
+  "instructor": "Türker Hüdaverdi",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "MAD_LS"
+  ],
+  "prereq": "-",
   "classReq": "-"
  }
 ]

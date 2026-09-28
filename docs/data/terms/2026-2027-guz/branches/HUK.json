@@ -20,7 +20,7 @@
    "A11"
   ],
   "capacity": 100,
-  "enrolled": 61,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -97,7 +97,7 @@
    "A12"
   ],
   "capacity": 100,
-  "enrolled": 44,
+  "enrolled": 43,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -251,7 +251,7 @@
    "A35"
   ],
   "capacity": 100,
-  "enrolled": 70,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -328,7 +328,7 @@
    "A36"
   ],
   "capacity": 100,
-  "enrolled": 29,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -461,7 +461,7 @@
    "A35"
   ],
   "capacity": 100,
-  "enrolled": 67,
+  "enrolled": 65,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -595,7 +595,7 @@
    "A36"
   ],
   "capacity": 100,
-  "enrolled": 69,
+  "enrolled": 66,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -717,7 +717,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Arzu Hacıoğlu Çalışkan , Ulaş Baysal",
   "buildings": [
-   "MED"
+   "MDB"
   ],
   "days": [
    "Çarşamba"
@@ -726,7 +726,7 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "--"
+   "A103"
   ],
   "capacity": 100,
   "enrolled": 34,
@@ -863,7 +863,7 @@
    "B33"
   ],
   "capacity": 100,
-  "enrolled": 27,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -972,7 +972,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Muhammed Türkalp Seçkin",
   "buildings": [
-   "MED"
+   "FEB"
   ],
   "days": [
    "Pazartesi"
@@ -981,10 +981,10 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "D104"
   ],
   "capacity": 100,
-  "enrolled": 92,
+  "enrolled": 87,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1115,7 +1115,7 @@
    "B35"
   ],
   "capacity": 100,
-  "enrolled": 24,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1246,7 +1246,7 @@
    "A36"
   ],
   "capacity": 100,
-  "enrolled": 16,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1381,6 +1381,36 @@
   "reserved": "-",
   "programs": [
    "SED_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15822",
+  "code": "HUK 203E",
+  "branch": "HUK",
+  "level": "LS",
+  "name": "IT Law",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Çiçek Ersoy Kekevi",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS"
   ],
   "prereq": "-",
   "classReq": "-"

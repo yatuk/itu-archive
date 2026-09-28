@@ -1544,6 +1544,124 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=555"
  },
+ "UUM 555E": {
+  "code": "UUM 555E",
+  "name": "Eklemeli İmalat&3B Yazıcı Tek.",
+  "nameEn": "Additi.Manuf.&3D Printer Tec.",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Eklemeli imalat (Eİ) teknolojileri tanım ve tarihsel gelişim süreçleri, Eİ yöntemleri ve kullanılan malzeme türleri, Eİ için ürün tasarım ve üretim kuralları, Eİ'nin havacılık, otomotiv, tıbbi cihazlar, enerji, elektronik ve tüketici ürünleri dahil olmak üzere endüstrilerdeki uygulamaları, Eİ için uluslararası standartlar ve kapsamları, Eİ temelli güncel akademik çalışmalar. Definition and historical development of additive manufacturing (AM) technologies, AM methods and types of materials used, product design and fabrication rules for AM, applications of AM in industries including aerospace, automotive, medical devices, energy, electronics and consumer products, International standards and scopes for AM, state-of-art academic studies based on AM.",
+  "outcomes": [
+   "I. Eklemeli imalat (Eİ) ve 3B yazıcı teknolojileri tanım ve tarihsel gelişimi hakkında genel bilgi sahibi olmak",
+   "II. Eİ yöntemleri ve kullanılan 3B yazıcı türleri hakkında genel bilgi sahibi olmak",
+   "III. Eİ için kullanılan malzeme türleri hakkında genel bilgi sahibi olmak",
+   "IV. Eİ için ürün tasarımı ve üretimi için gerekli kuralları ve yöntemleri öğrenme",
+   "V. Eklemeli imalatın kullanıldığı sektörler ve güncel istatistiksel hakkında genel bilgi sahibi olmak",
+   "VI. Eİ için düzenlenmiş uluslararası standartlar hakkında genel bilgi sahibi olmak",
+   "VII. Eİ üzerine yapılan güncel bilimsel çalışmalar hakkında genel bilgi sahibi olmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Eklemeli imalat ve Hızlı prototipleme tanımları ve tarihsel gelişimleri",
+   "Hafta 2 · Eklemeli imalatın, diğer imalat türlerine göre karşılaştırılmaları, avantaj ve dezavantajları",
+   "Hafta 3 · Eklemeli imalatta kullanılan malzeme türleri",
+   "Hafta 4 · Eklemeli imalatın kullanıldığı sektörler ve güncel istatistiksel veriler",
+   "Hafta 5 · Termoplastik temelli eklemeli imalat yöntemleri",
+   "Hafta 6 · Termoplastik temelli eklemeli imalatın kullanım alanları",
+   "Hafta 7 · Metal temelli eklemeli imalat yöntemleri",
+   "Hafta 8 · Metal temelli eklemeli imalatın kullanım alanları",
+   "Hafta 9 · Nanokompozit ve biomateryal gibi, gelişmekte olan materyalleri temel alan eklemeli imalat yöntemleri",
+   "Hafta 10 · Eklemeli imalat için ürün tasarımı",
+   "Hafta 11 · Eklemeli imalat için üretim metodolojisi",
+   "Hafta 12 · ASTM ve ISO tarafından Eklemeli imalat için hazırlanan ve hazırlanmakta olan standartlar",
+   "Hafta 13 · Eklemeli imalat hakkında güncel bilimsel çalışmalar",
+   "Hafta 14 · Eklemeli imalat hakkında güncel yapay zekâ çalışmaları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Eklemeli imalat ve Hızlı prototipleme tanımları ve tarihsel gelişimleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Eklemeli imalatın, diğer imalat türlerine göre karşılaştırılmaları, avantaj ve dezavantajları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Eklemeli imalatta kullanılan malzeme türleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Eklemeli imalatın kullanıldığı sektörler ve güncel istatistiksel veriler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Termoplastik temelli eklemeli imalat yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Termoplastik temelli eklemeli imalatın kullanım alanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Metal temelli eklemeli imalat yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Metal temelli eklemeli imalatın kullanım alanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Nanokompozit ve biomateryal gibi, gelişmekte olan materyalleri temel alan eklemeli imalat yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Eklemeli imalat için ürün tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Eklemeli imalat için üretim metodolojisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "ASTM ve ISO tarafından Eklemeli imalat için hazırlanan ve hazırlanmakta olan standartlar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Eklemeli imalat hakkında güncel bilimsel çalışmalar",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Eklemeli imalat hakkında güncel yapay zekâ çalışmaları"
+   }
+  ],
+  "textbooks": [
+   "1. Additive Manufacturing Technologies: 3D Printing, Rapid prototyping, and Direct Digital Manufacturing. I. Gibson, D. W. Rosen, B. Stucker, Springer, 2016.",
+   "2. Additive Manufacturing Handbook. Adedeji B. Badiru, Vhance V. Valencia, David Liu, CRC Press, 2017.",
+   "3. Rapid Prototyping: Theory and Practice. Ali K. Kamrani, Emad Abouel Nasr, Springer Science & Business Media, 2006.",
+   "4. Rapid Prototyping Technology: Selection and Application, Kenneth G. Cooper, CRC Press, 2001.",
+   "5. Rapid Prototyping: Principles and Applications, Chee Kai Chua, Kah Fai Leong, Chu Sing Lim, World Scientific, 2003."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=UUM&dersNo=555"
+ },
  "UUM 556E": {
   "code": "UUM 556E",
   "name": "Advanced Thermodynamics",

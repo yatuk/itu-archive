@@ -30,10 +30,106 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "- -",
-  "outcomes": null,
+  "description": "Polimerlerin viskoelastik davranışları, lineer ve lineer olmayan viskoelastik malzeme modelleri, relakzasyon ve sürünme gibi viskoelastik davranışlar ve testler, uygun malzeme modellerinin seçimi, model parametrelerinin belirlenmesi, malzeme modellerinin sonlu elemanlar yöntemi tabanlı analiz ve mühendislik tasarımlarındaki kullanımı. The viscoelastic behavior of polymers, linear and nonlinear viscoelastic material models, viscoelastic behaviors and tests such as relaxation and creep, selection of appropriate material models, determination of model parameters, and the use of material models in finite element method (FEM)-based analysis and engineering design.",
+  "outcomes": [
+   "Malzeme modellerinin tasarımdaki önemini anlamak",
+   "Viskoelastik malzemelerin temel mekanik davranışlarını açıklayabilme",
+   "Lineer ve lineer olmayan viskoelastik modelleri anlayıp uygulayabilme",
+   "Yapısal analizlerde uygun malzeme modelinin seçimini yapabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Notasyon, direk ve indirek notasyon",
+   "Hafta 2 · Malzeme modellerinin tasarımdaki yeri",
+   "Hafta 3 · Polimerler, malzeme davranışları, mekanik özellikleri",
+   "Hafta 4 · Viskoelastisite nedir? Elastik, viskoz ve viskoelastik davranış farkları",
+   "Hafta 5 · Lineer Viskoelastik Modeller (Maxwell modeli, Kelvin-Voigt modeli, SLS modeli)",
+   "Hafta 6 · Genelleştirilmiş Maxwell ve Kelvin Modelleri",
+   "Hafta 7 · Lineer olmayan viskoelastisite teorileri",
+   "Hafta 8 · Polimerler için ‘Overstress’ kavramına dayanan viskoelastisite teorisi",
+   "Hafta 9 · Arruda-Boyce modeli",
+   "Hafta 10 · Genel Viskoelastik Yaklaşım: Relakzasyon ve sürünme davranışları ve tasarımdaki önemi",
+   "Hafta 11 · Deneysel teknikler, relakzasyon ve sürünme testleri, dinamik mekanik analiz",
+   "Hafta 12 · Viskoelastik malzeme modelleri için parametre belirleme",
+   "Hafta 13 · Sonlu elemanlar yöntemi ile viskoelastik modelleme",
+   "Hafta 14 · Makine öğrenmesi ile viskoelastik malzeme modelleme"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Notasyon, direk ve indirek notasyon",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Malzeme modellerinin tasarımdaki yeri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Polimerler, malzeme davranışları, mekanik özellikleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Viskoelastisite nedir? Elastik, viskoz ve viskoelastik davranış farkları",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Lineer Viskoelastik Modeller (Maxwell modeli, Kelvin-Voigt modeli, SLS modeli)",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Genelleştirilmiş Maxwell ve Kelvin Modelleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Lineer olmayan viskoelastisite teorileri",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Polimerler için ‘Overstress’ kavramına dayanan viskoelastisite teorisi",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Arruda-Boyce modeli",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Genel Viskoelastik Yaklaşım: Relakzasyon ve sürünme davranışları ve tasarımdaki önemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 11,
+    "topic": "Deneysel teknikler, relakzasyon ve sürünme testleri, dinamik mekanik analiz",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 12,
+    "topic": "Viskoelastik malzeme modelleri için parametre belirleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Sonlu elemanlar yöntemi ile viskoelastik modelleme",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Makine öğrenmesi ile viskoelastik malzeme modelleme",
+    "outcomes": "3"
+   }
+  ],
   "textbooks": [
-   "-"
+   "Theory of Viscoelasticity, R.M. Chirstensen, Second Edition, Courier Corporation, 2013",
+   "Elastic and Inelastic Stress Analysis, I. H. Shames and F. A. Cozzarelli, CRC Press, 1997",
+   "Introduction to Continuum Mechanics, W. Lai, D. Rubin ve E. Krempl, 4. Edition, Butterworth-Heinemann, 2009",
+   "Polymer Engineering Science and Viscoelasticity, H. F. Brinson, L. C. Brinson, Springer US, 2010"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKS&dersNo=530"
  },

@@ -1,4 +1,242 @@
 {
+ "LEE 696": {
+  "code": "LEE 696",
+  "name": "Bilimsel Araştırma, Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethics, and Seminar",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilimin tanımı ve gelişimi; bilimsel bilginin niteliği ve toplumsal işlevi; araştırma tasarımı; bilimsel araştırma yöntemleri; akademik dürüstlüğün anlamı ve akademik dürüstlüğü ihlâl eden davranışlardan kaçınma; araştırma ve yayın faaliyetlerinde izlenmesi gereken etik ilkeler; literatür taraması; veri toplanması; tez, proje ve makale yazım teknikleri; yayın süreçlerinin etkili biçimde yürütülmesinde dikkat edilecek hususlar başarılı sunum teknikleri; akademik etkinliklerde etkili iletişim teknikleri. The definition and development of science; the nature and social function of scientific knowledge; research design; scientific research methods; the meaning of academic integrity and avoiding behaviors that violate academic integrity; ethical principles to follow in research and publication activities; literature review; data collection; techniques for writing theses, projects, and articles; points to consider in effectively managing publication processes; techniques for successful presentations; effective communication techniques in academic events.",
+  "outcomes": [
+   "Bilimin, bilimsel bilginin, bilimin tarihsel gelişiminin ve toplumsal işlevinin ne olduğunu kavramış olma,",
+   "Bilimsel araştırma yöntemlerini anlama ve kendi çalışmalarında uygulayabilme,",
+   "Bilimsel araştırma ve yayın faaliyetlerinde takip edilmesi gereken etik ilkeleri kavramış ve içselleştirmiş olma,",
+   "Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş, literatür taraması ve analizi yapabiliyor olma,",
+   "Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma,",
+   "Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma,",
+   "Akademik sunum ve etkinliklerde iletişimin önemini kavrama, etkili iletişim tekniklerini uygulayabiliyor olma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Akademik Dürüstlüğün Temel Kavramları ve İhlallerden Kaçınma",
+   "Hafta 2 · Bilimsel Araştırma ve Yayın Faaliyetlerinde Yapay Zekâ Araçlarının Kullanımı",
+   "Hafta 3 · Normatif Etik ve Uygulamalı Etik",
+   "Hafta 4 · Bilim ve Teknik Uygulamalarında Etik",
+   "Hafta 5 · Meslek Etiği",
+   "Hafta 6 · Araştırma Tasarımı ve Metodolojiye Giriş: Tanım, Planlama, Temeller, Temel Bileşenler",
+   "Hafta 7 · Nicel, Nitel, Karma Metodolojik Yaklaşımların Karşılaştırılması ve Araştırma Makalelerinin İncelenmesi",
+   "Hafta 8 · Nitel Araştırma Tasarımları, Veri Toplama ve Analiz Stratejileri",
+   "Hafta 9 · Nicel Araştırma Tasarımları, Örnekleme Teknikleri ve Uygulama Stratejileri",
+   "Hafta 10 · Akademik Araştırma Süreci, Açık Bilim Uygulamaları ve Veri Tabanlarında Gelişmiş Tarama Yöntemleri",
+   "Hafta 11 · Yazarlık Atölyesi: Etkili ve Etkileyici Makale Gönderimi",
+   "Hafta 12 · Araştırma Fikrinden Yayına: Bilimsel Proje ve Makale İlişkisi",
+   "Hafta 13 · Sunum Becerileri: Etkili Sunum Hazırlama Yöntemleri",
+   "Hafta 14 · Akademik Sosyal Beceriler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Akademik Dürüstlüğün Temel Kavramları ve İhlallerden Kaçınma",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Bilimsel Araştırma ve Yayın Faaliyetlerinde Yapay Zekâ Araçlarının Kullanımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Normatif Etik ve Uygulamalı Etik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bilim ve Teknik Uygulamalarında Etik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Meslek Etiği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma Tasarımı ve Metodolojiye Giriş: Tanım, Planlama, Temeller, Temel Bileşenler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Nicel, Nitel, Karma Metodolojik Yaklaşımların Karşılaştırılması ve Araştırma Makalelerinin İncelenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Nitel Araştırma Tasarımları, Veri Toplama ve Analiz Stratejileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Nicel Araştırma Tasarımları, Örnekleme Teknikleri ve Uygulama Stratejileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Akademik Araştırma Süreci, Açık Bilim Uygulamaları ve Veri Tabanlarında Gelişmiş Tarama Yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yazarlık Atölyesi: Etkili ve Etkileyici Makale Gönderimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Araştırma Fikrinden Yayına: Bilimsel Proje ve Makale İlişkisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Sunum Becerileri: Etkili Sunum Hazırlama Yöntemleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Akademik Sosyal Beceriler",
+    "outcomes": "7"
+   }
+  ],
+  "textbooks": [
+   "Claxton, B.L., & Mott, R.K. (2023). A Step-by-Step Introduction to Research Methods: Qualitative, Quantitative, Mixed-Methods, Applied. Kendall Hunt Publishing.",
+   "Claxton, B., Claxton, B. L., & Michael, K. Y. (2023). A Step-by-Step Guide to Conducting Applied Research (3rd ed.). Kendall Hunt Publishing.",
+   "MacKinnon, B., & Fiala, A. G. (2018). Ethics: Theory and Contemporary Issues (9th ed.). Cengage Learning.",
+   "Shafer-Landau, R. (2024). Living Ethics(3rd ed.). Oxford University Press.",
+   "Taebi, B. (2021). Ethics and Engineering: An Introduction. Cambridge University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=696"
+ },
+ "LEE 696E": {
+  "code": "LEE 696E",
+  "name": "Bilimsel Araştırma, Etik ve Seminer",
+  "nameEn": "Scientific Research, Ethics, and Seminar",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilimin tanımı ve gelişimi; bilimsel bilginin niteliği ve toplumsal işlevi; araştırma tasarımı; bilimsel araştırma yöntemleri; akademik dürüstlüğün anlamı ve akademik dürüstlüğü ihlâl eden davranışlardan kaçınma; araştırma ve yayın faaliyetlerinde izlenmesi gereken etik ilkeler; literatür taraması; veri toplanması; tez, proje ve makale yazım teknikleri; yayın süreçlerinin etkili biçimde yürütülmesinde dikkat edilecek hususlar başarılı sunum teknikleri; akademik etkinliklerde etkili iletişim teknikleri. The definition and development of science; the nature and social function of scientific knowledge; research design; scientific research methods; the meaning of academic integrity and avoiding behaviors that violate academic integrity; ethical principles to follow in research and publication activities; literature review; data collection; techniques for writing theses, projects, and articles; points to consider in effectively managing publication processes; techniques for successful presentations; effective communication techniques in academic events.",
+  "outcomes": [
+   "Bilimin, bilimsel bilginin, bilimin tarihsel gelişiminin ve toplumsal işlevinin ne olduğunu kavramış olma,",
+   "Bilimsel araştırma yöntemlerini anlama ve kendi çalışmalarında uygulayabilme,",
+   "Bilimsel araştırma ve yayın faaliyetlerinde takip edilmesi gereken etik ilkeleri kavramış ve içselleştirmiş olma,",
+   "Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş, literatür taraması ve analizi yapabiliyor olma,",
+   "Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma,",
+   "Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma,",
+   "Akademik sunum ve etkinliklerde iletişimin önemini kavrama, etkili iletişim tekniklerini uygulayabiliyor olma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Akademik Dürüstlüğün Temel Kavramları ve İhlallerden Kaçınma",
+   "Hafta 2 · Bilimsel Araştırma ve Yayın Faaliyetlerinde Yapay Zekâ Araçlarının Kullanımı",
+   "Hafta 3 · Normatif Etik ve Uygulamalı Etik",
+   "Hafta 4 · Bilim ve Teknik Uygulamalarında Etik",
+   "Hafta 5 · Meslek Etiği",
+   "Hafta 6 · Araştırma Tasarımı ve Metodolojiye Giriş: Tanım, Planlama, Temeller, Temel Bileşenler",
+   "Hafta 7 · Nicel, Nitel, Karma Metodolojik Yaklaşımların Karşılaştırılması ve Araştırma Makalelerinin İncelenmesi",
+   "Hafta 8 · Nitel Araştırma Tasarımları, Veri Toplama ve Analiz Stratejileri",
+   "Hafta 9 · Nicel Araştırma Tasarımları, Örnekleme Teknikleri ve Uygulama Stratejileri",
+   "Hafta 10 · Akademik Araştırma Süreci, Açık Bilim Uygulamaları ve Veri Tabanlarında Gelişmiş Tarama Yöntemleri",
+   "Hafta 11 · Yazarlık Atölyesi: Etkili ve Etkileyici Makale Gönderimi",
+   "Hafta 12 · Araştırma Fikrinden Yayına: Bilimsel Proje ve Makale İlişkisi",
+   "Hafta 13 · Sunum Becerileri: Etkili Sunum Hazırlama Yöntemleri",
+   "Hafta 14 · Akademik Sosyal Beceriler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Akademik Dürüstlüğün Temel Kavramları ve İhlallerden Kaçınma",
+    "outcomes": "3"
+   },
+   {
+    "week": 2,
+    "topic": "Bilimsel Araştırma ve Yayın Faaliyetlerinde Yapay Zekâ Araçlarının Kullanımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Normatif Etik ve Uygulamalı Etik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 4,
+    "topic": "Bilim ve Teknik Uygulamalarında Etik",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 5,
+    "topic": "Meslek Etiği",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Araştırma Tasarımı ve Metodolojiye Giriş: Tanım, Planlama, Temeller, Temel Bileşenler",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Nicel, Nitel, Karma Metodolojik Yaklaşımların Karşılaştırılması ve Araştırma Makalelerinin İncelenmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Nitel Araştırma Tasarımları, Veri Toplama ve Analiz Stratejileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Nicel Araştırma Tasarımları, Örnekleme Teknikleri ve Uygulama Stratejileri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Akademik Araştırma Süreci, Açık Bilim Uygulamaları ve Veri Tabanlarında Gelişmiş Tarama Yöntemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Yazarlık Atölyesi: Etkili ve Etkileyici Makale Gönderimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Araştırma Fikrinden Yayına: Bilimsel Proje ve Makale İlişkisi",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Sunum Becerileri: Etkili Sunum Hazırlama Yöntemleri",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Akademik Sosyal Beceriler",
+    "outcomes": "7"
+   }
+  ],
+  "textbooks": [
+   "Claxton, B.L., & Mott, R.K. (2023). A Step-by-Step Introduction to Research Methods: Qualitative, Quantitative, Mixed-Methods, Applied. Kendall Hunt Publishing.",
+   "Claxton, B., Claxton, B. L., & Michael, K. Y. (2023). A Step-by-Step Guide to Conducting Applied Research (3rd ed.). Kendall Hunt Publishing.",
+   "MacKinnon, B., & Fiala, A. G. (2018). Ethics: Theory and Contemporary Issues (9th ed.). Cengage Learning.",
+   "Shafer-Landau, R. (2024). Living Ethics(3rd ed.). Oxford University Press.",
+   "Taebi, B. (2021). Ethics and Engineering: An Introduction. Cambridge University Press."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=696"
+ },
  "LEE 901E": {
   "code": "LEE 901E",
   "name": "Akademik Girişimcilik",
@@ -116,6 +354,130 @@
    "• Dahl, C. (2019). Intellectual property: Ownership and protection in a university setting. Academic Entrepreneurship for Medical and Health Scientists, 1(3), 1-13."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=901"
+ },
+ "LEE 903": {
+  "code": "LEE 903",
+  "name": "Proje Döngüsü Yönetimi",
+  "nameEn": "Project Cycle Management",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Proje nedir? Proje döngüsü yönetimi, sorun ve hedef analizi, strateji analizi, paydaş analizi, faaliyet ve zaman planlaması, mantıksal çerçeve matrisi, projenin amacı, riskleri, varsayımlar ve projeden beklentiler, projenin başarı göstergeleri ve doğrulama kaynakları, kaynak planlaması, projenin sürdürülebilirliği, mantıksal çerçeve matrisi uygulaması. What is project? Project cycle management, problem and goal analysis, strategy analysis, stakeholder analysis, activity and time planning, logical framework matrix, the aim, risks, assumptions of the project and expectations from the project, success indicators and sources of verification of the project, resource planning, sustainability of the project, logical framework matrix application.",
+  "outcomes": [
+   "Proje yönetimi ilkelerini bilmek",
+   "Proje yönetimi ilkelerini bilmek",
+   "Proje hazırlamada bütçe ve zaman yönetiminin önemini bilmek",
+   "Proje hazırlamada bütçe ve zaman yönetiminin önemini bilmek",
+   "Projenin başarıya ulaşması için anahtar görevlerin, yol haritasının, zamanlamanın nasıl hazırlanacağını bilmek",
+   "Projenin başarıya ulaşması için anahtar görevlerin, yol haritasının, zamanlamanın nasıl hazırlanacağını bilmek",
+   "Projeyi başlatmak, planlamak, yürütmek ve değerlendirmek için gerekli olan araç ve teknikleri bilmek, kullanmak ve bunu iş hayatına taşımak.",
+   "Projeyi başlatmak, planlamak, yürütmek ve değerlendirmek için gerekli olan araç ve teknikleri bilmek, kullanmak ve bunu iş hayatına taşımak."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Proje Döngüsü Yönetimi (PDY) Temel Kavramlar",
+   "Hafta 2 · Proje Döngüsü Yönetimi Aşamaları",
+   "Hafta 3 · Problem Analizi",
+   "Hafta 4 · Hedef Analizi",
+   "Hafta 5 · Paydaş Analizi",
+   "Hafta 6 · Strateji Analizi",
+   "Hafta 7 · Mantıksal Çerçeve Yaklaşımı",
+   "Hafta 8 · Faaliyet Planlaması",
+   "Hafta 9 · Zaman Planlaması",
+   "Hafta 10 · Mantıksal Çerçevenin Tamamlanması",
+   "Hafta 11 · Yaygınlaştırma, Görünürlülük ve Sürdürülebilirlik",
+   "Hafta 12 · İzleme, Değerlendirme ve Raporlama",
+   "Hafta 13 · Kaynak Planlaması",
+   "Hafta 14 · Proje Bütçesi Hazırlama"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Proje Döngüsü Yönetimi (PDY) Temel Kavramlar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Proje Döngüsü Yönetimi Aşamaları",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Problem Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Hedef Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Paydaş Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Strateji Analizi",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Mantıksal Çerçeve Yaklaşımı",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Faaliyet Planlaması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Zaman Planlaması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Mantıksal Çerçevenin Tamamlanması",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Yaygınlaştırma, Görünürlülük ve Sürdürülebilirlik",
+    "outcomes": "2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "İzleme, Değerlendirme ve Raporlama",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Kaynak Planlaması",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Proje Bütçesi Hazırlama"
+   }
+  ],
+  "textbooks": [
+   "European Commission, (2004), Project Cycle Management Guidelines, Vol. 1, EuropeAid Cooperation Office, Brussels.",
+   "European Commission, (2004), Project Cycle Management Guidelines, Vol. 1, EuropeAid Cooperation Office, Brussels.",
+   "Jack R. Meredith, Samuel J. Mantel Jr, Project Management: A Managerial Approach, 8th Edition,John Wiley & Sons Jeffrey.",
+   "Jack R. Meredith, Samuel J. Mantel Jr, Project Management: A Managerial Approach, 8th Edition,John Wiley & Sons Jeffrey.",
+   "K. Pinto, Project management: Achieving Competitive Advantage. Pearson.",
+   "K. Pinto, Project management: Achieving Competitive Advantage. Pearson.",
+   "Larson, E.W., Gray C.F. Project Management: The Managerial Process. McGraw-Hill, 6th Edition, 2014.",
+   "Larson, E.W., Gray C.F. Project Management: The Managerial Process. McGraw-Hill, 6th Edition, 2014.",
+   "Shtub, A., Bard, J., Globerson, S. Project Management: Processes, Methodologies, and Economics, Pearson Education Limited; Pearson New International Edition edition, 2014.",
+   "Shtub, A., Bard, J., Globerson, S. Project Management: Processes, Methodologies, and Economics, Pearson Education Limited; Pearson New International Edition edition, 2014."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=LEE&dersNo=903"
  },
  "LEE 903E": {
   "code": "LEE 903E",

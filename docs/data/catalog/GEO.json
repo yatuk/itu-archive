@@ -18329,6 +18329,122 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GEO&dersNo=614"
  },
+ "GEO 615E": {
+  "code": "GEO 615E",
+  "name": "Curve and Surface Fitting Meth",
+  "nameEn": "Curve and Surface Fitting Meth",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş, Geomatikte eğri ve yüzey yerleştirme tekniklerinin uygulama alanları, Global enterpolasyon, Lokal enterpolasyon, nokta kümesinde global eğri enterpolasyonu, kübik spline eğri enterpolasyonu, en küçük karelerle eğri uydurma, yüzey enterpolasyonu, polinom yüzeyleri, spline yüzeyleri, en küçük karelerle yüzey uydurma, Kriging, Minimum eğrilikli yüzeyler, Sonlu elemanlar yaklaşımları, Programlama uygulamaları. Introduction, application fields of curve and surface fitting techniques in geomatics, global interpolation, local interpolation, global curve interpolation to point data, cubic spline curve interpolation, least squares curve fitting, surface interpolation, polynomial surfaces, spline surfaces, Kriging, Minimum curvature surfaces, Least squares surface fitting ,Finite element approaches, Programming Applications.",
+  "outcomes": [
+   "i) Geomatik mühendisliğinde konuma ilişkin koordinat bilgilerinin her türlü sistem dönüşümü veya transformasyonu yöntem ve çözümlerinde gelişmiş ustalık ve beceriyi kanıtlayabilme",
+   "ii) Eğri ve yüzey uydurma problemlerinin formüle edilmesi ve çözümü için mevcut yöntem ve modelleri karşılaştırabilme, yeni metodlar tasarımlayabilme, geliştirebilme ve uygulama becerisi",
+   "iii) Analitik, modele dayalı ve deneysel araştırma ve sorgulamaları yönetme ve tasarımlama, eleştirel yorumlayabilme ve geçerli yargılara varabilme becerisi",
+   "iv) Farklı disiplinlerden ve seviyelerden oluşmuş bir ekibin üyeliğini ve liderliğini yapabilecek etkin bir işlevselliğe, ulusal ve uluslararası bağlamda etkin yazılı, sözlü, grafik iletişim ve çalışma becerisini kanıtlayabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş, tanışma",
+   "Hafta 2 · Eğri ve yüzey uydurma tekniklerinin geomatik mühendisliğindeki uygulama alanları",
+   "Hafta 3 · Yüzey oluşturma teknikleri kontrol noktalarıi enterpolasyon ve kestirme",
+   "Hafta 4 · Polinom yüzeyleri ile eğiri uydurma sayısal arazi modeli",
+   "Hafta 5 · Eş yükseklik eğrilerinin otomatik çizimi, karayolu mühendisliği ve geçki tasarımı",
+   "Hafta 6 · Radyal temelli fonksiyonlar",
+   "Hafta 7 · Kriging yönteminin prensiplerimethod",
+   "Hafta 8 · Splayn fonksiyonları, B-splayn ve kübik splayn",
+   "Hafta 9 · Sonlu elemanlar yaklaşımı ile lokal yüzey enterpolasyonu, damlacık yöntemi ile eğri ve yüzey modelleme",
+   "Hafta 10 · Eğri ve yüzey uydurma problemlerinde kullanılan yazılımlar",
+   "Hafta 11 · Yıliçi Sınavı",
+   "Hafta 12 · Dönem ödevlerinin sunumu",
+   "Hafta 13 · Dönem ödevlerinin sunumu",
+   "Hafta 14 · Dönem ödevlerinin sunumu"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş, tanışma",
+    "outcomes": "2"
+   },
+   {
+    "week": 2,
+    "topic": "Eğri ve yüzey uydurma tekniklerinin geomatik mühendisliğindeki uygulama alanları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Yüzey oluşturma teknikleri kontrol noktalarıi enterpolasyon ve kestirme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Polinom yüzeyleri ile eğiri uydurma sayısal arazi modeli",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Eş yükseklik eğrilerinin otomatik çizimi, karayolu mühendisliği ve geçki tasarımı",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Radyal temelli fonksiyonlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Kriging yönteminin prensiplerimethod",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Splayn fonksiyonları, B-splayn ve kübik splayn",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Sonlu elemanlar yaklaşımı ile lokal yüzey enterpolasyonu, damlacık yöntemi ile eğri ve yüzey modelleme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Eğri ve yüzey uydurma problemlerinde kullanılan yazılımlar",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 11,
+    "topic": "Yıliçi Sınavı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevlerinin sunumu",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevlerinin sunumu",
+    "outcomes": "1-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevlerinin sunumu"
+   }
+  ],
+  "textbooks": [
+   "Gallier, Jean; Curves and Surfaces in Geometric Modelling: Theory and Algorithms, San Francisco California, Morgan Kaufmann Publishers, 2000",
+   "Le Mehaute, Alain; Rabut, Christophe; Schumaker, Larry; Curves and Surfaces with Applications in CAGD, Nashville, Vanderbilt University Press, 1997",
+   "Yamaguchi, Fujio; Curves and Surfaces in Computer Aided Geometric Design, Berlin, NewYork, Springer Verlag, 1988",
+   "Davies, Alan; Samuels Philip; An Introduction to Computational Geometry for Curves and Surfaces, Clarendon Press, Oxford, 1996",
+   "Hagen, Hans; Curve and Surface Design, Philadelphia, Society for Industrial and Applied Mathematics, 1992",
+   "Cohen, Albert; Rabut, Christophe; Schumaker, Larry; Curve and Surface Design/Curve and Surface Fitting, Saint Malo, 1999"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=GEO&dersNo=615"
+ },
  "GEO 616E": {
   "code": "GEO 616E",
   "name": "State Mod.Kalman Filt.&Smooth.",

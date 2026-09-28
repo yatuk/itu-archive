@@ -379,10 +379,108 @@
    "local": 3,
    "ects": 7.5
   },
-  "description": "- -",
-  "outcomes": null,
+  "description": "Derin öğrenmenin temelleri, Yapay sinir ağları, Çok katmanlı algılayıcılar (MLP), Evrişimsel sinir ağları (CNN), Tekrarlayan sinir ağları (RNN), Dikkat mekanizmalı Kodlayıcı–Çözücü (Encoder–Decoder) modelleri, Geri yayılım (Backpropagation), Sinir ağı eğitimi, Model doğrulama, Yanlılık–varyans dengesi, Veri ön işleme, Öznitelik mühendisliği, Zaman serisi öğrenmesi, Denizcilikte makine öğrenmesi uygulamaları, Denizcilikte Durumsal Farkındalık, Gemi hareketi tahmini, Deniz durumu kestirimi, Hesaplamalı projeler Deep learning Fundamentals, Artificial neural networks, Multilayer perceptrons (MLPs), Convolutional neural networks (CNNs), Recurrent neural networks (RNNs), Encoder-Decoder Models with Attention Mechanism, Backpropagation, Neural network training, Model validation, Bias-variance trade-off, Data preprocessing, Feature engineering, Time-series learning, Maritime machine learning applications, Maritime Situational Awareness, Ship motion prediction, Sea-state estimation, Computational projects",
+  "outcomes": [
+   "Derin sinir ağlarının matematiksel temellerini analiz eder.",
+   "MLP, CNN, RNN ve dikkat mekanizmalı kodlayıcı–çözücü modellerini zaman serisi öğrenme problemleri için tasarlar, gerçekleştirir ve optimize eder.",
+   "Derin öğrenme problemlerinde uygun veri ön işleme, öznitelik mühendisliği, eğitim, doğrulama ve model değerlendirme yöntemlerini uygular.",
+   "Denizcilik durumsal farkındalığı kapsamında deniz durumu kestirimi ve gemi hareketi tahmini için derin öğrenme çözümleri geliştirir ve eleştirel olarak değerlendirir.",
+   "Derin öğrenme modellerini bağımsız olarak gerçekleştirir, karşılaştırır ve deneysel sonuçları hesaplamalı projeler ile teknik sunumlar aracılığıyla etkili biçimde aktarır."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Denizcilik Verileri için Makine Öğrenmesi",
+   "Hafta 2 · Çok Katmanlı Algılayıcılar (MLP)",
+   "Hafta 3 · Öğrenme Sistemlerinde Gradyan Mekanikleri ve Geri Yayılım",
+   "Hafta 4 · Model Dayanıklılığı ve Hata Teşhis",
+   "Hafta 5 · Hiperparametre Arama ve Deney Tasarım",
+   "Hafta 6 · Evrişimsel Sinir Ağları",
+   "Hafta 7 · Zaman Serilerinde Evrişimsel Örüntü Çıkarım",
+   "Hafta 8 · Gemi Hareketlerinden Deniz Durumunun Çıkarım",
+   "Hafta 9 · Tekrarlayan Ağlarla Dizi Modellemesi",
+   "Hafta 10 · Kodlayıcı–Çözücü Modeller",
+   "Hafta 11 · Kısa Vadeli Gemi Hareketi Tahmini",
+   "Hafta 12 · Kodlayıcı–Çözücü Modellerde Dikkat Mekanizması",
+   "Hafta 13 · Denizcilikte Makine Öğrenmesinde Açıklanabilirlik ve Güven",
+   "Hafta 14 · Denizcilik Öğrenme Sistemlerinin Değerlendirilmesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Denizcilik Verileri için Makine Öğrenmesi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Çok Katmanlı Algılayıcılar (MLP)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Öğrenme Sistemlerinde Gradyan Mekanikleri ve Geri Yayılım",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Model Dayanıklılığı ve Hata Teşhis",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Hiperparametre Arama ve Deney Tasarım",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 6,
+    "topic": "Evrişimsel Sinir Ağları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Zaman Serilerinde Evrişimsel Örüntü Çıkarım",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "Gemi Hareketlerinden Deniz Durumunun Çıkarım",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Tekrarlayan Ağlarla Dizi Modellemesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Kodlayıcı–Çözücü Modeller",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "Kısa Vadeli Gemi Hareketi Tahmini",
+    "outcomes": "2-3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Kodlayıcı–Çözücü Modellerde Dikkat Mekanizması",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 13,
+    "topic": "Denizcilikte Makine Öğrenmesinde Açıklanabilirlik ve Güven",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "Denizcilik Öğrenme Sistemlerinin Değerlendirilmesi",
+    "outcomes": "1"
+   }
+  ],
   "textbooks": [
-   "-"
+   "Goodfellow, I., Bengio, Y. & Courville, A. (2016). Deep learning. MIT Press.",
+   "Ng, A. (2018). Machine Learning Yearning. deeplearning.ai",
+   "Murphy, K. P. (2022). Probabilistic Machine Learning: An introduction. MIT Press.",
+   "Murphy, K. P. (2023). Probabilistic Machine Learning: Advanced Topics. MIT Press.",
+   "Bishop, C.M. & Bishop, H. (2024). Deep Learning: Foundations and Concepts. Springer"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=DTM&dersNo=516"
  },

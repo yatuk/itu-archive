@@ -421,6 +421,122 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=504"
  },
+ "ELE 505E": {
+  "code": "ELE 505E",
+  "name": "L-volt. Anal. Integ.Cir.Desig",
+  "nameEn": "L-volt. Anal. Integ.Cir.Desig",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Düşük besleme gerilimi ile çalışan CMOS analog devreler: Akım kaynakları, akım aynaları, tek katlı ve çok katlı işlemsel kuvvetlendiriciler. Çıkış katları. Kaynaktan kaynağa giriş ve çıkış katları. Tamamen farksal yapılar. Karşılaştırıcılar. Sabit voltaj ve akım kaynakları, örnekleme devreleri, sayısaldan analoğa ve analogdan sayısala dönüştürücüler. Sürekli ve ayrık filtreler, faz kilitlemeli çevrim. Low voltage analog circuits in CMOS technology. Current generators, current mirrors, single stage and multi stage operational amplifiers. Output stages. Rail to rail input and output stages. Fully differential structures. Comparators. Voltage and current references, sample and hold circuits. Digital-to-analog converters and analog-to-digital converters. Continuous time and switched capacitor filters. Phased locked loops.",
+  "outcomes": [
+   "Düşük besleme gerilimli CMOS analog tümdevre mimarileri",
+   "Analog devre benzetim ve modelleme teknikleri",
+   "Analog devre test ve karakterizasyon teknikleri",
+   "Analog devre tasarımlarının takım arkadaşlarına ve tasarım yönetimine sunumu",
+   "Grup halinde analog devre tasarlama ve zaman kısıtlaması altında çalışabilme yeteneği"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Analog Devre Tasarımına Giriş: SPICE benzetimi, BSIM modelleri. 2 katlı miller OPAMP",
+   "Hafta 2 · OPAMP spesifikasyonları, test ve ölçüm yöntemleri",
+   "Hafta 3 · Akım kaynakları, akım aynaları, CTAT, PTAT ve 0TC akım ve gerilim kaynakları",
+   "Hafta 4 · OPAMP Mimarileri: Telescopic Cascode, Folded Cascode, Current Mirror, Current Feedback",
+   "Hafta 5 · OPAMP Mimarileri: Kaynaktan kaynağa giriş ve çıkış. Kazanç yükseltme. AB çıkış katları.",
+   "Hafta 6 · Tamamen farksal OPAMP yapıları. Ortak seviye geri beslemesi",
+   "Hafta 7 · Karşılaştırıcılar. Üç katlı, offset yokeden, tamamen farksal karşılaştırıcı",
+   "Hafta 8 · Sayısaldan analoğa dönüştürücüler: İp, R-2R, ve akım yönlendiren yapılar",
+   "Hafta 9 · Takip ve tut devreleri. Yüksek frekans problemleri. Düğmenin iyileştirilmesi",
+   "Hafta 10 · Analogdan sayısala dönüştürücüler: İki eğim, Ardışıl Yaklaşım, Boru Hattı, ve FLASH yapıları",
+   "Hafta 11 · Z- Transform. Anahtarlanmış kapasitör yapıları. Parasitlere duyarsız integratör.",
+   "Hafta 12 · Sürekli zaman ve ayrık zaman pasif ve aktif filtre tasarımı",
+   "Hafta 13 · Faz kilitlemeli çevrim temelleri",
+   "Hafta 14 · Analog tasarımda yeni kaynakçaya giriş"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Analog Devre Tasarımına Giriş: SPICE benzetimi, BSIM modelleri. 2 katlı miller OPAMP",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 2,
+    "topic": "OPAMP spesifikasyonları, test ve ölçüm yöntemleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Akım kaynakları, akım aynaları, CTAT, PTAT ve 0TC akım ve gerilim kaynakları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 4,
+    "topic": "OPAMP Mimarileri: Telescopic Cascode, Folded Cascode, Current Mirror, Current Feedback",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 5,
+    "topic": "OPAMP Mimarileri: Kaynaktan kaynağa giriş ve çıkış. Kazanç yükseltme. AB çıkış katları.",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 6,
+    "topic": "Tamamen farksal OPAMP yapıları. Ortak seviye geri beslemesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 7,
+    "topic": "Karşılaştırıcılar. Üç katlı, offset yokeden, tamamen farksal karşılaştırıcı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 8,
+    "topic": "Sayısaldan analoğa dönüştürücüler: İp, R-2R, ve akım yönlendiren yapılar",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 9,
+    "topic": "Takip ve tut devreleri. Yüksek frekans problemleri. Düğmenin iyileştirilmesi",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 10,
+    "topic": "Analogdan sayısala dönüştürücüler: İki eğim, Ardışıl Yaklaşım, Boru Hattı, ve FLASH yapıları",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Z- Transform. Anahtarlanmış kapasitör yapıları. Parasitlere duyarsız integratör.",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Sürekli zaman ve ayrık zaman pasif ve aktif filtre tasarımı",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Faz kilitlemeli çevrim temelleri",
+    "outcomes": "1-2-3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Analog tasarımda yeni kaynakçaya giriş"
+   }
+  ],
+  "textbooks": [
+   "Allen, P. E. ve Holberg, D. R. (2002). CMOS Analog Circuit Design. Second Edition, Oxford University Press, ISBN: 0-19-511644-5.",
+   "Gregorian, R. (1999). Introduction to CMOS OPAMPS and Comparators. John Wiley and Sons, ISBN 0-471-31778-0.",
+   "Ivanov, V. V. ve Filanovsky, I. M. (2004). Operational Amplifier Speed and Accuracy Improvement. Kluwer Academic Publishers, ISBN 1-40-207772-6",
+   "Johns, D. ve Martin, K. (1997). Analog Integrated Circuit Design. John Wiley and Sons, ISBN 0-471-14448-7.",
+   "Staric, P. ve Margan, E. (2007). Wideband Amplifiers. Springer, ISBN 0-387-28340-4."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=505"
+ },
  "ELE 508E": {
   "code": "ELE 508E",
   "name": "RF Microelectronics",
@@ -777,6 +893,122 @@
    "Zeidler, E. (1995). Applied Functional Analysis. Springer-Verlag"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=519"
+ },
+ "ELE 523E": {
+  "code": "ELE 523E",
+  "name": "Computational Nanoelectronics",
+  "nameEn": "Computational Nanoelectronics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "CMOS tabanlı teknolojilerle kıyaslanarak, nano ölçekteki yeni teknolojilerin incelenmesi. Nano ölçekteki teknolojiler için, devre düzeyinde deterministik ve olasılıksal hesaplama modelleri. Bilgisayar destekli tasarım (BDT) araçları yardımıyla modellerin analiz ve sentezi. Alan, güç tüketimi, hız, ve güvenilirlik parametreleri göz önüne alınarak devre modellerin optimizasyonu. Nano ölçekteki yeni teknolojilerde hatalar ve belirsizlikler. Kalıcı ve geçici hatalar için hata tolerans teknikleri. An overview of emerging nanoscale technologies with a comparison of CMOS-based technologies. Probabilistic and deterministic computing models for emerging technologies in circuit level. Analysis and synthesis of the models exploiting computer-aided design (CAD) tools. Optimization of the circuit models regarding area, power consumption, speed, and accuracy. Uncertainty and defects in emerging technologies. Defect tolerance techniques for permanent and transient errors.",
+  "outcomes": [
+   "Nano ölçekteki yeni teknolojiler ve hesaplama modelleri.",
+   "Nano ölçekteki elektronik devreler için olasılıksal ve deterministik modelleme.",
+   "Nano hesaplama için kullanılan bilgisayar destekli tasarım (BDT) teknikleri.",
+   "Nano ölçekteki yeni teknolojilerde hata çeşitleri ve hata tolerans teknikleri.",
+   "Nano elektronik ve hesaplama konusunda en güncel yaklaşımları inceleme ve sunma."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Nano hesaplamaya giriş.",
+   "Hafta 2 · Temel devre tasarım ve matematiksek modelleme tekniklerinin gözden geçirilmesi.",
+   "Hafta 3 · Nano anahtarların, tek elektronlu tranzistörlerin ve CMOL aygılarının da aralarında bulunduğu nano aygıtların elektronik devre düzeyinde tanıtılması.",
+   "Hafta 4 · Nano aygıtlarla ve devrelerle gerçekleştirilen hesaplamada karşılaşılan sorunlar ve önerilen çözümler – CMOS tabanlı devrelerle karşılaştırmalı olarak.",
+   "Hafta 5 · Nano ölçekteki elektronik devreler için deterministik hesaplama modelleri.",
+   "Hafta 6 · Nano anahtarlardan oluşan dizinlerin lojiksel sentezlenmesi.",
+   "Hafta 7 · Nano ölçekteki elektronik devreler için olasılıksal hesaplama modelleri.",
+   "Hafta 8 · Stokastik bit katarlarının lojiksel sentezlenmesi.",
+   "Hafta 9 · Nano ölçekteki devreler için oluşturulan hesaplama modellerinin performans parametreleri: Alan, güç tüketimi, hız, ve güvenilirlik.",
+   "Hafta 10 · Performans parametreleri ile optimizasyon.",
+   "Hafta 11 · Nano hesaplamada güvenilirlik.",
+   "Hafta 12 · Nano ölçekteki yeni teknolojilerde hata çeşitleri.",
+   "Hafta 13 · Hata tolerans teknikleri.",
+   "Hafta 14 · Nano hesaplama konusunda öğrenci sunumları."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Nano hesaplamaya giriş.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Temel devre tasarım ve matematiksek modelleme tekniklerinin gözden geçirilmesi.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Nano anahtarların, tek elektronlu tranzistörlerin ve CMOL aygılarının da aralarında bulunduğu nano aygıtların elektronik devre düzeyinde tanıtılması.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Nano aygıtlarla ve devrelerle gerçekleştirilen hesaplamada karşılaşılan sorunlar ve önerilen çözümler – CMOS tabanlı devrelerle karşılaştırmalı olarak.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Nano ölçekteki elektronik devreler için deterministik hesaplama modelleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Nano anahtarlardan oluşan dizinlerin lojiksel sentezlenmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Nano ölçekteki elektronik devreler için olasılıksal hesaplama modelleri.",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Stokastik bit katarlarının lojiksel sentezlenmesi.",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Nano ölçekteki devreler için oluşturulan hesaplama modellerinin performans parametreleri: Alan, güç tüketimi, hız, ve güvenilirlik.",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Performans parametreleri ile optimizasyon.",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Nano hesaplamada güvenilirlik.",
+    "outcomes": "1-4"
+   },
+   {
+    "week": 12,
+    "topic": "Nano ölçekteki yeni teknolojilerde hata çeşitleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Hata tolerans teknikleri.",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Nano hesaplama konusunda öğrenci sunumları."
+   }
+  ],
+  "textbooks": [
+   "Adamatzky, A., Bull, L., Costello, B. L., Stepney, S., Teuscher, C. (2007). Unconventional Computing, Luniver Press.",
+   "Sasao, T. (1999). Switching Theory for Logic Synthesis, Springer.",
+   "Stanisavljević, M., Schmid, M, Leblebici, Y. (2010). Reliability of Nanoscale Circuits and Systems: Methodologies and Circuit Architectures, Springer.",
+   "Yanushkevich, S., Shmerko, V., Lyshevski, S. (2005). Logic Design of NanoICs, CRC Press.",
+   "Zomaya, Y. (2006). Handbook of Nature-Inspired and Innovative Computing: Integrating Classical Models with Emerging Technologies, Springer."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=523"
  },
  "ELE 525": {
   "code": "ELE 525",
@@ -1289,6 +1521,121 @@
    "Yoo, H.-J., Lee, K., Kim, J. K. (2008). Low-Power NoC for High-Performance SoC Design. CRC Press."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=609"
+ },
+ "ELE 615E": {
+  "code": "ELE 615E",
+  "name": "Modelling Of Semicon.Com.&Dev.",
+  "nameEn": "Modelling Of Semicon.Com.&Dev.",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Modelleme kavramı. Eleman modelleri: Diyot modelleri. Bipolar tranzistor modelleri: EM (Ebers- Moll) 1 modeli, EM2 modeli, EM3 modeli, Gummel-Poon modeli, SPICE Gummel-Poon modeli, geliştirilmiş EM modeli. JFET modelleri: SPICE JFET modeli, yüksek doğruluklu JFET modeli. MOSFET modelleri: SPICE 1. düzey, 2. düzey, 3. düzey, 4. düzey MOS modelleri. Yüksek doğruluklu MOSFET modeli. Makromodeller: İşlemsel kuvvetlendirici, Gerilim karşılaştırıcı, İşlemsel geçiş iletkenliği kuvvetlendiricisi (OTA), akım taşıyıcı, analog çarpma devresi makromodelleri. Güç elektroniği elemanlarının modellenmesi. Model parametrelerinin ölçülmesi. Modeling concept. Modeling of the junction diode: Static and dynamic parameters. SPICE diode model. Modelling of the BJT. Ebers-Moll equations; EM1 EM2 and EM3 models, Gummel-Poon model, SPICE BJT model. Modified EM model. JFET models. MOSFET models: SPICE Level-1, Level-2, Level-3 and Level-4 models, MOSFET models with extended accuracy. Macromodels: Op-Amp., Comparator, operational transconductance amplifier (OTA), Current Conveyor, Analog Multiplier Macromodels. Measurement of model parameters.",
+  "outcomes": [
+   "Fiziksel sistemlerin modellemesi kavramını öğrenmiş olurlar",
+   "Bilgisayarla benzetime yönelik olarak, temel elektronik elemanlar ve tümdevre yapıları için doğrusal olmayan modeller ve makromodelleri rahatça kullanabilirler",
+   "Yeni aktif elemanlar için model geliştirebilirler.",
+   "Model parametrelerinin belirlenmesi için yeni ölçme yöntemleri geliştirebilirler"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Modelleme kavramı. Eleman modelleri: Diyot modelleri.",
+   "Hafta 2 · Bipolar tranzistor modelleri: EM (Ebers- Moll) 1 modeli, EM2 modeli, EM3 modeli",
+   "Hafta 3 · Gummel-Poon modeli",
+   "Hafta 4 · SPICE Gummel-Poon modeli, geliştirilmiş EM modeli",
+   "Hafta 5 · JFET modelleri: SPICE JFET modeli, yüksek doğruluklu JFET modeli",
+   "Hafta 6 · MOSFET modelleri: SPICE 1. Düzey ve 2. düzey MOS modelleri",
+   "Hafta 7 · SPICE 3. düzey MOS modelleri",
+   "Hafta 8 · BSIM modelleri",
+   "Hafta 9 · Yüksek doğruluklu MOSFET modelleri",
+   "Hafta 10 · İşlemsel kuvvetlendirici, İşlemsel geçiş iletkenliği kuvvetlendiricisi (OTA) makromodelleri",
+   "Hafta 11 · Akım taşıyıcı, analog çarpma devresi makromodelleri",
+   "Hafta 12 · Güç elektroniği elemanları makromodelleri",
+   "Hafta 13 · Eleman Modeli parametrelerinin ölçülmesi",
+   "Hafta 14 · Makro model parametrelerinin ölçülmesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Modelleme kavramı. Eleman modelleri: Diyot modelleri.",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 2,
+    "topic": "Bipolar tranzistor modelleri: EM (Ebers- Moll) 1 modeli, EM2 modeli, EM3 modeli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Gummel-Poon modeli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "SPICE Gummel-Poon modeli, geliştirilmiş EM modeli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 5,
+    "topic": "JFET modelleri: SPICE JFET modeli, yüksek doğruluklu JFET modeli",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "MOSFET modelleri: SPICE 1. Düzey ve 2. düzey MOS modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "SPICE 3. düzey MOS modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "BSIM modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Yüksek doğruluklu MOSFET modelleri",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 10,
+    "topic": "İşlemsel kuvvetlendirici, İşlemsel geçiş iletkenliği kuvvetlendiricisi (OTA) makromodelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Akım taşıyıcı, analog çarpma devresi makromodelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 12,
+    "topic": "Güç elektroniği elemanları makromodelleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 13,
+    "topic": "Eleman Modeli parametrelerinin ölçülmesi",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 14,
+    "topic": "Makro model parametrelerinin ölçülmesi"
+   }
+  ],
+  "textbooks": [
+   "Antognetti, P. ve Massobrio, G. (1988). Semiconductor device modeling with SPICE. Mc Graw Hill.",
+   "Foty, D. P. (1997). MOSFET modeling with SPICE Principles and Practice. Prentice Hall",
+   "Gray, P. R., Hurst, P. J., Lewis, S. H., Meyer, R. G. (2001). Analysis and design of analog integrated circuits. 4th Edition, John Wiley & Sons, Inc",
+   "Kuntman, H. (1998). Elektronik Elemanların Modellenmesi. İTÜ Kütüphanesi, Sayı 1600",
+   "Lu, W. (2001). MOSFET models for SPICE simulation including BSIM3v3 and BSIM4. John Wiley & Sons, New York"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELE&dersNo=615"
  },
  "ELE 696": {
   "code": "ELE 696",

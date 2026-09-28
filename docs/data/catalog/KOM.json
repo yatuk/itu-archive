@@ -734,6 +734,123 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=509"
  },
+ "KOM 510": {
+  "code": "KOM 510",
+  "name": "Optimal Kontrol Kuramı",
+  "nameEn": "Optimal Control Theory",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Optimizasyonun tanımı. Ekstrema hesabı ve Lagrange çarpanları yöntemi ile parametre optimizasyonu. Davranış ölçütleri. Optimal olma Prensibi ve Dinamik Programlama. Varyasyonlar hesabı ve Pontryagin minimum prensibi. Eşitlik ve eşitsizlik koşulları altında dinamik optimizasyon. Hamilton-Jacobi-Bellmann denklemi. Lineer Kuadratik Optimal Kontrol problemi çözümü(Matris Riccati denklemi). Zamanda ayrık kontrol sistemlerinde optimizasyon. Optimal kontrol probleminin sayısal çözüm yöntemleri. Definition of optimization. Calculus of extrema and parameter optimization by the method of Lagrange multipliers. Performance measures. Optimality Principle and Dynamic Programming. Variational calculus and Pontragin’s minimum principle. Dynamic optimization in control systems for different terminal conditions. Hamilton Jacobi-Bellman equation. Linear Optimal Control Problem solution (The matrix Riccati equation). Optimization of discrete control systems. Numerical solution methods in optimal control problem.",
+  "outcomes": [
+   "Optimal kontrole ilişkin temel tanımları ve temel kavramları",
+   "Optimal kontrol probleminde parametre optimizasyonu yöntemini",
+   "Optimal olma Prensibini ve Dinamik Programlamayı",
+   "Varyasyonlar hesabı ve Pontryagin minimum prensibini",
+   "Hamilton-Jacobi-Bellmann yaklaşımını",
+   "Lineer Kuadratik Optimal Kontrol problemi çözümünü (Matris Riccati Denklemi)"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Optimal Kontrol Problemine giriş ve sınıflandırmalar",
+   "Hafta 2 · Lagrange çarpanları yöntemi ile optimal kontrol probleminde parametre optimizasyonu",
+   "Hafta 3 · Lagrange çarpanları yöntemi ile optimal kontrol probleminde parametre optimizasyonu",
+   "Hafta 4 · Optimal Kontrol Probleminde amaç ölçütleri ve Dinamik Programlama",
+   "Hafta 5 · Optimal Kontrol Probleminde amaç ölçütleri ve Dinamik Programlama",
+   "Hafta 6 · Varyasyonlar hesabı ve Euler denklemleri",
+   "Hafta 7 · Varyasyonlar hesabı ve Euler denklemleri",
+   "Hafta 8 · Temel optimal kontrol problemine varyasyonlar hesabı yaklaşımının uygulanması",
+   "Hafta 9 · Pontryagin minimum prensibi ve minimum zaman ve güç kontrol problemi çözümleri",
+   "Hafta 10 · Pontryagin minimum prensibi ve minimum zaman ve güç kontrol problemi çözümleri",
+   "Hafta 11 · Hamilton-Jacobi-Bellmann yaklaşımı",
+   "Hafta 12 · Lineer Kuadratik Optimal Kontrol problemi (Matris Riccati Denklemi)",
+   "Hafta 13 · Lineer Kuadratik Optimal Kontrol problemi (Cebirsel Matris Riccati Denklemi)",
+   "Hafta 14 · Optimal Kontrol probleminin nümerik çözüm yöntemleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Optimal Kontrol Problemine giriş ve sınıflandırmalar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Lagrange çarpanları yöntemi ile optimal kontrol probleminde parametre optimizasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Lagrange çarpanları yöntemi ile optimal kontrol probleminde parametre optimizasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Optimal Kontrol Probleminde amaç ölçütleri ve Dinamik Programlama",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Optimal Kontrol Probleminde amaç ölçütleri ve Dinamik Programlama",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Varyasyonlar hesabı ve Euler denklemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Varyasyonlar hesabı ve Euler denklemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Temel optimal kontrol problemine varyasyonlar hesabı yaklaşımının uygulanması",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Pontryagin minimum prensibi ve minimum zaman ve güç kontrol problemi çözümleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Pontryagin minimum prensibi ve minimum zaman ve güç kontrol problemi çözümleri",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Hamilton-Jacobi-Bellmann yaklaşımı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Lineer Kuadratik Optimal Kontrol problemi (Matris Riccati Denklemi)",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Lineer Kuadratik Optimal Kontrol problemi (Cebirsel Matris Riccati Denklemi)",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Optimal Kontrol probleminin nümerik çözüm yöntemleri"
+   }
+  ],
+  "textbooks": [
+   "D. E. Kirk, Optimal Control Theory, Prentice Hall, 1970",
+   "B. D. O. Anderson, J.B Moore, Optimal Control, Prentice Hall, 1990",
+   "J. B. Burl, Linear Optimal Control, Addison-Wesley, 1999.",
+   "D. G. Schultz, J. L. Melsa, State Functions and Linear Control Systems, Mc Graw Hill, 1967",
+   "D. S. Naidu, Optimal Control Systems, CRC Press, 2003."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOM&dersNo=510"
+ },
  "KOM 518E": {
   "code": "KOM 518E",
   "name": "Model Predictive Control",

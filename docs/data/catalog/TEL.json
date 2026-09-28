@@ -1446,6 +1446,125 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=503"
  },
+ "TEL 503E": {
+  "code": "TEL 503E",
+  "name": "Uygulamalı Elektromany.Kuramı",
+  "nameEn": "Applied EM Theory",
+  "language": "English/Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Maxwell ve Dalga denklemleri. Elektromanyetik teorinin temel teoremleri. Homojen olmayan ve tabakalı ortamlarda dalgalar. Skaler ve vektörel dalga denklemleri için Green fonksiyonları. Silindirik ve Küresel Dalga Fonksiyonları, Green Fonksiyonları ve İntegral Denklemler, Kaynakların Spektral Gösterilimi, Dalga Kılavuzu Yapıları, Kanonik Saçılma Problemleri, Saçılma ve Difraksiyon Problemleri, Sayısal Yöntemler. Maxwell's and wave equations. Fundamental Theorems of Electromagnetic Theory, Waves in Inhomogeneous and Stratified Media. Green’s functions for scalar and vectorial wave equation. Green's functions and integral equations. Spectral Represantation of Sources. Cylindrical and spherical wave functions. Wave Guiding Structures. Canonical Scattering Problems. Scattering and diffraction problems, Numerical Methods.",
+  "outcomes": [
+   "Elektromanyetik teorinin matematik altyapısını kavrar ve temel çözümleri öğrenirler",
+   "Dalga denkleminin çeşitli koordinat sistemlerindeki çözümlerini özel fonsiyonlar yardımıyla ifade edebilirler",
+   "Elektromagnetikte kullanılan Green fonksiyonlarını ve bunlar yardımıyla problemleri integral denklemlerle ifade edebilmeyi öğrenirler.",
+   "Silindir, küre veya bu şekillerden oluşturulmuş tabakalı ortamlara ilişkin kanonik saçılma problemlerinin temel çözümünü yapabilirler",
+   "Dalga Kılavuzu yapılarını analiz edebilirler.",
+   "Elektromagnetikte uygulanan bazı sayısal yöntemlerin temel yapısını bilirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Elektromagnetiğe Giriş, Maxwell Denklemleri, Dalga Denklemi, Sınır Koşulları, Elektromagnetiğin Temel Teoremleri",
+   "Hafta 2 · Dalga Denkleminin değişik koordinat sistemlerindeki temel çözümleri",
+   "Hafta 3 · Green Fonksiyonlarına Giriş, Dirac Distribüsyonu, Uzaysal impals cevabı",
+   "Hafta 4 · Skaler Dalga Denklemi için Green Fonksiyonunun Çeşitli Koordinat Sistemlerindeki İfadesi",
+   "Hafta 5 · Kaynakların Spektral Gösterilimi ve Green Fonksiyonları ile İlişkisi Tabakalı ortamlarda Green Fonksiyonları",
+   "Hafta 6 · Green Fonksiyonları ve İntegral Denklemler",
+   "Hafta 7 · Dyadik Green Fonsiyonlarına Giriş",
+   "Hafta 8 · Dyadik Green Fonsiyonları",
+   "Hafta 9 · Dyadik Green Fonsiyonları",
+   "Hafta 10 · Temel kanonik Yapılara İlişkin Saçılma Problemleri, Küreden Saçılma, Mie Serileri",
+   "Hafta 11 · Kılavuzlanmış Dalgalar, Kapalı yapılarda Green fonksiyonları, Ayrık Spektrum Problemleri",
+   "Hafta 12 · Saçılma Problemlerine Giriş, Karmaşık yapıdaki Cisimlerden Saçılma",
+   "Hafta 13 · Saçılma Problemlerinin İntegral Denklemlerle Formülasyonu",
+   "Hafta 14 · İntegral denklemlerin Sayısal Çözümleri (MoM)"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektromagnetiğe Giriş, Maxwell Denklemleri, Dalga Denklemi, Sınır Koşulları, Elektromagnetiğin Temel Teoremleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Dalga Denkleminin değişik koordinat sistemlerindeki temel çözümleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Green Fonksiyonlarına Giriş, Dirac Distribüsyonu, Uzaysal impals cevabı",
+    "outcomes": "3"
+   },
+   {
+    "week": 4,
+    "topic": "Skaler Dalga Denklemi için Green Fonksiyonunun Çeşitli Koordinat Sistemlerindeki İfadesi",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kaynakların Spektral Gösterilimi ve Green Fonksiyonları ile İlişkisi Tabakalı ortamlarda Green Fonksiyonları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Green Fonksiyonları ve İntegral Denklemler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Dyadik Green Fonsiyonlarına Giriş",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Dyadik Green Fonsiyonları",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Dyadik Green Fonsiyonları",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 10,
+    "topic": "Temel kanonik Yapılara İlişkin Saçılma Problemleri, Küreden Saçılma, Mie Serileri",
+    "outcomes": "1-2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Kılavuzlanmış Dalgalar, Kapalı yapılarda Green fonksiyonları, Ayrık Spektrum Problemleri",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Saçılma Problemlerine Giriş, Karmaşık yapıdaki Cisimlerden Saçılma",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 13,
+    "topic": "Saçılma Problemlerinin İntegral Denklemlerle Formülasyonu",
+    "outcomes": "3-4-6"
+   },
+   {
+    "week": 14,
+    "topic": "İntegral denklemlerin Sayısal Çözümleri (MoM)"
+   }
+  ],
+  "textbooks": [
+   "C. A. Balanis, “Advanced engineering electromagnetics”, New York : Wiley, 1989.",
+   "A. F. Peterson, S. L. Ray, R. Mittra, “Computational Methods for Electromagnetics” IEEE Press 1999.",
+   "R.G. Harrington; \"Time Harmonic Electromagnetic Fields\", McGraw-Hill Book Co; 1961.",
+   "I.A. Stratton; \"Electromagnetic Theory\", McGraw-Hill Book Co., 1941.",
+   "W Cho Chew, “Waves and Fields in Inhomogeneous Media”, IEEE Press, 1995",
+   "A. Ishimaru, “Electromagnetic Wave Propagation, Radiation, and Scattering” Prentice Hall, 1990",
+   "Hyo J. Eom “Electromagnetic Wave Theory for Boundary-Value Problems: An Advanced Course on Analytical Methods\" Springer, 2004."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=503"
+ },
  "TEL 505E": {
   "code": "TEL 505E",
   "name": "Gezgin İletişim Sistemleri",
@@ -2250,6 +2369,119 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=517"
  },
+ "TEL 518E": {
+  "code": "TEL 518E",
+  "name": "Karmaşık Değişkenli Fonk. Kur.",
+  "nameEn": "Theory of Functions of Complex Variables",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kompleks düzlem, Riemann yüzeyi, karekök ve logaritma gibi çok değerli fonksiyonların incelenmesi. Kompleks düzlemde türevin tanımlanması, analitik fonksiyonlar ve Laplace denklemi. Konform dönüşümünün tanımlanması ve çeşitli sınır değer problemlerine uygulanması. Rezidü teoremi ve integrallerin çözümünde kullanılması. Sonsuz seriler, güç serileri, fonksiyonların Taylor ve Laurent serisi açılımları. Fonksiyonların analitik devamlarının belirlenmesi. Definition of Complex plane, Riemann surface, multi-valued functions such as square-root and logarithmic function. Derivative in complex domain, analytic function and Laplace equation. Introduction to conformal mapping and its application to boundary value problems. Residue theorem and its application to evaluate definite integrals. Infinite series, power series, Taylor and Laurent expansion of functions. Determination of analytic continuation of function.",
+  "outcomes": [
+   "Kompleks analizin temel kavramlarını öğrenirler.",
+   "Karekök, logaritma gibi çok değerli fonksiyonların özellikleri ve uygulanması hakkında beceri kazanırlar.",
+   "Analitik fonksiyon ve fonksiyonların tekil noktaları hakkında bilgi edinirler.",
+   "Konform dönüşümü öğrenirler ve bu dönüşüm yardımıyla karmaşık sınır değer problemlerini daha basit problemlere dönüştürebilirler.",
+   "Rezidü teoremi yardımıyla çeşitli integrallerin çözümünün basitleştirilmesini öğrenir ve uygularlar.",
+   "Taylor ve Laurent güç serilerini, bu serilerin geçerli olduğu bölgeleri ve uygulama alanlarını öğrenirler."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Kompleks sayılar ve kompleks düzlem",
+   "Hafta 2 · Kompleks Düzlemde Fonksiyon ve Riemann Yüzeyi Kavramı",
+   "Hafta 3 · Kare Fonksiyonu ve tersi,",
+   "Hafta 4 · Üstel fonksiyonlar ve logaritma ,trigonometrik fonksiyonlar ve ters fonksiyonları",
+   "Hafta 5 · Kompleks Düzlemde türev, Regüler fonksiyonlar",
+   "Hafta 6 · Laplace denklemi ve Konform Dönüşüm, Sınır değer problemleri",
+   "Hafta 7 · Bilineer(Mobius) dönüşüm uygulamaları",
+   "Hafta 8 · Ara sınav",
+   "Hafta 9 · Kompleks düzlemde integral, basit ve bağlantılı bölgeler",
+   "Hafta 10 · Cauchy integral formülü, rezidü kavramı",
+   "Hafta 11 · Rezidü kavramı kullanılarak bazı integrallerin hesabı",
+   "Hafta 12 · Sonsuz serilerin toplamı",
+   "Hafta 13 · Kuvvet serileri, Taylor ve Laurent serisi uygulamaları",
+   "Hafta 14 · Analitik devam"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kompleks sayılar ve kompleks düzlem",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kompleks Düzlemde Fonksiyon ve Riemann Yüzeyi Kavramı",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 3,
+    "topic": "Kare Fonksiyonu ve tersi,",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 4,
+    "topic": "Üstel fonksiyonlar ve logaritma ,trigonometrik fonksiyonlar ve ters fonksiyonları",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 5,
+    "topic": "Kompleks Düzlemde türev, Regüler fonksiyonlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Laplace denklemi ve Konform Dönüşüm, Sınır değer problemleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Bilineer(Mobius) dönüşüm uygulamaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Ara sınav"
+   },
+   {
+    "week": 9,
+    "topic": "Kompleks düzlemde integral, basit ve bağlantılı bölgeler",
+    "outcomes": "1-5"
+   },
+   {
+    "week": 10,
+    "topic": "Cauchy integral formülü, rezidü kavramı",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Rezidü kavramı kullanılarak bazı integrallerin hesabı",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Sonsuz serilerin toplamı",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Kuvvet serileri, Taylor ve Laurent serisi uygulamaları",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Analitik devam",
+    "outcomes": "6"
+   }
+  ],
+  "textbooks": [
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=518"
+ },
  "TEL 519E": {
   "code": "TEL 519E",
   "name": "Image Processing",
@@ -2708,6 +2940,119 @@
    "Jenn D.C., 2005. Radar and Laser Cross Section Engineering, American Institute of Aeronautics and Astronautics, Inc."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=611"
+ },
+ "TEL 612": {
+  "code": "TEL 612",
+  "name": "Radar Kesit Ala.Kest.&Düşür.Te",
+  "nameEn": "Radar Cross Section Prediction And Reduction Techniques",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Radar sistemleri, görünmezlik teknolojileri. Elektromanyetizmaya ilişkin temel kavram, ilkeler ve teoremlerin genel tekrarı. Radar Kesit Alanı (RKA) tanımları, görünmezlik teknolojileri. Radar yutucu malzemeleri. RKA analizinde kullanılan analitik/asimptotik, sayısal tekniklerin tanıtımı. RKA analizinde kullanılan ücretsiz/ticari yazılımlar, RKA ölçüm düzenekleri ve teknikleri. Radar systems, stealth technologies. A general review of basic concepts, principles and theorems in electromagnetic theory. RCS definitions, stealth technologies. Radar absorbing materials. A general review of analytical/asymptotic/computational techniques utilized in RCS analysis. Freeware/commercial softwares for RCS analysis, RCS measurement set-ups and techniques",
+  "outcomes": [
+   "Radar denklemi ve deteksiyonu",
+   "Analitik elektromanyetik saçılma ve RKA analizi",
+   "RKA hesabı için kullanılan sayısal yöntemler",
+   "RKA indirgeme teknikleri",
+   "RKA ölçüm yöntemleri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Radar temelleri",
+   "Hafta 2 · Radar deteksiyonu",
+   "Hafta 3 · Elektromanyetik saçılma",
+   "Hafta 4 · Radar kesit alanı, saçılma bölgeleri",
+   "Hafta 5 · RKA tahmin yöntemleri",
+   "Hafta 6 · RKA tahmin yöntemleri",
+   "Hafta 7 · Yüksek frekansta RKA tahmin yöntemleri",
+   "Hafta 8 · Yüksek frekansta RKA tahmin yöntemleri",
+   "Hafta 9 · RKA tahmin için sayısal yöntemler",
+   "Hafta 10 · RKA tahmin için sayısal yöntemler",
+   "Hafta 11 · RKA indirgeme teknikleri",
+   "Hafta 12 · RKA indirgeme teknikleri",
+   "Hafta 13 · Radar yutucu malzemeler",
+   "Hafta 14 · RKA ölçüm yöntemleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Radar temelleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Radar deteksiyonu",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Elektromanyetik saçılma",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Radar kesit alanı, saçılma bölgeleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "RKA tahmin yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "RKA tahmin yöntemleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Yüksek frekansta RKA tahmin yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yüksek frekansta RKA tahmin yöntemleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 9,
+    "topic": "RKA tahmin için sayısal yöntemler",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "RKA tahmin için sayısal yöntemler",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "RKA indirgeme teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "RKA indirgeme teknikleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Radar yutucu malzemeler",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "RKA ölçüm yöntemleri"
+   }
+  ],
+  "textbooks": [
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=TEL&dersNo=612"
  },
  "TEL 696": {
   "code": "TEL 696",

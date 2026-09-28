@@ -9954,6 +9954,121 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=514"
  },
+ "BLG 519E": {
+  "code": "BLG 519E",
+  "name": "Telsiz Ağ Protokolleri",
+  "nameEn": "Wireless Network Protocols",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Kullanıcıların ve iletişim cihazlarının hareketliliğini destekleyen ağların standartları, mimarileri ve protokolleri tanıtılacaktır. İşlenecek konular arasında, telsiz ağlara giriş, ortam erişim kontrolü, telsiz yerel alan ağları, gezgin İnternet protokolleri, tasarsız ağlar ve tasarsız ağlar için yönlendirme algoritmaları ve gelişen telsiz ağlar yer alır. We introduce the standards, architectures, and protocols used in networks supporting the mobility of users and communication devices. The topics to be covered include the following: introduction to wireless networks, medium access control, wireless local area networks, mobile Internet protocols, ad hoc networks and routing algorithms for ad hoc networks, and emerging wireless networks.",
+  "outcomes": [
+   "Telsiz ağların doğasında var olan ve hareketlilikten kaynaklanan zorlukları ve tipik sorunları anlama yeteneği",
+   "Ortam erişim mekanizmalarını tanıyabilme yeteneği",
+   "IEEE 802.11’i anlayabilme yeteneği",
+   "Gezginliği destekleyen yöntemleri anlayabilme yeteneği",
+   "Altyapısı olmayan tasarsız ağların neden olduğu sorunları anlayabilme yeteneği",
+   "Gelişen ağları öğrenebilme yeteneği",
+   "Araştırma yapabilme, literatürdeki bildirileri eleştirme, araştırma bildirileri yazma ve araştırmayı sunma yeteneği"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Telsiz Ağlara Giriş",
+   "Hafta 2 · Ortam Erişim Kontrolü",
+   "Hafta 3 · Ortam Erişim Kontrolü",
+   "Hafta 4 · Kablosuz Yerel Alan Ağları",
+   "Hafta 5 · Kablosuz Yerel Alan Ağları",
+   "Hafta 6 · Gezgin İnternet Protokolleri",
+   "Hafta 7 · Gezgin İnternet Protokolleri",
+   "Hafta 8 · İlerleme Raporu Sunumları",
+   "Hafta 9 · Tasarsız Yönlendirme",
+   "Hafta 10 · Tasarsız Yönlendirme: AODV",
+   "Hafta 11 · Tasarsız Yönlendirme: DSR",
+   "Hafta 12 · Gelişen Ağlar: Duyarga, Bilişsel, Gecikme Toleranslı",
+   "Hafta 13 · Gelişen Ağlar: Duyarga, Bilişsel, Gecikme Toleranslı",
+   "Hafta 14 · Son Proje Sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Telsiz Ağlara Giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Ortam Erişim Kontrolü",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Ortam Erişim Kontrolü",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kablosuz Yerel Alan Ağları",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Kablosuz Yerel Alan Ağları",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Gezgin İnternet Protokolleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Gezgin İnternet Protokolleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "İlerleme Raporu Sunumları",
+    "outcomes": "7"
+   },
+   {
+    "week": 9,
+    "topic": "Tasarsız Yönlendirme",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Tasarsız Yönlendirme: AODV",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Tasarsız Yönlendirme: DSR",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Gelişen Ağlar: Duyarga, Bilişsel, Gecikme Toleranslı",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Gelişen Ağlar: Duyarga, Bilişsel, Gecikme Toleranslı",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Son Proje Sunumları"
+   }
+  ],
+  "textbooks": [
+   "Schiller, J., 2003. Mobile Communications, Pearson Education Limited, 2nd ed.",
+   "Stallings, W., 2004. Wireless Communications and Networks, Prentice Hall, 2nd ed."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=519"
+ },
  "BLG 521E": {
   "code": "BLG 521E",
   "name": "Yapay Zeka",
@@ -10298,6 +10413,120 @@
    "Berger, T., 1971. Rate Distortion Theory, A Mathematical Basis for Data Compression, Prentice Hall."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=538"
+ },
+ "BLG 542E": {
+  "code": "BLG 542E",
+  "name": "Safety Critical.Compu.Systems",
+  "nameEn": "Safety Critical.Compu.Systems",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Güvenlik öncelikli sistemlerin tanımları, güvenlik tamlık seviyeleri, tehlike analizi, risk analizi, güvenlik öncelikli sistemlerin geliştirilmesi, donanım ve yazılım hata bağışıklığı, yedekli çalışma sistem güvenliği, kullanılırlığı, ortalama onarım süresi (MTTR), ortalama arızalanma süresi (MTTF), iki arıza arasındaki ortalama süre (MTBF), Markov diyagramları, donanım ve mikroişlemci tasarım hataları, yedekli donanım topolojileri ve örnekleri, her kararın etkinlik ve çalışma durumlarının eksiksiz kontrolu Safety related systems’ vocabulary, safety integrity levels, hazard analysis, risk analysis, developing safety-critical systems, hardware and software fault tolerance, redundancy, system reliability, availability, mean time to repair (MTTR), mean time to failure (MTTF), mean time between failures (MTBF), Markov diagrams, hardware and microprocessor design faults, redundant hardware topologies and examples, test design to thoroughly check the working status and efficacy of every decision.",
+  "outcomes": [
+   "Arıza durumlarını ve riskleri analiz etmek",
+   "Güvenlik öncelikli sayısal devreleri tasarlamak",
+   "Güvenlik öncelikli mikroişlemci temelli sistem ve PLC’leri istenen güvenlik tamlık seviyesine göre tasarlamak",
+   "RTCA DO178B ve MCDC kriterlerine uygun olarak test prosedürlerinin tasarımı"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Güvenlik öncelikli sistemlere giriş",
+   "Hafta 2 · Güvenlik kriterleri",
+   "Hafta 3 · Tehlike analizi",
+   "Hafta 4 · Risk analizi",
+   "Hafta 5 · Güvenlik öncelikli sistemleri geliştirmek",
+   "Hafta 6 · Hata toleransı",
+   "Hafta 7 · Sistem güvenilirliği",
+   "Hafta 8 · Güvenlik öncelikli donanım",
+   "Hafta 9 · Güvenlik öncelikli yazılım",
+   "Hafta 10 · Yıliçi sınavı",
+   "Hafta 11 · Programlanabilir sayısal kontrolörler",
+   "Hafta 12 · Mcdc",
+   "Hafta 13 · MCDC ve DO178B uyumlu test tasarımı",
+   "Hafta 14 · Örnek incelemeler (Uzay mekiği ve Airbus A340 sistemleri)"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Güvenlik öncelikli sistemlere giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Güvenlik kriterleri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Tehlike analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Risk analizi",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Güvenlik öncelikli sistemleri geliştirmek",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Hata toleransı",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Sistem güvenilirliği",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Güvenlik öncelikli donanım",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Güvenlik öncelikli yazılım",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "Yıliçi sınavı",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 11,
+    "topic": "Programlanabilir sayısal kontrolörler",
+    "outcomes": "3"
+   },
+   {
+    "week": 12,
+    "topic": "Mcdc",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "MCDC ve DO178B uyumlu test tasarımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Örnek incelemeler (Uzay mekiği ve Airbus A340 sistemleri)"
+   }
+  ],
+  "textbooks": [
+   "Storey, N., 1996. Safety Critical Computer Systems, Pearson/Prentice Hall",
+   "Dunn, W. R., 2002. Practical Design of Safety-Critical Computer Systems , ISBN-10: 0971752702.",
+   "Leveson N. G., 1995. Safeware: System Safety and Computers, Addison-Wesley Professional.",
+   "A Practical Tutorial on Modified Condition/Decision Coverage. NASA/TM-2001-210876"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=542"
  },
  "BLG 545E": {
   "code": "BLG 545E",
@@ -11461,6 +11690,138 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=596"
  },
+ "BLG 596E": {
+  "code": "BLG 596E",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=596"
+ },
  "BLG 601E": {
   "code": "BLG 601E",
   "name": "Görüntü Tanıma",
@@ -12280,6 +12641,121 @@
    "Danışman öğretim üyesi tarafından tavsiye edilen yayınlar. (Publications recommended by the supervising faculty member.)"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=627"
+ },
+ "BLG 634E": {
+  "code": "BLG 634E",
+  "name": "3D Vision",
+  "nameEn": "3D Vision",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "3-Boyutlu (3B) Bilgisayarla Görüye Giriş. İmge Oluşum Süreci. Matematik Temelleri (Lineer Cebir: Projektif Geometri, Katı-cisim dönüşümler, Eğri ve Yüzeylerin Türevsel Geometrisi). Kamera Kalibrasyonu. Homografi Kestirimi ve Uygulamaları. Videolardan hareket kestirimi ve nesne takibi. Üçgenleme ve Epipolar Geometri ile 3B geriçatım. 3B görüde farklı yöntemler (Örneğin Tonlamadan Şekil Elde etme; Yapısal aydınlatma; Artırılmış gerçeklik). 3B Görme Uygulamaları. . Image Formation Process. Mathematical Foundations (Linear Algebra: Projective Geometry, Rigid Body Transforms, Differential Geometry of Curves and Surfaces). Camera Calibration and Applications. Homography Estimation and Application. Motion Estimation and Object Tracking in Video. 3D reconstruction by Triangulation and Epipolar Geometry. Various Methods in 3D Vision (e.g. Shape from Shading. Structured Lighting. Augmented Reality.) Applications of 3D Vision.",
+  "outcomes": [
+   "1. Üç boyutlu (3B) bilgisayarla görü alanındaki başlıca problemleri, kullanım alanlarını, teknikleri bilmek ve tartışabilmek",
+   "2. 3B görüdeki temel matematik teknikleri (projektif geometri, türevsel geometri vb) tanımlamak, 3B imge oluşum geometrisi ve kamera parametrelerini kavramak, 3-B dönüşümlerin temsilini kullanarak katı-cisim, homografi gibi çeşitli dönüşümleri ifade edebilmek",
+   "3. 3B imge sekanslarından hareket vektörlerinin kestirimi yapabilmek ve nesne",
+   "4. 3B görü uygulamalarını bilgisayar ortamında gerçeklemek",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · 3-B Bilgisayarla Görüye giriş",
+   "Hafta 2 · Matematiksel Temeller: Projektif Geometri. Eğri ve Yüzeylerin Türevsel Geometrisine giriş.",
+   "Hafta 3 · Katı-cisim hareketi. İmge Oluşum Süreci.",
+   "Hafta 4 · Kamera Kalibrasyonu",
+   "Hafta 5 · Kamera Kalibrasyonu Uygulaması",
+   "Hafta 6 · Homografi Kestirimi ve Panaroma Oluşturma Uygulaması",
+   "Hafta 7 · Videolardan hareket kestirimi ve nesne takibi",
+   "Hafta 8 · Hareket kestirimi uygulaması",
+   "Hafta 9 · Üçgenleme ve Epipolar Geometri ile 3-boyutlu geriçatım",
+   "Hafta 10 · 3B Görü Teknikleri (ör. Tonlamadan Şekil Elde etme )",
+   "Hafta 11 · 3B Görü Teknikleri (ör. Yapısal aydınlatma)",
+   "Hafta 12 · 3B geriçatım uygulaması",
+   "Hafta 13 · B görüde farklı konular: Artırılmış gerçeklik, 3B Derinlik Sensörü verileri gibi",
+   "Hafta 14 · Dönemdeki Konuların Özeti"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "3-B Bilgisayarla Görüye giriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Matematiksel Temeller: Projektif Geometri. Eğri ve Yüzeylerin Türevsel Geometrisine giriş.",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Katı-cisim hareketi. İmge Oluşum Süreci.",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Kamera Kalibrasyonu",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Kamera Kalibrasyonu Uygulaması",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Homografi Kestirimi ve Panaroma Oluşturma Uygulaması",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Videolardan hareket kestirimi ve nesne takibi",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Hareket kestirimi uygulaması",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Üçgenleme ve Epipolar Geometri ile 3-boyutlu geriçatım",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "3B Görü Teknikleri (ör. Tonlamadan Şekil Elde etme )",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "3B Görü Teknikleri (ör. Yapısal aydınlatma)",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "3B geriçatım uygulaması",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "B görüde farklı konular: Artırılmış gerçeklik, 3B Derinlik Sensörü verileri gibi",
+    "outcomes": "1-4-5"
+   },
+   {
+    "week": 14,
+    "topic": "Dönemdeki Konuların Özeti"
+   }
+  ],
+  "textbooks": [
+   "1. Y. Ma, S. Soatto, J. Kosecka, S.S. Sastry. An Invitation to 3D Vision: From Images to Geometric Models, Springer, 2004",
+   "2. D. Forsyth, J. Ponce. Computer Vision: A Modern Approach, Pearson, (2nd Ed.) 2012.",
+   "3. E.R. Davies. Computer and Machine Vision (Theory, Algorithms, Practicalities), Academic Press, 4th Ed., 2012.",
+   "4. E. Trucco, A. Verri. Introductory Techniques for 3-D Computer Vision, Pearson, 1998."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=BLG&dersNo=634"
  },
  "BLG 638E": {
   "code": "BLG 638E",

@@ -251,5 +251,119 @@
    "System Identification and Control Design, I.D. Landau, Printice Hall, New Jersey, 1995."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDK&dersNo=591"
+ },
+ "MDK 592": {
+  "code": "MDK 592",
+  "name": "Mekanik Sist.Bilgis.Kontrolu",
+  "nameEn": "Computer Control of Mechanical Systems",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Mikroişlemcilerin yapısı, temel elemanları ve çevre birimleri. Sayı sistemleri. İkili ve Onaltılı sayı sistemleri. Transducerlar, algılayıcılar, arayüz devreleri. Mantıksal kapılar, ikili devreler, sayıcılar, bölücüler. İşlemsel kuvvetlendiriciler ve uygulama alanları. ADC ve DAC çeviriciler. Uygulama örnekleri. The structure of microprocessors, the basic components and peripherals. Number systems. Binary and hexadecimal number systems. Transducers, sensors, interface circuits. Logical gates, binary circuits, counters, dividers. Operational amplifiers and their applications. ADC and DAC converters. Application examples.",
+  "outcomes": [
+   "Mikroişlemcilerin yapıları hakkında genel bilgi",
+   "Transducer, algılayıcılar ve motor elemanlarını tanımak",
+   "Bir sistemin bilgisayarla kontrolu için sistemden ölçüm yapacak algılayıcıları ve gerekli arayüz devrelerini seçebilme becerisi",
+   "Mikrobilgisayarla sistemi kontrol etmek için gerekli motor elemanları ve arayüz devrelerini seçebilme becerisi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Mikroişlemcilerin tarihi gelişimi ve Mikroişlemcilerin ana yapıları",
+   "Hafta 2 · Mikroişlemcilerin ana yapıları: Bellek, CPU, ALU, Register’lar, Bus’lar",
+   "Hafta 3 · Sayı sistemleri (onaltılı ve ikili sayı sistemi ve aritmetiği)",
+   "Hafta 4 · Analog Transducer’lar",
+   "Hafta 5 · Dijital Transducer’lar",
+   "Hafta 6 · İşlemsel Kuvvetlendiriciler ve uygulama örnekleri, ADC ve DAC çeviriciler",
+   "Hafta 7 · Mantıksal kapılar ve ikili devreler",
+   "Hafta 8 · Elektronik sayıcılar: Analog ve Dijital sayıcılar",
+   "Hafta 9 · Varolan sayıcılardan istenen sayıcı devrelerin elde edilmesi örnekleri, Bölücüler",
+   "Hafta 10 · Motorlar: AC motor, DC motorlar, Step motorlar, Servo motorlar",
+   "Hafta 11 · Hidrolik devre elemanları",
+   "Hafta 12 · Konum, Hız, İvme ölçümleri",
+   "Hafta 13 · Basınç, Ağırlık, Kuvvet ve Moment ölçümleri",
+   "Hafta 14 · Uygulama Örnekleri"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Mikroişlemcilerin tarihi gelişimi ve Mikroişlemcilerin ana yapıları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Mikroişlemcilerin ana yapıları: Bellek, CPU, ALU, Register’lar, Bus’lar",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sayı sistemleri (onaltılı ve ikili sayı sistemi ve aritmetiği)",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Analog Transducer’lar",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Dijital Transducer’lar",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "İşlemsel Kuvvetlendiriciler ve uygulama örnekleri, ADC ve DAC çeviriciler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Mantıksal kapılar ve ikili devreler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Elektronik sayıcılar: Analog ve Dijital sayıcılar",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Varolan sayıcılardan istenen sayıcı devrelerin elde edilmesi örnekleri, Bölücüler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Motorlar: AC motor, DC motorlar, Step motorlar, Servo motorlar",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 11,
+    "topic": "Hidrolik devre elemanları",
+    "outcomes": "2-4"
+   },
+   {
+    "week": 12,
+    "topic": "Konum, Hız, İvme ölçümleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 13,
+    "topic": "Basınç, Ağırlık, Kuvvet ve Moment ölçümleri",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulama Örnekleri"
+   }
+  ],
+  "textbooks": [
+   "Introduction to mechatronics and measurement systems (3rd Edition, McGraw-Hill, 2007), by David G. Alciatore & Michael B. Histand.",
+   "Mechatronics: electronic control systems in mechanical and electrical engineering (3rd Edition, Prentice-Hall, 2004), by William Bolton.",
+   "Mechanical measurements (6th Edition, Prentice-Hall, 2004), by Thomas G. Beckwith, Roy D. Marangoni & John H. Lienhard.",
+   "Theory and design for mechanical measurements (3rd Edition, John Wiley & Sons, 2000), by Richard S. Figliola & Donald E. Beasley."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MDK&dersNo=592"
  }
 }

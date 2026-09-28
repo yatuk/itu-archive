@@ -10116,7 +10116,7 @@
    "local": 3,
    "ects": 4
   },
-  "description": "Fiziksel ve geometrik optiğin temel ilkeleri, girişim kırınım, polarlanma, eşevrellik, yansıma ve kırınım. Ayna, mercek ve kaplamalar. Optik kusurlar, etkileri tanımlanmaları ve giderilme / en aza indirgeme yöntemleri. Optik cihazlar. Basic principles of physical and geometrical optics; interference, diffraction, coherence, polaarization, refraction and reflection. Mirrors, lenses and coatings. Optical imperfections, their effects, methods of diagnosing, eliminating and minimising them. Optical instruments.",
+  "description": "Fiziksel ve geometrik optiğin temel ilkeleri; girişim, kırınım, koherens, polarizasyon, yansıma ve kırılma. Aynalar, mercekler ve optik kaplamalar. Optik aberasyonlar ve kusurlar, bunların etkileri; teşhis, düzeltme ve en aza indirme yöntemleri. Optik aletler ve sistemler. Fundamental principles of physical and geometrical optics; interference, diffraction, coherence, polarization, reflection, and refraction. Mirrors, lenses, and optical coatings. Optical aberrations and imperfections, their effects, and methods for their diagnosis, correction, and minimization. Optical instruments and systems.",
   "outcomes": [
    "Temel dalga optiği kavramlarını (kutuplanma, girişim ve kırınım) kavrayabilme.",
    "Geometrik optiğin temellerini (yansıma ve kırılma) bilme ve uygulayabilme.",
@@ -10228,7 +10228,7 @@
    "local": 3,
    "ects": 4
   },
-  "description": "Fiziksel ve geometrik optiğin temel ilkeleri, girişim kırınım, polarlanma, eşevrellik, yansıma ve kırınım. Ayna, mercek ve kaplamalar. Optik kusurlar, etkileri tanımlanmaları ve giderilme / en aza indirgeme yöntemleri. Optik cihazlar. Basic principles of physical and geometrical optics; interference, diffraction, coherence, polaarization, refraction and reflection. Mirrors, lenses and coatings. Optical imperfections, their effects, methods of diagnosing, eliminating and minimising them. Optical instruments.",
+  "description": "Fiziksel ve geometrik optiğin temel ilkeleri; girişim, kırınım, koherens, polarizasyon, yansıma ve kırılma. Aynalar, mercekler ve optik kaplamalar. Optik aberasyonlar ve kusurlar, bunların etkileri; teşhis, düzeltme ve en aza indirme yöntemleri. Optik aletler ve sistemler. Fundamental principles of physical and geometrical optics; interference, diffraction, coherence, polarization, reflection, and refraction. Mirrors, lenses, and optical coatings. Optical aberrations and imperfections, their effects, and methods for their diagnosis, correction, and minimization. Optical instruments and systems.",
   "outcomes": [
    "Temel dalga optiği kavramlarını (kutuplanma, girişim ve kırınım) kavrayabilme.",
    "Geometrik optiğin temellerini (yansıma ve kırılma) bilme ve uygulayabilme.",
@@ -12302,6 +12302,124 @@
    "-"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FIZ&dersNo=531"
+ },
+ "FIZ 532E": {
+  "code": "FIZ 532E",
+  "name": "Lasers and Photonics",
+  "nameEn": "Lasers and Photonics",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Elektromanyetik kuram; lazer fiziğinin temelleri; lazer ışığının özellikleri; ışıma, soğrulma ve uyarılmış ışıma; katı, sıvı, gaz ve yarıilekenlerde enerji seviyeleri; kararlı ve kararsız lazer kovukları; sürekli ve darbeli lazer davranışı; lazer çeşitleri; lazerlerin bilimsel ve endüstriyel uygulamaları; fiber optiği ve fotonikte temel kavramlar. Electromagnetic theory; fundamentals of laser physics; properties of laser light; emission, absorption and stimulated emission; energy levels in solids, liquids, gases and semiconductors; stable and unstable laser cavities; continuous wave and transient laser behavior; laser types; scientific and industrial applications of lasers; fiber optics and fundamental concepts in photonics.",
+  "outcomes": [
+   "Einstein A-B katsayıları; bu katsayılar ile soğrulma, ışıma ve uyarılmış ışıma oranlarının nasıl bulunacağı",
+   "Atom, molekül ve yarıiletkenlerde enerji seviyeleri/bantları ve bu seviyeler arası ışınımlı ve ışınımsız geçişler",
+   "Yakıneksensel dalga denklemini ve çözümünü, Fabry-Perot girişimölçerini, kararlı ve kararsız lazer rezonatörlerini ve lazer modları",
+   "Pompa mekanizmalarını anlama, pompa oranı ve veriminin hesaplanmasını",
+   "Sürekli ve darbeli lazer davranışı",
+   "Fiber optiğin ve fotonik algılayıcıların çalışma prensipleri",
+   "Lazerlerin ve fotoniğin bilimsel ve endüstriyel uygulamaları"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Lazerlere tarihsel giriş, lazerler hakkında temel kavramlar",
+   "Hafta 2 · Elektromanyetik kuram ve Maxwell denklemlerinin özeti, ışığın yansıma, kırılma ve emilmesi",
+   "Hafta 3 · Işık madde etkileşiminin kuvantum kuramı",
+   "Hafta 4 · Lazer salınımı ve lazer kovukları, kırınım ve lazer hüzmesinin ilerlemesi",
+   "Hafta 5 · Pompa mekanizmaları",
+   "Hafta 6 · Q-çevirimi ve mode kilitlemesi",
+   "Hafta 7 · Lazer çeşitleri: gaz, excimer, serbest electron, katı hal ve yarı iletken vd.",
+   "Hafta 8 · Optik faz uyumluluğu",
+   "Hafta 9 · Fotoniğe giriş",
+   "Hafta 10 · Fiber optiği",
+   "Hafta 11 · Optik algılayıcılar ve modülatörler",
+   "Hafta 12 · Lazerlerin ve fotoniğin bilimsel ve endüstriyel uygulamaları",
+   "Hafta 13 · Ultrahızlı lazerler ve doğrusal olmayan optiğe giriş",
+   "Hafta 14 · Doğrusal olmayan optik: diğer etkileşimler"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Lazerlere tarihsel giriş, lazerler hakkında temel kavramlar",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektromanyetik kuram ve Maxwell denklemlerinin özeti, ışığın yansıma, kırılma ve emilmesi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Işık madde etkileşiminin kuvantum kuramı",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Lazer salınımı ve lazer kovukları, kırınım ve lazer hüzmesinin ilerlemesi",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Pompa mekanizmaları",
+    "outcomes": "4"
+   },
+   {
+    "week": 6,
+    "topic": "Q-çevirimi ve mode kilitlemesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 7,
+    "topic": "Lazer çeşitleri: gaz, excimer, serbest electron, katı hal ve yarı iletken vd.",
+    "outcomes": "7"
+   },
+   {
+    "week": 8,
+    "topic": "Optik faz uyumluluğu",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Fotoniğe giriş",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Fiber optiği",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Optik algılayıcılar ve modülatörler",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Lazerlerin ve fotoniğin bilimsel ve endüstriyel uygulamaları",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Ultrahızlı lazerler ve doğrusal olmayan optiğe giriş",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Doğrusal olmayan optik: diğer etkileşimler"
+   }
+  ],
+  "textbooks": [
+   "O. Svelto, Principles of Lasers, (4 ed: Plenum Press, 2007).",
+   "B. E. A. Saleh and M. C. Teich, Fundamentals of Photonics (2 ed John Wiley & Sons Inc, 2007).",
+   "A. E. Siegman, Lasers (Univ Science Books, 1986).",
+   "E. Hecht, Optics, 4 ed. (Addison Wesley Longman, Inc, 2001).",
+   "R. W. Boyd, Nonlinear Optics (3 ed Academic Press, 2008)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FIZ&dersNo=532"
  },
  "FIZ 596E": {
   "code": "FIZ 596E",

@@ -341,6 +341,121 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTA&dersNo=555"
  },
+ "MTA 556E": {
+  "code": "MTA 556E",
+  "name": "Modal Testing",
+  "nameEn": "Modal Testing",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş: Titreşim analizi ve modal test. Sensörler, ölçüm zinciri ve titreşim sinyallerinin toplanması. Frekans Tepki Fonksiyonlarının deneysel belirlenmesi. Frekans Tepki Fonksiyonlarından modal parametrelerin elde edilmesi. Deneysel modal analiz uygulamaları. Introduction to the fundamentals of vibration analysis and modal testing. Transducers and measurement chain, acquisition of vibration signals. Estimation of Frequency Response Functions (FRF). Extraction of modal parameters from FRFs. Applications of modal testing.",
+  "outcomes": [
+   "Sensörler, ölçüm zinciri ve sinyal işleme konularında pratik bilgi.",
+   "Frekans Tepki Fonksiyonları ile ilgili teori hakkında pratikde kullanılabilecek bilgi.",
+   "Frekans Tepki Fonksiyonlarını anlama/yorumlama kabiliyeti.",
+   "Ölçülen Frekans Tepki Fonksiyonlarını kullanarak yapının doğal frekanslarını, sönüm değerlerini ve mod şekillerini belirleyebilme kabiliyeti.",
+   "Deneysel modal analiz uygulamaları hakkında bilgi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş: Modal Test",
+   "Hafta 2 · Deneysel modal analizin temelleri",
+   "Hafta 3 · Mekanik titreşimler",
+   "Hafta 4 · Yapısal dinamik modelleme",
+   "Hafta 5 · Deney planlaması",
+   "Hafta 6 · Sensör ve ölçüm zinciri, titreşim sinyali toplanması",
+   "Hafta 7 · Titreşim sinyallerinin işlenmesi, Fourier serisi",
+   "Hafta 8 · Spektrum analizi, yanılsama ve sızıntı",
+   "Hafta 9 · Frekans Tepki Fonksiyonu ölçümü",
+   "Hafta 10 · Frekans tepki fonksiyonlarının özellikleri",
+   "Hafta 11 · Modal özelliklerin tek serbestlik derecesi yaklaşımı ile belirlenmesi",
+   "Hafta 12 · Tepe metodu, çember metodu ve doğru çizgi metodu",
+   "Hafta 13 · Modal özelliklerin global metodlarla belirlenmesi",
+   "Hafta 14 · Uygulamalar ve proje sunumları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Modal Test",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 2,
+    "topic": "Deneysel modal analizin temelleri",
+    "outcomes": "1-2-5"
+   },
+   {
+    "week": 3,
+    "topic": "Mekanik titreşimler",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Yapısal dinamik modelleme",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Deney planlaması",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Sensör ve ölçüm zinciri, titreşim sinyali toplanması",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Titreşim sinyallerinin işlenmesi, Fourier serisi",
+    "outcomes": "2"
+   },
+   {
+    "week": 8,
+    "topic": "Spektrum analizi, yanılsama ve sızıntı",
+    "outcomes": "2"
+   },
+   {
+    "week": 9,
+    "topic": "Frekans Tepki Fonksiyonu ölçümü",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 10,
+    "topic": "Frekans tepki fonksiyonlarının özellikleri",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 11,
+    "topic": "Modal özelliklerin tek serbestlik derecesi yaklaşımı ile belirlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Tepe metodu, çember metodu ve doğru çizgi metodu",
+    "outcomes": "4"
+   },
+   {
+    "week": 13,
+    "topic": "Modal özelliklerin global metodlarla belirlenmesi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Uygulamalar ve proje sunumları"
+   }
+  ],
+  "textbooks": [
+   "D. J. Ewins, Modal Testing: Theory, Practice and Application, 2nd edition, Research Studies Press Ltd, 2000, ISBN 0-86380-218-4",
+   "Bruce K. Donaldson, Introduction to Structural Dynamics, Cambridge Univ. Press, 2007. ISBN 0-521-8654-3",
+   "Newland, D. E. , An introduction to random vibrations and spectral analysis, 2nd edition, Longman, 1984. ISBN 0-582-30530-6.",
+   "ICATS, User’s guide, Imperial College, London. 2006."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MTA&dersNo=556"
+ },
  "MTA 558": {
   "code": "MTA 558",
   "name": "Optimizasyon Yöntemleri",

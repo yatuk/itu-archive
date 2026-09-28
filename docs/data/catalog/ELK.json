@@ -11129,6 +11129,123 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELK&dersNo=509"
  },
+ "ELK 509E": {
+  "code": "ELK 509E",
+  "name": "Yüksek Gerilim Ölçme Tekniği",
+  "nameEn": "High Voltage Measurement Technique",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Yüksek gerilim tekniğinde ölçme hakkında genel bilgi, elektrostatik yüksek gerilim ölçü aletleri, generatör ilkesine dayanan yüksek gerilim ölçü aletleri, tepe değer ölçü aletleri, küresel elektrodlarla ölçme, klidonografla ölçme, gerilim ölçü transformatörleriyle ölçme, yüksek gerilim bölücüleri, darbe akımlarının ölçülmesi, kapasite ve dielektrik kayıpların ölçülmesi, korona kayıplarının ölçülmesi, elektrostatik alanların ölçülmesi, yalıtkan malzemelerin delinme dayanımı ve delinme geriliminin saptanması, ölçme sonuçlarının istatistik yöntemlerle değerlendirilmesi. Fundamental principles of high voltage measurement techniques, electrostatic high voltage measuring instruments, voltmeters based upon the generator principle, peak value measuring instruments, voltage measurement with sphere gaps, measurement with Klidonograph measurement with voltage transformers, high voltage dividers, measurement of impulse currents, capacitance and dielectric loss measurement, measurement of corona losses, measurement of electrostatic fields, experimental determination of the breakdown voltage and the breakdown strength of insulating materials, the evaluation of the test results by statistical methods.",
+  "outcomes": [
+   "Yüksek gerilim laboratuarlarının planlanması",
+   "Yüksek gerilim ölçü aletlerinin çalışma prensipleri",
+   "Yüksek deney gerilimlerinin ölçülmesi",
+   "Yüksek deney akımlarının ölçülmesi",
+   "Tahribatsız yüksek gerilim deney devrelerinin tasarımı",
+   "Ölçü sonuçlarının istatistiksel olarak değerlendirilmesi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Genel bilgi",
+   "Hafta 2 · Elektrostatik yüksek gerilim ölçü aletleri",
+   "Hafta 3 · Generatör ilkesine dayanan yüksek gerilim ölçü aletleri",
+   "Hafta 4 · Tepe değer ilkesine dayanan yüksek gerilim ölçü aletleri",
+   "Hafta 5 · Küresel elektrotlarla ölçme",
+   "Hafta 6 · Klidonografla ölçme",
+   "Hafta 7 · Gerilim ölçü transformatörleri ile ölçme",
+   "Hafta 8 · Yüksek gerilim bölücüleri",
+   "Hafta 9 · Darbe akımlarının ölçülmesi",
+   "Hafta 10 · Kapasite ve dielektrik kayıpların ölçülmesi",
+   "Hafta 11 · Korona kayıplarının ölçülmesi",
+   "Hafta 12 · Elektrostatik alanların ölçülmesi",
+   "Hafta 13 · Yalıtkan malzemelerin delinme dayanımı ve delinme geriliminin saptanması",
+   "Hafta 14 · Ölçme sonuçlarının istatistik yöntemlerle değerlendirilmesi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Genel bilgi",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Elektrostatik yüksek gerilim ölçü aletleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Generatör ilkesine dayanan yüksek gerilim ölçü aletleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Tepe değer ilkesine dayanan yüksek gerilim ölçü aletleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Küresel elektrotlarla ölçme",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Klidonografla ölçme",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Gerilim ölçü transformatörleri ile ölçme",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Yüksek gerilim bölücüleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Darbe akımlarının ölçülmesi",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 10,
+    "topic": "Kapasite ve dielektrik kayıpların ölçülmesi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 11,
+    "topic": "Korona kayıplarının ölçülmesi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 12,
+    "topic": "Elektrostatik alanların ölçülmesi",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 13,
+    "topic": "Yalıtkan malzemelerin delinme dayanımı ve delinme geriliminin saptanması",
+    "outcomes": "3-5"
+   },
+   {
+    "week": 14,
+    "topic": "Ölçme sonuçlarının istatistik yöntemlerle değerlendirilmesi"
+   }
+  ],
+  "textbooks": [
+   "M. Özkaya, Yüksek Gerilim Tekniği, Cilt:2, Birsen Yayınevi, İstanbul, 1996.",
+   "M. Özkaya, Yüksek Gerilim Tekniğinde Ölçme, İ.T.Ü. Kütüphanesi, 1984.",
+   "H. M. Ryan, High Voltage Engineering and Testing, Peter Peregrinus Ltd., London, 2nd ed., 2001.",
+   "E. Kuffel, W. Zaengl, J. Kuffel, High Voltage Engineering Fundamentals, 2000.",
+   "D. Kind, K. Feser, High-Voltage Test Techniques, SBA Publ./Vieweg, 1999."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELK&dersNo=509"
+ },
  "ELK 511E": {
   "code": "ELK 511E",
   "name": "Reliability Analysis in P. Sys",
@@ -11364,6 +11481,121 @@
    "IEEE Working Group on Distribution Automation, Distribution Automation, IEEE Tutorial Course, 1988."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELK&dersNo=513"
+ },
+ "ELK 514": {
+  "code": "ELK 514",
+  "name": "Güç Sistemlerinde Optimizasyon",
+  "nameEn": "Optimisation in Power Systems",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Optimizasyon teorisi ve matematiksel programlama yöntemlerinin sınıflandırılması. Lineer programlama problemininçözüm yöntemleri. Termik ünitelerde ekonomik yük paylaşımı ve çözüm yöntemleri. İletim hatlarında oluşan kayıplar. Enterkonnekte şebekede santralların devreye alınması ve dinamik programlamaya giriş. Yakıt harcamaları ve planlama için maliyet modelleri.Hidrolik santrallarının koordinasyonu ve modellenmesi. Yük tahmininde kullanılan çözüm yöntemleri. Optimal güç akışı. Enerji sistemlerinde güvenlik. Elektrik enerji sistemlerinde, gerçek zamanlı ölçümler ile durum kestirimi yapılması. Optimization theory and classification of mathematical programming methods. Solution methods of linear programming. Economic dispatch of thermal units and solution methods. Transmission losses. Unit commitment problem and an introduction to dynamic programming. Energy production cost models for fuel budgeting and planning. Hydrolic coordination. Hydroelectric plant models. Load forecasting. Methods of solution of load forecasting. Optimal power flow. Power system security. State estimation from on-line measurements.",
+  "outcomes": [
+   "Optimizasyon teorisini öğrenme",
+   "Güç Sistemlerinde optimizasyon tekniklerini uygulama",
+   "Uzun, orta ve kısa dönem yük tahminleri",
+   "Güç sistemlerinde durum kestirimi"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Optimizasyon teorisine giriş",
+   "Hafta 2 · Yük akışı denklemleri ve çözüm yöntemleri",
+   "Hafta 3 · Lineer programlama problemleri (grafik yöntem, simpleks yöntemi)",
+   "Hafta 4 · Lagrange Çarpanlari Yöntemi",
+   "Hafta 5 · Evrimsel algoritmalar",
+   "Hafta 6 · Termik ünitelerde ekonomik yük dağıtımı",
+   "Hafta 7 · Unit Commitment problemi ve çözüm yöntemleri",
+   "Hafta 8 · Hidrotermal koordinasyon",
+   "Hafta 9 · Optimum güç akışı",
+   "Hafta 10 · Yük tahmini",
+   "Hafta 11 · Güç sistemlerinin güvenliği",
+   "Hafta 12 · Güç sistemlerinde optimizasyon uygulamaları",
+   "Hafta 13 · Durum kestirimi",
+   "Hafta 14 · Dönem ödevlerinin sunumu"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Optimizasyon teorisine giriş",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Yük akışı denklemleri ve çözüm yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Lineer programlama problemleri (grafik yöntem, simpleks yöntemi)",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 4,
+    "topic": "Lagrange Çarpanlari Yöntemi",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 5,
+    "topic": "Evrimsel algoritmalar",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 6,
+    "topic": "Termik ünitelerde ekonomik yük dağıtımı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 7,
+    "topic": "Unit Commitment problemi ve çözüm yöntemleri",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 8,
+    "topic": "Hidrotermal koordinasyon",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 9,
+    "topic": "Optimum güç akışı",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 10,
+    "topic": "Yük tahmini",
+    "outcomes": "3"
+   },
+   {
+    "week": 11,
+    "topic": "Güç sistemlerinin güvenliği",
+    "outcomes": "1-3"
+   },
+   {
+    "week": 12,
+    "topic": "Güç sistemlerinde optimizasyon uygulamaları",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Durum kestirimi",
+    "outcomes": "4"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevlerinin sunumu"
+   }
+  ],
+  "textbooks": [
+   "Kwang Y. Lee, Mohammed El-Sharkawi, “Modern Heuristic Optimization Techniques: Theory and Apllications to Power Systems”, IEEE Press, 2008.",
+   "James A. Momoh, “Electric Power System Applications of Optimization”, Marcel Dekker Inc., 2001.",
+   "Allen, J. Wood, Bruce, F.Wollenberg, Power Generation, Operation and Control, John Wiley and Sons, 1996.",
+   "George L. Kusic, Computer-Aided Power System Analysis, Prentice – Hall, 1986.",
+   "Gross, C., Power System Analysis, John-Wiley and Sons, 1986."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELK&dersNo=514"
  },
  "ELK 516": {
   "code": "ELK 516",
@@ -12213,6 +12445,138 @@
    "Lee P.J., 2001, Engineering Superconductivity, John Wiley"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELK&dersNo=613"
+ },
+ "ELK 696": {
+  "code": "ELK 696",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Rese., Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar. Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer. [3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=ELK&dersNo=696"
  },
  "ELK 696E": {
   "code": "ELK 696E",

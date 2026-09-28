@@ -1,4 +1,232 @@
 {
+ "MKC 501E": {
+  "code": "MKC 501E",
+  "name": "Engineering Mathematics",
+  "nameEn": "Engineering Mathematics",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Matrisler ve lineer denklem takımları, özdeğer problemleri, adi diferansiyal denklemler, seri çözümleri, özel fonksiyonlar, kısmi diferansiyal denklemler (eliptik, parabolik ve hiperbolik denklemler), değişkenlerine ayırma, Laplace dönüşümü, Fourier dönüşümü, Green’s fonksiyonu, pertürbasyon yöntemleri. Matrices and system of linear equations, eigenvalue problems, ordinary differential equations, series solution, special functions, partial differential equations: elliptic, parabolic and hyperbolic equations, separation of variables, Laplace transforms, Fourier transforms, Green’s function, perturbation methods.",
+  "outcomes": [
+   "Matris sistemlerini anlama ve çeşitli cebirsel denklemlerin çözümünde gerekli sağlam altyapı.",
+   "Önemli fonksiyonların ve bunların mühendislik problemlerinin çözümündeki kullanımı ile ilgili sağlam altyapı.",
+   "Doğrusal olmayan adi diferansyal denklemlere seri çözüm yöntemlerini uygulayabilme becerisi.",
+   "Kısmi diferansiyal denklemleri değişkenlerine ayırma yöntemleri ile çözebilme becerisi.",
+   "Kısmi diferansiyal denklemleri uygun integral transform yöntemini seçerek çözebilme becerisi.",
+   "Doğrusal olmayan denklemlere pertürbasyon teknikleri uygulayabilme becerisi."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Matrisler ve cebri denklem sistemlerinin çözümü. Özdeğerler.",
+   "Hafta 2 · Adi diferansiyal denklemler. Doğrusal adi diferansiyal denklemler sistemleri.",
+   "Hafta 3 · Adi diferansiyal denklemler: Tekil nokta etrafında çözüm, Frobenius serileri.",
+   "Hafta 5 · Özel fonksiyonlar: Gamma fonksiyonu, hata fonksiyonu, Bessel fonksiyonları.",
+   "Hafta 6 · Modifiye Bessel fonksiyonları, Legendre polinomiyali. Uygulamalar.",
+   "Hafta 7 · Kısmi diferansiyal denklemler: Sınıflandırma. Değişkenlerine ayırma.",
+   "Hafta 8 · Kanonik problemler: Laplace denklemi, difüzyon denklemi, dalga denklemi.",
+   "Hafta 9 · Özel fonksiyonlar kullanarak kısmi diferansiyal denklem çözümü.",
+   "Hafta 10 · Homojen olmayan problemlerin çözümü: Kaynaklı ısı akış problemi ve homojen olmayan sınır koşulları.",
+   "Hafta 11 · Laplace dönüşümü ve uygulamaları.",
+   "Hafta 12 · Fourier dönüşümü ve uygulamaları.",
+   "Hafta 13 · Green fonksiyonu ve uygulamaları. .",
+   "Hafta 14 · Pertürbasyon yöntemlerine giriş."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Matrisler ve cebri denklem sistemlerinin çözümü. Özdeğerler.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Adi diferansiyal denklemler. Doğrusal adi diferansiyal denklemler sistemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 3,
+    "topic": "Adi diferansiyal denklemler: Tekil nokta etrafında çözüm, Frobenius serileri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 5,
+    "topic": "Özel fonksiyonlar: Gamma fonksiyonu, hata fonksiyonu, Bessel fonksiyonları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Modifiye Bessel fonksiyonları, Legendre polinomiyali. Uygulamalar.",
+    "outcomes": "2"
+   },
+   {
+    "week": 7,
+    "topic": "Kısmi diferansiyal denklemler: Sınıflandırma. Değişkenlerine ayırma.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Kanonik problemler: Laplace denklemi, difüzyon denklemi, dalga denklemi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Özel fonksiyonlar kullanarak kısmi diferansiyal denklem çözümü.",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Homojen olmayan problemlerin çözümü: Kaynaklı ısı akış problemi ve homojen olmayan sınır koşulları.",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Laplace dönüşümü ve uygulamaları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Fourier dönüşümü ve uygulamaları.",
+    "outcomes": "5"
+   },
+   {
+    "week": 13,
+    "topic": "Green fonksiyonu ve uygulamaları. .",
+    "outcomes": "5"
+   },
+   {
+    "week": 14,
+    "topic": "Pertürbasyon yöntemlerine giriş."
+   }
+  ],
+  "textbooks": [
+   "Erwin Kreyszig, \"Advanced Engineering Mathematics\" John Wiley & Sons, Inc. New York, 9. Baskı, 2006. (Erwin Kreyszig, \"Advanced Engineering Mathematics\" John Wiley & Sons, Inc. New York, 9th Edition, 2006.)",
+   "Advanced Engineering Mathematics, Wylie, C.R., L.C. Barrett, McGraw-Hill, New York, 1995",
+   "Elementary Applied Partial Differential Equations, Haberman, R., Prentice-Hall Inc., Englewood Cliffs, 1983.",
+   "Advanced Mathematical Methods for Engineering and Science Students, Stephenson, G., P.M. Radmore, Cambridge University Press, Cambridge, 1990"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKC&dersNo=501"
+ },
+ "MKC 517E": {
+  "code": "MKC 517E",
+  "name": "Katı Cisimler Mekani.Özel Kon.",
+  "nameEn": "Special Topi.in Solid Mechan.",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Ders her açıldığında duyurulacaktır. To be announced whenever the course is offered.",
+  "outcomes": [
+   "-",
+   "-",
+   "-",
+   "-",
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · -",
+   "Hafta 2 · -",
+   "Hafta 3 · -",
+   "Hafta 4 · -",
+   "Hafta 5 · -",
+   "Hafta 6 · -",
+   "Hafta 7 · -",
+   "Hafta 8 · -",
+   "Hafta 9 · -",
+   "Hafta 10 · -",
+   "Hafta 11 · -",
+   "Hafta 12 · -",
+   "Hafta 13 · -",
+   "Hafta 14 · -"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 8,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 9,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 10,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 11,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 12,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 13,
+    "topic": "-",
+    "outcomes": "1"
+   },
+   {
+    "week": 14,
+    "topic": "-"
+   }
+  ],
+  "textbooks": [
+   "-",
+   "-",
+   "-",
+   "-"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKC&dersNo=517"
+ },
  "MKC 521": {
   "code": "MKC 521",
   "name": "Elastisite Teorisi",

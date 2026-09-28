@@ -115,6 +115,123 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=501"
  },
+ "MIA 502E": {
+  "code": "MIA 502E",
+  "name": "Num.Meth.In Fluid Flow&Heat T",
+  "nameEn": "Num.Meth.In Fluid Flow&Heat T",
+  "language": "English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Giriş. Akışkanlar mekaniği ve ısı transferinde temel denklemler. Başlangıç ve sınır değer problemleri. Kısmi diferansiyel denklemlerin sınıflandırılması. Sayısal çözüm yaklaşımları: Sonlu farklar yöntemleri. Sonlu fark formülleri. Parabolik denklemler: Açık ve kapalı yöntemler. Kararlılık analizi. Eliptik denklemler. Vortisite-Akım Fonksiyonu formülasyonu. Hiperbolik denklemler. Hesaplama ağı oluşturulması. Introduction. Fundamental equations of fluid flow and heat transfer. Initial and boundary value problems. Classification of partial differential equations. Numerical solution approaches. Finite difference formulations. Parabolic equations: Explicit and implicit methods. Stability analysis. Elliptic equations. Vorticity-Stream Function formulation. Hyperbolic equations. Grid generation.",
+  "outcomes": [
+   "Başlangıç ve sınır değer problemleri, çeşitli sayısal yöntemler kullanarak çözebilmek (Runge-Kutta yöntemi, Sonlu farklar ve “shooting” yöntemi).",
+   "Eliptik, parabolik ve hiperbolik denklemleri sınıflandırma ve ifade ettikleri fiziksel olayları kavrama.",
+   "Taylor serileri açılımını kullanarak sonlu farklar formülasyonu geliştirebilmek.",
+   "Açık ve kapalı yöntemler ile parabolik denklemleri çözebilmek.",
+   "İteratif yöntemler ile eliptik denklemleri çözebilmek.",
+   "Sürtünmeli ve sürtünmesiz akışlar için vortisite-akım fonksiyonu denklemlerini sayısal olarak çözebilmek.",
+   "Lax-Wendroff ve MacCormack yöntemleri ile sıkıştırılabilir Euler denklemlerini çözebilmek.",
+   "Dikdörtgen olmayan geometriler için temel hesaplama ağı tekniklerini kullanabilmek."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Isı-akışkan olaylarında sayısal yöntemlere giriş. Akışkanlar mekaniği ve ısı transferindeki yöneten denklemlere ve fiziksel anlamlarına genel bir bakış.",
+   "Hafta 2 · Başlangıç değer problemlerinin sayısal çözümü.",
+   "Hafta 3 · Doğrusal ve doğrusal olmayan sınır değer problemlerinin sayısal çözümü: Sonlu farklar ve “shooting” yöntemleri. Thomas algoritması. Kanat problemi, düşey levha üzerinde doğal taşınım.",
+   "Hafta 4 · Doğrusal ve doğrusal olmayan sınır değer problemlerinin sayısal çözümü: Sonlu farklar ve “shooting” yöntemleri. Thomas algoritması. Kanat problemi, düşey levha üzerinde doğal taşınım.",
+   "Hafta 5 · Kısmi diferansiyal denklemlerin sınıflandırılması: Eliptik, parabolik ve hiperbolik denklemler ve bunlarla ilişkili başlangıç ve sınır koşulları.",
+   "Hafta 6 · Sayısal çözüm yaklaşımları: Sonlu farklar, sonlu hacimler, sonlu elemanlar. Sonlu fark formülasyonları: Taylor serisi yaklaşımı, sonlu fark denklemleri.",
+   "Hafta 7 · Parabolik kısmi diferansiyal denklemler: Açık yöntemler; FTCS yöntemi, Richardson ve DuFort-Frankel yöntemleri. Kararlılık analizi. Kapalı yöntemler; Crank-Nicolson yöntemi.",
+   "Hafta 8 · Çok boyutlu parabolik denklemler. Yaklaşık faktörizasyon. ADI yöntemi. Sonlu fark denklemlerinin kararlılık ve tutarlılık analizi. Daimi olmayan ısı-akış problemleri.",
+   "Hafta 9 · Eliptik kısmi diferansiyal denklemler: Jacobi, Gauss-Seidel ve SOR iterasyon yöntemleri. Türevsel sınır koşullarının incelenmesi. Daimi ısı-akış problemleri.",
+   "Hafta 10 · Eliptik kısmi diferansiyal denklemler: Jacobi, Gauss-Seidel ve SOR iterasyon yöntemleri. Türevsel sınır koşullarının incelenmesi. Daimi ısı-akış problemleri.",
+   "Hafta 11 · Vortisite-akım fonksiyonu formülasyonu, vortisite içinn sınır koşulları. Kavite akışı, basamak üzerinden akış.",
+   "Hafta 12 · Hiperbolik denklemler: Burger denklemi. Lax-Wendroff, MacCormack yöntemleri.",
+   "Hafta 13 · Daimi olmayan sıkıştırılabilir Navier-Stokes ve enerji denklemlerinin sayısal çözümü.",
+   "Hafta 14 · Hesaplama ağı oluşturmaya giriş."
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Isı-akışkan olaylarında sayısal yöntemlere giriş. Akışkanlar mekaniği ve ısı transferindeki yöneten denklemlere ve fiziksel anlamlarına genel bir bakış.",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Başlangıç değer problemlerinin sayısal çözümü.",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Doğrusal ve doğrusal olmayan sınır değer problemlerinin sayısal çözümü: Sonlu farklar ve “shooting” yöntemleri. Thomas algoritması. Kanat problemi, düşey levha üzerinde doğal taşınım.",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Doğrusal ve doğrusal olmayan sınır değer problemlerinin sayısal çözümü: Sonlu farklar ve “shooting” yöntemleri. Thomas algoritması. Kanat problemi, düşey levha üzerinde doğal taşınım.",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Kısmi diferansiyal denklemlerin sınıflandırılması: Eliptik, parabolik ve hiperbolik denklemler ve bunlarla ilişkili başlangıç ve sınır koşulları.",
+    "outcomes": "2"
+   },
+   {
+    "week": 6,
+    "topic": "Sayısal çözüm yaklaşımları: Sonlu farklar, sonlu hacimler, sonlu elemanlar. Sonlu fark formülasyonları: Taylor serisi yaklaşımı, sonlu fark denklemleri.",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Parabolik kısmi diferansiyal denklemler: Açık yöntemler; FTCS yöntemi, Richardson ve DuFort-Frankel yöntemleri. Kararlılık analizi. Kapalı yöntemler; Crank-Nicolson yöntemi.",
+    "outcomes": "4"
+   },
+   {
+    "week": 8,
+    "topic": "Çok boyutlu parabolik denklemler. Yaklaşık faktörizasyon. ADI yöntemi. Sonlu fark denklemlerinin kararlılık ve tutarlılık analizi. Daimi olmayan ısı-akış problemleri.",
+    "outcomes": "4"
+   },
+   {
+    "week": 9,
+    "topic": "Eliptik kısmi diferansiyal denklemler: Jacobi, Gauss-Seidel ve SOR iterasyon yöntemleri. Türevsel sınır koşullarının incelenmesi. Daimi ısı-akış problemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Eliptik kısmi diferansiyal denklemler: Jacobi, Gauss-Seidel ve SOR iterasyon yöntemleri. Türevsel sınır koşullarının incelenmesi. Daimi ısı-akış problemleri.",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Vortisite-akım fonksiyonu formülasyonu, vortisite içinn sınır koşulları. Kavite akışı, basamak üzerinden akış.",
+    "outcomes": "6"
+   },
+   {
+    "week": 12,
+    "topic": "Hiperbolik denklemler: Burger denklemi. Lax-Wendroff, MacCormack yöntemleri.",
+    "outcomes": "7"
+   },
+   {
+    "week": 13,
+    "topic": "Daimi olmayan sıkıştırılabilir Navier-Stokes ve enerji denklemlerinin sayısal çözümü.",
+    "outcomes": "7"
+   },
+   {
+    "week": 14,
+    "topic": "Hesaplama ağı oluşturmaya giriş."
+   }
+  ],
+  "textbooks": [
+   "Klaus A. Hoffman, Steve T. Chiang,“ Computational Fluid Dynamics for Engineers”, Wichita, Kansas, Engineering Education System, 1993.",
+   "J.C. Tannehill, D.A. Anderson, R.H. Pletcher, “Computational Fluid Mechanics and Heat Transfer”, Washington, DC, Taylor and Francis, 1997.",
+   "John D. Anderson, “Computational Fluid Dynamics : The basics with applications”, Mac Graw Hill, 1995."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=502"
+ },
  "MIA 503E": {
   "code": "MIA 503E",
   "name": "Advanced Fluid Dynamics",
@@ -464,6 +581,122 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=509"
  },
+ "MIA 511": {
+  "code": "MIA 511",
+  "name": "Hidrodinamik",
+  "nameEn": "Hydrodynamics",
+  "language": "Türkçe",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Sakınım denklemlerinin özetlenmesi. Sakınım denklemlerinin özel formları. Akış kinematiği: Akım çizgileri, sirkülasyon, akım ve vortex tübü. İdeal akışlar. İki boyutlu potansiyel akışlar. Kompleks fonksiyonlar. Kaynak-kuyu. Vortex. Karmaşık akışlar. Silindir etrafında akış. Blasius İntegral kanunları. Konform tasvir. Schwarz-Christoffel dönüşümü. Panel methot. Summary of conservation equations and their special forms. Flow kinematics : Streamlines, circulation, stream tube and vortex tube. Two dimensional potential flows. Complex functions. Elementary flows. (Source - Sink , potential vortex) Flow around cylinder. Blasius integral laws. Conform transformation. Schwarz-Christoffel transformation, panel methods.",
+  "outcomes": [
+   "Kütle, momentum ve enerji korunumu denklemlerini Reynolds Transport teoremi aracığı ile türetebilme",
+   "Navier-Stokes denklemini türetebilme ve terimlerinin fiziksel anlamlarını yorumlayabilme",
+   "Akış alanlarının sınır koşullarını belirleyebilme",
+   "Silindir, Keskin kenarlı cisimler ve kanat profilleri etrafındaki akış alanlarını potansiyel teori",
+   "Konform tasvir ve uygulamaları ve Schwarz-Christoffel dönüşümü.",
+   "Panel methotları kullanabilme ve bu methotlarla iki boyutlu potansiyel akışları belirleyebilme."
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Sakınım denklemleri ve özel formları",
+   "Hafta 2 · Sakınım denklemleri ve özel formları",
+   "Hafta 3 · Akış Kinematiği :Akım çizgileri, sirkülasyon, akım tübü, vorteks tübü,",
+   "Hafta 4 · İdeal akışlar: İki boyutlu potansiyel akışlar, Kompleks potansiyel ve hız , Kaynak, kuyu, vorteks ...",
+   "Hafta 5 · İdeal akışlar: İki boyutlu potansiyel akışlar, Kompleks potansiyel ve hız , Kaynak, kuyu, vorteks ...",
+   "Hafta 6 · Dairesel silindir, Blasius İntegral kanunları, Kuvvet ve moment",
+   "Hafta 7 · Dairesel silindir, Blasius İntegral kanunları, Kuvvet ve moment (1. ARA SINAV)",
+   "Hafta 8 · Konform tasvir,",
+   "Hafta 9 · Konform tasvir ve uygulamaları",
+   "Hafta 10 · Konform tasvir ve uygulamaları",
+   "Hafta 11 · Schwarz-Christoffel dönüşümü ve uygulamaları",
+   "Hafta 12 · Schwarz-Christoffel dönüşümü ve uygulamaları",
+   "Hafta 13 · Panel methotlar",
+   "Hafta 14 · Panel methot uygalamaları"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sakınım denklemleri ve özel formları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 2,
+    "topic": "Sakınım denklemleri ve özel formları",
+    "outcomes": "1-2"
+   },
+   {
+    "week": 3,
+    "topic": "Akış Kinematiği :Akım çizgileri, sirkülasyon, akım tübü, vorteks tübü,",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 4,
+    "topic": "İdeal akışlar: İki boyutlu potansiyel akışlar, Kompleks potansiyel ve hız , Kaynak, kuyu, vorteks ...",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 5,
+    "topic": "İdeal akışlar: İki boyutlu potansiyel akışlar, Kompleks potansiyel ve hız , Kaynak, kuyu, vorteks ...",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 6,
+    "topic": "Dairesel silindir, Blasius İntegral kanunları, Kuvvet ve moment",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Dairesel silindir, Blasius İntegral kanunları, Kuvvet ve moment (1. ARA SINAV)",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Konform tasvir,",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 9,
+    "topic": "Konform tasvir ve uygulamaları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 10,
+    "topic": "Konform tasvir ve uygulamaları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 11,
+    "topic": "Schwarz-Christoffel dönüşümü ve uygulamaları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 12,
+    "topic": "Schwarz-Christoffel dönüşümü ve uygulamaları",
+    "outcomes": "3-4-5"
+   },
+   {
+    "week": 13,
+    "topic": "Panel methotlar",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 14,
+    "topic": "Panel methot uygalamaları"
+   }
+  ],
+  "textbooks": [
+   "G., Currie, “Fundamentals Mechanics of Fluids”, John Wiley & Sons, New",
+   "An Introduction to Fluid Mechanics”, G.K. Batchelor, Cambridge University Press, 1983",
+   "A First Course in Fluid Dynamics”, A.R.Paterson , Cambridge University Press, 1985",
+   "Kurs Notları"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=511"
+ },
  "MIA 515": {
   "code": "MIA 515",
   "name": "Isı İletimi",
@@ -698,6 +931,138 @@
  },
  "MIA 596": {
   "code": "MIA 596",
+  "name": "Bilimsel Araş.,Etik ve Seminer",
+  "nameEn": "Scien.Research, Ethic&Seminar",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 2,
+   "practice": 0,
+   "lab": 0,
+   "local": 0,
+   "ects": 7.5
+  },
+  "description": "Bilim tanımı ve gelişimi, bilimsel araştırma yaklaşımı, literatür analizi, araştırma tasarımı, nicel ve nitel araştırma yöntemleri, veri toplanması, tez, proje, ve bilimsel makale yazım teknikleri, araştırma yapılırken izlenmesi gereken etik ilkeler, yayın yapılırken izlenmesi gereken etik ilkeler, atıfta etik ilkeler, başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar, tez konusu/kendi mühendislik alanı kapsamında yapılacak sunumlar Definition and development of science, scientific research approach, literature survey, research design, quantitative and qualitative research methodologies, data gathering, writing techniques for thesis, project, and scientific article, ethical principles to be followed when conducting research, ethical principles to be followed when publishing, citation ethics, tips for a successful presentation, students presentations within the scope of their thesis topics/own engineering field.",
+  "outcomes": [
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "1. Bilimin, bilimsel bilginin ve bilimin tarihsel gelişiminin ne olduğunu kavramış olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "2. Bilimsel araştırma yöntemlerini anlamış ve uygulayabilecek olma",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "3. Literatür taraması ve analizi yapabilmek",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "4. Bilimsel yayın çeşitlerinin neler olduğunu ve temel özelliklerini öğrenmiş olma",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "5. Bilimsel çalışmada takip edilmesi gereken etik kuralları kavramış ve içselleştirmiş olmak",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "6. Teknik veya teknik olmayan konularda sunum hazırlama becerisine sahip olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "7. Sunum yaparken sözel/vokal/görsel olarak dinleyiciye hitap etmeyi öğrenmiş olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma",
+   "8. Sunum esnasında iletişimin önemini kavrama, topluluk önünde rahat konuşma becerisine sahip olma"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+   "Hafta 2 · Tez ve Makale yazım teknikleri",
+   "Hafta 3 · Araştırma ve yayın etiği",
+   "Hafta 4 · Araştırmada etik dışı davranışlar – dünyadan örnekler",
+   "Hafta 5 · Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+   "Hafta 6 · Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+   "Hafta 7 · Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+   "Hafta 8 · Dönem ödevi sunumu-1",
+   "Hafta 9 · Dönem ödevi sunumu-2",
+   "Hafta 10 · Dönem ödevi sunumu-3",
+   "Hafta 11 · Dönem ödevi sunumu-4",
+   "Hafta 12 · Dönem ödevi sunumu-5",
+   "Hafta 13 · Dönem ödevi sunumu-6",
+   "Hafta 14 · Dönem ödevi sunumu-7"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Bilimsel araştırma yöntemleri, literatür taraması, veri toplama ve değerlendirme",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 2,
+    "topic": "Tez ve Makale yazım teknikleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 3,
+    "topic": "Araştırma ve yayın etiği",
+    "outcomes": "5"
+   },
+   {
+    "week": 4,
+    "topic": "Araştırmada etik dışı davranışlar – dünyadan örnekler",
+    "outcomes": "5"
+   },
+   {
+    "week": 5,
+    "topic": "Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi",
+    "outcomes": "5"
+   },
+   {
+    "week": 6,
+    "topic": "Başarılı sunum yapabilmek için dikkat edilmesi gereken hususlar hakkında bilgi. Sunum hazırlık sürecindeki adımlar, sunumda iletişimin önemi.",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 7,
+    "topic": "Sunum yaparken sesi, beden dilini kullanma. Sunumda zamanlamanın önemi. Sunumda görsel etki, görsel yardımcıların seçimi ve kullanımı, soru-yanıt bölümünün yönetimi",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 8,
+    "topic": "Dönem ödevi sunumu-1",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 9,
+    "topic": "Dönem ödevi sunumu-2",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 10,
+    "topic": "Dönem ödevi sunumu-3",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 11,
+    "topic": "Dönem ödevi sunumu-4",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 12,
+    "topic": "Dönem ödevi sunumu-5",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 13,
+    "topic": "Dönem ödevi sunumu-6",
+    "outcomes": "6-7-8"
+   },
+   {
+    "week": 14,
+    "topic": "Dönem ödevi sunumu-7"
+   }
+  ],
+  "textbooks": [
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "[1]Andrwe Bradbury (2006) Çeviri: H.Elçi, Başarılı Sunum Teknikleri, Kaizen Yayıncılık.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "]Alley M. (2013) The Craft of Scientific Presentations: Critical Steps to Succeed and Critical Errors to Avoid, Springer.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "3]Trochim, W.M.K. (2016) Research Methods Essential Knowledge Base. Cornell University.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "4]Schwabish J. (2016) Better Presentations: A Guide for Scholars, Researchers, and Wonks, Columbia University Press.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book.",
+   "]Richard Bowen, W. (2014) Engineering Ethics Challenges and Opportunities”, Springer e-book."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MIA&dersNo=596"
+ },
+ "MIA 596E": {
+  "code": "MIA 596E",
   "name": "Bilimsel Araş.,Etik ve Seminer",
   "nameEn": "Scien.Research, Ethic&Seminar",
   "language": "Türkçe/English",

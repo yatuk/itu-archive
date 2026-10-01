@@ -966,6 +966,10 @@
         "name": "Türkiye ve Avrupa Birliği"
        },
        {
+        "code": "ITB 236",
+        "name": "Türk Müziği Tarihi"
+       },
+       {
         "code": "JPN 101",
         "name": "Japonca I"
        },
@@ -980,6 +984,14 @@
        {
         "code": "JPN 202",
         "name": "Japonca IV"
+       },
+       {
+        "code": "KOR 101",
+        "name": "Korece I"
+       },
+       {
+        "code": "KOR 102",
+        "name": "Korece II"
        },
        {
         "code": "RUS 101",
@@ -1324,10 +1336,15 @@
       "groupId": "8973",
       "credits": "2 / 3",
       "ects": [
+       3,
        4,
        6
       ],
       "options": [
+       {
+        "code": "CEV 438E",
+        "name": "Environmental Impact Assessment"
+       },
        {
         "code": "CHZ 443E",
         "name": "Boron Processing and Applic."
@@ -1349,10 +1366,15 @@
       "groupId": "8974",
       "credits": "2 / 3",
       "ects": [
+       3,
        4,
        6
       ],
       "options": [
+       {
+        "code": "CEV 438",
+        "name": "Çevre Etkilerinin Değerlendiri"
+       },
        {
         "code": "CHZ 437",
         "name": "Kömür Hazırlamada Model.&Sim."

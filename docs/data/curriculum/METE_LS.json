@@ -597,6 +597,7 @@
       "credits": "2 / 3",
       "ects": [
        3,
+       5,
        6
       ],
       "options": [
@@ -627,6 +628,10 @@
        {
         "code": "MYZ 301E",
         "name": "Introduction to Artificial Intelligence for Engineering"
+       },
+       {
+        "code": "UZB 350E",
+        "name": "Manufacturing Processes"
        }
       ]
      }
@@ -638,6 +643,7 @@
       "credits": "2 / 3",
       "ects": [
        3,
+       5,
        6
       ],
       "options": [
@@ -668,6 +674,10 @@
        {
         "code": "MYZ 301E",
         "name": "Introduction to Artificial Intelligence for Engineering"
+       },
+       {
+        "code": "UZB 350E",
+        "name": "Manufacturing Processes"
        }
       ]
      }
@@ -1058,6 +1068,14 @@
         "name": "Japonca IV"
        },
        {
+        "code": "KOR 101",
+        "name": "Korece I"
+       },
+       {
+        "code": "KOR 102",
+        "name": "Korece II"
+       },
+       {
         "code": "RUS 101",
         "name": "Rusça I"
        },
@@ -1209,6 +1227,10 @@
        {
         "code": "MYZ 301E",
         "name": "Introduction to Artificial Intelligence for Engineering"
+       },
+       {
+        "code": "UZB 487E",
+        "name": "CAD/CAM"
        }
       ]
      }
@@ -1358,9 +1380,14 @@
       "credits": "2 / 3",
       "ects": [
        3,
+       4,
        6
       ],
       "options": [
+       {
+        "code": "KMM 466E",
+        "name": "Boron Technology"
+       },
        {
         "code": "MET 462E",
         "name": "Metallic Nanopart.:Prod.&Char."
@@ -1395,9 +1422,14 @@
       "credits": "2 / 3",
       "ects": [
        3,
+       4,
        6
       ],
       "options": [
+       {
+        "code": "KMM 466E",
+        "name": "Boron Technology"
+       },
        {
         "code": "MET 462E",
         "name": "Metallic Nanopart.:Prod.&Char."

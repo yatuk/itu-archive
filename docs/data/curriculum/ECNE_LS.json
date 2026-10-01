@@ -489,6 +489,14 @@
         "name": "Japonca IV"
        },
        {
+        "code": "KOR 101",
+        "name": "Korece I"
+       },
+       {
+        "code": "KOR 102",
+        "name": "Korece II"
+       },
+       {
         "code": "RUS 101",
         "name": "Rusça I"
        },
@@ -1552,12 +1560,14 @@
      "elective": {
       "title": "Quant.Analy.&Dec.Mak.Elec.I",
       "groupId": "8374",
-      "credits": "3 / 4",
+      "credits": "3",
       "ects": [
        4,
+       4.5,
        5,
        5.5,
-       6
+       6,
+       7
       ],
       "options": [
        {
@@ -1605,6 +1615,10 @@
         "name": "Experimental Economics"
        },
        {
+        "code": "END 210E",
+        "name": "Linear Algebra for Indust.Eng."
+       },
+       {
         "code": "END 305E",
         "name": "Data Analytics for Business"
        },
@@ -1613,24 +1627,112 @@
         "name": "Decision Theory"
        },
        {
+        "code": "END 331E",
+        "name": "Operations Research I"
+       },
+       {
+        "code": "END 332E",
+        "name": "Operations Research II"
+       },
+       {
+        "code": "END 336E",
+        "name": "Product Development"
+       },
+       {
+        "code": "END 339E",
+        "name": "Project Management"
+       },
+       {
         "code": "END 344E",
         "name": "Behavioral Sciences"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 423E",
+        "name": "Investment Planning"
+       },
+       {
+        "code": "END 439E",
+        "name": "Neural Network Mod.in Ind.Sys."
        },
        {
         "code": "END 443E",
         "name": "Business Planning & Innovation"
        },
        {
+        "code": "END 447E",
+        "name": "Network Models"
+       },
+       {
         "code": "END 448E",
         "name": "Intr. to Stochastic Modell."
+       },
+       {
+        "code": "END 451E",
+        "name": "Logistics Management"
+       },
+       {
+        "code": "END 453E",
+        "name": "Indus.4.0 & Digital Transform."
+       },
+       {
+        "code": "END 460E",
+        "name": "Human-Centered Artificial Intelligence"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
        },
        {
         "code": "END 476E",
         "name": "Machine Learning for Ind. Sys."
        },
        {
-        "code": "MAT 210E",
-        "name": "Engineering Mathematics"
+        "code": "END 478E",
+        "name": "Applied Optimization Models"
+       },
+       {
+        "code": "ISL 354E",
+        "name": "Managerial Decision Making"
+       },
+       {
+        "code": "ISL 363E",
+        "name": "Human Resources Management"
+       },
+       {
+        "code": "ISL 435E",
+        "name": "The World Economy at a Glance"
+       },
+       {
+        "code": "ISL 439E",
+        "name": "Int.to Mach.Learn.with Bus.App"
+       },
+       {
+        "code": "ISL 443E",
+        "name": "Project Design and Manag."
+       },
+       {
+        "code": "ISL 448E",
+        "name": "Optimization Models & App."
+       },
+       {
+        "code": "ISL 458E",
+        "name": "Intellectual Property Law"
+       },
+       {
+        "code": "ISL 460E",
+        "name": "E-Marketing"
+       },
+       {
+        "code": "ISL 464E",
+        "name": "Deep Learning with Business Applications"
+       },
+       {
+        "code": "ISL 477E",
+        "name": "Sustainability Management"
        },
        {
         "code": "MAT 272E",
@@ -1639,6 +1741,70 @@
        {
         "code": "MAT 471E",
         "name": "Financial Mathematics"
+       },
+       {
+        "code": "VBA 210E",
+        "name": "Linear Algebra and Applications"
+       },
+       {
+        "code": "VBA 211E",
+        "name": "Deterministic Models in Data Science"
+       },
+       {
+        "code": "VBA 213E",
+        "name": "Data Visualization"
+       },
+       {
+        "code": "VBA 215E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "VBA 224E",
+        "name": "Stochastic Models in Data Science"
+       },
+       {
+        "code": "VBA 252E",
+        "name": "Theory of Probability"
+       },
+       {
+        "code": "VBA 312E",
+        "name": "Data Analytics"
+       },
+       {
+        "code": "VBA 315E",
+        "name": "Machine Learning"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 411E",
+        "name": "Internet of Things"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
        }
       ]
      }
@@ -1787,12 +1953,44 @@
         "name": "Cost Management"
        },
        {
+        "code": "END 336E",
+        "name": "Product Development"
+       },
+       {
+        "code": "END 339E",
+        "name": "Project Management"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 423E",
+        "name": "Investment Planning"
+       },
+       {
         "code": "END 431E",
         "name": "Management and Organization"
        },
        {
+        "code": "END 451E",
+        "name": "Logistics Management"
+       },
+       {
+        "code": "END 453E",
+        "name": "Indus.4.0 & Digital Transform."
+       },
+       {
         "code": "END 456E",
         "name": "Analytical Credit Risk Management"
+       },
+       {
+        "code": "END 460E",
+        "name": "Human-Centered Artificial Intelligence"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
        },
        {
         "code": "ISL 234E",
@@ -1815,12 +2013,60 @@
         "name": "Marketing"
        },
        {
+        "code": "ISL 363E",
+        "name": "Human Resources Management"
+       },
+       {
+        "code": "ISL 435E",
+        "name": "The World Economy at a Glance"
+       },
+       {
+        "code": "ISL 443E",
+        "name": "Project Design and Manag."
+       },
+       {
         "code": "ISL 445E",
         "name": "European Leadership for Sustainability Management"
        },
        {
         "code": "ISL 452E",
         "name": "Financial Inst.&Portfolio Mng."
+       },
+       {
+        "code": "ISL 458E",
+        "name": "Intellectual Property Law"
+       },
+       {
+        "code": "ISL 460E",
+        "name": "E-Marketing"
+       },
+       {
+        "code": "ISL 477E",
+        "name": "Sustainability Management"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
        }
       ]
      }
@@ -1895,12 +2141,44 @@
         "name": "Cost Management"
        },
        {
+        "code": "END 336E",
+        "name": "Product Development"
+       },
+       {
+        "code": "END 339E",
+        "name": "Project Management"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 423E",
+        "name": "Investment Planning"
+       },
+       {
         "code": "END 431E",
         "name": "Management and Organization"
        },
        {
+        "code": "END 451E",
+        "name": "Logistics Management"
+       },
+       {
+        "code": "END 453E",
+        "name": "Indus.4.0 & Digital Transform."
+       },
+       {
         "code": "END 456E",
         "name": "Analytical Credit Risk Management"
+       },
+       {
+        "code": "END 460E",
+        "name": "Human-Centered Artificial Intelligence"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
        },
        {
         "code": "ISL 234E",
@@ -1923,12 +2201,60 @@
         "name": "Marketing"
        },
        {
+        "code": "ISL 363E",
+        "name": "Human Resources Management"
+       },
+       {
+        "code": "ISL 435E",
+        "name": "The World Economy at a Glance"
+       },
+       {
+        "code": "ISL 443E",
+        "name": "Project Design and Manag."
+       },
+       {
         "code": "ISL 445E",
         "name": "European Leadership for Sustainability Management"
        },
        {
         "code": "ISL 452E",
         "name": "Financial Inst.&Portfolio Mng."
+       },
+       {
+        "code": "ISL 458E",
+        "name": "Intellectual Property Law"
+       },
+       {
+        "code": "ISL 460E",
+        "name": "E-Marketing"
+       },
+       {
+        "code": "ISL 477E",
+        "name": "Sustainability Management"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
        }
       ]
      }
@@ -1937,12 +2263,14 @@
      "elective": {
       "title": "Quant.Analy.&Dec.Mak.Elec.II",
       "groupId": "8378",
-      "credits": "3 / 4",
+      "credits": "3",
       "ects": [
        4,
+       4.5,
        5,
        5.5,
-       6
+       6,
+       7
       ],
       "options": [
        {
@@ -1990,6 +2318,10 @@
         "name": "Experimental Economics"
        },
        {
+        "code": "END 210E",
+        "name": "Linear Algebra for Indust.Eng."
+       },
+       {
         "code": "END 305E",
         "name": "Data Analytics for Business"
        },
@@ -1998,12 +2330,28 @@
         "name": "Decision Theory"
        },
        {
+        "code": "END 331E",
+        "name": "Operations Research I"
+       },
+       {
+        "code": "END 332E",
+        "name": "Operations Research II"
+       },
+       {
         "code": "END 344E",
         "name": "Behavioral Sciences"
        },
        {
+        "code": "END 439E",
+        "name": "Neural Network Mod.in Ind.Sys."
+       },
+       {
         "code": "END 443E",
         "name": "Business Planning & Innovation"
+       },
+       {
+        "code": "END 447E",
+        "name": "Network Models"
        },
        {
         "code": "END 448E",
@@ -2014,8 +2362,24 @@
         "name": "Machine Learning for Ind. Sys."
        },
        {
-        "code": "MAT 210E",
-        "name": "Engineering Mathematics"
+        "code": "END 478E",
+        "name": "Applied Optimization Models"
+       },
+       {
+        "code": "ISL 354E",
+        "name": "Managerial Decision Making"
+       },
+       {
+        "code": "ISL 439E",
+        "name": "Int.to Mach.Learn.with Bus.App"
+       },
+       {
+        "code": "ISL 448E",
+        "name": "Optimization Models & App."
+       },
+       {
+        "code": "ISL 464E",
+        "name": "Deep Learning with Business Applications"
        },
        {
         "code": "MAT 272E",
@@ -2024,6 +2388,46 @@
        {
         "code": "MAT 471E",
         "name": "Financial Mathematics"
+       },
+       {
+        "code": "VBA 210E",
+        "name": "Linear Algebra and Applications"
+       },
+       {
+        "code": "VBA 211E",
+        "name": "Deterministic Models in Data Science"
+       },
+       {
+        "code": "VBA 213E",
+        "name": "Data Visualization"
+       },
+       {
+        "code": "VBA 215E",
+        "name": "Database Management Systems"
+       },
+       {
+        "code": "VBA 224E",
+        "name": "Stochastic Models in Data Science"
+       },
+       {
+        "code": "VBA 252E",
+        "name": "Theory of Probability"
+       },
+       {
+        "code": "VBA 312E",
+        "name": "Data Analytics"
+       },
+       {
+        "code": "VBA 315E",
+        "name": "Machine Learning"
+       },
+       {
+        "code": "VBA 411E",
+        "name": "Internet of Things"
+       },
+       {
+        "code": "VBA 441E",
+        "name": "Reinforcement Learning"
        }
       ]
      }
@@ -2081,12 +2485,44 @@
         "name": "Cost Management"
        },
        {
+        "code": "END 336E",
+        "name": "Product Development"
+       },
+       {
+        "code": "END 339E",
+        "name": "Project Management"
+       },
+       {
+        "code": "END 365E",
+        "name": "People Analytics"
+       },
+       {
+        "code": "END 423E",
+        "name": "Investment Planning"
+       },
+       {
         "code": "END 431E",
         "name": "Management and Organization"
        },
        {
+        "code": "END 451E",
+        "name": "Logistics Management"
+       },
+       {
+        "code": "END 453E",
+        "name": "Indus.4.0 & Digital Transform."
+       },
+       {
         "code": "END 456E",
         "name": "Analytical Credit Risk Management"
+       },
+       {
+        "code": "END 460E",
+        "name": "Human-Centered Artificial Intelligence"
+       },
+       {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
        },
        {
         "code": "ISL 234E",
@@ -2109,12 +2545,60 @@
         "name": "Marketing"
        },
        {
+        "code": "ISL 363E",
+        "name": "Human Resources Management"
+       },
+       {
+        "code": "ISL 435E",
+        "name": "The World Economy at a Glance"
+       },
+       {
+        "code": "ISL 443E",
+        "name": "Project Design and Manag."
+       },
+       {
         "code": "ISL 445E",
         "name": "European Leadership for Sustainability Management"
        },
        {
         "code": "ISL 452E",
         "name": "Financial Inst.&Portfolio Mng."
+       },
+       {
+        "code": "ISL 458E",
+        "name": "Intellectual Property Law"
+       },
+       {
+        "code": "ISL 460E",
+        "name": "E-Marketing"
+       },
+       {
+        "code": "ISL 477E",
+        "name": "Sustainability Management"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
+       },
+       {
+        "code": "VBA 342E",
+        "name": "Social Network Analysis"
+       },
+       {
+        "code": "VBA 343E",
+        "name": "Recommender Systems"
+       },
+       {
+        "code": "VBA 344E",
+        "name": "Financial and Risk Analytics"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
        }
       ]
      }

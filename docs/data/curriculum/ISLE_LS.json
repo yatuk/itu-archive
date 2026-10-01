@@ -213,12 +213,17 @@
      "elective": {
       "title": "2nd Semester Elec. Courses(TM)",
       "groupId": "8498",
-      "credits": "3",
+      "credits": "2 / 3",
       "ects": [
+       3,
        4.5,
        5
       ],
       "options": [
+       {
+        "code": "CEV 250E",
+        "name": "Public and Occupational Health"
+       },
        {
         "code": "ELK 221E",
         "name": "Fundamentals of Electric. Eng."
@@ -483,6 +488,10 @@
         "name": "Object Oriented Programming for Computational Science"
        },
        {
+        "code": "END 375E",
+        "name": "Human-Computer Interaction"
+       },
+       {
         "code": "ISH 301E",
         "name": "Fundamentals of Env.Sci & Eng."
        },
@@ -658,6 +667,10 @@
         "name": "Indus.4.0 & Digital Transform."
        },
        {
+        "code": "END 471E",
+        "name": "Marketing & CRM Analytics"
+       },
+       {
         "code": "EUT 334E",
         "name": "Design and Form"
        },
@@ -704,6 +717,10 @@
        {
         "code": "SUS 402E",
         "name": "Green Economics"
+       },
+       {
+        "code": "VBA 341E",
+        "name": "Human Resource Analytics"
        }
       ]
      }
@@ -756,7 +773,8 @@
       "credits": "3",
       "ects": [
        4,
-       5
+       5,
+       6
       ],
       "options": [
        {
@@ -808,8 +826,20 @@
         "name": "Sustainability Management"
        },
        {
+        "code": "VBA 411E",
+        "name": "Internet of Things"
+       },
+       {
         "code": "VBA 442E",
         "name": "Time Series and Forecasting"
+       },
+       {
+        "code": "VBA 443E",
+        "name": "Web Analytics"
+       },
+       {
+        "code": "VBA 444E",
+        "name": "Customer Analytics"
        }
       ]
      }
@@ -1267,6 +1297,14 @@
        {
         "code": "JPN 202",
         "name": "Japonca IV"
+       },
+       {
+        "code": "KOR 101",
+        "name": "Korece I"
+       },
+       {
+        "code": "KOR 102",
+        "name": "Korece II"
        },
        {
         "code": "RUS 101",

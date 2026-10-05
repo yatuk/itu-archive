@@ -467,6 +467,123 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FIZ&dersNo=102"
  },
+ "FIZ 102EL": {
+  "code": "FIZ 102EL",
+  "name": "Fizik II (Elektrik Fiziği)",
+  "nameEn": "Physics II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 4.5
+  },
+  "description": "Bu, elektrik, manyetizma ve elektromanyetizma hakkında giriş düzeyinde bir fizik dersidir. Ana konular: Coulomb yasası ve elektrik alanı, Gauss yasası, elektrik potansiyel, sığa, elektrostatik enerji ve dielektriklerin özellikleri, akım ve direnç, doğru akım devreleri, manyetik alan, manyetik alan kaynakları, Faraday yasası, indüktans, Maxwell denklemleri ve elektromanyetik dalgalar. This is an introductory level physics course on electricity, magnetism and electromagnetism. The main topics are: Coulomb’s law and electrical field, Gauss’s law, electrical potential, capacitance, electrostatic energy and properties of dielectrics, current and resistance, direct current circuits, magnetic field, sources of magnetic field, Faraday’s law, inductance, Maxwell’s equations and electromagnetic waves.",
+  "outcomes": [
+   "Noktasal ve bazı basit sürekli yük dağılımlarının oluşturduğu elektrik alanı ve potansiyeli hesaplayabilmek",
+   "Gauss Yasasını, elektrik alan hesabı ve iletkenlerin özelliklerini anlamada kullanabilmek",
+   "Kondansatörlerin sığasını ve depoladıkları elektrostatik enerjiyi hesaplayabilmek ve dielektrik maddelerin sığayı ve enerjiyi nasıl değiştirdiğini hesaplamak",
+   "Kirchhoff Yasaları ve bunların her türlü doğru akım (DA) devresinde nasıl kullanılacağını öğrenmek",
+   "Elektrik yüklerin ve üzerinden akım geçen iletken tellerin manyetik alandan nasıl etkilendiğini öğrenmek ve manyetik alanların temel özelliklerini anlamak",
+   "Hareket eden yüklerin (elektrik akımının) nasıl manyetik alan oluşturduğunu öğrenmek ve bazı basit akım konfigürasyonları için bu manyetik alanları hesaplayabilmek",
+   "Manyetik akı değişiminin nasıl elektrik alan/akım oluşturabildiğini öğrenmek",
+   "Değişen elektrik alanların nasıl manyetik alan oluşturabildiğini öğrenmek",
+   "Elektromanyetik dalgalarla çalışmak"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Elektrik Yükü ve Elektriksel Kuvvet",
+   "Hafta 2 · Gauss Yasası",
+   "Hafta 3 · Gauss yasası (Devam)",
+   "Hafta 4 · Elektrik Potansiyeli",
+   "Hafta 5 · Kapasitans ve Dielektrikler",
+   "Hafta 6 · Akım, Direnç ve Elektromotif Kuvvet",
+   "Hafta 7 · Doğru Akım Devreleri",
+   "Hafta 8 · Manyetik Alan ve Manyetik Kuvetler",
+   "Hafta 9 · Manyetik Alan Kaynakları",
+   "Hafta 10 · Manyetik Alan Kaynakları (Devam)",
+   "Hafta 11 · Elektromanyetik İndüksiyon",
+   "Hafta 12 · İndüktans",
+   "Hafta 13 · Elektromanyetik Dalgalar",
+   "Hafta 14 · Elektromanyetik Dalgalar (Cont'd)"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Elektrik Yükü ve Elektriksel Kuvvet",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Gauss Yasası",
+    "outcomes": "2"
+   },
+   {
+    "week": 3,
+    "topic": "Gauss yasası (Devam)",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "Elektrik Potansiyeli",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Kapasitans ve Dielektrikler",
+    "outcomes": "2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Akım, Direnç ve Elektromotif Kuvvet",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 7,
+    "topic": "Doğru Akım Devreleri",
+    "outcomes": "1-2-3-4"
+   },
+   {
+    "week": 8,
+    "topic": "Manyetik Alan ve Manyetik Kuvetler",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Manyetik Alan Kaynakları",
+    "outcomes": "6"
+   },
+   {
+    "week": 10,
+    "topic": "Manyetik Alan Kaynakları (Devam)",
+    "outcomes": "6"
+   },
+   {
+    "week": 11,
+    "topic": "Elektromanyetik İndüksiyon",
+    "outcomes": "7"
+   },
+   {
+    "week": 12,
+    "topic": "İndüktans",
+    "outcomes": "8"
+   },
+   {
+    "week": 13,
+    "topic": "Elektromanyetik Dalgalar",
+    "outcomes": "2-6-7-9"
+   },
+   {
+    "week": 14,
+    "topic": "Elektromanyetik Dalgalar (Cont'd)",
+    "outcomes": "2-6-7-9"
+   }
+  ],
+  "textbooks": [
+   "H. D. Young and R. A. Freedman, University Physics 14th Ed. Pearson (2016)"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=FIZ&dersNo=102"
+ },
  "FIZ 106": {
   "code": "FIZ 106",
   "name": "Fizik II",

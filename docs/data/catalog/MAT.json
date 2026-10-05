@@ -689,6 +689,120 @@
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAT&dersNo=103"
  },
+ "MAT 104": {
+  "code": "MAT 104",
+  "name": "Matematik II",
+  "nameEn": "Mathematics II",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 2,
+   "lab": 0,
+   "local": 4,
+   "ects": 6.5
+  },
+  "description": "Sonsuz Diziler ve Seriler, Kutupsal Koordinatlar, Uzayda Vektörler, Vektör-Değerli Fonksiyonlar, Çok Değişkenli Fonksiyonlar ve Kısmi Türevler, Çok Katlı İntegraller Infinite Sequences and Series, Polar Coordinates, Vectors in Space, Vector-Valued Functions, Multivarible Functions and Partial Derivatives , Multiple Integrals",
+  "outcomes": [
+   "Dizilerin ve serilerin yakınsaklığını; kuvvet serilerinin yakınsaklık yarıçapını bulabilir",
+   "Bir fonksiyonu Taylor Serisine açabilme ve yapılan hata payını bulabilir",
+   "Üç boyutlu uzayda vektörlerin, vektörel ve skaler çarpımını hesaplayabilme; doğru, düzlem ve kuadrik yüzey denklemlerini yazabilir",
+   "Kutupsal koordinatlarda düzlem bölgelerin alanlarını ve eğrilerin yay uzunluğu hesaplayabilir ve vektör değerli fonksiyonlar için limit, süreklilik, ve integral kavramlarını kullanabilir",
+   "Çok değişkenli fonksiyonlarda limit, süreklilik kavramlarını kullanabilir ; kısmi türev hesaplayabilir; teğet düzlem, doğrultuya göre türev ve gradiyent bulabilir; ekstremum problemlerini ikinci türev testi ve Lagrange çarpan metodu ile çözebilir",
+   "Çok katlı integralleri çözebilir ve alan ve hacim hesabında çok katlı integralleri kullanabilir"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Sonsuz Diziler ve Seriler",
+   "Hafta 2 · Sonsuz Diziler ve Seriler",
+   "Hafta 3 · Sonsuz Diziler ve Seriler",
+   "Hafta 4 · Sonsuz Diziler ve Seriler",
+   "Hafta 5 · Parametrik Denklemler ve Kutupsal Koordinatlar",
+   "Hafta 6 · Parametrik Denklemler ve Kutupsal Koordinatlar",
+   "Hafta 7 · Vektörler ve Uzay Geometrisi",
+   "Hafta 8 · Vektörler ve Uzay Geometrisi",
+   "Hafta 9 · Kısmi Türevler",
+   "Hafta 10 · Kısmi Türevler",
+   "Hafta 11 · Kısmi Türevler",
+   "Hafta 12 · Çok Katlı İntegraller",
+   "Hafta 13 · Çok Katlı İntegraller",
+   "Hafta 14 · Çok Katlı İntegraller"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Sonsuz Diziler ve Seriler",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Parametrik Denklemler ve Kutupsal Koordinatlar",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Parametrik Denklemler ve Kutupsal Koordinatlar",
+    "outcomes": "4"
+   },
+   {
+    "week": 7,
+    "topic": "Vektörler ve Uzay Geometrisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 8,
+    "topic": "Vektörler ve Uzay Geometrisi",
+    "outcomes": "5"
+   },
+   {
+    "week": 9,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 10,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 11,
+    "topic": "Kısmi Türevler",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 13,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Çok Katlı İntegraller",
+    "outcomes": "6"
+   }
+  ],
+  "textbooks": [
+   "Thomas' Calculus, 10th Edition., G.B Thomas, R. L. Finney, M.D.Weir, F.R.Giordano., Addison Wesley, 2005, 0201441411"
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MAT&dersNo=104"
+ },
  "MAT 104E": {
   "code": "MAT 104E",
   "name": "Matematik II",

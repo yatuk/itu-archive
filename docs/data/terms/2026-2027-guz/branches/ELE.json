@@ -20,7 +20,7 @@
    "5203"
   ],
   "capacity": 30,
-  "enrolled": 14,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -46,8 +46,8 @@
   "rooms": [
    "5203"
   ],
-  "capacity": 40,
-  "enrolled": 39,
+  "capacity": 45,
+  "enrolled": 43,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -101,7 +101,7 @@
    "Z1"
   ],
   "capacity": 30,
-  "enrolled": 27,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -154,8 +154,8 @@
   "rooms": [
    "5103"
   ],
-  "capacity": 30,
-  "enrolled": 29,
+  "capacity": 35,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -181,8 +181,8 @@
   "rooms": [
    "5205"
   ],
-  "capacity": 40,
-  "enrolled": 37,
+  "capacity": 45,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -263,7 +263,7 @@
    "5201"
   ],
   "capacity": 35,
-  "enrolled": 25,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -284,7 +284,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 62,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -305,7 +305,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 20,
+  "enrolled": 22,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -326,7 +326,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 5,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -502,12 +502,18 @@
   "name": "Bilimsel Araş.,Etik ve Seminer",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Hakan Ali Çırpan",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "buildings": [
+   "undeclared"
   ],
-  "rooms": [],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "17:00/18:59"
+  ],
+  "rooms": [
+   "--"
+  ],
   "capacity": 0,
   "enrolled": 0,
   "reserved": "-",

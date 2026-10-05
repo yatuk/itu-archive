@@ -20,7 +20,7 @@
    "A105"
   ],
   "capacity": 70,
-  "enrolled": 53,
+  "enrolled": 54,
   "reserved": "-",
   "programs": [
    "MAD_LS"
@@ -78,7 +78,7 @@
    "B206"
   ],
   "capacity": 60,
-  "enrolled": 57,
+  "enrolled": 60,
   "reserved": "-",
   "programs": [
    "MAD_LS"
@@ -107,7 +107,7 @@
    "A102"
   ],
   "capacity": 55,
-  "enrolled": 50,
+  "enrolled": 51,
   "reserved": "-",
   "programs": [
    "MAD_LS"
@@ -136,7 +136,7 @@
    "B207"
   ],
   "capacity": 45,
-  "enrolled": 35,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -166,7 +166,7 @@
    "B207"
   ],
   "capacity": 45,
-  "enrolled": 2,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -196,7 +196,7 @@
    "B206"
   ],
   "capacity": 75,
-  "enrolled": 38,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -226,7 +226,7 @@
    "A101"
   ],
   "capacity": 85,
-  "enrolled": 60,
+  "enrolled": 59,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -256,7 +256,7 @@
    "B208"
   ],
   "capacity": 80,
-  "enrolled": 57,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -287,7 +287,7 @@
    "B204"
   ],
   "capacity": 30,
-  "enrolled": 10,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -317,7 +317,7 @@
    "A203"
   ],
   "capacity": 35,
-  "enrolled": 18,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -377,7 +377,7 @@
    "B207"
   ],
   "capacity": 60,
-  "enrolled": 57,
+  "enrolled": 56,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -408,7 +408,7 @@
    "A203"
   ],
   "capacity": 35,
-  "enrolled": 34,
+  "enrolled": 37,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -438,7 +438,7 @@
    "B208"
   ],
   "capacity": 35,
-  "enrolled": 13,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -498,7 +498,7 @@
    "A201"
   ],
   "capacity": 65,
-  "enrolled": 63,
+  "enrolled": 64,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -528,7 +528,7 @@
    "A202"
   ],
   "capacity": 60,
-  "enrolled": 44,
+  "enrolled": 49,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -558,7 +558,7 @@
    "A203"
   ],
   "capacity": 55,
-  "enrolled": 50,
+  "enrolled": 53,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -582,7 +582,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 37,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "MAD_LS"
@@ -628,7 +628,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MAD_LS"
@@ -765,7 +765,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 9,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -819,7 +819,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 7,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -927,7 +927,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 6,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1035,7 +1035,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 8,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1089,7 +1089,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 4,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1179,7 +1179,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 7,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1206,7 +1206,7 @@
    "B204"
   ],
   "capacity": 30,
-  "enrolled": 11,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "MAD_LS",
@@ -1236,6 +1236,116 @@
    "MAD_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15826",
+  "code": "MAD 422",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Maden Planlaması ve Tasarımı",
+  "method": "Ek Sınav",
+  "instructor": "Cüneyt Atilla Öztürk",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "15830",
+  "code": "MAD 308",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Cevher Hazırlama II",
+  "method": "Ek Sınav",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "11:30/14:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [
+   "MAD_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15840",
+  "code": "MAD 432",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Maden. ve Tünellerde Kazı Mek.",
+  "method": "Ek Sınav",
+  "instructor": "Hanifi Çopur , Cemal Balcı",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Perşembe"
+  ],
+  "times": [
+   "14:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15841",
+  "code": "MAD 406",
+  "branch": "MAD",
+  "level": "LS",
+  "name": "Madenlerde İş Sağlığı ve Güv.",
+  "method": "Ek Sınav",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

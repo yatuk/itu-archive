@@ -24,7 +24,7 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 79,
+  "enrolled": 82,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -60,7 +60,7 @@
    "Z-17"
   ],
   "capacity": 80,
-  "enrolled": 79,
+  "enrolled": 83,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -96,7 +96,7 @@
    "Z-18"
   ],
   "capacity": 80,
-  "enrolled": 28,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -128,7 +128,7 @@
    "Z-17"
   ],
   "capacity": 70,
-  "enrolled": 69,
+  "enrolled": 71,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -160,7 +160,7 @@
    "104"
   ],
   "capacity": 70,
-  "enrolled": 70,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -195,8 +195,8 @@
    "Z-19",
    "Z-19"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 95,
+  "enrolled": 91,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -228,11 +228,11 @@
    "11:30/13:29"
   ],
   "rooms": [
-   "Z-17",
-   "Z-17"
+   "Z-18",
+   "Z-18"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 95,
+  "enrolled": 96,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -264,7 +264,7 @@
    "Z-17"
   ],
   "capacity": 80,
-  "enrolled": 80,
+  "enrolled": 84,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -297,7 +297,7 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 76,
+  "enrolled": 79,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -330,7 +330,7 @@
    "Z-20"
   ],
   "capacity": 75,
-  "enrolled": 69,
+  "enrolled": 78,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -360,10 +360,10 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "Z-16"
+   "101"
   ],
   "capacity": 75,
-  "enrolled": 36,
+  "enrolled": 37,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -396,7 +396,7 @@
    "104"
   ],
   "capacity": 75,
-  "enrolled": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -429,8 +429,8 @@
    "Z-19"
   ],
   "capacity": 90,
-  "enrolled": 75,
-  "reserved": "ECNE_LS/10/2 | YZVE_LS/20/16 | Diğer/60/57",
+  "enrolled": 79,
+  "reserved": "ECNE_LS/10/2 | YZVE_LS/20/18 | Diğer/60/59",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
@@ -459,10 +459,10 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "101"
+   "Z-21"
   ],
   "capacity": 100,
-  "enrolled": 0,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -492,10 +492,10 @@
    "08:30/11:29"
   ],
   "rooms": [
-   "Z-18"
+   "Z-21"
   ],
   "capacity": 80,
-  "enrolled": 0,
+  "enrolled": 47,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -505,6 +505,38 @@
    "YZVE_LS"
   ],
   "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15881",
+  "code": "BBF 102E",
+  "branch": "BBF",
+  "level": "LS",
+  "name": "Linear Algebra and Applications",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Keskinöz",
+  "buildings": [
+   "BBB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "Z-21"
+  ],
+  "capacity": 75,
+  "enrolled": 39,
+  "reserved": "-",
+  "programs": [
+   "BLG_LS",
+   "BLGE_LS",
+   "SECE_LS",
+   "YZVE_LS"
+  ],
+  "prereq": "-",
   "classReq": "-"
  }
 ]

@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 8,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -175,7 +175,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 7,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -288,7 +288,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 2,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -401,7 +401,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 4,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -535,7 +535,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 12,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -648,7 +648,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 6,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -761,7 +761,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 5,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -1100,7 +1100,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 12,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -1326,7 +1326,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 10,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -1439,7 +1439,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 12,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -1594,7 +1594,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 7,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -1820,7 +1820,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 7,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -1933,7 +1933,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 6,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -2032,14 +2032,20 @@
   "level": "LS",
   "name": "Futsal Temel Beceri Eğitim",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
+  "instructor": "Murat Bilgin",
+  "buildings": [
+   "SLN-V"
   ],
-  "rooms": [],
-  "capacity": 0,
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 25,
   "enrolled": 0,
   "reserved": "-",
   "programs": [],
@@ -2314,7 +2320,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 7,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -2427,7 +2433,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 5,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -2540,7 +2546,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 3,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -2766,7 +2772,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 4,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -2992,7 +2998,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 11,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -3105,7 +3111,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 15,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -3218,7 +3224,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 7,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -3444,7 +3450,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 10,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -3524,7 +3530,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 14,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -3604,7 +3610,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 2,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "DUI_LS",
@@ -3622,13 +3628,13 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Damla Ercan Köse",
   "buildings": [
-   "SYM"
+   "SLN-G"
   ],
   "days": [
-   "Cuma"
+   "Çarşamba"
   ],
   "times": [
-   "08:30/10:29"
+   "10:30/12:29"
   ],
   "rooms": [
    "--"
@@ -3735,13 +3741,13 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Damla Ercan Köse",
   "buildings": [
-   "SYM"
+   "SLN-G"
   ],
   "days": [
-   "Cuma"
+   "Çarşamba"
   ],
   "times": [
-   "10:30/12:29"
+   "13:30/15:29"
   ],
   "rooms": [
    "--"
@@ -3860,7 +3866,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4086,7 +4092,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 0,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4199,7 +4205,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4312,7 +4318,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4425,7 +4431,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 0,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4526,7 +4532,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Kadir Can Çakıcı",
   "buildings": [
-   "undeclared"
+   "HVZ"
   ],
   "days": [
    "Perşembe"
@@ -4538,7 +4544,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 4,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4639,7 +4645,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Kadir Can Çakıcı",
   "buildings": [
-   "undeclared"
+   "HVZ"
   ],
   "days": [
    "Perşembe"
@@ -4651,7 +4657,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 5,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4752,7 +4758,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Kadir Can Çakıcı",
   "buildings": [
-   "undeclared"
+   "HVZ"
   ],
   "days": [
    "Çarşamba"
@@ -4764,7 +4770,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 1,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4886,7 +4892,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Murat Bilgin , Bülent Arslantaş",
   "buildings": [
-   "undeclared"
+   "STD"
   ],
   "days": [
    "Pazartesi"
@@ -4898,7 +4904,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 4,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -4999,7 +5005,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Murat Bilgin , Bülent Arslantaş",
   "buildings": [
-   "undeclared"
+   "STD"
   ],
   "days": [
    "Pazartesi"
@@ -5011,7 +5017,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 23,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -5100,6 +5106,87 @@
    "UZBE_LS",
    "YZVE_LS"
   ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15916",
+  "code": "BEB 106",
+  "branch": "BEB",
+  "level": "LS",
+  "name": "Basketbol Temel Teknik Eğitimi",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Birgül Arslanoğlu",
+  "buildings": [
+   "SLN-M"
+  ],
+  "days": [
+   "Salı"
+  ],
+  "times": [
+   "08:30/10:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 20,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15917",
+  "code": "BEB 140",
+  "branch": "BEB",
+  "level": "LS",
+  "name": "Picklebal",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Serra Ayşe Çakar Saka , Bülent Arslantaş",
+  "buildings": [
+   "KORT"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15918",
+  "code": "BEB 140",
+  "branch": "BEB",
+  "level": "LS",
+  "name": "Picklebal",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Serra Ayşe Çakar Saka , Bülent Arslantaş",
+  "buildings": [
+   "KORT"
+  ],
+  "days": [
+   "Çarşamba"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 10,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
   "prereq": "-",
   "classReq": "-"
  }

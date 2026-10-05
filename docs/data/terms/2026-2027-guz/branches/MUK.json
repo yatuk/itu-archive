@@ -24,7 +24,7 @@
    "ZA1"
   ],
   "capacity": 65,
-  "enrolled": 65,
+  "enrolled": 64,
   "reserved": "-",
   "programs": [
    "UCK_LS"
@@ -57,7 +57,7 @@
    "ZA2"
   ],
   "capacity": 65,
-  "enrolled": 57,
+  "enrolled": 62,
   "reserved": "-",
   "programs": [
    "UCK_LS",
@@ -88,7 +88,7 @@
    "ZA2"
   ],
   "capacity": 85,
-  "enrolled": 69,
+  "enrolled": 71,
   "reserved": "-",
   "programs": [
    "DEN_LS"
@@ -117,12 +117,54 @@
    "D381B"
   ],
   "capacity": 40,
-  "enrolled": 30,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "TEK_LS",
    "TEKE_LS"
   ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15870",
+  "code": "MUK 204",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "Ek Sınav",
+  "instructor": "Oktay Eren Türeyen",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 2,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "15873",
+  "code": "MUK 210",
+  "branch": "MUK",
+  "level": "LS",
+  "name": "Mukavemet II",
+  "method": "Ek Sınav",
+  "instructor": "Bahadır Uğurlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [],
   "prereq": "Detay",
   "classReq": "-"
  }

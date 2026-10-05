@@ -20,7 +20,7 @@
    "A11"
   ],
   "capacity": 100,
-  "enrolled": 58,
+  "enrolled": 70,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -97,7 +97,7 @@
    "A12"
   ],
   "capacity": 100,
-  "enrolled": 43,
+  "enrolled": 52,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -174,7 +174,7 @@
    "A13"
   ],
   "capacity": 100,
-  "enrolled": 83,
+  "enrolled": 80,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -251,7 +251,7 @@
    "A35"
   ],
   "capacity": 100,
-  "enrolled": 69,
+  "enrolled": 72,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -328,7 +328,7 @@
    "A36"
   ],
   "capacity": 100,
-  "enrolled": 27,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -461,7 +461,7 @@
    "A35"
   ],
   "capacity": 100,
-  "enrolled": 65,
+  "enrolled": 84,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -595,7 +595,7 @@
    "A36"
   ],
   "capacity": 100,
-  "enrolled": 66,
+  "enrolled": 70,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -729,7 +729,7 @@
    "A103"
   ],
   "capacity": 100,
-  "enrolled": 34,
+  "enrolled": 36,
   "reserved": "-",
   "programs": [
    "AIN_LS",
@@ -863,7 +863,7 @@
    "B33"
   ],
   "capacity": 100,
-  "enrolled": 25,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -984,7 +984,7 @@
    "D104"
   ],
   "capacity": 100,
-  "enrolled": 87,
+  "enrolled": 98,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1115,7 +1115,7 @@
    "B35"
   ],
   "capacity": 100,
-  "enrolled": 23,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1246,7 +1246,7 @@
    "A36"
   ],
   "capacity": 100,
-  "enrolled": 15,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1406,12 +1406,33 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "BLG_LS",
    "BLGE_LS"
   ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15880",
+  "code": "HUK 203E",
+  "branch": "HUK",
+  "level": "LS",
+  "name": "IT Law",
+  "method": "Ek Sınav",
+  "instructor": "Çiçek Ersoy Kekevi",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
   "prereq": "-",
   "classReq": "-"
  }

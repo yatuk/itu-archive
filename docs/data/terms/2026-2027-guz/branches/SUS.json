@@ -47,7 +47,7 @@
    "B36"
   ],
   "capacity": 25,
-  "enrolled": 21,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -68,7 +68,7 @@
   ],
   "rooms": [],
   "capacity": 100,
-  "enrolled": 44,
+  "enrolled": 52,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -95,7 +95,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 20,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "SUS_YD"
@@ -125,7 +125,7 @@
   ],
   "capacity": 25,
   "enrolled": 15,
-  "reserved": "EGC_YD/10/4 | Diğer/15/11",
+  "reserved": "EGC_YD/10/5 | Diğer/15/10",
   "programs": [
    "EGC_YD",
    "SUS_YD"
@@ -142,7 +142,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sevan Karabetoğlu , Emrah Çoraman , Fatma Fatoş Babuna",
   "buildings": [
-   "MED"
+   "MDB"
   ],
   "days": [
    "Perşembe"
@@ -151,10 +151,10 @@
    "13:30/16:29"
   ],
   "rooms": [
-   "--"
+   "A101"
   ],
   "capacity": 30,
-  "enrolled": 12,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "SUS_YD"
@@ -180,11 +180,11 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "B11"
+   "B01"
   ],
   "capacity": 30,
-  "enrolled": 21,
-  "reserved": "SUS_YD/20/16 | Diğer/10/5",
+  "enrolled": 26,
+  "reserved": "SUS_YD/20/16 | Diğer/10/10",
   "programs": [
    "ISL_LS",
    "ISLE_LS",

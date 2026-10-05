@@ -19,11 +19,12 @@
   "rooms": [
    "--"
   ],
-  "capacity": 45,
-  "enrolled": 44,
+  "capacity": 50,
+  "enrolled": 50,
   "reserved": "-",
   "programs": [
    "AIN_LS",
+   "BES_LS",
    "EHN_LS",
    "MBI_LS",
    "MSS_LS",
@@ -62,11 +63,12 @@
   "rooms": [
    "--"
   ],
-  "capacity": 45,
-  "enrolled": 43,
+  "capacity": 50,
+  "enrolled": 49,
   "reserved": "-",
   "programs": [
    "AIN_LS",
+   "BES_LS",
    "EHN_LS",
    "MBI_LS",
    "MSS_LS",
@@ -105,11 +107,12 @@
   "rooms": [
    "--"
   ],
-  "capacity": 45,
-  "enrolled": 40,
+  "capacity": 50,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "AIN_LS",
+   "BES_LS",
    "EHN_LS",
    "MBI_LS",
    "MSS_LS",
@@ -148,11 +151,12 @@
   "rooms": [
    "--"
   ],
-  "capacity": 45,
-  "enrolled": 41,
+  "capacity": 50,
+  "enrolled": 48,
   "reserved": "-",
   "programs": [
    "AIN_LS",
+   "BES_LS",
    "EHN_LS",
    "MBI_LS",
    "MSS_LS",
@@ -192,10 +196,11 @@
    "--"
   ],
   "capacity": 40,
-  "enrolled": 8,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "AIN_LS",
+   "BES_LS",
    "EHN_LS",
    "MBI_LS",
    "MSS_LS",
@@ -235,7 +240,7 @@
    "--"
   ],
   "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -247,6 +252,7 @@
    "CAB_LS",
    "CEB_LS",
    "CEN_LS",
+   "CES_LS",
    "CEV_LS",
    "CEVE_LS",
    "CHZ_LS",
@@ -328,6 +334,7 @@
    "ROS_LS",
    "ROSE_LS",
    "SAO_OL",
+   "SAS_LS",
    "SBP_LS",
    "SBPE_LS",
    "SECE_LS",
@@ -369,7 +376,7 @@
    "--"
   ],
   "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -381,6 +388,7 @@
    "CAB_LS",
    "CEB_LS",
    "CEN_LS",
+   "CES_LS",
    "CEV_LS",
    "CEVE_LS",
    "CHZ_LS",
@@ -462,6 +470,7 @@
    "ROS_LS",
    "ROSE_LS",
    "SAO_OL",
+   "SAS_LS",
    "SBP_LS",
    "SBPE_LS",
    "SECE_LS",
@@ -502,8 +511,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -529,6 +538,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -636,8 +646,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -663,6 +673,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -770,8 +781,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -797,6 +808,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -904,8 +916,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 78,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -931,6 +943,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -1038,8 +1051,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 74,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1065,6 +1078,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -1172,8 +1186,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1199,6 +1213,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -1306,8 +1321,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1333,6 +1348,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -1440,8 +1456,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1467,6 +1483,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -1574,8 +1591,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1601,6 +1618,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -1708,8 +1726,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1735,6 +1753,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -1842,8 +1861,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1869,6 +1888,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -1976,8 +1996,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 74,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2003,6 +2023,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -2110,8 +2131,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 71,
+  "capacity": 75,
+  "enrolled": 78,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2137,6 +2158,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -2244,8 +2266,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 74,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2271,6 +2293,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -2378,8 +2401,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 68,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2405,6 +2428,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -2512,8 +2536,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 68,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2539,6 +2563,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -2646,8 +2671,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2673,6 +2698,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -2780,8 +2806,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2807,6 +2833,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -2914,8 +2941,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 79,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2941,6 +2968,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -3048,8 +3076,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3075,6 +3103,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -3182,8 +3211,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 68,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3209,6 +3238,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -3316,8 +3346,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 68,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3343,6 +3373,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -3450,8 +3481,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3477,6 +3508,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -3584,8 +3616,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3611,6 +3643,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -3718,8 +3751,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 66,
+  "capacity": 75,
+  "enrolled": 74,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3745,6 +3778,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -3852,8 +3886,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 73,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3879,6 +3913,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -3986,8 +4021,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 66,
+  "capacity": 75,
+  "enrolled": 74,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4013,6 +4048,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -4120,8 +4156,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 64,
+  "capacity": 75,
+  "enrolled": 74,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4147,6 +4183,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -4254,8 +4291,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4281,6 +4318,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -4388,8 +4426,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4415,6 +4453,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -4522,8 +4561,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 67,
+  "capacity": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4549,6 +4588,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -4656,8 +4696,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 74,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4683,6 +4723,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -4790,8 +4831,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 65,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4817,6 +4858,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -4924,8 +4966,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 70,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4951,6 +4993,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -5058,8 +5101,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 68,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -5085,6 +5128,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -5192,8 +5236,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 70,
-  "enrolled": 69,
+  "capacity": 75,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -5219,6 +5263,7 @@
    "EHB_LS",
    "EHBE_LS",
    "EHN_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -5326,8 +5371,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 80,
-  "enrolled": 80,
+  "capacity": 90,
+  "enrolled": 93,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -5352,6 +5397,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -5459,8 +5505,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 80,
-  "enrolled": 80,
+  "capacity": 90,
+  "enrolled": 91,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -5485,6 +5531,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -5592,8 +5639,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 80,
-  "enrolled": 76,
+  "capacity": 90,
+  "enrolled": 92,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -5618,6 +5665,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -5725,8 +5773,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 80,
-  "enrolled": 78,
+  "capacity": 90,
+  "enrolled": 92,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -5751,6 +5799,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -5858,8 +5907,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 80,
-  "enrolled": 79,
+  "capacity": 90,
+  "enrolled": 93,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -5884,6 +5933,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -5991,8 +6041,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 80,
-  "enrolled": 78,
+  "capacity": 90,
+  "enrolled": 90,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -6017,6 +6067,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -6124,8 +6175,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 80,
-  "enrolled": 77,
+  "capacity": 90,
+  "enrolled": 92,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -6150,6 +6201,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -6258,7 +6310,7 @@
    "A203"
   ],
   "capacity": 60,
-  "enrolled": 60,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -6283,6 +6335,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -6391,7 +6444,7 @@
    "A203"
   ],
   "capacity": 60,
-  "enrolled": 55,
+  "enrolled": 59,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -6416,6 +6469,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -6524,7 +6578,7 @@
    "A205"
   ],
   "capacity": 60,
-  "enrolled": 56,
+  "enrolled": 48,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -6549,6 +6603,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -6657,7 +6712,7 @@
    "A204"
   ],
   "capacity": 60,
-  "enrolled": 57,
+  "enrolled": 48,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -6682,6 +6737,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -6790,7 +6846,7 @@
    "A201"
   ],
   "capacity": 60,
-  "enrolled": 56,
+  "enrolled": 53,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -6815,6 +6871,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -6923,7 +6980,7 @@
    "A201"
   ],
   "capacity": 60,
-  "enrolled": 54,
+  "enrolled": 46,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -6948,6 +7005,7 @@
    "EFN_LS",
    "EHB_LS",
    "EHBE_LS",
+   "EHS_LS",
    "ELE_LS",
    "ELK_LS",
    "ELKE_LS",
@@ -7056,7 +7114,7 @@
    "--"
   ],
   "capacity": 60,
-  "enrolled": 31,
+  "enrolled": 35,
   "reserved": "-",
   "programs": [
    "DUI_LS",
@@ -7090,7 +7148,7 @@
    "--"
   ],
   "capacity": 60,
-  "enrolled": 13,
+  "enrolled": 18,
   "reserved": "-",
   "programs": [
    "DUI_LS",
@@ -7124,7 +7182,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 30,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "DUI_LS",
@@ -7158,7 +7216,7 @@
    "Amfi"
   ],
   "capacity": 30,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "EFN_LS",

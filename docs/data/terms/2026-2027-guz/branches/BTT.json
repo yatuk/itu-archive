@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 10,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -46,8 +46,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 12,
-  "enrolled": 12,
+  "capacity": 17,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -101,7 +101,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 8,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -127,8 +127,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 12,
-  "enrolled": 11,
+  "capacity": 15,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -149,7 +149,28 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 8,
+  "enrolled": 12,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15839",
+  "code": "BTT 598",
+  "branch": "BTT",
+  "level": "LU",
+  "name": "Proje",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Sevil Hatice Baltalı Tırpan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 1,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "-",

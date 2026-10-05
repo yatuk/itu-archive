@@ -8,7 +8,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Hüseyin Kutay Tinç",
   "buildings": [
-   "undeclared"
+   "MED"
   ],
   "days": [
    "Cuma"
@@ -17,10 +17,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "A13"
   ],
-  "capacity": 30,
-  "enrolled": 27,
+  "capacity": 35,
+  "enrolled": 31,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -35,7 +35,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Ali Demirci",
   "buildings": [
-   "undeclared"
+   "MED"
   ],
   "days": [
    "Pazartesi"
@@ -44,10 +44,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "B34"
   ],
   "capacity": 30,
-  "enrolled": 22,
+  "enrolled": 24,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -62,7 +62,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Emirhan Coşkun",
   "buildings": [
-   "undeclared"
+   "MED"
   ],
   "days": [
    "Salı"
@@ -71,10 +71,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "B35"
   ],
   "capacity": 30,
-  "enrolled": 9,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -89,7 +89,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sema Alaçam , Mehmet Tahir Sandıkkaya , Salih Özdemir",
   "buildings": [
-   "undeclared"
+   "MED"
   ],
   "days": [
    "Perşembe"
@@ -98,10 +98,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "B34"
   ],
   "capacity": 30,
-  "enrolled": 16,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -116,7 +116,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Hüseyin Kutay Tinç",
   "buildings": [
-   "undeclared"
+   "MED"
   ],
   "days": [
    "Cuma"
@@ -125,10 +125,10 @@
    "14:00/16:59"
   ],
   "rooms": [
-   "--"
+   "A13"
   ],
   "capacity": 30,
-  "enrolled": 11,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -155,7 +155,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 23,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -170,7 +170,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Oğuz Orkun Doma , Asena Kumsal Şen Bayram",
   "buildings": [
-   "undeclared"
+   "MEDC"
   ],
   "days": [
    "Çarşamba"
@@ -179,10 +179,10 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "--"
+   "1D9"
   ],
   "capacity": 30,
-  "enrolled": 4,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -209,7 +209,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 18,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -251,7 +251,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Sema Alaçam , Bülent Arıkan",
   "buildings": [
-   "undeclared"
+   "MED"
   ],
   "days": [
    "Çarşamba"
@@ -260,10 +260,10 @@
    "13:30/15:29"
   ],
   "rooms": [
-   "--"
+   "A35"
   ],
   "capacity": 30,
-  "enrolled": 8,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -284,7 +284,28 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 23,
+  "enrolled": 32,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15828",
+  "code": "GAM 502E",
+  "branch": "GAM",
+  "level": "LU",
+  "name": "Essential Mathema.for Games",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ali Demirci",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",

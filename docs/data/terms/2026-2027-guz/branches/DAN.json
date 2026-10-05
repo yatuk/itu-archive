@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 6,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "DUI_LS"
@@ -49,7 +49,7 @@
    "--"
   ],
   "capacity": 100,
-  "enrolled": 38,
+  "enrolled": 48,
   "reserved": "-",
   "programs": [
    "IML_LS",
@@ -80,7 +80,7 @@
    "213"
   ],
   "capacity": 100,
-  "enrolled": 14,
+  "enrolled": 18,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -107,10 +107,10 @@
    "15:30/17:29"
   ],
   "rooms": [
-   "B307"
+   "--"
   ],
   "capacity": 20,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -148,5 +148,47 @@
   ],
   "prereq": "-",
   "classReq": "-"
+ },
+ {
+  "crn": "15874",
+  "code": "DAN 301",
+  "branch": "DAN",
+  "level": "LS",
+  "name": "Kariyer Danışmanlığı",
+  "method": "Ek Sınav",
+  "instructor": "Ömer Kemal Kınacı",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "Detay"
+ },
+ {
+  "crn": "15879",
+  "code": "DAN 301",
+  "branch": "DAN",
+  "level": "LS",
+  "name": "Kariyer Danışmanlığı",
+  "method": "Ek Sınav",
+  "instructor": "Sinan Çakır",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "Detay"
  }
 ]

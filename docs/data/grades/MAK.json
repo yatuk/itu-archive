@@ -4326,13 +4326,13 @@
    "BB": 1,
    "CB": 3,
    "CB+": 3,
-   "CC": 1,
+   "CC": 2,
    "CC+": 2,
    "DC": 2,
    "DC+": 3,
    "DD": 4,
    "DD+": 3,
-   "FF": 5,
+   "FF": 4,
    "VF": 13
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MAK&dersNo=232&yil=2026"
@@ -7711,9 +7711,9 @@
    "CB": 1,
    "CB+": 1,
    "CC": 3,
-   "CC+": 1,
+   "CC+": 2,
    "DD+": 1,
-   "FF": 4
+   "FF": 3
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MAK&dersNo=353&yil=2026"
  },
@@ -7869,9 +7869,9 @@
    "CB": 1,
    "CB+": 1,
    "CC": 3,
-   "CC+": 1,
+   "CC+": 2,
    "DD+": 1,
-   "FF": 4
+   "FF": 3
   },
   "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MAK&dersNo=353&yil=2026"
  },
@@ -7945,7 +7945,7 @@
  },
  {
   "code": "MAK 372E",
-  "term": "2025-2026 Spring Semester",
+  "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
   "total": 165,
   "grades": {
@@ -8012,7 +8012,7 @@
  },
  {
   "code": "MAK 376E",
-  "term": "2025-2026 Spring Semester",
+  "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
   "total": 35,
   "grades": {
@@ -11105,6 +11105,28 @@
  },
  {
   "code": "MAK 696",
+  "term": "2025-2026 Bahar Dönemi",
+  "donem": "202620",
+  "total": 16,
+  "grades": {
+   "BL": 12,
+   "VF": 3
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MAK&dersNo=696&yil=2026"
+ },
+ {
+  "code": "MAK 696E",
+  "term": "2024-2025 Güz Dönemi",
+  "donem": "202510",
+  "total": 11,
+  "grades": {
+   "BL": 6,
+   "VF": 4
+  },
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersNotDagilimi/NotDagilimiSearch?bransKodu=MAK&dersNo=696&yil=2025"
+ },
+ {
+  "code": "MAK 696E",
   "term": "2025-2026 Bahar Dönemi",
   "donem": "202620",
   "total": 16,

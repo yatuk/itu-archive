@@ -2,10 +2,11 @@ name: mufredat
 
 # Ders planları (hangi bölüm hangi dönemde hangi dersi zorunlu/seçmeli
 # gösteriyor) OBS'de dönemde belki bir kez güncelleniyor. Ders programı gibi
-# her gün taramanın anlamı yok; ayda bir + elle tetikleme yeterli.
+# her gün taramanın anlamı yok; dönem başlarında (Şubat, Eylül) birer kez +
+# elle tetikleme yeterli.
 on:
   schedule:
-    - cron: '0 4 1 * *'
+    - cron: '0 4 1 2,9 *' # 1 Şubat ve 1 Eylül 04:00 UTC
   workflow_dispatch:
 
 concurrency:

@@ -2,12 +2,29 @@ name: scrape-full
 
 on:
   schedule:
-    # Tam tarama — haftada bir: pazartesi 05:17 TRT (saat başı kuyruğundan kaçınıldı).
-    - cron: '17 2 * * 1'
+    # Tam tarama, dönem takvimine göre iki kademeli (05:17 TRT; saat başı
+    # kuyruğundan kaçınıldı):
+    #  - Ders programı ilanı + kayıt + ekle-bırak ayları (Oca-Şub, Haz-Eki):
+    #    haftada bir, pazartesi.
+    #  - Aradaki sakin aylar (Mar-May, Kas-Ara): ayın 1'i ve 15'i. Yalnızca
+    #    takvim, sınav takvimi ve status.json tazelenir; boşuna CI harcanmaz.
+    #
+    # Ekle-bırak haftası bittikten sonraki ilk koşu son kez tam tarar (kesin
+    # sayılar); sonrakiler dönemi "donmuş" sayar ve önce OBS'nin hangi dönemi
+    # yayınladığına bakar (tek istek). Aynı dönemse ders ve önşart taraması
+    # atlanır; takvim, sınav takvimi ve status.json yine tazelenir. Yeni dönem
+    # açıldıysa tam tarama yapar. Karar akademik takvim + son tarama zamanından
+    # türetilir (internal/freeze); "force" girdisi dondurmayı aşar.
+    - cron: '17 2 * 1,2,6-10 1'
+    - cron: '17 2 1,15 3-5,11,12 *'
   workflow_dispatch:
     inputs:
       backfill:
         description: 'Tarihsel arşivi de yeniden içeri al'
+        type: boolean
+        default: false
+      force:
+        description: 'Dönem donmuş olsa da tam tarama yap'
         type: boolean
         default: false
 
@@ -37,7 +54,7 @@ jobs:
 
       - name: Veriyi çek
         run: |
-          go run ./cmd/scrape ${{ inputs.backfill && '-backfill' || '' }}
+          go run ./cmd/scrape ${{ inputs.backfill && '-backfill' || '' }} ${{ inputs.force && '-force' || '' }}
 
       - name: Veriyi doğrula
         run: go run ./cmd/validate -quiet -skip-site

@@ -1,12 +1,13 @@
 name: not-dagilimi
 
 # Ders not dağılımları (harf notu → kişi sayısı). Dönem sonunda güncellenir;
-# ayda bir koşuyor. OBS'yi yormamak için rps limiti korunuyor. Kapsam yıl
+# yalnızca notların kesinleştiği aylarda koşuyor (Güz→Şubat, Bahar→Temmuz,
+# Yaz→Eylül). OBS'yi yormamak için rps limiti korunuyor. Kapsam yıl
 # geçmişindeki ders kodlarından türetiliyor; her ders için son 3 yıl çekilir.
 # <10 kişilik sınıflar etik sınır nedeniyle kaydedilmez (scraper tarafında).
 on:
   schedule:
-    - cron: '41 5 7 * *' # ayın 7'sinde 05:41 UTC (aylık)
+    - cron: '41 5 7 2,7,9 *' # 7 Şubat, 7 Temmuz, 7 Eylül 05:41 UTC
   workflow_dispatch:
 
 concurrency:

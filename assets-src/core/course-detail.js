@@ -5,7 +5,7 @@
 // Tablo satırından açıldığında ilgili CRN'nin Şubeler görünümü; doğrudan bağlantıda
 // ise karar özeti öne gelir. Uzun program ve arşiv listeleri kontrollü açılır.
 
-import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, buildingName, trNum, formatInt } from './utils.js?v=dde1e9339338';
+import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, frozenMeasuredAt, fmtDay, buildingName, trNum, formatInt } from './utils.js?v=dde1e9339338';
 import { state } from './store.js?v=dde1e9339338';
 import { fillBar, quotaDisplay, trendChart } from './chart.js?v=dde1e9339338';
 import { parseReq, renderReqTree } from '../prereq.js?v=dde1e9339338';
@@ -112,6 +112,8 @@ function measured(crn) {
   if (!state.quotaLast) return '';
   const rec = state.quota?.get(crn);
   if (!rec) return '';
+  const frozenDay = fmtDay(frozenMeasuredAt(state.freeze, state.termSlug, state.quotaFinalAt), I18N.lang);
+  if (frozenDay) return I18N.t('freshLastMeasured', { date: frozenDay });
   return fillMeasured(state.quotaLast);
 }
 

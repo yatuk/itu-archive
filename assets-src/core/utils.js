@@ -433,6 +433,25 @@ export function fillMeasured(lastIso, now = Date.now(), lang = 'tr') {
   return ago ? (lang === 'en' ? `measured ${ago}` : `en son ${ago} ölçüldü`) : '';
 }
 
+// Donmuş dönemde (ekle-bırak bitti, tarama durdu) son ölçümün zamanı; dönem
+// donmuş değilse ya da başka bir döneme bakılıyorsa ''. Göreli "N sa önce"
+// haftalarca büyüyüp veriyi hâlâ güncelleniyor gibi gösterirdi.
+export function frozenMeasuredAt(freeze, slug, quotaFinalAt = null) {
+  if (!freeze || !freeze.frozen || !slug || freeze.slug !== slug) return '';
+  const times = [freeze.measuredAt, quotaFinalAt]
+    .map((iso) => (iso ? new Date(iso).getTime() : NaN))
+    .filter((ms) => !isNaN(ms));
+  return times.length ? new Date(Math.max(...times)).toISOString() : '';
+}
+
+// "12 Eki 2026" / "Oct 12, 2026" — kampüs saatiyle (ziyaretçi başka dilimde olabilir).
+export function fmtDay(iso, lang = 'tr') {
+  const d = new Date(iso);
+  if (!iso || isNaN(d)) return '';
+  return d.toLocaleDateString(lang === 'en' ? 'en-US' : 'tr-TR',
+    { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Europe/Istanbul' });
+}
+
 // CSV indirme (Excel için BOM'lu).
 export function downloadCSV(filename, headers, rows) {
   const cell = (v) => {

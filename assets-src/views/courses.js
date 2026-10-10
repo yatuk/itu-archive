@@ -8,7 +8,7 @@
 // filtrelerde "yoksa geç" yapılır. "yer" (bina+derslik) "zaman" ile aynı
 // sırada " | " ile ayrılmış oturum listesidir (bkz. sessionsWithLocation).
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, timeAgo, isViewVisible, tickCount, termLabel } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, frozenMeasuredAt, fmtDay, timeAgo, isViewVisible, tickCount, termLabel } from '../core/utils.js?v=dde1e9339338';
 import { methodToCode } from '../core/urlcodes.js?v=dde1e9339338';
 import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
@@ -150,6 +150,7 @@ export async function loadTerm(slug) {
   state.termSlug = slug;
   state.quota = null;
   state.quotaLast = null;
+  state.quotaFinalAt = null;
   state.selected.clear(); // seçim döneme özeldir
   updateSelection();
   setStatus($('#resultline'), 'dönem yükleniyor…', { busy: true });
@@ -240,10 +241,12 @@ export async function loadQuota(slug) {
     if (state.termSlug !== slug) return; // kullanıcı yükleme sürerken dönem değiştirdi
     state.quota = new Map(sum.courses.map((c) => [c.crn, c]));
     state.quotaLast = sum.last || null; // doluluk ölçüm zamanı (Faz 0.4)
+    state.quotaFinalAt = sum.finalAt || null;
   } catch {
     if (state.termSlug !== slug) return;
     state.quota = null; // bu dönem için henüz ölçüm yok
     state.quotaLast = null;
+    state.quotaFinalAt = null;
   }
   // Ölçüm özeti satırlarda tekrarlanmaz; yükleme bitince sonuç satırını bir kez
   // yenileyerek global tazelik bilgisini görünür kıl.
@@ -337,12 +340,17 @@ export function applyFilters() {
       hint = ` · yalnızca ${rest} ile aramayı dene`;
     }
   }
-  const measured = state.quotaLast ? fillMeasured(state.quotaLast, Date.now(), I18N.lang) : '';
+  // Ekle-bırak sonrası dönem donar: göreli süreler yerine son ölçümün mutlak tarihi.
+  const frozenDay = fmtDay(frozenMeasuredAt(state.freeze, state.termSlug, state.quotaFinalAt), I18N.lang);
+  const measured = !frozenDay && state.quotaLast ? fillMeasured(state.quotaLast, Date.now(), I18N.lang) : '';
   const quotaFreshness = measured ? ` · ${I18N.lang === 'en' ? 'capacity' : 'kontenjan ölçümü'} ${esc(measured)}` : '';
-  const scrapedAgo = state.scrapedAt ? timeAgo(state.scrapedAt, Date.now(), I18N.lang) : '';
-  const scrapeFreshness = scrapedAgo
-    ? ` · <span class="${state.stale ? 'data-stale' : ''}">${I18N.lang === 'en' ? 'last scrape' : 'son tarama'} ${esc(scrapedAgo)}</span>`
-    : '';
+  const scrapedAgo = !frozenDay && state.scrapedAt ? timeAgo(state.scrapedAt, Date.now(), I18N.lang) : '';
+  let scrapeFreshness = '';
+  if (frozenDay) {
+    scrapeFreshness = ` · <span class="data-frozen" title="${esc(I18N.t('freshFrozenTitle'))}">${esc(I18N.t('freshLastMeasured', { date: frozenDay }))}</span>`;
+  } else if (scrapedAgo) {
+    scrapeFreshness = ` · <span class="${state.stale ? 'data-stale' : ''}">${I18N.lang === 'en' ? 'last scrape' : 'son tarama'} ${esc(scrapedAgo)}</span>`;
+  }
   // Sonuç sayısı jump-cut yerine eski değerden yeni değere yuvarlanır: HTML
   // eski sayıyla basılır (hedefle basılırsa tickCount'un ilk rAF'ı çalışana
   // dek doğru değer bir kare parlayıp geri yuvarlanırdı), sonra animasyon onu

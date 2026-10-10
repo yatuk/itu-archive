@@ -3,8 +3,11 @@ name: live-smoke
 on:
   deployment_status:
   workflow_dispatch:
+  # Asıl tetikleyici her yayın (deployment_status). Zamanlanmış koşu yalnızca
+  # uzun süre yayın olmadığında sitenin ayakta olduğunu doğrulayan aylık bir
+  # güvencedir: ayın 2'si (ayın 1'indeki taramanın ertesi günü).
   schedule:
-    - cron: '23 */6 * * *'
+    - cron: '23 6 2 * *'
 
 concurrency:
   group: live-smoke

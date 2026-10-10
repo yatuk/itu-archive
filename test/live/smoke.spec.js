@@ -32,7 +32,9 @@ test('yayın aynı asset sürümüyle açılır ve temel görünümler çalış�
   expect(statusData.lastRunAt).toMatch(/^\d{4}-\d{2}-\d{2}T/);
   expect(Number(statusData.sections)).toBeGreaterThan(0);
   const ageHours = (Date.now() - Date.parse(statusData.lastRunAt)) / 3_600_000;
-  expect(ageHours, 'Son başarılı tarama 48 saatten eski olmamalı').toBeLessThan(48);
+  // Sakin aylarda tarama ayın 1'i ve 15'inde çalışır; en uzun boşluk 15 Aralık → Ocak'ın ilk
+  // pazartesisi (~23 gün). 35 gün bu boşluğu ve geciken cron'u karşılar.
+  expect(ageHours, 'Son başarılı tarama 35 günden eski olmamalı').toBeLessThan(35 * 24);
 
   for (const view of ['dersplanim', 'onsart', 'sinavlar', 'takvim', 'program']) {
     await page.locator(`#tab-${view}`).click();

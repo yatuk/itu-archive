@@ -1,11 +1,11 @@
 name: katalog
 
 # Ders katalog verisi (kredi, AKTS, dil, içerik, çıktılar, kaynak kitaplar).
-# İçerik nadiren değiştiği için haftalık çalışıyor; OBS'yi yormamak için rps
+# İçerik nadiren değiştiği için ayda bir çalışıyor; OBS'yi yormamak için rps
 # limiti korunuyor. Kapsam yıl geçmişindeki ders kodlarından türetiliyor.
 on:
   schedule:
-    - cron: '23 5 * * 1' # pazartesi 05:23 UTC (haftalık)
+    - cron: '23 5 3 * *' # ayın 3'ünde 05:23 UTC (aylık)
   workflow_dispatch:
 
 concurrency:

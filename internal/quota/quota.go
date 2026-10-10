@@ -163,12 +163,16 @@ func Append(path string, sections []model.Section, now time.Time, complete bool)
 // Summary, bir dönemin zaman serisinden türetilen özet. Sitenin okuduğu dosya bu;
 // ham JSONL'i tarayıcıya indirtmiyoruz.
 type Summary struct {
-	Term      string       `json:"term"`
-	Slug      string       `json:"slug"`
-	Snapshots int          `json:"snapshots"`
-	First     string       `json:"first"`
-	Last      string       `json:"last"`
-	Courses   []CourseFill `json:"courses"`
+	Term      string `json:"term"`
+	Slug      string `json:"slug"`
+	Snapshots int    `json:"snapshots"`
+	First     string `json:"first"`
+	Last      string `json:"last"`
+	// FinalAt, ekle-bırak bittikten sonra alınan son TAM ölçümün zamanı. Sayılar
+	// değişmediyse JSONL'e satır eklenmez ve Last ilerlemez; "kesin ölçüm alındı"
+	// bilgisini bu alan taşır. Özet JSONL'den yeniden türetilirken cmd/quota korur.
+	FinalAt string       `json:"finalAt,omitempty"`
+	Courses []CourseFill `json:"courses"`
 }
 
 // CourseFill, tek bir şubenin dolma hikayesi.

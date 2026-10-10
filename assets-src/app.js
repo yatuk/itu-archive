@@ -66,8 +66,11 @@ async function boot() {
     $('#stat-scraped').textContent = fmtDate(st.lastSuccessAt);
     $('#foot-build').textContent = `${I18N.t('footBuild')} ${fmtDate(st.lastSuccessAt)}`;
     state.scrapedAt = st.lastSuccessAt;
-    state.stale = (Date.now() - last.getTime()) / 36e5 > 48;
-    if ((Date.now() - last.getTime()) / 36e5 > 48) {
+    state.freeze = st.freeze || null;
+    // Donmuş dönemde tarama bilerek durur; "veri bayat" uyarısı yanıltıcı olur.
+    const frozen = Boolean(st.freeze && st.freeze.frozen);
+    state.stale = !frozen && (Date.now() - last.getTime()) / 36e5 > 48;
+    if (state.stale) {
       const stEl = $('#stat-status');
       if (stEl) {
         stEl.textContent = 'veri bayat: son başarılı tarama 2 günden eski';

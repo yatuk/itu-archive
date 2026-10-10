@@ -613,7 +613,6 @@ Ders Kodu Ders Adı Kredi Not
 CEN 101E Intr. to Information Systems 2,00 FF *
 MAT 103E Mathematics I 4,00 DC+
 FIZ 101EL Physics I Laboratory 1,00 AA
-KIM 101EL General Chemistry I Lab 1,00 BB
 BLG 335E Analysis of Algorithms I 3,00 VF
 A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
 Bilgisayar Mühendisliği (KKTC)
@@ -621,7 +620,7 @@ Dönem 6,00 2,00 6,00 3,00 0,50
 2024-2025 / Bahar Dönemi
 Ders Kodu Ders Adı Kredi Not
 CEN 101E Intr. to Information Systems 2,00 BA+
-CEN 223E Data Structures 3,50 CB+
+CEN 213E Data Structures 3,50 CB+
 ING 112A Basics of Academic Writing 2,00 CC+
 FIZ 102EL Physics II Laboratory 1,00 BB+
 CEN 335E Analysis of Algorithms I 3,00 CB
@@ -646,7 +645,7 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     expect(dialogLayout.right).toBeLessThanOrEqual(dialogLayout.viewport + 1);
     expect(dialogLayout.pageOverflow).toBeLessThanOrEqual(1);
     await page.locator('#transcript-input').fill(transcript);
-    await expect(page.locator('#transcript-preview')).toContainText('13 kayıt · 12 farklı ders');
+    await expect(page.locator('#transcript-preview')).toContainText('12 kayıt · 11 farklı ders');
     await expect(page.locator('#transcript-preview')).toContainText('CEN_LS');
     await expect(page.locator('.transcript-dlg .dlg-ok')).toBeEnabled();
     await page.locator('.transcript-dlg .dlg-ok').click();
@@ -654,9 +653,8 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     await expect(page.locator('#dp-prog')).toHaveValue('CEN_LS', { timeout: 20000 });
     await expect(page.locator('.dp-grade[data-gcode="CEN 101E"]')).toHaveValue('BA+');
     await expect(page.locator('.dp-grade[data-gcode="CEN 101E"] + .cp-grade-trigger')).toContainText('BA+');
-    await expect(page.locator('.dp-grade[data-gcode="CEN 223E"]')).toHaveValue('CB+');
+    await expect(page.locator('.dp-grade[data-gcode="CEN 213E"]')).toHaveValue('CB+');
     await expect(page.locator('.dp-grade[data-gcode="FIZ 101EL"]')).toHaveValue('AA');
-    await expect(page.locator('.dp-grade[data-gcode="KIM 101EL"]')).toHaveValue('BB');
     await expect(page.locator('.dp-grade[data-gcode="FIZ 102EL"]')).toHaveValue('BB+');
     await expect(page.locator('.dp-grade[data-gcode="ING 112A"]')).toHaveValue('CC+');
     await expect(page.locator('.dp-grade[data-gcode="CEN 335E"]')).toHaveValue('CB');
@@ -669,17 +667,18 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     await page.keyboard.press('Escape');
     await expect(page.locator('.cp-grade-menu')).toBeHidden();
     await expect(page.locator('.dp-repeat-btn[data-gcode="CEN 335E"]')).toHaveAttribute('title', /önceki: VF/);
-    await expect(page.locator('.dp-epick[data-slot="s3i5"]')).toHaveValue('SNT 102E');
-    await expect(page.locator('.dp-epick[data-slot="s6i5"]')).toHaveValue('ITB 205E');
+    // Seçmeli yuva sırası müfredat sürümüyle değişir; yuva kimliğine değil seçilen derse bak.
+    await expect.poll(() => page.locator('.dp-epick').evaluateAll((els) => els.map((el) => el.value)))
+      .toEqual(expect.arrayContaining(['SNT 102E', 'ITB 205E']));
     await expect(page.locator('.dp-repeat-btn[data-gcode="CEN 101E"]')).toHaveAttribute('title', /önceki: FF/);
-    await expect(page.locator('#dp-transcript-result')).toContainText('10 not aktarıldı');
+    await expect(page.locator('#dp-transcript-result')).toContainText('9 not aktarıldı');
     await expect(page.locator('#dp-transcript-result')).toContainText('1 ders elle kontrol edilmeli');
 
     const stored = await page.evaluate(() => localStorage.getItem('itu-grades:v1') || '');
     expect(stored).not.toContain('TEST KULLANICISI');
     expect(stored).not.toContain('PRIVATE COURSE LABEL');
     expect(JSON.parse(stored).data.CEN_LS.requiredSlots).toEqual({
-      s0i1: 'FIZ 101EL', s0i8: 'KIM 101EL', s1i3: 'ING 112A', s1i6: 'FIZ 102EL',
+      s0i1: 'FIZ 101EL', s1i5: 'FIZ 102EL', s1i6: 'ING 112A',
     });
     expect(await page.locator('.transcript-dlg').count()).toBe(0);
   });

@@ -3,6 +3,7 @@
 //
 //	go run ./cmd/scrape              # aktif dönem + akademik takvim
 //	go run ./cmd/scrape -backfill    # ek olarak tarihsel arşivi içeri al
+//	go run ./cmd/scrape -force       # dönem donmuş olsa da tam tarama yap
 package main
 
 import (
@@ -25,6 +26,7 @@ import (
 	"itu-scraper/internal/archive"
 	"itu-scraper/internal/fetch"
 	"itu-scraper/internal/final"
+	"itu-scraper/internal/freeze"
 	"itu-scraper/internal/history"
 	"itu-scraper/internal/model"
 	"itu-scraper/internal/obs"
@@ -49,15 +51,16 @@ func main() {
 		skipPrereq   = flag.Bool("skip-prereq", false, "önşart grafiğini atla")
 		mode         = flag.String("mode", "tam", "koşu modu (tam/hafif) — status.json'a yazılır")
 		dumpDir      = flag.String("dump-dir", "/tmp/itu-scrape-dump", "hatalı yanıtların ham gövdesinin saklanacağı dizin (K8)")
+		force        = flag.Bool("force", false, "ekle-bırak sonrası dondurmayı yok say, tam tarama yap")
 	)
 	flag.Parse()
 
-	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams, *skipPrereq, *mode, *dumpDir); err != nil {
+	if err := run(*out, *workers, *rps, *backfill, *skipCourses, *skipCalendar, *skipExams, *skipPrereq, *force, *mode, *dumpDir); err != nil {
 		log.Fatalf("hata: %v", err)
 	}
 }
 
-func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams, skipPrereq bool, mode, dumpDir string) error {
+func run(out string, workers int, rps float64, backfill, skipCourses, skipCalendar, skipExams, skipPrereq, force bool, mode, dumpDir string) error {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
@@ -68,7 +71,30 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 
 	var currentSlug, currentLabel string
 
-	if !skipCourses {
+	// Ekle-bırak bittikten sonra bir kez tam tarandıysa dönem donmuştur: tek
+	// istekle OBS'nin hâlâ aynı dönemi yayınladığına bak, öyleyse ders ve önşart
+	// taramasını atla. Dönem değiştiyse (ya da emin olunamıyorsa) tam tarama.
+	// Sınav takvimi atlanmaz: finaller ekle-bıraktan çok sonra ilan edilir.
+	termCheckOnly := false
+	if !force && !skipCourses {
+		if fz := termFreeze(out, started); fz.Frozen {
+			label, err := publishedTerm(ctx, obs.New(f))
+			switch {
+			case err != nil:
+				logf("dönem kontrolü başarısız (%v) — tam taramaya devam", err)
+			case termSlug(label) != fz.Slug:
+				logf("OBS yeni dönem yayınlıyor: %s (önceki %s) — tam tarama", label, fz.Slug)
+			default:
+				logf("%s donmuş (ekle-bırak %s'de bitti, son tarama %s) — yalnızca dönem kontrolü yapıldı",
+					fz.Slug, fz.AddDropEnd, fz.MeasuredAt)
+				termCheckOnly = true
+				currentLabel, currentSlug = label, fz.Slug
+				mode = modeTermCheck
+			}
+		}
+	}
+
+	if !skipCourses && !termCheckOnly {
 		label, slug, err := scrapeCourses(ctx, f, st, workers)
 		if err != nil {
 			return err
@@ -84,11 +110,7 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 
 	if !skipExams {
 		if currentLabel == "" {
-			oc := obs.New(f)
-			label, err := oc.PageTerm(ctx)
-			if err != nil || label == "" {
-				label, err = oc.ActiveTerm(ctx, "LS")
-			}
+			label, err := publishedTerm(ctx, obs.New(f))
 			if err != nil {
 				return err
 			}
@@ -110,7 +132,7 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 		return err
 	}
 
-	if !skipPrereq {
+	if !skipPrereq && !termCheckOnly {
 		if err := scrapePrereqs(ctx, f, st, workers, idx); err != nil {
 			return err
 		}
@@ -130,6 +152,58 @@ func run(out string, workers int, rps float64, backfill, skipCourses, skipCalend
 
 	logf("bitti (%s)", time.Since(started).Round(time.Second))
 	return nil
+}
+
+// modeTermCheck, donmuş dönemde yalnızca "OBS hangi dönemi yayınlıyor"
+// kontrolü yapılan koşunun status.json'daki modu.
+const modeTermCheck = "donem-kontrol"
+
+// publishedTerm, OBS'nin şu an yayınladığı dönemin etiketi (tek istek).
+// Sayfa başlığı esas; GetAktifDonem geçiş dönemlerinde geride kalabiliyor.
+func publishedTerm(ctx context.Context, oc *obs.Client) (string, error) {
+	label, err := oc.PageTerm(ctx)
+	if err != nil || label == "" {
+		label, err = oc.ActiveTerm(ctx, "LS")
+	}
+	if err == nil && label == "" {
+		err = fmt.Errorf("OBS dönem etiketi boş")
+	}
+	return label, err
+}
+
+// freezeInfo, status.json'daki "freeze" alanı — site donmuş dönemde göreli
+// "N sa önce" yerine son ölçümün mutlak tarihini gösterir.
+type freezeInfo struct {
+	Slug       string `json:"slug"`
+	AddDropEnd string `json:"addDropEnd"` // ekle-bırak son günü, YYYY-MM-DD
+	Frozen     bool   `json:"frozen"`
+	MeasuredAt string `json:"measuredAt,omitempty"` // son tam ders taraması (RFC3339)
+}
+
+// termFreeze, canlı dönemin donma durumunu diskteki veriden türetir. Dönem,
+// takvim ya da ekle-bırak satırı bulunamazsa sıfır değer döner (donma yok).
+// Kısmi tarama kesin ölçüm sayılmaz: eksik branşlar bir sonraki koşuda alınsın.
+func termFreeze(out string, now time.Time) freezeInfo {
+	slug, _ := currentDataRefs(out)
+	if slug == "" {
+		return freezeInfo{}
+	}
+	end, ok := freeze.LoadAddDropEnd(out, slug)
+	if !ok {
+		return freezeInfo{}
+	}
+	info := freezeInfo{Slug: slug, AddDropEnd: freeze.Date(end)}
+	b, err := os.ReadFile(filepath.Join(out, "data", "terms", slug, "meta.json"))
+	if err != nil {
+		return info
+	}
+	var meta model.TermMeta
+	if json.Unmarshal(b, &meta) != nil || meta.Partial {
+		return info
+	}
+	info.MeasuredAt = meta.ScrapedAt
+	info.Frozen = freeze.Frozen(now, end, ok, freeze.ParseTime(meta.ScrapedAt))
+	return info
 }
 
 // writeStatus, docs/data/status.json'a koşu özetini yazar: site "son tarama"
@@ -199,6 +273,11 @@ func writeStatus(st *store.Store, out, mode string, started time.Time) error {
 		"sections":       sections,
 		"prevSections":   prevSections,
 		"sources":        sources,
+	}
+	// Tarama bittikten sonra hesaplanır: ekle-bırak sonrası ilk tam koşu
+	// status.json'a doğrudan frozen:true yazar.
+	if fz := termFreeze(out, now); fz.Slug != "" {
+		status["freeze"] = fz
 	}
 	return st.WriteJSON(status, "data", "status.json")
 }

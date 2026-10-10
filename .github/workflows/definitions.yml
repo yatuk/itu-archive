@@ -1,10 +1,10 @@
 name: resmi-tanimlar
 
 # Resmî tanım listeleri (bina kodları, program kodları). Nadiren değişir;
-# ayda bir koşar. Her iki kaynak sunucu tarafı tablo — OBS'yi yormaz.
+# dönem başlarında (Şubat, Eylül) birer kez koşar. Her iki kaynak sunucu tarafı tablo — OBS'yi yormaz.
 on:
   schedule:
-    - cron: '47 5 1 * *' # ayın 1'inde 05:47 UTC (aylık)
+    - cron: '47 5 1 2,9 *' # 1 Şubat ve 1 Eylül 05:47 UTC
   workflow_dispatch:
 
 concurrency:

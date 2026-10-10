@@ -1,11 +1,11 @@
 name: yatay-gecis
 
 # İTÜ içi yatay geçiş taban/tavan sonuçları (sis.itu.edu.tr). Yılda bir kez
-# açıklanıyor ve geçmiş yıllar hiç değişmiyor; ayda bir kontrol etmek fazlasıyla
-# yeterli. 15 statik sayfa, tek istek — OBS'ye hiç dokunmuyor.
+# açıklanıyor ve geçmiş yıllar hiç değişmiyor; sonuçların açıklandığı dönemlerde
+# (Şubat, Ağustos-Ekim) ayda bir kontrol etmek yeterli. 15 statik sayfa, tek istek — OBS'ye hiç dokunmuyor.
 on:
   schedule:
-    - cron: '13 6 1 * *' # ayın 1'inde 06:13 UTC (aylık)
+    - cron: '13 6 1 2,8-10 *' # Şubat ve Ağustos-Ekim, ayın 1'inde 06:13 UTC
   workflow_dispatch:
     inputs:
       only:

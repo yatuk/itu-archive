@@ -1,15 +1,25 @@
 name: kontenjan
 
 # Kontenjan doluluğunun zaman serisi. Ders programından ayrı bir iş akışı olarak
-# kalıyor (aynı komuta iki farklı yerden değil, buradan tetiklenmesi için), ama
-# tarama yükünü azaltmak için artık haftada bir çalışıyor.
+# kalıyor (aynı komuta iki farklı yerden değil, buradan tetiklenmesi için).
+# Yalnızca kayıt ve ekle-bırak dönemlerini kapsayan aylarda (Oca-Şub, Haz-Eki)
+# haftada bir çalışıyor; sakin aylarda (Mar-May, Kas-Ara) hiç koşmuyor.
 #
 # Komut değişen bir şey yoksa dosyaya dokunmuyor, dolayısıyla sakin
 # dönemlerde commit üretmiyor.
+#
+# Ekle-bırak haftası bittikten sonraki ilk tam ölçüm kesin sayıları kaydeder
+# (özete finalAt yazılır); sonraki koşular o dönem için ölçüm almaz. Yeni dönem
+# açılınca seri kendiliğinden yeniden başlar. "force" girdisi dondurmayı aşar.
 on:
   schedule:
-    - cron: '0 3 * * 1'
+    - cron: '0 3 * 1,2,6-10 1'
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Dönem donmuş olsa da ölçüm al'
+        type: boolean
+        default: false
 
 concurrency:
   group: repo-write
@@ -33,12 +43,25 @@ jobs:
           cache: true
 
       - name: Ölçüm al
-        run: go run ./cmd/quota
+        run: go run ./cmd/quota ${{ inputs.force && '-force' || '' }}
+
+      # Dönem donmuşsa ya da sayı değişmediyse dosyaya dokunulmaz; doğrulama ve
+      # site üretimi de atlanır (koşu bir dakikanın altında biter).
+      - name: Değişiklik var mı
+        id: diff
+        run: |
+          if git diff --quiet -- docs; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Veriyi doğrula
+        if: steps.diff.outputs.changed == 'true'
         run: go run ./cmd/validate -quiet -skip-site
 
       - name: SEO sayfalarını veriden üret
+        if: steps.diff.outputs.changed == 'true'
         run: go run ./cmd/site
 
       - name: Commit

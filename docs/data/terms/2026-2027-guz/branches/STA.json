@@ -20,8 +20,8 @@
    "A104"
   ],
   "capacity": 70,
-  "enrolled": 67,
-  "reserved": "JEF_LS/5/4 | Diğer/65/63",
+  "enrolled": 70,
+  "reserved": "JEF_LS/5/5 | Diğer/65/65",
   "programs": [
    "CEV_LS",
    "GID_LS",
@@ -52,8 +52,8 @@
    "B103"
   ],
   "capacity": 70,
-  "enrolled": 68,
-  "reserved": "JEF_LS/5/3 | Diğer/65/65",
+  "enrolled": 73,
+  "reserved": "JEF_LS/5/4 | Diğer/65/69",
   "programs": [
    "CEV_LS",
    "CEVE_LS",
@@ -124,7 +124,7 @@
    "D202"
   ],
   "capacity": 50,
-  "enrolled": 52,
+  "enrolled": 49,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -157,7 +157,7 @@
    "A105"
   ],
   "capacity": 61,
-  "enrolled": 62,
+  "enrolled": 71,
   "reserved": "-",
   "programs": [
    "PET_LS",
@@ -187,13 +187,43 @@
    "B104"
   ],
   "capacity": 60,
-  "enrolled": 23,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "GID_LS",
    "ISL_LS",
    "ISLE_LS",
    "KMM_LS"
+  ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "16010",
+  "code": "STA 201E",
+  "branch": "STA",
+  "level": "LS",
+  "name": "Statics",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Mehmet Selim Akay",
+  "buildings": [
+   "MEDC"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "08:30/11:29"
+  ],
+  "rooms": [
+   "3D19"
+  ],
+  "capacity": 30,
+  "enrolled": 12,
+  "reserved": "-",
+  "programs": [
+   "UCK_LS",
+   "UZBE_LS"
   ],
   "prereq": "-",
   "classReq": "-"

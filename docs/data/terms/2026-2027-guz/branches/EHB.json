@@ -20,7 +20,7 @@
    "5102"
   ],
   "capacity": 100,
-  "enrolled": 57,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "EHB_LS"
@@ -49,7 +49,7 @@
    "6309"
   ],
   "capacity": 150,
-  "enrolled": 149,
+  "enrolled": 150,
   "reserved": "-",
   "programs": [
    "EHB_LS",
@@ -111,7 +111,7 @@
    "5307"
   ],
   "capacity": 50,
-  "enrolled": 11,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -149,7 +149,7 @@
    "5304"
   ],
   "capacity": 95,
-  "enrolled": 95,
+  "enrolled": 90,
   "reserved": "-",
   "programs": [
    "EHB_LS",
@@ -181,8 +181,8 @@
   "rooms": [
    "5302"
   ],
-  "capacity": 80,
-  "enrolled": 77,
+  "capacity": 82,
+  "enrolled": 82,
   "reserved": "-",
   "programs": [
    "EHB_LS",
@@ -212,9 +212,9 @@
   "rooms": [
    "5304"
   ],
-  "capacity": 75,
-  "enrolled": 74,
-  "reserved": "EEE_LS/5/5 | Diğer/70/69",
+  "capacity": 86,
+  "enrolled": 87,
+  "reserved": "EEE_LS/10/11 | Diğer/76/76",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -247,9 +247,9 @@
   "rooms": [
    "4104"
   ],
-  "capacity": 75,
-  "enrolled": 63,
-  "reserved": "EEE_LS/5/4 | Diğer/70/59",
+  "capacity": 87,
+  "enrolled": 85,
+  "reserved": "EEE_LS/10/8 | Diğer/77/77",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -257,40 +257,6 @@
    "EHS_LS",
    "ELK_LS",
    "ELKE_LS",
-   "TEL_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "14242",
-  "code": "EHB 315E",
-  "branch": "EHB",
-  "level": "LS",
-  "name": "Digital Signal Processing",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Tayfun Akgül",
-  "buildings": [
-   "EEB"
-  ],
-  "days": [
-   "Cuma"
-  ],
-  "times": [
-   "08:30/11:29"
-  ],
-  "rooms": [
-   "2106"
-  ],
-  "capacity": 75,
-  "enrolled": 10,
-  "reserved": "EEE_LS/10/6 | Diğer/65/4",
-  "programs": [
-   "EEE_LS",
-   "EHB_LS",
-   "EHB_LS",
-   "EHBE_LS",
-   "TEL_LS",
    "TEL_LS"
   ],
   "prereq": "Detay",
@@ -392,7 +358,7 @@
    "5204"
   ],
   "capacity": 85,
-  "enrolled": 85,
+  "enrolled": 87,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -435,7 +401,7 @@
    "5302"
   ],
   "capacity": 85,
-  "enrolled": 33,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -478,7 +444,7 @@
    "5202"
   ],
   "capacity": 85,
-  "enrolled": 82,
+  "enrolled": 85,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -507,7 +473,7 @@
   "level": "LS",
   "name": "Theory of Complex Functions",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Kamil Karaçuha",
+  "instructor": "Kamil Karaçuha , Semih Doğu",
   "buildings": [
    "MED"
   ],
@@ -521,45 +487,7 @@
    "A16"
   ],
   "capacity": 120,
-  "enrolled": 106,
-  "reserved": "-",
-  "programs": [
-   "EEE_LS",
-   "EHB_LS",
-   "EHBE_LS",
-   "EHS_LS",
-   "ELK_LS",
-   "ELKE_LS",
-   "KOM_LS",
-   "KOME_LS",
-   "ROS_LS",
-   "ROSE_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14249",
-  "code": "EHB 235E",
-  "branch": "EHB",
-  "level": "LS",
-  "name": "Theory of Complex Functions",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Semih Doğu",
-  "buildings": [
-   "EEB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "5204"
-  ],
-  "capacity": 0,
-  "enrolled": 11,
+  "enrolled": 95,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -597,7 +525,7 @@
    "5302"
   ],
   "capacity": 80,
-  "enrolled": 79,
+  "enrolled": 80,
   "reserved": "-",
   "programs": [
    "EHB_LS"
@@ -626,7 +554,7 @@
    "5304"
   ],
   "capacity": 80,
-  "enrolled": 67,
+  "enrolled": 68,
   "reserved": "-",
   "programs": [
    "EHB_LS"
@@ -654,8 +582,8 @@
   "rooms": [
    "5202"
   ],
-  "capacity": 80,
-  "enrolled": 80,
+  "capacity": 91,
+  "enrolled": 91,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -685,8 +613,8 @@
   "rooms": [
    "5204"
   ],
-  "capacity": 80,
-  "enrolled": 70,
+  "capacity": 93,
+  "enrolled": 93,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -718,7 +646,7 @@
    "--"
   ],
   "capacity": 32,
-  "enrolled": 31,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -756,7 +684,7 @@
    "--"
   ],
   "capacity": 48,
-  "enrolled": 20,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -794,7 +722,7 @@
    "--"
   ],
   "capacity": 64,
-  "enrolled": 65,
+  "enrolled": 64,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -868,7 +796,7 @@
    "--"
   ],
   "capacity": 48,
-  "enrolled": 41,
+  "enrolled": 54,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -905,7 +833,7 @@
    "--"
   ],
   "capacity": 48,
-  "enrolled": 44,
+  "enrolled": 51,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -943,7 +871,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 30,
+  "enrolled": 28,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -976,7 +904,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 24,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -1108,7 +1036,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 29,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -1141,7 +1069,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 26,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -1204,11 +1132,11 @@
    "12:30/15:29"
   ],
   "rooms": [
-   "5202"
+   "6309"
   ],
   "capacity": 110,
-  "enrolled": 93,
-  "reserved": "EEE_LS/10/7 | Diğer/100/86",
+  "enrolled": 92,
+  "reserved": "EEE_LS/12/7 | Diğer/98/85",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1241,8 +1169,8 @@
    "5102"
   ],
   "capacity": 75,
-  "enrolled": 71,
-  "reserved": "EEE_LS/5/2 | Diğer/70/69",
+  "enrolled": 73,
+  "reserved": "EEE_LS/5/2 | Diğer/70/71",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1274,8 +1202,8 @@
    "5304"
   ],
   "capacity": 75,
-  "enrolled": 35,
-  "reserved": "EEE_LS/5/0 | Diğer/70/35",
+  "enrolled": 41,
+  "reserved": "EEE_LS/5/0 | Diğer/70/41",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1308,7 +1236,7 @@
    "2102"
   ],
   "capacity": 75,
-  "enrolled": 74,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "EHB_LS"
@@ -1337,7 +1265,7 @@
    "2104"
   ],
   "capacity": 75,
-  "enrolled": 45,
+  "enrolled": 46,
   "reserved": "-",
   "programs": [
    "EHB_LS"
@@ -1365,9 +1293,9 @@
   "rooms": [
    "2106"
   ],
-  "capacity": 75,
-  "enrolled": 75,
-  "reserved": "EEE_LS/5/5 | Diğer/70/70",
+  "capacity": 79,
+  "enrolled": 77,
+  "reserved": "EEE_LS/5/5 | Diğer/74/72",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1396,9 +1324,9 @@
   "rooms": [
    "4102"
   ],
-  "capacity": 75,
-  "enrolled": 58,
-  "reserved": "EEE_LS/15/4 | Diğer/60/54",
+  "capacity": 80,
+  "enrolled": 79,
+  "reserved": "EEE_LS/15/4 | Diğer/65/75",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1429,8 +1357,8 @@
    "5203"
   ],
   "capacity": 50,
-  "enrolled": 6,
-  "reserved": "EEE_LS/5/0 | Diğer/45/6",
+  "enrolled": 7,
+  "reserved": "EEE_LS/5/0 | Diğer/45/7",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1459,9 +1387,9 @@
   "rooms": [
    "5201"
   ],
-  "capacity": 65,
-  "enrolled": 64,
-  "reserved": "EEE_LS/5/4 | Diğer/60/60",
+  "capacity": 68,
+  "enrolled": 65,
+  "reserved": "EEE_LS/5/4 | Diğer/63/61",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1493,8 +1421,8 @@
    "5105"
   ],
   "capacity": 60,
-  "enrolled": 33,
-  "reserved": "EEE_LS/5/4 | Diğer/55/29",
+  "enrolled": 31,
+  "reserved": "EEE_LS/5/3 | Diğer/55/28",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1525,9 +1453,9 @@
   "rooms": [
    "5201"
   ],
-  "capacity": 20,
-  "enrolled": 17,
-  "reserved": "EEE_LS/3/1 | Diğer/17/16",
+  "capacity": 21,
+  "enrolled": 18,
+  "reserved": "EEE_LS/3/1 | Diğer/18/17",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1559,8 +1487,8 @@
    "5303"
   ],
   "capacity": 60,
-  "enrolled": 34,
-  "reserved": "EEE_LS/10/2 | Diğer/50/32",
+  "enrolled": 26,
+  "reserved": "EEE_LS/10/1 | Diğer/50/25",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1581,7 +1509,7 @@
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Onur Ergen , Navid Ghorashian",
   "buildings": [
-   "EEB"
+   "MED"
   ],
   "days": [
    "Cuma"
@@ -1590,11 +1518,11 @@
    "14:00/16:59"
   ],
   "rooms": [
-   "5102"
+   "A14"
   ],
   "capacity": 110,
-  "enrolled": 104,
-  "reserved": "EEE_LS/10/10 | Diğer/100/94",
+  "enrolled": 105,
+  "reserved": "EEE_LS/12/10 | Diğer/98/95",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1631,36 +1559,6 @@
   "classReq": "-"
  },
  {
-  "crn": "14282",
-  "code": "EHB 422",
-  "branch": "EHB",
-  "level": "LS",
-  "name": "Biyolojik İşar.Ol.&Alg.Yöntem.",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Oğuzhan Kızılbey",
-  "buildings": [
-   "EEB"
-  ],
-  "days": [
-   "Perşembe"
-  ],
-  "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "Z1"
-  ],
-  "capacity": 50,
-  "enrolled": 6,
-  "reserved": "-",
-  "programs": [
-   "EHB_LS",
-   "ELE_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "14283",
   "code": "EHB 428E",
   "branch": "EHB",
@@ -1681,8 +1579,8 @@
    "5207"
   ],
   "capacity": 50,
-  "enrolled": 13,
-  "reserved": "EEE_LS/5/3 | Diğer/45/10",
+  "enrolled": 11,
+  "reserved": "EEE_LS/5/2 | Diğer/45/9",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1712,8 +1610,8 @@
    "5303"
   ],
   "capacity": 20,
-  "enrolled": 20,
-  "reserved": "EEE_LS/3/3 | Diğer/17/17",
+  "enrolled": 23,
+  "reserved": "EEE_LS/3/3 | Diğer/17/20",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1744,9 +1642,9 @@
   "rooms": [
    "5205"
   ],
-  "capacity": 20,
+  "capacity": 21,
   "enrolled": 20,
-  "reserved": "EEE_LS/3/3 | Diğer/17/17",
+  "reserved": "EEE_LS/3/2 | Diğer/18/18",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1778,8 +1676,8 @@
    "5103"
   ],
   "capacity": 50,
-  "enrolled": 20,
-  "reserved": "EEE_LS/5/1 | Diğer/45/19",
+  "enrolled": 21,
+  "reserved": "EEE_LS/5/1 | Diğer/45/20",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1811,8 +1709,8 @@
    "5102"
   ],
   "capacity": 86,
-  "enrolled": 82,
-  "reserved": "EEE_LS/10/6 | Diğer/76/76",
+  "enrolled": 79,
+  "reserved": "EEE_LS/10/6 | Diğer/76/73",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1844,8 +1742,8 @@
    "5203"
   ],
   "capacity": 60,
-  "enrolled": 39,
-  "reserved": "EEE_LS/10/2 | Diğer/50/37",
+  "enrolled": 29,
+  "reserved": "EEE_LS/10/1 | Diğer/50/28",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1877,7 +1775,7 @@
    "5201"
   ],
   "capacity": 60,
-  "enrolled": 11,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "EHB_LS"
@@ -1906,8 +1804,8 @@
    "5203"
   ],
   "capacity": 75,
-  "enrolled": 33,
-  "reserved": "EEE_LS/5/0 | Diğer/70/33",
+  "enrolled": 30,
+  "reserved": "EEE_LS/5/0 | Diğer/70/30",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -1999,13 +1897,15 @@
    "6309"
   ],
   "capacity": 100,
-  "enrolled": 97,
-  "reserved": "EEE_LS/7/7 | Diğer/93/90",
+  "enrolled": 98,
+  "reserved": "EEE_LS/11/9 | Diğer/89/89",
   "programs": [
    "EEE_LS",
    "EHB_LS",
    "EHBE_LS",
    "EHS_LS",
+   "ELK_LS",
+   "ELKE_LS",
    "KOM_LS",
    "KOME_LS"
   ],
@@ -2071,8 +1971,8 @@
    "1301"
   ],
   "capacity": 22,
-  "enrolled": 16,
-  "reserved": "EEE_LS/3/0 | Diğer/19/16",
+  "enrolled": 14,
+  "reserved": "EEE_LS/3/0 | Diğer/19/14",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -2098,7 +1998,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 59,
+  "enrolled": 47,
   "reserved": "-",
   "programs": [
    "EHB_LS"
@@ -2121,7 +2021,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 169,
+  "enrolled": 194,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -2147,7 +2047,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 15,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "EHB_LS"
@@ -2170,7 +2070,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 27,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -2249,8 +2149,8 @@
    "4102"
   ],
   "capacity": 0,
-  "enrolled": 12,
-  "reserved": "EEE_LS/5/3 | Diğer/-5/9",
+  "enrolled": 0,
+  "reserved": "-",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -2320,9 +2220,9 @@
   "rooms": [
    "2106"
   ],
-  "capacity": 75,
-  "enrolled": 71,
-  "reserved": "EEE_LS/15/11 | Diğer/60/60",
+  "capacity": 81,
+  "enrolled": 80,
+  "reserved": "EEE_LS/15/15 | Diğer/66/65",
   "programs": [
    "EEE_LS",
    "EHB_LS",
@@ -2388,7 +2288,7 @@
    "5107"
   ],
   "capacity": 50,
-  "enrolled": 26,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -2421,7 +2321,7 @@
    "5205"
   ],
   "capacity": 60,
-  "enrolled": 17,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -2454,7 +2354,7 @@
    "5301"
   ],
   "capacity": 60,
-  "enrolled": 50,
+  "enrolled": 55,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -2487,7 +2387,7 @@
    "Z4"
   ],
   "capacity": 50,
-  "enrolled": 15,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -2518,43 +2418,11 @@
    "5107"
   ],
   "capacity": 50,
-  "enrolled": 11,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "EHB_LS",
    "EHBE_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "15752",
-  "code": "EHB 420",
-  "branch": "EHB",
-  "level": "LS",
-  "name": "Yapay Sinir Ağları",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Neslihan Serap Şengör",
-  "buildings": [
-   "EEB"
-  ],
-  "days": [
-   "Cuma"
-  ],
-  "times": [
-   "14:00/16:59"
-  ],
-  "rooms": [
-   "4102"
-  ],
-  "capacity": 0,
-  "enrolled": 2,
-  "reserved": "-",
-  "programs": [
-   "EHB_LS",
-   "EHS_LS",
-   "ELE_LS",
-   "TEL_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -2579,8 +2447,8 @@
   "rooms": [
    "Z-19"
   ],
-  "capacity": 50,
-  "enrolled": 50,
+  "capacity": 63,
+  "enrolled": 61,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -2611,7 +2479,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 9,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "EEE_LS",
@@ -2638,7 +2506,7 @@
   ],
   "rooms": [],
   "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "Detay",
@@ -2659,7 +2527,7 @@
   ],
   "rooms": [],
   "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "Detay",
@@ -2680,7 +2548,7 @@
   ],
   "rooms": [],
   "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "Detay",
@@ -2701,7 +2569,7 @@
   ],
   "rooms": [],
   "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [],
   "prereq": "Detay",
@@ -2715,6 +2583,27 @@
   "name": "Haberleşme-II",
   "method": "Sınırsız Sınav",
   "instructor": "İbrahim Altunbaş",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 3,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "16057",
+  "code": "EHB 422",
+  "branch": "EHB",
+  "level": "LS",
+  "name": "Biyolojik İşar.Ol.&Alg.Yöntem.",
+  "method": "Ek Sınav",
+  "instructor": "Zümray Ölmez",
   "buildings": [],
   "days": [],
   "times": [

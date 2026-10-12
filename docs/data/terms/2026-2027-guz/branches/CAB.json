@@ -14,7 +14,7 @@
   ],
   "rooms": [],
   "capacity": 100,
-  "enrolled": 1,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -43,8 +43,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 22,
-  "enrolled": 23,
+  "capacity": 25,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -77,7 +77,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 24,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -143,7 +143,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 20,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -176,7 +176,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 7,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -318,30 +318,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10821",
-  "code": "CAB 129",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "4 Telli Kemençe I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Lale Akay",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "10822",
   "code": "CAB 229",
   "branch": "CAB",
@@ -390,30 +366,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10824",
-  "code": "CAB 107",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Bağlama I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Engin Şafak Gürler",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "10825",
   "code": "CAB 107",
   "branch": "CAB",
@@ -453,30 +405,6 @@
   "rooms": [],
   "capacity": 5,
   "enrolled": 1,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10827",
-  "code": "CAB 107",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Bağlama I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Adnan Koç",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -558,30 +486,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10833",
-  "code": "CAB 407",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Bağlama VII",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Adnan Koç",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "10834",
   "code": "CAB 407",
   "branch": "CAB",
@@ -630,30 +534,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10837",
-  "code": "CAB 223",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Flüt III",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cem Önertürk",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "10838",
   "code": "CAB 423",
   "branch": "CAB",
@@ -678,54 +558,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10839",
-  "code": "CAB 149",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Gitar I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Tolgahan Çoğulu",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10841",
-  "code": "CAB 145",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Kanun I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ayşegül Kostak Toksoy",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "10842",
   "code": "CAB 145",
   "branch": "CAB",
@@ -741,30 +573,6 @@
   "rooms": [],
   "capacity": 5,
   "enrolled": 2,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10861",
-  "code": "CAB 145",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Kanun I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Serkan Mesut Halili",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -870,30 +678,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10870",
-  "code": "CAB 131",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Keman I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ali Cihat Aşkın",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "10880",
   "code": "CAB 131",
   "branch": "CAB",
@@ -963,54 +747,6 @@
    "CEB_LS"
   ],
   "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "10885",
-  "code": "CAB 331",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Keman V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ibragım Orazov",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "10886",
-  "code": "CAB 139",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Kemane I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mehmet Şimşek",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
   "classReq": "-"
  },
  {
@@ -1086,102 +822,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10893",
-  "code": "CAB 119",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Klarnet I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Özlem Kolat Çakmaksoy",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10894",
-  "code": "CAB 125",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Kudüm I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Erkan Kanat",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10896",
-  "code": "CAB 115",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Mey I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cem Ekmen",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10898",
-  "code": "CAB 315",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Mey V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cem Ekmen",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "10899",
   "code": "CAB 113",
   "branch": "CAB",
@@ -1197,30 +837,6 @@
   "rooms": [],
   "capacity": 5,
   "enrolled": 1,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10901",
-  "code": "CAB 113",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Ney I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ali Tüfekçi",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -1278,54 +894,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10904",
-  "code": "CAB 141",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Piyano I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Devlet Devrim Öztaş",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10905",
-  "code": "CAB 141",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Piyano I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Sıtkı Kandemir Basmacıoğlu",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "10906",
   "code": "CAB 241",
   "branch": "CAB",
@@ -1347,30 +915,6 @@
    "CEB_LS"
   ],
   "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "10907",
-  "code": "CAB 147",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Tanbur I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Göknil Bişak Özdemir",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
   "classReq": "-"
  },
  {
@@ -1470,54 +1014,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10913",
-  "code": "CAB 335",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Viyola V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Barış Kerem Bahar",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "10914",
-  "code": "CAB 133",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Viyolonsel I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Yelda Özgen Öztürk",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "10915",
   "code": "CAB 133",
   "branch": "CAB",
@@ -1590,38 +1086,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10918",
-  "code": "CAB 169",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "3 Telli Kemençe I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Neva Özgen Kösoğlu",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "MUT_LS",
-   "MUZ_LS",
-   "MZT_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "10919",
   "code": "CAB 171",
   "branch": "CAB",
@@ -1686,38 +1150,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10921",
-  "code": "CAB 271",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "4 Telli Kemençe III",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Lale Akay",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "MUT_LS",
-   "MUZ_LS",
-   "MZT_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "10922",
   "code": "CAB 179",
   "branch": "CAB",
@@ -1767,7 +1199,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 4,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -1801,7 +1233,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -2053,36 +1485,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10935",
-  "code": "CAB 357",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Bağlama V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Adnan Koç",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "SES_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "10936",
   "code": "CAB 357",
   "branch": "CAB",
@@ -2113,66 +1515,6 @@
   "classReq": "-"
  },
  {
-  "crn": "10938",
-  "code": "CAB 357",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Bağlama V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Metin Eke",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "SES_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "10939",
-  "code": "CAB 357",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Bağlama V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cihangir Terzi",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "SES_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "10940",
   "code": "CAB 457",
   "branch": "CAB",
@@ -2193,7 +1535,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -2227,7 +1569,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 6,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -2552,7 +1894,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 1,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -2623,37 +1965,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11063",
-  "code": "CAB 165",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Kaval I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Haydar Tanrıverdi",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "MUZ_LS",
-   "THO_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "11064",
   "code": "CAB 167",
   "branch": "CAB",
@@ -2679,70 +1990,6 @@
   "programs": [
    "MTR_LS",
    "MUZ_LS",
-   "THO_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "11066",
-  "code": "CAB 167",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Klarnet I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Özlem Kolat Çakmaksoy",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "MUZ_LS",
-   "THO_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "11073",
-  "code": "CAB 175",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Kemane I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Kadir Verim",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "MUT_LS",
-   "MUZ_LS",
-   "MZT_LS",
    "THO_LS"
   ],
   "prereq": "-",
@@ -2777,36 +2024,6 @@
    "MUZ_LS",
    "MZT_LS",
    "THO_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "11075",
-  "code": "CAB 181",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Kudüm I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Erkan Kanat",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "MUZ_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -2864,7 +2081,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 1,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -3026,7 +2243,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 3,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -3186,7 +2403,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -3323,36 +2540,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11100",
-  "code": "CAB 193",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Zurna I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ünal Yürük",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MUZ_LS",
-   "THO_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "11101",
   "code": "CAB 173",
   "branch": "CAB",
@@ -3412,36 +2599,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11103",
-  "code": "CAB 351",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Kanun V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Serkan Mesut Halili",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "SES_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "11104",
   "code": "CAB 359",
   "branch": "CAB",
@@ -3495,35 +2652,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11106",
-  "code": "CAB 361",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Ney V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Burak Malçok",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "11107",
   "code": "CAB 367",
   "branch": "CAB",
@@ -3544,36 +2672,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 3,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "11108",
-  "code": "CAB 363",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Mey V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cem Ekmen",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "MTR_LS"
@@ -3603,35 +2702,6 @@
   ],
   "capacity": 5,
   "enrolled": 1,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "11110",
-  "code": "CAB 389",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Gitar V",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Tolgahan Çoğulu",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "15:30/17:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "MTR_LS"
@@ -3698,65 +2768,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11113",
-  "code": "CAB 459",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Ud VII",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Hasan Hekimoğlu",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS",
-   "SES_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "11114",
-  "code": "CAB 461",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Ney VII",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Burak Malçok",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "11115",
   "code": "CAB 467",
   "branch": "CAB",
@@ -3786,35 +2797,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11116",
-  "code": "CAB 479",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Koltuk Davulu",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Salim Sınar",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 10,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MTR_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
   "crn": "11117",
   "code": "CAB 485",
   "branch": "CAB",
@@ -3835,7 +2817,7 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 2,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "MTR_LS"
@@ -3923,8 +2905,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 25,
-  "enrolled": 24,
+  "capacity": 30,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -3956,7 +2938,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 18,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -3987,8 +2969,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 15,
-  "enrolled": 14,
+  "capacity": 18,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -4021,7 +3003,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 8,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -4029,40 +3011,6 @@
    "CEB_LS",
    "KMP_LS",
    "SES_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "11130",
-  "code": "CAB 723",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Oda Müziği III",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Senka Simonovic",
-  "buildings": [
-   "TMB",
-   "TMB"
-  ],
-  "days": [
-   "Salı",
-   "Perşembe"
-  ],
-  "times": [
-   "15:30/17:29",
-   "08:30/10:29"
-  ],
-  "rooms": [
-   "--",
-   "--"
-  ],
-  "capacity": 15,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -4238,40 +3186,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11268",
-  "code": "CAB 761",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Toplu Uygulama VII (Orkestra)",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Barış Kerem Bahar , Senka Simonovic",
-  "buildings": [
-   "TMB",
-   "TMB"
-  ],
-  "days": [
-   "Pazartesi",
-   "Çarşamba"
-  ],
-  "times": [
-   "10:30/12:29",
-   "10:30/12:29"
-  ],
-  "rooms": [
-   "--",
-   "--"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "11334",
   "code": "CAB 733",
   "branch": "CAB",
@@ -4296,7 +3210,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 6,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -4364,7 +3278,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 3,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -4432,7 +3346,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 6,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -4466,7 +3380,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 5,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -4574,36 +3488,6 @@
   "classReq": "-"
  },
  {
-  "crn": "11348",
-  "code": "CAB 767",
-  "branch": "CAB",
-  "level": "LS",
-  "name": "Uzun Hava Repertuarı I",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Haydar Tanrıverdi",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Cuma"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 15,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "CAB_LS",
-   "CEB_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "11349",
   "code": "CAB 775",
   "branch": "CAB",
@@ -4624,7 +3508,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 1,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -4654,7 +3538,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -4776,7 +3660,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 4,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -5252,7 +4136,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 1,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -5278,7 +4162,7 @@
   ],
   "rooms": [],
   "capacity": 5,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -5599,7 +4483,7 @@
   ],
   "rooms": [],
   "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MTR_LS",
@@ -5719,12 +4603,151 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 1,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "MTR_LS",
    "MUZ_LS",
    "THO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "16008",
+  "code": "CAB 433",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyolonsel VII",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cenk Öztürk",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "16012",
+  "code": "CAB 293",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Zurna III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Cem Ekmen",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "15:30/17:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [
+   "MUZ_LS",
+   "THO_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "16016",
+  "code": "CAB 461",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Ney VII",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Burak Malçok",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "10:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "16019",
+  "code": "CAB 419",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Klarnet VII",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Ünsal Çeliksu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 5,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [
+   "CAB_LS",
+   "CEB_LS"
+  ],
+  "prereq": "Detay",
+  "classReq": "-"
+ },
+ {
+  "crn": "16059",
+  "code": "CAB 2013",
+  "branch": "CAB",
+  "level": "LS",
+  "name": "Viyola III",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Barış Kerem Bahar",
+  "buildings": [
+   "TMB"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "13:30/15:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 5,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [
+   "MTR_LS",
+   "MUT_LS",
+   "MUZ_LS",
+   "MZT_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"

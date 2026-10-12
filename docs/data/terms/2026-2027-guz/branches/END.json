@@ -20,7 +20,7 @@
    "108"
   ],
   "capacity": 80,
-  "enrolled": 75,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -49,7 +49,7 @@
    "101"
   ],
   "capacity": 80,
-  "enrolled": 59,
+  "enrolled": 62,
   "reserved": "-",
   "programs": [
    "ENDE_LS"
@@ -75,11 +75,11 @@
    "14:30/17:29"
   ],
   "rooms": [
-   "109"
+   "102"
   ],
   "capacity": 60,
-  "enrolled": 57,
-  "reserved": "IND_LS/10/7 | Diğer/50/50",
+  "enrolled": 63,
+  "reserved": "-",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -109,7 +109,7 @@
    "204"
   ],
   "capacity": 80,
-  "enrolled": 56,
+  "enrolled": 59,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -138,8 +138,8 @@
    "203"
   ],
   "capacity": 80,
-  "enrolled": 53,
-  "reserved": "ECNE_LS/5/0 | Diğer/75/53",
+  "enrolled": 56,
+  "reserved": "-",
   "programs": [
    "ECNE_LS",
    "ENDE_LS"
@@ -168,8 +168,8 @@
    "104"
   ],
   "capacity": 80,
-  "enrolled": 102,
-  "reserved": "IND_LS/15/25 | ISL_LS/5/2 | ISLE_LS/5/9 | Diğer/55/66",
+  "enrolled": 107,
+  "reserved": "IND_LS/15/27 | ISL_LS/5/2 | ISLE_LS/5/8 | Diğer/55/70",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -201,8 +201,8 @@
    "104"
   ],
   "capacity": 80,
-  "enrolled": 71,
-  "reserved": "IND_LS/15/3 | ISL_LS/5/0 | ISLE_LS/5/4 | Diğer/55/64",
+  "enrolled": 72,
+  "reserved": "-",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -234,7 +234,7 @@
    "B13"
   ],
   "capacity": 80,
-  "enrolled": 82,
+  "enrolled": 97,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -263,8 +263,8 @@
    "101"
   ],
   "capacity": 80,
-  "enrolled": 93,
-  "reserved": "IND_LS/25/32 | Diğer/55/61",
+  "enrolled": 113,
+  "reserved": "IND_LS/25/34 | Diğer/55/79",
   "programs": [
    "ENDE_LS",
    "IND_LS"
@@ -323,8 +323,8 @@
    "216"
   ],
   "capacity": 80,
-  "enrolled": 85,
-  "reserved": "IND_LS/15/16 | Diğer/65/69",
+  "enrolled": 90,
+  "reserved": "IND_LS/15/18 | Diğer/65/72",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -355,8 +355,8 @@
    "216"
   ],
   "capacity": 80,
-  "enrolled": 85,
-  "reserved": "ECNE_LS/5/0 | Diğer/75/85",
+  "enrolled": 87,
+  "reserved": "ECNE_LS/5/0 | Diğer/75/87",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -388,8 +388,8 @@
    "104"
   ],
   "capacity": 80,
-  "enrolled": 90,
-  "reserved": "IND_LS/15/18 | ECNE_LS/5/5 | Diğer/60/67",
+  "enrolled": 101,
+  "reserved": "IND_LS/15/19 | ECNE_LS/5/3 | Diğer/60/79",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -421,8 +421,8 @@
    "101"
   ],
   "capacity": 80,
-  "enrolled": 87,
-  "reserved": "IND_LS/15/17 | ECNE_LS/5/5 | Diğer/60/65",
+  "enrolled": 89,
+  "reserved": "IND_LS/15/17 | ECNE_LS/5/2 | Diğer/60/70",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -454,7 +454,7 @@
    "212"
   ],
   "capacity": 60,
-  "enrolled": 40,
+  "enrolled": 41,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -483,8 +483,8 @@
    "203"
   ],
   "capacity": 60,
-  "enrolled": 59,
-  "reserved": "IND_LS/5/4 | Diğer/55/55",
+  "enrolled": 68,
+  "reserved": "-",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -514,8 +514,8 @@
    "104"
   ],
   "capacity": 50,
-  "enrolled": 49,
-  "reserved": "MAT_LS/5/5 | IND_LS/5/5 | ISL_LS/1/1 | ISLE_LS/4/4 | Diğer/35/34",
+  "enrolled": 51,
+  "reserved": "MAT_LS/5/5 | IND_LS/5/5 | ISL_LS/1/1 | ISLE_LS/4/5 | Diğer/35/35",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -523,35 +523,6 @@
    "ISL_LS",
    "ISLE_LS",
    "MAT_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "12162",
-  "code": "END 318",
-  "branch": "END",
-  "level": "LS",
-  "name": "Sistem Dinamiği",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Cafer Erhan Bozdağ",
-  "buildings": [
-   "MSB"
-  ],
-  "days": [
-   "Perşembe"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "B20"
-  ],
-  "capacity": 50,
-  "enrolled": 1,
-  "reserved": "-",
-  "programs": [
-   "END_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -577,7 +548,7 @@
    "102"
   ],
   "capacity": 60,
-  "enrolled": 64,
+  "enrolled": 67,
   "reserved": "-",
   "programs": [
    "END_LS",
@@ -604,11 +575,11 @@
    "09:30/12:29"
   ],
   "rooms": [
-   "109"
+   "102"
   ],
   "capacity": 50,
-  "enrolled": 43,
-  "reserved": "VBAE_LS/5/2 | IND_LS/5/5 | ECNE_LS/5/4 | Diğer/35/32",
+  "enrolled": 41,
+  "reserved": "-",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -641,7 +612,7 @@
   ],
   "capacity": 50,
   "enrolled": 38,
-  "reserved": "IND_LS/10/11 | Diğer/40/27",
+  "reserved": "-",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -671,8 +642,8 @@
    "108"
   ],
   "capacity": 60,
-  "enrolled": 68,
-  "reserved": "IND_LS/5/6 | MAT_LS/5/5 | Diğer/50/57",
+  "enrolled": 61,
+  "reserved": "IND_LS/5/5 | MAT_LS/5/6 | Diğer/50/50",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -733,7 +704,7 @@
    "108"
   ],
   "capacity": 80,
-  "enrolled": 70,
+  "enrolled": 71,
   "reserved": "-",
   "programs": [
    "END_LS",
@@ -763,7 +734,7 @@
    "103"
   ],
   "capacity": 50,
-  "enrolled": 47,
+  "enrolled": 45,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -821,7 +792,7 @@
    "102"
   ],
   "capacity": 80,
-  "enrolled": 56,
+  "enrolled": 58,
   "reserved": "-",
   "programs": [
    "ENDE_LS"
@@ -850,7 +821,7 @@
    "212"
   ],
   "capacity": 50,
-  "enrolled": 27,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -879,8 +850,8 @@
    "103"
   ],
   "capacity": 50,
-  "enrolled": 50,
-  "reserved": "IND_LS/10/10 | Diğer/40/40",
+  "enrolled": 49,
+  "reserved": "-",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -910,7 +881,7 @@
    "B01"
   ],
   "capacity": 50,
-  "enrolled": 5,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -939,8 +910,8 @@
    "109"
   ],
   "capacity": 80,
-  "enrolled": 72,
-  "reserved": "KOM_LS/3/0 | ECNE_LS/5/0 | Diğer/72/72",
+  "enrolled": 73,
+  "reserved": "-",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -970,7 +941,7 @@
    "109"
   ],
   "capacity": 80,
-  "enrolled": 61,
+  "enrolled": 71,
   "reserved": "-",
   "programs": [
    "ENDE_LS"
@@ -999,7 +970,7 @@
    "101"
   ],
   "capacity": 80,
-  "enrolled": 71,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -1028,41 +999,12 @@
    "203"
   ],
   "capacity": 80,
-  "enrolled": 69,
-  "reserved": "KOM_LS/2/0 | KOME_LS/3/0 | Diğer/75/69",
+  "enrolled": 75,
+  "reserved": "-",
   "programs": [
    "ENDE_LS",
    "KOM_LS",
    "KOME_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "12182",
-  "code": "END 423",
-  "branch": "END",
-  "level": "LS",
-  "name": "Yatırım Planlama",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Hüsnü Bülent Cerit",
-  "buildings": [
-   "MSB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "14:30/17:29"
-  ],
-  "rooms": [
-   "B12"
-  ],
-  "capacity": 50,
-  "enrolled": 2,
-  "reserved": "-",
-  "programs": [
-   "END_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -1088,7 +1030,7 @@
    "B03"
   ],
   "capacity": 50,
-  "enrolled": 14,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -1117,7 +1059,7 @@
    "109"
   ],
   "capacity": 80,
-  "enrolled": 32,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -1146,7 +1088,7 @@
    "102"
   ],
   "capacity": 80,
-  "enrolled": 49,
+  "enrolled": 62,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -1175,7 +1117,7 @@
    "B13"
   ],
   "capacity": 80,
-  "enrolled": 80,
+  "enrolled": 90,
   "reserved": "-",
   "programs": [
    "ENDE_LS"
@@ -1204,7 +1146,7 @@
    "206"
   ],
   "capacity": 50,
-  "enrolled": 11,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -1233,8 +1175,8 @@
    "108"
   ],
   "capacity": 60,
-  "enrolled": 61,
-  "reserved": "YAN_YD/10/3 | IND_LS/10/15 | Diğer/40/43",
+  "enrolled": 65,
+  "reserved": "YAN_YD/10/3 | IND_LS/10/15 | Diğer/40/47",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -1266,7 +1208,7 @@
   ],
   "capacity": 50,
   "enrolled": 48,
-  "reserved": "IND_LS/10/6 | ECNE_LS/5/5 | Diğer/35/37",
+  "reserved": "-",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -1297,8 +1239,8 @@
    "204"
   ],
   "capacity": 50,
-  "enrolled": 34,
-  "reserved": "IND_LS/10/11 | KOM_LS/2/1 | KOME_LS/3/3 | Diğer/35/19",
+  "enrolled": 31,
+  "reserved": "-",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -1330,7 +1272,7 @@
    "--"
   ],
   "capacity": 300,
-  "enrolled": 196,
+  "enrolled": 203,
   "reserved": "-",
   "programs": [
    "END_LS",
@@ -1362,7 +1304,7 @@
   ],
   "capacity": 50,
   "enrolled": 42,
-  "reserved": "IND_LS/10/9 | Diğer/40/33",
+  "reserved": "-",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -1392,7 +1334,7 @@
    "B12"
   ],
   "capacity": 50,
-  "enrolled": 10,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "END_LS"
@@ -1421,8 +1363,8 @@
    "203"
   ],
   "capacity": 50,
-  "enrolled": 52,
-  "reserved": "ECNE_LS/5/5 | IND_LS/5/4 | Diğer/40/43",
+  "enrolled": 54,
+  "reserved": "ECNE_LS/5/6 | IND_LS/5/6 | Diğer/40/42",
   "programs": [
    "ECNE_LS",
    "END_LS",
@@ -1430,38 +1372,6 @@
    "IND_LS"
   ],
   "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "12198",
-  "code": "END 457E",
-  "branch": "END",
-  "level": "LS",
-  "name": "Heuristic Optimization",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Seda Yanık Özbay",
-  "buildings": [
-   "MSB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "B03"
-  ],
-  "capacity": 50,
-  "enrolled": 5,
-  "reserved": "VBAE_LS/5/0 | IND_LS/5/2 | Diğer/40/3",
-  "programs": [
-   "END_LS",
-   "ENDE_LS",
-   "IND_LS",
-   "VBAE_LS"
-  ],
-  "prereq": "Detay",
   "classReq": "-"
  },
  {
@@ -1485,8 +1395,8 @@
    "104"
   ],
   "capacity": 50,
-  "enrolled": 46,
-  "reserved": "IND_LS/5/6 | VBAE_LS/5/0 | Diğer/40/40",
+  "enrolled": 50,
+  "reserved": "-",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -1517,8 +1427,8 @@
    "B20"
   ],
   "capacity": 50,
-  "enrolled": 52,
-  "reserved": "IND_LS/10/10 | Diğer/40/42",
+  "enrolled": 53,
+  "reserved": "IND_LS/10/10 | Diğer/40/43",
   "programs": [
    "END_LS",
    "ENDE_LS",
@@ -1526,30 +1436,6 @@
   ],
   "prereq": "-",
   "classReq": "-"
- },
- {
-  "crn": "12202",
-  "code": "END 492",
-  "branch": "END",
-  "level": "LS",
-  "name": "Bitirme Çalışması",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Şule Itır Satoğlu",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 50,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "END_LS",
-   "ENDE_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "Detay"
  },
  {
   "crn": "12203",
@@ -1566,7 +1452,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 78,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "END_LS",
@@ -1591,7 +1477,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 103,
+  "enrolled": 109,
   "reserved": "-",
   "programs": [
    "END_LS",
@@ -1699,7 +1585,7 @@
    "208"
   ],
   "capacity": 40,
-  "enrolled": 36,
+  "enrolled": 42,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1726,7 +1612,7 @@
    "202"
   ],
   "capacity": 34,
-  "enrolled": 17,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1753,7 +1639,7 @@
    "210"
   ],
   "capacity": 35,
-  "enrolled": 35,
+  "enrolled": 36,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1780,7 +1666,7 @@
    "B12"
   ],
   "capacity": 33,
-  "enrolled": 13,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1807,7 +1693,7 @@
    "B02"
   ],
   "capacity": 20,
-  "enrolled": 5,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1833,8 +1719,8 @@
   "rooms": [
    "102"
   ],
-  "capacity": 59,
-  "enrolled": 59,
+  "capacity": 60,
+  "enrolled": 60,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1887,8 +1773,8 @@
   "rooms": [
    "B04"
   ],
-  "capacity": 15,
-  "enrolled": 14,
+  "capacity": 16,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1915,7 +1801,7 @@
    "B20"
   ],
   "capacity": 12,
-  "enrolled": 2,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1942,7 +1828,7 @@
    "210"
   ],
   "capacity": 22,
-  "enrolled": 19,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -1963,7 +1849,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 23,
+  "enrolled": 27,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -2009,6 +1895,39 @@
   "reserved": "-",
   "programs": [],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15963",
+  "code": "END 331E",
+  "branch": "END",
+  "level": "LS",
+  "name": "Operations Research I",
+  "method": "Fiziksel (Yüz yüze)",
+  "instructor": "Seda Yanık Özbay",
+  "buildings": [
+   "MSB"
+  ],
+  "days": [
+   "Cuma"
+  ],
+  "times": [
+   "09:30/12:29"
+  ],
+  "rooms": [
+   "212"
+  ],
+  "capacity": 0,
+  "enrolled": 43,
+  "reserved": "-",
+  "programs": [
+   "ECNE_LS",
+   "END_LS",
+   "ENDE_LS",
+   "IND_LS",
+   "MAT_LS"
+  ],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

@@ -20,13 +20,40 @@
    "B208"
   ],
   "capacity": 90,
-  "enrolled": 32,
+  "enrolled": 37,
   "reserved": "-",
   "programs": [
    "JEF_LS",
    "JEF_YD",
    "JEFE_LS"
   ],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15950",
+  "code": "MDN 210",
+  "branch": "MDN",
+  "level": "LS",
+  "name": "Mineraloji ve Petrografi",
+  "method": "Ek Sınav",
+  "instructor": "-",
+  "buildings": [
+   "undeclared"
+  ],
+  "days": [
+   "Pazartesi"
+  ],
+  "times": [
+   "08:30/12:29"
+  ],
+  "rooms": [
+   "--"
+  ],
+  "capacity": 0,
+  "enrolled": 1,
+  "reserved": "-",
+  "programs": [],
   "prereq": "-",
   "classReq": "-"
  }

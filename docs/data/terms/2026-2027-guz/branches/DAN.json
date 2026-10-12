@@ -20,7 +20,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 9,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "DUI_LS"
@@ -49,7 +49,7 @@
    "--"
   ],
   "capacity": 100,
-  "enrolled": 48,
+  "enrolled": 57,
   "reserved": "-",
   "programs": [
    "IML_LS",
@@ -80,7 +80,7 @@
    "213"
   ],
   "capacity": 100,
-  "enrolled": 18,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -110,7 +110,7 @@
    "--"
   ],
   "capacity": 20,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "GEO_LS",
@@ -140,7 +140,7 @@
    "--"
   ],
   "capacity": 0,
-  "enrolled": 0,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "END_LS",
@@ -190,5 +190,131 @@
   "programs": [],
   "prereq": "-",
   "classReq": "Detay"
+ },
+ {
+  "crn": "15923",
+  "code": "DAN 102",
+  "branch": "DAN",
+  "level": "LS",
+  "name": "Girişimcilik & Kariyer Danış.",
+  "method": "Ek Sınav",
+  "instructor": "İsmail Kaplanvural",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15924",
+  "code": "DAN 102",
+  "branch": "DAN",
+  "level": "LS",
+  "name": "Girişimcilik & Kariyer Danış.",
+  "method": "Ek Sınav",
+  "instructor": "Çağdaş Taylan Salın",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15926",
+  "code": "DAN 102",
+  "branch": "DAN",
+  "level": "LS",
+  "name": "Girişimcilik & Kariyer Danış.",
+  "method": "Ek Sınav",
+  "instructor": "Alper İlki , Bahar Ayhan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 4,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "15927",
+  "code": "DAN 102",
+  "branch": "DAN",
+  "level": "LS",
+  "name": "Girişimcilik & Kariyer Danış.",
+  "method": "Ek Sınav",
+  "instructor": "Osman Atilla Arıkan",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "16054",
+  "code": "DAN 102",
+  "branch": "DAN",
+  "level": "LS",
+  "name": "Girişimcilik & Kariyer Danış.",
+  "method": "Ek Sınav",
+  "instructor": "Erkan Bozkurtoğlu",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "16055",
+  "code": "DAN 101",
+  "branch": "DAN",
+  "level": "LS",
+  "name": "Akademik Danışmanlık",
+  "method": "Ek Sınav",
+  "instructor": "Nazan Okur",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "-",
+  "classReq": "-"
  }
 ]

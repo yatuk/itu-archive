@@ -24,7 +24,7 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 82,
+  "enrolled": 84,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -60,7 +60,7 @@
    "Z-17"
   ],
   "capacity": 80,
-  "enrolled": 83,
+  "enrolled": 82,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -96,7 +96,7 @@
    "Z-18"
   ],
   "capacity": 80,
-  "enrolled": 39,
+  "enrolled": 43,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -128,7 +128,7 @@
    "Z-17"
   ],
   "capacity": 70,
-  "enrolled": 71,
+  "enrolled": 67,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -160,7 +160,7 @@
    "104"
   ],
   "capacity": 70,
-  "enrolled": 75,
+  "enrolled": 76,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -195,8 +195,8 @@
    "Z-19",
    "Z-19"
   ],
-  "capacity": 95,
-  "enrolled": 91,
+  "capacity": 100,
+  "enrolled": 96,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -231,8 +231,8 @@
    "Z-18",
    "Z-18"
   ],
-  "capacity": 95,
-  "enrolled": 96,
+  "capacity": 100,
+  "enrolled": 97,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -264,7 +264,7 @@
    "Z-17"
   ],
   "capacity": 80,
-  "enrolled": 84,
+  "enrolled": 82,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -297,7 +297,7 @@
    "Z-19"
   ],
   "capacity": 80,
-  "enrolled": 79,
+  "enrolled": 73,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -330,7 +330,7 @@
    "Z-20"
   ],
   "capacity": 75,
-  "enrolled": 78,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -363,7 +363,7 @@
    "101"
   ],
   "capacity": 75,
-  "enrolled": 37,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -396,7 +396,7 @@
    "104"
   ],
   "capacity": 75,
-  "enrolled": 76,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -428,9 +428,9 @@
   "rooms": [
    "Z-19"
   ],
-  "capacity": 90,
-  "enrolled": 79,
-  "reserved": "ECNE_LS/10/2 | YZVE_LS/20/18 | Diğer/60/59",
+  "capacity": 100,
+  "enrolled": 85,
+  "reserved": "ECNE_LS/10/2 | YZVE_LS/20/16 | Diğer/70/67",
   "programs": [
    "BLG_LS",
    "BLGE_LS",
@@ -462,7 +462,7 @@
    "Z-21"
   ],
   "capacity": 100,
-  "enrolled": 58,
+  "enrolled": 63,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -495,7 +495,7 @@
    "Z-21"
   ],
   "capacity": 80,
-  "enrolled": 47,
+  "enrolled": 57,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -528,7 +528,7 @@
    "Z-21"
   ],
   "capacity": 75,
-  "enrolled": 39,
+  "enrolled": 54,
   "reserved": "-",
   "programs": [
    "BLG_LS",
@@ -537,6 +537,27 @@
    "YZVE_LS"
   ],
   "prereq": "-",
+  "classReq": "-"
+ },
+ {
+  "crn": "16053",
+  "code": "BBF 203E",
+  "branch": "BBF",
+  "level": "LS",
+  "name": "Object Oriented Programming",
+  "method": "Ek Sınav",
+  "instructor": "Sanem Kabadayı",
+  "buildings": [],
+  "days": [],
+  "times": [
+   "-/-"
+  ],
+  "rooms": [],
+  "capacity": 0,
+  "enrolled": 0,
+  "reserved": "-",
+  "programs": [],
+  "prereq": "Detay",
   "classReq": "-"
  }
 ]

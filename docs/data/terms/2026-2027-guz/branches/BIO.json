@@ -20,40 +20,11 @@
    "D205"
   ],
   "capacity": 45,
-  "enrolled": 5,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
-   "GID_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "10968",
-  "code": "BIO 215",
-  "branch": "BIO",
-  "level": "LS",
-  "name": "Biyokimya",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Ayşe Banu Kocaağa",
-  "buildings": [
-   "KMB"
-  ],
-  "days": [
-   "Pazartesi"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "D305"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "KMM_LS",
-   "KMME_LS"
+   "GID_LS",
+   "KMM_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -79,7 +50,7 @@
    "D302"
   ],
   "capacity": 20,
-  "enrolled": 3,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "KMM_LS",
@@ -139,8 +110,8 @@
    "D203"
   ],
   "capacity": 45,
-  "enrolled": 38,
-  "reserved": "GID_LS/15/20 | Diğer/30/18",
+  "enrolled": 43,
+  "reserved": "GID_LS/15/23 | Diğer/30/20",
   "programs": [
    "CEV_LS",
    "CEVE_LS",
@@ -177,8 +148,8 @@
    "D106"
   ],
   "capacity": 50,
-  "enrolled": 8,
-  "reserved": "GID_LS/40/8 | Diğer/10/0",
+  "enrolled": 2,
+  "reserved": "GID_LS/40/2 | Diğer/10/0",
   "programs": [
    "CEV_LS",
    "CEVE_LS",
@@ -211,7 +182,7 @@
    "D204"
   ],
   "capacity": 100,
-  "enrolled": 53,
+  "enrolled": 56,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -241,7 +212,7 @@
    "D102"
   ],
   "capacity": 100,
-  "enrolled": 81,
+  "enrolled": 83,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -272,7 +243,7 @@
    "174"
   ],
   "capacity": 100,
-  "enrolled": 78,
+  "enrolled": 77,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -333,7 +304,7 @@
    "D202"
   ],
   "capacity": 80,
-  "enrolled": 70,
+  "enrolled": 72,
   "reserved": "-",
   "programs": [
    "BIOE_LS"
@@ -362,7 +333,7 @@
    "177"
   ],
   "capacity": 90,
-  "enrolled": 86,
+  "enrolled": 89,
   "reserved": "-",
   "programs": [
    "CEV_LS",
@@ -452,7 +423,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 67,
+  "enrolled": 66,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -513,7 +484,7 @@
    "--"
   ],
   "capacity": 80,
-  "enrolled": 61,
+  "enrolled": 60,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -543,7 +514,7 @@
    "D102"
   ],
   "capacity": 100,
-  "enrolled": 62,
+  "enrolled": 63,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -573,7 +544,7 @@
    "D204"
   ],
   "capacity": 80,
-  "enrolled": 59,
+  "enrolled": 61,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -603,7 +574,7 @@
    "D206"
   ],
   "capacity": 30,
-  "enrolled": 10,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -663,7 +634,7 @@
    "D102"
   ],
   "capacity": 80,
-  "enrolled": 65,
+  "enrolled": 63,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -695,7 +666,7 @@
    "L200"
   ],
   "capacity": 40,
-  "enrolled": 7,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -726,7 +697,7 @@
    "B34"
   ],
   "capacity": 40,
-  "enrolled": 23,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -757,7 +728,7 @@
    "D101"
   ],
   "capacity": 40,
-  "enrolled": 5,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -819,7 +790,7 @@
    "D205"
   ],
   "capacity": 40,
-  "enrolled": 7,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -850,7 +821,7 @@
    "D106"
   ],
   "capacity": 40,
-  "enrolled": 28,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "BIO_LS",
@@ -910,7 +881,7 @@
    "D104"
   ],
   "capacity": 40,
-  "enrolled": 11,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "BIO_LS",

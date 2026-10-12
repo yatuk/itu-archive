@@ -14,7 +14,7 @@
   ],
   "rooms": [],
   "capacity": 100,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -74,7 +74,7 @@
    "--"
   ],
   "capacity": 35,
-  "enrolled": 31,
+  "enrolled": 33,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -106,7 +106,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 9,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "MUZ_LS",
@@ -135,8 +135,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 45,
-  "enrolled": 42,
+  "capacity": 47,
+  "enrolled": 47,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -166,8 +166,8 @@
   "rooms": [
    "--"
   ],
-  "capacity": 35,
-  "enrolled": 35,
+  "capacity": 42,
+  "enrolled": 39,
   "reserved": "-",
   "programs": [
    "CAB_LS",
@@ -330,7 +330,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 13,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "MUZ_LS"
@@ -389,7 +389,7 @@
    "--"
   ],
   "capacity": 25,
-  "enrolled": 11,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "MTR_LS"
@@ -448,7 +448,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 3,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -484,36 +484,6 @@
    "MTR_LS"
   ],
   "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "11590",
-  "code": "KMP 423",
-  "branch": "KMP",
-  "level": "LS",
-  "name": "Türk Müziğinde Polifoni III",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Oğuzhan Balcı , Tayfun Demirbaş",
-  "buildings": [
-   "TMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "13:30/15:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 10,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "BST_LS",
-   "KMP_LS"
-  ],
-  "prereq": "Detay",
   "classReq": "-"
  },
  {
@@ -567,7 +537,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 3,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -717,7 +687,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 6,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "BST_LS",
@@ -1094,7 +1064,7 @@
    "--"
   ],
   "capacity": 10,
-  "enrolled": 2,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [
    "CAB_LS",

@@ -20,7 +20,7 @@
    "305"
   ],
   "capacity": 45,
-  "enrolled": 20,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -53,7 +53,7 @@
    "217C"
   ],
   "capacity": 45,
-  "enrolled": 45,
+  "enrolled": 43,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -109,51 +109,15 @@
   "level": "LS",
   "name": "Accessibility",
   "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Göksenin İnalhan",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Salı"
-  ],
+  "instructor": "Göksenin İnalhan , Asiye Nisa Kartal",
+  "buildings": [],
+  "days": [],
   "times": [
-   "12:30/14:29"
+   "-/-"
   ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 40,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MIM_LS",
-   "MIME_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "13604",
-  "code": "MIM 119E",
-  "branch": "MIM",
-  "level": "LS",
-  "name": "Int.to Architecture and Ethics",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Asiye Nisa Kartal , Tan Kamil Gürer",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "12:30/15:29"
-  ],
-  "rooms": [
-   "313"
-  ],
-  "capacity": 5,
-  "enrolled": 0,
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -187,7 +151,7 @@
    "229"
   ],
   "capacity": 121,
-  "enrolled": 122,
+  "enrolled": 123,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -220,7 +184,7 @@
    "231"
   ],
   "capacity": 91,
-  "enrolled": 91,
+  "enrolled": 94,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -253,8 +217,8 @@
    "107",
    "107"
   ],
-  "capacity": 74,
-  "enrolled": 72,
+  "capacity": 78,
+  "enrolled": 74,
   "reserved": "-",
   "programs": [
    "IAD_LS",
@@ -288,7 +252,7 @@
    "333"
   ],
   "capacity": 33,
-  "enrolled": 33,
+  "enrolled": 36,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -323,7 +287,7 @@
    "215"
   ],
   "capacity": 45,
-  "enrolled": 24,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -356,7 +320,7 @@
    "106"
   ],
   "capacity": 45,
-  "enrolled": 32,
+  "enrolled": 34,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -389,7 +353,7 @@
    "230"
   ],
   "capacity": 65,
-  "enrolled": 64,
+  "enrolled": 67,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -424,7 +388,7 @@
    "229"
   ],
   "capacity": 65,
-  "enrolled": 51,
+  "enrolled": 52,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -455,7 +419,7 @@
    "229"
   ],
   "capacity": 100,
-  "enrolled": 91,
+  "enrolled": 92,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -515,7 +479,7 @@
    "107"
   ],
   "capacity": 100,
-  "enrolled": 45,
+  "enrolled": 61,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -550,7 +514,7 @@
    "--"
   ],
   "capacity": 17,
-  "enrolled": 18,
+  "enrolled": 19,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -896,7 +860,7 @@
    "--"
   ],
   "capacity": 2,
-  "enrolled": 1,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -997,8 +961,8 @@
    "--"
   ],
   "capacity": 3,
-  "enrolled": 0,
-  "reserved": "MIME_LS/3/0 | Diğer/0/0",
+  "enrolled": 2,
+  "reserved": "MIME_LS/3/2 | Diğer/0/0",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -1067,8 +1031,8 @@
    "--"
   ],
   "capacity": 4,
-  "enrolled": 3,
-  "reserved": "MIM_LS/3/0 | MIME_LS/1/0 | Diğer/0/3",
+  "enrolled": 4,
+  "reserved": "MIM_LS/3/0 | MIME_LS/1/1 | Diğer/0/3",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -1203,7 +1167,7 @@
    "215"
   ],
   "capacity": 65,
-  "enrolled": 45,
+  "enrolled": 52,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1238,7 +1202,7 @@
    "229"
   ],
   "capacity": 150,
-  "enrolled": 101,
+  "enrolled": 103,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1273,7 +1237,7 @@
    "3401"
   ],
   "capacity": 25,
-  "enrolled": 16,
+  "enrolled": 22,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1335,7 +1299,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -1394,7 +1358,7 @@
    "--"
   ],
   "capacity": 30,
-  "enrolled": 2,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -1424,7 +1388,7 @@
    "107"
   ],
   "capacity": 100,
-  "enrolled": 53,
+  "enrolled": 59,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -1453,7 +1417,7 @@
    "231"
   ],
   "capacity": 55,
-  "enrolled": 55,
+  "enrolled": 65,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1515,7 +1479,7 @@
    "307"
   ],
   "capacity": 60,
-  "enrolled": 3,
+  "enrolled": 4,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -1546,7 +1510,7 @@
    "231"
   ],
   "capacity": 125,
-  "enrolled": 89,
+  "enrolled": 91,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -1575,7 +1539,7 @@
    "229"
   ],
   "capacity": 125,
-  "enrolled": 126,
+  "enrolled": 129,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -1744,8 +1708,8 @@
    "--"
   ],
   "capacity": 5,
-  "enrolled": 5,
-  "reserved": "MIME_LS/4/2 | Diğer/1/3",
+  "enrolled": 9,
+  "reserved": "MIME_LS/4/3 | Diğer/1/6",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2059,8 +2023,8 @@
    "--"
   ],
   "capacity": 3,
-  "enrolled": 3,
-  "reserved": "MIME_LS/1/0 | ARC_LS/2/0 | Diğer/0/3",
+  "enrolled": 4,
+  "reserved": "MIME_LS/1/0 | ARC_LS/2/0 | Diğer/0/4",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2094,8 +2058,8 @@
    "--"
   ],
   "capacity": 3,
-  "enrolled": 3,
-  "reserved": "MIM_LS/1/0 | MIME_LS/1/1 | ARC_LS/1/0 | Diğer/0/2",
+  "enrolled": 4,
+  "reserved": "MIM_LS/1/0 | MIME_LS/1/1 | ARC_LS/1/0 | Diğer/0/3",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2234,8 +2198,8 @@
    "--"
   ],
   "capacity": 4,
-  "enrolled": 3,
-  "reserved": "MIM_LS/1/1 | MIME_LS/1/0 | Diğer/2/2",
+  "enrolled": 5,
+  "reserved": "MIM_LS/1/1 | MIME_LS/1/1 | Diğer/2/3",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2269,8 +2233,8 @@
    "--"
   ],
   "capacity": 4,
-  "enrolled": 4,
-  "reserved": "MIM_LS/2/1 | ARC_LS/1/0 | Diğer/1/3",
+  "enrolled": 6,
+  "reserved": "MIM_LS/2/1 | ARC_LS/1/0 | Diğer/1/5",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2300,7 +2264,7 @@
    "302"
   ],
   "capacity": 60,
-  "enrolled": 3,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -2331,7 +2295,7 @@
    "231"
   ],
   "capacity": 95,
-  "enrolled": 53,
+  "enrolled": 52,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -2360,7 +2324,7 @@
    "229"
   ],
   "capacity": 95,
-  "enrolled": 81,
+  "enrolled": 94,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2421,7 +2385,7 @@
    "230"
   ],
   "capacity": 110,
-  "enrolled": 68,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2453,7 +2417,7 @@
    "317"
   ],
   "capacity": 30,
-  "enrolled": 7,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2489,7 +2453,7 @@
   ],
   "capacity": 15,
   "enrolled": 14,
-  "reserved": "MIM_LS/10/0 | MIME_LS/4/0 | ARC_LS/1/1 | Diğer/0/13",
+  "reserved": "MIM_LS/10/1 | MIME_LS/4/0 | ARC_LS/1/1 | Diğer/0/12",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2523,8 +2487,8 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 15,
-  "reserved": "MIM_LS/9/0 | MIME_LS/5/0 | ARC_LS/1/0 | Diğer/0/15",
+  "enrolled": 18,
+  "reserved": "MIM_LS/9/0 | MIME_LS/5/1 | ARC_LS/1/0 | Diğer/0/17",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2593,8 +2557,8 @@
    "--"
   ],
   "capacity": 17,
-  "enrolled": 19,
-  "reserved": "MIM_LS/9/3 | MIME_LS/7/1 | ARC_LS/1/0 | Diğer/0/15",
+  "enrolled": 17,
+  "reserved": "MIM_LS/9/2 | MIME_LS/7/0 | ARC_LS/1/0 | Diğer/0/15",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2663,8 +2627,8 @@
    "--"
   ],
   "capacity": 14,
-  "enrolled": 7,
-  "reserved": "MIM_LS/7/1 | MIME_LS/6/0 | ARC_LS/1/0 | Diğer/0/6",
+  "enrolled": 13,
+  "reserved": "MIM_LS/7/5 | MIME_LS/6/2 | ARC_LS/1/0 | Diğer/0/6",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2698,8 +2662,8 @@
    "--"
   ],
   "capacity": 14,
-  "enrolled": 15,
-  "reserved": "MIM_LS/11/1 | MIME_LS/2/1 | ARC_LS/1/0 | Diğer/0/13",
+  "enrolled": 17,
+  "reserved": "MIM_LS/11/3 | MIME_LS/2/1 | ARC_LS/1/0 | Diğer/0/13",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2733,8 +2697,8 @@
    "--"
   ],
   "capacity": 14,
-  "enrolled": 15,
-  "reserved": "MIM_LS/11/0 | MIME_LS/3/1 | Diğer/0/14",
+  "enrolled": 20,
+  "reserved": "MIM_LS/11/0 | MIME_LS/3/6 | Diğer/0/14",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2769,7 +2733,7 @@
   ],
   "capacity": 15,
   "enrolled": 16,
-  "reserved": "MIM_LS/4/1 | MIME_LS/10/0 | ARC_LS/1/1 | Diğer/0/14",
+  "reserved": "MIM_LS/4/0 | MIME_LS/10/2 | ARC_LS/1/1 | Diğer/0/13",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2803,8 +2767,8 @@
    "--"
   ],
   "capacity": 14,
-  "enrolled": 9,
-  "reserved": "MIM_LS/6/2 | MIME_LS/6/2 | ARC_LS/2/0 | Diğer/0/5",
+  "enrolled": 15,
+  "reserved": "MIM_LS/6/2 | MIME_LS/6/7 | ARC_LS/2/0 | Diğer/0/6",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -2838,41 +2802,12 @@
    "--"
   ],
   "capacity": 14,
-  "enrolled": 14,
-  "reserved": "MIM_LS/8/2 | MIME_LS/2/0 | ARC_LS/3/0 | Diğer/1/12",
+  "enrolled": 18,
+  "reserved": "MIM_LS/8/3 | MIME_LS/2/3 | ARC_LS/3/0 | Diğer/1/12",
   "programs": [
    "ARC_LS",
    "MIM_LS",
    "MIME_LS"
-  ],
-  "prereq": "Detay",
-  "classReq": "-"
- },
- {
-  "crn": "14153",
-  "code": "MIM 358",
-  "branch": "MIM",
-  "level": "LS",
-  "name": "Yapı Koruyucu Malzemeler",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Fatih Bildik",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "13:30/16:29"
-  ],
-  "rooms": [
-   "319"
-  ],
-  "capacity": 20,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "MIM_LS"
   ],
   "prereq": "Detay",
   "classReq": "-"
@@ -2902,7 +2837,7 @@
    "106"
   ],
   "capacity": 67,
-  "enrolled": 67,
+  "enrolled": 69,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -2934,7 +2869,7 @@
    "3402"
   ],
   "capacity": 18,
-  "enrolled": 21,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -2963,7 +2898,7 @@
    "3403"
   ],
   "capacity": 18,
-  "enrolled": 18,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -2994,7 +2929,7 @@
    "3403"
   ],
   "capacity": 25,
-  "enrolled": 14,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -3023,7 +2958,7 @@
    "311"
   ],
   "capacity": 28,
-  "enrolled": 24,
+  "enrolled": 22,
   "reserved": "-",
   "programs": [
    "ICM_LS",
@@ -3053,7 +2988,7 @@
    "309"
   ],
   "capacity": 25,
-  "enrolled": 2,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -3082,7 +3017,7 @@
    "315"
   ],
   "capacity": 15,
-  "enrolled": 9,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -3098,18 +3033,12 @@
   "name": "Tarihte Bahçe Tasarımları&Mim.",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Aygül Ağır",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Cuma"
-  ],
+  "buildings": [],
+  "days": [],
   "times": [
-   "14:30/16:29"
+   "-/-"
   ],
-  "rooms": [
-   "303"
-  ],
+  "rooms": [],
   "capacity": 20,
   "enrolled": 0,
   "reserved": "-",
@@ -3171,7 +3100,7 @@
    "217D"
   ],
   "capacity": 23,
-  "enrolled": 22,
+  "enrolled": 23,
   "reserved": "-",
   "programs": [
    "ICM_LS",
@@ -3207,35 +3136,6 @@
    "MIM_LS"
   ],
   "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14188",
-  "code": "MIM 4022",
-  "branch": "MIM",
-  "level": "LS",
-  "name": "Bina, İklim, Enerji İlişkileri",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Gülten Manioğlu",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Salı"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "313"
-  ],
-  "capacity": 0,
-  "enrolled": 1,
-  "reserved": "-",
-  "programs": [
-   "MIM_LS"
-  ],
-  "prereq": "Detay",
   "classReq": "-"
  },
  {
@@ -3307,20 +3207,14 @@
   "name": "Geç Osmanlı Mimarlığı",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Vesile Gül Cephanecigil",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
+  "buildings": [],
+  "days": [],
   "times": [
-   "13:30/15:29"
+   "-/-"
   ],
-  "rooms": [
-   "305"
-  ],
-  "capacity": 15,
-  "enrolled": 1,
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -3349,7 +3243,7 @@
    "302"
   ],
   "capacity": 18,
-  "enrolled": 15,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -3378,7 +3272,7 @@
    "309"
   ],
   "capacity": 28,
-  "enrolled": 26,
+  "enrolled": 29,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3415,7 +3309,7 @@
    "319"
   ],
   "capacity": 23,
-  "enrolled": 23,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3450,7 +3344,7 @@
    "309"
   ],
   "capacity": 32,
-  "enrolled": 27,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3481,7 +3375,7 @@
    "CATI5"
   ],
   "capacity": 35,
-  "enrolled": 30,
+  "enrolled": 34,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3515,7 +3409,7 @@
    "307"
   ],
   "capacity": 25,
-  "enrolled": 20,
+  "enrolled": 22,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3546,7 +3440,7 @@
    "302"
   ],
   "capacity": 32,
-  "enrolled": 32,
+  "enrolled": 43,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3581,7 +3475,7 @@
    "303"
   ],
   "capacity": 33,
-  "enrolled": 33,
+  "enrolled": 43,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3612,7 +3506,7 @@
    "319"
   ],
   "capacity": 20,
-  "enrolled": 3,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3643,7 +3537,7 @@
    "320"
   ],
   "capacity": 24,
-  "enrolled": 24,
+  "enrolled": 50,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3674,7 +3568,7 @@
    "CATI4"
   ],
   "capacity": 20,
-  "enrolled": 6,
+  "enrolled": 17,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3692,20 +3586,14 @@
   "name": "Generating Livable Environment",
   "method": "Fiziksel (Yüz yüze)",
   "instructor": "Tülay Karakaş",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
+  "buildings": [],
+  "days": [],
   "times": [
-   "09:30/11:29"
+   "-/-"
   ],
-  "rooms": [
-   "303"
-  ],
-  "capacity": 0,
-  "enrolled": 0,
+  "rooms": [],
+  "capacity": 20,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3736,7 +3624,7 @@
    "307"
   ],
   "capacity": 20,
-  "enrolled": 4,
+  "enrolled": 5,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -3769,7 +3657,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 11,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -3802,7 +3690,7 @@
    "--"
   ],
   "capacity": 13,
-  "enrolled": 14,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -3897,7 +3785,7 @@
    "317"
   ],
   "capacity": 24,
-  "enrolled": 24,
+  "enrolled": 42,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -3967,8 +3855,8 @@
    "--"
   ],
   "capacity": 16,
-  "enrolled": 20,
-  "reserved": "MIM_LS/3/0 | MIME_LS/8/6 | ARC_LS/5/0 | Diğer/0/14",
+  "enrolled": 21,
+  "reserved": "MIM_LS/3/0 | MIME_LS/8/8 | ARC_LS/5/0 | Diğer/0/13",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -4002,8 +3890,8 @@
    "--"
   ],
   "capacity": 16,
-  "enrolled": 16,
-  "reserved": "MIM_LS/7/2 | MIME_LS/6/1 | ARC_LS/3/0 | Diğer/0/13",
+  "enrolled": 15,
+  "reserved": "MIM_LS/7/3 | MIME_LS/6/0 | ARC_LS/3/0 | Diğer/0/12",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -4037,8 +3925,8 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 15,
-  "reserved": "MIM_LS/4/0 | MIME_LS/8/1 | ARC_LS/3/0 | Diğer/0/14",
+  "enrolled": 17,
+  "reserved": "MIM_LS/4/0 | MIME_LS/8/1 | ARC_LS/3/0 | Diğer/0/16",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -4072,8 +3960,8 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 16,
-  "reserved": "MIM_LS/5/1 | MIME_LS/6/1 | ARC_LS/4/1 | Diğer/0/13",
+  "enrolled": 21,
+  "reserved": "MIM_LS/5/1 | MIME_LS/6/3 | ARC_LS/4/1 | Diğer/0/16",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -4103,7 +3991,7 @@
    "305"
   ],
   "capacity": 25,
-  "enrolled": 20,
+  "enrolled": 25,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4213,7 +4101,7 @@
    "3401"
   ],
   "capacity": 10,
-  "enrolled": 9,
+  "enrolled": 10,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -4279,7 +4167,7 @@
    "3403"
   ],
   "capacity": 10,
-  "enrolled": 10,
+  "enrolled": 8,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -4545,7 +4433,7 @@
    "3505"
   ],
   "capacity": 15,
-  "enrolled": 15,
+  "enrolled": 18,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4580,7 +4468,7 @@
    "217F"
   ],
   "capacity": 15,
-  "enrolled": 15,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4615,7 +4503,7 @@
    "D380"
   ],
   "capacity": 15,
-  "enrolled": 16,
+  "enrolled": 15,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4650,7 +4538,7 @@
    "119A"
   ],
   "capacity": 15,
-  "enrolled": 15,
+  "enrolled": 16,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4675,7 +4563,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 44,
+  "enrolled": 47,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -4698,7 +4586,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 92,
+  "enrolled": 99,
   "reserved": "-",
   "programs": [
    "ARC_LS",
@@ -4724,7 +4612,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 2,
+  "enrolled": 0,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -4747,7 +4635,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [
    "MIM_LS",
@@ -4790,37 +4678,6 @@
   "classReq": "-"
  },
  {
-  "crn": "15083",
-  "code": "MIM 109",
-  "branch": "MIM",
-  "level": "LS",
-  "name": "Sanat ve Mimarlık",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Mine Çağlar",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "09:30/12:29"
-  ],
-  "rooms": [
-   "--"
-  ],
-  "capacity": 25,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "ARC_LS",
-   "MIM_LS",
-   "MIME_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
   "crn": "15180",
   "code": "MIM 231",
   "branch": "MIM",
@@ -4845,7 +4702,7 @@
    "126"
   ],
   "capacity": 100,
-  "enrolled": 77,
+  "enrolled": 82,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -4874,7 +4731,7 @@
    "FOTOATOLYE"
   ],
   "capacity": 25,
-  "enrolled": 5,
+  "enrolled": 12,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -4907,8 +4764,8 @@
    "--"
   ],
   "capacity": 16,
-  "enrolled": 17,
-  "reserved": "MIM_LS/3/1 | MIME_LS/10/3 | ARC_LS/3/3 | Diğer/0/10",
+  "enrolled": 16,
+  "reserved": "MIM_LS/3/1 | MIME_LS/10/1 | ARC_LS/3/4 | Diğer/0/10",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -4938,7 +4795,7 @@
    "309"
   ],
   "capacity": 25,
-  "enrolled": 5,
+  "enrolled": 11,
   "reserved": "-",
   "programs": [
    "MIM_LS"
@@ -4982,7 +4839,7 @@
   ],
   "rooms": [],
   "capacity": 0,
-  "enrolled": 1,
+  "enrolled": 2,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -5093,7 +4950,7 @@
    "--"
   ],
   "capacity": 18,
-  "enrolled": 0,
+  "enrolled": 21,
   "reserved": "-",
   "programs": [
    "MIM_LS",

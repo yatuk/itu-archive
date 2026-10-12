@@ -24,7 +24,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 12,
+  "enrolled": 13,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -54,7 +54,7 @@
    "311"
   ],
   "capacity": 15,
-  "enrolled": 2,
+  "enrolled": 1,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -81,7 +81,7 @@
    "--"
   ],
   "capacity": 15,
-  "enrolled": 6,
+  "enrolled": 7,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -216,7 +216,7 @@
    "119A"
   ],
   "capacity": 15,
-  "enrolled": 5,
+  "enrolled": 6,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -243,7 +243,7 @@
    "317"
   ],
   "capacity": 15,
-  "enrolled": 2,
+  "enrolled": 3,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -318,7 +318,7 @@
   ],
   "rooms": [],
   "capacity": 200,
-  "enrolled": 73,
+  "enrolled": 75,
   "reserved": "-",
   "programs": [],
   "prereq": "-",
@@ -366,7 +366,7 @@
    "215"
   ],
   "capacity": 80,
-  "enrolled": 78,
+  "enrolled": 79,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -397,7 +397,7 @@
    "215"
   ],
   "capacity": 75,
-  "enrolled": 77,
+  "enrolled": 85,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -654,7 +654,7 @@
    "216"
   ],
   "capacity": 75,
-  "enrolled": 39,
+  "enrolled": 38,
   "reserved": "-",
   "programs": [
    "SBP_YD",
@@ -714,7 +714,7 @@
    "215"
   ],
   "capacity": 75,
-  "enrolled": 47,
+  "enrolled": 49,
   "reserved": "-",
   "programs": [
    "SBP_YD",
@@ -744,7 +744,7 @@
    "230"
   ],
   "capacity": 75,
-  "enrolled": 37,
+  "enrolled": 36,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -774,7 +774,7 @@
    "230"
   ],
   "capacity": 70,
-  "enrolled": 48,
+  "enrolled": 49,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -805,7 +805,7 @@
    "216"
   ],
   "capacity": 70,
-  "enrolled": 32,
+  "enrolled": 30,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -835,7 +835,7 @@
    "216"
   ],
   "capacity": 70,
-  "enrolled": 38,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "SBP_YD",
@@ -1061,7 +1061,7 @@
    "--"
   ],
   "capacity": 12,
-  "enrolled": 10,
+  "enrolled": 9,
   "reserved": "-",
   "programs": [
    "SBPE_LS"
@@ -1188,35 +1188,11 @@
    "215"
   ],
   "capacity": 65,
-  "enrolled": 41,
+  "enrolled": 40,
   "reserved": "-",
   "programs": [
    "SBP_LS",
    "SBP_YD"
-  ],
-  "prereq": "-",
-  "classReq": "-"
- },
- {
-  "crn": "14348",
-  "code": "SBP 327E",
-  "branch": "SBP",
-  "level": "LS",
-  "name": "Urban Law and Management",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "-",
-  "buildings": [],
-  "days": [],
-  "times": [
-   "-/-"
-  ],
-  "rooms": [],
-  "capacity": 0,
-  "enrolled": 0,
-  "reserved": "-",
-  "programs": [
-   "SBP_YD",
-   "SBPE_LS"
   ],
   "prereq": "-",
   "classReq": "-"
@@ -1444,7 +1420,7 @@
    "--"
   ],
   "capacity": 13,
-  "enrolled": 13,
+  "enrolled": 14,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -1534,8 +1510,8 @@
    "216"
   ],
   "capacity": 45,
-  "enrolled": 30,
-  "reserved": "ARC_LS/2/0 | EUTE_LS/2/0 | ENTE_LS/3/0 | ICM_LS/2/0 | MIM_LS/3/2 | MIME_LS/3/0 | PEME_LS/2/0 | Diğer/28/28",
+  "enrolled": 28,
+  "reserved": "ARC_LS/2/0 | EUTE_LS/2/0 | ENTE_LS/3/0 | ICM_LS/2/0 | MIM_LS/3/2 | MIME_LS/3/0 | PEME_LS/2/0 | Diğer/28/26",
   "programs": [
    "ARC_LS",
    "ENTE_LS",
@@ -1572,7 +1548,7 @@
    "217A"
   ],
   "capacity": 45,
-  "enrolled": 28,
+  "enrolled": 26,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -1633,8 +1609,8 @@
    "311"
   ],
   "capacity": 45,
-  "enrolled": 36,
-  "reserved": "ARC_LS/2/0 | MIM_LS/5/1 | MIME_LS/5/4 | Diğer/33/31",
+  "enrolled": 33,
+  "reserved": "ARC_LS/2/0 | MIM_LS/5/1 | MIME_LS/5/2 | Diğer/33/30",
   "programs": [
    "ARC_LS",
    "MIM_LS",
@@ -1668,7 +1644,7 @@
   ],
   "capacity": 65,
   "enrolled": 56,
-  "reserved": "ARC_LS/3/1 | ENTE_LS/3/2 | MIM_LS/5/4 | MIME_LS/5/0 | Diğer/49/49",
+  "reserved": "ARC_LS/3/1 | ENTE_LS/3/2 | MIM_LS/5/3 | MIME_LS/5/0 | Diğer/49/50",
   "programs": [
    "ARC_LS",
    "ENTE_LS",
@@ -1702,8 +1678,8 @@
    "317"
   ],
   "capacity": 30,
-  "enrolled": 22,
-  "reserved": "MIM_LS/3/2 | MIME_LS/3/0 | Diğer/24/20",
+  "enrolled": 24,
+  "reserved": "MIM_LS/3/2 | MIME_LS/3/0 | Diğer/24/22",
   "programs": [
    "MIM_LS",
    "MIME_LS",
@@ -1735,8 +1711,8 @@
    "317"
   ],
   "capacity": 55,
-  "enrolled": 15,
-  "reserved": "ENTE_LS/3/1 | ICM_LS/2/0 | MIM_LS/3/0 | MIME_LS/3/0 | PEME_LS/3/3 | Diğer/41/11",
+  "enrolled": 13,
+  "reserved": "ENTE_LS/3/0 | ICM_LS/2/0 | MIM_LS/3/0 | MIME_LS/3/1 | PEME_LS/3/2 | Diğer/41/10",
   "programs": [
    "ENTE_LS",
    "ICM_LS",
@@ -1771,7 +1747,7 @@
    "217B"
   ],
   "capacity": 30,
-  "enrolled": 30,
+  "enrolled": 32,
   "reserved": "-",
   "programs": [
    "SBP_LS",
@@ -1802,8 +1778,8 @@
    "302"
   ],
   "capacity": 30,
-  "enrolled": 28,
-  "reserved": "ARC_LS/3/0 | Diğer/27/28",
+  "enrolled": 29,
+  "reserved": "ARC_LS/3/0 | Diğer/27/29",
   "programs": [
    "ARC_LS",
    "SBP_LS",
@@ -1858,7 +1834,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 31,
+  "enrolled": 33,
   "reserved": "-",
   "programs": [
    "SBP_LS"
@@ -1881,7 +1857,7 @@
   ],
   "rooms": [],
   "capacity": 500,
-  "enrolled": 18,
+  "enrolled": 20,
   "reserved": "-",
   "programs": [
    "SBPE_LS"
@@ -1934,37 +1910,6 @@
   ],
   "prereq": "Detay",
   "classReq": "Detay"
- },
- {
-  "crn": "14989",
-  "code": "SBP 4025E",
-  "branch": "SBP",
-  "level": "LS",
-  "name": "Comparative Studies ofUrban Pl",
-  "method": "Fiziksel (Yüz yüze)",
-  "instructor": "Zeynep Günay",
-  "buildings": [
-   "MMB"
-  ],
-  "days": [
-   "Çarşamba"
-  ],
-  "times": [
-   "10:30/12:29"
-  ],
-  "rooms": [
-   "309"
-  ],
-  "capacity": 30,
-  "enrolled": 2,
-  "reserved": "-",
-  "programs": [
-   "SBP_LS",
-   "SBP_YD",
-   "SBPE_LS"
-  ],
-  "prereq": "-",
-  "classReq": "-"
  },
  {
   "crn": "15107",
@@ -2020,7 +1965,7 @@
    "--"
   ],
   "capacity": 65,
-  "enrolled": 42,
+  "enrolled": 44,
   "reserved": "-",
   "programs": [
    "SBP_YD",

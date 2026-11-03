@@ -231,7 +231,7 @@
   "code": "MKC 521",
   "name": "Elastisite Teorisi",
   "nameEn": "Theory of Elasticity",
-  "language": "Türkçe",
+  "language": "Türkçe/English",
   "credits": {
    "theory": 3,
    "practice": 0,
@@ -342,6 +342,125 @@
    "Düzlemde Elastisite Teorisi, M. İnan, 1969, İTÜ"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKC&dersNo=521"
+ },
+ "MKC 523E": {
+  "code": "MKC 523E",
+  "name": "Katı Cisim Mekaniği.Temel.",
+  "nameEn": "Foundations of Solid Mechanics",
+  "language": "Türkçe/English",
+  "credits": {
+   "theory": 3,
+   "practice": 0,
+   "lab": 0,
+   "local": 3,
+   "ects": 7.5
+  },
+  "description": "Gerilme ve şekil değiştirme tansörleri. Genelleştirilmiş Hooke Kanunu. Kiriş teorileri: Euler-Bernoulli, Timoshenko ve Reddy kiriş teorileri. Plaka Teorileri: Kirchoff, Mindlin ve Reddy plaka teorileri. Dairesel ve halka plaklar. Büyük deformasyon teorisi: Lagrange ve Euler şekil değiştirme bağıntıları. 2-Boyutlu Elastisite ve Airy gerilme fonksiyonu. Temas gerilmeleri ve Hertz gerilmeleri. Hasar modları. Kırılma mekaniğinin temelleri. Gerilme yoğunlaşma faktörleri. Hasar mekaniğine giriş. Membran davranışı. Viskoelastik malzemeler. Plastik Limit Analizi. Stress and deformation tensors. Generalized Hooke’s law. Beam theories: Euler-Bernoulli, Timoshenko and Reddy beam theories. Plate theories: Kirchoff, Mindlin and Reddy plate theories. Circular and annular plates. Large deformation theory: Lagrangian and Eulerian deformation relations. 2-dimansional elasticity and Airy stress function. Contact stresses and Hertz stresses. Damage modes. Foundations of fracture mechanics. Stress concentration factors. Introduction to damage mechanics. Membrane behavior. Viscoelastic materials. Plastic Limit Analysis.",
+  "outcomes": [
+   "Kiriş ve Plak teorileri",
+   "Hasar kriterleri",
+   "Küçük ve büyük deformasyon teorileri",
+   "Elastik analiz yöntemleri"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Giriş: Gerilme ve şekil değiştirme tansörleri, Genelleştirilmiş Hooke Kanunu",
+   "Hafta 2 · Kiriş teorileri: Euler-Bernoulli, Timoshenko ve Reddy kiriş teorileri",
+   "Hafta 3 · Kiriş teorileri. Daralan kirişler",
+   "Hafta 4 · Elastik zemindeki kiriş",
+   "Hafta 5 · Plaka Teorileri: Kirchoff, Mindlin ve Reddy plaka teorileri",
+   "Hafta 6 · Plaka Teorileri. Dairesel ve halka plaklar",
+   "Hafta 7 · Büyük deformasyon teorisi: Lagrange ve Euler şekil değiştirme bağıntıları",
+   "Hafta 8 · 1.nci ve 2.nci Piola-Kirchoff gerilmeleri",
+   "Hafta 9 · Kirişlerin büyük deformasyonu",
+   "Hafta 10 · 2-Boyutlu Elastisite ve Airy gerilme fonksiyonu",
+   "Hafta 11 · Temas gerilmeleri ve Hertz gerilmeleri",
+   "Hafta 12 · Gerilme yoğunlaşma faktörleri. Hasar modları. Kırılma mekaniğinin temelleri",
+   "Hafta 13 · Hasar mekaniğine giriş. Membran davranışı",
+   "Hafta 14 · Viskoelastik malzemeler. Plastik Limit Analizi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Giriş: Gerilme ve şekil değiştirme tansörleri, Genelleştirilmiş Hooke Kanunu",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Kiriş teorileri: Euler-Bernoulli, Timoshenko ve Reddy kiriş teorileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kiriş teorileri. Daralan kirişler",
+    "outcomes": "1"
+   },
+   {
+    "week": 4,
+    "topic": "Elastik zemindeki kiriş",
+    "outcomes": "1"
+   },
+   {
+    "week": 5,
+    "topic": "Plaka Teorileri: Kirchoff, Mindlin ve Reddy plaka teorileri",
+    "outcomes": "1"
+   },
+   {
+    "week": 6,
+    "topic": "Plaka Teorileri. Dairesel ve halka plaklar",
+    "outcomes": "1"
+   },
+   {
+    "week": 7,
+    "topic": "Büyük deformasyon teorisi: Lagrange ve Euler şekil değiştirme bağıntıları",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "1.nci ve 2.nci Piola-Kirchoff gerilmeleri",
+    "outcomes": "3"
+   },
+   {
+    "week": 9,
+    "topic": "Kirişlerin büyük deformasyonu",
+    "outcomes": "3"
+   },
+   {
+    "week": 10,
+    "topic": "2-Boyutlu Elastisite ve Airy gerilme fonksiyonu",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Temas gerilmeleri ve Hertz gerilmeleri",
+    "outcomes": "4"
+   },
+   {
+    "week": 12,
+    "topic": "Gerilme yoğunlaşma faktörleri. Hasar modları. Kırılma mekaniğinin temelleri",
+    "outcomes": "2"
+   },
+   {
+    "week": 13,
+    "topic": "Hasar mekaniğine giriş. Membran davranışı",
+    "outcomes": "2"
+   },
+   {
+    "week": 14,
+    "topic": "Viskoelastik malzemeler. Plastik Limit Analizi"
+   }
+  ],
+  "textbooks": [
+   "Reddy, J.N., 2007, An Introduction to Continuum Mechanics Cambridge University Press.",
+   "Besson, J., Cailletaud, G., Chaboche, J.-L., Forest, S.,, 2010 Non-Linear Mechanics of Materials, Springer-Verlag.",
+   "Boresi A., Schmidt R.J., 2002, Advanced Mechanics of Materials, Wiley.",
+   "Wang, C. M., Reddy, J. N., Lee, K. H., \"Shear deformable beams and plates\", Elsevier, 2000.",
+   "Fertis, D. G., \"Nonlinear mechanics\", CRC Press, 1999.",
+   "Taber, L. A., \"Nonlinear theory of elasticity: Applications in biomechanics\", World Scientific, 2004.",
+   "Ugural, A. C., Fenster, S. K., \"Advanced Strength and Applied Elasticity\" , Prentice-Hall, 2003.",
+   "C.M. Wang, J.N. Reddy, K.H. Lee, “Shear deformable beams and plates”, Elsevier, 2000.",
+   "C.M. Wang, J.N. Reddy, K.H. Lee, “Shear deformable beams and plates”, Elsevier, 2000."
+  ],
+  "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=MKC&dersNo=523"
  },
  "MKC 526": {
   "code": "MKC 526",

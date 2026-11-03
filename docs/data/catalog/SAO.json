@@ -13,95 +13,95 @@
   },
   "description": "Programlama Temelleri & Programlama Mantığı & Python & Python Kütüphaneleri & Python Veri Tipleri Fundamentals of Programming & Logic of Programming & Python & Python Libraries & Python Data Types",
   "outcomes": [
-   "Siber güvenlik problemlerini tanımlama, formüle etme ve çözme becerisi edinir; bu amaçla uygun analiz ve modelleme yöntemlerini seçme ve uygulama becerisi.",
-   "Siber güvenlikte karşılaşılan karmaşık problemlerin analizi ve çözümü için gerekli yazılım ve donanımı kullanarak veri toplama, sonuçları analiz etme, yorumlama ve de önlem alma.",
-   "Disiplin içi ve çok disiplinli takımlarda etkin biçimde çalışma."
+   "Temel programlama mantığını, algoritmaları ve Python dilinin temel sözdizimini (veri tipleri, operatörler, karar ve döngü yapıları) kavrayarak problem çözme ve temel düzeyde kod yazma becerisi kazanır.",
+   "Veri yapılarını, fonksiyonları, dosya işlemlerini ve hata yönetimini etkin bir şekilde kullanarak modüler ve işlevsel yazılımlar geliştirir.",
+   "Yapay zeka destekli araçları, temel veri bilimi kütüphanelerini ve nesne yönelimli programlama (OOP) temellerini programlama süreçlerine entegre eder."
   ],
   "weeklyTopics": [
-   "Hafta 1 · Problem Çözme ve Algoritmalar",
-   "Hafta 2 · Programlama Dili Temelleri",
-   "Hafta 3 · Phyton Programlama",
-   "Hafta 4 · Değişkenler, operatörler",
-   "Hafta 5 · Koşullu ifadeler: if, else, elif",
-   "Hafta 6 · Blok Tabanlı Programlama",
-   "Hafta 7 · Nesne Tabanlı Programlama",
-   "Hafta 8 · Veri Yapıları",
-   "Hafta 9 · Karar Yapıları",
-   "Hafta 10 · Arasınav, Döngü Yapıları",
-   "Hafta 11 · Fonksiyonlar",
-   "Hafta 12 · Tarih ve String İşlemleri",
-   "Hafta 13 · Hata Yakalama İşlemleri",
-   "Hafta 14 · Dosya İşlemleri"
+   "Hafta 1 · Programlama Dili Temelleri, Problem Çözme ve Algoritmalar",
+   "Hafta 2 · Problem Çözme ve Algoritmalar",
+   "Hafta 3 · Python'a Giriş, Python Programlama, Değişkenler, Operatörler",
+   "Hafta 4 · Karar Yapıları",
+   "Hafta 5 · Döngüler",
+   "Hafta 6 · Listeler ve Demetler",
+   "Hafta 7 · Sözlükler ve Kümeler / Ara Sınav",
+   "Hafta 8 · Yapay Zekaya Giriş (Python ile) — Makine öğrenmesi nedir, AI kullanım alanları, Python'da yaygın AI/ML kütüphanelerine (scikit-learn, pandas vb.) genel bakış",
+   "Hafta 9 · Fonksiyonlar, Özyinelemeli fonksiyonlar",
+   "Hafta 10 · Değişken sayıda argüman alan fonksiyonlar, Lambda, Zip vb. Fonksiyonlar, Python'daki yerleşik fonksiyonlar (Built-in functions), Matematiksel işlemler, String işlemleri",
+   "Hafta 11 · Modüller, Tarih ve Saat İşlemleri, Dosya İşlemleri, Hata Yönetimi, Veritabanı işlemleri",
+   "Hafta 12 · Numpy, dizi hesaplama ve matplotlib Numpy, dizi hesaplama ve matplotlib",
+   "Hafta 13 · Yapay Zeka Destekli Programlama ve Basit ML Uygulaması — AI kodlama asistanı kullanımı (Claude/Copilot), scikit-learn ile basit bir sınıflandırma/regresyon modeli örneği",
+   "Hafta 14 · Nesne yönelimli programlamaya giriş"
   ],
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Problem Çözme ve Algoritmalar",
+    "topic": "Programlama Dili Temelleri, Problem Çözme ve Algoritmalar",
     "outcomes": "1-2-3"
    },
    {
     "week": 2,
-    "topic": "Programlama Dili Temelleri",
+    "topic": "Problem Çözme ve Algoritmalar",
     "outcomes": "1-2-3"
    },
    {
     "week": 3,
-    "topic": "Phyton Programlama",
+    "topic": "Python'a Giriş, Python Programlama, Değişkenler, Operatörler",
     "outcomes": "1-2-3"
    },
    {
     "week": 4,
-    "topic": "Değişkenler, operatörler",
-    "outcomes": "1-2-3"
-   },
-   {
-    "week": 5,
-    "topic": "Koşullu ifadeler: if, else, elif",
-    "outcomes": "1-2-3"
-   },
-   {
-    "week": 6,
-    "topic": "Blok Tabanlı Programlama",
-    "outcomes": "1-2-3"
-   },
-   {
-    "week": 7,
-    "topic": "Nesne Tabanlı Programlama",
-    "outcomes": "1-2-3"
-   },
-   {
-    "week": 8,
-    "topic": "Veri Yapıları",
-    "outcomes": "1-2-3"
-   },
-   {
-    "week": 9,
     "topic": "Karar Yapıları",
     "outcomes": "1-2-3"
    },
    {
+    "week": 5,
+    "topic": "Döngüler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 6,
+    "topic": "Listeler ve Demetler",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 7,
+    "topic": "Sözlükler ve Kümeler / Ara Sınav",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 8,
+    "topic": "Yapay Zekaya Giriş (Python ile) — Makine öğrenmesi nedir, AI kullanım alanları, Python'da yaygın AI/ML kütüphanelerine (scikit-learn, pandas vb.) genel bakış",
+    "outcomes": "1-2-3"
+   },
+   {
+    "week": 9,
+    "topic": "Fonksiyonlar, Özyinelemeli fonksiyonlar",
+    "outcomes": "1-2-3"
+   },
+   {
     "week": 10,
-    "topic": "Arasınav, Döngü Yapıları",
+    "topic": "Değişken sayıda argüman alan fonksiyonlar, Lambda, Zip vb. Fonksiyonlar, Python'daki yerleşik fonksiyonlar (Built-in functions), Matematiksel işlemler, String işlemleri",
     "outcomes": "1-2-3"
    },
    {
     "week": 11,
-    "topic": "Fonksiyonlar",
+    "topic": "Modüller, Tarih ve Saat İşlemleri, Dosya İşlemleri, Hata Yönetimi, Veritabanı işlemleri",
     "outcomes": "1-2-3"
    },
    {
     "week": 12,
-    "topic": "Tarih ve String İşlemleri",
+    "topic": "Numpy, dizi hesaplama ve matplotlib Numpy, dizi hesaplama ve matplotlib",
     "outcomes": "1-2-3"
    },
    {
     "week": 13,
-    "topic": "Hata Yakalama İşlemleri",
+    "topic": "Yapay Zeka Destekli Programlama ve Basit ML Uygulaması — AI kodlama asistanı kullanımı (Claude/Copilot), scikit-learn ile basit bir sınıflandırma/regresyon modeli örneği",
     "outcomes": "1-2-3"
    },
    {
     "week": 14,
-    "topic": "Dosya İşlemleri",
+    "topic": "Nesne yönelimli programlamaya giriş",
     "outcomes": "1-2-3"
    }
   ],
@@ -139,13 +139,13 @@
    "Hafta 5 · Nesne Tabanlı Programlama",
    "Hafta 6 · Selenium ile Web Sayfalarıyla Etkileşim",
    "Hafta 7 · SQLite Veritabanı",
-   "Hafta 8 · Arasınav",
+   "Hafta 8 · Veritabanı Uygulamaları ve Arasınav",
    "Hafta 9 · Kriptografi modülleri",
    "Hafta 10 · Siber Güvenlik modülleri",
-   "Hafta 11 · Siber Güvenlik modülleri",
+   "Hafta 11 · Siber Güvenlik modülleri ve Yapay Zeka Uygulamaları",
    "Hafta 12 · Numpy ile Veri Analizi",
    "Hafta 13 · Pandas ile Veri Analizi",
-   "Hafta 14 · Matplotlib ile Veri Görselleştirme"
+   "Hafta 14 · Yapay Zeka Uygulamaları ve Matplotlib ile Veri Görselleştirme"
   ],
   "weeklyPlan": [
    {
@@ -185,7 +185,7 @@
    },
    {
     "week": 8,
-    "topic": "Arasınav",
+    "topic": "Veritabanı Uygulamaları ve Arasınav",
     "outcomes": "1-2-3"
    },
    {
@@ -200,7 +200,7 @@
    },
    {
     "week": 11,
-    "topic": "Siber Güvenlik modülleri",
+    "topic": "Siber Güvenlik modülleri ve Yapay Zeka Uygulamaları",
     "outcomes": "1-2-3"
    },
    {
@@ -215,7 +215,7 @@
    },
    {
     "week": 14,
-    "topic": "Matplotlib ile Veri Görselleştirme",
+    "topic": "Yapay Zeka Uygulamaları ve Matplotlib ile Veri Görselleştirme",
     "outcomes": "1-2-3"
    }
   ],
@@ -245,25 +245,25 @@
    "Bilgisayar sistemlerinin temel prensiplerini anlama. Bilgisayar mimarisi ve işletim sistemleri konusunda temel bir anlayışa sahip olma."
   ],
   "weeklyTopics": [
-   "Hafta 1 · Bilişim Teknolojilerinin Gelişimi",
+   "Hafta 1 · Bilişim Teknolojilerinin Gelişimi ve Yapay Zekâya Genel Bakış",
    "Hafta 2 · Bilgisayar Türleri, Donanım Birimleri",
    "Hafta 3 · Yazılım Türleri, İşletim Sistemleri",
-   "Hafta 4 · Bilgisayar Ağlarına Giriş",
+   "Hafta 4 · Bilgisayar Ağlarına Giriş ve Yazılım Tanımlı Ağlar (SDN)",
    "Hafta 5 · Protokoller ve Katmanlı Modeller",
-   "Hafta 6 · Fiziksel Katman",
-   "Hafta 7 · Veri Bağlantı Katmanı",
+   "Hafta 6 · Fiziksel Katman ve Kablosuz/5G Trendleri",
+   "Hafta 7 · Veri Bağlantı Katmanı ve Yapay Zekâ Destekli Paket Analizi",
    "Hafta 8 · Arasınav, Ethernet Protokolü Kavramları",
-   "Hafta 9 · Ağ Katmanı",
-   "Hafta 10 · Ipv4 Adresleme",
+   "Hafta 9 · Ağ Katmanı ve Zero Trust Yaklaşımına Giriş",
+   "Hafta 10 · Ipv4 Adresleme ve Otomasyon Araçlarıyla Subnetting",
    "Hafta 11 · Ipv6 Adresleme",
-   "Hafta 12 · İletim Katmanı",
-   "Hafta 13 · Uygulama Katmanı",
-   "Hafta 14 · Ağ Güvenliğine Giriş"
+   "Hafta 12 · İletim Katmanı ve Modern Protokol Evrimi (QUIC/HTTP3)",
+   "Hafta 13 · Uygulama Katmanı ve Yapay Zeka Servis İletişimi",
+   "Hafta 14 · Ağ Güvenliğine Giriş, Zero Trust ve AI Destekli Tehdit Tespiti (İnsan–AI İş Birliği)"
   ],
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Bilişim Teknolojilerinin Gelişimi"
+    "topic": "Bilişim Teknolojilerinin Gelişimi ve Yapay Zekâya Genel Bakış"
    },
    {
     "week": 2,
@@ -275,7 +275,7 @@
    },
    {
     "week": 4,
-    "topic": "Bilgisayar Ağlarına Giriş"
+    "topic": "Bilgisayar Ağlarına Giriş ve Yazılım Tanımlı Ağlar (SDN)"
    },
    {
     "week": 5,
@@ -283,11 +283,11 @@
    },
    {
     "week": 6,
-    "topic": "Fiziksel Katman"
+    "topic": "Fiziksel Katman ve Kablosuz/5G Trendleri"
    },
    {
     "week": 7,
-    "topic": "Veri Bağlantı Katmanı"
+    "topic": "Veri Bağlantı Katmanı ve Yapay Zekâ Destekli Paket Analizi"
    },
    {
     "week": 8,
@@ -295,11 +295,11 @@
    },
    {
     "week": 9,
-    "topic": "Ağ Katmanı"
+    "topic": "Ağ Katmanı ve Zero Trust Yaklaşımına Giriş"
    },
    {
     "week": 10,
-    "topic": "Ipv4 Adresleme"
+    "topic": "Ipv4 Adresleme ve Otomasyon Araçlarıyla Subnetting"
    },
    {
     "week": 11,
@@ -307,18 +307,19 @@
    },
    {
     "week": 12,
-    "topic": "İletim Katmanı"
+    "topic": "İletim Katmanı ve Modern Protokol Evrimi (QUIC/HTTP3)"
    },
    {
     "week": 13,
-    "topic": "Uygulama Katmanı"
+    "topic": "Uygulama Katmanı ve Yapay Zeka Servis İletişimi"
    },
    {
     "week": 14,
-    "topic": "Ağ Güvenliğine Giriş"
+    "topic": "Ağ Güvenliğine Giriş, Zero Trust ve AI Destekli Tehdit Tespiti (İnsan–AI İş Birliği)"
    }
   ],
   "textbooks": [
+   "Cisco Networking Academy",
    "CCNAv7: Introduction to Network (2020) James Macfarlane",
    "Network Routing Basics: Understanding IP Routing in Cisco Systems (2007), John Wiley & Sons."
   ],
@@ -355,8 +356,8 @@
    "Hafta 9 · Veritabanı Güvenliğine Giriş",
    "Hafta 10 · Veritabanı Saldırı ve Savunma Yöntemleri",
    "Hafta 11 · SQL Enjeksiyon Saldırıları ve Savunma",
-   "Hafta 12 · Veritabanı Yedekleme",
-   "Hafta 13 · Kullanıcı Güvenlik Yönetimi",
+   "Hafta 12 · Yapay Zeka Uygulamaları ve Veri Güvenliği",
+   "Hafta 13 · Kullanıcı Güvenlik Yönetimi ve Yapay Zeka Uygulamaları",
    "Hafta 14 · Uygulama Güvenliği: Regülasyonlar ve Uyumluluklar, Genel Denetim, Mimari Denetim"
   ],
   "weeklyPlan": [
@@ -406,11 +407,11 @@
    },
    {
     "week": 12,
-    "topic": "Veritabanı Yedekleme"
+    "topic": "Yapay Zeka Uygulamaları ve Veri Güvenliği"
    },
    {
     "week": 13,
-    "topic": "Kullanıcı Güvenlik Yönetimi"
+    "topic": "Kullanıcı Güvenlik Yönetimi ve Yapay Zeka Uygulamaları"
    },
    {
     "week": 14,
@@ -419,7 +420,8 @@
   ],
   "textbooks": [
    "Database Security: Problems and Solutions, Christopher Diaz, Mercury Learning and Information, (22 Aug. 2022)",
-   "Veri Tabanı Sistemleri, Dr.Yalçın Özkan, Alfa yayınevi"
+   "Veri Tabanı Sistemleri, Dr.Yalçın Özkan, Alfa yayınevi",
+   "Postgresql ,Abaküs"
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=SAO&dersNo=104"
  },
@@ -443,19 +445,19 @@
   ],
   "weeklyTopics": [
    "Hafta 1 · İşletim Sistemlerine Giriş, İşletim Sistemi Türleri",
-   "Hafta 2 · Temel İşletim Sistemi Komutları ve Dizin Hiyerarşisi",
-   "Hafta 3 · Cihazlar ve Cihaz Yapılandırma",
-   "Hafta 4 · Diskler ve Dosya Sistemleri",
-   "Hafta 5 · Yükleme (Boot)",
-   "Hafta 6 · Kullanıcı Uzayını Başlatma",
-   "Hafta 7 · Sistem ve Güvenlik Ayarları",
-   "Hafta 8 · Arasınav, İşlem Yönetimi ve Kaynak Kullanımı",
-   "Hafta 9 · Ağ ve Güvenlik Ayarları",
-   "Hafta 10 · Ağ Uygulamaları ve Servis Güvenliği",
-   "Hafta 11 · Kabuk Programlamaya Giriş",
-   "Hafta 12 · Web ve Tarayıcı Güvenliği",
-   "Hafta 13 · Dosya Paylaşımı ve Güvenliği",
-   "Hafta 14 · Kullanıcı Ortamı ve Güvenlik"
+   "Hafta 2 · Temel İşletim Sistemi Komutları ve Dizin hiyerarşisi(Ubuntu)",
+   "Hafta 3 · Kullanıcı ve Gruplar",
+   "Hafta 4 · Dosya sahipliğini ve izinlerini yönetme",
+   "Hafta 5 · Text editörleri ve kodlama (encoding)",
+   "Hafta 6 · Linux süreçlerini yönetme",
+   "Hafta 7 · Uygulamaları yönetme (paket yöneticiler)",
+   "Hafta 8 · Bash scripting",
+   "Hafta 9 · Yapay zeka destekli bash kodlama",
+   "Hafta 10 · Ssh ve güvenlik duvarları",
+   "Hafta 11 · Linüxte MAC (apparmor)",
+   "Hafta 12 · Çekirdek Güçlendirme (Kernel hardening)",
+   "Hafta 13 · LOG Güvenliği",
+   "Hafta 14 · Yapay zeka destekli log analizi"
   ],
   "weeklyPlan": [
    {
@@ -464,55 +466,55 @@
    },
    {
     "week": 2,
-    "topic": "Temel İşletim Sistemi Komutları ve Dizin Hiyerarşisi"
+    "topic": "Temel İşletim Sistemi Komutları ve Dizin hiyerarşisi(Ubuntu)"
    },
    {
     "week": 3,
-    "topic": "Cihazlar ve Cihaz Yapılandırma"
+    "topic": "Kullanıcı ve Gruplar"
    },
    {
     "week": 4,
-    "topic": "Diskler ve Dosya Sistemleri"
+    "topic": "Dosya sahipliğini ve izinlerini yönetme"
    },
    {
     "week": 5,
-    "topic": "Yükleme (Boot)"
+    "topic": "Text editörleri ve kodlama (encoding)"
    },
    {
     "week": 6,
-    "topic": "Kullanıcı Uzayını Başlatma"
+    "topic": "Linux süreçlerini yönetme"
    },
    {
     "week": 7,
-    "topic": "Sistem ve Güvenlik Ayarları"
+    "topic": "Uygulamaları yönetme (paket yöneticiler)"
    },
    {
     "week": 8,
-    "topic": "Arasınav, İşlem Yönetimi ve Kaynak Kullanımı"
+    "topic": "Bash scripting"
    },
    {
     "week": 9,
-    "topic": "Ağ ve Güvenlik Ayarları"
+    "topic": "Yapay zeka destekli bash kodlama"
    },
    {
     "week": 10,
-    "topic": "Ağ Uygulamaları ve Servis Güvenliği"
+    "topic": "Ssh ve güvenlik duvarları"
    },
    {
     "week": 11,
-    "topic": "Kabuk Programlamaya Giriş"
+    "topic": "Linüxte MAC (apparmor)"
    },
    {
     "week": 12,
-    "topic": "Web ve Tarayıcı Güvenliği"
+    "topic": "Çekirdek Güçlendirme (Kernel hardening)"
    },
    {
     "week": 13,
-    "topic": "Dosya Paylaşımı ve Güvenliği"
+    "topic": "LOG Güvenliği"
    },
    {
     "week": 14,
-    "topic": "Kullanıcı Ortamı ve Güvenlik"
+    "topic": "Yapay zeka destekli log analizi"
    }
   ],
   "textbooks": [
@@ -532,98 +534,98 @@
    "local": 4,
    "ects": 6
   },
-  "description": "Dersin İçeriği (Course Description) Router konfigürasyonu & DHCP yapılandırma & NAT Servisleri & Switch güvenliği & LAN ve WAN teknolojileri & Alt ağlar & Ağ izleme yapıları & Güvenlik duvarları & Saldırı tespit ve engelleme sistemleri & Web filtreleme çözümleri & Zafiyet tarama ve bulma & Kablosuz ağların güvenliği & VPN ve şifreleme teknolojileri & olay kayıtlarını izleme ve analiz Router configuration & DHCP configuration &NAT Services & Switch security & LAN and WAN technologies & Subnets & Network monitoring structures & Firewalls & Intrusion detection and prevention systems & Web filtering solutions & Vulnerability scanning and detection & Security of wireless networks & VPN and encryption technologies & Monitoring and analyzing event logs",
+  "description": "Router konfigürasyonu & DHCP yapılandırma & NAT Servisleri & Switch güvenliği & LAN ve WAN teknolojileri & Alt ağlar & Ağ izleme yapıları & Güvenlik duvarları & Saldırı tespit ve engelleme sistemleri & Web filtreleme çözümleri & Zafiyet tarama ve bulma & Kablosuz ağların güvenliği & VPN ve şifreleme teknolojileri & olay kayıtlarını izleme ve analiz Router configuration & DHCP configuration &NAT Services & Switch security & LAN and WAN technologies & Subnets & Network monitoring structures & Firewalls & Intrusion detection and prevention systems & Web filtering solutions & Vulnerability scanning and detection & Security of wireless networks & VPN and encryption technologies & Monitoring and analyzing event logs",
   "outcomes": [
    "Temel bilgisayar ve ağ güvenliği kavramlarını açıklayabilme ve uygulamaları hakkında bilgi sahibi olma",
    "Bilgisayarlar ve ağlar ile ilgili zafiyetlerin ortaya çıkarılması için uygulanan temel teknikleri açıklayabilme, ağ izleme yapabilme, saldırıları tespit edebilme ve engelleyebilme.",
    "Ağda yaşanan güvenlik sorunlarının analiz etme, gerekli siber güvenlik çözümlerini tasarlama ve uygulanmasını sağlama."
   ],
   "weeklyTopics": [
-   "Hafta 1 · Ip Sınıflandırma ve Alt Ağ Maskesi 1, 2, 3",
-   "Hafta 2 · Switch(VLAN, LAG, STP) ve Firewall Türleri Konfigürasyonu",
-   "Hafta 3 · Network Address Translation (NAT), PAT (Port Address Translation) Servislerin İç-Dış Network Bağlantıları, Router ile Vlanları Haberleştirme 1, 2, 3",
+   "Hafta 1 · Ip Sınıflandırma ve Alt Ağ Maskesi",
+   "Hafta 2 · Switch(VLAN, LAG, STP) ve Firewall Türleri Konfigürasyonu Switch(VLAN, LAG, STP) ve Firewall Türleri Konfigürasyonu",
+   "Hafta 3 · Network Address Translation (NAT), PAT (Port Address Translation) Servislerin İç-Dış Network Bağlantıları, Router ile Vlanları Haberleştirme",
    "Hafta 4 · Dinamik ve statik yönlendirme, DNS, DHCP yapılandırma-DHCP Relay Agent",
-   "Hafta 5 · Network Bölgeleri WAN-DMZ-LAN",
-   "Hafta 6 · Router yapısı ve Konfigürasyonu",
+   "Hafta 5 · Network Bölgeleri WAN-DMZ-LAN, Router yapısı ve Konfigürasyonu,",
+   "Hafta 6 · Yapay Zeka Destekli Ağ Yönetimi ve Otomasyonu — AIOps kavramı, Intent-Based Networking, AI tabanlı ağ trafiği izleme ve anomali tespiti araçları",
    "Hafta 7 · 802.x ailesi, NAC yapıları",
    "Hafta 8 · Ağ izleme, Port mirroring",
-   "Hafta 9 · Ağ izleme, Port mirroring",
-   "Hafta 10 · Kablosuz ağların güvenliği (Radius ve Microsoft NPS Servislerinin Konfigürasyonu)",
-   "Hafta 11 · Saldırı tespit ve engelleme sistemleri",
-   "Hafta 12 · TCP/IP iletişiminde oturuma müdahale",
+   "Hafta 9 · Kablosuz ağların güvenliği (Radius ve Microsoft NPS Servislerinin Konfigürasyonu), Arasınav",
+   "Hafta 10 · Kablosuz ağların güvenliği (Radius ve Microsoft NPS Servislerinin Konfigürasyonu), Saldırı tespit ve engelleme sistemleri",
+   "Hafta 11 · Saldırı tespit ve engelleme sistemleri, TCP/IP iletişiminde oturuma müdahale",
+   "Hafta 12 · Yapay Zeka ile Siber Tehdit Tespiti — AI tabanlı IDS/IPS sistemleri, davranışsal anomali tespiti, otomatik zafiyet taraması ve tehdit istihbaratı (threat intelligence) örnekleri",
    "Hafta 13 · Web filtreleme çözümleri, FTP, DNS, HTTP, HTTPS vb. protokoller",
    "Hafta 14 · VPN ve şifreleme teknolojileri, UTM teknolojileri"
   ],
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Ip Sınıflandırma ve Alt Ağ Maskesi 1, 2, 3",
-    "outcomes": "1-2-3"
+    "topic": "Ip Sınıflandırma ve Alt Ağ Maskesi",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Switch(VLAN, LAG, STP) ve Firewall Türleri Konfigürasyonu",
-    "outcomes": "1-2-3"
+    "topic": "Switch(VLAN, LAG, STP) ve Firewall Türleri Konfigürasyonu Switch(VLAN, LAG, STP) ve Firewall Türleri Konfigürasyonu",
+    "outcomes": "1-2"
    },
    {
     "week": 3,
-    "topic": "Network Address Translation (NAT), PAT (Port Address Translation) Servislerin İç-Dış Network Bağlantıları, Router ile Vlanları Haberleştirme 1, 2, 3",
-    "outcomes": "1-2-3"
+    "topic": "Network Address Translation (NAT), PAT (Port Address Translation) Servislerin İç-Dış Network Bağlantıları, Router ile Vlanları Haberleştirme",
+    "outcomes": "1-3"
    },
    {
     "week": 4,
     "topic": "Dinamik ve statik yönlendirme, DNS, DHCP yapılandırma-DHCP Relay Agent",
-    "outcomes": "1-2-3"
+    "outcomes": "1-2"
    },
    {
     "week": 5,
-    "topic": "Network Bölgeleri WAN-DMZ-LAN",
-    "outcomes": "1-2-3"
+    "topic": "Network Bölgeleri WAN-DMZ-LAN, Router yapısı ve Konfigürasyonu,",
+    "outcomes": "1-3"
    },
    {
     "week": 6,
-    "topic": "Router yapısı ve Konfigürasyonu",
+    "topic": "Yapay Zeka Destekli Ağ Yönetimi ve Otomasyonu — AIOps kavramı, Intent-Based Networking, AI tabanlı ağ trafiği izleme ve anomali tespiti araçları",
     "outcomes": "1-2-3"
    },
    {
     "week": 7,
     "topic": "802.x ailesi, NAC yapıları",
-    "outcomes": "1-2-3"
+    "outcomes": "1-2"
    },
    {
     "week": 8,
     "topic": "Ağ izleme, Port mirroring",
-    "outcomes": "1-2-3"
+    "outcomes": "2-3"
    },
    {
     "week": 9,
-    "topic": "Ağ izleme, Port mirroring",
+    "topic": "Kablosuz ağların güvenliği (Radius ve Microsoft NPS Servislerinin Konfigürasyonu), Arasınav",
     "outcomes": "1-2-3"
    },
    {
     "week": 10,
-    "topic": "Kablosuz ağların güvenliği (Radius ve Microsoft NPS Servislerinin Konfigürasyonu)",
-    "outcomes": "1-2-3"
+    "topic": "Kablosuz ağların güvenliği (Radius ve Microsoft NPS Servislerinin Konfigürasyonu), Saldırı tespit ve engelleme sistemleri",
+    "outcomes": "2-3"
    },
    {
     "week": 11,
-    "topic": "Saldırı tespit ve engelleme sistemleri",
-    "outcomes": "1-2-3"
+    "topic": "Saldırı tespit ve engelleme sistemleri, TCP/IP iletişiminde oturuma müdahale",
+    "outcomes": "2-3"
    },
    {
     "week": 12,
-    "topic": "TCP/IP iletişiminde oturuma müdahale",
+    "topic": "Yapay Zeka ile Siber Tehdit Tespiti — AI tabanlı IDS/IPS sistemleri, davranışsal anomali tespiti, otomatik zafiyet taraması ve tehdit istihbaratı (threat intelligence) örnekleri",
     "outcomes": "1-2-3"
    },
    {
     "week": 13,
     "topic": "Web filtreleme çözümleri, FTP, DNS, HTTP, HTTPS vb. protokoller",
-    "outcomes": "1-2-3"
+    "outcomes": "2-3"
    },
    {
     "week": 14,
     "topic": "VPN ve şifreleme teknolojileri, UTM teknolojileri",
-    "outcomes": "1-2-3"
+    "outcomes": "2-3"
    }
   ],
   "textbooks": [
@@ -770,83 +772,83 @@
    "Hafta 6 · Sanallaştırma ve Docker-Container, Sanallaştırma ve Bulut : Bulut ve ESXI-Proxmox yönetimi",
    "Hafta 7 · Bulut Bilişime Giriş, Bulut Bilişim Hizmet Modelleri, Bulut Bilişim Dağıtım Modelleri, Güncel Bulut Bilişim Uygulamaları, Bulut Bilişim Kullanım Alanları, Bulut Bilişim Avantajlar ve Dezavantajları, Mobil Bulut Uygulamaları.",
    "Hafta 8 · Sanal Sistemleri Hipervizör katmanında güvenliğin sağlanması",
-   "Hafta 9 · Bulut Güvenliğine Giriş",
+   "Hafta 9 · Arasınav, Bulut Güvenliğine Giriş",
    "Hafta 10 · Bilgi İşlem Hizmetlerini Güvenli Hale Getirme, Depolama Hizmetlerini Güvenli Hale Getirme, Ağ Hizmetlerini Güvenli Hale Getirmek",
    "Hafta 11 · IAM Çözümlerini Uygulamaya Yönelik Etkili Stratejiler",
    "Hafta 12 · Bulut Ortamlarının İzlenmesi ve Denetlenmesi, Bulut Hizmetlerinde Şifreleme Uygulamak",
-   "Hafta 13 · Bulut Bilişime Yönelik Yaygın Güvenlik Tehditlerini Anlama, Uyum ve Yönetmeliğin İşlenmesi",
-   "Hafta 14 · Bulut Sağlayıcıları ile Etkileşim, Hibrit Bulutları Yönetme, Çoklu Bulut Ortamlarını Yönetme, & Büyük Ölçekli Ortamlarda Güvenlik, Güvenlik Prensipleri - Cloud Control Matrix"
+   "Hafta 13 · Bulut Bilişimde Yapay Zeka Destekli Güvenlik",
+   "Hafta 14 · Yapay Zeka İş Yüklerinin ve Çoklu Bulutların Yönetimi"
   ],
   "weeklyPlan": [
    {
     "week": 1,
     "topic": "Sanallaştırma Kavramları, Hipervizörler, Sanal Makineler, Sanal Makine Oluşturma",
-    "outcomes": "1-2-3-4"
+    "outcomes": "1-2"
    },
    {
     "week": 2,
     "topic": "Sanal Makineye Windows Kurulumu, Linux'u Sanal Makineye Kurmak, Sanal Makine için CPU'ları Yönetme, Sanal Makine için Belleği Yönetme, Sanal Makine için Depolamayı Yönetme, Sanal Makine için Ağ Yönetimi",
-    "outcomes": "1-2-3-4"
+    "outcomes": "3-4"
    },
    {
     "week": 3,
     "topic": "Fiziksel Sistemi Sanal sisteme çevirme, Bir Sanal Makineyi Kopyalama, Sanal Makinelerde Ek Aygıtları Yönetme, Erişilebilirlik",
-    "outcomes": "1-2-3-4"
+    "outcomes": "2"
    },
    {
     "week": 4,
     "topic": "Sunucu Sanallaştırma ve Uygulama Sanallaştırma Yöntemleri",
-    "outcomes": "1-2-3-4"
+    "outcomes": "1-2"
    },
    {
     "week": 5,
     "topic": "Sanal Ağları ve Sanal Depolama Alanlarını Yönetme, Yüksek Erişilebilirlik ve Hata Toleransı, Ölçülebilirlik, Donanım Gereksinimleri, Sanal Makina Depolama Yönetimi, Snapshotları Kullanma, Sanal Ağları Yönetme, yedekleme politikaları",
-    "outcomes": "1-2-3-4"
+    "outcomes": "2-3"
    },
    {
     "week": 6,
     "topic": "Sanallaştırma ve Docker-Container, Sanallaştırma ve Bulut : Bulut ve ESXI-Proxmox yönetimi",
-    "outcomes": "1-2-3-4"
+    "outcomes": "1-2-4"
    },
    {
     "week": 7,
     "topic": "Bulut Bilişime Giriş, Bulut Bilişim Hizmet Modelleri, Bulut Bilişim Dağıtım Modelleri, Güncel Bulut Bilişim Uygulamaları, Bulut Bilişim Kullanım Alanları, Bulut Bilişim Avantajlar ve Dezavantajları, Mobil Bulut Uygulamaları.",
-    "outcomes": "1-2-3-4"
+    "outcomes": "1-4"
    },
    {
     "week": 8,
     "topic": "Sanal Sistemleri Hipervizör katmanında güvenliğin sağlanması",
-    "outcomes": "1-2-3-4"
+    "outcomes": "3-4"
    },
    {
     "week": 9,
-    "topic": "Bulut Güvenliğine Giriş",
-    "outcomes": "1-2-3-4"
+    "topic": "Arasınav, Bulut Güvenliğine Giriş",
+    "outcomes": "1-4"
    },
    {
     "week": 10,
     "topic": "Bilgi İşlem Hizmetlerini Güvenli Hale Getirme, Depolama Hizmetlerini Güvenli Hale Getirme, Ağ Hizmetlerini Güvenli Hale Getirmek",
-    "outcomes": "1-2-3-4"
+    "outcomes": "3-4"
    },
    {
     "week": 11,
     "topic": "IAM Çözümlerini Uygulamaya Yönelik Etkili Stratejiler",
-    "outcomes": "1-2-3-4"
+    "outcomes": "4"
    },
    {
     "week": 12,
     "topic": "Bulut Ortamlarının İzlenmesi ve Denetlenmesi, Bulut Hizmetlerinde Şifreleme Uygulamak",
-    "outcomes": "1-2-3-4"
+    "outcomes": "4"
    },
    {
     "week": 13,
-    "topic": "Bulut Bilişime Yönelik Yaygın Güvenlik Tehditlerini Anlama, Uyum ve Yönetmeliğin İşlenmesi",
-    "outcomes": "1-2-3-4"
+    "topic": "Bulut Bilişimde Yapay Zeka Destekli Güvenlik",
+    "outcomes": "1-4"
    },
    {
     "week": 14,
-    "topic": "Bulut Sağlayıcıları ile Etkileşim, Hibrit Bulutları Yönetme, Çoklu Bulut Ortamlarını Yönetme, & Büyük Ölçekli Ortamlarda Güvenlik, Güvenlik Prensipleri - Cloud Control Matrix",
-    "outcomes": "1-2-3-4"
+    "topic": "Yapay Zeka İş Yüklerinin ve Çoklu Bulutların Yönetimi",
+    "outcomes": "2-4"
    }
   ],
   "textbooks": [
@@ -878,15 +880,15 @@
    "Hafta 3 · Kriptografik Yapı Taşları",
    "Hafta 4 · Kullanıcı Kimlik Doğrulaması",
    "Hafta 5 · Parolalar, Biyometri ve Alternatifler",
-   "Hafta 6 · Kimlik Doğrulama Protokolleri ve Anahtar Kurulumu",
-   "Hafta 7 · İşletim Sistemi Güvenliği ve Erişim Kontrolü",
-   "Hafta 8 · Arasınav, Yazılım Güvenliği",
-   "Hafta 9 · İstismarlar ve Ayrıcalık Artırma",
-   "Hafta 10 · Kötü Amaçlı Yazılım",
-   "Hafta 11 · Açık Anahtar Sertifika Yönetimi ve Kullanım Örnekleri",
-   "Hafta 12 · Web ve Tarayıcı Güvenliği, Kişisel Veri Hakları, GDPR/ KVKK Düzenlemeleri",
-   "Hafta 13 · Güvenlik Duvarları ve Tüneller",
-   "Hafta 14 · İzinsiz Giriş Tespiti ve Ağ Tabanlı Saldırılar"
+   "Hafta 6 · İşletim Sistemi Güvenliği ve Erişim Kontrolü",
+   "Hafta 7 · Yazılım Güvenliği",
+   "Hafta 8 · Arasınav, İstismarlar ve Ayrıcalık Artırma",
+   "Hafta 9 · Kötü Amaçlı Yazılım",
+   "Hafta 10 · Web ve Tarayıcı Güvenliği, Kişisel Veri Hakları, GDPR/ KVKK Düzenlemeleri",
+   "Hafta 11 · Güvenlik Duvarları ve Tüneller",
+   "Hafta 12 · İzinsiz Giriş Tespiti ve Ağ Tabanlı Saldırılar",
+   "Hafta 13 · Siber Güvenlikte Yapay Zeka ve Makine Öğrenmesi (Akıllı Tehdit Tespiti, Ağ Anomalileri ve Otomasyon)",
+   "Hafta 14 · Yapay Zeka Sistemlerinin Güvenliği (Derin Öğrenme Mimarilerine Yönelik Yanıltma/Spoofing ve Model Zehirlenmesi Saldırıları)"
   ],
   "weeklyPlan": [
    {
@@ -911,39 +913,39 @@
    },
    {
     "week": 6,
-    "topic": "Kimlik Doğrulama Protokolleri ve Anahtar Kurulumu"
-   },
-   {
-    "week": 7,
     "topic": "İşletim Sistemi Güvenliği ve Erişim Kontrolü"
    },
    {
+    "week": 7,
+    "topic": "Yazılım Güvenliği"
+   },
+   {
     "week": 8,
-    "topic": "Arasınav, Yazılım Güvenliği"
+    "topic": "Arasınav, İstismarlar ve Ayrıcalık Artırma"
    },
    {
     "week": 9,
-    "topic": "İstismarlar ve Ayrıcalık Artırma"
-   },
-   {
-    "week": 10,
     "topic": "Kötü Amaçlı Yazılım"
    },
    {
-    "week": 11,
-    "topic": "Açık Anahtar Sertifika Yönetimi ve Kullanım Örnekleri"
-   },
-   {
-    "week": 12,
+    "week": 10,
     "topic": "Web ve Tarayıcı Güvenliği, Kişisel Veri Hakları, GDPR/ KVKK Düzenlemeleri"
    },
    {
-    "week": 13,
+    "week": 11,
     "topic": "Güvenlik Duvarları ve Tüneller"
    },
    {
-    "week": 14,
+    "week": 12,
     "topic": "İzinsiz Giriş Tespiti ve Ağ Tabanlı Saldırılar"
+   },
+   {
+    "week": 13,
+    "topic": "Siber Güvenlikte Yapay Zeka ve Makine Öğrenmesi (Akıllı Tehdit Tespiti, Ağ Anomalileri ve Otomasyon)"
+   },
+   {
+    "week": 14,
+    "topic": "Yapay Zeka Sistemlerinin Güvenliği (Derin Öğrenme Mimarilerine Yönelik Yanıltma/Spoofing ve Model Zehirlenmesi Saldırıları)"
    }
   ],
   "textbooks": [
@@ -978,84 +980,84 @@
    "Hafta 5 · Sistem ve Ağ Taraması (NMAP)",
    "Hafta 6 · Zafiyet Tarama ve Exploitation",
    "Hafta 7 · AV,EDR,MDR,XDR atlatma teknikleri",
-   "Hafta 8 · Arasınav",
+   "Hafta 8 · Arasınav, AV,EDR,MDR,XDR atlatma teknikleri",
    "Hafta 9 · Web Sızma Testi",
    "Hafta 10 · Web Uygulamaları Testleri Metodolojileri (OWASP Testing Guide)",
    "Hafta 11 · Web Uygulama Zafiyetleri",
    "Hafta 12 · Bulut Sistemleri Sızma Testi Yöntemleri",
-   "Hafta 13 · Etik Hacking’de Şifre Kırma",
-   "Hafta 14 · Sosyal Mühendislik ve Phishing Saldırısı & CTF Yarışması"
+   "Hafta 13 · Yapay Zeka Destekli Saldırı Vektörleri ve Otomasyon",
+   "Hafta 14 · Yapay Zeka Sistemlerine Sızma ve Yeni Nesil Sosyal Mühendislik"
   ],
   "weeklyPlan": [
    {
     "week": 1,
     "topic": "Sızma testi metodolojisi",
-    "outcomes": "1-2-3"
+    "outcomes": "1-3"
    },
    {
     "week": 2,
     "topic": "Gerekli İşletim Sistemlerinin Kurulumu",
-    "outcomes": "1-2-3"
+    "outcomes": "1"
    },
    {
     "week": 3,
     "topic": "MITRE ATT&CK Saldırı teknikleri ve taktikleri klavuzu",
-    "outcomes": "1-2-3"
+    "outcomes": "2"
    },
    {
     "week": 4,
     "topic": "Keşif ve Bilgi Toplama",
-    "outcomes": "1-2-3"
+    "outcomes": "1-3"
    },
    {
     "week": 5,
     "topic": "Sistem ve Ağ Taraması (NMAP)",
-    "outcomes": "1-2-3"
+    "outcomes": "1"
    },
    {
     "week": 6,
     "topic": "Zafiyet Tarama ve Exploitation",
-    "outcomes": "1-2-3"
+    "outcomes": "1-2"
    },
    {
     "week": 7,
     "topic": "AV,EDR,MDR,XDR atlatma teknikleri",
-    "outcomes": "1-2-3"
+    "outcomes": "2"
    },
    {
     "week": 8,
-    "topic": "Arasınav",
-    "outcomes": "1-2-3"
+    "topic": "Arasınav, AV,EDR,MDR,XDR atlatma teknikleri",
+    "outcomes": "2"
    },
    {
     "week": 9,
     "topic": "Web Sızma Testi",
-    "outcomes": "1-2-3"
+    "outcomes": "2"
    },
    {
     "week": 10,
     "topic": "Web Uygulamaları Testleri Metodolojileri (OWASP Testing Guide)",
-    "outcomes": "1-2-3"
+    "outcomes": "1-2"
    },
    {
     "week": 11,
     "topic": "Web Uygulama Zafiyetleri",
-    "outcomes": "1-2-3"
+    "outcomes": "2"
    },
    {
     "week": 12,
     "topic": "Bulut Sistemleri Sızma Testi Yöntemleri",
-    "outcomes": "1-2-3"
+    "outcomes": "1-2"
    },
    {
     "week": 13,
-    "topic": "Etik Hacking’de Şifre Kırma",
-    "outcomes": "1-2-3"
+    "topic": "Yapay Zeka Destekli Saldırı Vektörleri ve Otomasyon",
+    "outcomes": "1-2"
    },
    {
     "week": 14,
-    "topic": "Sosyal Mühendislik ve Phishing Saldırısı & CTF Yarışması",
-    "outcomes": "1-2-3"
+    "topic": "Yapay Zeka Sistemlerine Sızma ve Yeni Nesil Sosyal Mühendislik",
+    "outcomes": "2-3"
    }
   ],
   "textbooks": [
@@ -1190,98 +1192,101 @@
    "local": 4,
    "ects": 6
   },
-  "description": "Backdoor Uygulamaları &Android Studio & Swift & IOS &Tersine Mühendislik & Root ve JailBreak İşlemleri & Firebase (Cloud Server) Güvenliği & Ağ İçi Saldırılar & API Güvenliği & Sızma Testi Backdoor Applications & Android Studio & Swift & IOS & Reverse Engineering & Root and JailBreak Procedures & Firebase (Cloud Server) Security & In-Network Attacks &API Security & Penetration Testing",
+  "description": "Android ve iOS güvenlik mimarileri; mobil uygulama tehdit modelleme ve güvenli yazılım geliştirme yaşam döngüsü; izinler, güvenli veri depolama, kimlik doğrulama, kriptografi ve ağ iletişimi; statik/dinamik analiz, tersine mühendislik, root/jailbreak ve araç destekli testler; mobil API, Firebase/bulut ve arka uç güvenliği; mobil zararlı yazılım ve backdoor analizi; OWASP MASVS/MASTG tabanlı sızma testleri; cihaz üzerinde yapay zekâ/makine öğrenmesi modellerinin güvenliği; üretken yapay zekâ entegreli mobil uygulamalarda prompt enjeksiyonu, hassas veri ifşası, model/tedarik zinciri, aşırı yetki ve insan gözetimi riskleri. Android ve iOS güvenlik mimarileri; mobil uygulama tehdit modelleme ve güvenli yazılım geliştirme yaşam döngüsü; izinler, güvenli veri depolama, kimlik doğrulama, kriptografi ve ağ iletişimi; statik/dinamik analiz, tersine mühendislik, root/jailbreak ve araç destekli testler; mobil API, Firebase/bulut ve arka uç güvenliği; mobil zararlı yazılım ve backdoor analizi; OWASP MASVS/MASTG tabanlı sızma testleri; cihaz üzerinde yapay zekâ/makine öğrenmesi modellerinin güvenliği; üretken yapay zekâ entegreli mobil uygulamalarda prompt enjeksiyonu, hassas veri ifşası, model/tedarik zinciri, aşırı yetki ve insan gözetimi riskleri. Android and iOS security architectures; mobile application threat modeling and the secure software development lifecycle; permissions, secure data storage, authentication, cryptography, and network communications; static/dynamic analysis, reverse engineering, root/jailbreak, and tool-assisted testing; mobile API, Firebase/cloud, and backend security; mobile malware and backdoor analysis; penetration testing based on OWASP MASVS/MASTG; security of on-device AI/machine-learning models; and prompt injection, sensitive information disclosure, model/supply-chain, excessive-agency, and human-oversight risks in generative-AI-enabled mobile applications. Android and iOS security architectures; mobile application threat modeling and the secure software development lifecycle; permissions, secure data storage, authentication, cryptography, and network communications; static/dynamic analysis, reverse engineering, root/jailbreak, and tool-assisted testing; mobile API, Firebase/cloud, and backend security; mobile malware and backdoor analysis; penetration testing based on OWASP MASVS/MASTG; security of on-device AI/machine-learning models; and prompt injection, sensitive information disclosure, model/supply-chain, excessive-agency, and human-oversight risks in generative-AI-enabled mobile applications.",
   "outcomes": [
-   "Temel mobil güvenlik kavramlarına uygulamalı olarak hakim olma.",
-   "Android, IOS gibi bir mobil işletim sistemlerini ayrıcalıklı kullanıcı seviyesinde kullanma, yapılandırma ve yönetme yeteneği kazanma.",
-   "Mobil İşletim Sistemlerinin ve bunlar üzerinde çalıştırılan uygulamaların güvenli yapılandırılması ve çalıştırılması için temel kavramlara sahip olma ve uygulama"
+   "1. Android ve iOS güvenlik mimarilerini, mobil tehditleri ve güvenli yazılım geliştirme yaşam döngüsünü açıklar.",
+   "2. İzinler, güvenli veri depolama, kimlik doğrulama, kriptografi ve ağ iletişimi kontrollerini yapılandırır ve test eder.",
+   "3. Mobil uygulamalarda statik/dinamik analiz, tersine mühendislik, root/jailbreak ve zararlı yazılım/backdoor incelemesi gerçekleştirir.",
+   "4. Mobil API, Firebase/bulut, arka uç ve uygulama güvenliğini OWASP MASVS/MASTG temelli yöntemlerle değerlendirir ve bulguları önceliklendirir.",
+   "5. Cihaz üzerinde çalışan makine öğrenmesi ile üretken yapay zekâ entegreli mobil uygulamalarda model bütünlüğü, model çıkarımı, adversarial saldırılar, prompt enjeksiyonu, hassas veri ifşası, tedarik zinciri, aşırı yetki ve insan gözetimi risklerini değerlendirir; uygun azaltımları önerir.",
+   "6. Yetkilendirilmiş bir mobil uygulama sızma testini bireysel veya ekip halinde kapsamlandırır, etik ve hukuki sınırlar içinde uygular ve kanıta dayalı bulguları Türkçe veya İngilizce olarak raporlar."
   ],
   "weeklyTopics": [
-   "Hafta 1 · Mobil Güvenliğe Giriş",
-   "Hafta 2 · Android Studio Temelleri",
-   "Hafta 3 · iOS Temelleri",
-   "Hafta 4 · Swift Temelleri",
-   "Hafta 5 · Tersine Mühendislik Araçları",
-   "Hafta 6 · Root ve JailBreak İşlemleri",
-   "Hafta 7 · Backdoor Uygulamaları",
-   "Hafta 8 · Arasınav",
-   "Hafta 9 · Şifrelenmiş Uygulama Örneği",
-   "Hafta 10 · Firebase (Cloud Server) Güvenliği",
-   "Hafta 11 · Ağ İçi Saldırılar",
-   "Hafta 12 · API Güvenliği",
-   "Hafta 13 · MobSF Açık kaynaklı Uygulama Kullanımı",
-   "Hafta 14 · Mobil Uygulama Sızma Testi & CTF Pratik"
+   "Hafta 1 · Mobil Güvenlik Ekosistemi, Tehdit Modelleme ve Güvenli Yazılım Yaşam Döngüsü",
+   "Hafta 2 · Android Güvenlik Mimarisi: Uygulama Sandbox'ı, İzinler, İmzalama ve Android Studio Güvenlik Araçları",
+   "Hafta 3 · iOS Güvenlik Mimarisi: Sandbox, Entitlements, Keychain, Kod İmzalama ve Swift Güvenliği",
+   "Hafta 4 · Güvenli Veri Depolama, Kriptografi, Kimlik Doğrulama ve Biyometri",
+   "Hafta 5 · Statik Analiz ve Tersine Mühendislik: APK/IPA Yapıları, JADX, apktool ve Ghidra",
+   "Hafta 6 · Dinamik Analiz ve Enstrümantasyon: Root/Jailbreak, Frida ve Objection",
+   "Hafta 7 · Ağ İletişimi Güvenliği: TLS, Sertifika Sabitleme ve Araya Girme (MITM) Saldırıları",
+   "Hafta 8 · Mobil API Güvenliği ve Ara Sınav",
+   "Hafta 9 · Yetkilendirme, Oturum Yönetimi, Güvenli Anahtar/Sır Yönetimi ve Deep Link Güvenliği",
+   "Hafta 10 · Firebase, Bulut ve Mobil Arka Uç Güvenliği",
+   "Hafta 11 · Mobil Zararlı Yazılım ve Backdoor Analizi; Etik ve Hukuki Sınırlar",
+   "Hafta 12 · OWASP MASVS/MASTG ve MobSF ile Mobil Uygulama Sızma Testi",
+   "Hafta 13 · Cihaz Üzerinde Yapay Zekâ Güvenliği: LiteRT/Core ML, Model Bütünlüğü, Model Çıkarımı, Adversarial Örnekler ve Mahremiyet",
+   "Hafta 14 · Üretken Yapay Zekâ Entegreli Mobil Uygulama Güvenliği: Prompt Enjeksiyonu, Hassas Veri İfşası, Tedarik Zinciri, Aşırı Yetki ve Uygulamalı CTF"
   ],
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "Mobil Güvenliğe Giriş",
-    "outcomes": "1-2-3"
+    "topic": "Mobil Güvenlik Ekosistemi, Tehdit Modelleme ve Güvenli Yazılım Yaşam Döngüsü",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Android Studio Temelleri",
-    "outcomes": "1-2-3"
+    "topic": "Android Güvenlik Mimarisi: Uygulama Sandbox'ı, İzinler, İmzalama ve Android Studio Güvenlik Araçları",
+    "outcomes": "1-2"
    },
    {
     "week": 3,
-    "topic": "iOS Temelleri",
-    "outcomes": "1-2-3"
+    "topic": "iOS Güvenlik Mimarisi: Sandbox, Entitlements, Keychain, Kod İmzalama ve Swift Güvenliği",
+    "outcomes": "1-2"
    },
    {
     "week": 4,
-    "topic": "Swift Temelleri",
-    "outcomes": "1-2-3"
+    "topic": "Güvenli Veri Depolama, Kriptografi, Kimlik Doğrulama ve Biyometri",
+    "outcomes": "2-4"
    },
    {
     "week": 5,
-    "topic": "Tersine Mühendislik Araçları",
-    "outcomes": "1-2-3"
+    "topic": "Statik Analiz ve Tersine Mühendislik: APK/IPA Yapıları, JADX, apktool ve Ghidra",
+    "outcomes": "3"
    },
    {
     "week": 6,
-    "topic": "Root ve JailBreak İşlemleri",
-    "outcomes": "1-2-3"
+    "topic": "Dinamik Analiz ve Enstrümantasyon: Root/Jailbreak, Frida ve Objection",
+    "outcomes": "2-3"
    },
    {
     "week": 7,
-    "topic": "Backdoor Uygulamaları",
-    "outcomes": "1-2-3"
+    "topic": "Ağ İletişimi Güvenliği: TLS, Sertifika Sabitleme ve Araya Girme (MITM) Saldırıları",
+    "outcomes": "2-4"
    },
    {
     "week": 8,
-    "topic": "Arasınav",
-    "outcomes": "1-2-3"
+    "topic": "Mobil API Güvenliği ve Ara Sınav",
+    "outcomes": "2-4"
    },
    {
     "week": 9,
-    "topic": "Şifrelenmiş Uygulama Örneği",
-    "outcomes": "1-2-3"
+    "topic": "Yetkilendirme, Oturum Yönetimi, Güvenli Anahtar/Sır Yönetimi ve Deep Link Güvenliği",
+    "outcomes": "2-4"
    },
    {
     "week": 10,
-    "topic": "Firebase (Cloud Server) Güvenliği",
-    "outcomes": "1-2-3"
+    "topic": "Firebase, Bulut ve Mobil Arka Uç Güvenliği",
+    "outcomes": "2-4"
    },
    {
     "week": 11,
-    "topic": "Ağ İçi Saldırılar",
-    "outcomes": "1-2-3"
+    "topic": "Mobil Zararlı Yazılım ve Backdoor Analizi; Etik ve Hukuki Sınırlar",
+    "outcomes": "1-3-6"
    },
    {
     "week": 12,
-    "topic": "API Güvenliği",
-    "outcomes": "1-2-3"
+    "topic": "OWASP MASVS/MASTG ve MobSF ile Mobil Uygulama Sızma Testi",
+    "outcomes": "3-4-6"
    },
    {
     "week": 13,
-    "topic": "MobSF Açık kaynaklı Uygulama Kullanımı",
-    "outcomes": "1-2-3"
+    "topic": "Cihaz Üzerinde Yapay Zekâ Güvenliği: LiteRT/Core ML, Model Bütünlüğü, Model Çıkarımı, Adversarial Örnekler ve Mahremiyet",
+    "outcomes": "1-5"
    },
    {
     "week": 14,
-    "topic": "Mobil Uygulama Sızma Testi & CTF Pratik",
-    "outcomes": "1-2-3"
+    "topic": "Üretken Yapay Zekâ Entegreli Mobil Uygulama Güvenliği: Prompt Enjeksiyonu, Hassas Veri İfşası, Tedarik Zinciri, Aşırı Yetki ve Uygulamalı CTF",
+    "outcomes": "4-5-6"
    }
   ],
   "textbooks": [
@@ -1308,89 +1313,89 @@
   ],
   "weeklyTopics": [
    "Hafta 1 · Dersin tanıtımı, temel kavramlar ve motivasyon",
-   "Hafta 2 · Kariyer Nedir",
-   "Hafta 3 · Ulusal ve Uluslararası Değişim Programları",
-   "Hafta 4 · Girişimcilik Nedir",
-   "Hafta 5 · Sektör Günleri-Sivil Toplum Kuruluşları",
-   "Hafta 6 · İnce Yetenekler",
-   "Hafta 7 · Sektör Günleri-Kamu Sektörü",
-   "Hafta 8 · Arasınav, Diksiyon ve Beden Dili",
-   "Hafta 9 · Özgeçmiş ve Kapak Yazısı Hazırlama",
-   "Hafta 10 · Sektör Günleri-Özel Sektör",
-   "Hafta 11 · Etkili Mülakat Teknikleri",
-   "Hafta 12 · Sektör Günleri-Akademi",
-   "Hafta 13 · Sektör Günleri-Girişimcilik",
-   "Hafta 14 · Ders Değerlemesi ve Proje Detayları"
+   "Hafta 2 · Kariyer Nedir, CV Hazırlama",
+   "Hafta 3 · Girişimcilik Nedir",
+   "Hafta 4 · Fikir Geliştirme ve Sektörel İhtiyaç Analizi (Yapay Zeka Destekli)",
+   "Hafta 5 · İş Modelleri ve Gelir Akışları",
+   "Hafta 6 · Pazar Araştırması ve Rakip Analizi",
+   "Hafta 7 · Fikri Mülkiyet, Patentler ve Lisanslama",
+   "Hafta 8 · Konuk Konuşmacı (tarih değişebilir)",
+   "Hafta 9 · Mülakat ve Sunum Teknikleri",
+   "Hafta 10 · Finansman, Teşvikler ve Yatırım Süreçleri",
+   "Hafta 11 · Yapay Zeka Destekli Anne Testi Uygulaması",
+   "Hafta 12 · Proje Sunumları",
+   "Hafta 13 · Proje Sunumları",
+   "Hafta 14 · Konuk Konuşmacı (tarih değişebilir)"
   ],
   "weeklyPlan": [
    {
     "week": 1,
     "topic": "Dersin tanıtımı, temel kavramlar ve motivasyon",
-    "outcomes": "1-2"
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "Kariyer Nedir",
+    "topic": "Kariyer Nedir, CV Hazırlama",
     "outcomes": "1-2"
    },
    {
     "week": 3,
-    "topic": "Ulusal ve Uluslararası Değişim Programları",
-    "outcomes": "1-2"
+    "topic": "Girişimcilik Nedir",
+    "outcomes": "1"
    },
    {
     "week": 4,
-    "topic": "Girişimcilik Nedir",
-    "outcomes": "1-2"
+    "topic": "Fikir Geliştirme ve Sektörel İhtiyaç Analizi (Yapay Zeka Destekli)",
+    "outcomes": "1"
    },
    {
     "week": 5,
-    "topic": "Sektör Günleri-Sivil Toplum Kuruluşları",
-    "outcomes": "1-2"
+    "topic": "İş Modelleri ve Gelir Akışları",
+    "outcomes": "1"
    },
    {
     "week": 6,
-    "topic": "İnce Yetenekler",
-    "outcomes": "1-2"
+    "topic": "Pazar Araştırması ve Rakip Analizi",
+    "outcomes": "1"
    },
    {
     "week": 7,
-    "topic": "Sektör Günleri-Kamu Sektörü",
-    "outcomes": "1-2"
+    "topic": "Fikri Mülkiyet, Patentler ve Lisanslama",
+    "outcomes": "1"
    },
    {
     "week": 8,
-    "topic": "Arasınav, Diksiyon ve Beden Dili",
+    "topic": "Konuk Konuşmacı (tarih değişebilir)",
     "outcomes": "1-2"
    },
    {
     "week": 9,
-    "topic": "Özgeçmiş ve Kapak Yazısı Hazırlama",
-    "outcomes": "1-2"
+    "topic": "Mülakat ve Sunum Teknikleri",
+    "outcomes": "2"
    },
    {
     "week": 10,
-    "topic": "Sektör Günleri-Özel Sektör",
-    "outcomes": "1-2"
+    "topic": "Finansman, Teşvikler ve Yatırım Süreçleri",
+    "outcomes": "1"
    },
    {
     "week": 11,
-    "topic": "Etkili Mülakat Teknikleri",
+    "topic": "Yapay Zeka Destekli Anne Testi Uygulaması",
     "outcomes": "1-2"
    },
    {
     "week": 12,
-    "topic": "Sektör Günleri-Akademi",
+    "topic": "Proje Sunumları",
     "outcomes": "1-2"
    },
    {
     "week": 13,
-    "topic": "Sektör Günleri-Girişimcilik",
+    "topic": "Proje Sunumları",
     "outcomes": "1-2"
    },
    {
     "week": 14,
-    "topic": "Ders Değerlemesi ve Proje Detayları",
+    "topic": "Konuk Konuşmacı (tarih değişebilir)",
     "outcomes": "1-2"
    }
   ],
@@ -1437,8 +1442,8 @@
    "Hafta 10 · Ortak Kriterler (Common Criteria) Standardı",
    "Hafta 11 · Denetim Yapıları",
    "Hafta 12 · Siber Güvenlikte Etik",
-   "Hafta 13 · TR'de Siber Güvenlik Organizasyonu",
-   "Hafta 14 · TR'de Siber Güvenlik Organizasyonu"
+   "Hafta 13 · TR'de Siber Güvenlik Organizasyonu ve Yapay Zeka",
+   "Hafta 14 · TR'de Siber Güvenlik Organizasyonu ve Yapay Zeka"
   ],
   "weeklyPlan": [
    {
@@ -1503,12 +1508,12 @@
    },
    {
     "week": 13,
-    "topic": "TR'de Siber Güvenlik Organizasyonu",
+    "topic": "TR'de Siber Güvenlik Organizasyonu ve Yapay Zeka",
     "outcomes": "1-2-3-4"
    },
    {
     "week": 14,
-    "topic": "TR'de Siber Güvenlik Organizasyonu",
+    "topic": "TR'de Siber Güvenlik Organizasyonu ve Yapay Zeka",
     "outcomes": "1-2-3-4"
    }
   ],
@@ -1543,84 +1548,84 @@
    "Hafta 4 · Güvenli Kimlik Doğrulama",
    "Hafta 5 · Güvenli Password Reset Stratejileri",
    "Hafta 6 · Güvenli Oturum Yönetimi",
-   "Hafta 7 · Session Fixation ve Önlemi",
-   "Hafta 8 · Session Korsanlığı",
-   "Hafta 9 · Güvenli Yetkilendirme",
-   "Hafta 10 · Yetkilendirme Yöntemleri",
-   "Hafta 11 · Güvenli Dizayn, Hata Yönetimi ve Kayıt Tutma",
-   "Hafta 12 · Statik Güvenli Kod Analizi",
-   "Hafta 13 · Güvenli Web 2.0",
-   "Hafta 14 · DevSecOps kavramı"
+   "Hafta 7 · Session Fixation ve Önlemleri",
+   "Hafta 8 · Session Hijacking ve Güvenli Oturum Koruması",
+   "Hafta 9 · Güvenli Yetkilendirme ve Yetkilendirme Modelleri",
+   "Hafta 10 · Yapay Zekâ Destekli Yazılım Geliştirme (GitHub Copilot, ChatGPT vb.) ve Güvenli Kod Üretimi",
+   "Hafta 11 · Yapay Zekâ Uygulamalarının Güvenliği (LLM Güvenliği, Prompt Injection, Model Güvenliği, OWASP Top 10 for LLM Applications)",
+   "Hafta 12 · Statik Güvenli Kod Analizi (SAST, AI destekli kod analizi araçları dahil)",
+   "Hafta 13 · Güvenli Web Uygulamaları ve DevSecOps",
+   "Hafta 14 · Genel Değerlendirme, Güncel Güvenli Yazılım Yaklaşımları ve Sektör Uygulamaları"
   ],
   "weeklyPlan": [
    {
     "week": 1,
     "topic": "Güvenli Girdi Denetimi, Yazılım Güvenliği",
-    "outcomes": "1-2-3-4"
+    "outcomes": "1-2-3"
    },
    {
     "week": 2,
     "topic": "Girdi Denetimi Stratejileri",
-    "outcomes": "1-2-3-4"
+    "outcomes": "2-3"
    },
    {
     "week": 3,
     "topic": "Güvenli Kriptografi",
-    "outcomes": "1-2-3-4"
+    "outcomes": "2-3"
    },
    {
     "week": 4,
     "topic": "Güvenli Kimlik Doğrulama",
-    "outcomes": "1-2-3-4"
+    "outcomes": "2-3"
    },
    {
     "week": 5,
     "topic": "Güvenli Password Reset Stratejileri",
-    "outcomes": "1-2-3-4"
+    "outcomes": "2-3"
    },
    {
     "week": 6,
     "topic": "Güvenli Oturum Yönetimi",
-    "outcomes": "1-2-3-4"
+    "outcomes": "2-3"
    },
    {
     "week": 7,
-    "topic": "Session Fixation ve Önlemi",
-    "outcomes": "1-2-3-4"
+    "topic": "Session Fixation ve Önlemleri",
+    "outcomes": "2-3"
    },
    {
     "week": 8,
-    "topic": "Session Korsanlığı",
-    "outcomes": "1-2-3-4"
+    "topic": "Session Hijacking ve Güvenli Oturum Koruması",
+    "outcomes": "2-3"
    },
    {
     "week": 9,
-    "topic": "Güvenli Yetkilendirme",
-    "outcomes": "1-2-3-4"
+    "topic": "Güvenli Yetkilendirme ve Yetkilendirme Modelleri",
+    "outcomes": "2-3"
    },
    {
     "week": 10,
-    "topic": "Yetkilendirme Yöntemleri",
-    "outcomes": "1-2-3-4"
+    "topic": "Yapay Zekâ Destekli Yazılım Geliştirme (GitHub Copilot, ChatGPT vb.) ve Güvenli Kod Üretimi",
+    "outcomes": "2-3-4"
    },
    {
     "week": 11,
-    "topic": "Güvenli Dizayn, Hata Yönetimi ve Kayıt Tutma",
-    "outcomes": "1-2-3-4"
+    "topic": "Yapay Zekâ Uygulamalarının Güvenliği (LLM Güvenliği, Prompt Injection, Model Güvenliği, OWASP Top 10 for LLM Applications)",
+    "outcomes": "2-3-4"
    },
    {
     "week": 12,
-    "topic": "Statik Güvenli Kod Analizi",
-    "outcomes": "1-2-3-4"
+    "topic": "Statik Güvenli Kod Analizi (SAST, AI destekli kod analizi araçları dahil)",
+    "outcomes": "2-3-4"
    },
    {
     "week": 13,
-    "topic": "Güvenli Web 2.0",
-    "outcomes": "1-2-3-4"
+    "topic": "Güvenli Web Uygulamaları ve DevSecOps",
+    "outcomes": "2-3-4"
    },
    {
     "week": 14,
-    "topic": "DevSecOps kavramı",
+    "topic": "Genel Değerlendirme, Güncel Güvenli Yazılım Yaklaşımları ve Sektör Uygulamaları",
     "outcomes": "1-2-3-4"
    }
   ],
@@ -1647,90 +1652,90 @@
    "Etkili iletişimin ve etkili sunumun temel gereksinimlerini kişisel ve profesyonel hayatında uygulayabilme"
   ],
   "weeklyTopics": [
-   "Hafta 1 · İletişim nedir?, Motivasyon",
-   "Hafta 2 · İletişimde algının rolü",
-   "Hafta 3 · Doğru Anlatma",
-   "Hafta 4 · Sanal İletişim",
-   "Hafta 5 · Yeni Medya Araçları",
-   "Hafta 6 · Etkili İletişim ve Toplumsal Cinsiyet",
-   "Hafta 7 · İletişimde Kalite",
-   "Hafta 8 · Etkili İletişimde Konuşma ve Sunum",
-   "Hafta 9 · Arasınav, Etkili İletişimde Dinleme",
-   "Hafta 10 · Konuşma ve Sunum Teknikleri",
-   "Hafta 11 · Etkileme ve İkna Edici Konuşma",
-   "Hafta 12 · Sunum Türleri",
-   "Hafta 13 · Sunum Teknikleri",
-   "Hafta 14 · Sözsüz İletişim"
+   "Hafta 1 · İletişimin Temelleri ve Motivasyon",
+   "Hafta 2 · İletişimde Algı, Etkin Dinleme ve Geri Bildirim",
+   "Hafta 3 · Doğru Anlatma ve Mesaj Tasarımı",
+   "Hafta 4 · Sanal İletişim ve Dijital Görgü Kuralları",
+   "Hafta 5 · Yeni Medya Araçları ve Dijital İletişim",
+   "Hafta 6 · Kapsayıcı İletişim ve Toplumsal Cinsiyet",
+   "Hafta 7 · İletişimde Kalite ve Çatışma Yönetimi",
+   "Hafta 8 · Etkili İletişimde Konuşma ve Sunumun Temelleri",
+   "Hafta 9 · Arasınav, Etkin Dinleme ve Geri Bildirim Uygulamaları",
+   "Hafta 10 · Konuşma ve Sunum Teknikleri: Hikâyeleştirme ve Görsel Tasarım",
+   "Hafta 11 · Etkileme, İkna ve Etik Söylem",
+   "Hafta 12 · Yapay Zekâ Destekli İletişim: İçerik Üretimi, Hedef Kitle ve Doğrulama",
+   "Hafta 13 · Yapay Zekâ Destekli Sunum Tasarımı ve Etik: Kaynak, Önyargı, Gizlilik ve Telif",
+   "Hafta 14 · Sunum Türleri, Sözsüz İletişim ve Bütünleşik Sunum Uygulaması"
   ],
   "weeklyPlan": [
    {
     "week": 1,
-    "topic": "İletişim nedir?, Motivasyon",
-    "outcomes": "1-2"
+    "topic": "İletişimin Temelleri ve Motivasyon",
+    "outcomes": "1"
    },
    {
     "week": 2,
-    "topic": "İletişimde algının rolü",
-    "outcomes": "1-2"
+    "topic": "İletişimde Algı, Etkin Dinleme ve Geri Bildirim",
+    "outcomes": "1"
    },
    {
     "week": 3,
-    "topic": "Doğru Anlatma",
+    "topic": "Doğru Anlatma ve Mesaj Tasarımı",
     "outcomes": "1-2"
    },
    {
     "week": 4,
-    "topic": "Sanal İletişim",
+    "topic": "Sanal İletişim ve Dijital Görgü Kuralları",
     "outcomes": "1-2"
    },
    {
     "week": 5,
-    "topic": "Yeni Medya Araçları",
+    "topic": "Yeni Medya Araçları ve Dijital İletişim",
     "outcomes": "1-2"
    },
    {
     "week": 6,
-    "topic": "Etkili İletişim ve Toplumsal Cinsiyet",
+    "topic": "Kapsayıcı İletişim ve Toplumsal Cinsiyet",
     "outcomes": "1-2"
    },
    {
     "week": 7,
-    "topic": "İletişimde Kalite",
+    "topic": "İletişimde Kalite ve Çatışma Yönetimi",
     "outcomes": "1-2"
    },
    {
     "week": 8,
-    "topic": "Etkili İletişimde Konuşma ve Sunum",
-    "outcomes": "1-2"
+    "topic": "Etkili İletişimde Konuşma ve Sunumun Temelleri",
+    "outcomes": "2"
    },
    {
     "week": 9,
-    "topic": "Arasınav, Etkili İletişimde Dinleme",
+    "topic": "Arasınav, Etkin Dinleme ve Geri Bildirim Uygulamaları",
     "outcomes": "1-2"
    },
    {
     "week": 10,
-    "topic": "Konuşma ve Sunum Teknikleri",
-    "outcomes": "1-2"
+    "topic": "Konuşma ve Sunum Teknikleri: Hikâyeleştirme ve Görsel Tasarım",
+    "outcomes": "2"
    },
    {
     "week": 11,
-    "topic": "Etkileme ve İkna Edici Konuşma",
-    "outcomes": "1-2"
+    "topic": "Etkileme, İkna ve Etik Söylem",
+    "outcomes": "2"
    },
    {
     "week": 12,
-    "topic": "Sunum Türleri",
-    "outcomes": "1-2"
+    "topic": "Yapay Zekâ Destekli İletişim: İçerik Üretimi, Hedef Kitle ve Doğrulama",
+    "outcomes": "2"
    },
    {
     "week": 13,
-    "topic": "Sunum Teknikleri",
-    "outcomes": "1-2"
+    "topic": "Yapay Zekâ Destekli Sunum Tasarımı ve Etik: Kaynak, Önyargı, Gizlilik ve Telif",
+    "outcomes": "2"
    },
    {
     "week": 14,
-    "topic": "Sözsüz İletişim",
+    "topic": "Sunum Türleri, Sözsüz İletişim ve Bütünleşik Sunum Uygulaması",
     "outcomes": "1-2"
    }
   ],
@@ -1753,7 +1758,7 @@
   },
   "description": "Proje Yöneticisi ve ekibi & Proje Konusu ve Planını Belirleme & İş Akışı ve Takvimlerdirme & Proje Kontrolü &Proje Süreçlerinin Yönetimi & İletişim & Farklılıkları Yönetmek & İzleme ve Kontrol & Proje Sürecinin Sonuçlandırılması Project Manager and Team & Determining Project Subject and Planning & Workflow and Scheduling & Project Control & Management of Project Processes & Communication & Managing Differences & Monitoring and Control & Closing the Project Process",
   "outcomes": [
-   "Pratik uygulama odaklı olarak, proje yönetimi temel prensiplerini anlama; başlatma, planlama, uygulama, kontrol ve kapanış süreçlerini yönetme.",
+   "Proje yönetiminin temel prensiplerini kavrar; başlatma, planlama, uygulama, kontrol ve kapanış süreçlerini pratik bir yaklaşımla yönetir.",
    "Proje odaklı rollerde başarı için gerekli olan pratik proje yönetimi becerileri geliştir profesyonellik, etik davranış ve etkili takım çalışmasına hazır hale gelir."
   ],
   "weeklyTopics": [
@@ -1761,86 +1766,86 @@
    "Hafta 2 · Proje Yöneticisi ve ekibi",
    "Hafta 3 · Proje Konusu ve Planını Belirleme",
    "Hafta 4 · Proje Planını Belirleme",
-   "Hafta 5 · İş Akışı ve Takvimlerdirme",
-   "Hafta 6 · Proje Kontrolü",
-   "Hafta 7 · Proje Süreçlerinin Yönetimi: Değişilikler",
-   "Hafta 8 · Proje Süreçlerinin Yönetimi: Çıktılar",
-   "Hafta 9 · Arasınav, tekrar",
+   "Hafta 5 · Yapay Zeka Destekli Proje Yazımı I",
+   "Hafta 6 · İş Akışı ve Takvimlendirme",
+   "Hafta 7 · Proje Kontrolü",
+   "Hafta 8 · Proje Süreçlerinin Yönetimi: Değişiklikler",
+   "Hafta 9 · Proje Süreçlerinin Yönetimi: Çıktılar",
    "Hafta 10 · Proje Süreçlerinin Yönetimi: Riskler",
    "Hafta 11 · Proje Süreçlerinin Yönetimi: Bütçe ve Maliyet",
    "Hafta 12 · İletişim, Farklılıkları Yönetmek",
-   "Hafta 13 · İzleme ve Kontrol",
-   "Hafta 14 · Proje Sürecinin Sonuçlandırılması"
+   "Hafta 13 · Proje Sürecinin Sonuçlandırılması",
+   "Hafta 14 · Yapay Zeka Destekli Proje Yazımı II"
   ],
   "weeklyPlan": [
    {
     "week": 1,
     "topic": "Dersin tanıtımı, temel kavramlar ve motivasyon",
-    "outcomes": "1-2"
+    "outcomes": "1"
    },
    {
     "week": 2,
     "topic": "Proje Yöneticisi ve ekibi",
-    "outcomes": "1-2"
+    "outcomes": "2"
    },
    {
     "week": 3,
     "topic": "Proje Konusu ve Planını Belirleme",
-    "outcomes": "1-2"
+    "outcomes": "1"
    },
    {
     "week": 4,
     "topic": "Proje Planını Belirleme",
-    "outcomes": "1-2"
+    "outcomes": "1"
    },
    {
     "week": 5,
-    "topic": "İş Akışı ve Takvimlerdirme",
+    "topic": "Yapay Zeka Destekli Proje Yazımı I",
     "outcomes": "1-2"
    },
    {
     "week": 6,
-    "topic": "Proje Kontrolü",
-    "outcomes": "1-2"
+    "topic": "İş Akışı ve Takvimlendirme",
+    "outcomes": "1"
    },
    {
     "week": 7,
-    "topic": "Proje Süreçlerinin Yönetimi: Değişilikler",
-    "outcomes": "1-2"
+    "topic": "Proje Kontrolü",
+    "outcomes": "1"
    },
    {
     "week": 8,
-    "topic": "Proje Süreçlerinin Yönetimi: Çıktılar",
+    "topic": "Proje Süreçlerinin Yönetimi: Değişiklikler",
     "outcomes": "1-2"
    },
    {
     "week": 9,
-    "topic": "Arasınav, tekrar",
-    "outcomes": "1-2"
+    "topic": "Proje Süreçlerinin Yönetimi: Çıktılar",
+    "outcomes": "1"
    },
    {
     "week": 10,
     "topic": "Proje Süreçlerinin Yönetimi: Riskler",
-    "outcomes": "1-2"
+    "outcomes": "1"
    },
    {
     "week": 11,
     "topic": "Proje Süreçlerinin Yönetimi: Bütçe ve Maliyet",
-    "outcomes": "1-2"
+    "outcomes": "1"
    },
    {
     "week": 12,
     "topic": "İletişim, Farklılıkları Yönetmek",
-    "outcomes": "1-2"
+    "outcomes": "2"
    },
    {
     "week": 13,
-    "topic": "İzleme ve Kontrol",
-    "outcomes": "1-2"
+    "topic": "Proje Sürecinin Sonuçlandırılması",
+    "outcomes": "1"
    },
    {
     "week": 14,
-    "topic": "Proje Sürecinin Sonuçlandırılması",
+    "topic": "Yapay Zeka Destekli Proje Yazımı II",
     "outcomes": "1-2"
    }
   ],
@@ -1879,8 +1884,8 @@
    "Hafta 10 · Sonlu Alanlar",
    "Hafta 11 · Gelişmiş Şifreleme Standardı I",
    "Hafta 12 · Gelişmiş Şifreleme Standardı II",
-   "Hafta 13 · Blok Şifre İşlemi",
-   "Hafta 14 · Psödo-Rassal Sayı Üretimi"
+   "Hafta 13 · Yapay Zeka Destekli Kriptoanaliz ve Blok Şifre İşlemleri",
+   "Hafta 14 · Yapay Zeka Tabanlı Psödo-Rassal Sayı Üretimi (PRNG) Testleri ve Üretken YZ ile İleri Steganografi"
   ],
   "weeklyPlan": [
    {
@@ -1945,12 +1950,12 @@
    },
    {
     "week": 13,
-    "topic": "Blok Şifre İşlemi",
+    "topic": "Yapay Zeka Destekli Kriptoanaliz ve Blok Şifre İşlemleri",
     "outcomes": "1-2"
    },
    {
     "week": 14,
-    "topic": "Psödo-Rassal Sayı Üretimi",
+    "topic": "Yapay Zeka Tabanlı Psödo-Rassal Sayı Üretimi (PRNG) Testleri ve Üretken YZ ile İleri Steganografi",
     "outcomes": "1-2"
    }
   ],
@@ -1984,14 +1989,14 @@
    "Hafta 4 · CSS - Basamaklı Stil Sayfalarına Giriş ve Temel Kavramlar",
    "Hafta 5 · JavaScript: Betik Programlamaya Giriş",
    "Hafta 6 · JavaScript: Kontrol İfadeleri (if-else, while, atama komutları)",
-   "Hafta 7 · JavaScript: Kontrol İfadeleri (for, switch, do-while, break, continue)",
+   "Hafta 7 · Yapay Zeka Destekli Kod Geliştirme — AI kodlama asistanları (GitHub Copilot, Claude Code vb.), prompt mühendisliği ile web geliştirme, kod tamamlama ve hata ayıklamada AI kullanımı",
    "Hafta 8 · Arasınav, JavaScript: Fonksiyonlar (parametreli / parametresi, değer döndüren / değer döndürmeyen)",
    "Hafta 9 · JavaScript: Diziler (Tek boyutlu / İki boyutlu) ve Nesneler (Math, String, Date, Document)",
    "Hafta 10 · JavaScript: Nesneler",
    "Hafta 11 · JavaScript: Olaylar",
    "Hafta 12 · Doküman Nesne Modeli",
    "Hafta 13 · Bootstrap: Giriş ve Temel Kavramlar",
-   "Hafta 14 · XML ve Ajax Giriş"
+   "Hafta 14 · Yapay Zeka API Entegrasyonu ile Web Uygulamaları — OpenAI/Claude API'lerine giriş, fetch/Ajax ile AI servislerine bağlanma, basit bir chatbot arayüzü geliştirme"
   ],
   "weeklyPlan": [
    {
@@ -2026,7 +2031,7 @@
    },
    {
     "week": 7,
-    "topic": "JavaScript: Kontrol İfadeleri (for, switch, do-while, break, continue)",
+    "topic": "Yapay Zeka Destekli Kod Geliştirme — AI kodlama asistanları (GitHub Copilot, Claude Code vb.), prompt mühendisliği ile web geliştirme, kod tamamlama ve hata ayıklamada AI kullanımı",
     "outcomes": "1-2-3"
    },
    {
@@ -2061,7 +2066,7 @@
    },
    {
     "week": 14,
-    "topic": "XML ve Ajax Giriş",
+    "topic": "Yapay Zeka API Entegrasyonu ile Web Uygulamaları — OpenAI/Claude API'lerine giriş, fetch/Ajax ile AI servislerine bağlanma, basit bir chatbot arayüzü geliştirme",
     "outcomes": "1-2-3"
    }
   ],
@@ -2098,7 +2103,7 @@
    "Hafta 6 · Hata ve Performans Ölçütleri",
    "Hafta 7 · Neden Yapay Zeka ve Güvenlik?",
    "Hafta 8 · Uygulamada Makine Öğrenme: Çalışılmış Örnekler",
-   "Hafta 9 · Arasınav",
+   "Hafta 9 · Yapay Zeka Uygulamaları Geliştirme ve Arasınav",
    "Hafta 10 · Sınıflandırma ve Kümeleme",
    "Hafta 11 · Anomali Tespiti",
    "Hafta 12 · Makine Öğrenmenin Güvenlikte Uygulama Zorlukları",
@@ -2148,7 +2153,7 @@
    },
    {
     "week": 9,
-    "topic": "Arasınav",
+    "topic": "Yapay Zeka Uygulamaları Geliştirme ve Arasınav",
     "outcomes": "1-2-3"
    },
    {

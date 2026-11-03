@@ -11,10 +11,106 @@
    "local": 3,
    "ects": 4
   },
-  "description": "- -",
-  "outcomes": null,
+  "description": "Öğrencilere günlük hayatta kullanılan Korece kalıpları ve dilbilgisi eklerini öğretme ve Kore hükümeti tarafından düzenlenen TOPIK sınavının temel seviyesine (A1) hazırlık derslerini içerir. It includes lessons that teach Korean phrases and grammar suffixes used in daily life, and prepare students for the beginner level (A1) of the TOPIK exam organized by the Korean government.",
+  "outcomes": [
+   "Korece başlangıç düzeyi yazım ve okuma kurallarını anlama",
+   "Cümle bitirme ekleri, cümle yapısı, zaman ve saati öğrenip kendini tanıtabilme",
+   "Cümlede kullanılan zaman, olumsuzluk ve özne-nesne ekleriyle beraber oda, yurt, okul vb. yerleri tanıtabilme",
+   "Sıralama, karşıtlık, zaman, yapabilme ve beceri anlamlarını karşılayan dilbilgisi eklerini öğrenip mesleği, ailesi ve memleket tanıtımı yapabilme",
+   "Emir, zorunluluk, izin ve yasaklama anlamı veren ekleri öğrenip arkadaş hakkında konuşabilme",
+   "Umut anlamı veren ekleri kullanabilme ve Korece yemekleri tanıtabilme",
+   "Sebeb-sonuç anlamı veren eki kullanabilme, restoranda sipariş verme ve yemek daveti gibi konularda konuşabilme"
+  ],
+  "weeklyTopics": [
+   "Hafta 1 · Kore Alfabesine Giriş (Hangıl), Ünlüler, Ünsüzler Hece Yapısı, Yazım Kuralları",
+   "Hafta 2 · Okuma Kuralları",
+   "Hafta 3 · Kore Cümle Yapısı ve Cümle Türleri Kendini Tanıtma",
+   "Hafta 4 · ‘Olmak’ Fiili, Sayılar, Haftanın Günleri, Saati Okuyabilme Sınıf Tarifi",
+   "Hafta 5 · Cümlede Zaman Ekleri (Geçmiş, Gelecek, Şimdiki Zaman vs.) Oda Tarifi",
+   "Hafta 6 · Olumsuz İfadeler Okul Tanıtımı",
+   "Hafta 7 · Özne ve Nesneye Eklenen Ekler Yurt Tanıtımı",
+   "Hafta 8 · Özne ve Nesneye Eklenen Ekler Sıralama ve Karşıtlık Anlamı Veren Ekler Meslekler",
+   "Hafta 9 · Zaman Anlamı Veren Ekler Aile Tanıtımı",
+   "Hafta 10 · Zaman Anlamı Veren Ekler Yapabilme ve Beceri Anlamı Veren Ekler Memleket Tanıtımı",
+   "Hafta 11 · Emir, Zorunluluk, İzin ve Yasaklama Anlamı Veren Ekler Arkadaş Hakkında Konuşma",
+   "Hafta 12 · Emir, Zorunluluk, İzin ve Yasaklama Anlamı Veren Ekler Korece Yemekler",
+   "Hafta 13 · Umut Anlamı Veren Ekler Restoran",
+   "Hafta 14 · Sebep-Sonuç Anlamı Veren Ekler Yemek Daveti, Yemek Siparişi"
+  ],
+  "weeklyPlan": [
+   {
+    "week": 1,
+    "topic": "Kore Alfabesine Giriş (Hangıl), Ünlüler, Ünsüzler Hece Yapısı, Yazım Kuralları",
+    "outcomes": "1"
+   },
+   {
+    "week": 2,
+    "topic": "Okuma Kuralları",
+    "outcomes": "1"
+   },
+   {
+    "week": 3,
+    "topic": "Kore Cümle Yapısı ve Cümle Türleri Kendini Tanıtma",
+    "outcomes": "2"
+   },
+   {
+    "week": 4,
+    "topic": "‘Olmak’ Fiili, Sayılar, Haftanın Günleri, Saati Okuyabilme Sınıf Tarifi",
+    "outcomes": "2"
+   },
+   {
+    "week": 5,
+    "topic": "Cümlede Zaman Ekleri (Geçmiş, Gelecek, Şimdiki Zaman vs.) Oda Tarifi",
+    "outcomes": "3"
+   },
+   {
+    "week": 6,
+    "topic": "Olumsuz İfadeler Okul Tanıtımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 7,
+    "topic": "Özne ve Nesneye Eklenen Ekler Yurt Tanıtımı",
+    "outcomes": "3"
+   },
+   {
+    "week": 8,
+    "topic": "Özne ve Nesneye Eklenen Ekler Sıralama ve Karşıtlık Anlamı Veren Ekler Meslekler",
+    "outcomes": "3-4"
+   },
+   {
+    "week": 9,
+    "topic": "Zaman Anlamı Veren Ekler Aile Tanıtımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 10,
+    "topic": "Zaman Anlamı Veren Ekler Yapabilme ve Beceri Anlamı Veren Ekler Memleket Tanıtımı",
+    "outcomes": "4"
+   },
+   {
+    "week": 11,
+    "topic": "Emir, Zorunluluk, İzin ve Yasaklama Anlamı Veren Ekler Arkadaş Hakkında Konuşma",
+    "outcomes": "5"
+   },
+   {
+    "week": 12,
+    "topic": "Emir, Zorunluluk, İzin ve Yasaklama Anlamı Veren Ekler Korece Yemekler",
+    "outcomes": "5-6"
+   },
+   {
+    "week": 13,
+    "topic": "Umut Anlamı Veren Ekler Restoran",
+    "outcomes": "6"
+   },
+   {
+    "week": 14,
+    "topic": "Sebep-Sonuç Anlamı Veren Ekler Yemek Daveti, Yemek Siparişi",
+    "outcomes": "7"
+   }
+  ],
   "textbooks": [
-   "-"
+   "Ahn, J., Lee, K. & Han, H. (2013). Korean Grammar in Use (Beginning to Early Intermediate). Darakwon."
   ],
   "sourceUrl": "https://obs.itu.edu.tr/public/DersKatalog/DersKatalogBilgiBransDersKodu?bransKodu=KOR&dersNo=101"
  }

@@ -18,6 +18,7 @@ import (
 	"strings"
 	"time"
 	"unicode"
+	"unicode/utf8"
 
 	"itu-scraper/internal/model"
 	"itu-scraper/internal/term"
@@ -37,6 +38,8 @@ type lang struct {
 	NavTakvim              string
 	NavProgram             string
 	NavHakkinda            string
+	FootToolsHead          string
+	FootTools              []navLink // site geneli "Araçlar" bağlantı bloğu
 	CrumbHome              string
 	SkipToContent          string // klavye kullanıcısı için ilk odak bağlantısı
 	FootScanned            string
@@ -62,8 +65,6 @@ type lang struct {
 	BranchTermHeading      string // "Dönem dökümü"
 	BranchTermCol          string // "Dönem"
 	BranchSecCol           string // "Şube"
-	CourseTitleFmt         string // "%s: ..."
-	CourseLeadFmt          string // "%s (%s): İTÜ'de %d dönemde..."
 	CourseSearchCTA        string
 	CourseStatTerms        string // "toplam dönem"
 	CourseSectHead         string // "Son dönem şubeleri"
@@ -84,9 +85,7 @@ type lang struct {
 	CourseGradesColGrades  string
 	CourseGradesColCommon  string
 	CourseGradesNote       string
-	InstrTitleFmt          string // "%s: verdiği dersler"
 	InstrLeadFmt           string
-	InstrDescriptionFmt    string
 	InstrStatTerms         string // "toplam dönem"
 	InstrStatRecords       string // "ders kaydı"
 	InstrStatCourses       string // "farklı ders"
@@ -117,6 +116,18 @@ var langTR = lang{
 	SiteTitle:   "İTÜ Ders Arşivi",
 	SiteTagline: "obs.itu.edu.tr ve takvim.sis.itu.edu.tr üzerinden otomatik toplanan açık veri. Hangi dönemde hangi dersin açıldığı, kim verdiği, kaç kişi yazıldığı: kalıcı olarak.",
 	NavDersler:  "dersler", NavGecmis: "geçmiş", NavOnsart: "önşart", NavSinavlar: "sınavlar", NavTakvim: "takvim", NavProgram: "program", NavHakkinda: "hakkında",
+	// Statik sayfalardaki sekmeler SPA hash rotaları (/#takvim) yerine iniş
+	// sayfalarına gider: /#... bağlantılarının hepsi ana sayfa sayılır ve ~11
+	// bin sayfanın iç bağlantı değeri iniş sayfalarına hiç ulaşmıyordu. Her iniş
+	// sayfası ilk ekranda aracı açan birincil düğmeyi taşır.
+	FootToolsHead: "Araçlar",
+	FootTools: []navLink{
+		{"/ders-programi/", "İTÜ ders programı"}, {"/ders-programi-olustur/", "Ders programı oluşturucu"},
+		{"/ders-arsivi/", "Geçmiş dönem ders arşivi"}, {"/onsart-haritasi/", "Önşart haritası"},
+		{"/gano-hesaplama/", "GPA / GANO hesaplama"}, {"/not-dagilimi/", "Not dağılımı"},
+		{"/akademik-takvim/", "Akademik takvim"}, {"/sinav-programi/", "Sınav programı"},
+		{"/hoca/", "Hocalar"}, {"/bolumler/", "Bölümler"},
+	},
 	CrumbHome: "Ders Arşivi", SkipToContent: "İçeriğe atla",
 	FootScanned: "son tarama", FootLive: "canlı site", FootSitemap: "sitemap",
 	TermSuffix:    "ders programı ve arşivi",
@@ -127,8 +138,6 @@ var langTR = lang{
 	BranchTitleFmt: "%s branşı dersleri ve dönem dökümü", BranchLeadFmt: "İTÜ %s branşının tüm dönemlerdeki arşivi: %d ders kodu, %d dönem, %d şube.",
 	BranchH1Fmt: "%s branşı", BranchSearchCTA: "bu branşı canlı ara", BranchCodeHeading: "Ders kodları", BranchTermHeading: "Dönem dökümü",
 	BranchTermCol: "Dönem", BranchSecCol: "Şube",
-	CourseTitleFmt:  "%s: %s",
-	CourseLeadFmt:   "%s (%s): İTÜ'de %d dönemde açılmış bir ders. Geçmiş şubeleri, öğretim üyeleri ve son dönem programı.",
 	CourseSearchCTA: "bu dersi canlı ara", CourseStatTerms: "toplam dönem",
 	CourseSectHead: "Son dönem şubeleri", CourseSectCRN: "CRN", CourseSectInstr: "Öğretim Üyesi", CourseSectTime: "Zaman", CourseSectCap: "Kont/Yazılan",
 	CourseHistHead: "Dönem geçmişi", CourseHistTerm: "Dönem", CourseHistInstr: "Öğretim Üyesi", CourseHistCap: "Kont", CourseHistEnr: "Yazılan",
@@ -140,9 +149,7 @@ var langTR = lang{
 	CourseGradesColGrades:  "Not kaydı",
 	CourseGradesColCommon:  "En sık",
 	CourseGradesNote:       "Resmî OBS not dağılımı arşividir. Yalnızca açıklanan notları içerir; başarı tahmini veya öğretim üyesi değerlendirmesi değildir.",
-	InstrTitleFmt:          "%s: not dağılımı ve İTÜ'de verdiği dersler",
 	InstrLeadFmt:           "%s için İTÜ Ders Arşivi'nde %d döneme ait %d ders kaydı bulunuyor. %d farklı ders; son kayıt %s.",
-	InstrDescriptionFmt:    "%s: İTÜ'de verdiği derslerin not dağılımı, açtığı dönemler ve geçmiş kontenjan bilgileri. Arşivde %d dönem ve %d farklı ders; son kayıt %s.",
 	InstrStatTerms:         "toplam dönem", InstrStatRecords: "ders kaydı", InstrStatCourses: "farklı ders", InstrStatLatest: "son kayıt",
 	InstrFrequentHead: "En sık verdiği dersler", InstrHistoryHead: "Dönemlere göre ders geçmişi",
 	InstrBranchesHead: "İlgili branşlar",
@@ -165,6 +172,14 @@ var langEN = lang{
 	SiteTitle:   "İTÜ Course Archive",
 	SiteTagline: "Open data automatically collected from obs.itu.edu.tr. Which courses opened in which term, who taught them, how many enrolled: permanently archived.",
 	NavDersler:  "courses", NavGecmis: "history", NavOnsart: "prereqs", NavSinavlar: "exams", NavTakvim: "calendar", NavProgram: "schedule", NavHakkinda: "about",
+	// EN iniş sayfası olmayan araçlar SPA'ya gider; SPA dil anahtarını kendi okur.
+	FootToolsHead: "Tools",
+	FootTools: []navLink{
+		{"/en/schedule-builder/", "ITU course schedule builder"}, {"/en/gpa-calculator/", "GPA calculator"},
+		{"/en/programs/", "Faculties and programs"}, {"/en/how-to-register-for-courses/", "How course registration works"},
+		{"/en/how-to-build-your-schedule/", "How to build your schedule"}, {"/en/glossary/", "ITU glossary"},
+		{"/not-dagilimi/", "Grade distributions (Turkish)"}, {"/hoca/", "Instructors (Turkish)"},
+	},
 	CrumbHome: "Course Archive", SkipToContent: "Skip to content",
 	FootScanned: "last scrape", FootLive: "live site", FootSitemap: "sitemap",
 	TermSuffix:    "course schedule and archive",
@@ -175,8 +190,6 @@ var langEN = lang{
 	BranchTitleFmt: "%s branch courses and term breakdown", BranchLeadFmt: "İTÜ %s branch archive across all terms: %d course codes, %d terms, %d sections.",
 	BranchH1Fmt: "%s branch", BranchSearchCTA: "search this branch live", BranchCodeHeading: "Course codes", BranchTermHeading: "Term breakdown",
 	BranchTermCol: "Term", BranchSecCol: "Sections",
-	CourseTitleFmt:  "%s: %s",
-	CourseLeadFmt:   "%s (%s): offered in %d terms at İTÜ. Historical sections, instructors, and latest schedule.",
 	CourseSearchCTA: "search this course live", CourseStatTerms: "total terms",
 	CourseSectHead: "Latest term sections", CourseSectCRN: "CRN", CourseSectInstr: "Instructor", CourseSectTime: "Time", CourseSectCap: "Cap/Enr",
 	CourseHistHead: "Term history", CourseHistTerm: "Term", CourseHistInstr: "Instructor", CourseHistCap: "Cap", CourseHistEnr: "Enr",
@@ -188,9 +201,7 @@ var langEN = lang{
 	CourseGradesColGrades:  "Grades",
 	CourseGradesColCommon:  "Most common",
 	CourseGradesNote:       "Official OBS grade-distribution archive. It contains only published grades and is neither a performance forecast nor an instructor rating.",
-	InstrTitleFmt:          "%s: grade distribution and courses taught at İTÜ",
 	InstrLeadFmt:           "%s has %d terms and %d course records in the İTÜ Course Archive, across %d distinct courses; latest record %s.",
-	InstrDescriptionFmt:    "Grade distribution and courses taught by %s at İTÜ, including terms and historical enrollment. %d terms and %d distinct courses; latest record %s.",
 	InstrStatTerms:         "total terms", InstrStatRecords: "course records", InstrStatCourses: "distinct courses", InstrStatLatest: "latest record",
 	InstrFrequentHead: "Most frequently taught courses", InstrHistoryHead: "Course history by term",
 	InstrBranchesHead: "Related branches",
@@ -232,6 +243,12 @@ type Builder struct {
 	hmMatch            map[string]*hmEntry                   // hoca slug -> eşleşen hocametre girişi
 	currentSects       map[string][]sectRow                  // katlanmış hoca adı -> aktif dönem şubeleri
 	courseInstrs       map[string]map[string]map[string]bool // ders kodu -> hoca slug -> dönem kümesi
+
+	// Sitemap lastmod: önceki üretimdeki sayfa içerik özeti ve lastmod'u,
+	// bu üretimde yazılan sayfaların özetiyle karşılaştırılır (bkz. lastmod.go).
+	pageHashes  map[string]string // canonical URL -> bu üretimdeki içerik özeti
+	prevHashes  map[string]string // canonical URL -> önceki üretimdeki içerik özeti
+	prevLastmod map[string]string // canonical URL -> önceki sitemap lastmod'u
 }
 
 type branchAgg struct {
@@ -319,6 +336,11 @@ func New(dataRoot, langCode, version string) *Builder {
 // Generate, dizinde biriken geçmiş sayfaları da temizleyen ana üreticidir.
 // root altında dersler/ ve brans/ klasörlerini silip yeniden oluşturur.
 func (b *Builder) Generate() error {
+	// Eski ders/hoca sayfalarının içerik özetleri silinmeden önce okunur
+	// (sitemap lastmod'u yalnızca içerik değişince ilerlesin diye).
+	if b.l.Code != "en" {
+		b.loadPreviousPageState()
+	}
 	// Eski çıktıyı temizle.
 	_ = os.RemoveAll(filepath.Join(b.outRoot, "dersler"))
 	_ = os.RemoveAll(filepath.Join(b.outRoot, "brans"))
@@ -453,6 +475,12 @@ func (b *Builder) Generate() error {
 			return err
 		}
 		if err := b.writeInstructorIndexPage(); err != nil {
+			return err
+		}
+		if err := b.writeGradesHubPage(courseSlugs); err != nil {
+			return err
+		}
+		if _, err := b.writeRedirectsFile(); err != nil {
 			return err
 		}
 	}
@@ -733,10 +761,15 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	for _, p := range landingPages {
 		pages = append(pages, sitemapEntry{
 			Loc:     fmt.Sprintf("%s/%s/", baseURL, p.slug),
-			Lastmod: landingLastmod(p),
+			Lastmod: b.landingSitemapLastmod(p),
 		})
 	}
 	pages = append(pages, sitemapEntry{Loc: fmt.Sprintf("%s/bolumler/", baseURL), Lastmod: directoryContentUpdated})
+	hubDate := dateOf(b.index.ScrapedAt)
+	if hubDate == "" {
+		hubDate = rootDate
+	}
+	pages = append(pages, sitemapEntry{Loc: baseURL + "/" + gradesHubSlug + "/", Lastmod: hubDate})
 	if err := writeSitemapComponent(componentDir, "pages.xml", pages); err != nil {
 		return err
 	}
@@ -766,7 +799,7 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	for _, code := range codes {
 		courseEntries = append(courseEntries, sitemapEntry{
 			Loc:     fmt.Sprintf("%s/ders/%s/", baseURL, courseSlugs[code]),
-			Lastmod: latestCourseDate(b.courses[code], termDates, rootDate),
+			Lastmod: b.pageLastmod(fmt.Sprintf("%s/ders/%s/", baseURL, courseSlugs[code]), latestCourseDate(b.courses[code], termDates, rootDate)),
 		})
 	}
 	if err := writeSitemapComponent(componentDir, "courses.xml", courseEntries); err != nil {
@@ -785,7 +818,7 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	for _, slug := range slugs {
 		instructorEntries = append(instructorEntries, sitemapEntry{
 			Loc:     fmt.Sprintf("%s/hoca/%s/", baseURL, slug),
-			Lastmod: latestInstructorDate(b.instructorProfiles[slug], termDates, rootDate),
+			Lastmod: b.pageLastmod(fmt.Sprintf("%s/hoca/%s/", baseURL, slug), latestInstructorDate(b.instructorProfiles[slug], termDates, rootDate)),
 		})
 	}
 	if err := writeSitemapComponent(componentDir, "instructors.xml", instructorEntries); err != nil {
@@ -837,8 +870,8 @@ func writeRootSitemapIndex(root, fallbackDate string) error {
 		}
 		out.WriteString("  <sitemap>\n")
 		fmt.Fprintf(&out, "    <loc>%s</loc>\n", escapeXML(c.url))
-		if fallbackDate != "" {
-			fmt.Fprintf(&out, "    <lastmod>%s</lastmod>\n", fallbackDate)
+		if lm := componentLastmod(filepath.Join(root, "sitemaps", c.file), fallbackDate); lm != "" {
+			fmt.Fprintf(&out, "    <lastmod>%s</lastmod>\n", lm)
 		}
 		out.WriteString("  </sitemap>\n")
 	}
@@ -868,6 +901,8 @@ func writeDiscoveryFiles(root string) error {
 ## Arşiv
 - [Geçmiş dönem dersleri](` + baseURL + `/ders-arsivi/): 2016'dan bugüne ders, şube, hoca, kontenjan ve not dağılımı geçmişi.
 - [Dönem sayfaları](` + baseURL + `/sitemaps/terms.xml): Arşivlenen dönemlerin canonical URL listesi.
+- [Not dağılımı](` + baseURL + `/not-dagilimi/): OBS'de açıklanan harf notu dağılımı olan derslerin dizini.
+- [Hocalar](` + baseURL + `/hoca/): Ders programında adı geçen öğretim üyelerinin dizini.
 - [Ders sayfaları](` + baseURL + `/sitemaps/courses.xml): Ders kodu bazında geçmiş ve son dönem bilgileri.
 - [Hoca sayfaları](` + baseURL + `/sitemaps/instructors.xml): Öğretim üyesi bazında verilen derslerin dönem geçmişi.
 
@@ -952,7 +987,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#f4f6f4">
 <script>(function(){try{var t=localStorage.getItem('itu-theme')==='dark'?'dark':'sade';document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='dark'?'#0a0a0a':'#f4f6f4')}catch(e){}})()</script>
-<title>{{.Title}} | {{.Lang.SiteTitle}}</title>
+<title>{{.FullTitle}}</title>
 <meta name="description" content="{{.Description}}">
 <link rel="canonical" href="{{.Canonical}}">
 {{range .Alternates}}<link rel="alternate" hreflang="{{.Lang}}" href="{{.URL}}">
@@ -993,20 +1028,44 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 {{.Content}}
 </main>
 <footer class="wrap">
+ <nav class="foot-tools" aria-label="{{.Lang.FootToolsHead}}"><span class="foot-tools-head">{{.Lang.FootToolsHead}}</span>
+{{range .Lang.FootTools}}  <a href="{{.Href}}">{{.Label}}</a>
+{{end}} </nav>
  <span>{{.Lang.FootScanned}} {{.Scraped}}</span> · <a href="{{.Shell.Home}}">{{.Lang.FootLive}}</a> · <a href="/sitemap.xml">{{.Lang.FootSitemap}}</a>
 </footer>
 </body>
 </html>`))
 
+type navLink struct{ Href, Label string }
+
+// fullTitle, sayfa başlığına marka sonekini yalnızca toplam uzunluk arama
+// sonucunda kesilmeyecek kadar kısaysa ekler (~65 karakter). Uzun başlıklarda
+// sorgu terimleri marka adına yer açmak için kesilmesin diye sonek düşer.
+func fullTitle(title, site string) string {
+	full := title + " | " + site
+	if utf8.RuneCountInString(full) <= 65 {
+		return full
+	}
+	return title
+}
+
+// canonicalPath, canonical URL'nin site köküne göre yolunu döner ("/hoca/").
+func canonicalPath(canonical string) string {
+	if p := strings.TrimPrefix(canonical, baseURL); p != canonical && p != "" {
+		return p
+	}
+	return "/"
+}
+
 type pageData struct {
-	Title, Description, Canonical, Scraped string
-	Alternates                             []alternateLink
-	AssetV                                 string // asset önbellek kırma (?v=)
-	Content                                template.HTML
-	JSONLD                                 template.HTML
-	Lang                                   lang
-	Shell                                  shellData
-	BodyClass                              string
+	Title, FullTitle, Description, Canonical, Path, Scraped string
+	Alternates                                              []alternateLink
+	AssetV                                                  string // asset önbellek kırma (?v=)
+	Content                                                 template.HTML
+	JSONLD                                                  template.HTML
+	Lang                                                    lang
+	Shell                                                   shellData
+	BodyClass                                               string
 }
 
 // shellData, statik sayfa kabuğunun (uygulamayla aynı masthead + sekme
@@ -1154,7 +1213,7 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 			{Lang: "x-default", URL: trURL},
 		}
 	}
-	return pageTmpl.Execute(f, pageData{
+	return b.renderPage(f, path, pageData{
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
 		Alternates: alternates, AssetV: b.version, Lang: b.l,
@@ -1180,7 +1239,7 @@ func (b *Builder) writePageCrossSlug(path, title, desc, canonical, trURL, enURL,
 		{Lang: "en", URL: enURL},
 		{Lang: "x-default", URL: trURL},
 	}
-	return pageTmpl.Execute(f, pageData{
+	return b.renderPage(f, path, pageData{
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
 		Alternates: alternates, AssetV: b.version, Lang: b.l,
@@ -1294,8 +1353,8 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesapla"}, {href: "/ders-programi-olustur/", label: "Haftalık program oluştur"}, {href: "/onsart-haritasi/", label: "Önşart haritasını aç"}},
 	},
 	{
-		slug: "gano-hesaplama", slugEN: "gpa-calculator", title: "İTÜ GPA ve GANO Hesaplama",
-		description: "İTÜ GPA ve GANO hesaplama aracında ders kredilerini ve harf notlarını gir; dönem ortalamanı ve genel ağırlıklı not ortalamanı birlikte gör.",
+		slug: "gano-hesaplama", slugEN: "gpa-calculator", title: "İTÜ GPA Hesaplama ve GANO Hesaplayıcı",
+		description: "İTÜ GPA hesaplama: ders kredilerini ve harf notlarını gir, dönem ortalamanı ve GANO'nu birlikte gör. Transkript PDF'i yalnızca tarayıcında okunur.",
 		h1:          "İTÜ GPA ve GANO hesaplama",
 		queries:     []string{"İTÜ ortalama hesapla", "İTÜ GPA hesapla", "İTÜ GANO hesapla", "İTÜ transkript PDF yükle"},
 		features:    []string{"Harf notlarını kredi ağırlıklı hesaplar", "Dönem ortalaması ile GANO'yu ayrı gösterir", "OBS transkript metnini yapıştırarak veya PDF yükleyerek notları tarayıcıda aktarır"},
@@ -1405,9 +1464,10 @@ var landingPages = []landingPage{
 		},
 	},
 	{
-		slug: "onsart-haritasi", title: "İTÜ önşart haritası",
-		description: "İTÜ önşart haritası: bir programın dersleri arasındaki önşart ilişkilerini yarıyıl yarıyıl gör.",
+		slug: "onsart-haritasi", title: "İTÜ Önşart Haritası · ders ön şartları",
+		description: "İTÜ önşart (ön şart) haritası: bölümünü seç, hangi dersin hangi dersleri gerektirdiğini yarıyıl yarıyıl, ok bağlantılarıyla gör.",
 		h1:          "İTÜ önşart haritası",
+		features:    []string{"Programın derslerini yarıyıl sütunlarında gösterir", "Zorunlu ve alternatif önşart bağlantılarını ok olarak çizer", "Bir dersin geriye doğru önşart zincirini izlemeyi sağlar"},
 		body: []string{
 			"Önşart haritası, bir programın derslerini yarıyıl sütunlarında ve önşart bağlantılarını ok olarak gösterir. Bir dersi alabilmek için hangi dersleri bitirmen gerektiğini gör.",
 			"Program seçmek için Dersler'de arayarak başlayabilirsin.",
@@ -1419,6 +1479,7 @@ var landingPages = []landingPage{
 		slug: "sinav-programi", title: "İTÜ sınav programı ve final takvimi",
 		description: "İTÜ sınav programı: derslerinin final tarihlerini ve saatlerini ara, seçili şubelerdeki sınav çakışmalarını kontrol et.",
 		h1:          "İTÜ sınav programı ve final takvimi",
+		features:    []string{"Ders koduyla final tarihini ve saatini arar", "Programa eklenen şubelerin sınav çakışmalarını işaretler", "Sınavları .ics takvim dosyası olarak indirir"},
 		body: []string{
 			"Ders koduyla sınav tarihini ara veya programına eklediğin şubelerin finallerini birlikte görüntüle.",
 			"Aynı gün ve saatte çakışan sınavlar açıkça işaretlenir. Kesin kayıt ve sınav bilgisi için resmî İTÜ duyurusunu doğrula.",
@@ -1431,6 +1492,7 @@ var landingPages = []landingPage{
 		slug: "akademik-takvim", title: "İTÜ akademik takvim",
 		description: "İTÜ akademik takvim: kayıt, ders, sınav, lisans, lisansüstü ve hazırlık takvimlerini tarih sırasıyla görüntüle.",
 		h1:          "İTÜ akademik takvim",
+		features:    []string{"Kayıt, ders ve sınav tarihlerini kronolojik listeler", "Lisans, lisansüstü ve hazırlık takvimlerini türüne göre filtreler", "Etkinlikleri .ics olarak kişisel takvime aktarır"},
 		body: []string{
 			"Kayıt, ders, sınav, lisans, lisansüstü ve hazırlık takvimlerindeki tarihleri tek görünümde filtrele.",
 			"İstediğin etkinliği .ics olarak indirip kişisel takvimine ekleyebilirsin. Resmî değişiklikler için İTÜ akademik takvim kaynağını doğrula.",
@@ -1556,6 +1618,10 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		return nil // bu sayfanın İngilizce karşılığı yok
 	}
 	title, description, h1 := p.title, p.description, p.h1
+	lastmod := landingContentUpdated
+	if !en {
+		title, description, lastmod = b.landingMeta(p)
+	}
 	body, primary, secondary, features := p.body, p.primary, p.secondary, p.features
 	inLang, browserReq, howToHead, toolsHead, relatedHead, ariaLaunch, homeHref := "tr-TR",
 		"JavaScript destekleyen güncel bir web tarayıcısı", "Nasıl kullanılır?", "Bu sayfada ne yapabilirsin?",
@@ -1616,7 +1682,7 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 	webPageSchema := map[string]any{
 		"@context": "https://schema.org", "@type": "WebPage", "@id": canonical + "#webpage",
 		"url": canonical, "name": title, "description": description,
-		"inLanguage": inLang, "dateModified": landingContentUpdated,
+		"inLanguage": inLang, "dateModified": lastmod,
 	}
 	if len(features) > 0 {
 		webPageSchema["mainEntity"] = map[string]any{"@id": canonical + "#application"}
@@ -1644,12 +1710,12 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 	jsonld := jsonldScript(schema)
 	if p.titleEN == "" {
 		return b.writePage(filepath.Join(b.outRoot, outSlug, "index.html"),
-			title, description, canonical, landingContentUpdated, content, jsonld, false)
+			title, description, canonical, lastmod, content, jsonld, false)
 	}
 	trURL := fmt.Sprintf("%s/%s/", baseURL, p.slug)
 	enURL := fmt.Sprintf("%s/en/%s/", baseURL, p.enSlug())
 	return b.writePageCrossSlug(filepath.Join(b.outRoot, outSlug, "index.html"),
-		title, description, canonical, trURL, enURL, landingContentUpdated, content, jsonld)
+		title, description, canonical, trURL, enURL, lastmod, content, jsonld)
 }
 
 // --- fakülte / program dizini (/bolumler/) ---
@@ -1840,7 +1906,7 @@ func LandingSlugs() []string {
 	for _, p := range landingPages {
 		slugs = append(slugs, p.slug)
 	}
-	slugs = append(slugs, bolumlerSlug)
+	slugs = append(slugs, bolumlerSlug, hocaIndexSlug, gradesHubSlug)
 	return slugs
 }
 
@@ -2567,13 +2633,15 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 	}
 
 	canonical := fmt.Sprintf("%s/ders/%s/", baseURL, slug)
-	title := fmt.Sprintf(b.l.CourseTitleFmt, code, hc.Name)
+	title, desc := b.courseMeta(code, hc, termLabels)
 	branch := code
 	if idx := strings.IndexByte(code, ' '); idx > 0 {
 		branch = code[:idx]
 	}
-	desc := fmt.Sprintf(b.l.CourseLeadFmt, code, hc.Name, len(hc.Terms))
 
+	// Course şeması: ad, ders kodu, açıklama ve sağlayıcı. AggregateRating
+	// bilinçli olarak yok (üçüncü taraf puanlarını kendi sitende toplamak
+	// manuel işlem riski taşır).
 	jsonld := jsonldScript([]any{
 		map[string]any{
 			"@context":    "https://schema.org",
@@ -2581,7 +2649,8 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			"@id":         canonical + "#course",
 			"url":         canonical,
 			"name":        code + " " + hc.Name,
-			"description": hc.Name,
+			"courseCode":  code,
+			"description": desc,
 			"inLanguage":  map[bool]string{true: "en", false: "tr-TR"}[b.l.Code == "en"],
 			"provider":    map[string]string{"@type": "CollegeOrUniversity", "name": "İstanbul Teknik Üniversitesi", "url": "https://www.itu.edu.tr/"},
 		},

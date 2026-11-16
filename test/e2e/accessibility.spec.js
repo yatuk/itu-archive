@@ -5,7 +5,7 @@ test.describe('Sprint 4 · erişilebilir mobil yüzey', () => {
     test(`${width}px genişlikte ana görevler taşmaz ve 44px dokunma hedefi sunar`, async ({ page }) => {
       await page.setViewportSize({ width, height: 860 });
       await page.goto('/#dersler');
-      await expect(page.locator('#course-groups .mobile-course-group')).not.toHaveCount(0, { timeout: 20_000 });
+      await expect(page.locator('#course-groups .course-group')).not.toHaveCount(0, { timeout: 20_000 });
 
       const overflow = await page.evaluate(() => ({
         scroll: document.documentElement.scrollWidth,
@@ -71,11 +71,11 @@ test.describe('Sprint 4 · erişilebilir mobil yüzey', () => {
     await expect(page.locator('#q')).toHaveAttribute('placeholder', 'code, name, CRN or instructor…');
     await expect(page.locator('#mobile-sort')).toHaveAttribute('aria-label', 'Sort');
 
-    const firstName = page.locator('.mobile-course-name').first();
+    const firstName = page.locator('.course-group-name').first();
     await expect(firstName).not.toBeEmpty({ timeout: 20_000 });
     const archivedName = await firstName.textContent();
     await page.goto('/?lang=tr&term=2025-2026-yaz#dersler');
-    await expect(page.locator('.mobile-course-name').first()).toHaveText(archivedName);
+    await expect(page.locator('.course-group-name').first()).toHaveText(archivedName);
   });
 
   test('yüzde 200 metin ölçeğinde ana içerik yatay taşmaz', async ({ page }) => {

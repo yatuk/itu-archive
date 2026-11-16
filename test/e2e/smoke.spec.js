@@ -59,10 +59,8 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('.brand-title, .brand h1').first()).toBeVisible();
     await expect(page.locator('.tabs [data-view]').first()).toBeVisible();
 
-    // Veri gerçekten geldi mi? Mobil gruplu liste, masaüstü tablo kullanır.
-    const firstResult = page.viewportSize().width <= 640
-      ? page.locator('#course-groups .mobile-course-group').first()
-      : page.locator('#results tbody tr').first();
+    // Veri gerçekten geldi mi? Her genişlikte derse göre gruplanmış liste.
+    const firstResult = page.locator('#course-groups .course-group .course-section').first();
     await expect(firstResult).toBeVisible({ timeout: 15000 });
 
     expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
@@ -161,7 +159,7 @@ test.describe('SPA (ana sayfa)', () => {
   test('mobil header ve gruplanmış ders listesi sıkışmadan çalışır', async ({ page }) => {
     test.skip(page.viewportSize().width > 600, 'Mobil yerleşim testi');
     await page.goto('/?term=2025-2026-yaz');
-    const first = page.locator('#course-groups .mobile-course-group').first();
+    const first = page.locator('#course-groups .course-group').first();
     await expect(first).toBeVisible({ timeout: 15000 });
 
     const brand = page.locator('.brand');
@@ -176,20 +174,20 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('.theme-name')).toHaveText(['Açık', 'Koyu']);
     await expect(page.locator('#lang-btn')).toBeVisible();
 
-    for (const selector of ['.mobile-course-code', '.mobile-course-name', '.mobile-course-count', '.mobile-section', '.mobile-crn', '.mobile-schedule', '.mobile-quota', '.fav-star']) {
+    for (const selector of ['.course-group-code', '.course-group-name', '.course-group-meta', '.course-section', '.course-crn', '.course-when', '.course-quota', '.fav-star']) {
       await expect(first.locator(selector).first()).toBeVisible();
     }
-    expect(await first.locator('.mobile-section:visible').count()).toBeLessThanOrEqual(4);
-    const sectionBox = await first.locator('.mobile-section:visible').first().boundingBox();
+    expect(await first.locator('.course-section:visible').count()).toBeLessThanOrEqual(4);
+    const sectionBox = await first.locator('.course-section:visible').first().boundingBox();
     expect(sectionBox.height).toBeLessThan(110);
     const listType = await first.evaluate((el) => ({
-      name: parseFloat(getComputedStyle(el.querySelector('.mobile-course-name')).fontSize),
-      schedule: parseFloat(getComputedStyle(el.querySelector('.mobile-schedule')).fontSize),
+      name: parseFloat(getComputedStyle(el.querySelector('.course-group-name')).fontSize),
+      schedule: parseFloat(getComputedStyle(el.querySelector('.course-when')).fontSize),
     }));
     expect(listType.name).toBeGreaterThanOrEqual(16);
     expect(listType.schedule).toBeGreaterThanOrEqual(12);
 
-    await first.locator('.mobile-section-open').first().click();
+    await first.locator('.course-section-open').first().click();
     await expect(page.locator('.detail-panel')).toBeVisible();
     const section = page.locator('.d-sec').first();
     await expect(section).toBeVisible();
@@ -199,7 +197,7 @@ test.describe('SPA (ana sayfa)', () => {
     await page.locator('.theme-btn[data-theme="dark"]').click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
     // Dark, sade'nin yalnızca siyah hâli: kontenjan aynı tek temsille kalır, fosfor çubuğu geri gelmez.
-    await expect(first.locator('.mobile-quota').first()).toBeVisible();
+    await expect(first.locator('.course-quota').first()).toBeVisible();
     await expect(first.locator('.bar')).toHaveCount(0);
   });
 
@@ -207,22 +205,22 @@ test.describe('SPA (ana sayfa)', () => {
     test.skip(page.viewportSize().width > 600, 'Mobil yerleşim testi');
     await page.goto('/?q=TUR121');
 
-    const group = page.locator('#course-groups .mobile-course-group').filter({ hasText: 'TUR 121' }).first();
+    const group = page.locator('#course-groups .course-group').filter({ hasText: 'TUR 121' }).first();
     await expect(group).toBeVisible({ timeout: 15000 });
-    await expect(group.locator('.mobile-course-code')).toContainText('TUR 121');
-    expect(await group.locator('.mobile-course-name').count()).toBe(1);
+    await expect(group.locator('.course-group-code')).toContainText('TUR 121');
+    expect(await group.locator('.course-group-name').count()).toBe(1);
 
-    const declaredTotal = Number((await group.locator('.mobile-course-count').textContent()).match(/\d+/)?.[0]);
-    const initialSections = await group.locator('.mobile-section').count();
+    const declaredTotal = Number((await group.locator('.course-group-meta').textContent()).match(/\d+/)?.[0]);
+    const initialSections = await group.locator('.course-section').count();
     expect(declaredTotal).toBeGreaterThan(1);
     expect(initialSections).toBeLessThanOrEqual(4);
-    expect(await group.locator('.mobile-section[hidden]').count()).toBe(0);
-    const toggle = group.locator('.mobile-sections-toggle');
+    expect(await group.locator('.course-section[hidden]').count()).toBe(0);
+    const toggle = group.locator('.course-sections-toggle');
     if (declaredTotal > 4) {
       await toggle.click();
       await expect(toggle).toHaveAttribute('aria-expanded', 'true');
-      expect(await group.locator('.mobile-section').count()).toBe(declaredTotal);
-      expect(await group.locator('.mobile-section:visible').count()).toBe(declaredTotal);
+      expect(await group.locator('.course-section').count()).toBe(declaredTotal);
+      expect(await group.locator('.course-section:visible').count()).toBe(declaredTotal);
     }
 
     const star = group.locator('.fav-star').first();
@@ -234,23 +232,23 @@ test.describe('SPA (ana sayfa)', () => {
   test('mobil ders listesi görünmeyen şubeleri kullanıcı istemeden DOM’a kurmaz', async ({ page }) => {
     test.skip(page.viewportSize().width > 600, 'Mobil performans regresyon testi');
     await page.goto('/?term=2026-2027-guz');
-    await expect(page.locator('#course-groups .mobile-course-group').first()).toBeVisible({ timeout: 15000 });
+    await expect(page.locator('#course-groups .course-group').first()).toBeVisible({ timeout: 15000 });
 
     const initial = await page.locator('#course-groups').evaluate((root) => ({
-      groups: root.querySelectorAll('.mobile-course-group').length,
-      sections: root.querySelectorAll('.mobile-section').length,
-      hidden: root.querySelectorAll('.mobile-section[hidden]').length,
+      groups: root.querySelectorAll('.course-group').length,
+      sections: root.querySelectorAll('.course-section').length,
+      hidden: root.querySelectorAll('.course-section[hidden]').length,
     }));
     expect(initial.groups).toBe(30);
     expect(initial.sections).toBeLessThanOrEqual(initial.groups * 4);
     expect(initial.hidden).toBe(0);
 
     await page.locator('#more').click();
-    await expect(page.locator('#course-groups .mobile-course-group')).toHaveCount(60);
+    await expect(page.locator('#course-groups .course-group')).toHaveCount(60);
     const appended = await page.locator('#course-groups').evaluate((root) => ({
-      groups: root.querySelectorAll('.mobile-course-group').length,
-      sections: root.querySelectorAll('.mobile-section').length,
-      hidden: root.querySelectorAll('.mobile-section[hidden]').length,
+      groups: root.querySelectorAll('.course-group').length,
+      sections: root.querySelectorAll('.course-section').length,
+      hidden: root.querySelectorAll('.course-section[hidden]').length,
     }));
     expect(appended.sections).toBeLessThanOrEqual(appended.groups * 4);
     expect(appended.hidden).toBe(0);
@@ -259,16 +257,18 @@ test.describe('SPA (ana sayfa)', () => {
   test('anlamlı görünüm tercihleri URL’den ayrıldıktan ve yenilendikten sonra korunur', async ({ page }) => {
     test.skip(page.viewportSize().width < 900, 'Tek tarayıcı kalıcılığı masaüstünde bir kez doğrulanır');
     await page.goto('/#dersler');
-    await expect(page.locator('#rows tr').first()).toBeVisible({ timeout: 15000 });
+    await expect(page.locator('#course-groups .course-group').first()).toBeVisible({ timeout: 15000 });
     await page.locator('#q').fill('MAT');
     await expect(page).toHaveURL(/q=MAT/);
-    await page.locator('#results th[data-sort="name"] .th-sort').click();
+    await page.locator('#mobile-sort').selectOption('name');
+    await expect(page).toHaveURL(/sort=name/);
     await expect(page).toHaveURL(/q=MAT/);
     await page.goto('/#hakkinda');
     await page.reload();
     await page.locator('.tabs [data-view="dersler"]').click();
     await expect(page.locator('#q')).toHaveValue('MAT');
-    await expect(page.locator('#results th[data-sort="name"]')).toHaveAttribute('aria-sort', 'ascending');
+    await expect(page.locator('#mobile-sort')).toHaveValue('name');
+    await expect(page.locator('#sort-dir')).toHaveAttribute('aria-pressed', 'false');
 
     await page.goto('/#program');
     await page.locator('#p-weekend').check();
@@ -312,39 +312,40 @@ test.describe('SPA (ana sayfa)', () => {
     for (const width of [320, 390, 430]) {
       await page.setViewportSize({ width, height: 820 });
       await page.goto('/?q=TUR121');
-      const group = page.locator('#course-groups .mobile-course-group').first();
+      const group = page.locator('#course-groups .course-group').first();
       await expect(group).toBeVisible({ timeout: 15000 });
       const metrics = await page.evaluate(() => ({
         document: document.documentElement.scrollWidth - document.documentElement.clientWidth,
-        group: document.querySelector('.mobile-course-group').scrollWidth - document.querySelector('.mobile-course-group').clientWidth,
+        group: document.querySelector('.course-group').scrollWidth - document.querySelector('.course-group').clientWidth,
       }));
       expect(metrics.document, `${width}px belge taşması`).toBeLessThanOrEqual(1);
       expect(metrics.group, `${width}px ders grubu taşması`).toBeLessThanOrEqual(1);
     }
   });
 
-  test('sade navigasyon düşük öncelikli sayfaları Daha fazla altında toplar', async ({ page }) => {
+  test('sade navigasyon dokuz sekmeyi tek satırda, ikincilleri ayraçtan sonra gösterir', async ({ page }) => {
     await page.goto('/');
     await expect(page.locator('.tabs .tab-number:visible')).toHaveCount(0);
     await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('Müfredat ve GPA');
-    await expect(page.locator('#tab-gecmis')).toBeHidden();
-    await page.locator('#tabs-more-label').click();
-    await page.locator('.tabs-more [data-nav-view="gecmis"]').click();
+    await expect(page.locator('.tabs-more')).toHaveCount(0);
+    await expect(page.locator('.tabs [role="tab"]')).toHaveCount(9);
+    // İkincil sekmeler ayraçtan sonra gelir ve doğrudan erişilebilir.
+    const order = await page.locator('.tabs [role="tab"], .tabs .tabs-sep').evaluateAll((els) => els.map((el) => el.id || 'sep'));
+    expect(order).toEqual(['tab-dersler', 'tab-dersplanim', 'tab-onsart', 'tab-sinavlar', 'tab-takvim', 'tab-program', 'sep', 'tab-gecmis', 'tab-donemler', 'tab-hakkinda']);
+    await page.locator('#tab-gecmis').click();
     await expect(page.locator('#view-gecmis')).toBeVisible();
-    await expect(page.locator('#tabs-more-label')).toContainText('Geçmiş');
+    await expect(page.locator('#tab-gecmis')).toHaveAttribute('aria-selected', 'true');
 
-    // dark, sade'nin siyah sürümü: numaralı terminal dizisi ve Daha fazla
-    // gruplaması burada da aynı — renk dışında yapısal fark yok.
+    // dark, sade'nin siyah sürümü: numarasız tek satır sekme dizisi burada da
+    // aynı — renk dışında yapısal fark yok.
     await page.locator('.theme-btn[data-theme="dark"]').click();
-    await expect(page.locator('#tab-dersplanim .tab-number')).toBeHidden();
+    await expect(page.locator('#tab-dersplanim .tab-number')).toHaveCount(0);
     await expect(page.locator('#tab-dersplanim [data-i18n="tabDersplanim"]')).toHaveText('Müfredat ve GPA');
-    await expect(page.locator('#tab-gecmis')).toBeHidden();
     await expect(page.locator('.statbar')).toBeHidden();
     await expect(page.locator('.tagline-sade')).toBeVisible();
     await expect(page.locator('.tagline-fosfor')).toBeHidden();
-    await page.locator('#tabs-more-label').click();
-    await page.locator('.tabs-more [data-nav-view="gecmis"]').click();
-    await expect(page.locator('#view-gecmis')).toBeVisible();
+    await page.locator('#tab-donemler').click();
+    await expect(page.locator('#view-donemler')).toBeVisible();
   });
 
   test('yeni sadeleştirme metinleri TR/EN geçişini izler', async ({ page }) => {
@@ -354,22 +355,23 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#f-filter-btn')).toHaveText('Filters (1)');
     if (page.viewportSize().width <= 600) await page.locator('#f-filter-btn').click();
     await expect(page.locator('#f-more-toggle')).toHaveText('More filters (1)');
-    await expect(page.locator('#tabs-more-label')).toHaveText('More');
+    await expect(page.locator('#tab-gecmis [data-i18n="tabGecmis"]')).toHaveText('History');
     await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('Courses');
   });
 
   test('kontenjan iki temada da tek temsile iner (fosfor çubuklu görünümü kaldırıldı)', async ({ page }) => {
     await page.goto('/');
     const mobile = page.viewportSize().width <= 640;
-    const scope = mobile ? page.locator('#course-groups') : page.locator('#results');
-    await expect(mobile ? scope.locator('.mobile-course-group').first() : scope.locator('tbody tr').first()).toBeVisible({ timeout: 15000 });
+    const scope = page.locator('#course-groups');
+    await expect(scope.locator('.course-group').first()).toBeVisible({ timeout: 15000 });
 
     for (const theme of ['sade', 'dark']) {
       await page.locator(`.theme-btn[data-theme="${theme}"]`).click();
       // Kont./Yazılan/Doluluk üçlüsü tek Kontenjan kolonuna iner — iki temada da aynı.
-      // (9 kolon: sel, fav, CRN, Ders, Adı, Öğretim Üyesi, Zaman, Yer, Kontenjan)
-      await expect(page.locator('#results thead th:visible')).toHaveCount(mobile ? 0 : 9);
-      await expect(scope.locator(mobile ? '.mobile-quota' : 'tbody .quota-main-col').filter({ hasText: '/' }).first()).toBeVisible();
+      // (7 kolon: sel, fav, CRN, Öğretim üyesi, Zaman, Yer, Kontenjan; ders kodu
+      // ve adı grup başlığında. Dar ekranda kolon başlığı yok, satırlar kart.)
+      await expect(scope.locator('.course-colhead > span:visible')).toHaveCount(mobile ? 0 : 7);
+      await expect(scope.locator('.course-quota').filter({ hasText: '/' }).first()).toBeVisible();
       await expect(scope.locator('.bar:visible')).toHaveCount(0);
       await expect(scope.locator('.fill-measured')).toHaveCount(0);
       await expect(scope.locator('.quota-fosfor:visible')).toHaveCount(0);
@@ -389,8 +391,11 @@ test.describe('SPA (ana sayfa)', () => {
       }),
     }));
     await page.goto('/#sinavlar');
-    await expect(page.locator('#eresultline')).toHaveText('Bu dönem için sınav takvimi henüz ilan edilmemiş.');
-    await expect(page.locator('#exam-list-mount')).not.toContainText('30054');
+    // Aktif dönem "ilan edilmedi" durum kartıyla gösterilir; altta listelenen
+    // takvim (varsa) kendi dönem adıyla etiketlenir, Güz diye sunulmaz.
+    await expect(page.locator('#exam-status')).toBeVisible();
+    await expect(page.locator('#exam-status-title')).toHaveText('2026-2027 Güz sınav programı henüz ilan edilmedi');
+    await expect(page.locator('#exam-sec-title')).not.toContainText('2026-2027 Güz');
   });
 
   test('"İçeriğe atla" ilk odak durağıdır ve odaklanınca görünür olur', async ({ page }) => {
@@ -510,9 +515,7 @@ test.describe('Ders detay paneli', () => {
     // Kullanıcının gerçek akışı: masaüstü satırı veya mobil şube satırı ilgili
     // şubeler sekmesini açar ve seçilen CRN'ye odaklanır.
     await page.locator('#detail-close').click();
-    const firstSection = page.viewportSize().width <= 640
-      ? page.locator('#course-groups .mobile-section-open').first()
-      : page.locator('#results tbody tr').first();
+    const firstSection = page.locator('#course-groups .course-section-open').first();
     await firstSection.click();
     await expect(page.locator('[data-dtab="sections"]')).toHaveAttribute('aria-selected', 'true');
     await expect(page.locator('.d-sec.is-focus')).toHaveCount(1);
@@ -1171,7 +1174,10 @@ test.describe('Önşart haritası', () => {
       Math.abs(el.width - Math.round(el.clientWidth * (window.devicePixelRatio || 1))) <= 1,
     )).toBe(true);
     if ((page.viewportSize()?.width || 0) > 1000) {
-      await expect.poll(() => canvas.evaluate((el) => el.clientWidth)).toBeGreaterThan(detailWidth + 200);
+      // Ders/havuz kartı artık haritanın altında tam genişlikte: panel açıkken
+      // harita daralmaz, kapanınca da aynı genişlikte kalır.
+      expect(detailWidth).toBeGreaterThan(900);
+      await expect.poll(() => canvas.evaluate((el) => el.clientWidth)).toBeGreaterThanOrEqual(detailWidth - 1);
     }
     expect(new URL(page.url()).searchParams.has('pool')).toBe(false);
   });
@@ -1266,7 +1272,7 @@ test.describe('SEO sayfaları', () => {
   test('hoca sayfası · arama niyeti özeti ve güvenli schema', async ({ page }) => {
     await page.goto('/hoca/muhammed-lutfi-yarar/');
 
-    await expect(page).toHaveTitle(/not dağılımı ve İTÜ'de verdiği dersler/);
+    await expect(page).toHaveTitle(/ · (hocametre \d,\d\/5[ ,·]+)?İTÜ( not dağılımı|'de verdiği dersler)/);
     await expect(page.locator('.ip-facts')).toContainText('farklı ders');
     await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /son kayıt/);
     await expect(page.locator('.ip-now')).toBeVisible();
@@ -1279,6 +1285,7 @@ test.describe('SEO sayfaları', () => {
     expect(graph.some((item) => item['@type'] === 'Person')).toBe(true);
     expect(graph.some((item) => item['@type'] === 'BreadcrumbList')).toBe(true);
     expect(JSON.stringify(graph)).not.toContain('affiliation');
+    expect(JSON.stringify(graph)).not.toContain('AggregateRating');
   });
 
   for (const { yol, hedef, gorunum } of ARAC_INIS_SAYFALARI) {

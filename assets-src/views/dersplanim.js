@@ -53,6 +53,8 @@ let initialParams = null; // onShow'da senkron yakalanan URL parametreleri
 
 // Filtre durumu (URL'den okunur, DOM'dan yazılır).
 const filters = { open: false, cap: false, semesters: new Set(), types: new Set() };
+// Kullanıcının kapattığı yarıyıllar (indeks); program değişince sıfırlanır.
+const closedSems = new Set();
 let curriculumModule = null;
 let curriculumModulePromise = null;
 let curriculumMounted = false;
@@ -158,32 +160,64 @@ function ensureHost() {
   const en = I18N.lang === 'en';
   const t = (tr, english) => en ? english : tr;
   root.innerHTML = `
-    <p class="dp-intro">
-      ${t('Programını ve dönemi seç; müfredatı, açık şubeleri ve not planını birlikte gör.', 'Choose your program and term to see the curriculum, open sections, and grade plan together.')}
-    </p>
-    <div class="console dp-console">
+    <header class="dp-phead">
+      <h2>${esc(I18N.t('tabDersplanim'))}</h2>
+      <p class="dp-intro">${t('Programını ve dönemi seç; müfredatı, açık şubeleri ve not planını birlikte gör.', 'Choose your program and term to see the curriculum, open sections, and grade plan together.')}</p>
+    </header>
+    <div class="dp-pickcard">
       <div class="dp-program-pick" role="group" aria-label="${t('Program seçimi', 'Program selection')}">
-        <span class="sigil" aria-hidden="true">&gt;</span>
-        <label><span class="dp-field-label">${t('seviye', 'level')}</span>
+        <label class="dp-field"><span class="dp-field-label">${t('seviye', 'level')}</span>
         <select id="dp-level" class="dp-level-select" aria-label="${t('Program seviyesi seç', 'Choose program level')}">
           <option value="OL">${t('Önlisans', 'Associate')}</option><option value="LS" selected>${t('Lisans', 'Bachelor')}</option>
           <option value="YL">${t('Yüksek Lisans', 'Master')}</option><option value="DR">${t('Doktora', 'Doctorate')}</option>
         </select>
         </label>
-        <label><span class="dp-field-label">${t('fakülte', 'faculty')}</span>
+        <label class="dp-field dp-field-wide"><span class="dp-field-label">${t('fakülte', 'faculty')}</span>
         <select id="dp-fac" class="dp-fac-select" aria-label="${t('Fakülte seç', 'Choose faculty')}"></select>
         </label>
-        <label><span class="dp-field-label">${t('program', 'program')}</span>
+        <label class="dp-field dp-field-wide"><span class="dp-field-label">${t('program', 'program')}</span>
         <select id="dp-prog" class="dp-prog-select" aria-label="${t('Bölüm seç', 'Choose department')}"></select>
         </label>
+        <label class="dp-field dp-term-pick"><span class="dp-field-label">${t('dönem', 'term')}</span><select id="dp-term" aria-label="${t('Dönem seç', 'Choose term')}"></select></label>
       </div>
-      <label class="dp-term-pick"><span class="dp-field-label">${t('dönem', 'term')}</span><select id="dp-term" aria-label="${t('Dönem seç', 'Choose term')}"></select></label>
+      <div id="dp-summary" class="dp-summary"></div>
     </div>
     <div id="dp-empty" class="dp-empty">
       <h2>${t('Ders planını görmek için programını seç', 'Choose your program to view its course plan')}</h2>
       <p>${t('Önce seviyeyi, ardından fakülte ve programı seç. GANO ve dönem dersleri seçiminin ardından burada açılır.', 'Choose a level, faculty, and program. GPA tools and term courses will appear after your selection.')}</p>
       <button type="button" class="btn-ghost dp-transcript-open">${t('OBS transkriptinden aktar', 'Import from OBS transcript')}</button>
     </div>
+    <div class="dp-lay">
+    <details class="dp-grades dp-card" id="dp-grades">
+      <summary><span>${I18N.t('planGpaProgress')}</span><b id="dp-grade-preview">${I18N.t('planGpaPreviewEmpty')}</b></summary>
+      <div class="dp-grades-body">
+        <div id="dp-gpa-react"><div class="dp-grades-grid">
+          <div class="dp-metric"><em>${I18N.t('planGanoLabel')}</em><b id="dp-gano">${I18N.t('planNone')}</b><small>${I18N.t('planBasedOnGrades')}</small></div>
+          <div class="dp-metric"><em>${I18N.t('planProgressLabel')}</em><b id="dp-progress">0/0 ${I18N.t('planCreditUnit')}</b><small id="dp-progress-sub"></small></div>
+          <div class="dp-metric"><em>${I18N.t('planTargetLabel')}</em><b id="dp-target">${I18N.t('planNone')}</b><small id="dp-target-sub"></small></div>
+        </div></div>
+        <p class="dp-grades-empty" id="dp-grades-empty">${I18N.t('planGpaEmptyHint')} ${esc(I18N.t('dpGradesLocalOnly'))}</p>
+        <div class="dp-transfer">
+          <label>${I18N.t('planCreditsSoFar')} <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0–250"></label>
+          <label>${I18N.t('planCurrentGpa')} <input id="dp-tgpa" type="number" min="0" max="4" step="0.01" inputmode="decimal" placeholder="0–4"></label>
+          <label class="dp-target-gpa">${I18N.t('planTargetGpa')} <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00" placeholder="0–4"> <span class="dp-target-hint" id="dp-target-hint"></span></label>
+        </div>
+      </div>
+      <div class="dp-transcript-callout">
+        <div>
+          <strong>${t('OBS transkriptinden notları aktar', 'Import grades from an OBS transcript')}</strong>
+          <span>${t('Belgeler → Transkript Önizleme ekranındaki metni kopyala. Ham belge saklanmaz veya sunucuya gönderilmez.', 'Copy the text from Documents → Transcript Preview. The raw document is neither stored nor sent to a server.')}</span>
+        </div>
+        <button type="button" class="btn-ghost dp-transcript-open">${t('Transkript yapıştır', 'Paste transcript')}</button>
+      </div>
+      <p id="dp-transcript-result" class="dp-transcript-result" hidden aria-live="polite"></p>
+      <div class="dp-typecard">
+        <span class="dp-k">${esc(I18N.t('dpCreditsByType'))}</span>
+        <div class="dp-types-progress" id="dp-types-progress"></div>
+        <p class="dp-hint" id="dp-types-note"></p>
+      </div>
+    </details>
+    <div class="dp-main">
     <div class="dp-filterbar" role="group" aria-label="${esc(I18N.t('planFilterbarAria'))}">
       <div class="dp-filter-primary">
         <label class="check"><input type="checkbox" id="dp-open"> ${I18N.t('planOnlyOpen')}</label>
@@ -195,53 +229,15 @@ function ensureHost() {
         <span class="dp-type-filter" id="dp-types" role="group" aria-label="${esc(I18N.t('planTypeFilterAria'))}"></span>
       </div>
     </div>
-    <div id="dp-summary" class="dp-summary"></div>
     <div class="dp-resultbar">
       <p class="resultline" id="dp-result" aria-live="polite">${I18N.t('planSelectingProgram')}</p>
     </div>
     <div id="dp-semesters" class="dp-semesters"></div>
-    <details class="dp-grades" id="dp-grades">
-      <summary><span>${I18N.t('planGpaProgress')}</span><b id="dp-grade-preview">${I18N.t('planGpaPreviewEmpty')}</b></summary>
-      <p class="dp-grades-empty" id="dp-grades-empty">${I18N.t('planGpaEmptyHint')}</p>
-      <div class="dp-transcript-callout">
-        <div>
-          <strong>${t('OBS transkriptinden notları aktar', 'Import grades from an OBS transcript')}</strong>
-          <span>${t('Belgeler → Transkript Önizleme ekranındaki metni kopyala. Ham belge saklanmaz veya sunucuya gönderilmez.', 'Copy the text from Documents → Transcript Preview. The raw document is neither stored nor sent to a server.')}</span>
-        </div>
-        <button type="button" class="btn-ghost dp-transcript-open">${t('Transkript yapıştır', 'Paste transcript')}</button>
-      </div>
-      <p id="dp-transcript-result" class="dp-transcript-result" hidden aria-live="polite"></p>
-      <div class="dp-grades-body">
-        <div id="dp-gpa-react"><div class="dp-grades-grid">
-          <div class="dp-metric"><em>${I18N.t('planGanoLabel')}</em><b id="dp-gano">${I18N.t('planNone')}</b><small>${I18N.t('planBasedOnGrades')}</small></div>
-          <div class="dp-metric"><em>${I18N.t('planProgressLabel')}</em><b id="dp-progress">0/0 ${I18N.t('planCreditUnit')}</b><small id="dp-progress-sub"></small></div>
-          <div class="dp-metric"><em>${I18N.t('planTargetLabel')}</em><b id="dp-target">${I18N.t('planNone')}</b><small id="dp-target-sub"></small></div>
-        </div></div>
-        <div class="dp-types-progress" id="dp-types-progress" aria-live="polite"></div>
-        <div class="dp-transfer">
-          <label>${I18N.t('planCreditsSoFar')} <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0–250"></label>
-          <label>${I18N.t('planCurrentGpa')} <input id="dp-tgpa" type="number" min="0" max="4" step="0.01" inputmode="decimal" placeholder="0–4"></label>
-          <label class="dp-target-gpa">${I18N.t('planTargetGpa')} <input id="dp-targetgpa" type="number" min="0" max="4" step="0.01" value="3.00" placeholder="0–4"> <span class="dp-target-hint" id="dp-target-hint"></span></label>
-        </div>
-      </div>
-      <details class="dp-data-tools">
-        <summary>${I18N.t('planDataPrivacy')}</summary>
-        <div class="dp-grades-actions">
-          <button type="button" id="dp-export" class="btn-ghost">${I18N.t('planExportJson')}</button>
-          <button type="button" id="dp-import" class="btn-ghost">${I18N.t('planImportJson')}</button>
-          <button type="button" id="dp-backup-all" class="btn-ghost">${I18N.t('planDownloadBackup')}</button>
-          <button type="button" id="dp-restore-all" class="btn-ghost">${I18N.t('planRestoreBackup')}</button>
-          <input id="dp-restore-file" type="file" accept="application/json,.json" hidden>
-          <button type="button" id="dp-reset" class="btn-ghost">${I18N.t('planResetAll')}</button>
-        </div>
-        <p class="dp-privacy">${I18N.t('planPrivacyNote')}
-        <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">${I18N.t('planPrivacyNoteLink')}</a>.</p>
-      </details>
-    </details>
-    <details class="dp-tools" id="dp-tools">
-      <summary><span>${t('Planlama araçları', 'Planning tools')}</span><small>${t('Ders önerisi, dengeli plan ve yatay geçiş', 'Course suggestions, balanced planning, and transfer')}</small></summary>
+    </div>
+    <details class="dp-tools dp-card" id="dp-tools">
+      <summary><span>${t('Planlama araçları', 'Planning tools')}</span><small>${esc(I18N.t('dpToolsHint'))}</small></summary>
       <div class="dp-tools-body">
-    <details class="dp-recommend" id="dp-recommend">
+    <details class="dp-recommend dp-tool" id="dp-recommend">
       <summary><span>${I18N.t('planSuggestTerm')}</span><small>${I18N.t('planSuggestTermHint')}</small></summary>
       <div class="dp-recommend-controls">
         <label>${I18N.t('planTargetSemester')} <select id="dp-recommend-sem"></select></label>
@@ -251,7 +247,7 @@ function ensureHost() {
       <p class="dp-recommend-note">${I18N.t('planSuggestNote')}</p>
       <div id="dp-recommend-result" aria-live="polite"></div>
     </details>
-    <details class="dp-recommend" id="dp-balanced">
+    <details class="dp-recommend dp-tool" id="dp-balanced">
       <summary><span>${I18N.t('planBalancedPlan')}</span><small>${I18N.t('planBalancedHint')}</small></summary>
       <div class="dp-recommend-controls">
         <button type="button" id="dp-balanced-run" class="btn-primary">${I18N.t('planBalancedPlan')}</button>
@@ -259,7 +255,7 @@ function ensureHost() {
       <p class="dp-recommend-note">${I18N.t('planBalancedNote')}</p>
       <div id="dp-balanced-result" aria-live="polite"></div>
     </details>
-    <details class="dp-recommend" id="dp-yatay">
+    <details class="dp-recommend dp-tool" id="dp-yatay">
       <summary><span>${I18N.t('planTransferChance')}</span><small id="dp-yatay-preview">${I18N.t('planTransferPreview')}</small></summary>
       <div class="dp-recommend-controls">
         <label>${I18N.t('planTargetFaculty')} <select id="dp-yatay-fac"></select></label>
@@ -268,16 +264,26 @@ function ensureHost() {
       <p class="dp-recommend-note">${I18N.t('planTransferNoteSource')} <a href="https://www.sis.itu.edu.tr/TR/mevzuat/yatay-cap-yandal-yonerge.php" target="_blank" rel="noopener">${I18N.t('planTransferNoteLink')}</a>, ${I18N.t('planTransferNoteBody')}</p>
       <div id="dp-yatay-result" aria-live="polite"></div>
     </details>
+    <details class="dp-data-tools dp-tool">
+      <summary><span>${I18N.t('planDataPrivacy')}</span><small>${esc(I18N.t('dpDataToolsHint'))}</small></summary>
+      <div class="dp-grades-actions">
+        <button type="button" id="dp-export" class="btn-ghost">${I18N.t('planExportJson')}</button>
+        <button type="button" id="dp-import" class="btn-ghost">${I18N.t('planImportJson')}</button>
+        <button type="button" id="dp-backup-all" class="btn-ghost">${I18N.t('planDownloadBackup')}</button>
+        <button type="button" id="dp-restore-all" class="btn-ghost">${I18N.t('planRestoreBackup')}</button>
+        <input id="dp-restore-file" type="file" accept="application/json,.json" hidden>
+        <button type="button" id="dp-reset" class="btn-ghost">${I18N.t('planResetAll')}</button>
       </div>
-    </details>`;
-  // GANO özeti, sekiz yarıyıllık listenin ardından değil program özetinin
-  // hemen altında görünür. Panel ilk açılışta hazır gelir.
+      <p class="dp-privacy">${I18N.t('planPrivacyNote')}
+      <a href="https://www.sis.itu.edu.tr/tr/duyurular/not-basari-duyurusu/" target="_blank" rel="noopener">${I18N.t('planPrivacyNoteLink')}</a>.</p>
+    </details>
+      </div>
+    </details>
+    </div>`;
+  // DOM sırası (özet → GANO → yarıyıllar → araçlar) hiyerarşiyi korur; masaüstünde
+  // GANO kartı ve araçlar sağ sütuna yüzdürülür (style.css · .dp-lay).
   const grades = $('#dp-grades');
-  const semesters = $('#dp-semesters');
-  if (grades && semesters) {
-    semesters.before(grades);
-    grades.open = true;
-  }
+  if (grades) grades.open = true;
   mountGpaSummary();
 }
 
@@ -327,6 +333,7 @@ async function selectProgram(code) {
   $('#view-dersplanim')?.classList.remove('dp-no-program');
   if ($('#dp-empty')) $('#dp-empty').hidden = true;
   progCode = code;
+  closedSems.clear();
   unmountCurriculum();
   plan = null;
   stored = loadStored(code);
@@ -618,15 +625,17 @@ function renderAll() {
     const sem = document.createElement('details');
     sem.className = 'dp-sem';
     sem.dataset.si = i;
-    sem.open = true;
+    // Kullanıcının kapattığı yarıyıllar yeniden çizimde kapalı kalır.
+    sem.open = !closedSems.has(String(i));
     const head = document.createElement('summary');
     head.className = 'dp-sem-head';
+    head.insertAdjacentHTML('beforeend', '<svg class="dp-sem-chev" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 6 6 6-6 6"/></svg>');
     const t = document.createElement('span');
+    t.className = 'dp-sem-title';
     t.textContent = s.title;
     head.appendChild(t);
     const loadEl = document.createElement('span');
     loadEl.className = 'dp-load';
-    loadEl.textContent = fmtSemLoad(load);
     head.appendChild(loadEl);
     if (avg != null) {
       const avgEl = document.createElement('span');
@@ -636,7 +645,7 @@ function renderAll() {
       head.appendChild(avgEl);
     }
     sem.appendChild(head);
-    sem.appendChild(buildColHead());
+    const semBefore = { open: openCount, slots: slotCount, shown };
 
     let hasRows = false;
     s.items.forEach((item, ii) => {
@@ -668,6 +677,15 @@ function renderAll() {
       }
     });
     if (!hasRows) continue;
+    const semSlots = slotCount - semBefore.slots;
+    const semCourses = shown - semBefore.shown - semSlots;
+    const semOpen = openCount - semBefore.open;
+    loadEl.textContent = [
+      tf('dpSemCourses', { n: semCourses }),
+      fmtSemLoad(load),
+      tf('dpSemOpen', { n: semOpen }),
+      ...(semSlots ? [tf('dpSemElectives', { n: semSlots })] : []),
+    ].join(' · ');
     any = true;
     frag.appendChild(sem);
   }
@@ -689,19 +707,6 @@ function renderAll() {
   if (historyCodes.length) ensureHistoryFor(historyCodes);
 }
 
-// Sütun başlık satırı — blok başında bir kez: kredi | ders | tekrar | not (+ durum boş).
-function buildColHead() {
-  const h = document.createElement('div');
-  h.className = 'dp-colhead';
-  for (const lbl of ['planColCredit', 'planColCourse', 'planColRepeat', 'planColGrade']) {
-    const s = document.createElement('span');
-    s.textContent = I18N.t(lbl);
-    h.appendChild(s);
-  }
-  h.appendChild(document.createElement('span'));
-  return h;
-}
-
 function matchesElectiveType(e, types) {
   // Slot adındaki tür etiketini dene ("(ITB)", "ITB Elective"); bilinmiyorsa geç.
   const title = e.title || '';
@@ -711,12 +716,14 @@ function matchesElectiveType(e, types) {
   return false;
 }
 
+// "2026-2027 Güz: 39 dersten 28'i açık · 8 seçmeli slotun 8'inde açık seçenek var"
 function planSummaryLine(open, closed, slotOpen, slotCount, shown) {
-  const parts = [`<b>${open}</b> ${I18N.t('planSummaryCoursesOpen')}`];
-  parts.push(`<b>${shown - slotCount}</b> ${I18N.t('planSummaryCoursesShown')}`);
-  if (slotCount) parts.push(`<b>${slotOpen}/${slotCount}</b> ${I18N.t('planSummaryElectivesOpen')}`);
+  const term = state.index?.terms?.find((x) => x.slug === termSlug);
+  const b = (n) => `<b class="num">${n}</b>`;
+  const parts = [tf('dpSumCourses', { total: b(shown - slotCount), open: b(open) })];
+  if (slotCount) parts.push(tf('dpSumSlots', { total: b(slotCount), open: b(slotOpen) }));
   if (closed) parts.push(`${closed} ${I18N.t('planSummaryClosedSuffix')}`);
-  return parts.join(' · ');
+  return `${term ? `${esc(term.label)}: ` : ''}${parts.join(' · ')}`;
 }
 
 // Bazı eski OBS müfredatlarında laboratuvar/yazım dersinin kodu boş. Transkript
@@ -741,9 +748,9 @@ function resolvedPlan() {
   };
 }
 
-// Ders satırı — sabit 5 hücreli ızgara: kredi | ders | tekrar | not | durum.
-// Şube listesi satırın ALTINDA katlı (varsayılan kapalı) — satır yüksekliği şube
-// sayısından bağımsızdır. Tam DOM (createElement + textContent): ham HTML yok.
+// Ders satırı (maket: DersPlanim.dc.html · .crow): kod | ad | tür | kredi·AKTS |
+// bu dönem durumu | not (+ tekrar işareti). Açık derste durum metni şube
+// listesini satırın altında açan düğmedir. Tam DOM (createElement + textContent).
 function courseRow(c, st, slotKey) {
   const code = resolvedCourseCode(c, slotKey);
   const rec = (stored.grades || {})[code] || {};
@@ -754,69 +761,97 @@ function courseRow(c, st, slotKey) {
   const row = document.createElement('div');
   row.className = 'dp-row';
 
-  // 1) kredi rozeti — sadece sayı ("3", "1,5", "0")
-  const credit = document.createElement('span');
-  credit.className = 'dp-credit';
-  credit.textContent = creditBadge(c);
-  credit.title = `${trNum(c.credits ?? 0)} ${I18N.t('planCreditUnit')}`;
-  row.appendChild(credit);
+  // 1) kod: detay düğmesi (kodu olmayan laboratuvar kalemlerinde nokta)
+  let codeEl;
+  if (code) {
+    codeEl = document.createElement('button');
+    codeEl.type = 'button';
+    codeEl.dataset.act = 'detail';
+    codeEl.dataset.code = code;
+    codeEl.title = I18N.t('prgMenuDetail');
+  } else {
+    codeEl = document.createElement('span');
+    codeEl.title = I18N.t('dpNoCodeInPlan');
+  }
+  codeEl.className = 'dp-code';
+  codeEl.setAttribute('translate', 'no');
+  codeEl.textContent = code || '·';
+  row.appendChild(codeEl);
 
-  // 2) ders: kod (kalın buton) + ad (normal) — tek satır, taşarsa alt satıra
+  // 2) ad
   const title = document.createElement('span');
   title.className = 'dp-title';
-  const codeBtn = document.createElement('button');
-  codeBtn.type = 'button';
-  codeBtn.className = 'dp-code';
-  codeBtn.dataset.act = 'detail';
-  codeBtn.dataset.code = code;
-  codeBtn.textContent = code;
   const name = document.createElement('span');
   name.className = 'dp-name';
   name.textContent = c.name;
-  title.append(codeBtn, name);
+  title.appendChild(name);
   row.appendChild(title);
 
-  // 3) tekrar — saklanan işaret (GANO'ya etkisiz)
-  const rep = document.createElement('button');
-  rep.type = 'button';
-  rep.className = 'dp-repeat-btn' + (rec.repeat ? ' on' : '');
-  rep.dataset.act = 'dp-repeat';
-  rep.dataset.gcode = code;
-  rep.setAttribute('aria-pressed', rec.repeat ? 'true' : 'false');
-  rep.title = rec.prev
-    ? `${I18N.t('planMarkedRepeatPrev')} ${rec.prev}`
-    : I18N.t('planMarkRepeat');
-  rep.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 1 4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="m7 23-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>';
-  row.appendChild(rep);
+  // 3) tür etiketi
+  const ty = document.createElement('span');
+  ty.className = 'dp-ty';
+  ty.textContent = c.type || '';
+  if (c.type) ty.title = I18N.t('dpCourseType');
+  row.appendChild(ty);
 
-  // 4) not: dar select + seçiliyse ×
-  const wrap = document.createElement('span');
-  wrap.className = 'dp-grade-wrap';
-  const sel = buildGradeSelect(rec.grade || '', code);
-  wrap.appendChild(sel);
-  if (rec.grade) wrap.appendChild(makeClearBtn());
-  row.appendChild(wrap);
+  // 4) kredi · AKTS
+  const credit = document.createElement('span');
+  credit.className = 'dp-credit';
+  const cr = Number(c.credits) || 0;
+  credit.textContent = `${cr ? `${creditBadge(c)} ${I18N.t('planCreditAbbr')}` : I18N.t('dpNoCredit')} · ${trNum(c.ects ?? 0)}`;
+  credit.title = `${trNum(c.credits ?? 0)} ${I18N.t('planCreditUnit')} · ${trNum(c.ects ?? 0)} ${I18N.t('planEctsAbbr')}`;
+  row.appendChild(credit);
 
-  // 5) durum / şube disclosure: "● N" tıklanınca şubeler açılır
+  // 5) bu dönem durumu
   if (st.state === 'open') {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'dp-sec-btn open';
     btn.dataset.act = 'dp-sec';
     btn.setAttribute('aria-expanded', 'false');
+    const free = st.sections.reduce((s, x) => s + Math.max(0, (x.cap || 0) - (x.enr || 0)), 0);
+    const full = st.sections.filter((x) => (x.cap || 0) > 0 && (x.enr || 0) >= x.cap).length;
     const totalCap = st.sections.reduce((s, x) => s + (x.cap || 0), 0);
     btn.title = `${st.sections.length} ${I18N.t('prgSube')} · ${I18N.t('planTotalCapacity')} ${trNum(totalCap)}`;
-    btn.textContent = `${st.sections.length} ${I18N.t('prgSube')}`;
+    btn.append(`${st.sections.length} ${I18N.t('prgSube')} · ${trNum(free)} ${I18N.t('dpSeatsWord')}`);
+    if (full) {
+      btn.append(' · ');
+      const f = document.createElement('span');
+      f.className = 'dp-full-count';
+      f.textContent = `${full} ${I18N.t('planFullBadge')}`;
+      btn.appendChild(f);
+    }
     row.appendChild(btn);
   } else {
     const span = document.createElement('span');
     span.className = 'dp-sec-btn closed';
-    span.textContent = st.state === 'closed' ? I18N.t('planClosed') : I18N.t('planNoData');
-    span.title = st.state === 'closed'
+    span.textContent = st.state === 'closed'
       ? `${I18N.t('planNotOpenThisTerm')} · ${I18N.t('planLastOffered')} ${termLabel(st.lastTerm)}`
-      : I18N.t('planNotOpenThisTerm');
+      : (code ? I18N.t('planNoData') : I18N.t('dpNoCodeInPlan'));
     row.appendChild(span);
   }
+
+  // 6) not + tekrar işareti (GANO'ya etkisiz)
+  const gradeCell = document.createElement('span');
+  gradeCell.className = 'dp-grade-cell';
+  const rep = document.createElement('button');
+  rep.type = 'button';
+  rep.className = 'dp-repeat-btn' + (rec.repeat ? ' on' : '');
+  rep.dataset.act = 'dp-repeat';
+  rep.dataset.gcode = code;
+  rep.setAttribute('aria-pressed', rec.repeat ? 'true' : 'false');
+  rep.setAttribute('aria-label', `${code || c.name} ${I18N.t('planColRepeat')}`);
+  rep.title = rec.prev
+    ? `${I18N.t('planMarkedRepeatPrev')} ${rec.prev}`
+    : I18N.t('planMarkRepeat');
+  rep.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 1 4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="m7 23-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>';
+  const wrap = document.createElement('span');
+  wrap.className = 'dp-grade-wrap';
+  const sel = buildGradeSelect(rec.grade || '', code);
+  wrap.appendChild(sel);
+  if (rec.grade) wrap.appendChild(makeClearBtn());
+  gradeCell.append(rep, wrap);
+  row.appendChild(gradeCell);
 
   card.appendChild(row);
 
@@ -931,8 +966,8 @@ function sectionGroupRow(g, hasInstr) {
   return row;
 }
 
-// Seçmeli slot — aynı 5 hücreli ızgara: kredi (slot varsayılanı) | slot başlığı
-// | (tekrar boş) | ders seç → not | durum (havuzu aç). DOM node.
+// Seçmeli slot (maket: .elec): elmas | slot adı + "3 kredi · 9 seçenek, 6 tanesi
+// bu dönem açık" | ders seç → not | "Havuzu aç". DOM node.
 function electiveRow(e, open, slotKey) {
   const total = e.options ? e.options.length : 0;
   const pick = (stored.elective || {})[slotKey] || null;
@@ -941,19 +976,22 @@ function electiveRow(e, open, slotKey) {
   const row = document.createElement('div');
   row.className = 'dp-row';
 
-  const credit = document.createElement('span');
-  credit.className = 'dp-credit';
-  credit.textContent = creditBadge({ credits: parseRange(e.credits, [0])[0] });
-  row.appendChild(credit);
+  const dia = document.createElement('span');
+  dia.className = 'dp-dia';
+  dia.setAttribute('aria-hidden', 'true');
+  row.appendChild(dia);
 
   const title = document.createElement('span');
-  title.className = 'dp-title dp-elective-name';
-  title.textContent = e.title || I18N.t('planElectiveDefaultTitle');
+  title.className = 'dp-title dp-elective-title';
+  const name = document.createElement('b');
+  name.className = 'dp-elective-name';
+  name.textContent = e.title || I18N.t('planElectiveDefaultTitle');
+  const meta = document.createElement('small');
+  meta.className = 'dp-elective-meta';
+  const credits = parseRange(e.credits, [0])[0];
+  meta.textContent = tf('dpElectiveMeta', { credits: trNum(credits), total, open });
+  title.append(name, meta);
   row.appendChild(title);
-
-  const repCell = document.createElement('span');
-  repCell.className = 'dp-repeat-cell';
-  row.appendChild(repCell);
 
   const notCell = document.createElement('div');
   notCell.className = 'dp-elective-inputs';
@@ -962,13 +1000,12 @@ function electiveRow(e, open, slotKey) {
 
   const btn = document.createElement('button');
   btn.type = 'button';
-  btn.className = 'dp-sec-btn ' + (open ? 'open' : 'closed');
+  btn.className = 'dp-pool-btn btn-ghost';
   btn.dataset.act = 'pool';
   if (e.title) btn.dataset.title = e.title;
-  const enElective = I18N.lang === 'en';
-  btn.textContent = open ? `${open} ${I18N.t('planOpenWord')}` : I18N.t('planClosed');
+  btn.textContent = I18N.t('dpOpenPool');
   btn.title = open
-    ? (enElective ? `${open} of ${total} alternatives open · ${I18N.t('planOpenPool')}` : `${total} alternatiften ${open} tanesi açık · ${I18N.t('planOpenPool')}`)
+    ? (I18N.lang === 'en' ? `${open} of ${total} alternatives open · ${I18N.t('planOpenPool')}` : `${total} alternatiften ${open} tanesi açık · ${I18N.t('planOpenPool')}`)
     : `${I18N.t('planNotOpenThisTerm')} · ${I18N.t('planOpenPool')}`;
   row.appendChild(btn);
 
@@ -1018,17 +1055,20 @@ function renderSummary(sems) {
   const load = sems.length === 1
     ? `${I18N.t('planSelectedSemesterLoad')} ${fmtSemLoad(semesterLoad(sems[0]))}`
     : sems.length > 1 ? `${sems.length} ${I18N.t('planSemesterUnit')}` : I18N.t('planWholePlan');
-  const prog = plan.programName || progCode;
+  const label = plan.planLabel || plan.programName || progCode;
   const remain = remainingRequired();
-  const remainHtml = remain > 0 ? `<div><dt>${I18N.t('planRemainingLabel')}</dt><dd>${remain} ${I18N.t('planRequiredCoursesUnit')}</dd></div>` : '';
-  el.innerHTML = `<div class="dp-summary-main">
-      <h2>${esc(prog)}</h2>
-    </div>
-    <dl class="dp-summary-meta">
-      <div><dt>${I18N.t('planProgramTotal')}${esc(computed)}</dt><dd>${esc(total)}</dd></div>
-      <div><dt>${I18N.t('planViewLabel')}</dt><dd>${esc(load)}</dd></div>
-      ${remainHtml}
-    </dl>`;
+  const sep = '<span class="dp-dot" aria-hidden="true"> · </span>';
+  const parts = [
+    `<b class="dp-plan-name">${esc(label)}</b>`,
+    `<span class="num">${esc(total)}</span>${computed ? ` <small>${esc(computed.trim())}</small>` : ''}`,
+  ];
+  if (sems.length === 1) parts.push(`<span>${esc(load)}</span>`);
+  if (remain > 0) parts.push(`<span>${esc(I18N.t('planRemainingLabel'))} <span class="num">${remain}</span> ${esc(I18N.t('planRequiredCoursesUnit'))}</span>`);
+  if (plan.sourceUrl && /^https:\/\/obs\.itu\.edu\.tr\//.test(plan.sourceUrl)) {
+    parts.push(`<a href="${esc(plan.sourceUrl)}" target="_blank" rel="noopener">${esc(I18N.t('dpOpenObsPlan'))}</a>`);
+  }
+  el.innerHTML = `<p class="dp-planline-text"><span class="sr-only">${esc(plan.programName || progCode)}: </span>${parts.join(sep)}</p>
+    <button type="button" class="btn-ghost dp-transcript-open dp-btn-sm">${esc(I18N.t('dpImportTranscript'))}</button>`;
 }
 
 function num(s) {
@@ -1104,11 +1144,18 @@ function renderGPA() {
   const body = panel.querySelector('.dp-grades-body');
   const preview = $('#dp-grade-preview');
   if (emptyEl) emptyEl.hidden = !empty;
-  if (body) body.classList.toggle('hidden', empty);
+  // Metrikler ve devir alanları boşken de görünür (maket): değerler "yok" kalır.
+  if (body) body.classList.remove('hidden');
   const t = stored.transfer || {};
   $('#dp-tcredits').value = t.credits ?? '';
   $('#dp-tgpa').value = t.gpa ?? '';
+  renderTypeBars();
   if (empty) {
+    const tot0 = planTotal();
+    if ($('#dp-gano')) $('#dp-gano').textContent = I18N.t('planNone');
+    if ($('#dp-progress')) $('#dp-progress').textContent = `0/${trNum(tot0.credits)} ${I18N.t('planCreditsFull')}`;
+    if ($('#dp-progress-sub')) $('#dp-progress-sub').textContent = '';
+    if ($('#dp-target')) $('#dp-target').textContent = I18N.t('planEnterGradeFirstShort');
     if (preview) preview.textContent = I18N.t('planGpaPreviewEmpty');
     setTargetState(true);
     renderYatay();
@@ -1126,7 +1173,6 @@ function renderGPA() {
   const sub = $('#dp-progress-sub');
   if (sub) sub.textContent = tot.ects > 0 ? `${p.ects.done}/${p.ects.total} ${I18N.t('planEctsAbbr')}` : '';
   $('#dp-target').textContent = targetText(st, tot);
-  $('#dp-types-progress').textContent = typeProgress();
   setTargetState(st.gpa == null || st.credits === 0);
   renderYatay();
 }
@@ -1229,13 +1275,25 @@ async function renderYatay() {
 
 // Tür bazlı eksik: "EC 0/5 kredi" — yalnızca gerçek türler kova olur; türü olmayan
 // dersler sayılmaz, Z/S kovalara sızmaz. Kova hesabı saf planstore.typeBuckets'te.
-function typeProgress() {
-  const buckets = typeBuckets(resolvedPlan(), allEntries());
-  if (!buckets.size) return '';
-  return [...buckets.entries()]
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([t, b]) => `${t} ${b.done}/${b.total} ${I18N.t('planCreditsFull')}`)
-    .join(' · ');
+// Maket: tür kodu | ilerleme çubuğu | "done / total". Çubuk dekoratif değil,
+// role="img" + aria-label ile aynı bilgiyi metin olarak da taşır.
+function renderTypeBars() {
+  const box = $('#dp-types-progress');
+  const card = box?.closest('.dp-typecard');
+  if (!box) return;
+  const buckets = plan ? typeBuckets(resolvedPlan(), allEntries()) : new Map();
+  if (card) card.hidden = !buckets.size;
+  if (!buckets.size) { box.innerHTML = ''; return; }
+  const order = ['MT', 'TM', 'TB', 'ITB', 'EC'];
+  box.innerHTML = [...buckets.entries()]
+    .sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]))
+    .map(([t, b]) => {
+      const pct = b.total > 0 ? Math.min(100, Math.round((b.done / b.total) * 100)) : 0;
+      const aria = tf('dpTypeBarAria', { type: t, total: trNum(b.total), done: trNum(b.done) });
+      return `<div class="dp-tp"><span class="num">${esc(t)}</span><span class="dp-tp-bar" role="img" aria-label="${esc(aria)}"><i style="width:${pct}%"></i></span><span class="dp-tp-v num">${trNum(b.done)} / ${trNum(b.total)}</span></div>`;
+    }).join('');
+  const note = $('#dp-types-note');
+  if (note) note.textContent = tf('dpTypeNote', { total: trNum(planTotal().credits) });
 }
 
 function targetText(st, tot) {
@@ -1770,7 +1828,17 @@ function init() {
   $('#dp-prog').addEventListener('change', () => {
     selectProgram($('#dp-prog').value);
   });
-  document.querySelectorAll('.dp-transcript-open').forEach((button) => button.addEventListener('click', importTranscript));
+  // Özet satırındaki düğme her çizimde yeniden kurulur: delege dinleyici.
+  $('#view-dersplanim').addEventListener('click', (ev) => {
+    if (ev.target.closest('.dp-transcript-open')) importTranscript();
+  });
+  // Yarıyıl açık/kapalı durumu yeniden çizimde korunur (toggle kabarcıklanmaz).
+  $('#dp-semesters').addEventListener('toggle', (ev) => {
+    const sem = ev.target;
+    if (!sem.classList?.contains('dp-sem')) return;
+    if (sem.open) closedSems.delete(sem.dataset.si);
+    else closedSems.add(sem.dataset.si);
+  }, true);
   ['#dp-open', '#dp-cap'].forEach((sel) => {
     $(sel).addEventListener('change', () => {
       filters.open = $('#dp-open').checked;

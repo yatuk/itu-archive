@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>İTÜ Ders Arşivi | Ders Programı, Önşart Haritası</title>
-<meta name="description" content="İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi: 2016'dan bugüne, OBS'de olmayan geçmiş dönemleri otomatik toplayan açık veri sitesi.">
+<title>İTÜ Ders Arşivi · Ders Programı Oluşturucu, Önşart ve GPA</title>
+<meta name="description" content="İTÜ ders programı ve açılan dersler, program oluşturucu, önşart haritası, GPA hesaplama ve akademik takvim. 2016'dan bugüne dersler, hocalar ve not dağılımları.">
 <meta name="keywords" content="itü ders arşivi, itü önşart, itü ders programı, itü akademik takvim, itü müfredat, itü ders planı, itü kontenjan, istanbul teknik üniversitesi">
 <meta name="author" content="İTÜ Ders Arşivi">
 <meta name="robots" content="index, follow">
@@ -30,7 +30,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="İTÜ Ders Arşivi">
-<meta property="og:title" content="İTÜ Ders Arşivi | Ders Programı, Önşart Haritası">
+<meta property="og:title" content="İTÜ Ders Arşivi · Ders Programı Oluşturucu, Önşart ve GPA">
 <meta property="og:description" content="OBS'nin yayınlamadığı geçmiş dönemleri, kontenjan geçmişini ve bölüm bazlı müfredat haritasını otomatik toplayan açık veri sitesi.">
 <meta property="og:url" content="https://itu-ders.com/">
 <meta property="og:image" content="https://itu-ders.com/social-card-v2.png">
@@ -45,14 +45,14 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=369e0fe76719">
+<link rel="stylesheet" href="assets/style.css?v=aa83badc33e5">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "İTÜ Ders Arşivi",
-  "alternateName": "ITU Course Archive",
+  "alternateName": ["itu-ders", "İTÜ Ders"],
   "url": "https://itu-ders.com/",
   "description": "İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi. OBS'nin yayınlamadığı geçmiş dönemleri otomatik toplayan açık veri sitesi.",
   "inLanguage": "tr-TR",
@@ -68,8 +68,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "İTÜ Ders Arşivi | Ders Programı, Önşart Haritası",
-  "description": "İTÜ ders programı, önşart haritası, sınav ve akademik takvim arşivi: 2016'dan bugüne, OBS'de olmayan geçmiş dönemleri otomatik toplayan açık veri sitesi.",
+  "name": "İTÜ Ders Arşivi · Ders Programı Oluşturucu, Önşart ve GPA",
+  "description": "İTÜ ders programı ve açılan dersler, program oluşturucu, önşart haritası, GPA hesaplama ve akademik takvim. 2016'dan bugüne dersler, hocalar ve not dağılımları.",
   "url": "https://itu-ders.com/",
   "inLanguage": "tr-TR",
   "isPartOf": { "@type": "WebSite", "name": "İTÜ Ders Arşivi", "url": "https://itu-ders.com/" }
@@ -147,7 +147,7 @@
      <source srcset="itü_ari.webp" type="image/webp">
      <img class="brand-logo" src="itü_ari.png" alt="İTÜ Ders Arşivi" width="32" height="31">
     </picture>
-    <h1>DERS&nbsp;ARŞİVİ</h1>
+    <span class="brand-title" translate="no">DERS&nbsp;ARŞİVİ</span>
    </a>
    <div class="mast-controls">
     <div class="theme-pick" role="group" aria-label="Görünüm teması" data-i18n-aria-label="themeGroup">
@@ -172,24 +172,17 @@
 </header>
 
 <h2 class="sr-only">Bölümler</h2>
-<nav class="tabs wrap" role="tablist" aria-label="Bölümler" data-i18n-aria-label="sectionsLabel">
- <a role="tab" aria-selected="true" aria-current="page" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" href="/#dersler"><span class="tab-number" aria-hidden="true">01</span><span data-i18n="tabDersler">DERSLER</span></a>
- <a role="tab" aria-selected="false" id="tab-gecmis" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" href="/#gecmis"><span class="tab-number" aria-hidden="true">02</span><span data-i18n="tabGecmis">GEÇMİŞ</span></a>
- <a role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" href="/#dersplanim"><span class="tab-number" aria-hidden="true">03</span><span data-i18n="tabDersplanim">DERS PLANIM/GPA</span></a>
- <a role="tab" aria-selected="false" id="tab-onsart" aria-controls="view-onsart" tabindex="-1" data-view="onsart" href="/#onsart"><span class="tab-number" aria-hidden="true">04</span><span data-i18n="tabOnsart">ÖNŞART HARİTASI</span></a>
- <a role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar" href="/#sinavlar"><span class="tab-number" aria-hidden="true">05</span><span data-i18n="tabSinavlar">SINAVLAR</span></a>
- <a role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" href="/#takvim"><span class="tab-number" aria-hidden="true">06</span><span data-i18n="tabTakvim">AKADEMİK TAKVİM</span></a>
- <a role="tab" aria-selected="false" id="tab-donemler" aria-controls="view-donemler" tabindex="-1" data-view="donemler" href="/#donemler"><span class="tab-number" aria-hidden="true">07</span><span data-i18n="tabDonemler">DÖNEMLER</span></a>
- <a role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" href="/#program"><span class="tab-number" aria-hidden="true">08</span><span data-i18n="tabProgram">PROGRAM</span></a>
- <a role="tab" aria-selected="false" id="tab-hakkinda" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" href="/#hakkinda"><span class="tab-number" aria-hidden="true">09</span><span data-i18n="tabHakkinda">HAKKINDA</span></a>
- <details class="tabs-more" role="presentation">
-  <summary id="tabs-more-label" data-i18n="navMore">Daha fazla</summary>
-  <div class="tabs-more-menu">
-   <button type="button" data-nav-view="gecmis" data-i18n="navHistory">Geçmiş</button>
-   <button type="button" data-nav-view="donemler" data-i18n="navTerms">Dönemler</button>
-   <button type="button" data-nav-view="hakkinda" data-i18n="navAbout">Hakkında</button>
-  </div>
- </details>
+<nav class="tabs app-tabs wrap" role="tablist" aria-label="Bölümler" data-i18n-aria-label="sectionsLabel">
+ <a role="tab" aria-selected="true" aria-current="page" id="tab-dersler" aria-controls="view-dersler" tabindex="0" data-view="dersler" href="/#dersler"><span data-i18n="tabDersler">Dersler</span></a>
+ <a role="tab" aria-selected="false" id="tab-dersplanim" aria-controls="view-dersplanim" tabindex="-1" data-view="dersplanim" href="/#dersplanim"><span data-i18n="tabDersplanim">Müfredat ve GPA</span></a>
+ <a role="tab" aria-selected="false" id="tab-onsart" aria-controls="view-onsart" tabindex="-1" data-view="onsart" href="/#onsart"><span data-i18n="tabOnsart">Önşart Haritası</span></a>
+ <a role="tab" aria-selected="false" id="tab-sinavlar" aria-controls="view-sinavlar" tabindex="-1" data-view="sinavlar" href="/#sinavlar"><span data-i18n="tabSinavlar">Sınavlar</span></a>
+ <a role="tab" aria-selected="false" id="tab-takvim" aria-controls="view-takvim" tabindex="-1" data-view="takvim" href="/#takvim"><span data-i18n="tabTakvim">Akademik Takvim</span></a>
+ <a role="tab" aria-selected="false" id="tab-program" aria-controls="view-program" tabindex="-1" data-view="program" href="/#program"><span data-i18n="tabProgram">Haftalık Program</span></a>
+ <span class="tabs-sep" role="presentation" aria-hidden="true"></span>
+ <a role="tab" aria-selected="false" id="tab-gecmis" class="tab-secondary" aria-controls="view-gecmis" tabindex="-1" data-view="gecmis" href="/#gecmis"><span data-i18n="tabGecmis">Geçmiş</span></a>
+ <a role="tab" aria-selected="false" id="tab-donemler" class="tab-secondary" aria-controls="view-donemler" tabindex="-1" data-view="donemler" href="/#donemler"><span data-i18n="tabDonemler">Dönemler</span></a>
+ <a role="tab" aria-selected="false" id="tab-hakkinda" class="tab-secondary" aria-controls="view-hakkinda" tabindex="-1" data-view="hakkinda" href="/#hakkinda"><span data-i18n="tabHakkinda">Hakkında</span></a>
 </nav>
 
 <section id="app-failure" class="app-failure wrap" hidden role="alert" aria-labelledby="app-failure-title">
@@ -207,13 +200,20 @@
 <main class="wrap" id="icerik">
 
  <section id="view-dersler" class="view" role="tabpanel" aria-labelledby="tab-dersler">
-  <div class="console">
-   <label class="query">
-    <span class="sigil">&gt;</span>
-    <input id="q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="kod, ad, CRN veya öğretim üyesi…" aria-label="Ders ara"
-           data-i18n-placeholder="courseSearchPlaceholder" data-i18n-aria-label="courseSearchLabel">
-   </label>
+  <header class="page-head course-head">
+   <h1 data-i18n="coursesTitle">Dersler</h1>
+   <p class="page-sub" data-i18n="coursesLead">Dönemin bütün şubeleri: kim veriyor, ne zaman, nerede ve kontenjanın ne kadarı dolu.</p>
+  </header>
+  <div class="console course-console">
+   <div class="course-query-row">
+    <label class="query course-search">
+     <span class="sigil" aria-hidden="true">&gt;</span>
+     <input id="q" type="search" autocomplete="off" spellcheck="false"
+            placeholder="kod, ad, CRN veya öğretim üyesi…" aria-label="Ders ara"
+            data-i18n-placeholder="courseSearchPlaceholder" data-i18n-aria-label="courseSearchLabel">
+    </label>
+    <label class="course-field course-term-field"><span data-i18n="filterTerm">dönem</span> <select id="f-term"></select></label>
+   </div>
    <div class="filters" id="filters">
     <div class="filters-sheet-head">
      <span class="eyebrow" data-i18n="filterButton">Filtreler</span>
@@ -222,122 +222,129 @@
       <button type="button" id="fs-apply" class="btn-primary" data-i18n="filterApply">uygula</button>
      </div>
     </div>
-    <label><span data-i18n="filterTerm">dönem</span> <select id="f-term"></select></label>
-    <label><span data-i18n="filterBranch">bölüm</span> <select id="f-branch"><option value="" data-i18n="filterAll">hepsi</option></select></label>
-    <label><span data-i18n="filterDay">gün</span> <select id="f-day">
+    <label class="course-field"><span data-i18n="filterBranch">bölüm</span> <select id="f-branch"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+    <label class="course-field"><span data-i18n="filterDay">gün</span> <select id="f-day">
       <option value="" data-i18n="filterAll">hepsi</option>
       <option value="Pazartesi" data-i18n="dayMonday">Pazartesi</option><option value="Salı" data-i18n="dayTuesday">Salı</option><option value="Çarşamba" data-i18n="dayWednesday">Çarşamba</option>
       <option value="Perşembe" data-i18n="dayThursday">Perşembe</option><option value="Cuma" data-i18n="dayFriday">Cuma</option><option value="Cumartesi" data-i18n="daySaturday">Cumartesi</option><option value="Pazar" data-i18n="daySunday">Pazar</option>
     </select></label>
-    <label><span data-i18n="filterTime">saat</span> <select id="f-time">
+    <label class="course-field"><span data-i18n="filterTime">saat</span> <select id="f-time">
       <option value="" data-i18n="filterAll">hepsi</option>
       <option value="sabah" data-i18n="timeMorning">sabah (&lt;12:00)</option>
       <option value="ogle" data-i18n="timeNoon">öğle (12:00-17:00)</option>
       <option value="aksam" data-i18n="timeEvening">akşam (≥17:00)</option>
     </select></label>
-    <label class="check"><input type="checkbox" id="f-open"> <span data-i18n="filterOpen">yalnızca kontenjanı olanlar</span></label>
-    <button type="button" id="f-more-toggle" class="btn-ghost" aria-expanded="false" aria-controls="filters-more" data-i18n="filterMore">Diğer filtreler</button>
+    <label class="check course-open-check"><input type="checkbox" id="f-open"> <span data-i18n="filterOpen">yalnızca kontenjanı olanlar</span></label>
+    <button type="button" id="f-more-toggle" class="btn-ghost course-more-toggle" aria-expanded="false" aria-controls="filters-more" data-i18n="filterMore">Diğer filtreler</button>
     <div class="filters-more" id="filters-more" hidden>
-     <label><span data-i18n="filterLevel">seviye</span> <select id="f-level">
+     <label class="course-field"><span data-i18n="filterLevel">seviye</span> <select id="f-level">
       <option value="OL" data-i18n="levelAssociate">Önlisans</option>
       <option value="LS" selected data-i18n="levelBachelor">Lisans</option>
       <option value="LU" data-i18n="levelMaster">Yüksek Lisans</option>
       <option value="LUI" data-i18n="levelDoctorate">Doktora</option>
      </select></label>
-     <label><span data-i18n="filterMethod">yöntem</span> <select id="f-method"><option value="" data-i18n="filterAll">hepsi</option></select></label>
-     <label><span data-i18n="filterProgram">alabilen program</span> <select id="f-program"><option value="" data-i18n="filterAll">hepsi</option></select></label>
-     <label><span data-i18n="filterCode">ders kodu</span> <input id="f-code" type="text" class="f-in" placeholder="BLG 101" spellcheck="false" aria-label="Ders koduna göre filtrele"></label>
+     <label class="course-field"><span data-i18n="filterMethod">yöntem</span> <select id="f-method"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+     <label class="course-field"><span data-i18n="filterProgram">alabilen program</span> <select id="f-program"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+     <label class="course-field"><span data-i18n="filterCode">ders kodu</span> <input id="f-code" type="text" class="f-in" placeholder="BLG 101" spellcheck="false" aria-label="Ders koduna göre filtrele" data-i18n-aria-label="filterCodeLabel"></label>
     </div>
    </div>
    <button type="button" id="f-filter-btn" class="btn-ghost" aria-expanded="false" aria-controls="filters" data-i18n="filterButton">Filtreler</button>
   </div>
   <div id="filters-scrim" class="filters-scrim" hidden aria-hidden="true"></div>
 
-  <div id="chips" class="chips" hidden aria-label="Aktif filtreler"></div>
+  <div id="chips" class="chips" hidden aria-label="Etkin filtreler" data-i18n-aria-label="activeFiltersLabel"></div>
   <div class="resultbar">
    <p class="resultline" id="resultline" aria-live="polite"></p>
    <div class="result-actions">
-    <label class="mobile-sort"><span data-i18n="sortLabel">sırala</span> <select id="mobile-sort" aria-label="Sırala" data-i18n-aria-label="sortLabel">
+    <label class="mobile-sort course-sort"><span data-i18n="sortLabel">sırala</span> <select id="mobile-sort" aria-label="Sırala" data-i18n-aria-label="sortLabel">
       <option value="crn">CRN</option>
-      <option value="code">Kod</option>
-      <option value="name">Ad</option>
-      <option value="instructor">Öğretim Üyesi</option>
-      <option value="cap">Toplam kontenjan</option>
-      <option value="enr">Yazılan öğrenci</option>
-      <option value="fill">Kontenjan doluluğu</option>
+      <option value="code" data-i18n="sortCode">Kod</option>
+      <option value="name" data-i18n="sortName">Ad</option>
+      <option value="instructor" data-i18n="sortInstructor">Öğretim üyesi</option>
+      <option value="when" data-i18n="sortWhen">Zaman</option>
+      <option value="cap" data-i18n="sortCap">Toplam kontenjan</option>
+      <option value="enr" data-i18n="sortEnr">Yazılan öğrenci</option>
+      <option value="fill" data-i18n="sortFill">Kontenjan doluluğu</option>
     </select></label>
-    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle" data-i18n-title="scheduleTitle"><span class="label-desktop">zaman çizelgesi</span><span class="label-mobile" data-i18n="scheduleMobileLabel">Çizelge</span></button>
-    <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir" data-i18n-title="csvTitle">CSV</button>
+    <button type="button" id="sort-dir" class="btn-ghost sort-dir" aria-pressed="false" aria-label="Azalan sırala" title="Azalan sırala" data-i18n-aria-label="sortDesc" data-i18n-title="sortDesc"><span aria-hidden="true">↓</span></button>
+    <div class="view-toggle" role="group" aria-label="Görünüm" data-i18n-aria-label="viewToggleLabel">
+     <button type="button" id="view-list" class="btn-ghost" aria-pressed="true" data-i18n="viewList">Liste</button>
+     <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle" data-i18n-title="scheduleTitle"><span class="label-desktop" data-i18n="viewTimetable">Zaman çizelgesi</span><span class="label-mobile" data-i18n="viewTimetableShort">Çizelge</span></button>
+    </div>
+    <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir" data-i18n-title="csvTitle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>CSV</button>
    </div>
   </div>
 
-
-  <div class="sepet" id="sepet" hidden>
+  <div class="sepet" id="sepet" role="region" aria-label="Seçilen şubeler" data-i18n-aria-label="selRegionLabel" hidden>
    <span id="sel-count"></span>
-   <button type="button" id="sel-csv" class="btn-ghost" data-i18n="selCSV">seçilenleri CSV</button>
-   <button type="button" id="sel-send" class="btn-ghost" data-i18n="selSend">programa gönder</button>
-   <button type="button" id="sel-clear" class="btn-ghost" data-i18n="selClear">temizle</button>
+   <button type="button" id="sel-send" class="btn-ghost sel-primary" data-i18n="selSend">Programa gönder</button>
+   <button type="button" id="sel-csv" class="btn-ghost" data-i18n="selCSV">Seçilenleri CSV</button>
+   <button type="button" id="sel-clear" class="btn-ghost sel-quiet" data-i18n="selClear">Temizle</button>
    <label class="check"><input type="checkbox" id="sel-only"> <span data-i18n="selOnly">yalnızca seçilenleri çizelgede göster</span></label>
   </div>
 
-  <div class="tablewrap">
-   <div id="dersler-table-mount"></div>
-  </div>
-  <div id="course-groups" class="course-groups" aria-label="Dersler ve şubeleri"></div>
-  <button id="more" class="more" hidden>daha fazla göster</button>
-  <div id="tt" hidden></div>
+  <div id="rows" class="course-status" role="status"></div>
+  <div id="course-groups" class="course-groups" role="region" aria-label="Dersler ve şubeleri" data-i18n-aria-label="courseGroupsLabel"></div>
+  <button type="button" id="more" class="more" hidden>daha fazla göster</button>
+  <div id="tt" class="course-tt" hidden></div>
 
   <aside class="tool-directory" aria-labelledby="tool-directory-title">
    <div class="tool-directory-head">
-    <div>
-     <h2 id="tool-directory-title">Aradığın işleme doğrudan git</h2>
-    </div>
-    <a class="tool-directory-all" href="/ders-secimi/">4 adımlı ders seçimi rehberi</a>
+    <h2 id="tool-directory-title" data-i18n="toolDirTitle">Aradığın işleme doğrudan git</h2>
+    <a class="tool-directory-all" href="/ders-secimi/" data-i18n="toolDirGuide">4 adımlı ders seçimi rehberi</a>
    </div>
    <div class="tool-directory-grid">
-    <a href="/ders-arsivi/"><strong>Geçmiş dersleri ara</strong><span>2016'dan bugüne ders, hoca ve şube geçmişi</span></a>
-    <a href="/ders-programi-olustur/"><strong>Ders programı oluştur</strong><span>CRN ekle, çakışmaları gör ve takvime aktar</span></a>
-    <a href="/gano-hesaplama/"><strong>GPA / GANO hesapla</strong><span>Harf notlarını gir, dönem ve genel ortalamanı gör</span></a>
-    <a href="/ders-plani/"><strong>Ders planını incele</strong><span>Müfredatı, kredileri ve seçmeli dersleri dönem dönem gör</span></a>
-    <a href="/sinav-programi/"><strong>Sınav programını aç</strong><span>Final tarihlerini ara ve sınav çakışmalarını kontrol et</span></a>
-    <a href="/akademik-takvim/"><strong>Akademik takvimi gör</strong><span>Kayıt, ders ve sınav tarihlerini tek yerde takip et</span></a>
+    <a href="/ders-arsivi/"><strong data-i18n="toolDirArchive">Geçmiş dersleri ara</strong><span data-i18n="toolDirArchiveSub">2016'dan bugüne ders, hoca ve şube geçmişi</span></a>
+    <a href="/ders-programi-olustur/"><strong data-i18n="toolDirBuild">Ders programı oluştur</strong><span data-i18n="toolDirBuildSub">CRN ekle, çakışmaları gör ve takvime aktar</span></a>
+    <a href="/gano-hesaplama/"><strong data-i18n="toolDirGpa">GPA / GANO hesapla</strong><span data-i18n="toolDirGpaSub">Harf notlarını gir, dönem ve genel ortalamanı gör</span></a>
+    <a href="/ders-plani/"><strong data-i18n="toolDirPlan">Ders planını incele</strong><span data-i18n="toolDirPlanSub">Müfredatı, kredileri ve seçmeli dersleri dönem dönem gör</span></a>
+    <a href="/sinav-programi/"><strong data-i18n="toolDirExams">Sınav programını aç</strong><span data-i18n="toolDirExamsSub">Final tarihlerini ara ve sınav çakışmalarını kontrol et</span></a>
+    <a href="/akademik-takvim/"><strong data-i18n="toolDirCalendar">Akademik takvimi gör</strong><span data-i18n="toolDirCalendarSub">Kayıt, ders ve sınav tarihlerini tek yerde takip et</span></a>
    </div>
-   <nav class="tool-directory-links" aria-label="Diğer İTÜ ders araçları">
-    <a href="/ders-programi/">Güncel ders programı</a>
-    <a href="/not-ortalamasi/">Harf notları</a>
-    <a href="/kontenjan/">Kontenjan doluluğu</a>
-    <a href="/onsart-haritasi/">Önşart haritası</a>
-    <a href="/bolumler/">Fakülte ve program haritası</a>
+   <nav class="tool-directory-links" aria-label="Diğer İTÜ ders araçları" data-i18n-aria-label="toolDirLinksLabel">
+    <a href="/ders-programi/" data-i18n="toolDirLinkSchedule">Güncel ders programı</a>
+    <a href="/not-ortalamasi/" data-i18n="toolDirLinkGrades">Harf notları</a>
+    <a href="/kontenjan/" data-i18n="toolDirLinkQuota">Kontenjan doluluğu</a>
+    <a href="/onsart-haritasi/" data-i18n="toolDirLinkPrereq">Önşart haritası</a>
+    <a href="/bolumler/" data-i18n="toolDirLinkFaculties">Fakülte ve program haritası</a>
    </nav>
   </aside>
  </section>
 
- <section id="view-gecmis" class="view" role="tabpanel" aria-labelledby="tab-gecmis" hidden>
-  <p class="note">
-   <span id="hist-note-count">…</span><span data-i18n="histNoteLead"> dönemin birleştirilmiş kaydı. OBS'de sorulamayan şeyler burada sorulabiliyor: </span><strong data-i18n="histNoteWho">bir dersi yıllar içinde kim verdi</strong>, <strong data-i18n="histNoteWhen">ders hangi dönemlerde açılıyor</strong>,
-   <strong data-i18n="histNoteWhat">bir öğretim üyesi hangi dersleri veriyor</strong>.
-  </p>
-  <div class="console">
-   <label class="query">
-    <span class="sigil">&gt;</span>
-    <input id="hq" type="search" autocomplete="off" spellcheck="false"
-           placeholder="BLG 102 veya öğretim üyesi adı…" aria-label="Geçmişte ara"
-           data-i18n-placeholder="histSearchPlaceholder" data-i18n-aria-label="histSearchLabel">
-   </label>
+ <section id="view-gecmis" class="view tx-view" role="tabpanel" aria-labelledby="tab-gecmis" hidden>
+  <div class="tx-head">
+   <h2 data-i18n="histPageTitle">Geçmiş</h2>
+   <p class="tx-sub">
+    <span id="hist-note-count" class="num">…</span><span data-i18n="histNoteLead"> dönemin birleştirilmiş kaydı. OBS'de sorulamayan şeyler burada sorulabiliyor: </span><strong data-i18n="histNoteWho">bir dersi yıllar içinde kim verdi</strong>, <strong data-i18n="histNoteWhen">ders hangi dönemlerde açılıyor</strong>,
+    <strong data-i18n="histNoteWhat">bir öğretim üyesi hangi dersleri veriyor</strong>.
+   </p>
   </div>
-  <p class="resultline" id="hresultline" aria-live="polite"></p>
-  <div id="hmatches" class="matches"></div>
+  <label class="query hist-search">
+   <span class="sigil" aria-hidden="true">&gt;</span>
+   <input id="hq" type="search" autocomplete="off" spellcheck="false"
+          placeholder="ders kodu (BLG 102) veya öğretim üyesi adı…" aria-label="Geçmişte ara"
+          data-i18n-placeholder="histSearchPlaceholder" data-i18n-aria-label="histSearchLabel">
+  </label>
+  <div class="hist-res">
+   <p class="resultline" id="hresultline" aria-live="polite"></p>
+   <div id="hmatches" class="matches"></div>
+  </div>
   <div id="hdetail"></div>
+  <div id="hist-top" class="hist-top" hidden>
+   <div class="tx-card tx-pad"><h3 data-i18n="histTopCourses">En çok dönem açılan dersler</h3><div class="hist-tl" id="hist-top-courses"></div></div>
+   <div class="tx-card tx-pad"><h3 data-i18n="histTopInstructors">En çok şubesi olan öğretim üyeleri</h3><div class="hist-tl" id="hist-top-people"></div></div>
+  </div>
+  <p class="tx-foot" id="hist-foot"></p>
  </section>
 
  <section id="view-onsart" class="view" role="tabpanel" aria-labelledby="tab-onsart" hidden>
   <div id="pg-root" class="pg-root">
    <header class="pg-head">
-    <div class="pg-head-copy"><h2 data-i18n="pgHeading">Önşart haritası</h2><p data-i18n="pgIntro">Bir program seç; derslerin dönem sırasını ve birbirine nasıl bağlandığını gör.</p></div>
-    <span class="pg-plan-label"></span>
+    <div class="pg-head-copy"><h2 data-i18n="pgHeading">Önşart haritası</h2><p data-i18n="pgIntroLong">Bir program seç; derslerin dönem sırasını ve birbirine nasıl bağlandığını gör. Bir derse tıklayınca zinciri öne çıkar.</p></div>
    </header>
    <section class="pg-picker" aria-label="Program seçimi" data-i18n-aria-label="pgPickerAriaLabel">
     <div class="pg-picker-fields">
+     <div class="pg-level-wrap"><span data-i18n="pgLevelLabel">Seviye</span><div class="pg-levels" role="group" aria-label="Program seviyesi" data-i18n-aria-label="pgLevelGroupAriaLabel" title="Yalnızca seçili seviyelerin programları listelenir" data-i18n-title="pgLevelGroupTitle"></div></div>
      <label><span data-i18n="pgFacultyLabel">Fakülte</span>
      <select class="pg-faculty-select" aria-label="Fakülte seç" data-i18n-aria-label="pgFacultySelectAriaLabel"><option data-i18n="statLoading">yükleniyor…</option></select>
      </label>
@@ -345,32 +352,33 @@
      <select class="pg-program-select" aria-label="Bölüm seç" data-i18n-aria-label="pgProgramSelectAriaLabel"><option data-i18n="statLoading">yükleniyor…</option></select>
      </label>
     </div>
-    <div class="pg-level-wrap"><span data-i18n="pgLevelLabel">Seviye</span><div class="pg-levels" role="group" aria-label="Program seviyesi" data-i18n-aria-label="pgLevelGroupAriaLabel" title="Yalnızca seçili seviyelerin programları listelenir" data-i18n-title="pgLevelGroupTitle"></div></div>
-   </section>
-   <div class="pg-tools">
-    <label class="query">
-     <span class="sigil">&gt;</span>
-     <input class="pg-search" type="search" autocomplete="off" spellcheck="false"
-            placeholder="Bu programda ders kodu veya adı ara…" aria-label="Ders planında ara" data-i18n-placeholder="pgSearchPlaceholder" data-i18n-aria-label="pgSearchAriaLabel">
-    </label>
-    <div class="pg-tool-actions">
-     <button type="button" class="pg-reset btn-ghost" disabled data-i18n="pgClearFocus">Odağı temizle</button>
-     <button type="button" class="pg-list-toggle btn-ghost" aria-pressed="false" data-i18n="pgListViewLabel">Liste görünümü</button>
+    <div class="pg-tools">
+     <label class="query">
+      <span class="sigil">&gt;</span>
+      <input class="pg-search" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Bu programda ders kodu veya adı ara…" aria-label="Ders planında ara" data-i18n-placeholder="pgSearchPlaceholder" data-i18n-aria-label="pgSearchAriaLabel">
+     </label>
+     <div class="pg-tool-actions">
+      <button type="button" class="pg-reset btn-ghost" disabled data-i18n="pgClearFocus">Odağı temizle</button>
+      <div class="pg-view-toggle" role="group" aria-label="Görünüm" data-i18n-aria-label="pgViewGroupAria">
+       <button type="button" class="pg-map-toggle" aria-pressed="true" data-i18n="pgMapLabel">Harita</button>
+       <button type="button" class="pg-list-toggle" aria-pressed="false" data-i18n="pgListShort">Liste</button>
+      </div>
+     </div>
     </div>
-   </div>
+   </section>
    <div class="pg-results" aria-live="polite"></div>
    <div class="pg-map-meta">
-    <p class="pg-status" data-i18n="pgSelectProgramPrompt">Bir program seçin</p>
-    <details class="pg-guide">
+    <div class="pg-meta-text"><p class="pg-status" data-i18n="pgSelectProgramPrompt">Bir program seçin</p><span class="pg-plan-label"></span></div>
+    <details class="pg-guide" open>
      <summary data-i18n="pgGuideSummary">Haritayı okuma</summary>
-     <div><span><i class="pg-line-solid"></i><span data-i18n="pgLegendRequired">Zorunlu önşart</span></span><span><i class="pg-line-dash"></i><span data-i18n="pgLegendAlternative">Alternatif; biri yeterli</span></span><span><i class="pg-diamond"></i><span data-i18n="pgLegendElectivePool">Seçmeli havuz</span></span></div>
+     <div><span><i class="pg-line-solid" aria-hidden="true"></i><span data-i18n="pgLegendRequired">Zorunlu önşart</span></span><span><i class="pg-line-dash" aria-hidden="true"></i><span data-i18n="pgLegendAlternative">Alternatif; biri yeterli</span></span><span><i class="pg-line-chain" aria-hidden="true"></i><span data-i18n="pgLegendChain">Odaktaki zincir</span></span><span><i class="pg-diamond" aria-hidden="true"></i><span data-i18n="pgLegendElectivePool">Seçmeli havuz</span></span><span><i class="pg-offplan-dot" aria-hidden="true"></i><span data-i18n="pgLegendOffPlan">Önşartı planda olmayan bir koda bağlı</span></span></div>
     </details>
    </div>
    <section class="pg-mobile-explorer" aria-label="Mobil önşart gezgini" data-i18n-aria-label="pgMobileExplorerAriaLabel" hidden></section>
    <div class="pg-workspace">
     <div class="pg-map">
-     <div class="pg-branches" aria-hidden="true"></div>
-     <div class="pg-canvas-wrap">
+     <div class="pg-canvas-wrap" role="region" aria-label="Önşart haritası, sürüklenebilir" data-i18n-aria-label="pgMapRegionAria">
       <canvas aria-label="Ders planı önşart haritası: müfredat dönem sütunlarında, önşartlar oklarla. Detay için düğümlere tıklayın." data-i18n-aria-label="pgCanvasAriaLabel" role="img"></canvas>
       <div class="pg-tooltip" hidden></div>
      </div>
@@ -378,45 +386,79 @@
     </div>
     <aside class="pg-detail" aria-live="polite"></aside>
    </div>
+   <div class="pg-warnbox" role="note" hidden></div>
   </div>
  </section>
 
- <section id="view-sinavlar" class="view" role="tabpanel" aria-labelledby="tab-sinavlar" hidden>
-  <div class="console">
-   <label class="query">
-    <span class="sigil">&gt;</span>
+ <section id="view-sinavlar" class="view tx-view" role="tabpanel" aria-labelledby="tab-sinavlar" hidden>
+  <div class="tx-head">
+   <h2 data-i18n="exPageTitle">Sınavlar</h2>
+   <p class="tx-sub" data-i18n="exPageSub">Dönem sonu ve mazeret sınavlarını ders, bina ya da bölüme göre ara; bulduklarını takvimine aktar.</p>
+  </div>
+  <div id="exam-status" class="tx-card xm-ann" role="status" hidden>
+   <div>
+    <span class="tx-k" id="exam-status-term"></span>
+    <h3 id="exam-status-title"></h3>
+    <p id="exam-status-body"></p>
+   </div>
+   <div class="xm-ann-when" id="exam-status-when" hidden>
+    <span class="tx-k" data-i18n="exAnnWhenLabel">Akademik takvime göre ilan</span>
+    <span class="xm-ann-date num" id="exam-status-date"></span>
+    <span class="xm-ann-rel"><span id="exam-status-rel"></span> · <a href="/#takvim" class="xm-cal-link" data-i18n="exAnnCalLink">takvimde gör</a></span>
+   </div>
+  </div>
+  <div class="tx-secth" id="exam-sec" hidden>
+   <h3 id="exam-sec-title"></h3>
+   <p class="tx-note" id="exam-sec-note"></p>
+  </div>
+  <div class="xm-q">
+   <label class="query xm-search">
+    <span class="sigil" aria-hidden="true">&gt;</span>
     <input id="eq" type="search" autocomplete="off" spellcheck="false"
            placeholder="kod, ad, CRN veya öğretim üyesi…" aria-label="Sınav ara"
            data-i18n-placeholder="examPlaceholder" data-i18n-aria-label="examSearchAriaLabel">
    </label>
-   <div class="filters">
-    <label><span data-i18n="examType">tür</span> <select id="f-etype"><option value="" data-i18n="filterAll">hepsi</option></select></label>
-    <label><span data-i18n="examBuilding">bina</span> <select id="f-building"><option value="" data-i18n="filterAll">hepsi</option></select></label>
-    <label><span data-i18n="filterBranch">bölüm</span> <select id="f-ebranch"><option value="" data-i18n="filterAll">hepsi</option></select></label>
-    <button type="button" id="e-ics" class="btn-ghost" title="Filtrelenmiş sınavları takvime aktar" data-i18n-title="examIcsTitle">.ics</button>
-   </div>
+   <label class="tx-field"><span data-i18n="examType">tür</span><select id="f-etype"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+   <label class="tx-field"><span data-i18n="examBuilding">bina</span><select id="f-building"><option value="" data-i18n="filterAll">hepsi</option></select></label>
+   <label class="tx-field"><span data-i18n="filterBranch">bölüm</span><select id="f-ebranch"><option value="" data-i18n="filterAll">hepsi</option></select></label>
   </div>
-  <p class="resultline" id="eresultline" aria-live="polite"></p>
-   <div id="exam-list-mount"></div>
-   <button type="button" id="emore" class="more" hidden data-i18n="more">daha fazla göster</button>
+  <div class="tx-rbar">
+   <p class="resultline" id="eresultline" aria-live="polite"></p>
+   <button type="button" id="e-ics" class="tx-btn" title="Filtrelenmiş sınavları takvime aktar" data-i18n-title="examIcsTitle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span data-i18n="exIcsButton">Takvime aktar (.ics)</span></button>
+  </div>
+  <div id="exam-list-mount"></div>
+  <button type="button" id="emore" class="more" hidden data-i18n="more">daha fazla göster</button>
+  <p class="tx-foot"><span data-i18n="exFootSource">Kaynak: obs.itu.edu.tr sınav programı. "İlgili Bölümce Açıklanacak" yazan yerler bölüm duyurusuyla belli olur.</span> <span data-i18n="exFootVerify">Resmî bir İTÜ hizmeti değildir; sınav yerini OBS'den doğrula.</span></p>
  </section>
 
- <section id="view-takvim" class="view" role="tabpanel" aria-labelledby="tab-takvim" hidden>
-  <div class="console">
-   <label><span data-i18n="calYearLabel">akademik yıl</span> <select id="f-year"></select></label>
-   <label><span data-i18n="calTypeLabel">tür</span> <select id="f-caltype"><option value="" data-i18n="filterAll">tümü</option></select></label>
-   <label class="check"><input type="checkbox" id="f-upcoming" checked> <span data-i18n="calUpcomingOnly">yalnızca gelecek etkinlikler</span></label>
-   <button type="button" id="cal-ics" class="btn-ghost" data-i18n="calExportICS">takvimi dışa aktar (.ics)</button>
+ <section id="view-takvim" class="view tx-view" role="tabpanel" aria-labelledby="tab-takvim" hidden>
+  <div class="tx-head">
+   <h2 data-i18n="calPageTitle">Akademik takvim</h2>
+   <p class="tx-sub" data-i18n="calPageSub">Kayıt, ders, sınav ve tatil tarihleri. Bugünden sonrası ay ay; geçmiş etkinlikleri de açabilirsin.</p>
   </div>
+  <div class="cal-bar">
+   <label class="tx-field"><span data-i18n="calYearLabel">akademik yıl</span><select id="f-year"></select></label>
+   <label class="tx-field"><span data-i18n="calTypeLabel">tür</span><select id="f-caltype"><option value="" data-i18n="filterAll">tümü</option></select></label>
+   <label class="check tx-chk"><input type="checkbox" id="f-upcoming" checked> <span data-i18n="calUpcomingOnly">yalnızca gelecek etkinlikler</span></label>
+   <button type="button" id="cal-ics" class="tx-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span data-i18n="calExportICS">takvimi dışa aktar (.ics)</span></button>
+  </div>
+  <div id="cal-now" class="tx-card cal-now" role="group" aria-label="Şu an ve sıradaki" data-i18n-aria-label="calNowAria" hidden></div>
+  <div id="cal-strip" class="tx-card cal-strip" hidden></div>
   <div id="calendar"></div>
+  <p class="tx-foot" id="cal-foot"></p>
  </section>
 
- <section id="view-donemler" class="view" role="tabpanel" aria-labelledby="tab-donemler" hidden>
-  <p class="note"><span data-i18n="termNoteA">OBS yalnızca </span><strong data-i18n="termNoteActive">aktif dönemi</strong><span data-i18n="termNoteB"> yayınlıyor. Geçmiş dönemler tarihsel
-   dökümlerden geri kazanıldı; bu dönemlerde öğretim yöntemi, derslik ve önşart gibi
-   bazı alanlar eksik olabilir. </span><strong data-i18n="termNoteMissingTerm">2024-2025 Güz</strong><span data-i18n="termNoteC"> hiçbir kaynakta bulunmuyor.</span>
-  </p>
+ <section id="view-donemler" class="view tx-view" role="tabpanel" aria-labelledby="tab-donemler" hidden>
+  <div class="tx-head">
+   <h2 data-i18n="termPageTitle">Dönemler</h2>
+   <p class="tx-sub"><span data-i18n="termNoteA">OBS yalnızca </span><strong data-i18n="termNoteActive">aktif dönemi</strong><span data-i18n="termNoteB"> yayınlıyor. Geçmiş dönemler tarihsel
+    dökümlerden geri kazanıldı; bu dönemlerde öğretim yöntemi, derslik ve önşart gibi
+    bazı alanlar eksik olabilir. </span><strong data-i18n="termNoteMissingTerm">2024-2025 Güz</strong><span data-i18n="termNoteC"> hiçbir kaynakta bulunmuyor.</span>
+   </p>
+  </div>
+  <div id="term-stats" class="tx-card term-stats" hidden></div>
   <div id="terms"></div>
+  <p class="tx-foot" id="term-foot"></p>
  </section>
 
  <section id="view-dersplanim" class="view" role="tabpanel" aria-labelledby="tab-dersplanim" hidden>
@@ -426,29 +468,28 @@
  <section id="view-program" class="view" role="tabpanel" aria-labelledby="tab-program" hidden>
   <section class="p-add" aria-labelledby="p-add-title">
    <div class="p-add-head">
-    <div><h2 id="p-add-title" data-i18n="progAddTitle">Ders ekle</h2><p data-i18n="progAddHint">Kod, ad, CRN veya öğretim üyesiyle ara.</p></div>
-    <label><span data-i18n="prgTerm">dönem</span> <select id="p-term"></select></label>
+    <h2 id="p-add-title" data-i18n="progAddTitle">Ders ekle</h2>
+    <p data-i18n="progAddHint">Kod, ad, CRN veya öğretim üyesiyle ara.</p>
    </div>
-   <div class="p-add-search">
-    <label class="query">
+   <div class="p-add-row">
+    <label class="query p-add-query">
      <span class="sigil">&gt;</span>
      <input id="p-q" type="search" autocomplete="off" spellcheck="false"
             data-i18n-placeholder="progSearchPlaceholder" placeholder="Örn. MAT 271E, Probability, 30154…"
             data-i18n-aria-label="progSearchAria" aria-label="Ders ara ve programa ekle">
     </label>
-    <button type="button" id="p-addrow" class="btn-ghost" data-i18n="progSelectBranchBtn">Bölümden seç</button>
+    <button type="button" id="p-addrow" class="btn-ghost p-btn" data-i18n="progSelectBranchBtn">Bölümden seç</button>
+    <label class="p-field p-term-field"><span data-i18n="prgTerm">dönem</span><select id="p-term"></select></label>
    </div>
+   <div id="p-results" class="p-results" hidden></div>
+   <div id="p-rows" class="p-rows" data-i18n-aria-label="progRowsAria" aria-label="Ders satırları"></div>
   </section>
-  <div id="p-results" class="p-results" hidden></div>
+
   <div class="p-toolbar">
-   <div class="p-workspace-title">
-    <span class="eyebrow" data-i18n="progActiveProgram">Aktif program</span>
-    <div class="p-progsel">
-     <select id="p-prog" class="p-prog-select" data-i18n-aria-label="progSelectProgramAria" aria-label="Program seç"></select>
-    </div>
-   </div>
-   <button type="button" id="p-altfind" class="btn-ghost" data-i18n="progAltFindBtn" data-i18n-title="progAltFindBtnTitle" title="Programındaki dersler için çakışmasız alternatif kombinasyonlar ara">Alternatif bul</button>
-   <span class="p-credits" data-i18n-title="progCreditsTitle" title="Toplam kredi ve AKTS"><span data-i18n="progTotalLabel">Toplam</span><b id="p-credits-val">·</b></span>
+   <label class="p-progsel">
+    <span class="p-k" data-i18n="progActiveProgram">Aktif program</span>
+    <select id="p-prog" class="p-prog-select"></select>
+   </label>
    <details class="p-progmenu">
     <summary aria-label="Program işlemleri" data-i18n-aria-label="progActionsAria"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg></summary>
     <div class="p-progtools">
@@ -458,195 +499,172 @@
      <button type="button" id="p-prog-del" class="p-danger" data-i18n="progDeleteProgramBtn">Programı sil</button>
     </div>
    </details>
+   <button type="button" id="p-altfind" class="btn-ghost p-btn" data-i18n-title="progAltFindBtnTitle" title="Programındaki dersler için çakışmasız alternatif kombinasyonlar ara"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h11M4 17h7M15 4l3 3-3 3M11 14l3 3-3 3"/></svg><span data-i18n="progAltFindBtn">Alternatif bul</span></button>
+   <span class="p-credits" data-i18n-title="progCreditsTitle" title="Toplam kredi ve AKTS"><span data-i18n="progTotalLabel">Toplam</span> <span id="p-credits-val">·</span></span>
   </div>
 
-  <div id="p-rows" class="p-rows" data-i18n-aria-label="progRowsAria" aria-label="Ders satırları"></div>
+  <div id="p-conflict" class="p-alert" role="status" hidden></div>
+  <div id="p-summary" class="p-summary"></div>
 
   <div class="p-layout">
-   <aside class="p-panel">
+   <aside class="p-panel" aria-labelledby="p-list-title">
     <div class="p-panel-head">
-     <div><h2><span data-i18n="progAddedCoursesHeading">Eklenen dersler</span> <span id="p-count">0</span></h2><p class="p-panel-hint"><span class="label-desktop" data-i18n="progDragHint">Sürükleyerek sıralayabilirsin.</span><span class="label-mobile" data-i18n="progMobileHint">Programındaki şubeler burada görünür.</span></p></div>
+     <h2 id="p-list-title"><span data-i18n="progAddedCoursesHeading">Eklenen dersler</span> <span id="p-count" class="num">0</span></h2>
      <button type="button" id="p-clear" class="p-clear-link" data-i18n="prgClear">Tümünü temizle</button>
     </div>
-    <label class="check p-full"><input type="checkbox" id="p-full"> <span data-i18n="prgFull">dolu şubeleri işaretle</span></label>
+    <p class="p-panel-hint label-desktop" data-i18n="progDragHint">Sürükleyerek sıralayabilirsin.</p>
     <div id="p-list" class="p-list" role="table" data-i18n-aria-label="progListAria" aria-label="Programa eklenen dersler" aria-live="polite"></div>
-    <button type="button" id="p-favs" class="btn-ghost p-favs" data-i18n="prgFavs">Favorilerimi ekle</button>
-    <details class="p-export">
-     <summary data-i18n="progExportShare">Dışa aktar ve paylaş</summary>
-     <div class="p-actions p-actions-bot">
-      <button type="button" id="p-dl" class="btn-ghost" data-i18n-title="progPNGTitle" title="Takvimi görsel olarak indir">PNG</button>
-      <button type="button" id="p-print" class="btn-ghost" data-i18n="progPrintBtn" data-i18n-title="progPrintTitle" title="Takvimi yazdır veya PDF olarak kaydet">Yazdır / PDF</button>
-      <button type="button" id="p-csv" class="btn-ghost" data-i18n="prgCSV">CSV</button>
-      <button type="button" id="p-ics" class="btn-ghost" data-i18n="progICSBtn" data-i18n-title="progICSTitle" title="Seçili şubeleri haftalık takvim olarak dışa aktar">Takvim (.ics)</button>
-      <button type="button" id="p-share" class="btn-ghost" data-i18n="prgShare">Bağlantıyı kopyala</button>
-     </div>
-    </details>
-    <div id="p-obs-code" class="p-obs-code" hidden></div>
+    <div class="p-ptools">
+     <label class="check p-full-toggle"><input type="checkbox" id="p-full"> <span data-i18n="prgFull">dolu şubeleri işaretle</span></label>
+     <button type="button" id="p-favs" class="btn-ghost p-btn p-favs" data-i18n="prgFavs">Favorilerimi ekle</button>
+     <details class="p-export">
+      <summary data-i18n="progExportShare">Dışa aktar ve paylaş</summary>
+      <div class="p-actions p-actions-bot">
+       <button type="button" id="p-dl" class="btn-ghost p-btn" data-i18n-title="progPNGTitle" title="Takvimi görsel olarak indir">PNG</button>
+       <button type="button" id="p-print" class="btn-ghost p-btn" data-i18n="progPrintBtn" data-i18n-title="progPrintTitle" title="Takvimi yazdır veya PDF olarak kaydet">Yazdır / PDF</button>
+       <button type="button" id="p-csv" class="btn-ghost p-btn" data-i18n="prgCSV">CSV</button>
+       <button type="button" id="p-ics" class="btn-ghost p-btn" data-i18n="progICSBtn" data-i18n-title="progICSTitle" title="Seçili şubeleri haftalık takvim olarak dışa aktar">Takvim (.ics)</button>
+       <button type="button" id="p-share" class="btn-ghost p-btn" data-i18n="prgShare">Bağlantıyı kopyala</button>
+      </div>
+     </details>
+     <div id="p-obs-code" class="p-obs-code" hidden></div>
+    </div>
    </aside>
    <div class="p-main">
     <div class="p-main-head">
-     <div id="p-summary" class="p-summary"></div>
-     <div class="p-main-actions">
-      <div class="p-obs-wrap">
-       <a id="p-obs" class="btn-primary" href="javascript:void(0)" draggable="true" aria-describedby="p-obs-tt" data-i18n="prgObs">OBS için CRN hazırla</a>
-       <div id="p-obs-tt" class="ttip" role="tooltip" data-i18n="progOBSDragHint">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</div>
-      </div>
+     <div class="p-viewtoggle" role="radiogroup" data-i18n-aria-label="progGridOptsAria" aria-label="Takvim görünümü">
+      <label class="p-seg"><input type="radio" name="p-view" id="p-gridview" value="grid"><span data-i18n="progViewGrid">Izgara</span></label>
+      <label class="p-seg"><input type="radio" name="p-view" id="p-agendaview" value="agenda"><span data-i18n="progViewAgenda">Gün gün</span></label>
      </div>
-    </div>
-    <div class="p-gridopts" data-i18n-aria-label="progGridOptsAria" aria-label="Takvim görünümü">
-     <label class="check p-gridview-toggle"><input type="checkbox" id="p-gridview"> <span data-i18n="progGridCheckbox">Izgara</span></label>
-     <label class="check"><input type="checkbox" id="p-weekend"> <span data-i18n="progWeekendCheckbox">Hafta sonu</span></label>
-     <label class="check"><input type="checkbox" id="p-fullday"> <span data-i18n="progFullDayCheckbox">Tüm gün</span></label>
+     <div class="p-gridopts">
+      <label class="check"><input type="checkbox" id="p-weekend"> <span data-i18n="progWeekendCheckbox">Hafta sonu</span></label>
+      <label class="check"><input type="checkbox" id="p-fullday"> <span data-i18n="progFullDayCheckbox">Tüm gün</span></label>
+     </div>
+     <div class="p-obs-wrap">
+      <a id="p-obs" class="btn-primary" href="javascript:void(0)" draggable="true" aria-describedby="p-obs-tt" data-i18n="prgObs">OBS için CRN hazırla</a>
+      <small id="p-obs-tt" class="p-obs-hint" data-i18n="progOBSDragHint">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</small>
+     </div>
     </div>
     <div id="p-grid" class="p-grid"></div>
    </div>
   </div>
  </section>
 
- <section id="view-hakkinda" class="view" role="tabpanel" aria-labelledby="tab-hakkinda" hidden>
-  <div class="prose">
-   <h2>Bu ne?</h2>
-   <p>
-    İTÜ'nün ders programı sayfası yalnızca içinde bulunulan dönemi gösteriyor. Dönem bitince
-    o veri kayboluyor: hangi dersin ne zaman açıldığı, kimin verdiği, kontenjanın ne kadar dolduğu
-    bir sonraki dönem sorulamaz hale geliyor. Bu depo o veriyi günlük olarak çekip
-    sürüm kontrolüne alıyor.
-   </p>
-   <p>
-    Denemek için: <strong>Geçmiş</strong> sekmesinde "BLG 102E'yi son yıllarda kim verdi?",
-    <strong>Dersler</strong> sekmesinde "Bu dönem BLG 102E'nin şubeleri" sorgularını arayın.
-   </p>
+ <section id="view-hakkinda" class="view tx-view" role="tabpanel" aria-labelledby="tab-hakkinda" hidden>
+  <div class="ab-hero">
+   <span class="tx-k" data-i18n="tabHakkinda">Hakkında</span>
+   <h2 data-i18n="abTitle">Dönem bitince kaybolan ders verisini saklayan açık arşiv</h2>
+   <p class="ab-lede"><span data-i18n="abLedeA">İTÜ'nün ders programı sayfası yalnızca içinde bulunulan dönemi gösteriyor. Dönem bitince hangi dersin ne zaman açıldığı, kimin verdiği, kontenjanın ne kadar dolduğu sorulamaz hale geliyor. Bu site o veriyi </span><b data-i18n="abLedeB">her gün çekip sürüm kontrolüne alıyor</b><span data-i18n="abLedeC">.</span></p>
+  </div>
 
-   <h2>Veri nereden geliyor?</h2>
-   <ul>
-     <li><code>obs.itu.edu.tr/public/DersProgram</code>: dört program seviyesi (Önlisans, Lisans, Lisansüstü, Lisansüstü 2. Öğretim) ve 337 bölüm kodu için güncel ders programı.</li>
-     <li><code>takvim.sis.itu.edu.tr</code>: dört akademik yılın tam takvimi.</li>
-     <li>Tarihsel dökümler: 2016-2017'ye kadar uzanan geçmiş dönemler.</li>
-   </ul>
+  <div class="tx-card ab-stats">
+   <div>
+    <span class="tx-k"><span data-i18n="abStatActive">Aktif dönem</span> · <span id="ab-active-term">…</span></span>
+    <div class="ab-nums">
+     <div><b class="num" id="ab-n-sections">…</b><span data-i18n="prgSube">şube</span></div>
+     <div><b class="num" id="ab-n-courses">…</b><span data-i18n="histUnitCourses">ders</span></div>
+     <div><b class="num" id="ab-n-branches">…</b><span data-i18n="abUnitBranches">branş</span></div>
+     <div><b class="num" id="ab-n-instructors">…</b><span data-i18n="abUnitInstructors">öğretim üyesi</span></div>
+    </div>
+   </div>
+   <div>
+    <span class="tx-k"><span data-i18n="abStatArchive">Arşiv</span> · <span id="ab-archive-range">…</span></span>
+    <div class="ab-nums">
+     <div><b class="num" id="ab-n-terms">…</b><span data-i18n="histUnitTerms">dönem</span></div>
+     <div><b class="num" id="ab-n-hcourses">…</b><span data-i18n="histUnitCourses">ders</span></div>
+     <div><b class="num" id="ab-n-hinstructors">…</b><span data-i18n="abUnitInstructors">öğretim üyesi</span></div>
+    </div>
+   </div>
+  </div>
 
-   <h2>Ham veriye erişim</h2>
-   <p>Her dönem için JSON ve CSV doğrudan indirilebilir; sayfa da aynı dosyaları kullanıyor. Windows PowerShell'de <code>curl</code> başka bir komuta bağlı olabildiği için aşağıdaki örnekler <code>curl.exe</code> kullanır.</p>
-   <pre><code># aktif dönemin tüm şubeleri (CSV)
+  <div class="ab-lay">
+   <nav class="ab-toc" aria-label="Bu sayfada" data-i18n-aria-label="abTocLabel">
+    <a href="#ab-src" data-i18n="abSrcTitle">Veri nereden geliyor</a>
+    <a href="#ab-raw" data-i18n="abRawTitle">Ham veriye erişim</a>
+    <a href="#ab-tabs" data-i18n="abTabsTitle">Sekmeler ne yapıyor</a>
+    <a href="#ab-faq" data-i18n="abFaqTitle">Sık sorulanlar</a>
+    <a href="#ab-warn" data-i18n="abWarnTitle">Uyarı</a>
+    <a href="#ab-os" data-i18n="abOsTitle">Açık kaynak ve MCP</a>
+   </nav>
+
+   <div class="prose">
+    <section aria-labelledby="ab-src">
+     <h3 id="ab-src" tabindex="-1" data-i18n="abSrcTitle">Veri nereden geliyor</h3>
+     <div class="ab-src">
+      <div class="tx-card"><code>obs.itu.edu.tr/public/DersProgram</code><span data-i18n="abSrcObs">Dört program seviyesi (Önlisans, Lisans, Lisansüstü, Lisansüstü 2. Öğretim) ve 337 bölüm kodu için güncel ders programı.</span></div>
+      <div class="tx-card"><code>takvim.sis.itu.edu.tr</code><span data-i18n="abSrcCal">Dört akademik yılın tam takvimi.</span></div>
+      <div class="tx-card"><code data-i18n="abSrcDumpsCode">tarihsel dökümler</code><span data-i18n="abSrcDumps">2016-2017'ye kadar uzanan geçmiş dönemler.</span></div>
+     </div>
+     <p data-i18n="abSrcFreq">Ders programı günde bir kez, kontenjan doluluğu kayıt haftalarında yarım saatte bir taranır. Kontenjan sayıları bu yüzden anlık değildir.</p>
+    </section>
+
+    <section aria-labelledby="ab-raw">
+     <h3 id="ab-raw" tabindex="-1" data-i18n="abRawTitle">Ham veriye erişim</h3>
+     <p><span data-i18n="abRawLeadA">Her dönem için JSON ve CSV doğrudan indirilebilir; sayfa da aynı dosyaları kullanıyor. Windows PowerShell'de </span><code>curl</code><span data-i18n="abRawLeadB"> başka bir komuta bağlı olabildiği için aşağıdaki örnekler </span><code>curl.exe</code><span data-i18n="abRawLeadC"> kullanır.</span></p>
+     <pre><code><span class="c" data-i18n="abRawCmtCsv"># aktif dönemin tüm şubeleri (CSV)</span>
 curl.exe -fL --output itu-dersleri.csv https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/all.csv
 
-# tek bölüm (JSON)
+<span class="c" data-i18n="abRawCmtBranch"># tek bölüm (JSON)</span>
 curl.exe -fL --output BIL.json https://<span class="host">SİTE</span>/data/terms/<span class="var">DÖNEM</span>/branches/BIL.json
 
-# dönem ve takvim listesi
+<span class="c" data-i18n="abRawCmtIndex"># dönem ve takvim listesi</span>
 curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/index.json</code></pre>
-   <nav class="raw-data-links" aria-label="Ham veri dosyaları">
-    <a class="raw-current-csv" href="/data/terms/2026-2027-guz/all.csv" download>Aktif dönem CSV'sini indir</a>
-    <a class="raw-current-branch" href="/data/terms/2026-2027-guz/branches/BIL.json" download>BIL bölüm JSON'unu indir</a>
-    <a href="/data/index.json" download>Dönem listesini indir</a>
-   </nav>
+     <nav class="raw-data-links ab-dl" aria-label="Ham veri dosyaları" data-i18n-aria-label="abRawLinksLabel">
+      <a class="raw-current-csv tx-btn" href="/data/terms/2026-2027-guz/all.csv" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlCsv">Aktif dönem CSV'sini indir</span></a>
+      <a class="raw-current-branch tx-btn" href="/data/terms/2026-2027-guz/branches/BIL.json" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlBranch">BIL bölüm JSON'unu indir</span></a>
+      <a class="tx-btn" href="/data/index.json" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlIndex">Dönem listesini indir</span></a>
+     </nav>
+    </section>
 
-   <h2>İTÜ ders programı ve arşivi</h2>
-   <p>
-    OBS, içinde bulunulan dönemin ders programını gösterir; geçmiş dönemler resmî sitede
-    yer almaz. Bu site 2016-2017 yazından bugüne kadar açılmış dersleri dönem dönem
-    arşivler. Bir dersin hangi dönemlerde açıldığını, hangi öğretim üyesi tarafından
-    verildiğini, kontenjanını ve kaç kişinin yazıldığını geriye dönük sorabilirsiniz.
-    Örneğin BLG 102E'nin son yıllardaki hoca listesi ve doluluk oranları, ya da bir
-    dersin yalnızca güz mü bahar mı açıldığı burada görünür. Yaz okulu dersleri de
-    aynı arşivde yer alır.
-   </p>
+    <section aria-labelledby="ab-tabs">
+     <h3 id="ab-tabs" tabindex="-1" data-i18n="abTabsTitle">Sekmeler ne yapıyor</h3>
+     <dl class="ab-feat">
+      <dt data-i18n="tabDersler">Dersler</dt><dd data-i18n="abFeatCourses">Aktif dönemin bütün şubeleri; ders kodu, öğretim üyesi, zaman, yer ve kontenjan doluluğuyla aranır.</dd>
+      <dt data-i18n="tabGecmis">Geçmiş</dt><dd data-i18n="abFeatHistory">OBS geçmiş dönemleri göstermez; bu arşiv 2016-2017 yazından bugüne açılmış dersleri dönem dönem saklar. Bir dersin hangi dönemlerde açıldığı, hangi öğretim üyesinin verdiği, kontenjanı ve kaç kişinin yazıldığı geriye dönük sorulur; örneğin BLG 102E'nin son yıllardaki hoca listesi. Yaz okulu dersleri de aynı arşivdedir.</dd>
+      <dt data-i18n="tabOnsart">Önşart Haritası</dt><dd data-i18n="abFeatPrereq">Bir bölüm seçildiğinde güncel müfredat dönem sütunları halinde çizilir. OBS'nin "MAT 102 Veya MAT 102E" gibi ifadeleri ayrıştırılır; düz ok zorunlu önşartı, kesikli ok alternatifi (biri yeterli) gösterir.</dd>
+      <dt data-i18n="tabDersplanim">Müfredat ve GPA</dt><dd data-i18n="abFeatPlan">Önlisans, lisans, yüksek lisans ve doktora programlarının güncel müfredatı: hangi dönemde hangi derslerin zorunlu olduğu, seçmeli havuzlar ve not girerek GANO hesabı.</dd>
+      <dt data-i18n="abFeatQuotaTitle">Kontenjan geçmişi</dt><dd data-i18n="abFeatQuota">Kayıt haftalarında kontenjan doluluğu düzenli ölçülür ve zaman serisi olarak saklanır; bir dersin kayıt açıldıktan ne kadar sonra dolduğu görülebilir.</dd>
+      <dt data-i18n="abFeatExamsTitle">Sınavlar ve takvim</dt><dd data-i18n="abFeatExams">Aktif dönemin final ve mazeret sınav takvimi ders, tür ve binaya göre aranır. Akademik takvimde dönem başlangıçları, kayıt tarihleri ve sınav haftaları dört akademik yıl için listelenir.</dd>
+      <dt data-i18n="tabProgram">Haftalık Program</dt><dd data-i18n="abFeatProgram">CRN girmeden, seçilen derslere göre çakışmasız bir haftalık program kurulur. Alternatif Bul aracı gün, saat aralığı ve öğretim üyesi kısıtlarına uyan şube kombinasyonlarını hesaplayıp karşılaştırır.</dd>
+      <dt data-i18n="tabDonemler">Dönemler</dt><dd data-i18n="abFeatTerms">Arşivdeki her dönem, kaynağı ve indirilebilir dosyalarıyla.</dd>
+     </dl>
+     <p class="ab-guides-lead" data-i18n="abGuidesLead">Ders kaydı ve program hazırlama süreçlerini adım adım anlatan iki rehber ile İTÜ'ye özgü kısaltmaların (CRN, ÖBS, SİS, Ninova…) açıklandığı bir sözlük:</p>
+     <nav class="tool-directory-links ab-links" aria-label="Rehberler ve sözlük" data-i18n-aria-label="abGuidesLabel">
+      <a class="tx-btn" href="/ders-kaydi-nasil-yapilir/" data-i18n="abGuideRegister">Ders kaydı nasıl yapılır?</a>
+      <a class="tx-btn" href="/ders-programi-nasil-hazirlanir/" data-i18n="abGuideSchedule">Ders programı nasıl hazırlanır?</a>
+      <a class="tx-btn" href="/terimler-sozlugu/" data-i18n="abGuideGlossary">Terimler sözlüğü</a>
+      <a class="tx-btn" href="/bolumler/" data-i18n="abGuideFaculties">Fakülte ve program haritası</a>
+     </nav>
+    </section>
 
-   <h2>İTÜ ders önşartları</h2>
-   <p>
-    Önşart Haritası sekmesinde bir bölüm seçtiğinizde, o bölümün güncel müfredatı dönem
-    sütunları halinde çizilir ve dersler arasındaki önşart ilişkileri ok'larla gösterilir.
-     OBS'nin "MAT 102 Veya MAT 102E" gibi ifadeleri ayrıştırılır. Düz ok zorunlu önşartı,
-     kesikli ok alternatifi (biri yeterli) gösterir. Hangi dersin hangi derse bağlı olduğu
-     tıklamadan görünür.
-   </p>
+    <section aria-labelledby="ab-faq">
+     <h3 id="ab-faq" tabindex="-1" data-i18n="abFaqTitle">Sık sorulanlar</h3>
+     <details class="ab-faq" open><summary><span data-i18n="abFaqQ1">İTÜ'de geçmiş dönemlerin ders programına nasıl bakılır?</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p data-i18n="abFaqA1">OBS (obs.itu.edu.tr) yalnızca içinde bulunulan dönemi gösterir, geçmiş dönemler resmî sitede yer almaz. Bu arşiv o veriyi 2016-2017'den bugüne, dönem dönem saklanmış hâlde sunar.</p></details>
+     <details class="ab-faq"><summary><span data-i18n="abFaqQ2">İTÜ'de bir dersin önşartı nasıl görülür?</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p data-i18n="abFaqA2">Önşart Haritası sekmesinde bir bölüm seçildiğinde, o bölümün güncel müfredatı dönem dönem, gerçek önşart ilişkileriyle görselleştirilir.</p></details>
+     <details class="ab-faq"><summary><span data-i18n="abFaqQ3">Bu dönem İTÜ'de hangi dersler açılıyor?</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p data-i18n="abFaqA3">Dersler sekmesinde aktif dönemin tüm şubeleri; ders kodu, öğretim üyesi, kontenjan ve doluluk bilgisiyle birlikte aranabilir.</p></details>
+     <details class="ab-faq"><summary><span data-i18n="abFaqQ4">İTÜ ders arşivi verisi ne sıklıkla güncelleniyor?</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p data-i18n="abFaqA4">Ders programı günde bir kez, kontenjan doluluğu kayıt haftalarında yarım saatte bir otomatik olarak taranır ve arşive eklenir.</p></details>
+     <details class="ab-faq"><summary><span data-i18n="abFaqQ5">İTÜ'de ders programı nasıl oluşturulur?</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p data-i18n="abFaqA5">Program sekmesinde CRN girmeden, seçtiğiniz derslere göre çakışmasız bir haftalık program kurabilirsiniz. Alternatif Bul aracı, seçtiğiniz kısıtlara uyan alternatif şube kombinasyonlarını otomatik hesaplar.</p></details>
+    </section>
 
-   <h2>İTÜ müfredatı ve ders planı</h2>
-   <p>
-    Lisans, önlisans, yüksek lisans ve doktora programlarının güncel müfredatı dönem dönem
-    çekilir. Bir programın hangi dönemde hangi dersleri zorunlu tuttuğunu, seçmeli
-    havuzlarını ve derslerin dönem sırasını görüntüleyebilirsiniz.
-   </p>
+    <section aria-labelledby="ab-warn">
+     <h3 id="ab-warn" tabindex="-1" data-i18n="abWarnTitle">Uyarı</h3>
+     <div class="ab-warnbox" role="note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg><p><span data-i18n="abWarnA">Bu resmî bir İTÜ hizmeti değil. Kayıt kararlarını vermeden önce daima </span><a href="https://obs.itu.edu.tr/public/DersProgram" rel="noopener" data-i18n="abWarnLink">OBS'nin kendi sayfasını</a><span data-i18n="abWarnB"> doğrulayın. Veriler günde bir kez tazelenir; kayıt haftalarında kontenjan sayıları anlık değildir.</span></p></div>
+    </section>
 
-   <h2>İTÜ kontenjan geçmişi</h2>
-   <p>
-    Kayıt haftalarında kontenjan doluluğu düzenli ölçülür ve zaman serisi olarak saklanır.
-    Bir dersin kayıt açıldıktan kaç dakika sonra dolduğu gibi sorulara cevap aranır.
-    Sitenin Dersler sekmesinde doluluk yüzdeleri anlık olarak görünür.
-   </p>
-
-   <h2>İTÜ sınav takvimi ve akademik takvim</h2>
-   <p>
-    Aktif dönemin final ve mazeret sınav takvimi ders, tür ve binaya göre aranabilir.
-    Akademik takvimde ise dönem başlangıçları, kayıt tarihleri ve sınav haftaları dört
-    akademik yıl için listelenir.
-   </p>
-
-   <h2>İTÜ ders programı oluşturma</h2>
-   <p>
-    Program sekmesinde CRN girmeden, seçtiğiniz derslere göre çakışmasız bir haftalık
-    program kurabilirsiniz. "Alternatif Bul" aracı aynı dersin farklı şubeleri arasından
-    seçilen kısıtlara (gün, saat aralığı, öğretim üyesi) uyan alternatif programları otomatik
-    hesaplar ve karşılaştırmalı olarak listeler.
-   </p>
-
-   <h2>Rehberler ve terimler sözlüğü</h2>
-   <p>
-    Ders kaydı ve program hazırlama süreçlerini adım adım anlatan iki rehber ile İTÜ'ye özgü
-    kısaltmaların (CRN, ÖBS, SİS, Ninova...) açıklandığı bir sözlük hazırladık.
-   </p>
-   <nav class="tool-directory-links" aria-label="Rehberler ve sözlük">
-    <a href="/ders-kaydi-nasil-yapilir/">Ders kaydı nasıl yapılır?</a>
-    <a href="/ders-programi-nasil-hazirlanir/">Ders programı nasıl hazırlanır?</a>
-    <a href="/terimler-sozlugu/">Terimler sözlüğü</a>
-    <a href="/bolumler/">Fakülte ve program haritası</a>
-   </nav>
-
-   <h2>Sık sorulanlar</h2>
-   <p><strong>İTÜ'de geçmiş dönemlerin ders programına nasıl bakılır?</strong><br>
-   OBS (obs.itu.edu.tr) yalnızca içinde bulunulan dönemi gösterir, geçmiş dönemler resmî
-   sitede yer almaz. Bu arşiv o veriyi 2016-2017'den bugüne, dönem dönem saklanmış hâlde sunar.</p>
-   <p><strong>İTÜ'de bir dersin önşartı nasıl görülür?</strong><br>
-   Önşart Haritası sekmesinde bir bölüm seçildiğinde, o bölümün güncel müfredatı dönem dönem,
-   gerçek önşart ilişkileriyle görselleştirilir.</p>
-   <p><strong>Bu dönem İTÜ'de hangi dersler açılıyor?</strong><br>
-   Dersler sekmesinde aktif dönemin tüm şubeleri; ders kodu, öğretim üyesi, kontenjan ve
-   doluluk bilgisiyle birlikte aranabilir.</p>
-   <p><strong>İTÜ ders arşivi verisi ne sıklıkla güncelleniyor?</strong><br>
-   Ders programı günde bir kez, kontenjan doluluğu kayıt haftalarında yarım saatte bir
-   otomatik olarak taranır ve arşive eklenir.</p>
-   <p><strong>İTÜ'de ders programı nasıl oluşturulur?</strong><br>
-   Program sekmesinde CRN girmeden, seçtiğiniz derslere göre çakışmasız bir haftalık program
-   kurabilirsiniz. Alternatif Bul aracı, seçtiğiniz kısıtlara uyan alternatif şube
-   kombinasyonlarını otomatik hesaplar.</p>
-
-   <h2>Uyarı</h2>
-    <p>
-     Bu resmî bir İTÜ hizmeti değil. Kayıt kararlarını vermeden önce daima
-     <a href="https://obs.itu.edu.tr/public/DersProgram" rel="noopener">OBS'nin kendi sayfasını</a> doğrulayın.
-     Veriler günde bir kez tazelenir; kayıt haftalarında kontenjan sayıları anlık değildir.
-    </p>
-
-    <h2>Açık kaynak</h2>
-    <p>Bu sitenin verisi, kazıyıcısı ve arayüzü tamamen açık kaynak:</p>
-    <ul>
-     <li><a href="https://github.com/yatuk/itu-archive" rel="noopener">itu-archive</a>: veri kazıyıcı (Go) + bu sitenin kaynak kodu</li>
-     <li><a href="https://github.com/yatuk/itu-mcp" rel="noopener">itu-mcp</a>: Ninova + OBS'yi Claude, Cursor ve Codex'e bağlayan MCP sunucusu</li>
-    </ul>
-    <p>Katkı, öneri ve hata bildirimi için GitHub üzerinden issue açabilirsiniz.</p>
-
-    <h2>İTÜ MCP</h2>
-    <p>
-     <a href="https://github.com/yatuk/itu-mcp" rel="noopener">itu-mcp</a>, bilgisayarında çalışan küçük bir sunucu.
-     Derslerini, ödevlerini, notlarını, transkriptini, danışman bilgini ve daha fazlasını
-     Claude, Cursor veya Codex'e doğal dilde sorabilir hale getiriyor.
-     Arşiv verisine de bağlanıyor: "BLG 102E'yi son 5 yılda kim verdi?" gibi soruları
-     cevaplayabiliyor. Kimlik bilgilerin cihazında kalır, üçüncü tarafa gönderilmez.
-    </p>
-
-    <span class="ksr-kap">
-     <a class="ksr-google" href="https://www.google.com/preferences/source?q=itu-ders.com" target="_blank" rel="noopener"><span class="ksr-gg"></span><span class="ksr-g-metin">Google’da Tercih<br>Edilen Kaynak ekle</span></a>
-    </span>
+    <section aria-labelledby="ab-os">
+     <h3 id="ab-os" tabindex="-1" data-i18n="abOsTitle">Açık kaynak ve MCP</h3>
+     <p data-i18n="abOsLead">Bu sitenin verisi, kazıyıcısı ve arayüzü tamamen açık kaynak. Katkı, öneri ve hata bildirimi için GitHub üzerinden issue açabilirsiniz.</p>
+     <div class="ab-repo">
+      <a href="https://github.com/yatuk/itu-archive" rel="noopener"><b translate="no">itu-archive</b><span data-i18n="abRepoArchive">Veri kazıyıcı (Go) ve bu sitenin kaynak kodu</span></a>
+      <a href="https://github.com/yatuk/itu-mcp" rel="noopener"><b translate="no">itu-mcp</b><span data-i18n="abRepoMcp">Ninova ve OBS'yi Claude, Cursor ve Codex'e bağlayan MCP sunucusu</span></a>
+     </div>
+     <p data-i18n="abMcpBody">itu-mcp, bilgisayarında çalışan küçük bir sunucu. Derslerini, ödevlerini, notlarını, transkriptini, danışman bilgini ve daha fazlasını Claude, Cursor veya Codex'e doğal dilde sorabilir hale getiriyor. Arşiv verisine de bağlanıyor: "BLG 102E'yi son 5 yılda kim verdi?" gibi soruları cevaplayabiliyor. Kimlik bilgilerin cihazında kalır, üçüncü tarafa gönderilmez.</p>
+     <span class="ksr-kap">
+      <a class="ksr-google" href="https://www.google.com/preferences/source?q=itu-ders.com" target="_blank" rel="noopener"><span class="ksr-gg"></span><span class="ksr-g-metin">Google’da Tercih<br>Edilen Kaynak ekle</span></a>
+     </span>
+    </section>
    </div>
+  </div>
  </section>
 
 </main>
@@ -659,13 +677,25 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
 </div>
 
 <footer class="wrap">
+ <nav class="foot-tools" aria-label="Araçlar"><span class="foot-tools-head">Araçlar</span>
+  <a href="/ders-programi/">İTÜ ders programı</a>
+  <a href="/ders-programi-olustur/">Ders programı oluşturucu</a>
+  <a href="/ders-arsivi/">Geçmiş dönem ders arşivi</a>
+  <a href="/onsart-haritasi/">Önşart haritası</a>
+  <a href="/gano-hesaplama/">GPA / GANO hesaplama</a>
+  <a href="/not-dagilimi/">Not dağılımı</a>
+  <a href="/akademik-takvim/">Akademik takvim</a>
+  <a href="/sinav-programi/">Sınav programı</a>
+  <a href="/hoca/">Hocalar</a>
+  <a href="/bolumler/">Bölümler</a>
+ </nav>
  <span id="foot-build">·</span> ·
  <a href="data/index.json">index.json</a> ·
  veri kaynağı İstanbul Teknik Üniversitesi
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=369e0fe76719"></script>
+<script type="module" src="assets/app.js?v=aa83badc33e5"></script>
 <script>
 (function () {
   var root = document.documentElement;

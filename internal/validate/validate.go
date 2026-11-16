@@ -41,7 +41,7 @@ var LandingSlugs = []string{
 	"ders-programi-olustur", "kontenjan", "ders-secimi", "onsart-haritasi",
 	"sinav-programi", "akademik-takvim", "ders-arsivi",
 	"ders-kaydi-nasil-yapilir", "ders-programi-nasil-hazirlanir", "terimler-sozlugu",
-	"bolumler",
+	"bolumler", "hoca", "not-dagilimi",
 }
 
 func (r *Result) errf(format string, args ...any) {
@@ -929,6 +929,7 @@ func (r *Result) checkStatus(root string) {
 
 func (r *Result) checkSitePages(root string) {
 	r.checkGeneratedSEOMetadata(root)
+	r.checkRedirects(root)
 
 	derDir := filepath.Join(root, "dersler")
 	bransDir := filepath.Join(root, "brans")
@@ -1264,7 +1265,8 @@ func (r *Result) checkGeneratedSEOMetadata(root string) {
 			}
 		}
 
-		if strings.Contains(filepath.ToSlash(rel), "hoca/") {
+		// Tekil hoca sayfaları (hoca/<slug>/index.html); /hoca/ dizin sayfası değil.
+		if relSlash := filepath.ToSlash(rel); strings.Contains(relSlash, "hoca/") && relSlash != "hoca/index.html" {
 			for _, required := range []string{`"@type":"Person"`, `"@type":"BreadcrumbList"`, `class="seo-data-note"`} {
 				if !strings.Contains(s, required) {
 					r.errf("seo hoca: %s içinde %s eksik", rel, required)
@@ -1276,6 +1278,56 @@ func (r *Result) checkGeneratedSEOMetadata(root string) {
 		}
 		return nil
 	})
+}
+
+// checkRedirects, docs/_redirects (Cloudflare Pages) kurallarını denetler:
+// sınırlar (2.000 statik, 100 dinamik), statik kaynağın bugün bir sayfası
+// olmaması (Pages yönlendirmeyi dosyanın önüne koyar, var olan sayfa
+// kaybolur) ve hedefin gerçekten var olması.
+func (r *Result) checkRedirects(root string) {
+	b, err := os.ReadFile(filepath.Join(root, "_redirects"))
+	if os.IsNotExist(err) {
+		return
+	}
+	if err != nil {
+		r.errf("_redirects okunamadı: %v", err)
+		return
+	}
+	static, dynamic := 0, 0
+	for i, line := range strings.Split(string(b), "\n") {
+		line = strings.TrimSpace(line)
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+		f := strings.Fields(line)
+		if len(f) != 3 || f[2] != "301" || !strings.HasPrefix(f[0], "/") || !strings.HasPrefix(f[1], "/") {
+			r.errf("_redirects satır %d biçimi bozuk: %q", i+1, line)
+			continue
+		}
+		if strings.ContainsAny(f[0], "*:") {
+			dynamic++
+			// Dinamik kuralın kapsadığı dizinde gerçek sayfa olmamalı.
+			if dir := strings.TrimSuffix(f[0], "*"); dir != f[0] {
+				if ents, err := os.ReadDir(filepath.Join(root, filepath.FromSlash(strings.Trim(dir, "/")))); err == nil && len(ents) > 0 {
+					r.errf("_redirects: %s altında yayınlanan dosya var, kural onları gölgeler", dir)
+				}
+			}
+			continue
+		}
+		static++
+		if _, err := os.Stat(resolveHref(root, f[0], "")); err == nil {
+			r.errf("_redirects: %s bugün yayınlanan bir sayfa, yönlendirilmemeli", f[0])
+		}
+		if _, err := os.Stat(resolveHref(root, f[1], "")); err != nil {
+			r.errf("_redirects: %s hedefi %s bulunamadı", f[0], f[1])
+		}
+	}
+	if static > 2000 {
+		r.errf("_redirects: %d statik kural, Cloudflare Pages sınırı 2000", static)
+	}
+	if dynamic > 100 {
+		r.errf("_redirects: %d dinamik kural, Cloudflare Pages sınırı 100", dynamic)
+	}
 }
 
 func collectSitemapPageLocs(root, path string, visited map[string]bool) (map[string]bool, error) {

@@ -15,7 +15,7 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-import { esc, fold, getJSON, termLabel } from './core/utils.js?v=dde1e9339338';
+import { esc, fold, getJSON, termLabel, trNum } from './core/utils.js?v=dde1e9339338';
 import { state } from './core/store.js?v=dde1e9339338';
 import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=dde1e9339338';
@@ -68,67 +68,47 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     };
   }
 
-  const PALETTE = [
-    '#5eead4', '#38bdf8', '#818cf8', '#c084fc', '#f472b6', '#fb7185',
-    '#fb923c', '#facc15', '#a3e635', '#4ade80', '#2dd4bf', '#60a5fa', '#e879f9', '#94a3b8',
-  ];
-
-  function hueOf(key) {
-    let h = 0;
-    for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
-    return PALETTE[h % PALETTE.length];
-  }
-
-  // Canvas renkleri temaya göre seçilir (WCAG 2.2 AA: kenar ≥3:1, etiket ≥4.5:1).
-  // Açık temada koyu zemin üstüne tasarlanmış renkler okunmaz olur; burada token
-  // değerleri okunur ve açık yüzey için yeniden üretilir. Koyu temada değerler
-  // ESKİSİYLE AYNIDIR. Tema değişince canvasColors() taze değer verir.
+  // Canvas renkleri tema token'larından okunur (maket: Onsart.dc.html). Sabit
+  // renk yazılmaz; tema değişince canvasColors() taze değer verir.
   let _canvasColors = null;
   function canvasColors() {
     const theme = document.documentElement.dataset.theme || 'dark';
     if (_canvasColors && _canvasColors.theme === theme) return _canvasColors;
-    const light = theme === 'sade';
     const cs = getComputedStyle(document.documentElement);
-    const v = (n) => cs.getPropertyValue(n).trim();
-    const c = light ? {
-      emptyDim: 'rgba(69,86,76,0.75)',
-      emptyFaint: 'rgba(69,86,76,0.5)',
-      laneHeaderBg: 'rgba(238,241,238,0.92)',
-      laneHeaderFg: 'rgba(30,43,35,0.92)',
-      edge: v('--dim') || 'rgba(69,86,76,0.85)',       // ~7:1, kenar ≥3:1
-      edgeRelated: v('--acid') || 'rgba(26,122,85,1)',  // ~5.3:1
-      edgeDim: 'rgba(120,130,125,0.18)',
-      label: v('--fg') || 'rgba(30,43,35,0.95)',        // ~14:1 + halo
-      labelDim: 'rgba(110,120,115,0.6)',
-      labelHalo: 'rgba(255,255,255,0.92)',
-      focus: v('--acid') || '#1a7a55',
-      hover: v('--cyan') || '#1f6f8b',
-    } : {
-      // Koyu ve yüksek kontrast — mevcut çizim değerleri, değişmez.
-      emptyDim: 'rgba(140,160,150,0.6)',
-      emptyFaint: 'rgba(140,160,150,0.4)',
-      laneHeaderBg: 'rgba(10,16,12,0.85)',
-      laneHeaderFg: 'rgba(230,245,235,0.85)',
-      edge: 'rgba(120,200,170,0.4)',
-      edgeRelated: 'rgba(0,255,156,0.85)',
-      edgeDim: 'rgba(140,160,150,0.08)',
-      label: 'rgba(230,245,235,0.92)',
-      labelDim: 'rgba(140,160,150,0.35)',
-      labelHalo: null,
-      focus: '#00ff9c',
-      hover: 'rgba(53,224,255,0.9)',
+    const v = (n, fb) => cs.getPropertyValue(n).trim() || fb;
+    _canvasColors = {
+      theme,
+      bg: v('--bg', '#f4f6f4'),
+      panel: v('--panel', '#fff'),
+      panel2: v('--panel-2', '#eef1ee'),
+      fg: v('--fg', '#1e2b23'),
+      dim: v('--dim', '#45564c'),
+      dimmer: v('--dimmer', '#5a6b61'),
+      line: v('--line', '#cdd7cf'),
+      hot: v('--line-hot', '#73877b'),
+      acid: v('--acid', '#805f1a'),
+      amber: v('--amber', '#8a5f00'),
+      cyan: v('--cyan', '#1f3f6b'),
+      mono: v('--mono', 'ui-monospace, monospace'),
+      sans: v('--sans', 'system-ui, sans-serif'),
     };
-    _canvasColors = { theme, ...c };
     return _canvasColors;
   }
 
-  const LANE_PAD = 90;   // ilk/son sütunun kenarla arası
-  const ROW_PAD = 46;
-  const NODE_R = 15;
+  // Dünya koordinatları (maketteki SVG ile aynı ölçek): 112×40 düğüm, 150px
+  // dönem sütunu, 56px satır. Kamera bu dünyayı canvas'a ölçekler.
+  const NODE_W = 112;
+  const NODE_H = 40;
+  const LANE_W = 150;
+  const ROW_H = 56;
+  const TOP = 44;
+  const SIDE = 10;
   // Haritanın okunamayacak kadar küçülmesini engelle. Yoğun planlarda
   // düğümlerin taşması kabul edilir; kullanıcı haritayı sürükleyebilir.
   const MIN_ZOOM = 0.55;
   const MAX_ZOOM = 3;
+
+  const reduceMotion = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   class PlanGraph {
     constructor(root) {
@@ -145,10 +125,8 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       this.drag = null;
       this.nodes = null;
       this.resizeFrame = 0;
-      // Detay paneli açılınca grid canvas sütununu daraltır. Yalnızca layout/draw
-      // yapmak bitmap'i eski genişlikte bırakıp CSS ile sıkıştırıyordu; özellikle
-      // son dönem sütunları üst üste/yinelenmiş görünüyordu. Kutuyu gözleyip hem
-      // bitmap boyutunu hem kamerayı tek frame'de birlikte yenile.
+      // Kutu boyu değişince (pencere, detay kartı, görünüm geçişi) bitmap ve
+      // kamera tek frame'de birlikte yenilenir; aksi halde CSS bitmap'i sıkıştırır.
       this.ro = new ResizeObserver(() => this.queueResize());
       this.ro.observe(root.querySelector('.pg-canvas-wrap'));
       this.bindInput();
@@ -162,7 +140,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       });
     }
 
-    // build: node = { code, name, kind:'course'|'elective', lane, requirement, options }
+    // build: node = { code, label, name, kind:'course'|'elective', lane, requirement, options, offPlan }
     // edge = { from, to } (kod)
     async build(nodes, edges, laneTitles, statusLabel) {
       this.laneTitles = laneTitles;
@@ -184,13 +162,15 @@ import { I18N } from './i18n.js?v=dde1e9339338';
         push(this.byTo, e.to.code, e.from.code);
       }
 
-      this.hay = this.nodes.map((n) => fold(`${n.code} ${n.name || ''}`));
+      this.hay = this.nodes.map((n) => fold(`${n.label || ''} ${n.name || ''}`));
       this.focus = null; this.related = null;
+      prereqModule?.unmountPrereqDetail();
       this.detail.innerHTML = '';
       this.root.classList.remove('pg-has-detail');
       const reset = this.root.querySelector('.pg-reset');
       if (reset) reset.disabled = true;
-      this.status.textContent = statusLabel;
+      this.statusLabel = statusLabel;
+      this.renderStatus();
 
       this.layout();
       this.resize();
@@ -198,17 +178,26 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       this.draw();
     }
 
-    // layout, her düğümü kendi dönem sütununda, o sütundaki sırasına göre
-    // dikey ortalanmış olarak konumlandırır. Fizik yok — pozisyon tamamen
-    // dönem ve sıraya göre belirleniyor, bu yüzden kenarlar her zaman aynı
-    // (öngörülebilir) yerde ve net görünüyor.
+    // Durum satırı: "Program · 48 ders/slot · 13 önşart bağı · odak BLG 223E".
+    renderStatus() {
+      if (!this.status) return;
+      this.status.textContent = this.statusLabel || '';
+      if (this.focus && this.byCode?.has(this.focus)) {
+        const n = this.byCode.get(this.focus);
+        const b = document.createElement('b');
+        b.className = 'pg-status-focus';
+        b.setAttribute('translate', 'no');
+        b.textContent = n.kind === 'elective' ? n.name : (n.label || n.name);
+        this.status.append(` · ${I18N.t('pgFocusWord')} `, b);
+      }
+    }
+
+    // layout, her düğümü kendi dönem sütununa, o sütundaki sırasına göre
+    // yukarıdan aşağı dizer (maket: zorunlu dersler üstte, seçmeli slotlar altta).
     layout() {
       // Veri yüklenmeden canvas resize olabilir (ResizeObserver erken tetiklenir);
       // boş graf boş döner — TypeError fırlatılmaz.
       if (!this.nodes || !this.nodes.length) return;
-      const w = Math.max(this.canvas.clientWidth, 600);
-      const laneCount = this.laneTitles.length;
-      const laneW = laneCount > 1 ? (w - LANE_PAD * 2) / (laneCount - 1) : 0;
       const byLane = new Map();
       for (const n of this.nodes) {
         if (!byLane.has(n.lane)) byLane.set(n.lane, []);
@@ -216,44 +205,34 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       }
       let maxRows = 1;
       for (const list of byLane.values()) maxRows = Math.max(maxRows, list.length);
-      const rowH = Math.max(NODE_R * 2 + 18, 64);
-      this.contentHeight = maxRows * rowH + ROW_PAD * 2;
-
+      this.contentHeight = TOP + maxRows * ROW_H;
+      this.contentWidth = this.laneTitles.length * LANE_W;
       for (const [lane, list] of byLane) {
-        list.sort((a, b) => (a.kind === 'elective') - (b.kind === 'elective') || a.code.localeCompare(b.code));
-        const totalH = list.length * rowH;
-        const offsetY = (this.contentHeight - totalH) / 2 + rowH / 2;
+        list.sort((a, b) => (a.kind === 'elective') - (b.kind === 'elective') || (a.order ?? 0) - (b.order ?? 0));
         list.forEach((n, i) => {
-          n.x = LANE_PAD + lane * laneW;
-          n.y = offsetY + i * rowH;
+          n.x = lane * LANE_W + SIDE + NODE_W / 2;
+          n.y = TOP + i * ROW_H + NODE_H / 2;
         });
       }
-      this.rowH = rowH;
-      this.laneW = laneW; // fitToView ve başlık çizimi bunu kullanıyor, yakınlaştırmadan bağımsız sabit
     }
 
-    // introAnimate, düğümleri rastgele bir başlangıç noktasından kendi
-    // hedeflerine doğru süzdürür. requestAnimationFrame değil setTimeout
-    // kullanıyoruz: sekme görünür değilken tarayıcılar rAF'ı süresiz askıya
-    // alabiliyor, animasyon hiç bitmeyebilir.
+    // introAnimate, düğümleri kendi sütunlarına kısa bir süzülmeyle yerleştirir.
+    // requestAnimationFrame değil setTimeout: gizli sekmede rAF askıya
+    // alınabiliyor. Hareket azaltma tercihinde animasyon atlanır.
     async introAnimate() {
+      if (reduceMotion()) return;
       const targets = this.nodes.map((n) => ({ x: n.x, y: n.y }));
-      const w = this.canvas.clientWidth, h = this.canvas.clientHeight;
-      this.nodes.forEach((n) => {
-        n.x = w / 2 + (Math.random() - 0.5) * 60;
-        n.y = h / 2 + (Math.random() - 0.5) * 60;
-      });
-      const DUR = 420, start = performance.now();
-      const sx = w / 2, sy = h / 2;
+      const DUR = 320, start = performance.now();
       let last = start;
       while (true) {
         const now = performance.now();
         const t = Math.min(1, (now - start) / DUR);
         const e = 1 - Math.pow(1 - t, 3); // ease-out
         this.nodes.forEach((n, i) => {
-          n.x = sx + (targets[i].x - sx) * e;
-          n.y = sy + (targets[i].y - sy) * e;
+          n.x = targets[i].x - (1 - e) * 24;
+          n.y = targets[i].y;
         });
+        this.alpha = e;
         this.draw();
         if (t >= 1) break;
         if (performance.now() - last > 16) {
@@ -261,22 +240,23 @@ import { I18N } from './i18n.js?v=dde1e9339338';
           last = performance.now();
         }
       }
+      this.alpha = 1;
       this.nodes.forEach((n, i) => { n.x = targets[i].x; n.y = targets[i].y; });
     }
 
     fitToView() {
       const w = this.canvas.clientWidth, h = this.canvas.clientHeight;
-      // ResizeObserver veri/program seçimi tamamlanmadan çalışabilir. Bu sırada
-      // laneTitles henüz yoktur; boş canvas varsayılan kamerayla çizilir.
+      // ResizeObserver veri/program seçimi tamamlanmadan çalışabilir.
       if (!this.nodes?.length || !this.laneTitles?.length) {
         this.cam = { x: 0, y: 0, k: 1 };
         return;
       }
-      const contentW = LANE_PAD * 2 + (this.laneTitles.length - 1) * this.laneW;
-      const k = Math.min(w / (contentW || w), h / ((this.contentHeight || h) * 1.05), 1.6);
+      const cw = this.contentWidth + SIDE, ch = this.contentHeight + 12;
+      const k = Math.min(w / cw, h / ch, 1.25);
       this.cam.k = Math.max(k, MIN_ZOOM);
-      this.cam.x = (w - contentW * this.cam.k) / 2;
-      this.cam.y = (h - (this.contentHeight || h) * this.cam.k) / 2;
+      // Sığmıyorsa ilk dönemler görünür kalsın (sola yasla); sığıyorsa ortala.
+      this.cam.x = Math.max(0, (w - cw * this.cam.k) / 2);
+      this.cam.y = 0;
     }
 
     resize() {
@@ -285,7 +265,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       // Gizli sekme ilk kurulurken 0×0 olabilir; görünür olduğunda observer yeni
       // ölçüyü tekrar yollar. Sıfır bitmap yazıp mevcut çizimi bozma.
       if (w < 1 || h < 1) return;
-      this.canvas.width = w * dpr; this.canvas.height = h * dpr;
+      this.canvas.width = Math.round(w * dpr); this.canvas.height = Math.round(h * dpr);
       this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       this.layout();
       this.fitToView();
@@ -298,136 +278,106 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     draw() {
       const ctx = this.ctx, w = this.canvas.clientWidth, h = this.canvas.clientHeight;
       ctx.clearRect(0, 0, w, h);
-
       const c = canvasColors();
       // Boş durum: program seçilene kadar kılavuz mesajı.
       if (!this.nodes) {
-        ctx.font = '13px ui-monospace, monospace';
+        ctx.font = `13px ${c.sans}`;
         ctx.textAlign = 'center';
-        ctx.fillStyle = c.emptyDim;
+        ctx.fillStyle = c.dim;
         ctx.fillText(I18N.t('pgEmptyStateLine1'), w / 2, h / 2 - 6);
-        ctx.font = '11px ui-monospace, monospace';
-        ctx.fillStyle = c.emptyFaint;
+        ctx.font = `11px ${c.sans}`;
+        ctx.fillStyle = c.dimmer;
         ctx.fillText(I18N.t('pgEmptyStateLine2'), w / 2, h / 2 + 14);
         return;
       }
+      const k = this.cam.k;
       const focused = !!this.related;
+      ctx.save();
+      ctx.globalAlpha = this.alpha ?? 1;
 
-      // Dönem sütunu arka plan bantları: komşu dönemleri ayırır.
-      for (let i = 0; i < this.laneTitles.length; i++) {
-        const [x] = this.worldToScreen(LANE_PAD + i * this.laneW - this.laneW / 2, 0);
-        const bandW = this.laneW * this.cam.k;
-        if (i % 2 === 1) {
-          ctx.fillStyle = 'rgba(140,200,170,0.035)';
-          ctx.fillRect(x, 0, bandW, this.contentHeight * this.cam.k);
-        }
-        ctx.fillStyle = 'rgba(140,200,170,0.07)';
-        ctx.fillRect(x + bandW, 0, 1, this.contentHeight * this.cam.k);
-      }
-
-      // Sütun başlıkları — üstte koyu bir şerit üstünde.
-      ctx.textAlign = 'center';
-      ctx.font = '11px ui-monospace, monospace';
+      // Dönem sütun başlıkları
+      ctx.textAlign = 'left';
+      ctx.font = `600 ${Math.max(9, 11 * k)}px ${c.sans}`;
+      ctx.fillStyle = c.dimmer;
       this.laneTitles.forEach((title, i) => {
-        const [x] = this.worldToScreen(LANE_PAD + i * this.laneW, 0);
-        ctx.fillStyle = c.laneHeaderBg;
-        ctx.fillRect(x - (this.laneW / 2) * this.cam.k, 0, this.laneW * this.cam.k, 26);
-        ctx.fillStyle = c.laneHeaderFg;
-        ctx.fillText(title, x, 17);
+        const [x, y] = this.worldToScreen(i * LANE_W + SIDE, 26);
+        ctx.fillText(String(title).toLocaleUpperCase(I18N.lang === 'en' ? 'en' : 'tr'), x, y);
       });
 
-      const r = NODE_R * this.cam.k;
-      for (const e of this.edges) {
-        const related = focused && this.related.has(e.from.code) && this.related.has(e.to.code);
-        const dim = focused && !related;
-        drawEdge(ctx, this.worldToScreen(e.from.x, e.from.y), this.worldToScreen(e.to.x, e.to.y), r,
-          dim ? c.edgeDim : (related ? c.edgeRelated : c.edge),
-          related ? 1.8 : 1.1,
-          // Kesikli ok: önşart bir VEYA grubunun parçası — biri yeterli, hepsi değil.
-          e.alt && !dim);
+      // Kenarlar: önce sönük olanlar, sonra odak zinciri üstte.
+      const edgeOn = (e) => focused && this.related.has(e.from.code) && this.related.has(e.to.code);
+      const ordered = [...this.edges].sort((a, b) => edgeOn(a) - edgeOn(b));
+      for (const e of ordered) {
+        const on = edgeOn(e);
+        const [x1, y1] = this.worldToScreen(e.from.x + NODE_W / 2, e.from.y);
+        const [x2, y2] = this.worldToScreen(e.to.x - NODE_W / 2, e.to.y);
+        ctx.globalAlpha = (this.alpha ?? 1) * (on ? 1 : (focused ? 0.18 : 0.5));
+        drawEdge(ctx, [x1, y1], [x2, y2], on ? c.acid : c.hot, on ? 2.2 : 1.3, e.alt, k);
       }
 
-      const byColor = new Map();
+      // Düğümler
+      const codeFont = `600 ${11.5 * k}px ${c.mono}`;
+      const nameFont = `${10.5 * k}px ${c.sans}`;
+      const elecFont = `600 ${11 * k}px ${c.sans}`;
+      const showText = k > 0.45;
       for (const n of this.nodes) {
-        const dim = focused && !this.related.has(n.code);
-        const colorKey = n.kind === 'elective' ? 'elective' : (n.branch || n.code.split(' ')[0]);
-        const color = dim ? '#3d5f4e' : (n.kind === 'elective' ? '#ffc857' : hueOf(colorKey));
-        const bucketKey = color + (n.kind === 'elective' ? '|d' : '|c');
-        if (!byColor.has(bucketKey)) byColor.set(bucketKey, { fill: new Path2D(), stroke: color, diamond: n.kind === 'elective' });
-        const g = byColor.get(bucketKey);
-        const [x, y] = this.worldToScreen(n.x, n.y);
-        if (n.kind === 'elective') addDiamond(g.fill, x, y, r * 0.95);
-        else { g.fill.moveTo(x + r * 0.72, y); g.fill.arc(x, y, r * 0.72, 0, Math.PI * 2); }
-      }
-      for (const g of byColor.values()) {
-        ctx.globalAlpha = 0.92;
-        ctx.fillStyle = g.stroke;
-        ctx.fill(g.fill);
-      }
-      ctx.globalAlpha = 1;
-
-      // Etiketler: yakınlaştırıldıkça belirginleşir, çok uzaklaştırıldığında
-      // (çok sütunlu bir program) metin çorbası olmaması için gizlenir.
-      if (this.cam.k > 0.45) {
-        ctx.font = `${Math.max(9, 10 * this.cam.k)}px ui-monospace, monospace`;
-        ctx.textAlign = 'left';
-        for (const n of this.nodes) {
-          const dim = focused && !this.related.has(n.code);
-          const [x, y] = this.worldToScreen(n.x, n.y);
-          ctx.fillStyle = dim ? c.labelDim : c.label;
-          const label = n.kind === 'elective' ? wrapShort(n.name, 16) : n.code;
-          // Açık temada koyu etiket: parlak düğüm dolgusu üstünde de okunması için
-          // beyaz halo (kontur) eklenir. Koyu temada halo yok — görünüm değişmez.
-          if (c.labelHalo) {
-            ctx.strokeStyle = c.labelHalo;
-            ctx.lineWidth = 3;
-            ctx.strokeText(label, x + r * 0.95, y + 3);
-          }
-          ctx.fillText(label, x + r * 0.95, y + 3);
-          // Seçmeli slot rozeti: kaç alternatifi olduğu tıklamadan görünsün.
-          // Koyu zemin + açık yazı iki temada da okunur; bilinçli olarak korunur.
-          if (n.kind === 'elective' && n.options && n.options.length) {
-            const badge = String(n.options.length);
-            ctx.font = `bold ${Math.max(8, 9 * this.cam.k)}px ui-monospace, monospace`;
-            const bw = ctx.measureText(badge).width + 8;
-            const bx = x + r * 0.7, by = y - r * 0.95;
-            ctx.fillStyle = 'rgba(10,16,12,0.85)';
-            ctx.fillRect(bx, by, bw, 13 * this.cam.k);
-            ctx.fillStyle = '#ffc857';
-            ctx.fillText(badge, bx + 4, by + 10 * this.cam.k);
-            ctx.fillStyle = dim ? c.labelDim : c.label;
+        const sel = n.code === this.focus;
+        const rel = focused && !sel && this.related.has(n.code);
+        const dim = focused && !sel && !rel;
+        const [cx, cy] = this.worldToScreen(n.x, n.y);
+        const bw = NODE_W * k, bh = NODE_H * k;
+        const x = cx - bw / 2, y = cy - bh / 2;
+        ctx.globalAlpha = (this.alpha ?? 1) * (dim ? 0.4 : 1);
+        ctx.beginPath();
+        roundRect(ctx, x, y, bw, bh, 4 * k);
+        ctx.fillStyle = sel ? c.fg : (n.kind === 'elective' ? c.panel2 : c.panel);
+        ctx.fill();
+        ctx.lineWidth = rel ? 2 : 1;
+        ctx.strokeStyle = sel ? c.fg : rel ? c.acid : (n.kind === 'elective' ? c.line : c.hot);
+        if (n.nocode && !sel) ctx.setLineDash([3 * k, 3 * k]);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        if (n.code === this.hover && !sel) {
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = c.cyan;
+          ctx.stroke();
+        }
+        if (showText) {
+          ctx.textAlign = 'left';
+          if (n.kind === 'elective') {
+            ctx.beginPath();
+            const dx = x + 14 * k, dy = y + 20 * k, r = 5 * k;
+            ctx.moveTo(dx - r, dy); ctx.lineTo(dx, dy - r); ctx.lineTo(dx + r, dy); ctx.lineTo(dx, dy + r); ctx.closePath();
+            ctx.strokeStyle = c.acid; ctx.lineWidth = 1.5; ctx.stroke();
+            ctx.font = elecFont;
+            ctx.fillStyle = sel ? c.bg : c.dim;
+            ctx.fillText(fitText(ctx, n.name, (NODE_W - 30) * k), x + 25 * k, y + 24 * k);
+          } else {
+            ctx.font = codeFont;
+            ctx.fillStyle = sel ? c.bg : c.fg;
+            ctx.fillText(n.label || '·', x + 8 * k, y + 17 * k);
+            ctx.font = nameFont;
+            ctx.fillStyle = sel ? c.bg : c.dim;
+            ctx.fillText(fitText(ctx, n.name || '', (NODE_W - 14) * k), x + 8 * k, y + 31 * k);
           }
         }
+        // Önşartı bu planda olmayan bir koda bağlı ders: köşede amber nokta.
+        if (n.offPlan) {
+          ctx.beginPath();
+          ctx.arc(x + 103 * k, y + 9 * k, 3.5 * k, 0, Math.PI * 2);
+          ctx.fillStyle = c.amber;
+          ctx.fill();
+        }
       }
-
-      // Hover halkası (nazik) ve odak parlaması (belirgin).
-      const ring = (code, radius, width, color, blur) => {
-        const n = this.byCode.get(code);
-        if (!n) return;
-        const [x, y] = this.worldToScreen(n.x, n.y);
-        ctx.save();
-        if (blur) { ctx.shadowColor = color; ctx.shadowBlur = blur; }
-        ctx.beginPath();
-        ctx.arc(x, y, radius, 0, Math.PI * 2);
-        ctx.strokeStyle = color;
-        ctx.lineWidth = width;
-        ctx.stroke();
-        ctx.restore();
-      };
-      if (this.hover && this.hover !== this.focus) ring(this.hover, r * 0.72 + 3, 1.5, c.hover, 0);
-      if (this.focus) ring(this.focus, r * 0.72 + 4, 2, c.focus, 14);
+      ctx.restore();
     }
 
     nodeAt(px, py) {
       const [wx, wy] = this.screenToWorld(px, py);
-      let best = null, bestD = Infinity;
       for (const n of this.nodes) {
-        const dx = n.x - wx, dy = n.y - wy;
-        const d = dx * dx + dy * dy;
-        const hit = Math.max(NODE_R * 1.3, 16 / this.cam.k);
-        if (d < hit * hit && d < bestD) { best = n; bestD = d; }
+        if (Math.abs(wx - n.x) <= NODE_W / 2 && Math.abs(wy - n.y) <= NODE_H / 2) return n;
       }
-      return best;
+      return null;
     }
 
     focusNode(code) {
@@ -448,9 +398,11 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       walk(code, this.byTo);
       walk(code, this.byFrom);
       this.related = related;
+      this.renderStatus();
       this.renderDetail(code);
       this.draw();
       this.queueResize();
+      markListFocus(this.root, code);
       // Seçmeli slot paylaşılabilir URL durumu: ?prog=X&pool=<title>#onsart.
       const n = this.byCode.get(code);
       const prog = document.querySelector('.pg-program-select')?.value;
@@ -468,6 +420,8 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       if (reset) reset.disabled = true;
       const prog = this.root.querySelector('.pg-program-select')?.value;
       if (prog) history.replaceState(null, '', `?prog=${encodeURIComponent(prog)}#onsart`);
+      this.renderStatus();
+      markListFocus(this.root, null);
       this.draw();
       this.queueResize();
     }
@@ -485,7 +439,12 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       this.root.classList.remove('pg-has-detail');
       const reset = this.root.querySelector('.pg-reset');
       if (reset) reset.disabled = true;
-      this.status.textContent = I18N.t('pgSelectProgramPrompt');
+      this.statusLabel = I18N.t('pgSelectProgramPrompt');
+      this.renderStatus();
+      const warn = this.root.querySelector('.pg-warnbox');
+      if (warn) warn.hidden = true;
+      const list = this.root.querySelector('.pg-semester-list');
+      if (list) list.innerHTML = '';
       this.draw();
       this.queueResize();
     }
@@ -496,42 +455,111 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       this.focusNode(code);
     }
 
-    // React'in ürettiği panel yalnızca hazır veriyi çizer (dersler-table.tsx
-    // ile aynı desen) — önşart ağacı üretimi (renderReqTree/parseReq), veri
-    // çekme ve olay kablolaması burada, vanilla'da kalır.
+    // Ders detayı (maket: üç sütunlu kart) — vanilla HTML, esc'li. Seçmeli havuz
+    // paneli React'te kalır (renderPool).
     async renderDetail(code) {
       const n = this.byCode.get(code);
       if (!n) return;
       if (n.kind === 'elective') { this.renderPool(n); return; }
-      const req = (this.byTo.get(code) || []).sort();
-      const dep = (this.byFrom.get(code) || []).sort();
-      // Ham ifade yerine ayrıştırılmış VE/VEYA ağacı: "hepsi gerekli" ile
-      // "biri yeterli" ayrımı açıkça görünsün.
+      prereqModule?.unmountPrereqDetail();
+      lastPoolNode = null;
+      const en = I18N.lang === 'en';
+      const semNo = n.lane + 1;
+      const inPlan = (c) => this.byCode.has(c);
+      const laneOf = (c) => (this.byCode.get(c)?.lane ?? -1) + 1;
       const tree = n.requirement ? parseReq(n.requirement) : null;
+      const groups = reqGroups(tree);
+      const dep = (this.byFrom.get(code) || []).slice()
+        .sort((a, b) => laneOf(a) - laneOf(b) || a.localeCompare(b));
+      const allDependents = n.nocode ? 0 : new Set((reqByCode?.edges || []).filter((e) => e.from === code).map((e) => e.to)).size;
       const sources = this.edges.filter((e) => e.to.code === code && e.sourceUrl);
-      const source = sources[0];
-      const mod = await loadPrereqWidget();
-      if (this.focus !== code) return; // yükleme sırasında başka düğüme geçildiyse geç kalma
-      mod.mountPrereqDetail(this.detail, {
-        data: {
-          kind: 'course',
-          code: n.code,
-          name: n.name || '',
-          prereqTreeHTML: tree ? renderReqTree(tree) : null,
-          required: req,
-          dependents: dep,
-          source: source ? {
-            verifiedLabel: source.status === 'verified' ? I18N.t('pgObsVerified') : I18N.t('pgSourceRecord'),
-            verifiedAt: source.verifiedAt ? new Date(source.verifiedAt).toLocaleDateString(I18N.lang === 'en' ? 'en-GB' : 'tr-TR') : null,
-            sourceUrl: source.sourceUrl,
-          } : null,
-        },
-        labels: prereqDetailLabels(),
-        onClose: () => this.clearFocus(),
-        onPanTo: (c) => this.panTo(c),
-        onOpenCourseDetail: (c) => window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: c, source: 'onsart' } })),
-        onOpenInCourses: () => {},
-      });
+      const source = sources[0] || (reqByCode?.edges || []).find((e) => e.to === code && e.sourceUrl);
+      const fmtNum = (v) => trNum(v ?? 0);
+
+      const facts = [];
+      if (n.credits != null) facts.push(`<span><span class="num">${esc(fmtNum(n.credits))}</span> ${esc(I18N.t('planCreditsFull'))}</span>`);
+      if (n.ects != null) facts.push(`<span><span class="num">${esc(fmtNum(n.ects))}</span> ${esc(I18N.t('planEctsAbbr'))}</span>`);
+      if (n.type) facts.push(`<span>${esc(I18N.t('pgTypeWord'))} <span class="num">${esc(n.type)}</span></span>`);
+
+      const groupHtml = groups.length ? groups.map((g) => {
+        const grades = [...new Set(g.alts.flat().map((leaf) => minGrade(leaf.detail)).filter(Boolean))];
+        const head = [g.alts.length > 1 ? I18N.t('pgOrOneEnoughShort') : I18N.t('pgRequiredShort')];
+        if (grades.length === 1) head.push(tf('pgMinGrade', { grade: grades[0] }));
+        const rows = mergeAlts(g.alts).map((alt) => {
+          const codes = alt.codes;
+          const hit = codes.find(inPlan);
+          const taken = codes.some((c) => isTaken(c));
+          const note = hit ? tf('pgInThisPlan', { n: laneOf(hit) }) : I18N.t('pgOtherProgram');
+          const label = alt.text || codes.join(' / ');
+          const btn = hit
+            ? `<button type="button" class="pg-alt-code num" data-pan="${esc(hit)}" translate="no">${esc(label)}</button>`
+            : `<span class="num" translate="no">${esc(label)}</span>`;
+          return `<li class="pg-alt${hit ? ' in' : ''}">${btn}<small>${esc(note)}${taken ? ` · ${esc(I18N.t('pgTakenMark'))}` : ''}</small></li>`;
+        }).join('');
+        return `<div class="pg-req-group"><div class="pg-or">${esc(head.join(' · '))}</div><ul class="pg-alts">${rows}</ul></div>`;
+      }).join('') : `<p class="pg-empty">${esc(I18N.t('pgNoPrereqInProgram'))}</p>`;
+
+      const depHtml = dep.map((c) => {
+        const d = this.byCode.get(c);
+        return `<li><button type="button" class="pg-dep" data-pan="${esc(c)}"><span><span class="num" translate="no">${esc(d.label || c)}</span> ${esc(d.name || '')}</span><span class="num pg-dep-sem">${laneOf(c)}.</span></button></li>`;
+      }).join('');
+
+      this.detail.innerHTML = `<div class="pg-det">
+        <div class="pg-det-col pg-det-main">
+          <div class="pg-det-top"><span class="pg-k">${esc(tf('pgFocusedCourse', { n: semNo }))}</span>
+            <button type="button" class="pg-detail-close" aria-label="${esc(I18N.t('pgDetailCloseAriaLabel'))}">×</button></div>
+          <h3><span class="num" translate="no">${esc(n.label || '·')}</span> ${esc(n.name || I18N.t('pgCourseNameUnavailable'))}</h3>
+          ${facts.length ? `<div class="pg-facts">${facts.join('')}</div>` : ''}
+          <p class="pg-term-line">${n.nocode ? esc(I18N.t('dpNoCodeInPlan')) : esc(I18N.t('statLoading'))}</p>
+          ${n.nocode ? '' : `<div class="pg-det-actions">
+            <button type="button" class="btn-ghost pg-btn-sm" data-goto-courses="${esc(code)}">${esc(I18N.t('pgOpenInCoursesBtn'))}</button>
+            <button type="button" class="btn-ghost pg-btn-sm" data-course-detail="${esc(code)}">${esc(I18N.t('pgCourseDetailBtn'))}</button>
+          </div>`}
+        </div>
+        <div class="pg-det-col">
+          <h4>${esc(I18N.t('pgRequiredCourses'))}</h4>
+          ${groupHtml}
+          ${tree ? `<details class="pg-raw-req"><summary>${esc(I18N.t('pgFullExpression'))}</summary><ul class="req-tree">${renderReqTree(tree)}</ul></details>` : ''}
+        </div>
+        <div class="pg-det-col">
+          <h4>${esc(I18N.t('pgRequestedBy'))}</h4>
+          ${dep.length ? `<ul class="pg-deps">${depHtml}</ul>` : `<p class="pg-empty">${esc(I18N.t('pgNoDependentsInPlan'))}</p>`}
+          ${allDependents > dep.length ? `<p class="pg-all-deps">${esc(tf('pgAllProgramsCount', { n: allDependents }))}</p>` : ''}
+          ${source ? `<div class="pg-src"><span class="pg-ok">${source.status === 'verified' ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>' : ''}${esc(source.status === 'verified' ? I18N.t('pgObsVerified') : I18N.t('pgSourceRecord'))}${source.verifiedAt ? ` · ${esc(new Date(source.verifiedAt).toLocaleDateString(en ? 'en-GB' : 'tr-TR'))}` : ''}</span><a href="${esc(source.sourceUrl)}" target="_blank" rel="noopener">${esc(I18N.t('pgOpenObsRecord'))}</a></div>` : ''}
+        </div>
+      </div>`;
+      this.detail.querySelector('.pg-detail-close')?.addEventListener('click', () => this.clearFocus());
+      this.detail.querySelectorAll('[data-pan]').forEach((b) => b.addEventListener('click', () => this.panTo(b.dataset.pan)));
+      this.detail.querySelector('[data-goto-courses]')?.addEventListener('click', (ev) =>
+        window.dispatchEvent(new CustomEvent('itu:goto-courses', { detail: ev.currentTarget.dataset.gotoCourses })));
+      this.detail.querySelector('[data-course-detail]')?.addEventListener('click', (ev) =>
+        window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: ev.currentTarget.dataset.courseDetail, source: 'onsart' } })));
+      if (!n.nocode) this.fillTermLine(n);
+    }
+
+    // "Bu dönem 2 şube · 32 yer · 1 şube dolu" — aktif dönem branş dosyasından.
+    async fillTermLine(n) {
+      const code = n.code;
+      const secs = ((await activeSections(code.split(' ')[0])) || []).filter((s) => s.code === code);
+      if (this.focus !== code) return;
+      const line = this.detail.querySelector('.pg-term-line');
+      if (!line) return;
+      if (!secs.length) {
+        const last = await lastOpenedTerm(code);
+        if (this.focus !== code) return;
+        line.textContent = last ? tf('pgNotOpenLast', { term: termLabel(last) }) : I18N.t('planNotOpenThisTerm');
+        return;
+      }
+      const free = secs.reduce((a, s) => a + Math.max(0, (Number(s.capacity) || 0) - (Number(s.enrolled) || 0)), 0);
+      const full = secs.filter((s) => Number(s.capacity) > 0 && Number(s.enrolled) >= Number(s.capacity)).length;
+      line.textContent = tf('pgTermSections', { n: secs.length, free: trNum(free) });
+      if (full) {
+        line.append(' · ');
+        const f = document.createElement('span');
+        f.className = 'pg-full';
+        f.textContent = tf('pgFullSections', { n: full });
+        line.appendChild(f);
+      }
     }
 
     // Seçmeli slotun alternatiflerini aranabilir, branş gruplu, canlı dönem
@@ -546,6 +574,11 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       const fresh = () => this.poolVersion === version && this.focus === n.code;
       const mod = await loadPrereqWidget();
       if (!fresh()) return;
+      // Ders kartından havuza geçerken vanilla içerik React kökünden önce temizlenir.
+      if (!this.detail.querySelector('.pg-detail-head')) {
+        mod.unmountPrereqDetail();
+        this.detail.innerHTML = '';
+      }
       const labels = prereqDetailLabels();
       const status = {};
       const render = () => {
@@ -617,17 +650,15 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     bindInput() {
       const c = this.canvas;
       // Klavye erişimi (Faz 5.4): canvas odaklanabilir; ok tuşları odaklanan
-      // düğümü ekrandaki konuma göre yönlendirir. role="img" statik olmaktan
-      // çıkar — arama kutusu zaten aynı focusNode'a gider.
+      // düğümü ekrandaki konuma göre yönlendirir.
       c.tabIndex = 0;
       c.setAttribute('aria-label', I18N.t('pgCanvasKeyboardAriaLabel'));
       c.addEventListener('keydown', (e) => {
-        if (!this.nodes || !this.focus) return;
-        const cur = this.byCode.get(this.focus);
-        if (!cur) return;
-        const steps = e.key.startsWith('Arrow') ? 1 : 0;
-        if (!steps) return;
+        if (!this.nodes) return;
+        if (!e.key.startsWith('Arrow')) return;
         e.preventDefault();
+        const cur = this.focus && this.byCode.get(this.focus);
+        if (!cur) { this.focusNode(this.nodes[0].code); return; }
         let best = null, bestD = Infinity;
         const dir = { ArrowUp: [0, -1], ArrowDown: [0, 1], ArrowLeft: [-1, 0], ArrowRight: [1, 0] }[e.key];
         for (const n of this.nodes) {
@@ -704,16 +735,21 @@ import { I18N } from './i18n.js?v=dde1e9339338';
         const n = this.nodeAt(e.clientX - rect.left, e.clientY - rect.top);
         const code = n ? n.code : null;
         if (code !== this.hover) { this.hover = code; this.draw(); }
+        c.style.cursor = n ? 'pointer' : '';
         if (n) {
           this.tip.hidden = false;
           this.tip.style.left = (e.clientX - rect.left + 14) + 'px';
           this.tip.style.top = (e.clientY - rect.top + 10) + 'px';
           this.tip.textContent = n.kind === 'elective'
             ? `${n.name} · ${(n.options || []).length} ${I18N.t('pgOptionsWord')}`
-            : (n.name ? `${n.code}: ${n.name}` : n.code);
+            : (n.name ? `${n.label || '·'}: ${n.name}` : n.label);
         } else {
           this.tip.hidden = true;
         }
+      });
+      c.addEventListener('mouseleave', () => {
+        this.tip.hidden = true;
+        if (this.hover) { this.hover = null; this.draw(); }
       });
     }
   }
@@ -721,40 +757,67 @@ import { I18N } from './i18n.js?v=dde1e9339338';
   // drawEdge, iki sütun arasında yumuşak bir eğri çizer ve hedefe küçük bir
   // ok ucu ekler — önşart ilişkisinin yönü (A, B'nin önşartıysa A→B) her
   // zaman görünsün diye. dash=true ise "alternatif" (VEYA) kenarı çizilir.
-  function drawEdge(ctx, [x1, y1], [x2, y2], r, color, width, dash) {
-    const midX = (x1 + x2) / 2;
+  function drawEdge(ctx, [x1, y1], [x2, y2], color, width, dash, k = 1) {
+    const ah = 6 * Math.max(0.7, k);
+    const ex = x2 - ah * 0.8;
+    const midX = (x1 + ex) / 2;
     ctx.beginPath();
-    ctx.moveTo(x1 + r * 0.7, y1);
-    ctx.bezierCurveTo(midX, y1, midX, y2, x2 - r * 0.9, y2);
+    ctx.moveTo(x1, y1);
+    ctx.bezierCurveTo(midX, y1, midX, y2, ex, y2);
     ctx.strokeStyle = color;
     ctx.lineWidth = width;
-    if (dash) ctx.setLineDash([4, 3]);
+    if (dash) ctx.setLineDash([5, 4]);
     ctx.stroke();
     ctx.setLineDash([]);
-
-    const ah = 5;
-    const ang = Math.atan2(y2 - y1, x2 - x1 - r);
-    const tx = x2 - r * 0.72, ty = y2;
     ctx.beginPath();
-    ctx.moveTo(tx, ty);
-    ctx.lineTo(tx - ah * Math.cos(ang - 0.5), ty - ah * Math.sin(ang - 0.5));
-    ctx.lineTo(tx - ah * Math.cos(ang + 0.5), ty - ah * Math.sin(ang + 0.5));
+    ctx.moveTo(x2, y2);
+    ctx.lineTo(x2 - ah, y2 - ah * 0.55);
+    ctx.lineTo(x2 - ah, y2 + ah * 0.55);
     ctx.closePath();
     ctx.fillStyle = color;
     ctx.fill();
   }
 
-  function addDiamond(path, x, y, r) {
-    path.moveTo(x, y - r);
-    path.lineTo(x + r, y);
-    path.lineTo(x, y + r);
-    path.lineTo(x - r, y);
-    path.closePath();
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
   }
 
-  function wrapShort(s, max) {
+  // Metni verilen genişliğe sığdırır; taşarsa "…" ile keser.
+  function fitText(ctx, s, max) {
     s = String(s || '');
-    return s.length > max ? s.slice(0, max - 1) + '…' : s;
+    if (ctx.measureText(s).width <= max) return s;
+    let lo = 0, hi = s.length;
+    while (lo < hi) {
+      const mid = (lo + hi + 1) >> 1;
+      if (ctx.measureText(s.slice(0, mid) + '…').width <= max) lo = mid; else hi = mid - 1;
+    }
+    return s.slice(0, lo).trimEnd() + '…';
+  }
+
+  // Basit {placeholder} yer değiştirmeli çeviri.
+  function tf(key, vars) {
+    let s = I18N.t(key);
+    for (const [k, v] of Object.entries(vars)) s = s.replaceAll(`{${k}}`, String(v));
+    return s;
+  }
+
+  function minGrade(detail) {
+    const m = String(detail || '').match(/MIN\.?\s*([A-Z]{2})/i);
+    return m ? m[1].toUpperCase() : '';
+  }
+
+  // Liste görünümünde odaktaki dersi işaretler (maket: .li.cur).
+  function markListFocus(root, code) {
+    root.querySelectorAll('.pg-li.cur').forEach((el) => el.classList.remove('cur'));
+    if (!code) return;
+    root.querySelectorAll('.pg-li[data-code]').forEach((el) => {
+      if (el.dataset.code === code) el.classList.add('cur');
+    });
   }
 
   // ---- Önşart ifadesi ayrıştırıcısı ----
@@ -801,6 +864,63 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     }
     parts.push(s.slice(last).trim());
     return parts.filter((p) => p.length);
+  }
+
+  // reqGroups, ağacı "hepsi gerekli" gruplara böler; her grubun alternatifleri
+  // (biri yeterli) vardır. Her alternatif bir kod yaprakları dizisidir (VE ile
+  // bağlı birden çok kod tek alternatif sayılır). Saf — test edilebilir.
+  export function reqGroups(tree) {
+    if (!tree) return [];
+    const leaves = (n, out = []) => {
+      if (n.type === 'code' || n.type === 'text') out.push(n);
+      else if (n.items) n.items.forEach((it) => leaves(it, out));
+      return out;
+    };
+    const altsOf = (n) => {
+      if (n.type === 'code' || n.type === 'text') return [[n]];
+      if (n.type === 'or') return n.items.flatMap(altsOf);
+      return [leaves(n)];
+    };
+    const items = tree.type === 'and' ? tree.items : [tree];
+    return items.map((it) => ({ alts: altsOf(it) }));
+  }
+
+  // mergeAlts, tek kodlu alternatifleri ortak kökte birleştirir:
+  // "BLG 102" ve "BLG 102E" → "BLG 102 / BLG 102E".
+  export function mergeAlts(alts) {
+    const out = [];
+    const byBase = new Map();
+    for (const alt of alts) {
+      const codes = alt.filter((l) => l.type === 'code').map((l) => l.code);
+      const texts = alt.filter((l) => l.type === 'text').map((l) => l.raw);
+      if (codes.length === 1 && !texts.length) {
+        const base = codes[0].replace(/(\d{3})[A-Z]*$/, '$1');
+        if (byBase.has(base)) { const row = byBase.get(base); if (!row.codes.includes(codes[0])) row.codes.push(codes[0]); continue; }
+        const row = { codes: [codes[0]] };
+        byBase.set(base, row);
+        out.push(row);
+      } else {
+        const joiner = ` ${I18N.t('pgAndWord')} `;
+        out.push({ codes, text: [...codes, ...texts].join(joiner) });
+      }
+    }
+    return out;
+  }
+
+  // summarizeReq, liste görünümü için kısa önşart özeti üretir ve bu planda
+  // hiçbir alternatifi olmayan grubu "planda yok" (offPlan) işaretler.
+  export function summarizeReq(tree, inPlan) {
+    const groups = reqGroups(tree);
+    const offCodes = [];
+    const parts = groups.map((g) => {
+      const fmt = (alt) => alt.map((l) => l.code || l.raw).join(` ${I18N.t('pgAndWord')} `);
+      const hits = g.alts.filter((alt) => alt.length && alt.every((l) => l.type === 'code' && inPlan.has(l.code)));
+      if (hits.length) return hits.slice(0, 2).map(fmt).join(` ${I18N.t('pgOrWord')} `);
+      const first = g.alts[0] || [];
+      offCodes.push(fmt(first));
+      return fmt(first);
+    });
+    return { text: parts.join(` ${I18N.t('pgAndWord')} `), offPlan: offCodes.length > 0, offCodes };
   }
 
   // reqAlts, VEYA grubunun içindeki tüm kodları "alternatif" işaretler — bunlar
@@ -947,11 +1067,18 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     plan.semesters.forEach((sem, laneIdx) => {
       sem.items.forEach((item, slot) => {
         if (item.course) {
-          if (seen.has(item.course.code)) return;
-          seen.add(item.course.code);
-          nodes.push({ code: item.course.code, name: item.course.name, branch: item.course.code.split(' ')[0], kind: 'course', lane: laneIdx });
+          const c = item.course;
+          const facts = { credits: c.credits, ects: c.ects, type: c.type || '', order: slot };
+          if (!c.code) {
+            // OBS planında kodu olmayan kalem (ör. laboratuvar): kesikli düğüm.
+            nodes.push({ code: `__nocode_${laneIdx}_${slot}`, label: '', nocode: true, name: c.name, kind: 'course', lane: laneIdx, ...facts });
+            return;
+          }
+          if (seen.has(c.code)) return;
+          seen.add(c.code);
+          nodes.push({ code: c.code, label: c.code, name: c.name, branch: c.code.split(' ')[0], kind: 'course', lane: laneIdx, ...facts });
         } else if (item.elective) {
-          nodes.push({ code: `__elective_${laneIdx}_${slot}`, name: item.elective.title, kind: 'elective', lane: laneIdx, options: item.elective.options });
+          nodes.push({ code: `__elective_${laneIdx}_${slot}`, name: item.elective.title, kind: 'elective', lane: laneIdx, options: item.elective.options, order: slot });
         }
       });
     });
@@ -963,6 +1090,16 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     for (const target of codeSet) {
       const t = reqMap && reqMap.get(target);
       altsByTarget.set(target, t ? reqAlts(parseReq(t)) : new Set());
+    }
+    // Önşart özeti ve "planda olmayan koda bağlı" işareti (amber nokta).
+    for (const n of nodes) {
+      const r = reqMap && reqMap.get(n.code);
+      if (!r) continue;
+      n.requirement = r;
+      const sum = summarizeReq(parseReq(r), codeSet);
+      n.reqSummary = sum.text;
+      n.offPlan = sum.offPlan;
+      n.offCodes = sum.offCodes;
     }
     const edges = prereqEdges
       .filter((e) => codeSet.has(e.from) && codeSet.has(e.to))
@@ -984,17 +1121,26 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     }
 
     const { nodes, edges, laneTitles } = buildProgramGraph(plan, reqByCode.edges, reqByCode.req);
-    for (const n of nodes) {
-      const r = reqByCode.req.get(n.code);
-      if (r) n.requirement = r;
-    }
 
     root.querySelector('.pg-plan-label').textContent = plan.planLabel || '';
-    renderBranchLegend(root, nodes);
-    renderSemesterList(root, plan, reqByCode);
-    await graph.build(nodes, edges, laneTitles, `${plan.programName} · ${nodes.length} ${I18N.t('pgCourseSlotWord')}, ${I18N.t('pgClickNodeHint')}`);
+    renderSemesterList(root, plan, nodes, graph);
+    renderWarnBox(root, nodes);
+    const status = [plan.programName, `${nodes.length} ${I18N.t('pgCourseSlotWord')}`, tf('pgEdgeCount', { n: edges.length })].join(' · ');
+    await graph.build(nodes, edges, laneTitles, status);
     renderMobileExplorer(root, plan, graph);
     statusEl.classList.remove('busy');
+  }
+
+  // Planda olmayan koda bağlı önşartları özetleyen amber not (maket: .warnbox).
+  function renderWarnBox(root, nodes) {
+    const box = root.querySelector('.pg-warnbox');
+    if (!box) return;
+    const off = nodes.filter((n) => n.offPlan);
+    if (!off.length) { box.hidden = true; box.innerHTML = ''; return; }
+    const examples = off.slice(0, 2).map((n) => tf('pgWarnExample', { course: n.label, req: (n.offCodes || [])[0] || '' }));
+    box.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+      <span><b>${esc(tf('pgWarnCount', { n: off.length }))}</b> ${esc(tf('pgWarnBody', { examples: examples.join(', ') }))}</span>`;
+    box.hidden = false;
   }
 
   // Telefonda masaüstü canvas'ını küçültmek yerine, önce dönemleri gösteren ve
@@ -1018,7 +1164,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       box.innerHTML = `<div class="pg-mobile-explorer-head"><div><b>${txt('Dönemlere göre dersler', 'Courses by term')}</b><span>${txt('Bağlantıları görmek için bir derse dokun.', 'Tap a course to inspect its links.')}</span></div></div>` +
         (plan.semesters || []).map((sem, semIndex) => {
           const items = (sem.items || []).map((it) => {
-            if (it.course) return courseButton(it.course.code);
+            if (it.course) return it.course.code ? courseButton(it.course.code) : '';
             if (it.elective) {
               const node = [...byCode.values()].find((n) => n.kind === 'elective' && n.name === it.elective.title);
               return node ? `<button type="button" class="pg-mobile-course elective" data-pool-code="${esc(node.code)}"><span><b>${txt('Seçmeli havuz', 'Elective pool')}</b><small>${it.elective.options?.length || 0} ${txt('seçenek', 'options')}</small></span><em>${esc(it.elective.title)}</em><i aria-hidden="true">›</i></button>` : '';
@@ -1055,63 +1201,64 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     renderIndex();
   }
 
-  // Faz 5.4 (D2): grafiğin dönem-dönem metin karşılığı. Ekran okuyucu için her
-  // zaman DOM'da (sr-only), mobilde "listeye dön" ile görünür olur. Course /
-  // elective item'ları müfredat şemasından, önşart grafik indeksinden gelir.
-  function renderSemesterList(root, plan, reqByCode) {
+  // Liste görünümü (maket: dönem kartları): her ders kodu, adı ve önşart özeti;
+  // planda olmayan koda bağlı önşart amber. Harita modunda sr-only kalır —
+  // ekran okuyucu için grafiğin metin karşılığıdır. Satırlar odak düğmesidir.
+  function renderSemesterList(root, plan, nodes, currentGraph) {
     const box = root.querySelector('.pg-semester-list');
     if (!box) return;
-    box.innerHTML = (plan.semesters || []).map((sem) => {
-      const items = (sem.items || []).map((it) => {
-        if (it.course) {
-          const req = reqByCode?.req?.get(it.course.code);
-          return `<li><code>${esc(it.course.code)}</code>: ${esc(it.course.name)}${req ? `<span class="pg-list-req"> · ${esc(I18N.t('detailPrereq'))}: ${esc(req)}</span>` : ''}</li>`;
-        }
-        if (it.elective) {
-          const n = it.elective.options ? it.elective.options.length : 0;
-          return `<li><span class="pg-list-elect">${esc(I18N.t('pgLegendElectivePool'))}:</span> ${esc(it.elective.title)} (${n} ${esc(I18N.t('pgOptionsWord'))})</li>`;
-        }
-        return '';
-      }).filter(Boolean).join('');
-      return items ? `<li><h3>${esc(laneTitle(sem.title))}</h3><ul>${items}</ul></li>` : '';
+    const byLane = new Map();
+    for (const n of nodes) {
+      if (!byLane.has(n.lane)) byLane.set(n.lane, []);
+      byLane.get(n.lane).push(n);
+    }
+    box.innerHTML = (plan.semesters || []).map((sem, lane) => {
+      const list = (byLane.get(lane) || []).slice()
+        .sort((a, b) => (a.kind === 'elective') - (b.kind === 'elective') || (a.order ?? 0) - (b.order ?? 0));
+      if (!list.length) return '';
+      const items = list.map((n) => {
+        let pre, cls = '';
+        if (n.kind === 'elective') pre = tf('pgListElective', { n: (n.options || []).length });
+        else if (n.reqSummary) {
+          pre = `${I18N.t('pgListPrereq')} ${n.reqSummary}${n.offPlan ? ` (${I18N.t('pgNotInPlan')})` : ''}`;
+          if (n.offPlan) cls = ' w';
+        } else pre = I18N.t('pgListNoPrereq');
+        const title = n.kind === 'elective'
+          ? `<span class="pg-li-name">${esc(n.name)}</span>`
+          : `<span class="pg-li-name">${n.label ? `<span class="pg-li-code num" translate="no">${esc(n.label)}</span> ` : ''}${esc(n.name || '')}</span>`;
+        return `<li><button type="button" class="pg-li" data-code="${esc(n.code)}">${title}<small class="pg-li-pre${cls}">${esc(pre)}</small></button></li>`;
+      }).join('');
+      return `<li class="pg-lsem"><h3>${esc(laneTitle(sem.title))}</h3><ul>${items}</ul></li>`;
     }).filter(Boolean).join('');
+    box.querySelectorAll('.pg-li').forEach((b) => b.addEventListener('click', () => currentGraph.focusNode(b.dataset.code)));
   }
 
-  // Faz 5.4 (D1): mobilde grafik yerine dönem-dönem listeye geçiş. Liste her
-  // programda üretilir; grafik modunda sr-only (ekran okuyucu yine erişir).
+  // Harita / Liste geçişi. Masaüstünde iki düğmeli segment (.pg-map-toggle,
+  // .pg-list-toggle); .pg-list-toggle ayrıca tek başına aç/kapa olarak çalışır.
+  // Telefonda (≤700px) liste yerine odak gezgini vardır; aynı düğme tam
+  // haritayı açıp kapatır.
   function initListToggle(root) {
     const btn = root.querySelector('.pg-list-toggle');
+    const mapBtn = root.querySelector('.pg-map-toggle');
     const box = root.querySelector('.pg-semester-list');
     if (!btn || !box) return;
-    btn.addEventListener('click', () => {
-      const mobile = window.matchMedia('(max-width: 700px)').matches;
-      const on = mobile ? root.classList.toggle('pg-mobile-full') : root.classList.toggle('pg-list-mode');
-      btn.textContent = mobile ? I18N.t(on ? 'pgFocusView' : 'pgFullGraph') : I18N.t(on ? 'pgGraphView' : 'pgListViewLabel');
-      btn.setAttribute('aria-pressed', String(on));
-      if (!mobile) box.classList.toggle('sr-only', !on);
-      savePrereqPreference(root);
-    });
-    const mobile = window.matchMedia('(max-width: 700px)').matches;
-    if (mobile) btn.textContent = I18N.t('pgFullGraph');
-    if (prereqPreference.view === 'list') {
-      if (mobile) root.classList.add('pg-mobile-full');
+    const isMobile = () => window.matchMedia('(max-width: 700px)').matches;
+    const apply = (on) => {
+      const mobile = isMobile();
+      if (mobile) root.classList.toggle('pg-mobile-full', on);
       else {
-        root.classList.add('pg-list-mode');
-        box.classList.remove('sr-only');
+        root.classList.toggle('pg-list-mode', on);
+        box.classList.toggle('sr-only', !on);
       }
-      btn.textContent = I18N.t(mobile ? 'pgFocusView' : 'pgGraphView');
-      btn.setAttribute('aria-pressed', 'true');
-    }
-  }
-
-  // renderBranchLegend, grafikteki renklerin hangi branşa ait olduğunu
-  // gösterir — düğüm renkleri branş kodundan türetiliyor.
-  function renderBranchLegend(root, nodes) {
-    const box = root.querySelector('.pg-branches');
-    const branches = [...new Set(nodes.filter((n) => n.kind === 'course').map((n) => n.branch))].sort();
-    box.innerHTML = branches.length
-      ? branches.map((b) => `<span class="pg-branch"><i style="background:${hueOf(b)}"></i>${esc(b)}</span>`).join('')
-      : '';
+      btn.textContent = mobile ? I18N.t(on ? 'pgFocusView' : 'pgFullGraph') : I18N.t('pgListShort');
+      btn.setAttribute('aria-pressed', String(on));
+      if (mapBtn) mapBtn.setAttribute('aria-pressed', String(!on));
+      if (!on && graph) graph.queueResize();
+    };
+    const current = () => root.classList.contains(isMobile() ? 'pg-mobile-full' : 'pg-list-mode');
+    btn.addEventListener('click', () => { apply(!current()); savePrereqPreference(root); });
+    mapBtn?.addEventListener('click', () => { if (current()) { apply(false); savePrereqPreference(root); } });
+    apply(prereqPreference.view === 'list');
   }
 
   // Seviye filtresi düğmelerini kurar; tıklamayla activeLevels güncellenir,

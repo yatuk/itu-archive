@@ -258,8 +258,8 @@ func (b *Builder) writeInstructorPage(slug string, courseSlugs map[string]string
 	}
 	courseCount := distinctCodes(hi.Rows)
 	canonical := fmt.Sprintf("%s/hoca/%s/", baseURL, slug)
-	title := fmt.Sprintf(b.l.InstrTitleFmt, hi.Name)
-	description := fmt.Sprintf(b.l.InstrDescriptionFmt, hi.Name, hi.Terms, courseCount, latestLabel)
+	gp := b.instructorGradeProfile(hi, termLabels)
+	title, description := instructorMeta(hi, gp, b.hmMatch[slug], courseCount, latestLabel)
 
 	jsonld := jsonldScript([]any{
 		map[string]any{
@@ -313,7 +313,6 @@ func (b *Builder) writeInstructorPage(slug string, courseSlugs map[string]string
 	head.WriteString(b.renderNowCard(hi, codeLink, termLabels))
 	head.WriteString(`</div>`)
 
-	gp := b.instructorGradeProfile(hi, termLabels)
 	gp.Compare = b.pairedCompare(slug, hi, termLabels)
 
 	content := template.HTML(buildContent(

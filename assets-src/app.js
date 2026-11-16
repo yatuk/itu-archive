@@ -39,7 +39,7 @@ async function boot() {
   } catch (e) {
     markIndexReady(); // yükleme başarısız olsa da bekleyenleri serbest bırak
     setStatus($('#stat-status'), I18N.t('statVeriYok'), { error: true });
-    $('#rows').innerHTML = `<tr><td colspan="11" class="empty">Veri dosyaları okunamadı (${esc(e.message)}).</td></tr>`;
+    $('#rows').innerHTML = `<p class="empty error">${esc(I18N.t('courseDataError', { msg: e.message }))}</p>`;
     window.__ituAppFailed?.('data');
     return;
   }
@@ -175,7 +175,6 @@ function initTheme() {
     // Tarayıcı çubuğu sayfa zeminiyle aynı kalsın (mobilde görünür).
     const meta = document.querySelector('meta[name=theme-color]');
     if (meta) meta.setAttribute('content', t === 'dark' ? '#0a0a0a' : '#f4f6f4');
-    applyTabLabels();
     for (const b of btns) {
       b.setAttribute('aria-pressed', String(b.dataset.theme === t));
       b.tabIndex = b.dataset.theme === t ? 0 : -1;
@@ -209,21 +208,6 @@ function initLangButton() {
   if (!btn) return;
   btn.setAttribute('aria-pressed', String(I18N.lang === 'en'));
   btn.addEventListener('click', () => I18N.setLang(I18N.lang === 'en' ? 'tr' : 'en'));
-}
-
-// Sade temasında sekme adları düz ("Dersler"), fosfor/CRT'de numaralı
-// ("01 · DERSLER") kalır — numaralandırma terminal kimliğinin parçası.
-const TAB_PLAIN = {
-  tr: { dersler: 'Dersler', gecmis: 'Geçmiş', dersplanim: 'Ders Planım/GPA', onsart: 'Önşart Haritası', sinavlar: 'Sınavlar', takvim: 'Akademik Takvim', donemler: 'Dönemler', program: 'Program', hakkinda: 'Hakkında' },
-  en: { dersler: 'Courses', gecmis: 'History', dersplanim: 'My Plan/GPA', onsart: 'Prereq Map', sinavlar: 'Exams', takvim: 'Calendar', donemler: 'Terms', program: 'Schedule', hakkinda: 'About' },
-};
-function applyTabLabels() {
-  const sade = document.documentElement.getAttribute('data-theme') === 'sade';
-  const plain = TAB_PLAIN[I18N.lang] || TAB_PLAIN.tr;
-  for (const b of document.querySelectorAll('.tabs button[data-view]')) {
-    const key = 'tab' + b.dataset.view.charAt(0).toUpperCase() + b.dataset.view.slice(1);
-    b.textContent = sade ? (plain[b.dataset.view] || I18N.t(key)) : I18N.t(key);
-  }
 }
 
 /* ---------- sekmeler ---------- */
@@ -297,12 +281,9 @@ function writeViewUrl(view, push) {
 // geçmişine yazılır (geri/ileri çalışır), değilse mevcut girişi değiştirir
 // (ilk yükleme ve popstate).
 function wireTabs() {
+  // Dokuz sekme tek, yatay kayan satırda: altı birincil görünüm, ince bir
+  // ayraç, ardından üç ikincil görünüm. "Daha fazla" menüsü yoktur.
   const buttons = [...document.querySelectorAll('.tabs [data-view]')];
-  const more = document.querySelector('.tabs-more');
-  const moreLabel = $('#tabs-more-label');
-  const moreNames = I18N.lang === 'en'
-    ? { gecmis: 'History', donemler: 'Terms', hakkinda: 'About' }
-    : { gecmis: 'Geçmiş', donemler: 'Dönemler', hakkinda: 'Hakkında' };
 
   // Kaydırılabilir sekme rayı: kenar solması yalnızca gerçekten devamı olan
   // tarafta görünür; rayın başındaki aktif sekme solgun çizilmez.
@@ -349,11 +330,6 @@ function wireTabs() {
     if (view === 'program') programShow();
     if (view === 'dersplanim') dersplanimShow();
     if (view === 'onsart') PrereqGraph.init('#pg-root');
-    if (moreLabel) {
-      moreLabel.textContent = moreNames[view] || (I18N.lang === 'en' ? 'More' : 'Daha fazla');
-      moreLabel.classList.toggle('active', Boolean(moreNames[view]));
-    }
-    if (more) more.open = false;
     // Program oluşturucu ve Ders Planım daha geniş alan kullanır.
     const mainEl = document.querySelector('main.wrap');
     if (mainEl) mainEl.classList.toggle('wide', view === 'program' || view === 'dersplanim');
@@ -381,10 +357,6 @@ function wireTabs() {
       visible[next].focus();
       show(visible[next].dataset.view, true);
     });
-  }
-
-  for (const b of document.querySelectorAll('.tabs-more [data-nav-view]')) {
-    b.addEventListener('click', () => show(b.dataset.navView, true));
   }
 
   // Tarayıcının geri/ileri butonları sekme değişikliklerini geri alır.

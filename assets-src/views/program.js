@@ -17,11 +17,6 @@ import { readLocalState, writeLocalState, isPlainObject } from '../core/persiste
 import { findAlternatives, presetPrefs, WEEKDAYS } from '../core/altfind.js?v=dde1e9339338';
 import { specialSectionKind } from '../core/section-kind.js';
 
-// Ajanda kartı ve ızgara bloğunda öğretim üyesi/konum satırlarının önündeki
-// küçük ikonlar (bkz. core/course-detail.js'teki aynı stroke ikon deseni).
-const ICON_PERSON = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>';
-const ICON_PIN = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-7.3 7-12a7 7 0 1 0-14 0c0 4.7 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>';
-
 let term = null;
 let rows = [];
 let inited = false;
@@ -33,21 +28,15 @@ let crnsApplied = false;
 // Izgara görünüm seçenekleri: boş hafta sonu sütunlarını açma ve tam gün aralığı.
 let showWeekend = false;
 let showFullDay = false;
-// Mobilde varsayılan gün listesidir; "ızgara görünümü" ile ızgaraya geçilir.
-let showGrid = false;
+// Takvim görünümü: 'grid' (haftalık ızgara) ya da 'agenda' (gün gün liste).
+// null → otomatik: dar ekranda (≤600px) gün gün, geniş ekranda ızgara.
+let viewPref = null;
+const COMPACT_MQ = '(max-width: 600px)';
 // Mobil tek-gün sekmesi: FULL dizisindeki gün indeksi (0=Pzt); null → ilk
 // render'da bugüne (ya da dersi olan ilk güne) düşer, oturum boyunca kalıcı.
 let mobileDay = null;
 let gridContextMenu = null;
 let gridContextReturnFocus = null;
-// Haftalık program React adası aynı bundle içindeki Dersler tablosuyla birlikte
-// tembel yüklenir. Program verisi ve bütün eylemler bu dosyada kalmaya devam eder.
-let programScheduleModule = null;
-let programSchedulePromise = null;
-let programScheduleMounted = false;
-let latestProgramScheduleProps = null;
-let programListMounted = false;
-let latestProgramListProps = null;
 
 // --- çoklu program (liste) ---
 const PROG_KEY = 'itu-programs';
@@ -71,7 +60,7 @@ function savePrograms(ps) {
 
 function saveProgramView() {
   writeLocalState(PROGRAM_PREF_KEY, {
-    grid: showGrid,
+    view: viewPref,
     weekend: showWeekend,
     fullDay: showFullDay,
     markFull: Boolean($('#p-full')?.checked),
@@ -126,10 +115,11 @@ function renderProgSelector() {
 export function initProgram() {
   if (inited) return;
   const pref = readLocalState(PROGRAM_PREF_KEY, { fallback: {}, validate: isPlainObject });
-  showGrid = pref.grid === true;
+  // Eski kayıt { grid: true } "ızgarayı zorla" demekti; yeni { view } ile eşlenir.
+  viewPref = pref.view === 'grid' || pref.view === 'agenda' ? pref.view : (pref.grid === true ? 'grid' : null);
   showWeekend = pref.weekend === true;
   showFullDay = pref.fullDay === true;
-  $('#p-gridview').checked = showGrid;
+  syncViewToggle();
   $('#p-weekend').checked = showWeekend;
   $('#p-fullday').checked = showFullDay;
   $('#p-full').checked = pref.markFull === true;
@@ -175,13 +165,20 @@ export function initProgram() {
   $('#p-ics').addEventListener('click', exportScheduleICS);
   $('#p-share').addEventListener('click', share);
   $('#p-obs').addEventListener('click', (e) => { e.preventDefault(); showOBS(); });
-  $('#p-obs').addEventListener('mouseenter', () => showTip());
-  $('#p-obs').addEventListener('mouseleave', () => hideTip());
   $('#p-favs').addEventListener('click', addFavorites);
   $('#p-altfind').addEventListener('click', openAltFind);
   $('#p-full').addEventListener('change', () => { saveProgramView(); render(); });
-  // Izgara görünüm seçenekleri (hafta sonu sütunları / tam gün aralığı / ızgara).
-  $('#p-gridview').addEventListener('change', (e) => { showGrid = e.target.checked; saveProgramView(); render(); });
+  // Görünüm (ızgara / gün gün) ve ızgara seçenekleri (hafta sonu / tam gün aralığı).
+  for (const radio of document.querySelectorAll('input[name="p-view"]')) {
+    radio.addEventListener('change', (e) => {
+      if (!e.target.checked) return;
+      viewPref = e.target.value === 'agenda' ? 'agenda' : 'grid';
+      saveProgramView();
+      render();
+    });
+  }
+  // Otomatik görünümde ekran daralıp genişleyince ızgara ↔ gün gün geçişi.
+  window.matchMedia(COMPACT_MQ).addEventListener('change', () => { if (!viewPref) render(); });
   $('#p-weekend').addEventListener('change', (e) => { showWeekend = e.target.checked; saveProgramView(); render(); });
   $('#p-fullday').addEventListener('change', (e) => { showFullDay = e.target.checked; saveProgramView(); render(); });
   document.addEventListener('click', (e) => {
@@ -428,12 +425,97 @@ function currentItems() {
   return items;
 }
 
+// --- görünüm yardımcıları ---
+
+const P_DAY_KEYS = ['dayMonday', 'dayTuesday', 'dayWednesday', 'dayThursday', 'dayFriday', 'daySaturday', 'daySunday'];
+const P_DAY_ABBR_KEYS = ['progDayAbbrMon', 'progDayAbbrTue', 'progDayAbbrWed', 'progDayAbbrThu', 'progDayAbbrFri', 'progDayAbbrSat', 'progDayAbbrSun'];
+const ICON_ALERT = '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v5M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>';
+const ICON_MORE = '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>';
+const ICON_X = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+
+const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+const fmtRange = (a, b) => `${fmtMin(a)}–${fmtMin(b)}`;
+const dayIndex = (trDay) => P_DAYS.indexOf(trDay);
+const dayName = (trDay) => { const i = dayIndex(trDay); return i >= 0 ? I18N.t(P_DAY_KEYS[i]) : trDay; };
+const isFullRow = (row) => { const [cap, enr] = effectiveQuota(row); return cap > 0 && enr >= cap; };
+
+function currentView() {
+  return viewPref || (window.matchMedia(COMPACT_MQ).matches ? 'agenda' : 'grid');
+}
+function syncViewToggle() {
+  const view = currentView();
+  const grid = $('#p-gridview');
+  const agenda = $('#p-agendaview');
+  if (grid) grid.checked = view === 'grid';
+  if (agenda) agenda.checked = view === 'agenda';
+}
+
+// Aynı gün içinde zaman aralığı örtüşen oturum çiftleri (farklı şubeler) ve
+// şube başına çakışan günler. Kırmızı işaret YALNIZCA gerçek örtüşmede.
+function findConflicts(t) {
+  const pairs = [];
+  const daysByKey = new Map();
+  if (!t) return { pairs, daysByKey };
+  const all = t.all;
+  for (let i = 0; i < all.length; i++) {
+    for (let j = i + 1; j < all.length; j++) {
+      const a = all[i], b = all[j];
+      if (a.day !== b.day || a.row === b.row) continue;
+      if (!(a.start < b.end && b.start < a.end)) continue;
+      pairs.push({ day: a.day, start: Math.max(a.start, b.start), end: Math.min(a.end, b.end), a, b });
+      for (const s of [a, b]) {
+        const key = fav.favKeyOf(s.row[3], s.row[0]);
+        if (!daysByKey.has(key)) daysByKey.set(key, new Set());
+        daysByKey.get(key).add(s.day);
+      }
+    }
+  }
+  pairs.sort((x, y) => dayIndex(x.day) - dayIndex(y.day) || x.start - y.start);
+  return { pairs, daysByKey };
+}
+
+// Bir günün oturumlarını şeritlere yerleştirir. Şerit sayısı yalnızca birbirine
+// değen oturum kümesi içinde paylaşılır: çakışan bloklar yan yana yarım genişlikte,
+// aynı günün diğer blokları tam genişlikte kalır.
+function placeDay(events) {
+  const evs = events.slice().sort((a, b) => a.start - b.start || a.end - b.end);
+  const out = [];
+  let cluster = [];
+  let lanes = [];
+  let clusterEnd = -1;
+  const flush = () => {
+    const n = Math.max(1, lanes.length);
+    for (const o of cluster) o.laneCount = n;
+    cluster = [];
+    lanes = [];
+  };
+  for (const ev of evs) {
+    if (cluster.length && ev.start >= clusterEnd) { flush(); clusterEnd = -1; }
+    let lane = lanes.findIndex((end) => end <= ev.start);
+    if (lane === -1) { lane = lanes.length; lanes.push(ev.end); } else lanes[lane] = ev.end;
+    const placed = { ...ev, lane, laneCount: 1 };
+    cluster.push(placed);
+    out.push(placed);
+    clusterEnd = Math.max(clusterEnd, ev.end);
+  }
+  flush();
+  for (const o of out) {
+    o.conflict = out.some((o2) => o2 !== o && o2.row !== o.row && o.start < o2.end && o2.start < o.end);
+  }
+  return out;
+}
+
 function render() {
   const items = currentItems();
+  const itemRows = items.map((i) => i.row);
+  const t = buildTimetable(itemRows);
+  const conflicts = findConflicts(t);
   $('#p-count').textContent = items.length;
-  renderList(items);
-  renderGrid(items.map((i) => i.row));
-  renderSummary(items);
+  syncViewToggle();
+  renderList(items, conflicts);
+  renderConflicts(conflicts);
+  renderGrid(itemRows, t);
+  renderSummary(items, t);
   updateCredits(items);
   renderCredits(items); // satır başına "3 kr · 6 AKTS" (katalog asenkron)
   updateBookmarklet(items);
@@ -449,13 +531,39 @@ function render() {
   }
 }
 
+// Çakışma uyarısı: düzenin üstünde, iki dersi saatleri ve CRN'leriyle adlandırır.
+let lastConflictHtml = null;
+function renderConflicts({ pairs }) {
+  const box = $('#p-conflict');
+  if (!box) return;
+  let html = '';
+  if (pairs.length) {
+    const num = (v) => `<span class="num">${esc(v)}</span>`;
+    const code = (v) => `<span class="code" translate="no">${esc(v)}</span>`;
+    const lines = pairs.map((p) => I18N.t('progConflictLine', {
+      day: esc(dayName(p.day)),
+      overlap: num(fmtRange(p.start, p.end)),
+      a: code(p.a.row[1]), aTime: num(fmtRange(p.a.start, p.a.end)), aCrn: num(p.a.row[0]),
+      b: code(p.b.row[1]), bTime: num(fmtRange(p.b.start, p.b.end)), bCrn: num(p.b.row[0]),
+    }));
+    const body = lines.length === 1
+      ? ` · ${lines[0]}.`
+      : `<ul>${lines.map((l) => `<li>${l}</li>`).join('')}</ul>`;
+    html = `${ICON_ALERT}<p><strong>${esc(I18N.t('progConflictTitle'))}</strong>${body} <span class="p-alert-hint">${esc(I18N.t('progConflictAltHint'))}</span></p>`;
+  }
+  // Aynı içerik yeniden yazılmaz: ekran okuyucu her render'da tekrar okumasın.
+  if (html === lastConflictHtml) return;
+  lastConflictHtml = html;
+  box.innerHTML = html;
+  box.hidden = !html;
+}
+
 // Seçili şube satırlarının altına küçük punto kredi/AKTS: "3 kr · 6 AKTS".
 // Katalog verisi olmayan branşlar sessizce atlanır.
 async function renderCredits(items) {
   const box = $('#p-list');
   if (!items.length) return;
   const cache = new Map();
-  let reactCreditsChanged = false;
   for (let i = 0; i < items.length; i++) {
     const { row } = items[i];
     const branch = row[3];
@@ -466,67 +574,26 @@ async function renderCredits(items) {
     }
     const c = map && map[row[1]] && map[row[1]].credits;
     const item = box.querySelector(`.p-item[data-idx="${i}"]`);
-    if (!c) continue;
+    if (!c || !item) continue;
     const en = I18N.lang === 'en';
     const parts = [];
     if (c.local != null) parts.push(`${trNum(c.local)} ${en ? 'cr' : 'kr'}`);
     if (c.ects) parts.push(`${trNum(c.ects)} ${I18N.t('progECTSWord')}`);
     if (!parts.length) continue;
-    if (programListMounted && latestProgramListProps?.items?.[i]) {
-      latestProgramListProps.items[i] = { ...latestProgramListProps.items[i], credit: parts.join(' · ') };
-      reactCreditsChanged = true;
-      continue;
-    }
-    if (!item) continue;
     const small = document.createElement('small');
     small.className = 'p-cred';
     small.textContent = parts.join(' · ');
     const code = item.querySelector('.p-code');
     if (code && !code.querySelector('.p-cred')) code.appendChild(small);
   }
-  if (reactCreditsChanged && programScheduleModule) programScheduleModule.updateProgramList(latestProgramListProps);
 }
 
-function renderList(items) {
+function renderList(items, conflicts) {
   const box = $('#p-list');
   const markFull = $('#p-full').checked;
   const en = I18N.lang === 'en';
-  const byKey = new Map(items.map((item) => [fav.favKeyOf(item.rec.branch, item.rec.crn), item]));
-  latestProgramListProps = {
-    items: items.map(({ rec, row }) => {
-      const [crn, code, name, branch, instructor, when] = row;
-      const [cap, enr] = effectiveQuota(row);
-      const kind = specialSectionKind(row);
-      return {
-        key: fav.favKeyOf(branch, crn), crn: String(crn), code: String(code), name: String(name),
-        instructor: instructor && instructor !== '-' ? String(instructor) : I18N.t('progInstructorUnknown'),
-        when: String(when || (kind === 'extra-exam' ? I18N.t('progExtraExamUntimed') : kind === 'graduation' ? I18N.t('progGraduationUntimed') : I18N.t('progTimeUnknown'))),
-        quota: cap ? `${enr} / ${cap}${enr >= cap ? ` · ${en ? 'full' : 'dolu'}` : ''}` : '·', full: Boolean(markFull && cap > 0 && enr >= cap),
-        badge: kind ? I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge') : '',
-        backup: rec.backup ? `${I18N.t('progBackupPrefix')}: ${rec.backup}` : '',
-      };
-    }),
-    labels: {
-      empty: I18N.t('prgEmpty'), course: I18N.t('progColHeadCourse'), quota: I18N.t('progColHeadQuota'),
-      details: I18N.t('prgMenuDetail'), copyCrn: I18N.t('prgMenuCopy'),
-      copyCode: en ? 'Copy course code' : 'Ders kodunu kopyala',
-      copyInstructor: en ? 'Copy instructor' : 'Öğretim üyesini kopyala', openObs: I18N.t('prgMenuObs'),
-      remove: I18N.t('prgMenuRemove'), actions: en ? 'actions' : 'işlemleri',
-      open: I18N.t('pgOpenBadge'), full: en ? 'full' : 'dolu',
-    },
-    onOpen: (key) => { const found = byKey.get(key); if (found) openDetail(found.row, term); },
-    onCopy: (key, field) => {
-      const row = byKey.get(key)?.row;
-      const value = field === 'crn' ? row?.[0] : field === 'code' ? row?.[1] : row?.[4];
-      if (value) copyText(String(value)).then((ok) => toast(ok ? (en ? 'Copied' : 'Kopyalandı') : I18N.t('progCopyFailed'), { kind: ok ? 'ok' : 'warn' }));
-    },
-    onOpenObs: () => window.open('https://obs.itu.edu.tr/public/DersProgram', '_blank', 'noopener'),
-    onRemove: removeScheduleItem,
-    onReorder: reorderSchedule,
-  };
-  if (programScheduleModule) {
-    if (programListMounted) programScheduleModule.updateProgramList(latestProgramListProps);
-    else { programScheduleModule.mountProgramList(box, latestProgramListProps); programListMounted = true; }
+  if (!items.length) {
+    box.innerHTML = `<p class="empty">${esc(I18N.t('prgEmpty'))}</p>`;
     return;
   }
   const rowsHtml = items.map(({ rec, row }, idx) => {
@@ -537,27 +604,40 @@ function renderList(items) {
     const speed = fillSpeedNote(crn);
     const kind = specialSectionKind(row);
     const kindLabel = kind ? I18N.t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge') : '';
-    const timeLabel = when || (kind === 'extra-exam'
-      ? I18N.t('progExtraExamUntimed')
-      : kind === 'graduation' ? I18N.t('progGraduationUntimed') : I18N.t('progTimeUnknown'));
-    return `<div class="p-item${markFull && full ? ' p-full' : ''}" role="row" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
-      <span class="p-grip" aria-hidden="true">⋮⋮</span>
-      <span class="p-crn" role="cell"><span class="p-mobile-label">${esc(I18N.t('thCrn'))}</span>${esc(crn)}${rec.backup ? `<small class="p-backup">${esc(I18N.t('progBackupPrefix'))}: ${esc(rec.backup)}</small>` : ''}</span>
-      <div class="p-code" role="cell"><b>${esc(code)}${kindLabel ? ` <span class="section-kind-badge ${kind}">${esc(kindLabel)}</span>` : ''}</b><small>${esc(name)}${speed ? ` · ${esc(speed)}` : ''}</small></div>
-      <span class="p-instructor" role="cell">${esc(instructor && instructor !== '-' ? instructor : I18N.t('progInstructorUnknown'))}</span>
-      <span class="p-when${kind && !when ? ' p-when-special' : ''}" role="cell">${esc(timeLabel)}</span>
-      <span class="p-fill" role="cell" aria-label="${esc(I18N.t('progQuotaAria'))}">${cap ? quotaDisplay(cap, enr) : '·'}</span>
-      <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${en ? `Remove ${code} from schedule` : `${esc(code)} dersini programdan çıkar`}">${esc(I18N.t('progRemoveBtn'))}</button>
-      <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${en ? `More actions for ${code}` : `${esc(code)} için diğer eylemler`}" aria-haspopup="menu" aria-expanded="false">⋮</button>
-      <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
+    const sessions = parseWhen(when);
+    const timeLabel = sessions.length
+      ? sessions.map((s) => `${dayName(s.day)} ${fmtRange(s.start, s.end)}`).join(' · ')
+      : when || (kind === 'extra-exam'
+        ? I18N.t('progExtraExamUntimed')
+        : kind === 'graduation' ? I18N.t('progGraduationUntimed') : I18N.t('progTimeUnknown'));
+    const cfDays = conflicts.daysByKey.get(key);
+    const cfLabel = cfDays
+      ? I18N.t('progItemConflict', { days: [...cfDays].sort((a, b) => dayIndex(a) - dayIndex(b)).map(dayName).join(', ') })
+      : '';
+    const instr = instructor && instructor !== '-' ? instructor : I18N.t('progInstructorUnknown');
+    return `<div class="p-item${markFull && full ? ' p-full' : ''}${cfDays ? ' is-conflict' : ''}" role="row" draggable="true" data-idx="${idx}" data-key="${esc(key)}">
+      <div class="p-item-main" role="cell">
+        <div class="p-code"><span class="code" translate="no">${esc(code)}</span> <span class="p-name">${esc(name)}</span>${kindLabel ? ` <span class="section-kind-badge ${kind}">${esc(kindLabel)}</span>` : ''}</div>
+        <div class="p-crn"><span class="crn" translate="no">CRN ${esc(crn)}</span> · <span class="p-instructor">${esc(instr)}</span>${rec.backup ? ` <small class="p-backup">${esc(I18N.t('progBackupPrefix'))}: <span class="crn">${esc(rec.backup)}</span></small>` : ''}</div>
+        <div class="p-when when${kind && !when ? ' p-when-special' : ''}">${esc(timeLabel)}</div>
+        ${speed ? `<div class="p-speed">${esc(speed)}</div>` : ''}
+        ${cfLabel ? `<div class="p-cf">${esc(cfLabel)}</div>` : ''}
+      </div>
+      <div class="p-item-side" role="cell">
+        <span class="p-fill num">${cap ? quotaDisplay(cap, enr) : '·'}</span>
+        <span class="p-item-acts">
+          <button type="button" class="p-remove" data-remove="${esc(key)}" aria-label="${en ? `Remove ${esc(code)} from schedule` : `${esc(code)} dersini programdan çıkar`}" title="${esc(I18N.t('progRemoveBtn'))}">${ICON_X}</button>
+          <button type="button" class="p-menu" data-menu="${esc(key)}" aria-label="${en ? `More actions for ${esc(code)}` : `${esc(code)} için diğer eylemler`}" aria-haspopup="menu" aria-expanded="false">${ICON_MORE}</button>
+        </span>
+        <div class="p-menu-pop" data-pop="${esc(key)}" hidden></div>
+      </div>
     </div>`;
   }).join('');
-  box.innerHTML = items.length ? `
+  box.innerHTML = `
     <div class="p-list-head" role="row">
       <span role="columnheader">${esc(I18N.t('progColHeadCourse'))}</span>
       <span role="columnheader">${esc(I18N.t('progColHeadQuota'))}</span>
-    </div>${rowsHtml}`
-    : `<p class="empty">${esc(I18N.t('prgEmpty'))}</p>`;
+    </div>${rowsHtml}`;
 
   box.querySelectorAll('.p-item').forEach((item) => {
     const idx = Number(item.dataset.idx);
@@ -611,8 +691,9 @@ function renderList(items) {
         ${rec && rec.rec.backup
           ? `<button type="button" data-act="rmbackup" data-key="${key}">${esc(I18N.t('progMenuRemoveBackup'))}</button>`
           : `<button type="button" data-act="backup" data-key="${key}">${esc(I18N.t('progMenuSetBackup'))}</button>`}
-        <button type="button" data-act="remove" data-key="${key}">${esc(I18N.t('prgMenuRemove'))}</button>`;
+        <button type="button" data-act="remove" class="p-danger" data-key="${key}">${esc(I18N.t('prgMenuRemove'))}</button>`;
       wireMenuActions(pop);
+      pop.querySelector('button')?.focus();
     });
   });
 }
@@ -695,134 +776,12 @@ function lumOf(hex) {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 }
 
-// Açık temada pastel bloklar üzerinde açık renkli saat metni eşiğin altında
-// kalabiliyor; zemin, seçilen metin rengiyle ≥4.5:1 sağlanana kadar koyulaştırılır.
-// Fosfor teması pastel tonlarını korur (yalnızca sade temasında çağrılır).
-function blockContrast(color) {
-  let bg = color, L = lumOf(bg);
-  for (let i = 0; i < 12; i++) {
-    if (1.05 / (L + 0.05) >= 4.5 || (L + 0.05) / 0.074 >= 4.5) break;
-    bg = '#' + [1, 3, 5].map((s) => Math.round(parseInt(bg.slice(s, s + 2), 16) * 0.8).toString(16).padStart(2, '0')).join('');
-    L = lumOf(bg);
-  }
-  return { bg, fg: fgFor(bg) };
-}
-
-function programScheduleProps(itemRows) {
-  const timetable = buildTimetable(itemRows);
-  const fullDays = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
-  const dayLabels = [I18N.t('progDayAbbrMon'), I18N.t('progDayAbbrTue'), I18N.t('progDayAbbrWed'), I18N.t('progDayAbbrThu'),
-    I18N.t('progDayAbbrFri'), I18N.t('progDayAbbrSat'), I18N.t('progDayAbbrSun')];
-  const isSade = document.documentElement.dataset.theme === 'sade';
-  const rowByKey = new Map(itemRows.map((row) => [fav.favKeyOf(row[3], row[0]), row]));
-  const sessions = (timetable?.all || []).map((session, index) => {
-    const rowKey = fav.favKeyOf(session.row[3], session.row[0]);
-    const rawColor = colorFor(session.row[1]);
-    const color = isSade ? blockContrast(rawColor) : { bg: rawColor, fg: fgFor(rawColor) };
-    return {
-      key: `${rowKey}|${session.day}|${session.start}|${session.end}|${index}`,
-      rowKey,
-      crn: String(session.row[0] || ''),
-      code: String(session.row[1] || ''),
-      name: String(session.row[2] || ''),
-      instructor: session.row[4] && session.row[4] !== '-' ? String(session.row[4]) : '',
-      where: String(session.where || ''),
-      day: fullDays.indexOf(session.day),
-      start: session.start,
-      end: session.end,
-      color: color.bg,
-      foreground: color.fg,
-    };
-  }).filter((session) => session.day >= 0);
-  const untimed = itemRows.filter((row) => !parseWhen(row[5]).length).map((row, index) => {
-    const kind = specialSectionKind(row);
-    const detail = kind === 'extra-exam'
-      ? I18N.t('progExtraExamUntimed')
-      : kind === 'graduation' ? I18N.t('progGraduationUntimed') : I18N.t('progTimeUnknown');
-    return {
-      key: `${fav.favKeyOf(row[3], row[0])}|untimed|${index}`,
-      code: String(row[1] || ''),
-      crn: String(row[0] || ''),
-      detail,
-      special: Boolean(kind),
-    };
-  });
-  const en = I18N.lang === 'en';
-  return {
-    sessions,
-    untimed,
-    sectionCount: itemRows.length,
-    showWeekend,
-    showFullDay,
-    forceGrid: showGrid,
-    showNow: term === state.index?.currentSlug,
-    dayLabels,
-    labels: {
-      title: en ? 'Weekly schedule' : 'Haftalık program',
-      sessions: I18N.t('prgSessions'),
-      sections: I18N.t('prgSube'),
-      empty: I18N.t('prgEmpty'),
-      emptyDay: en ? 'No classes on this day.' : 'Bu gün dersin yok.',
-      special: I18N.t('progSpecialUntimedPrefix'),
-      unknown: en ? 'Sections awaiting time information' : 'Saat bilgisi beklenen şubeler',
-      conflict: I18N.t('progConflictTitle'),
-      details: I18N.t('prgMenuDetail'),
-      copyCrn: I18N.t('prgMenuCopy'),
-      openObs: I18N.t('prgMenuObs'),
-      remove: I18N.t('prgMenuRemove'),
-      actions: en ? 'actions' : 'işlemleri',
-    },
-    onOpen: (rowKey) => {
-      const row = rowByKey.get(rowKey);
-      if (row) openDetail(row, term);
-    },
-    onCopyCrn: (rowKey) => {
-      const row = rowByKey.get(rowKey);
-      if (!row) return;
-      copyText(String(row[0])).then((ok) => toast(ok
-        ? (en ? 'CRN copied' : 'CRN kopyalandı')
-        : I18N.t('progCopyFailed'), { kind: ok ? 'ok' : 'warn' }));
-    },
-    onOpenObs: () => window.open('https://obs.itu.edu.tr/public/DersProgram', '_blank', 'noopener'),
-    onRemove: removeScheduleItem,
-  };
-}
-
-function renderGrid(itemRows) {
+// Haftalık ızgara ya da gün gün liste. Veri ve eylemler (detay, sağ tık menüsü,
+// çıkarma) iki görünümde de aynı şube satırlarından çözülür.
+function renderGrid(itemRows, t) {
   const wrap = $('#p-grid');
   if (!wrap) return;
-  latestProgramScheduleProps = programScheduleProps(itemRows);
-  if (programScheduleModule) {
-    if (programScheduleMounted) programScheduleModule.updateProgram(latestProgramScheduleProps);
-    else {
-      programScheduleModule.mountProgram(wrap, latestProgramScheduleProps);
-      programScheduleMounted = true;
-    }
-    return;
-  }
-  wrap.innerHTML = `<div class="pp-loading" aria-live="polite">${esc(I18N.lang === 'en' ? 'Preparing schedule…' : 'Program hazırlanıyor…')}</div>`;
-  if (!programSchedulePromise) {
-    programSchedulePromise = import('../react/dersler-table.js').then((mod) => {
-      programScheduleModule = mod;
-      if (!latestProgramScheduleProps || !document.contains(wrap)) return;
-      mod.mountProgram(wrap, latestProgramScheduleProps);
-      programScheduleMounted = true;
-      const list = $('#p-list');
-      if (list && latestProgramListProps) {
-        mod.mountProgramList(list, latestProgramListProps);
-        programListMounted = true;
-      }
-    }).catch((error) => {
-      console.warn('Program React görünümü yüklenemedi, klasik görünüm kullanılıyor.', error);
-      programSchedulePromise = null;
-      renderGridLegacy(itemRows);
-    });
-  }
-}
-
-function renderGridLegacy(itemRows) {
-  const wrap = $('#p-grid');
-  const t = buildTimetable(itemRows);
+  placedRefs = [];
   // Zaman bilgisi olmayan şubeyi sessizce yutma — ızgaranın altına not düş (G).
   const noTime = itemRows.filter((r) => !parseWhen(r[5]).length && !specialSectionKind(r));
   const specialUntimed = itemRows.filter((r) => !parseWhen(r[5]).length && specialSectionKind(r));
@@ -836,148 +795,77 @@ function renderGridLegacy(itemRows) {
       return `<span><strong>${esc(r[1])}</strong> (${esc(r[0])}) · ${esc(detail)}</span>`;
     }).join('')}</div>`
     : '';
+  if (!itemRows.length) {
+    wrap.innerHTML = `<p class="empty p-grid-empty">${esc(I18N.t('prgEmpty'))}</p>`;
+    return;
+  }
   if (!t || !t.all.length) {
     wrap.innerHTML = specialNote + (noTime.length ? `<p class="empty">${esc(I18N.t('prgNoTime'))}</p>` : '') + noTimeNote;
     return;
   }
-  // Mobilde varsayılan tek-gün sekmeleri (izgaranın kendisi korunur — renkli
-  // bloklar, çakışma işareti, "şimdi" çizgisi — yalnız tek sütuna daralır);
-  // "ızgara görünümü" ile yatay tam haftaya geçilir.
-  const mobileMode = window.matchMedia('(max-width: 600px)').matches && !showGrid;
-  placedRefs = [];
-  const FULL = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
-  const TTD = [I18N.t('progDayAbbrMon'), I18N.t('progDayAbbrTue'), I18N.t('progDayAbbrWed'), I18N.t('progDayAbbrThu'),
-    I18N.t('progDayAbbrFri'), I18N.t('progDayAbbrSat'), I18N.t('progDayAbbrSun')];
-  const fmtMin = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
-  const ROW = 28;
 
   // Görünür günler: seçili şubelerin hiçbiri hafta sonuna denk gelmiyorsa CMT/PAZ
-  // gizlenir; "hafta sonunu göster" ile açılabilir (D).
-  const hasDay = FULL.map((d) => t.all.some((s) => s.day === d));
-  let visIdx = showWeekend || hasDay[5] || hasDay[6] ? [0, 1, 2, 3, 4, 5, 6] : [0, 1, 2, 3, 4];
-  let tabsHtml = '';
-  if (mobileMode) {
-    const weekVisIdx = visIdx;
-    const todayIdx = (new Date().getDay() + 6) % 7;
-    if (mobileDay == null || !weekVisIdx.includes(mobileDay)) {
-      mobileDay = hasDay[todayIdx] ? todayIdx : (weekVisIdx.find((i) => hasDay[i]) ?? weekVisIdx[0]);
-    }
-    visIdx = [mobileDay];
-    tabsHtml = `<div class="tt-daytabs" role="tablist" aria-label="${esc(I18N.t('progDaySelectAria'))}">${weekVisIdx.map((di) => `
-      <button type="button" role="tab" aria-selected="${di === mobileDay}" class="tt-daytab${di === mobileDay ? ' active' : ''}${hasDay[di] ? ' has-session' : ''}" data-day="${di}">${TTD[di]}</button>`).join('')}</div>`;
-  }
-
-  // Izgara aralığı içeriğe göre daralır: en erken dersten 1 sa önce, en geç
-  // dersten 1 sa sonra. "Tüm günü göster" açıksa 07:00-23:00 (D).
-  let startSlot = showFullDay ? 7 * 60 : t.startSlot - 60;
-  let endSlot = showFullDay ? 23 * 60 : (t.startSlot + t.nSlots * 30) + 60;
-  startSlot = Math.max(0, Math.min(1380, startSlot));
-  endSlot = Math.max(60, Math.min(1440, endSlot));
-  const nSlots = (endSlot - startSlot) / 30;
-  const H = nSlots * ROW;
-
-  const byDay = FULL.map(() => []);
+  // gizlenir; "hafta sonu" ile açılabilir (D).
+  const hasDay = P_DAYS.map((d) => t.all.some((s) => s.day === d));
+  const weekIdx = showWeekend || hasDay[5] || hasDay[6] ? [0, 1, 2, 3, 4, 5, 6] : [0, 1, 2, 3, 4];
+  const byDay = P_DAYS.map(() => []);
   for (const s of t.all) {
-    const di = FULL.indexOf(s.day);
+    const di = dayIndex(s.day);
     if (di >= 0) byDay[di].push(s);
   }
+  const markFull = Boolean($('#p-full')?.checked);
+  const fullTag = (row) => (markFull && isFullRow(row) ? ` · <span class="p-full-tag">${esc(I18N.t('progFullWord'))}</span>` : '');
 
-  // Çakışan blokları yan yana şeritlere böler; kırmızı işaret YALNIZCA gerçek
-  // çakışmada — aynı gün içinde zaman aralığı örtüşen bloklar (tüm gün değil).
-  const place = (events) => {
-    const evs = events.slice().sort((a, b) => a.start - b.start || a.end - b.end);
-    const lanes = [];
-    const out = [];
-    for (const ev of evs) {
-      let lane = lanes.findIndex((end) => end <= ev.start);
-      if (lane === -1) { lane = lanes.length; lanes.push(ev.end); } else lanes[lane] = ev.end;
-      out.push({ ...ev, lane });
-    }
-    const laneCount = Math.max(1, lanes.length);
-    out.forEach((o) => { o.laneCount = laneCount; });
-    for (const o of out) {
-      o.conflict = out.some((o2) => o2 !== o && o.start < o2.end && o2.start < o.end);
-    }
-    return out;
-  };
-
-  // Sade temada blok zeminini koyulaştırıp metin kontrastını ≥4.5:1'e garantile.
-  const isSade = document.documentElement.dataset.theme === 'sade';
-
-  if (mobileMode) {
-    const sessions = place(byDay[mobileDay]);
-    wrap.innerHTML = tabsHtml + `<div class="p-agenda" aria-live="polite">${sessions.length ? sessions.map((s, i) => {
-      const instructor = s.row[4] && s.row[4] !== '-' ? s.row[4] : '';
-      return `
-      <button type="button" class="p-agenda-session${s.conflict ? ' is-conflict' : ''}" data-session="${i}">
-        <span class="p-agenda-time">${fmtMin(s.start)}<small>${fmtMin(s.end)}</small></span>
-        <span class="p-agenda-body">
-          <b>${esc(s.row[1])}</b><span class="p-agenda-name">${esc(s.row[2])}</span>
-          <span class="p-agenda-meta">
-            ${instructor ? `<span class="p-agenda-tag">${ICON_PERSON}${esc(instructor)}</span>` : ''}
-            ${s.where ? `<span class="p-agenda-tag">${ICON_PIN}${esc(s.where)}</span>` : ''}
-            <span class="p-agenda-tag p-agenda-crn">CRN ${esc(s.row[0])}</span>
-          </span>
-          ${s.conflict ? `<strong class="p-agenda-conflict">${esc(I18N.t('progConflictTitle'))}</strong>` : ''}
-        </span>
-      </button>`;
-    }).join('') : `<p class="empty">${I18N.lang === 'en' ? 'No classes on this day.' : 'Bu gün dersin yok.'}</p>`}</div>` + specialNote + noTimeNote;
-    wrap.querySelectorAll('.tt-daytab').forEach(btn => btn.addEventListener('click', () => {
-      mobileDay = Number(btn.dataset.day);
-      render();
-      wrap.querySelector(`.tt-daytab[data-day="${mobileDay}"]`)?.focus({ preventScroll: true });
-    }));
-    wrap.querySelectorAll('[data-session]').forEach(btn => btn.addEventListener('click', () => openDetail(sessions[Number(btn.dataset.session)].row, term)));
+  if (currentView() === 'agenda') {
+    renderAgenda(wrap, { hasDay, weekIdx, byDay, fullTag, notes: specialNote + noTimeNote });
     return;
   }
 
-  let html = tabsHtml;
-  html += `<p class="tt-note"><b>${t.all.length}</b> ${I18N.t('prgSessions')} · <b>${itemRows.length}</b> ${I18N.t('prgSube')}</p>`;
-  html += `<div class="tt-scroll">`;
-  // Başlık satırı scroll kapsayıcının doğrudan çocuğu — sticky-top bu sayede
-  // çalışır (grid item'a hapsolmaz); corner yatay kaydırmada sticky-left (F).
-  html += `<div class="tt-headrow"><div class="tt-head tt-corner"></div>`;
-  for (const di of visIdx) html += `<div class="tt-head tt-dayhead">${TTD[di]}</div>`;
-  html += `</div>`;
-  // Gövde: saat sütunu + gün sütunları aynı yatay şeritte. Timecol bu şeridin
-  // doğrudan çocuğu — containing block'u tüm genişlik olduğundan sticky-left çalışır.
-  html += `<div class="tt-body">`;
-  html += `<div class="tt-timecol">`;
-  for (let si = 0; si < nSlots; si++) html += `<div class="tt-timeslot">${fmtMin(startSlot + si * 30)}</div>`;
-  html += `</div>`;
-  html += `<div class="tt-days">`;
+  // Izgara aralığı içeriğe göre daralır (ilk dersin saat başından son dersin
+  // bittiği saate); "Tüm gün" açıksa en az 07:00-23:00 (D).
+  const first = Math.min(...t.all.map((s) => s.start));
+  const last = Math.max(...t.all.map((s) => s.end));
+  let startH = Math.floor(first / 60);
+  let endH = Math.ceil(last / 60);
+  if (showFullDay) { startH = Math.min(7, startH); endH = Math.max(23, endH); }
+  if (endH <= startH) endH = startH + 1;
+  const HOUR = 56;
+  const base = startH * 60;
+  const height = (endH - startH) * HOUR;
+  const y = (m) => ((m - base) / 60) * HOUR;
+
   const now = new Date();
-  const todayIdx = (now.getDay() + 6) % 7; // Pzt=0 … Paz=6 (TTD sırası)
+  const todayIdx = (now.getDay() + 6) % 7; // Pzt=0 … Paz=6
   const nowMin = now.getHours() * 60 + now.getMinutes();
-  const showNow = term === state.index?.currentSlug
-    && now.getDay() >= 1 && now.getDay() <= 5
-    && visIdx.includes(todayIdx)
-    && nowMin >= startSlot && nowMin < endSlot;
-  const nowTop = ((nowMin - startSlot) / 30) * ROW;
-  for (const di of visIdx) {
-    const placed = place(byDay[di]);
-    html += `<div class="tt-day${di >= 5 ? ' tt-wknd' : ''}" style="height:${H}px">`;
-    // Şu anki zaman çizgisi (C): bugünün sütununda, vurgu rengi (kırmızı çakışma için ayrıldı).
-    if (showNow && di === todayIdx) {
-      html += `<div class="tt-now" style="top:${nowTop}px" role="presentation"></div>`;
-    }
-    for (const p of placed) {
-      const top = ((p.start - startSlot) / 30) * ROW;
-      const height = Math.max(20, ((p.end - p.start) / 30) * ROW);
+  const showNow = term === state.index?.currentSlug && weekIdx.includes(todayIdx)
+    && nowMin >= base && nowMin < endH * 60;
+
+  const hours = [];
+  for (let h = startH; h <= endH; h++) hours.push(h);
+  let html = `<p class="tt-note"><b>${t.all.length}</b> ${esc(I18N.t('prgSessions'))} · <b>${itemRows.length}</b> ${esc(I18N.t('prgSube'))}</p>`;
+  html += `<div class="p-wk" role="region" aria-label="${esc(I18N.t('progGridRegionAria'))}" tabindex="0">`;
+  html += `<div class="p-wk-in" style="--p-days:${weekIdx.length}">`;
+  html += `<div class="p-wk-head"><span aria-hidden="true"></span>${weekIdx.map((di) => `<span>${esc(dayName(P_DAYS[di]))}</span>`).join('')}</div>`;
+  html += `<div class="p-wk-body" style="height:${height}px">`;
+  html += `<div class="p-wk-hours num" aria-hidden="true">${hours.map((h) => `<span style="top:${(h - startH) * HOUR}px">${fmtMin(h * 60)}</span>`).join('')}</div>`;
+  for (const di of weekIdx) {
+    html += `<div class="p-wk-day${di >= 5 ? ' is-weekend' : ''}">`;
+    html += hours.slice(1, -1).map((h) => `<i class="p-wk-line" style="top:${(h - startH) * HOUR}px"></i>`).join('');
+    // Şu anki zaman çizgisi (C): vurgu rengi, kırmızı çakışma için ayrıldı.
+    if (showNow && di === todayIdx) html += `<div class="tt-now" style="top:${y(nowMin)}px" role="presentation"></div>`;
+    for (const p of placeDay(byDay[di])) {
+      const top = y(p.start);
+      const h = Math.max(22, y(p.end) - top);
       const w = 100 / p.laneCount;
-      const left = p.lane * w;
-      const color = colorFor(p.row[1]);
-      const { bg, fg } = isSade ? blockContrast(color) : { bg: color, fg: fgFor(color) };
-      const narrow = height <= 56; // ≤ 1 saat: yalnızca kod, gerisi tooltip (E)
       const instructor = p.row[4] && p.row[4] !== '-' ? p.row[4] : '';
-      const tooltip = [p.row[1], p.row[5], instructor, p.where, `CRN ${p.row[0]}`].filter(Boolean).join(' · ');
+      const tooltip = [p.row[1], p.row[2], fmtRange(p.start, p.end), instructor, p.where, `CRN ${p.row[0]}`,
+        p.conflict ? I18N.t('progConflictTitle') : ''].filter(Boolean).join(' · ');
       placedRefs.push(p.row);
-      html += `<button type="button" class="tt-block${p.conflict ? ' tt-block-conf' : ''}${narrow ? ' tt-block-narrow' : ''}" style="top:${top}px;left:${left}%;width:${w}%;height:${height}px;--ttc:${bg};--tt-fg:${fg}" title="${esc(tooltip)}">
-        <span class="tt-time">${fmtMin(p.start)} - ${fmtMin(p.end)}</span>
-        <span class="tt-code">${esc(p.row[1])}</span>
-        ${p.where ? `<span class="tt-where">${ICON_PIN}${esc(p.where)}</span>` : ''}
-        <span class="tt-crn">CRN ${esc(p.row[0])}</span>
-        ${p.conflict ? `<span class="tt-conf-icon" title="${esc(I18N.t('progConflictTitle'))}">⚠</span>` : ''}
+      html += `<button type="button" class="tt-block${p.conflict ? ' tt-block-conf' : ''}${h < 52 ? ' is-short' : ''}" style="top:${top}px;height:${h}px;left:calc(${p.lane * w}% + 2px);width:calc(${w}% - 4px);--p-course:${colorFor(p.row[1])}" title="${esc(tooltip)}">
+        <b class="code" translate="no">${esc(p.row[1])}</b>
+        <span class="when">${fmtRange(p.start, p.end)}</span>
+        <span class="p-wk-room">${p.where ? esc(p.where) : `CRN ${esc(p.row[0])}`}${fullTag(p.row)}</span>
+        ${p.conflict ? `<span class="p-wk-cf">${esc(I18N.t('progConflictTitle'))}</span>` : ''}
       </button>`;
     }
     html += `</div>`;
@@ -986,19 +874,6 @@ function renderGridLegacy(itemRows) {
   html += specialNote + noTimeNote;
   wrap.innerHTML = html;
 
-  // Sütun sayısı görünür gün sayısına göre değişir; tam saat çizgilerinin fazı
-  // başlangıç yarım saatteyse (08:30) tek slot kayar (A).
-  const days = wrap.querySelector('.tt-days');
-  if (days) {
-    days.style.gridTemplateColumns = `repeat(${visIdx.length}, 1fr)`;
-    days.style.setProperty('--tt-halfshift', startSlot % 60 === 30 ? '28px' : '0px');
-  }
-
-  if (mobileMode) {
-    wrap.querySelectorAll('.tt-daytab').forEach((btn) => {
-      btn.addEventListener('click', () => { mobileDay = Number(btn.dataset.day); render(); });
-    });
-  }
   wrap.querySelectorAll('.tt-block').forEach((b, i) => {
     const row = placedRefs[i];
     b.addEventListener('click', () => openDetail(row, term));
@@ -1014,6 +889,43 @@ function renderGridLegacy(itemRows) {
       }
     });
   });
+}
+
+// Gün gün görünüm: her günün oturumları saat sırasıyla, boş günde "Ders yok".
+// Dar ekranda (≤600px) gün sekmeleriyle tek gün gösterilir; sekme oturum boyunca
+// kalıcıdır ve yeni eklenen şubenin ilk gününe atlar (bkz. addToActive).
+function renderAgenda(wrap, { hasDay, weekIdx, byDay, fullTag, notes }) {
+  let dayIdx = weekIdx;
+  let tabsHtml = '';
+  if (window.matchMedia(COMPACT_MQ).matches) {
+    const todayIdx = (new Date().getDay() + 6) % 7;
+    if (mobileDay == null || !weekIdx.includes(mobileDay)) {
+      mobileDay = hasDay[todayIdx] ? todayIdx : (weekIdx.find((i) => hasDay[i]) ?? weekIdx[0]);
+    }
+    dayIdx = [mobileDay];
+    tabsHtml = `<div class="tt-daytabs" role="tablist" aria-label="${esc(I18N.t('progDaySelectAria'))}">${weekIdx.map((di) => `
+      <button type="button" role="tab" aria-selected="${di === mobileDay}" aria-controls="p-agenda" class="tt-daytab${di === mobileDay ? ' active' : ''}${hasDay[di] ? ' has-session' : ''}" data-day="${di}" aria-label="${esc(dayName(P_DAYS[di]))}">${esc(I18N.t(P_DAY_ABBR_KEYS[di]))}</button>`).join('')}</div>`;
+  }
+  const sessions = [];
+  const days = dayIdx.map((di) => {
+    const list = placeDay(byDay[di]).sort((a, b) => a.start - b.start || a.end - b.end);
+    const body = list.length ? list.map((s) => {
+      const i = sessions.push(s) - 1;
+      return `<button type="button" class="p-agenda-session${s.conflict ? ' is-conflict' : ''}" data-session="${i}">
+        <span class="p-agenda-time when">${fmtRange(s.start, s.end)}</span>
+        <span class="p-agenda-body"><b class="code" translate="no">${esc(s.row[1])}</b> <span class="p-agenda-name">${esc(s.row[2])}</span>${fullTag(s.row)}${s.conflict ? `<span class="p-agenda-conflict">${esc(I18N.t('progConflictTitle'))}</span>` : ''}</span>
+        <span class="p-agenda-room">${esc(s.where || `CRN ${s.row[0]}`)}</span>
+      </button>`;
+    }).join('') : `<p class="p-agenda-empty">${esc(I18N.t('progAgendaEmptyDay'))}</p>`;
+    return `<section class="p-agenda-day"><h3>${esc(dayName(P_DAYS[di]))}</h3>${body}</section>`;
+  }).join('');
+  wrap.innerHTML = `${tabsHtml}<div id="p-agenda" class="p-agenda"${tabsHtml ? ' role="tabpanel" aria-live="polite"' : ''}>${days}</div>${notes}`;
+  wrap.querySelectorAll('.tt-daytab').forEach((btn) => btn.addEventListener('click', () => {
+    mobileDay = Number(btn.dataset.day);
+    render();
+    wrap.querySelector(`.tt-daytab[data-day="${mobileDay}"]`)?.focus({ preventScroll: true });
+  }));
+  wrap.querySelectorAll('[data-session]').forEach((btn) => btn.addEventListener('click', () => openDetail(sessions[Number(btn.dataset.session)].row, term)));
 }
 
 function openGridContextMenu(row, trigger, x, y) {
@@ -1063,22 +975,13 @@ function closeGridContextMenu(restoreFocus) {
 
 let placedRefs = [];
 
-function renderSummary(items) {
+// Çakışma dışındaki program notları (dolu şube, bina/kampüs geçişi, final
+// çakışması, vize yoğunluğu). Ders çakışması #p-conflict uyarısındadır.
+function renderSummary(items, t) {
   const box = $('#p-summary');
-  const full = items.filter(({ row }) => { const [cap, enr] = effectiveQuota(row); return cap > 0 && enr >= cap; }).length;
-  const t = buildTimetable(items.map((i) => i.row));
-  const pairs = new Set();
-  if (t) {
-    for (const col of t.grid) for (const cell of col) {
-      const codes = [...new Set(cell.map((c) => c.row[1]))].sort();
-      if (codes.length > 1) pairs.add(codes.join(' × '));
-    }
-  }
-  let html = `<p><b>${items.length}</b> ${I18N.t('prgSube')} · <b>${t ? t.all.length : 0}</b> ${I18N.t('prgSessions')}</p>`;
-  if (full) html += `<p class="p-warn">⚠ ${full} ${I18N.t('prgFullBadge')}</p>`;
-  if (pairs.size) {
-    html += `<p class="p-conf">${esc(I18N.t('prgConflict'))}</p><ul class="p-conf-list">${[...pairs].map((p) => `<li>${esc(p)}</li>`).join('')}</ul>`;
-  }
+  const full = items.filter(({ row }) => isFullRow(row)).length;
+  let html = '';
+  if (full) html += `<p class="p-warn">${full} ${esc(I18N.t('prgFullBadge'))}</p>`;
   const buildingGaps = t ? buildingGapWarnings(t.all) : [];
   if (buildingGaps.length) {
     const campusCount = buildingGaps.filter((g) => g.kind === 'campus').length;
@@ -1089,15 +992,18 @@ function renderSummary(items) {
       return `<li>${esc(g.fromCode)} (${esc(from)}) → ${esc(g.toCode)} (${esc(to)}): ${esc(I18N.t('prgTransitionGapDetail', { gap: g.gap, required: g.required }))}</li>`;
     }).join('')}</ul>`;
   }
-  // Faz 4.1: final çakışması — exams verisi yüklenmişse asenkron ekler.
-  loadFinalsNote(items, box);
-  // Faz 4.2: vize haftası yoğunluğu — katalog planlarından asenkron sayar.
-  loadMidtermNote(items, box);
   box.innerHTML = html;
+  // Asenkron notlar yalnızca en son render'a eklenir (art arda render'da çift yazılmasın).
+  const gen = ++summaryGen;
+  // Faz 4.1: final çakışması — exams verisi yüklenmişse asenkron ekler.
+  loadFinalsNote(items, box, gen);
+  // Faz 4.2: vize haftası yoğunluğu — katalog planlarından asenkron sayar.
+  loadMidtermNote(items, box, gen);
 }
 
+let summaryGen = 0;
 let finalsCache = null;
-async function loadFinalsNote(items, box) {
+async function loadFinalsNote(items, box, gen) {
   try {
     if (finalsCache === null) {
       finalsCache = await getJSON(`data/exams/${term}.json`).catch(() => null);
@@ -1105,7 +1011,7 @@ async function loadFinalsNote(items, box) {
     const exams = finalsCache ? finalsCache.exams : null;
     const crns = items.map((i) => i.row[0]);
     const conf = finalsConflict(exams, crns);
-    if (!conf.length) return;
+    if (!conf.length || gen !== summaryGen) return;
     const pairs = conf.map(([a, b]) => `${esc(a.code)} × ${esc(b.code)} (${esc(a.date)} ${esc(a.time)})`);
     const wrap = document.createElement('div');
     wrap.className = 'p-conf';
@@ -1131,7 +1037,7 @@ export function midtermWeeks(records) {
 // Faz 4.2: seçili şubelerin katalog planlarından "Vize yoğunluğu" satırı üretir.
 // Katalog/branş dosyası yoksa sessizce atlanır (creditTotals deseni).
 let midtermCache = new Map();
-async function loadMidtermNote(items, box) {
+async function loadMidtermNote(items, box, gen) {
   try {
     const records = [];
     for (const { row } of items) {
@@ -1143,39 +1049,42 @@ async function loadMidtermNote(items, box) {
       if (map && map[row[1]]) records.push(map[row[1]]);
     }
     const mw = midtermWeeks(records);
-    if (!mw.size) return;
+    if (!mw.size || gen !== summaryGen) return;
     const parts = [...mw.entries()]
       .sort((a, b) => a[0].localeCompare(b[0], undefined, { numeric: true }))
       .map(([k, n]) => `${k} (${n})`).join(' · ');
     const wrap = document.createElement('div');
-    wrap.className = 'p-conf';
+    // Vize yoğunluğu bir çakışma değil, bilgi notu: kırmızı değil nötr.
+    wrap.className = 'p-note';
     wrap.innerHTML = `${esc(I18N.t('progMidtermIntensityPrefix'))} ${esc(parts)}`;
     box.appendChild(wrap);
   } catch { /* katalog yoksa sessiz */ }
 }
 
+let creditsGen = 0;
 function updateCredits(items) {
-  // Kredi ve AKTS ayrı etiketle: "Kredi 12,5 · AKTS 15". Katalog verisi yoksa
-  // dürüstçe "—" kalır. AKTS 30'u aşınca nötr amber rozet (kırmızı çakışma için).
+  // Kredi ve AKTS ayrı: "Toplam 12,5 kredi · 15 AKTS". Katalog verisi yoksa
+  // dürüstçe "·" kalır. AKTS 30'u aşınca nötr amber rozet (kırmızı çakışma için).
   const el = $('#p-credits-val');
+  const gen = ++creditsGen;
   const ps = loadPrograms();
   const p = ps.programs.find((x) => x.id === ps.active);
   if (p && p.credits != null) { el.textContent = p.credits; return; }
   el.textContent = items.length ? '·' : I18N.t('progZeroCredits');
   if (!items.length) return;
   creditTotals(items).then((r) => {
+    if (gen !== creditsGen) return;
     if (!r.ectsKnown && !r.localKnown) return;
     const parts = [];
-    if (r.localKnown) parts.push(`${I18N.t('progCreditWord')} ${trNum(r.local)}${r.localKnown < r.all ? '+' : ''}`);
-    if (r.ectsKnown) parts.push(`${I18N.t('progECTSWord')} ${trNum(r.ects)}`);
-    let txt = parts.join(' · ');
+    if (r.localKnown) parts.push(`<b class="num">${esc(trNum(r.local))}${r.localKnown < r.all ? '+' : ''}</b> ${esc(I18N.t('progCreditUnit'))}`);
+    if (r.ectsKnown) parts.push(`<b class="num">${esc(trNum(r.ects))}</b> ${esc(I18N.t('progECTSWord'))}`);
+    let html = parts.join(' · ');
     const unkLocal = r.all - r.localKnown;
-    if (unkLocal > 0) txt += ` (${unkLocal} ${I18N.t('progUnknownCreditsSuffix')})`;
+    if (unkLocal > 0) html += ` <small>(${unkLocal} ${esc(I18N.t('progUnknownCreditsSuffix'))})</small>`;
     if (r.ectsKnown && r.ects > 30) {
-      el.innerHTML = `${esc(txt)} <span class="ects-warn" title="${esc(I18N.t('progECTSExceedsTitle'))}">${esc(I18N.t('progECTSExceedsBadge'))}</span>`;
-    } else {
-      el.textContent = txt;
+      html += ` <span class="ects-warn" title="${esc(I18N.t('progECTSExceedsTitle'))}">${esc(I18N.t('progECTSExceedsBadge'))}</span>`;
     }
+    el.innerHTML = html;
   }).catch(() => {});
 }
 
@@ -1298,16 +1207,6 @@ function updateBookmarklet(items) {
   // Bookmarklet: seçili CRN'ler gömülü. OBS kayıt sayfasında çalışır.
   a.setAttribute('href', 'javascript:' + buildSnippet(crns));
   a.title = I18N.t('progOBSDragHint');
-}
-
-// --- tooltip ---
-function showTip() {
-  const el = $('#p-obs-tt');
-  if (el) el.classList.add('show');
-}
-function hideTip() {
-  const el = $('#p-obs-tt');
-  if (el) el.classList.remove('show');
 }
 
 function exportCSV() {

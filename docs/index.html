@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=7fbcd5dc58a8">
+<link rel="stylesheet" href="assets/style.css?v=369e0fe76719">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -211,7 +211,7 @@
    <label class="query">
     <span class="sigil">&gt;</span>
     <input id="q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="ders kodu, ad, CRN veya öğretim üyesi ara…" aria-label="Ders ara"
+           placeholder="kod, ad, CRN veya öğretim üyesi…" aria-label="Ders ara"
            data-i18n-placeholder="courseSearchPlaceholder" data-i18n-aria-label="courseSearchLabel">
    </label>
    <div class="filters" id="filters">
@@ -266,7 +266,7 @@
       <option value="enr">Yazılan öğrenci</option>
       <option value="fill">Kontenjan doluluğu</option>
     </select></label>
-    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle" data-i18n-title="scheduleTitle"><span class="label-desktop">zaman çizelgesi</span><span class="label-mobile">Program</span></button>
+    <button type="button" id="tt-toggle" class="btn-ghost" aria-pressed="false" title="Filtrelenen şubeleri haftalık çizelgede göster, çakışmaları işaretle" data-i18n-title="scheduleTitle"><span class="label-desktop">zaman çizelgesi</span><span class="label-mobile" data-i18n="scheduleMobileLabel">Çizelge</span></button>
     <button type="button" id="csv" class="btn-ghost" title="Görünen satırları CSV olarak indir" data-i18n-title="csvTitle">CSV</button>
    </div>
   </div>
@@ -321,7 +321,7 @@
    <label class="query">
     <span class="sigil">&gt;</span>
     <input id="hq" type="search" autocomplete="off" spellcheck="false"
-           placeholder="ders kodu (BLG 102) veya öğretim üyesi adı…" aria-label="Geçmişte ara"
+           placeholder="BLG 102 veya öğretim üyesi adı…" aria-label="Geçmişte ara"
            data-i18n-placeholder="histSearchPlaceholder" data-i18n-aria-label="histSearchLabel">
    </label>
   </div>
@@ -386,7 +386,7 @@
    <label class="query">
     <span class="sigil">&gt;</span>
     <input id="eq" type="search" autocomplete="off" spellcheck="false"
-           placeholder="ders kodu, ad, CRN veya akademisyen…" aria-label="Sınav ara"
+           placeholder="kod, ad, CRN veya öğretim üyesi…" aria-label="Sınav ara"
            data-i18n-placeholder="examPlaceholder" data-i18n-aria-label="examSearchAriaLabel">
    </label>
    <div class="filters">
@@ -665,7 +665,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=7fbcd5dc58a8"></script>
+<script type="module" src="assets/app.js?v=369e0fe76719"></script>
 <script>
 (function () {
   var root = document.documentElement;

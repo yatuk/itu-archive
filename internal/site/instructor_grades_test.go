@@ -60,3 +60,35 @@ func TestRenderCourseGradesUsesLatestTermAndLocalizesEnglish(t *testing.T) {
 		t.Fatal("en yeni dönem geçmiş tablosunda önce gelmeli")
 	}
 }
+
+func TestInstructorGradeProfileCountsTRAndEnglishPairOnce(t *testing.T) {
+	same := map[string]int{"AA": 10, "FF": 2}
+	b := &Builder{
+		codeTermInstrCount: map[string]int{
+			"MAK 4901\x002023-2024-guz":  1,
+			"MAK 4901E\x002023-2024-guz": 1,
+			"MAK 219\x002023-2024-guz":   1,
+		},
+		gradesIndex: map[string]map[string]gradeFileRow{
+			"MAK 4901":  {"2023-2024 Güz Dönemi": {Total: 12, Grades: same}},
+			"MAK 4901E": {"2023-2024 Güz Dönemi": {Total: 12, Grades: same}},
+			"MAK 219":   {"2023-2024 Güz Dönemi": {Total: 30, Grades: map[string]int{"CC": 30}}},
+		},
+	}
+	hi := &histInstr{Rows: []instrRow{
+		{Code: "MAK 4901E", Term: "2023-2024-guz", Name: "Design I"},
+		{Code: "MAK 4901", Term: "2023-2024-guz", Name: "Tasarım I"},
+		{Code: "MAK 219", Term: "2023-2024-guz", Name: "Mukavemet I"},
+	}}
+	gp := b.instructorGradeProfile(hi, map[string]string{"2023-2024-guz": "2023-2024 Güz Dönemi"})
+	if gp.Total != 42 || gp.Records != 2 || gp.CandidatePairs != 2 {
+		t.Fatalf("TR/E eşi bir kez sayılmalı: total=%d records=%d candidates=%d", gp.Total, gp.Records, gp.CandidatePairs)
+	}
+	var labels []string
+	for _, c := range gp.Courses {
+		labels = append(labels, c.label())
+	}
+	if strings.Join(labels, ",") != "MAK 219,MAK 4901 / 4901E" {
+		t.Fatalf("beklenmeyen satırlar: %v", labels)
+	}
+}

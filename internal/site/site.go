@@ -109,6 +109,7 @@ type lang struct {
 	InstrGradesDetails     string
 	InstrGradesColTerms    string
 	InstrGradesColGrades   string
+	InstrGradesBaselineFmt string // aynı derslerin genel dağılımındaki oranlar
 }
 
 var langTR = lang{
@@ -156,6 +157,7 @@ var langTR = lang{
 	InstrGradesDetails:     "Ders ve dönem bazında kapsamı gör",
 	InstrGradesColTerms:    "Dahil edilen dönemler",
 	InstrGradesColGrades:   "Not kaydı",
+	InstrGradesBaselineFmt: "Aynı derslerin tüm hocalarla genel dağılımında bu oranlar %%%s ve %%%s.",
 }
 
 var langEN = lang{
@@ -203,6 +205,7 @@ var langEN = lang{
 	InstrGradesDetails:     "View coverage by course and term",
 	InstrGradesColTerms:    "Included terms",
 	InstrGradesColGrades:   "Grades",
+	InstrGradesBaselineFmt: "Across all instructors of the same courses: %s%% and %s%%.",
 }
 
 var trMonths = []string{
@@ -223,8 +226,12 @@ type Builder struct {
 	instructors        map[string]*histInstr
 	instructorProfiles map[string]*histInstr // canonical slug -> merged deterministic profile
 	quotaSeries        map[string][]quotaPoint
-	gradesIndex        map[string]map[string]gradeFileRow // ders kodu -> dönem etiketi -> not dağılımı
-	codeTermInstrCount map[string]int                     // "kod\x00dönemSlug" -> o kayıtta kaç farklı hoca var
+	gradesIndex        map[string]map[string]gradeFileRow    // ders kodu -> dönem etiketi -> not dağılımı
+	codeTermInstrCount map[string]int                        // "kod\x00dönemSlug" -> o kayıtta kaç farklı hoca var
+	hm                 *hmIndex                              // hocametre (yoksa nil)
+	hmMatch            map[string]*hmEntry                   // hoca slug -> eşleşen hocametre girişi
+	currentSects       map[string][]sectRow                  // katlanmış hoca adı -> aktif dönem şubeleri
+	courseInstrs       map[string]map[string]map[string]bool // ders kodu -> hoca slug -> dönem kümesi
 }
 
 type branchAgg struct {
@@ -259,6 +266,7 @@ type sectRow struct {
 	When       string
 	Capacity   int
 	Enrolled   int
+	Room       string // yalnızca aktif dönem kartında kullanılır
 }
 
 // quotaPoint, quota JSONL'den tekil bir veri noktası.
@@ -381,11 +389,17 @@ func (b *Builder) Generate() error {
 		}
 		instrSlugs = b.prepareInstructorProfiles()
 	} else {
+		b.hmMatch = map[string]*hmEntry{}
 		b.instructors = map[string]*histInstr{}
 		b.instructorProfiles = map[string]*histInstr{}
 	}
 	if err := b.loadGradesIndex(); err != nil {
 		return err
+	}
+	if b.l.Code != "en" {
+		if err := b.prepareInstructorExtras(); err != nil {
+			return err
+		}
 	}
 	// Kontenjan zaman serisi (grafikler için).
 	b.loadQuotaSeries()
@@ -431,11 +445,14 @@ func (b *Builder) Generate() error {
 		}
 		sort.Strings(instrSlugList)
 		for _, slug := range instrSlugList {
-			if err := b.writeInstructorPage(slug, instrSlugs, courseSlugs, termLabels); err != nil {
+			if err := b.writeInstructorPage(slug, courseSlugs, termLabels); err != nil {
 				return err
 			}
 		}
 		if err := pruneGeneratedPageDirs(filepath.Join(b.outRoot, "hoca"), keepInstructorSlugs); err != nil {
+			return err
+		}
+		if err := b.writeInstructorIndexPage(); err != nil {
 			return err
 		}
 	}
@@ -761,7 +778,10 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 		slugs = append(slugs, slug)
 	}
 	sort.Strings(slugs)
-	instructorEntries := make([]sitemapEntry, 0, len(slugs))
+	instructorEntries := make([]sitemapEntry, 0, len(slugs)+1)
+	if len(slugs) > 0 {
+		instructorEntries = append(instructorEntries, sitemapEntry{Loc: baseURL + "/hoca/", Lastmod: rootDate})
+	}
 	for _, slug := range slugs {
 		instructorEntries = append(instructorEntries, sitemapEntry{
 			Loc:     fmt.Sprintf("%s/hoca/%s/", baseURL, slug),
@@ -940,37 +960,40 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="/assets/style.css?v={{.AssetV}}">
 <link rel="icon" href="/favicon.png" type="image/png">
+<script src="/assets/static-page.js?v={{.AssetV}}" defer></script>
 {{.JSONLD}}
 </head>
-<body>
+<body class="{{.BodyClass}}">
 <a class="skip-link" href="#icerik">{{.Lang.SkipToContent}}</a>
 <div class="scanlines" aria-hidden="true"></div>
-<header class="masthead">
+<header class="masthead masthead-refined">
  <div class="wrap">
   <div class="mast-top">
-   <div class="brand">
+   <a class="brand brand-home" href="{{.Shell.Home}}" aria-label="{{.Shell.HomeLabel}}">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
-    <picture><source srcset="/itü_ari.webp" type="image/webp"><img class="brand-logo" src="/itü_ari.png" alt="" aria-hidden="true" width="32" height="31"></picture>
-    <p class="brand-title" translate="no"><a href="/">{{.Lang.SiteTitle}}</a></p>
+    <picture><source srcset="/itü_ari.webp" type="image/webp"><img class="brand-logo" src="/itü_ari.png" alt="" width="32" height="31"></picture>
+    <p class="brand-title" translate="no">{{.Shell.Brand}}</p>
+   </a>
+   <div class="mast-controls">
+    <div class="theme-pick" role="group" aria-label="{{.Shell.ThemeGroup}}">
+     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="{{.Shell.ThemeLight}}" title="{{.Shell.ThemeLight}}"><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span><span class="theme-name">{{.Shell.ThemeLightShort}}</span></button>
+     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="{{.Shell.ThemeDark}}" title="{{.Shell.ThemeDark}}"><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg></span><span class="theme-name">{{.Shell.ThemeDarkShort}}</span></button>
+    </div>
+    <a id="lang-btn" class="btn-ghost" href="{{.Shell.LangURL}}" data-lang="{{.Shell.LangTo}}" title="Dil / Language">TR/EN</a>
    </div>
   </div>
-  <p class="tagline">{{.Lang.SiteTagline}}</p>
+  <p class="tagline"><span class="tagline-sade">{{.Shell.Tagline}}</span></p>
  </div>
 </header>
-<nav class="tabs wrap" role="navigation" aria-label="Bölümler">
- <a href="/">{{.Lang.NavDersler}}</a>
- <a href="/#gecmis">{{.Lang.NavGecmis}}</a>
- <a href="/#onsart">{{.Lang.NavOnsart}}</a>
- <a href="/#sinavlar">{{.Lang.NavSinavlar}}</a>
- <a href="/#takvim">{{.Lang.NavTakvim}}</a>
- <a href="/#program">{{.Lang.NavProgram}}</a>
- <a href="/#hakkinda">{{.Lang.NavHakkinda}}</a>
-</nav>
+<h2 class="sr-only">{{.Shell.NavLabel}}</h2>
+<nav class="tabs wrap" aria-label="{{.Shell.NavLabel}}">
+{{range .Shell.Nav}} <a href="{{.URL}}"{{if .Current}} aria-current="page"{{end}}>{{.Label}}</a>
+{{end}}</nav>
 <main class="wrap" id="icerik">
 {{.Content}}
 </main>
 <footer class="wrap">
- <span>{{.Lang.FootScanned}} {{.Scraped}}</span> · <a href="/">{{.Lang.FootLive}}</a> · <a href="/sitemap.xml">{{.Lang.FootSitemap}}</a>
+ <span>{{.Lang.FootScanned}} {{.Scraped}}</span> · <a href="{{.Shell.Home}}">{{.Lang.FootLive}}</a> · <a href="/sitemap.xml">{{.Lang.FootSitemap}}</a>
 </footer>
 </body>
 </html>`))
@@ -982,6 +1005,79 @@ type pageData struct {
 	Content                                template.HTML
 	JSONLD                                 template.HTML
 	Lang                                   lang
+	Shell                                  shellData
+	BodyClass                              string
+}
+
+// shellData, statik sayfa kabuğunun (uygulamayla aynı masthead + sekme
+// çubuğu) dile ve sayfaya bağlı metinleri.
+type shellData struct {
+	Home, HomeLabel, Brand, Tagline, NavLabel string
+	ThemeGroup, ThemeLight, ThemeDark         string
+	ThemeLightShort, ThemeDarkShort           string
+	LangURL, LangTo                           string
+	Nav                                       []navItem
+}
+
+type navItem struct {
+	URL, Label string
+	Current    bool
+}
+
+// bodyClass: hoca ve ders sayfaları onaylı hoca-sayfası tasarımının
+// (ip-*) token setini kullanır; diğer statik sayfalar yalnızca kabuğu paylaşır.
+func bodyClass(canonical string) string {
+	if strings.HasPrefix(canonical, baseURL+"/hoca/") || strings.HasPrefix(canonical, baseURL+"/ders/") {
+		return "seo-page ip-page"
+	}
+	return "seo-page"
+}
+
+// shell, uygulamanın başlığını statik sayfaya taşır. Dil düğmesi bir
+// bağlantıdır: karşı dil sürümü varsa oraya, yoksa uygulamanın o diline gider
+// (JS olmadan da çalışır).
+func (b *Builder) shell(canonical string, alternates []alternateLink) shellData {
+	en := b.l.Code == "en"
+	sh := shellData{
+		Home: "/#dersler", HomeLabel: "Dersler ana sayfasına git", Brand: "DERS\u00a0ARŞİVİ",
+		Tagline: "İTÜ derslerini, kontenjanları ve geçmiş dönemleri ara.", NavLabel: "Bölümler",
+		ThemeGroup: "Görünüm teması", ThemeLight: "Sade (varsayılan)", ThemeDark: "Fosfor (koyu)",
+		ThemeLightShort: "Açık", ThemeDarkShort: "Koyu",
+		LangURL: "/?lang=en#dersler", LangTo: "en",
+	}
+	q := ""
+	if en {
+		q = "?lang=en"
+		sh = shellData{
+			Home: "/?lang=en#dersler", HomeLabel: "Go to the courses home page", Brand: "COURSE\u00a0ARCHIVE",
+			Tagline: "Search ITU courses, capacity, and past terms.", NavLabel: "Sections",
+			ThemeGroup: "Theme", ThemeLight: "Light (default)", ThemeDark: "Phosphor (dark)",
+			ThemeLightShort: "Light", ThemeDarkShort: "Dark",
+			LangURL: "/?lang=tr#dersler", LangTo: "tr",
+		}
+	}
+	for _, a := range alternates {
+		if a.Lang == sh.LangTo {
+			sh.LangURL = strings.TrimPrefix(a.URL, baseURL)
+		}
+	}
+	items := [][2]string{
+		{"dersler", "Dersler"}, {"dersplanim", "Ders Planım/GPA"}, {"onsart", "Önşart Haritası"},
+		{"sinavlar", "Sınavlar"}, {"takvim", "Akademik Takvim"}, {"program", "Program"},
+	}
+	if en {
+		items = [][2]string{
+			{"dersler", "Courses"}, {"dersplanim", "My Plan/GPA"}, {"onsart", "Prereq Map"},
+			{"sinavlar", "Exams"}, {"takvim", "Calendar"}, {"program", "Schedule"},
+		}
+	}
+	for _, it := range items {
+		sh.Nav = append(sh.Nav, navItem{URL: "/" + q + "#" + it[0], Label: it[1]})
+	}
+	if !en {
+		sh.Nav = append(sh.Nav, navItem{URL: "/hoca/", Label: "Hocalar", Current: strings.HasPrefix(canonical, baseURL+"/hoca/")})
+	}
+	return sh
 }
 
 type alternateLink struct {
@@ -1062,6 +1158,7 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
 		Alternates: alternates, AssetV: b.version, Lang: b.l,
+		Shell: b.shell(canonical, alternates), BodyClass: bodyClass(canonical),
 	})
 }
 
@@ -1087,6 +1184,7 @@ func (b *Builder) writePageCrossSlug(path, title, desc, canonical, trURL, enURL,
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
 		Alternates: alternates, AssetV: b.version, Lang: b.l,
+		Shell: b.shell(canonical, alternates), BodyClass: bodyClass(canonical),
 	})
 }
 
@@ -2130,127 +2228,6 @@ func (b *Builder) prepareInstructorProfiles() map[string]string {
 	return instrSlugs
 }
 
-// writeInstructorPage, tek bir hoca için sayfa üretir.
-func (b *Builder) writeInstructorPage(slug string, instrSlugs map[string]string, courseSlugs map[string]string, termLabels map[string]string) error {
-	hi := b.instructorProfiles[slug]
-	if hi == nil {
-		return fmt.Errorf("hoca bulunamadı: %s", slug)
-	}
-
-	// En güncel kayıt hem görünür özet hem de meta description için kullanılır.
-	sort.Slice(hi.Rows, func(i, j int) bool {
-		if hi.Rows[i].Term != hi.Rows[j].Term {
-			return term.SortKey(hi.Rows[i].Term) > term.SortKey(hi.Rows[j].Term)
-		}
-		return hi.Rows[i].Code < hi.Rows[j].Code
-	})
-	latestSlug := ""
-	latestLabel := "·"
-	if len(hi.Rows) > 0 {
-		latestSlug = hi.Rows[0].Term
-		latestLabel = latestSlug
-		if label := termLabels[latestSlug]; label != "" {
-			latestLabel = label
-		}
-	}
-	courseCount := distinctCodes(hi.Rows)
-	canonical := fmt.Sprintf("%s/hoca/%s/", baseURL, slug)
-	title := fmt.Sprintf(b.l.InstrTitleFmt, hi.Name)
-	lead := fmt.Sprintf(b.l.InstrLeadFmt, hi.Name, hi.Terms, len(hi.Rows), courseCount, latestLabel)
-	description := fmt.Sprintf(b.l.InstrDescriptionFmt, hi.Name, hi.Terms, courseCount, latestLabel)
-
-	jsonld := jsonldScript([]any{
-		map[string]any{
-			"@context":         "https://schema.org",
-			"@type":            "Person",
-			"@id":              canonical + "#person",
-			"url":              canonical,
-			"name":             hi.Name,
-			"mainEntityOfPage": canonical,
-		},
-		map[string]any{
-			"@context": "https://schema.org",
-			"@type":    "BreadcrumbList",
-			"itemListElement": []any{
-				map[string]any{"@type": "ListItem", "position": 1, "name": b.l.CrumbHome, "item": baseURL + "/"},
-				map[string]any{"@type": "ListItem", "position": 2, "name": hi.Name, "item": canonical},
-			},
-		},
-	})
-
-	// En sık verdiği dersler: şube sayısını değil, farklı dönem sayısını
-	// gösterir; aynı dönem içindeki çoklu şubeler özeti şişirmez.
-	var frequentRows []string
-	for _, c := range frequentCourses(hi.Rows, 5) {
-		codeHTML := template.HTMLEscapeString(c.Code)
-		if cs, ok := courseSlugs[c.Code]; ok {
-			codeHTML = fmt.Sprintf(`<a href="/ders/%s/">%s</a>`, cs, template.HTMLEscapeString(c.Code))
-		}
-		frequentRows = append(frequentRows, fmt.Sprintf(
-			`<li><span>%s · %s</span><span>%d dönem</span></li>`,
-			codeHTML, template.HTMLEscapeString(c.Name), c.Terms,
-		))
-	}
-	frequentHTML := ""
-	if len(frequentRows) > 0 {
-		frequentHTML = `<h2>` + b.l.InstrFrequentHead + `</h2><ul class="seo-branchlist seo-instructor-courses">` +
-			strings.Join(frequentRows, "") + `</ul>`
-	}
-	var branchLinks []string
-	for _, branch := range instructorBranches(hi.Rows) {
-		branchLinks = append(branchLinks, fmt.Sprintf(`<a href="/brans/%s/"><code>%s</code></a>`,
-			template.HTMLEscapeString(branch), template.HTMLEscapeString(branch)))
-	}
-	branchesHTML := ""
-	if len(branchLinks) > 0 {
-		branchesHTML = `<h2>` + b.l.InstrBranchesHead + `</h2><p class="seo-codes">` + strings.Join(branchLinks, " ") + `</p>`
-	}
-
-	var rows []string
-	for _, r := range hi.Rows {
-		label := r.Term
-		if l, ok := termLabels[r.Term]; ok {
-			label = l
-		}
-		codeHTML := template.HTMLEscapeString(r.Code)
-		if cs, ok := courseSlugs[r.Code]; ok {
-			codeHTML = fmt.Sprintf(`<a href="/ders/%s/">%s</a>`, cs, template.HTMLEscapeString(r.Code))
-		}
-		rows = append(rows, fmt.Sprintf(
-			`<tr><td>%s</td><td>%s</td><td><a href="/dersler/%s/">%s</a></td><td>%d</td><td>%d</td></tr>`,
-			codeHTML,
-			template.HTMLEscapeString(r.Name),
-			template.HTMLEscapeString(r.Term),
-			template.HTMLEscapeString(label),
-			r.Cap, r.Enr,
-		))
-	}
-
-	gradesHTML := renderInstructorGrades(b.l, b.instructorGradeProfile(hi, termLabels))
-
-	content := template.HTML(buildContent(
-		fmt.Sprintf(`<nav class="crumb" aria-label="Breadcrumb"><a href="/">%s</a> › <span>%s</span></nav>`, template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(hi.Name)),
-		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(hi.Name)),
-		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(lead)),
-		`<dl class="seo-stats">`+
-			fmt.Sprintf(`<div><dt>toplam dönem</dt><dd>%d</dd></div>`, hi.Terms)+
-			fmt.Sprintf(`<div><dt>ders kaydı</dt><dd>%d</dd></div>`, len(hi.Rows))+
-			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, b.l.InstrStatCourses, courseCount)+
-			fmt.Sprintf(`<div><dt>%s</dt><dd><a href="/dersler/%s/">%s</a></dd></div>`, b.l.InstrStatLatest, template.HTMLEscapeString(latestSlug), template.HTMLEscapeString(latestLabel))+
-			`</dl>`,
-		gradesHTML,
-		frequentHTML,
-		branchesHTML,
-		`<h2>`+b.l.InstrHistoryHead+`</h2>`,
-		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>Ders</th><th>Adı</th><th>Dönem</th><th>Kont</th><th>Yazılan</th></tr></thead><tbody>`+
-			strings.Join(rows, "")+`</tbody></table></div>`,
-		`<p class="seo-data-note">`+template.HTMLEscapeString(b.l.InstrDataNote)+`</p>`,
-	))
-
-	return b.writePage(filepath.Join(b.outRoot, "hoca", slug, "index.html"),
-		title, description, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, false)
-}
-
 func instructorBranches(rows []instrRow) []string {
 	seen := map[string]struct{}{}
 	for _, row := range rows {
@@ -2434,7 +2411,7 @@ func quotaSparkline(points []quotaPoint) template.HTML {
 		color = "var(--amber)"
 	}
 	svg := fmt.Sprintf(
-		`<svg class="seo-spark" width="%d" height="%d" viewBox="0 0 %d %d" aria-hidden="true"><polyline fill="none" stroke="%s" stroke-width="1.5" points="%s"/></svg>`,
+		`<svg class="seo-spark" width="%d" height="%d" viewBox="0 0 %d %d" aria-hidden="true"><path fill="none" stroke="%s" stroke-width="1.5" d="%s"/></svg>`,
 		w, h, w, h, color, path.String(),
 	)
 	return template.HTML(svg)
@@ -2526,10 +2503,13 @@ func (b *Builder) loadCourseData(terms []termRow) error {
 	// Her ders için search.json'daki son dönemi bul, grup yap.
 	want := map[string][]string{} // slug -> [codes...]
 	for code, hc := range b.courses {
-		// En güncel dönemi bul (terms sıralı, son eleman en yeni).
+		// En güncel dönemi bul. history dosyasındaki sıra garanti değil
+		// (bugün yeniden eskiye); kronolojik anahtarla en yeniyi seç.
 		slug := ""
-		if len(hc.Terms) > 0 {
-			slug = hc.Terms[len(hc.Terms)-1]
+		for _, t := range hc.Terms {
+			if slug == "" || term.SortKey(t) > term.SortKey(slug) {
+				slug = t
+			}
 		}
 		if slug == "" {
 			// Dönem listesi tarih dosyasında bozuk; ders sayfası şube tablosuz olacak.
@@ -2678,6 +2658,7 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			`</dl>`,
 		sectHTML,
 		gradesHTML,
+		b.renderCourseInstructorCompare(code, termLabels),
 		quotaHTML,
 		`<h2>`+template.HTMLEscapeString(b.l.CourseHistHead)+`</h2>`,
 		`<div class="seo-tablewrap"><table class="seo-table"><thead><tr><th>`+template.HTMLEscapeString(b.l.CourseHistTerm)+`</th><th>`+
@@ -2690,15 +2671,23 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, false)
 }
 
-// instrLink, hoca adı için varsa hoca sayfasına bağlantı, yoksa düz metin döndürür.
+// instrLink, hoca alanı için bağlantı(lar) üretir: "A , / B" gibi çok hocalı
+// alanları kişilere ayırır, sayfası olanı bağlar; "-", "--", "***" gibi yer
+// tutucular sakin bir "belirtilmemiş" olarak görünür.
 func instrLink(name string, instrSlugs map[string]string) string {
-	if name == "" || name == "***" {
-		return "·"
+	names := splitInstructorNames(name)
+	if len(names) == 0 {
+		return `<span class="ip-muted">belirtilmemiş</span>`
 	}
-	if slug, ok := instrSlugs[name]; ok {
-		return fmt.Sprintf(`<a href="/hoca/%s/">%s</a>`, slug, template.HTMLEscapeString(name))
+	var parts []string
+	for _, n := range names {
+		if slug, ok := instrSlugs[n]; ok {
+			parts = append(parts, fmt.Sprintf(`<a href="/hoca/%s/">%s</a>`, slug, template.HTMLEscapeString(n)))
+		} else {
+			parts = append(parts, template.HTMLEscapeString(n))
+		}
 	}
-	return template.HTMLEscapeString(name)
+	return strings.Join(parts, ", ")
 }
 
 // --- sıralı anahtar yardımcıları ---

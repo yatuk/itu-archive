@@ -1,0 +1,55 @@
+name: hocametre
+
+# Hoca puanları (notkutusu.com "hocametre", toplulaştırılmış). Oylar yavaş
+# birikir ve kaynağa yük bindirmek istemiyoruz; ayda bir koşmak yeterli.
+# Site sahibinin notkutusu yazarından izni vardır. İstekler ardışık ve
+# sayfalar arası ≥1 sn bekler (yaklaşık 24 istek). Yalnızca ortalama ve oy
+# sayısı saklanır; e-posta, kimlik ve yorum dosyaya girmez.
+on:
+  schedule:
+    - cron: '37 5 4 * *' # her ayın 4'ü 05:37 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  hocametre:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Hoca puanlarını çek
+        run: go run ./cmd/hocametre
+
+      - name: Commit
+        run: |
+          # Yalnızca fetchedAt değişirse çekici dosyaya dokunmaz; fark yoksa çık.
+          if git diff --quiet -- docs; then
+            echo 'Hoca puanlarında değişiklik yok.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          go run ./cmd/validate -quiet -skip-site
+          go run ./cmd/site
+          git config user.name  'itu-scraper[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs
+          git commit -m "hocametre: $(date -u +'%Y-%m-%d') taraması"
+          for wait in 5 10 20 40; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep "$wait"
+          done
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push
+          exit $?

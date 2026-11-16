@@ -68,7 +68,7 @@ test.describe('Sprint 4 · erişilebilir mobil yüzey', () => {
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
     await expect(page.locator('.brand-home')).toHaveAttribute('aria-label', 'Go to the courses home page');
     await expect(page.locator('#q')).toHaveAttribute('aria-label', 'Search courses');
-    await expect(page.locator('#q')).toHaveAttribute('placeholder', 'search course code, name, CRN or instructor…');
+    await expect(page.locator('#q')).toHaveAttribute('placeholder', 'code, name, CRN or instructor…');
     await expect(page.locator('#mobile-sort')).toHaveAttribute('aria-label', 'Sort');
 
     const firstName = page.locator('.mobile-course-name').first();

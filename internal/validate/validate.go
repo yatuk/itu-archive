@@ -82,6 +82,7 @@ func All(root string, skipSite bool) *Result {
 	res.checkCatalog(root)
 	res.checkGrades(root)
 	res.checkDefinitions(root)
+	res.checkHocametre(root)
 	res.checkStatus(root)
 	if !skipSite {
 		res.checkSitePages(root)
@@ -440,6 +441,43 @@ func (r *Result) checkGrades(root string) {
 			}
 			if sum > g.Total {
 				r.errf("grades/%s: kayıt %d: %q kişi toplamı (%d) totalden (%d) fazla", e.Name(), i, g.Code, sum, g.Total)
+			}
+		}
+	}
+}
+
+// checkHocametre, hoca puanı özetini hafifçe denetler: geçerli JSON, fetchedAt
+// ayrıştırılabilir, her ortalama 1..5. Dosya opsiyoneldir — yoksa atlanır.
+func (r *Result) checkHocametre(root string) {
+	path := filepath.Join(root, "data", "hocametre.json")
+	if _, err := os.Stat(path); err != nil {
+		if os.IsNotExist(err) {
+			return
+		}
+		r.errf("hocametre.json okunamadı: %v", err)
+		return
+	}
+	var doc struct {
+		FetchedAt   string `json:"fetchedAt"`
+		Instructors []struct {
+			Key     string `json:"key"`
+			Ratings map[string]struct {
+				Avg float64 `json:"avg"`
+				N   int     `json:"n"`
+			} `json:"ratings"`
+		} `json:"instructors"`
+	}
+	if err := readJSON(path, &doc); err != nil {
+		r.errf("hocametre.json: çözümlenemedi: %v", err)
+		return
+	}
+	if _, err := time.Parse(time.RFC3339, doc.FetchedAt); err != nil {
+		r.errf("hocametre.json: fetchedAt %q ayrıştırılamadı", doc.FetchedAt)
+	}
+	for _, in := range doc.Instructors {
+		for name, rt := range in.Ratings {
+			if rt.Avg < 1 || rt.Avg > 5 || rt.N < 1 {
+				r.errf("hocametre.json: %q/%s: avg %v (1..5 olmalı), n %d", in.Key, name, rt.Avg, rt.N)
 			}
 		}
 	}

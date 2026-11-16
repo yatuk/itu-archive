@@ -304,6 +304,21 @@ function wireTabs() {
     ? { gecmis: 'History', donemler: 'Terms', hakkinda: 'About' }
     : { gecmis: 'Geçmiş', donemler: 'Dönemler', hakkinda: 'Hakkında' };
 
+  // Kaydırılabilir sekme rayı: kenar solması yalnızca gerçekten devamı olan
+  // tarafta görünür; rayın başındaki aktif sekme solgun çizilmez.
+  const rail = document.querySelector('.tabs');
+  const updateRailFade = () => {
+    if (!rail) return;
+    const max = rail.scrollWidth - rail.clientWidth;
+    const start = rail.scrollLeft > 2;
+    const end = rail.scrollLeft < max - 2;
+    rail.dataset.fade = max <= 2 ? 'none' : start && end ? 'both' : start ? 'start' : 'end';
+  };
+  if (rail) {
+    rail.addEventListener('scroll', updateRailFade, { passive: true });
+    window.addEventListener('resize', updateRailFade, { passive: true });
+  }
+
   const show = (view, push) => {
     for (const b of buttons) {
       const active = b.dataset.view === view;
@@ -316,6 +331,7 @@ function wireTabs() {
         b.scrollIntoView({ inline: 'center', block: 'nearest' });
       }
     }
+    updateRailFade();
     for (const s of document.querySelectorAll('.view')) {
       const active = s.id === `view-${view}`;
       s.hidden = !active;

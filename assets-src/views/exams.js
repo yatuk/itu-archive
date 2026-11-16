@@ -251,7 +251,8 @@ function renderExams(append) {
       time: String(e.time || ''),
     })),
     showPlace,
-    emptyMessage: I18N.t('examEmptyRow'),
+    // Takvim hiç ilan edilmediyse "eşleşen yok" yanıltıcı: boş durum nedenini söyler.
+    emptyMessage: I18N.t(state.exams.exams.length ? 'examEmptyRow' : 'examEmptyNoSchedule'),
     ariaLabel: I18N.t('examTableAriaLabel'),
     labels: {
       crn: I18N.t('examColCRN'),

@@ -1267,11 +1267,12 @@ test.describe('SEO sayfaları', () => {
     await page.goto('/hoca/muhammed-lutfi-yarar/');
 
     await expect(page).toHaveTitle(/not dağılımı ve İTÜ'de verdiği dersler/);
-    await expect(page.locator('.seo-stats')).toContainText('farklı ders');
-    await expect(page.locator('.seo-stats')).toContainText('son kayıt');
-    await expect(page.locator('.seo-grade-bars')).toBeVisible();
-    await expect(page.locator('.seo-grade-summary')).toContainText('not kaydına dayanıyor');
-    await expect(page.locator('.seo-instructor-courses')).toBeVisible();
+    await expect(page.locator('.ip-facts')).toContainText('farklı ders');
+    await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /son kayıt/);
+    await expect(page.locator('.ip-now')).toBeVisible();
+    await expect(page.locator('.ip-hist')).toBeVisible();
+    await expect(page.locator('.ip-sum.seo-grade-summary')).toContainText('AA ya da BA');
+    await expect(page.locator('.ip-tg')).toBeVisible();
     await expect(page.locator('.seo-data-note').last()).toContainText('resmî personel profili değildir');
 
     const graph = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());

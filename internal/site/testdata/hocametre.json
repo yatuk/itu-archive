@@ -1,0 +1,21 @@
+{
+  "fetchedAt": "2026-11-16T00:00:00Z",
+  "criteria": {
+    "GIVES_NOTES": {"tr": "Not paylaşımı", "en": "Shares notes"},
+    "IS_HELPFUL": {"tr": "Yardımseverlik", "en": "Helpfulness"},
+    "ASSIGNS_HOMEWORK": {"tr": "Ödev", "en": "Homework"},
+    "TAKES_ATTENDANCE": {"tr": "Yoklama", "en": "Attendance"},
+    "TEACHING_SKILLS": {"tr": "Anlatım", "en": "Teaching"}
+  },
+  "instructors": [
+    {"key": "adil yucel", "name": "Adil Yücel", "slugs": ["adil_yucelX"], "url": "https://notkutusu.com/hocametre/adil_yucelX", "votes": 26, "overall": 3.85,
+     "ratings": {"ASSIGNS_HOMEWORK": {"avg": 4.61, "n": 23}, "GIVES_NOTES": {"avg": 4.58, "n": 26}, "IS_HELPFUL": {"avg": 4.3, "n": 23}, "TAKES_ATTENDANCE": {"avg": 1.68, "n": 22}, "TEACHING_SKILLS": {"avg": 4.09, "n": 3}}},
+    {"key": "mehmet ali kaya", "name": "Mehmet Ali Kaya", "slugs": [], "url": "https://notkutusu.com/hocametre/mak", "votes": 3, "overall": 2.1, "ratings": {"TEACHING_SKILLS": {"avg": 2.1, "n": 3}}},
+    {"key": "ayse demir", "name": "Ayşe Demir", "slugs": [], "url": "https://notkutusu.com/hocametre/ad1", "votes": 10, "overall": 3.0, "ratings": {}},
+    {"key": "ayse demir yilmaz", "name": "Ayşe Demir Yılmaz", "slugs": [], "url": "https://notkutusu.com/hocametre/ady", "votes": 10, "overall": 3.0, "ratings": {}},
+    {"key": "selin oz", "name": "Selin Öz", "slugs": [], "url": "https://notkutusu.com/hocametre/so", "votes": 8, "overall": 4.0, "ratings": {}},
+    {"key": "selin oz kara", "name": "Selin Öz Kara", "slugs": [], "url": "https://notkutusu.com/hocametre/sok", "votes": 8, "overall": 4.0, "ratings": {}},
+    {"key": "can ece tan", "name": "Can Ece / Tan", "slugs": [], "url": "https://notkutusu.com/hocametre/pair", "votes": 4, "overall": 3.0, "ratings": {}},
+    {"key": "bora sert", "name": "Bora Sert", "slugs": [], "url": "https://notkutusu.com/hocametre/bs", "votes": 0, "overall": null, "ratings": {}}
+  ]
+}

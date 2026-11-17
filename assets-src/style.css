@@ -2874,8 +2874,6 @@ body.modal-open { overflow: hidden; }
 }
 .p-add-query { min-width: 0; margin: 0; }
 .p-add-query input { min-height: 46px; font-size: 16px; }
-/* Mobil dokunma kuralı .search-clear'ı position:relative yapıyor; burada kutu içinde kalsın. */
-#view-program .p-add-query .search-clear { position: absolute; }
 .p-field {
   display: flex; flex-direction: column; gap: 4px; min-width: 0;
   color: var(--dimmer); font-size: 12px; font-weight: 600;
@@ -4631,14 +4629,16 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .th-sort, .row-toggle, .dp-code, .dp-more, .dp-actions button,
   .d-prog, .d-req, .d-eq, .p-menu, .p-menu-pop button, .p-result,
   .dp-type, .dp-sec-btn, .dp-repeat-btn, .dp-grade-clear, .chip-x,
-  .search-clear, .pg-level, .pg-chip, .dp-grade, .dp-epick, select, .f-in {
+  .pg-level, .pg-chip, .dp-grade, .dp-epick, select, .f-in {
     min-height: 44px;
   }
   .fav-star { position: relative; }
   .fav-star::after { content: ''; position: absolute; inset: -14px; }
   /* Dar görünümlü butonlar: görseli büyütmeden tıklama alanı 44px+ */
-  .theme-btn, .search-clear, .dp-grade-clear, .dp-sec-btn, .dp-repeat-btn, .chip-x, .d-prog, .d-req, .d-eq, .dp-code { position: relative; }
-  .theme-btn::after, .search-clear::after, .dp-grade-clear::after, .dp-sec-btn::after, .dp-repeat-btn::after, .chip-x::after, .d-prog::after, .d-req::after, .d-eq::after, .dp-code::after { content: ''; position: absolute; inset: -8px; }
+  .theme-btn, .dp-grade-clear, .dp-sec-btn, .dp-repeat-btn, .chip-x, .d-prog, .d-req, .d-eq, .dp-code { position: relative; }
+  .theme-btn::after, .dp-grade-clear::after, .dp-sec-btn::after, .dp-repeat-btn::after, .chip-x::after, .d-prog::after, .d-req::after, .d-eq::after, .dp-code::after { content: ''; position: absolute; inset: -8px; }
+  /* × kutu içinde absolute kalır; 20px görsel, ::after ile 44px dokunma alanı. */
+  .search-clear::after { content: ''; position: absolute; inset: -12px; }
   .row-sel { width: 22px; height: 22px; }
   .detail-close::after { inset: -13px; }
 }

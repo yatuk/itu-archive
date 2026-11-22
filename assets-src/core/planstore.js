@@ -17,6 +17,7 @@
 import { parseRange, canonicalCode } from './plan.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './persistence.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
+import { isPassingGrade } from './grades.js?v=dde1e9339338';
 
 const KEY = 'itu-grades';
 
@@ -165,7 +166,7 @@ export function buildEntries(plan, stored, catalogMap = new Map()) {
 export function typeBuckets(plan, entries) {
   const REAL = ['TB', 'TM', 'MT', 'ITB', 'EC'];
   const out = new Map();
-  const doneByCode = new Map((entries || []).filter((e) => e.grade).map((e) => [e.code, e]));
+  const doneByCode = new Map((entries || []).filter((e) => isPassingGrade(e.grade)).map((e) => [e.code, e]));
   for (const sem of (plan?.semesters || [])) {
     for (const item of sem.items) {
       if (!item.course || !REAL.includes(item.course.type)) continue;
@@ -216,7 +217,8 @@ export function gpaEntries(plan, stored, catalogMap = new Map()) {
   }
   const planKeys = snap.planKeys || {};
   const current = new Map();
-  for (const e of planEntries) current.set(entryKey(e), e.grade || '');
+  const ectsByKey = new Map();
+  for (const e of planEntries) { current.set(entryKey(e), e.grade || ''); ectsByKey.set(entryKey(e), e.ects || 0); }
   const currentGrade = (key) => {
     if (current.has(key)) return current.get(key);
     // Anahtar plandaki bir yere düşmüyorsa (plan sürümü değişti vb.) saklanan
@@ -234,8 +236,9 @@ export function gpaEntries(plan, stored, catalogMap = new Map()) {
     if (!item.key) { entries.push({ code: item.code, credits, grade: item.grade, source: 'transcript' }); continue; }
     covered.add(item.key);
     const now = currentGrade(item.key);
-    if (now === planKeys[item.key]) entries.push({ code: item.code, credits, grade: item.grade, source: 'transcript' });
-    else if (now) { edited = true; entries.push({ code: item.code, credits, grade: now, source: 'edited' }); }
+    const ects = ectsByKey.get(item.key) || 0;
+    if (now === planKeys[item.key]) entries.push({ code: item.code, credits, ects, grade: item.grade, source: 'transcript' });
+    else if (now) { edited = true; entries.push({ code: item.code, credits, ects, grade: now, source: 'edited' }); }
     else edited = true;
   }
   for (const e of planEntries) {

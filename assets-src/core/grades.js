@@ -59,13 +59,23 @@ export function latestOnly(records) {
   return [...byCode.values()].map(({ code, credits, grade }) => ({ code, credits, grade }));
 }
 
-// İlerleme: plan toplamına göre tamamlanan kredi/AKTS. Yalnızca notu girilmiş
-// (muaf dahil — ders tamamlanmıştır) kayıtlar sayılır. transfer dışarıdan gelen
-// kredi ekler (yatay geçiş).
+// Dersin tamamlanmış (başarıyla geçilmiş) sayılıp sayılmadığı: AA–DD (DD ve DD+
+// şartlı geçer ama OBS kazanılmış sayar) ile muaf/geçti/kredisiz (M, G, P, BL).
+// FF, VF, eksik (E), boş ve bilinmeyen notlar tamamlanmış değildir.
+export function isPassingGrade(grade) {
+  if (grade == null || grade === '' || grade === 'E') return false;
+  return EXEMPT.has(grade) || Number(GRADE_POINTS[grade]) > 0;
+}
+
+// İlerleme: plan toplamına göre tamamlanan kredi/AKTS. Yalnızca geçilen dersler
+// sayılır (FF/VF sayılmaz; BL geçer ama 0 kredi ekler). entries ders başına tek
+// (son) denemedir, yani tekrar edilen ders bir kez sayılır. transfer dışarıdan
+// gelen kredi ekler (yatay geçiş).
 export function progress(entries, planTotal, transfer) {
   let doneCredits = 0, doneEcts = 0;
   for (const e of entries || []) {
-    if (e.grade == null || e.grade === '') continue;
+    if (!isPassingGrade(e.grade)) continue;
+    if (e.grade === 'BL') continue;
     doneCredits += Number(e.credits) || 0;
     doneEcts += Number(e.ects) || 0;
   }

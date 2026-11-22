@@ -1,5 +1,12 @@
 # cmd/site tarafından üretilir; elle düzenleme. Bkz. internal/site/redirects.go.
-# Eski ortak-hoca sayfaları -> ilk hocanın bugünkü sayfası.
+# Eski İngilizce iniş sayfası adresleri -> yeni İngilizce slug.
+/en/bolumler/ /en/programs/ 301
+/en/ders-kaydi-nasil-yapilir/ /en/how-to-register-for-courses/ 301
+/en/ders-programi-nasil-hazirlanir/ /en/how-to-build-your-schedule/ 301
+/en/ders-programi-olustur/ /en/schedule-builder/ 301
+/en/gano-hesaplama/ /en/gpa-calculator/ 301
+/en/terimler-sozlugu/ /en/glossary/ 301
+# Eski ortak-hoca veya yeniden adlandırılmış hoca sayfaları -> bugünkü hoca sayfası.
 /hoca/abdi-kukner-deniz-bayraktar-bural/ /hoca/abdi-kukner/ 301
 /hoca/abdi-kukner-omer-kemal-kinaci/ /hoca/abdi-kukner/ 301
 /hoca/abdul-hayir-murat-yilmaz/ /hoca/abdul-hayir/ 301
@@ -8,11 +15,14 @@
 /hoca/abdullah-aydogan-hakan-durmaz-ibrahim-volkan-kumbaraci/ /hoca/abdullah-aydogan/ 301
 /hoca/abdullah-can-zulfikar-caglar-akkaya/ /hoca/abdullah-can-zulfikar/ 301
 /hoca/abdullah-ekrem-yuce-feridun-boylu/ /hoca/abdullah-ekrem-yuce/ 301
+/hoca/abdullah-ekrem-yuce-hasan-ergin/ /hoca/abdullah-ekrem-yuce/ 301
+/hoca/abdullah-fisne-anil-soylu/ /hoca/abdullah-fisne/ 301
 /hoca/abdullah-hilmi-lav-gozde-bakioglu-doganyilmaz/ /hoca/abdullah-hilmi-lav/ 301
 /hoca/abdullah-hilmi-lav-hilmi-berk-celikoglu/ /hoca/abdullah-hilmi-lav/ 301
 /hoca/abdussamet-subasi-sertac-cadirci/ /hoca/abdussamet-subasi/ 301
 /hoca/adalet-dervisoglu-mehmet-ufuk-ozerman/ /hoca/adalet-dervisoglu/ 301
 /hoca/adem-candas-eren-kalay/ /hoca/adem-candas/ 301
+/hoca/adil-yucel-emin-orhun-bastekeli/ /hoca/adil-yucel/ 301
 /hoca/adnan-dikicioglu-murat-vural/ /hoca/adnan-dikicioglu/ 301
 /hoca/adnan-dikicioglu-safak-yilmaz/ /hoca/adnan-dikicioglu/ 301
 /hoca/adnan-kefal-mustafa-erden-yildizdag/ /hoca/adnan-kefal/ 301
@@ -37,6 +47,7 @@
 /hoca/ahmet-hakan-sensoy-sitki-kandemir-basmacioglu-unsal-celiksu/ /hoca/ahmet-hakan-sensoy/ 301
 /hoca/ahmet-hakan-sensoy-sitki-kandemir-basmacioglu-zeynep-barut/ /hoca/ahmet-hakan-sensoy/ 301
 /hoca/ahmet-kiris-burcu-tunga/ /hoca/ahmet-kiris/ 301
+/hoca/ahmet-murat-ciraci-hakan-yaman/ /hoca/ahmet-murat-ciraci/ 301
 /hoca/ahmet-ozgur-dogru-serdar-bilgi/ /hoca/ahmet-ozgur-dogru/ 301
 /hoca/ahmet-oztopal-ahmet-duran-sahin-emrah-tuncay-ozdemir/ /hoca/ahmet-oztopal/ 301
 /hoca/ahmet-oztopal-cemre-sonuc/ /hoca/ahmet-oztopal/ 301
@@ -63,6 +74,7 @@
 /hoca/ali-kilic-ozlem-ipek-kalaoglu-altan/ /hoca/ali-kilic/ 301
 /hoca/ali-kilic-sule-selcuk/ /hoca/ali-kilic/ 301
 /hoca/ali-mehmet-celal-sengor-cengiz-zabci/ /hoca/ali-mehmet-celal-sengor/ 301
+/hoca/ali-sari-fatih-sutcu/ /hoca/ali-sari/ 301
 /hoca/ali-sinan-cabuk-deniz-turkpence/ /hoca/ali-sinan-cabuk/ 301
 /hoca/ali-toptas-fatma-kalaoglu/ /hoca/ali-toptas/ 301
 /hoca/ali-tufekci-cihan-yurtcu-julide-gunduz/ /hoca/ali-tufekci/ 301
@@ -78,6 +90,7 @@
 /hoca/aliye-ahu-gulumser-serim-dinc/ /hoca/aliye-ahu-gulumser/ 301
 /hoca/alp-ustundag-ali-fuat-ergenc/ /hoca/alp-ustundag/ 301
 /hoca/alp-ustundag-basar-oztaysi-cengiz-kahraman-emine-yaylali-erkan-isikli-gaye-karac/ /hoca/alp-ustundag/ 301
+/hoca/alpaslan-ekdal-ali-erturk/ /hoca/alpaslan-ekdal/ 301
 /hoca/alpaslan-ekdal-borte-kose-mutlu/ /hoca/alpaslan-ekdal/ 301
 /hoca/alpaslan-ekdal-mehmet-sadik-akca/ /hoca/alpaslan-ekdal/ 301
 /hoca/alpaslan-ekdal-melike-gurel/ /hoca/alpaslan-ekdal/ 301
@@ -91,10 +104,12 @@
 /hoca/alper-sarioglan-ahmet-sirkecioglu-alireza-khataee-ayse-arifoglu-ayse-ozge-kurkcu/ /hoca/alper-sarioglan/ 301
 /hoca/alper-sarioglan-nalan-erdol-aydin/ /hoca/alper-sarioglan/ 301
 /hoca/alper-sarioglan-taylan-maras/ /hoca/alper-sarioglan/ 301
+/hoca/alper-unal-yusuf-aydin/ /hoca/alper-unal/ 301
 /hoca/aral-okay-okan-tuysuz/ /hoca/aral-okay/ 301
 /hoca/arife-tugsan-isiacik-colak-huseyin-turkel/ /hoca/arife-tugsan-isiacik-colak/ 301
 /hoca/arzu-karabay-korkmaz-asli-kumbasar-ceren-ciraci/ /hoca/arzu-karabay-korkmaz/ 301
 /hoca/arzu-karabay-korkmaz-asli-kumbasar/ /hoca/arzu-karabay-korkmaz/ 301
+/hoca/arzu-karabay-korkmaz-aslihan-tolun/ /hoca/arzu-karabay-korkmaz/ 301
 /hoca/arzu-karabay-korkmaz-benan-temizci-imanc/ /hoca/arzu-karabay-korkmaz/ 301
 /hoca/arzu-karabay-korkmaz-ceren-ciraci/ /hoca/arzu-karabay-korkmaz/ 301
 /hoca/arzu-karabay-korkmaz-eda-tahir-turanli/ /hoca/arzu-karabay-korkmaz/ 301
@@ -113,6 +128,8 @@
 /hoca/ayca-sayi-yazgan-borte-kose/ /hoca/ayca-sayi-yazgan/ 301
 /hoca/ayca-sayi-yazgan-ceren-ciraci/ /hoca/ayca-sayi-yazgan/ 301
 /hoca/ayfer-kalkan-burat-ibrahim-ozcesmeci/ /hoca/ayfer-kalkan-burat/ 301
+/hoca/aygul-agir-bilge-ar/ /hoca/aygul-agir/ 301
+/hoca/aygul-agir-hasan-sercan-saglam/ /hoca/aygul-agir/ 301
 /hoca/aygul-agir-vesile-gul-cephanecigil/ /hoca/aygul-agir/ 301
 /hoca/ayhan-ali-sirkeci-emrah-tugcan-tuzcu/ /hoca/ayhan-ali-sirkeci/ 301
 /hoca/ayhan-ali-sirkeci-firat-burat/ /hoca/ayhan-ali-sirkeci/ 301
@@ -130,6 +147,7 @@
 /hoca/ayse-bilsen-baykal-derya-yuksel-imer/ /hoca/ayse-bilsen-baykal/ 301
 /hoca/ayse-bilsen-baykal-mahmut-altinbas/ /hoca/ayse-bilsen-baykal/ 301
 /hoca/ayse-erdem-alper-sarioglan/ /hoca/ayse-erdem/ 301
+/hoca/ayse-erdem-gamze-gumuslu-gur/ /hoca/ayse-erdem/ 301
 /hoca/ayse-esin-senturk-alin-aylin-yagcioglu/ /hoca/ayse-esin-senturk/ 301
 /hoca/ayse-esin-senturk-alper-goceri/ /hoca/ayse-esin-senturk/ 301
 /hoca/ayse-esin-senturk-aysegul-altiok/ /hoca/ayse-esin-senturk/ 301
@@ -178,6 +196,7 @@
 /hoca/azime-tezer-dilek-yildiz-elif-kucuksayrac-elif-kisar-koramaz/ /hoca/azime-tezer/ 301
 /hoca/azime-tezer-ozan-onder-ozener/ /hoca/azime-tezer/ 301
 /hoca/bahadir-numan-cigdem-eren/ /hoca/bahadir-numan/ 301
+/hoca/bahadir-numan-sirin-akinci/ /hoca/bahadir-numan/ 301
 /hoca/bahadir-numan-sonya-turkman/ /hoca/bahadir-numan/ 301
 /hoca/bahadir-ugurlu-mustafa-erden-yildizdag/ /hoca/bahadir-ugurlu/ 301
 /hoca/bahire-filiz-senkal-candan-erbil/ /hoca/bahire-filiz-senkal/ 301
@@ -200,6 +219,7 @@
 /hoca/begum-hamzaoglu-mine-ozkar-kabakcioglu/ /hoca/begum-hamzaoglu/ 301
 /hoca/behcet-ugur-toreyin-ahmet-hamdi-kayran/ /hoca/behcet-ugur-toreyin/ 301
 /hoca/belgin-gorgun-cevza-candan/ /hoca/belgin-gorgun/ 301
+/hoca/belgin-gorgun-deniz-ayas/ /hoca/belgin-gorgun/ 301
 /hoca/belgin-gorgun-fatma-banu-nergis/ /hoca/belgin-gorgun/ 301
 /hoca/belgin-gorgun-sukriye-yuksel-filiz/ /hoca/belgin-gorgun/ 301
 /hoca/belgin-gorgun-zehra-dogan-sozuer/ /hoca/belgin-gorgun/ 301
@@ -234,6 +254,7 @@
 /hoca/birsen-ozturk-figen-kadirgan-gulcin-yilmaz/ /hoca/birsen-ozturk/ 301
 /hoca/birsen-ozturk-gulcemal-yildiz-gulcin-yilmaz/ /hoca/birsen-ozturk/ 301
 /hoca/birsen-ozturk-suleyman-akman/ /hoca/birsen-ozturk/ 301
+/hoca/bora-doken-cenk-andic/ /hoca/bora-doken/ 301
 /hoca/boris-natalin-cengiz-zabci/ /hoca/boris-natalin/ 301
 /hoca/boris-nataline-cengiz-zabci/ /hoca/boris-nataline/ 301
 /hoca/borte-kose-abdulhalim-kilic/ /hoca/borte-kose/ 301
@@ -242,7 +263,9 @@
 /hoca/bulent-guloglu-mete-han-yagmur/ /hoca/bulent-guloglu/ 301
 /hoca/bulent-inanc-aysegul-bayin-sariahmetoglu/ /hoca/bulent-inanc/ 301
 /hoca/bulent-inanc-fatma-gulen-iskender/ /hoca/bulent-inanc/ 301
+/hoca/bulent-inanc-ilke-pala-ozkok/ /hoca/bulent-inanc/ 301
 /hoca/bulent-inanc-mahmut-ekrem-karpuzcu/ /hoca/bulent-inanc/ 301
+/hoca/burak-barutcu-mustafa-kemal-kaymak/ /hoca/burak-barutcu/ 301
 /hoca/burak-berk-ustundag-deniz-turgay-altilar/ /hoca/burak-berk-ustundag/ 301
 /hoca/burak-berk-ustundag-gokhan-ince/ /hoca/burak-berk-ustundag/ 301
 /hoca/burak-berk-ustundag-yusuf-huseyin-sahin/ /hoca/burak-berk-ustundag/ 301
@@ -265,6 +288,7 @@
 /hoca/burcu-gunes-ulku-hulya-calik-karakose/ /hoca/burcu-gunes/ 301
 /hoca/burcu-tunga-ahmet-kiris/ /hoca/burcu-tunga/ 301
 /hoca/burcu-yildiz-atas-gunay-kochan-flower/ /hoca/burcu-yildiz-atas/ 301
+/hoca/burcu-yildiz-atas-zehra-yilmaz/ /hoca/burcu-yildiz-atas/ 301
 /hoca/burhaneddin-sandikci-ramazan-evren/ /hoca/burhaneddin-sandikci/ 301
 /hoca/cahit-ali-bayraktar-seckin-polat/ /hoca/cahit-ali-bayraktar/ 301
 /hoca/can-etili-okten-alin-aylin-yagcioglu/ /hoca/can-etili-okten/ 301
@@ -297,6 +321,7 @@
 /hoca/cengiz-kuzu-muhammet-mustafa-kahraman/ /hoca/cengiz-kuzu/ 301
 /hoca/cengiz-yildirim-cengiz-zabci/ /hoca/cengiz-yildirim/ 301
 /hoca/cengiz-yildirim-mehmet-sinan-ozeren-omer-kamaci/ /hoca/cengiz-yildirim/ 301
+/hoca/cengiz-yildirim-tolga-gorum/ /hoca/cengiz-yildirim/ 301
 /hoca/cengiz-zabci-gulsen-ucarkus/ /hoca/cengiz-zabci/ 301
 /hoca/cengiz-zabci-gursel-sunal/ /hoca/cengiz-zabci/ 301
 /hoca/cengiz-zabci-ufuk-tari/ /hoca/cengiz-zabci/ 301
@@ -359,6 +384,7 @@
 /hoca/cuneyt-huseyin-unlu-abdullah-aydogan/ /hoca/cuneyt-huseyin-unlu/ 301
 /hoca/cuneyt-vatansever-cavidan-yorgun/ /hoca/cuneyt-vatansever/ 301
 /hoca/demet-arslan-dincay-deniz-calisir-pence/ /hoca/demet-arslan-dincay/ 301
+/hoca/demet-arslan-dincay-dila-gokalp/ /hoca/demet-arslan-dincay/ 301
 /hoca/demet-arslan-dincay-seniye-banu-garip-shahryar-habibi/ /hoca/demet-arslan-dincay/ 301
 /hoca/demet-balkan-seher-eken/ /hoca/demet-balkan/ 301
 /hoca/demet-yildirim-macid-fikret-suner/ /hoca/demet-yildirim/ 301
@@ -396,6 +422,7 @@
 /hoca/derya-karakas-ahmet-atil-asici/ /hoca/derya-karakas/ 301
 /hoca/derya-yuksel-imer-ayse-bilsen-baykal/ /hoca/derya-yuksel-imer/ 301
 /hoca/derya-yuksel-imer-hale-ozgun-mustafa-evren-ersahin/ /hoca/derya-yuksel-imer/ 301
+/hoca/derya-yuksel-imer-yusuf-gunes/ /hoca/derya-yuksel-imer/ 301
 /hoca/devlet-devrim-oztas-ozlem-kolat-cakmaksoy-ahmet-hakan-sensoy/ /hoca/devlet-devrim-oztas/ 301
 /hoca/devrim-baris-kaymak-hale-gurbuz-huseyin-enis-karahan/ /hoca/devrim-baris-kaymak/ 301
 /hoca/devrim-baris-kaymak-huseyin-enis-karahan-sinan-kutluay/ /hoca/devrim-baris-kaymak/ 301
@@ -417,6 +444,7 @@
 /hoca/duygu-agaogullari-mustafa-lutfi-ovecoglu/ /hoca/duygu-agaogullari/ 301
 /hoca/duygu-erdem-tahir-soyuguzel-emre-koyuncu/ /hoca/duygu-erdem/ 301
 /hoca/duygu-utkucu-hatice-sozer/ /hoca/duygu-utkucu/ 301
+/hoca/ebru-acuner-turet-kadriye-elif-macin/ /hoca/ebru-acuner-turet/ 301
 /hoca/ebru-dulekgurgen-ozlem-karahan-ozgun/ /hoca/ebru-dulekgurgen/ 301
 /hoca/ebru-erbas-gurler-arzu-turk/ /hoca/ebru-erbas-gurler/ 301
 /hoca/ebru-erbas-gurler-cisem-demirel-koyun/ /hoca/ebru-erbas-gurler/ 301
@@ -445,6 +473,7 @@
 /hoca/elif-pehlivanoglu-mantas-gulsum-emel-zengin-balci/ /hoca/elif-pehlivanoglu-mantas/ 301
 /hoca/elif-pehlivanoglu-serdar-dogruel/ /hoca/elif-pehlivanoglu/ 301
 /hoca/elif-sertel-filiz-bektas-balcik/ /hoca/elif-sertel/ 301
+/hoca/elif-tasel-nihan-topaloglu/ /hoca/elif-tasel/ 301
 /hoca/elif-tasel-turku-sahin/ /hoca/elif-tasel/ 301
 /hoca/elisan-filiz-piroglu-kadir-ozakgul/ /hoca/elisan-filiz-piroglu/ 301
 /hoca/emel-onder-karaoglu-cevza-candan/ /hoca/emel-onder-karaoglu/ 301
@@ -454,6 +483,7 @@
 /hoca/emin-ciftci-kayhan-develi/ /hoca/emin-ciftci/ 301
 /hoca/emin-ciftci-muhittin-karaman/ /hoca/emin-ciftci/ 301
 /hoca/emin-ciftci-mustafa-kaya/ /hoca/emin-ciftci/ 301
+/hoca/emin-ciftci-mustafa-kumral/ /hoca/emin-ciftci/ 301
 /hoca/emin-ciftci-nurgul-celik-balci/ /hoca/emin-ciftci/ 301
 /hoca/emin-ciftci-yildiray-palabiyik/ /hoca/emin-ciftci/ 301
 /hoca/emin-sunbuloglu-sureyya-ergun-bozdag/ /hoca/emin-sunbuloglu/ 301
@@ -466,12 +496,15 @@
 /hoca/emine-gorgul-deniz-calisir-pence-ethem-gurer/ /hoca/emine-gorgul/ 301
 /hoca/emine-gorgul-deniz-calisir-pence/ /hoca/emine-gorgul/ 301
 /hoca/emine-gorgul-enes-yasa/ /hoca/emine-gorgul/ 301
+/hoca/emine-gorgul-ervin-garip/ /hoca/emine-gorgul/ 301
 /hoca/emine-gorgul-orkan-zeynel-guzelci/ /hoca/emine-gorgul/ 301
 /hoca/emine-gorgul-seniye-banu-garip/ /hoca/emine-gorgul/ 301
 /hoca/emrah-acar-bahriye-ilhan/ /hoca/emrah-acar/ 301
 /hoca/emrah-acar-yelda-ozge-dogan/ /hoca/emrah-acar/ 301
 /hoca/emrah-tuncay-ozdemir-ali-deniz/ /hoca/emrah-tuncay-ozdemir/ 301
 /hoca/emrah-tuncay-ozdemir-deniz-demirhan-bari/ /hoca/emrah-tuncay-ozdemir/ 301
+/hoca/emrah-tuncay-ozdemir-haldun-karan/ /hoca/emrah-tuncay-ozdemir/ 301
+/hoca/emrah-tuncay-ozdemir-orkan-ozcan/ /hoca/emrah-tuncay-ozdemir/ 301
 /hoca/emre-akyuz-cenk-ay/ /hoca/emre-akyuz/ 301
 /hoca/emre-cevikcan-murat-durucu/ /hoca/emre-cevikcan/ 301
 /hoca/emre-onur-kahya-sinem-sasmaz/ /hoca/emre-onur-kahya/ 301
@@ -510,6 +543,8 @@
 /hoca/erkan-isikli-basar-oztaysi-cengiz-kahraman-emine-yaylali-mehmet-bulent-durmusogl/ /hoca/erkan-isikli/ 301
 /hoca/erkan-isikli-cigdem-kadaifci/ /hoca/erkan-isikli/ 301
 /hoca/erol-demirkan-abdullah-gedikli/ /hoca/erol-demirkan/ 301
+/hoca/erol-kam-murat-erdem/ /hoca/erol-kam/ 301
+/hoca/erol-lale-cem-demir/ /hoca/erol-lale/ 301
 /hoca/erol-parlak-alper-goceri/ /hoca/erol-parlak/ 301
 /hoca/erol-parlak-gularam-baltayeva/ /hoca/erol-parlak/ 301
 /hoca/erol-parlak-gunay-acur/ /hoca/erol-parlak/ 301
@@ -528,6 +563,7 @@
 /hoca/esra-bas-ayberk-soyer-ayse-elvan-bayraktaroglu-cafer-erhan-bozdag-cahit-ali-bayr/ /hoca/esra-bas/ 301
 /hoca/esra-bas-emine-yaylali-emre-cevikcan-gaye-karacay-aydin-gulsah-hancerliogullari-/ /hoca/esra-bas/ 301
 /hoca/esra-bas-omer-faruk-beyca/ /hoca/esra-bas/ 301
+/hoca/esra-basturkcu-emin-ciftci/ /hoca/esra-basturkcu/ 301
 /hoca/esra-capanoglu-guven-asli-can-karaca-nese-sahin-yesilcubuk/ /hoca/esra-capanoglu-guven/ 301
 /hoca/esra-capanoglu-guven-asli-can-karaca/ /hoca/esra-capanoglu-guven/ 301
 /hoca/esra-capanoglu-guven-beraat-ozcelik-derya-kahveci-karincaoglu-gurbuz-gunes-meral/ /hoca/esra-capanoglu-guven/ 301
@@ -544,6 +580,7 @@
 /hoca/ethem-gurer-ozge-cordan/ /hoca/ethem-gurer/ 301
 /hoca/evren-demircan-esra-capanoglu-guven-derya-kahveci-karincaoglu-gulay-ozkan/ /hoca/evren-demircan/ 301
 /hoca/eyup-uzunkaya-ahmet-turan-demirbag/ /hoca/eyup-uzunkaya/ 301
+/hoca/faik-boray-tek-tacettin-ayar/ /hoca/faik-boray-tek/ 301
 /hoca/faiz-muhaffel-aytekin-uzunoglu-bihter-zeytuncu-gokoglu-cem-ornek-filiz-sahin-gul/ /hoca/faiz-muhaffel/ 301
 /hoca/faiz-muhaffel-bihter-zeytuncu-gokoglu-billur-deniz-karahan-cevat-bora-derin-ceva/ /hoca/faiz-muhaffel/ 301
 /hoca/faiz-muhaffel-bihter-zeytuncu-gokoglu-billur-deniz-karahan-cevat-bora-derin-cune/ /hoca/faiz-muhaffel/ 301
@@ -589,6 +626,7 @@
 /hoca/fatma-gulen-iskender-borte-kose-mutlu/ /hoca/fatma-gulen-iskender/ 301
 /hoca/fatma-gulen-iskender-naciye-esra-ates-genceli/ /hoca/fatma-gulen-iskender/ 301
 /hoca/fatma-gulen-iskender-naciye-esra-genceli/ /hoca/fatma-gulen-iskender/ 301
+/hoca/fatma-gulen-iskender-osman-devrim-elvan/ /hoca/fatma-gulen-iskender/ 301
 /hoca/fatma-gulmez-yildirim-mehmet-keskin/ /hoca/fatma-gulmez-yildirim/ 301
 /hoca/fatma-inci-cilesiz-onur-ferhanoglu/ /hoca/fatma-inci-cilesiz/ 301
 /hoca/fatma-kalaoglu-cevza-candan/ /hoca/fatma-kalaoglu/ 301
@@ -608,6 +646,7 @@
 /hoca/fethi-kadioglu-erol-demirkan/ /hoca/fethi-kadioglu/ 301
 /hoca/feyzi-haznedaroglu-murat-kuruoglu/ /hoca/feyzi-haznedaroglu/ 301
 /hoca/feza-buzluca-sanem-kabadayi/ /hoca/feza-buzluca/ 301
+/hoca/fidan-kurt-kasapbasi-ulas-saka/ /hoca/fidan-kurt-kasapbasi/ 301
 /hoca/filiz-altay-ali-saffet-altay/ /hoca/filiz-altay/ 301
 /hoca/filiz-altay-celale-kirkin-gozukirmizi-derya-kahveci-karincaoglu-fatma-ebru-firat/ /hoca/filiz-altay/ 301
 /hoca/filiz-bektas-balcik-cigdem-goksel/ /hoca/filiz-bektas-balcik/ 301
@@ -617,6 +656,7 @@
 /hoca/filiz-turk-katircioglu-deniz-demirhan-bari/ /hoca/filiz-turk-katircioglu/ 301
 /hoca/firat-burat-mehmet-sabri-celik/ /hoca/firat-burat/ 301
 /hoca/firat-kucukersen-sinem-kirkan/ /hoca/firat-kucukersen/ 301
+/hoca/fuat-yavuz-demet-yildirim/ /hoca/fuat-yavuz/ 301
 /hoca/fuat-yavuz-enver-vural-yavuz/ /hoca/fuat-yavuz/ 301
 /hoca/fuat-yavuz-mustafa-kaya/ /hoca/fuat-yavuz/ 301
 /hoca/funda-bozkurt-yuriy-mezokh/ /hoca/funda-bozkurt/ 301
@@ -693,6 +733,7 @@
 /hoca/gulsen-aytac-ebru-erbas-gurler-melih-bozkurt/ /hoca/gulsen-aytac/ 301
 /hoca/gulsen-aytac-elif-lutfiye-kocer-karacor/ /hoca/gulsen-aytac/ 301
 /hoca/gulsen-aytac-fatma-aycim-turer-baskaya-elif-lutfiye-kutay-karacor/ /hoca/gulsen-aytac/ 301
+/hoca/gulsen-aytac-seydi-murat-koc/ /hoca/gulsen-aytac/ 301
 /hoca/gulsen-eryigit-tacettin-ayar/ /hoca/gulsen-eryigit/ 301
 /hoca/gulsen-eryigit-tolga-ovatman/ /hoca/gulsen-eryigit/ 301
 /hoca/gulsen-ucarkus-cengiz-zabci/ /hoca/gulsen-ucarkus/ 301
@@ -704,8 +745,10 @@
 /hoca/gulsum-tanyeli-sakine-yildiz-salman/ /hoca/gulsum-tanyeli/ 301
 /hoca/gultekin-goller-ipek-akin-karadayi/ /hoca/gultekin-goller/ 301
 /hoca/gultekin-goller-ozgul-keles/ /hoca/gultekin-goller/ 301
+/hoca/gultekin-topuz-remziye-akdogan/ /hoca/gultekin-topuz/ 301
 /hoca/gulten-aslihan-tavil-fethiye-ecem-edis/ /hoca/gulten-aslihan-tavil/ 301
 /hoca/gulyar-say-ferhan-yeprem-neva-ozgen-kosoglu/ /hoca/gulyar-say/ 301
+/hoca/gunduz-okten-abdullah-fisne/ /hoca/gunduz-okten/ 301
 /hoca/gurbuz-gunes-celale-kirkin-gozukirmizi-derya-kahveci-karincaoglu-fatma-ebru-fira/ /hoca/gurbuz-gunes/ 301
 /hoca/gurbuz-gunes-celale-kirkin-gozukirmizi/ /hoca/gurbuz-gunes/ 301
 /hoca/gurbuz-gunes-derya-kahveci-karincaoglu-fatma-ebru-firatligil-filiz-altay-meral-k/ /hoca/gurbuz-gunes/ 301
@@ -713,6 +756,7 @@
 /hoca/gurbuz-gunes-enes-dertli-fatma-ebru-firatligil/ /hoca/gurbuz-gunes/ 301
 /hoca/gurbuz-gunes-fatma-ebru-firatligil-filiz-altay-meral-kilic-akyilmaz/ /hoca/gurbuz-gunes/ 301
 /hoca/gurbuz-gunes-fatma-ebru-firatligil-zeynep-tacer-caba/ /hoca/gurbuz-gunes/ 301
+/hoca/gursat-altun-cem-sokullu/ /hoca/gursat-altun/ 301
 /hoca/gursat-altun-ibrahim-metin-mihcakan/ /hoca/gursat-altun/ 301
 /hoca/gursat-altun-omer-inanc-tureyen/ /hoca/gursat-altun/ 301
 /hoca/gursel-sunal-cengiz-zabci/ /hoca/gursel-sunal/ 301
@@ -747,6 +791,7 @@
 /hoca/hakan-bermek-deniz-sahin/ /hoca/hakan-bermek/ 301
 /hoca/hakan-cap-ismail-kandemir/ /hoca/hakan-cap/ 301
 /hoca/hakan-cap-levent-beden-sinan-cakir/ /hoca/hakan-cap/ 301
+/hoca/hakan-cap-levent-beden/ /hoca/hakan-cap/ 301
 /hoca/hakan-durmaz-ibrahim-volkan-kumbaraci/ /hoca/hakan-durmaz/ 301
 /hoca/hakan-nuri-atahan-unal-anil-dogan/ /hoca/hakan-nuri-atahan/ 301
 /hoca/hakan-oksuzoglu-ali-imre-aydeniz/ /hoca/hakan-oksuzoglu/ 301
@@ -779,6 +824,7 @@
 /hoca/halit-suleyman-turkmen-emre-koyuncu/ /hoca/halit-suleyman-turkmen/ 301
 /hoca/haluk-sesigur-cenk-ustundag/ /hoca/haluk-sesigur/ 301
 /hoca/haluk-sesigur-gulseren-erol-soyoz/ /hoca/haluk-sesigur/ 301
+/hoca/handan-palak/ /hoca/handan-palak-erginsoy/ 301
 /hoca/handan-turkoglu-seda-kundak/ /hoca/handan-turkoglu/ 301
 /hoca/hande-sezgin-fatma-banu-nergis/ /hoca/hande-sezgin/ 301
 /hoca/hande-sezgin-sule-selcuk/ /hoca/hande-sezgin/ 301
@@ -787,6 +833,7 @@
 /hoca/hanifi-copur-deniz-tumac/ /hoca/hanifi-copur/ 301
 /hoca/hasan-can-okutan-ahmet-alper-aydin/ /hoca/hasan-can-okutan/ 301
 /hoca/hasan-can-okutan-bulent-inanc-kadir-alp/ /hoca/hasan-can-okutan/ 301
+/hoca/hasan-erdem-yantir-kamil-karacuha/ /hoca/hasan-erdem-yantir/ 301
 /hoca/hasan-erdem-yantir-ufuk-saim-gunay/ /hoca/hasan-erdem-yantir/ 301
 /hoca/hasan-ergin-abdullah-ekrem-yuce/ /hoca/hasan-ergin/ 301
 /hoca/hasan-ergin-omur-acaroglu-ergun/ /hoca/hasan-ergin/ 301
@@ -822,6 +869,7 @@
 /hoca/hayriye-esbah-tuncay-aysegul-akcay-kavakoglu-fatma-aycim-turer-baskaya/ /hoca/hayriye-esbah-tuncay/ 301
 /hoca/hayriye-esbah-tuncay-ebru-erbas-gurler-gulsen-aytac-muhammed-ali-ornek/ /hoca/hayriye-esbah-tuncay/ 301
 /hoca/hayriye-esbah-tuncay-ebru-erbas-gurler-gulsen-aytac/ /hoca/hayriye-esbah-tuncay/ 301
+/hoca/hayriye-esbah-tuncay-elif-lutfiye-kocer-karacor/ /hoca/hayriye-esbah-tuncay/ 301
 /hoca/hayriye-esbah-tuncay-fatma-aycim-turer-baskaya-ikhwan-kim/ /hoca/hayriye-esbah-tuncay/ 301
 /hoca/hayriye-esbah-tuncay-gulsen-aytac-melih-bozkurt/ /hoca/hayriye-esbah-tuncay/ 301
 /hoca/hayriye-esbah-tuncay-meliz-akyol/ /hoca/hayriye-esbah-tuncay/ 301
@@ -833,6 +881,7 @@
 /hoca/hulya-cebeci-nuri-solak/ /hoca/hulya-cebeci/ 301
 /hoca/hulya-kus-ayse-nil-turkeri/ /hoca/hulya-kus/ 301
 /hoca/hulya-kus-caner-gocer-mehmet-cem-altun/ /hoca/hulya-kus/ 301
+/hoca/hulya-kus-caner-gocer/ /hoca/hulya-kus/ 301
 /hoca/hulya-kus-fatih-yazicioglu-fethiye-ecem-edis-gulten-aslihan-tavil/ /hoca/hulya-kus/ 301
 /hoca/hulya-kus-fethiye-ecem-edis/ /hoca/hulya-kus/ 301
 /hoca/hulya-kus-gulfer-oraz/ /hoca/hulya-kus/ 301
@@ -858,6 +907,7 @@
 /hoca/huseyin-murat-celik-kerem-yavuz-arslanli/ /hoca/huseyin-murat-celik/ 301
 /hoca/huseyin-murat-celik-michael-stefan-bittermann/ /hoca/huseyin-murat-celik/ 301
 /hoca/huseyin-toros-baris-caldag/ /hoca/huseyin-toros/ 301
+/hoca/husnu-atakul-ahmet-sirkecioglu/ /hoca/husnu-atakul/ 301
 /hoca/husnu-atakul-ayse-erdem/ /hoca/husnu-atakul/ 301
 /hoca/husnu-atakul-fatma-elif-genceli-guner/ /hoca/husnu-atakul/ 301
 /hoca/husnu-murat-gunaydin-begum-sertyesilisik/ /hoca/husnu-murat-gunaydin/ 301
@@ -871,6 +921,7 @@
 /hoca/ibrahim-demir-huseyin-guven/ /hoca/ibrahim-demir/ 301
 /hoca/ibrahim-ersin-serhatli-hacer-aysen-onen/ /hoca/ibrahim-ersin-serhatli/ 301
 /hoca/ibrahim-mehmet-palabiyik-atakan-altinkaynak/ /hoca/ibrahim-mehmet-palabiyik/ 301
+/hoca/ibrahim-mehmet-palabiyik-ismail-kaya/ /hoca/ibrahim-mehmet-palabiyik/ 301
 /hoca/ibrahim-volkan-kumbaraci-hakan-durmaz-ufuk-saim-gunay/ /hoca/ibrahim-volkan-kumbaraci/ 301
 /hoca/ibrahim-volkan-kumbaraci-hakan-durmaz/ /hoca/ibrahim-volkan-kumbaraci/ 301
 /hoca/ibrahim-volkan-kumbaraci-ufuk-saim-gunay/ /hoca/ibrahim-volkan-kumbaraci/ 301
@@ -889,6 +940,7 @@
 /hoca/ikilem-gocek-meltem-yanilmaz/ /hoca/ikilem-gocek/ 301
 /hoca/ilkay-ozsev-yuksek-nevin-cigdem-gursoy/ /hoca/ilkay-ozsev-yuksek/ 301
 /hoca/imdat-as-yuksel-demir/ /hoca/imdat-as/ 301
+/hoca/imge-akcakaya-waite-jr-serim-dinc/ /hoca/imge-akcakaya-waite-jr/ 301
 /hoca/ipek-akin-karadayi-bihter-zeytuncu-burak-ozkal-filiz-sahin-gultekin-goller-mahmu/ /hoca/ipek-akin-karadayi/ 301
 /hoca/ipek-akin-karadayi-bihter-zeytuncu-cevat-bora-derin-cuneyt-arslan-derya-dispinar/ /hoca/ipek-akin-karadayi/ 301
 /hoca/ipek-akin-karadayi-burak-ozkal-cevat-bora-derin-filiz-sahin-guldem-kartal-sireli/ /hoca/ipek-akin-karadayi/ 301
@@ -902,6 +954,7 @@
 /hoca/ipek-yalcin-enis-serna-ucar-hatipoglu/ /hoca/ipek-yalcin-enis/ 301
 /hoca/irfan-yolcubal-erkan-bozkurtoglu/ /hoca/irfan-yolcubal/ 301
 /hoca/isil-polat-pekmezci-gulsum-tanyeli-sakine-yildiz-salman-yegan-kahya-sayar/ /hoca/isil-polat-pekmezci/ 301
+/hoca/ismail-duman-mahmut-ercan-acma-servet-ibrahim-timur/ /hoca/ismail-duman/ 301
 /hoca/ismail-hakki-helvacioglu-gokhan-tansel-tayyar/ /hoca/ismail-hakki-helvacioglu/ 301
 /hoca/ismail-hakki-helvacioglu-hakan-akyildiz-ozgur-ozguc/ /hoca/ismail-hakki-helvacioglu/ 301
 /hoca/ismail-kaplanvural-irem-elitez-nedim-gokhan-aydin/ /hoca/ismail-kaplanvural/ 301
@@ -943,6 +996,7 @@
 /hoca/kadir-sarioz-munir-cansin-ozden/ /hoca/kadir-sarioz/ 301
 /hoca/kadir-sarioz-serdar-aytekin-koroglu-deniz-bayraktar-bural/ /hoca/kadir-sarioz/ 301
 /hoca/kadriye-nur-kasapoglu-evren-demircan/ /hoca/kadriye-nur-kasapoglu/ 301
+/hoca/kadriye-nur-kasapoglu-gizem-catalkaya/ /hoca/kadriye-nur-kasapoglu/ 301
 /hoca/kamil-karacuha-cemanur-aydinalp-semih-dogu/ /hoca/kamil-karacuha/ 301
 /hoca/kamil-karacuha-tuba-yilmaz-abdolsaheb/ /hoca/kamil-karacuha/ 301
 /hoca/kasim-kocak-zerefsan-kaymaz/ /hoca/kasim-kocak/ 301
@@ -978,6 +1032,7 @@
 /hoca/levent-onal-ali-demir/ /hoca/levent-onal/ 301
 /hoca/levent-saylan-baris-caldag/ /hoca/levent-saylan/ 301
 /hoca/leyla-tanacan-fethiye-ecem-edis/ /hoca/leyla-tanacan/ 301
+/hoca/lutfiye-durak-ata-borte-kose-mutlu/ /hoca/lutfiye-durak-ata/ 301
 /hoca/macid-fikret-suner-huseyin-kocaturk/ /hoca/macid-fikret-suner/ 301
 /hoca/mahmut-adil-yukselen-gokhan-inalhan/ /hoca/mahmut-adil-yukselen/ 301
 /hoca/mahmut-altinbas-ayse-bilsen-baykal/ /hoca/mahmut-altinbas/ 301
@@ -988,6 +1043,7 @@
 /hoca/mahmut-ercan-acma-onuralp-yucel/ /hoca/mahmut-ercan-acma/ 301
 /hoca/mahmut-ercan-acma-servet-ibrahim-timur/ /hoca/mahmut-ercan-acma/ 301
 /hoca/mahmut-kabakci-cemal-balci/ /hoca/mahmut-kabakci/ 301
+/hoca/mahmut-kabakci-mahmut-alper-kilic/ /hoca/mahmut-kabakci/ 301
 /hoca/mahmut-kabakci-ulas-baysal/ /hoca/mahmut-kabakci/ 301
 /hoca/mahmut-oguz-selbesoglu-hasan-hakan-yavasoglu/ /hoca/mahmut-oguz-selbesoglu/ 301
 /hoca/mahmut-oguz-selbesoglu-mustafa-fahri-karabulut/ /hoca/mahmut-oguz-selbesoglu/ 301
@@ -1011,9 +1067,11 @@
 /hoca/mehmet-emin-pasaoglu-ayse-yuksekdag/ /hoca/mehmet-emin-pasaoglu/ 301
 /hoca/mehmet-ercek-cigdem-kaya-pazarbasi/ /hoca/mehmet-ercek/ 301
 /hoca/mehmet-ercek-deniz-tuncalp/ /hoca/mehmet-ercek/ 301
+/hoca/mehmet-erkok-suleyman-enes-hamaki/ /hoca/mehmet-erkok/ 301
 /hoca/mehmet-ferhat-yardim-ayse-ozge-kurkcuoglu-levitas/ /hoca/mehmet-ferhat-yardim/ 301
 /hoca/mehmet-hakki-omurtag-nihal-eratli/ /hoca/mehmet-hakki-omurtag/ 301
 /hoca/mehmet-hasim-acanal-mehmet-ali-sezen/ /hoca/mehmet-hasim-acanal/ 301
+/hoca/mehmet-ilicak-yasemin-ezber-huseyin-ozdemir/ /hoca/mehmet-ilicak/ 301
 /hoca/mehmet-isiler-adalet-dervisoglu/ /hoca/mehmet-isiler/ 301
 /hoca/mehmet-keskin-fatma-gulmez-yildirim/ /hoca/mehmet-keskin/ 301
 /hoca/mehmet-melih-kosucu-ali-fuat-aydin/ /hoca/mehmet-melih-kosucu/ 301
@@ -1023,6 +1081,8 @@
 /hoca/mehmet-murat-gul-vesile-gul-cephanecigil/ /hoca/mehmet-murat-gul/ 301
 /hoca/mehmet-murat-gul-zeynep-kuban-tokgoz/ /hoca/mehmet-murat-gul/ 301
 /hoca/mehmet-ozger-cihan-bayindir/ /hoca/mehmet-ozger/ 301
+/hoca/mehmet-ozgur-kayalica-denizhan-guven/ /hoca/mehmet-ozgur-kayalica/ 301
+/hoca/mehmet-sabri-celik-firat-karakas/ /hoca/mehmet-sabri-celik/ 301
 /hoca/mehmet-sabri-celik-gulay-bulut/ /hoca/mehmet-sabri-celik/ 301
 /hoca/mehmet-sadik-akca-huseyin-guven/ /hoca/mehmet-sadik-akca/ 301
 /hoca/mehmet-seref-sonmez-bihter-zeytuncu-billur-deniz-karahan-burak-ozkal-cevat-bora-/ /hoca/mehmet-seref-sonmez/ 301
@@ -1036,6 +1096,7 @@
 /hoca/mehmet-serkan-yatagan-seden-acun-ozgunler/ /hoca/mehmet-serkan-yatagan/ 301
 /hoca/mehmet-sezai-kirikoglu-demet-yildirim/ /hoca/mehmet-sezai-kirikoglu/ 301
 /hoca/mehmet-simsek-lale-akay-buse-sever-neva-ozgen-kosoglu-burak-malcok/ /hoca/mehmet-simsek/ 301
+/hoca/mehmet-suha-baytura-orhan-gonel/ /hoca/mehmet-suha-baytura/ 301
 /hoca/mehmet-suha-yazici-burak-barutcu/ /hoca/mehmet-suha-yazici/ 301
 /hoca/mehmet-tahir-sandikkaya-ali-cakmak/ /hoca/mehmet-tahir-sandikkaya/ 301
 /hoca/mehmet-tuncel-berna-kiraz/ /hoca/mehmet-tuncel/ 301
@@ -1058,6 +1119,7 @@
 /hoca/melike-gurel-elif-pehlivanoglu-mantas/ /hoca/melike-gurel/ 301
 /hoca/melike-gurel-elif-pehlivanoglu/ /hoca/melike-gurel/ 301
 /hoca/melike-gurel-serdar-dogruel/ /hoca/melike-gurel/ 301
+/hoca/meltem-agtas-mehmet-sadik-akca/ /hoca/meltem-agtas/ 301
 /hoca/meltem-erdem-kaya-fatma-aycim-turer-baskaya-melih-bozkurt-meliz-akyol/ /hoca/meltem-erdem-kaya/ 301
 /hoca/meltem-erdem-kaya-fatma-aycim-turer-baskaya-melih-bozkurt-muhammed-ali-ornek/ /hoca/meltem-erdem-kaya/ 301
 /hoca/meltem-erdem-kaya-fatma-aycim-turer-baskaya-muhammed-ali-ornek/ /hoca/meltem-erdem-kaya/ 301
@@ -1068,6 +1130,7 @@
 /hoca/meral-kilic-akyilmaz-beraat-ozcelik-esra-capanoglu-guven-gurbuz-gunes-nese-sahin/ /hoca/meral-kilic-akyilmaz/ 301
 /hoca/meral-kilic-akyilmaz-celale-kirkin-gozukirmizi-enes-dertli/ /hoca/meral-kilic-akyilmaz/ 301
 /hoca/meral-kilic-akyilmaz-celale-kirkin-gozukirmizi/ /hoca/meral-kilic-akyilmaz/ 301
+/hoca/meral-kilic-akyilmaz-celale-kirkin/ /hoca/meral-kilic-akyilmaz/ 301
 /hoca/meral-kilic-akyilmaz-derya-kahveci-karincaoglu-gulay-ozkan-gurbuz-gunes-nese-sah/ /hoca/meral-kilic-akyilmaz/ 301
 /hoca/meral-kilic-akyilmaz-dilara-erdil-esra-capanoglu-guven-gurbuz-gunes-nese-sahin-y/ /hoca/meral-kilic-akyilmaz/ 301
 /hoca/meral-kilic-akyilmaz-enes-dertli-fatma-ebru-firatligil/ /hoca/meral-kilic-akyilmaz/ 301
@@ -1097,6 +1160,7 @@
 /hoca/mohammadreza-nofar-erdem-demirkesen-filiz-sahin-gultekin-goller-mahmut-ercan-acm/ /hoca/mohammadreza-nofar/ 301
 /hoca/mohammadreza-nofar-mustafa-lutfi-ovecoglu/ /hoca/mohammadreza-nofar/ 301
 /hoca/muge-balkaya-ayda-safak-agar-ozbek/ /hoca/muge-balkaya/ 301
+/hoca/muhammed-fatih-gulen-ismail-kandemir/ /hoca/muhammed-fatih-gulen/ 301
 /hoca/muhammed-ziya-pakoz-numan-kilinc/ /hoca/muhammed-ziya-pakoz/ 301
 /hoca/muhammed-ziya-pakoz-yasin-bektas/ /hoca/muhammed-ziya-pakoz/ 301
 /hoca/muhammet-kursat-kazmanli-cem-ornek/ /hoca/muhammet-kursat-kazmanli/ 301
@@ -1117,7 +1181,10 @@
 /hoca/murat-imeryuz-turker-hudaverdi/ /hoca/murat-imeryuz/ 301
 /hoca/murat-kaya-deniz-sahin/ /hoca/murat-kaya/ 301
 /hoca/murat-kuruoglu-feyzi-haznedaroglu/ /hoca/murat-kuruoglu/ 301
+/hoca/murat-mert-tekeli-aydin-mert/ /hoca/murat-mert-tekeli/ 301
 /hoca/murat-olgac-kangal-abdullah-ekrem-yuce/ /hoca/murat-olgac-kangal/ 301
+/hoca/murat-olgac-kangal-zeynep-ucerler-camur/ /hoca/murat-olgac-kangal/ 301
+/hoca/murat-tosun-murat-vural/ /hoca/murat-tosun/ 301
 /hoca/murat-vural-adnan-dikicioglu/ /hoca/murat-vural/ 301
 /hoca/murat-vural-ali-goksenli/ /hoca/murat-vural/ 301
 /hoca/murat-vural-safak-yilmaz/ /hoca/murat-vural/ 301
@@ -1127,7 +1194,9 @@
 /hoca/mustafa-altun-hacer-atar-yildiz/ /hoca/mustafa-altun/ 301
 /hoca/mustafa-altun-tufan-coskun-karalar/ /hoca/mustafa-altun/ 301
 /hoca/mustafa-bakkal-safak-yilmaz/ /hoca/mustafa-bakkal/ 301
+/hoca/mustafa-bakkal-sukru-doruk-merdol/ /hoca/mustafa-bakkal/ 301
 /hoca/mustafa-bakkal-turgut-gulmez/ /hoca/mustafa-bakkal/ 301
+/hoca/mustafa-berker-yurtseven-rabia-cin/ /hoca/mustafa-berker-yurtseven/ 301
 /hoca/mustafa-emin-demirbag-caner-imren-hulya-kurt/ /hoca/mustafa-emin-demirbag/ 301
 /hoca/mustafa-erden-yildizdag-ahmet-ergin/ /hoca/mustafa-erden-yildizdag/ 301
 /hoca/mustafa-erden-yildizdag-bahadir-ugurlu/ /hoca/mustafa-erden-yildizdag/ 301
@@ -1135,6 +1204,7 @@
 /hoca/mustafa-ersel-kamasak-deniz-turgay-altilar-mehmet-tahir-sandikkaya/ /hoca/mustafa-ersel-kamasak/ 301
 /hoca/mustafa-ersel-kamasak-deniz-turgay-altilar/ /hoca/mustafa-ersel-kamasak/ 301
 /hoca/mustafa-evren-ersahin-hale-ozgun-ersahin-recep-kaya-onur-isik/ /hoca/mustafa-evren-ersahin/ 301
+/hoca/mustafa-evren-ersahin-hale-ozgun-ersahin/ /hoca/mustafa-evren-ersahin/ 301
 /hoca/mustafa-evren-ersahin-hale-ozgun-recep-kaya/ /hoca/mustafa-evren-ersahin/ 301
 /hoca/mustafa-evren-ersahin-hale-ozgun-turker-turken/ /hoca/mustafa-evren-ersahin/ 301
 /hoca/mustafa-evren-ersahin-hale-ozgun/ /hoca/mustafa-evren-ersahin/ 301
@@ -1150,6 +1220,7 @@
 /hoca/mustafa-kamil-urgen-muhammet-kursat-kazmanli/ /hoca/mustafa-kamil-urgen/ 301
 /hoca/mustafa-kelami-sesen-cevat-fahir-arisoy/ /hoca/mustafa-kelami-sesen/ 301
 /hoca/mustafa-kumral-emin-ciftci/ /hoca/mustafa-kumral/ 301
+/hoca/mustafa-kumral-naside-merve-sutcu/ /hoca/mustafa-kumral/ 301
 /hoca/mustafa-kumral-yuksel-orgun-tutay/ /hoca/mustafa-kumral/ 301
 /hoca/mustafa-lutfi-ovecoglu-burak-ozkal/ /hoca/mustafa-lutfi-ovecoglu/ 301
 /hoca/mustafa-lutfi-ovecoglu-duygu-agaogullari/ /hoca/mustafa-lutfi-ovecoglu/ 301
@@ -1165,6 +1236,7 @@
 /hoca/mustafa-yanalak-serdar-bilgi/ /hoca/mustafa-yanalak/ 301
 /hoca/mustafa-yanalak-tahsin-yomralioglu/ /hoca/mustafa-yanalak/ 301
 /hoca/mustak-erhan-yalcin-hasan-erdem-yantir/ /hoca/mustak-erhan-yalcin/ 301
+/hoca/naciye-esra-ates-genceli-fatma-gulen-iskender/ /hoca/naciye-esra-ates-genceli/ 301
 /hoca/naciye-esra-genceli-fatma-gulen-iskender/ /hoca/naciye-esra-genceli/ 301
 /hoca/nalan-antar-aybike-ozer/ /hoca/nalan-antar/ 301
 /hoca/nalan-erdol-aydin-ayse-arifoglu-aysen-akturk-sertbas-cemile-yerlikaya-elif-oztur/ /hoca/nalan-erdol-aydin/ 301
@@ -1177,10 +1249,12 @@
 /hoca/nazan-okur-osman-bulent-ozipek/ /hoca/nazan-okur/ 301
 /hoca/nazik-artan-huseyin-erdem-gorgun/ /hoca/nazik-artan/ 301
 /hoca/nazli-olgun-kiyak-omer-yetemen/ /hoca/nazli-olgun-kiyak/ 301
+/hoca/nebiye-musaoglu-aylin-tuzcu-kokal/ /hoca/nebiye-musaoglu/ 301
 /hoca/nebiye-musaoglu-esra-erten/ /hoca/nebiye-musaoglu/ 301
 /hoca/nebiye-musaoglu-mustafa-yanalak/ /hoca/nebiye-musaoglu/ 301
 /hoca/nebiye-musaoglu-sinasi-kaya/ /hoca/nebiye-musaoglu/ 301
 /hoca/necdet-torunbalci-haluk-sesigur/ /hoca/necdet-torunbalci/ 301
+/hoca/necip-unlu-alper-yesilcubuk/ /hoca/necip-unlu/ 301
 /hoca/nedime-lerzan-ozkale-nihan-yildirim/ /hoca/nedime-lerzan-ozkale/ 301
 /hoca/nermin-orakdogen-oguz-okay/ /hoca/nermin-orakdogen/ 301
 /hoca/nese-sahin-yesilcubuk-derya-kahveci-karincaoglu-esra-capanoglu-guven/ /hoca/nese-sahin-yesilcubuk/ 301
@@ -1205,11 +1279,13 @@
 /hoca/nevin-cigdem-gursoy-pelin-altay/ /hoca/nevin-cigdem-gursoy/ 301
 /hoca/nevin-cigdem-gursoy-sukriye-yuksel-filiz/ /hoca/nevin-cigdem-gursoy/ 301
 /hoca/nevin-gul-karaguler-fatma-nese-kok/ /hoca/nevin-gul-karaguler/ 301
+/hoca/nevin-gul-karaguler-hande-mumcu/ /hoca/nevin-gul-karaguler/ 301
 /hoca/nevin-oztekin-birsen-ozturk-gulcemal-yildiz/ /hoca/nevin-oztekin/ 301
 /hoca/nevin-oztekin-ferah-calisir-sevgi-guney/ /hoca/nevin-oztekin/ 301
 /hoca/nevin-yagci-hale-ozgun-ismail-koyuncu-izzet-ozturk/ /hoca/nevin-yagci/ 301
 /hoca/nihal-comert-eyup-uzunkaya/ /hoca/nihal-comert/ 301
 /hoca/nihal-eratli-akif-kutlu/ /hoca/nihal-eratli/ 301
+/hoca/nihan-topaloglu-elif-hilal-tasel/ /hoca/nihan-topaloglu/ 301
 /hoca/nihan-topaloglu-elif-tasel/ /hoca/nihan-topaloglu/ 301
 /hoca/nihan-yildirim-deniz-tuncalp/ /hoca/nihan-yildirim/ 301
 /hoca/nihan-yildirim-zeynep-erden-bayazit/ /hoca/nihan-yildirim/ 301
@@ -1222,6 +1298,9 @@
 /hoca/nilgun-kizilcan-yesim-gursel/ /hoca/nilgun-kizilcan/ 301
 /hoca/nilgun-okay-gokhan-sans/ /hoca/nilgun-okay/ 301
 /hoca/nilgun-okay-gulsen-ucarkus/ /hoca/nilgun-okay/ 301
+/hoca/nilgun-okay-ummuhan-sadet-sancar/ /hoca/nilgun-okay/ 301
+/hoca/nilgun-yavuz-aysegul-mericboyu/ /hoca/nilgun-yavuz/ 301
+/hoca/nimet-uray-nihan-yildirim/ /hoca/nimet-uray/ 301
 /hoca/nizamettin-bayyurt-alp-ustundag-cafer-erhan-bozdag-cemil-ceylan-cengiz-kahraman-/ /hoca/nizamettin-bayyurt/ 301
 /hoca/nizamettin-bayyurt-emine-yaylali/ /hoca/nizamettin-bayyurt/ 301
 /hoca/nizamettin-bayyurt-emre-cevikcan-ufuk-cebeci/ /hoca/nizamettin-bayyurt/ 301
@@ -1240,16 +1319,21 @@
 /hoca/oguz-cem-celik-halet-almila-buyuktaskin/ /hoca/oguz-cem-celik/ 301
 /hoca/oguz-cem-celik-necdet-torunbalci/ /hoca/oguz-cem-celik/ 301
 /hoca/oguz-haslakoglu-mehmet-guler/ /hoca/oguz-haslakoglu/ 301
+/hoca/oguz-muftuoglu-aysegul-ozer/ /hoca/oguz-muftuoglu/ 301
+/hoca/oguz-orkun-doma-asena-kumsal-sen-bayram/ /hoca/oguz-orkun-doma/ 301
 /hoca/oguz-salim-sogut-ahmet-ergun-palaz/ /hoca/oguz-salim-sogut/ 301
 /hoca/oguz-salim-sogut-halil-saracoglu/ /hoca/oguz-salim-sogut/ 301
 /hoca/oguz-tengilimoglu-serhat-boynukalin-sureyya-ergun-bozdag/ /hoca/oguz-tengilimoglu/ 301
 /hoca/oguzhan-balci-gizem-alever-sancaktar/ /hoca/oguzhan-balci/ 301
 /hoca/oguzhan-balci-tayfun-demirbas/ /hoca/oguzhan-balci/ 301
+/hoca/oguzhan-gurel-emre-duzenli/ /hoca/oguzhan-gurel/ 301
 /hoca/okan-sirkecioglu-hacer-aysen-onen/ /hoca/okan-sirkecioglu/ 301
+/hoca/okan-tuysuz-ufuk-tari/ /hoca/okan-tuysuz/ 301
 /hoca/oktay-tas-cumhur-enis-ekinci/ /hoca/oktay-tas/ 301
 /hoca/oktay-tas-huseyin-mert/ /hoca/oktay-tas/ 301
 /hoca/oktay-tas-kaya-tokmakcioglu/ /hoca/oktay-tas/ 301
 /hoca/oktay-tas-osman-taylan/ /hoca/oktay-tas/ 301
+/hoca/olcay-tunay-burcak-kaynak-tezel/ /hoca/olcay-tunay/ 301
 /hoca/olcay-tunay-ilke-pala-ozkok/ /hoca/olcay-tunay/ 301
 /hoca/olcay-tunay-nuray-isik-kabdasli/ /hoca/olcay-tunay/ 301
 /hoca/omer-berk-berkalp-burcak-karaguzel-kayaoglu/ /hoca/omer-berk-berkalp/ 301
@@ -1281,6 +1365,7 @@
 /hoca/onur-alpturk-muhammet-ubeydullah-kahveci/ /hoca/onur-alpturk/ 301
 /hoca/onur-isik-hazal-gulhan-eksin/ /hoca/onur-isik/ 301
 /hoca/onur-isik-mehmet-sadik-akca/ /hoca/onur-isik/ 301
+/hoca/onur-tuncer-mehmet-kahraman/ /hoca/onur-tuncer/ 301
 /hoca/onur-yilmaz-ozcan-derya-yuksel-imer/ /hoca/onur-yilmaz-ozcan/ 301
 /hoca/onur-yilmaz-ozcan-hazal-gulhan-eksin/ /hoca/onur-yilmaz-ozcan/ 301
 /hoca/onur-yilmaz-ozcan-mehmet-sadik-akca/ /hoca/onur-yilmaz-ozcan/ 301
@@ -1329,7 +1414,9 @@
 /hoca/ozge-cordan-ahmet-gun/ /hoca/ozge-cordan/ 301
 /hoca/ozge-cordan-emine-gorgul-demet-arslan-dincay-ethem-gurer/ /hoca/ozge-cordan/ 301
 /hoca/ozge-cordan-ethem-gurer/ /hoca/ozge-cordan/ 301
+/hoca/ozge-cordan-pelin-kurtul-vacek/ /hoca/ozge-cordan/ 301
 /hoca/ozgul-keles-billur-deniz-karahan/ /hoca/ozgul-keles/ 301
+/hoca/ozgul-keles-can-akyil/ /hoca/ozgul-keles/ 301
 /hoca/ozgul-keles-cevat-bora-derin-cevat-fahir-arisoy-cuneyt-arslan-guldem-kartal-sire/ /hoca/ozgul-keles/ 301
 /hoca/ozgul-keles-cevat-bora-derin-cevat-fahir-arisoy-cuneyt-arslan-huseyin-kizil-huse/ /hoca/ozgul-keles/ 301
 /hoca/ozgur-atalay-alper-gurarslan/ /hoca/ozgur-atalay/ 301
@@ -1366,7 +1453,9 @@
 /hoca/recep-fahri-esenli-halis-manav/ /hoca/recep-fahri-esenli/ 301
 /hoca/recep-fahri-esenli-senel-ozdamar/ /hoca/recep-fahri-esenli/ 301
 /hoca/recep-gul-eray-altinbuken-zeynep-gonca-incedere/ /hoca/recep-gul/ 301
+/hoca/recep-gul-gizem-alever-sancaktar/ /hoca/recep-gul/ 301
 /hoca/recep-gul-tayfun-demirbas/ /hoca/recep-gul/ 301
+/hoca/recep-kaya-busra-cicekalan/ /hoca/recep-kaya/ 301
 /hoca/recep-kaya-hazal-gulhan-eksin/ /hoca/recep-kaya/ 301
 /hoca/reha-artan-abdullah-gedikli/ /hoca/reha-artan/ 301
 /hoca/reha-metin-alkan-busra-kartal/ /hoca/reha-metin-alkan/ 301
@@ -1384,6 +1473,7 @@
 /hoca/sabahat-topuz-kiremitci-caglar-akkaya/ /hoca/sabahat-topuz-kiremitci/ 301
 /hoca/sadriye-oskay-aysegul-mericboyu-huseyin-kizil-melek-mumine-erol-taygun/ /hoca/sadriye-oskay/ 301
 /hoca/sadriye-oskay-aysegul-mericboyu-reha-yavuz/ /hoca/sadriye-oskay/ 301
+/hoca/sadriye-oskay-aysegul-mericboyu/ /hoca/sadriye-oskay/ 301
 /hoca/sadullah-levent-kuzu-burcak-kaynak-tezel-goksin-ozyildiz/ /hoca/sadullah-levent-kuzu/ 301
 /hoca/sadullah-levent-kuzu-burcak-kaynak-tezel/ /hoca/sadullah-levent-kuzu/ 301
 /hoca/safak-altunkaynak-alp-unal/ /hoca/safak-altunkaynak/ 301
@@ -1429,6 +1519,7 @@
 /hoca/sema-fatma-oktug-gokhan-secinti/ /hoca/sema-fatma-oktug/ 301
 /hoca/sencer-ecer-tolga-yuret/ /hoca/sencer-ecer/ 301
 /hoca/senel-ozdamar-bala-ekinci-sans/ /hoca/senel-ozdamar/ 301
+/hoca/senel-ozdamar-gokhan-sans/ /hoca/senel-ozdamar/ 301
 /hoca/senel-ozdamar-huseyin-kocaturk/ /hoca/senel-ozdamar/ 301
 /hoca/senem-senturk-lule-sevan-karabetoglu/ /hoca/senem-senturk-lule/ 301
 /hoca/seniye-banu-garip-demet-arslan-dincay-shahryar-habibi/ /hoca/seniye-banu-garip/ 301
@@ -1458,6 +1549,7 @@
 /hoca/serife-birgul-ersolmaz-husnu-atakul/ /hoca/serife-birgul-ersolmaz/ 301
 /hoca/serife-genc-ileri-aysegul-kayaoglu-yilmaz/ /hoca/serife-genc-ileri/ 301
 /hoca/serkan-mesut-halili-cem-onerturk-cenk-ozturk-zeynep-barut/ /hoca/serkan-mesut-halili/ 301
+/hoca/serkan-osman-angi-emin-ciftci/ /hoca/serkan-osman-angi/ 301
 /hoca/serpil-kurt-habiboglu-adem-candas/ /hoca/serpil-kurt-habiboglu/ 301
 /hoca/serpil-murtezaoglu-eyup-uzunkaya/ /hoca/serpil-murtezaoglu/ 301
 /hoca/sertac-cadirci-hasan-gunes/ /hoca/sertac-cadirci/ 301
@@ -1466,6 +1558,7 @@
 /hoca/servet-ibrahim-timur-mahmut-ercan-acma/ /hoca/servet-ibrahim-timur/ 301
 /hoca/seval-eroglu-alin-aylin-yagcioglu/ /hoca/seval-eroglu/ 301
 /hoca/seval-eroglu-alper-goceri/ /hoca/seval-eroglu/ 301
+/hoca/seval-eroglu-fidan-kurt-kasapbasi/ /hoca/seval-eroglu/ 301
 /hoca/seval-eroglu-gularam-baltayeva/ /hoca/seval-eroglu/ 301
 /hoca/seval-eroglu-kemal-akdogan/ /hoca/seval-eroglu/ 301
 /hoca/seval-eroglu-lacin-modiri/ /hoca/seval-eroglu/ 301
@@ -1478,6 +1571,7 @@
 /hoca/seval-sozen-serdar-dogruel/ /hoca/seval-sozen/ 301
 /hoca/sevan-karabetoglu-burak-tekin/ /hoca/sevan-karabetoglu/ 301
 /hoca/sevan-karabetoglu-emrah-coraman/ /hoca/sevan-karabetoglu/ 301
+/hoca/sevgi-guney-seden-beyhan/ /hoca/sevgi-guney/ 301
 /hoca/sevil-deniz-yakan-dundar-ayse-nazan-akman-pek/ /hoca/sevil-deniz-yakan-dundar/ 301
 /hoca/sevil-deniz-yakan-dundar-deniz-bayraktar-bural/ /hoca/sevil-deniz-yakan-dundar/ 301
 /hoca/sevil-deniz-yakan-dundar-deniz-bayraktar/ /hoca/sevil-deniz-yakan-dundar/ 301
@@ -1489,7 +1583,9 @@
 /hoca/seyda-serdar-asan-gulsah-hancerliogullari/ /hoca/seyda-serdar-asan/ 301
 /hoca/seyda-serdar-asan-murat-durucu/ /hoca/seyda-serdar-asan/ 301
 /hoca/seyda-serdar-asan-ramazan-evren/ /hoca/seyda-serdar-asan/ 301
+/hoca/seyma-akarsu-sinem-saritas-erdogan/ /hoca/seyma-akarsu/ 301
 /hoca/seyma-ersoy-cak-eylul-dogan/ /hoca/seyma-ersoy-cak/ 301
+/hoca/sezen-tarakci-mehmet-ronael/ /hoca/sezen-tarakci/ 301
 /hoca/sezgin-altay-demirbag-mevlut-tekkoyun/ /hoca/sezgin-altay-demirbag/ 301
 /hoca/sezi-cevik-onar-cigdem-kadaifci/ /hoca/sezi-cevik-onar/ 301
 /hoca/shourjo-chakravorty-cicek-ersoy-kekevi/ /hoca/shourjo-chakravorty/ 301
@@ -1517,6 +1613,7 @@
 /hoca/sinem-ozdemir-lacin-modiri/ /hoca/sinem-ozdemir/ 301
 /hoca/sinem-ozdemir-osman-serkan-bodur/ /hoca/sinem-ozdemir/ 301
 /hoca/sinem-ozdemir-tugcem-kar/ /hoca/sinem-ozdemir/ 301
+/hoca/sitki-kandemir-basmacioglu-sedef-durmak/ /hoca/sitki-kandemir-basmacioglu/ 301
 /hoca/sonya-turkman-akin-tolga-ilter-bahadir-numan/ /hoca/sonya-turkman/ 301
 /hoca/suat-guney-fidan-kurt-kasapbasi/ /hoca/suat-guney/ 301
 /hoca/suat-guney-gularam-baltayeva/ /hoca/suat-guney/ 301
@@ -1527,6 +1624,7 @@
 /hoca/sukran-sibel-mentes-deniz-demirhan/ /hoca/sukran-sibel-mentes/ 301
 /hoca/sukran-sibel-mentes-hatice-sema-topcu/ /hoca/sukran-sibel-mentes/ 301
 /hoca/sukriye-yuksel-filiz-belgin-gorgun/ /hoca/sukriye-yuksel-filiz/ 301
+/hoca/sukriye-yuksel-filiz-dilek-alpan/ /hoca/sukriye-yuksel-filiz/ 301
 /hoca/sukriye-yuksel-filiz-nihan-topaloglu/ /hoca/sukriye-yuksel-filiz/ 301
 /hoca/sukru-alper-yurttas-didem-ozgur/ /hoca/sukru-alper-yurttas/ 301
 /hoca/sukruye-iyinam-taha-yuksel/ /hoca/sukruye-iyinam/ 301
@@ -1534,12 +1632,15 @@
 /hoca/sule-gurboga-demet-biltekin/ /hoca/sule-gurboga/ 301
 /hoca/sule-selcuk-ali-toptas/ /hoca/sule-selcuk/ 301
 /hoca/suleyman-akman-birsen-ozturk-fatma-bedia-berker-figen-kadirgan-ipek-becerik/ /hoca/suleyman-akman/ 301
+/hoca/suleyman-akman-birsen-ozturk-figen-kadirgan/ /hoca/suleyman-akman/ 301
+/hoca/suleyman-akman-birsen-ozturk/ /hoca/suleyman-akman/ 301
 /hoca/suleyman-akman-mustafa-ozcan/ /hoca/suleyman-akman/ 301
 /hoca/suleyman-ovez-ilke-pala-ozkok/ /hoca/suleyman-ovez/ 301
 /hoca/tahir-cetin-akinci-ahmet-tekin/ /hoca/tahir-cetin-akinci/ 301
 /hoca/tahir-cetin-akinci-ali-sinan-cabuk-deniz-turkpence/ /hoca/tahir-cetin-akinci/ 301
 /hoca/tahir-cetin-akinci-deniz-turkpence-salih-baris-ozturk/ /hoca/tahir-cetin-akinci/ 301
 /hoca/tahir-soyuguzel-baris-baspinar-saliha-banu-yilmaz/ /hoca/tahir-soyuguzel/ 301
+/hoca/tan-temel-meliha-sozeri-ozatalay/ /hoca/tan-temel/ 301
 /hoca/tan-temel-meliha-sozeri/ /hoca/tan-temel/ 301
 /hoca/tanzer-satir-yunus-emre-senol/ /hoca/tanzer-satir/ 301
 /hoca/tarkan-erdik-sehriban-sen/ /hoca/tarkan-erdik/ 301
@@ -1547,6 +1648,7 @@
 /hoca/tayfun-demirbas-gizem-alever-sancaktar/ /hoca/tayfun-demirbas/ 301
 /hoca/tayfun-uyanik-veysi-bashan/ /hoca/tayfun-uyanik/ 301
 /hoca/taylan-maras-ilayda-nur-oksal-ebru-kahraman-merve-yuce/ /hoca/taylan-maras/ 301
+/hoca/taylan-ozdemir-yusuf-can-murtezaoglu/ /hoca/taylan-ozdemir/ 301
 /hoca/tolga-kaya-dilay-celebi/ /hoca/tolga-kaya/ 301
 /hoca/tolga-kaya-raziye-selim/ /hoca/tolga-kaya/ 301
 /hoca/tolga-ovatman-hayri-turgut-uyar/ /hoca/tolga-ovatman/ 301
@@ -1554,12 +1656,14 @@
 /hoca/tolgahan-cogulu-cihangir-terzi-ahmet-serhat-turunc-cihan-yurtcu-mehmet-simsek/ /hoca/tolgahan-cogulu/ 301
 /hoca/tuba-cakir-canak-cuneyt-huseyin-unlu/ /hoca/tuba-cakir-canak/ 301
 /hoca/tuba-gurbuz-buyukkayikci-atila-sezen/ /hoca/tuba-gurbuz-buyukkayikci/ 301
+/hoca/tuba-kececi-orhan-gonel/ /hoca/tuba-kececi/ 301
 /hoca/tugba-olmez-hanci-derya-yuksel-imer/ /hoca/tugba-olmez-hanci/ 301
 /hoca/tugba-olmez-hanci-ebru-dulekgurgen/ /hoca/tugba-olmez-hanci/ 301
 /hoca/tugba-olmez-hanci-serdar-dogruel/ /hoca/tugba-olmez-hanci/ 301
 /hoca/tugce-bilen-gokhan-secinti/ /hoca/tugce-bilen/ 301
 /hoca/tulay-aksu-ozkul-beyza-taskin-akgul/ /hoca/tulay-aksu-ozkul/ 301
 /hoca/tulay-aksu-ozkul-tuba-gurbuz-buyukkayikci/ /hoca/tulay-aksu-ozkul/ 301
+/hoca/tulin-sendur-ozcan-arslan/ /hoca/tulin-sendur/ 301
 /hoca/tuncay-ozcan-aziz-kemal-konyalioglu/ /hoca/tuncay-ozcan/ 301
 /hoca/turan-erden-himmet-karaman/ /hoca/turan-erden/ 301
 /hoca/turgut-gulmez-murat-vural/ /hoca/turgut-gulmez/ 301
@@ -1569,6 +1673,7 @@
 /hoca/turgut-ozturk-tulay-aksu-ozkul/ /hoca/turgut-ozturk/ 301
 /hoca/turker-turken-ayse-bilsen-baykal/ /hoca/turker-turken/ 301
 /hoca/turku-sahin-elif-tasel/ /hoca/turku-sahin/ 301
+/hoca/turku-sahin-ezgi-cilgin-cinar/ /hoca/turku-sahin/ 301
 /hoca/tuzin-baycan-emine-ferhan-gezici-korten-engin-eyup-eyuboglu-turgay-kerem-koramaz/ /hoca/tuzin-baycan/ 301
 /hoca/ufuk-saim-gunay-gonul-yapar/ /hoca/ufuk-saim-gunay/ 301
 /hoca/ufuk-saim-gunay-tuba-cakir-canak/ /hoca/ufuk-saim-gunay/ 301
@@ -1583,6 +1688,7 @@
 /hoca/umit-avsar-ismail-kaplanvural/ /hoca/umit-avsar/ 301
 /hoca/umit-karadogan-aysegul-bayin-sariahmetoglu/ /hoca/umit-karadogan/ 301
 /hoca/ummuhan-telem-gok-sadikoglu-ipek-yalcin-enis/ /hoca/ummuhan-telem-gok-sadikoglu/ 301
+/hoca/umut-almac-bilge-ar/ /hoca/umut-almac/ 301
 /hoca/umut-almac-isil-polat-pekmezci/ /hoca/umut-almac/ 301
 /hoca/umut-almac-mustafa-tahir-ocak/ /hoca/umut-almac/ 301
 /hoca/umut-asan-basar-oztaysi/ /hoca/umut-asan/ 301
@@ -1590,6 +1696,7 @@
 /hoca/umut-kivanc-sahin-serna-ucar-hatipoglu/ /hoca/umut-kivanc-sahin/ 301
 /hoca/umut-kuruuzum-mete-han-yagmur/ /hoca/umut-kuruuzum/ 301
 /hoca/umut-kuruuzum-sinan-ertemel/ /hoca/umut-kuruuzum/ 301
+/hoca/vahid-vatanpour-sarghein-mehmet-emin-pasaoglu/ /hoca/vahid-vatanpour-sarghein/ 301
 /hoca/vanessa-zogopoulou-inanc-bakkalbasi/ /hoca/vanessa-zogopoulou/ 301
 /hoca/vedat-temiz-zeynep-parlar-ibrahim-mehmet-palabiyik/ /hoca/vedat-temiz/ 301
 /hoca/vedat-temiz-zeynep-parlar/ /hoca/vedat-temiz/ 301
@@ -1603,6 +1710,7 @@
 /hoca/veysel-sadan-ozgur-kirca-mahmut-ekrem-karpuzcu/ /hoca/veysel-sadan-ozgur-kirca/ 301
 /hoca/veysel-sadan-ozgur-kirca-necati-erdem-unal/ /hoca/veysel-sadan-ozgur-kirca/ 301
 /hoca/veysel-sadan-ozgur-kirca-tugba-olmez-hanci/ /hoca/veysel-sadan-ozgur-kirca/ 301
+/hoca/veysi-bashan-murat-akpinar/ /hoca/veysi-bashan/ 301
 /hoca/volkan-ozbey-aylin-tuzcu-kokal/ /hoca/volkan-ozbey/ 301
 /hoca/yakup-erhan-boke-mustafa-ozdemir/ /hoca/yakup-erhan-boke/ 301
 /hoca/yalcin-unsan-burcu-unal-ceren-bilgin-guney/ /hoca/yalcin-unsan/ 301
@@ -1621,6 +1729,7 @@
 /hoca/yegan-kahya-sayar-zeynep-eres-ozdogan/ /hoca/yegan-kahya-sayar/ 301
 /hoca/yelda-ozgen-ozturk-baris-kerem-bahar-cem-onerturk/ /hoca/yelda-ozgen-ozturk/ 301
 /hoca/yelda-ozgen-ozturk-sarper-eroglu-burak-malcok-lale-akay/ /hoca/yelda-ozgen-ozturk/ 301
+/hoca/yesim-beceren-fatma-banu-nergis/ /hoca/yesim-beceren/ 301
 /hoca/yesim-gursel-ayse-ozdemir-ibrahim-volkan-kumbaraci/ /hoca/yesim-gursel/ 301
 /hoca/yesim-gursel-ayse-ozdemir-nesrin-koken-ibrahim-volkan-kumbaraci/ /hoca/yesim-gursel/ 301
 /hoca/yesim-gursel-nilgun-kizilcan/ /hoca/yesim-gursel/ 301
@@ -1628,6 +1737,7 @@
 /hoca/yilmaz-akkaya-esra-ece-bayat/ /hoca/yilmaz-akkaya/ 301
 /hoca/yilmaz-akkaya-oguz-gunes/ /hoca/yilmaz-akkaya/ 301
 /hoca/yilmaz-mahmutoglu-omer-undul/ /hoca/yilmaz-mahmutoglu/ 301
+/hoca/yilmaz-mahmutoglu-remzi-karaguzel/ /hoca/yilmaz-mahmutoglu/ 301
 /hoca/yonca-alkan-goksu-ercin-cagan-duran/ /hoca/yonca-alkan-goksu/ 301
 /hoca/yuksel-demir-husnu-murat-gunaydin-seden-acun-ozgunler/ /hoca/yuksel-demir/ 301
 /hoca/yuksel-orgun-tutay-ali-haydar-gultekin/ /hoca/yuksel-orgun-tutay/ 301
@@ -1637,6 +1747,7 @@
 /hoca/yurdanur-unal-baris-onol/ /hoca/yurdanur-unal/ 301
 /hoca/yurdanur-unal-cemre-sonuc/ /hoca/yurdanur-unal/ 301
 /hoca/yuriy-mezokh-funda-bozkurt/ /hoca/yuriy-mezokh/ 301
+/hoca/yusuf-aydin-ezgi-akyuz/ /hoca/yusuf-aydin/ 301
 /hoca/yusuf-gunes-derya-yuksel-imer/ /hoca/yusuf-gunes/ 301
 /hoca/yusuf-ilker-topcu-ozgur-kabak/ /hoca/yusuf-ilker-topcu/ 301
 /hoca/yusuf-nejat-kocar-birgul-arslanoglu/ /hoca/yusuf-nejat-kocar/ 301
@@ -1666,12 +1777,14 @@
 /hoca/zeynep-kuban-tokgoz-vesile-gul-cephanecigil/ /hoca/zeynep-kuban-tokgoz/ 301
 /hoca/zeynep-parlar-ibrahim-mehmet-palabiyik/ /hoca/zeynep-parlar/ 301
 /hoca/zeynep-parlar-vedat-temiz/ /hoca/zeynep-parlar/ 301
+/hoca/zeynep-petek-cakar-alican-topaloglu/ /hoca/zeynep-petek-cakar/ 301
 /hoca/zeynep-petek-cakar-ayten-karatas/ /hoca/zeynep-petek-cakar/ 301
 /hoca/zeynep-petek-cakar-fatma-nese-kok/ /hoca/zeynep-petek-cakar/ 301
 /hoca/ziyadin-cakir-erkan-bozkurtoglu/ /hoca/ziyadin-cakir/ 301
 /hoca/ziyadin-cakir-kayhan-develi/ /hoca/ziyadin-cakir/ 301
 /hoca/zubeyde-ozturk-nurbanu-caliskan-ozuer/ /hoca/zubeyde-ozturk/ 301
 /hoca/zumray-olmez-tamer-olmez/ /hoca/zumray-olmez/ 301
+# Verisi kalmayan eski ders sayfaları -> branş sayfası.
 /ders/abm-609e/ /brans/ABM/ 301
 /ders/abm-696/ /brans/ABM/ 301
 /ders/bbl-000/ /brans/BBL/ 301
@@ -1683,6 +1796,8 @@
 /ders/btt-503e/ /brans/BTT/ 301
 /ders/bus-314e/ /brans/BUS/ 301
 /ders/bva-507e/ /brans/BVA/ 301
+/ders/bvt-696/ /brans/BVT/ 301
+/ders/bym-696e/ /brans/BYM/ 301
 /ders/cab-767/ /brans/CAB/ 301
 /ders/cbm-696/ /brans/CBM/ 301
 /ders/chz-616/ /brans/CHZ/ 301
@@ -1785,22 +1900,27 @@
 /ders/mbm-696e/ /brans/MBM/ 301
 /ders/mdp-696e/ /brans/MDP/ 301
 /ders/met-696/ /brans/MET/ 301
+/ders/mhn-506/ /brans/MHN/ 301
 /ders/mhn-510e/ /brans/MHN/ 301
 /ders/mhn-518/ /brans/MHN/ 301
 /ders/mhn-520e/ /brans/MHN/ 301
 /ders/mhn-522e/ /brans/MHN/ 301
 /ders/mhn-599/ /brans/MHN/ 301
 /ders/mim-109/ /brans/MIM/ 301
+/ders/mim-4031e/ /brans/MIM/ 301
 /ders/mit-696/ /brans/MIT/ 301
 /ders/mjt-696/ /brans/MJT/ 301
 /ders/mkm-696/ /brans/MKM/ 301
 /ders/mmi-567/ /brans/MMI/ 301
 /ders/mmi-581e/ /brans/MMI/ 301
+/ders/mto-577/ /brans/MTO/ 301
 /ders/mto-696/ /brans/MTO/ 301
 /ders/mts-696/ /brans/MTS/ 301
 /ders/mtt-201e/ /brans/MTT/ 301
 /ders/myl-ylt/ /brans/MYL/ 301
+/ders/nse-696e/ /brans/NSE/ 301
 /ders/nuk-696/ /brans/NUK/ 301
+/ders/nuk-696e/ /brans/NUK/ 301
 /ders/pem-696e/ /brans/PEM/ 301
 /ders/pet-696e/ /brans/PET/ 301
 /ders/pst-696e/ /brans/PST/ 301
@@ -1844,6 +1964,20 @@
 /ders/yap-696e/ /brans/YAP/ 301
 /ders/ysb-696e/ /brans/YSB/ 301
 /ders/zmg-696e/ /brans/ZMG/ 301
+# Sayfası kalmayan hocalar -> hoca dizini.
+/hoca/cihad-celik/ /hoca/ 301
+/hoca/deniz-demirler/ /hoca/ 301
+/hoca/erol-uzal/ /hoca/ 301
+/hoca/ibrahim-goksel-hizli/ /hoca/ 301
+/hoca/mine-caglar/ /hoca/ 301
+/hoca/nalan-guder/ /hoca/ 301
+/hoca/nilgun-yavuz-zehir-fatih-ozturk-recep-isci/ /hoca/ 301
+/hoca/recep-isci/ /hoca/ 301
+/hoca/seref-naci-engin/ /hoca/ 301
+/hoca/sevilay-haciyakupoglu/ /hoca/ 301
+/hoca/sukran-cavdar/ /hoca/ 301
+/hoca/tuncay-yunus-erkec/ /hoca/ 301
+/hoca/zana-eren/ /hoca/ 301
 # Kaldırılan İngilizce ders/hoca sayfaları -> Türkçe karşılığı.
 /en/ders/* /ders/:splat 301
 /en/hoca/* /hoca/:splat 301

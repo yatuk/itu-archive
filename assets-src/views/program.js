@@ -165,6 +165,15 @@ export function initProgram() {
   $('#p-ics').addEventListener('click', exportScheduleICS);
   $('#p-share').addEventListener('click', share);
   $('#p-obs').addEventListener('click', (e) => { e.preventDefault(); showOBS(); });
+  // #p-obs bir bookmarklet bağlantısıdır (sürüklenince javascript: href gerekir),
+  // ama seçim yokken href taşımaz (taranabilir olmayan bağlantı olmasın) ve
+  // role="button" ile sunulur: klavyeden Enter/Boşluk da çalışmalı.
+  $('#p-obs').addEventListener('keydown', (e) => {
+    if (e.key === ' ' || (e.key === 'Enter' && !e.currentTarget.hasAttribute('href'))) {
+      e.preventDefault();
+      showOBS();
+    }
+  });
   $('#p-favs').addEventListener('click', addFavorites);
   $('#p-altfind').addEventListener('click', openAltFind);
   $('#p-full').addEventListener('change', () => { saveProgramView(); render(); });
@@ -1199,7 +1208,7 @@ function updateBookmarklet(items) {
   if (!a) return;
   const crns = items.map((i) => i.row[0]);
   if (!crns.length) {
-    a.setAttribute('href', 'javascript:void(0)');
+    a.removeAttribute('href');
     a.classList.add('is-disabled');
     return;
   }

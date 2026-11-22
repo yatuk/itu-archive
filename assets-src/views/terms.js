@@ -99,8 +99,8 @@ function cellHTML(c) {
     return `<div class="term-cell${t.live ? ' live' : ''}" role="cell">${head}` +
       `<span class="term-n"><span class="num">${fmtNum(t.sections)}</span> <small>${esc(I18N.t('prgSube'))}</small>${badge}</span>` +
       `<span class="term-m">${esc(src)} · ${esc(fmtDay(t.scrapedAt))}</span>${warn}` +
-      `<span class="term-lk"><a href="data/terms/${esc(t.slug)}/all.csv" download aria-label="${esc(`${label} CSV`)}">CSV</a>` +
-      `<a href="data/terms/${esc(t.slug)}/meta.json" download aria-label="${esc(`${label} meta.json`)}">meta.json</a></span></div>`;
+      `<span class="term-lk"><a href="data/terms/${esc(t.slug)}/all.csv" rel="nofollow" download aria-label="${esc(`${label} CSV`)}">CSV</a>` +
+      `<a href="data/terms/${esc(t.slug)}/meta.json" rel="nofollow" download aria-label="${esc(`${label} meta.json`)}">meta.json</a></span></div>`;
   }
   if (c.kind === 'missing') {
     const whyKey = KNOWN_GAPS[c.slug];

@@ -17,6 +17,7 @@ import { onShow as programShow } from './views/program.js?v=dde1e9339338';
 import { onShow as dersplanimShow } from './views/dersplanim.js?v=dde1e9339338';
 import { PrereqGraph } from './prereq.js?v=dde1e9339338';
 import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=dde1e9339338';
+import { syncStaticCanonical } from './core/canonical.js?v=dde1e9339338';
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -28,6 +29,7 @@ let showView = null;
 const pendingView = location.hash.slice(1);
 
 async function boot() {
+  syncStaticCanonical(); // ?code=/?branch= derin bağlantısında canonical statik sayfaya
   I18N.translateDOM();
   initTheme();
   initLangButton();

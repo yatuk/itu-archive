@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=8dff6318befb">
+<link rel="stylesheet" href="assets/style.css?v=87abd36b472d">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -541,7 +541,7 @@
       <label class="check"><input type="checkbox" id="p-fullday"> <span data-i18n="progFullDayCheckbox">Tüm gün</span></label>
      </div>
      <div class="p-obs-wrap">
-      <a id="p-obs" class="btn-primary" href="javascript:void(0)" draggable="true" aria-describedby="p-obs-tt" data-i18n="prgObs">OBS için CRN hazırla</a>
+      <a id="p-obs" class="btn-primary" role="button" tabindex="0" draggable="true" aria-describedby="p-obs-tt" data-i18n="prgObs">OBS için CRN hazırla</a>
       <small id="p-obs-tt" class="p-obs-hint" data-i18n="progOBSDragHint">Sürükleyip OBS kayıt ekranında tıklamanız yeterli</small>
      </div>
     </div>
@@ -610,9 +610,9 @@ curl.exe -fL --output BIL.json https://<span class="host">SİTE</span>/data/term
 <span class="c" data-i18n="abRawCmtIndex"># dönem ve takvim listesi</span>
 curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/index.json</code></pre>
      <nav class="raw-data-links ab-dl" aria-label="Ham veri dosyaları" data-i18n-aria-label="abRawLinksLabel">
-      <a class="raw-current-csv tx-btn" href="/data/terms/2026-2027-guz/all.csv" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlCsv">Aktif dönem CSV'sini indir</span></a>
-      <a class="raw-current-branch tx-btn" href="/data/terms/2026-2027-guz/branches/BIL.json" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlBranch">BIL bölüm JSON'unu indir</span></a>
-      <a class="tx-btn" href="/data/index.json" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlIndex">Dönem listesini indir</span></a>
+      <a class="raw-current-csv tx-btn" href="/data/terms/2026-2027-guz/all.csv" rel="nofollow" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlCsv">Aktif dönem CSV'sini indir</span></a>
+      <a class="raw-current-branch tx-btn" href="/data/terms/2026-2027-guz/branches/BIL.json" rel="nofollow" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlBranch">BIL bölüm JSON'unu indir</span></a>
+      <a class="tx-btn" href="/data/index.json" rel="nofollow" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="abRawDlIndex">Dönem listesini indir</span></a>
      </nav>
     </section>
 
@@ -690,12 +690,12 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
   <a href="/bolumler/">Bölümler</a>
  </nav>
  <span id="foot-build">·</span> ·
- <a href="data/index.json">index.json</a> ·
+ <a href="data/index.json" rel="nofollow">index.json</a> ·
  veri kaynağı İstanbul Teknik Üniversitesi
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=8dff6318befb"></script>
+<script type="module" src="assets/app.js?v=87abd36b472d"></script>
 <script>
 (function () {
   var root = document.documentElement;

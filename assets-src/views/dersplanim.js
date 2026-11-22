@@ -1185,7 +1185,7 @@ function renderGPA() {
     ? `${trNum(st.credits)} ${I18N.t('planCreditsEnteredSuffix')}`
     : `${fmtTr2(st.gpa)} ${I18N.t('planGanoLabel')} · ${trNum(st.credits)} ${I18N.t('planCreditsFull')}`;
   const tot = planTotal();
-  const p = progress(allEntries(), { credits: tot.credits, ects: tot.ects }, stored.transfer);
+  const p = progress(gpaEntries(resolvedPlan(), stored, catalogMap).entries, { credits: tot.credits, ects: tot.ects }, stored.transfer);
   $('#dp-progress').textContent = `${p.credits.done}/${p.credits.total} ${I18N.t('planCreditsFull')}`;
   const sub = $('#dp-progress-sub');
   if (sub) sub.textContent = tot.ects > 0 ? `${p.ects.done}/${p.ects.total} ${I18N.t('planEctsAbbr')}` : '';

@@ -929,7 +929,7 @@ func (r *Result) checkStatus(root string) {
 
 func (r *Result) checkSitePages(root string) {
 	r.checkGeneratedSEOMetadata(root)
-	r.checkRedirects(root)
+	red := r.checkRedirects(root)
 
 	derDir := filepath.Join(root, "dersler")
 	bransDir := filepath.Join(root, "brans")
@@ -982,6 +982,13 @@ func (r *Result) checkSitePages(root string) {
 		}
 		if !strings.Contains(s, `<meta name="description" content="`) {
 			r.errf("seo sayfası: %s/%s meta description yok", filepath.Base(dir), rel)
+		}
+		// Bağlantı, canonical ve hreflang bir yönlendirmeye düşmemeli
+		// (Search Console "Yönlendirmeli sayfa"): ucuz, her sayfada bakılır.
+		for _, m := range hrefRe.FindAllStringSubmatch(s, -1) {
+			if red.hit(m[1]) {
+				r.errf("seo: %s/%s yönlendirilen bir URL'ye bağlanıyor: %s", filepath.Base(dir), rel, m[1])
+			}
 		}
 		// İç bağlantıları çöz (büyük sayfa setlerinde performans için atlanabilir).
 		if !checkLinks {
@@ -1095,6 +1102,11 @@ func (r *Result) checkSitePages(root string) {
 	if err != nil {
 		r.errf("seo: sitemap okunamadı: %v", err)
 		return
+	}
+	for u := range smLocs {
+		if red.hit(u) {
+			r.errf("seo: sitemap yönlendirilen bir URL içeriyor: %s", u)
+		}
 	}
 
 	// İngilizce sayfalar da kendi sitemap'inde eksiksiz olmalı. Her /en/ HTML
@@ -1283,17 +1295,29 @@ func (r *Result) checkGeneratedSEOMetadata(root string) {
 // checkRedirects, docs/_redirects (Cloudflare Pages) kurallarını denetler:
 // sınırlar (2.000 statik, 100 dinamik), statik kaynağın bugün bir sayfası
 // olmaması (Pages yönlendirmeyi dosyanın önüne koyar, var olan sayfa
-// kaybolur) ve hedefin gerçekten var olması.
-func (r *Result) checkRedirects(root string) {
+// kaybolur) ve hedefin gerçekten var olması. Tek istisna, aynı yola
+// yazılmış meta-refresh yönlendirme sayfasıdır (writeRedirectPage): sunucu
+// yönlendirmesi olmayan barındırma için yedektir, Cloudflare'de hiç sunulmaz.
+// Dönen küme, iç bağlantı denetimi için statik kural kaynaklarıdır.
+func (r *Result) checkRedirects(root string) *redirectSet {
+	set := &redirectSet{static: map[string]bool{}}
 	b, err := os.ReadFile(filepath.Join(root, "_redirects"))
 	if os.IsNotExist(err) {
-		return
+		return set
 	}
 	if err != nil {
 		r.errf("_redirects okunamadı: %v", err)
-		return
+		return set
 	}
 	static, dynamic := 0, 0
+	var targets [][2]string
+	defer func() {
+		for _, t := range targets {
+			if set.hit(t[1]) {
+				r.errf("_redirects: %s hedefi %s de yönlendiriliyor (zincir)", t[0], t[1])
+			}
+		}
+	}()
 	for i, line := range strings.Split(string(b), "\n") {
 		line = strings.TrimSpace(line)
 		if line == "" || strings.HasPrefix(line, "#") {
@@ -1311,13 +1335,16 @@ func (r *Result) checkRedirects(root string) {
 				if ents, err := os.ReadDir(filepath.Join(root, filepath.FromSlash(strings.Trim(dir, "/")))); err == nil && len(ents) > 0 {
 					r.errf("_redirects: %s altında yayınlanan dosya var, kural onları gölgeler", dir)
 				}
+				set.prefixes = append(set.prefixes, dir)
 			}
 			continue
 		}
 		static++
-		if _, err := os.Stat(resolveHref(root, f[0], "")); err == nil {
+		set.static[f[0]] = true
+		if page, err := os.ReadFile(resolveHref(root, f[0], "")); err == nil && !strings.Contains(string(page), `http-equiv="refresh"`) {
 			r.errf("_redirects: %s bugün yayınlanan bir sayfa, yönlendirilmemeli", f[0])
 		}
+		targets = append(targets, [2]string{f[0], f[1]})
 		if _, err := os.Stat(resolveHref(root, f[1], "")); err != nil {
 			r.errf("_redirects: %s hedefi %s bulunamadı", f[0], f[1])
 		}
@@ -1328,6 +1355,40 @@ func (r *Result) checkRedirects(root string) {
 	if dynamic > 100 {
 		r.errf("_redirects: %d dinamik kural, Cloudflare Pages sınırı 100", dynamic)
 	}
+	return set
+}
+
+// redirectSet, _redirects kaynaklarıdır: tam eşleşen statik yollar ve
+// dinamik kuralların ön ekleri.
+type redirectSet struct {
+	static   map[string]bool
+	prefixes []string
+}
+
+// hit, bir site içi URL'nin (mutlak itu-ders.com veya kökten göreli) bir
+// yönlendirmeye düşüp düşmediğini söyler. Sorgu ve parça yok sayılır.
+func (s *redirectSet) hit(href string) bool {
+	if s == nil {
+		return false
+	}
+	if strings.HasPrefix(href, "https://itu-ders.com/") {
+		href = strings.TrimPrefix(href, "https://itu-ders.com")
+	}
+	if !strings.HasPrefix(href, "/") || strings.HasPrefix(href, "//") {
+		return false
+	}
+	if i := strings.IndexAny(href, "?#"); i >= 0 {
+		href = href[:i]
+	}
+	if s.static[href] {
+		return true
+	}
+	for _, p := range s.prefixes {
+		if strings.HasPrefix(href, p) {
+			return true
+		}
+	}
+	return false
 }
 
 func collectSitemapPageLocs(root, path string, visited map[string]bool) (map[string]bool, error) {

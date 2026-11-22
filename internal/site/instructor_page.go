@@ -391,8 +391,8 @@ func (b *Builder) renderNowCard(hi *histInstr, codeLink func(string, string) str
 		}
 		switch {
 		case last == cur && cur != "":
-			fmt.Fprintf(&out, `<p class="ip-now-empty">Bu dönem ders kaydı var ama şube ayrıntısı eşleşmedi. <a href="/?q=%s#dersler">Derslerde ara</a>.</p>`,
-				template.URLQueryEscaper(hi.Name))
+			fmt.Fprintf(&out, `<p class="ip-now-empty">Bu dönem ders kaydı var ama şube ayrıntısı eşleşmedi. <a %s>Derslerde ara</a>.</p>`,
+				appLinkAttrs(appURL(cur, map[string]string{"q": hi.Name})))
 		case last != "":
 			fmt.Fprintf(&out, `<p class="ip-now-empty">Bu dönem açılmış şubesi yok.</p><p class="ip-now-last">Son verdiği dönem <a href="/dersler/%s/">%s</a></p>`,
 				esc(last), esc(termShort(last, termLabels)))
@@ -415,9 +415,9 @@ func (b *Builder) renderNowCard(hi *histInstr, codeLink func(string, string) str
 			meta = append(meta, esc(room))
 		}
 		fmt.Fprintf(&out, `<div class="ip-sec"><p class="ip-sec-c">%s%s</p><p class="ip-sec-m">%s</p>%s`+
-			`<a class="ip-add" href="/?q=%s#dersler">Derslerde aç →<span class="sr-only"> %s, CRN %s</span></a></div>`,
+			`<a class="ip-add" %s>Derslerde aç →<span class="sr-only"> %s, CRN %s</span></a></div>`,
 			codeLink(s.Code, "code"), esc(s.Name), strings.Join(meta, " · "), quotaHTML(s.Enrolled, s.Capacity),
-			template.URLQueryEscaper(s.CRN), esc(s.Code), esc(s.CRN))
+			appLinkAttrs(appURL(cur, map[string]string{"q": s.CRN})), esc(s.Code), esc(s.CRN))
 	}
 	fmt.Fprintf(&out, `<p class="ip-fresh">Son ölçüm %s · kayıttan önce OBS'de doğrula</p>`, esc(fmtDate(b.index.ScrapedAt)))
 	out.WriteString(`</aside>`)

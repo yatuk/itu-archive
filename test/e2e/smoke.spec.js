@@ -134,6 +134,28 @@ test.describe('SPA (ana sayfa)', () => {
     }
   });
 
+  // Lighthouse SEO "links are not crawlable": rolsüz <a> öğeleri gerçek bir
+  // href taşımalı (boş, "#" veya javascript: olmamalı). OBS bookmarklet'i
+  // role="button" ile bunun dışında kalır.
+  test('rolsüz bağlantıların hepsi taranabilir href taşır', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('#course-groups .course-group').first()).toBeVisible({ timeout: 15000 });
+    const bozuk = await page.evaluate(() => [...document.querySelectorAll('a:not([role])')]
+      .map((a) => a.getAttribute('href'))
+      .filter((h) => h == null || h.trim() === '' || h.trim() === '#' || /^\s*javascript:/i.test(h)));
+    expect(bozuk).toEqual([]);
+    await expect(page.locator('#p-obs')).toHaveAttribute('role', 'button');
+  });
+
+  // ?code= derin bağlantısı statik ders sayfasına canonical verir; deep-link
+  // URL'si kullanıcı için aynen çalışmaya devam eder.
+  test('ders kodu derin bağlantısı canonical olarak statik ders sayfasını gösterir', async ({ page }) => {
+    await page.goto('/?code=BLG+102E#dersler');
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://itu-ders.com/ders/blg-102e/');
+    await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(0);
+    await expect(page.locator('#f-code')).toHaveValue('BLG 102E');
+  });
+
   test('ham veri bölümü aktif döneme ait indirilebilir adresler verir', async ({ page }) => {
     await page.goto('/#hakkinda');
     await expect(page.locator('.raw-current-csv')).toHaveAttribute('href', '/data/terms/2026-2027-guz/all.csv');

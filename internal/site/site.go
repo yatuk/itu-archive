@@ -483,6 +483,9 @@ func (b *Builder) Generate() error {
 		if _, err := b.writeRedirectsFile(); err != nil {
 			return err
 		}
+		if err := b.writeHeadersFile(); err != nil {
+			return err
+		}
 	}
 
 	for _, tr := range terms {
@@ -605,12 +608,12 @@ func (b *Builder) writeTermPage(tr termRow) error {
 		fmt.Sprintf(`<nav class="crumb"><a href="/">%s</a> › <span>%s</span></nav>`, template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(termLabel)),
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(termLabel)),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(lead)),
-		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s">%s</a></p>`, tr.tref.Slug, b.l.TermSearchCTA),
+		fmt.Sprintf(`<p class="cta"><a class="btn" %s>%s</a></p>`, appLinkAttrs(appURL(b.index.CurrentSlug, map[string]string{"term": tr.tref.Slug})), b.l.TermSearchCTA),
 		buildStats(b.statsFromMeta(tr.meta)),
 		b.liveBadge(tr.meta.Live),
 		`<h2>`+b.l.TermBranchHeading+`</h2>`,
 		buildBranchLinks(bls, b.l.StatSections),
-		fmt.Sprintf(`<p class="data-link">%s <a href="/data/terms/%s/all.csv">%s</a> · <a href="/data/terms/%s/search.json">%s</a></p>`,
+		fmt.Sprintf(`<p class="data-link">%s <a href="/data/terms/%s/all.csv" rel="nofollow">%s</a> · <a href="/data/terms/%s/search.json" rel="nofollow">%s</a></p>`,
 			b.l.TermDataPrefix, tr.tref.Slug, b.l.TermDataCSV, tr.tref.Slug, b.l.TermDataJSON),
 	))
 
@@ -694,8 +697,8 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 		fmt.Sprintf(`<nav class="crumb"><a href="/">%s</a> › <span>%s</span></nav>`, template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(fmt.Sprintf(b.l.BranchH1Fmt, code))),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(lead)),
-		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&branch=%s">%s</a></p>`,
-			latestSlug, code, b.l.BranchSearchCTA),
+		fmt.Sprintf(`<p class="cta"><a class="btn" %s>%s</a></p>`,
+			appLinkAttrs(appURL(b.index.CurrentSlug, map[string]string{"term": latestSlug, "branch": code})), b.l.BranchSearchCTA),
 		`<dl class="seo-stats">`+
 			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, b.l.BranchCodeHeading, codeCount)+
 			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, b.l.BranchTermCol, termCount)+
@@ -2730,8 +2733,8 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(branch), template.HTMLEscapeString(branch), template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(hc.Name)),
-		fmt.Sprintf(`<p class="cta"><a class="btn" href="/?term=%s&code=%s">%s</a></p>`,
-			b.index.CurrentSlug, template.HTMLEscapeString(code), template.HTMLEscapeString(b.l.CourseSearchCTA)),
+		fmt.Sprintf(`<p class="cta"><a class="btn" %s>%s</a></p>`,
+			appLinkAttrs(appURL(b.index.CurrentSlug, map[string]string{"code": code})), template.HTMLEscapeString(b.l.CourseSearchCTA)),
 		`<dl class="seo-stats">`+
 			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.CourseStatTerms), len(hc.Terms))+
 			`</dl>`,

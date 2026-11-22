@@ -18,7 +18,7 @@ import { icsText, hashShort, foldLine, formatInt } from './utils.js';
 import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from './urlcodes.js';
 import { parseCodes } from './taken.js';
 import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary, canonicalCode, codesMatch, groupSections, crnRangeText, courseMetaLabel, creditBadge } from './plan.js';
-import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from './grades.js';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, isPassingGrade, targetNeeded, fmtTr2 } from './grades.js';
 import { setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
 import * as fav from './favorites.js';
 import { formatProgramLabel, normalizeProgramLevel, programLevelLabel } from './programs.js';
@@ -29,6 +29,7 @@ import { buildBalancedPlan } from './planner.js';
 import { parseSessions, candidatesByCode, evaluate, findAlternatives, presetPrefs, WEEKDAYS } from './altfind.js';
 import { campusForLocation, isRemoteMethod, minimumTransitionMinutes, transitionIssue } from './campus.js';
 import { specialSectionKind } from './section-kind.js';
+import { courseSlug as canonicalCourseSlug, staticPageFor } from './canonical.js';
 
 test('OBS özel kayıtlarını normal ders şubesinden ayırır', () => {
   assert.equal(specialSectionKind(['1', 'BLG 322E', 'Computer Architecture', 'BLG', '', '', 0, 0, 'LS', 'Ek Sınav']), 'extra-exam');
@@ -266,6 +267,44 @@ test('transkript aktarımı sonrası GANO plana eşleşmeyen dersleri de sayar v
   // JSON yedeği transkript görüntüsünü korur.
   const restored = importJSON(exportJSON('X_LS', stored));
   assert.equal(gpaEntries(plan, restored.data).source, 'transcript');
+});
+
+test('ilerleme yalnız geçilen dersleri sayar: transkriptte B.Krd 82, FF/VF kredi eklemez', () => {
+  const parsed = parseOBSTranscript(OBS_FIXTURE);
+  const counted = transcriptCountedAttempts(parsed.records);
+  // OBS'nin "Toplam ... 82,00 ..." satırındaki kazanılan (B.Krd) kredi.
+  const earned = counted.filter((r) => isPassingGrade(r.grade)).reduce((sum, r) => sum + r.credits, 0);
+  assert.equal(earned, 82);
+  assert.ok(counted.some((r) => r.grade === 'FF' || r.grade === 'VF'));
+  // Plan + aktarım: paneldeki ilerleme tüm sayılan denemelerin geçilenlerinden gelir.
+  const plan = { semesters: [{ items: [
+    { course: { code: 'CEN 335E', name: 'A', credits: 3, ects: 5 } },
+    { course: { code: 'EEF 211E', name: 'B', credits: 3, ects: 4 } },
+  ] }] };
+  const match = matchTranscriptToPlan(plan, parsed.records);
+  const stored = mergeTranscriptMatch({}, match, { officialGpa: parsed.officialGpa });
+  const p = progress(gpaEntries(plan, stored).entries, { credits: 130, ects: 240 });
+  assert.equal(p.credits.done, 82);
+  assert.equal(p.credits.total, 130);
+});
+
+test('progress: FF/VF/E ilerlemeye girmez, DD ve muaf girer, BL 0 kredi ekler, transfer korunur', () => {
+  const entries = [
+    { credits: 3, ects: 5, grade: 'AA' },
+    { credits: 3, ects: 5, grade: 'DD' },
+    { credits: 3, ects: 5, grade: 'FF' },
+    { credits: 3, ects: 5, grade: 'VF' },
+    { credits: 3, ects: 5, grade: 'E' },
+    { credits: 2, ects: 3, grade: 'BL' },
+    { credits: 4, ects: 6, grade: 'M' },
+    { credits: 3, ects: 5, grade: '' },
+  ];
+  const p = progress(entries, { credits: 130, ects: 240 }, { credits: 10, ects: 15 });
+  assert.equal(p.credits.done, 3 + 3 + 4 + 10);
+  assert.equal(p.ects.done, 5 + 5 + 6 + 15);
+  // Tekrar: önceki FF, son AA → tek kayıt AA, bir kez sayılır; son FF ise sayılmaz.
+  assert.equal(progress([{ credits: 3, grade: 'AA', prev: 'FF' }], {}).credits.done, 3);
+  assert.equal(progress([{ credits: 3, grade: 'FF', prev: 'AA' }], {}).credits.done, 0);
 });
 
 test('transkript program adı ek nitelemelere rağmen tek program adayı bulur', () => {
@@ -1807,4 +1846,22 @@ test('evaluate: "en fazla 1 saat boşluk" aşan günü elemeli', () => {
   const { pass, failed } = evaluate(combo, { gap: 60 });
   assert.equal(pass, false);
   assert.ok(failed.has('gap'));
+});
+
+// Kabuk derin bağlantısı (?code= / ?branch=) statik sayfaya canonical verir;
+// slug kuralı internal/site courseSlug ile aynı olmalı.
+test('staticPageFor: ders kodu ve branş statik sayfaya eşlenir', () => {
+  assert.equal(staticPageFor('?term=2026-2027-guz&code=MIM 346'), '/ders/mim-346/');
+  assert.equal(staticPageFor('?code=GEM+482'), '/ders/gem-482/');
+  assert.equal(staticPageFor('?code=BLG%20102E&branch=BLG'), '/ders/blg-102e/');
+  assert.equal(staticPageFor('?code=TUR121'), '/ders/tur-121/');
+  assert.equal(staticPageFor('?code=MIM 4031E'), '/ders/mim-4031e/');
+  assert.equal(staticPageFor('?branch=CAB'), '/brans/CAB/');
+  assert.equal(staticPageFor('?branch=kor&term=2026-2027-guz'), '/brans/KOR/');
+  assert.equal(staticPageFor('?q=13724'), '');
+  assert.equal(staticPageFor('?term=2020-2021-yaz'), '');
+  assert.equal(staticPageFor('?code=../../etc'), '');
+  assert.equal(staticPageFor('?branch=<x>'), '');
+  assert.equal(staticPageFor(''), '');
+  assert.equal(canonicalCourseSlug('EHB 222E'), 'ehb-222e');
 });

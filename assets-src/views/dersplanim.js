@@ -23,7 +23,7 @@ import * as fav from '../core/favorites.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
 import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=dde1e9339338';
 import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=dde1e9339338';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=dde1e9339338';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=dde1e9339338';
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=dde1e9339338';
 import { confirmDialog } from '../core/dialog.js?v=dde1e9339338';
 import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=dde1e9339338';
@@ -1109,9 +1109,12 @@ function semesterAverages() {
 }
 
 // Mevcut GANO + kredi. transfer (yatay geçiş) varsa başlangıç ağırlığı olarak
-// katılır; boş bırakılırsa yok sayılır.
+// katılır; boş bırakılırsa yok sayılır. Transkript aktarıldıysa girdiler
+// OBS'nin saydığı denemelerdir (plana eşleşmeyenler dahil, bkz. gpaEntries).
+// Aktarılan hali hiç değişmediyse belgede yazan OBS GANO'su gösterilir.
+// source: 'plan' · 'transcript' · 'edited' (etiket seçimi için).
 function currentState() {
-  const entries = allEntries();
+  const { entries, source, officialGpa } = gpaEntries(resolvedPlan(), stored, catalogMap);
   const base = stored.transfer;
   const baseCredits = Number(base?.credits) || 0;
   const baseGpa = Number(base?.gpa);
@@ -1125,11 +1128,23 @@ function currentState() {
     num += pts * cr;
     den += cr;
   }
-  return { gpa: den === 0 ? null : num / den, credits: den };
+  const computed = den === 0 ? null : num / den;
+  if (source === 'transcript' && !hasBase && officialGpa != null && computed != null) {
+    return { gpa: officialGpa, credits: den, computed, source };
+  }
+  return { gpa: computed, credits: den, computed, source: hasBase && source !== 'plan' ? 'edited' : source };
 }
 
 function hasAnyGrade() {
-  return allEntries().some((e) => e.grade);
+  return allEntries().some((e) => e.grade) || Boolean(stored.transcript?.entries?.length);
+}
+
+// GANO değerinin altındaki kısa açıklama: neye göre hesaplandığını söyler.
+function setGanoHint(source) {
+  const hint = $('#dp-gano')?.nextElementSibling;
+  if (!hint) return;
+  hint.textContent = I18N.t(source === 'transcript' ? 'planBasedOnTranscript'
+    : source === 'edited' ? 'planBasedOnTranscriptEdited' : 'planBasedOnGrades');
 }
 
 // GANO paneli: üç sabit hizalı kutu (etiket üstte, değer altta). Hiç not ve
@@ -1153,6 +1168,7 @@ function renderGPA() {
   if (empty) {
     const tot0 = planTotal();
     if ($('#dp-gano')) $('#dp-gano').textContent = I18N.t('planNone');
+    setGanoHint('plan');
     if ($('#dp-progress')) $('#dp-progress').textContent = `0/${trNum(tot0.credits)} ${I18N.t('planCreditsFull')}`;
     if ($('#dp-progress-sub')) $('#dp-progress-sub').textContent = '';
     if ($('#dp-target')) $('#dp-target').textContent = I18N.t('planEnterGradeFirstShort');
@@ -1164,6 +1180,7 @@ function renderGPA() {
 
   const st = currentState();
   $('#dp-gano').textContent = st.gpa == null ? I18N.t('planNone') : fmtTr2(st.gpa);
+  setGanoHint(st.source);
   if (preview) preview.textContent = st.gpa == null
     ? `${trNum(st.credits)} ${I18N.t('planCreditsEnteredSuffix')}`
     : `${fmtTr2(st.gpa)} ${I18N.t('planGanoLabel')} · ${trNum(st.credits)} ${I18N.t('planCreditsFull')}`;
@@ -1568,7 +1585,7 @@ async function importTranscript() {
     setTranscriptResult(I18N.lang === 'en' ? 'No courses matched the selected plan.' : 'Seçili ders planıyla eşleşen ders bulunamadı.', 'error');
     return;
   }
-  stored = mergeTranscriptMatch(stored, match);
+  stored = mergeTranscriptMatch(stored, match, { officialGpa: choice.parsed.officialGpa });
   saveStored(progCode, stored);
   catalogMap.clear();
   ensureCatalogForPicks();

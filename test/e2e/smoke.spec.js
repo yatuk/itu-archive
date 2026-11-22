@@ -676,6 +676,9 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     await expect(page.locator('.dp-repeat-btn[data-gcode="CEN 101E"]')).toHaveAttribute('title', /önceki: FF/);
     await expect(page.locator('#dp-transcript-result')).toContainText('9 not aktarıldı');
     await expect(page.locator('#dp-transcript-result')).toContainText('1 ders elle kontrol edilmeli');
+    // Aktarılan hali değişmediği için panel OBS'nin belgedeki toplamını gösterir.
+    await expect(page.locator('#dp-gano')).toHaveText('2,26');
+    await expect(page.locator('#dp-gano + small')).toHaveText('OBS transkriptine göre');
 
     const stored = await page.evaluate(() => localStorage.getItem('itu-grades:v1') || '');
     expect(stored).not.toContain('TEST KULLANICISI');
@@ -790,20 +793,26 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     // OLMASA BİLE boot sırasında (loadTerm/loadQuota içinden) çalışıp URL'i
     // kendi (boş) form alanlarından yeniden kuruyordu — Önşart Haritası'nın
     // ?prog= parametresi birkaç saniye içinde sessizce siliniyordu.
+    // NOT: page.url() same-document geçişlerini (history.replaceState) CDP
+    // olayıyla gecikmeli yansıtır; yük altında DOM'daki gerçek URL'den geride
+    // kalır. Bu yüzden URL'i her zaman sayfanın kendi location.href'inden okuruz
+    // (expect.poll ile) — page.url() ile anlık assert yarış yaratır.
+    const sayfaUrl = () => page.evaluate(() => location.href);
+
     await page.goto('/?prog=CEN_LS#onsart');
-    await expect.poll(() => page.url(), { timeout: 8000 }).toContain('prog=CEN_LS');
-    await page.waitForTimeout(1000); // gecikmeli boot çağrıları (loadQuota vb.) için ek bekleme
-    expect(page.url()).toContain('prog=CEN_LS');
+    // Boot'un tamamlanmasını (loadTerm/loadQuota vb. gecikmeli çağrılar dahil)
+    // sabit uyku yerine uygulamanın kendi hazır sinyaliyle bekle.
+    await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30000 });
+    await expect(page.locator('.pg-program-select')).toHaveValue('CEN_LS', { timeout: 30000 });
+    await expect.poll(sayfaUrl, { timeout: 10000 }).toContain('prog=CEN_LS');
 
     // İlk ziyaret (URL'de ?prog= yok, hatırlanan tercih yok): program otomatik
     // ilk seçeneğe düşer ve bu seçim URL'e yansır (Ders Planım'daki fakülte→
     // bölüm davranışıyla tutarlı).
     await page.goto('/#onsart');
-    await expect.poll(
-      async () => page.locator('.pg-program-select').inputValue(),
-      { timeout: 8000 }
-    ).not.toBe('');
-    expect(page.url()).toContain('prog=');
+    await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30000 });
+    await expect(page.locator('.pg-program-select')).not.toHaveValue('', { timeout: 30000 });
+    await expect.poll(sayfaUrl, { timeout: 10000 }).toContain('prog=');
   });
 
   test('Önşart: fakülte seçicisi dolar, bölüm listesi gruplu değil', async ({ page }) => {

@@ -89,7 +89,9 @@ export function importJSON(json) {
   try {
     const d = JSON.parse(json);
     if (!d || !d.program) return null;
-    return { program: d.program, data: { grades: d.grades || {}, elective: d.elective || {}, requiredSlots: d.requiredSlots || {}, transfer: d.transfer || null, targetGpa: d.targetGpa || '' } };
+    const data = { grades: d.grades || {}, elective: d.elective || {}, requiredSlots: d.requiredSlots || {}, transfer: d.transfer || null, targetGpa: d.targetGpa || '' };
+    if (validTranscript(d.transcript)) data.transcript = d.transcript;
+    return { program: d.program, data };
   } catch { return null; }
 }
 
@@ -188,4 +190,68 @@ export function entriesBySemester(plan, stored, catalogMap) {
     idx += sem.items.length;
   });
   return out;
+}
+
+function validTranscript(t) {
+  return isPlainObject(t) && Array.isArray(t.entries) && isPlainObject(t.planKeys || {});
+}
+
+// Bir GANO girdisinin plandaki yeri: zorunlu ders koduyla, seçmeli slotuyla.
+function entryKey(entry) {
+  return entry.required ? `g:${entry.code}` : `e:${entry.slot}`;
+}
+
+// GANO'ya giren girdiler. Transkript aktarıldıysa (stored.transcript) taban,
+// OBS'nin saydığı denemelerdir: plana eşleşmeyen dersler de girer, kredi
+// transkriptten gelir. Aktarımdan sonra plandaki bir not elle değiştirildiyse
+// o ders yeni notla, silindiyse hiç sayılmaz; plana elle eklenen notlar da
+// eklenir. Dönüş: { entries, source, officialGpa }
+//   source: 'plan' (transkript yok) · 'transcript' (aktarılan haliyle) ·
+//           'edited' (transkript + sonradan değişen notlar)
+export function gpaEntries(plan, stored, catalogMap = new Map()) {
+  const planEntries = plan ? buildEntries(plan, stored, catalogMap) : [];
+  const snap = stored?.transcript;
+  if (!validTranscript(snap)) {
+    return { entries: planEntries.filter((e) => e.grade), source: 'plan', officialGpa: null };
+  }
+  const planKeys = snap.planKeys || {};
+  const current = new Map();
+  for (const e of planEntries) current.set(entryKey(e), e.grade || '');
+  const currentGrade = (key) => {
+    if (current.has(key)) return current.get(key);
+    // Anahtar plandaki bir yere düşmüyorsa (plan sürümü değişti vb.) saklanan
+    // nota bak; o da yoksa ders silinmiş sayılır.
+    if (key.startsWith('g:')) return stored?.grades?.[key.slice(2)]?.grade || '';
+    return stored?.elective?.[key.slice(2)]?.grade || '';
+  };
+
+  let edited = false;
+  const entries = [];
+  const covered = new Set();
+  for (const item of snap.entries) {
+    if (!item || typeof item.code !== 'string') continue;
+    const credits = Number(item.credits) || 0;
+    if (!item.key) { entries.push({ code: item.code, credits, grade: item.grade, source: 'transcript' }); continue; }
+    covered.add(item.key);
+    const now = currentGrade(item.key);
+    if (now === planKeys[item.key]) entries.push({ code: item.code, credits, grade: item.grade, source: 'transcript' });
+    else if (now) { edited = true; entries.push({ code: item.code, credits, grade: now, source: 'edited' }); }
+    else edited = true;
+  }
+  for (const e of planEntries) {
+    const key = entryKey(e);
+    if (covered.has(key)) continue;
+    // Aktarımda plana yazılmış ama OBS'nin saymadığı deneme (ör. `*` işaretli):
+    // değişmediyse sayılmaz.
+    if (Object.prototype.hasOwnProperty.call(planKeys, key) && (e.grade || '') === planKeys[key]) continue;
+    if (!e.grade) continue;
+    edited = true;
+    entries.push({ ...e, source: 'plan' });
+  }
+  const official = Number(snap.officialGpa);
+  return {
+    entries,
+    source: edited ? 'edited' : 'transcript',
+    officialGpa: snap.officialGpa != null && Number.isFinite(official) ? official : null,
+  };
 }

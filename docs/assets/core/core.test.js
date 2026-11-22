@@ -4,6 +4,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 
 import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, quotaDisplay, quotaState, trendChart } from './chart.js';
@@ -18,10 +19,10 @@ import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from 
 import { parseCodes } from './taken.js';
 import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary, canonicalCode, codesMatch, groupSections, crnRangeText, courseMetaLabel, creditBadge } from './plan.js';
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from './grades.js';
-import { setGrade, setRepeat, setElective, buildEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
+import { setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
 import * as fav from './favorites.js';
 import { formatProgramLabel, normalizeProgramLevel, programLevelLabel } from './programs.js';
-import { parseOBSTranscript, transcriptLatest, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from './transcript.js';
+import { parseOBSTranscript, transcriptLatest, transcriptCountedAttempts, transcriptGpa, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from './transcript.js';
 import { versionedKey, readLocalState, writeLocalState, isPlainObject } from './persistence.js';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from './backup.js';
 import { buildBalancedPlan } from './planner.js';
@@ -197,6 +198,74 @@ BLG 422E Computer Networks 3,00 CC`).records;
   ]);
   const merged = mergeTranscriptMatch({}, match);
   assert.deepEqual(merged.elective.s0i0, { code: 'BLG 430E', grade: 'CC', prev: '' });
+});
+
+// Kişisel verisi çıkarılmış gerçek OBS "Transkript Önizleme" metni. Son satır
+// "Toplam 122,00 82,00 101,00 191,38 1,89": GANO = 191,38 / 101.
+const OBS_FIXTURE = readFileSync(new URL('../../../test/fixtures/obs-transcript-redacted.txt', import.meta.url), 'utf8');
+
+test('transkript GANO OBS kuralıyla hesaplanır: * işaretli denemeler düşer, FF/VF sayılır, BL ve 0 kredi girmez', () => {
+  const parsed = parseOBSTranscript(OBS_FIXTURE);
+  assert.equal(parsed.officialGpa, 1.89);
+  const result = transcriptGpa(parsed.records);
+  assert.equal(result.credits, 101);
+  assert.ok(Math.abs(result.points - 191.375) < 1e-9);
+  assert.equal(fmtTr2(result.gpa), '1,89');
+  assert.equal(fmtTr2(result.gpa), fmtTr2(parsed.officialGpa));
+  const counted = transcriptCountedAttempts(parsed.records);
+  const byCode = new Map(counted.map((r) => [r.code, r]));
+  // Kod değişen tekrarlar: eski deneme `*` ile düşer, yenisi sayılır.
+  assert.equal(byCode.has('BLG 112E'), false);
+  assert.equal(byCode.get('BBF 103E').grade, 'DC+');
+  assert.equal(byCode.has('BLG 335E'), false);
+  assert.equal(byCode.get('CEN 335E').grade, 'CB');
+  // Aynı kodda son deneme: Güz FF * yerine Yaz FF, Güz FF * yerine BA+.
+  assert.equal(byCode.get('EEF 211E').grade, 'FF');
+  assert.equal(byCode.get('EHB 222E').grade, 'VF');
+  assert.equal(byCode.get('CEN 101E').grade, 'BA+');
+  // Plan dışı ders de sayılır; BL ve 0 kredili dersler girmez.
+  assert.equal(byCode.get('CIN 101').grade, 'AA');
+  assert.equal(byCode.has('TUR 121'), false);
+  assert.equal(byCode.has('ATA 121'), false);
+  // Devam eden dersler (notsuz) kayıt olarak ayrıştırılmaz.
+  assert.equal(parsed.records.some((r) => r.code === 'CEN 411E'), false);
+});
+
+test('transkript aktarımı sonrası GANO plana eşleşmeyen dersleri de sayar ve OBS ile aynı çıkar', () => {
+  const parsed = parseOBSTranscript(OBS_FIXTURE);
+  // Bilerek eksik bir plan: transkriptteki derslerin çoğu eşleşmez.
+  const plan = { semesters: [{ items: [
+    { course: { code: 'CEN 335E', name: 'Analysis of Algorithms I', credits: 3 } },
+    { course: { code: 'BLG 112E', name: 'Discrete Mathematics', credits: 3 } },
+    { course: { code: 'MAT 103E', name: 'Mathematics I', credits: 4 } },
+    { course: { code: 'XYZ 100', name: 'Not In Transcript', credits: 3 } },
+  ] }] };
+  const match = matchTranscriptToPlan(plan, parsed.records);
+  // `*` işaretli BLG 112E VF yerine eşdeğer, işaretsiz BBF 103E DC+ seçilir.
+  assert.equal(match.courseAssignments.find((a) => a.targetCode === 'BLG 112E').grade, 'DC+');
+  const stored = mergeTranscriptMatch({}, match, { officialGpa: parsed.officialGpa });
+  assert.equal(JSON.stringify(stored.transcript).includes('Analysis'), false);
+
+  const plain = gpaEntries(plan, stored);
+  assert.equal(plain.source, 'transcript');
+  assert.equal(plain.officialGpa, 1.89);
+  assert.equal(fmtTr2(calcGPA(plain.entries)), '1,89');
+  assert.equal(plain.entries.reduce((sum, e) => sum + e.credits, 0), 101);
+
+  // Elle not değişince değer OBS'den ayrılabilir; kaynak "edited" olur.
+  const edited = setGrade(stored, 'MAT 103E', 'AA');
+  const after = gpaEntries(plan, edited);
+  assert.equal(after.source, 'edited');
+  assert.ok(Math.abs(calcGPA(after.entries) - (191.375 + 4 * (4 - 1.75)) / 101) < 1e-9);
+  // Plana yeni not eklemek de "edited" yapar ve paydaya girer.
+  const added = gpaEntries(plan, setGrade(stored, 'XYZ 100', 'BB'));
+  assert.equal(added.source, 'edited');
+  assert.equal(added.entries.reduce((sum, e) => sum + e.credits, 0), 104);
+  // Transkript yoksa eski davranış: yalnız plandaki notlar.
+  assert.equal(gpaEntries(plan, { grades: stored.grades }).source, 'plan');
+  // JSON yedeği transkript görüntüsünü korur.
+  const restored = importJSON(exportJSON('X_LS', stored));
+  assert.equal(gpaEntries(plan, restored.data).source, 'transcript');
 });
 
 test('transkript program adı ek nitelemelere rağmen tek program adayı bulur', () => {

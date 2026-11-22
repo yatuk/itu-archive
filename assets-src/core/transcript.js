@@ -4,6 +4,7 @@
 // dönem etiketi ve belgedeki son toplam GANO döner.
 
 import { canonicalCode } from './plan.js?v=dde1e9339338';
+import { GRADE_POINTS } from './grades.js?v=dde1e9339338';
 
 const GRADES = ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'FF', 'VF', 'BL', 'M', 'G', 'P', 'E'];
 const GRADE_PART = GRADES.map((g) => g.replace('+', '\\+')).join('|');
@@ -68,8 +69,15 @@ function selectedEquivalentAttempt(records, target, requiredByName) {
     .filter((record) => recordMatchesRequired(record, target, requiredByName))
     .sort((a, b) => (a.seq ?? 0) - (b.seq ?? 0));
   if (!attempts.length) return null;
+  // OBS'nin kuralı: `*` işaretli deneme yerine başka (aynı ya da eşdeğer
+  // kodlu) bir ders alınmış demektir ve ortalamaya girmez. İşaretsiz son
+  // deneme geçerlidir; başarısız da olsa (FF/VF) OBS onu sayar. İşaret
+  // bilgisi hiç yoksa (eksik kopya) başarılı son deneme tercih edilir.
+  const current = attempts.filter((record) => !record.markedRepeat);
   const passed = attempts.filter((record) => isPassingGrade(record.grade));
-  const selected = (passed.length ? passed : attempts).at(-1);
+  const selected = current.length && current.length < attempts.length
+    ? current.at(-1)
+    : (passed.length ? passed : attempts).at(-1);
   const selectedIndex = attempts.indexOf(selected);
   return {
     ...selected,
@@ -128,6 +136,40 @@ export function parseOBSTranscript(raw) {
   }
 
   return { records, programs: [...programs], officialGpa };
+}
+
+// OBS'nin kümülatif GANO kuralı (transkriptteki dönem "Toplam" satırlarından
+// doğrulandı):
+//   - `*` ile işaretli deneme, yerine sonradan alınmış bir ders olduğu için
+//     ortalamaya girmez. Yerine geçen ders başka kodlu olabilir (BLG 112E VF *
+//     → BBF 103E DC+, BLG 335E VF * → CEN 335E CB); bu bağı yalnız `*` taşır.
+//   - Aynı koddan işaretsiz birden çok deneme varsa yalnız sonuncusu sayılır.
+//     Yaz okulunda aynı FF/VF tekrarı A.Krd'yi artırır ama O.K.Krd'yi değil.
+//   - FF/VF kredisi paydaya girer, katsayısı 0'dır. BL/M/G/P/E ve 0 kredili
+//     dersler ortalamaya girmez. Notu olmayan (devam eden) dersler zaten
+//     ayrıştırılmaz.
+// Seçili müfredattan bağımsızdır: plana eşleşmeyen dersler (ör. CIN 101) de sayılır.
+export function transcriptCountedAttempts(records) {
+  const latest = new Map();
+  for (const record of records || []) {
+    if (!record?.code || record.markedRepeat || !GRADES.includes(record.grade)) continue;
+    const prev = latest.get(record.code);
+    if (!prev || (record.seq ?? 0) >= (prev.seq ?? 0)) latest.set(record.code, record);
+  }
+  return [...latest.values()]
+    .filter((record) => GRADE_POINTS[record.grade] !== undefined && Number(record.credits) > 0)
+    .sort((a, b) => (a.seq ?? 0) - (b.seq ?? 0));
+}
+
+// Transkriptin kendi kayıtlarından GANO: { gpa, credits, points }. Not yoksa gpa null.
+export function transcriptGpa(records) {
+  let points = 0, credits = 0;
+  for (const record of transcriptCountedAttempts(records)) {
+    const cr = Number(record.credits) || 0;
+    points += GRADE_POINTS[record.grade] * cr;
+    credits += cr;
+  }
+  return { gpa: credits > 0 ? points / credits : null, credits, points };
 }
 
 export function transcriptLatest(records) {
@@ -257,10 +299,34 @@ export function matchTranscriptToPlan(plan, records) {
 
   unmatched.push(...remaining.filter((record) => !assignedElectiveCodes.has(record.code)));
 
-  return { latest, courseAssignments, electiveAssignments, unmatched };
+  // GANO anlık görüntüsü: OBS'nin saydığı her deneme, plana yazıldığı yerin
+  // anahtarıyla (g:<kod> zorunlu, e:<slot> seçmeli) birlikte tutulur. Plana
+  // eşleşmeyen sayılan dersler anahtarsız kalır ama ortalamaya girer.
+  const keyBySeq = new Map();
+  const planKeys = {};
+  for (const item of courseAssignments) {
+    const key = `g:${item.targetCode}`;
+    keyBySeq.set(item.seq, key);
+    planKeys[key] = item.grade;
+  }
+  for (const item of electiveAssignments) {
+    const key = `e:${item.slot}`;
+    keyBySeq.set(item.seq, key);
+    planKeys[key] = item.grade;
+  }
+  const counted = transcriptCountedAttempts(records).map((record) => ({
+    code: record.code,
+    credits: record.credits,
+    grade: record.grade,
+    key: keyBySeq.get(record.seq) || '',
+  }));
+
+  return { latest, courseAssignments, electiveAssignments, unmatched, counted, planKeys };
 }
 
-export function mergeTranscriptMatch(data, match) {
+// mergeTranscriptMatch üçüncü argümanla OBS'nin belgede yazan toplam GANO'sunu
+// da saklar (çapraz kontrol ve "OBS transkriptine göre" etiketi için).
+export function mergeTranscriptMatch(data, match, { officialGpa = null } = {}) {
   const grades = { ...(data?.grades || {}) };
   const elective = { ...(data?.elective || {}) };
   const requiredSlots = { ...(data?.requiredSlots || {}) };
@@ -283,7 +349,15 @@ export function mergeTranscriptMatch(data, match) {
       prev: item.prev || (old.grade && old.grade !== item.grade ? old.grade : old.prev || ''),
     };
   }
-  return { ...(data || {}), grades, elective, requiredSlots };
+  const next = { ...(data || {}), grades, elective, requiredSlots };
+  if (Array.isArray(match?.counted)) {
+    next.transcript = {
+      officialGpa: Number.isFinite(officialGpa) ? officialGpa : null,
+      entries: match.counted.map(({ code, credits, grade, key }) => ({ code, credits, grade, key })),
+      planKeys: { ...(match.planKeys || {}) },
+    };
+  }
+  return next;
 }
 
 export function transcriptProgramCandidates(programIndex, transcriptPrograms) {

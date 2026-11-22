@@ -57,8 +57,8 @@ test('ana uygulama açılır, sekmeler çalışır, veri güncel', async ({ page
   await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30_000 });
   await expect(page.locator('#app-failure')).toBeHidden();
 
-  // Yeniden tasarımdan sonra her genişlikte derse göre gruplanmış liste.
-  await expect(page.locator('#course-groups .course-group .course-section').first()).toBeVisible({ timeout: 30_000 });
+  // Düz şube tablosu: her satır bir şube (her genişlikte).
+  await expect(page.locator('#course-groups .cl-body .cl-item').first()).toBeVisible({ timeout: 30_000 });
   await expect(page.locator('#stat-term')).not.toHaveText(/^[·.—\s]*$/);
 
   const status = await page.request.get(`/data/status.json?live-smoke=${Date.now()}`);
@@ -82,7 +82,7 @@ test('ana uygulama açılır, sekmeler çalışır, veri güncel', async ({ page
   await expect(page.locator('#app-failure')).toBeHidden();
 
   await page.locator('#tab-dersler').click();
-  await expect(page.locator('#course-groups .course-group').first()).toBeVisible();
+  await expect(page.locator('#course-groups .cl-item').first()).toBeVisible();
   const layout = await page.evaluate(() => ({
     viewport: document.documentElement.clientWidth,
     page: document.documentElement.scrollWidth,

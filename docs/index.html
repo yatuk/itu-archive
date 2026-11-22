@@ -51,11 +51,11 @@
 <link rel="preload" href="assets/vendor/fonts/space-grotesk-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Uygulama çekirdek CSS'i (kabuk + Dersler + paylaşılan bileşenler). Diğer
      sekmelerin stilleri css/<sekme>.css olarak sekme açılınca yüklenir. -->
-<link rel="stylesheet" href="assets/css/app.css?v=789427cbb02a">
+<link rel="stylesheet" href="assets/css/app.css?v=09c1e070bbb5">
 <!-- Yalnız etkin dilin sözlüğü yüklenir (assets/i18n.js üst düzey await ile
      bekler). Aynı dil seçimi burada yapılıp sözlük modül ağacıyla paralel
      istenir; adresleri cmd/site sürümler. -->
-<template id="i18n-preload"><link rel="modulepreload" href="assets/i18n/tr.js?v=fbda4f23c3cb" data-lang="tr"><link rel="modulepreload" href="assets/i18n/en.js?v=407afa8dc414" data-lang="en"></template>
+<template id="i18n-preload"><link rel="modulepreload" href="assets/i18n/tr.js?v=82e8d0d992f1" data-lang="tr"><link rel="modulepreload" href="assets/i18n/en.js?v=5ca419da6c57" data-lang="en"></template>
 <script>
 (function () {
   try {
@@ -311,9 +311,13 @@
   </div>
 
   <div id="rows" class="course-status" role="status"></div>
-  <div id="course-groups" class="course-groups" role="region" aria-label="Dersler ve şubeleri" data-i18n-aria-label="courseGroupsLabel"></div>
-  <button type="button" id="more" class="more" hidden>daha fazla göster</button>
-  <div id="tt" class="course-tt" hidden></div>
+  <div id="course-work" class="course-work">
+   <div class="course-list-col">
+    <div id="course-groups" class="course-groups cl-table" role="table" aria-label="Dersler ve şubeleri" data-i18n-aria-label="courseGroupsLabel"></div>
+    <button type="button" id="more" class="more" hidden>daha fazla göster</button>
+    <div id="tt" class="course-tt" hidden></div>
+   </div>
+  </div>
 
   <aside class="tool-directory" aria-labelledby="tool-directory-title">
    <div class="tool-directory-head">
@@ -696,12 +700,10 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
 
 </main>
 
-<div id="detail-panel" class="detail-panel course-reader" hidden role="dialog" aria-modal="true" aria-labelledby="detail-title">
- <div class="detail-box">
-  <button type="button" class="detail-close" id="detail-close" aria-label="Kapat">✕</button>
-  <div id="detail-content"></div>
- </div>
+<div id="detail-panel" class="d-side" hidden role="dialog" aria-modal="true" aria-labelledby="detail-title">
+ <div id="detail-content" class="d-content"></div>
 </div>
+<div id="detail-scrim" class="d-scrim" hidden aria-hidden="true"></div>
 
 <footer class="wrap">
  <nav class="foot-tools" aria-label="Araçlar"><span class="foot-tools-head">Araçlar</span>
@@ -722,7 +724,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=933c1c8d9a44"></script>
+<script type="module" src="assets/app.js?v=e5cc9a542b40"></script>
 <script>
 (function () {
   var root = document.documentElement;

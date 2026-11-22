@@ -1,55 +1,56 @@
-// Ortak ders detay modalı. Dersler, önşart haritası, seçmeli havuz ve geçmiş
-// sekmelerinin tümü aynı paneli açar — tek giriş openCourseDetail(code, opts).
+// Ortak ders detay paneli. Dersler, önşart haritası, seçmeli havuz, sınavlar,
+// geçmiş, program ve Ders Planım aynı paneli açar; tek giriş
+// openCourseDetail(code, opts).
 //
-// Panel dört görev odaklı sekmeden oluşur: Özet, Şubeler, Katalog ve Geçmiş.
-// Tablo satırından açıldığında ilgili CRN'nin Şubeler görünümü; doğrudan bağlantıda
-// ise karar özeti öne gelir. Uzun program ve arşiv listeleri kontrollü açılır.
+// Panel tek kaydırmalı bir sayfadır (sekme yok): yapışkan başlık (kod, ad,
+// kredi/AKTS, OBS bağlantısı, şube/doluluk/boş yer şeridi), "Bu dönemki
+// şubeler", "Özet" (kredi ızgarası, katalog, önşart, not dağılımı, alabilen
+// programlar) ve "Geçmiş dönemler".
+//
+// Yerleşim iki kiplidir. Dersler sekmesi görünür ve ekran ≥760 px ise panel
+// listenin sağında bir ızgara sütunu olarak durur (liste görünür kalır,
+// modal değildir). Diğer sekmelerden ya da dar ekranda açıldığında aynı panel
+// sağdan gelen bir çekmece (mobilde tam ekran sayfa) olur: perde, odak tuzağı,
+// aria-modal. Adres ve geri tuşu davranışı iki kipte aynıdır (#ders/<slug>).
 
-import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, frozenMeasuredAt, fmtDay, buildingName, trNum, formatInt } from './utils.js?v=dde1e9339338';
+import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, frozenMeasuredAt, fmtDay, buildingName, trNum, formatInt, isViewVisible } from './utils.js?v=dde1e9339338';
 import { state } from './store.js?v=dde1e9339338';
-import { fillBar, quotaDisplay, trendChart } from './chart.js?v=dde1e9339338';
+import { quotaState, trendChart } from './chart.js?v=dde1e9339338';
 import { parseReq, renderReqTree } from '../prereq.js?v=dde1e9339338';
 import { codeToSlug } from './urlcodes.js?v=dde1e9339338';
 import { loadProgramMap } from './programs.js?v=dde1e9339338';
 import { TAKEN_CHANGED, getTaken } from './taken.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { loadStyle } from './lazy-style.js';
+import { isRemoteMethod } from './campus.js';
+import { inActiveProgram, removeFromActiveProgram } from './program-store.js';
+import { toast } from './toast.js?v=dde1e9339338';
+import { instructorSlug } from '../views/courses.js?v=dde1e9339338';
+
+const t = (key, vars) => I18N.t(key, vars);
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
+// Açık panelin kimliği: aynı dersin başka şubesine tıklamak yeniden yüklemez.
+let current = null; // { code, term, crn, branch }
+let openSeq = 0;
 
-// İçerik bazlı mobil tespiti (user-agent değil): dar ekranda panel/grafik
-// davranışı farklılaşır (trend 6 dönem, katlanabilirler kapalı, tam ekran panel).
+const DOCK_MQ = '(min-width: 760px)';
+
+// İçerik bazlı mobil tespiti (user-agent değil): dar ekranda grafik ve
+// katlanabilirlerin varsayılanı farklılaşır.
 function isMobile() {
   return window.matchMedia('(max-width: 600px)').matches;
 }
 
-// Dolma süresini insanca yazar: "kayıt başladıktan 3 sa 20 dk sonra doldu".
-// Kontenjan zaman serisi yalnızca aktif dönem için yüklenir (state.quota).
-function fillNote(crn) {
-  const q = state.quota?.get(crn);
-  if (!q || !q.filledAt) return '';
-  const m = q.fillMinutes;
-  if (!m) return I18N.t('cdFillPrefilled');
-  const h = Math.floor(m / 60);
-  const rest = m % 60;
-  const hAbbr = I18N.t('progHourAbbr');
-  const mAbbr = I18N.t('progMinAbbr');
-  const span = h ? `${h} ${hAbbr}${rest ? ` ${rest} ${mAbbr}` : ''}` : `${rest} ${mAbbr}`;
-  return I18N.lang === 'en' ? `filled ${span} after first measurement` : `ilk ölçümden ${span} sonra doldu`;
-}
+const CLOSE_SVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+const EXT_SVG = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4h6v6M20 4l-9 9M10 4H4v16h16v-6"/></svg>';
 
-// "haftada X sa" / "X h/week" — hour/week caption used across the section list,
-// section card and overview stat. Word order differs by language, hence a helper.
+// "haftada X sa" / "X h/week" — word order differs by language, hence a helper.
 function weeklyHoursLabel(hrs) {
   if (!hrs) return '';
-  const abbr = I18N.t('progHourAbbr');
+  const abbr = t('progHourAbbr');
   return I18N.lang === 'en' ? `${hrs} ${abbr}/week` : `haftada ${hrs} ${abbr}`;
-}
-
-// "{n} şube daha göster" / "Show {n} more sections" — word order differs.
-function moreSectionsLabel(n) {
-  return I18N.lang === 'en' ? `Show ${n} more ${I18N.t('prgSube')}` : `${n} ${I18N.t('prgSube')} daha göster`;
 }
 
 // "A, B" / "A; B" / "A | B" → ["A", "B"]. Boşluk-önemsiz. Tek isimde tek eleman.
@@ -58,22 +59,46 @@ export function splitInstructors(instr) {
   return String(instr ?? '').split(/[;,|]/).map((s) => s.trim()).filter(Boolean);
 }
 
-// Bina kodu → ad haritası (docs/data/buildings.json). Bir kez yüklenir, tüm
-// oturum satırlarında kullanılır. Yüklenemezse boş dizi (kodlar aynen gösterilir).
+const NO_INSTRUCTOR = new Set(['', '-', '--', '·', '.', '***']);
+
+// Dolma süresi kısa etiketi: kontenjan ölçümündeki "ilk ölçümden X dk sonra
+// doldu" süresi gün (1 günden kısaysa saat, 1 saatten kısaysa dakika) olarak.
+// Saf — test edilebilir. minutes: null/undefined → '' (dolmadı ya da veri yok).
+export function fillSpeedLabel(minutes, tr = t) {
+  if (minutes == null || !Number.isFinite(Number(minutes))) return '';
+  const m = Number(minutes);
+  if (m <= 0) return tr('cdFillPrefilled');
+  if (m < 60) return tr('cdFillMinutes', { n: Math.max(1, Math.round(m)) });
+  if (m < 1440) {
+    const h = Math.max(1, Math.round(m / 60));
+    return h === 1 ? tr('cdFillOneHour') : tr('cdFillHours', { n: h });
+  }
+  const d = Math.max(1, Math.round(m / 1440));
+  return d === 1 ? tr('cdFillOneDay') : tr('cdFillDays', { n: d });
+}
+
+// Kesin süre (başlık ipucu): "ilk ölçümden 3 sa 20 dk sonra doldu".
+function fillExact(m) {
+  if (!m) return t('cdFillPrefilled');
+  const h = Math.floor(m / 60);
+  const rest = m % 60;
+  const span = h ? `${h} ${t('progHourAbbr')}${rest ? ` ${rest} ${t('progMinAbbr')}` : ''}` : `${rest} ${t('progMinAbbr')}`;
+  return I18N.lang === 'en' ? `filled ${span} after first measurement` : `ilk ölçümden ${span} sonra doldu`;
+}
+
+// Kontenjan ölçümü yalnızca Dersler'de yüklü dönem için vardır (state.quota).
+function quotaRec(term, crn) {
+  if (term !== state.termSlug) return null;
+  return state.quota?.get(String(crn)) || null;
+}
+
+// Bina kodu → ad haritası (docs/data/buildings.json). Bir kez yüklenir.
 let buildingsCache = null;
 async function loadBuildings() {
   if (buildingsCache === null) {
     buildingsCache = await getJSON('data/buildings.json').catch(() => []);
   }
   return buildingsCache;
-}
-// Oturum satırı: "Pazartesi 08:30/11:29 · BBB (Bilgisayar ve Bilişim Binası)"
-function sessionsHtml(sec, buildings) {
-  return sec.days.map((d, i) => {
-    const b = sec.buildings[i];
-    const bld = b ? `${esc(buildingName(b, buildings))}` : '';
-    return [d, sec.times[i] || '', sec.rooms[i] || '', bld].filter(Boolean).join(' · ');
-  }).join('<br>');
 }
 
 // OBS katalog formunun derin bağlantısı. Taban dersNo, kodun sayısal öneki
@@ -85,440 +110,616 @@ export function obsDeepLink(code) {
     encodeURIComponent(m[1]) + '&dersNo=' + encodeURIComponent(m[2]);
 }
 
-// Ters-önşart bölümünü doldurur: reverse.json'dan "bu dersi önşart isteyenler".
-// Veri yoksa (dosya yok, ders grafikte yok) bölüm sessizce gizlenir.
-async function loadReqBy(sec) {
-  const code = sec.dataset.code;
-  const reverse = await getJSON('data/prereq/reverse.json').catch(() => null);
-  if (!reverse || !reverse[code]) {
-    const reactWrap = sec.closest('.cdr-prereq');
-    const count = reactWrap?.querySelector('[data-req-count]');
-    if (count) count.textContent = '0';
-    if (reactWrap) sec.innerHTML = '<p class="empty">—</p>';
-    else (sec.closest('.d-relation-more') || sec).hidden = true;
-    return;
-  }
-  const reqs = reverse[code];
-  const count = (sec.closest('.cdr-prereq') || sec.closest('.d-relation-more'))?.querySelector('[data-req-count]');
-  if (count) count.textContent = String(reqs.length);
-  sec.innerHTML = `<div class="d-req-list">${reqs.map((r) => `<button type="button" class="d-req" data-code="${esc(r)}">${esc(r)}</button>`).join('')}</div>`;
-  sec.querySelectorAll('.d-req').forEach((b) => b.addEventListener('click', () => {
-    openCourseDetail(b.dataset.code, { source: 'reverse' });
-  }));
-}
-
-// Doluluk ölçüm zamanı (Faz 0.4): "%100" anlık sanılmasın — kontenjan zaman
-// serisi günde bir tazeleniyor. Yalnızca bu dönem için ölçüm kaydı varsa döner.
-function measured(crn) {
-  if (!state.quotaLast) return '';
-  const rec = state.quota?.get(crn);
-  if (!rec) return '';
+// Doluluk ölçüm zamanı (Faz 0.4): "%100" anlık sanılmasın.
+function measuredNote(term, secs) {
+  if (term !== state.termSlug || !state.quotaLast) return '';
+  if (!secs.some((s) => state.quota?.get(String(s.crn)))) return '';
   const frozenDay = fmtDay(frozenMeasuredAt(state.freeze, state.termSlug, state.quotaFinalAt), I18N.lang);
-  if (frozenDay) return I18N.t('freshLastMeasured', { date: frozenDay });
-  return fillMeasured(state.quotaLast);
+  if (frozenDay) return t('freshLastMeasured', { date: frozenDay });
+  return fillMeasured(state.quotaLast, Date.now(), I18N.lang);
 }
 
-// Tek şube kartı. Öğretim üyesi, dolma süresi, oturumlar, önşart, sınıf/kredi
-// ve rezervasyon alanlarının tümü burada korunur (eski panelin alanları).
-// Tek şube kartı (Faz: panel elden geçirme). method/saat liste başlığında
-// tekrar ediliyorsa showMeta=false (kartta yalnız derslik/süre kalır).
-function secCard(s, buildings, showMeta = true) {
-  const hrs = sessionHours(s.times);
-  const note = fillNote(s.crn);
-  const names = splitInstructors(s.instructor);
-  const instructors = names
-    .filter((n) => n !== '-' && n !== '***')
-    .map((n) => `<button type="button" class="d-instr-history" data-name="${esc(n)}" title="${esc(I18N.lang === 'en' ? `search ${n}'s history` : `${n} geçmişinde ara`)}">${esc(n)}</button>`)
-    .join('');
-  const sessions = sessionsHtml(s, buildings);
-  // Sade tema tek sayısal temsil kullanır; fosfor eski yüzde + çubuğu korur.
-  const stats = s.capacity ? quotaDisplay(s.capacity, s.enrolled, { detail: true }) : '·';
-  return `
-    <article class="d-sec" data-crn="${esc(s.crn)}">
-      <div class="d-sec-head">
-        <b class="d-crn">${esc(s.crn)}</b>
-        <span class="d-sec-instr">${instructors || esc(s.instructor || '·')}</span>
-        <span class="d-sec-stats">${stats}${note ? ` · ${esc(note)}` : ''}${measured(s.crn) ? `<small class="fill-measured"> · ${esc(measured(s.crn))}</small>` : ''}</span>
-      </div>
-      ${showMeta ? `<div class="d-sec-meta">${[s.method, hrs ? weeklyHoursLabel(hrs) : ''].filter(Boolean).join(' · ')}</div>` : ''}
-      ${sessions ? `<div class="d-sec-when">${sessions}</div>` : ''}
-      <button type="button" class="btn-primary d-add-program" data-add-crn="${esc(s.crn)}">${I18N.t('detailAddProg')}</button>
-      ${(s.prereq && s.prereq !== '-') || (s.classReq && s.classReq !== '-') || (s.reserved && s.reserved !== '-') ? `<details class="d-sec-rules"><summary>${I18N.t('cdRegRequirements')}</summary>
-        ${s.prereq && s.prereq !== '-' ? `<p><b>${I18N.t('detailPrereq')}</b>${esc(s.prereq)}</p>` : ''}
-        ${s.classReq && s.classReq !== '-' ? `<p><b>${I18N.t('detailClassReq')}</b>${esc(s.classReq)}</p>` : ''}
-        ${s.reserved && s.reserved !== '-' ? `<p><b>${I18N.t('cdReserved')}</b>${esc(s.reserved)}</p>` : ''}
-      </details>` : ''}
+/* ---------- şube satırları ---------- */
+
+const DAY_KEYS = {
+  Pazartesi: 'progDayAbbrMon', Salı: 'progDayAbbrTue', Çarşamba: 'progDayAbbrWed',
+  Perşembe: 'progDayAbbrThu', Cuma: 'progDayAbbrFri', Cumartesi: 'progDayAbbrSat', Pazar: 'progDayAbbrSun',
+};
+const shortDay = (day) => (DAY_KEYS[day] ? t(DAY_KEYS[day]) : day);
+
+function timeKey(s) {
+  return (s.days || []).map((d, i) => `${shortDay(d)} ${String(s.times?.[i] || '').replace('/', '–')}`.trim()).join(', ');
+}
+const isOnline = (s) => isRemoteMethod(s.method);
+function placeKey(s) {
+  if (isOnline(s)) return '';
+  const parts = (s.days || []).map((_, i) => [s.buildings?.[i], s.rooms?.[i]]
+    .filter((x) => x && !/^-+$/.test(String(x).trim())).join(' ')).filter(Boolean);
+  return [...new Set(parts)].join(', ');
+}
+const buildingKey = (s) => (isOnline(s) ? '' : [...new Set((s.buildings || []).filter(Boolean))].join(', '));
+function methodLabel(s) {
+  if (!s.method) return '';
+  if (isOnline(s)) return t('cdMethodOnline');
+  if (/yüz\s*yüze|face/i.test(s.method)) return t('cdMethodFace');
+  return s.method;
+}
+
+// Tüm şubelerde aynı olan alanlar bir kez yazılır; her şube satırı yalnızca
+// farklı olanı gösterir. Saf — test edilebilir.
+export function commonFields(secs) {
+  const same = (f) => secs.length > 0 && secs.every((s) => f(s) === f(secs[0]));
+  return {
+    time: same(timeKey),
+    method: same(methodLabel),
+    place: same(placeKey),
+    building: same(buildingKey),
+    hours: same((s) => sessionHours(s.times)),
+  };
+}
+
+function rulesOf(s) {
+  return [
+    s.prereq && s.prereq !== '-' ? { label: t('detailPrereq'), value: s.prereq } : null,
+    s.classReq && s.classReq !== '-' ? { label: t('detailClassReq'), value: s.classReq } : null,
+    s.reserved && s.reserved !== '-' ? { label: t('cdReserved'), value: s.reserved } : null,
+  ].filter(Boolean);
+}
+const rulesHtml = (rules) => `<details class="d-rules"><summary>${esc(t('cdRegRequirements'))}</summary>${rules.map((r) => `<p><b>${esc(r.label)}</b> ${esc(r.value)}</p>`).join('')}</details>`;
+
+function instructorHtml(instr) {
+  const names = splitInstructors(instr).filter((n) => !NO_INSTRUCTOR.has(n));
+  if (!names.length) return '<span class="d-none">·</span>';
+  return names.map((n) => {
+    const slug = instructorSlug(n);
+    return slug ? `<a href="/hoca/${slug}/">${esc(n)}</a>` : esc(n);
+  }).join(', ');
+}
+
+function fillHtml(cap, enr, cls = '') {
+  const q = quotaState(cap, enr);
+  if (q.kind === 'unknown') return `<span class="d-fill-unknown">${esc(t('quotaUnknown'))}</span>`;
+  const over = Math.max(0, q.enrolled - q.capacity);
+  const pill = q.kind === 'full' ? (over ? t('quotaFullOver', { n: formatInt(over) }) : t('quotaFull'))
+    : q.kind === 'tight' ? t('quotaLeft', { n: formatInt(q.remaining) }) : '';
+  return `<span class="d-fill is-${q.kind}${cls ? ` ${cls}` : ''}"><span class="d-bar" aria-hidden="true"><i style="width:${Math.min(100, q.pct)}%"></i></span>`
+    + `<span class="d-fill-n num">${formatInt(q.enrolled)}/${formatInt(q.capacity)}</span>`
+    + `${pill ? `<span class="d-tag is-${q.kind}">${esc(pill)}</span>` : ''}</span>`;
+}
+
+function addButtonState(term, branch, s) {
+  const on = inActiveProgram(term, branch, String(s.crn));
+  const full = quotaState(s.capacity, s.enrolled).kind === 'full';
+  const label = on ? t('cdInProgram') : full ? t('cdAddAnyway') : t('cdAddToProgram');
+  return { on, full, label };
+}
+
+function addButtonHtml(term, branch, s) {
+  const st = addButtonState(term, branch, s);
+  return `<button type="button" class="d-add${st.on ? ' is-on' : ''}${st.full ? ' is-full' : ''}" data-add-crn="${esc(s.crn)}" aria-pressed="${st.on}">`
+    + `<span class="d-add-l">${esc(st.label)}</span><span class="sr-only"> · CRN ${esc(s.crn)}</span></button>`;
+}
+
+function sectionRow(s, ctx) {
+  const { common, term, branch, focusCrn, sharedRules } = ctx;
+  const diff = [];
+  if (!common.time) diff.push(timeKey(s));
+  if (!common.method && methodLabel(s)) diff.push(methodLabel(s));
+  if (!common.place && placeKey(s)) diff.push(placeKey(s));
+  if (!common.hours && !common.time && sessionHours(s.times)) diff.push(weeklyHoursLabel(sessionHours(s.times)));
+  const q = quotaRec(term, s.crn);
+  const speed = q && q.filledAt ? fillSpeedLabel(q.fillMinutes) : '';
+  const rules = sharedRules ? [] : rulesOf(s);
+  const focus = String(s.crn) === String(focusCrn);
+  return `<article class="d-row${focus ? ' is-focus' : ''}" data-crn="${esc(s.crn)}">
+      <span class="d-row-crn crn" translate="no">${esc(s.crn)}</span>
+      <div class="d-row-who">${instructorHtml(s.instructor)}${diff.length ? `<div class="d-row-diff">${esc(diff.filter(Boolean).join(' · '))}</div>` : ''}</div>
+      ${addButtonHtml(term, branch, s)}
+      <div class="d-row-fill">${s.capacity ? fillHtml(s.capacity, s.enrolled) : `<span class="d-fill-unknown">${esc(t('quotaUnknown'))}</span>`}${speed ? `<span class="d-speed" title="${esc(fillExact(q.fillMinutes))}">${esc(speed)}</span>` : ''}</div>
+      ${rules.length ? `<div class="d-row-rules">${rulesHtml(rules)}</div>` : ''}
     </article>`;
 }
 
-// Şubeler kompakt satırlar olarak çizilir. İlk sekiz satır doğrudan görünür;
-// daha uzun listeler kontrollü açılır. Şubeler birleştirilmez: her CRN'nin
-// kontenjan ve kayıt durumu ayrı kalır.
-function renderSecList(secs, buildings, focusCrn = '') {
-  // Dolu (kap>0) olanlar önce, sonra CRN sırası.
+function sectionsHtml({ term, secs, branch, crn, buildings }) {
+  const caption = [termLabel(term), measuredNote(term, secs)].filter(Boolean).join(' · ');
+  const head = `<h3 class="d-h" id="d-h-secs"><span>${esc(t('cdSectionsThisTerm'))}</span><small>${esc(caption)}</small></h3>`;
+  if (!secs.length) {
+    const msg = I18N.lang === 'en'
+      ? `This course is not offered in <b>${esc(termLabel(term))}</b>.`
+      : `Bu ders <b>${esc(termLabel(term))}</b> döneminde açık değil.`;
+    return `<section class="d-block d-blk-secs" aria-labelledby="d-h-secs">${head}<p class="empty">${msg}</p></section>`;
+  }
   const ordered = secs.slice().sort((a, b) =>
-    (String(b.crn) === String(focusCrn) ? 1 : 0) - (String(a.crn) === String(focusCrn) ? 1 : 0) ||
     (a.capacity > 0 ? 0 : 1) - (b.capacity > 0 ? 0 : 1) ||
     Number(a.crn) - Number(b.crn) || String(a.crn).localeCompare(b.crn));
-
-  const uniformMethod = [...new Set(secs.map((s) => s.method).filter(Boolean))].length <= 1;
-  const uniformHrs = [...new Set(secs.map((s) => sessionHours(s.times)))].length <= 1;
-  const hrs = uniformHrs ? sessionHours(secs[0].times) : 0;
-  const head = [];
-  if (uniformMethod && secs[0].method) head.push(secs[0].method === 'Fiziksel (Yüz yüze)' ? I18N.t('cdMethodF2F') : secs[0].method);
-  if (uniformHrs && hrs) head.push(weeklyHoursLabel(hrs));
-  const listHeader = head.length ? `<p class="d-secs-head">${secs.length} ${I18N.t('prgSube')} · ${esc(head.join(' · '))}</p>` : '';
-
-  const card = (s) => secCard(s, buildings, !uniformMethod || !uniformHrs)
-    .replace('class="d-sec"', `class="d-sec${String(s.crn) === String(focusCrn) ? ' is-focus' : ''}"`);
-  const MAX = 8;
-  const showAll = ordered.length > MAX;
-  const html = ordered.slice(0, MAX).map(card).join('') +
-    (showAll ? `<div class="d-secs-more" hidden>${ordered.slice(MAX).map(card).join('')}</div>
-      <button type="button" class="btn-ghost d-secs-toggle">${moreSectionsLabel(ordered.length - MAX)}</button>` : '');
-
-  return `<div class="d-sec-list">${listHeader}${html}</div>`;
+  const common = commonFields(secs);
+  const first = secs[0];
+  const parts = [];
+  if (common.time && timeKey(first)) parts.push(`<b>${esc(timeKey(first))}</b>`);
+  if (common.method && methodLabel(first)) parts.push(`<b>${esc(methodLabel(first))}</b>`);
+  if (!isOnline(first)) {
+    if (common.place && placeKey(first)) parts.push(`<b>${esc(placeKey(first))}</b>`);
+    else if (common.building && buildingKey(first)) {
+      const b = buildingKey(first);
+      const full = buildingName(b, buildings);
+      parts.push(`<b>${esc(full && full !== b ? `${b} · ${full}` : b)}</b>`);
+    }
+  }
+  if (common.hours && sessionHours(first.times)) parts.push(esc(weeklyHoursLabel(sessionHours(first.times))));
+  const rules0 = JSON.stringify(rulesOf(first));
+  const sharedRules = secs.every((s) => JSON.stringify(rulesOf(s)) === rules0);
+  const lead = secs.length > 1 ? `${esc(t('cdCommonAll'))} ` : '';
+  const commonLine = parts.length ? `<p class="d-common">${lead}${parts.join(' · ')}</p>` : '';
+  const ctx = { common, term, branch, focusCrn: crn, sharedRules };
+  return `<section class="d-block d-blk-secs" aria-labelledby="d-h-secs">${head}${commonLine}
+    ${sharedRules && rulesOf(first).length ? rulesHtml(rulesOf(first)) : ''}
+    <div class="d-rows">${ordered.map((s) => sectionRow(s, ctx)).join('')}</div>
+  </section>`;
 }
 
+/* ---------- başlık ---------- */
+
+function titleNames(name, cat) {
+  const en = cat?.nameEn && cat.nameEn.trim();
+  if (I18N.lang === 'en' && en) return { main: en, sub: en.toLocaleLowerCase('en') === String(name).toLocaleLowerCase('en') ? '' : name };
+  return { main: name, sub: en && en.toLocaleLowerCase('tr') !== String(name).toLocaleLowerCase('tr') ? en : '' };
+}
+
+function headHtml({ code, name, cat, secs, obsLink, special }) {
+  const names = titleNames(name || code, cat);
+  const c = cat?.credits || {};
+  const credit = c.local != null
+    ? `${trNum(c.local)} ${t('planCreditsFull')}${c.ects ? ` · ${trNum(c.ects)} ${t('progECTSWord')}` : ''}`
+    : '';
+  const withCap = secs.filter((s) => Number(s.capacity) > 0);
+  const cap = withCap.reduce((a, s) => a + Number(s.capacity), 0);
+  const enr = withCap.reduce((a, s) => a + (Number(s.enrolled) || 0), 0);
+  const left = withCap.reduce((a, s) => a + Math.max(0, Number(s.capacity) - (Number(s.enrolled) || 0)), 0);
+  const q = quotaState(cap, enr);
+  const sub = [
+    names.sub ? `<span class="d-ph-en">${esc(names.sub)}</span>` : '',
+    credit ? `<span class="num">${esc(credit)}</span>` : '',
+    obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener">${esc(t('cdObsCatalog'))} ${EXT_SVG}</a>` : '',
+  ].filter(Boolean).join('');
+  return `<header class="d-ph">
+      <div class="d-ph-top">
+        <div class="d-ph-t">
+          <div class="d-ph-code"><span class="code" translate="no">${esc(code)}</span>${special ? `<span class="section-kind-badge ${special}">${esc(t(special === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge'))}</span>` : ''}</div>
+          <h2 class="d-ph-name" id="detail-title">${esc(names.main)}</h2>
+          ${sub ? `<div class="d-ph-sub">${sub}</div>` : ''}
+        </div>
+        <button type="button" class="d-x" id="detail-close" data-d-close aria-label="${esc(t('cdClose'))}">${CLOSE_SVG}</button>
+      </div>
+      <div class="d-stats">
+        <div><small>${esc(t('cdStatSections'))}</small><strong class="num">${formatInt(secs.length)}</strong></div>
+        <div><small>${esc(t('cdStatFill'))}</small><strong class="num">${cap ? `${formatInt(enr)}/${formatInt(cap)}` : '–'}</strong>${cap ? `<span class="d-bar is-${q.kind}" aria-hidden="true"><i style="width:${Math.min(100, q.pct)}%"></i></span>` : ''}</div>
+        <div><small>${esc(t('cdStatLeft'))}</small><strong class="num${cap && !left ? ' is-zero' : ''}">${cap ? formatInt(left) : '–'}</strong></div>
+      </div>
+    </header>`;
+}
+
+function loadingHtml(code) {
+  return `<header class="d-ph">
+      <div class="d-ph-top">
+        <div class="d-ph-t"><div class="d-ph-code"><span class="code" translate="no">${esc(code)}</span></div><h2 class="d-ph-name" id="detail-title">${esc(code)}</h2></div>
+        <button type="button" class="d-x" id="detail-close" data-d-close aria-label="${esc(t('cdClose'))}">${CLOSE_SVG}</button>
+      </div>
+    </header>
+    <p class="empty d-loading">${esc(t('statLoading'))}</p>`;
+}
+
+/* ---------- özet / katalog ---------- */
+
+function programsHtml(programs, hasTermData) {
+  if (!hasTermData) {
+    return `<div class="d-progs d-progs-none"><span>${t('cdProgNoTermDataTitle')}</span><p>${t('cdProgNoTermDataBody')}</p></div>`;
+  }
+  if (!programs.length) {
+    return `<div class="d-progs d-progs-none"><span>${t('cdProgNoRestrictionTitle')}</span><p>${t('cdProgNoRestrictionBody')}</p></div>`;
+  }
+  return `<details class="d-progs">
+    <summary><span>${t('detailPrograms')}</span><b>${programs.length}</b></summary>
+    <div class="d-progs-body">
+      ${programs.length > 12 ? `<label class="d-prog-search-wrap"><span class="sr-only">${t('cdProgSearchLabel')}</span><input type="search" class="d-prog-search" placeholder="${esc(t('cdProgSearchPlaceholder'))}" autocomplete="off"></label>` : ''}
+      <div class="d-prog-list">${programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="${esc(t('cdProgFilterTitle'))}">${esc(p)}</button>`).join('')}</div>
+      <p class="d-prog-empty" hidden>${t('cdProgNoMatch')}</p>
+    </div>
+  </details>`;
+}
+
+const fold = (title, body, { open = false, cls = '' } = {}) =>
+  `<details class="d-fold${cls ? ` ${cls}` : ''}"${open ? ' open' : ''}><summary>${title}</summary><div class="d-fold-body">${body}</div></details>`;
+
+function aboutHtml({ code, cat, gr, programs, secs }) {
+  const c = cat?.credits || {};
+  const cell = (label, v) => `<div><small>${esc(label)}</small><strong class="num">${v == null || v === '' ? '·' : esc(trNum(v))}</strong></div>`;
+  const facts = `<div class="d-facts">${cell(t('cdTheory'), c.theory)}${cell(t('cdPractice'), c.practice)}${cell(t('cdLab'), c.lab)}${cell(t('cdCreditShort'), c.local)}${cell(t('progECTSWord'), c.ects)}</div>`;
+  const list = (items) => items.map((x) => `<li>${esc(x)}</li>`).join('');
+  const desc = cat?.description
+    ? `<p class="d-desc" id="d-desc">${esc(cat.description)}</p><button type="button" class="d-desc-more" aria-controls="d-desc" aria-expanded="false" hidden>${esc(t('cdShowAll'))}</button>`
+    : '';
+  const metaBits = [];
+  if (cat?.language) metaBits.push(`${esc(t('cdLanguage'))}: ${esc(cat.language)}`);
+  const midterms = (cat?.weeklyTopics || []).filter((x) => /ara\s*sınav/i.test(x));
+  if (midterms.length) metaBits.push(`${t('cdMidtermPrefix')} ${esc(midterms.map((x) => x.split(' · ')[0] || x).join(', '))}`);
+  const meta = metaBits.length ? `<p class="d-cat-meta">${metaBits.join(' · ')}</p>` : '';
+  const eqs = cat?.equivalents || [];
+  const eqHtml = eqs.length
+    ? `<div class="d-cat-eq"><h4>${t('cdEquivalents')}</h4><div class="d-eq-list">${eqs.map((e) => `<button type="button" class="d-eq" data-eq="${esc(e)}">${esc(e)}</button>`).join('')}</div></div>`
+    : '';
+  const hasOut = (cat?.weeklyPlan || []).some((w) => w.outcomes);
+  const planHtml = (cat?.weeklyPlan || []).length
+    ? `<div class="tablewrap"><table class="d-cat-plan" aria-label="${esc(t('cdWeeklyPlanAria'))}">
+        <thead><tr><th class="num">${t('cdColWeek')}</th><th>${t('cdColTopic')}</th>${hasOut ? `<th>${t('cdColOutcomes')}</th>` : ''}</tr></thead>
+        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ` class="d-cat-mid" title="${esc(t('cdMidtermWeekTitle'))}"` : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '·')}</td>` : ''}</tr>`).join('')}</tbody>
+      </table></div>`
+    : (cat?.weeklyTopics || []).length ? `<ol>${list(cat.weeklyTopics)}</ol>` : '';
+  const folds = [
+    (cat?.outcomes || []).length ? fold(`${t('cdLearningOutcomes')} <span>${cat.outcomes.length}</span>`, `<ul>${list(cat.outcomes)}</ul>`) : '',
+    planHtml ? fold(`${t('cdWeeklyPlan')} <span>${(cat.weeklyPlan || cat.weeklyTopics || []).length}</span>`, planHtml) : '',
+    (cat?.textbooks || []).length ? fold(t('cdTextbooks'), `<ul>${list(cat.textbooks)}</ul>`) : '',
+  ].join('');
+  const relations = `<div class="d-relations">
+      <section class="d-relation"><h4>${t('detailPrereq')}</h4><div class="d-req-fwd" data-code="${esc(code)}"><p class="empty">${t('statLoading')}</p></div></section>
+      <details class="d-relation d-relation-more"><summary>${t('cdReverseReqSummary')} <span data-req-count>…</span></summary>
+        <div class="d-req-by" data-code="${esc(code)}"><p class="empty">${t('statLoading')}</p></div>
+      </details>
+    </div>`;
+  return `<section class="d-block d-about" aria-labelledby="d-h-about">
+    <h3 class="d-h" id="d-h-about"><span>${esc(t('cdTabOverview'))}</span></h3>
+    ${facts}
+    ${cat ? '' : `<p class="empty">${t('cdNoCatalogRecord')}</p>`}
+    ${desc}${meta}
+    ${relations}
+    ${eqHtml}
+    ${folds}
+    ${gradesHtml(gr)}
+    ${programsHtml(programs, secs.length > 0)}
+    ${cat?.sourceUrl ? `<p class="d-cat-src">${t('cdSourcePrefix')} <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">${t('cdObsCatalogForm')}</a></p>` : ''}
+  </section>`;
+}
+
+/* ---------- geçmiş dönemler ---------- */
+
+const HIST_VISIBLE = 8;
 let lastHistTerms = null; // trend "hepsini göster" için güncel byTerm
 
-// Geçmiş dönem bölümü: dönem doluluk trendi (trendChart) + dönem tablosu.
-// Veri yoksa neden açıklanır.
-function histHtml(hist) {
+function histHtml(hist, term) {
   const byTerm = new Map();
   for (const [slug, instructor, cap, enr] of hist?.rows || []) {
     if (!byTerm.has(slug)) byTerm.set(slug, []);
-    byTerm.get(slug).push({ instructor, cap, enr });
+    byTerm.get(slug).push({ instructor, cap: Number(cap) || 0, enr: Number(enr) || 0 });
   }
+  const head = (caption) => `<h3 class="d-h" id="d-h-hist"><span>${esc(t('cdPastTerms'))}</span><small>${esc(caption)}</small></h3>`;
   if (!byTerm.size) {
-    return `<section class="d-hist"><h4>${I18N.t('cdPastTerms')}</h4>
-      <p class="empty">${I18N.t('cdPastNoData')}</p></section>`;
+    return `<section class="d-block d-blk-hist" aria-labelledby="d-h-hist">${head('')}<p class="empty">${t('cdPastNoData')}</p></section>`;
   }
-  lastHistTerms = byTerm; // trend "hepsini göster" yeniden çizimi için
-  const seasons = { guz: I18N.t('cdSeasonFall'), bahar: I18N.t('cdSeasonSpring'), yaz: I18N.t('cdSeasonSummer') };
+  lastHistTerms = byTerm;
+  const seasons = { guz: t('cdSeasonFall'), bahar: t('cdSeasonSpring'), yaz: t('cdSeasonSummer') };
   const openIn = [...new Set([...byTerm.keys()].map((s) => s.split('-')[2]))].map((s) => seasons[s] || s);
-  const rows = [];
-  for (const [slug, secs] of byTerm) secs.forEach((r, i) => rows.push({ slug, termFirst: i === 0, ...r }));
   const openedIn = I18N.lang === 'en' ? `opened in ${byTerm.size} terms` : `${byTerm.size} dönemde açıldı`;
-  return `<section class="d-hist">
-    <div class="d-section-head"><div><h4>${I18N.t('cdPastTerms')}</h4><p>${openedIn} · ${esc(openIn.join(', '))}</p></div></div>
-    ${trendChart(byTerm, isMobile() ? 6 : 8)}
-    <details class="d-history-records">
-      <summary>${I18N.t('cdTermRecords')} <span>${rows.length}</span></summary>
-      <div class="tablewrap"><table class="htable" aria-label="${esc(I18N.t('cdHistAriaLabel'))}">
-        <thead><tr><th>${I18N.t('cdColTerm')}</th><th>${I18N.t('detailInstr')}</th><th class="num">${I18N.t('cdColCapAbbr')}</th><th class="num">${I18N.t('detailEnr')}</th><th class="num quota-legacy-col">${I18N.t('cdColFill')}</th></tr></thead>
-        <tbody>${rows.map((r) => `<tr><td>${r.termFirst ? esc(termLabel(r.slug)) : ''}</td>
-          <td>${esc(r.instructor || '·')}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td>
-          <td class="num quota-legacy-col">${fillBar(r.cap, r.enr)}</td></tr>`).join('')}</tbody>
+  const terms = [...byTerm.entries()].sort(([a], [b]) => b.localeCompare(a));
+  const termRow = ([slug, rows], i) => {
+    const cap = rows.reduce((a, r) => a + r.cap, 0);
+    const enr = rows.reduce((a, r) => a + r.enr, 0);
+    const pct = cap ? Math.min(100, Math.round((enr / cap) * 100)) : 0;
+    return `<div class="d-hrow${slug === term ? ' is-now' : ''}"${i >= HIST_VISIBLE ? ' data-hist-extra hidden' : ''}>
+        <span class="d-hrow-t">${esc(termLabel(slug))}</span>
+        <span class="d-htrack" aria-hidden="true"><i style="width:${pct}%"></i></span>
+        <span class="d-hrow-v num">${esc(cap ? t('cdHistRowValue', { n: rows.length, enr: formatInt(enr), cap: formatInt(cap) }) : t('cdHistRowEnrolled', { n: rows.length, enr: formatInt(enr) }))}</span>
+      </div>`;
+  };
+  const more = terms.length > HIST_VISIBLE
+    ? `<button type="button" class="d-link-btn d-hist-toggle" aria-expanded="false" data-more="${esc(t('cdHistShowOlder', { n: terms.length - HIST_VISIBLE }))}" data-less="${esc(t('cdShowLess'))}">${esc(t('cdHistShowOlder', { n: terms.length - HIST_VISIBLE }))}</button>`
+    : '';
+  const records = [];
+  for (const [slug, rows] of terms) rows.forEach((r, i) => records.push({ slug, first: i === 0, ...r }));
+  const instr = (name) => splitInstructors(name).filter((n) => !NO_INSTRUCTOR.has(n))
+    .map((n) => `<button type="button" class="d-instr-history" data-name="${esc(n)}" title="${esc(I18N.lang === 'en' ? `search ${n}'s history` : `${n} geçmişinde ara`)}">${esc(n)}</button>`).join('') || '·';
+  return `<section class="d-block d-blk-hist" aria-labelledby="d-h-hist">
+    ${head(`${openedIn} · ${openIn.join(', ')}`)}
+    <p class="d-hist-legend">${esc(t('cdHistLegend'))}</p>
+    <div class="d-hrows">${terms.map(termRow).join('')}</div>
+    ${more}
+    ${fold(t('cdFillChart'), trendChart(byTerm, isMobile() ? 6 : 8), { cls: 'd-trend-fold' })}
+    <details class="d-fold d-records">
+      <summary>${t('cdTermRecords')} <span>${records.length}</span></summary>
+      <div class="d-fold-body tablewrap"><table class="htable" aria-label="${esc(t('cdHistAriaLabel'))}">
+        <thead><tr><th>${t('cdColTerm')}</th><th>${t('detailInstr')}</th><th class="num">${t('cdColCapAbbr')}</th><th class="num">${t('detailEnr')}</th></tr></thead>
+        <tbody>${records.map((r) => `<tr><td>${r.first ? esc(termLabel(r.slug)) : ''}</td>
+          <td>${instr(r.instructor)}</td><td class="num">${r.cap}</td><td class="num">${r.enr}</td></tr>`).join('')}</tbody>
       </table></div>
     </details>
   </section>`;
 }
 
-function programsHtml(programs, hasTermData) {
-  if (!hasTermData) {
-    return `<div class="d-progs d-progs-none"><span>${I18N.t('cdProgNoTermDataTitle')}</span><p>${I18N.t('cdProgNoTermDataBody')}</p></div>`;
-  }
-  if (!programs.length) {
-    return `<div class="d-progs d-progs-none"><span>${I18N.t('cdProgNoRestrictionTitle')}</span><p>${I18N.t('cdProgNoRestrictionBody')}</p></div>`;
-  }
-  return `<details class="d-progs">
-    <summary><span>${I18N.t('detailPrograms')}</span><b>${programs.length}</b></summary>
-    <div class="d-progs-body">
-      ${programs.length > 12 ? `<label class="d-prog-search-wrap"><span class="sr-only">${I18N.t('cdProgSearchLabel')}</span><input type="search" class="d-prog-search" placeholder="${esc(I18N.t('cdProgSearchPlaceholder'))}" autocomplete="off"></label>` : ''}
-      <div class="d-prog-list">${programs.map((p) => `<button type="button" class="d-prog" data-program="${esc(p)}" title="${esc(I18N.t('cdProgFilterTitle'))}">${esc(p)}</button>`).join('')}</div>
-      <p class="d-prog-empty" hidden>${I18N.t('cdProgNoMatch')}</p>
-    </div>
+/* ---------- not dağılımı ---------- */
+
+// Harf notu sıralaması (kabaca azalan başarı). Geçme eşiği CC+ ve üzeri kabul
+// edilir (İTÜ'de ders bazında değişebilir; bu yalnızca gösterge).
+export const GRADE_ORDER = ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'FF', 'VF'];
+
+// Saf yardımcı: harf notu dağılımından geçme oranı (% ≥CC+). Test edilebilir.
+export function gradePassPct(grades, total) {
+  const pass = GRADE_ORDER.slice(0, 8).reduce((s, g) => s + (grades[g] || 0), 0);
+  return total ? Math.round((pass / total) * 100) : 0;
+}
+
+// Saf yardımcı: en sık harf notu + yüzdesi. Test edilebilir.
+export function gradeMode(grades, total) {
+  const e = Object.entries(grades).sort((a, b) => b[1] - a[1])[0];
+  if (!e) return { grade: '·', pct: 0 };
+  return { grade: e[0], pct: total ? Math.round((e[1] / total) * 100) : 0 };
+}
+
+// Harf notu dağılımı (Faz 3B): çubuk grafik + geçme oranı + mod. Veri yoksa
+// hiç çıktı üretmez (opsiyonel bölüm).
+function gradesHtml(gr) {
+  if (!gr || !gr.length) return '';
+  const gradeTier = (g) => {
+    const i = GRADE_ORDER.indexOf(g);
+    if (i < 0) return '';
+    if (i < 8) return 'is-pass';
+    if (i < 13) return 'is-borderline';
+    return 'is-fail';
+  };
+  const gradeBars = (term) => {
+    const max = Math.max(...Object.values(term.grades), 1);
+    const order = GRADE_ORDER.filter((g) => term.grades[g]);
+    return `<div class="d-grade-bars">${order.map((g) => `
+      <div class="d-grade" title="${esc(g)} · ${term.grades[g]} ${t('cdPeopleCount')}">
+        <span class="d-grade-l">${esc(g)}</span>
+        <span class="d-grade-bar"><i class="${gradeTier(g)}" style="width:${Math.round((term.grades[g] / max) * 100)}%"></i></span>
+        <span class="d-grade-n">${term.grades[g]}</span>
+      </div>`).join('')}</div>`;
+  };
+  const statLine = (term) => {
+    const pct = gradePassPct(term.grades, term.total);
+    const mode = gradeMode(term.grades, term.total);
+    return `<p class="d-grade-stat">${t('cdPassRateWord')} ≥CC+ %${pct} · ${t('cdMostCommon')} ${esc(`${mode.grade} (%${mode.pct})`)} · ${term.total} ${t('cdStudentsCount')}</p>`;
+  };
+  const sorted = [...gr].sort((a, b) => (b.donem || '').localeCompare(a.donem || ''));
+  const latest = sorted[0];
+  const older = sorted.slice(1);
+  const pct = gradePassPct(latest.grades, latest.total);
+  const mode = gradeMode(latest.grades, latest.total);
+  return `<details class="d-grades">
+    <summary><span><b>${t('cdGradeDist')}</b><small>${esc(latest.term)}</small></span><strong>≥CC+ %${pct} · ${t('cdMostCommon')} ${esc(mode.grade)}</strong></summary>
+    <div class="d-grades-body">${statLine(latest)}
+    ${gradeBars(latest)}
+    ${older.length ? `<details class="d-grades-more"><summary>${t('cdPreviousTerms')} (${older.length})</summary>
+      ${older.map((tm) => `<h5>${esc(tm.term)}</h5>${statLine(tm)}${gradeBars(tm)}`).join('')}
+    </details>` : ''}</div>
   </details>`;
 }
 
-function overviewParts({ term, secs, cat, gr, hist, programs }) {
-  const termCount = new Set((hist?.rows || []).map((r) => r[0])).size;
-  const hrs = secs.length ? sessionHours(secs[0].times) : 0;
-  const credits = cat?.credits || {};
-  const creditText = credits.local != null
-    ? `${trNum(credits.local)} ${I18N.t('planCreditsFull')}${credits.ects ? ` · ${trNum(credits.ects)} ${I18N.t('progECTSWord')}` : ''}`
-    : I18N.t('cdNoCatalogInfo');
-  const beforeHtml = `<div class="d-overview-stats">
-      <div><span>${I18N.t('cdThisTerm')}</span><b>${secs.length ? `${secs.length} ${I18N.t('prgSube')}` : I18N.t('cdNotOffered')}</b><small>${esc(termLabel(term))}${hrs ? ` · ${weeklyHoursLabel(hrs)}` : ''}</small></div>
-      <div><span>${I18N.t('planCreditsFull')}</span><b>${esc(creditText)}</b><small>${esc(cat?.language || I18N.t('cdNoLangInfo'))}</small></div>
-      <div><span>${I18N.t('cdArchive')}</span><b>${termCount ? `${termCount} ${I18N.lang === 'en' ? 'terms' : 'dönem'}` : I18N.t('cdNoRecords')}</b><small>${termCount ? I18N.t('cdPastOfferings') : I18N.t('cdNoTermData')}</small></div>
-    </div>`;
-  const afterHtml = `${gradesHtml(gr)}${programsHtml(programs, secs.length > 0)}`;
-  return { beforeHtml, afterHtml };
+/* ---------- panel yerleşimi ---------- */
+
+let panelHome = null; // { parent, next }: çekmece kipinde panelin DOM yeri
+
+function panelEl() { return $('#detail-panel'); }
+function isOpen() { const p = panelEl(); return Boolean(p && !p.hidden); }
+function isDocked() { return Boolean(panelEl()?.classList.contains('is-docked')); }
+
+// Dersler görünür ve geniş ekran: liste yanında sütun. Aksi halde çekmece.
+function wantsDock() {
+  return Boolean($('#course-work')) && isViewVisible('dersler') && window.matchMedia(DOCK_MQ).matches;
 }
 
-function overviewHtml(data) {
-  const { beforeHtml, afterHtml } = overviewParts(data);
-  const { code } = data;
-  return `${beforeHtml}
-    <div class="d-overview-relations">
-      <section class="d-relation"><h4>${I18N.t('detailPrereq')}</h4><div class="d-req-fwd" data-code="${esc(code)}"><p class="empty">${I18N.t('statLoading')}</p></div></section>
-      <details class="d-relation d-relation-more"><summary>${I18N.t('cdReverseReqSummary')} <span data-req-count>…</span></summary>
-        <div class="d-req-by" data-code="${esc(code)}"><p class="empty">${I18N.t('statLoading')}</p></div>
-      </details>
-    </div>${afterHtml}`;
-}
-
-function detailShell({ code, name, branch, level, method, obsLink, term, secs, cat, gr, hist, programs, buildings, crn }) {
-  const active = crn && secs.length ? 'sections' : 'overview';
-  const panels = {
-    overview: overviewHtml({ code, term, secs, cat, gr, hist, programs }),
-    sections: secs.length
-      ? `<section class="d-secs"><div class="d-section-head"><div><h4>${I18N.t('cdSectionsThisTerm')}</h4><p>${esc(termLabel(term))} · ${secs.length} ${I18N.t('prgSube')}</p></div></div>${renderSecList(secs, buildings, crn)}</section>`
-      : `<p class="empty">${I18N.lang === 'en' ? `This course is not offered in <b>${esc(termLabel(term))}</b>.` : `Bu ders <b>${esc(termLabel(term))}</b> döneminde açık değil.`}</p>`,
-    catalog: catalogHtml(cat) || `<p class="empty">${I18N.t('cdNoCatalogRecord')}</p>`,
-    history: histHtml(hist),
-  };
-  const tab = (key, label, extra = '') => `<button type="button" role="tab" id="d-tab-${key}" aria-controls="d-panel-${key}" aria-selected="${active === key}" tabindex="${active === key ? '0' : '-1'}" data-dtab="${key}">${label}${extra}</button>`;
-  return `<header class="d-head">
-      <div class="d-title-block"><h3 id="detail-title"><span class="d-code">${esc(code)}</span><span class="d-name">${esc(name || code)}</span></h3>
-        <div class="d-meta">${[branch, level, method].filter(Boolean).map((x) => `<span class="d-pill">${esc(x)}</span>`).join('')}</div>
-      </div>
-      ${obsLink ? `<a class="d-obs" href="${esc(obsLink)}" target="_blank" rel="noopener">${I18N.t('cdObsCatalog')} <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4h6v6M20 4l-9 9M10 4H4v16h16v-6"/></svg></a>` : ''}
-    </header>
-    <nav class="d-tabs" role="tablist" aria-label="${esc(I18N.t('cdSectionsAriaLabel'))}">
-      ${tab('overview', I18N.t('cdTabOverview'))}
-      ${tab('sections', I18N.t('cdTabSections'), `<span>${secs.length}</span>`)}
-      ${tab('catalog', I18N.t('cdTabCatalog'))}
-      ${tab('history', I18N.t('detailHist'))}
-    </nav>
-    <div class="d-panels">
-      ${Object.entries(panels).map(([key, html]) => `<section role="tabpanel" id="d-panel-${key}" aria-labelledby="d-tab-${key}" data-dpanel="${key}"${active === key ? '' : ' hidden'}>${html}</section>`).join('')}
-    </div>`;
-}
-
-function detailReactProps({ code, name, branch, level, method, obsLink, term, secs, cat, gr, hist, programs, buildings, crn }) {
-  const active = crn && secs.length ? 'sections' : 'overview';
-  const specialKind = /\bek\s*sınav\b|additional\s+exam/i.test(method || '')
-    ? 'extra-exam'
-    : /\b(bitirme|graduation\s+(?:project|study|design|thesis)|capstone)\b/i.test(name || '') ? 'graduation' : '';
-  const ordered = secs.slice().sort((a, b) =>
-    (String(b.crn) === String(crn) ? 1 : 0) - (String(a.crn) === String(crn) ? 1 : 0) ||
-    (a.capacity > 0 ? 0 : 1) - (b.capacity > 0 ? 0 : 1) || Number(a.crn) - Number(b.crn));
-  const sectionRows = ordered.map((s) => {
-    const kind = /\bek\s*sınav\b|additional\s+exam/i.test(s.method || '') ? 'extra-exam'
-      : /\b(bitirme|graduation\s+(?:project|study|design|thesis)|capstone)\b/i.test(name || '') ? 'graduation' : '';
-    const hrs = sessionHours(s.times);
-    const note = [fillNote(s.crn), measured(s.crn)].filter(Boolean).join(' · ');
-    return {
-      crn: String(s.crn),
-      instructors: splitInstructors(s.instructor),
-      quota: s.capacity ? `${formatInt(s.enrolled || 0)} / ${formatInt(s.capacity)}${s.enrolled >= s.capacity ? ` · ${I18N.lang === 'en' ? 'full' : 'dolu'}` : ''}` : '·',
-      note,
-      meta: kind === 'extra-exam' ? I18N.t('courseExtraExamBadge') : kind === 'graduation' ? I18N.t('courseGraduationBadge') : [s.method, hrs ? weeklyHoursLabel(hrs) : ''].filter(Boolean).join(' · '),
-      sessions: (s.days || []).map((day, i) => [day, s.times?.[i], s.rooms?.[i], s.buildings?.[i] ? buildingName(s.buildings[i], buildings) : ''].filter(Boolean).join(' · ')),
-      rules: [
-        s.prereq && s.prereq !== '-' ? { label: I18N.t('detailPrereq'), value: s.prereq } : null,
-        s.classReq && s.classReq !== '-' ? { label: I18N.t('detailClassReq'), value: s.classReq } : null,
-        s.reserved && s.reserved !== '-' ? { label: I18N.t('cdReserved'), value: s.reserved } : null,
-      ].filter(Boolean),
-      focus: String(s.crn) === String(crn),
-      special: kind,
-    };
-  });
-  const historyByTerm = new Map();
-  for (const [slug, instructor, capacity, enrolled] of hist?.rows || []) {
-    if (!historyByTerm.has(slug)) historyByTerm.set(slug, []);
-    historyByTerm.get(slug).push({
-      instructor: instructor || '·', capacity: Number(capacity) || 0, enrolled: Number(enrolled) || 0,
-      fill: capacity ? Math.round((Number(enrolled) || 0) / Number(capacity) * 100) : 0,
-    });
+function placePanel(dock) {
+  const panel = panelEl();
+  const work = $('#course-work');
+  const scrim = $('#detail-scrim');
+  if (!panelHome) panelHome = { parent: panel.parentNode, next: panel.nextSibling };
+  if (dock && work) {
+    if (panel.parentNode !== work) work.appendChild(panel);
+    work.classList.add('has-detail');
+    panel.classList.add('is-docked');
+    panel.setAttribute('role', 'region');
+    panel.removeAttribute('aria-modal');
+    if (scrim) scrim.hidden = true;
+    document.body.classList.remove('modal-open');
+  } else {
+    if (panel.parentNode !== panelHome.parent) panelHome.parent.insertBefore(panel, panelHome.next);
+    work?.classList.remove('has-detail');
+    panel.classList.remove('is-docked');
+    panel.setAttribute('role', 'dialog');
+    panel.setAttribute('aria-modal', 'true');
+    if (scrim) scrim.hidden = false;
+    document.body.classList.add('modal-open');
   }
-  const seasons = { guz: I18N.t('cdSeasonFall'), bahar: I18N.t('cdSeasonSpring'), yaz: I18N.t('cdSeasonSummer') };
-  const historyTerms = [...historyByTerm].sort(([a], [b]) => a.localeCompare(b)).map(([slug, rows]) => {
-    const capacity = rows.reduce((sum, row) => sum + row.capacity, 0);
-    const enrolled = rows.reduce((sum, row) => sum + row.enrolled, 0);
-    const [, year, season] = slug.split('-');
-    return { slug, label: termLabel(slug), shortLabel: `${year} ${seasons[season] || season}`, season, capacity, enrolled, fill: capacity ? Math.round(enrolled / capacity * 100) : 0, rows };
-  });
-  const openedSeasons = [...new Set(historyTerms.map((item) => seasons[item.season] || item.season))];
-  const overview = overviewParts({ term, secs, cat, gr, hist, programs });
-  return {
-    code,
-    name: name || code,
-    meta: [branch, level, specialKind ? '' : method].filter(Boolean),
-    specialKind,
-    specialLabel: specialKind ? I18N.t(specialKind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge') : '',
-    obsLink,
-    obsLabel: I18N.t('cdObsCatalog'),
-    tabLabel: I18N.t('cdSectionsAriaLabel'),
-    prerequisite: {
-      code, requiredLabel: I18N.t('detailPrereq'), unlocksLabel: I18N.t('cdReverseReqSummary'), loading: I18N.t('statLoading'),
-    },
-    active,
-    sections: sectionRows,
-    history: {
-      heading: I18N.t('cdPastTerms'),
-      caption: historyTerms.length ? `${I18N.lang === 'en' ? `opened in ${historyTerms.length} terms` : `${historyTerms.length} dönemde açıldı`} · ${openedSeasons.join(', ')}` : '',
-      empty: I18N.t('cdPastNoData'), terms: historyTerms,
-      recordCount: historyTerms.reduce((sum, item) => sum + item.rows.length, 0),
-      labels: {
-        capacity: I18N.lang === 'en' ? 'capacity' : 'kontenjan', enrolled: I18N.lang === 'en' ? 'enrolled' : 'yazılan',
-        records: I18N.t('cdTermRecords'), showAll: I18N.lang === 'en' ? `Show ${Math.max(0, historyTerms.length - 8)} earlier terms` : `${Math.max(0, historyTerms.length - 8)} eski dönemi göster`,
-        showRecent: I18N.lang === 'en' ? 'Show recent terms' : 'Son dönemleri göster', full: I18N.lang === 'en' ? 'full' : 'dolu',
-      },
-    },
-    sectionHeading: I18N.t('cdSectionsThisTerm'),
-    sectionCaption: `${termLabel(term)} · ${secs.length} ${I18N.t('prgSube')}`,
-    labels: {
-      add: I18N.t('detailAddProg'), requirements: I18N.t('cdRegRequirements'),
-      showMore: I18N.lang === 'en' ? 'more sections' : 'şube daha göster', showLess: I18N.t('cdShowLess'),
-      extraExam: I18N.t('courseExtraExamBadge'), graduation: I18N.t('courseGraduationBadge'),
-    },
-    panels: [
-      { key: 'overview', label: I18N.t('cdTabOverview'), html: '', beforeHtml: overview.beforeHtml, afterHtml: overview.afterHtml },
-      { key: 'sections', label: I18N.t('cdTabSections'), count: secs.length, html: secs.length
-        ? `<section class="d-secs"><div class="d-section-head"><div><h4>${I18N.t('cdSectionsThisTerm')}</h4><p>${esc(termLabel(term))} · ${secs.length} ${I18N.t('prgSube')}</p></div></div>${renderSecList(secs, buildings, crn)}</section>`
-        : `<p class="empty">${I18N.lang === 'en' ? `This course is not offered in <b>${esc(termLabel(term))}</b>.` : `Bu ders <b>${esc(termLabel(term))}</b> döneminde açık değil.`}</p>` },
-      { key: 'catalog', label: I18N.t('cdTabCatalog'), html: catalogHtml(cat) || `<p class="empty">${I18N.t('cdNoCatalogRecord')}</p>` },
-      { key: 'history', label: I18N.t('detailHist'), html: histHtml(hist) },
-    ],
-  };
 }
 
-function wireDetailTabs(content) {
-  const tabs = [...content.querySelectorAll('[data-dtab]')];
-  const panels = [...content.querySelectorAll('[data-dpanel]')];
-  const activate = (key, focus = false) => {
-    for (const tab of tabs) {
-      const on = tab.dataset.dtab === key;
-      tab.setAttribute('aria-selected', String(on));
-      tab.tabIndex = on ? 0 : -1;
-      if (on && focus) tab.focus();
-    }
-    for (const panel of panels) panel.hidden = panel.dataset.dpanel !== key;
-    const scroller = content.querySelector('.d-panels');
-    if (scroller) scroller.scrollTop = 0;
-  };
-  tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => activate(tab.dataset.dtab));
-    tab.addEventListener('keydown', (ev) => {
-      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(ev.key)) return;
-      ev.preventDefault();
-      let next = ev.key === 'Home' ? 0 : ev.key === 'End' ? tabs.length - 1
-        : (index + (ev.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
-      activate(tabs[next].dataset.dtab, true);
-    });
-  });
+function notify(open) {
+  window.dispatchEvent(new CustomEvent('itu:detail-change', {
+    detail: open && current ? { open: true, code: current.code, crn: current.crn || '', term: current.term } : { open: false },
+  }));
 }
 
-function wireProgramSearch(content) {
-  const input = content.querySelector('.d-prog-search');
-  if (!input) return;
-  input.addEventListener('input', () => {
-    const q = input.value.trim().toLocaleLowerCase(I18N.lang === 'en' ? 'en' : 'tr');
-    let shown = 0;
-    for (const button of content.querySelectorAll('.d-prog[data-program]')) {
-      const visible = !q || button.textContent.toLocaleLowerCase(I18N.lang === 'en' ? 'en' : 'tr').includes(q);
-      button.hidden = !visible;
-      if (visible) shown++;
-    }
-    const empty = content.querySelector('.d-prog-empty');
-    if (empty) empty.hidden = shown !== 0;
-  });
+// Seçili şubeyi panelde vurgular ve görünür alana kaydırır (pencere kaymaz).
+function focusSection(crn, { scroll = true } = {}) {
+  const panel = panelEl();
+  let target = null;
+  for (const row of panel.querySelectorAll('.d-row[data-crn]')) {
+    const on = Boolean(crn) && row.dataset.crn === String(crn);
+    row.classList.toggle('is-focus', on);
+    if (on) target = row;
+  }
+  if (!scroll) return;
+  if (!target) { panel.scrollTop = 0; return; }
+  const head = panel.querySelector('.d-ph');
+  const top = target.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop;
+  const headH = head ? head.getBoundingClientRect().height : 0;
+  const visibleTop = panel.scrollTop + headH;
+  const visibleBottom = panel.scrollTop + panel.clientHeight;
+  if (top < visibleTop || top + target.offsetHeight > visibleBottom) {
+    panel.scrollTop = Math.max(0, top - headH - 12);
+  }
+}
+
+function syncAddButtons(content) {
+  if (!current) return;
+  for (const btn of content.querySelectorAll('[data-add-crn]')) {
+    const crn = btn.dataset.addCrn;
+    const s = current.secs.find((x) => String(x.crn) === crn);
+    if (!s) continue;
+    const st = addButtonState(current.term, current.branch, s);
+    btn.classList.toggle('is-on', st.on);
+    btn.classList.toggle('is-full', st.full);
+    btn.setAttribute('aria-pressed', String(st.on));
+    const label = btn.querySelector('.d-add-l');
+    if (label) label.textContent = st.label;
+  }
+}
+
+async function toggleProgram(btn, content) {
+  if (!current) return;
+  const { term, branch } = current;
+  const crn = btn.dataset.addCrn;
+  if (inActiveProgram(term, branch, crn)) {
+    removeFromActiveProgram(term, branch, crn);
+    toast(t('cdRemovedFromProgram', { crn }), { kind: 'warn' });
+    syncAddButtons(content);
+    return;
+  }
+  btn.disabled = true;
+  try {
+    const program = await import('../views/program.js?v=dde1e9339338');
+    await program.onShow();
+    await program.addProgramItems({ term, items: [{ branch, crn }] });
+  } finally {
+    btn.disabled = false;
+    syncAddButtons(content);
+  }
 }
 
 // code: "BLG 101E"; term varsayılanı Dersler'deki aktif dönem (state.termSlug).
-// crn yalnızca odak bilgisidir — panel koddaki tüm şubeleri gösterir.
-let detailReactModule = null;
-
+// crn yalnızca odak bilgisidir; panel koddaki tüm şubeleri gösterir.
 export async function openCourseDetail(code, { term, crn, source } = {}) {
-  const t = term || state.termSlug;
-  const opener = document.activeElement;
-  // Panel modülü tembel yüklenir (core/detail-loader.js); doğrudan içe aktaran
-  // görünümler için de kapatma/klavye bağları ve panel stili burada garanti edilir.
+  const tm = term || state.termSlug;
   initCourseDetail();
   await loadStyle('detail');
-  lastDetailFocus = opener;
-  const panel = $('#detail-panel');
+  const panel = panelEl();
   const content = $('#detail-content');
-  panel.hidden = false;
-  document.body.classList.add('modal-open');
-  // React'in yönettiği kapsayıcı innerHTML ile temizlenirse bir sonraki açılışta
-  // unmount removeChild hatası verir ve görünüm eski modal fallback'ine düşer.
-  if (detailReactModule) {
-    try { detailReactModule.unmountCourseDetail(); } catch { /* önceden ayrılmış DOM */ }
+  const wasOpen = isOpen();
+  const opener = document.activeElement;
+  if (!wasOpen || (isDocked() && opener && !panel.contains(opener))) {
+    lastDetailFocus = opener && opener !== document.body && !panel.contains(opener) ? opener : lastDetailFocus;
   }
-  content.innerHTML = `<p class="empty">${I18N.t('statLoading')}</p>`;
-  $('#detail-close').focus();
-  // Paylaşılabilir detay bağlantısı: #ders/<kod>. Kapatınca dönülecek görünümü
-  // hatırla (örn. önşart sekmesinden açıldıysa oraya dön). Bağlantıdan
-  // doğrudan açılıyorsa kapatınca dersler görünümüne dön.
-  lastDetailHash = location.hash.startsWith('#ders/') ? null : (location.hash || '#dersler');
-  // #ders/<slug> (boşluksuz, kararlı). pushState: tarayıcı GERİ düğmesi paneli kapatır.
-  // Eski #ders/...%20... kodlu bağlantılar yine çözülür (openDetailFromHash slugToCode).
-  const slug = codeToSlug(code);
-  if (!location.hash.startsWith('#ders/')) history.pushState(null, '', '#ders/' + slug);
+  placePanel(wantsDock());
+  panel.hidden = false;
 
-  const branch = String(code).split(' ')[0];
+  // Paylaşılabilir detay bağlantısı: #ders/<slug>. Kapatınca dönülecek görünümü
+  // hatırla; bağlantıdan doğrudan açılıyorsa kapatınca Dersler'e dön.
+  // pushState: tarayıcı GERİ düğmesi paneli kapatır. Panel açıkken başka bir
+  // derse geçmek aynı geçmiş girişini değiştirir (geri tuşu yine paneli kapatır).
+  const slug = codeToSlug(code);
+  if (!location.hash.startsWith('#ders/')) {
+    lastDetailHash = location.hash || '#dersler';
+    history.pushState(null, '', '#ders/' + slug);
+  } else if (location.hash !== '#ders/' + slug) {
+    if (!wasOpen) lastDetailHash = null;
+    history.replaceState(null, '', location.pathname + location.search + '#ders/' + slug);
+  } else if (!wasOpen) {
+    lastDetailHash = null;
+  }
+
+  // Aynı dersin başka şubesi: veriyi yeniden yüklemeden odağı taşı.
+  if (wasOpen && current && current.code === code && current.term === tm && content.querySelector('.d-ph')) {
+    current.crn = crn ? String(crn) : '';
+    focusSection(current.crn);
+    notify(true);
+    return;
+  }
+
+  const seq = ++openSeq;
+  current = { code, term: tm, crn: crn ? String(crn) : '', branch: String(code).split(' ')[0], secs: [], source };
+  content.innerHTML = loadingHtml(code);
+  panel.scrollTop = 0;
+  $('#detail-close')?.focus({ preventScroll: true });
+  notify(true);
+
+  const branch = current.branch;
   const [list, hist, cat, gr, buildings] = await Promise.all([
-    getJSON(`data/terms/${t}/branches/${branch}.json`).catch(() => []),
+    getJSON(`data/terms/${tm}/branches/${branch}.json`).catch(() => []),
     getJSON(`data/history/courses/${branch}.json`).then((all) => all[code] || null).catch(() => null),
     getJSON(`data/catalog/${branch}.json`).then((all) => all[code] || null).catch(() => null),
     getJSON(`data/grades/${branch}.json`).then((all) => (Array.isArray(all) ? all.filter((g) => g.code === code) : [])).catch(() => []),
     loadBuildings(),
   ]);
-  // branches/*.json günlük/haftalık katalog taramasından gelir; saatlik kontenjan
-  // ölçümü (state.quota) varsa kapasite/yazılan onunla üzerine yazılır — aksi halde
-  // panel, tablodaki güncel sayıdan çok daha eski bir kontenjan gösterebilir.
+  if (seq !== openSeq || !isOpen()) return; // bu arada başka ders açıldı ya da kapandı
+  // branches/*.json günlük/haftalık taramadan gelir; saatlik kontenjan ölçümü
+  // (state.quota) varsa kapasite/yazılan onunla güncellenir.
   const secs = (Array.isArray(list) ? list.filter((s) => s.code === code) : []).map((s) => {
-    const live = state.quota?.get(String(s.crn));
+    const live = quotaRec(tm, s.crn);
     return live ? { ...s, capacity: live.capacity, enrolled: live.enrolled } : s;
   });
-  const obsLink = obsDeepLink(code);
+  current.secs = secs;
   const programs = [...new Set(secs.flatMap((s) => s.programs || []))];
   const name = secs[0]?.name || cat?.name || hist?.name || code;
-  const detailData = {
-    code, name, branch, level: secs[0]?.level, method: secs[0]?.method,
-    obsLink, term: t, secs, cat, gr, hist, programs, buildings, crn,
-  };
-  try {
-    const react = await import('../react/dersler-table.js');
-    detailReactModule = react;
-    react.mountCourseDetail(content, detailReactProps(detailData));
-  } catch (error) {
-    console.warn('Ders detay React görünümü yüklenemedi, klasik görünüm kullanılıyor.', error);
-    content.innerHTML = detailShell(detailData);
-    wireDetailTabs(content);
-  }
-  content.querySelectorAll('[data-add-crn]').forEach(button => button.addEventListener('click', async () => {
-    button.disabled = true;
-    try {
-      const program = await import('../views/program.js?v=dde1e9339338');
-      await program.onShow();
-      window.dispatchEvent(new CustomEvent('itu:add-program-items', { detail: { term: t, items: [{ branch, crn: button.dataset.addCrn }] } }));
-    } finally { button.disabled = false; }
-  }));
+  const method = secs[0]?.method || '';
+  const special = /\bek\s*sınav\b|additional\s+exam/i.test(method) ? 'extra-exam'
+    : /\b(bitirme|graduation\s+(?:project|study|design|thesis)|capstone)\b/i.test(name || '') ? 'graduation' : '';
+  const hadFocus = panel.contains(document.activeElement);
+  content.innerHTML = headHtml({ code, name, cat, secs, obsLink: obsDeepLink(code), special })
+    + sectionsHtml({ term: tm, secs, branch, crn: current.crn, buildings })
+    + aboutHtml({ code, cat, gr, programs, secs })
+    + histHtml(hist, tm);
+  if (hadFocus) $('#detail-close')?.focus({ preventScroll: true });
+
+  wireContent(content, code);
+  focusSection(current.crn);
+}
+
+function wireContent(content, code) {
   wireHistButtons(content);
   wireProgButtons(content);
   wireProgramSearch(content);
   wireEqButtons(content);
   wireTrendChart(content);
-  const secToggle = content.querySelector('.d-secs-toggle');
-  if (secToggle) {
-    secToggle.addEventListener('click', () => {
-      const more = content.querySelector('.d-secs-more');
-      const open = more.hidden;
-      more.hidden = !open;
-      secToggle.textContent = open ? I18N.t('cdShowLess') : moreSectionsLabel(content.querySelectorAll('.d-secs-more .d-sec').length);
-      secToggle.setAttribute('aria-expanded', String(open));
+  const desc = content.querySelector('.d-desc');
+  const more = content.querySelector('.d-desc-more');
+  if (desc && more) {
+    requestAnimationFrame(() => { more.hidden = desc.scrollHeight <= desc.clientHeight + 1; });
+    more.addEventListener('click', () => {
+      const open = !desc.classList.contains('is-open');
+      desc.classList.toggle('is-open', open);
+      more.setAttribute('aria-expanded', String(open));
+      more.textContent = open ? t('cdShowLess') : t('cdShowAll');
+    });
+  }
+  const histToggle = content.querySelector('.d-hist-toggle');
+  if (histToggle) {
+    histToggle.addEventListener('click', () => {
+      const open = histToggle.getAttribute('aria-expanded') !== 'true';
+      for (const row of content.querySelectorAll('[data-hist-extra]')) row.hidden = !open;
+      histToggle.setAttribute('aria-expanded', String(open));
+      histToggle.textContent = open ? histToggle.dataset.less : histToggle.dataset.more;
     });
   }
   const reqFwd = content.querySelector('.d-req-fwd');
   if (reqFwd) loadPrereqWhenVisible(reqFwd, () => loadPrereqTree(reqFwd, code));
   const reqBy = content.querySelector('.d-req-by');
   if (reqBy) loadPrereqWhenVisible(reqBy, () => loadReqBy(reqBy));
-
-  // Faz A (G5): EN modunda, katalogda İngilizce ad varsa başlığı onunla değiştir.
-  const titleSpan = content.querySelector('#detail-title .d-name');
-  if (titleSpan && document.documentElement.lang === 'en' && cat?.nameEn) {
-    titleSpan.textContent = cat.nameEn;
-  }
-
-  // Faz B (G7): "alabilen programlar" çiplerine resmî listeden okunur ad yaz;
-  // listede olmayan kodları soluk işaretle (kapanmış/grafik dışı).
   enrichProgLabels(content);
+}
+
+// Ters-önşart bölümünü doldurur: reverse.json'dan "bu dersi önşart isteyenler".
+async function loadReqBy(sec) {
+  const code = sec.dataset.code;
+  const reverse = await getJSON('data/prereq/reverse.json').catch(() => null);
+  const count = sec.closest('.d-relation-more')?.querySelector('[data-req-count]');
+  if (!reverse || !reverse[code]) {
+    if (count) count.textContent = '0';
+    sec.innerHTML = `<p class="empty">${esc(t('cdNoReverseReq'))}</p>`;
+    return;
+  }
+  const reqs = reverse[code];
+  if (count) count.textContent = String(reqs.length);
+  sec.innerHTML = `<div class="d-req-list">${reqs.map((r) => `<button type="button" class="d-req" data-code="${esc(r)}">${esc(r)}</button>`).join('')}</div>`;
+  sec.querySelectorAll('.d-req').forEach((b) => b.addEventListener('click', () => {
+    openCourseDetail(b.dataset.code, { source: 'reverse' });
+  }));
 }
 
 // programs.json'dan kod → okunur ad. Kod resmî listede yoksa "kapanmış" soluk;
@@ -533,11 +734,11 @@ async function enrichProgLabels(content) {
         b.textContent = `${code} · ${p.name}`;
       } else {
         b.classList.add('d-prog-stale');
-        b.title = I18N.t('cdProgStaleTitle');
+        b.title = t('cdProgStaleTitle');
       }
       if (taken.program && code === taken.program) {
         b.classList.add('d-prog-mine');
-        b.title = I18N.t('cdProgMineTitle');
+        b.title = t('cdProgMineTitle');
       }
     }
   } catch { /* liste yoksa sessiz — yalnız kodlar görünür */ }
@@ -548,7 +749,7 @@ async function enrichProgLabels(content) {
 if (typeof window !== 'undefined') {
   window.addEventListener(TAKEN_CHANGED, () => {
     const content = $('#detail-content');
-    if (!content || content.hidden) return;
+    if (!content || !isOpen()) return;
     const reqFwd = content.querySelector('.d-req-fwd');
     const code = reqFwd?.dataset.code;
     if (reqFwd && code) loadPrereqTree(reqFwd, code);
@@ -556,9 +757,6 @@ if (typeof window !== 'undefined') {
   });
 }
 
-// Panelde dersin önşart VE/VEYA ağacı (P1-9). prereq/graph.json'da kayıtlı
-// önşartı olan ders için yapılandırılmış ağaç; yoksa "kayıtlı önşartı yok".
-// graph.json önşart sekmesinde zaten lazy yüklenir; burada önbellekli.
 // graph.json (1,9MB) + reverse.json (288KB) YALNIZCA önşart bölümü görünüme
 // girince yüklenir — her detay açılışında ağa gidilmez (mobil veri maliyeti).
 function loadPrereqWhenVisible(section, loader) {
@@ -584,7 +782,7 @@ async function loadPrereqTree(box, code) {
     const node = (g?.nodes || []).find((n) => n.code === code);
     const req = node?.requirement;
     if (!req) {
-      box.innerHTML = `<p class="empty">${I18N.t('cdNoPrereqRegistered')}</p>`;
+      box.innerHTML = `<p class="empty">${t('cdNoPrereqRegistered')}</p>`;
       return;
     }
     box.innerHTML = `<ul class="req-tree">${renderReqTree(parseReq(req))}</ul>`;
@@ -599,126 +797,31 @@ function wireProgButtons(content) {
   }));
 }
 
-// Katalog bölümü (Faz 3). Veri yoksa hiç render edilmez — panel eski haliyle
-// çalışır. Kredi satırı, şube kartındaki "oturum süresi"nden ayrı etiketlidir:
-// bu, resmî T+U+L paketidir.
-function catalogHtml(cat) {
-  if (!cat) return '';
-  const c = cat.credits || {};
-  const parts = [];
-  if (c.theory || c.practice || c.lab) parts.push(`${c.theory || 0}+${c.practice || 0}+${c.lab || 0}`);
-  if (c.local != null) parts.push(`${I18N.t('cdLocalCredits')} ${trNum(c.local)}`);
-  if (c.ects) parts.push(`${I18N.t('progECTSWord')} ${trNum(c.ects)}`);
-  const details = (title, open, body) => `<details class="d-cat-details"${open ? ' open' : ''}><summary>${title}</summary>${body}</details>`;
-  const list = (items) => items.map((x) => `<li>${esc(x)}</li>`).join('');
-  // Faz 4.2: vize haftası göstergesi — "Hafta N — ... Ara Sınav ..." satırlarını
-  // sayar. Katalog planı yoksa bölüm sessiz.
-  const midterms = (cat.weeklyTopics || []).filter((t) => /ara\s*sınav/i.test(t));
-  const midtermLine = midterms.length
-    ? `<p class="d-cat-midterm">${I18N.t('cdMidtermPrefix')} ${esc(midterms.map((t) => t.split(' · ')[0] || t).join(', '))}</p>`
-    : '';
-  // Faz 3.5: haftalık plan tablosu (hafta/konu/çıktı). Yapılandırılmış veri yoksa
-  // geriye uyumlu <ol> listesine düş.
-  const hasOut = (cat.weeklyPlan || []).some((w) => w.outcomes);
-  const planHtml = (cat.weeklyPlan || []).length
-    ? `<div class="tablewrap"><table class="d-cat-plan" aria-label="${esc(I18N.t('cdWeeklyPlanAria'))}">
-        <thead><tr><th class="num">${I18N.t('cdColWeek')}</th><th>${I18N.t('cdColTopic')}</th>${hasOut ? `<th>${I18N.t('cdColOutcomes')}</th>` : ''}</tr></thead>
-        <tbody>${cat.weeklyPlan.map((w) => `<tr${/ara\s*sınav/i.test(w.topic) ? ` class="d-cat-mid" title="${esc(I18N.t('cdMidtermWeekTitle'))}"` : ''}><td class="num">${w.week}</td><td>${esc(w.topic)}</td>${hasOut ? `<td>${esc(w.outcomes || '·')}</td>` : ''}</tr>`).join('')}</tbody>
-      </table></div>`
-    : (cat.weeklyTopics || []).length ? `<ol>${list(cat.weeklyTopics)}</ol>` : '';
-  // Faz 3.5: denklikler — tıklanınca o dersin detayı açılır.
-  const eqs = cat.equivalents || [];
-  const eqHtml = eqs.length
-    ? `<div class="d-cat-eq"><h4>${I18N.t('cdEquivalents')}</h4><div class="d-eq-list">${eqs.map((e) => `<button type="button" class="d-eq" data-eq="${esc(e)}">${esc(e)}</button>`).join('')}</div></div>`
-    : '';
-  return `<section class="d-cat">
-    <h4>${I18N.t('cdTabCatalog')}</h4>
-    ${parts.length ? `<p class="d-cat-credits">${esc(parts.join(' · '))}${cat.language ? ` · ${I18N.lang === 'en' ? 'language' : 'dil'}: ${esc(cat.language)}` : ''}</p>` : ''}
-    ${midtermLine}
-    ${eqHtml}
-    ${cat.description ? details(I18N.t('cdCourseContent'), false, `<p>${esc(cat.description)}</p>`) : ''}
-    ${(cat.outcomes || []).length ? details(`${I18N.t('cdLearningOutcomes')} (${cat.outcomes.length})`, !isMobile(), `<ul>${list(cat.outcomes)}</ul>`) : ''}
-    ${planHtml ? details(`${I18N.t('cdWeeklyPlan')} (${(cat.weeklyPlan || cat.weeklyTopics || []).length})`, false, planHtml) : ''}
-    ${(cat.textbooks || []).length ? details(I18N.t('cdTextbooks'), false, `<ul>${list(cat.textbooks)}</ul>`) : ''}
-    ${cat.sourceUrl ? `<p class="d-cat-src">${I18N.t('cdSourcePrefix')} <a href="${esc(cat.sourceUrl)}" target="_blank" rel="noopener">${I18N.t('cdObsCatalogForm')}</a></p>` : ''}
-  </section>`;
+function wireProgramSearch(content) {
+  const input = content.querySelector('.d-prog-search');
+  if (!input) return;
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLocaleLowerCase(I18N.lang === 'en' ? 'en' : 'tr');
+    let shown = 0;
+    for (const button of content.querySelectorAll('.d-prog[data-program]')) {
+      const visible = !q || button.textContent.toLocaleLowerCase(I18N.lang === 'en' ? 'en' : 'tr').includes(q);
+      button.hidden = !visible;
+      if (visible) shown++;
+    }
+    const empty = content.querySelector('.d-prog-empty');
+    if (empty) empty.hidden = shown !== 0;
+  });
 }
 
-// Faz 3.5: denklik çipine tıklayınca o dersin ortak detayı açılır.
+// Denklik çipine tıklayınca o dersin ortak detayı açılır.
 function wireEqButtons(content) {
   content.querySelectorAll('.d-eq[data-eq]').forEach((b) => b.addEventListener('click', () => {
     openCourseDetail(b.dataset.eq, { source: 'katalog' });
   }));
 }
 
-// Harf notu sıralaması (katalogdaki resmî geçme ölçeğine göre değil, kabaca
-// azalan başarı): AA > BA+ > BA > BB+ > BB > CB+ > CB > CC+ > CC > DC+ > DC >
-// DD+ > DD > FF > VF. Geçme eşiği CC+ ve üzeri kabul edilir (İTÜ'de ders bazında
-// değişebilir; bu yalnızca gösterge).
-export const GRADE_ORDER = ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'FF', 'VF'];
-
-// Saf yardımcı: harf notu dağılımından geçme oranı (% ≥CC+). Test edilebilir.
-export function gradePassPct(grades, total) {
-  const pass = GRADE_ORDER.slice(0, 8).reduce((s, g) => s + (grades[g] || 0), 0);
-  return total ? Math.round((pass / total) * 100) : 0;
-}
-
-// Saf yardımcı: en sık harf notu + yüzdesi. Test edilebilir.
-export function gradeMode(grades, total) {
-  const e = Object.entries(grades).sort((a, b) => b[1] - a[1])[0];
-  if (!e) return { grade: '·', pct: 0 };
-  return { grade: e[0], pct: total ? Math.round((e[1] / total) * 100) : 0 };
-}
-
-// gradesHtml, harf notu dağılımını (Faz 3B) çubuk grafik + geçme oranı + mod
-// olarak render eder. Veri yoksa hiç çıktı üretmez (opsiyonel bölüm).
-function gradesHtml(gr) {
-  if (!gr || !gr.length) return '';
-  const total = gr[0].total;
-  // Çubuk rengi not aralığına göre: ≥CC+ geçer (acid), DD/DC bandı sınırda
-  // (amber), FF/VF kalır (red) — düz tek renk yerine anlamlı kademelendirme.
-  const gradeTier = (g) => {
-    const i = GRADE_ORDER.indexOf(g);
-    if (i < 0) return '';
-    if (i < 8) return 'is-pass';
-    if (i < 13) return 'is-borderline';
-    return 'is-fail';
-  };
-  const gradeBars = (term) => {
-    const max = Math.max(...Object.values(term.grades), 1);
-    const order = GRADE_ORDER.filter((g) => term.grades[g]);
-    return `<div class="d-grade-bars">${order.map((g) => `
-      <div class="d-grade" title="${esc(g)} · ${term.grades[g]} ${I18N.t('cdPeopleCount')}">
-        <span class="d-grade-l">${esc(g)}</span>
-        <span class="d-grade-bar"><i class="${gradeTier(g)}" style="width:${Math.round((term.grades[g] / max) * 100)}%"></i></span>
-        <span class="d-grade-n">${term.grades[g]}</span>
-      </div>`).join('')}</div>`;
-  };
-  const statLine = (term) => {
-    const pct = gradePassPct(term.grades, term.total);
-    const mode = gradeMode(term.grades, term.total);
-    const modeTxt = `${mode.grade} (%${mode.pct})`;
-    return `<p class="d-grade-stat">${I18N.t('cdPassRateWord')} ≥CC+ %${pct} · ${I18N.t('cdMostCommon')} ${esc(modeTxt)} · ${term.total} ${I18N.t('cdStudentsCount')}</p>`;
-  };
-  // Birden çok dönem varsa en yenisi (donem kodu büyük) üstte; diğerleri
-  // katlanabilir listeye.
-  const sorted = [...gr].sort((a, b) => (b.donem || '').localeCompare(a.donem || ''));
-  const latest = sorted[0];
-  const older = sorted.slice(1);
-  const pct = gradePassPct(latest.grades, latest.total);
-  const mode = gradeMode(latest.grades, latest.total);
-  return `<details class="d-grades">
-    <summary><span><b>${I18N.t('cdGradeDist')}</b><small>${esc(latest.term)}</small></span><strong>≥CC+ %${pct} · ${I18N.t('cdMostCommon')} ${esc(mode.grade)}</strong></summary>
-    <div class="d-grades-body">${statLine(latest)}
-    ${gradeBars(latest)}
-    ${older.length ? `<details class="d-grades-more"><summary>${I18N.t('cdPreviousTerms')} (${older.length})</summary>
-      ${older.map((tm) => `<h5>${esc(tm.term)}</h5>${statLine(tm)}${gradeBars(tm)}`).join('')}
-    </details>` : ''}</div>
-  </details>`;
-}
-
-// Trend grafiği etkileşimi: caption sabit satır (hover/focus ile güncellenir,
-// kırpılan ipucu kutusu yerine) + "hepsini göster" (8 dönem → tümü).
+// Trend grafiği etkileşimi: caption sabit satır (hover/focus ile güncellenir)
+// + "hepsini göster" (8 dönem → tümü).
 function wireTrendChart(content) {
   const chart = content.querySelector('.trend');
   if (!chart) return;
@@ -750,25 +853,37 @@ function wireHistButtons(content) {
   }));
 }
 
-export function closeCourseDetail() {
-  if (detailReactModule) {
-    try { detailReactModule.unmountCourseDetail(); } catch { /* panel zaten ayrılmış */ }
-  }
+export function closeCourseDetail({ restoreFocus = true } = {}) {
+  const panel = panelEl();
+  if (!panel) return;
+  const wasDocked = isDocked();
+  openSeq++;
   $('#detail-content')?.replaceChildren();
-  $('#detail-panel').hidden = true;
+  panel.hidden = true;
+  const scrim = $('#detail-scrim');
+  if (scrim) scrim.hidden = true;
+  $('#course-work')?.classList.remove('has-detail');
   document.body.classList.remove('modal-open');
+  current = null;
+  notify(false);
   // Detay bağlantısından gelindiyse kapatınca açıldığı görünüme dön.
-  if (location.hash.startsWith('#ders/')) history.replaceState(null, '', lastDetailHash || '#dersler');
-  if (lastDetailFocus && typeof lastDetailFocus.focus === 'function') lastDetailFocus.focus();
+  if (location.hash.startsWith('#ders/')) {
+    history.replaceState(null, '', location.pathname + location.search + (lastDetailHash || '#dersler'));
+  }
+  lastDetailHash = null;
+  if (restoreFocus && lastDetailFocus && lastDetailFocus.isConnected && typeof lastDetailFocus.focus === 'function') {
+    lastDetailFocus.focus({ preventScroll: wasDocked });
+  }
+  lastDetailFocus = null;
 }
 
-// Modal içinde Tab döngüsü (aria-modal için odak tuzağı): odak panel dışına kaçmaz.
+// Çekmece kipinde Tab döngüsü (aria-modal için odak tuzağı). Liste yanındaki
+// sütun kipinde panel modal değildir; odak serbestçe listeye döner.
 function trapDetailFocus(e) {
-  if (e.key !== 'Tab') return;
-  const panel = $('#detail-panel');
-  if (!panel || panel.hidden) return;
-  const focusables = [...panel.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')]
-    .filter((el) => !el.disabled && el.offsetParent !== null);
+  if (e.key !== 'Tab' || !isOpen() || isDocked()) return;
+  const panel = panelEl();
+  const focusables = [...panel.querySelectorAll('button, [href], input, select, textarea, summary, [tabindex]:not([tabindex="-1"])')]
+    .filter((el) => !el.disabled && el.getClientRects().length);
   if (!focusables.length) return;
   const first = focusables[0];
   const last = focusables[focusables.length - 1];
@@ -782,36 +897,46 @@ function trapDetailFocus(e) {
   }
 }
 
-// Modal kapama ve klavye bağlarını kurar; birden çok çağrı güvenlidir. Dış
+// Kapama ve klavye bağlarını kurar; birden çok çağrı güvenlidir. Dış
 // kaynaklardan (havuz, önşart, sınavlar) gelen itu:course-detail istekleri
 // core/detail-loader.js'te karşılanır — modül yüklenmeden de çalışsın diye.
 let detailInited = false;
 export function initCourseDetail() {
   if (detailInited) return;
   detailInited = true;
-  $('#detail-close').addEventListener('click', closeCourseDetail);
-  $('#detail-panel').addEventListener('click', (e) => { if (e.target.id === 'detail-panel') closeCourseDetail(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#detail-panel').hidden) closeCourseDetail(); });
+  const panel = panelEl();
+  panel.addEventListener('click', (e) => {
+    if (e.target.closest('[data-d-close]')) { closeCourseDetail(); return; }
+    const add = e.target.closest('[data-add-crn]');
+    if (add) { toggleProgram(add, $('#detail-content')); return; }
+    // Şube satırına tıklamak (bağlantı/düğme dışında) o şubeyi seçili yapar.
+    const row = e.target.closest('.d-row[data-crn]');
+    if (row && current && !e.target.closest('a, button, summary, details')) {
+      current.crn = row.dataset.crn;
+      focusSection(current.crn, { scroll: false });
+      notify(true);
+    }
+  });
+  $('#detail-scrim')?.addEventListener('click', () => closeCourseDetail());
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !isOpen() || e.defaultPrevented) return;
+    // Sütun kipinde liste tarafındaki bir alanın kendi Escape'i (arama temizleme,
+    // filtre sayfası) paneli kapatmaz.
+    if (isDocked() && !panel.contains(e.target) && e.target.closest?.('input, select, textarea, #filters')) return;
+    closeCourseDetail();
+  });
   document.addEventListener('keydown', trapDetailFocus);
   // Geri tuşu: hash #ders/ dışına dönünce panel kapanır (pushState ile).
   window.addEventListener('hashchange', () => {
-    const panel = $('#detail-panel');
-    if (panel && !panel.hidden && !location.hash.startsWith('#ders/')) closeCourseDetail();
+    if (isOpen() && !location.hash.startsWith('#ders/')) closeCourseDetail({ restoreFocus: false });
   });
-  // Mobil: başlığı aşağı sürükleyerek kapat (aşağı çekme).
-  const box = $('#detail-box');
-  if (box) {
-    let drag = null;
-    box.addEventListener('pointerdown', (e) => {
-      if (!isMobile() || !e.target.closest('.d-head, #detail-close')) return;
-      drag = { y: e.clientY, id: e.pointerId };
-    });
-    box.addEventListener('pointermove', (e) => {
-      if (drag && drag.id === e.pointerId && e.clientY - drag.y > 60) {
-        drag = null;
-        closeCourseDetail();
-      }
-    });
-    box.addEventListener('pointerup', () => { drag = null; });
-  }
+  // Sütun kipindeyken başka sekmeye geçilirse panel kapanır (liste görünmez).
+  new MutationObserver(() => {
+    if (isOpen() && isDocked() && !isViewVisible('dersler')) closeCourseDetail({ restoreFocus: false });
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-active-view'] });
+  // Pencere daralıp genişleyince kip yeniden seçilir (açık panel korunur).
+  window.matchMedia(DOCK_MQ).addEventListener?.('change', () => {
+    if (!isOpen()) return;
+    placePanel(wantsDock());
+  });
 }

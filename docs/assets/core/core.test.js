@@ -8,8 +8,8 @@ import { readFileSync } from 'node:fs';
 
 import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum, termLabel, buildingOf, buildingName, parseTurkishDate, parseTurkishDateRange, calendarDayState, sessionHours, timeAgo, fillMeasured } from './utils.js';
 import { fillBar, quotaDisplay, quotaState, trendChart } from './chart.js';
-import { splitInstructors, obsDeepLink, gradePassPct, gradeMode } from './course-detail.js';
-import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, buildingGapWarnings, programList, groupCourseRows, cachedGroupCourseRows } from '../views/courses.js';
+import { splitInstructors, obsDeepLink, gradePassPct, gradeMode, fillSpeedLabel, commonFields } from './course-detail.js';
+import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, buildingGapWarnings, programList, groupCourseRows, cachedGroupCourseRows, quotaParts, whereText } from '../views/courses.js';
 import { parseReq, reqAlts } from '../prereq.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
 import { examDateMatchesTerm, examScheduleMatchesTerm, examToIcs, examMapsQuery } from '../views/exams.js';
@@ -1894,4 +1894,47 @@ test('i18n: Node\'da dil Türkçe; t() değişkenleri doldurur, bilinmeyen anaht
   assert.equal(I18N.t('yokBoyleBirAnahtar'), 'yokBoyleBirAnahtar');
   assert.equal(typeof I18N.setLang, 'function');
   assert.equal(typeof I18N.translateDOM, 'function');
+});
+
+// Ders detay paneli (tek sayfa) ve düz şube tablosu yardımcıları.
+test('fillSpeedLabel dolma süresini dakika/saat/gün olarak adlandırır', () => {
+  const tr = (k, p) => (p ? `${k}:${p.n}` : k);
+  assert.equal(fillSpeedLabel(null, tr), '');
+  assert.equal(fillSpeedLabel(0, tr), 'cdFillPrefilled');
+  assert.equal(fillSpeedLabel(25, tr), 'cdFillMinutes:25');
+  assert.equal(fillSpeedLabel(60, tr), 'cdFillOneHour');
+  assert.equal(fillSpeedLabel(5 * 60, tr), 'cdFillHours:5');
+  assert.equal(fillSpeedLabel(1440, tr), 'cdFillOneDay');
+  assert.equal(fillSpeedLabel(15 * 1440, tr), 'cdFillDays:15');
+});
+
+test('commonFields yalnızca tüm şubelerde aynı olan alanları ortak sayar', () => {
+  const a = { days: ['Salı'], times: ['11:30/13:29'], method: 'Yüz yüze', buildings: ['MED'], rooms: ['A12'] };
+  const b = { ...a, rooms: ['A13'] };
+  const c = { ...a, days: ['Cuma'] };
+  assert.deepEqual(commonFields([a, b]), { time: true, method: true, place: false, building: true, hours: true });
+  assert.equal(commonFields([a, c]).time, false);
+  assert.equal(commonFields([]).time, false);
+});
+
+test('quotaParts kontenjan hücresini çubuk, sayı ve haptan kurar', () => {
+  assert.equal(quotaParts(0, 5).kind, 'unknown');
+  const full = quotaParts(75, 103);
+  assert.equal(full.kind, 'full');
+  assert.equal(full.counts, '103/75');
+  assert.equal(full.pct, 100);
+  assert.match(full.pill, /28/);
+  const tight = quotaParts(50, 47);
+  assert.equal(tight.kind, 'tight');
+  assert.match(tight.pill, /3/);
+  assert.equal(quotaParts(70, 20).pill, '');
+});
+
+test('whereText çevrimiçi şubeyi Sanal, diğerlerini bina ve derslikle yazar', () => {
+  // Satır dizisi: [9] öğretim yöntemi, [11] "bina derslik | ..." konumları.
+  const row = (method, loc) => Object.assign([], { 9: method, 11: loc });
+  assert.equal(whereText(row('Sanal (Çevrimiçi/Online)', 'MED --')), I18N.t('courseOnline'));
+  assert.equal(whereText(row('Yüz yüze', 'MED A12 | MED A12')), 'MED A12');
+  assert.equal(whereText(row('Yüz yüze', 'MED -- | EEB 5202')), 'MED, EEB 5202');
+  assert.equal(whereText(row('Yüz yüze', '--')), '');
 });

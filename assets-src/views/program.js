@@ -16,6 +16,7 @@ import { I18N } from '../i18n.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 import { findAlternatives, presetPrefs, WEEKDAYS } from '../core/altfind.js?v=dde1e9339338';
 import { specialSectionKind } from '../core/section-kind.js';
+import { readPrograms, writePrograms, PROGRAMS_CHANGED } from '../core/program-store.js';
 
 let term = null;
 let rows = [];
@@ -39,23 +40,16 @@ let gridContextMenu = null;
 let gridContextReturnFocus = null;
 
 // --- çoklu program (liste) ---
-const PROG_KEY = 'itu-programs';
 const PROGRAM_PREF_KEY = 'itu-program-view';
 const PASTELS = ['#5b8def', '#8a6fe8', '#2ecc9f', '#e8a04c', '#e86f8a', '#5bb8e8', '#a0c94c', '#c96fe8', '#e8c94c', '#4cc9c9'];
 
 function loadPrograms() {
-  const p = readLocalState(PROG_KEY, {
-    fallback: null,
-    legacyKey: PROG_KEY,
-    validate: (value) => isPlainObject(value) && Array.isArray(value.programs) && value.programs.length > 0,
-  });
+  const p = readPrograms();
   if (p) return p;
   return { programs: [{ id: 1, name: `${I18N.t('progNewProgramWord')} 1`, items: [] }], active: 1 };
 }
 function savePrograms(ps) {
-  writeLocalState(PROG_KEY, ps, {
-    validate: (value) => isPlainObject(value) && Array.isArray(value.programs) && value.programs.length > 0,
-  });
+  writePrograms(ps);
 }
 
 function saveProgramView() {
@@ -114,6 +108,8 @@ function renderProgSelector() {
 
 export function initProgram() {
   if (inited) return;
+  // Ders detay panelindeki "Programda" düğmesi kaydı değiştirince liste/ızgara tazelenir.
+  window.addEventListener(PROGRAMS_CHANGED, () => { renderProgSelector(); });
   const pref = readLocalState(PROGRAM_PREF_KEY, { fallback: {}, validate: isPlainObject });
   // Eski kayıt { grid: true } "ızgarayı zorla" demekti; yeni { view } ile eşlenir.
   viewPref = pref.view === 'grid' || pref.view === 'agenda' ? pref.view : (pref.grid === true ? 'grid' : null);

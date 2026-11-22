@@ -8,9 +8,10 @@
 // filtrelerde "yoksa geç" yapılır. "yer" (bina+derslik) "zaman" ile aynı
 // sırada " | " ile ayrılmış oturum listesidir (bkz. sessionsWithLocation).
 //
-// Liste her genişlikte aynı yapıdır: sonuçlar derse göre gruplanır (ders
-// başlığı + şube satırları), sayfalama ders grupları üzerinden yapılır. Dar
-// ekranda satırlar CSS ile karta döner; ayrı bir mobil veri yolu yoktur.
+// Liste her genişlikte aynı düz tablodur: her şube bir satır, ders kodu ve adı
+// her satırda (aynı dersin ardışık şubelerinde soluk). Sayfalama satır
+// dilimleriyle yapılır. Dar kapta (mobil ya da detay paneli açıkken) satırlar
+// container query ile iki satırlı düzene geçer; ayrı bir mobil veri yolu yoktur.
 
 import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, frozenMeasuredAt, fmtDay, timeAgo, isViewVisible, tickCount, formatInt } from '../core/utils.js?v=dde1e9339338';
 import { methodToCode } from '../core/urlcodes.js?v=dde1e9339338';
@@ -25,22 +26,14 @@ import { writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e93
 import { isRemoteMethod, transitionIssue } from '../core/campus.js';
 import { specialSectionKind } from '../core/section-kind.js';
 
-// Sayfa başına ders grubu; "daha fazla" bir sonraki dilimi ekler.
-const GROUP_PAGE = 30;
-// Bir ders başlığı altında ilk görünen şube sayısı. Kalanlar kullanıcı
-// istediğinde kurulur (yüzlerce gizli düğmeyi baştan DOM'a eklememek için).
-const SECTION_PREVIEW_COMPACT = 4;
-const SECTION_PREVIEW_WIDE = 8;
+// Sayfa başına şube satırı; "daha fazla" bir sonraki dilimi ekler.
+const ROW_PAGE = 60;
 // Zaman çizelgesi bu kadar şubeden sonra okunmaz hale gelir; fazlası için
 // dürüst bir not gösterilir.
 const TT_MAX_SECTIONS = 80;
 
 let groupCacheRows = null;
 let groupCache = [];
-const compactLayout = typeof window !== 'undefined' && window.matchMedia
-  ? window.matchMedia('(max-width: 640px)')
-  : { matches: false, addEventListener() {}, addListener() {} };
-const sectionPreview = () => (compactLayout.matches ? SECTION_PREVIEW_COMPACT : SECTION_PREVIEW_WIDE);
 
 const t = (key, vars) => I18N.t(key, vars);
 const timeLabel = (value) => ({
@@ -61,6 +54,38 @@ const localizeSchedule = (value) => {
 const STAR_SVG = '<svg width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/></svg>';
 const X_SVG = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
 const ALERT_SVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 8v5M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>';
+
+// Tablo başlığı yapışkan sekme çubuğunun hemen altında durur; çubuğun yüksekliği
+// genişliğe göre değiştiği için ölçülüp CSS değişkenine yazılır.
+function syncStickyOffset() {
+  const bar = document.querySelector('.tabs.app-tabs') || document.querySelector('.tabs');
+  const pos = bar ? getComputedStyle(bar).position : '';
+  const h = bar && pos === 'sticky' ? Math.round(bar.getBoundingClientRect().height) : 0;
+  document.documentElement.style.setProperty('--sticky-top', `${h}px`);
+}
+
+// Tablo kendi genişliğine göre sütun düşürür (CSS: .cl-mid < 900px, Yer
+// sütunu gider; .cl-narrow < 760px, iki satırlı satır). Container query
+// yerine ResizeObserver: panel açılınca liste daralır, görünüm genişliği değil.
+const CL_MID = 900;
+const CL_NARROW = 760;
+function syncTableWidth(el, width) {
+  if (!(width > 0)) return;
+  el.classList.toggle('cl-mid', width < CL_MID);
+  el.classList.toggle('cl-narrow', width < CL_NARROW);
+}
+function watchTableWidth() {
+  const el = document.getElementById('course-groups');
+  if (!el) return;
+  syncTableWidth(el, el.getBoundingClientRect().width);
+  if (typeof ResizeObserver !== 'function') {
+    window.addEventListener('resize', () => syncTableWidth(el, el.getBoundingClientRect().width), { passive: true });
+    return;
+  }
+  new ResizeObserver((entries) => {
+    for (const e of entries) syncTableWidth(e.target, e.contentBoxSize?.[0]?.inlineSize ?? e.contentRect.width);
+  }).observe(el);
+}
 
 export function initCourses() {
   $('#q').addEventListener('input', debounce(applyFilters, 120));
@@ -169,14 +194,9 @@ export function initCourses() {
     }
   });
 
-  // Dar/geniş düzen arasında yalnızca ilk görünen şube sayısı değişir; aynı
-  // filtrelenmiş veri baştan basılır.
-  const switchCourseLayout = () => {
-    state.shown = 0;
-    renderRows(false);
-  };
-  if (compactLayout.addEventListener) compactLayout.addEventListener('change', switchCourseLayout);
-  else compactLayout.addListener(switchCourseLayout);
+  syncStickyOffset();
+  watchTableWidth();
+  window.addEventListener('resize', syncStickyOffset, { passive: true });
 }
 
 export async function loadTerm(slug) {
@@ -546,7 +566,7 @@ function setSelected(key, on) {
 // Görünen satırların kutu/vurgu durumunu state.selected ile eşitler; listeyi
 // baştan kurmadan (kaydırma konumu ve açık şube listeleri korunur).
 function syncRenderedSelection() {
-  for (const li of document.querySelectorAll('#course-groups .course-section')) {
+  for (const li of document.querySelectorAll('#course-groups .cl-item')) {
     const on = state.selected.has(li.dataset.key);
     li.classList.toggle('is-selected', on);
     const box = li.querySelector('.row-sel');
@@ -669,39 +689,115 @@ function instructorLinks(instr, hits) {
   }).filter(Boolean).join(', ');
 }
 
-// Kontenjan tek sayısal temsille: normalde "34 / 50", kritik (≥%85) durumda
-// amber "47 / 50 · 3 yer", tam doluda kırmızı "50 / 50 · dolu" (DESIGN.md).
-function quotaCell(cap, enr) {
+// Kontenjan hücresi: küçük doluluk çubuğu + "yazılan/kontenjan" + yalnız karar
+// gerektiğinde durum hapı (kırmızı "dolu"/"dolu +N", amber "N yer"). Çubuk
+// görsel özet, sayı birincil temsildir; yüzde ayrıca yazılmaz (DESIGN.md).
+// Kontenjanı açıklanmamış şube dürüstçe öyle yazılır.
+export function quotaParts(cap, enr) {
   const q = quotaState(cap, enr);
-  if (q.kind === 'unknown') return `<span class="quota-unknown">${esc(t('quotaUnknown'))}</span>`;
-  const counts = `${formatInt(q.enrolled)} / ${formatInt(q.capacity)}`;
-  let tail = '';
-  if (q.kind === 'full') tail = ` · <span class="quota-state full">${esc(t('quotaFull'))}</span>`;
-  else if (q.kind === 'tight') tail = ` · <span class="quota-state tight">${esc(t('quotaLeft', { n: formatInt(q.remaining) }))}</span>`;
-  return `<span class="quota-sade quota-${q.kind}">${counts}${tail}</span>`;
+  if (q.kind === 'unknown') return { kind: 'unknown', pct: 0, counts: '', pill: '' };
+  const over = Math.max(0, q.enrolled - q.capacity);
+  let pill = '';
+  if (q.kind === 'full') pill = over ? t('quotaFullOver', { n: formatInt(over) }) : t('quotaFull');
+  else if (q.kind === 'tight') pill = t('quotaLeft', { n: formatInt(q.remaining) });
+  return {
+    kind: q.kind,
+    pct: Math.min(100, q.pct),
+    counts: `${formatInt(q.enrolled)}/${formatInt(q.capacity)}`,
+    pill,
+  };
+}
+
+function quotaCell(cap, enr) {
+  const p = quotaParts(cap, enr);
+  if (p.kind === 'unknown') return `<span class="quota-unknown">${esc(t('quotaUnknown'))}</span>`;
+  return `<span class="cl-fill is-${p.kind}">`
+    + `<span class="cl-bar" aria-hidden="true"><i style="width:${p.pct}%"></i></span>`
+    + `<span class="cl-n num">${p.counts}</span>`
+    + `${p.pill ? `<span class="cl-pill is-${p.kind}">${esc(p.pill)}</span>` : ''}</span>`;
+}
+
+const DAY_KEYS = {
+  Pazartesi: 'progDayAbbrMon', Salı: 'progDayAbbrTue', Çarşamba: 'progDayAbbrWed',
+  Perşembe: 'progDayAbbrThu', Cuma: 'progDayAbbrFri', Cumartesi: 'progDayAbbrSat', Pazar: 'progDayAbbrSun',
+};
+const shortDay = (day) => (DAY_KEYS[day] ? t(DAY_KEYS[day]) : dayLabel(day));
+
+// Oturum listesi: [{ day, start, end }] ya da ayrıştırılamayan ham parça.
+function slotsOf(row) {
+  return String(row[5] || '').split(' | ').map((s) => s.trim()).filter(Boolean).map((part) => {
+    const m = part.match(/^(\S+)\s+(\d{2}:\d{2})\/(\d{2}:\d{2})$/);
+    return m ? { day: shortDay(m[1]), time: `${m[2]}–${m[3]}` } : { raw: localizeSchedule(part) };
+  });
+}
+
+function missingTime(kind) {
+  if (kind === 'extra-exam') return t('progExtraExamUntimed');
+  if (kind === 'graduation') return t('progGraduationUntimed');
+  return t('courseTimeMissing');
 }
 
 function whenCell(row, kind) {
-  const parts = String(row[5] || '').split(' | ').map((s) => s.trim()).filter(Boolean);
-  if (!parts.length) {
-    if (kind === 'extra-exam') return `<span class="course-special-time">${esc(t('progExtraExamUntimed'))}</span>`;
-    if (kind === 'graduation') return `<span class="course-special-time">${esc(t('progGraduationUntimed'))}</span>`;
-    return `<span class="course-data-missing">${esc(t('courseTimeMissing'))}</span>`;
+  const slots = slotsOf(row);
+  if (!slots.length) {
+    const cls = kind ? 'course-special-time' : 'course-data-missing';
+    return `<span class="${cls}">${esc(missingTime(kind))}</span>`;
   }
-  return parts.map((part) => {
-    const m = part.match(/^(\S+)\s+(\d{2}:\d{2})\/(\d{2}:\d{2})$/);
-    if (!m) return `<span>${esc(localizeSchedule(part))}</span>`;
-    return `<span><span class="course-day">${esc(dayLabel(m[1]))}</span> <span class="when">${m[2]}–${m[3]}</span></span>`;
-  }).join('');
+  return slots.map((s) => (s.raw
+    ? `<span class="cl-slot">${esc(s.raw)}</span>`
+    : `<span class="cl-slot"><span class="course-day">${esc(s.day)}</span> <span class="when">${s.time}</span></span>`)).join('');
 }
 
-function whereCell(row) {
-  const where = row[11] || '';
-  if (!where) return '';
-  return where.split(' | ').map((loc) => `<span>${esc(loc.trim() || '·')}</span>`).join('');
+function whenText(row, kind) {
+  const slots = slotsOf(row);
+  if (!slots.length) return missingTime(kind);
+  return slots.map((s) => s.raw || `${s.day} ${s.time}`).join(', ');
 }
 
-function createSection(row, extra = false) {
+// Yer: çevrimiçi şubede "Sanal"; yüz yüzede oturumların bina+derslik çiftleri
+// tekrarsız. "MED --" gibi derslik bilinmeyen kayıtlar yalnız binayı gösterir.
+export function whereText(row) {
+  if (isRemoteMethod(row[9])) return t('courseOnline');
+  const parts = String(row[11] || '').split(' | ')
+    .map((loc) => loc.replace(/\s+-+$/, '').trim())
+    .filter((loc) => loc && !/^-+$/.test(loc));
+  return [...new Set(parts)].join(', ');
+}
+
+// Öğretim üyesi düz metni (mobil ikinci satır): bağlantısız, kısaltmasız.
+function instructorText(instr) {
+  const str = String(instr ?? '').trim();
+  return NO_INSTRUCTOR.has(str) ? '·' : str;
+}
+
+// Açık detay paneli: listede aynı şube vurgulanır (core/course-detail.js
+// itu:detail-change olayıyla bildirir).
+let currentDetail = { code: '', crn: '' };
+
+function isCurrent(row) {
+  return Boolean(currentDetail.crn) && String(row[0]) === String(currentDetail.crn) && row[1] === currentDetail.code;
+}
+
+function syncCurrentRow() {
+  for (const el of document.querySelectorAll('#course-groups .cl-item')) {
+    const on = Boolean(currentDetail.crn) && el.dataset.crn === String(currentDetail.crn) && el.dataset.code === currentDetail.code;
+    el.classList.toggle('is-current', on);
+  }
+}
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('itu:detail-change', (e) => {
+    const d = e.detail || {};
+    currentDetail = d.open ? { code: d.code || '', crn: d.crn ? String(d.crn) : '' } : { code: '', crn: '' };
+    syncCurrentRow();
+  });
+}
+
+// Tek şube satırı. Ders kodu/adı her satırda yazılır; aynı dersin ardışık
+// şubelerinde soluklaşır (cl-cont), yeni dersin ilk satırı daha güçlü bir üst
+// çizgiyle ayrılır (cl-new). Satırın tamamı detay düğmesine bağlıdır
+// (.cl-open::after); onay kutusu, yıldız ve hoca bağlantısı üstte kalır.
+function createRow(row, prev) {
   const [crn, code, name, branch, instructor] = row;
   const [cap, enr] = effectiveQuota(row);
   const key = selKey(row);
@@ -709,132 +805,118 @@ function createSection(row, extra = false) {
   const selected = state.selected.has(key);
   const hits = state.marks?.get(key)?.hits || [];
   const kind = specialSectionKind(row);
-  const li = document.createElement('li');
-  li.className = `course-section${selected ? ' is-selected' : ''}${extra ? ' course-section-extra' : ''}`;
-  li.dataset.key = key;
-  li.innerHTML = `
-    <span class="cs-sel"><label><span class="sr-only">${esc(t('courseSelectSection', { crn }))}</span><input type="checkbox" class="row-sel"${selected ? ' checked' : ''}></label></span>
-    <span class="cs-fav"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-pressed="${starred}" aria-label="${esc(t(starred ? 'favRemoveLabel' : 'favAddLabel'))}">${STAR_SVG}</button></span>
-    <button type="button" class="course-section-open course-crn crn" translate="no" aria-haspopup="dialog" aria-label="${esc(t('courseOpenSection', { code, name, crn }))}">${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</button>
-    <span class="course-ins">${instructorLinks(instructor, hits.filter((h) => h.field === 'instructor'))}</span>
-    <span class="course-when">${whenCell(row, kind)}</span>
-    <span class="course-where">${whereCell(row)}</span>
-    <span class="course-quota">${Number(cap) > 0 ? quotaCell(cap, enr) : `<span class="quota-unknown">${esc(t('quotaUnknown'))}</span>`}</span>`;
-  li.querySelector('.course-section-open').addEventListener('click', () => openDetail(row));
-  li.querySelector('.row-sel').addEventListener('change', (ev) => {
+  const cont = prev && prev[1] === code;
+  const badge = kind
+    ? ` <span class="section-kind-badge ${kind}" title="${esc(t(kind === 'extra-exam' ? 'courseExtraExamHelp' : 'courseGraduationHelp'))}">${esc(t(kind === 'extra-exam' ? 'courseExtraExamBadge' : 'courseGraduationBadge'))}</span>`
+    : '';
+  const where = whereText(row);
+  const div = document.createElement('div');
+  div.className = `cl-row cl-item${cont ? ' cl-cont' : prev ? ' cl-new' : ''}${selected ? ' is-selected' : ''}${isCurrent(row) ? ' is-current' : ''}`;
+  div.setAttribute('role', 'row');
+  div.dataset.key = key;
+  div.dataset.crn = String(crn);
+  div.dataset.code = code;
+  div.innerHTML = `
+    <span class="cl-sel" role="cell"><label><span class="sr-only">${esc(t('courseSelectSection', { crn }))}</span><input type="checkbox" class="row-sel"${selected ? ' checked' : ''}></label></span>
+    <span class="cl-fav" role="cell"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-pressed="${starred}" aria-label="${esc(t(starred ? 'favRemoveLabel' : 'favAddLabel'))}">${STAR_SVG}</button></span>
+    <span class="cl-code" role="cell"><button type="button" class="cl-open code" translate="no" aria-haspopup="dialog" aria-label="${esc(t('courseOpenSection', { code, name, crn }))}">${markField(code, 'code', hits.filter((h) => h.field === 'code'))}</button></span>
+    <span class="cl-name" role="cell"><span class="cl-name-t">${markField(name, 'name', hits.filter((h) => h.field === 'name'))}</span>${badge}</span>
+    <span class="cl-crn crn" role="cell" translate="no">${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</span>
+    <span class="cl-ins" role="cell">${instructorLinks(instructor, hits.filter((h) => h.field === 'instructor'))}</span>
+    <span class="cl-when" role="cell">${whenCell(row, kind)}</span>
+    <span class="cl-where" role="cell">${where ? esc(where) : '<span class="course-none">·</span>'}</span>
+    <span class="cl-quota" role="cell">${Number(cap) > 0 ? quotaCell(cap, enr) : `<span class="quota-unknown"><span class="cl-qu-long">${esc(t('quotaUnknown'))}</span><span class="cl-qu-short">${esc(t('quotaUnknownShort'))}</span></span>`}</span>
+    <span class="cl-m2"><span class="crn" translate="no">${esc(crn)}</span> · ${esc(instructorText(instructor))} · ${esc(whenText(row, kind))}</span>`;
+  div.querySelector('.cl-open').addEventListener('click', () => openDetail(row));
+  div.querySelector('.row-sel').addEventListener('change', (ev) => {
     setSelected(key, ev.target.checked);
-    li.classList.toggle('is-selected', ev.target.checked);
+    div.classList.toggle('is-selected', ev.target.checked);
     updateSelection();
     if (ttOn) renderTimetable();
   });
-  // Satırın boş bir yerine tıklamak da detayı açar (önceki tablo davranışı);
-  // bağlantı, düğme ve onay kutusu kendi işini yapar.
-  li.addEventListener('click', (ev) => {
-    if (ev.target.closest('a, button, input, label')) return;
-    openDetail(row);
-  });
-  wireFavoriteButton(li.querySelector('.fav-star'));
-  return li;
+  wireFavoriteButton(div.querySelector('.fav-star'));
+  return div;
+}
+
+// Sıralanabilir sütunlar: başlık düğmesi aynı anahtarda yönü çevirir, yeni
+// anahtarda artan başlar. Üstteki sıralama seçicisiyle aynı durumu paylaşır.
+const SORT_HEADS = { code: 'colCode', crn: 'colCRN', instructor: 'colInstructor', fill: 'colQuota' };
+
+function headCell(key, label, cls = '') {
+  const sortKey = Object.hasOwn(SORT_HEADS, key) ? key : '';
+  const active = sortKey && state.sort.key === sortKey;
+  const sortAttr = sortKey ? ` aria-sort="${active ? (state.sort.dir === -1 ? 'descending' : 'ascending') : 'none'}"` : '';
+  const arrow = active ? `<span class="cl-arrow" aria-hidden="true">${state.sort.dir === -1 ? '↓' : '↑'}</span>` : '';
+  const inner = sortKey
+    ? `<button type="button" class="cl-sort" data-sort="${sortKey}">${esc(label)}${arrow}</button>`
+    : esc(label);
+  return `<span class="${cls}" role="columnheader"${sortAttr}>${inner}</span>`;
 }
 
 function columnHead() {
   const head = document.createElement('div');
-  head.className = 'course-colhead';
-  head.innerHTML = `<span class="cs-sel"><label><span class="sr-only">${esc(t('courseSelectAll'))}</span><input type="checkbox" class="row-sel" id="sel-all"></label></span>`
-    + `<span><span class="sr-only">${esc(t('colFav'))}</span></span>`
-    + `<span>${esc(t('colCRN'))}</span><span>${esc(t('colInstructor'))}</span><span>${esc(t('colWhen'))}</span><span>${esc(t('colWhere'))}</span><span class="cq">${esc(t('colQuota'))}</span>`;
+  head.className = 'cl-row cl-head';
+  head.setAttribute('role', 'row');
+  head.innerHTML = `<span class="cl-sel" role="columnheader"><label><span class="sr-only">${esc(t('courseSelectAll'))}</span><input type="checkbox" class="row-sel" id="sel-all"></label></span>`
+    + `<span class="cl-fav" role="columnheader"><span class="sr-only">${esc(t('colFav'))}</span></span>`
+    + headCell('code', t('colCode'), 'cl-code')
+    + headCell('name', t('colCourseName'), 'cl-name')
+    + headCell('crn', t('colCRN'), 'cl-crn')
+    + headCell('instructor', t('colInstructor'), 'cl-ins')
+    + headCell('when', t('colWhen'), 'cl-when')
+    + headCell('where', t('colWhere'), 'cl-where')
+    + headCell('fill', t('colQuota'), 'cl-quota');
   head.querySelector('#sel-all').addEventListener('change', (ev) => {
     for (const r of state.filtered) setSelected(selKey(r), ev.target.checked);
     updateSelection();
     syncRenderedSelection();
     if (ttOn) renderTimetable();
   });
-  return head;
-}
-
-function createGroup(group) {
-  const first = group.rows[0];
-  const titleHitRow = group.rows.find((row) => {
-    const hits = state.marks?.get(selKey(row))?.hits || [];
-    return hits.some((hit) => hit.field === 'code' || hit.field === 'name');
-  }) || first;
-  const titleHits = state.marks?.get(selKey(titleHitRow))?.hits || [];
-  const kinds = [...new Set(group.rows.map((r) => specialSectionKind(r)).filter(Boolean))];
-  const badges = kinds.map((kind) => {
-    const isExtra = kind === 'extra-exam';
-    return `<span class="section-kind-badge ${kind}" title="${esc(t(isExtra ? 'courseExtraExamHelp' : 'courseGraduationHelp'))}">${esc(t(isExtra ? 'courseExtraExamBadge' : 'courseGraduationBadge'))}</span>`;
-  }).join('');
-  const fullCount = group.rows.filter((r) => {
-    const [cap, enr] = effectiveQuota(r);
-    return quotaState(cap, enr).kind === 'full';
-  }).length;
-  const meta = t('courseSectionCount', { n: group.rows.length }) + (fullCount ? ` · ${t('courseFullCount', { n: fullCount })}` : '');
-
-  const article = document.createElement('article');
-  article.className = 'course-group';
-  article.innerHTML = `
-    <header class="course-group-head">
-      <button type="button" class="course-group-open" aria-haspopup="dialog" aria-label="${esc(t('courseOpenCourse', { code: group.code, name: group.name }))}">
-        <span class="course-group-code code" translate="no">${markField(group.code, 'code', titleHits.filter((h) => h.field === 'code'))}</span>
-        <span class="course-group-name">${markField(group.name, 'name', titleHits.filter((h) => h.field === 'name'))}</span>
-      </button>
-      ${badges ? `<span class="course-group-badges">${badges}</span>` : ''}
-      <span class="course-group-meta">${esc(meta)}</span>
-    </header>
-    <ul class="course-section-list" aria-label="${esc(t('courseSectionsOf', { code: group.code }))}"></ul>`;
-
-  const list = article.querySelector('.course-section-list');
-  const preview = sectionPreview();
-  group.rows.slice(0, preview).forEach((row) => list.appendChild(createSection(row)));
-  article.querySelector('.course-group-open').addEventListener('click', () => {
-    openCourseDetail(group.code, { source: 'dersler' });
-  });
-
-  if (group.rows.length > preview) {
-    const hiddenCount = group.rows.length - preview;
-    const toggle = document.createElement('button');
-    toggle.type = 'button';
-    toggle.className = 'course-sections-toggle';
-    toggle.setAttribute('aria-expanded', 'false');
-    toggle.textContent = t('courseMoreSections', { n: hiddenCount });
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      if (!expanded && !list.querySelector('.course-section-extra')) {
-        const extras = document.createDocumentFragment();
-        group.rows.slice(preview).forEach((row) => extras.appendChild(createSection(row, true)));
-        list.appendChild(extras);
-      }
-      for (const row of list.querySelectorAll('.course-section-extra')) row.hidden = expanded;
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      toggle.textContent = expanded ? t('courseMoreSections', { n: hiddenCount }) : t('courseLessSections');
+  for (const btn of head.querySelectorAll('[data-sort]')) {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.sort;
+      state.sort = { key, dir: state.sort.key === key ? -state.sort.dir : 1 };
+      updateSortUI();
+      applyFilters();
+      document.querySelector(`#course-groups [data-sort="${key}"]`)?.focus({ preventScroll: true });
     });
-    article.appendChild(toggle);
   }
-  return article;
+  return head;
 }
 
 function renderRows(append) {
   const box = $('#course-groups');
-  const groups = cachedGroupCourseRows(state.filtered);
+  const rows = state.filtered || [];
   if (!append) {
     box.innerHTML = '';
     state.shown = 0;
   }
-  if (!groups.length) {
+  if (!rows.length) {
     box.innerHTML = `<p class="empty">${esc(t('courseEmpty'))}</p>`;
     $('#more').hidden = true;
     return;
   }
-  const slice = groups.slice(state.shown, state.shown + GROUP_PAGE);
+  let body = box.querySelector('.cl-body');
+  if (!body) {
+    box.appendChild(columnHead());
+    body = document.createElement('div');
+    body.className = 'cl-body';
+    body.setAttribute('role', 'rowgroup');
+    box.appendChild(body);
+  }
+  const slice = rows.slice(state.shown, state.shown + ROW_PAGE);
   const frag = document.createDocumentFragment();
-  if (!append) frag.appendChild(columnHead());
-  for (const group of slice) frag.appendChild(createGroup(group));
-  box.appendChild(frag);
+  let prev = state.shown ? rows[state.shown - 1] : null;
+  for (const row of slice) {
+    frag.appendChild(createRow(row, prev));
+    prev = row;
+  }
+  body.appendChild(frag);
 
   state.shown += slice.length;
-  const remaining = groups.length - state.shown;
+  const remaining = rows.length - state.shown;
   $('#more').hidden = ttOn || remaining <= 0;
-  $('#more').textContent = t('courseMoreGroups', { n: remaining });
+  $('#more').textContent = t('courseMoreRows', { n: formatInt(remaining) });
   syncSelectAll();
 }
 
@@ -916,8 +998,7 @@ let ttOn = false;
 function setTimetable(on) {
   ttOn = Boolean(on);
   $('#course-groups').hidden = ttOn;
-  const groups = cachedGroupCourseRows(state.filtered || []);
-  $('#more').hidden = ttOn || state.shown >= groups.length;
+  $('#more').hidden = ttOn || state.shown >= (state.filtered || []).length;
   $('#tt').hidden = !ttOn;
   $('#tt-toggle').classList.toggle('active', ttOn);
   $('#tt-toggle').setAttribute('aria-pressed', String(ttOn));

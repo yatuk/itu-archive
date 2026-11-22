@@ -59,8 +59,8 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('.brand-title, .brand h1').first()).toBeVisible();
     await expect(page.locator('.tabs [data-view]').first()).toBeVisible();
 
-    // Veri gerçekten geldi mi? Her genişlikte derse göre gruplanmış liste.
-    const firstResult = page.locator('#course-groups .course-group .course-section').first();
+    // Veri gerçekten geldi mi? Her genişlikte düz şube tablosu (satır başına bir şube).
+    const firstResult = page.locator('#course-groups .cl-body .cl-item').first();
     await expect(firstResult).toBeVisible({ timeout: 15000 });
 
     expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
@@ -139,7 +139,7 @@ test.describe('SPA (ana sayfa)', () => {
   // role="button" ile bunun dışında kalır.
   test('rolsüz bağlantıların hepsi taranabilir href taşır', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('#course-groups .course-group').first()).toBeVisible({ timeout: 15000 });
+    await expect(page.locator('#course-groups .cl-item').first()).toBeVisible({ timeout: 15000 });
     const bozuk = await page.evaluate(() => [...document.querySelectorAll('a:not([role])')]
       .map((a) => a.getAttribute('href'))
       .filter((h) => h == null || h.trim() === '' || h.trim() === '#' || /^\s*javascript:/i.test(h)));
@@ -178,10 +178,10 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#statbar')).toBeHidden();
   });
 
-  test('mobil header ve gruplanmış ders listesi sıkışmadan çalışır', async ({ page }) => {
+  test('mobil header ve iki satırlı şube listesi sıkışmadan çalışır', async ({ page }) => {
     test.skip(page.viewportSize().width > 600, 'Mobil yerleşim testi');
     await page.goto('/?term=2025-2026-yaz');
-    const first = page.locator('#course-groups .course-group').first();
+    const first = page.locator('#course-groups .cl-item').first();
     await expect(first).toBeVisible({ timeout: 15000 });
 
     const brand = page.locator('.brand');
@@ -196,90 +196,79 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('.theme-name')).toHaveText(['Açık', 'Koyu']);
     await expect(page.locator('#lang-btn')).toBeVisible();
 
-    for (const selector of ['.course-group-code', '.course-group-name', '.course-group-meta', '.course-section', '.course-crn', '.course-when', '.course-quota', '.fav-star']) {
+    // Dar kapta kolon başlığı yok; satır 1: kod + ad + kontenjan, satır 2: CRN · hoca · zaman.
+    await expect(page.locator('#course-groups .cl-head')).toBeHidden();
+    for (const selector of ['.cl-open', '.cl-name', '.cl-quota', '.cl-m2', '.fav-star', '.row-sel']) {
       await expect(first.locator(selector).first()).toBeVisible();
     }
-    expect(await first.locator('.course-section:visible').count()).toBeLessThanOrEqual(4);
-    const sectionBox = await first.locator('.course-section:visible').first().boundingBox();
-    expect(sectionBox.height).toBeLessThan(110);
+    for (const selector of ['.cl-crn', '.cl-when', '.cl-where']) {
+      await expect(first.locator(selector)).toBeHidden();
+    }
+    const rowBox = await first.boundingBox();
+    expect(rowBox.height).toBeGreaterThanOrEqual(56);
+    expect(rowBox.height).toBeLessThan(110);
     const listType = await first.evaluate((el) => ({
-      name: parseFloat(getComputedStyle(el.querySelector('.course-group-name')).fontSize),
-      schedule: parseFloat(getComputedStyle(el.querySelector('.course-when')).fontSize),
+      name: parseFloat(getComputedStyle(el.querySelector('.cl-name')).fontSize),
+      line2: parseFloat(getComputedStyle(el.querySelector('.cl-m2')).fontSize),
     }));
-    expect(listType.name).toBeGreaterThanOrEqual(16);
-    expect(listType.schedule).toBeGreaterThanOrEqual(12);
+    expect(listType.name).toBeGreaterThanOrEqual(13);
+    expect(listType.line2).toBeGreaterThanOrEqual(12);
 
-    await first.locator('.course-section-open').first().click();
-    await expect(page.locator('.detail-panel')).toBeVisible();
-    const section = page.locator('.d-sec').first();
-    await expect(section).toBeVisible();
-    expect(parseFloat(await section.locator('.d-sec-when').evaluate((el) => getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(13);
-    await page.locator('.detail-close').click();
+    // Detay mobilde tam ekran sayfa olarak açılır; kapatma düğmesi 44px.
+    await first.locator('.cl-open').click();
+    const panel = page.locator('#detail-panel');
+    await expect(panel).toBeVisible();
+    await expect(panel).toHaveAttribute('aria-modal', 'true');
+    await expect(page.locator('#detail-content .d-row').first()).toBeVisible();
+    const vp = page.viewportSize();
+    const panelBox = await panel.boundingBox();
+    expect(panelBox.width).toBeGreaterThanOrEqual(vp.width - 1);
+    expect(panelBox.height).toBeGreaterThanOrEqual(vp.height - 1);
+    const closeBox = await page.locator('#detail-close').boundingBox();
+    expect(Math.min(closeBox.width, closeBox.height)).toBeGreaterThanOrEqual(44);
+    await page.locator('#detail-close').click();
+    await expect(panel).toBeHidden();
 
     await page.locator('.theme-btn[data-theme="dark"]').click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
     // Dark, sade'nin yalnızca siyah hâli: kontenjan aynı tek temsille kalır, fosfor çubuğu geri gelmez.
-    await expect(first.locator('.course-quota').first()).toBeVisible();
+    await expect(first.locator('.cl-quota')).toBeVisible();
     await expect(first.locator('.bar')).toHaveCount(0);
   });
 
-  test('mobilde aynı dersin şubeleri tek başlıkta toplanır ve favori korunur', async ({ page }) => {
+  test('aynı dersin ardışık şubeleri tek tabloda ayrışır ve favori korunur', async ({ page }) => {
     test.skip(page.viewportSize().width > 600, 'Mobil yerleşim testi');
     await page.goto('/?q=TUR121');
 
-    const group = page.locator('#course-groups .course-group').filter({ hasText: 'TUR 121' }).first();
-    await expect(group).toBeVisible({ timeout: 15000 });
-    await expect(group.locator('.course-group-code')).toContainText('TUR 121');
-    expect(await group.locator('.course-group-name').count()).toBe(1);
+    const rows = page.locator('#course-groups .cl-item').filter({ hasText: 'TUR 121' });
+    await expect(rows.first()).toBeVisible({ timeout: 15000 });
+    expect(await rows.count()).toBeGreaterThan(1);
+    // Dersin ilk satırı tam kontrast (yeni dersin ilk satırı ayrıca güçlü çizgiyle başlar); ardışık şubeler soluk.
+    await expect(rows.first()).not.toHaveClass(/\bcl-cont\b/);
+    await expect(rows.nth(1)).toHaveClass(/\bcl-cont\b/);
+    await expect(page.locator('#course-groups .cl-item[hidden]')).toHaveCount(0);
 
-    const declaredTotal = Number((await group.locator('.course-group-meta').textContent()).match(/\d+/)?.[0]);
-    const initialSections = await group.locator('.course-section').count();
-    expect(declaredTotal).toBeGreaterThan(1);
-    expect(initialSections).toBeLessThanOrEqual(4);
-    expect(await group.locator('.course-section[hidden]').count()).toBe(0);
-    const toggle = group.locator('.course-sections-toggle');
-    if (declaredTotal > 4) {
-      await toggle.click();
-      await expect(toggle).toHaveAttribute('aria-expanded', 'true');
-      expect(await group.locator('.course-section').count()).toBe(declaredTotal);
-      expect(await group.locator('.course-section:visible').count()).toBe(declaredTotal);
-    }
-
-    const star = group.locator('.fav-star').first();
+    const star = rows.first().locator('.fav-star');
     const before = await star.getAttribute('aria-pressed');
     await star.click();
     await expect(star).toHaveAttribute('aria-pressed', before === 'true' ? 'false' : 'true');
   });
 
-  test('mobil ders listesi görünmeyen şubeleri kullanıcı istemeden DOM’a kurmaz', async ({ page }) => {
-    test.skip(page.viewportSize().width > 600, 'Mobil performans regresyon testi');
+  test('ders listesi şubeleri sayfa sayfa kurar', async ({ page }) => {
     await page.goto('/?term=2026-2027-guz');
-    await expect(page.locator('#course-groups .course-group').first()).toBeVisible({ timeout: 15000 });
-
-    const initial = await page.locator('#course-groups').evaluate((root) => ({
-      groups: root.querySelectorAll('.course-group').length,
-      sections: root.querySelectorAll('.course-section').length,
-      hidden: root.querySelectorAll('.course-section[hidden]').length,
-    }));
-    expect(initial.groups).toBe(30);
-    expect(initial.sections).toBeLessThanOrEqual(initial.groups * 4);
-    expect(initial.hidden).toBe(0);
-
+    const items = page.locator('#course-groups .cl-item');
+    await expect(items.first()).toBeVisible({ timeout: 15000 });
+    await expect(items).toHaveCount(60);
+    await expect(page.locator('#more')).toBeVisible();
     await page.locator('#more').click();
-    await expect(page.locator('#course-groups .course-group')).toHaveCount(60);
-    const appended = await page.locator('#course-groups').evaluate((root) => ({
-      groups: root.querySelectorAll('.course-group').length,
-      sections: root.querySelectorAll('.course-section').length,
-      hidden: root.querySelectorAll('.course-section[hidden]').length,
-    }));
-    expect(appended.sections).toBeLessThanOrEqual(appended.groups * 4);
-    expect(appended.hidden).toBe(0);
+    await expect(items).toHaveCount(120);
+    await expect(page.locator('#course-groups .cl-item[hidden]')).toHaveCount(0);
   });
 
   test('anlamlı görünüm tercihleri URL’den ayrıldıktan ve yenilendikten sonra korunur', async ({ page }) => {
     test.skip(page.viewportSize().width < 900, 'Tek tarayıcı kalıcılığı masaüstünde bir kez doğrulanır');
     await page.goto('/#dersler');
-    await expect(page.locator('#course-groups .course-group').first()).toBeVisible({ timeout: 15000 });
+    await expect(page.locator('#course-groups .cl-item').first()).toBeVisible({ timeout: 15000 });
     await page.locator('#q').fill('MAT');
     await expect(page).toHaveURL(/q=MAT/);
     await page.locator('#mobile-sort').selectOption('name');
@@ -329,19 +318,41 @@ test.describe('SPA (ana sayfa)', () => {
     expect(keys.some((key) => /transcript/i.test(key))).toBe(false);
   });
 
-  test('gruplanmış ders listesi 320–430 px aralığında yatay taşmaz', async ({ page }) => {
+  test('iki satırlı şube satırı 320–430 px aralığında taşmaz, ad sayıya binmez', async ({ page }) => {
     test.skip(page.viewportSize().width > 600, 'Mobil yerleşim testi');
-    for (const width of [320, 390, 430]) {
-      await page.setViewportSize({ width, height: 820 });
-      await page.goto('/?q=TUR121');
-      const group = page.locator('#course-groups .course-group').first();
-      await expect(group).toBeVisible({ timeout: 15000 });
-      const metrics = await page.evaluate(() => ({
-        document: document.documentElement.scrollWidth - document.documentElement.clientWidth,
-        group: document.querySelector('.course-group').scrollWidth - document.querySelector('.course-group').clientWidth,
-      }));
-      expect(metrics.document, `${width}px belge taşması`).toBeLessThanOrEqual(1);
-      expect(metrics.group, `${width}px ders grubu taşması`).toBeLessThanOrEqual(1);
+    for (const theme of ['sade', 'dark']) {
+      for (const width of [320, 390, 430]) {
+        await page.setViewportSize({ width, height: 820 });
+        // Uzun adlar: "General Chemistry I" (KIM 101E), "Yabancı Öğr. İçin Türk Dili I" (TUR 111).
+        for (const q of ['KIM101E', 'TUR111']) {
+          await page.goto(`/?q=${q}`);
+          if (theme === 'dark') await page.locator('.theme-btn[data-theme="dark"]').click();
+          await expect(page.locator('#course-groups .cl-item').first()).toBeVisible({ timeout: 15000 });
+          const m = await page.evaluate(() => {
+            const table = document.querySelector('#course-groups');
+            const rows = [...table.querySelectorAll('.cl-item')].slice(0, 12);
+            const bad = [];
+            for (const row of rows) {
+              const r = row.getBoundingClientRect();
+              const name = row.querySelector('.cl-name').getBoundingClientRect();
+              const quota = row.querySelector('.cl-quota').getBoundingClientRect();
+              const line2 = row.querySelector('.cl-m2').getBoundingClientRect();
+              if (name.right > quota.left + 0.5) bad.push(`ad kontenjana biniyor (${row.dataset.crn})`);
+              if (quota.right > r.right + 0.5) bad.push(`kontenjan satırdan taşıyor (${row.dataset.crn})`);
+              if (line2.top < Math.max(name.bottom, quota.bottom) - 0.5) bad.push(`2. satır 1. satıra biniyor (${row.dataset.crn})`);
+              if (r.height < 56) bad.push(`satır 56px'ten kısa (${row.dataset.crn})`);
+            }
+            return {
+              document: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+              table: table.scrollWidth - table.clientWidth,
+              bad,
+            };
+          });
+          expect(m.document, `${theme} ${width}px ${q} belge taşması`).toBeLessThanOrEqual(1);
+          expect(m.table, `${theme} ${width}px ${q} tablo taşması`).toBeLessThanOrEqual(1);
+          expect(m.bad, `${theme} ${width}px ${q}`).toEqual([]);
+        }
+      }
     }
   });
 
@@ -409,23 +420,39 @@ test.describe('SPA (ana sayfa)', () => {
     expect(dicts, 'kayıtlı İngilizce tercihte tr sözlüğü inmemeli').not.toContain('tr');
   });
 
-  test('kontenjan iki temada da tek temsile iner (fosfor çubuklu görünümü kaldırıldı)', async ({ page }) => {
+  test('kontenjan iki temada da tek temsile iner: çubuk, yazılan/kontenjan ve hap', async ({ page }) => {
     await page.goto('/');
     const mobile = page.viewportSize().width <= 640;
     const scope = page.locator('#course-groups');
-    await expect(scope.locator('.course-group').first()).toBeVisible({ timeout: 15000 });
+    await expect(scope.locator('.cl-item').first()).toBeVisible({ timeout: 15000 });
 
     for (const theme of ['sade', 'dark']) {
       await page.locator(`.theme-btn[data-theme="${theme}"]`).click();
-      // Kont./Yazılan/Doluluk üçlüsü tek Kontenjan kolonuna iner — iki temada da aynı.
-      // (7 kolon: sel, fav, CRN, Öğretim üyesi, Zaman, Yer, Kontenjan; ders kodu
-      // ve adı grup başlığında. Dar ekranda kolon başlığı yok, satırlar kart.)
-      await expect(scope.locator('.course-colhead > span:visible')).toHaveCount(mobile ? 0 : 7);
-      await expect(scope.locator('.course-quota').filter({ hasText: '/' }).first()).toBeVisible();
+      // Düz tablo: seçim, yıldız, Kod, Ders adı, CRN, Öğretim üyesi, Zaman, (Yer), Kontenjan.
+      // Dar kapta kolon başlığı yok, satırlar iki satırlı.
+      const heads = await scope.locator('.cl-head > span:visible').count();
+      if (mobile) expect(heads).toBe(0);
+      else expect(heads).toBeGreaterThanOrEqual(8);
+      const fill = scope.locator('.cl-fill').first();
+      await expect(fill.locator('.cl-n')).toHaveText(/^\d[\d.]*\/\d[\d.]*$/);
+      await expect(fill.locator('.cl-bar')).toHaveCount(1);
+      await expect(scope.locator('.cl-fill .cl-n').filter({ hasText: '%' })).toHaveCount(0);
       await expect(scope.locator('.bar:visible')).toHaveCount(0);
       await expect(scope.locator('.fill-measured')).toHaveCount(0);
       await expect(scope.locator('.quota-fosfor:visible')).toHaveCount(0);
     }
+  });
+
+  test('sıralanabilir kolon başlıkları sıralama seçimiyle eşleşir', async ({ page }) => {
+    test.skip(page.viewportSize().width <= 640, 'Kolon başlıkları masaüstünde görünür');
+    await page.goto('/#dersler');
+    const head = page.locator('#course-groups .cl-head');
+    await expect(head).toBeVisible({ timeout: 15000 });
+    await head.locator('[data-sort="instructor"]').click();
+    await expect(page.locator('#mobile-sort')).toHaveValue('instructor');
+    await expect(page.locator('#course-groups .cl-head [aria-sort="ascending"] [data-sort="instructor"]')).toBeVisible();
+    await page.locator('#course-groups .cl-head [data-sort="instructor"]').click();
+    await expect(page.locator('#course-groups .cl-head [aria-sort="descending"] [data-sort="instructor"]')).toBeVisible();
   });
 
   test('Sınavlar eski Yaz takvimi CDN cacheinden gelse bile Güz diye göstermez', async ({ page }) => {
@@ -479,11 +506,14 @@ test.describe('Ders detay paneli', () => {
   test('şubeden programa ekleme ve mobil günlük liste', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('/?term=2025-2026-yaz#ders/MAT-271E');
-    await page.locator('[data-dtab="sections"]').click();
-    const add = page.locator('[data-add-crn]').first();
+    const add = page.locator('#detail-panel [data-add-crn]').first();
     const crn = await add.getAttribute('data-add-crn');
+    await expect(add).toHaveAttribute('aria-pressed', 'false');
     await add.click();
     await expect(page.locator('.toast').last()).toBeVisible();
+    // Düğme yerinde "Programda" durumuna geçer (tekrar tıklama çıkarır).
+    await expect(add).toHaveAttribute('aria-pressed', 'true');
+    await expect(add).toHaveClass(/\bis-on\b/);
     await page.locator('#detail-close').click();
     await page.locator('#tab-program').click();
     await expect(page.locator('#p-list')).toContainText(crn);
@@ -527,70 +557,85 @@ test.describe('Ders detay paneli', () => {
     await page.setViewportSize({ width: 320, height: 740 });
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto('/?term=2025-2026-yaz#ders/MAT-271E');
-    await expect(page.locator('.course-reader .d-name')).toBeVisible();
-    await expect(page.locator('.course-reader .d-obs')).toBeVisible();
-    expect(await page.locator('.course-reader .detail-box').evaluate(el => getComputedStyle(el).animationName)).toBe('none');
-    await page.locator('[data-dtab="overview"]').focus();
-    await page.keyboard.press('ArrowRight');
-    await expect(page.locator('[data-dtab="sections"]')).toBeFocused();
-    await expect(page.locator('[data-dpanel="sections"]')).toBeVisible();
+    const panel = page.locator('#detail-panel');
+    await expect(panel.locator('.d-ph-name')).toBeVisible();
+    await expect(panel.locator('.d-obs')).toBeVisible();
+    expect(await panel.evaluate(el => getComputedStyle(el).animationName)).toBe('none');
+    const m = await panel.evaluate((el) => ({ overflow: el.scrollWidth - el.clientWidth, right: el.getBoundingClientRect().right }));
+    expect(m.overflow).toBeLessThanOrEqual(1);
+    expect(m.right).toBeLessThanOrEqual(321);
     await page.keyboard.press('Escape');
-    await expect(page.locator('#detail-panel')).toBeHidden();
+    await expect(panel).toBeHidden();
     const controls = await page.locator('.masthead-refined .mast-controls').boundingBox();
     const brand = await page.locator('.masthead-refined .brand-home').boundingBox();
     expect(controls.x + controls.width).toBeLessThanOrEqual(320);
     expect(brand.y + brand.height).toBeLessThanOrEqual(controls.y);
   });
 
-  test('tek uzun belge yerine dört erişilebilir sekme kullanır', async ({ page }) => {
+  test('tek kaydırmalı sayfa: başlık, şubeler, özet ve geçmiş birlikte', async ({ page }) => {
     const hatalar = konsolHatalari(page);
     await page.goto('/?term=2025-2026-yaz#ders/MAT-271E');
 
     const panel = page.locator('#detail-panel');
     await expect(panel).toBeVisible();
-    await expect(page.locator('.d-tabs [role="tab"]')).toHaveCount(4);
-    await expect(page.locator('[data-dtab="overview"]')).toHaveAttribute('aria-selected', 'true');
-    await expect(page.locator('[data-dpanel="overview"]')).toBeVisible();
-    await expect(page.locator('[data-dpanel="sections"]')).toBeHidden();
+    // Sekme yok; bölümler alt alta.
+    await expect(panel.locator('[role="tab"]')).toHaveCount(0);
+    await expect(panel.locator('.d-ph-code')).toContainText('MAT 271E');
+    await expect(panel.locator('.d-stats > div')).toHaveCount(3);
+    await expect(panel.locator('.d-blk-secs .d-row').first()).toBeVisible();
+    await expect(panel.locator('.d-blk-secs [data-add-crn]').first()).toBeVisible();
+    await expect(panel.locator('.d-about .d-facts > div')).toHaveCount(5);
+    await expect(panel.locator('.d-blk-hist .d-hrow').first()).toBeAttached();
+    await expect(panel.locator('.d-records')).toBeAttached();
+    await expect(panel.locator('.d-records')).not.toHaveAttribute('open', '');
+    await expect(panel.locator('.d-records .htable')).toBeHidden();
+    await panel.locator('.d-records > summary').click();
+    await expect(panel.locator('.d-records .d-instr-history').first()).toBeVisible();
 
-    await page.locator('[data-dtab="sections"]').click();
-    await expect(page.locator('[data-dpanel="sections"] .d-sec').first()).toBeVisible();
-    await expect(page.locator('[data-dpanel="sections"] .d-instr-history').first()).toBeVisible();
-
-    await page.locator('[data-dtab="history"]').click();
-    await expect(page.locator('.d-history-records')).toBeVisible();
-    await expect(page.locator('.d-history-records')).not.toHaveAttribute('open', '');
-    await expect(page.locator('.d-history-records .htable')).toBeHidden();
-
-    // Kullanıcının gerçek akışı: masaüstü satırı veya mobil şube satırı ilgili
-    // şubeler sekmesini açar ve seçilen CRN'ye odaklanır.
+    // Kullanıcının gerçek akışı: listedeki satır paneli açar, tıklanan şubeyi
+    // hem listede hem panelde vurgular.
     await page.locator('#detail-close').click();
-    const firstSection = page.locator('#course-groups .course-section-open').first();
-    await firstSection.click();
-    await expect(page.locator('[data-dtab="sections"]')).toHaveAttribute('aria-selected', 'true');
-    await expect(page.locator('.d-sec.is-focus')).toHaveCount(1);
+    await expect(panel).toBeHidden();
+    const row = page.locator('#course-groups .cl-item').first();
+    const crn = await row.getAttribute('data-crn');
+    await row.locator('.cl-open').click();
+    await expect(panel).toBeVisible();
+    await expect(panel.locator('.d-row.is-focus')).toHaveCount(1);
+    await expect(panel.locator('.d-row.is-focus')).toHaveAttribute('data-crn', crn);
+    if (page.viewportSize().width >= 760) {
+      // Masaüstünde panel listenin yanında sütun olarak durur; satır vurgulanır.
+      await expect(page.locator('#course-work')).toHaveClass(/\bhas-detail\b/);
+      await expect(panel).toHaveClass(/\bis-docked\b/);
+      await expect(row).toHaveClass(/\bis-current\b/);
+      const [listBox, panelBox] = await Promise.all([page.locator('.course-list-col').boundingBox(), panel.boundingBox()]);
+      expect(panelBox.x).toBeGreaterThanOrEqual(listBox.x + listBox.width - 1);
+    }
+    await page.keyboard.press('Escape');
+    await expect(panel).toBeHidden();
+    await expect(page.locator('#course-groups .cl-item.is-current')).toHaveCount(0);
     expect(hatalar, `konsol hataları:\n${hatalar.join('\n')}`).toEqual([]);
   });
 
-  test('modalda yalnızca içerik alanı kayar ve yatay taşma oluşmaz', async ({ page }) => {
+  test('panelde yalnızca panel kayar ve yatay taşma oluşmaz', async ({ page }) => {
     await page.goto('/?term=2025-2026-yaz#ders/MAT-271E');
-    await expect(page.locator('.d-panels')).toBeVisible();
+    await expect(page.locator('#detail-panel .d-row').first()).toBeVisible();
     const layout = await page.evaluate(() => {
-      const box = document.querySelector('.detail-box');
-      const content = document.querySelector('#detail-content');
-      const panels = document.querySelector('.d-panels');
+      const panel = document.querySelector('#detail-panel');
+      const head = panel.querySelector('.d-ph');
       return {
-        boxOverflow: getComputedStyle(box).overflowY,
-        contentOverflow: getComputedStyle(content).overflowY,
-        panelOverflow: getComputedStyle(panels).overflowY,
-        boxRight: box.getBoundingClientRect().right,
+        panelOverflow: getComputedStyle(panel).overflowY,
+        headPosition: getComputedStyle(head).position,
+        panelRight: panel.getBoundingClientRect().right,
+        panelX: panel.scrollWidth - panel.clientWidth,
+        doc: document.documentElement.scrollWidth - document.documentElement.clientWidth,
         viewport: document.documentElement.clientWidth,
       };
     });
-    expect(layout.boxOverflow).toBe('hidden');
-    expect(layout.contentOverflow).toBe('hidden');
     expect(layout.panelOverflow).toBe('auto');
-    expect(layout.boxRight).toBeLessThanOrEqual(layout.viewport + 1);
+    expect(layout.headPosition).toBe('sticky');
+    expect(layout.panelRight).toBeLessThanOrEqual(layout.viewport + 1);
+    expect(layout.panelX).toBeLessThanOrEqual(1);
+    expect(layout.doc).toBeLessThanOrEqual(1);
   });
 });
 

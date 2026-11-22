@@ -1667,6 +1667,13 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		}
 		capabilities.WriteString(`</ul>`)
 	}
+	var calSum, calFAQ string
+	var calSchema map[string]any
+	if p.slug == "akademik-takvim" && !en {
+		if sum, ok := b.calendarSummary(); ok {
+			calSum, calFAQ, calSchema = sum.summaryHTML(), sum.faqHTML(), sum.faqSchema()
+		}
+	}
 	content := template.HTML(buildContent(
 		`<nav class="crumb" aria-label="Breadcrumb"><a href="`+homeHref+`">`+template.HTMLEscapeString(b.l.SiteTitle)+`</a> › <span>`+template.HTMLEscapeString(h1)+`</span></nav>`,
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(h1)),
@@ -1674,9 +1681,9 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		fmt.Sprintf(`<section class="seo-tool-launch" aria-label="%s"><div><strong>%s</strong><p>%s</p></div><a class="btn-primary" href="%s">%s</a></section>`,
 			template.HTMLEscapeString(ariaLaunch), template.HTMLEscapeString(primary.label), template.HTMLEscapeString(primary.detail),
 			template.HTMLEscapeString(primary.href), template.HTMLEscapeString(primary.label)),
-		`<h2>`+template.HTMLEscapeString(howToHead)+`</h2>`,
+		calSum+`<h2>`+template.HTMLEscapeString(howToHead)+`</h2>`,
 		paras.String(),
-		capabilities.String(),
+		capabilities.String()+calFAQ,
 		related.String(),
 	))
 	webPageSchema := map[string]any{
@@ -1706,6 +1713,9 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 			"inLanguage":          inLang, "isAccessibleForFree": true, "featureList": features,
 			"offers": map[string]any{"@type": "Offer", "price": 0, "priceCurrency": "TRY"},
 		})
+	}
+	if calSchema != nil {
+		schema = append(schema, calSchema)
 	}
 	jsonld := jsonldScript(schema)
 	if p.titleEN == "" {

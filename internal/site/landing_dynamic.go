@@ -2,7 +2,7 @@ package site
 
 // Veriden türeyen iniş sayfası metadatası. /ders-programi/ başlığı aktif dönemi,
 // /akademik-takvim/ başlığı akademik yılı ve açıklaması yaklaşan takvim
-// olaylarını taşır. "Yaklaşan" kavramı derleme anına değil takvim verisinin
+// olaylarını taşır (bkz. calendar_landing.go). "Yaklaşan" kavramı derleme anına değil takvim verisinin
 // tarama tarihine göre hesaplanır; aynı veriyle her üretim aynı çıktıyı verir.
 
 import (
@@ -36,19 +36,13 @@ func (b *Builder) landingMeta(p landingPage) (title, desc, lastmod string) {
 			lastmod = d
 		}
 	case "akademik-takvim":
-		year, items, scraped := b.upcomingCalendar()
-		if year == "" {
+		sum, ok := b.calendarSummary()
+		if !ok {
 			return
 		}
-		title = "İTÜ Akademik Takvim " + year + " · kayıt, ders ve sınav tarihleri"
-		if len(items) > 0 {
-			desc = appendIfFits("İTÜ akademik takvim "+year+": "+strings.Join(items, " · ")+".", " Tüm tarihler tek listede.")
-		} else {
-			desc = "İTÜ akademik takvim " + year + ": kayıt, ders, sınav, lisans, lisansüstü ve hazırlık tarihlerini tek listede, tarih sırasıyla gör."
-		}
-		if scraped != "" {
-			lastmod = scraped
-		}
+		title = calendarTitle(sum.Year)
+		desc = calendarDescription(sum)
+		lastmod = sum.Scraped
 	}
 	return
 }
@@ -62,20 +56,6 @@ func (b *Builder) landingSitemapLastmod(p landingPage) string {
 	return lm
 }
 
-type calKind struct {
-	match  string
-	label  string // "%s" mevsim adıyla doldurulur
-	merges bool   // aynı türden olaylar tek tarih aralığında birleşir
-}
-
-var calKinds = []calKind{
-	{"Sınav Programının İlanı", "%s sınav programı ilanı", false},
-	{"Sınav Programlarının İlanı", "%s sınav programı ilanı", false},
-	{"Yarıyılı Sonu Sınavları", "%s finalleri", false},
-	{"Öğrencilerin WEB Ders Kaydı", "%s ders kaydı", true},
-	{"Yarıyılı Başlangıcı", "%s dönemi başlangıcı", false},
-}
-
 func calSeason(title string) string {
 	for _, s := range []string{"Güz", "Bahar", "Yaz"} {
 		if strings.HasPrefix(title, s+" Yarıyılı") || strings.HasPrefix(title, s+" Dönemi") {
@@ -85,9 +65,10 @@ func calSeason(title string) string {
 	return ""
 }
 
-// upcomingCalendar, lisans takviminden akademik yıl etiketini ("2026-2027"),
-// en fazla üç yaklaşan önemli olayı ve takvimin tarama tarihini döner.
-func (b *Builder) upcomingCalendar() (year string, items []string, scraped string) {
+// currentCalendar, lisans takvimlerinden tarama tarihini kapsayan akademik
+// yılı seçer ve (yıl etiketi, tarih sırasına dizilmiş olaylar, tarama tarihi)
+// döner. Veri yoksa yıl boştur.
+func (b *Builder) currentCalendar() (year string, events []model.CalendarEvent, scraped string) {
 	type calFile struct {
 		cal        model.Calendar
 		start, end string
@@ -128,59 +109,9 @@ func (b *Builder) upcomingCalendar() (year string, items []string, scraped strin
 	if year == "" {
 		return "", nil, ""
 	}
-
-	events := append([]model.CalendarEvent(nil), pick.cal.Events...)
+	events = append([]model.CalendarEvent(nil), pick.cal.Events...)
 	sort.SliceStable(events, func(i, j int) bool { return events[i].Start < events[j].Start })
-	// Kayıt olaylarının başlığında mevsim yok: ardından gelen ilk dönem
-	// başlangıcının mevsimini alır.
-	seasonAfter := func(date string) string {
-		for _, e := range events {
-			if e.Start >= date && strings.Contains(e.Title, "Yarıyılı Başlangıcı") {
-				return calSeason(e.Title)
-			}
-		}
-		return ""
-	}
-	type item struct {
-		key, label, start, end string
-	}
-	var picked []*item
-	byKey := map[string]*item{}
-	for _, e := range events {
-		if e.Start == "" || e.End < scraped {
-			continue
-		}
-		for _, k := range calKinds {
-			if !strings.Contains(e.Title, k.match) {
-				continue
-			}
-			season := calSeason(e.Title)
-			if season == "" {
-				season = seasonAfter(e.Start)
-			}
-			if season == "" {
-				break
-			}
-			key := k.label + season
-			if it := byKey[key]; it != nil {
-				if k.merges && e.End > it.end {
-					it.end = e.End
-				}
-				break
-			}
-			if len(picked) >= 3 {
-				break
-			}
-			it := &item{key: key, label: fmt.Sprintf(k.label, season), start: e.Start, end: e.End}
-			byKey[key] = it
-			picked = append(picked, it)
-			break
-		}
-	}
-	for _, it := range picked {
-		items = append(items, it.label+" "+trDateRange(it.start, it.end))
-	}
-	return year, items, scraped
+	return year, events, scraped
 }
 
 // trDateRange, "2027-01-26","2027-01-27" -> "26–27 Ocak 2027".

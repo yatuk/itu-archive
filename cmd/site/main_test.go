@@ -15,7 +15,7 @@ func TestPatchIndexAssetsReplacesExistingVersions(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	if err := patchIndexAssets(dir, "new1234"); err != nil {
+	if err := patchHandWrittenPages(dir, map[string]string{"style.css": "new1234", "app.js": "new5678"}); err != nil {
 		t.Fatal(err)
 	}
 	b, err := os.ReadFile(filepath.Join(dir, "index.html"))
@@ -25,7 +25,7 @@ func TestPatchIndexAssetsReplacesExistingVersions(t *testing.T) {
 	got := string(b)
 	for _, want := range []string{
 		`href="assets/style.css?v=new1234"`,
-		`src="assets/app.js?v=new1234"`,
+		`src="assets/app.js?v=new5678"`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Fatalf("güncel asset sürümü yok: %s\n%s", want, got)
@@ -37,17 +37,27 @@ func TestPatchIndexAssetsReplacesExistingVersions(t *testing.T) {
 }
 
 func TestReplaceAssetVersionAddsMissingVersion(t *testing.T) {
-	got := replaceAssetVersion(`href="assets/style.css"`, `href="assets/style.css`, "abc1234")
+	got := patchHTMLAssetRefs(`href="assets/style.css"`, map[string]string{"style.css": "abc1234"})
 	if want := `href="assets/style.css?v=abc1234"`; got != want {
 		t.Fatalf("got %q, want %q", got, want)
 	}
 }
 
-func TestPatchRuntimeAssetImportsUsesOneReleaseVersion(t *testing.T) {
+// -version verildiğinde eski davranış korunur: tüm yerel importlar tek bir
+// yayın sürümüne bağlanır, harici adresler değişmez.
+func TestStampAssetVersionsOverrideUsesOneReleaseVersion(t *testing.T) {
 	dir := t.TempDir()
 	assets := filepath.Join(dir, "assets", "views")
+	if err := os.MkdirAll(filepath.Join(dir, "assets", "core"), 0o755); err != nil {
+		t.Fatal(err)
+	}
 	if err := os.MkdirAll(assets, 0o755); err != nil {
 		t.Fatal(err)
+	}
+	for _, name := range []string{"a.js", "b.js", "c.js"} {
+		if err := os.WriteFile(filepath.Join(dir, "assets", "core", name), []byte(`export const x = 1;`), 0o644); err != nil {
+			t.Fatal(err)
+		}
 	}
 	source := `import { a } from '../core/a.js';
 import { b } from "../core/b.js?v=old";
@@ -57,7 +67,7 @@ import { remote } from 'https://cdn.example.com/remote.js';`
 	if err := os.WriteFile(path, []byte(source), 0o644); err != nil {
 		t.Fatal(err)
 	}
-	if err := patchRuntimeAssetImports(dir, "release123"); err != nil {
+	if _, err := stampAssetVersions(dir, "release123"); err != nil {
 		t.Fatal(err)
 	}
 	b, err := os.ReadFile(path)
@@ -79,7 +89,7 @@ import { remote } from 'https://cdn.example.com/remote.js';`
 	}
 }
 
-func TestContentAssetVersionIsStableAfterImportPatching(t *testing.T) {
+func TestAssetVersionsAreStableAfterImportPatching(t *testing.T) {
 	dir := t.TempDir()
 	assets := filepath.Join(dir, "assets")
 	if err := os.MkdirAll(filepath.Join(assets, "core"), 0o755); err != nil {
@@ -96,30 +106,32 @@ func TestContentAssetVersionIsStableAfterImportPatching(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	before, err := contentAssetVersion(dir)
+	before, err := stampAssetVersions(dir, "")
 	if err != nil {
 		t.Fatal(err)
 	}
-	if err := patchRuntimeAssetImports(dir, before); err != nil {
-		t.Fatal(err)
-	}
-	after, err := contentAssetVersion(dir)
+	after, err := stampAssetVersions(dir, "")
 	if err != nil {
 		t.Fatal(err)
 	}
-	if before != after {
-		t.Fatalf("import sürümleme içerik hash'ini değiştirdi: %s != %s", before, after)
+	for rel, v := range before {
+		if after[rel] != v {
+			t.Fatalf("import sürümleme %s içerik hash'ini değiştirdi: %s != %s", rel, v, after[rel])
+		}
 	}
 
 	if err := os.WriteFile(filepath.Join(assets, "core", "a.js"), []byte(`export const a = 2;`), 0o644); err != nil {
 		t.Fatal(err)
 	}
-	changed, err := contentAssetVersion(dir)
+	changed, err := stampAssetVersions(dir, "")
 	if err != nil {
 		t.Fatal(err)
 	}
-	if changed == before {
+	if changed["core/a.js"] == before["core/a.js"] || changed["app.js"] == before["app.js"] {
 		t.Fatal("çalışma-zamanı içeriği değiştiği halde asset sürümü değişmedi")
+	}
+	if changed["style.css"] != before["style.css"] {
+		t.Fatal("JS değişikliği style.css sürümünü değiştirmemeliydi")
 	}
 }
 

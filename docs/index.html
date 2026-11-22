@@ -45,7 +45,13 @@
 <meta name="twitter:image" content="https://itu-ders.com/social-card-v2.png">
 <meta name="twitter:image:alt" content="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler">
 
-<link rel="stylesheet" href="assets/style.css?v=87abd36b472d">
+<!-- Masthead ve Dersler başlığı Space Grotesk 700 ile çizilir; "DERS ARŞİVİ"
+     latin + latin-ext alt kümelerinin ikisini de ister. CSS'i beklemeden insin. -->
+<link rel="preload" href="assets/vendor/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/vendor/fonts/space-grotesk-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Uygulama çekirdek CSS'i (kabuk + Dersler + paylaşılan bileşenler). Diğer
+     sekmelerin stilleri css/<sekme>.css olarak sekme açılınca yüklenir. -->
+<link rel="stylesheet" href="assets/css/app.css?v=2ca2fde09803">
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -695,7 +701,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=87abd36b472d"></script>
+<script type="module" src="assets/app.js?v=fe4ddd2ce015"></script>
 <script>
 (function () {
   var root = document.documentElement;

@@ -4,20 +4,52 @@
    altındaki statik JSON'lardan geliyor; sunucu tarafı yok. */
 
 import { $, getJSON, fmtDate, esc, setStatus, formatInt } from './core/utils.js?v=dde1e9339338';
-import { state, markIndexReady } from './core/store.js?v=dde1e9339338';
+import { state, markIndexReady, indexReady } from './core/store.js?v=dde1e9339338';
 import { I18N } from './i18n.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=dde1e9339338';
 import { initCourses, loadTerm, applyFilters, syncProgramFilter, restoreCourseSort } from './views/courses.js?v=dde1e9339338';
-import { initCourseDetail, openCourseDetail } from './core/course-detail.js?v=dde1e9339338';
-import { initHistory, onShow as historyShow, searchHistory } from './views/history.js?v=dde1e9339338';
-import { initExams, onShow as examsShow } from './views/exams.js?v=dde1e9339338';
-import { initCalendar, onShow as calendarShow } from './views/calendar.js?v=dde1e9339338';
-import { renderTerms } from './views/terms.js?v=dde1e9339338';
-import { onShow as programShow } from './views/program.js?v=dde1e9339338';
-import { onShow as dersplanimShow } from './views/dersplanim.js?v=dde1e9339338';
-import { PrereqGraph } from './prereq.js?v=dde1e9339338';
+import { openCourseDetail, prefetchCourseDetail, wireCourseDetailEvents } from './core/detail-loader.js';
+import { loadStyle } from './core/lazy-style.js';
 import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=dde1e9339338';
 import { syncStaticCanonical } from './core/canonical.js?v=dde1e9339338';
+
+// Dersler dışındaki sekmeler ilk açılışlarında yüklenir: modül (dinamik
+// import) ve css/<ad>.css parçası birlikte gelir, görünüm ikisi hazır olunca
+// gösterilir. İlk boyamada yalnız Dersler'in modül grafiği ve çekirdek CSS iner.
+let termsRendered = false;
+const renderTermsOnce = async (m) => {
+  if (termsRendered) return;
+  termsRendered = true;
+  if (!state.index) await indexReady;
+  if (state.index) m.renderTerms();
+};
+const LAZY_VIEWS = {
+  gecmis: { style: 'gecmis', load: () => import('./views/history.js'), show: (m) => m.onShow() },
+  dersplanim: { style: 'dersplanim', load: () => import('./views/dersplanim.js'), show: (m) => m.onShow() },
+  onsart: { style: 'onsart', load: () => import('./prereq.js'), show: (m) => m.PrereqGraph.init('#pg-root') },
+  sinavlar: { style: 'sinavlar', load: () => import('./views/exams.js'), show: (m) => m.onShow() },
+  takvim: { style: 'takvim', load: () => import('./views/calendar.js'), show: (m) => m.onShow() },
+  donemler: { style: 'donemler', load: () => import('./views/terms.js'), show: renderTermsOnce },
+  hakkinda: { style: 'hakkinda', load: () => import('./views/terms.js'), show: renderTermsOnce },
+  program: { style: 'program', load: () => import('./views/program.js'), show: (m) => m.onShow() },
+};
+const viewLoads = new Map();
+const lazyEntry = (view) => (Object.hasOwn(LAZY_VIEWS, view) ? LAZY_VIEWS[view] : null);
+
+// Sekmenin modülünü ve stilini yükler; çözülen değer modüldür.
+function loadView(view) {
+  const entry = lazyEntry(view);
+  if (!entry) return Promise.resolve(null);
+  if (!viewLoads.has(view)) {
+    const promise = Promise.all([entry.load(), loadStyle(entry.style)]).then(([mod]) => {
+      entry.mod = mod;
+      return mod;
+    });
+    promise.catch(() => viewLoads.delete(view)); // sonraki açılışta yeniden dene
+    viewLoads.set(view, promise);
+  }
+  return viewLoads.get(view);
+}
 
 // wireTabs içinde atanır; dış olaylar (örn. detay panelinden geçmişe atlama)
 // sekme değiştirmek için bunu kullanır.
@@ -35,7 +67,19 @@ async function boot() {
   initLangButton();
   wireTabs();
   wireHistoryJump();
+  wireCourseDetailEvents();
   window.addEventListener('itu:goto-program', () => { if (showView) showView('program', true); });
+  // Program modülü tembel yüklendiğinden "programa ekle" olayı burada
+  // karşılanır; modül hazır olunca işlenir (Ders Planım, detay paneli).
+  window.addEventListener('itu:add-program-items', (e) => {
+    loadView('program')
+      .then((m) => m.addProgramItems(e.detail || {}))
+      .catch((error) => console.error('Program modülü yüklenemedi:', error));
+  });
+  // Paylaşılan sekme/detay bağlantısında o sekmenin modülü ve stili index.json
+  // ile paralel inmeye başlasın.
+  if (lazyEntry(pendingView)) loadView(pendingView).catch(() => {});
+  else if (pendingView.startsWith('ders/')) prefetchCourseDetail();
   try {
     state.index = await getJSON('data/index.json');
   } catch (e) {
@@ -125,15 +169,12 @@ async function boot() {
   // Takvim yıl seçici.
   $('#f-year').innerHTML = ix.calendars.map((c) => `<option value="${c.yearId}">${c.label}</option>`).join('');
 
-  renderTerms();
   fillHost();
 
-  // Görünümlerin olay bağlantılarını kur (veri yükleme sekme açılınca).
+  // Dersler görünümünün olay bağlantılarını kur; diğer görünümler ilk
+  // açılışlarında kendi init'lerini çalıştırır (onShow → init).
   initCourses();
-  initCourseDetail();
-  initCalendar();
-  initExams();
-  initHistory();
+  warmCourseDetailOnIntent();
   enhanceSearchInputs();
   wireSearchShortcut();
 
@@ -302,6 +343,7 @@ function wireTabs() {
     window.addEventListener('resize', updateRailFade, { passive: true });
   }
 
+  let showSeq = 0;
   const show = (view, push) => {
     for (const b of buttons) {
       const active = b.dataset.view === view;
@@ -315,27 +357,40 @@ function wireTabs() {
       }
     }
     updateRailFade();
-    for (const s of document.querySelectorAll('.view')) {
-      const active = s.id === `view-${view}`;
-      s.hidden = !active;
-      // Görünür olan view'a giriş animasyonu; yeniden tetikleme için sınıfı
-      // kaldırıp yeniden ekliyoruz (animation özelliğiyle tek sefer oynar).
-      if (active) {
-        s.classList.remove('view-enter');
-        void s.offsetWidth; // reflow — animasyonu baştan başlat
-        s.classList.add('view-enter');
+    // URL sahipliği hemen yeni sekmeye geçer (core/utils.js isViewVisible).
+    document.documentElement.dataset.activeView = view;
+    const seq = ++showSeq;
+    const entry = lazyEntry(view);
+    const reveal = (mod) => {
+      if (seq !== showSeq) return; // bu arada başka bir sekmeye geçildi
+      for (const s of document.querySelectorAll('.view')) {
+        const active = s.id === `view-${view}`;
+        s.hidden = !active;
+        // Görünür olan view'a giriş animasyonu; yeniden tetikleme için sınıfı
+        // kaldırıp yeniden ekliyoruz (animation özelliğiyle tek sefer oynar).
+        if (active) {
+          s.classList.remove('view-enter');
+          void s.offsetWidth; // reflow — animasyonu baştan başlat
+          s.classList.add('view-enter');
+        }
       }
+      if (entry && mod) entry.show(mod);
+      // Program oluşturucu ve Ders Planım daha geniş alan kullanır.
+      const mainEl = document.querySelector('main.wrap');
+      if (mainEl) mainEl.classList.toggle('wide', view === 'program' || view === 'dersplanim');
+      writeViewUrl(view, push);
+    };
+    // Sekme ilk kez açılıyorsa modülü ve stili gelene kadar önceki görünüm
+    // ekranda kalır (stilsiz içerik ya da boş alan görünmez); sonraki
+    // açılışlar eskisi gibi eşzamanlıdır.
+    if (!entry) reveal(null);
+    else if (entry.mod) reveal(entry.mod);
+    else {
+      loadView(view).then(reveal, (error) => {
+        console.error(`"${view}" sekmesi yüklenemedi:`, error);
+        reveal(null);
+      });
     }
-    if (view === 'takvim') calendarShow();
-    if (view === 'sinavlar') examsShow();
-    if (view === 'gecmis') historyShow();
-    if (view === 'program') programShow();
-    if (view === 'dersplanim') dersplanimShow();
-    if (view === 'onsart') PrereqGraph.init('#pg-root');
-    // Program oluşturucu ve Ders Planım daha geniş alan kullanır.
-    const mainEl = document.querySelector('main.wrap');
-    if (mainEl) mainEl.classList.toggle('wide', view === 'program' || view === 'dersplanim');
-    writeViewUrl(view, push);
   };
   showView = show;
 
@@ -381,13 +436,32 @@ function openDetailFromHash(h) {
 // Detay panelinden "bu hocanın geçmişinde ara" — geçmiş sekmesine geçip arama
 // kutusunu doldurur.
 function wireHistoryJump() {
-  window.addEventListener('itu:goto-history', (e) => {
+  window.addEventListener('itu:goto-history', async (e) => {
     const q = String(e.detail || '').trim();
+    let historyView;
+    try {
+      historyView = await loadView('gecmis');
+    } catch (error) {
+      console.error('Geçmiş sekmesi yüklenemedi:', error);
+      return;
+    }
     if (showView) showView('gecmis', true);
     $('#hq').value = q;
-    historyShow();
-    searchHistory();
+    historyView.onShow();
+    historyView.searchHistory();
   });
+}
+
+// Ders detay paneli ilk boyamaya girmez; kullanıcı listeye dokunduğu ya da
+// klavyeyle odaklandığı an önceden çekilir ki ilk açılış beklemesin.
+function warmCourseDetailOnIntent() {
+  const view = $('#view-dersler');
+  if (!view) return;
+  const warm = () => {
+    for (const type of ['pointerdown', 'focusin']) view.removeEventListener(type, warm);
+    prefetchCourseDetail();
+  };
+  for (const type of ['pointerdown', 'focusin']) view.addEventListener(type, warm, { passive: true });
 }
 
 // "derslerde aç" — dersler sekmesine geçip aramayı/filtreyi doldurur. detail:

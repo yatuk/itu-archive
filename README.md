@@ -23,6 +23,16 @@ go run ./cmd/site
 python -m http.server 8765 --directory docs
 ```
 
+Yalnız `assets-src/` altındaki CSS/JS'i değiştirdiysen tam üretim (5–10 dakika) yerine hızlı kipi kullan:
+
+```bash
+go run ./cmd/site -assets-only
+```
+
+Bu kip `assets-src/` → `docs/assets/` küçültmesini, uygulama CSS'inin sekme parçalarına bölünmesini (`docs/assets/css/`) ve `?v=` sürüm yamalarını (JS importları, `docs/index.html`, üretilmiş HTML sayfaları) çalıştırır; veri ve SEO sayfası üretmez. Bu dosyalar için çıktısı tam üretimle birebir aynıdır. Veri, şablon ya da `internal/site` değiştiyse tam `go run ./cmd/site` gerekir.
+
+Asset sürümleri dosya başınadır: her CSS/JS dosyasının `?v=` değeri kendi içeriğinden gelir; JS modüllerinde içe aktardığı dosyaların sürümlerini de kapsar. Tek satırlık bir CSS değişikliği yalnız o dosyanın önbelleğini kırar.
+
 ## Test
 
 ```bash

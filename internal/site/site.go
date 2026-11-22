@@ -229,7 +229,8 @@ type Builder struct {
 	root               string // dataRoot — verinin okunduğu kök (her zaman docs/)
 	outRoot            string // sayfaların yazıldığı kök (docs/ veya docs/en/)
 	l                  lang
-	version            string // asset önbellek kırma: ?v=<kısa commit> (P2-16)
+	version            string            // asset önbellek kırma: tek sürüm yedeği (P2-16)
+	assetVersions      map[string]string // assets köküne göre yol -> dosya başı ?v= sürümü
 	index              model.SiteIndex
 	aggs               map[string]*branchAgg
 	courses            map[string]*histCourse
@@ -331,6 +332,19 @@ func New(dataRoot, langCode, version string) *Builder {
 		l = langEN
 	}
 	return &Builder{root: dataRoot, outRoot: outRoot, l: l, version: version}
+}
+
+// SetAssetVersions, sayfa şablonunun asset bağlantılarında kullanacağı dosya
+// başı sürümleri verir (cmd/site üretir). Haritada olmayan dosya için tek
+// sürüm yedeği (version) kullanılır.
+func (b *Builder) SetAssetVersions(v map[string]string) { b.assetVersions = v }
+
+// assetVersion, assets köküne göre yolu verilen dosyanın ?v= değeri.
+func (b *Builder) assetVersion(rel string) string {
+	if v, ok := b.assetVersions[rel]; ok {
+		return v
+	}
+	return b.version
 }
 
 // Generate, dizinde biriken geçmiş sayfaları da temizleyen ana üreticidir.
@@ -996,9 +1010,9 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 {{range .Alternates}}<link rel="alternate" hreflang="{{.Lang}}" href="{{.URL}}">
 {{end}}
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="/assets/style.css?v={{.AssetV}}">
+<link rel="stylesheet" href="/assets/style.css?v={{.StyleV}}">
 <link rel="icon" href="/favicon.png" type="image/png">
-<script src="/assets/static-page.js?v={{.AssetV}}" defer></script>
+<script src="/assets/static-page.js?v={{.StaticJSV}}" defer></script>
 {{.JSONLD}}
 </head>
 <body class="{{.BodyClass}}">
@@ -1063,7 +1077,8 @@ func canonicalPath(canonical string) string {
 type pageData struct {
 	Title, FullTitle, Description, Canonical, Path, Scraped string
 	Alternates                                              []alternateLink
-	AssetV                                                  string // asset önbellek kırma (?v=)
+	AssetV                                                  string // asset önbellek kırma (?v=) — dosya sürümü yoksa yedek
+	StyleV, StaticJSV                                       string // style.css / static-page.js dosya başı sürümleri
 	Content                                                 template.HTML
 	JSONLD                                                  template.HTML
 	Lang                                                    lang

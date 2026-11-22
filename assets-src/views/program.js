@@ -204,20 +204,24 @@ export function initProgram() {
     const menu = $('.p-progmenu');
     if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
   });
-  window.addEventListener('itu:add-program-items', async (event) => {
-    const detail = event.detail || {};
-    if (detail.term && detail.term !== term) {
-      term = detail.term;
-      $('#p-term').value = term;
-      await loadTerm(term);
-    }
-    let added = 0;
-    for (const item of (detail.items || [])) if (addToActive(item.branch, String(item.crn))) added++;
-    renderProgSelector();
-    toast(added ? `${added} ${I18N.t('progEventAddedSuffix')}` : I18N.t('progEventAlreadyIn'), { kind: added ? 'ok' : 'warn' });
-    render();
-  });
   inited = true;
+}
+
+// itu:add-program-items olayının işleyicisi. Olayı app.js dinler ve bu modül
+// tembel yüklendiği için önce modülü yükleyip buraya iletir (olay, modül
+// yüklenmeden gönderilse de kaybolmaz).
+export async function addProgramItems(detail = {}) {
+  initProgram();
+  if (detail.term && detail.term !== term) {
+    term = detail.term;
+    $('#p-term').value = term;
+    await loadTerm(term);
+  }
+  let added = 0;
+  for (const item of (detail.items || [])) if (addToActive(item.branch, String(item.crn))) added++;
+  renderProgSelector();
+  toast(added ? `${added} ${I18N.t('progEventAddedSuffix')}` : I18N.t('progEventAlreadyIn'), { kind: added ? 'ok' : 'warn' });
+  render();
 }
 
 // --- program yönetimi ---

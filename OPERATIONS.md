@@ -10,6 +10,14 @@
 
 GitHub Pages yayını tamamlanınca `live-smoke`, HTML'deki asset sürümünü commit ile karşılaştırır; canlı `status.json` tazeliğini, temel görünümleri, kritik SEO sayfalarını ve yatay taşmayı kontrol eder. Her koşuda masaüstü ve mobil ekran kanıtları 14 gün saklanır.
 
+## Asset üretimi ve sürümleri
+
+- `assets-src/` elle yazılan kaynaktır; `docs/assets/` üretilen çıktıdır ve elle düzenlenmez.
+- `go run ./cmd/site -assets-only` yalnız asset adımını çalıştırır: küçültme, `style.css`'in uygulama çekirdeği (`docs/assets/css/app.css`) ile sekme parçalarına (`docs/assets/css/<sekme>.css`) bölünmesi ve `?v=` yamaları (JS importları, `docs/index.html`, `docs/404.html`, üretilmiş HTML sayfaları). Bu dosyalar için çıktı tam `go run ./cmd/site` ile birebir aynıdır, CI drift denetimi aynı sonucu verir. Veri ya da `internal/site` değişikliğinde tam üretim gerekir.
+- `?v=` dosya başına içerik özetidir. JS modülünün sürümü içe aktardığı dosyaların sürümlerini de kapsar (Merkle); bir yardımcı modül değişince onu içe aktaranların da sürümü değişir. `-version X` tüm dosyalara tek sürüm verir (yalnız acil önbellek kırma için).
+- `live-smoke`, yayının hazır olduğunu `app.js?v=` değeriyle anlar. Bu değer yalnız uygulama JS'i ya da JS'in yüklediği bir sekme CSS'i değişince değişir; yalnız çekirdek CSS'i (`css/app.css`) ya da statik sayfa CSS'ini etkileyen bir commit'te canlı sürüm zaten aynı göründüğü için bekleme hemen biter (workflow'un ileride `css/app.css?v=` değerine de bakması gerekebilir).
+- Statik SEO sayfaları eksiksiz `style.css`'i kullanır. Uygulama yalnız `css/app.css` ile açılır; sekme stilleri sekme ilk açıldığında yüklenir ve görünüm stili gelmeden gösterilmez. Yeni bir sekme sınıfı ekliyorsan `cmd/site/csssplit.go`'daki kova belirteçlerine uyduğundan ve `go test ./cmd/site` (sahiplik denetimi) geçtiğinden emin ol.
+
 ## Güvenli geri alma
 
 1. Başarısız `live-smoke` koşusundaki commit ve beklenen asset sürümünü kaydet.

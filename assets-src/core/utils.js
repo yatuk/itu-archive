@@ -15,6 +15,12 @@ export const $ = (sel) => document.querySelector(sel);
 // görünüme geri yazıyordu. Bu tür her fonksiyon history.replaceState'ten
 // önce bunu kontrol etmeli.
 export function isViewVisible(view) {
+  // app.js sekme değişiminde hedef görünümü hemen <html data-active-view>
+  // ile işaretler: tembel yüklenen bir sekme modülü/stili gelene kadar önceki
+  // görünüm ekranda kalsa da URL artık yeni sekmenindir. İşaret yoksa (boot
+  // öncesi) DOM görünürlüğüne bakılır.
+  const active = document.documentElement.dataset.activeView;
+  if (active) return active === view;
   return !document.getElementById(`view-${view}`)?.hidden;
 }
 

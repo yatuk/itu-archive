@@ -47,6 +47,8 @@ func contentHash(html []byte) string {
 func (b *Builder) renderPage(w io.Writer, _ string, d pageData) error {
 	d.FullTitle = fullTitle(d.Title, b.l.SiteTitle)
 	d.Path = canonicalPath(d.Canonical)
+	d.StyleV = b.assetVersion("style.css")
+	d.StaticJSV = b.assetVersion("static-page.js")
 	var buf bytes.Buffer
 	if err := pageTmpl.Execute(&buf, d); err != nil {
 		return err

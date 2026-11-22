@@ -19,7 +19,7 @@ import { state } from '../core/store.js?v=dde1e9339338';
 import { quotaState } from '../core/chart.js?v=dde1e9339338';
 import * as fav from '../core/favorites.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
-import { openCourseDetail } from '../core/course-detail.js?v=dde1e9339338';
+import { openCourseDetail } from '../core/detail-loader.js';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 import { isRemoteMethod, transitionIssue } from '../core/campus.js';

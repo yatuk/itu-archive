@@ -13,6 +13,7 @@ import { codeToSlug } from './urlcodes.js?v=dde1e9339338';
 import { loadProgramMap } from './programs.js?v=dde1e9339338';
 import { TAKEN_CHANGED, getTaken } from './taken.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
+import { loadStyle } from './lazy-style.js';
 
 let lastDetailFocus = null;
 let lastDetailHash = null; // detay açılmadan önceki görünüm hash'i (kapatınca dön)
@@ -424,7 +425,12 @@ let detailReactModule = null;
 
 export async function openCourseDetail(code, { term, crn, source } = {}) {
   const t = term || state.termSlug;
-  lastDetailFocus = document.activeElement;
+  const opener = document.activeElement;
+  // Panel modülü tembel yüklenir (core/detail-loader.js); doğrudan içe aktaran
+  // görünümler için de kapatma/klavye bağları ve panel stili burada garanti edilir.
+  initCourseDetail();
+  await loadStyle('detail');
+  lastDetailFocus = opener;
   const panel = $('#detail-panel');
   const content = $('#detail-content');
   panel.hidden = false;
@@ -776,9 +782,13 @@ function trapDetailFocus(e) {
   }
 }
 
-// Modal kapama + dış kaynaklardan (havuz, önşart) gelen istekleri bağlar.
-// app.js boot'ta bir kez çağırır.
+// Modal kapama ve klavye bağlarını kurar; birden çok çağrı güvenlidir. Dış
+// kaynaklardan (havuz, önşart, sınavlar) gelen itu:course-detail istekleri
+// core/detail-loader.js'te karşılanır — modül yüklenmeden de çalışsın diye.
+let detailInited = false;
 export function initCourseDetail() {
+  if (detailInited) return;
+  detailInited = true;
   $('#detail-close').addEventListener('click', closeCourseDetail);
   $('#detail-panel').addEventListener('click', (e) => { if (e.target.id === 'detail-panel') closeCourseDetail(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#detail-panel').hidden) closeCourseDetail(); });
@@ -804,8 +814,4 @@ export function initCourseDetail() {
     });
     box.addEventListener('pointerup', () => { drag = null; });
   }
-  window.addEventListener('itu:course-detail', (e) => {
-    const d = e.detail || {};
-    if (d.code) openCourseDetail(d.code, { term: d.term, source: d.source });
-  });
 }

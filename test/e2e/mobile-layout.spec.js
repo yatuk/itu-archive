@@ -34,14 +34,7 @@ const MIN_HEDEF = 44;
  * ("*" tema her ikisini kapsar). Değer: kesin not. Bu durumlar test.fixme ile
  * işaretlenir; uygulama CSS'i bu spec tarafından DÜZELTİLMEZ.
  */
-const BILINEN_HATALAR = {
-  'dersler/*/hedef':
-    '390px: button.course-group-open yüksekliği 40px (<44), button.course-section-open.course-crn 38×21 (::after hit-area yok), ' +
-    'a.tool-directory-all 193×25 ve araç dizinindeki düz <a> bağlantıları (örn. "Güncel ders programı") 20px yüksekliğinde.',
-  'sinavlar/*/hedef': '390px: a.xm-cal-link ("takvimde gör") 70×16; hit-area/min-height yok.',
-  'program/*/hedef': '390px: #p-prog-rename, #p-prog-new, #p-prog-copy yüksekliği 41px (<44).',
-  'onsart/fosfor/hedef': 'Yalnız Fosfor (koyu) temada: input.pg-search 302×40 (<44); Sade temada 44px.',
-};
+const BILINEN_HATALAR = {};
 
 function bilinenHata(sekme, tema, kontrol) {
   return BILINEN_HATALAR[`${sekme}/${tema}/${kontrol}`] || BILINEN_HATALAR[`${sekme}/*/${kontrol}`];

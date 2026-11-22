@@ -381,6 +381,34 @@ test.describe('SPA (ana sayfa)', () => {
     await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('Courses');
   });
 
+  test('yalnız etkin dilin sözlüğü iner; dil düğmesi diğerini yükleyip kalıcılaştırır', async ({ page }) => {
+    const dicts = [];
+    page.on('request', (req) => {
+      const m = new URL(req.url()).pathname.match(/\/assets\/i18n\/(tr|en)\.js$/);
+      if (m) dicts.push(m[1]);
+    });
+    await page.goto('/');
+    await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('Dersler');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'tr');
+    await expect(page.locator('#lang-btn')).toHaveAttribute('aria-pressed', 'false');
+    expect(dicts, 'Türkçe açılışta yalnız tr sözlüğü, bir kez').toEqual(['tr']);
+
+    dicts.length = 0;
+    await Promise.all([page.waitForURL(/[?&]lang=en/), page.locator('#lang-btn').click()]);
+    await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('Courses');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+    await expect(page.locator('#lang-btn')).toHaveAttribute('aria-pressed', 'true');
+    expect(dicts, 'İngilizceye geçişte yalnız en sözlüğü').toEqual(['en']);
+
+    // Kayıtlı tercih ?lang olmadan da İngilizce açar ve tr sözlüğünü istemez
+    // (en sözlüğü önbellekten gelebilir, o yüzden yalnız tr'nin yokluğu sınanır).
+    dicts.length = 0;
+    await page.goto('/');
+    await expect(page.locator('#tab-dersler [data-i18n="tabDersler"]')).toHaveText('Courses');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+    expect(dicts, 'kayıtlı İngilizce tercihte tr sözlüğü inmemeli').not.toContain('tr');
+  });
+
   test('kontenjan iki temada da tek temsile iner (fosfor çubuklu görünümü kaldırıldı)', async ({ page }) => {
     await page.goto('/');
     const mobile = page.viewportSize().width <= 640;

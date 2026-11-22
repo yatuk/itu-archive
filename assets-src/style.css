@@ -1600,6 +1600,7 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
   #pg-root .pg-level-wrap { overflow-x: auto; }
   #pg-root .pg-faculty-select,
   #pg-root .pg-program-select,
+  #pg-root .pg-tools .pg-search,
   [data-theme="sade"] #pg-root .pg-tools .pg-search { height: 44px; font-size: 16px; }
   #pg-root .pg-level,
   #pg-root .pg-reset,
@@ -4641,6 +4642,18 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .search-clear::after { content: ''; position: absolute; inset: -12px; }
   .row-sel { width: 22px; height: 22px; }
   .detail-close::after { inset: -13px; }
+  /* Dersler: grup başlığı düğmesi, CRN ve araç dizini bağlantıları. */
+  .course-group-open { min-height: 44px; }
+  .course-crn { position: relative; }
+  .course-crn::after { content: ''; position: absolute; inset: -12px -8px; }
+  .tool-directory-all { display: inline-flex; align-items: center; min-height: 44px; }
+  .tool-directory-links { gap: 0 18px; }
+  .tool-directory-links a { display: inline-flex; align-items: center; min-height: 44px; }
+  /* Sınavlar: satır içi "takvimde gör" bağlantısı; görseli büyütmeden hit-area. */
+  .xm-ann-rel .xm-cal-link { position: relative; }
+  .xm-ann-rel .xm-cal-link::after { content: ''; position: absolute; inset: -14px -8px; }
+  /* Program: işlem menüsü düğmeleri. */
+  .p-progtools button { min-height: 44px; }
 }
 
 /* Üst başlık kontrolleri ve önşart plan etiketi 360px'te taşmasın. */

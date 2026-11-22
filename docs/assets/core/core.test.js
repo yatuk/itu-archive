@@ -30,6 +30,9 @@ import { parseSessions, candidatesByCode, evaluate, findAlternatives, presetPref
 import { campusForLocation, isRemoteMethod, minimumTransitionMinutes, transitionIssue } from './campus.js';
 import { specialSectionKind } from './section-kind.js';
 import { courseSlug as canonicalCourseSlug, staticPageFor } from './canonical.js';
+import { I18N } from '../i18n.js';
+import trDict from '../i18n/tr.js';
+import enDict from '../i18n/en.js';
 
 test('OBS özel kayıtlarını normal ders şubesinden ayırır', () => {
   assert.equal(specialSectionKind(['1', 'BLG 322E', 'Computer Architecture', 'BLG', '', '', 0, 0, 'LS', 'Ek Sınav']), 'extra-exam');
@@ -1864,4 +1867,31 @@ test('staticPageFor: ders kodu ve branş statik sayfaya eşlenir', () => {
   assert.equal(staticPageFor('?branch=<x>'), '');
   assert.equal(staticPageFor(''), '');
   assert.equal(canonicalCourseSlug('EHB 222E'), 'ehb-222e');
+});
+
+// Sözlükler dil başına ayrı dosyadır; yalnız etkin dilinki yüklenir. Eski tek
+// dosyadaki düşüş `en[k] || tr[k] || k` idi: derlenen en.js bu düşüşü taşır.
+test('i18n: her Türkçe anahtar derlenen İngilizce sözlükte var ve eski düşüşle aynı çözülür', async () => {
+  const srcEn = (await import('../../../assets-src/i18n/en.js')).default;
+  const srcTr = (await import('../../../assets-src/i18n/tr.js')).default;
+  assert.deepEqual(trDict, srcTr, 'derlenen tr.js kaynakla aynı olmalı');
+  // Bilinçli düşüş: kaynakta İngilizcesi boş bırakılan anahtarlar Türkçe metni alır.
+  const fallback = Object.keys(srcTr).filter((k) => !srcEn[k]);
+  assert.deepEqual(fallback, [], 'bilinçli Türkçe düşüş listesi değişti');
+  for (const key of Object.keys(trDict)) {
+    assert.ok(Object.hasOwn(enDict, key), `${key} İngilizce sözlükte yok`);
+    const old = srcEn[key] || srcTr[key] || key;
+    assert.equal(enDict[key] || key, old, `${key} İngilizcede eski düşüşle aynı çözülmeli`);
+    if (trDict[key]) assert.ok(enDict[key], `${key} İngilizcede boş kaldı`);
+  }
+  for (const key of Object.keys(enDict)) assert.ok(Object.hasOwn(trDict, key), `${key} yalnız İngilizcede var`);
+});
+
+test('i18n: Node\'da dil Türkçe; t() değişkenleri doldurur, bilinmeyen anahtarı aynen döndürür', () => {
+  assert.equal(I18N.lang, 'tr');
+  assert.equal(I18N.t('tabDersler'), trDict.tabDersler);
+  assert.equal(I18N.t('selCount', { n: 3 }), trDict.selCount.replace('{n}', '3'));
+  assert.equal(I18N.t('yokBoyleBirAnahtar'), 'yokBoyleBirAnahtar');
+  assert.equal(typeof I18N.setLang, 'function');
+  assert.equal(typeof I18N.translateDOM, 'function');
 });

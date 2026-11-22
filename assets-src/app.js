@@ -180,7 +180,12 @@ async function boot() {
 
   // İlk sekme artık veri hazırken açılır (paylaşılan #program/#takvim/#sinavlar
   // bağlantıları bu sayede doğru çalışır).
-  showView(VIEWS.includes(pendingView) ? pendingView : 'dersler', false);
+  // Hash, boot index.json'u beklerken değiştiyse (popstate o sekmeyi zaten
+  // açtı) güncel hash kazanır; açılıştaki hash'e geri dönülmez. i18n.js
+  // sözlüğü üst düzey await ile beklediğinden sayfa `load` olayı boot'tan önce
+  // gelebilir ve bu pencere eskisinden geniştir.
+  const startView = location.hash.slice(1);
+  showView(VIEWS.includes(startView) ? startView : 'dersler', false);
 
   await loadTerm(initialSlug);
   // Paylaşılan #ders/<kod> bağlantısı: detay, aktif dönem yüklendikten sonra

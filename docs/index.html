@@ -51,7 +51,28 @@
 <link rel="preload" href="assets/vendor/fonts/space-grotesk-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Uygulama çekirdek CSS'i (kabuk + Dersler + paylaşılan bileşenler). Diğer
      sekmelerin stilleri css/<sekme>.css olarak sekme açılınca yüklenir. -->
-<link rel="stylesheet" href="assets/css/app.css?v=2ca2fde09803">
+<link rel="stylesheet" href="assets/css/app.css?v=789427cbb02a">
+<!-- Yalnız etkin dilin sözlüğü yüklenir (assets/i18n.js üst düzey await ile
+     bekler). Aynı dil seçimi burada yapılıp sözlük modül ağacıyla paralel
+     istenir; adresleri cmd/site sürümler. -->
+<template id="i18n-preload"><link rel="modulepreload" href="assets/i18n/tr.js?v=fbda4f23c3cb" data-lang="tr"><link rel="modulepreload" href="assets/i18n/en.js?v=407afa8dc414" data-lang="en"></template>
+<script>
+(function () {
+  try {
+    var ok = function (v) { return v === 'tr' || v === 'en'; };
+    var l = new URLSearchParams(location.search).get('lang');
+    if (!ok(l)) {
+      l = 'tr';
+      var raw = localStorage.getItem('itu-lang:v1');
+      var env = raw ? JSON.parse(raw) : null;
+      if (env && env.version === 1 && ok(env.data)) l = env.data;
+      else if (ok(localStorage.getItem('itu-lang'))) l = localStorage.getItem('itu-lang');
+    }
+    var link = document.getElementById('i18n-preload').content.querySelector('link[data-lang="' + l + '"]');
+    if (link) document.head.appendChild(link.cloneNode());
+  } catch (e) {}
+})();
+</script>
 <link rel="icon" href="favicon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -701,7 +722,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=fe4ddd2ce015"></script>
+<script type="module" src="assets/app.js?v=933c1c8d9a44"></script>
 <script>
 (function () {
   var root = document.documentElement;

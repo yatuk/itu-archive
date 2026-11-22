@@ -41,6 +41,9 @@ func minifyAssets(srcDir, outAssetsDir string) error {
 		if err != nil {
 			return err
 		}
+		if in, err = i18nSourceFor(srcDir, rel, in); err != nil {
+			return err
+		}
 		mimetype := "text/css"
 		if ext == ".js" {
 			mimetype = "application/javascript"

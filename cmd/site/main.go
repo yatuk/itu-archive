@@ -7,6 +7,8 @@
 //	go run ./cmd/site -lang en      # yalnızca İngilizce
 //	go run ./cmd/site -out docs
 //	go run ./cmd/site -assets-only  # yalnız assets-src → docs/assets + ?v= yamaları
+//
+// Her koşunun sonunda docs/build.json yayın damgası yenilenir (bkz. buildstamp.go).
 package main
 
 import (
@@ -42,6 +44,7 @@ func main() {
 			log.Fatalf("HTML asset sürümleri yenilenemedi: %v", err)
 		}
 		fmt.Printf("· assets-only: %d asset sürümlendi, %d HTML sayfası denetlendi\n", len(versions), n)
+		stampBuild(*out)
 		return
 	}
 
@@ -58,6 +61,16 @@ func main() {
 			os.Exit(1)
 		}
 	}
+	stampBuild(root)
+}
+
+// stampBuild, üretim bittikten sonra yayın damgasını (build.json) yazar.
+func stampBuild(root string) {
+	s, err := writeBuildStamp(root)
+	if err != nil {
+		log.Fatalf("%s yazılamadı: %v", buildStampFile, err)
+	}
+	fmt.Printf("· %s: %s (%d dosya)\n", buildStampFile, s.Build, s.Files)
 }
 
 // buildAssets, assets-src'yi küçültüp <out>/assets'e yazar, uygulama CSS'ini

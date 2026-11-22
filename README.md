@@ -42,4 +42,4 @@ go run ./cmd/validate -quiet
 npx playwright test
 ```
 
-GitHub Pages kaynağı `main / docs` olmalıdır. Tarama ve yayın güvenlikleri, veri biçimi ve geri alma adımları için [OPERATIONS.md](OPERATIONS.md) dosyasına bakın.
+Site Cloudflare Pages'ten yayınlanır; kaynak `main / docs`. Tarama ve yayın güvenlikleri, veri biçimi ve geri alma adımları için [OPERATIONS.md](OPERATIONS.md) dosyasına bakın.

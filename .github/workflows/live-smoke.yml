@@ -1,13 +1,30 @@
 name: live-smoke
 
+# Canlı yayın (Cloudflare Pages, main'deki docs/) duman testi.
+#
+# Cloudflare kendi GitHub entegrasyonuyla yayınlar; GitHub'a deployment
+# olayı göndermez. Bu yüzden tetikleyici docs/ değiştiren push'tur ve test
+# öncesi canlı /build.json'un test edilen commit'teki docs/build.json ile
+# aynı damgayı göstermesi beklenir (cmd/site/buildstamp.go).
+#
+# Not: veri workflow'ları GITHUB_TOKEN ile push eder; GitHub bu push'larda
+# başka workflow tetiklemez. Veri yayınlarını günlük zamanlanmış koşu kapsar.
 on:
-  deployment_status:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
   workflow_dispatch:
-  # Asıl tetikleyici her yayın (deployment_status). Zamanlanmış koşu yalnızca
-  # uzun süre yayın olmadığında sitenin ayakta olduğunu doğrulayan aylık bir
-  # güvencedir: ayın 2'si (ayın 1'indeki taramanın ertesi günü).
+    inputs:
+      skip_wait:
+        description: 'Yayın damgasını bekleme (canlıdaki ne varsa test et)'
+        type: boolean
+        default: false
   schedule:
-    - cron: '23 6 2 * *'
+    - cron: '23 6 * * *'
+
+permissions:
+  contents: read
 
 concurrency:
   group: live-smoke
@@ -15,20 +32,46 @@ concurrency:
 
 jobs:
   smoke:
-    if: >-
-      github.event_name != 'deployment_status' ||
-      (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages')
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
+    env:
+      LIVE_BASE_URL: https://itu-ders.com
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.deployment.sha || github.sha }}
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+
+      - name: Beklenen yayın damgasını oku
+        id: release
+        shell: bash
+        run: |
+          build="$(node -p "require('./docs/build.json').build")"
+          test -n "$build"
+          echo "build=$build" >> "$GITHUB_OUTPUT"
+          echo "Test edilen commit: ${GITHUB_SHA}, beklenen build=${build}"
+
+      # Bağımlılık kurulumundan önce: yayın hiç gelmezse koşu boşuna Chromium indirmesin.
+      - name: Cloudflare yayınını bekle (deploy not seen = test hatası değil)
+        if: ${{ !inputs.skip_wait }}
+        shell: bash
+        env:
+          DEPLOY_WAIT_SECONDS: '600'
+          DEPLOY_POLL_SECONDS: '15'
+        run: |
+          set +e
+          node scripts/wait-for-deploy.mjs --expected '${{ steps.release.outputs.build }}'
+          code=$?
+          if [ "$code" -eq 2 ]; then
+            {
+              echo "### Deploy not seen"
+              echo "https://itu-ders.com 10 dakikada build \`${{ steps.release.outputs.build }}\` (commit \`${GITHUB_SHA}\`) yayınını sunmadı."
+              echo "Duman testleri çalıştırılmadı; bu bir test hatası değil. Commit'teki **Cloudflare Pages** kontrolüne bakın."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit "$code"
 
       - name: Bağımlılıklar
         run: npm ci
@@ -36,32 +79,9 @@ jobs:
       - name: Chromium indir
         run: npx playwright install --with-deps chromium
 
-      - name: Beklenen yayın sürümünü oku
-        id: release
-        shell: bash
-        run: |
-          version="$(grep -o 'assets/app.js?v=[^" ]*' docs/index.html | head -1 | cut -d= -f2)"
-          test -n "$version"
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-
-      - name: GitHub Pages yayınının aynı sürüme gelmesini bekle
-        shell: bash
-        run: |
-          expected='assets/app.js?v=${{ steps.release.outputs.version }}'
-          for attempt in $(seq 1 40); do
-            if curl -fsSL --retry 2 --max-time 20 "https://itu-ders.com/?release-check=$attempt" | grep -Fq "$expected"; then
-              echo "Yayın hazır: ${{ steps.release.outputs.version }}"
-              exit 0
-            fi
-            sleep 15
-          done
-          echo "Yayın 10 dakika içinde beklenen asset sürümüne ulaşmadı." >&2
-          exit 1
-
       - name: Canlı Playwright duman testi
         env:
-          LIVE_BASE_URL: https://itu-ders.com
-          EXPECTED_ASSET_VERSION: ${{ steps.release.outputs.version }}
+          EXPECTED_BUILD: ${{ !inputs.skip_wait && steps.release.outputs.build || '' }}
         run: npx playwright test --config=playwright.live.config.js
 
       - name: Hata kanıtlarını sakla
@@ -73,3 +93,4 @@ jobs:
             playwright-report/
             test-results/
           retention-days: 14
+          if-no-files-found: ignore

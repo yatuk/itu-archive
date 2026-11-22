@@ -80,3 +80,25 @@ func TestFullTitleDropsBrandWhenTooLong(t *testing.T) {
 		}
 	}
 }
+
+func TestCourseRedirectRulesSkipLiveAndUnknownBranch(t *testing.T) {
+	b := &Builder{
+		courses: map[string]*histCourse{"KBM 502": {}},
+		aggs:    map[string]*branchAgg{"KBM": {}, "ROT": {}},
+	}
+	got := map[string]string{}
+	for _, r := range b.courseRedirectRules() {
+		got[r[0]] = r[1]
+	}
+	if got["/ders/kbm-696e/"] != "/brans/KBM/" || got["/ders/rot-501e/"] != "/brans/ROT/" {
+		t.Fatalf("eski ders branşa gitmeli: %v", got)
+	}
+	for from := range got {
+		if from == "/ders/"+courseSlug("KBM 502")+"/" {
+			t.Fatalf("canlı ders için kural yazılmamalı: %s", from)
+		}
+		if b.aggs[strings.ToUpper(strings.SplitN(strings.TrimPrefix(from, "/ders/"), "-", 2)[0])] == nil {
+			t.Fatalf("branşı olmayan kural: %s", from)
+		}
+	}
+}

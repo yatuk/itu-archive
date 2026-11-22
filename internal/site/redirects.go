@@ -25,6 +25,9 @@ import (
 //go:embed legacy_hoca_slugs.txt
 var legacyHocaSlugsTxt string
 
+//go:embed legacy_course_slugs.txt
+var legacyCourseSlugsTxt string
+
 const (
 	maxStaticRedirects  = 2000
 	maxDynamicRedirects = 100
@@ -38,9 +41,13 @@ var dynamicRedirects = [][2]string{
 	{"/en/hoca/*", "/hoca/:splat"},
 }
 
-func legacyHocaSlugs() []string {
+func legacyHocaSlugs() []string { return slugLines(legacyHocaSlugsTxt) }
+
+func legacyCourseSlugs() []string { return slugLines(legacyCourseSlugsTxt) }
+
+func slugLines(txt string) []string {
 	var out []string
-	for _, line := range strings.Split(legacyHocaSlugsTxt, "\n") {
+	for _, line := range strings.Split(txt, "\n") {
 		line = strings.TrimSpace(line)
 		if line == "" || strings.HasPrefix(line, "#") {
 			continue
@@ -115,10 +122,34 @@ func (b *Builder) hocaRedirectRules() [][2]string {
 	return rules
 }
 
+// courseRedirectRules: verisi kalmayan eski ders sayfaları -> branş sayfası.
+// Bugün sayfası üretilen veya branşı olmayan slug'lar için kural yazılmaz.
+func (b *Builder) courseRedirectRules() [][2]string {
+	live := make(map[string]bool, len(b.courses))
+	for code := range b.courses {
+		live[courseSlug(code)] = true
+	}
+	var rules [][2]string
+	for _, old := range legacyCourseSlugs() {
+		if live[old] {
+			continue
+		}
+		branch := strings.ToUpper(strings.SplitN(old, "-", 2)[0])
+		if b.aggs[branch] == nil {
+			continue
+		}
+		rules = append(rules, [2]string{"/ders/" + old + "/", "/brans/" + branch + "/"})
+	}
+	sort.Slice(rules, func(i, j int) bool { return rules[i][0] < rules[j][0] })
+	return rules
+}
+
 // writeRedirectsFile, docs/_redirects dosyasını yazar ve statik kural
 // sayısını döner.
 func (b *Builder) writeRedirectsFile() (int, error) {
-	static := b.hocaRedirectRules()
+	hoca := b.hocaRedirectRules()
+	course := b.courseRedirectRules()
+	static := append(append([][2]string{}, hoca...), course...)
 	if len(static) > maxStaticRedirects {
 		static = static[:maxStaticRedirects]
 	}

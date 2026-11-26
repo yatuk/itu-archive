@@ -11,12 +11,14 @@
 <link rel="canonical" href="https://itu-ders.com/kontenjan/">
 
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="/assets/style.css?v=2131cd693941">
+<link rel="stylesheet" href="/assets/style.css?v=7bacf4ad5bdd">
 <link rel="icon" href="/favicon.png" type="image/png">
-<script src="/assets/static-page.js?v=c5c4188c6aa2" defer></script>
-<script type="application/ld+json">[{"@context":"https://schema.org","@id":"https://itu-ders.com/kontenjan/#webpage","@type":"WebPage","dateModified":"2026-08-23","description":"İTÜ ders kontenjanları: şube başına kontenjan/yazılan sayısı, doluluk oranı ve dolma hızı geçmişi.","inLanguage":"tr-TR","name":"İTÜ ders kontenjanları ve doluluk","url":"https://itu-ders.com/kontenjan/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://itu-ders.com/","name":"İTÜ Ders Arşivi","position":1},{"@type":"ListItem","item":"https://itu-ders.com/kontenjan/","name":"İTÜ ders kontenjanları","position":2}]}]</script>
+<script src="/assets/static-page.js?v=fa225c99c9f8" defer></script>
+<script src="/assets/landing.js?v=c37b8116af6e" defer></script>
+
+<script type="application/ld+json">[{"@context":"https://schema.org","@id":"https://itu-ders.com/kontenjan/#webpage","@type":"WebPage","dateModified":"2026-08-23","description":"İTÜ ders kontenjanları: şube başına kontenjan/yazılan sayısı, doluluk oranı ve dolma hızı geçmişi.","inLanguage":"tr-TR","name":"İTÜ ders kontenjanları ve doluluk","url":"https://itu-ders.com/kontenjan/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://itu-ders.com/","name":"İTÜ Ders Arşivi","position":1},{"@type":"ListItem","item":"https://itu-ders.com/kontenjan/","name":"İTÜ ders kontenjanları","position":2}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Her şube için OBS'deki yazılan öğrenci sayısı kontenjana bölünür. Ders satırı, o dersin kontenjanlı tüm şubelerinin toplamını gösterir; dolu şube sütunu kaç şubede yer kalmadığını sayar."},"name":"Doluluk nasıl hesaplanıyor?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"OBS bazı şubelerde kontenjanın üstünde kayıt gösterir. Bu dersler \"dolu +N\" olarak işaretlenir; N, kontenjanı aşan öğrenci sayısıdır."},"name":"Yazılan sayısı neden kontenjanı geçiyor?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Evet. Dersler sekmesinde dersi açınca şubelerin ne zaman dolduğu ve önceki dönemlerin doluluk geçmişi ders panelinde görünür."},"name":"Bir dersin geçmiş dönemlerde ne kadar hızlı dolduğunu görebilir miyim?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"2026-2027 Güz döneminde açılan 5463 şubenin 469 tanesinde kontenjan yayımlanmamış. Doluluk oranları yalnızca kontenjanı olan 4994 şube üzerinden hesaplanır."},"name":"Kontenjanı olmayan şubeler neden ayrı?"}]}]</script>
 </head>
-<body class="seo-page">
+<body class="seo-page lp-page">
 <a class="skip-link" href="#icerik">İçeriğe atla</a>
 <div class="scanlines" aria-hidden="true"></div>
 <header class="masthead masthead-refined">
@@ -25,7 +27,7 @@
    <a class="brand brand-home" href="/#dersler" aria-label="Dersler ana sayfasına git">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
     <picture><source srcset="/itü_ari.webp" type="image/webp"><img class="brand-logo" src="/itü_ari.png" alt="" width="32" height="31"></picture>
-    <p class="brand-title" translate="no">DERS ARŞİVİ</p>
+    <span class="brand-title" translate="no">DERS ARŞİVİ</span>
    </a>
    <div class="mast-controls">
     <div class="theme-pick" role="group" aria-label="Görünüm teması">
@@ -39,26 +41,93 @@
  </div>
 </header>
 <h2 class="sr-only">Bölümler</h2>
-<nav class="tabs wrap" aria-label="Bölümler">
- <a href="/#dersler">Dersler</a>
- <a href="/#dersplanim">Ders Planım/GPA</a>
+<nav class="tabs app-tabs wrap" aria-label="Bölümler">
+ <a href="/#dersler" aria-current="true">Dersler</a>
+ <a href="/#dersplanim">Müfredat ve GPA</a>
  <a href="/#onsart">Önşart Haritası</a>
  <a href="/#sinavlar">Sınavlar</a>
  <a href="/#takvim">Akademik Takvim</a>
- <a href="/#program">Program</a>
- <a href="/hoca/">Hocalar</a>
+ <a href="/#program">Haftalık Program</a>
+ <span class="tabs-sep" aria-hidden="true"></span>
+ <a href="/#gecmis" class="tab-secondary">Geçmiş</a>
+ <a href="/#donemler" class="tab-secondary">Dönemler</a>
+ <a href="/#hakkinda" class="tab-secondary">Hakkında</a>
 </nav>
 <main class="wrap" id="icerik">
-<nav class="crumb" aria-label="Breadcrumb"><a href="/">İTÜ Ders Arşivi</a> › <span>İTÜ ders kontenjanları</span></nav>
-<h1>İTÜ ders kontenjanları</h1>
-<p class="lead">İTÜ ders kontenjanları: şube başına kontenjan/yazılan sayısı, doluluk oranı ve dolma hızı geçmişi.</p>
-<section class="seo-tool-launch" aria-label="Aracı aç"><div><strong>Güncel kontenjanları gör</strong><p>Yalnızca kontenjanı olan şubeleri filtrele veya ders detayından doluluk geçmişini aç.</p></div><a class="btn-primary" href="/#dersler">Güncel kontenjanları gör</a></section>
-<h2>Nasıl kullanılır?</h2>
-<p>Her şubenin kontenjanı, yazılan öğrenci sayısı ve doluluk yüzdesi tabloda görünür. Dolu ve kritik (≥%85) şubeler ayrı işaretlenir.</p>
+<div class="lp-main"><nav class="crumb lp-crumb" aria-label="Breadcrumb"><a href="/">İTÜ Ders Arşivi</a><span aria-hidden="true">›</span><span>İTÜ ders kontenjanları</span></nav><div class="lp-lede"><h1>İTÜ ders kontenjanları</h1><p class="lead lp-lead">İTÜ ders kontenjanları: şube başına kontenjan/yazılan sayısı, doluluk oranı ve dolma hızı geçmişi.</p><a class="lp-cta lp-cta-primary lp-cta-top" href="/#dersler" data-lp-top>Kontenjanları uygulamada gör <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="lp-tool"><style>
+.lpk{margin:16px 0 8px}
+.lpk-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.lpk-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0 0 20px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card,14px)}
+.lpk-stats>div{padding:12px 16px;min-width:0}
+.lpk-stats>div+div{border-left:1px solid var(--line)}
+.lpk-stats dt{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--dimmer);font-weight:600}
+.lpk-stats dd{margin:0}
+.lpk-stats strong{display:block;margin-top:2px;font-family:var(--mono);font-size:22px;font-variant-numeric:tabular-nums;color:var(--fg)}
+.lpk-stats dd>span{display:block;font-size:12.5px;color:var(--dim)}
+.lpk-stats .lpk-statbar{display:block;width:100%;margin-top:6px}
+.lpk-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;align-items:start}
+.lpk-main,.lpk-side{min-width:0}
+.lpk-h{margin:4px 0 10px;font-size:17px}
+.lpk-h small{display:inline-block;margin-left:6px;font-size:12.5px;font-weight:400;color:var(--dim)}
+.lpk-search{position:relative;margin-bottom:10px}
+.lpk-search svg{position:absolute;left:12px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--dimmer);pointer-events:none}
+.lpk-search input{box-sizing:border-box;width:100%;min-height:44px;padding:8px 12px 8px 36px;font:inherit;font-size:15px;color:var(--fg);background:var(--panel);border:1px solid var(--line-hot);border-radius:10px}
+.lpk-search input::placeholder{color:var(--dimmer)}
+.lpk-search input:focus-visible{outline:2px solid var(--cyan);outline-offset:1px}
+.lpk-tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card,14px)}
+.lpk-tbl{width:100%;min-width:0;border-collapse:collapse;font-size:14px}
+.lpk-tbl th{position:static;padding:10px 14px;text-align:left;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--dimmer);font-weight:600;background:none;-webkit-backdrop-filter:none;backdrop-filter:none;border-bottom:1px solid var(--line);white-space:nowrap}
+.lpk-tbl td{padding:0 14px;vertical-align:middle;border-top:1px solid var(--line);border-bottom:0;color:var(--fg)}
+.lpk-tbl tbody tr:first-child td{border-top:0}
+.lpk-tbl .lpk-r{text-align:right}
+.lpk-code{display:inline-flex;align-items:center;min-height:44px;font-family:var(--mono);font-weight:700;font-size:13px;white-space:nowrap;color:var(--fg)}
+a.lpk-code{text-decoration:none}
+a.lpk-code:hover{color:var(--cyan);text-decoration:underline}
+a.lpk-code:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;border-radius:4px}
+.lpk-nm-m{display:none}
+.lpk-n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.lpk-of{color:var(--dimmer)}
+.lpk-fl{white-space:nowrap}
+.lpk-fill{display:flex;align-items:center;justify-content:flex-end;gap:8px}
+.lpk-num{min-width:82px;text-align:right;font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums}
+.lpk-bar{display:inline-block;position:relative;width:90px;height:6px;border-radius:999px;background:var(--line);overflow:hidden}
+.lpk-bar i{position:absolute;left:0;top:0;bottom:0;border-radius:inherit;background:var(--acid-vivid)}
+.lpk-bar.lpk-warn i{background:var(--amber)}
+.lpk-bar.lpk-full i{background:var(--red)}
+.lpk-pill{display:inline-block;min-width:62px;box-sizing:border-box;text-align:center;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:999px;border:1px solid currentColor;white-space:nowrap;line-height:1.5}
+.lpk-pill.lpk-full{color:var(--red)}
+.lpk-pill.lpk-warn{color:var(--amber)}
+.lpk-pill.lpk-ok{color:var(--dim);border-color:var(--line-hot)}
+.lpk-empty{margin:10px 0 0;color:var(--dim);font-size:14px}
+.lpk-legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0;padding:0;list-style:none;font-size:12.5px;color:var(--dim)}
+.lpk-legend li{display:inline-flex;align-items:center;gap:6px}
+.lpk-legend .lpk-pill{min-width:0}
+.lpk-free{margin:0;padding:4px 14px;list-style:none;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card,14px)}
+.lpk-free li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:4px 0 8px}
+.lpk-free li+li{border-top:1px solid var(--line)}
+.lpk-free-a{display:flex;flex-direction:column;min-width:0}
+.lpk-free-a .lpk-code{min-height:40px}
+.lpk-free-nm{margin-top:-8px;font-size:13px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lpk-free-r{display:grid;gap:3px;justify-items:end;flex:none}
+.lpk-free-r .lpk-pill{min-width:0}
+.lpk-free-r .lpk-num{min-width:0;font-size:12.5px;color:var(--dim)}
+.lpk-note{margin:14px 0 0;color:var(--dim);font-size:13.5px}
+@media (max-width:900px){.lpk-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){
+.lpk-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.lpk-stats>div:nth-child(3){border-left:0}
+.lpk-stats>div:nth-child(n+3){border-top:1px solid var(--line)}
+.lpk-col-nm,.lpk-col-sb{display:none}
+.lpk-nm-m{display:block;margin:-8px 0 8px;color:var(--dim);font-size:12.5px;line-height:1.35}
+.lpk-tbl th,.lpk-tbl td{padding-left:10px;padding-right:10px}
+.lpk-tbl td.lpk-fl{padding-top:8px;padding-bottom:8px}
+.lpk-fill{flex-direction:column;align-items:flex-end;gap:3px}
+.lpk-bar{width:48px}
+.lpk-num{min-width:0}
+}
+</style><section class="lpk" aria-label="Kontenjan özeti"><dl class="lpk-stats"><div><dt>Şube</dt><dd><strong>5463</strong><span>2026-2027 Güz</span></dd></div><div><dt>Kontenjanlı</dt><dd><strong>4994</strong><span>469 şubede kontenjan yok</span></dd></div><div><dt>Dolu</dt><dd><strong>1199</strong><span>4994 şubenin %24'ü</span><span class="lpk-bar lpk-full lpk-statbar" aria-hidden="true"><i style="width:24%"></i></span></dd></div><div><dt>Son ölçüm</dt><dd><strong><time datetime="2026-10-12">12 Eki</time></strong><span>2026</span></dd></div></dl><div class="lpk-grid"><div class="lpk-main"><h2 class="lpk-h" id="lpk-top">En hızlı dolan dersler <small>yazılan / kontenjan oranına göre</small></h2><div class="lpk-search" hidden><label for="lpk-q"><span class="lpk-sr">Tabloda ders ara</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></label><input id="lpk-q" type="search" placeholder="ders kodu veya adı" autocomplete="off" spellcheck="false" aria-controls="lpk-body"></div><div class="lpk-tblwrap"><table class="lpk-tbl" aria-labelledby="lpk-top"><thead><tr><th scope="col">Kod</th><th scope="col" class="lpk-col-nm">Ders adı</th><th scope="col" class="lpk-r lpk-col-sb">Şube</th><th scope="col" class="lpk-r">Dolu şube</th><th scope="col" class="lpk-r">Yazılan / kontenjan</th></tr></thead><tbody id="lpk-body"><tr data-lpk-row><td><a class="lpk-code" href="/ders/ins-305e/">INS 305E</a><span class="lpk-nm-m">Probability and Statistics</span></td><td class="lpk-col-nm">Probability and Statistics</td><td class="lpk-n lpk-col-sb">3</td><td class="lpk-n">3<span class="lpk-of">/3</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">185/165</span><span class="lpk-pill lpk-full">dolu +20</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/mim-351e/">MIM 351E</a><span class="lpk-nm-m">Architectural Design V</span></td><td class="lpk-col-nm">Architectural Design V</td><td class="lpk-n lpk-col-sb">11</td><td class="lpk-n">8<span class="lpk-of">/11</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">177/162</span><span class="lpk-pill lpk-full">dolu +15</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/ins-325/">INS 325</a><span class="lpk-nm-m">Demiryolu Müh.</span></td><td class="lpk-col-nm">Demiryolu Müh.</td><td class="lpk-n lpk-col-sb">3</td><td class="lpk-n">2<span class="lpk-of">/3</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">161/150</span><span class="lpk-pill lpk-full">dolu +11</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/ata-122/">ATA 122</a><span class="lpk-nm-m">Atatürk İlk &amp; İnkılap Trh II</span></td><td class="lpk-col-nm">Atatürk İlk &amp; İnkılap Trh II</td><td class="lpk-n lpk-col-sb">20</td><td class="lpk-n">17<span class="lpk-of">/20</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">1581/1485</span><span class="lpk-pill lpk-full">dolu +96</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/mim-211e/">MIM 211E</a><span class="lpk-nm-m">Architectural Design III</span></td><td class="lpk-col-nm">Architectural Design III</td><td class="lpk-n lpk-col-sb">8</td><td class="lpk-n">8<span class="lpk-of">/8</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">161/152</span><span class="lpk-pill lpk-full">dolu +9</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/itb-218/">ITB 218</a><span class="lpk-nm-m">Bilim ve Teknoloji Tarihi</span></td><td class="lpk-col-nm">Bilim ve Teknoloji Tarihi</td><td class="lpk-n lpk-col-sb">5</td><td class="lpk-n">5<span class="lpk-of">/5</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">178/170</span><span class="lpk-pill lpk-full">dolu +8</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/ata-121/">ATA 121</a><span class="lpk-nm-m">Atatürk İlk &amp; İnkılap Trh I</span></td><td class="lpk-col-nm">Atatürk İlk &amp; İnkılap Trh I</td><td class="lpk-n lpk-col-sb">31</td><td class="lpk-n">25<span class="lpk-of">/31</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">2308/2260</span><span class="lpk-pill lpk-full">dolu +48</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/kon-313e/">KON 313E</a><span class="lpk-nm-m">Feedback Control Systems</span></td><td class="lpk-col-nm">Feedback Control Systems</td><td class="lpk-n lpk-col-sb">4</td><td class="lpk-n">4<span class="lpk-of">/4</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">283/280</span><span class="lpk-pill lpk-full">dolu +3</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/ita-101/">ITA 101</a><span class="lpk-nm-m">Italian I</span></td><td class="lpk-col-nm">Italian I</td><td class="lpk-n lpk-col-sb">9</td><td class="lpk-n">9<span class="lpk-of">/9</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">222/220</span><span class="lpk-pill lpk-full">dolu +2</span></span></td></tr><tr data-lpk-row><td><a class="lpk-code" href="/ders/eef-271e/">EEF 271E</a><span class="lpk-nm-m">Probability and Statistics</span></td><td class="lpk-col-nm">Probability and Statistics</td><td class="lpk-n lpk-col-sb">4</td><td class="lpk-n">3<span class="lpk-of">/4</span></td><td class="lpk-fl"><span class="lpk-fill"><span class="lpk-bar lpk-full" aria-hidden="true"><i style="width:100.0%"></i></span><span class="lpk-num">380/380</span><span class="lpk-pill lpk-full">dolu</span></span></td></tr></tbody></table></div><p class="lpk-empty" id="lpk-empty" hidden>Bu aramaya uyan ders tabloda yok. Tüm şubeler için <a href="/#dersler">Dersler sekmesini</a> aç.</p><ul class="lpk-legend" aria-label="Etiketler"><li><span class="lpk-pill lpk-full">dolu</span> kontenjan doldu</li><li><span class="lpk-pill lpk-full">dolu +N</span> kontenjan aşıldı</li><li><span class="lpk-pill lpk-warn">N yer</span> %5 veya daha az kaldı</li></ul></div><div class="lpk-side"><h2 class="lpk-h" id="lpk-free-h">Boş yer bol</h2><ul class="lpk-free" aria-labelledby="lpk-free-h"><li><span class="lpk-free-a"><a class="lpk-code" href="/ders/myl-527e/">MYL 527E</a><span class="lpk-free-nm">Independent Study 1 · 4 şube</span></span><span class="lpk-free-r"><span class="lpk-pill lpk-ok">158 yer</span><span class="lpk-num">2/160</span></span></li><li><span class="lpk-free-a"><a class="lpk-code" href="/ders/uum-543e/">UUM 543E</a><span class="lpk-free-nm">Spec.Top.in Aeron.&amp;Astron.Eng. · 5 şube</span></span><span class="lpk-free-r"><span class="lpk-pill lpk-ok">110 yer</span><span class="lpk-num">60/170</span></span></li><li><span class="lpk-free-a"><a class="lpk-code" href="/ders/ing-100/">ING 100</a><span class="lpk-free-nm">EAP Through Global Goals · 49 şube</span></span><span class="lpk-free-r"><span class="lpk-pill lpk-ok">2940 yer</span><span class="lpk-num">2119/5059</span></span></li><li><span class="lpk-free-a"><a class="lpk-code" href="/ders/dan-102/">DAN 102</a><span class="lpk-free-nm">Girişimcilik &amp; Kariyer Danış. · 4 şube</span></span><span class="lpk-free-r"><span class="lpk-pill lpk-ok">136 yer</span><span class="lpk-num">99/235</span></span></li></ul></div></div><p class="lpk-note">Tablo, en az 3 kontenjanlı şubesi ve toplam 150 kontenjanı olan dersleri kapsar. Tüm 5463 şube, doluluk geçmişi ve dolma hızı <a href="/#dersler">Dersler sekmesinde</a>.</p></section><script>(function(){var w=document.querySelector('.lpk-search'),q=document.getElementById('lpk-q');if(!w||!q)return;w.hidden=false;var rows=[].slice.call(document.querySelectorAll('[data-lpk-row]')),empty=document.getElementById('lpk-empty');function n(s){return s.toLocaleLowerCase('tr').replace(/ı/g,'i').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/\s+/g,'')}rows.forEach(function(r){r.k=n(r.cells[0].textContent+' '+r.cells[1].textContent)});q.addEventListener('input',function(){var v=n(q.value),c=0;rows.forEach(function(r){var ok=!v||r.k.indexOf(v)>=0;r.hidden=!ok;if(ok)c++});if(empty)empty.hidden=c>0})})();</script></div><div class="lp-more"><p>Önizleme bu sayfada; filtreler, kaydetme ve tüm veriler uygulamada.</p><a class="lp-cta lp-cta-primary" href="/#dersler">Tamamı için uygulamaya geç <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><section class="lp-sec lp-prose"><h2>Nasıl kullanılır?</h2><p>Her şubenin kontenjanı, yazılan öğrenci sayısı ve doluluk yüzdesi tabloda görünür. Dolu ve kritik (≥%85) şubeler ayrı işaretlenir.</p>
 <p>Bir dersin geçmiş dönemlerde ne kadar hızlı dolduğunu detay sayfasında görebilirsin.</p>
-
-
-<h2>İlgili araçlar</h2><ul class="seo-action-list"><li><a href="/ders-programi/"><strong>Güncel dersleri ara</strong><span>Güncel dersleri, şubeleri, CRN&#39;leri, saatleri ve kontenjanları ara.</span></a></li><li><a href="/ders-programi-olustur/"><strong>Şubeyi programa ekle</strong><span>Seçtiğin şubelerle haftalık program kur ve takvime aktar.</span></a></li></ul>
+</section><section class="lp-sec"><h2>Sık sorulan sorular</h2><div class="lp-faq"><details><summary>Doluluk nasıl hesaplanıyor?</summary><p>Her şube için OBS&#39;deki yazılan öğrenci sayısı kontenjana bölünür. Ders satırı, o dersin kontenjanlı tüm şubelerinin toplamını gösterir; dolu şube sütunu kaç şubede yer kalmadığını sayar.</p></details><details><summary>Yazılan sayısı neden kontenjanı geçiyor?</summary><p>OBS bazı şubelerde kontenjanın üstünde kayıt gösterir. Bu dersler &#34;dolu +N&#34; olarak işaretlenir; N, kontenjanı aşan öğrenci sayısıdır.</p></details><details><summary>Bir dersin geçmiş dönemlerde ne kadar hızlı dolduğunu görebilir miyim?</summary><p>Evet. Dersler sekmesinde dersi açınca şubelerin ne zaman dolduğu ve önceki dönemlerin doluluk geçmişi ders panelinde görünür.</p></details><details><summary>Kontenjanı olmayan şubeler neden ayrı?</summary><p>2026-2027 Güz döneminde açılan 5463 şubenin 469 tanesinde kontenjan yayımlanmamış. Doluluk oranları yalnızca kontenjanı olan 4994 şube üzerinden hesaplanır.</p></details></div></section><section class="lp-sec"><h2>İlgili araçlar</h2><ul class="lp-related"><li><a href="/ders-programi/"><strong>Güncel dersleri ara</strong></a></li><li><a href="/ders-programi-olustur/"><strong>Şubeyi programa ekle</strong></a></li></ul></section><div class="lp-sticky" data-lp-sticky hidden><a class="lp-cta lp-cta-primary" href="/#dersler" tabindex="-1">Kontenjanları uygulamada gör <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
 </main>
 <footer class="wrap">
  <nav class="foot-tools" aria-label="Araçlar"><span class="foot-tools-head">Araçlar</span>

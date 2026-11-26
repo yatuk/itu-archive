@@ -67,8 +67,9 @@ func calSeason(title string) string {
 
 // currentCalendar, lisans takvimlerinden tarama tarihini kapsayan akademik
 // yılı seçer ve (yıl etiketi, tarih sırasına dizilmiş olaylar, tarama tarihi)
-// döner. Veri yoksa yıl boştur.
-func (b *Builder) currentCalendar() (year string, events []model.CalendarEvent, scraped string) {
+// döner. Veri yoksa yıl boştur. yearID, seçilen dosyanın adıdır
+// (data/calendar/lisans/<yearID>.json).
+func (b *Builder) currentCalendar() (year string, events []model.CalendarEvent, scraped, yearID string) {
 	type calFile struct {
 		cal        model.Calendar
 		start, end string
@@ -94,7 +95,7 @@ func (b *Builder) currentCalendar() (year string, events []model.CalendarEvent, 
 		}
 	}
 	if len(files) == 0 || scraped == "" {
-		return "", nil, ""
+		return "", nil, "", ""
 	}
 	// Tarama tarihini kapsayan akademik yıl; yoksa en yeni yıl.
 	sort.Slice(files, func(i, j int) bool { return files[i].start > files[j].start })
@@ -107,11 +108,11 @@ func (b *Builder) currentCalendar() (year string, events []model.CalendarEvent, 
 	}
 	year = strings.Fields(pick.cal.Year + " ")[0]
 	if year == "" {
-		return "", nil, ""
+		return "", nil, "", ""
 	}
 	events = append([]model.CalendarEvent(nil), pick.cal.Events...)
 	sort.SliceStable(events, func(i, j int) bool { return events[i].Start < events[j].Start })
-	return year, events, scraped
+	return year, events, scraped, pick.cal.YearID
 }
 
 // trDateRange, "2027-01-26","2027-01-27" -> "26–27 Ocak 2027".

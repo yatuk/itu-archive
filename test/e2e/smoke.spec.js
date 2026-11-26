@@ -1396,7 +1396,7 @@ test.describe('SEO sayfaları', () => {
     test(`${yol} · birincil eylem gerçek aracı açar`, async ({ page }) => {
       await page.goto(yol);
 
-      const anaEylem = page.locator('.seo-tool-launch .btn-primary');
+      const anaEylem = page.locator('.lp-cta-top');
       await expect(anaEylem).toBeVisible();
       await expect(anaEylem).toHaveAttribute('href', hedef);
       await anaEylem.click();
@@ -1413,15 +1413,92 @@ test.describe('SEO sayfaları', () => {
     const graph = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
     expect(graph.some((item) => item['@type'] === 'BreadcrumbList')).toBe(true);
     expect(graph.some((item) => item['@type'] === 'WebPage' && item.dateModified === '2026-08-23')).toBe(true);
-    await expect(page.locator('.seo-action-list a[href="/ders-programi/"]')).toBeVisible();
-    await expect(page.locator('.seo-action-list a[href="/kontenjan/"]')).toBeVisible();
+    await expect(page.locator('.lp-related a[href="/ders-programi/"]')).toBeVisible();
+    await expect(page.locator('.lp-related a[href="/kontenjan/"]')).toBeVisible();
+  });
+});
+
+test.describe('İniş sayfaları · ortak kabuk', () => {
+  const ARAC_SAYFALARI = [
+    { yol: '/akademik-takvim/', hedef: '/#takvim', sekme: 'Akademik Takvim', etiket: 'Akademik takvimi uygulamada aç' },
+    { yol: '/ders-programi-olustur/', hedef: '/#program', sekme: 'Haftalık Program', etiket: 'Ders programı oluşturucuyu aç' },
+    { yol: '/gano-hesaplama/', hedef: '/#dersplanim', sekme: 'Müfredat ve GPA', etiket: 'GANO hesaplayıcıyı aç' },
+    { yol: '/kontenjan/', hedef: '/#dersler', sekme: 'Dersler', etiket: 'Kontenjanları uygulamada gör' },
+  ];
+
+  test.describe('390px', () => {
+    test.use({ viewport: { width: 390, height: 844 } });
+    for (const { yol, hedef, sekme, etiket } of ARAC_SAYFALARI) {
+      test(`${yol} · birincil uygulama düğmesi ilk ekranda, sekme etkin`, async ({ page }) => {
+        await page.goto(yol);
+        const dugme = page.locator('.lp-cta-top');
+        await expect(dugme).toHaveAttribute('href', hedef);
+        await expect(dugme).toContainText(etiket);
+        await expect(dugme).toBeInViewport({ ratio: 1 });
+        const kutu = await dugme.boundingBox();
+        expect(kutu.height).toBeGreaterThanOrEqual(44);
+        expect(kutu.y + kutu.height).toBeLessThanOrEqual(844);
+        await expect(page.locator('.tabs.app-tabs a[aria-current="true"]')).toHaveText(sekme);
+        const { scrollWidth, clientWidth } = await page.evaluate(() => ({
+          scrollWidth: document.documentElement.scrollWidth, clientWidth: document.documentElement.clientWidth,
+        }));
+        expect(scrollWidth).toBeLessThanOrEqual(clientWidth + 1);
+      });
+    }
+
+    test('mobil yapışkan çubuk üst düğme kaybolunca görünür', async ({ page }) => {
+      await page.goto('/akademik-takvim/');
+      const cubuk = page.locator('[data-lp-sticky]');
+      await expect(cubuk).toBeHidden();
+      await page.evaluate(() => window.scrollTo(0, 1500));
+      await expect(cubuk).toBeVisible();
+      await expect(cubuk.locator('a')).toHaveAttribute('href', '/#takvim');
+      await page.evaluate(() => window.scrollTo(0, 0));
+      await expect(cubuk).toBeHidden();
+    });
+  });
+
+  test('tema düğmesi uygulamayla aynı anahtarı yazar', async ({ page }) => {
+    await page.goto('/akademik-takvim/');
+    await page.locator('.theme-btn[data-theme="dark"]').click();
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+    expect(await page.evaluate(() => localStorage.getItem('itu-theme'))).toBe('dark');
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  });
+
+  test('akademik takvim tüm olayları ve bugün ayracını gösterir', async ({ page }) => {
+    const hatalar = konsolHatalari(page);
+    await page.goto('/akademik-takvim/');
+    const tablo = page.locator('[data-lp-cal]');
+    const kaynak = await tablo.getAttribute('data-src');
+    const veri = await (await page.request.get(kaynak)).json();
+    const beklenen = veri.events.filter((e) => e.start && e.title.trim()).length;
+    await expect(tablo.locator('tbody tr[data-s]')).toHaveCount(beklenen);
+    await expect(tablo).toHaveClass(/is-live/);
+    await expect(tablo.locator('tr.lp-cal-today')).toHaveCount(1);
+    await expect(tablo.locator('tr.lp-cal-today')).toContainText('BUGÜN');
+    // Bugünden önce biten her satır soluk, sonrakiler geri sayım taşır.
+    const bugun = await page.evaluate(() => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; });
+    const gecmis = veri.events.filter((e) => e.start && e.title.trim() && (e.end || e.start) < bugun).length;
+    await expect(tablo.locator('tbody tr.is-past')).toHaveCount(gecmis);
+
+    // Süzgeç: yalnız sınavlar.
+    await page.locator('.lp-chip[data-k="sinav"]').click();
+    const sinav = await tablo.locator('tbody tr[data-s]:visible').evaluateAll((rs) => rs.every((r) => r.dataset.k.split(' ').includes('sinav')));
+    expect(sinav).toBe(true);
+    await page.locator('.lp-chip[data-k="all"]').click();
+    await page.locator('[data-lp-cal-q]').fill('ara tatil');
+    await expect(tablo.locator('tbody tr[data-s]:visible')).not.toHaveCount(0);
+    await expect(tablo.locator('tbody tr[data-s]:visible').first()).toContainText('Ara Tatil');
+    expect(hatalar).toEqual([]);
   });
 });
 
 test.describe('Düzen bütünlüğü', () => {
   // Kayıt haftasında birincil bağlam telefon: sayfa gövdesi asla yatay kaymamalı.
   // Geniş içerik (tablo) kendi kabında kayar.
-  for (const yol of ['/', '/ders/blg-102e/', '/dersler/2025-2026-bahar/', '/gano-hesaplama/', '/ders-programi-olustur/']) {
+  for (const yol of ['/', '/ders/blg-102e/', '/dersler/2025-2026-bahar/', '/gano-hesaplama/', '/ders-programi-olustur/', '/akademik-takvim/', '/kontenjan/']) {
     test(`${yol} · sayfa yatay taşmaz`, async ({ page }) => {
       await page.goto(yol);
       await page.waitForLoadState('networkidle');

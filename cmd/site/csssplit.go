@@ -88,8 +88,8 @@ var appCSSBuckets = []cssBucket{
 		tokens: tokenRE("#view-hakkinda", "#ab-", ".ab-"),
 		owners: []string{"assets-src/views/terms.js", "index#view-hakkinda"}},
 	{name: "pages", app: false,
-		tokens: tokenRE(".ip-", ".guide-", ".seo-", ".hub-", ".hx-"),
-		owners: []string{"assets-src/static-page.js"}},
+		tokens: tokenRE(".ip-", ".guide-", ".seo-", ".hub-", ".hx-", ".lp-"),
+		owners: []string{"assets-src/static-page.js", "assets-src/landing.js", "assets-src/landing-calendar.js"}},
 }
 
 // appCSSCore, uygulamanın ilk boyamada yüklediği çekirdek dosya.

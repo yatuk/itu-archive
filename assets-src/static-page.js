@@ -31,6 +31,13 @@
     });
   });
 
+  // --- sekme satırı: dar ekranda etkin sekme görünür kalsın (satır yatay kayar)
+  var tabs = document.querySelector('.tabs.app-tabs');
+  var active = tabs && tabs.querySelector('a[aria-current="true"]');
+  if (active && tabs.scrollWidth > tabs.clientWidth) {
+    tabs.scrollLeft = active.offsetLeft - (tabs.clientWidth - active.offsetWidth) / 2;
+  }
+
   // --- dil: bağlantı karşı dil sürümüne gider; tercihi uygulama için de sakla
   var lang = document.getElementById('lang-btn');
   if (lang) {

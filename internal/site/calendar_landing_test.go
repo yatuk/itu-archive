@@ -61,7 +61,7 @@ func TestBuildCalendarSummarySkipsPastEvents(t *testing.T) {
 		t.Errorf("Bahar başlangıcı bekleniyordu: %+v", s.Start)
 	}
 	empty := buildCalendarSummary("2026-2027", "2030-01-01", testCalendarEvents())
-	if empty.summaryHTML() != "" || empty.faqHTML() != "" || empty.faqSchema() != nil {
+	if len(empty.faq()) != 0 || empty.faqSchema() != nil || calendarLead(empty, 0) != "" {
 		t.Error("veri yokken özet ve SSS boş olmalı")
 	}
 }
@@ -93,7 +93,8 @@ func TestCalendarFAQMatchesSchemaAndPage(t *testing.T) {
 	if len(qa) < 3 || len(qa) > 4 {
 		t.Fatalf("3-4 soru bekleniyordu: %d", len(qa))
 	}
-	html := s.faqHTML()
+	b := &Builder{l: langTR}
+	html := string(b.renderLanding(landingLayout{H1: "x", CTA: landingAction{href: "/#takvim", label: "Aç"}, FAQ: qa}))
 	raw, err := json.Marshal(s.faqSchema())
 	if err != nil {
 		t.Fatal(err)
@@ -117,12 +118,69 @@ func TestCalendarFAQMatchesSchemaAndPage(t *testing.T) {
 	}
 }
 
-func TestCalendarSummaryHTMLLinksTabs(t *testing.T) {
-	s := buildCalendarSummary("2026-2027", "2026-11-15", testCalendarEvents())
-	h := s.summaryHTML()
-	for _, want := range []string{`href="/#takvim"`, `href="/#sinavlar"`, "Güz finalleri", "15 Kasım 2026"} {
+func TestCalendarToolRendersEveryEventGroupedByMonth(t *testing.T) {
+	events := testCalendarEvents()
+	rows := calRows(events)
+	if len(rows) != len(events) {
+		t.Fatalf("satır sayısı %d, olay %d", len(rows), len(events))
+	}
+	h := calendarToolHTML("2026-2027", "2026-11-15", "854", rows)
+	if got := strings.Count(h, `<tr data-s="`); got != len(events) {
+		t.Errorf("tabloda %d olay satırı var, %d bekleniyordu", got, len(events))
+	}
+	for _, want := range []string{
+		`data-src="/data/calendar/lisans/854.json"`,
+		`<tr class="lp-cal-mo" data-m="2026-09"><td colspan="3">Eylül 2026<span class="lp-cal-c">2</span>`,
+		`data-s="2027-01-02" data-e="2027-01-17" data-k="sinav"`,
+		`<td class="lp-cal-dt">2–17 Oca 2027</td>`,
+		"Güz Yarıyılı Sonu Sınavları",
+		// Sunucu yedeği: tarama tarihine göre süren ve sıradaki olaylar.
+		"15 Kasım 2026 taramasına göre", "Süren etkinlik yok.", "Güz Yarıyılı Sınav Programının İlanı",
+		`data-lp-cal-tools hidden`, `data-k="donem" aria-pressed="false">Tatil ve dönem<span class="lp-n">3</span>`,
+	} {
 		if !strings.Contains(h, want) {
-			t.Errorf("özet %q içermeli: %s", want, h)
+			t.Errorf("takvim bloğu %q içermeli", want)
+		}
+	}
+	if strings.Contains(h, "—") {
+		t.Error("em dash yasak")
+	}
+	lead := string(calendarLead(buildCalendarSummary("2026-2027", "2026-11-15", events), len(rows)))
+	if !strings.Contains(lead, "Güz finalleri <b>2–17 Ocak 2027</b> tarihleri arasında") || !strings.Contains(lead, "bahar dönemi <b>1 Şubat 2027</b>") {
+		t.Errorf("giriş cümlesi = %q", lead)
+	}
+}
+
+func TestCalendarKindsAndShortTitles(t *testing.T) {
+	cases := map[string]string{
+		"İTÜ Açılış Tarihi":                    "donem",
+		"Güz Yarıyılı Sonu":                    "donem",
+		"Güz Yarıyılı Sonu Sınavları":          "sinav",
+		"2. Sınıf Öğrencilerin WEB Ders Kaydı": "kayit",
+		"Ara Tatil":                      "donem",
+		"MasterBee Programı Başvuruları": "",
+	}
+	for title, want := range cases {
+		if got := strings.Join(calKinds(title), " "); got != want {
+			t.Errorf("calKinds(%q) = %q, beklenen %q", title, got, want)
+		}
+	}
+	long := "YKS Sınav Sonucu Üniversitemiz Lisans Programlarına Yerleştirilen Denizcilik Fakültesi, İTÜ-KKTC ve UOLP-Uluslararası Ortak Lisans Programı Öğrencilerinin Elektronik Kayıtları ( Link )"
+	short := calShortTitle(long)
+	if strings.Contains(short, "Link") || utf8.RuneCountInString(short) > 81 || !strings.HasSuffix(short, "…") {
+		t.Errorf("kısaltma = %q", short)
+	}
+	if got := calShortTitle("Kapatılacak Derslerin Fakülteler Tarafından ÖİDB'ye Bildirilmesi"); got != "Kapatılacak Derslerin: fakültelerce ÖİDB'ye bildirim" {
+		t.Errorf("kısaltma = %q", got)
+	}
+	for in, want := range map[[2]string]string{
+		{"2027-01-02", "2027-01-17"}: "2–17 Oca 2027",
+		{"2026-11-23", "2026-12-31"}: "23 Kas–31 Ara 2026",
+		{"2026-12-28", "2027-01-02"}: "28 Ara 2026–2 Oca 2027",
+		{"2026-07-09", "2026-07-09"}: "9 Tem 2026",
+	} {
+		if got := shortDateRange(in[0], in[1]); got != want {
+			t.Errorf("shortDateRange(%v) = %q, beklenen %q", in, got, want)
 		}
 	}
 }

@@ -4,25 +4,63 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, follow">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#f4f6f4">
+<script>(function(){try{var t=localStorage.getItem('itu-theme')==='dark'?'dark':'sade';document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='dark'?'#0a0a0a':'#f4f6f4')}catch(e){}})()</script>
 <title>404: Sayfa bulunamadı · İTÜ Ders Arşivi</title>
 <link rel="icon" href="/favicon.png" type="image/png">
-<link rel="stylesheet" href="/assets/style.css?v=2131cd693941">
+<link rel="stylesheet" href="/assets/style.css?v=7bacf4ad5bdd">
+<script src="/assets/static-page.js?v=fa225c99c9f8" defer></script>
 </head>
-<body>
-<div class="wrap" style="text-align:center;padding-top:18vh">
-  <div class="brand" style="justify-content:center">
+<body class="seo-page lp-page">
+<a class="skip-link" href="#icerik">İçeriğe atla</a>
+<header class="masthead masthead-refined">
+ <div class="wrap">
+  <div class="mast-top">
+   <a class="brand brand-home" href="/#dersler" aria-label="Dersler ana sayfasına git">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
-    <h1>404</h1>
+    <picture><source srcset="/itü_ari.webp" type="image/webp"><img class="brand-logo" src="/itü_ari.png" alt="" width="32" height="31"></picture>
+    <span class="brand-title" translate="no">DERS&nbsp;ARŞİVİ</span>
+   </a>
+   <div class="mast-controls">
+    <div class="theme-pick" role="group" aria-label="Görünüm teması">
+     <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)"><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span><span class="theme-name">Açık</span></button>
+     <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)"><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg></span><span class="theme-name">Koyu</span></button>
+    </div>
+    <a id="lang-btn" class="btn-ghost" href="/?lang=en#dersler" data-lang="en" title="Dil / Language">TR/EN</a>
+   </div>
   </div>
-  <p class="tagline" style="margin:16px auto 8px">
-   Aradığın sayfa kaldırılmış veya adresi değişmiş. Ders kodunu ya da hocanı ana aramada yeniden arayabilirsin.
-  </p>
-  <p><a class="btn-primary" href="/">İTÜ derslerinde ara</a></p>
-  <nav class="seo-action-list" aria-label="Yardımcı bağlantılar" style="justify-content:center">
-   <a href="/ders-arsivi/">Geçmiş dersler</a>
-   <a href="/ders-programi/">Güncel ders programı</a>
-   <a href="/ders-programi-olustur/">Program oluştur</a>
-  </nav>
+  <p class="tagline"><span class="tagline-sade">İTÜ derslerini, kontenjanları ve geçmiş dönemleri ara.</span></p>
+ </div>
+</header>
+<nav class="tabs app-tabs wrap" aria-label="Bölümler">
+ <a href="/#dersler">Dersler</a>
+ <a href="/#dersplanim">Müfredat ve GPA</a>
+ <a href="/#onsart">Önşart Haritası</a>
+ <a href="/#sinavlar">Sınavlar</a>
+ <a href="/#takvim">Akademik Takvim</a>
+ <a href="/#program">Haftalık Program</a>
+ <span class="tabs-sep" aria-hidden="true"></span>
+ <a href="/#gecmis" class="tab-secondary">Geçmiş</a>
+ <a href="/#donemler" class="tab-secondary">Dönemler</a>
+ <a href="/#hakkinda" class="tab-secondary">Hakkında</a>
+</nav>
+<main class="wrap" id="icerik">
+<div class="lp-main">
+ <div class="lp-lede">
+  <h1>404: Sayfa bulunamadı</h1>
+  <p class="lead lp-lead">Aradığın sayfa kaldırılmış veya adresi değişmiş. Ders kodunu ya da hocanı ana aramada yeniden arayabilirsin.</p>
+  <a class="lp-cta lp-cta-primary lp-cta-top" href="/#dersler">İTÜ derslerinde ara <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+ </div>
+ <section class="lp-sec"><h2>İlgili araçlar</h2>
+  <ul class="lp-related">
+   <li><a href="/ders-arsivi/"><strong>Geçmiş dersler</strong></a></li>
+   <li><a href="/ders-programi/"><strong>Güncel ders programı</strong></a></li>
+   <li><a href="/ders-programi-olustur/"><strong>Program oluştur</strong></a></li>
+   <li><a href="/akademik-takvim/"><strong>Akademik takvim</strong></a></li>
+  </ul>
+ </section>
 </div>
+</main>
 </body>
 </html>

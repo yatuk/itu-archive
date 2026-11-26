@@ -14,12 +14,14 @@
 <link rel="alternate" hreflang="x-default" href="https://itu-ders.com/ders-programi-olustur/">
 
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="/assets/style.css?v=2131cd693941">
+<link rel="stylesheet" href="/assets/style.css?v=7bacf4ad5bdd">
 <link rel="icon" href="/favicon.png" type="image/png">
-<script src="/assets/static-page.js?v=c5c4188c6aa2" defer></script>
+<script src="/assets/static-page.js?v=fa225c99c9f8" defer></script>
+<script src="/assets/landing.js?v=c37b8116af6e" defer></script>
+
 <script type="application/ld+json">[{"@context":"https://schema.org","@id":"https://itu-ders.com/en/schedule-builder/#webpage","@type":"WebPage","dateModified":"2026-08-23","description":"Build your ITU weekly course schedule by adding sections and CRNs, automatically find conflict-free alternative schedules, and export it as an image or calendar file.","inLanguage":"en","mainEntity":{"@id":"https://itu-ders.com/en/schedule-builder/#application"},"name":"ITU Course Schedule Builder","url":"https://itu-ders.com/en/schedule-builder/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://itu-ders.com/en/","name":"İTÜ Course Archive","position":1},{"@type":"ListItem","item":"https://itu-ders.com/en/schedule-builder/","name":"Build your ITU course schedule","position":2}]},{"@context":"https://schema.org","@id":"https://itu-ders.com/en/schedule-builder/#application","@type":"WebApplication","applicationCategory":"EducationalApplication","browserRequirements":"A modern web browser with JavaScript enabled","description":"Build your ITU weekly course schedule by adding sections and CRNs, automatically find conflict-free alternative schedules, and export it as an image or calendar file.","featureList":["Adds sections and CRNs to a weekly grid and flags time conflicts","Find Alternatives: automatically computes alternative section combinations that fit your constraints","Exports your schedule as an image or .ics calendar file"],"inLanguage":"en","isAccessibleForFree":true,"name":"Build your ITU course schedule","offers":{"@type":"Offer","price":0,"priceCurrency":"TRY"},"operatingSystem":"Any","url":"https://itu-ders.com/en/schedule-builder/"}]</script>
 </head>
-<body class="seo-page">
+<body class="seo-page lp-page">
 <a class="skip-link" href="#icerik">Skip to content</a>
 <div class="scanlines" aria-hidden="true"></div>
 <header class="masthead masthead-refined">
@@ -28,7 +30,7 @@
    <a class="brand brand-home" href="/?lang=en#dersler" aria-label="Go to the courses home page">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
     <picture><source srcset="/itü_ari.webp" type="image/webp"><img class="brand-logo" src="/itü_ari.png" alt="" width="32" height="31"></picture>
-    <p class="brand-title" translate="no">COURSE ARCHIVE</p>
+    <span class="brand-title" translate="no">COURSE ARCHIVE</span>
    </a>
    <div class="mast-controls">
     <div class="theme-pick" role="group" aria-label="Theme">
@@ -42,26 +44,131 @@
  </div>
 </header>
 <h2 class="sr-only">Sections</h2>
-<nav class="tabs wrap" aria-label="Sections">
+<nav class="tabs app-tabs wrap" aria-label="Sections">
  <a href="/?lang=en#dersler">Courses</a>
- <a href="/?lang=en#dersplanim">My Plan/GPA</a>
- <a href="/?lang=en#onsart">Prereq Map</a>
+ <a href="/?lang=en#dersplanim">Curriculum &amp; GPA</a>
+ <a href="/?lang=en#onsart">Prerequisites</a>
  <a href="/?lang=en#sinavlar">Exams</a>
  <a href="/?lang=en#takvim">Calendar</a>
- <a href="/?lang=en#program">Schedule</a>
+ <a href="/?lang=en#program" aria-current="true">Weekly Schedule</a>
+ <span class="tabs-sep" aria-hidden="true"></span>
+ <a href="/?lang=en#gecmis" class="tab-secondary">History</a>
+ <a href="/?lang=en#donemler" class="tab-secondary">Terms</a>
+ <a href="/?lang=en#hakkinda" class="tab-secondary">About</a>
 </nav>
 <main class="wrap" id="icerik">
-<nav class="crumb" aria-label="Breadcrumb"><a href="/en/">İTÜ Course Archive</a> › <span>Build your ITU course schedule</span></nav>
-<h1>Build your ITU course schedule</h1>
-<p class="lead">Build your ITU weekly course schedule by adding sections and CRNs, automatically find conflict-free alternative schedules, and export it as an image or calendar file.</p>
-<section class="seo-tool-launch" aria-label="Open the tool"><div><strong>Start building your weekly schedule</strong><p>Add your sections; see day/time conflicts and total credits in one grid.</p></div><a class="btn-primary" href="/#program">Start building your weekly schedule</a></section>
-<h2>How it works</h2>
-<p>Search open sections by course code, name, or CRN and add them to your weekly grid. Courses at the same time are flagged as conflicts.</p>
+<div class="lp-main"><nav class="crumb lp-crumb" aria-label="Breadcrumb"><a href="/en/">İTÜ Course Archive</a><span aria-hidden="true">›</span><span>Build your ITU course schedule</span></nav><div class="lp-lede"><h1>Build your ITU course schedule</h1><p class="lead lp-lead">Build your ITU weekly course schedule by adding sections and CRNs, automatically find conflict-free alternative schedules, and export it as an image or calendar file.</p><a class="lp-cta lp-cta-primary lp-cta-top" href="/#program" data-lp-top>Open the schedule builder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="lp-tool"><section class="lpp" id="lpp" aria-labelledby="lpp-h"><style>
+.lpp{margin:28px 0 8px}
+.lpp h2{margin-bottom:6px}
+.lpp-intro{color:var(--dim);margin:0 0 14px;max-width:72ch}
+.lpp-intro a{color:var(--cyan)}
+.lpp-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.lpp-builder{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:16px;align-items:start}
+.lpp-box{background:var(--panel);border:1px solid var(--line);border-radius:12px;min-width:0}
+.lpp-c1{--lpp-c:var(--cyan)}
+.lpp-c2{--lpp-c:var(--acid)}
+.lpp-c3{--lpp-c:color-mix(in srgb,var(--cyan) 45%,var(--acid))}
+.lpp-c4{--lpp-c:color-mix(in srgb,var(--cyan) 55%,var(--red))}
+.lpp-picks{padding:4px 14px}
+.lpp-pick{display:grid;gap:6px;padding:12px 0}
+.lpp-pick+.lpp-pick{border-top:1px solid var(--line)}
+.lpp-pick-hd{display:flex;align-items:center;gap:8px;min-width:0;cursor:pointer}
+.lpp-sw{width:10px;height:10px;border-radius:3px;flex:none;background:var(--lpp-c)}
+.lpp-code{font-family:var(--mono);font-weight:700;font-size:13px;color:var(--fg);white-space:nowrap}
+.lpp-nm{color:var(--dim);font-size:13px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lpp-sel{width:100%;min-height:44px;border:1px solid var(--line-hot);border-radius:9px;background:var(--panel);color:var(--fg);padding:0 8px;font-family:var(--mono);font-size:12.5px;font-variant-numeric:tabular-nums;max-width:100%}
+.lpp-sel:focus-visible{outline:2px solid var(--cyan);outline-offset:1px}
+.lpp-pick--bad .lpp-sel{border-color:var(--red)}
+.lpp-info{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--dim)}
+.lpp-hoca{color:var(--fg)}
+.lpp-fill{display:inline-flex;align-items:center;gap:7px}
+.lpp-bar{width:56px;height:6px;border-radius:3px;background:color-mix(in srgb,var(--fg) 11%,var(--panel));overflow:hidden;flex:none}
+.lpp-bar i{display:block;height:100%;background:var(--dim);border-radius:3px}
+.lpp-fill--warn .lpp-bar i{background:var(--amber)}
+.lpp-fill--full .lpp-bar i{background:var(--red)}
+.lpp-n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lpp-pill{display:inline-block;padding:1px 8px;border-radius:999px;border:1px solid var(--line-hot);font-size:11.5px;line-height:1.5;white-space:nowrap;color:var(--dim)}
+.lpp-pill--warn{color:var(--amber);border-color:var(--amber)}
+.lpp-pill--full{color:var(--red);border-color:var(--red)}
+.lpp-week{overflow:hidden}
+.lpp-grid-wrap{padding:12px 12px 10px;overflow-x:auto}
+.lpp-wk{--lpp-hh:44px;display:grid;grid-template-columns:44px repeat(5,minmax(0,1fr));min-width:300px}
+.lpp-dh{font-size:12px;font-weight:600;color:var(--dim);text-align:center;padding-bottom:6px}
+.lpp-times,.lpp-col{position:relative;height:calc(var(--lpp-hh)*9)}
+.lpp-times span{position:absolute;right:6px;font-family:var(--mono);font-size:11px;color:var(--dimmer);transform:translateY(-50%);font-variant-numeric:tabular-nums}
+.lpp-times span:first-child{transform:none}
+.lpp-times span:last-child{transform:translateY(-100%)}
+.lpp-col{border-left:1px solid var(--line);background-image:linear-gradient(to bottom,var(--line) 1px,transparent 1px);background-size:100% var(--lpp-hh);background-position:0 0}
+.lpp-blk{position:absolute;box-sizing:border-box;border-radius:7px;padding:4px 6px;font-size:11.5px;line-height:1.25;overflow:hidden;color:var(--fg);background:color-mix(in srgb,var(--lpp-c) 13%,var(--panel));border:1px solid var(--lpp-c);border-left-width:3px}
+.lpp-blk b{font-family:var(--mono);font-size:11.5px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lpp-blk>span{color:var(--dim);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lpp-blk--clash{background:color-mix(in srgb,var(--red) 12%,var(--panel));border-color:var(--red)}
+.lpp-blk--clash b,.lpp-blk .lpp-cx{color:var(--red)}
+.lpp-blk--clash b{white-space:normal}
+.lpp-cx{font-weight:700;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
+.lpp-sum{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;color:var(--dim);padding:0 12px 10px;margin:0}
+.lpp-sum b{color:var(--fg);font-family:var(--mono);font-variant-numeric:tabular-nums}
+.lpp-status{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-top:1px solid var(--line);font-size:13px;margin:0;color:var(--fg)}
+.lpp-status svg{width:16px;height:16px;flex:none;margin-top:2px}
+.lpp-status--ok svg{color:var(--acid)}
+.lpp-status--bad{color:var(--red);background:color-mix(in srgb,var(--red) 10%,var(--panel))}
+.lpp-hint{font-size:13px;color:var(--dim);margin:10px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px}
+.lpp-hint[hidden]{display:none}
+.lpp-link{border:0;background:none;color:var(--cyan);text-decoration:underline;text-underline-offset:2px;cursor:pointer;padding:0;font:inherit;min-height:24px}
+.lpp-link:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;border-radius:3px}
+.lpp-steps-h{margin:22px 0 8px;font-size:15px}
+.lpp-steps{margin:0;padding:0;list-style:none;counter-reset:lpp}
+.lpp-steps li{counter-increment:lpp;display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:10px;padding:10px 14px}
+.lpp-steps li+li{border-top:1px solid var(--line)}
+.lpp-steps li::before{content:counter(lpp);grid-row:span 2;font-family:var(--mono);font-weight:700;color:var(--acid);font-size:13px;width:24px;height:24px;border-radius:50%;border:1px solid var(--line-hot);display:grid;place-items:center}
+.lpp-steps b{font-weight:600;color:var(--fg)}
+.lpp-steps p{margin:2px 0 0;color:var(--dim);font-size:13px}
+@media (max-width:860px){.lpp-builder{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){
+.lpp-picks{padding:2px 12px}
+.lpp-grid-wrap{padding:10px 8px 8px}
+.lpp-wk{--lpp-hh:40px;grid-template-columns:36px repeat(5,minmax(0,1fr))}
+.lpp-times span{font-size:10px;right:4px}
+.lpp-blk{padding:3px 4px;font-size:10.5px}
+.lpp-blk b{font-size:10.5px;white-space:normal;line-height:1.15;word-break:break-word}
+.lpp-blk .lpp-when,.lpp-blk .lpp-room{display:none}
+.lpp-blk--clash{padding:3px 2px 3px 3px}
+.lpp-blk--clash .lpp-num,.lpp-blk--clash .lpp-cx{display:none}
+.lpp-blk--clash b{white-space:nowrap;text-overflow:clip;font-size:9.5px;letter-spacing:-.02em}
+}
+</style><h2 id="lpp-h">Sample weekly schedule</h2><p class="lpp-intro">This sample uses real 2026-2027 Fall Term sections. Pick one section (CRN) per course; the grid updates instantly and courses at the same time are flagged as conflicts. For the full tool with every section, <a href="/#program">open the weekly schedule tool</a>.</p><div class="lpp-builder"><div class="lpp-box lpp-picks" role="group" aria-label="Section picker"><div class="lpp-pick" data-i="0"><label class="lpp-pick-hd" for="lpp-sel-1"><span class="lpp-sw lpp-c1" aria-hidden="true"></span><span class="lpp-code">MAT 103E</span><span class="lpp-nm">Mathematics I</span></label><select class="lpp-sel" id="lpp-sel-1" data-i="0"><option value="10184">10184 · Mon 08:30, Tue 11:30 · 93/95</option><option value="10195">10195 · Mon 08:30, Wed 11:30 · 111/115</option><option value="10200">10200 · Tue 14:30, Wed 11:30 · 103/105</option><option value="10232" selected>10232 · Tue 14:30, Wed 11:30 · 124/140</option></select><div class="lpp-info" id="lpp-info-1"><span class="lpp-hoca">Nalan Antar</span><span class="lpp-fill "><span class="lpp-bar"><i style="width:88.6%"></i></span><span class="lpp-n">124/140</span></span><span class="lpp-pill lpp-pill--ok">16 left</span></div></div><div class="lpp-pick" data-i="1"><label class="lpp-pick-hd" for="lpp-sel-2"><span class="lpp-sw lpp-c2" aria-hidden="true"></span><span class="lpp-code">FIZ 101E</span><span class="lpp-nm">Physics I</span></label><select class="lpp-sel" id="lpp-sel-2" data-i="1"><option value="10451" selected>10451 · Mon 14:30 · 140/140 full</option><option value="10460">10460 · Tue 08:30 · 67/90</option><option value="10468">10468 · Wed 08:30 · 106/120</option><option value="10475">10475 · Thu 14:30 · 87/100</option></select><div class="lpp-info" id="lpp-info-2"><span class="lpp-hoca">Sevim İşçi Turutoğlu</span><span class="lpp-fill lpp-fill--full"><span class="lpp-bar"><i style="width:100.0%"></i></span><span class="lpp-n">140/140</span></span><span class="lpp-pill lpp-pill--full">full</span></div></div><div class="lpp-pick" data-i="2"><label class="lpp-pick-hd" for="lpp-sel-3"><span class="lpp-sw lpp-c3" aria-hidden="true"></span><span class="lpp-code">KIM 101E</span><span class="lpp-nm">General Chemistry I</span></label><select class="lpp-sel" id="lpp-sel-3" data-i="2"><option value="10261">10261 · Mon 14:30 · 56/55 full</option><option value="10266">10266 · Tue 08:30 · 91/90 full</option><option value="10269">10269 · Wed 08:30 · 107/107 full</option><option value="10276" selected>10276 · Fri 08:30 · 80/80 full</option></select><div class="lpp-info" id="lpp-info-3"><span class="lpp-hoca">Şennur Özçelik</span><span class="lpp-fill lpp-fill--full"><span class="lpp-bar"><i style="width:100.0%"></i></span><span class="lpp-n">80/80</span></span><span class="lpp-pill lpp-pill--full">full</span></div></div><div class="lpp-pick" data-i="3"><label class="lpp-pick-hd" for="lpp-sel-4"><span class="lpp-sw lpp-c4" aria-hidden="true"></span><span class="lpp-code">TUR 101 / 102</span><span class="lpp-nm">Türk Dili I · online</span></label><select class="lpp-sel" id="lpp-sel-4" data-i="3"><option value="10001">10001 · Tue 11:30 · 51/50 full</option><option value="10003" selected>10003 · Tue 11:30 · 47/50</option><option value="10005">10005 · Fri 10:30 · 11/40 · TUR 102</option></select><div class="lpp-info" id="lpp-info-4"><span class="lpp-hoca">İnci Pamuk</span><span class="lpp-fill "><span class="lpp-bar"><i style="width:94.0%"></i></span><span class="lpp-n">47/50</span></span><span class="lpp-pill lpp-pill--ok">3 left</span></div></div></div><div class="lpp-box lpp-week"><div class="lpp-grid-wrap"><div class="lpp-wk" role="group" aria-label="Weekly grid"><div class="lpp-corner"></div><div class="lpp-dh"><span aria-hidden="true">Mon</span><span class="lpp-sr">Monday</span></div><div class="lpp-dh"><span aria-hidden="true">Tue</span><span class="lpp-sr">Tuesday</span></div><div class="lpp-dh"><span aria-hidden="true">Wed</span><span class="lpp-sr">Wednesday</span></div><div class="lpp-dh"><span aria-hidden="true">Thu</span><span class="lpp-sr">Thursday</span></div><div class="lpp-dh"><span aria-hidden="true">Fri</span><span class="lpp-sr">Friday</span></div><div class="lpp-times" aria-hidden="true"><span style="top:0.000%">08:30</span><span style="top:11.111%">09:30</span><span style="top:22.222%">10:30</span><span style="top:33.333%">11:30</span><span style="top:44.444%">12:30</span><span style="top:55.556%">13:30</span><span style="top:66.667%">14:30</span><span style="top:77.778%">15:30</span><span style="top:88.889%">16:30</span><span style="top:100.000%">17:30</span></div><div class="lpp-col" data-day="0"><div class="lpp-blk lpp-c2" style="top:calc(66.667% + 1px);height:calc(33.333% - 2px);left:calc(0.000% + 2px);width:calc(100.000% - 4px)" title="FIZ 101E · CRN 10451 · Monday 14:30–17:30 · Sevim İşçi Turutoğlu"><b>FIZ<span class="lpp-num"> 101E</span></b><span class="lpp-when">14:30–17:30</span><span class="lpp-room">MED A11</span></div></div><div class="lpp-col" data-day="1"><div class="lpp-blk lpp-c1" style="top:calc(66.667% + 1px);height:calc(33.333% - 2px);left:calc(0.000% + 2px);width:calc(100.000% - 4px)" title="MAT 103E · CRN 10232 · Tuesday 14:30–17:30 · Nalan Antar"><b>MAT<span class="lpp-num"> 103E</span></b><span class="lpp-when">14:30–17:30</span><span class="lpp-room">MED A14</span></div><div class="lpp-blk lpp-c4" style="top:calc(33.333% + 1px);height:calc(22.222% - 2px);left:calc(0.000% + 2px);width:calc(100.000% - 4px)" title="TUR 101 · CRN 10003 · Tuesday 11:30–13:30 · İnci Pamuk"><b>TUR<span class="lpp-num"> 101</span></b><span class="lpp-when">11:30–13:30</span><span class="lpp-room">online</span></div></div><div class="lpp-col" data-day="2"><div class="lpp-blk lpp-c1" style="top:calc(33.333% + 1px);height:calc(22.222% - 2px);left:calc(0.000% + 2px);width:calc(100.000% - 4px)" title="MAT 103E · CRN 10232 · Wednesday 11:30–13:30 · Nalan Antar"><b>MAT<span class="lpp-num"> 103E</span></b><span class="lpp-when">11:30–13:30</span><span class="lpp-room">MED A14</span></div></div><div class="lpp-col" data-day="3"></div><div class="lpp-col" data-day="4"><div class="lpp-blk lpp-c3" style="top:calc(0.000% + 1px);height:calc(33.333% - 2px);left:calc(0.000% + 2px);width:calc(100.000% - 4px)" title="KIM 101E · CRN 10276 · Friday 08:30–11:30 · Şennur Özçelik"><b>KIM<span class="lpp-num"> 101E</span></b><span class="lpp-when">08:30–11:30</span><span class="lpp-room">MED A14</span></div></div></div></div><p class="lpp-sum" id="lpp-sum"><span><b>4</b> courses</span><span><b>13</b> hours/week</span><span>CRN <b>10232 10451 10276 10003</b></span></p><p class="lpp-status lpp-status--ok" id="lpp-status" role="status" aria-live="polite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>No conflicts. The selected sections do not overlap.</span></p></div></div><p class="lpp-hint" id="lpp-hint" hidden><button type="button" class="lpp-link" data-lpp="clash">Show a sample conflict</button> <span>switches KIM 101E to 10261 (Monday 14:30), which overlaps FIZ 101E.</span> <button type="button" class="lpp-link" data-lpp="reset">Reset to default</button></p><h3 class="lpp-steps-h">Three steps to a schedule</h3><ol class="lpp-box lpp-steps"><li><b>Add courses</b><p>Search by code, name, or CRN and add a section to the grid in one click.</p></li><li><b>Resolve conflicts</b><p>Red blocks are sections at the same time. Find Alternatives computes conflict-free combinations that fit your constraints.</p></li><li><b>Export</b><p>Download the schedule as an image or .ics calendar, and copy the CRN list for OBS registration.</p></li></ol><script type="application/json" id="lpp-data">{"c":[{"l":"MAT 103E","d":"10232","col":1,"s":[{"crn":"10184","code":"MAT 103E","ins":"Zerrin Şentürk","cap":95,"enr":93,"sl":[[0,510,690,"MED A16"],[1,690,810,"MED A16"]]},{"crn":"10195","code":"MAT 103E","ins":"Burhaneddin İzgi","cap":115,"enr":111,"sl":[[0,510,690,"MED A35"],[2,690,810,"MED A35"]]},{"crn":"10200","code":"MAT 103E","ins":"Bahri Güldoğan","cap":105,"enr":103,"sl":[[1,870,1050,"MED A15"],[2,690,810,"MED A15"]]},{"crn":"10232","code":"MAT 103E","ins":"Nalan Antar","cap":140,"enr":124,"sl":[[1,870,1050,"MED A14"],[2,690,810,"MED A14"]]}]},{"l":"FIZ 101E","d":"10451","col":2,"s":[{"crn":"10451","code":"FIZ 101E","ins":"Sevim İşçi Turutoğlu","cap":140,"enr":140,"sl":[[0,870,1050,"MED A11"]]},{"crn":"10460","code":"FIZ 101E","ins":"Nurcan Doğan Bingölbali","cap":90,"enr":67,"sl":[[1,510,690,"MED A31"]]},{"crn":"10468","code":"FIZ 101E","ins":"Yakup Hundur","cap":120,"enr":106,"sl":[[2,510,690,"MED A32"]]},{"crn":"10475","code":"FIZ 101E","ins":"Gönül Eryürek","cap":100,"enr":87,"sl":[[3,870,1050,"MED A11"]]}]},{"l":"KIM 101E","d":"10276","col":3,"s":[{"crn":"10261","code":"KIM 101E","ins":"Fuat Topuz","cap":55,"enr":56,"sl":[[0,870,1050,"MED A15"]]},{"crn":"10266","code":"KIM 101E","ins":"Argun Talat Gökçeören","cap":90,"enr":91,"sl":[[1,510,690,"MED A14"]]},{"crn":"10269","code":"KIM 101E","ins":"Seden Beyhan","cap":107,"enr":107,"sl":[[2,510,690,"MED A14"]]},{"crn":"10276","code":"KIM 101E","ins":"Şennur Özçelik","cap":80,"enr":80,"sl":[[4,510,690,"MED A14"]]}]},{"l":"TUR 101 / 102","d":"10003","col":4,"s":[{"crn":"10001","code":"TUR 101","ins":"Hasan Ulucutsoy","cap":50,"enr":51,"sl":[[1,690,810,"online"]]},{"crn":"10003","code":"TUR 101","ins":"İnci Pamuk","cap":50,"enr":47,"sl":[[1,690,810,"online"]]},{"crn":"10005","code":"TUR 102","ins":"Abdullah Esen","cap":40,"enr":11,"sl":[[4,630,750,"online"]]}]}],"t":{"courses":"courses","days":["Monday","Tuesday","Wednesday","Thursday","Friday"],"dec":".","full":"full","fullPlus":"full +%d","hours":"hours/week","left":"%d left","many":"%d conflicts:","none":"No conflicts. The selected sections do not overlap.","one":"%d conflict:","tag":"conflict","with":"and"},"x":[2,"10261"]}</script><script>(function(){var root=document.getElementById('lpp'),dataEl=document.getElementById('lpp-data');if(!root||!dataEl)return;var D;try{D=JSON.parse(dataEl.textContent)}catch(e){return}
+var T=D.t,C=D.c,S=510,E=1050,pick=C.map(function(c){return c.d});
+function esc(s){return String(s).replace(/[&<>"]/g,function(ch){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]})}
+function hm(m){return(m<600?'0':'')+Math.floor(m/60)+':'+(m%60<10?'0':'')+m%60}
+function fmt(s,n){return s.replace('%d',n)}
+function sec(i){var c=C[i];for(var k=0;k<c.s.length;k++)if(c.s[k].crn===pick[i])return c.s[k];return c.s[0]}
+function pct(v){return v.toFixed(3)+'%'}
+function codeHTML(c){var i=c.indexOf(' ');return i<0?esc(c):esc(c.slice(0,i))+'<span class="lpp-num"> '+esc(c.slice(i+1))+'</span>'}
+function render(){var bl=[],pairs=[],i,j;
+C.forEach(function(c,ci){var s=sec(ci);s.sl.forEach(function(sl){bl.push({ci:ci,s:s,d:sl[0],a:sl[1],b:sl[2],r:sl[3],lane:0,lanes:1})})});
+for(i=0;i<bl.length;i++)for(j=i+1;j<bl.length;j++){var x=bl[i],y=bl[j];if(x.ci!==y.ci&&x.d===y.d&&x.a<y.b&&y.a<x.b){x.clash=y.clash=true;pairs.push([x,y])}}
+for(var d=0;d<5;d++){var day=bl.filter(function(b){return b.d===d}).sort(function(p,q){return p.a-q.a||p.ci-q.ci}),cl=[],end=-1;
+var flush=function(){var n=0;cl.forEach(function(b){n=Math.max(n,b.lane+1)});cl.forEach(function(b){b.lanes=n});cl=[]};
+day.forEach(function(b){if(cl.length&&b.a>=end)flush();var used={};cl.forEach(function(o){if(o.b>b.a)used[o.lane]=1});var l=0;while(used[l])l++;b.lane=l;cl.push(b);if(b.b>end)end=b.b});if(cl.length)flush()}
+var cols=root.querySelectorAll('.lpp-col');for(d=0;d<cols.length;d++){cols[d].innerHTML=bl.filter(function(b){return b.d===d}).map(function(b){var w=100/b.lanes,t=hm(b.a)+'–'+hm(b.b);
+return '<div class="lpp-blk lpp-c'+(b.ci+1)+(b.clash?' lpp-blk--clash':'')+'" style="top:calc('+pct((b.a-S)/(E-S)*100)+' + 1px);height:calc('+pct((b.b-b.a)/(E-S)*100)+' - 2px);left:calc('+pct(w*b.lane)+' + 2px);width:calc('+pct(w)+' - 4px)" title="'+esc(b.s.code+' · CRN '+b.s.crn+' · '+T.days[b.d]+' '+t+' · '+b.s.ins)+'"><b>'+codeHTML(b.s.code)+'</b>'+(b.clash?'<span class="lpp-cx">'+esc(T.tag)+'</span>':'')+'<span class="lpp-when">'+t+'</span><span class="lpp-room">'+esc(b.r)+'</span></div>'}).join('')}
+var bad={};pairs.forEach(function(p){bad[p[0].ci]=bad[p[1].ci]=1});
+C.forEach(function(c,ci){var s=sec(ci),el=root.querySelector('.lpp-pick[data-i="'+ci+'"]');if(el)el.classList.toggle('lpp-pick--bad',!!bad[ci]);var sel=document.getElementById('lpp-sel-'+(ci+1));if(sel&&sel.value!==s.crn)sel.value=s.crn;
+var left=s.cap-s.enr,fc='',pc='lpp-pill--ok',pt=fmt(T.left,left);if(left<0){fc='lpp-fill--full';pc='lpp-pill--full';pt=fmt(T.fullPlus,-left)}else if(left===0){fc='lpp-fill--full';pc='lpp-pill--full';pt=T.full}else if(left<=s.cap*0.05){fc='lpp-fill--warn';pc='lpp-pill--warn'}
+var info=document.getElementById('lpp-info-'+(ci+1));if(info)info.innerHTML='<span class="lpp-hoca">'+esc(s.ins)+'</span><span class="lpp-fill '+fc+'"><span class="lpp-bar"><i style="width:'+Math.min(100,s.enr/s.cap*100).toFixed(1)+'%"></i></span><span class="lpp-n">'+s.enr+'/'+s.cap+'</span></span><span class="lpp-pill '+pc+'">'+esc(pt)+'</span>'});
+var mins=bl.reduce(function(a,b){return a+b.b-b.a},0),h=mins/60,hs=(h%1?h.toFixed(1):String(h)).replace('.',T.dec);
+var sum=document.getElementById('lpp-sum');if(sum)sum.innerHTML='<span><b>'+C.length+'</b> '+esc(T.courses)+'</span><span><b>'+hs+'</b> '+esc(T.hours)+'</span><span>CRN <b>'+C.map(function(c,ci){return sec(ci).crn}).join(' ')+'</b></span>';
+var st=document.getElementById('lpp-status');if(!st)return;
+if(pairs.length){st.className='lpp-status lpp-status--bad';st.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3 2 21h20L12 3z"/><path d="M12 10v5M12 18v.5"/></svg><span><b>'+esc(fmt(pairs.length>1?T.many:T.one,pairs.length))+'</b> '+esc(pairs.map(function(p){var x=p[0],y=p[1];return x.s.code+' ('+x.s.crn+') '+T['with']+' '+y.s.code+' ('+y.s.crn+'), '+T.days[x.d]+' '+hm(Math.max(x.a,y.a))+'–'+hm(Math.min(x.b,y.b))}).join('; '))+'</span>'}
+else{st.className='lpp-status lpp-status--ok';st.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span>'+esc(T.none)+'</span>'}}
+root.querySelectorAll('.lpp-sel').forEach(function(sel){sel.addEventListener('change',function(){pick[+sel.getAttribute('data-i')]=sel.value;render()})});
+var hint=document.getElementById('lpp-hint');if(hint){hint.hidden=false;hint.addEventListener('click',function(e){var btn=e.target.closest('[data-lpp]');if(!btn)return;var act=btn.getAttribute('data-lpp');
+if(act==='clash'&&D.x){pick=C.map(function(c){return c.d});pick[D.x[0]]=D.x[1];render();var s=document.getElementById('lpp-sel-'+(D.x[0]+1));if(s)s.focus()}
+else if(act==='reset'){pick=C.map(function(c){return c.d});render()}})}
+render()})()</script></section></div><div class="lp-more"><p>This page shows a preview. Filters, saving and the full data are in the app.</p><a class="lp-cta lp-cta-primary" href="/#program">Continue in the app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><section class="lp-sec lp-prose"><h2>How it works</h2><p>Search open sections by course code, name, or CRN and add them to your weekly grid. Courses at the same time are flagged as conflicts.</p>
 <p>The Find Alternatives tool automatically computes different section combinations for your courses that fit constraints like day, time range, or instructor, and lists them side by side.</p>
 <p>Download your finished schedule as an image or .ics calendar file, or copy the selected CRNs for OBS registration.</p>
-
-<h2>What can you do on this page?</h2><ul><li>Adds sections and CRNs to a weekly grid and flags time conflicts</li><li>Find Alternatives: automatically computes alternative section combinations that fit your constraints</li><li>Exports your schedule as an image or .ics calendar file</li></ul>
-<h2>Related tools</h2><ul class="seo-action-list"><li><a href="/#dersler"><strong>Search open courses and CRNs</strong></a></li><li><a href="/en/gpa-calculator/"><strong>Calculate your GPA</strong></a></li></ul>
+</section><section class="lp-sec lp-prose"><h2>What can you do on this page?</h2><ul><li>Adds sections and CRNs to a weekly grid and flags time conflicts</li><li>Find Alternatives: automatically computes alternative section combinations that fit your constraints</li><li>Exports your schedule as an image or .ics calendar file</li></ul></section><section class="lp-sec"><h2>Related tools</h2><ul class="lp-related"><li><a href="/#dersler"><strong>Search open courses and CRNs</strong></a></li><li><a href="/en/gpa-calculator/"><strong>Calculate your GPA</strong></a></li></ul></section><div class="lp-sticky" data-lp-sticky hidden><a class="lp-cta lp-cta-primary" href="/#program" tabindex="-1">Open the schedule builder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
 </main>
 <footer class="wrap">
  <nav class="foot-tools" aria-label="Tools"><span class="foot-tools-head">Tools</span>

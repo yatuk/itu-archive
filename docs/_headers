@@ -25,6 +25,15 @@
 /assets/i18n/*
   Cache-Control: public, max-age=31536000, immutable
 
+/assets/landing-calendar.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/landing.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/landing/*
+  Cache-Control: public, max-age=31536000, immutable
+
 /assets/prereq.js
   Cache-Control: public, max-age=31536000, immutable
 

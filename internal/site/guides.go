@@ -300,7 +300,7 @@ func (b *Builder) writeGuideShell(p landingPage, h1, lead, relatedHead string, s
 	trURL := fmt.Sprintf("%s/%s/", baseURL, p.slug)
 	enURL := fmt.Sprintf("%s/en/%s/", baseURL, p.enSlug())
 	return b.writePageCrossSlug(filepath.Join(b.outRoot, outSlug, "index.html"),
-		title, description, canonical, trURL, enURL, guideContentUpdated, content, jsonldScript(schema))
+		title, description, canonical, trURL, enURL, guideContentUpdated, content, jsonldScript(schema), pageOpts{Tab: p.tab})
 }
 
 // glossaryHref, sözlükteki bir terime dil doğru bağlantı üretir.

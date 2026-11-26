@@ -8,7 +8,6 @@ package site
 
 import (
 	"fmt"
-	"html/template"
 	"strings"
 	"unicode/utf8"
 
@@ -122,7 +121,7 @@ func buildCalendarSummary(year, scraped string, events []model.CalendarEvent) ca
 }
 
 func (b *Builder) calendarSummary() (calSummary, bool) {
-	year, events, scraped := b.currentCalendar()
+	year, events, scraped, _ := b.currentCalendar()
 	if year == "" {
 		return calSummary{}, false
 	}
@@ -157,29 +156,6 @@ func calendarDescription(s calSummary) string {
 	return lead + ": kayıt, ders ekleme-bırakma ve sınav tarihleri tek listede."
 }
 
-// calendarSummaryHTML, sayfanın üst kısmındaki "Sıradaki tarihler" bölümü.
-func (s calSummary) summaryHTML() string {
-	if len(s.Upcoming) == 0 && s.Finals == nil {
-		return ""
-	}
-	var sb strings.Builder
-	sb.WriteString(`<section class="guide-section" aria-labelledby="cal-next"><h2 id="cal-next">Sıradaki tarihler</h2><ul class="seo-action-list">`)
-	row := func(e calEntry) {
-		fmt.Fprintf(&sb, `<li><span><strong>%s</strong> · %s</span></li>`,
-			template.HTMLEscapeString(e.Label), template.HTMLEscapeString(e.dates()))
-	}
-	if s.Finals != nil {
-		row(*s.Finals)
-	}
-	for _, e := range s.Upcoming {
-		row(e)
-	}
-	sb.WriteString(`</ul>`)
-	fmt.Fprintf(&sb, `<p>%s akademik yılı lisans takviminden, %s tarihli taramaya göre. Hepsini <a href="/#takvim">Takvim sekmesinde</a> filtrele; derslerinin sınav gün ve saatleri için <a href="/#sinavlar">Sınavlar sekmesine</a> bak.</p></section>`,
-		template.HTMLEscapeString(s.Year), template.HTMLEscapeString(trDateRange(s.Scraped, "")))
-	return sb.String()
-}
-
 // faq, veriden cevaplanabilen soruları döner. Veride karşılığı olmayan soru
 // üretilmez. Cevaplar düz metindir; sayfada ve FAQPage şemasında aynen geçer.
 func (s calSummary) faq() []guideQA {
@@ -210,20 +186,8 @@ func (s calSummary) faq() []guideQA {
 	return qa
 }
 
-// faqHTML ve faqSchema, aynı soru listesinden sayfa bölümünü ve FAQPage
+// faqSchema, sayfadaki <details> SSS ile aynı soru listesinden (faq) FAQPage
 // şemasını üretir; ikisi hiçbir zaman ayrışmaz.
-func (s calSummary) faqHTML() string {
-	qa := s.faq()
-	if len(qa) == 0 {
-		return ""
-	}
-	esc := make([]guideQA, len(qa))
-	for i, it := range qa {
-		esc[i] = guideQA{q: template.HTMLEscapeString(it.q), a: template.HTMLEscapeString(it.a)}
-	}
-	return renderGuideFAQ("Sık sorulan sorular", esc)
-}
-
 func (s calSummary) faqSchema() map[string]any {
 	qa := s.faq()
 	if len(qa) == 0 {

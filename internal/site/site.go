@@ -1013,6 +1013,8 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <link rel="stylesheet" href="/assets/style.css?v={{.StyleV}}">
 <link rel="icon" href="/favicon.png" type="image/png">
 <script src="/assets/static-page.js?v={{.StaticJSV}}" defer></script>
+{{range .Scripts}}<script src="/assets/{{.Src}}?v={{.V}}" defer></script>
+{{end}}
 {{.JSONLD}}
 </head>
 <body class="{{.BodyClass}}">
@@ -1024,7 +1026,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
    <a class="brand brand-home" href="{{.Shell.Home}}" aria-label="{{.Shell.HomeLabel}}">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
     <picture><source srcset="/itü_ari.webp" type="image/webp"><img class="brand-logo" src="/itü_ari.png" alt="" width="32" height="31"></picture>
-    <p class="brand-title" translate="no">{{.Shell.Brand}}</p>
+    <span class="brand-title" translate="no">{{.Shell.Brand}}</span>
    </a>
    <div class="mast-controls">
     <div class="theme-pick" role="group" aria-label="{{.Shell.ThemeGroup}}">
@@ -1038,9 +1040,10 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
  </div>
 </header>
 <h2 class="sr-only">{{.Shell.NavLabel}}</h2>
-<nav class="tabs wrap" aria-label="{{.Shell.NavLabel}}">
-{{range .Shell.Nav}} <a href="{{.URL}}"{{if .Current}} aria-current="page"{{end}}>{{.Label}}</a>
-{{end}}</nav>
+<nav class="tabs app-tabs wrap" aria-label="{{.Shell.NavLabel}}">
+{{range .Shell.Nav}}{{if .Sep}} <span class="tabs-sep" aria-hidden="true"></span>
+{{else}} <a href="{{.URL}}"{{if .Secondary}} class="tab-secondary"{{end}}{{if .Current}} aria-current="true"{{end}}>{{.Label}}</a>
+{{end}}{{end}}</nav>
 <main class="wrap" id="icerik">
 {{.Content}}
 </main>
@@ -1084,6 +1087,39 @@ type pageData struct {
 	Lang                                                    lang
 	Shell                                                   shellData
 	BodyClass                                               string
+	Scripts                                                 []pageScript // sayfaya özgü ek asset betikleri (defer)
+}
+
+// pageScript, /assets/ altındaki sürümlü bir betik bağlantısı.
+type pageScript struct{ Src, V string }
+
+// pageOpts, writePage / writePageCrossSlug'a verilen isteğe bağlı sayfa
+// ayarları. Hepsi boş bırakılabilir.
+type pageOpts struct {
+	// Tab, başlıktaki sekme satırında etkin gösterilecek uygulama sekmesi
+	// ("dersler", "dersplanim", "onsart", "sinavlar", "takvim", "program",
+	// "gecmis", "donemler", "hakkinda"). Boşsa canonical yoldan türetilir
+	// (bkz. tabForPath); "-" hiçbir sekmeyi etkin göstermez.
+	Tab string
+	// Scripts, assets köküne göre yolu verilen ek betikler ("landing.js").
+	// ?v= sürümü assetVersion'dan gelir; -assets-only yamaları da bunları görür.
+	Scripts []string
+	// BodyClass, <body>'ye eklenen ek sınıflar ("lp-page").
+	BodyClass string
+}
+
+func mergeOpts(opts []pageOpts) pageOpts {
+	var o pageOpts
+	for _, x := range opts {
+		if x.Tab != "" {
+			o.Tab = x.Tab
+		}
+		o.Scripts = append(o.Scripts, x.Scripts...)
+		if x.BodyClass != "" {
+			o.BodyClass = strings.TrimSpace(o.BodyClass + " " + x.BodyClass)
+		}
+	}
+	return o
 }
 
 // shellData, statik sayfa kabuğunun (uygulamayla aynı masthead + sekme
@@ -1099,6 +1135,40 @@ type shellData struct {
 type navItem struct {
 	URL, Label string
 	Current    bool
+	Secondary  bool // ikincil sekme (Geçmiş, Dönemler, Hakkında)
+	Sep        bool // birincil ve ikincil sekmeler arasındaki ince ayraç
+}
+
+// appTabsTR/EN, uygulamanın sekme satırıyla aynı sıra ve adlar (docs/index.html,
+// assets-src/i18n/*.js tab* anahtarları). Boş anahtar ayracı gösterir.
+var appTabsTR = [][2]string{
+	{"dersler", "Dersler"}, {"dersplanim", "Müfredat ve GPA"}, {"onsart", "Önşart Haritası"},
+	{"sinavlar", "Sınavlar"}, {"takvim", "Akademik Takvim"}, {"program", "Haftalık Program"},
+	{"", ""}, {"gecmis", "Geçmiş"}, {"donemler", "Dönemler"}, {"hakkinda", "Hakkında"},
+}
+
+var appTabsEN = [][2]string{
+	{"dersler", "Courses"}, {"dersplanim", "Curriculum & GPA"}, {"onsart", "Prerequisites"},
+	{"sinavlar", "Exams"}, {"takvim", "Calendar"}, {"program", "Weekly Schedule"},
+	{"", ""}, {"gecmis", "History"}, {"donemler", "Terms"}, {"hakkinda", "About"},
+}
+
+// tabForPath, statik sayfanın hangi uygulama sekmesinin altında durduğunu
+// canonical yolundan çıkarır. İniş sayfaları kendi sekmesini landingPage.tab
+// ile açıkça verir; bu eşleme diğer üretilen sayfalar içindir.
+func tabForPath(path string) string {
+	path = strings.TrimPrefix(path, "/en")
+	switch {
+	case strings.HasPrefix(path, "/ders/"), strings.HasPrefix(path, "/brans/"):
+		return "dersler"
+	case strings.HasPrefix(path, "/dersler/"):
+		return "donemler"
+	case strings.HasPrefix(path, "/hoca/"), strings.HasPrefix(path, "/not-dagilimi/"):
+		return "gecmis"
+	case strings.HasPrefix(path, "/bolumler/"), strings.HasPrefix(path, "/programs/"):
+		return "dersplanim"
+	}
+	return ""
 }
 
 // bodyClass: hoca ve ders sayfaları onaylı hoca-sayfası tasarımının
@@ -1113,7 +1183,7 @@ func bodyClass(canonical string) string {
 // shell, uygulamanın başlığını statik sayfaya taşır. Dil düğmesi bir
 // bağlantıdır: karşı dil sürümü varsa oraya, yoksa uygulamanın o diline gider
 // (JS olmadan da çalışır).
-func (b *Builder) shell(canonical string, alternates []alternateLink) shellData {
+func (b *Builder) shell(canonical string, alternates []alternateLink, tab string) shellData {
 	en := b.l.Code == "en"
 	sh := shellData{
 		Home: "/#dersler", HomeLabel: "Dersler ana sayfasına git", Brand: "DERS\u00a0ARŞİVİ",
@@ -1138,23 +1208,43 @@ func (b *Builder) shell(canonical string, alternates []alternateLink) shellData 
 			sh.LangURL = strings.TrimPrefix(a.URL, baseURL)
 		}
 	}
-	items := [][2]string{
-		{"dersler", "Dersler"}, {"dersplanim", "Ders Planım/GPA"}, {"onsart", "Önşart Haritası"},
-		{"sinavlar", "Sınavlar"}, {"takvim", "Akademik Takvim"}, {"program", "Program"},
+	if tab == "" {
+		tab = tabForPath(canonicalPath(canonical))
 	}
+	items := appTabsTR
 	if en {
-		items = [][2]string{
-			{"dersler", "Courses"}, {"dersplanim", "My Plan/GPA"}, {"onsart", "Prereq Map"},
-			{"sinavlar", "Exams"}, {"takvim", "Calendar"}, {"program", "Schedule"},
-		}
+		items = appTabsEN
 	}
+	secondary := false
 	for _, it := range items {
-		sh.Nav = append(sh.Nav, navItem{URL: "/" + q + "#" + it[0], Label: it[1]})
-	}
-	if !en {
-		sh.Nav = append(sh.Nav, navItem{URL: "/hoca/", Label: "Hocalar", Current: strings.HasPrefix(canonical, baseURL+"/hoca/")})
+		if it[0] == "" {
+			sh.Nav = append(sh.Nav, navItem{Sep: true})
+			secondary = true
+			continue
+		}
+		sh.Nav = append(sh.Nav, navItem{URL: "/" + q + "#" + it[0], Label: it[1], Current: it[0] == tab, Secondary: secondary})
 	}
 	return sh
+}
+
+// pageData, ortak alanları doldurulmuş sayfa verisine kabuk, gövde sınıfı ve
+// ek betikleri ekler.
+func (b *Builder) pageData(d pageData, o pageOpts) pageData {
+	tab := o.Tab
+	if tab == "-" {
+		tab = "\x00" // hiçbir sekmeyle eşleşmez
+	}
+	d.Shell = b.shell(d.Canonical, d.Alternates, tab)
+	d.BodyClass = strings.TrimSpace(bodyClass(d.Canonical) + " " + o.BodyClass)
+	seen := map[string]bool{}
+	for _, src := range o.Scripts {
+		if seen[src] {
+			continue
+		}
+		seen[src] = true
+		d.Scripts = append(d.Scripts, pageScript{Src: src, V: b.assetVersion(src)})
+	}
+	return d
 }
 
 type alternateLink struct {
@@ -1204,7 +1294,7 @@ func (b *Builder) writeIndexPage(terms []termRow) error {
 		title, desc, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, true)
 }
 
-func (b *Builder) writePage(path, title, desc, canonical, scraped string, content, jsonld template.HTML, alt bool) error {
+func (b *Builder) writePage(path, title, desc, canonical, scraped string, content, jsonld template.HTML, alt bool, opts ...pageOpts) error {
 	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
 		return err
 	}
@@ -1231,19 +1321,18 @@ func (b *Builder) writePage(path, title, desc, canonical, scraped string, conten
 			{Lang: "x-default", URL: trURL},
 		}
 	}
-	return b.renderPage(f, path, pageData{
+	return b.renderPage(f, path, b.pageData(pageData{
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
 		Alternates: alternates, AssetV: b.version, Lang: b.l,
-		Shell: b.shell(canonical, alternates), BodyClass: bodyClass(canonical),
-	})
+	}, mergeOpts(opts)))
 }
 
 // writePageCrossSlug, writePage'in hreflang türetmesini (canonical'dan basit
 // /en/ önek değişimiyle karşı dili bulma) atlar: TR ve EN sürümü FARKLI
 // slug kullanan sayfalar (bkz. landingPage.enSlug) için iki dilin URL'sini
 // açıkça alır.
-func (b *Builder) writePageCrossSlug(path, title, desc, canonical, trURL, enURL, scraped string, content, jsonld template.HTML) error {
+func (b *Builder) writePageCrossSlug(path, title, desc, canonical, trURL, enURL, scraped string, content, jsonld template.HTML, opts ...pageOpts) error {
 	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
 		return err
 	}
@@ -1257,12 +1346,11 @@ func (b *Builder) writePageCrossSlug(path, title, desc, canonical, trURL, enURL,
 		{Lang: "en", URL: enURL},
 		{Lang: "x-default", URL: trURL},
 	}
-	return b.renderPage(f, path, pageData{
+	return b.renderPage(f, path, b.pageData(pageData{
 		Title: title, Description: desc, Canonical: canonical,
 		Scraped: scraped, Content: content, JSONLD: jsonld,
 		Alternates: alternates, AssetV: b.version, Lang: b.l,
-		Shell: b.shell(canonical, alternates), BodyClass: bodyClass(canonical),
-	})
+	}, mergeOpts(opts)))
 }
 
 // writeRedirectPage, statik barındırmada (GitHub Pages, sunucu taraflı 301
@@ -1315,6 +1403,10 @@ type landingPage struct {
 	primaryEN     landingAction
 	secondaryEN   []landingAction
 	featuresEN    []string
+
+	// tab, başlıktaki sekme satırında etkin gösterilen uygulama sekmesi
+	// (pageOpts.Tab); boşsa hiçbiri.
+	tab string
 }
 
 // enSlug, İngilizce sürümün URL'sinde kullanılacak slug'ı döner: slugEN
@@ -1358,7 +1450,7 @@ var landingActionDetails = map[string]string{
 
 var landingPages = []landingPage{
 	{
-		slug: "ders-plani", title: "İTÜ Ders Planı ve Müfredat",
+		slug: "ders-plani", tab: "dersplanim", title: "İTÜ Ders Planı ve Müfredat",
 		description: "İTÜ ders planında bölüm müfredatını yarıyıl yarıyıl incele; zorunlu ve seçmeli dersleri, kredi ve AKTS toplamlarını birlikte gör.",
 		h1:          "İTÜ ders planı ve müfredat planlama",
 		queries:     []string{"İTÜ ders planı", "İTÜ müfredat"},
@@ -1371,34 +1463,34 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesapla"}, {href: "/ders-programi-olustur/", label: "Haftalık program oluştur"}, {href: "/onsart-haritasi/", label: "Önşart haritasını aç"}},
 	},
 	{
-		slug: "gano-hesaplama", slugEN: "gpa-calculator", title: "İTÜ GPA Hesaplama ve GANO Hesaplayıcı",
+		slug: "gano-hesaplama", tab: "dersplanim", slugEN: "gpa-calculator", title: "İTÜ GPA Hesaplama ve GANO Hesaplayıcı",
 		description: "İTÜ GPA hesaplama: ders kredilerini ve harf notlarını gir, dönem ortalamanı ve GANO'nu birlikte gör. Transkript PDF'i yalnızca tarayıcında okunur.",
 		h1:          "İTÜ GPA ve GANO hesaplama",
 		queries:     []string{"İTÜ ortalama hesapla", "İTÜ GPA hesapla", "İTÜ GANO hesapla", "İTÜ transkript PDF yükle"},
 		features:    []string{"Harf notlarını kredi ağırlıklı hesaplar", "Dönem ortalaması ile GANO'yu ayrı gösterir", "OBS transkript metnini yapıştırarak veya PDF yükleyerek notları tarayıcıda aktarır"},
 		body: []string{
-			"GANO, İTÜ'nün 4.00 ölçeğindeki genel ağırlıklı not ortalamandır. Her harf notu bir katsayı taşır: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0; FF ve VF 0.0.",
+			"GANO, İTÜ'nün 4.00 ölçeğindeki genel ağırlıklı not ortalamandır. Her harf notu bir katsayı taşır: AA 4.00, BA+ 3.75, BA 3.50, BB+ 3.25, BB 3.00, CB+ 2.75, CB 2.50, CC+ 2.25, CC 2.00, DC+ 1.75, DC 1.50, DD+ 1.25, DD 1.00; FF ve VF 0.00.",
 			"Ders Planım görünümünde notlarını ders ders gir; GANO'n ve her yarıyılın ortalaması otomatik hesaplansın. Transfer kredin veya mevcut GANO'n varsa üstteki kutulara yaz.",
 			"OBS'den aldığın transkript metnini yapıştırabilir veya transkript PDF'ini doğrudan yükleyebilirsin; ikisi de yalnızca tarayıcında işlenir, sunucuya gitmez.",
 			"Bu bir transkript değildir · resmî GANO için öğrenci bilgi sistemine bak.",
 		},
-		primary:   landingAction{href: "/#dersplanim", label: "GPA / GANO hesaplayıcıyı aç", detail: "Bölümünü seçip ders notlarını gir; dönem ortalaması ve genel ortalama aynı yerde hesaplansın."},
+		primary:   landingAction{href: "/#dersplanim", label: "GANO hesaplayıcıyı aç", detail: "Bölümünü seçip ders notlarını gir; dönem ortalaması ve genel ortalama aynı yerde hesaplansın."},
 		secondary: []landingAction{{href: "/ders-plani/", label: "Ders planını görüntüle"}, {href: "/not-ortalamasi/", label: "Harf notu katsayılarını gör"}},
 
 		titleEN: "ITU GPA Calculator", h1EN: "ITU GPA calculator",
 		descriptionEN: "Calculate your ITU GPA: enter course credits and letter grades to see your term average and cumulative weighted GPA together.",
 		featuresEN:    []string{"Calculates letter grades weighted by credit", "Shows the term average separately from the cumulative GPA", "Imports grades in your browser by pasting your OBS transcript text or uploading a transcript PDF"},
 		bodyEN: []string{
-			"Your cumulative GPA is on İTÜ's 4.00 scale. Each letter grade carries a coefficient: AA 4.0, BA 3.5, BB 3.0, CB 2.5, CC 2.0, DC 1.5, DD 1.0; FF and VF 0.0.",
+			"Your cumulative GPA is on İTÜ's 4.00 scale. Each letter grade carries a coefficient: AA 4.00, BA+ 3.75, BA 3.50, BB+ 3.25, BB 3.00, CB+ 2.75, CB 2.50, CC+ 2.25, CC 2.00, DC+ 1.75, DC 1.50, DD+ 1.25, DD 1.00; FF and VF 0.00.",
 			"Enter your grades course by course in the My Plan view; your term averages and cumulative GPA are calculated automatically. If you have transfer credits or an existing GPA, enter them in the boxes above.",
 			"You can paste your transcript text from OBS or upload a transcript PDF directly; both are processed only in your browser and never sent to a server.",
-			"This is not an official transcript — check the student information system for your official GPA.",
+			"This is not an official transcript; check the student information system for your official GPA.",
 		},
 		primaryEN:   landingAction{href: "/#dersplanim", label: "Open the GPA calculator", detail: "Pick your program and enter your grades; term average and cumulative GPA are calculated in one place."},
 		secondaryEN: []landingAction{{href: "/#dersplanim", label: "View your course plan"}, {href: "/en/schedule-builder/", label: "Build your weekly course schedule"}},
 	},
 	{
-		slug: "not-ortalamasi", title: "İTÜ not ortalaması ve harf notları",
+		slug: "not-ortalamasi", tab: "dersplanim", title: "İTÜ not ortalaması ve harf notları",
 		description: "İTÜ harf notu katsayıları ve not ortalaması: AA'dan FF'ye ölçek, muaf/geçti notları ve ortalamanın nasıl hesaplandığı.",
 		h1:          "İTÜ not ortalaması ve harf notları",
 		body: []string{
@@ -1409,7 +1501,7 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/gano-hesaplama/", label: "GPA / GANO hesaplayıcıyı aç"}, {href: "/ders-plani/", label: "Ders planını görüntüle"}},
 	},
 	{
-		slug: "ders-programi", title: "İTÜ Ders Programı ve Açık Dersler",
+		slug: "ders-programi", tab: "dersler", title: "İTÜ Ders Programı ve Açık Dersler",
 		description: "İTÜ ders programında bu dönem açık dersleri kod, ad, CRN veya hocayla ara; şube saatlerini, kontenjanı ve doluluk durumunu karşılaştır.",
 		h1:          "İTÜ ders programı",
 		queries:     []string{"İTÜ ders", "İTÜ ders programı", "İTÜ açık dersler"},
@@ -1422,7 +1514,7 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/ders-programi-olustur/", label: "Kişisel haftalık program oluştur"}, {href: "/sinav-programi/", label: "Sınav programını aç"}, {href: "/kontenjan/", label: "Kontenjan doluluğunu incele"}},
 	},
 	{
-		slug: "ders-programi-olustur", slugEN: "schedule-builder", title: "İTÜ Ders Programı Oluşturma Aracı",
+		slug: "ders-programi-olustur", tab: "program", slugEN: "schedule-builder", title: "İTÜ Ders Programı Oluşturma Aracı",
 		description: "İTÜ ders programı oluşturma aracıyla şube ve CRN ekle, çakışmasız alternatif programları otomatik bul; programını görsel veya takvim olarak indir.",
 		h1:          "İTÜ ders programı oluştur",
 		queries:     []string{"İTÜ ders programı oluştur", "İTÜ program oluşturucu", "İTÜ alternatif program"},
@@ -1432,7 +1524,7 @@ var landingPages = []landingPage{
 			"Alternatif Bul aracı, seçtiğin dersler için gün, saat aralığı veya öğretim üyesi gibi kısıtlara uyan farklı şube kombinasyonlarını otomatik hesaplar ve karşılaştırmalı listeler.",
 			"Hazırladığın programı görsel veya .ics takvim dosyası olarak indirebilir, seçtiğin CRN'leri OBS kayıt ekranı için kopyalayabilirsin.",
 		},
-		primary:   landingAction{href: "/#program", label: "Haftalık program oluşturmaya başla", detail: "Şubelerini ekle; gün/saat çakışmalarını ve toplam krediyi tek çizelgede gör."},
+		primary:   landingAction{href: "/#program", label: "Ders programı oluşturucuyu aç", detail: "Şubelerini ekle; gün/saat çakışmalarını ve toplam krediyi tek çizelgede gör."},
 		secondary: []landingAction{{href: "/ders-programi/", label: "Açık dersleri ve CRN'leri ara"}, {href: "/sinav-programi/", label: "Final çakışmalarını kontrol et"}},
 
 		titleEN: "ITU Course Schedule Builder", h1EN: "Build your ITU course schedule",
@@ -1443,22 +1535,22 @@ var landingPages = []landingPage{
 			"The Find Alternatives tool automatically computes different section combinations for your courses that fit constraints like day, time range, or instructor, and lists them side by side.",
 			"Download your finished schedule as an image or .ics calendar file, or copy the selected CRNs for OBS registration.",
 		},
-		primaryEN:   landingAction{href: "/#program", label: "Start building your weekly schedule", detail: "Add your sections; see day/time conflicts and total credits in one grid."},
+		primaryEN:   landingAction{href: "/#program", label: "Open the schedule builder", detail: "Add your sections; see day/time conflicts and total credits in one grid."},
 		secondaryEN: []landingAction{{href: "/#dersler", label: "Search open courses and CRNs"}, {href: "/en/gpa-calculator/", label: "Calculate your GPA"}},
 	},
 	{
-		slug: "kontenjan", title: "İTÜ ders kontenjanları ve doluluk",
+		slug: "kontenjan", tab: "dersler", title: "İTÜ ders kontenjanları ve doluluk",
 		description: "İTÜ ders kontenjanları: şube başına kontenjan/yazılan sayısı, doluluk oranı ve dolma hızı geçmişi.",
 		h1:          "İTÜ ders kontenjanları",
 		body: []string{
 			"Her şubenin kontenjanı, yazılan öğrenci sayısı ve doluluk yüzdesi tabloda görünür. Dolu ve kritik (≥%85) şubeler ayrı işaretlenir.",
 			"Bir dersin geçmiş dönemlerde ne kadar hızlı dolduğunu detay sayfasında görebilirsin.",
 		},
-		primary:   landingAction{href: "/#dersler", label: "Güncel kontenjanları gör", detail: "Yalnızca kontenjanı olan şubeleri filtrele veya ders detayından doluluk geçmişini aç."},
+		primary:   landingAction{href: "/#dersler", label: "Kontenjanları uygulamada gör", detail: "Yalnızca kontenjanı olan şubeleri filtrele veya ders detayından doluluk geçmişini aç."},
 		secondary: []landingAction{{href: "/ders-programi/", label: "Güncel dersleri ara"}, {href: "/ders-programi-olustur/", label: "Şubeyi programa ekle"}},
 	},
 	{
-		slug: "ders-secimi", title: "İTÜ ders seçimi rehberi",
+		slug: "ders-secimi", tab: "program", title: "İTÜ ders seçimi rehberi",
 		description: "İTÜ ders seçimi: önşartları kontrol et, final çakışmasını gör, kontenjanı ve dolma hızını değerlendir, programını kur.",
 		h1:          "İTÜ ders seçimi rehberi",
 		body: []string{
@@ -1482,7 +1574,7 @@ var landingPages = []landingPage{
 		},
 	},
 	{
-		slug: "onsart-haritasi", title: "İTÜ Önşart Haritası · ders ön şartları",
+		slug: "onsart-haritasi", tab: "onsart", title: "İTÜ Önşart Haritası · ders ön şartları",
 		description: "İTÜ önşart (ön şart) haritası: bölümünü seç, hangi dersin hangi dersleri gerektirdiğini yarıyıl yarıyıl, ok bağlantılarıyla gör.",
 		h1:          "İTÜ önşart haritası",
 		features:    []string{"Programın derslerini yarıyıl sütunlarında gösterir", "Zorunlu ve alternatif önşart bağlantılarını ok olarak çizer", "Bir dersin geriye doğru önşart zincirini izlemeyi sağlar"},
@@ -1494,7 +1586,7 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/ders-plani/", label: "Ders planını aç"}, {href: "/ders-secimi/", label: "Ders seçimi adımlarını gör"}},
 	},
 	{
-		slug: "sinav-programi", title: "İTÜ sınav programı ve final takvimi",
+		slug: "sinav-programi", tab: "sinavlar", title: "İTÜ sınav programı ve final takvimi",
 		description: "İTÜ sınav programı: derslerinin final tarihlerini ve saatlerini ara, seçili şubelerdeki sınav çakışmalarını kontrol et.",
 		h1:          "İTÜ sınav programı ve final takvimi",
 		features:    []string{"Ders koduyla final tarihini ve saatini arar", "Programa eklenen şubelerin sınav çakışmalarını işaretler", "Sınavları .ics takvim dosyası olarak indirir"},
@@ -1507,7 +1599,7 @@ var landingPages = []landingPage{
 		secondary: []landingAction{{href: "/ders-programi-olustur/", label: "Haftalık programını aç"}, {href: "/akademik-takvim/", label: "Akademik takvimi gör"}},
 	},
 	{
-		slug: "akademik-takvim", title: "İTÜ akademik takvim",
+		slug: "akademik-takvim", tab: "takvim", title: "İTÜ akademik takvim",
 		description: "İTÜ akademik takvim: kayıt, ders, sınav, lisans, lisansüstü ve hazırlık takvimlerini tarih sırasıyla görüntüle.",
 		h1:          "İTÜ akademik takvim",
 		features:    []string{"Kayıt, ders ve sınav tarihlerini kronolojik listeler", "Lisans, lisansüstü ve hazırlık takvimlerini türüne göre filtreler", "Etkinlikleri .ics olarak kişisel takvime aktarır"},
@@ -1515,11 +1607,15 @@ var landingPages = []landingPage{
 			"Kayıt, ders, sınav, lisans, lisansüstü ve hazırlık takvimlerindeki tarihleri tek görünümde filtrele.",
 			"İstediğin etkinliği .ics olarak indirip kişisel takvimine ekleyebilirsin. Resmî değişiklikler için İTÜ akademik takvim kaynağını doğrula.",
 		},
-		primary:   landingAction{href: "/#takvim", label: "Akademik takvimi aç", detail: "Takvim türünü seç; yaklaşan kayıt, ders ve sınav tarihlerini sırayla gör."},
-		secondary: []landingAction{{href: "/sinav-programi/", label: "Sınav programını aç"}, {href: "/ders-programi-olustur/", label: "Ders programını oluştur"}},
+		primary: landingAction{href: "/#takvim", label: "Akademik takvimi uygulamada aç", detail: "Takvim türünü seç; yaklaşan kayıt, ders ve sınav tarihlerini sırayla gör."},
+		secondary: []landingAction{
+			{href: "/sinav-programi/", label: "Final sınav programı"}, {href: "/ders-programi-olustur/", label: "Ders programı oluştur"},
+			{href: "/kontenjan/", label: "Kontenjanlar"}, {href: "/gano-hesaplama/", label: "GANO hesaplama"},
+			{href: "/ders-kaydi-nasil-yapilir/", label: "Ders kaydı nasıl yapılır"},
+		},
 	},
 	{
-		slug: "ders-arsivi", title: "İTÜ Ders Arşivi ve Geçmiş Dersler",
+		slug: "ders-arsivi", tab: "gecmis", title: "İTÜ Ders Arşivi ve Geçmiş Dersler",
 		description: "İTÜ ders arşivinde 2016'dan bugüne açılan dersleri ara; geçmiş şubeleri, dersi veren hocaları, kontenjanı ve not dağılımını incele.",
 		h1:          "İTÜ ders arşivi ve geçmiş dönem dersleri",
 		queries:     []string{"İTÜ ders arşivi", "İTÜ geçmiş dersler", "İTÜ geçmiş dönem dersleri"},
@@ -1556,7 +1652,7 @@ var landingPages = []landingPage{
 		},
 	},
 	{
-		slug: "ders-programi-nasil-hazirlanir", slugEN: "how-to-build-your-schedule", title: "İTÜ Ders Programı Nasıl Hazırlanır?",
+		slug: "ders-programi-nasil-hazirlanir", tab: "program", slugEN: "how-to-build-your-schedule", title: "İTÜ Ders Programı Nasıl Hazırlanır?",
 		description: "İTÜ ders programı nasıl hazırlanır? Ders planını bulmaktan CRN ile şube seçmeye, önşart kontrolüne ve çakışmasız haftalık programa giden yolu bu rehberde izle.",
 		h1:          "İTÜ ders programı nasıl hazırlanır?",
 		queries:     []string{"İTÜ ders programı nasıl hazırlanır", "İTÜ çakışmasız program"},
@@ -1641,69 +1737,49 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 		title, description, lastmod = b.landingMeta(p)
 	}
 	body, primary, secondary, features := p.body, p.primary, p.secondary, p.features
-	inLang, browserReq, howToHead, toolsHead, relatedHead, ariaLaunch, homeHref := "tr-TR",
-		"JavaScript destekleyen güncel bir web tarayıcısı", "Nasıl kullanılır?", "Bu sayfada ne yapabilirsin?",
-		"İlgili araçlar", "Aracı aç", "/"
+	inLang, browserReq, howToHead, toolsHead := "tr-TR",
+		"JavaScript destekleyen güncel bir web tarayıcısı", "Nasıl kullanılır?", "Bu sayfada ne yapabilirsin?"
 	urlPrefix := baseURL
 	outSlug := p.slug
 	if en {
 		title, description, h1 = p.titleEN, p.descriptionEN, p.h1EN
 		body, primary, secondary, features = p.bodyEN, p.primaryEN, p.secondaryEN, p.featuresEN
-		inLang, browserReq, howToHead, toolsHead, relatedHead, ariaLaunch, homeHref = "en",
-			"A modern web browser with JavaScript enabled", "How it works", "What can you do on this page?",
-			"Related tools", "Open the tool", "/en/"
+		inLang, browserReq, howToHead, toolsHead = "en",
+			"A modern web browser with JavaScript enabled", "How it works", "What can you do on this page?"
 		urlPrefix = baseURL + "/en"
 		outSlug = p.enSlug()
 	}
 	canonical := fmt.Sprintf("%s/%s/", urlPrefix, outSlug)
-	var paras strings.Builder
-	for _, t := range body {
-		paras.WriteString("<p>" + template.HTMLEscapeString(t) + "</p>\n")
+	tool := b.landingToolFor(p)
+	if tool.H1 != "" {
+		h1 = tool.H1
 	}
-	var related strings.Builder
-	if len(secondary) > 0 {
-		related.WriteString(`<h2>` + template.HTMLEscapeString(relatedHead) + `</h2><ul class="seo-action-list">`)
-		for _, action := range secondary {
-			fmt.Fprintf(&related, `<li><a href="%s"><strong>%s</strong>`,
-				template.HTMLEscapeString(action.href), template.HTMLEscapeString(action.label))
-			detail := action.detail
-			if detail == "" && !en {
-				detail = landingActionDetails[action.href]
-			}
-			if detail != "" {
-				fmt.Fprintf(&related, `<span>%s</span>`, template.HTMLEscapeString(detail))
-			}
-			related.WriteString(`</a></li>`)
+	// Gövde: "Nasıl kullanılır?" paragrafları ve yetenek listesi. Yetenekler
+	// WebApplication featureList ile aynıdır; sayfada da görünmeleri gerekir.
+	var bodyHTML strings.Builder
+	if len(body) > 0 {
+		bodyHTML.WriteString(`<section class="lp-sec lp-prose"><h2>` + template.HTMLEscapeString(howToHead) + `</h2>`)
+		for _, t := range body {
+			bodyHTML.WriteString("<p>" + template.HTMLEscapeString(t) + "</p>\n")
 		}
-		related.WriteString(`</ul>`)
+		bodyHTML.WriteString(`</section>`)
 	}
-	var capabilities strings.Builder
 	if len(features) > 0 {
-		capabilities.WriteString(`<h2>` + template.HTMLEscapeString(toolsHead) + `</h2><ul>`)
+		bodyHTML.WriteString(`<section class="lp-sec lp-prose"><h2>` + template.HTMLEscapeString(toolsHead) + `</h2><ul>`)
 		for _, feature := range features {
-			capabilities.WriteString(`<li>` + template.HTMLEscapeString(feature) + `</li>`)
+			bodyHTML.WriteString(`<li>` + template.HTMLEscapeString(feature) + `</li>`)
 		}
-		capabilities.WriteString(`</ul>`)
+		bodyHTML.WriteString(`</ul></section>`)
 	}
-	var calSum, calFAQ string
-	var calSchema map[string]any
-	if p.slug == "akademik-takvim" && !en {
-		if sum, ok := b.calendarSummary(); ok {
-			calSum, calFAQ, calSchema = sum.summaryHTML(), sum.faqHTML(), sum.faqSchema()
-		}
+	lead := tool.Lead
+	if lead == "" {
+		lead = template.HTML(template.HTMLEscapeString(description))
 	}
-	content := template.HTML(buildContent(
-		`<nav class="crumb" aria-label="Breadcrumb"><a href="`+homeHref+`">`+template.HTMLEscapeString(b.l.SiteTitle)+`</a> › <span>`+template.HTMLEscapeString(h1)+`</span></nav>`,
-		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(h1)),
-		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(description)),
-		fmt.Sprintf(`<section class="seo-tool-launch" aria-label="%s"><div><strong>%s</strong><p>%s</p></div><a class="btn-primary" href="%s">%s</a></section>`,
-			template.HTMLEscapeString(ariaLaunch), template.HTMLEscapeString(primary.label), template.HTMLEscapeString(primary.detail),
-			template.HTMLEscapeString(primary.href), template.HTMLEscapeString(primary.label)),
-		calSum+`<h2>`+template.HTMLEscapeString(howToHead)+`</h2>`,
-		paras.String(),
-		capabilities.String()+calFAQ,
-		related.String(),
-	))
+	content := b.renderLanding(landingLayout{
+		H1: h1, Lead: lead, CTA: primary, CTANote: primary.detail,
+		Tool: tool.Tool, More: tool.More, Body: template.HTML(bodyHTML.String()),
+		FAQ: tool.FAQ, Related: secondary,
+	})
 	webPageSchema := map[string]any{
 		"@context": "https://schema.org", "@type": "WebPage", "@id": canonical + "#webpage",
 		"url": canonical, "name": title, "description": description,
@@ -1732,18 +1808,17 @@ func (b *Builder) writeLandingPage(p landingPage) error {
 			"offers": map[string]any{"@type": "Offer", "price": 0, "priceCurrency": "TRY"},
 		})
 	}
-	if calSchema != nil {
-		schema = append(schema, calSchema)
-	}
+	schema = append(schema, tool.Schema...)
 	jsonld := jsonldScript(schema)
+	opts := landingOpts(p.tab, tool.Scripts...)
 	if p.titleEN == "" {
 		return b.writePage(filepath.Join(b.outRoot, outSlug, "index.html"),
-			title, description, canonical, lastmod, content, jsonld, false)
+			title, description, canonical, lastmod, content, jsonld, false, opts)
 	}
 	trURL := fmt.Sprintf("%s/%s/", baseURL, p.slug)
 	enURL := fmt.Sprintf("%s/en/%s/", baseURL, p.enSlug())
 	return b.writePageCrossSlug(filepath.Join(b.outRoot, outSlug, "index.html"),
-		title, description, canonical, trURL, enURL, lastmod, content, jsonld)
+		title, description, canonical, trURL, enURL, lastmod, content, jsonld, opts)
 }
 
 // --- fakülte / program dizini (/bolumler/) ---

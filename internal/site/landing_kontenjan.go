@@ -421,7 +421,10 @@ a.lpk-code:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;border
 .lpk-stats>div:nth-child(n+3){border-top:1px solid var(--line)}
 .lpk-col-nm,.lpk-col-sb{display:none}
 .lpk-nm-m{display:block;margin:-8px 0 8px;color:var(--dim);font-size:12.5px;line-height:1.35}
-.lpk-tbl th,.lpk-tbl td{padding-left:10px;padding-right:10px}
+.lpk-tbl th,.lpk-tbl td{padding-left:8px;padding-right:8px}
+.lpk-tbl th{white-space:normal}
+.lpk-pill{min-width:0;padding:1px 6px}
+.lpk-num{font-size:12px}
 .lpk-tbl td.lpk-fl{padding-top:8px;padding-bottom:8px}
 .lpk-fill{flex-direction:column;align-items:flex-end;gap:3px}
 .lpk-bar{width:48px}

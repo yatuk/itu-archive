@@ -4856,8 +4856,8 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .tool-directory-links { gap: 0 18px; }
   .tool-directory-links a { display: inline-flex; align-items: center; min-height: 44px; }
   /* Sınavlar: satır içi "takvimde gör" bağlantısı; görseli büyütmeden hit-area. */
-  .xm-ann-rel .xm-cal-link { position: relative; }
-  .xm-ann-rel .xm-cal-link::after { content: ''; position: absolute; inset: -14px -8px; }
+  .xm-cal-link { position: relative; }
+  .xm-cal-link::after { content: ''; position: absolute; inset: -14px -8px; }
   /* Program: işlem menüsü düğmeleri. */
   .p-progtools button { min-height: 44px; }
 }

@@ -153,6 +153,6 @@ test('durum ve kritik arama sayfaları yayın sözleşmesini taşır', async ({ 
     await page.goto(path, { waitUntil: 'domcontentloaded' });
     await expect(page.locator('h1')).toBeVisible();
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', new RegExp(`${path.replaceAll('/', '\\/')}$`));
-    await expect(page.locator('a.btn-primary, a.btn').first()).toBeVisible();
+    await expect(page.locator('a.lp-cta-top, a.btn-primary, a.btn').first()).toBeVisible();
   }
 });

@@ -928,7 +928,7 @@ func (r *Result) checkStatus(root string) {
 }
 
 func (r *Result) checkSitePages(root string) {
-	r.checkGeneratedSEOMetadata(root)
+	noindex := r.checkGeneratedSEOMetadata(root)
 	red := r.checkRedirects(root)
 
 	derDir := filepath.Join(root, "dersler")
@@ -1107,6 +1107,9 @@ func (r *Result) checkSitePages(root string) {
 		if red.hit(u) {
 			r.errf("seo: sitemap yönlendirilen bir URL içeriyor: %s", u)
 		}
+		if noindex[u] {
+			r.errf("seo: sitemap noindex bir sayfa içeriyor: %s", u)
+		}
 	}
 
 	// İngilizce sayfalar da kendi sitemap'inde eksiksiz olmalı. Her /en/ HTML
@@ -1189,7 +1192,14 @@ func (r *Result) checkSitePages(root string) {
 	}
 }
 
-func (r *Result) checkGeneratedSEOMetadata(root string) {
+// checkGeneratedSEOMetadata, üretilen her index.html'in SEO meta'sını denetler
+// ve noindex sayfaların URL kümesini döner (sitemap denetimi için). hreflang
+// alternatifi bir noindex sayfaya işaret edemez: Google o kümeyi geçersiz
+// sayar ve noindex sayfayı yine dizin adayı gibi tarar.
+func (r *Result) checkGeneratedSEOMetadata(root string) map[string]bool {
+	noindex := map[string]bool{}
+	type hreflangRef struct{ page, lang, href string }
+	var hreflangRefs []hreflangRef
 	titleRe := regexp.MustCompile(`(?s)<title>(.*?)</title>`)
 	descRe := regexp.MustCompile(`<meta name="description" content="([^"]*)">`)
 	canonicalRe := regexp.MustCompile(`<link rel="canonical" href="([^"]*)">`)
@@ -1217,6 +1227,7 @@ func (r *Result) checkGeneratedSEOMetadata(root string) {
 		// bunlara uygulanmaz; kendi robots meta'sıyla zaten kapsam dışı olduğunu
 		// bildiriyorlar.
 		if strings.Contains(s, `name="robots" content="noindex`) {
+			noindex[pageURLForFile(rel)] = true
 			return nil
 		}
 		if m := titleRe.FindStringSubmatch(s); len(m) == 2 {
@@ -1266,6 +1277,7 @@ func (r *Result) checkGeneratedSEOMetadata(root string) {
 			byLang := map[string]string{}
 			for _, alt := range alts {
 				byLang[alt[1]] = alt[2]
+				hreflangRefs = append(hreflangRefs, hreflangRef{page: rel, lang: alt[1], href: alt[2]})
 			}
 			for _, code := range []string{"tr", "en", "x-default"} {
 				if byLang[code] == "" {
@@ -1290,6 +1302,22 @@ func (r *Result) checkGeneratedSEOMetadata(root string) {
 		}
 		return nil
 	})
+	for _, h := range hreflangRefs {
+		if noindex[h.href] {
+			r.errf("seo hreflang: %s içinde %s noindex sayfaya işaret ediyor: %s", h.page, h.lang, h.href)
+		}
+	}
+	return noindex
+}
+
+// pageURLForFile, kök dizine göre bir index.html yolunun yayındaki URL'sini
+// döner ("en/brans/ELK/index.html" → "https://itu-ders.com/en/brans/ELK/").
+func pageURLForFile(rel string) string {
+	dir := strings.Trim(filepath.ToSlash(filepath.Dir(rel)), "/")
+	if dir == "" || dir == "." {
+		return "https://itu-ders.com/"
+	}
+	return "https://itu-ders.com/" + dir + "/"
 }
 
 // checkRedirects, docs/_redirects (Cloudflare Pages) kurallarını denetler:

@@ -29,7 +29,7 @@ import { buildBalancedPlan } from './planner.js';
 import { parseSessions, candidatesByCode, evaluate, findAlternatives, presetPrefs, WEEKDAYS } from './altfind.js';
 import { campusForLocation, isRemoteMethod, minimumTransitionMinutes, transitionIssue } from './campus.js';
 import { specialSectionKind } from './section-kind.js';
-import { courseSlug as canonicalCourseSlug, staticPageFor } from './canonical.js';
+import { courseSlug as canonicalCourseSlug, staticPageFor, hasAppQuery, syncStaticCanonical } from './canonical.js';
 import { I18N } from '../i18n.js';
 import trDict from '../i18n/tr.js';
 import enDict from '../i18n/en.js';
@@ -1867,6 +1867,102 @@ test('staticPageFor: ders kodu ve branş statik sayfaya eşlenir', () => {
   assert.equal(staticPageFor('?branch=<x>'), '');
   assert.equal(staticPageFor(''), '');
   assert.equal(canonicalCourseSlug('EHB 222E'), 'ehb-222e');
+});
+
+test('hasAppQuery: uygulama durumu taşıyan sorguyu dil/izleme eklerinden ayırır', () => {
+  assert.equal(hasAppQuery('?code=BLG+242E'), true);
+  assert.equal(hasAppQuery('?term=2026-2027-guz&code=CHZ 434'), true);
+  assert.equal(hasAppQuery('?q=13724'), true);
+  assert.equal(hasAppQuery('?lang=en&term=2026-2027-guz'), true);
+  assert.equal(hasAppQuery(''), false);
+  assert.equal(hasAppQuery('?lang=en'), false);
+  assert.equal(hasAppQuery('?utm_source=x&gclid=1&fbclid=2'), false);
+});
+
+// Kabuğun <head>'inin canonical.js'in dokunduğu kadarı: canonical, robots
+// meta'sı ve üç hreflang alternatifi.
+function fakeHead({ robots = true } = {}) {
+  const nodes = [];
+  const el = (tag, attrs) => {
+    const n = { tag, attrs: { ...attrs }, removed: false };
+    n.getAttribute = (k) => n.attrs[k] ?? null;
+    n.setAttribute = (k, v) => { n.attrs[k] = String(v); };
+    n.remove = () => { n.removed = true; };
+    Object.defineProperty(n, 'href', { get: () => n.attrs.href, set: (v) => { n.attrs.href = v; } });
+    return n;
+  };
+  const live = () => nodes.filter((n) => !n.removed);
+  nodes.push(el('link', { rel: 'canonical', href: 'https://itu-ders.com/' }));
+  if (robots) nodes.push(el('meta', { name: 'robots', content: 'index, follow' }));
+  for (const [l, h] of [['tr', '/'], ['en', '/en/'], ['x-default', '/']]) {
+    nodes.push(el('link', { rel: 'alternate', hreflang: l, href: 'https://itu-ders.com' + h }));
+  }
+  const doc = {
+    head: { appendChild: (n) => { nodes.push(n); } },
+    createElement: (tag) => el(tag, {}),
+    querySelector: (sel) => doc.querySelectorAll(sel)[0] || null,
+    querySelectorAll: (sel) => live().filter((n) => {
+      if (sel === 'link[rel="canonical"]') return n.tag === 'link' && n.attrs.rel === 'canonical';
+      if (sel === 'meta[name="robots"]') return n.tag === 'meta' && n.attrs.name === 'robots';
+      if (sel === 'link[rel="alternate"][hreflang]') return n.tag === 'link' && n.attrs.rel === 'alternate' && n.attrs.hreflang;
+      throw new Error('beklenmeyen seçici: ' + sel);
+    }),
+  };
+  const robotsMeta = () => doc.querySelectorAll('meta[name="robots"]');
+  return { doc, robotsMeta, canonical: () => doc.querySelector('link[rel="canonical"]').href, alternates: () => doc.querySelectorAll('link[rel="alternate"][hreflang]').length };
+}
+const loc = (search) => ({ protocol: 'https:', search });
+const headFetch = (status, calls = []) => (url, opts) => { calls.push([url, opts && opts.method]); return Promise.resolve({ status, ok: status >= 200 && status < 300, redirected: false }); };
+
+test('syncStaticCanonical: statik ders sayfası varsa canonical ona döner, noindex verilmez', async () => {
+  const h = fakeHead();
+  const calls = [];
+  assert.equal(await syncStaticCanonical(h.doc, loc('?code=BLG+102E'), headFetch(200, calls)), 'canonical');
+  assert.deepEqual(calls, [['/ders/blg-102e/', 'HEAD']]);
+  assert.equal(h.canonical(), 'https://itu-ders.com/ders/blg-102e/');
+  assert.equal(h.robotsMeta()[0].getAttribute('content'), 'index, follow');
+  assert.equal(h.alternates(), 0);
+});
+
+test('syncStaticCanonical: statik karşılık yoksa (HEAD 404) noindex, follow; canonical değişmez', async () => {
+  const h = fakeHead();
+  assert.equal(await syncStaticCanonical(h.doc, loc('?term=2026-2027-guz&code=CHZ 434'), headFetch(404)), 'noindex');
+  assert.equal(h.canonical(), 'https://itu-ders.com/');
+  assert.equal(h.robotsMeta().length, 1);
+  assert.equal(h.robotsMeta()[0].getAttribute('content'), 'noindex, follow');
+  assert.equal(h.alternates(), 0);
+});
+
+test('syncStaticCanonical: yönlendirilen HEAD de karşılık sayılmaz', async () => {
+  const h = fakeHead();
+  const redirected = () => Promise.resolve({ status: 200, ok: true, redirected: true });
+  assert.equal(await syncStaticCanonical(h.doc, loc('?branch=XYZ'), redirected), 'noindex');
+  assert.equal(h.canonical(), 'https://itu-ders.com/');
+  assert.equal(h.robotsMeta()[0].getAttribute('content'), 'noindex, follow');
+});
+
+test('syncStaticCanonical: statik sayfaya eşlenmeyen sorgu HEAD atmadan noindex alır; meta yoksa eklenir', async () => {
+  const h = fakeHead({ robots: false });
+  const calls = [];
+  assert.equal(await syncStaticCanonical(h.doc, loc('?q=13724'), headFetch(200, calls)), 'noindex');
+  assert.deepEqual(calls, []);
+  assert.equal(h.robotsMeta().length, 1);
+  assert.equal(h.robotsMeta()[0].getAttribute('content'), 'noindex, follow');
+});
+
+test('syncStaticCanonical: sorgusuz, yalnız ?lang=, file: ve ağ hatası hiçbir şeyi değiştirmez', async () => {
+  for (const [l, f] of [
+    [loc(''), headFetch(404)],
+    [loc('?lang=en'), headFetch(404)],
+    [{ protocol: 'file:', search: '?code=BLG+102E' }, headFetch(404)],
+    [loc('?code=BLG+102E'), () => Promise.reject(new Error('ağ yok'))],
+  ]) {
+    const h = fakeHead();
+    assert.equal(await syncStaticCanonical(h.doc, l, f), '');
+    assert.equal(h.canonical(), 'https://itu-ders.com/');
+    assert.equal(h.robotsMeta()[0].getAttribute('content'), 'index, follow');
+    assert.equal(h.alternates(), 3);
+  }
 });
 
 // Sözlükler dil başına ayrı dosyadır; yalnız etkin dilinki yüklenir. Eski tek

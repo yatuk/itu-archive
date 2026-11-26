@@ -153,7 +153,25 @@ test.describe('SPA (ana sayfa)', () => {
     await page.goto('/?code=BLG+102E#dersler');
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://itu-ders.com/ders/blg-102e/');
     await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(0);
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'index, follow');
     await expect(page.locator('#f-code')).toHaveValue('BLG 102E');
+  });
+
+  // Statik karşılığı olmayan uygulama sorgusu dizine girmez: robots
+  // "noindex, follow" olur, canonical "/" kalır (canonical + noindex verilmez).
+  test('statik karşılığı olmayan sorgu URL\'si noindex, follow alır', async ({ page }) => {
+    await page.goto('/?term=2026-2027-guz&code=ZZZ 999#dersler');
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, follow');
+    await expect(page.locator('meta[name="robots"]')).toHaveCount(1);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://itu-ders.com/');
+    await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(0);
+  });
+
+  test('sorgusuz kabuk dizine açık kalır', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('#course-groups .cl-item').first()).toBeVisible({ timeout: 15000 });
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'index, follow');
+    await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(3);
   });
 
   test('ham veri bölümü aktif döneme ait indirilebilir adresler verir', async ({ page }) => {

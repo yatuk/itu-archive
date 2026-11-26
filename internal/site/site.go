@@ -244,6 +244,7 @@ type Builder struct {
 	hmMatch            map[string]*hmEntry                   // hoca slug -> eşleşen hocametre girişi
 	currentSects       map[string][]sectRow                  // katlanmış hoca adı -> aktif dönem şubeleri
 	courseInstrs       map[string]map[string]map[string]bool // ders kodu -> hoca slug -> dönem kümesi
+	extras             *courseExtras                         // katalog, önşart, müfredat (yalnız TR ders sayfaları)
 
 	// Sitemap lastmod: önceki üretimdeki sayfa içerik özeti ve lastmod'u,
 	// bu üretimde yazılan sayfaların özetiyle karşılaştırılır (bkz. lastmod.go).
@@ -459,6 +460,9 @@ func (b *Builder) Generate() error {
 		courseSlugs[code] = courseSlug(code)
 	}
 	if b.l.Code != "en" {
+		if err := b.loadCourseExtras(); err != nil {
+			return err
+		}
 		sortedCodes := make([]string, 0, len(b.courses))
 		for code := range b.courses {
 			sortedCodes = append(sortedCodes, code)
@@ -632,7 +636,8 @@ func (b *Builder) writeTermPage(tr termRow) error {
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "dersler", tr.tref.Slug, "index.html"),
-		title, lead, canonical, fmtDate(tr.tref.ScrapedAt), content, jsonld, true)
+		title, lead, canonical, fmtDate(tr.tref.ScrapedAt), content, jsonld, false,
+		b.translatedDataPageOpts(fmt.Sprintf("/dersler/%s/", tr.tref.Slug)))
 }
 
 func (b *Builder) writeBranchPage(code string, termLabels map[string]string, courseSlugs map[string]string) error {
@@ -727,7 +732,23 @@ func (b *Builder) writeBranchPage(code string, termLabels map[string]string, cou
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "brans", code, "index.html"),
-		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, true)
+		title, lead, canonical, fmtDate(b.index.ScrapedAt), content, jsonld, false,
+		b.translatedDataPageOpts(fmt.Sprintf("/brans/%s/", code)))
+}
+
+// translatedDataPageOpts, veri sayfalarının (dönem, branş) iki dil sürümü
+// için ayarları verir. /en/dersler/<dönem>/ ve /en/brans/<KOD>/ TR sürümün
+// neredeyse aynısıdır; Google bunları "Tarandı - şu anda dizine eklenmiş
+// değil" olarak bırakır. EN sürüm sunulmaya devam eder ama "noindex, follow"
+// alır ve sitemap'ten çıkar; iki dil arasında hreflang verilmez (noindex
+// sayfaya hreflang kötü sinyaldir). Canonical her iki dilde de sayfanın
+// kendisidir. Dil düğmesi karşı dil sürümüne gitmeye devam eder. trPath
+// site köküne göre TR yoludur ("/brans/ELK/").
+func (b *Builder) translatedDataPageOpts(trPath string) pageOpts {
+	if b.l.Code == "en" {
+		return pageOpts{NoIndex: true, LangURL: trPath}
+	}
+	return pageOpts{LangURL: "/en" + trPath}
 }
 
 func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs map[string]string, instrSlugs map[string]string) error {
@@ -750,13 +771,9 @@ func (b *Builder) writeSitemap(terms []termRow, brCodes []string, courseSlugs ma
 	// Console'da dil performansı bağımsız izlenebilir. Eski /en/sitemap.xml
 	// adresi geriye uyumluluk için aynı içeriği sunmaya devam eder.
 	if b.l.Code == "en" {
+		// /en/dersler/ ve /en/brans/ noindex'tir (bkz. translatedDataPageOpts);
+		// sitemap'e yalnızca dizine girmesi istenen EN sayfalar alınır.
 		entries := []sitemapEntry{{Loc: baseURL + "/en/", Lastmod: rootDate}}
-		for _, tr := range terms {
-			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/dersler/%s/", baseURL, tr.tref.Slug), Lastmod: termDates[tr.tref.Slug]})
-		}
-		for _, code := range brCodes {
-			entries = append(entries, sitemapEntry{Loc: fmt.Sprintf("%s/en/brans/%s/", baseURL, code), Lastmod: latestBranchDate(b.aggs[code], termDates, rootDate)})
-		}
 		for _, p := range landingPages {
 			if p.titleEN == "" {
 				continue
@@ -1009,7 +1026,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
 <link rel="canonical" href="{{.Canonical}}">
 {{range .Alternates}}<link rel="alternate" hreflang="{{.Lang}}" href="{{.URL}}">
 {{end}}
-<meta name="robots" content="index, follow">
+<meta name="robots" content="{{.Robots}}">
 <link rel="stylesheet" href="/assets/style.css?v={{.StyleV}}">
 <link rel="icon" href="/favicon.png" type="image/png">
 <script src="/assets/static-page.js?v={{.StaticJSV}}" defer></script>
@@ -1079,6 +1096,7 @@ func canonicalPath(canonical string) string {
 
 type pageData struct {
 	Title, FullTitle, Description, Canonical, Path, Scraped string
+	Robots                                                  string // robots meta içeriği (pageData doldurur)
 	Alternates                                              []alternateLink
 	AssetV                                                  string // asset önbellek kırma (?v=) — dosya sürümü yoksa yedek
 	StyleV, StaticJSV                                       string // style.css / static-page.js dosya başı sürümleri
@@ -1106,6 +1124,13 @@ type pageOpts struct {
 	Scripts []string
 	// BodyClass, <body>'ye eklenen ek sınıflar ("lp-page").
 	BodyClass string
+	// NoIndex, sayfaya "noindex, follow" robots meta'sı verir. Sayfa sunulur,
+	// bağlantıları izlenir ama dizine girmez; sitemap'e ve hreflang
+	// kümelerine de alınmaz (bkz. translatedDataPageOpts).
+	NoIndex bool
+	// LangURL, dil düğmesinin hedefini açıkça verir. hreflang alternatifi
+	// olmayan ama karşı dilde sürümü bulunan sayfalar içindir.
+	LangURL string
 }
 
 func mergeOpts(opts []pageOpts) pageOpts {
@@ -1117,6 +1142,12 @@ func mergeOpts(opts []pageOpts) pageOpts {
 		o.Scripts = append(o.Scripts, x.Scripts...)
 		if x.BodyClass != "" {
 			o.BodyClass = strings.TrimSpace(o.BodyClass + " " + x.BodyClass)
+		}
+		if x.NoIndex {
+			o.NoIndex = true
+		}
+		if x.LangURL != "" {
+			o.LangURL = x.LangURL
 		}
 	}
 	return o
@@ -1235,6 +1266,13 @@ func (b *Builder) pageData(d pageData, o pageOpts) pageData {
 		tab = "\x00" // hiçbir sekmeyle eşleşmez
 	}
 	d.Shell = b.shell(d.Canonical, d.Alternates, tab)
+	if o.LangURL != "" {
+		d.Shell.LangURL = o.LangURL
+	}
+	d.Robots = "index, follow"
+	if o.NoIndex {
+		d.Robots = "noindex, follow"
+	}
 	d.BodyClass = strings.TrimSpace(bodyClass(d.Canonical) + " " + o.BodyClass)
 	seen := map[string]bool{}
 	for _, src := range o.Scripts {
@@ -2802,6 +2840,11 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 	}
 	gradesHTML := renderCourseGrades(b.l, b.gradesIndex[code])
 
+	var summaryHTML string
+	if sum := b.courseSummary(code, hc, termLabels); sum != "" {
+		summaryHTML = `<p class="seo-summary">` + template.HTMLEscapeString(sum) + `</p>`
+	}
+
 	// Dönem geçmişi.
 	var histRows []string
 	for _, r := range hc.Rows {
@@ -2823,10 +2866,12 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			template.HTMLEscapeString(b.l.CrumbHome), template.HTMLEscapeString(branch), template.HTMLEscapeString(branch), template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<h1>%s</h1>`, template.HTMLEscapeString(code)),
 		fmt.Sprintf(`<p class="lead">%s</p>`, template.HTMLEscapeString(hc.Name)),
+		summaryHTML,
 		fmt.Sprintf(`<p class="cta"><a class="btn" %s>%s</a></p>`,
 			appLinkAttrs(appURL(b.index.CurrentSlug, map[string]string{"code": code})), template.HTMLEscapeString(b.l.CourseSearchCTA)),
 		`<dl class="seo-stats">`+
 			fmt.Sprintf(`<div><dt>%s</dt><dd>%d</dd></div>`, template.HTMLEscapeString(b.l.CourseStatTerms), len(hc.Terms))+
+			b.catalogStatsHTML(code)+
 			`</dl>`,
 		sectHTML,
 		gradesHTML,
@@ -2837,6 +2882,10 @@ func (b *Builder) writeCoursePage(code, slug string, instrSlugs map[string]strin
 			template.HTMLEscapeString(b.l.CourseHistInstr)+`</th><th>`+template.HTMLEscapeString(b.l.CourseHistCap)+`</th><th>`+
 			template.HTMLEscapeString(b.l.CourseHistEnr)+`</th></tr></thead><tbody>`+
 			strings.Join(histRows, "")+`</tbody></table></div>`,
+		b.renderCourseCatalog(code, hc.Name),
+		b.renderCoursePrereqs(code),
+		b.renderCourseCurricula(code),
+		b.renderSimilarCourses(code),
 	))
 
 	return b.writePage(filepath.Join(b.outRoot, "ders", slug, "index.html"),

@@ -7,6 +7,8 @@ import (
 	"strings"
 	"testing"
 	"unicode/utf8"
+
+	"itu-scraper/internal/model"
 )
 
 func TestInstructorSlugAndIndexability(t *testing.T) {
@@ -658,6 +660,97 @@ func TestNewGuidePagesRenderBilingualAndSitemapped(t *testing.T) {
 		enSlug := byNewSlug[slug].enSlug()
 		if !strings.Contains(string(enSitemap), baseURL+"/en/"+enSlug+"/") {
 			t.Errorf("EN sitemap %s (enSlug=%s) girdisini içermeli", slug, enSlug)
+		}
+	}
+}
+
+// /en/brans/<KOD>/ ve /en/dersler/<dönem>/ TR veri sayfalarının çevirisidir;
+// Google bunları dizine eklemiyor. EN sürüm sunulur ama noindex, follow alır,
+// kendi canonical'ını taşır, hreflang kümesi yoktur ve sitemap'te yer almaz.
+// TR sürüm dizine girer, EN sürüme hreflang vermez; dil düğmesi yine karşı
+// dil sürümüne gider.
+func TestTranslatedDataPagesNoindexWithoutHreflang(t *testing.T) {
+	root := t.TempDir()
+	agg := func() map[string]*branchAgg {
+		return map[string]*branchAgg{"ELK": {
+			codes:        map[string]struct{}{"ELK 101": {}},
+			termSections: map[string]int{"2026-2027-guz": 3},
+			levels:       map[string]struct{}{},
+			total:        3,
+		}}
+	}
+	labels := map[string]string{"2026-2027-guz": "2026-2027 Güz"}
+	slugs := map[string]string{"ELK 101": "elk-101"}
+
+	bTR := &Builder{root: root, outRoot: root, l: langTR, version: "test", aggs: agg()}
+	if err := bTR.writeBranchPage("ELK", labels, slugs); err != nil {
+		t.Fatal(err)
+	}
+	enRoot := filepath.Join(root, "en")
+	bEN := &Builder{root: root, outRoot: enRoot, l: langEN, version: "test", aggs: agg()}
+	if err := bEN.writeBranchPage("ELK", labels, slugs); err != nil {
+		t.Fatal(err)
+	}
+
+	trHTML, err := os.ReadFile(filepath.Join(root, "brans", "ELK", "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	enHTML, err := os.ReadFile(filepath.Join(enRoot, "brans", "ELK", "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	tr, en := string(trHTML), string(enHTML)
+	for _, want := range []string{
+		`<meta name="robots" content="index, follow">`,
+		`<link rel="canonical" href="` + baseURL + `/brans/ELK/">`,
+		`id="lang-btn" class="btn-ghost" href="/en/brans/ELK/"`,
+	} {
+		if !strings.Contains(tr, want) {
+			t.Errorf("TR branş sayfası eksik: %s", want)
+		}
+	}
+	for _, want := range []string{
+		`<meta name="robots" content="noindex, follow">`,
+		`<link rel="canonical" href="` + baseURL + `/en/brans/ELK/">`,
+		`id="lang-btn" class="btn-ghost" href="/brans/ELK/"`,
+	} {
+		if !strings.Contains(en, want) {
+			t.Errorf("EN branş sayfası eksik: %s", want)
+		}
+	}
+	if strings.Contains(tr, "hreflang=") || strings.Contains(en, "hreflang=") {
+		t.Error("veri sayfası çevirisi hreflang kümesi taşımamalı")
+	}
+	if strings.Contains(tr, "noindex") {
+		t.Error("TR branş sayfası dizine açık kalmalı")
+	}
+
+	if got := bTR.translatedDataPageOpts("/dersler/2026-2027-guz/"); got.NoIndex || got.LangURL != "/en/dersler/2026-2027-guz/" {
+		t.Errorf("TR dönem sayfası ayarları = %+v", got)
+	}
+	if got := bEN.translatedDataPageOpts("/dersler/2026-2027-guz/"); !got.NoIndex || got.LangURL != "/dersler/2026-2027-guz/" {
+		t.Errorf("EN dönem sayfası ayarları = %+v", got)
+	}
+
+	// EN sitemap'i noindex veri sayfalarını içermez, iniş sayfalarını içerir.
+	terms := []termRow{{tref: model.TermRef{Slug: "2026-2027-guz", Label: "2026-2027 Güz"}}}
+	if err := bEN.writeSitemap(terms, []string{"ELK"}, map[string]string{}, map[string]string{}); err != nil {
+		t.Fatal(err)
+	}
+	enSitemap, err := os.ReadFile(filepath.Join(enRoot, "sitemap.xml"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	sm := string(enSitemap)
+	for _, bad := range []string{"/en/brans/", "/en/dersler/"} {
+		if strings.Contains(sm, bad) {
+			t.Errorf("EN sitemap noindex veri sayfası içeriyor: %s", bad)
+		}
+	}
+	for _, want := range []string{baseURL + "/en/", baseURL + "/en/gpa-calculator/", baseURL + "/en/programs/"} {
+		if !strings.Contains(sm, "<loc>"+want+"</loc>") {
+			t.Errorf("EN sitemap dizine açık sayfayı içermeli: %s", want)
 		}
 	}
 }

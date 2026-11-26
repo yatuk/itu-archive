@@ -3322,6 +3322,42 @@ body.modal-open { overflow: hidden; }
   padding: 2px 6px; font-size: 12px; border-radius: 2px;
 }
 
+/* ders sayfası: veri özeti, katalog içeriği, önşart, müfredat, benzer dersler */
+.seo-summary { max-width: 72ch; margin: 0 0 12px; color: var(--dim); font-size: 14px; }
+.seo-sec h3 { margin: 18px 0 6px; color: var(--fg); font-size: 15px; }
+.seo-prose { max-width: 72ch; margin: 8px 0; color: var(--fg); overflow-wrap: anywhere; }
+.seo-list { max-width: 72ch; margin: 6px 0 12px; padding-left: 20px; }
+.seo-list li { margin: 4px 0; overflow-wrap: anywhere; }
+.seo-fold {
+  max-width: 900px; margin: 14px 0; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--panel);
+}
+.seo-fold > summary {
+  min-height: 44px; display: flex; align-items: center; padding: 10px 14px;
+  cursor: pointer; color: var(--cyan); font-weight: 600;
+}
+.seo-fold[open] > summary { border-bottom: 1px solid var(--line); }
+.seo-weeks { list-style: none; margin: 0; padding: 4px 14px 8px; }
+.seo-weeks li {
+  display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 4px 12px;
+  padding: 7px 0; border-top: 1px solid var(--hairline); overflow-wrap: anywhere;
+}
+.seo-weeks li:first-child { border-top: 0; }
+.seo-weeks b { color: var(--dimmer); font: 600 12px/1.6 var(--mono); white-space: nowrap; }
+.seo-prereq { max-width: 72ch; margin: 8px 0; line-height: 1.9; overflow-wrap: anywhere; }
+.seo-prereq code, .seo-codes a code { white-space: nowrap; }
+.seo-linklist {
+  list-style: none; margin: 8px 0 12px; padding: 0; display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 0 20px;
+}
+.seo-linklist li { min-width: 0; padding: 6px 0; border-bottom: 1px solid var(--hairline); overflow-wrap: anywhere; }
+.seo-linklist a { color: var(--cyan); font-weight: 500; }
+.seo-linklist a:hover { color: var(--acid); }
+.seo-linklist span { margin-left: 6px; color: var(--dimmer); font-size: 12px; }
+@media (max-width: 480px) {
+  .seo-weeks li { grid-template-columns: 1fr; }
+}
+
 /* Geniş SEO tablosu kendi kabında kayar; sayfa gövdesi yatay kaymaz.
    Global `table { min-width: 900px }` SPA'nın 10 kolonlu tablosu içindir. */
 .seo-tablewrap { overflow-x: auto; margin: 12px 0; }

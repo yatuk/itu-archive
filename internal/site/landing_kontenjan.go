@@ -21,6 +21,7 @@ import (
 type kontSect struct {
 	Code, Name string
 	Cap, Enr   int
+	Level      string // OBS seviyesi: "LS" lisans, "YL"/"DR" lisansüstü …
 }
 
 // kontCourse, bir dersin kontenjanlı şubelerinin toplamı.
@@ -29,6 +30,7 @@ type kontCourse struct {
 	Sections   int // kontenjanlı şube sayısı
 	Full       int // yazılan >= kontenjan olan şube sayısı
 	Enr, Cap   int
+	Lisans     bool // en az bir şubesi lisans (LS) seviyesinde
 }
 
 // kontStats, sayfanın ham verisi.
@@ -67,6 +69,9 @@ func computeKontenjan(sects []kontSect) (total, quota, full int, top, free []kon
 			by[s.Code] = c
 		}
 		c.Sections++
+		if s.Level == "LS" {
+			c.Lisans = true
+		}
 		c.Cap += s.Cap
 		c.Enr += s.Enr
 		if s.Enr >= s.Cap {
@@ -98,7 +103,13 @@ func computeKontenjan(sects []kontSect) (total, quota, full int, top, free []kon
 		}
 		return top[i].Code < top[j].Code
 	})
-	free = append([]kontCourse(nil), cands...)
+	// "Boş yer bol" yalnız lisans dersleri: lisansüstü bağımsız çalışma gibi
+	// derslerin düşük doluluğu lisans öğrencisi için anlamsız.
+	for _, c := range cands {
+		if c.Lisans {
+			free = append(free, c)
+		}
+	}
 	sort.Slice(free, func(i, j int) bool {
 		if c := cmp(free[i], free[j]); c != 0 {
 			return c < 0
@@ -135,6 +146,9 @@ func (b *Builder) kontenjanStats() (kontStats, bool) {
 		json.Unmarshal(r[2], &s.Name)
 		json.Unmarshal(r[6], &cp)
 		json.Unmarshal(r[7], &en)
+		if len(r) > 8 {
+			json.Unmarshal(r[8], &s.Level)
+		}
 		s.Cap, s.Enr = int(cp), int(en)
 		sects = append(sects, s)
 	}

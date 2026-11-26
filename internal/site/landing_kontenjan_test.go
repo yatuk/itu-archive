@@ -8,7 +8,7 @@ import (
 func kontFixture() []kontSect {
 	var s []kontSect
 	add := func(code, name string, cap, enr int) {
-		s = append(s, kontSect{Code: code, Name: name, Cap: cap, Enr: enr})
+		s = append(s, kontSect{Code: code, Name: name, Cap: cap, Enr: enr, Level: "LS"})
 	}
 	// AAA 101: 3 şube, 165 kontenjan, 185 yazılan (oran 1.12) — en hızlı.
 	add("AAA 101", "Alpha", 55, 60)
@@ -70,7 +70,7 @@ func TestComputeKontenjanTopLimit(t *testing.T) {
 	for i := 0; i < 15; i++ {
 		code := "X " + string(rune('A'+i))
 		for j := 0; j < 3; j++ {
-			s = append(s, kontSect{Code: code, Name: code, Cap: 60, Enr: 10 + i})
+			s = append(s, kontSect{Code: code, Name: code, Cap: 60, Enr: 10 + i, Level: "LS"})
 		}
 	}
 	_, _, _, top, free := computeKontenjan(s)
@@ -129,5 +129,23 @@ func TestKontenjanBodyHTML(t *testing.T) {
 	}
 	if n := strings.Count(html, "<tr data-lpk-row>"); n != len(top) {
 		t.Errorf("satır sayısı %d, want %d", n, len(top))
+	}
+}
+
+// "Boş yer bol" yalnız lisans derslerini gösterir; lisansüstü bir ders en
+// boş olsa bile listeye girmez (ama "en hızlı dolan" adayı olmaya devam eder).
+func TestComputeKontenjanFreeOnlyLisans(t *testing.T) {
+	s := kontFixture()
+	for i := 0; i < 3; i++ {
+		s = append(s, kontSect{Code: "MYL 527E", Name: "Independent Study", Cap: 60, Enr: 0, Level: "YL"})
+	}
+	_, _, _, _, free := computeKontenjan(s)
+	for _, c := range free {
+		if c.Code == "MYL 527E" {
+			t.Fatalf("lisansüstü ders boş yer listesinde: %+v", free)
+		}
+	}
+	if free[0].Code != "DDD 104" {
+		t.Fatalf("free[0] = %s, want DDD 104", free[0].Code)
 	}
 }

@@ -1135,14 +1135,28 @@ import { planVersions, versionFile } from './core/planversions.js';
     return I18N.lang === 'en' ? `${word} ${m[1]}` : `${m[1]}. ${word}`;
   }
 
-  function buildProgramGraph(plan, prereqEdges, reqMap) {
+  // Kodsuz plan kalemi için kod: önce transkript aktarımının bu slota yazdığı
+  // doğrulanmış kod (requiredSlots), yoksa "X Laboratory" kalemi hemen
+  // önceki "X" kaleminin ardından geliyorsa önceki kodun L sonekli hali.
+  function codelessSlotCode(sem, slot, slotCodes, laneIdx) {
+    const saved = slotCodes && slotCodes[`s${laneIdx}i${slot}`];
+    if (saved) return String(saved);
+    const norm = (v) => String(v || '').toLocaleLowerCase('tr-TR').replace(/[^a-z0-9çğıöşü]+/g, ' ').trim();
+    const key = norm(sem.items[slot]?.course?.name);
+    const prev = sem.items[slot - 1]?.course;
+    const prevName = norm(prev?.name);
+    if (prev?.code && prevName && /(^| )lab(oratory)?( |$)/.test(key) && key.startsWith(prevName + ' ')) return `${prev.code}L`;
+    return '';
+  }
+
+  function buildProgramGraph(plan, prereqEdges, reqMap, slotCodes = {}) {
     const nodes = [];
     const seen = new Set();
     const laneTitles = plan.semesters.map((s) => laneTitle(s.title));
     plan.semesters.forEach((sem, laneIdx) => {
       sem.items.forEach((item, slot) => {
         if (item.course) {
-          const c = item.course;
+          const c = item.course.code ? item.course : { ...item.course, code: codelessSlotCode(sem, slot, slotCodes, laneIdx) };
           const facts = { credits: c.credits, ects: c.ects, type: c.type || '', order: slot };
           if (!c.code) {
             // OBS planında kodu olmayan kalem (ör. laboratuvar): kesikli düğüm.
@@ -1258,7 +1272,7 @@ import { planVersions, versionFile } from './core/planversions.js';
       reqByCode = { edges: g.edges, req: new Map(g.nodes.filter((n) => n.requirement).map((n) => [n.code, n.requirement])) };
     }
 
-    const { nodes, edges, laneTitles } = buildProgramGraph(plan, reqByCode.edges, reqByCode.req);
+    const { nodes, edges, laneTitles } = buildProgramGraph(plan, reqByCode.edges, reqByCode.req, readAllGrades()?.[code]?.requiredSlots || {});
 
     root.querySelector('.pg-plan-label').textContent = plan.planLabel || '';
     renderSemesterList(root, plan, nodes, graph);

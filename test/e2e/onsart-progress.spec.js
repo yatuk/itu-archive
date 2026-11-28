@@ -59,3 +59,25 @@ test('Önşart: URL ?prog= Müfredat programından önce gelir', async ({ page }
   await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30000 });
   await expect(page.locator('.pg-program-select')).toHaveValue('BLGE_LS', { timeout: 30000 });
 });
+
+test('Önşart: kodsuz plan kalemi transkript eşleşmesinden kod alır ve durum gösterir', async ({ page }) => {
+  // Sentetik veri: güncel CEN_LS planında s2i5 (Essentials of Res.Paper Writ.)
+  // kodsuz; aktarım bu slota ING 201A yazmış olsun. Physics I Laboratory ise
+  // önceki kalemden (FIZ 101E) FIZ 101EL tahmin edilir.
+  const items = {
+    'itu-grades:v1': JSON.stringify({ version: 1, data: { CEN_LS: {
+      grades: { 'ING 201A': { grade: 'DC', prev: '' }, 'FIZ 101EL': { grade: 'AA', prev: '' } },
+      requiredSlots: { s2i5: 'ING 201A' }, updatedAt: 1,
+    } } }),
+    'itu-grades-last-prog:v1': JSON.stringify({ version: 1, data: 'CEN_LS' }),
+  };
+  await page.addInitScript((kv) => {
+    for (const [k, v] of Object.entries(kv)) localStorage.setItem(k, v);
+  }, items);
+  await page.goto('/#onsart');
+  await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30000 });
+  await expect(page.locator('.pg-program-select')).toHaveValue('CEN_LS', { timeout: 30000 });
+  const li = (code) => page.locator(`.pg-li[data-code="${code}"]`);
+  await expect(li('ING 201A')).toHaveClass(/is-passed/, { timeout: 20000 });
+  await expect(li('FIZ 101EL')).toHaveClass(/is-passed/);
+});

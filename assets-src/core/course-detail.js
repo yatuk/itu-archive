@@ -10,8 +10,10 @@
 // Yerleşim iki kiplidir. Dersler sekmesi görünür ve ekran ≥760 px ise panel
 // listenin sağında bir ızgara sütunu olarak durur (liste görünür kalır,
 // modal değildir). Diğer sekmelerden ya da dar ekranda açıldığında aynı panel
-// sağdan gelen bir çekmece (mobilde tam ekran sayfa) olur: perde, odak tuzağı,
-// aria-modal. Adres ve geri tuşu davranışı iki kipte aynıdır (#ders/<slug>).
+// sağdan gelen bir çekmece (760 px altında alttan gelen tam boy sayfa) olur:
+// perde, odak tuzağı, aria-modal. Adres ve geri tuşu davranışı iki kipte
+// aynıdır (#ders/<slug>). Yapışkan başlığın altındaki atlama çubuğu
+// (Şubeler · Özet · Önşart · Notlar · Geçmiş) tek sayfayı bölüme kaydırır.
 
 import { $, getJSON, esc, termLabel, sessionHours, fillMeasured, frozenMeasuredAt, fmtDay, buildingName, trNum, formatInt, isViewVisible } from './utils.js?v=dde1e9339338';
 import { state } from './store.js?v=dde1e9339338';
@@ -23,9 +25,9 @@ import { TAKEN_CHANGED, getTaken } from './taken.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { loadStyle } from './lazy-style.js';
 import { isRemoteMethod } from './campus.js';
-import { inActiveProgram, removeFromActiveProgram } from './program-store.js';
+import { inActiveProgram, removeFromActiveProgram, PROGRAMS_CHANGED } from './program-store.js';
 import { toast } from './toast.js?v=dde1e9339338';
-import { instructorSlug } from '../views/courses.js?v=dde1e9339338';
+import { instructorSlug, copyCrn } from '../views/courses.js?v=dde1e9339338';
 
 const t = (key, vars) => I18N.t(key, vars);
 
@@ -212,7 +214,7 @@ function sectionRow(s, ctx) {
   const rules = sharedRules ? [] : rulesOf(s);
   const focus = String(s.crn) === String(focusCrn);
   return `<article class="d-row${focus ? ' is-focus' : ''}" data-crn="${esc(s.crn)}">
-      <span class="d-row-crn crn" translate="no">${esc(s.crn)}</span>
+      <button type="button" class="d-row-crn crn" translate="no" data-copy-crn="${esc(s.crn)}" title="${esc(t('courseCopyHint'))}" aria-label="${esc(t('courseCopyCRN', { crn: s.crn }))}">${esc(s.crn)}</button>
       <div class="d-row-who">${instructorHtml(s.instructor)}${diff.length ? `<div class="d-row-diff">${esc(diff.filter(Boolean).join(' · '))}</div>` : ''}</div>
       ${addButtonHtml(term, branch, s)}
       <div class="d-row-fill">${s.capacity ? fillHtml(s.capacity, s.enrolled) : `<span class="d-fill-unknown">${esc(t('quotaUnknown'))}</span>`}${speed ? `<span class="d-speed" title="${esc(fillExact(q.fillMinutes))}">${esc(speed)}</span>` : ''}</div>
@@ -572,21 +574,30 @@ function syncAddButtons(content) {
   }
 }
 
+// Şubeyi aktif programa ekler ya da (zaten varsa) çıkarır. Panel düğmesi ve
+// Dersler listesindeki satır düğmesi aynı yolu kullanır; dönen değer: şube
+// artık programda mı. Ekleme sonrası PROGRAMS_CHANGED yayılır ki açık olan
+// diğer düğmeler (liste satırı ↔ panel) durumunu tazelesin.
+export async function toggleSectionProgram(term, branch, crn) {
+  const id = String(crn);
+  if (inActiveProgram(term, branch, id)) {
+    removeFromActiveProgram(term, branch, id);
+    toast(t('cdRemovedFromProgram', { crn: id }), { kind: 'warn' });
+    return false;
+  }
+  const program = await import('../views/program.js?v=dde1e9339338');
+  await program.onShow();
+  await program.addProgramItems({ term, items: [{ branch, crn: id }] });
+  window.dispatchEvent(new CustomEvent(PROGRAMS_CHANGED));
+  return inActiveProgram(term, branch, id);
+}
+
 async function toggleProgram(btn, content) {
   if (!current) return;
   const { term, branch } = current;
-  const crn = btn.dataset.addCrn;
-  if (inActiveProgram(term, branch, crn)) {
-    removeFromActiveProgram(term, branch, crn);
-    toast(t('cdRemovedFromProgram', { crn }), { kind: 'warn' });
-    syncAddButtons(content);
-    return;
-  }
   btn.disabled = true;
   try {
-    const program = await import('../views/program.js?v=dde1e9339338');
-    await program.onShow();
-    await program.addProgramItems({ term, items: [{ branch, crn }] });
+    await toggleSectionProgram(term, branch, btn.dataset.addCrn);
   } finally {
     btn.disabled = false;
     syncAddButtons(content);
@@ -595,7 +606,11 @@ async function toggleProgram(btn, content) {
 
 // code: "BLG 101E"; term varsayılanı Dersler'deki aktif dönem (state.termSlug).
 // crn yalnızca odak bilgisidir; panel koddaki tüm şubeleri gösterir.
-export async function openCourseDetail(code, { term, crn, source } = {}) {
+//
+// keepFocus: odağı panele taşıma (Dersler'de j/k ile panel açıkken satırlar
+// arasında gezinilir, odak listede kalır). returnFocus: panel kapanınca
+// odağın döneceği öğe (varsayılan: paneli açan öğe).
+export async function openCourseDetail(code, { term, crn, source, keepFocus = false, returnFocus = null } = {}) {
   const tm = term || state.termSlug;
   initCourseDetail();
   await loadStyle('detail');
@@ -603,9 +618,11 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   const content = $('#detail-content');
   const wasOpen = isOpen();
   const opener = document.activeElement;
+  const focusInPanel = Boolean(opener && panel.contains(opener));
   if (!wasOpen || (isDocked() && opener && !panel.contains(opener))) {
     lastDetailFocus = opener && opener !== document.body && !panel.contains(opener) ? opener : lastDetailFocus;
   }
+  if (returnFocus) lastDetailFocus = returnFocus;
   placePanel(wantsDock());
   panel.hidden = false;
 
@@ -636,7 +653,7 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   current = { code, term: tm, crn: crn ? String(crn) : '', branch: String(code).split(' ')[0], secs: [], source };
   content.innerHTML = loadingHtml(code);
   panel.scrollTop = 0;
-  $('#detail-close')?.focus({ preventScroll: true });
+  if (!keepFocus || focusInPanel) $('#detail-close')?.focus({ preventScroll: true });
   notify(true);
 
   const branch = current.branch;
@@ -668,7 +685,76 @@ export async function openCourseDetail(code, { term, crn, source } = {}) {
   if (hadFocus) $('#detail-close')?.focus({ preventScroll: true });
 
   wireContent(content, code);
+  buildJumpNav(content);
   focusSection(current.crn);
+  syncJumpNav();
+}
+
+/* ---------- panel içi bölüm gezinmesi ---------- */
+
+// Yapışkan başlığın altında küçük bir atlama çubuğu: Şubeler · Özet · Önşart
+// · Notlar · Geçmiş (yalnız içerikte gerçekten olanlar). Panel tek kaydırmalı
+// sayfa olarak kalır; düğme ilgili bölüme kaydırır, kaydırdıkça o an okunan
+// bölüm işaretlenir. Bağlantı değil düğme: #… adresi paneli kapatırdı.
+const JUMPS = [
+  { key: 'secs', sel: '.d-blk-secs', label: () => t('cdJumpSections') },
+  { key: 'about', sel: '.d-about', label: () => t('cdTabOverview') },
+  { key: 'req', sel: '.d-relations', label: () => t('detailPrereq') },
+  { key: 'grades', sel: '.d-grades', label: () => t('cdJumpGrades') },
+  { key: 'hist', sel: '.d-blk-hist', label: () => t('cdJumpHistory') },
+];
+
+function jumpTargets(root) {
+  return JUMPS.map((j) => ({ ...j, el: root.querySelector(j.sel) })).filter((j) => j.el);
+}
+
+function buildJumpNav(content) {
+  const head = content.querySelector('.d-ph');
+  const targets = jumpTargets(content);
+  if (!head || targets.length < 2) return;
+  const nav = document.createElement('nav');
+  nav.className = 'd-jump';
+  nav.setAttribute('aria-label', t('cdJumpNav'));
+  nav.innerHTML = targets.map((j) => `<button type="button" class="d-jump-b" data-jump="${j.key}">${esc(j.label())}</button>`).join('');
+  head.appendChild(nav);
+}
+
+function headBottom(panel) {
+  const head = panel.querySelector('.d-ph');
+  return head ? head.getBoundingClientRect().bottom : panel.getBoundingClientRect().top;
+}
+
+let jumpPinned = null; // son tıklanan bölüm: sayfa sonundaki kısa bölüm de işaretli kalsın
+let jumpRaf = 0;
+
+function jumpTo(key) {
+  const panel = panelEl();
+  const target = jumpTargets(panel).find((j) => j.key === key);
+  if (!target) return;
+  // Kapalı <details> bölümü (not dağılımı) açılır.
+  if (target.el.tagName === 'DETAILS') target.el.open = true;
+  const delta = target.el.getBoundingClientRect().top - headBottom(panel);
+  panel.scrollTop = Math.max(0, panel.scrollTop + delta - 6);
+  jumpPinned = key;
+  syncJumpNav();
+}
+
+function syncJumpNav() {
+  const panel = panelEl();
+  const nav = panel?.querySelector('.d-jump');
+  if (!nav) return;
+  const targets = jumpTargets(panel);
+  const line = headBottom(panel) + 12;
+  let active = targets[0]?.key;
+  for (const j of targets) if (j.el.getBoundingClientRect().top <= line) active = j.key;
+  const atEnd = panel.scrollTop > 0 && panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 2;
+  if (atEnd) active = jumpPinned && targets.some((j) => j.key === jumpPinned) ? jumpPinned : targets[targets.length - 1]?.key;
+  for (const b of nav.querySelectorAll('[data-jump]')) {
+    const on = b.dataset.jump === active;
+    b.classList.toggle('is-on', on);
+    if (on) b.setAttribute('aria-current', 'true');
+    else b.removeAttribute('aria-current');
+  }
 }
 
 function wireContent(content, code) {
@@ -907,6 +993,10 @@ export function initCourseDetail() {
   const panel = panelEl();
   panel.addEventListener('click', (e) => {
     if (e.target.closest('[data-d-close]')) { closeCourseDetail(); return; }
+    const jump = e.target.closest('[data-jump]');
+    if (jump) { jumpTo(jump.dataset.jump); return; }
+    const copy = e.target.closest('[data-copy-crn]');
+    if (copy) { copyCrn(copy.dataset.copyCrn); return; }
     const add = e.target.closest('[data-add-crn]');
     if (add) { toggleProgram(add, $('#detail-content')); return; }
     // Şube satırına tıklamak (bağlantı/düğme dışında) o şubeyi seçili yapar.
@@ -918,6 +1008,16 @@ export function initCourseDetail() {
     }
   });
   $('#detail-scrim')?.addEventListener('click', () => closeCourseDetail());
+  panel.addEventListener('scroll', () => {
+    if (jumpRaf) return;
+    jumpRaf = requestAnimationFrame(() => { jumpRaf = 0; syncJumpNav(); });
+  }, { passive: true });
+  // Kullanıcı kendisi kaydırınca tıklanan bölümün sabitlemesi kalkar.
+  for (const type of ['wheel', 'touchmove']) {
+    panel.addEventListener(type, () => { jumpPinned = null; }, { passive: true });
+  }
+  // Liste satırındaki "+ Programa ekle" panelin düğmelerini de tazeler.
+  window.addEventListener(PROGRAMS_CHANGED, () => { if (isOpen()) syncAddButtons($('#detail-content')); });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape' || !isOpen() || e.defaultPrevented) return;
     // Sütun kipinde liste tarafındaki bir alanın kendi Escape'i (arama temizleme,

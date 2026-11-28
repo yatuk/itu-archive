@@ -702,18 +702,30 @@ test.describe('Program seçimi (fakülte → bölüm)', () => {
     // GANO paneli artık yarıyıl listesinin üstünde ve ilk açılışta hazır gelir.
     const gpa = page.locator('#dp-grades');
     await expect(gpa).toHaveAttribute('open', '');
-    // Not seçici artık gizli native <select>'i süren özel bir açılır liste
-    // (cp-grade-trigger/cp-grade-menu); selectOption yerine tetikleyiciyi
-    // tıklayıp menüden seçim yapıyoruz. Menü açıkken sayfa kaydırılırsa
-    // (tasarım gereği) kapanıyor, bu yüzden tetikleyiciyi önce görünüme
-    // kaydırıp kaydırmanın oturmasını bekliyoruz — Playwright'ın kendi
-    // tıklama-öncesi otomatik kaydırması menüyü anında kapatmasın diye.
-    const gradeTrigger = page.locator('.cp-grade-trigger').first();
-    await gradeTrigger.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(200);
+    // Not seçici: renkli not çipi (dp-gp-chip); tıklanınca satırın altında
+    // harf hapları (role="radiogroup", core/grade-picker.js) açılır, biri
+    // seçilince kapanır ve büyük GANO canlı güncellenir.
+    const gradeTrigger = page.locator('.dp-gp-chip').first();
+    await expect(gradeTrigger).toHaveAttribute('data-empty', '');
     await gradeTrigger.click();
-    await page.locator('.cp-grade-menu [role="option"]', { hasText: 'AA' }).first().click();
+    await expect(gradeTrigger).toHaveAttribute('aria-expanded', 'true');
+    const pop = page.locator('.dp-gp-pop [role="radiogroup"]');
+    await expect(pop).toBeVisible();
+    await expect(pop.locator('[role="radio"]')).toHaveCount(20);
+    await pop.locator('[role="radio"][data-grade="AA"]').click();
+    await expect(page.locator('.dp-gp-pop')).toHaveCount(0);
+    await expect(gradeTrigger).toHaveText('AA');
+    await expect(gradeTrigger).toBeFocused();
+    await expect(page.locator('#dp-gano')).toHaveText('4,00');
     await expect(page.locator('#dp-grade-preview')).toContainText('GANO');
+    // Klavye: ↓ açar, oklar gezer, Enter seçer.
+    await gradeTrigger.press('ArrowDown');
+    await expect(pop.locator('[role="radio"][data-grade="AA"]')).toBeFocused();
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('Enter');
+    await expect(gradeTrigger).toHaveText('BA');
+    await expect(page.locator('#dp-gano')).toHaveText('3,50');
 
     const semester = page.locator('.dp-sem').first();
     await expect(semester).toHaveAttribute('open', '');
@@ -768,20 +780,20 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
 
     await expect(page.locator('#dp-prog')).toHaveValue('CEN_LS', { timeout: 20000 });
     await expect(page.locator('.dp-grade[data-gcode="CEN 101E"]')).toHaveValue('BA+');
-    await expect(page.locator('.dp-grade[data-gcode="CEN 101E"] + .cp-grade-trigger')).toContainText('BA+');
+    await expect(page.locator('.dp-grade[data-gcode="CEN 101E"] + .dp-gp-chip')).toContainText('BA+');
     await expect(page.locator('.dp-grade[data-gcode="CEN 213E"]')).toHaveValue('CB+');
     await expect(page.locator('.dp-grade[data-gcode="FIZ 101EL"]')).toHaveValue('AA');
     await expect(page.locator('.dp-grade[data-gcode="FIZ 102EL"]')).toHaveValue('BB+');
     await expect(page.locator('.dp-grade[data-gcode="ING 112A"]')).toHaveValue('CC+');
     await expect(page.locator('.dp-grade[data-gcode="CEN 335E"]')).toHaveValue('CB');
-    await expect(page.locator('.dp-grade[data-gcode="CEN 335E"] + .cp-grade-trigger')).toContainText('CB');
-    const visibleGrade = page.locator('.dp-grade[data-gcode="CEN 335E"] + .cp-grade-trigger');
-    await visibleGrade.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(200);
+    await expect(page.locator('.dp-grade[data-gcode="CEN 335E"] + .dp-gp-chip')).toContainText('CB');
+    const visibleGrade = page.locator('.dp-grade[data-gcode="CEN 335E"] + .dp-gp-chip');
     await visibleGrade.click();
-    await expect(page.locator('.cp-grade-menu')).toBeVisible();
+    await expect(page.locator('.dp-gp-pop')).toBeVisible();
+    await expect(page.locator('.dp-gp-pop [role="radio"][aria-checked="true"]')).toHaveText('CB');
     await page.keyboard.press('Escape');
-    await expect(page.locator('.cp-grade-menu')).toBeHidden();
+    await expect(page.locator('.dp-gp-pop')).toHaveCount(0);
+    await expect(visibleGrade).toBeFocused();
     await expect(page.locator('.dp-repeat-btn[data-gcode="CEN 335E"]')).toHaveAttribute('title', /önceki: VF/);
     // Seçmeli yuva sırası müfredat sürümüyle değişir; yuva kimliğine değil seçilen derse bak.
     await expect.poll(() => page.locator('.dp-epick').evaluateAll((els) => els.map((el) => el.value)))
@@ -792,6 +804,14 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     // Aktarılan hali değişmediği için panel OBS'nin belgedeki toplamını gösterir.
     await expect(page.locator('#dp-gano')).toHaveText('2,26');
     await expect(page.locator('#dp-gano + small')).toHaveText('OBS transkriptine göre');
+    await expect(page.locator('#dp-gano-delta')).toBeHidden();
+    // Bir not değişince büyük GANO yeniden hesaplanır ve OBS GANO'suna göre fark görünür.
+    await visibleGrade.click();
+    await page.locator('.dp-gp-pop [role="radio"][data-grade="AA"]').click();
+    await expect(page.locator('.dp-grade[data-gcode="CEN 335E"]')).toHaveValue('AA');
+    await expect(page.locator('#dp-gano + small')).toHaveText('transkript ve sonradan değiştirdiğin notlara göre');
+    await expect(page.locator('#dp-gano-delta')).toBeVisible();
+    await expect(page.locator('#dp-gano-delta')).toContainText("OBS GANO'suna göre");
 
     const stored = await page.evaluate(() => localStorage.getItem('itu-grades:v1') || '');
     expect(stored).not.toContain('TEST KULLANICISI');

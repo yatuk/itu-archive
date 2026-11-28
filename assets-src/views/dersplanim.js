@@ -25,6 +25,7 @@ import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, p
 import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=dde1e9339338';
 import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=dde1e9339338';
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=dde1e9339338';
+import { gradePickerHTML, gradeTone, bindGradePickers } from '../core/grade-picker.js';
 import { confirmDialog } from '../core/dialog.js?v=dde1e9339338';
 import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=dde1e9339338';
 import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=dde1e9339338';
@@ -59,21 +60,12 @@ let curriculumModule = null;
 let curriculumModulePromise = null;
 let curriculumMounted = false;
 let latestCurriculumProps = null;
-let gpaSummaryMounted = false;
+// GANO kartı (#dp-grades) düz DOM'dur: büyük canlı GANO + resmî değere göre
+// fark. Eski React özet adası (mountGpaSummary) artık bağlanmaz; değerler
+// renderGPA'da doğrudan yazılır.
 
-function mountGpaSummary() {
-  const host = $('#dp-gpa-react');
-  if (!host || gpaSummaryMounted) return;
-  import('../react/dersler-table.js').then((mod) => {
-    if (!document.contains(host) || gpaSummaryMounted) return;
-    mod.mountGpaSummary(host, {
-      gpaLabel: I18N.t('planGanoLabel'), gpaValue: I18N.t('planNone'), gpaHint: I18N.t('planBasedOnGrades'),
-      progressLabel: I18N.t('planProgressLabel'), progressValue: `0/0 ${I18N.t('planCreditUnit')}`, progressHint: '',
-      targetLabel: I18N.t('planTargetLabel'), targetValue: I18N.t('planNone'),
-    });
-    gpaSummaryMounted = true;
-  }).catch((error) => console.warn('GANO React özeti yüklenemedi.', error));
-}
+// Arayüz metni: TR/EN (i18n sözlüğünde karşılığı olmayan kısa etiketler).
+const L = (tr, en) => (I18N.lang === 'en' ? en : tr);
 
 function unmountCurriculum() {
   if (curriculumMounted && curriculumModule) curriculumModule.unmountCurriculum();
@@ -82,6 +74,7 @@ function unmountCurriculum() {
 }
 
 function renderCurriculum(root, fragment, empty = false) {
+  closeGradePop(false);
   root.classList.add('dp-react');
   const staging = document.createElement('div');
   staging.appendChild(fragment.cloneNode(true));
@@ -191,11 +184,15 @@ function ensureHost() {
     <details class="dp-grades dp-card" id="dp-grades">
       <summary><span>${I18N.t('planGpaProgress')}</span><b id="dp-grade-preview">${I18N.t('planGpaPreviewEmpty')}</b></summary>
       <div class="dp-grades-body">
-        <div id="dp-gpa-react"><div class="dp-grades-grid">
-          <div class="dp-metric"><em>${I18N.t('planGanoLabel')}</em><b id="dp-gano">${I18N.t('planNone')}</b><small>${I18N.t('planBasedOnGrades')}</small></div>
+        <div class="dp-gano-hero" aria-live="polite">
+          <em>${I18N.t('planGanoLabel')}</em>
+          <b id="dp-gano" class="dp-gano-big">${I18N.t('planNone')}</b><small>${I18N.t('planBasedOnGrades')}</small>
+          <span id="dp-gano-delta" class="dp-gano-delta" hidden></span>
+        </div>
+        <div class="dp-grades-grid">
           <div class="dp-metric"><em>${I18N.t('planProgressLabel')}</em><b id="dp-progress">0/0 ${I18N.t('planCreditUnit')}</b><small id="dp-progress-sub"></small></div>
           <div class="dp-metric"><em>${I18N.t('planTargetLabel')}</em><b id="dp-target">${I18N.t('planNone')}</b><small id="dp-target-sub"></small></div>
-        </div></div>
+        </div>
         <p class="dp-grades-empty" id="dp-grades-empty">${I18N.t('planGpaEmptyHint')} ${esc(I18N.t('dpGradesLocalOnly'))}</p>
         <div class="dp-transfer">
           <label>${I18N.t('planCreditsSoFar')} <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0–250"></label>
@@ -284,7 +281,6 @@ function ensureHost() {
   // GANO kartı ve araçlar sağ sütuna yüzdürülür (style.css · .dp-lay).
   const grades = $('#dp-grades');
   if (grades) grades.open = true;
-  mountGpaSummary();
 }
 
 // -- program seçici --
@@ -457,34 +453,95 @@ const GRADE_GROUPS = {
   e: ['E'],
 };
 
-// Not seçici: dar select (DOM node). data-gkind course/elective; seçiliyse "filled".
-function buildGradeSelect(selected, code, kind = 'course', slotKey = '') {
-  const sel = document.createElement('select');
-  sel.className = 'dp-grade';
-  sel.dataset.gkind = kind;
-  sel.dataset.gcode = code;
-  if (kind === 'elective') sel.dataset.gslot = slotKey;
-  sel.setAttribute('aria-label', `${code} notu`);
-  sel.tabIndex = 0;
-  const none = document.createElement('option');
-  none.value = '';
-  none.textContent = I18N.t('planNewGradeOption');
-  sel.appendChild(none);
-  for (const g of GRADE_CHOICES) {
-    const o = document.createElement('option');
-    o.value = g;
-    o.textContent = g;
-    if (g === selected) {
-      o.selected = true;
-      // React adası müfredat DOM'unu güvenli bir HTML anı olarak taşır.
-      // `selected` canlı DOM özelliği tek başına serialize edilmediği için
-      // transkriptten gelen notlar ekranda "Yeni" görünüyordu.
-      o.defaultSelected = true;
-    }
-    sel.appendChild(o);
+// Not seçici (kompakt): seçili not renkli bir çip olarak durur; çip tıklanınca
+// satırın altında renk rampalı harf hapları açılır (core/grade-picker.js, GANO
+// hesaplayıcısıyla aynı seçici), biri seçilince kapanır. Değerin kaynağı
+// çipin önündeki gizli <input class="dp-grade">'dir: commitGrade ve dışa
+// aktarım/test yolları onun value ve data-* alanlarını okur. İşaretleme
+// öznitelik olarak yazılır, çünkü React adası müfredatı HTML anı olarak taşır
+// (canlı DOM özellikleri serialize edilmez).
+const GRADE_CHIP_EMPTY = () => I18N.t('planColGrade');
+
+function gradeChipLabel(code, grade) {
+  return `${code} ${I18N.t('planColGrade')}: ${grade || L('girilmedi', 'not entered')}`;
+}
+
+// Çipin renk ve metin öznitelikleri (HTML ve canlı DOM için ortak).
+function gradeChipAttrs(code, grade) {
+  const tone = gradeTone(grade);
+  return {
+    'data-grade': grade || '',
+    'data-empty': grade ? null : '',
+    'data-kind': grade && tone == null ? 'x' : null,
+    style: tone == null ? null : `--gp-w:${tone}%`,
+    'aria-label': gradeChipLabel(code, grade),
+  };
+}
+
+// Gizli değer + çip, HTML dizesi olarak (seçmeli satırlar da bunu kullanır).
+function gradeControlHTML(selected, code, kind = 'course', slotKey = '') {
+  const slot = kind === 'elective' ? ` data-gslot="${esc(slotKey)}"` : '';
+  const a = gradeChipAttrs(code, selected);
+  const extra = Object.entries(a)
+    .filter(([, v]) => v !== null)
+    .map(([k, v]) => ` ${k}="${esc(v)}"`).join('');
+  return `<input type="hidden" class="dp-grade${kind === 'elective' ? ' dp-egrade' : ''}${selected ? ' filled' : ''}" data-gkind="${kind}" data-gcode="${esc(code)}"${slot} value="${esc(selected)}">`
+    + `<button type="button" class="dp-gp-chip" data-act="dp-gpick" aria-expanded="false"${extra}>${esc(selected || GRADE_CHIP_EMPTY())}</button>`;
+}
+
+// Not değişince çipi günceller (liste yeniden çizilmez).
+function syncGradeChip(input) {
+  const chip = input.nextElementSibling;
+  if (!chip || !chip.classList.contains('dp-gp-chip')) return;
+  const grade = input.value;
+  for (const [k, v] of Object.entries(gradeChipAttrs(input.dataset.gcode, grade))) {
+    if (v === null) chip.removeAttribute(k); else chip.setAttribute(k, v);
   }
-  if (selected) sel.classList.add('filled');
-  return sel;
+  chip.textContent = grade || GRADE_CHIP_EMPTY();
+}
+
+// Açık not paneli (aynı anda tek bir tane).
+let gradePop = null;
+
+function closeGradePop(focusChip = false) {
+  if (!gradePop) return;
+  const { chip, pop } = gradePop;
+  gradePop = null;
+  pop.remove();
+  chip.setAttribute('aria-expanded', 'false');
+  document.removeEventListener('pointerdown', onGradePopOutside, true);
+  if (focusChip && chip.isConnected) chip.focus();
+}
+
+function onGradePopOutside(ev) {
+  if (!gradePop) return;
+  if (gradePop.pop.contains(ev.target) || gradePop.chip.contains(ev.target)) return;
+  closeGradePop(false);
+}
+
+let gradePopSeq = 0;
+function openGradePop(chip) {
+  const input = chip.previousElementSibling;
+  if (!input || !input.classList.contains('dp-grade')) return;
+  if (gradePop && gradePop.chip === chip) { closeGradePop(true); return; }
+  closeGradePop(false);
+  const row = chip.closest('.dp-row');
+  if (!row) return;
+  const pop = document.createElement('div');
+  pop.className = 'dp-gp-pop';
+  pop.id = `dp-gp-pop-${++gradePopSeq}`;
+  pop.innerHTML = gradePickerHTML({
+    cls: 'dp-gp', value: input.value, grades: GRADE_CHOICES,
+    label: `${input.dataset.gcode} ${I18N.t('planColGrade')}`,
+  });
+  row.after(pop);
+  chip.setAttribute('aria-expanded', 'true');
+  chip.setAttribute('aria-controls', pop.id);
+  gradePop = { chip, input, pop };
+  document.addEventListener('pointerdown', onGradePopOutside, true);
+  const focus = pop.querySelector('[role="radio"][tabindex="0"]');
+  if (focus) focus.focus({ preventScroll: true });
+  pop.scrollIntoView({ block: 'nearest' });
 }
 
 function makeClearBtn() {
@@ -514,9 +571,7 @@ function electiveControls(slotKey, e, pick) {
   const defaultOpt = `<option value="" ${!pick?.code ? 'selected' : ''}>${esc(I18N.t('planChooseCoursePlaceholder'))}</option>`;
   const pickSel = `<select class="dp-epick" data-slot="${slotKey}" aria-label="${esc(I18N.lang === 'en' ? 'Choose elective course' : 'Seçmeli ders seç')}">${defaultOpt}${opts}</select>`;
   const grade = pick?.code
-    ? `<span class="dp-grade-wrap"><select class="dp-grade dp-egrade${pick.grade ? ' filled' : ''}" data-gkind="elective" data-gslot="${slotKey}" data-gcode="${esc(pick.code)}" aria-label="${esc(pick.code)} ${esc(I18N.t('planColGrade'))}" tabindex="0">
-        <option value="">${esc(I18N.t('planNewGradeOption'))}</option>${GRADE_CHOICES.map((g) => `<option value="${g}" ${g === pick.grade ? 'selected' : ''}>${g}</option>`).join('')}
-      </select><button type="button" class="dp-grade-clear" data-act="dp-clear" title="${esc(I18N.t('planClearGradeTitle'))}">×</button></span>`
+    ? `<span class="dp-grade-wrap">${gradeControlHTML(pick.grade || '', pick.code, 'elective', slotKey)}${pick.grade ? makeClearBtn().outerHTML : ''}</span>`
     : `<span class="dp-grade-hint">${esc(I18N.t('planChooseCourseFirst'))}</span>`;
   return `<div class="dp-elective-inputs">${pickSel}${grade}</div>`;
 }
@@ -847,8 +902,7 @@ function courseRow(c, st, slotKey) {
   rep.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 1 4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="m7 23-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>';
   const wrap = document.createElement('span');
   wrap.className = 'dp-grade-wrap';
-  const sel = buildGradeSelect(rec.grade || '', code);
-  wrap.appendChild(sel);
+  wrap.innerHTML = gradeControlHTML(rec.grade || '', code);
   if (rec.grade) wrap.appendChild(makeClearBtn());
   gradeCell.append(rep, wrap);
   row.appendChild(gradeCell);
@@ -1130,9 +1184,13 @@ function currentState() {
   }
   const computed = den === 0 ? null : num / den;
   if (source === 'transcript' && !hasBase && officialGpa != null && computed != null) {
-    return { gpa: officialGpa, credits: den, computed, source };
+    return { gpa: officialGpa, credits: den, computed, source, ref: null };
   }
-  return { gpa: computed, credits: den, computed, source: hasBase && source !== 'plan' ? 'edited' : source };
+  // Karşılaştırma tabanı (GANO kartındaki fark satırı): transkriptteki resmî
+  // OBS GANO'su; o yoksa elle girilen "şu anki GANO" (devir).
+  const ref = officialGpa != null ? { gpa: officialGpa, kind: 'obs' }
+    : hasBase ? { gpa: baseGpa, kind: 'current' } : null;
+  return { gpa: computed, credits: den, computed, source: hasBase && source !== 'plan' ? 'edited' : source, ref };
 }
 
 function hasAnyGrade() {
@@ -1145,6 +1203,26 @@ function setGanoHint(source) {
   if (!hint) return;
   hint.textContent = I18N.t(source === 'transcript' ? 'planBasedOnTranscript'
     : source === 'edited' ? 'planBasedOnTranscriptEdited' : 'planBasedOnGrades');
+}
+
+// Büyük GANO'nun altındaki fark satırı: "+0,12 OBS'e göre" / "−0,05 şu ana
+// göre". Taban bilinmiyorsa (ya da gösterilen değer zaten resmî GANO ise)
+// gizlenir. İşaret ve ok, rengin yanında ikinci göstergedir. Fark ekrandaki
+// iki ondalıklı değerler üzerinden hesaplanır.
+function renderGanoDelta(st) {
+  const el = $('#dp-gano-delta');
+  if (!el) return;
+  if (!st || st.gpa == null || !st.ref || !Number.isFinite(st.ref.gpa)) { el.hidden = true; return; }
+  const r2 = (v) => Math.round(v * 100) / 100;
+  const d = r2(st.gpa) - r2(st.ref.gpa);
+  const dir = d > 0.0001 ? 'up' : d < -0.0001 ? 'down' : 'flat';
+  const sign = dir === 'up' ? '+' : dir === 'down' ? '−' : '±';
+  const arrow = dir === 'up' ? '▲ ' : dir === 'down' ? '▼ ' : '';
+  const tail = st.ref.kind === 'obs' ? L("OBS GANO'suna göre", 'vs OBS CGPA') : L('şu ana göre', 'vs current');
+  el.className = `dp-gano-delta is-${dir}`;
+  el.innerHTML = `${arrow ? `<span aria-hidden="true">${arrow}</span>` : ''}<b>${sign}${fmtTr2(Math.abs(d))}</b> ${esc(tail)}`;
+  el.title = `${L('Taban', 'Baseline')}: ${fmtTr2(st.ref.gpa)}`;
+  el.hidden = false;
 }
 
 // GANO paneli: üç sabit hizalı kutu (etiket üstte, değer altta). Hiç not ve
@@ -1169,6 +1247,7 @@ function renderGPA() {
     const tot0 = planTotal();
     if ($('#dp-gano')) $('#dp-gano').textContent = I18N.t('planNone');
     setGanoHint('plan');
+    renderGanoDelta(null);
     if ($('#dp-progress')) $('#dp-progress').textContent = `0/${trNum(tot0.credits)} ${I18N.t('planCreditsFull')}`;
     if ($('#dp-progress-sub')) $('#dp-progress-sub').textContent = '';
     if ($('#dp-target')) $('#dp-target').textContent = I18N.t('planEnterGradeFirstShort');
@@ -1181,6 +1260,7 @@ function renderGPA() {
   const st = currentState();
   $('#dp-gano').textContent = st.gpa == null ? I18N.t('planNone') : fmtTr2(st.gpa);
   setGanoHint(st.source);
+  renderGanoDelta(st);
   if (preview) preview.textContent = st.gpa == null
     ? `${trNum(st.credits)} ${I18N.t('planCreditsEnteredSuffix')}`
     : `${fmtTr2(st.gpa)} ${I18N.t('planGanoLabel')} · ${trNum(st.credits)} ${I18N.t('planCreditsFull')}`;
@@ -1350,6 +1430,7 @@ function commitGrade(select) {
   const gcode = select.dataset.gcode;
   const filled = select.value !== '';
   select.classList.toggle('filled', filled);
+  syncGradeChip(select);
   syncGradeClear(select, filled);
   if (select.dataset.gkind === 'elective') {
     stored = setElective(stored, select.dataset.gslot, gcode, select.value);
@@ -1368,13 +1449,25 @@ function commitGrade(select) {
   if (rep) rep.title = rec?.prev ? `${I18N.t('planMarkedRepeatPrev')} ${rec.prev}` : I18N.t('planMarkRepeat');
 }
 
-// Klavye (delege): harf → kademeli döngü (b → BA → BA+ → …); Tab → sıradaki
-// not alanı. #dp-semesters üzerinde tek keydown dinleyicisiyle (init'te) çalışır.
-function handleGradeKey(sel, ev) {
+// Klavye (delege, not çipinde): harf → kademeli döngü (b → BA → BA+ → …);
+// Tab → sıradaki not alanı; ↓ → hapları aç. #dp-semesters üzerinde tek keydown
+// dinleyicisiyle (init'te) çalışır. Değer çipin önündeki gizli .dp-grade'dedir.
+function handleGradeKey(chip, ev) {
   if (ev.ctrlKey || ev.metaKey || ev.altKey) return;
+  const sel = chip.previousElementSibling;
+  if (!sel || !sel.classList.contains('dp-grade')) return;
+  if (ev.key === 'Escape') {
+    if (gradePop && gradePop.chip === chip) { ev.preventDefault(); closeGradePop(true); }
+    return;
+  }
   if (ev.key === 'Tab') {
+    if (ev.shiftKey) return;
+    if (focusNextGrade(chip)) ev.preventDefault();
+    return;
+  }
+  if (ev.key === 'ArrowDown') {
     ev.preventDefault();
-    focusNextGrade(sel);
+    if (!gradePop || gradePop.chip !== chip) openGradePop(chip);
     return;
   }
   const key = ev.key.toLowerCase();
@@ -1384,6 +1477,7 @@ function handleGradeKey(sel, ev) {
   const i = group.indexOf(sel.value);
   const next = i >= 0 ? (i + 1 < group.length ? group[i + 1] : '') : group[0];
   sel.value = next;
+  closeGradePop(false);
   commitGrade(sel);
 }
 
@@ -1400,15 +1494,15 @@ function syncTakenFromGrades() {
 }
 
 function focusNextGrade(current) {
-  const all = [...document.querySelectorAll('#dp-semesters .dp-grade, #dp-semesters .dp-epick')];
+  const all = [...document.querySelectorAll('#dp-semesters .dp-gp-chip, #dp-semesters .dp-epick')];
   const idx = all.indexOf(current);
   const next = all[idx + 1];
-  if (next) {
-    next.focus();
-    next.select?.();
-    // Klavye açıkken seçili satır görünürde kalsın (scroll-margin + pay).
-    next.scrollIntoView({ block: 'nearest' });
-  }
+  if (!next) return false;
+  closeGradePop(false);
+  next.focus();
+  // Klavye açıkken seçili satır görünürde kalsın (scroll-margin + pay).
+  next.scrollIntoView({ block: 'nearest' });
+  return true;
 }
 
 function electiveBySlot(slotKey) {
@@ -1897,7 +1991,16 @@ function init() {
       // Notu temizle (×) — select'i boşalt, commitGrade filled/×'ı günceller.
       const wrap = act.closest('.dp-grade-wrap');
       const sel = wrap && wrap.querySelector('.dp-grade');
-      if (sel) { sel.value = ''; commitGrade(sel); }
+      if (sel) {
+        closeGradePop(false);
+        sel.value = '';
+        commitGrade(sel);
+        // × kendini kaldırır; odak not çipine geçer.
+        wrap.querySelector('.dp-gp-chip')?.focus();
+      }
+    } else if (a === 'dp-gpick') {
+      // Not çipi: satırın altında harf haplarını aç/kapat.
+      openGradePop(act);
     } else if (a === 'dp-repeat') {
       // Tekrar işareti — saklanan bayrak, GANO'ya etkisiz (refreshAverages çağrılmaz).
       const code = act.dataset.gcode;
@@ -1931,6 +2034,7 @@ function init() {
       if (sel.value) ensureCatalogForPicks();
       const found = electiveBySlot(slot);
       if (found) {
+        closeGradePop(false);
         const inputs = sel.closest('.dp-elective-inputs');
         if (inputs) inputs.innerHTML = electiveControls(slot, found.elective, { code: sel.value, grade: '' });
       }
@@ -1938,8 +2042,26 @@ function init() {
     }
   });
   $('#dp-semesters').addEventListener('keydown', (ev) => {
-    const sel = ev.target;
-    if (sel.classList && sel.classList.contains('dp-grade')) handleGradeKey(sel, ev);
+    const chip = ev.target;
+    if (chip.classList && chip.classList.contains('dp-gp-chip')) { handleGradeKey(chip, ev); return; }
+    // Açık not panelinde Tab: panel kapanır, odak çipe döner (sonraki not alanı
+    // için Tab bir kez daha basılır).
+    if (ev.key === 'Tab' && gradePop && gradePop.pop.contains(chip)) {
+      ev.preventDefault();
+      closeGradePop(true);
+    }
+  });
+  // Not hapları (core/grade-picker.js): seçim kaydedilir, panel kapanır, odak
+  // çipe döner. Escape seçmeden kapatır.
+  bindGradePickers($('#dp-semesters'), {
+    onPick: (group, grade) => {
+      if (!gradePop || !gradePop.pop.contains(group)) return;
+      const { input } = gradePop;
+      input.value = grade;
+      closeGradePop(true);
+      commitGrade(input);
+    },
+    onEscape: () => closeGradePop(true),
   });
 
   // Transfer (yatay geçiş) başlangıç ağırlığı.

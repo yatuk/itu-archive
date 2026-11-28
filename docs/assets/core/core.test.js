@@ -2034,3 +2034,23 @@ test('whereText çevrimiçi şubeyi Sanal, diğerlerini bina ve derslikle yazar'
   assert.equal(whereText(row('Yüz yüze', 'MED -- | EEB 5202')), 'MED, EEB 5202');
   assert.equal(whereText(row('Yüz yüze', '--')), '');
 });
+
+test('grade-picker: ölçek sırası, renk tonu ve radiogroup işaretlemesi', async () => {
+  const { PICKER_GRADES, gradeTone, gradePickerHTML } = await import('./grade-picker.js');
+  assert.deepEqual(PICKER_GRADES, ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'FF', 'VF']);
+  assert.equal(gradeTone('AA'), 100);
+  assert.equal(gradeTone('BB+'), 81);
+  assert.equal(gradeTone('DD'), 25);
+  assert.equal(gradeTone('FF'), 0);
+  assert.equal(gradeTone('VF'), 0);
+  assert.equal(gradeTone('M'), null);
+  const h = gradePickerHTML({ cls: 'x', value: 'CB', label: 'A "B" notu', grades: [...PICKER_GRADES, 'M'] });
+  assert.match(h, /^<span class="x" role="radiogroup" data-gp aria-label="A &quot;B&quot; notu">/);
+  assert.equal((h.match(/role="radio"/g) || []).length, 16);
+  assert.equal((h.match(/aria-checked="true"/g) || []).length, 1);
+  assert.equal((h.match(/tabindex="0"/g) || []).length, 1);
+  assert.match(h, /aria-checked="true" tabindex="0" data-grade="CB" style="--gp-w:63%">CB</);
+  assert.match(h, /data-grade="M" data-kind="x">M</);
+  // Seçim yoksa Tab durağı ilk hapta.
+  assert.match(gradePickerHTML({ cls: 'x' }), /aria-checked="false" tabindex="0" data-grade="AA"/);
+});

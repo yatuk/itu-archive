@@ -13,14 +13,15 @@
 // dilimleriyle yapılır. Dar kapta (mobil ya da detay paneli açıkken) satırlar
 // container query ile iki satırlı düzene geçer; ayrı bir mobil veri yolu yoktur.
 
-import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, frozenMeasuredAt, fmtDay, timeAgo, isViewVisible, tickCount, formatInt } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, esc, fold, normSearch, matchRow, markField, suggestDrop, debounce, downloadCSV, setStatus, fillMeasured, frozenMeasuredAt, fmtDay, timeAgo, isViewVisible, tickCount, formatInt, copyText } from '../core/utils.js?v=dde1e9339338';
 import { methodToCode } from '../core/urlcodes.js?v=dde1e9339338';
 import { formatProgramLabel, loadProgramMap, normalizeProgramLevel, programLevelLabel } from '../core/programs.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
 import { quotaState } from '../core/chart.js?v=dde1e9339338';
 import * as fav from '../core/favorites.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
-import { openCourseDetail } from '../core/detail-loader.js';
+import { openCourseDetail, loadCourseDetail } from '../core/detail-loader.js';
+import { inActiveProgram, PROGRAMS_CHANGED } from '../core/program-store.js';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 import { isRemoteMethod, transitionIssue } from '../core/campus.js';
@@ -196,6 +197,7 @@ export function initCourses() {
 
   syncStickyOffset();
   watchTableWidth();
+  document.addEventListener('keydown', onListKey);
   window.addEventListener('resize', syncStickyOffset, { passive: true });
 }
 
@@ -773,6 +775,7 @@ function instructorText(instr) {
 // Açık detay paneli: listede aynı şube vurgulanır (core/course-detail.js
 // itu:detail-change olayıyla bildirir).
 let currentDetail = { code: '', crn: '' };
+let detailOpen = false; // detay paneli açık mı (herhangi bir görünümden)
 
 function isCurrent(row) {
   return Boolean(currentDetail.crn) && String(row[0]) === String(currentDetail.crn) && row[1] === currentDetail.code;
@@ -788,15 +791,141 @@ function syncCurrentRow() {
 if (typeof window !== 'undefined') {
   window.addEventListener('itu:detail-change', (e) => {
     const d = e.detail || {};
+    detailOpen = Boolean(d.open);
     currentDetail = d.open ? { code: d.code || '', crn: d.crn ? String(d.crn) : '' } : { code: '', crn: '' };
     syncCurrentRow();
   });
 }
 
+/* ---------- satır eylemleri: CRN kopyalama, programa ekleme ---------- */
+
+// Satırın içinde kendi işini yapan denetimler; bunlara tıklamak detayı açmaz.
+const ROW_OWN_CONTROLS = 'a, input, label, select, textarea, .fav-star, .cl-copy, .cl-add, .cl-open';
+
+// CRN'yi panoya kopyalar ve bildirir. Pano izni yoksa copyText eski
+// execCommand yoluna düşer; o da olmazsa CRN'yi gösteren bir uyarı çıkar.
+export async function copyCrn(crn) {
+  let ok = false;
+  try { ok = await copyText(String(crn)); } catch { ok = false; }
+  if (ok) toast(t('prgCRNCopied'), { kind: 'ok' });
+  else toast(`${t('progCopyFailed')} · CRN ${crn}`, { kind: 'warn' });
+  return ok;
+}
+
+function addState(row) {
+  const [cap, enr] = effectiveQuota(row);
+  const on = inActiveProgram(state.termSlug, row[3], String(row[0]));
+  const full = quotaState(cap, enr).kind === 'full';
+  return { on, label: t(on ? 'cdInProgram' : full ? 'cdAddAnyway' : 'cdAddToProgram') };
+}
+
+// Masaüstünde satırın sağ kenarında, üzerine gelince ya da klavye odağında
+// beliren "+ Programa ekle" (detay panelindeki şube düğmesiyle aynı işlem).
+function rowActionsHtml(row) {
+  const st = addState(row);
+  return `<span class="cl-act"><button type="button" class="cl-add${st.on ? ' is-on' : ''}" aria-pressed="${st.on}">`
+    + `<span class="cl-add-l">${esc(st.label)}</span><span class="sr-only"> · CRN ${esc(row[0])}</span></button></span>`;
+}
+
+function syncRowAdd(btn, row) {
+  const st = addState(row);
+  btn.classList.toggle('is-on', st.on);
+  btn.setAttribute('aria-pressed', String(st.on));
+  const label = btn.querySelector('.cl-add-l');
+  if (label) label.textContent = st.label;
+}
+
+async function toggleRowProgram(btn, row) {
+  btn.disabled = true;
+  try {
+    const mod = await loadCourseDetail();
+    await mod.toggleSectionProgram(state.termSlug, row[3], row[0]);
+  } catch (error) {
+    console.error('Programa eklenemedi:', error);
+  } finally {
+    btn.disabled = false;
+    syncRowAdd(btn, row);
+  }
+}
+
+const rowByKey = new Map(); // seçim anahtarı → arama satırı (görünen satırlar)
+
+function syncRowAddButtons() {
+  for (const el of document.querySelectorAll('#course-groups .cl-item')) {
+    const row = rowByKey.get(el.dataset.key);
+    const btn = el.querySelector('.cl-add');
+    if (row && btn) syncRowAdd(btn, row);
+  }
+}
+
+if (typeof window !== 'undefined') window.addEventListener(PROGRAMS_CHANGED, syncRowAddButtons);
+
+/* ---------- klavye: j/k ↑/↓ satırlar arasında, Enter/Boşluk detay ---------- */
+
+// Odak her satırın tek odak durağı olan .cl-open düğmesine taşınır; ekran
+// okuyucu düğmenin adını ("KOD Ad, CRN … detayını aç") okur, Enter/Boşluk
+// yerel düğme davranışıyla detayı açar. Panel açıkken gezinme paneli kapatmadan
+// içeriğini bir sonraki/önceki şubeye taşır. "/" arama kısayolu app.js'te.
+function visibleRows() {
+  return [...document.querySelectorAll('#course-groups .cl-body > .cl-item')].filter((el) => !el.hidden);
+}
+
+let kbdRow = null; // klavyeyle en son gelinen satır
+
+function skipListKey(target) {
+  return Boolean(target?.closest?.('input, select, textarea, [contenteditable=""], [contenteditable="true"], [role="tablist"], [role="listbox"], [role="menu"], #filters.open, dialog'));
+}
+
+function onListKey(e) {
+  if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey) return;
+  const key = e.key;
+  const down = key === 'j' || key === 'ArrowDown';
+  const up = key === 'k' || key === 'ArrowUp';
+  if (!down && !up) return;
+  if (ttOn || !isViewVisible('dersler') || skipListKey(e.target)) return;
+  // Panel durumu itu:detail-change olayından; sütun kipinde .course-work
+  // has-detail taşır (core/course-detail.js placePanel).
+  const panelOpen = detailOpen;
+  const docked = Boolean(document.getElementById('course-work')?.classList.contains('has-detail'));
+  // Panel başka bir görünümden çekmece olarak açıldıysa (Program vb.) karışma.
+  if (panelOpen && !docked && !document.querySelector('#course-groups .cl-item.is-current')) return;
+  const inList = e.target.closest?.('#course-groups .cl-body .cl-item');
+  // Ok tuşları yalnız listede ya da panel açıkken satır değiştirir; aksi
+  // halde sayfa kaydırma davranışı korunur.
+  if ((key === 'ArrowDown' || key === 'ArrowUp') && !inList && !panelOpen) return;
+  let rows = visibleRows();
+  if (!rows.length) return;
+  const cur = inList
+    || (panelOpen && document.querySelector('#course-groups .cl-item.is-current'))
+    || (kbdRow?.isConnected ? kbdRow : null);
+  const i = cur ? rows.indexOf(cur) : -1;
+  let next = i < 0 ? (down ? 0 : rows.length - 1) : i + (down ? 1 : -1);
+  if (next >= rows.length && !$('#more').hidden) {
+    renderRows(true);
+    rows = visibleRows();
+  }
+  next = Math.max(0, Math.min(rows.length - 1, next));
+  e.preventDefault();
+  if (next === i) return;
+  goToRow(rows[next], { panelOpen, docked });
+}
+
+function goToRow(el, { panelOpen, docked }) {
+  kbdRow = el;
+  const btn = el.querySelector('.cl-open');
+  // Çekmece (modal) kipinde odak panelde kalır; sütun kipinde listeye geçer.
+  if (!panelOpen || docked) btn?.focus({ preventScroll: true });
+  el.scrollIntoView({ block: 'nearest' });
+  if (panelOpen) {
+    openCourseDetail(el.dataset.code, { crn: el.dataset.crn, source: 'dersler', keepFocus: true, returnFocus: btn });
+  }
+}
+
 // Tek şube satırı. Ders kodu/adı her satırda yazılır; aynı dersin ardışık
 // şubelerinde soluklaşır (cl-cont), yeni dersin ilk satırı daha güçlü bir üst
-// çizgiyle ayrılır (cl-new). Satırın tamamı detay düğmesine bağlıdır
-// (.cl-open::after); onay kutusu, yıldız ve hoca bağlantısı üstte kalır.
+// çizgiyle ayrılır (cl-new). Satırın tamamı detayı açar (.cl-open::after
+// örtüsü + satır tıklaması); onay kutusu, yıldız, CRN kopyalama, programa
+// ekleme ve hoca bağlantısı üstte kalır ve kendi işini yapar.
 function createRow(row, prev) {
   const [crn, code, name, branch, instructor] = row;
   const [cap, enr] = effectiveQuota(row);
@@ -814,6 +943,7 @@ function createRow(row, prev) {
   div.className = `cl-row cl-item${cont ? ' cl-cont' : prev ? ' cl-new' : ''}${selected ? ' is-selected' : ''}${isCurrent(row) ? ' is-current' : ''}`;
   div.setAttribute('role', 'row');
   div.dataset.key = key;
+  rowByKey.set(key, row);
   div.dataset.crn = String(crn);
   div.dataset.code = code;
   div.innerHTML = `
@@ -821,13 +951,28 @@ function createRow(row, prev) {
     <span class="cl-fav" role="cell"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-pressed="${starred}" aria-label="${esc(t(starred ? 'favRemoveLabel' : 'favAddLabel'))}">${STAR_SVG}</button></span>
     <span class="cl-code" role="cell"><button type="button" class="cl-open code" translate="no" aria-haspopup="dialog" aria-label="${esc(t('courseOpenSection', { code, name, crn }))}">${markField(code, 'code', hits.filter((h) => h.field === 'code'))}</button></span>
     <span class="cl-name" role="cell"><span class="cl-name-t">${markField(name, 'name', hits.filter((h) => h.field === 'name'))}</span>${badge}</span>
-    <span class="cl-crn crn" role="cell" translate="no">${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</span>
+    <span class="cl-crn crn" role="cell" translate="no"><button type="button" class="cl-copy" data-copy-crn="${esc(crn)}" title="${esc(t('courseCopyHint'))}" aria-label="${esc(t('courseCopyCRN', { crn }))}">${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</button></span>
     <span class="cl-ins" role="cell">${instructorLinks(instructor, hits.filter((h) => h.field === 'instructor'))}</span>
     <span class="cl-when" role="cell">${whenCell(row, kind)}</span>
     <span class="cl-where" role="cell">${where ? esc(where) : '<span class="course-none">·</span>'}</span>
-    <span class="cl-quota" role="cell">${Number(cap) > 0 ? quotaCell(cap, enr) : `<span class="quota-unknown"><span class="cl-qu-long">${esc(t('quotaUnknown'))}</span><span class="cl-qu-short">${esc(t('quotaUnknownShort'))}</span></span>`}</span>
+    <span class="cl-quota" role="cell">${Number(cap) > 0 ? quotaCell(cap, enr) : `<span class="quota-unknown"><span class="cl-qu-long">${esc(t('quotaUnknown'))}</span><span class="cl-qu-short">${esc(t('quotaUnknownShort'))}</span></span>`}${rowActionsHtml(row)}</span>
     <span class="cl-m2"><span class="crn" translate="no">${esc(crn)}</span> · ${esc(instructorText(instructor))} · ${esc(whenText(row, kind))}</span>`;
   div.querySelector('.cl-open').addEventListener('click', () => openDetail(row));
+  // Satırın boş bir yerine tıklamak da detayı açar (çoğu tıklama zaten
+  // .cl-open::after örtüsüne düşer). Onay kutusu, yıldız, CRN kopyalama,
+  // programa ekleme ve hoca bağlantısı kendi işini yapar.
+  div.addEventListener('click', (ev) => {
+    if (ev.target.closest(ROW_OWN_CONTROLS)) return;
+    openDetail(row);
+  });
+  div.querySelector('.cl-copy').addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    copyCrn(crn);
+  });
+  div.querySelector('.cl-add')?.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    toggleRowProgram(ev.currentTarget, row);
+  });
   div.querySelector('.row-sel').addEventListener('change', (ev) => {
     setSelected(key, ev.target.checked);
     div.classList.toggle('is-selected', ev.target.checked);
@@ -890,6 +1035,7 @@ function renderRows(append) {
   if (!append) {
     box.innerHTML = '';
     state.shown = 0;
+    rowByKey.clear();
   }
   if (!rows.length) {
     box.innerHTML = `<p class="empty">${esc(t('courseEmpty'))}</p>`;

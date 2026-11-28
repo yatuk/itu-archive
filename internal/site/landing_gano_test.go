@@ -68,11 +68,14 @@ func TestGanoCalcHTML(t *testing.T) {
 		want := append(tc.want,
 			`id="lpg-yano" aria-labelledby="lpg-yano-l">3.32</output>`,
 			`id="lpg-gano" aria-labelledby="lpg-gano-l">3.32</output>`,
-			`<b>49.75</b>`, `<b>15</b>`,
+			`<b>49.75</b>`, `<b>15</b>`, `<dd id="lpg-tcr">15</dd>`, `<dd id="lpg-allcr">15</dd>`,
 			`<div><dt>BA+</dt><dd>3.75</dd></div>`, `<div class="lpg-zero"><dt>FF</dt><dd>0.00</dd></div>`, `<div class="lpg-zero"><dt>VF</dt><dd>0.00</dd></div>`,
 			`href="/#dersplanim" rel="nofollow"`,
 			`src="/assets/landing/gano-calc.js?v=j1"`, `href="/assets/landing/gano-calc.css?v=c1"`,
-			`value="MAT 103E"`, `<option value="BB+" selected>BB+</option>`)
+			`value="MAT 103E"`, `role="radiogroup" data-gp aria-label="FIZ 101E `,
+			`role="radio" aria-checked="true" tabindex="0" data-grade="BB+" style="--gp-w:81%">BB+</button>`,
+			`data-grade="AA" style="--gp-w:100%">AA</button>`, `data-grade="FF" style="--gp-w:0%">FF</button>`,
+			`id="lpg-delta" hidden`)
 		for _, w := range want {
 			if !strings.Contains(h, w) {
 				t.Errorf("en=%v: HTML %q içermiyor", tc.en, w)
@@ -81,14 +84,22 @@ func TestGanoCalcHTML(t *testing.T) {
 		if strings.Contains(h, "—") {
 			t.Errorf("en=%v: kullanıcı metninde em-dash var", tc.en)
 		}
-		if n := strings.Count(h, "<dt>"); n != 15 {
+		_, scale, _ := strings.Cut(h, `class="lpg-box lpg-grades"`)
+		if n := strings.Count(scale, "<dt>"); n != 15 {
 			t.Errorf("en=%v: not tablosunda %d satır, 15 bekleniyordu", tc.en, n)
 		}
-		if n := strings.Count(h, "<tr><td"); n != len(ganoExampleRows) {
+		if n := strings.Count(h, `<div class="lpg-row">`); n != len(ganoExampleRows) {
 			t.Errorf("en=%v: %d örnek satır, %d bekleniyordu", tc.en, n, len(ganoExampleRows))
 		}
-		if n := strings.Count(h, "<option "); n != 15*len(ganoExampleRows) {
-			t.Errorf("en=%v: %d seçenek, her satırda 15 not bekleniyordu", tc.en, n)
+		if n := strings.Count(h, `role="radio" `); n != 15*len(ganoExampleRows) {
+			t.Errorf("en=%v: %d not hapı, her satırda 15 not bekleniyordu", tc.en, n)
+		}
+		// Her satırda tam bir not seçili ve grupta tek Tab durağı var.
+		if n := strings.Count(h, `aria-checked="true"`); n != len(ganoExampleRows) {
+			t.Errorf("en=%v: %d seçili hap, %d bekleniyordu", tc.en, n, len(ganoExampleRows))
+		}
+		if n := strings.Count(h, `tabindex="0"`); n != len(ganoExampleRows) {
+			t.Errorf("en=%v: %d Tab durağı, satır başına bir bekleniyordu", tc.en, n)
 		}
 		for _, c := range regexp.MustCompile(`class="([^"]+)"`).FindAllStringSubmatch(h, -1) {
 			for _, cls := range strings.Fields(c[1]) {

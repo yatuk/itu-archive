@@ -26,6 +26,8 @@ import { I18N } from '../i18n.js?v=dde1e9339338';
 import { writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
 import { isRemoteMethod, transitionIssue } from '../core/campus.js';
 import { specialSectionKind } from '../core/section-kind.js';
+import { TAKEN_CHANGED } from '../core/taken.js';
+import { readTakenMarks, normCode, MARK_STORAGE_KEYS } from '../core/taken-marks.js';
 
 // Sayfa başına şube satırı; "daha fazla" bir sonraki dilimi ekler.
 const ROW_PAGE = 60;
@@ -98,6 +100,16 @@ export function initCourses() {
   $('#f-program').addEventListener('change', applyFilters);
   $('#f-code').addEventListener('input', debounce(applyFilters, 120));
   $('#f-open').addEventListener('change', applyFilters);
+  $('#f-taken-hide')?.addEventListener('change', applyFilters);
+  refreshTakenMarks();
+  const onTakenChange = debounce(() => {
+    refreshTakenMarks();
+    if (!state.rows.length) return;
+    if ($('#f-taken-hide')?.checked) applyFilters();
+    else syncRenderedTakenMarks();
+  }, 120);
+  window.addEventListener(TAKEN_CHANGED, onTakenChange);
+  window.addEventListener('storage', (e) => { if (e.key == null || MARK_STORAGE_KEYS.has(e.key)) onTakenChange(); });
   $('#f-term').addEventListener('change', () => loadTerm($('#f-term').value));
   $('#more').addEventListener('click', () => renderRows(true));
   $('#csv').addEventListener('click', exportCSV);
@@ -306,6 +318,7 @@ export function applyFilters() {
   const program = $('#f-program').value;
   const code = $('#f-code').value.trim().toLowerCase();
   const openOnly = $('#f-open').checked;
+  const hideTaken = hidePassedActive();
   // Arama terimleri boşluğa göre bölünür, sonra ortak normalizasyonla boşluksuz
   // anahtarlara indirilir ("BLG 102E" → ["blg","102e"], "BLG102E" → ["blg102e"]).
   const terms = q ? q.split(/\s+/).map(normSearch) : [];
@@ -323,6 +336,7 @@ export function applyFilters() {
     if (method && r[9] && r[9] !== method) return false;
     if (program && !programList(r).includes(program)) return false;
     if (openOnly && r[7] >= r[6]) return false;
+    if (hideTaken && takenMarks.get(normCode(r[1]))?.status === 'passed') return false;
     return true;
   };
   const fieldsOf = (i) => ({
@@ -411,7 +425,7 @@ export function applyFilters() {
   // Mobil filtre düğmesi etiketi: aktif filtre sayısı (dönem sayılmaz).
   const activeCount = [
     branch, day, time, level, method, program, code.trim(),
-    openOnly ? '1' : '',
+    openOnly ? '1' : '', hideTaken ? '1' : '',
   ].filter(Boolean).length;
   const fb = $('#f-filter-btn');
   if (fb) fb.textContent = `${t('filterButton')} (${activeCount})`;
@@ -492,6 +506,7 @@ function renderChips() {
   if ($('#f-method').value) chips.push({ key: 'method', label: t('filterMethod'), value: $('#f-method').value });
   if ($('#f-program').value) chips.push({ key: 'program', label: t('filterProgram'), value: $('#f-program').value });
   if ($('#f-open').checked) chips.push({ key: 'open', text: t('filterOpen') });
+  if (hidePassedActive()) chips.push({ key: 'taken', text: t('filterHideTaken') });
 
   const parts = chips.map((c) => {
     const body = c.value !== undefined
@@ -517,6 +532,7 @@ async function clearFilter(key) {
     case 'method': $('#f-method').value = ''; break;
     case 'program': $('#f-program').value = ''; break;
     case 'open': $('#f-open').checked = false; break;
+    case 'taken': if ($('#f-taken-hide')) $('#f-taken-hide').checked = false; break;
   }
 }
 
@@ -525,6 +541,7 @@ function resetFilterControls({ keepQuery = false } = {}) {
   $('#f-level').value = 'LS';
   $('#f-code').value = '';
   $('#f-open').checked = false;
+  if ($('#f-taken-hide')) $('#f-taken-hide').checked = false;
   if (!keepQuery) {
     $('#q').value = '';
     $('#q').dispatchEvent(new Event('input')); // arama × düğmesi senkron kalsın
@@ -535,6 +552,48 @@ function clearAllFilters() {
   resetFilterControls();
   syncProgramFilter().then(applyFilters);
   $('#q').focus({ preventScroll: true });
+}
+
+/* ---------- transkript işaretleri: geçtin / tekrar ---------- */
+
+// Müfredat sekmesinde girilen/aktarılan notlar ve "aldığım dersler" (yalnız bu
+// tarayıcıda) satırda küçük bir işaret olur. Kaynak salt-okunurdur
+// (core/taken-marks.js). Veri yoksa filtre kutusu da görünmez.
+let takenMarks = new Map();
+
+function refreshTakenMarks() {
+  takenMarks = readTakenMarks();
+  const wrap = $('#f-taken-wrap');
+  if (wrap) wrap.hidden = !takenMarks.size;
+}
+
+// Filtre yalnız işaret verisi varken etkilidir (kutu gizliyken işaret kalsa da).
+function hidePassedActive() {
+  return Boolean($('#f-taken-hide')?.checked) && takenMarks.size > 0;
+}
+
+function takenMarkHtml(code) {
+  const m = takenMarks.get(normCode(code));
+  if (!m) return '';
+  if (m.status === 'retake') {
+    const title = t('takenRetakeTitle', { grade: m.grade });
+    return `<span class="cl-taken is-retake" title="${esc(title)}">${esc(t('takenRetake'))}<span class="sr-only">: ${esc(title)}</span></span>`;
+  }
+  const title = m.grade ? t('takenPassedTitle', { grade: m.grade }) : t('takenPassedTitleNoGrade');
+  // Notsuz "geçtin" yazısı dar satırda yalnız ✓'ye iner (ekran okuyucu metni kalır).
+  const label = m.grade ? esc(m.grade) : `<span class="cl-taken-w">${esc(t('takenPassed'))}</span>`;
+  return `<span class="cl-taken is-passed" title="${esc(title)}"><span class="cl-taken-ic" aria-hidden="true">✓</span>${label}<span class="sr-only">: ${esc(title)}</span></span>`;
+}
+
+function syncRenderedTakenMarks() {
+  for (const li of document.querySelectorAll('#course-groups .cl-item')) {
+    const cell = li.querySelector('.cl-name');
+    if (!cell) continue;
+    cell.querySelector('.cl-taken')?.remove();
+    if (li.classList.contains('cl-cont')) continue;
+    const html = takenMarkHtml(li.dataset.code);
+    if (html) cell.insertAdjacentHTML('afterbegin', html);
+  }
 }
 
 /* ---------- şube seçimi / sepet ---------- */
@@ -953,7 +1012,7 @@ function createRow(row, prev) {
     <span class="cl-sel" role="cell"><label><span class="sr-only">${esc(t('courseSelectSection', { crn }))}</span><input type="checkbox" class="row-sel"${selected ? ' checked' : ''}></label></span>
     <span class="cl-fav" role="cell"><button type="button" class="fav-star${starred ? ' on' : ''}" data-key="${esc(key)}" aria-pressed="${starred}" aria-label="${esc(t(starred ? 'favRemoveLabel' : 'favAddLabel'))}">${STAR_SVG}</button></span>
     <span class="cl-code" role="cell"><button type="button" class="cl-open code" translate="no" aria-haspopup="dialog" aria-label="${esc(t('courseOpenSection', { code, name, crn }))}">${markField(code, 'code', hits.filter((h) => h.field === 'code'))}</button></span>
-    <span class="cl-name" role="cell"><span class="cl-name-t">${markField(name, 'name', hits.filter((h) => h.field === 'name'))}</span>${badge}</span>
+    <span class="cl-name" role="cell">${cont ? '' : takenMarkHtml(code)}<span class="cl-name-t">${markField(name, 'name', hits.filter((h) => h.field === 'name'))}</span>${badge}</span>
     <span class="cl-crn crn" role="cell" translate="no"><button type="button" class="cl-copy" data-copy-crn="${esc(crn)}" title="${esc(t('courseCopyHint'))}" aria-label="${esc(t('courseCopyCRN', { crn }))}">${markField(crn, 'crn', hits.filter((h) => h.field === 'crn'))}</button></span>
     <span class="cl-ins" role="cell">${instructorLinks(instructor, hits.filter((h) => h.field === 'instructor'))}</span>
     <span class="cl-when" role="cell">${whenCell(row, kind)}</span>
@@ -1124,6 +1183,7 @@ function saveState() {
     term: state.termSlug || '', q, branch: $('#f-branch').value, day: $('#f-day').value,
     time: $('#f-time').value, level: $('#f-level').value, method: $('#f-method').value,
     program: $('#f-program').value, code: $('#f-code').value.trim(), open: $('#f-open').checked,
+    hideTaken: Boolean($('#f-taken-hide')?.checked),
     sort: state.sort.key, dir: state.sort.dir,
   }, { validate: isPlainObject });
   // Yaşanmış hata: bu fonksiyon dönem/kontenjan yüklenirken (loadTerm/loadQuota)

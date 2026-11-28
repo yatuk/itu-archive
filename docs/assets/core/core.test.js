@@ -2187,3 +2187,50 @@ test('grade-picker: ölçek sırası, renk tonu ve radiogroup işaretlemesi', as
   // Seçim yoksa Tab durağı ilk hapta.
   assert.match(gradePickerHTML({ cls: 'x' }), /aria-checked="false" tabindex="0" data-grade="AA"/);
 });
+
+test('taken-marks: son not belirler, FF/VF tekrar, notsuz aldığım ders geçti sayılır', async () => {
+  const { buildTakenMarks, normCode } = await import('./taken-marks.js');
+  assert.equal(normCode(' blg  223e '), 'BLG 223E');
+  const store = {
+    BLG_LS: {
+      updatedAt: 2,
+      grades: { 'BLG 223E': { grade: 'BB', prev: 'FF' }, 'MAT 103E': { grade: 'FF', prev: '' }, 'FIZ 101E': { grade: '' } },
+      elective: { s1i2: { code: 'SNT 102', grade: 'VF' } },
+      transcript: { entries: [{ code: 'FIZ 101E', grade: 'CC' }, { code: 'KIM 101E', grade: 'DD' }, { code: 'KIM 101E', grade: 'FF' }], planKeys: {} },
+    },
+    ESKI_LS: { updatedAt: 1, grades: { 'MAT 103E': { grade: 'AA' } } },
+  };
+  const m = buildTakenMarks(store, ['ING 112A', 'BLG 223E']);
+  assert.deepEqual(m.get('BLG 223E'), { status: 'passed', grade: 'BB' });
+  assert.deepEqual(m.get('MAT 103E'), { status: 'retake', grade: 'FF' }); // daha yeni program kazanır
+  assert.deepEqual(m.get('FIZ 101E'), { status: 'passed', grade: 'CC' }); // boş plan notu transkripti silmez
+  assert.deepEqual(m.get('KIM 101E'), { status: 'retake', grade: 'FF' });
+  assert.deepEqual(m.get('SNT 102'), { status: 'retake', grade: 'VF' });
+  assert.deepEqual(m.get('ING 112A'), { status: 'passed', grade: '' });
+  assert.equal(buildTakenMarks(null, []).size, 0);
+});
+
+test('palette: kod boşluksuz, Türkçe katlamalı eşleşir; CRN ve sayfa grupları', async () => {
+  const { buildPaletteIndex, searchPalette, paletteNorm } = await import('./palette.js');
+  assert.equal(paletteNorm('İŞLETİM  Sistemleri'), 'isletim sistemleri');
+  const rows = [
+    ['21001', 'BLG 223E', 'Veri Yapıları', 'BLG', 'Gülşen Eryiğit , Ali Veli', '', 60, 50],
+    ['21002', 'BLG 223E', 'Veri Yapıları', 'BLG', 'Gülşen Eryiğit', '', 60, 50],
+    ['22001', 'BLG 231E', 'Sayısal Devreler', 'BLG', 'Işıl Ünal', '', 60, 50],
+    ['23001', 'MAT 223', 'Olasılık', 'MAT', '-', '', 60, 50],
+  ];
+  const ix = buildPaletteIndex(rows);
+  assert.equal(ix.courses.length, 3);
+  assert.equal(ix.instructors.length, 3);
+  const pages = [{ view: 'dersler', label: 'Dersler' }, { href: '/gano-hesaplama/', label: 'GANO Hesaplama', kw: 'gpa' }];
+  const g = (q) => Object.fromEntries(searchPalette(ix, q, pages).map((x) => [x.id, x.items]));
+  assert.equal(g('blg223').courses[0].course.code, 'BLG 223E');
+  assert.equal(g('BLG 223E').courses[0].course.code, 'BLG 223E');
+  assert.equal(g('veri yap').courses[0].course.code, 'BLG 223E');
+  assert.equal(g('isil').instructors[0].instructor.name, 'Işıl Ünal');
+  assert.equal(g('ERYIGIT').instructors[0].instructor.sections, 2);
+  assert.equal(g('21002').crn[0].row[0], '21002');
+  assert.equal(g('gpa').pages[0].page.href, '/gano-hesaplama/');
+  assert.equal(g('').pages.length, 2);
+  assert.equal(g('zzzz').courses, undefined);
+});

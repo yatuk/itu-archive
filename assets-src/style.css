@@ -6953,3 +6953,139 @@ details.ab-faq summary:focus-visible { outline: 2px solid var(--cyan); outline-o
   .d-stats > div { padding-left: 9px; padding-right: 9px; }
   .d-hrow { grid-template-columns: 76px minmax(0, 1fr) auto; gap: 8px; }
 }
+
+/* ================= Transkript işaretleri + komut paleti =================
+   (views/courses.js "geçtin/tekrar" işaretleri ve core/palette.js Ctrl/Cmd+K
+   paleti.) Yalnız token kullanır; sade ve koyu temada aynı yapı. */
+
+/* Satırdaki işaret: ad hücresinin başında, kodun hemen yanında küçük hap.
+   Tıklama satıra geçer (kontrol değil), satır yüksekliğini değiştirmez. */
+.cl-taken {
+  display: inline-flex; align-items: center; gap: 3px;
+  margin-inline-end: 7px; padding: 0 6px;
+  border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); border-radius: 999px;
+  font: 600 10.5px/1.55 var(--mono); letter-spacing: .01em; color: var(--dim);
+  vertical-align: 1px; white-space: nowrap;
+}
+.cl-taken-ic { color: var(--acid); font-family: var(--sans); font-weight: 700; }
+.cl-taken.is-retake { color: var(--amber); border-color: color-mix(in srgb, var(--amber) 55%, transparent); font-family: var(--sans); }
+.cl-narrow .cl-taken { margin-inline-end: 6px; }
+.cl-narrow .cl-taken-w { display: none; }
+#view-dersler .course-taken-check[hidden] { display: none; }
+
+/* Arama kutusundaki "Ctrl K" ipucu: yalnız fare/klavyeli geniş ekranda,
+   kutu boşken (× temizleme düğmesiyle aynı yere düşer). */
+.cmdk-hint { display: none; }
+@media (hover: hover) and (pointer: fine) and (min-width: 761px) {
+  #view-dersler .course-search .cmdk-hint {
+    display: inline-flex; align-items: center;
+    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+    padding: 1px 6px; border: 1px solid var(--line); border-radius: 5px;
+    background: var(--panel-2); color: var(--dimmer);
+    font: 500 11px/1.5 var(--mono); pointer-events: none;
+  }
+  #view-dersler .course-search input:placeholder-shown { padding-right: 78px; }
+  #view-dersler .course-search:has(input:not(:placeholder-shown)) .cmdk-hint { display: none; }
+}
+
+/* Başlıktaki arama düğmesi: yalnız dar ekranda (masaüstünde Ctrl K ipucu var). */
+.cmdk-trigger { display: none; }
+@media (max-width: 760px) {
+  .cmdk-trigger {
+    all: unset; box-sizing: border-box; cursor: pointer;
+    display: inline-grid; place-items: center; flex: none;
+    width: 40px; height: 40px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--panel); color: var(--fg);
+    position: relative;
+  }
+  .cmdk-trigger::after { content: ""; position: absolute; inset: -2px; }
+  .cmdk-trigger:hover { border-color: var(--line-hot); }
+  .cmdk-trigger:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+}
+/* Telefon genişliğinde başlık satırı (marka + arama + tema + dil) sığsın:
+   aralıklar ve dil düğmesi biraz daralır, dokunma alanı ::after ile 44px kalır. */
+@media (max-width: 400px) {
+  [data-theme] .masthead-refined .mast-top { gap: 8px; }
+  [data-theme] .masthead-refined .mast-controls { gap: 4px; }
+  [data-theme] .masthead-refined #lang-btn { min-width: 48px; padding-inline: 5px; }
+  .cmdk-trigger { width: 36px; height: 36px; }
+  .cmdk-trigger::after { inset: -4px; }
+}
+@media (min-width: 361px) and (max-width: 380px) {
+  .masthead-refined:is(:root[data-theme] *) .brand-home { gap: 6px; }
+  .masthead-refined:is(:root[data-theme] *) .brand-logo { width: 24px; height: 24px; }
+}
+
+.cmdk { position: fixed; inset: 0; z-index: 260; }
+.cmdk[hidden] { display: none; }
+.cmdk-scrim { position: absolute; inset: 0; background: var(--scrim); }
+.cmdk-box {
+  position: relative; box-sizing: border-box;
+  width: min(640px, calc(100% - 32px)); max-height: min(560px, 76dvh);
+  margin: 12vh auto 0;
+  display: flex; flex-direction: column;
+  background: var(--panel); color: var(--fg);
+  border: 1px solid var(--line-hot); border-radius: 12px;
+  box-shadow: var(--shadow-soft, 0 18px 50px rgba(0, 0, 0, .45));
+  overflow: hidden;
+}
+.cmdk-field {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 10px 0 16px; border-bottom: 1px solid var(--line);
+}
+.cmdk-ic { flex: none; color: var(--dimmer); }
+.cmdk-input {
+  flex: 1; min-width: 0; height: 54px; margin: 0; padding: 0;
+  border: 0; background: transparent; color: var(--fg);
+  font: 400 16px/1.3 var(--sans);
+}
+.cmdk-input::placeholder { color: var(--dimmer); }
+.cmdk-input:focus { outline: none; }
+.cmdk-close {
+  all: unset; box-sizing: border-box; cursor: pointer; flex: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 44px; height: 32px; padding: 0 8px; border-radius: 6px;
+  border: 1px solid var(--line); background: var(--panel-2); color: var(--dim);
+  font: 500 11.5px/1 var(--mono);
+}
+.cmdk-close:hover { color: var(--fg); }
+.cmdk-close:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.cmdk-list { overflow-y: auto; overscroll-behavior: contain; padding: 6px 0 8px; }
+.cmdk-list:empty { display: none; }
+.cmdk-gh {
+  padding: 10px 16px 4px;
+  font: 600 11px/1.2 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--dimmer);
+}
+.cmdk-opt {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; column-gap: 12px;
+  min-height: 40px; padding: 6px 16px; cursor: pointer;
+  font-size: 14px; color: var(--fg);
+}
+.cmdk-opt.is-instructor, .cmdk-opt.is-page { grid-template-columns: minmax(0, 1fr) auto; }
+.cmdk-opt[aria-selected="true"] { background: var(--now-bg); box-shadow: inset 3px 0 0 var(--acid-vivid); }
+.cmdk-code { font: 700 13px/1.3 var(--mono); white-space: nowrap; min-width: 76px; }
+.cmdk-main { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cmdk-main b { font: 600 13px/1.3 var(--mono); margin-inline-end: 4px; }
+.cmdk-meta { font: 12px/1.3 var(--mono); color: var(--dimmer); white-space: nowrap; max-width: 34ch; overflow: hidden; text-overflow: ellipsis; }
+.cmdk-status { margin: 0; padding: 14px 16px; font-size: 13px; color: var(--dim); }
+.cmdk-status[hidden] { display: none; }
+.cmdk-foot {
+  display: flex; gap: 16px; margin: 0; padding: 8px 16px;
+  border-top: 1px solid var(--line); background: var(--panel-2);
+  font-size: 12px; color: var(--dimmer);
+}
+.cmdk-foot kbd {
+  display: inline-block; min-width: 1.4em; margin-inline-end: 3px; padding: 0 4px;
+  border: 1px solid var(--line); border-radius: 4px; background: var(--panel);
+  font: 500 11px/1.5 var(--mono); text-align: center; color: var(--dim);
+}
+@media (max-width: 600px) {
+  .cmdk-box {
+    width: 100%; max-height: 88dvh; margin: 0;
+    border-width: 0 0 1px; border-radius: 0 0 14px 14px;
+  }
+  .cmdk-opt { min-height: 48px; }
+  .cmdk-code { min-width: 0; }
+  .cmdk-meta { max-width: 14ch; }
+  .cmdk-foot { display: none; }
+}

@@ -208,6 +208,8 @@ async function boot() {
   await syncProgramFilter(courseValue('program'));
   $('#f-code').value = courseValue('code');
   $('#f-open').checked = courseValue('open') === '1' || courseValue('open') === true;
+  // "geçtiklerimi gizle" kişisel veriye bağlı: yalnız bu tarayıcının tercihi, URL'ye girmez.
+  if ($('#f-taken-hide')) $('#f-taken-hide').checked = coursePref.hideTaken === true;
   const wantedSort = courseValue('sort', 'crn');
   restoreCourseSort(wantedSort, courseValue('sdir', coursePref.dir || 1));
   applyFilters();
@@ -508,17 +510,41 @@ function enhanceSearchInputs() {
   }
 }
 
-// Global arama kısayolu: "/" veya Ctrl/Cmd+K → Dersler arama kutusuna odaklan.
-// (Critique-Alex: güçlü kullanıcı 8 sekme geçmeden aramaya atlayabilsin.)
+// Global kısayollar: "/" → Dersler arama kutusuna odaklan (Critique-Alex:
+// güçlü kullanıcı 8 sekme geçmeden aramaya atlayabilsin). Ctrl/Cmd+K → komut
+// paleti (core/palette.js, ilk açılışta tembel yüklenir); yazı alanındayken de
+// çalışır. Başlıktaki arama düğmesi (dar ekran) ve kutudaki ipucu aynı paleti açar.
+let paletteModule = null;
+function loadPalette() {
+  if (!paletteModule) {
+    paletteModule = import('./core/palette.js');
+    paletteModule.catch(() => { paletteModule = null; });
+  }
+  return paletteModule;
+}
+function openCommandPalette() {
+  loadPalette()
+    .then((m) => m.togglePalette({ showView: (view) => showView && showView(view, true) }))
+    .catch((error) => console.error('Komut paleti yüklenemedi:', error));
+}
+
 function wireSearchShortcut() {
   document.addEventListener('keydown', (e) => {
+    if (e.key && e.key.toLowerCase() === 'k' && (e.ctrlKey || e.metaKey) && !e.altKey && !e.shiftKey) {
+      e.preventDefault();
+      openCommandPalette();
+      return;
+    }
     if (e.target.closest('input, select, textarea')) return;
-    if ((e.key === '/' || (e.key.toLowerCase() === 'k' && (e.ctrlKey || e.metaKey)))) {
+    if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
       e.preventDefault();
       const q = $('#q');
       if (q) { showView('dersler', true); q.focus(); q.select(); }
     }
   });
+  const mac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent || '');
+  for (const hint of document.querySelectorAll('.cmdk-hint')) hint.textContent = mac ? '⌘ K' : 'Ctrl K';
+  for (const btn of document.querySelectorAll('[data-cmdk-open]')) btn.addEventListener('click', openCommandPalette);
 }
 
 // Hakkında sekmesindeki curl örneklerine sitenin gerçek adresini yazar.

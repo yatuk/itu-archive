@@ -55,7 +55,7 @@
 <!-- Yalnız etkin dilin sözlüğü yüklenir (assets/i18n.js üst düzey await ile
      bekler). Aynı dil seçimi burada yapılıp sözlük modül ağacıyla paralel
      istenir; adresleri cmd/site sürümler. -->
-<template id="i18n-preload"><link rel="modulepreload" href="assets/i18n/tr.js?v=c1c5734c9c48" data-lang="tr"><link rel="modulepreload" href="assets/i18n/en.js?v=45c19bd3abd6" data-lang="en"></template>
+<template id="i18n-preload"><link rel="modulepreload" href="assets/i18n/tr.js?v=16ab24959fce" data-lang="tr"><link rel="modulepreload" href="assets/i18n/en.js?v=c635bcad0956" data-lang="en"></template>
 <script>
 (function () {
   try {
@@ -177,6 +177,7 @@
     <span class="brand-title" translate="no">DERS&nbsp;ARŞİVİ</span>
    </a>
    <div class="mast-controls">
+    <button type="button" class="cmdk-trigger" data-cmdk-open aria-label="Ara: ders, CRN, hoca veya sayfa" title="Ara" data-i18n-aria-label="cmdkOpenLabel" data-i18n-title="cmdkOpenTitle"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
     <div class="theme-pick" role="group" aria-label="Görünüm teması" data-i18n-aria-label="themeGroup">
      <button type="button" class="theme-btn" data-theme="sade" aria-pressed="true" aria-label="Sade (varsayılan)" title="Sade (varsayılan)" data-i18n-aria-label="themeLightLabel" data-i18n-title="themeLightLabel"><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span><span class="theme-name" data-i18n="themeLight">Açık</span></button>
      <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false" aria-label="Fosfor (koyu)" title="Fosfor (koyu)" data-i18n-aria-label="themeDarkLabel" data-i18n-title="themeDarkLabel"><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg></span><span class="theme-name" data-i18n="themeDark">Koyu</span></button>
@@ -238,6 +239,7 @@
      <input id="q" type="search" autocomplete="off" spellcheck="false"
             placeholder="kod, ad, CRN veya öğretim üyesi…" aria-label="Ders ara"
             data-i18n-placeholder="courseSearchPlaceholder" data-i18n-aria-label="courseSearchLabel">
+     <kbd class="cmdk-hint" aria-hidden="true">Ctrl K</kbd>
     </label>
     <label class="course-field course-term-field"><span data-i18n="filterTerm">dönem</span> <select id="f-term"></select></label>
    </div>
@@ -262,6 +264,7 @@
       <option value="aksam" data-i18n="timeEvening">akşam (≥17:00)</option>
     </select></label>
     <label class="check course-open-check"><input type="checkbox" id="f-open"> <span data-i18n="filterOpen">yalnızca kontenjanı olanlar</span></label>
+    <label class="check course-open-check course-taken-check" id="f-taken-wrap" hidden><input type="checkbox" id="f-taken-hide"> <span data-i18n="filterHideTaken">geçtiklerimi gizle</span></label>
     <button type="button" id="f-more-toggle" class="btn-ghost course-more-toggle" aria-expanded="false" aria-controls="filters-more" data-i18n="filterMore">Diğer filtreler</button>
     <div class="filters-more" id="filters-more" hidden>
      <label class="course-field"><span data-i18n="filterLevel">seviye</span> <select id="f-level">

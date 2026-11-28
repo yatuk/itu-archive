@@ -185,17 +185,19 @@ func New(f *fetch.Client) *Client {
 }
 
 var (
-	rowRe        = regexp.MustCompile(`(?is)<tr>(.*?)</tr>`)
-	cellRe       = regexp.MustCompile(`(?is)<td[^>]*>(.*?)</td>`)
-	tagRe        = regexp.MustCompile(`(?s)<[^>]*>`)
-	spaceRe      = regexp.MustCompile(`\s+`)
-	hrefRe       = regexp.MustCompile(`(?i)href="([^"]+)"`)
-	h2Re         = regexp.MustCompile(`(?is)<h2[^>]*>(.*?)</h2>`)
-	tableRe      = regexp.MustCompile(`(?is)<table[^>]*>(.*?)</table>`)
-	grupIDRe     = regexp.MustCompile(`grupId=(\d+)`)
-	planIDRe     = regexp.MustCompile(`DersPlanDetay/(\d+)`)
-	totalKrediRe = regexp.MustCompile(`(?i)Toplam\s+Kredi[^0-9]*([0-9.,]+)`)
-	totalEctsRe  = regexp.MustCompile(`(?i)Toplam\s+AKTS[^0-9]*([0-9.,]+)`)
+	rowRe         = regexp.MustCompile(`(?is)<tr>(.*?)</tr>`)
+	cellRe        = regexp.MustCompile(`(?is)<td[^>]*>(.*?)</td>`)
+	tagRe         = regexp.MustCompile(`(?s)<[^>]*>`)
+	spaceRe       = regexp.MustCompile(`\s+`)
+	hrefRe        = regexp.MustCompile(`(?i)href="([^"]+)"`)
+	h2Re          = regexp.MustCompile(`(?is)<h2[^>]*>(.*?)</h2>`)
+	tableRe       = regexp.MustCompile(`(?is)<table[^>]*>(.*?)</table>`)
+	grupIDRe      = regexp.MustCompile(`grupId=(\d+)`)
+	planIDRe      = regexp.MustCompile(`DersPlanDetay/(\d+)`)
+	branchOnlyRe  = regexp.MustCompile(`^[A-ZÇĞİÖŞÜ]{2,4}$`)
+	romanSuffixRe = regexp.MustCompile(`\s+[IVX]+$`)
+	totalKrediRe  = regexp.MustCompile(`(?i)Toplam\s+Kredi[^0-9]*([0-9.,]+)`)
+	totalEctsRe   = regexp.MustCompile(`(?i)Toplam\s+AKTS[^0-9]*([0-9.,]+)`)
 	// Ders kodu hücresindeki bağlantılar: <a href="...bransKodu=SAO&dersNo=101">SAO 101E</a>.
 	// OBS aynı dersin İngilizce ve Türkçe kodlarını AYRI bağlantılar basar —
 	// clean() bunları yan yana metne çevirip "SAO 101E SAO 101" üretirdi.
@@ -578,6 +580,7 @@ func (c *Client) group(ctx context.Context, id string) ([]Course, error) {
 		return nil, err
 	}
 	var opts []Course
+	seenBranch := map[string]bool{}
 	for _, row := range rowRe.FindAllStringSubmatch(body, -1) {
 		cells := cellRe.FindAllStringSubmatch(row[1], -1)
 		if len(cells) == 0 {
@@ -592,10 +595,19 @@ func (c *Client) group(ctx context.Context, id string) ([]Course, error) {
 		code := canonicalCode(cells[0][1])
 		if code == "" {
 			parts := strings.Fields(first)
+			if len(parts) >= 2 && branchOnlyRe.MatchString(parts[0]) && (parts[1][0] < '0' || parts[1][0] > '9') {
+				// OBS bazı satırları numarasız basıyor ("CIN <br/> Çince I"):
+				// o branşın herhangi bir dersi sayılır. Kod yalnız branş
+				// ("CIN") olarak saklanır; istemci bunu branş joker'i okur.
+				// Aynı branşın I, II, III… satırları tek joker seçenekte toplanır.
+				if !seenBranch[parts[0]] {
+					seenBranch[parts[0]] = true
+					opts = append(opts, Course{Code: parts[0], Name: romanSuffixRe.ReplaceAllString(strings.Join(parts[1:], " "), "")})
+				}
+				continue
+			}
 			if len(parts) < 3 || parts[1][0] < '0' || parts[1][0] > '9' {
-				// "BLG 337E Başlık..." biçiminde değilse atla. OBS bazı
-				// satırları numarasız basıyor ("CIN <br/> Çince I"); bunlardan
-				// "CIN Çince" gibi sahte kod üretilmemeli.
+				// "BLG 337E Başlık..." biçiminde değilse atla.
 				continue
 			}
 			code = parts[0] + " " + parts[1]

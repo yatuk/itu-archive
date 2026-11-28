@@ -2559,3 +2559,16 @@ test('plan sürümü JSON içe aktarımında korunur; eski kayıt sürümsüz y�
   assert.equal(legacy.data.grades['MAT 103E'].grade, 'BB');
   assert.equal(importJSON(JSON.stringify({ program: 'X', planVersion: 'kötü' })).data.planVersion, undefined);
 });
+
+test('transkript: seçmeli listesindeki numarasız branş (CIN) o branşın her dersini kapsar', async () => {
+  const { parseOBSTranscript, matchTranscriptToPlan } = await import('./transcript.js');
+  const text = `2024-2025 / Bahar Dönemi
+CIN 101 Chinese I 3,00 AA
+Toplam 3,00 3,00 3,00 12,00 4,00`;
+  const plan = { semesters: [{ items: [
+    { elective: { title: 'Elect. Course (ITB)', options: [{ code: 'ITB 211', name: 'Bilim Tarihi' }, { code: 'CIN', name: 'Çince I' }] } },
+  ] }] };
+  const m = matchTranscriptToPlan(plan, parseOBSTranscript(text).records);
+  assert.match(JSON.stringify(m), /"slot":"s0i0"/);
+  assert.match(JSON.stringify(m), /"code":"CIN 101"/);
+});

@@ -163,7 +163,8 @@ func TestPlanFetchesOlderVersions(t *testing.T) {
 		}
 	}
 	el := old.Semesters[1].Items[1].Elective
-	if el == nil || len(el.Options) != 2 || el.Options[0].Code != "ITB 211" {
+	// Numarasız "CIN <br/> Çince I" satırı branş joker'i olarak kalır.
+	if el == nil || len(el.Options) != 3 || el.Options[0].Code != "ITB 211" || el.Options[2].Code != "CIN" || el.Options[2].Name != "Çince" {
 		t.Errorf("seçmeli grup: %+v", el)
 	}
 	// Seçmeli grup sayfası iki sürümde ortak: bir kez çekilir.

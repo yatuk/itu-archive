@@ -396,7 +396,9 @@ export function matchTranscriptToPlan(plan, records) {
   }
   const itbCandidates = remaining
     .map((record) => {
-      if (itbOptions.has(record.code) || /^(?:ITB|SNT)\s/.test(record.code)) return { record, code: record.code };
+      // Seçenek listesindeki numarasız branş ("CIN") o branşın her dersini kapsar.
+      const branch = String(record.code).split(' ')[0];
+      if (itbOptions.has(record.code) || itbOptions.has(branch) || /^(?:ITB|SNT)\s/.test(record.code)) return { record, code: record.code };
       const key = equivalentNameKey(record.name);
       return key && itbCodeByName.has(key) ? { record, code: itbCodeByName.get(key) } : null;
     })
@@ -413,7 +415,8 @@ export function matchTranscriptToPlan(plan, records) {
   // Diğer havuzlarda kesin seçenek kodlarını bütün dersler için önce tüket.
   for (const record of remaining) {
     if (assignedElectiveCodes.has(record.code)) continue;
-    const slot = otherSlots.find((entry) => !usedSlots.has(entry.slot) && entry.options.has(record.code));
+    const branch = String(record.code).split(' ')[0];
+    const slot = otherSlots.find((entry) => !usedSlots.has(entry.slot) && (entry.options.has(record.code) || entry.options.has(branch)));
     if (slot) {
       usedSlots.add(slot.slot);
       assignedElectiveCodes.add(record.code);

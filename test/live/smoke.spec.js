@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { test, expect } from '@playwright/test';
+import { sekmeyeGit } from '../e2e/mobil-kabuk.js';
 
 // Canlı yayın duman testi (playwright.live.config.js). Workflow önce
 // scripts/wait-for-deploy.mjs ile Cloudflare'in test edilen commit'i sunduğunu
@@ -74,14 +75,15 @@ test('ana uygulama açılır, sekmeler çalışır, veri güncel', async ({ page
 
   // Sekmeler tembel yüklenir: görünüm modülü ve CSS'i ilk tıklamada gelir.
   for (const view of ['dersplanim', 'onsart', 'sinavlar', 'takvim', 'program']) {
-    await page.locator(`#tab-${view}`).click();
+    // Mobil sade kabukta ikincil sekmeler "Daha fazla" sayfasında.
+    await sekmeyeGit(page, view);
     await expect(page.locator(`#tab-${view}`)).toHaveAttribute('aria-selected', 'true');
     await expect(page.locator(`#view-${view}`)).toBeVisible({ timeout: 15_000 });
     await expect(page).toHaveURL(new RegExp(`#${view}$`));
   }
   await expect(page.locator('#app-failure')).toBeHidden();
 
-  await page.locator('#tab-dersler').click();
+  await sekmeyeGit(page, 'dersler');
   await expect(page.locator('#course-groups .cl-item').first()).toBeVisible();
   const layout = await page.evaluate(() => ({
     viewport: document.documentElement.clientWidth,

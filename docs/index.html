@@ -21,6 +21,10 @@
     // değerleri kaldırılan temalara karşılık gelir · sade'ye düşer.
     var t = localStorage.getItem('itu-theme') === 'dark' ? 'dark' : 'sade';
     document.documentElement.setAttribute('data-theme', t);
+    // Mobil kabuk sınıfı ilk boyamadan önce: app.js geç yüklenince başlığın
+    // küçülüp içeriğin zıplaması (CLS) olmasın. Kurallar medya sorgusuyla
+    // sınırlı; mobile-shell.js aynı sınıfı yeniden ekler (zararsız).
+    document.documentElement.classList.add('mshell');
     // Tarayıcı çubuğu sayfa zeminiyle aynı olsun (mobilde görünür).
     var m = document.querySelector('meta[name=theme-color]');
     if (m) m.setAttribute('content', t === 'dark' ? '#0a0a0a' : '#f4f6f4');
@@ -731,7 +735,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=134feaeed6ad"></script>
+<script type="module" src="assets/app.js?v=5aa529db7bb1"></script>
 <script>
 (function () {
   var root = document.documentElement;

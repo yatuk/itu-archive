@@ -1006,6 +1006,25 @@ function resolvedCourseCode(course, slotKey) {
   return canonicalCode(course?.code) || canonicalCode((stored.requiredSlots || {})[slotKey]);
 }
 
+// Kodsuz plan kalemi için gösterim kodu: (1) bu dönemin şubelerinde adı
+// birebir tutan tek kod, (2) "X Laboratory" ve hemen önceki kalem "X" ise
+// önceki kodun L sonekli hali (FIZ 101E → FIZ 101EL). Bulunamazsa ''.
+function guessCodeForSlot(slotKey, name) {
+  const norm = (v) => String(v || '').toLocaleLowerCase('tr-TR').replace(/[^a-z0-9çğıöşü]+/g, ' ').trim();
+  const key = norm(name);
+  if (!key) return '';
+  const byName = new Set();
+  for (const r of rows || []) if (r && norm(r[2]) === key && r[1]) byName.add(canonicalCode(r[1]));
+  if (byName.size === 1) return [...byName][0];
+  const m = /^s(\d+)i(\d+)$/.exec(slotKey || '');
+  if (!m || !plan) return '';
+  const prev = plan.semesters?.[Number(m[1])]?.items?.[Number(m[2]) - 1]?.course;
+  const prevCode = canonicalCode(prev?.code);
+  const prevName = norm(prev?.name);
+  if (prevCode && prevName && /(^| )lab(oratory)?( |$)/.test(key) && key.startsWith(prevName + ' ')) return prevCode + 'L';
+  return '';
+}
+
 function resolvedPlan() {
   if (!plan || !Object.keys(stored.requiredSlots || {}).length) return plan;
   return {
@@ -1038,20 +1057,23 @@ function courseRow(c, st, slotKey) {
   row.className = 'dp-row';
 
   // 1) kod: detay düğmesi (kodu olmayan laboratuvar kalemlerinde nokta)
+  // OBS planı bazı laboratuvar/dil kalemlerini kodsuz verir; yalnız gösterim
+  // için koddan tahmin edilir (not anahtarı değişmez).
+  const shownCode = code || guessCodeForSlot(slotKey, c?.name);
   let codeEl;
-  if (code) {
+  if (shownCode) {
     codeEl = document.createElement('button');
     codeEl.type = 'button';
     codeEl.dataset.act = 'detail';
-    codeEl.dataset.code = code;
-    codeEl.title = I18N.t('prgMenuDetail');
+    codeEl.dataset.code = shownCode;
+    codeEl.title = code ? I18N.t('prgMenuDetail') : `${I18N.t('dpNoCodeInPlan')} · ${I18N.t('prgMenuDetail')}`;
   } else {
     codeEl = document.createElement('span');
     codeEl.title = I18N.t('dpNoCodeInPlan');
   }
   codeEl.className = 'dp-code';
   codeEl.setAttribute('translate', 'no');
-  codeEl.textContent = code || '·';
+  codeEl.textContent = shownCode || '·';
   row.appendChild(codeEl);
 
   // 2) ad

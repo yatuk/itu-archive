@@ -116,3 +116,129 @@ function num0(s) {
   const n = parseFloat(String(s ?? '').replace(',', '.'));
   return isNaN(n) ? 0 : n;
 }
+
+// -- Akademik durum (gözetim / onur) --
+//
+// Kaynak: İTÜ Lisans Eğitim ve Öğretim Yönetmeliği (RG 11.07.2016/29767;
+// RG 22.07.2022/31900 ve RG 04.12.2023/32389 değişiklikleriyle). Güncel metin:
+//   https://www.sis.itu.edu.tr/TR/mevzuat/lisans-yonetmelik.php
+//   (ilk Resmî Gazete metni: https://www.resmigazete.gov.tr/eskiler/2016/07/20160711-5.htm)
+// Denetim: 2026-11.
+//   Madde 15(1) (değişik RG 22.07.2022): öğretim planından en az 30 kredi
+//     tamamlayan 2., en az 60 kredi 3., en az 95 kredi 4. sınıf öğrencisidir.
+//     Sınıf yarıyıl sayısına değil TAMAMLANAN KREDİYE göre belirlenir.
+//   Madde 21(1): gözetim listesi — 1. ve 2. sınıfta AGNO < 1.80, 3. sınıfta
+//     < 1.90, 4. sınıfta < 2.00. 21(2): gözetimdeki öğrencinin yarıyıl kredi
+//     yükü en fazla 18; AGNO eşiğin üzerine çıkınca normal statüye döner.
+//   Madde 23(8) (değişik RG 04.12.2023): AGNO'su en az 2,00 olan, o yarıyılda
+//     en az 18 kredi ders alıp başaran öğrenci YARIYIL ortalaması 3,00–3,49 ise
+//     "Onur", 3,50–4,00 ise "Yüksek Onur" öğrencisidir; o yarıyılda FF ya da VF
+//     varsa olamaz. (En az sürede mezun olanda mezuniyet yarıyılında kredi
+//     sınırı aranmaz — burada modellenmedi.)
+//   Madde 31(1): mezuniyet için AGNO en az 2,00.
+// Yönetmelikte "sınamalı" statüsü yoktur; düşük ortalamanın resmî sonucu
+// gözetim listesidir. Ortalama belgede iki ondalıkla gösterilir (Madde 30),
+// eşik karşılaştırması bu yüzden iki haneye yuvarlanmış değerle yapılır.
+export const STANDING = {
+  source: 'https://www.sis.itu.edu.tr/TR/mevzuat/lisans-yonetmelik.php',
+  classCredits: [30, 60, 95],
+  watch: { 1: 1.8, 2: 1.8, 3: 1.9, 4: 2.0 },
+  watchMaxCredits: 18,
+  honor: 3.0,
+  highHonor: 3.5,
+  honorMinGpa: 2.0,
+  honorMinCredits: 18,
+  graduationGpa: 2.0,
+};
+
+export function round2(n) {
+  return Math.round((Number(n) + Number.EPSILON) * 100) / 100;
+}
+
+// Madde 15(1): tamamlanan krediden sınıf (1–4).
+export function classYear(completedCredits) {
+  const c = Number(completedCredits) || 0;
+  const [two, three, four] = STANDING.classCredits;
+  return c >= four ? 4 : c >= three ? 3 : c >= two ? 2 : 1;
+}
+
+// Madde 21(1): sınıfa göre gözetim eşiği.
+export function watchThreshold(year) {
+  return STANDING.watch[year] ?? STANDING.watch[1];
+}
+
+// Madde 23(8): bir yarıyılın onur değerlendirmesi.
+// term: { gpa, passedCredits, hasFail }; gano: o yarıyıl sonundaki AGNO.
+// Dönüş: { level: 'high'|'honor'|'none', reason: ''|'fail'|'credits'|'gano' } ya da null.
+export function termHonor(term, gano) {
+  if (!term || term.gpa == null || !Number.isFinite(Number(term.gpa))) return null;
+  if (term.hasFail) return { level: 'none', reason: 'fail' };
+  if ((Number(term.passedCredits) || 0) < STANDING.honorMinCredits) return { level: 'none', reason: 'credits' };
+  if (gano == null || round2(gano) < STANDING.honorMinGpa) return { level: 'none', reason: 'gano' };
+  const avg = round2(term.gpa);
+  if (avg >= STANDING.highHonor) return { level: 'high', reason: '' };
+  if (avg >= STANDING.honor) return { level: 'honor', reason: '' };
+  return { level: 'none', reason: '' };
+}
+
+// Toplu akademik durum. gpa: AGNO; completedCredits: öğretim planından
+// tamamlanan kredi; lastTerm: son normal yarıyılın özeti ({ term, gpa,
+// passedCredits, hasFail }) ya da null. gpa yoksa null.
+export function academicStanding({ gpa, completedCredits, lastTerm = null } = {}) {
+  if (gpa == null || !Number.isFinite(Number(gpa))) return null;
+  const g = round2(gpa);
+  const year = classYear(completedCredits);
+  const threshold = watchThreshold(year);
+  const th = lastTerm ? termHonor(lastTerm, g) : null;
+  return {
+    gpa: g,
+    year,
+    watch: { threshold, on: g < threshold, gap: round2(threshold - g) },
+    honor: {
+      toHonor: Math.max(0, round2(STANDING.honor - g)),
+      toHigh: Math.max(0, round2(STANDING.highHonor - g)),
+      term: th ? { ...th, gpa: round2(lastTerm.gpa), label: lastTerm.term || '' } : null,
+    },
+    graduationOk: g >= STANDING.graduationGpa,
+  };
+}
+
+// -- Tekrar önerisi --
+// Son notu FF/VF/DD/DD+/DC/DC+ olan dersler (İTÜ'de tekrar edilen dersin son
+// notu geçerlidir, Madde 22(1); AA ile geçilen ders tekrar edilemez, 22(2)).
+// entries: GANO'ya giren denemeler (ders başına son not; gpaEntries çıktısı).
+// Kazanç: not `target` olursa AGNO'nun değişimi. FF/VF kredisi zaten paydada
+// olduğundan payda değişmez: Δ = (p(target) − p(grade)) × kredi / payda.
+// base: { credits, gpa } devir (yatay geçiş) paydaya eklenir.
+export const RETAKE_GRADES = ['FF', 'VF', 'DD', 'DD+', 'DC', 'DC+'].filter((g) => g in GRADE_POINTS);
+
+export function retakeCandidates(entries, { target = 'BB', base = null } = {}) {
+  const tp = GRADE_POINTS[target];
+  if (tp === undefined) return [];
+  // Aynı kod iki kez geldiyse (plan girdisi) son kayıt geçerlidir.
+  const byCode = new Map();
+  for (const e of entries || []) if (e && e.code) byCode.set(e.code, e);
+  const list = [...byCode.values()];
+  let den = 0;
+  const baseCredits = Number(base?.credits) || 0;
+  if (baseCredits > 0 && Number.isFinite(Number(base?.gpa))) den += baseCredits;
+  for (const e of list) {
+    if (GRADE_POINTS[e.grade] === undefined) continue;
+    den += Number(e.credits) || 0;
+  }
+  if (den <= 0) return [];
+  return list
+    .filter((e) => RETAKE_GRADES.includes(e.grade) && (Number(e.credits) || 0) > 0 && tp > GRADE_POINTS[e.grade])
+    .map((e) => {
+      const credits = Number(e.credits) || 0;
+      return { code: e.code, grade: e.grade, credits, key: e.key || '', slot: e.slot || '', gain: ((tp - GRADE_POINTS[e.grade]) * credits) / den };
+    })
+    .sort((a, b) => b.gain - a.gain || b.credits - a.credits || a.code.localeCompare(b.code));
+}
+
+// "+0,08" biçimi (Türkçe ondalık, işaretli; eksi için − karakteri).
+export function fmtGain(n) {
+  if (n == null || !Number.isFinite(Number(n))) return '';
+  const v = round2(n);
+  return `${v > 0 ? '+' : v < 0 ? '−' : '±'}${fmtTr2(Math.abs(v))}`;
+}

@@ -10,6 +10,31 @@ const GRADES = ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+',
 const GRADE_PART = GRADES.map((g) => g.replace('+', '\\+')).join('|');
 const COURSE_RE = new RegExp(`^([A-ZÇĞİÖŞÜ]{2,6})\\s+(\\d{3,4}[A-Z]{0,3})\\s+(.+?)\\s+(\\d+(?:[.,]\\d{1,2})?)\\s+(${GRADE_PART})(?:\\s+(\\*))?\\s*$`, 'i');
 const TERM_RE = /^(\d{4}-\d{4})\s*\/\s*(Güz|Bahar|Yaz|Fall|Spring|Summer)\s+(?:Dönemi|Semester)$/i;
+// "2026-2027 / Güz Dönemi - Devam Eden Dersler": notu olmayan, sürmekte olan
+// dersler. Bu başlıktan sonra hiçbir satır notlu kayıt sayılmaz.
+const IN_PROGRESS_RE = /^\d{4}-\d{4}\s*\/\s*(?:Güz|Bahar|Yaz|Fall|Spring|Summer)\b.*(?:Devam\s+Eden|In\s+Progress|Ongoing)/i;
+// Dönem toplamlarından sonraki resmî akademik durum satırı: "Akd. Durum İyi
+// Durum", "Akd. Durum Gözetim Listesi" (sayfa altbilgisinden " ÖN İZLEME"
+// eklenebilir). Yalnızca bilinen durum adları alınır; satırdan başka hiçbir şey
+// saklanmaz.
+const STANDING_RE = /^Akd\.?\s*Durum(?:u)?\s*:?\s*(.+?)(?:\s+ÖN\s+İZLEME)?\s*$/i;
+const STANDING_STATUSES = new Map([
+  ['iyi durum', 'İyi Durum'],
+  ['gözetim listesi', 'Gözetim Listesi'],
+  ['gözetim', 'Gözetim Listesi'],
+  ['onur', 'Onur'],
+  ['onur listesi', 'Onur'],
+  ['yüksek onur', 'Yüksek Onur'],
+  ['yüksek onur listesi', 'Yüksek Onur'],
+  ['good standing', 'İyi Durum'],
+  ['watch list', 'Gözetim Listesi'],
+  ['honor', 'Onur'],
+  ['high honor', 'Yüksek Onur'],
+]);
+
+function standingStatus(raw) {
+  return STANDING_STATUSES.get(String(raw || '').toLocaleLowerCase('tr-TR').replace(/\s+/g, ' ').trim()) || '';
+}
 const PASSING_GRADES = new Set(['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'BL', 'M', 'G', 'P']);
 
 // OBS ile müfredat kaynağı aynı ders adını farklı kısaltmalarla verebiliyor.
@@ -145,8 +170,14 @@ export function parseOBSTranscript(raw) {
   let term = '';
   let expectProgram = false;
   let officialGpa = null;
+  const standingByTerm = new Map();
 
   for (const line of lines) {
+    if (IN_PROGRESS_RE.test(line)) {
+      term = '';
+      expectProgram = false;
+      continue;
+    }
     const termMatch = line.match(TERM_RE);
     if (termMatch) {
       term = `${termMatch[1]} / ${termMatch[2]}`;
@@ -171,6 +202,13 @@ export function parseOBSTranscript(raw) {
       continue;
     }
 
+    const standingMatch = line.match(STANDING_RE);
+    if (standingMatch) {
+      const status = standingStatus(standingMatch[1]);
+      if (term && status) standingByTerm.set(term, status);
+      continue;
+    }
+
     const match = line.match(COURSE_RE);
     if (!match || !term) continue;
     const code = canonicalCode(`${match[1].toLocaleUpperCase('tr-TR')} ${match[2].toLocaleUpperCase('tr-TR')}`);
@@ -185,7 +223,9 @@ export function parseOBSTranscript(raw) {
     });
   }
 
-  return { records, programs: [...programs], officialGpa };
+  // standing: dönem başına resmî akademik durum (belge sırasıyla).
+  const standing = [...standingByTerm.entries()].map(([t, status]) => ({ term: t, status }));
+  return { records, programs: [...programs], officialGpa, standing };
 }
 
 // OBS'nin kümülatif GANO kuralı (transkriptteki dönem "Toplam" satırlarından
@@ -220,6 +260,28 @@ export function transcriptGpa(records) {
     credits += cr;
   }
   return { gpa: credits > 0 ? points / credits : null, credits, points };
+}
+
+// Dönem özetleri (onur değerlendirmesi için, Lisans Yönetmeliği Madde 23(8)):
+// her dönemin o dönemde alınan TÜM notlu denemelerinden yarıyıl ortalaması,
+// başarılan kredi ve FF/VF olup olmadığı. Ders adı/kodu saklanmaz.
+// Dönüş: [{ term, gpa, credits, passedCredits, hasFail }] (belge sırasıyla).
+export function transcriptTermSummary(records) {
+  const byTerm = new Map();
+  for (const record of records || []) {
+    if (!record?.term || !GRADES.includes(record.grade)) continue;
+    const cur = byTerm.get(record.term) || { term: record.term, points: 0, credits: 0, passedCredits: 0, hasFail: false };
+    const cr = Number(record.credits) || 0;
+    const pts = GRADE_POINTS[record.grade];
+    if (record.grade === 'FF' || record.grade === 'VF') cur.hasFail = true;
+    if (pts !== undefined && cr > 0) {
+      cur.points += pts * cr;
+      cur.credits += cr;
+      if (pts > 0) cur.passedCredits += cr;
+    }
+    byTerm.set(record.term, cur);
+  }
+  return [...byTerm.values()].map(({ points, ...t }) => ({ ...t, gpa: t.credits > 0 ? points / t.credits : null }));
 }
 
 export function transcriptLatest(records) {
@@ -399,12 +461,12 @@ export function matchTranscriptToPlan(plan, records) {
     key: keyBySeq.get(record.seq) || '',
   }));
 
-  return { latest, courseAssignments, electiveAssignments, unmatched, counted, planKeys };
+  return { latest, courseAssignments, electiveAssignments, unmatched, counted, planKeys, terms: transcriptTermSummary(records) };
 }
 
 // mergeTranscriptMatch üçüncü argümanla OBS'nin belgede yazan toplam GANO'sunu
 // da saklar (çapraz kontrol ve "OBS transkriptine göre" etiketi için).
-export function mergeTranscriptMatch(data, match, { officialGpa = null } = {}) {
+export function mergeTranscriptMatch(data, match, { officialGpa = null, standing = null } = {}) {
   const grades = { ...(data?.grades || {}) };
   const elective = { ...(data?.elective || {}) };
   const requiredSlots = { ...(data?.requiredSlots || {}) };
@@ -437,6 +499,13 @@ export function mergeTranscriptMatch(data, match, { officialGpa = null } = {}) {
       // dönem); ham metin ya da kişisel bilgi saklanmaz.
       unmatched: transcriptUnmatchedList(match.unmatched),
     };
+    const officialStanding = (Array.isArray(standing) ? standing : [])
+      .filter((s) => s && typeof s.term === 'string' && standingStatus(s.status))
+      .map((s) => ({ term: s.term, status: standingStatus(s.status) }));
+    if (officialStanding.length) next.transcript.standing = officialStanding;
+    if (Array.isArray(match.terms)) {
+      next.transcript.terms = match.terms.map(({ term, gpa, credits, passedCredits, hasFail }) => ({ term, gpa, credits, passedCredits, hasFail }));
+    }
   }
   return next;
 }

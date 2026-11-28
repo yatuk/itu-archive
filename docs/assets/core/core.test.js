@@ -2263,3 +2263,204 @@ Toplam 3,00 3,00 3,00 4,50 1,50`;
   assert.match(json, /"targetSlot":"s0i0"/);
   assert.match(json, /"grade":"DC"/);
 });
+
+// -- Mezuniyete ne kaldı · akademik durum · tekrar önerisi (sentetik veri) --
+
+test('akademik durum: sınıf tamamlanan krediden (md. 15), gözetim eşiği sınıfa göre (md. 21)', async () => {
+  const { classYear, watchThreshold, academicStanding, STANDING } = await import('./grades.js');
+  assert.equal(classYear(0), 1);
+  assert.equal(classYear(29.5), 1);
+  assert.equal(classYear(30), 2);
+  assert.equal(classYear(59), 2);
+  assert.equal(classYear(60), 3);
+  assert.equal(classYear(94.5), 3);
+  assert.equal(classYear(95), 4);
+  assert.equal(classYear(140), 4);
+  assert.equal(watchThreshold(1), 1.8);
+  assert.equal(watchThreshold(2), 1.8);
+  assert.equal(watchThreshold(3), 1.9);
+  assert.equal(watchThreshold(4), 2.0);
+  assert.match(STANDING.source, /^https:\/\/www\.sis\.itu\.edu\.tr\//);
+
+  // 2. sınıf, 1,85 → gözetimde değil; 3. sınıf, 1,85 → gözetimde (eşik 1,90).
+  assert.equal(academicStanding({ gpa: 1.85, completedCredits: 45 }).watch.on, false);
+  const s3 = academicStanding({ gpa: 1.85, completedCredits: 70 });
+  assert.equal(s3.year, 3);
+  assert.equal(s3.watch.on, true);
+  assert.equal(s3.watch.threshold, 1.9);
+  assert.equal(s3.watch.gap, 0.05);
+  // Belge iki ondalık gösterir: 1,7996 → 1,80 eşikte, gözetim yok.
+  assert.equal(academicStanding({ gpa: 1.7996, completedCredits: 10 }).watch.on, false);
+  assert.equal(academicStanding({ gpa: 1.794, completedCredits: 10 }).watch.on, true);
+  // 4. sınıfta 2,00 altı gözetim; mezuniyet de 2,00 ister.
+  const s4 = academicStanding({ gpa: 1.99, completedCredits: 100 });
+  assert.equal(s4.watch.on, true);
+  assert.equal(s4.graduationOk, false);
+  assert.equal(academicStanding({ gpa: null, completedCredits: 10 }), null);
+});
+
+test('onur: yarıyıl ortalaması 3,00/3,50, 18 kredi, FF/VF yok, GANO ≥ 2,00 (md. 23)', async () => {
+  const { termHonor, academicStanding } = await import('./grades.js');
+  assert.deepEqual(termHonor({ gpa: 3.2, passedCredits: 18, hasFail: false }, 2.5), { level: 'honor', reason: '' });
+  assert.deepEqual(termHonor({ gpa: 3.5, passedCredits: 20, hasFail: false }, 3.1), { level: 'high', reason: '' });
+  assert.deepEqual(termHonor({ gpa: 3.495, passedCredits: 20, hasFail: false }, 3.1), { level: 'high', reason: '' });
+  assert.deepEqual(termHonor({ gpa: 3.6, passedCredits: 17.5, hasFail: false }, 3.1), { level: 'none', reason: 'credits' });
+  assert.deepEqual(termHonor({ gpa: 3.6, passedCredits: 21, hasFail: true }, 3.1), { level: 'none', reason: 'fail' });
+  assert.deepEqual(termHonor({ gpa: 3.6, passedCredits: 21, hasFail: false }, 1.95), { level: 'none', reason: 'gano' });
+  assert.deepEqual(termHonor({ gpa: 2.9, passedCredits: 21, hasFail: false }, 2.5), { level: 'none', reason: '' });
+  const st = academicStanding({ gpa: 2.88, completedCredits: 40, lastTerm: { term: 'X', gpa: 3.1, passedCredits: 19, hasFail: false } });
+  assert.equal(st.honor.toHonor, 0.12);
+  assert.equal(st.honor.toHigh, 0.62);
+  assert.equal(st.honor.term.level, 'honor');
+  assert.equal(academicStanding({ gpa: 3.7, completedCredits: 40 }).honor.toHonor, 0);
+});
+
+test('tekrar önerisi: kredi ağırlıklı GANO kazancına göre sıralanır, hedef değiştirilebilir', async () => {
+  const { retakeCandidates, fmtGain, RETAKE_GRADES, calcGPA, GRADE_POINTS } = await import('./grades.js');
+  assert.deepEqual(RETAKE_GRADES, ['FF', 'VF', 'DD', 'DD+', 'DC', 'DC+']);
+  const entries = [
+    { code: 'AAA 101', credits: 4, grade: 'FF' },
+    { code: 'BBB 102', credits: 2, grade: 'FF' },
+    { code: 'CCC 103', credits: 4, grade: 'DD' },
+    { code: 'DDD 104', credits: 3, grade: 'DC+' },
+    { code: 'EEE 105', credits: 3, grade: 'AA' },
+    { code: 'FFF 106', credits: 0, grade: 'FF' },
+    { code: 'GGG 107', credits: 3, grade: 'VF' },
+    { code: 'HHH 108', credits: 2, grade: 'BL' },
+  ];
+  const list = retakeCandidates(entries, { target: 'BB' });
+  assert.deepEqual(list.map((c) => c.code), ['AAA 101', 'GGG 107', 'CCC 103', 'BBB 102', 'DDD 104']);
+  // Kazanç: yalnız o dersin notu değişince GANO farkı (payda değişmez).
+  const den = 4 + 2 + 4 + 3 + 3 + 3;
+  assert.ok(Math.abs(list[0].gain - (3 * 4) / den) < 1e-12);
+  const before = calcGPA(entries);
+  const after = calcGPA(entries.map((e) => (e.code === 'CCC 103' ? { ...e, grade: 'BB' } : e)));
+  assert.ok(Math.abs(list.find((c) => c.code === 'CCC 103').gain - (after - before)) < 1e-12);
+  assert.equal(fmtGain(list[0].gain), '+0,63');
+  assert.equal(fmtGain(0.0849), '+0,08');
+  // Hedef CC: DC+ (1,75) → CC (2,00) hâlâ kazanç; hedef DD ise DD/DC+ listeden düşer.
+  assert.ok(retakeCandidates(entries, { target: 'CC' }).some((c) => c.code === 'DDD 104'));
+  assert.deepEqual(retakeCandidates(entries, { target: 'DD' }).map((c) => c.code), ['AAA 101', 'GGG 107', 'BBB 102']);
+  // Devir kredisi paydayı büyütür, kazancı küçültür.
+  const withBase = retakeCandidates(entries, { target: 'BB', base: { credits: 30, gpa: 2.5 } });
+  assert.ok(withBase[0].gain < list[0].gain);
+  // Aynı kod iki kez gelirse son kayıt geçerli (tekrarda son not).
+  const repeated = retakeCandidates([{ code: 'X 1', credits: 3, grade: 'FF' }, { code: 'X 1', credits: 3, grade: 'BA' }], { target: 'BB' });
+  assert.deepEqual(repeated, []);
+  assert.equal(GRADE_POINTS['DD+'], 1.25);
+});
+
+test('mezuniyete ne kaldı: kalan zorunlu ve seçmeli havuzlar, kalan kredi ve tahmini dönem', async () => {
+  const { remainingPlan, electiveGroup, estimateGraduation, nextRegularTerm, termSlugFromLabel, transcriptTerms } = await import('./planstore.js');
+  assert.equal(electiveGroup({ title: '7.yy Seçime Bağlı Ders (ITB)' }), 'ITB');
+  assert.equal(electiveGroup({ title: 'Elective Course (Functional-MT)' }), 'MT');
+  assert.equal(electiveGroup({ title: 'TM Elective I' }), 'TM');
+  assert.equal(electiveGroup({ title: 'Seçmeli', options: [{ code: 'SNT 101' }, { code: 'ITB 201' }] }), 'ITB');
+  assert.equal(electiveGroup({ title: 'Humanities Elective', options: [{ code: 'MAT 101' }] }), 'other');
+
+  const plan = { totalCredits: '24', semesters: [
+    { items: [
+      { course: { code: 'AAA 101', name: 'A', credits: 4, ects: 6, required: 'Z' } },
+      { course: { code: 'BBB 102', name: 'B', credits: 3, ects: 5, required: 'Z' } },
+      { elective: { title: 'Seçmeli (ITB)', credits: '3', ects: [4], options: [{ code: 'ITB 201' }] } },
+    ] },
+    { items: [
+      { course: { code: 'CCC 201', name: 'C', credits: 4, ects: 6, required: 'Z' } },
+      { elective: { title: 'MT Elective I', credits: '3', ects: [5], options: [{ code: 'XYZ 401' }] } },
+      { elective: { title: 'MT Elective II', credits: '3', ects: [5], options: [{ code: 'XYZ 402' }] } },
+    ] },
+  ] };
+  const stored = { grades: { 'AAA 101': { grade: 'BB' }, 'BBB 102': { grade: 'FF' } }, elective: { s0i2: { code: 'ITB 201', grade: 'CC' } } };
+  const entries = buildEntries(plan, stored);
+  const rem = remainingPlan(plan, entries);
+  // FF kalmış sayılır; geçilen zorunlu ve doldurulmuş seçmeli listeden düşer.
+  assert.deepEqual(rem.required.map((r) => r.code), ['BBB 102', 'CCC 201']);
+  assert.deepEqual(rem.electives.map((g) => [g.group, g.slots.length, g.credits]), [['MT', 2, 6]]);
+  // Transkriptten geçildiği bilinen kod da düşer.
+  assert.deepEqual(remainingPlan(plan, entries, new Set(['CCC 201'])).required.map((r) => r.code), ['BBB 102']);
+  const p = progress(entries, { credits: 24, ects: 36 });
+  assert.equal(p.credits.done, 7);
+  assert.equal(24 - p.credits.done, 17);
+
+  assert.equal(nextRegularTerm('2026-2027-guz'), '2026-2027-bahar');
+  assert.equal(nextRegularTerm('2026-2027-bahar'), '2027-2028-guz');
+  assert.equal(nextRegularTerm('2026-2027-yaz'), '2027-2028-guz');
+  assert.equal(termSlugFromLabel('2025-2026 / Bahar'), '2025-2026-bahar');
+  assert.equal(termSlugFromLabel('2025-2026 / Güz Dönemi'), '2025-2026-guz');
+  // 17 kredi, yarıyılda 12 → 2 yarıyıl: sürmekte olan Güz + Bahar.
+  assert.deepEqual(estimateGraduation({ remainingCredits: 17, normalLoad: 12, startSlug: '2026-2027-guz' }), { semesters: 2, slug: '2026-2027-bahar' });
+  assert.deepEqual(estimateGraduation({ remainingCredits: 48, normalLoad: 16.25, startSlug: '2026-2027-bahar' }), { semesters: 3, slug: '2027-2028-bahar' });
+  assert.deepEqual(estimateGraduation({ remainingCredits: 5, normalLoad: 16, startSlug: '2026-2027-yaz' }), { semesters: 1, slug: '2027-2028-guz' });
+  assert.deepEqual(estimateGraduation({ remainingCredits: 0, normalLoad: 16, startSlug: '2026-2027-guz' }), { semesters: 0, slug: '' });
+
+  assert.equal(transcriptTerms({}), null);
+  const tt = transcriptTerms({ transcript: { terms: [
+    { term: '2025-2026 / Güz', gpa: 3.1 }, { term: '2025-2026 / Bahar', gpa: 2.4 }, { term: '2025-2026 / Yaz', gpa: 4 },
+  ] } });
+  assert.equal(tt.count, 2);
+  assert.equal(tt.last.term, '2025-2026 / Bahar');
+  assert.equal(tt.lastAny.term, '2025-2026 / Yaz');
+});
+
+test('transkript dönem özeti: yarıyıl ortalaması tüm denemelerden, FF/VF işareti, ad/kod saklanmaz', async () => {
+  const { transcriptTermSummary } = await import('./transcript.js');
+  const parsed = parseOBSTranscript(`2024-2025 / Güz Dönemi
+AAA 101 Synthetic One 4,00 BA
+BBB 102 Synthetic Two 3,00 FF *
+CCC 103 Synthetic Three 0,00 BL
+2024-2025 / Bahar Dönemi
+BBB 102 Synthetic Two 3,00 CC
+DDD 104 Synthetic Four 4,00 AA`);
+  const terms = transcriptTermSummary(parsed.records);
+  assert.equal(terms.length, 2);
+  assert.equal(terms[0].term, '2024-2025 / Güz');
+  assert.equal(terms[0].hasFail, true);
+  assert.equal(terms[0].credits, 7);
+  assert.equal(terms[0].passedCredits, 4);
+  assert.ok(Math.abs(terms[0].gpa - (3.5 * 4) / 7) < 1e-12);
+  assert.equal(terms[1].hasFail, false);
+  assert.ok(Math.abs(terms[1].gpa - (2 * 3 + 4 * 4) / 7) < 1e-12);
+  const plan = { semesters: [{ items: [{ course: { code: 'AAA 101', name: 'Synthetic One', credits: 4 } }] }] };
+  const merged = mergeTranscriptMatch({}, matchTranscriptToPlan(plan, parsed.records), { officialGpa: 2.9 });
+  assert.equal(merged.transcript.terms.length, 2);
+  assert.equal(JSON.stringify(merged.transcript.terms).includes('Synthetic'), false);
+  assert.equal(JSON.stringify(merged.transcript.terms).includes('AAA'), false);
+});
+
+test('transkript resmî akademik durumu dönem başına okur; devam eden dersler notlu kayıt olmaz', async () => {
+  const { officialStanding } = await import('./planstore.js');
+  const parsed = parseOBSTranscript(`Öğrenci Numarası : 000000000
+Adı : ÖRNEK KİŞİ
+2024-2025 / Güz Dönemi
+AAA 101 Synthetic One 4,00 DD
+BBB 102 Synthetic Two 3,00 FF
+A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
+Sentetik Program
+Dönem 7,00 4,00 7,00 4,00 0,57
+Toplam 7,00 4,00 7,00 4,00 0,57
+Akd. Durum Gözetim Listesi ÖN İZLEME
+2024-2025 / Bahar Dönemi
+BBB 102 Synthetic Two 3,00 BB
+Dönem 3,00 3,00 3,00 9,00 3,00
+Toplam 7,00 7,00 7,00 13,00 1,86
+Akd. Durum İyi Durum
+Akd. Durum Gizli Bilgi 12345
+2025-2026 / Güz Dönemi - Devam Eden Dersler
+CCC 201 Synthetic Three 3,00
+DDD 202 Synthetic AA 3,00 AA`);
+  assert.deepEqual(parsed.standing, [
+    { term: '2024-2025 / Güz', status: 'Gözetim Listesi' },
+    { term: '2024-2025 / Bahar', status: 'İyi Durum' },
+  ]);
+  // Devam eden bölümdeki satırlar (notlu görünse bile) kayıt sayılmaz.
+  assert.deepEqual(parsed.records.map((r) => r.code), ['AAA 101', 'BBB 102', 'BBB 102']);
+  assert.equal(JSON.stringify(parsed).includes('ÖRNEK'), false);
+  assert.equal(JSON.stringify(parsed).includes('Gizli'), false);
+  const plan = { semesters: [{ items: [{ course: { code: 'AAA 101', name: 'Synthetic One', credits: 4 } }] }] };
+  const merged = mergeTranscriptMatch({}, matchTranscriptToPlan(plan, parsed.records), { officialGpa: parsed.officialGpa, standing: parsed.standing });
+  assert.deepEqual(officialStanding(merged), { term: '2024-2025 / Bahar', status: 'İyi Durum' });
+  assert.equal(officialStanding({}), null);
+  // Bilinmeyen durum adı saklanmaz.
+  const odd = mergeTranscriptMatch({}, matchTranscriptToPlan(plan, parsed.records), { standing: [{ term: 'X', status: 'Bilinmeyen' }] });
+  assert.equal(odd.transcript.standing, undefined);
+});

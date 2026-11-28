@@ -197,6 +197,113 @@ function validTranscript(t) {
   return isPlainObject(t) && Array.isArray(t.entries) && isPlainObject(t.planKeys || {});
 }
 
+// -- Mezuniyete ne kaldı --
+
+// Seçmeli slotun havuz türü: başlıktaki tür etiketi ("(MT)", "ITB Elective",
+// "Functional-MT"); etiket yoksa seçeneklerin hepsi ITB/SNT ise ITB. SNT, İTÜ'de
+// ITB havuzunun parçası sayılır (transcript.js · electivePool ile aynı kural).
+export const ELECTIVE_GROUPS = ['MT', 'TM', 'TB', 'ITB', 'EC', 'other'];
+export function electiveGroup(elective) {
+  const title = String(elective?.title || '');
+  const m = title.match(/(?:^|[^A-Za-zÇĞİÖŞÜçğıöşü])(ITB|SNT|MT|TM|TB|EC)(?![A-Za-zÇĞİÖŞÜçğıöşü])/);
+  if (m) return m[1] === 'SNT' ? 'ITB' : m[1];
+  const branches = new Set((elective?.options || []).map((o) => String(o?.code || '').split(' ')[0]).filter(Boolean));
+  if (branches.size && [...branches].every((b) => b === 'ITB' || b === 'SNT')) return 'ITB';
+  return 'other';
+}
+
+// Planda henüz geçilmemiş kalemler. entries: buildEntries çıktısı (plan
+// sırasıyla, seçmelilerde slot anahtarı taşır); extraPassed: başka kaynaktan
+// (transkript) geçildiği bilinen ders kodları. Geçme kuralı isPassingGrade:
+// FF/VF/E kalmış sayılır. Dönüş:
+//   { required: [{ code, name, credits, ects, semester, slot }],
+//     electives: [{ group, credits, slots: [{ slot, title, credits, semester }] }] }
+export function remainingPlan(plan, entries, extraPassed = new Set()) {
+  const passed = new Set(extraPassed);
+  const slotDone = new Set();
+  for (const e of entries || []) {
+    if (!isPassingGrade(e.grade)) continue;
+    if (e.slot) slotDone.add(e.slot);
+    else if (e.code) passed.add(e.code);
+  }
+  const required = [];
+  const groups = new Map();
+  (plan?.semesters || []).forEach((sem, si) => {
+    sem.items.forEach((item, ii) => {
+      const slot = `s${si}i${ii}`;
+      if (item.course) {
+        const code = canonicalCode(item.course.code);
+        if (code && passed.has(code)) return;
+        required.push({
+          code, name: item.course.name || '', slot, semester: si,
+          credits: Number(item.course.credits) || 0, ects: Number(item.course.ects) || 0,
+        });
+      } else if (item.elective) {
+        if (slotDone.has(slot)) return;
+        const group = electiveGroup(item.elective);
+        const cur = groups.get(group) || { group, credits: 0, slots: [] };
+        const credits = slotDefaultCredits(item.elective);
+        cur.slots.push({ slot, title: item.elective.title || '', credits, semester: si });
+        cur.credits += credits;
+        groups.set(group, cur);
+      }
+    });
+  });
+  const electives = [...groups.values()].sort((a, b) => ELECTIVE_GROUPS.indexOf(a.group) - ELECTIVE_GROUPS.indexOf(b.group));
+  return { required, electives };
+}
+
+// Dönem slug'ı ("2026-2027-guz") bir sonraki normal yarıyıla ilerler; yaz
+// okulu normal yük sayılmaz, yazdan sonraki ilk normal dönem güzdür.
+export function nextRegularTerm(slug) {
+  const m = /^(\d{4})-(\d{4})-(guz|bahar|yaz)$/.exec(String(slug || ''));
+  if (!m) return '';
+  const y1 = Number(m[1]);
+  if (m[3] === 'guz') return `${y1}-${y1 + 1}-bahar`;
+  return `${y1 + 1}-${y1 + 2}-guz`;
+}
+
+// Transkript dönem etiketi ("2025-2026 / Bahar") → slug.
+export function termSlugFromLabel(label) {
+  const m = /^(\d{4})-(\d{4})\s*\/\s*(Güz|Bahar|Yaz|Fall|Spring|Summer)/i.exec(String(label || ''));
+  if (!m) return '';
+  const s = { güz: 'guz', fall: 'guz', bahar: 'bahar', spring: 'bahar', yaz: 'yaz', summer: 'yaz' }[m[3].toLocaleLowerCase('tr-TR')];
+  return `${m[1]}-${m[2]}-${s}`;
+}
+
+// Tahmini mezuniyet dönemi (kaba): kalan kredi, plandaki normal yarıyıl yüküyle
+// (program toplamı / yarıyıl sayısı) kaç yarıyıl sürer. startSlug kalan derslerin
+// alınabileceği ilk dönemdir (sürmekte olan dönem dahil); yazsa sonraki güz.
+// Dönüş: { semesters, slug } — kalan yoksa { semesters: 0, slug: '' }.
+export function estimateGraduation({ remainingCredits, normalLoad, startSlug }) {
+  const rem = Number(remainingCredits) || 0;
+  const load = Number(normalLoad) || 0;
+  if (rem <= 0) return { semesters: 0, slug: '' };
+  if (load <= 0) return null;
+  const semesters = Math.max(1, Math.ceil(rem / load - 1e-9));
+  let slug = String(startSlug || '');
+  if (/-yaz$/.test(slug)) slug = nextRegularTerm(slug);
+  if (!slug) return { semesters, slug: '' };
+  for (let i = 1; i < semesters; i++) slug = nextRegularTerm(slug);
+  return { semesters, slug };
+}
+
+// Aktarılan transkriptin son NORMAL yarıyılı (yaz hariç) ve normal yarıyıl
+// sayısı. Eski aktarımlarda dönem özeti yoksa null.
+// OBS transkriptinde yazan son resmî akademik durum ({ term, status }) ya da null.
+export function officialStanding(stored) {
+  const list = Array.isArray(stored?.transcript?.standing) ? stored.transcript.standing : [];
+  const last = list.filter((s) => s && typeof s.term === 'string' && typeof s.status === 'string').at(-1);
+  return last ? { term: last.term, status: last.status } : null;
+}
+
+export function transcriptTerms(stored) {
+  const terms = Array.isArray(stored?.transcript?.terms) ? stored.transcript.terms.filter((t) => t && typeof t.term === 'string') : [];
+  if (!terms.length) return null;
+  const regular = terms.filter((t) => !/\/\s*(Yaz|Summer)/i.test(t.term));
+  return { count: regular.length, last: regular.at(-1) || null, lastAny: terms.at(-1), standing: officialStanding(stored) };
+}
+
 // Bir GANO girdisinin plandaki yeri: zorunlu ders koduyla, seçmeli slotuyla.
 function entryKey(entry) {
   return entry.required ? `g:${entry.code}` : `e:${entry.slot}`;
@@ -233,12 +340,12 @@ export function gpaEntries(plan, stored, catalogMap = new Map()) {
   for (const item of snap.entries) {
     if (!item || typeof item.code !== 'string') continue;
     const credits = Number(item.credits) || 0;
-    if (!item.key) { entries.push({ code: item.code, credits, grade: item.grade, source: 'transcript' }); continue; }
+    if (!item.key) { entries.push({ code: item.code, credits, grade: item.grade, source: 'transcript', key: '' }); continue; }
     covered.add(item.key);
     const now = currentGrade(item.key);
     const ects = ectsByKey.get(item.key) || 0;
-    if (now === planKeys[item.key]) entries.push({ code: item.code, credits, ects, grade: item.grade, source: 'transcript' });
-    else if (now) { edited = true; entries.push({ code: item.code, credits, ects, grade: now, source: 'edited' }); }
+    if (now === planKeys[item.key]) entries.push({ code: item.code, credits, ects, grade: item.grade, source: 'transcript', key: item.key });
+    else if (now) { edited = true; entries.push({ code: item.code, credits, ects, grade: now, source: 'edited', key: item.key }); }
     else edited = true;
   }
   for (const e of planEntries) {
@@ -249,7 +356,7 @@ export function gpaEntries(plan, stored, catalogMap = new Map()) {
     if (Object.prototype.hasOwnProperty.call(planKeys, key) && (e.grade || '') === planKeys[key]) continue;
     if (!e.grade) continue;
     edited = true;
-    entries.push({ ...e, source: 'plan' });
+    entries.push({ ...e, source: 'plan', key });
   }
   const official = Number(snap.officialGpa);
   return {

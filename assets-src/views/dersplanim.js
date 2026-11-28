@@ -23,8 +23,8 @@ import { toast } from '../core/toast.js?v=dde1e9339338';
 import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=dde1e9339338';
 import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=dde1e9339338';
 import { inActiveProgram } from '../core/program-store.js';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=dde1e9339338';
-import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=dde1e9339338';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram, remainingPlan, estimateGraduation, nextRegularTerm, termSlugFromLabel, transcriptTerms, officialStanding } from '../core/planstore.js?v=dde1e9339338';
+import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2, isPassingGrade, academicStanding, retakeCandidates, fmtGain, STANDING, RETAKE_GRADES } from '../core/grades.js?v=dde1e9339338';
 import { gradePickerHTML, gradeTone, bindGradePickers } from '../core/grade-picker.js';
 import { confirmDialog } from '../core/dialog.js?v=dde1e9339338';
 import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=dde1e9339338';
@@ -56,6 +56,9 @@ let initialParams = null; // onShow'da senkron yakalanan URL parametreleri
 const filters = { open: false, cap: false, semesters: new Set(), types: new Set() };
 // Kullanıcının kapattığı yarıyıllar (indeks); program değişince sıfırlanır.
 const closedSems = new Set();
+// "Hangi dersi tekrar alsam": varsayılan hedef not (kullanıcı değiştirebilir).
+const RETAKE_TARGETS = ['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC'];
+let retakeTarget = 'BB';
 let curriculumModule = null;
 let curriculumModulePromise = null;
 let curriculumMounted = false;
@@ -175,6 +178,7 @@ function ensureHost() {
       </div>
       <div id="dp-summary" class="dp-summary"></div>
     </div>
+    <section id="dp-grad" class="dp-grad dp-card" aria-labelledby="dp-grad-h" hidden></section>
     <div id="dp-empty" class="dp-empty">
       <h2>${t('Ders planını görmek için programını seç', 'Choose your program to view its course plan')}</h2>
       <p>${t('Önce seviyeyi, ardından fakülte ve programı seç. GANO ve dönem dersleri seçiminin ardından burada açılır.', 'Choose a level, faculty, and program. GPA tools and term courses will appear after your selection.')}</p>
@@ -189,10 +193,21 @@ function ensureHost() {
           <b id="dp-gano" class="dp-gano-big">${I18N.t('planNone')}</b><small>${I18N.t('planBasedOnGrades')}</small>
           <span id="dp-gano-delta" class="dp-gano-delta" hidden></span>
         </div>
+        <div id="dp-standing" class="dp-standing" aria-live="polite" hidden></div>
         <div class="dp-grades-grid">
           <div class="dp-metric"><em>${I18N.t('planProgressLabel')}</em><b id="dp-progress">0/0 ${I18N.t('planCreditUnit')}</b><small id="dp-progress-sub"></small></div>
           <div class="dp-metric"><em>${I18N.t('planTargetLabel')}</em><b id="dp-target">${I18N.t('planNone')}</b><small id="dp-target-sub"></small></div>
         </div>
+        <details id="dp-retake" class="dp-retake" hidden>
+          <summary><span>${esc(I18N.t('dpRetakeTitle'))}</span><small id="dp-retake-count"></small></summary>
+          <div class="dp-retake-body">
+            <label class="dp-retake-target">${esc(I18N.t('dpRetakeTarget'))}
+              <select id="dp-retake-target">${RETAKE_TARGETS.map((g) => `<option value="${g}"${g === retakeTarget ? ' selected' : ''}>${g}</option>`).join('')}</select>
+            </label>
+            <ol id="dp-retake-list" class="dp-retake-list"></ol>
+            <p class="dp-hint dp-retake-note">${esc(I18N.t('dpRetakeNote'))}</p>
+          </div>
+        </details>
         <p class="dp-grades-empty" id="dp-grades-empty">${I18N.t('planGpaEmptyHint')} ${esc(I18N.t('dpGradesLocalOnly'))}</p>
         <div class="dp-transfer">
           <label>${I18N.t('planCreditsSoFar')} <input id="dp-tcredits" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0–250"></label>
@@ -895,6 +910,9 @@ function courseRow(c, st, slotKey) {
 
   const card = document.createElement('div');
   card.className = 'dp-course';
+  // Planda göster (mezuniyet kartı / tekrar listesi) hedefi.
+  card.dataset.slotKey = slotKey;
+  if (code) card.dataset.planCode = code;
 
   const row = document.createElement('div');
   row.className = 'dp-row';
@@ -1110,6 +1128,8 @@ function electiveRow(e, open, slotKey) {
   const pick = (stored.elective || {})[slotKey] || null;
   const el = document.createElement('div');
   el.className = 'dp-elective dp-course';
+  el.dataset.slotKey = slotKey;
+  if (pick?.code) el.dataset.planCode = pick.code;
   const row = document.createElement('div');
   row.className = 'dp-row';
 
@@ -1200,7 +1220,7 @@ function renderSummary(sems) {
     `<span class="num">${esc(total)}</span>${computed ? ` <small>${esc(computed.trim())}</small>` : ''}`,
   ];
   if (sems.length === 1) parts.push(`<span>${esc(load)}</span>`);
-  if (remain > 0) parts.push(`<span>${esc(I18N.t('planRemainingLabel'))} <span class="num">${remain}</span> ${esc(I18N.t('planRequiredCoursesUnit'))}</span>`);
+  if (remain > 0 && !hasAnyGrade()) parts.push(`<span>${esc(I18N.t('planRemainingLabel'))} <span class="num">${remain}</span> ${esc(I18N.t('planRequiredCoursesUnit'))}</span>`);
   if (plan.sourceUrl && /^https:\/\/obs\.itu\.edu\.tr\//.test(plan.sourceUrl)) {
     parts.push(`<a href="${esc(plan.sourceUrl)}" target="_blank" rel="noopener">${esc(I18N.t('dpOpenObsPlan'))}</a>`);
   }
@@ -1336,6 +1356,9 @@ function renderGPA() {
     if ($('#dp-target')) $('#dp-target').textContent = I18N.t('planEnterGradeFirstShort');
     if (preview) preview.textContent = I18N.t('planGpaPreviewEmpty');
     setTargetState(true);
+    renderGrad(null);
+    renderStanding(null);
+    renderRetake(null);
     renderYatay();
     return;
   }
@@ -1354,7 +1377,254 @@ function renderGPA() {
   if (sub) sub.textContent = tot.ects > 0 ? `${p.ects.done}/${p.ects.total} ${I18N.t('planEctsAbbr')}` : '';
   $('#dp-target').textContent = targetText(st, tot);
   setTargetState(st.gpa == null || st.credits === 0);
+  const standing = isRegularUndergrad()
+    ? academicStanding({ gpa: st.gpa, completedCredits: p.credits.done, lastTerm: lastTranscriptTerm() })
+    : null;
+  renderStanding(st.gpa == null ? null : { standing, credits: p.credits.done });
+  renderGrad({ st, p, tot, standing });
+  renderRetake(st);
   renderYatay();
+}
+
+// -- Mezuniyete ne kaldı · akademik durum · tekrar önerisi --
+// Hepsi girilen/aktarılan notlardan, tarayıcıda hesaplanır. Saf mantık
+// grades.js (academicStanding, retakeCandidates) ve planstore.js
+// (remainingPlan, estimateGraduation) içindedir; burada yalnızca çizim var.
+
+// Akademik durum kuralları yalnızca İTÜ Lisans Eğitim ve Öğretim
+// Yönetmeliği'ne tabi programlar için hesaplanır. Denizcilik Fakültesi ve
+// önlisans ayrı yönetmeliktedir (kuralları burada doğrulanmadı) → yalnız not;
+// lisansüstü programlarda gözetim/onur yoktur → gizli.
+function standingScope() {
+  const level = normalizeProgramLevel(plan?.level, progCode);
+  if (level === 'YL' || level === 'DR') return 'none';
+  if (level !== 'LS' || /denizcilik/i.test(plan?.faculty || '')) return 'other';
+  return 'ls';
+}
+
+function isRegularUndergrad() {
+  return standingScope() === 'ls';
+}
+
+// Transkriptin son normal yarıyıl özeti (onur değerlendirmesi). Eski
+// aktarımlarda dönem özeti yoksa null — o zaman yalnız GANO uzaklığı gösterilir.
+function lastTranscriptTerm() {
+  const last = transcriptTerms(stored)?.last;
+  if (!last || last.gpa == null) return null;
+  return { term: termName(termSlugFromLabel(last.term)) || last.term, gpa: last.gpa, passedCredits: last.passedCredits, hasFail: last.hasFail };
+}
+
+// "2027-2028-bahar" → "2027-2028 Bahar" / "2027-2028 Spring".
+function termName(slug) {
+  const m = /^(\d{4})-(\d{4})-(guz|bahar|yaz)$/.exec(String(slug || ''));
+  if (!m) return '';
+  const season = { guz: L('Güz', 'Fall'), bahar: L('Bahar', 'Spring'), yaz: L('Yaz', 'Summer') }[m[3]];
+  return `${m[1]}-${m[2]} ${season}`;
+}
+
+// Kalan derslerin alınabileceği ilk dönem: sürmekte olan dönem. Transkriptin
+// son dönemi zaten bu dönemse (notları çıkmış) bir sonraki normal dönem.
+function gradStartSlug() {
+  const cur = state.index?.currentSlug || termSlug || '';
+  const lastAny = transcriptTerms(stored)?.lastAny;
+  if (lastAny && termSlugFromLabel(lastAny.term) === cur) return nextRegularTerm(cur);
+  return cur;
+}
+
+function jumpAttrs(code, slot) {
+  return `data-jump="1"${code ? ` data-jump-code="${esc(code)}"` : ''}${slot ? ` data-jump-slot="${esc(slot)}"` : ''} title="${esc(I18N.t('dpJumpTitle'))}"`;
+}
+
+function renderGrad(ctx) {
+  const box = $('#dp-grad');
+  if (!box) return;
+  if (!ctx || !plan) { box.hidden = true; box.innerHTML = ''; return; }
+  const { p, tot, standing } = ctx;
+  const rplan = resolvedPlan();
+  const counted = gpaEntries(rplan, stored, catalogMap).entries;
+  const passed = new Set(counted.filter((e) => isPassingGrade(e.grade)).map((e) => e.code));
+  const rem = remainingPlan(rplan, allEntries(), passed);
+  const remCredits = Math.max(0, tot.credits - p.credits.done);
+  const remEcts = tot.ects > 0 ? Math.max(0, tot.ects - p.ects.done) : null;
+  const semCount = plan.semesters.length || 1;
+  let load = tot.credits / semCount;
+  const official = officialStanding(stored);
+  const onWatch = official && isRegularUndergrad() ? official.status === 'Gözetim Listesi' : Boolean(standing?.watch?.on);
+  if (onWatch) load = Math.min(load, STANDING.watchMaxCredits);
+  const est = estimateGraduation({ remainingCredits: remCredits, normalLoad: load, startSlug: gradStartSlug() });
+  const slotCount = rem.electives.reduce((n, g) => n + g.slots.length, 0);
+  const slotCredits = rem.electives.reduce((n, g) => n + g.credits, 0);
+  const done = remCredits <= 0 && !rem.required.length && !slotCount;
+
+  const stat = (label, value, sub = '') => `<div class="dp-grad-stat"><dt>${esc(label)}</dt><dd><b class="num">${value}</b>${sub ? `<small>${sub}</small>` : ''}</dd></div>`;
+  const stats = [
+    stat(I18N.t('dpGradCredits'), esc(trNum(remCredits)), esc(tf('dpGradOf', { total: trNum(tot.credits) }))),
+  ];
+  if (remEcts != null) stats.push(stat(I18N.t('dpGradEcts'), esc(trNum(remEcts)), esc(tf('dpGradOf', { total: trNum(tot.ects) }))));
+  stats.push(stat(I18N.t('dpGradRequired'), String(rem.required.length)));
+  if (!done && est && est.semesters > 0) {
+    const sub = [tf('dpGradEstimateSub', { n: est.semesters, load: trNum(Math.round(load * 10) / 10) })];
+    if (onWatch) sub.push(I18N.t('dpGradEstimateWatch'));
+    stats.push(`<div class="dp-grad-stat dp-grad-est"><dt>${esc(I18N.t('dpGradEstimate'))}</dt><dd><b>${esc(termName(est.slug) || '·')}</b><small>${esc(sub.join(' · '))}</small></dd></div>`);
+  }
+
+  const semShort = (si) => tf('dpGradSemShort', { n: si + 1 });
+  const reqList = rem.required.length ? `<details class="dp-grad-more">
+      <summary>${esc(tf('dpGradRequiredList', { n: rem.required.length }))}</summary>
+      <ul class="dp-grad-list">${rem.required.map((r) => `<li><button type="button" class="dp-jump" ${jumpAttrs(r.code, r.slot)}>
+        <span class="num dp-jump-code" translate="no">${esc(r.code || '·')}</span><span class="dp-jump-name">${esc(r.name)}</span>
+        <span class="num dp-jump-meta">${esc(`${trNum(r.credits)} ${I18N.t('planCreditAbbr')} · ${semShort(r.semester)}`)}</span></button></li>`).join('')}</ul>
+    </details>` : '';
+  const elList = slotCount ? `<details class="dp-grad-more">
+      <summary>${esc(tf('dpGradElectiveList', { n: slotCount, credits: trNum(slotCredits) }))}</summary>
+      ${rem.electives.map((g) => `<div class="dp-grad-group">
+        <h4>${esc(I18N.t(`dpGradGroup${g.group === 'other' ? 'Other' : g.group}`))} <span class="num">${g.slots.length} · ${esc(trNum(g.credits))} ${esc(I18N.t('planCreditAbbr'))}</span></h4>
+        <ul class="dp-grad-list">${g.slots.map((s) => `<li><button type="button" class="dp-jump" ${jumpAttrs('', s.slot)}>
+          <span class="dp-jump-name">${esc(s.title || I18N.t('planElectiveDefaultTitle'))}</span>
+          <span class="num dp-jump-meta">${esc(`${trNum(s.credits)} ${I18N.t('planCreditAbbr')} · ${semShort(s.semester)}`)}</span></button></li>`).join('')}</ul>
+      </div>`).join('')}
+    </details>` : '';
+  const gpaLow = ctx.st?.gpa != null && isRegularUndergrad() && ctx.st.gpa < STANDING.graduationGpa
+    ? `<p class="dp-grad-warn">${esc(I18N.t('dpGradGpaLow'))}</p>` : '';
+
+  box.innerHTML = `<header class="dp-grad-head"><h3 id="dp-grad-h">${esc(I18N.t('dpGradTitle'))}</h3><small>${esc(I18N.t('dpGradBasis'))}</small></header>
+    <dl class="dp-grad-stats">${stats.join('')}</dl>
+    ${done ? `<p class="dp-grad-done">${esc(I18N.t('dpGradDone'))}</p>` : ''}
+    ${gpaLow}
+    ${reqList || elList ? `<div class="dp-grad-lists">${reqList}${elList}</div>` : ''}
+    ${done ? '' : `<p class="dp-hint dp-grad-note">${esc(I18N.t('dpGradNote'))}</p>`}`;
+  box.hidden = false;
+}
+
+// GANO kartındaki akademik durum satırları. Kırmızı yalnız gerçek gözetim
+// uyarısında; onur bilgisi nötr.
+function renderStanding(data) {
+  const box = $('#dp-standing');
+  if (!box) return;
+  const scope = plan ? standingScope() : 'none';
+  if (!data || scope === 'none') { box.hidden = true; box.innerHTML = ''; return; }
+  if (scope === 'other' || !data.standing) {
+    box.innerHTML = `<p class="dp-st-note">${esc(I18N.t('dpStOtherReg'))}</p>`;
+    box.hidden = false;
+    return;
+  }
+  const s = data.standing;
+  const out = [`<p class="dp-st-class" title="${esc(I18N.t('dpStClassRule'))}">${esc(tf('dpStClass', { year: s.year, credits: trNum(data.credits) }))}</p>`];
+  // Transkriptte OBS'nin yazdığı resmî durum varsa doğru kaynak odur; eşik
+  // hesabı yalnız açıklama olarak gösterilir.
+  const official = officialStanding(stored);
+  const officialTerm = official ? (termName(termSlugFromLabel(official.term)) || official.term) : '';
+  const officialWatch = official?.status === 'Gözetim Listesi';
+  if (official && !officialWatch) {
+    out.push(`<p class="dp-st-official">${esc(tf('dpStOfficial', { term: officialTerm, status: standingLabel(official.status) }))}</p>`);
+  }
+  if (officialWatch) {
+    out.push(`<div class="dp-st-watch is-on"><b><span aria-hidden="true">! </span>${esc(tf('dpStWatchOfficial', { term: officialTerm }))}</b>
+      <span>${esc(tf('dpStWatchOfficialSub', { gpa: fmtTr2(s.gpa), year: s.year, threshold: fmtTr2(s.watch.threshold) }))}</span></div>`);
+  } else if (s.watch.on && !official) {
+    out.push(`<div class="dp-st-watch is-on"><b><span aria-hidden="true">! </span>${esc(tf('dpStWatchOn', { threshold: fmtTr2(s.watch.threshold) }))}</b>
+      <span>${esc(tf('dpStWatchOnSub', { gap: fmtTr2(s.watch.gap) }))}</span></div>`);
+  } else if (s.watch.on) {
+    // Resmî durum "İyi Durum" ama sonradan girilen notlarla eşik altı: uyarı amber.
+    out.push(`<p class="dp-st-watch is-diverge">${esc(tf('dpStWatchDiverge', { threshold: fmtTr2(s.watch.threshold) }))}</p>`);
+  } else {
+    out.push(`<p class="dp-st-watch">${esc(tf('dpStWatchOk', { threshold: fmtTr2(s.watch.threshold), gap: fmtTr2(Math.abs(s.watch.gap)) }))}</p>`);
+  }
+  const honorItem = (label, at, away) => `<li class="${away <= 0 ? 'is-reached' : ''}"><span>${esc(label)} <span class="num">${fmtTr2(at)}</span></span>
+    <b class="num">${esc(away <= 0 ? I18N.t('dpStAbove') : tf('dpStAway', { d: fmtTr2(away) }))}</b></li>`;
+  out.push(`<ul class="dp-st-honor">${honorItem(I18N.t('dpStHonorLabel'), STANDING.honor, s.honor.toHonor)}${honorItem(I18N.t('dpStHighLabel'), STANDING.highHonor, s.honor.toHigh)}</ul>`);
+  const t = s.honor.term;
+  if (t) {
+    const result = t.level === 'high' ? I18N.t('dpStTermHigh') : t.level === 'honor' ? I18N.t('dpStTermHonor')
+      : t.reason === 'fail' ? I18N.t('dpStTermFail') : t.reason === 'credits' ? I18N.t('dpStTermCredits')
+        : t.reason === 'gano' ? I18N.t('dpStTermGano') : I18N.t('dpStTermNone');
+    out.push(`<p class="dp-st-term${t.level !== 'none' ? ' is-reached' : ''}">${esc(tf('dpStTermLine', { term: t.label, gpa: fmtTr2(t.gpa) }))} · <b>${esc(result)}</b></p>`);
+  }
+  out.push(`<p class="dp-st-note">${esc(I18N.t('dpStHonorRule'))} <a href="${esc(STANDING.source)}" target="_blank" rel="noopener">${esc(I18N.t('dpStSource'))}</a></p>`);
+  box.innerHTML = out.join('');
+  box.hidden = false;
+}
+
+// OBS durum adının arayüz karşılığı (TR olduğu gibi).
+function standingLabel(status) {
+  if (I18N.lang !== 'en') return status;
+  return { 'İyi Durum': 'Good standing', 'Gözetim Listesi': 'Watch list', Onur: 'Honor', 'Yüksek Onur': 'High honor' }[status] || status;
+}
+
+// "Hangi dersi tekrar alsam": son notu düşük dersler, GANO kazancına göre.
+function renderRetake(st) {
+  const box = $('#dp-retake');
+  if (!box) return;
+  if (!st || !plan) { box.hidden = true; return; }
+  const { entries } = gpaEntries(resolvedPlan(), stored, catalogMap);
+  const low = entries.filter((e) => RETAKE_GRADES.includes(e.grade) && (Number(e.credits) || 0) > 0);
+  if (!low.length) { box.hidden = true; return; }
+  const list = retakeCandidates(entries, { target: retakeTarget, base: stored.transfer });
+  const planCodes = new Set(allEntries().map((e) => e.code).filter(Boolean));
+  const count = $('#dp-retake-count');
+  if (count) count.textContent = tf('dpRetakeCount', { n: new Set(low.map((e) => e.code)).size });
+  const sel = $('#dp-retake-target');
+  if (sel && sel.value !== retakeTarget) sel.value = retakeTarget;
+  const ol = $('#dp-retake-list');
+  if (!list.length) {
+    ol.innerHTML = `<li class="dp-retake-empty">${esc(I18N.t('dpRetakeNone'))}</li>`;
+  } else {
+    ol.innerHTML = list.map((c) => {
+      const slot = c.key.startsWith('e:') ? c.key.slice(2) : c.slot;
+      const code = c.key.startsWith('g:') ? c.key.slice(2) : c.code;
+      const inPlan = Boolean(slot) || planCodes.has(code);
+      const tone = gradeTone(c.grade);
+      const aria = tf('dpRetakeRowAria', { code: c.code, grade: c.grade, target: retakeTarget, gain: fmtGain(c.gain) });
+      const inner = `<span class="num dp-jump-code" translate="no">${esc(c.code)}</span>
+        <span class="dp-retake-grades"><span class="dp-retake-chip num" style="--gp-w:${tone ?? 0}%">${esc(c.grade)}</span><span aria-hidden="true">→</span><span class="num">${esc(retakeTarget)}</span></span>
+        <span class="num dp-jump-meta">${esc(`${trNum(c.credits)} ${I18N.t('planCreditAbbr')}`)}${inPlan ? '' : ` · ${esc(I18N.t('dpNotInPlan'))}`}</span>
+        <b class="num dp-retake-gain">${esc(fmtGain(c.gain))}</b>`;
+      return inPlan
+        ? `<li><button type="button" class="dp-jump dp-retake-row" ${jumpAttrs(slot ? '' : code, slot)} aria-label="${esc(aria)}">${inner}</button></li>`
+        : `<li><div class="dp-retake-row is-static" role="group" aria-label="${esc(aria)}">${inner}</div></li>`;
+    }).join('');
+  }
+  box.hidden = false;
+}
+
+function findPlanRow(code, slot) {
+  const root = $('#dp-semesters');
+  if (!root) return null;
+  if (slot) {
+    const el = root.querySelector(`.dp-course[data-slot-key="${CSS.escape(slot)}"]`);
+    if (el) return el;
+  }
+  if (!code) return null;
+  return [...root.querySelectorAll('.dp-course[data-plan-code]')].find((el) => el.dataset.planCode === code) || null;
+}
+
+// Satırı planda gösterir: filtre gizliyorsa filtreler temizlenir, yarıyıl
+// kapalıysa açılır, satır ortalanır ve kısa süre vurgulanır.
+async function jumpToPlanItem(code, slot) {
+  let el = findPlanRow(code, slot);
+  if (!el && (filters.open || filters.cap || filters.semesters.size || filters.types.size)) {
+    filters.open = false; filters.cap = false;
+    filters.semesters.clear(); filters.types.clear();
+    $('#dp-open').checked = false; $('#dp-cap').checked = false;
+    renderTypeFilter(); updateFilterDisclosure();
+    saveState();
+    renderAll();
+  }
+  // Müfredat React adasında çizilir; güncelleme bir sonraki karede DOM'a düşer.
+  for (let i = 0; i < 12 && !el; i++) {
+    await new Promise((r) => requestAnimationFrame(r));
+    el = findPlanRow(code, slot);
+  }
+  if (!el) { toast(I18N.t('dpNotInPlan')); return; }
+  const sem = el.closest('details.dp-sem');
+  if (sem && !sem.open) sem.open = true;
+  const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  el.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
+  el.classList.remove('dp-flash');
+  void el.offsetWidth;
+  el.classList.add('dp-flash');
+  setTimeout(() => el.classList.remove('dp-flash'), 2400);
+  el.querySelector('.dp-gp-chip, .dp-epick, .dp-code')?.focus({ preventScroll: true });
 }
 
 // Hedef GANO alanı, mevcut GANO yokken sonuç üretemez — pasifleştir ve nedenini yaz.
@@ -1765,7 +2035,7 @@ async function importTranscript() {
     setTranscriptResult(I18N.lang === 'en' ? 'No courses matched the selected plan.' : 'Seçili ders planıyla eşleşen ders bulunamadı.', 'error');
     return;
   }
-  stored = mergeTranscriptMatch(stored, match, { officialGpa: choice.parsed.officialGpa });
+  stored = mergeTranscriptMatch(stored, match, { officialGpa: choice.parsed.officialGpa, standing: choice.parsed.standing });
   saveStored(progCode, stored);
   catalogMap.clear();
   ensureCatalogForPicks();
@@ -2028,6 +2298,12 @@ function init() {
   // Özet satırındaki düğme her çizimde yeniden kurulur: delege dinleyici.
   $('#view-dersplanim').addEventListener('click', (ev) => {
     if (ev.target.closest('.dp-transcript-open')) importTranscript();
+    const jump = ev.target.closest('[data-jump]');
+    if (jump) jumpToPlanItem(jump.dataset.jumpCode || '', jump.dataset.jumpSlot || '');
+  });
+  $('#dp-retake-target').addEventListener('change', (ev) => {
+    retakeTarget = ev.target.value;
+    renderRetake(currentState());
   });
   // Yarıyıl açık/kapalı durumu yeniden çizimde korunur (toggle kabarcıklanmaz).
   $('#dp-semesters').addEventListener('toggle', (ev) => {

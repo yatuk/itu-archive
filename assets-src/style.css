@@ -4921,6 +4921,116 @@ body.modal-open { overflow: hidden; }
 #view-dersplanim .dp-typecard { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); }
 #view-dersplanim .dp-typecard[hidden] { display: none; }
 #view-dersplanim .dp-typecard .dp-k { display: block; text-align: left; margin-bottom: 6px; }
+
+/* Mezuniyete ne kaldı (#dp-grad), akademik durum (#dp-standing) ve "Hangi dersi
+   tekrar alsam" (#dp-retake). Yeni sınıflar; yalnız tema token'ları kullanır,
+   böylece fosforda da okunur ve mevcut fosfor kuralları değişmez. Kırmızı
+   yalnız gerçek gözetim uyarısında (.dp-st-watch.is-on). */
+#view-dersplanim .dp-grad { margin-top: 16px; padding: 16px 20px; min-width: 0; }
+#view-dersplanim .dp-grad[hidden] { display: none; }
+#view-dersplanim .dp-grad-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 2px 12px; margin: 0 0 12px; }
+#view-dersplanim .dp-grad-head h3 { margin: 0; color: var(--fg); font-size: 16px; font-weight: 700; }
+#view-dersplanim .dp-grad-head small { color: var(--dimmer); font-size: 12px; }
+#view-dersplanim .dp-grad-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px 20px; margin: 0; }
+#view-dersplanim .dp-grad-stat { min-width: 0; }
+#view-dersplanim .dp-grad-stat dt { color: var(--dimmer); font-size: 12px; font-weight: 600; }
+#view-dersplanim .dp-grad-stat dd { display: flex; flex-direction: column; gap: 2px; min-width: 0; margin: 2px 0 0; }
+#view-dersplanim .dp-grad-stat dd b { color: var(--fg); font-size: 22px; font-weight: 700; line-height: 1.15; overflow-wrap: anywhere; text-align: left; }
+#view-dersplanim .dp-grad .num,
+#view-dersplanim .dp-standing .num,
+#view-dersplanim .dp-retake .num { text-align: left; }
+#view-dersplanim .dp-retake-gain.num { text-align: right; }
+#view-dersplanim .dp-grad-est dd b { font-size: 18px; }
+#view-dersplanim .dp-grad-stat dd small { color: var(--dim); font-size: 12px; line-height: 1.35; }
+#view-dersplanim .dp-grad-lists { display: grid; gap: 4px; margin-top: 14px; }
+#view-dersplanim .dp-grad-more { padding-top: 6px; border-top: 1px solid var(--line); min-width: 0; }
+#view-dersplanim .dp-grad-more > summary,
+#view-dersplanim .dp-retake > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 32px;
+  color: var(--fg); font-size: 13px; font-weight: 600; cursor: pointer;
+}
+#view-dersplanim .dp-grad-group h4 {
+  display: flex; justify-content: space-between; gap: 8px; margin: 10px 6px 2px;
+  color: var(--dim); font-size: 12px; font-weight: 600;
+}
+#view-dersplanim .dp-grad-list {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 16px;
+  margin: 0; padding: 0; list-style: none; min-width: 0;
+}
+#view-dersplanim .dp-jump {
+  display: flex; align-items: center; gap: 10px; width: 100%; min-width: 0; min-height: 36px; margin: 0; padding: 4px 6px;
+  border: 0; border-radius: 6px; background: none; color: var(--fg); font: inherit; font-size: 13px; text-align: left; cursor: pointer;
+}
+#view-dersplanim .dp-jump:hover { background: var(--panel-2); }
+#view-dersplanim .dp-jump:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; }
+#view-dersplanim .dp-jump-code { flex: none; color: var(--fg); font-weight: 600; white-space: nowrap; }
+#view-dersplanim .dp-jump-name { flex: 1 1 auto; min-width: 0; overflow: hidden; color: var(--dim); text-overflow: ellipsis; white-space: nowrap; }
+#view-dersplanim .dp-jump-meta { flex: none; margin-left: auto; color: var(--dimmer); font-size: 12px; white-space: nowrap; }
+#view-dersplanim .dp-grad-note { margin: 12px 0 0; color: var(--dimmer); font-size: 12px; line-height: 1.45; }
+#view-dersplanim .dp-grad-warn { margin: 12px 0 0; color: var(--amber); font-size: 13px; font-weight: 600; }
+#view-dersplanim .dp-grad-done { margin: 12px 0 0; color: var(--dp-up); font-size: 13px; font-weight: 600; }
+
+#view-dersplanim .dp-standing {
+  display: grid; gap: 6px; margin: 0 0 12px; padding: 0 0 12px; border-bottom: 1px solid var(--line);
+  color: var(--dim); font-size: 13px; line-height: 1.4; min-width: 0;
+}
+#view-dersplanim .dp-standing[hidden] { display: none; }
+#view-dersplanim .dp-standing p { margin: 0; }
+#view-dersplanim .dp-st-class { color: var(--fg); font-weight: 600; }
+#view-dersplanim .dp-st-watch.is-on {
+  display: grid; gap: 2px; padding: 8px 10px; border: 1px solid var(--red); border-left-width: 4px; border-radius: 6px;
+  background: color-mix(in srgb, var(--red) 7%, var(--panel)); color: var(--fg);
+}
+#view-dersplanim .dp-st-watch.is-on b { color: var(--red); }
+#view-dersplanim .dp-st-watch.is-diverge { color: var(--amber); font-weight: 600; }
+#view-dersplanim .dp-st-official { color: var(--fg); }
+#view-dersplanim .dp-st-honor { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; }
+#view-dersplanim .dp-st-honor li { display: flex; justify-content: space-between; gap: 8px; }
+#view-dersplanim .dp-st-honor li b { color: var(--fg); font-weight: 600; }
+#view-dersplanim .dp-st-honor li.is-reached b,
+#view-dersplanim .dp-st-term.is-reached b { color: var(--dp-up); }
+#view-dersplanim .dp-st-note { color: var(--dimmer); font-size: 12px; line-height: 1.45; }
+#view-dersplanim .dp-st-note a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+
+#view-dersplanim .dp-retake { margin-top: 14px; padding-top: 8px; border-top: 1px solid var(--line); min-width: 0; }
+#view-dersplanim .dp-retake[hidden] { display: none; }
+#view-dersplanim .dp-retake > summary small { color: var(--dimmer); font-size: 12px; font-weight: 500; }
+#view-dersplanim .dp-retake-target {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 6px 0 8px;
+  color: var(--dim); font-size: 12px;
+}
+#view-dersplanim .dp-retake-target select {
+  height: 32px; padding: 0 8px; border: 1px solid var(--line-hot); border-radius: 6px;
+  background: var(--panel); color: var(--fg); font: 600 13px var(--mono);
+}
+#view-dersplanim .dp-retake-list { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; }
+#view-dersplanim .dp-retake-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto auto; align-items: center; gap: 10px; }
+#view-dersplanim .dp-retake-row.is-static { padding: 4px 6px; font-size: 13px; }
+#view-dersplanim .dp-retake-row .dp-jump-meta { margin-left: 0; }
+#view-dersplanim .dp-retake-grades { display: inline-flex; align-items: center; gap: 4px; color: var(--dim); font-size: 12px; }
+#view-dersplanim .dp-retake-chip {
+  --gp-c: color-mix(in srgb, var(--gp-hi) var(--gp-w, 50%), var(--gp-lo));
+  display: inline-block; min-width: 30px; padding: 2px 6px; border-radius: 999px;
+  background: var(--gp-c); color: var(--gp-on); font-size: 12px; font-weight: 700; text-align: center;
+}
+#view-dersplanim .dp-retake-gain { color: var(--dp-up); font-weight: 700; text-align: right; }
+#view-dersplanim .dp-retake-empty { padding: 4px 0; color: var(--dim); font-size: 13px; }
+#view-dersplanim .dp-retake-note { margin: 8px 0 0; color: var(--dimmer); font-size: 12px; line-height: 1.45; }
+/* "Planda göster" vurgusu: geçişsiz (yalnız transform/opacity animasyonlanır). */
+#view-dersplanim .dp-course.dp-flash {
+  background: color-mix(in srgb, var(--acid-vivid) 12%, var(--panel));
+  box-shadow: inset 3px 0 0 var(--acid);
+}
+@media (max-width: 900px) {
+  #view-dersplanim .dp-grad { padding: 16px; }
+  #view-dersplanim .dp-grad-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #view-dersplanim .dp-grad-stat dd b { font-size: 20px; }
+  #view-dersplanim .dp-grad-list { grid-template-columns: minmax(0, 1fr); }
+  #view-dersplanim .dp-jump,
+  #view-dersplanim .dp-grad-more > summary,
+  #view-dersplanim .dp-retake > summary { min-height: 44px; }
+  #view-dersplanim .dp-retake-target select { height: 44px; font-size: 16px; }
+}
 #view-dersplanim .dp-types-progress { margin: 0; color: var(--fg); font-size: 12px; }
 #view-dersplanim .dp-tp { display: grid; grid-template-columns: 36px minmax(0, 1fr) 76px; gap: 10px; align-items: center; padding: 6px 0; }
 #view-dersplanim .dp-tp > .num:first-child { font-weight: 600; }

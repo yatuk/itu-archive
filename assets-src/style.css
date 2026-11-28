@@ -5071,6 +5071,8 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .search-clear::after { content: ''; position: absolute; inset: -12px; }
   .row-sel { width: 22px; height: 22px; }
   .detail-close::after { inset: -13px; }
+  /* Yazı tipi yığını değişince kutu 43,99px'e iniyordu; 44px tabanı sabit. */
+  #detail-close { min-width: 44px; min-height: 44px; }
   /* Dersler: grup başlığı düğmesi, CRN ve araç dizini bağlantıları. */
   .course-group-open { min-height: 44px; }
   .course-crn { position: relative; }

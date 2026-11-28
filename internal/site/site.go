@@ -609,6 +609,9 @@ func (b *Builder) writeTermPage(tr termRow) error {
 	canonical := fmt.Sprintf("%s%s/dersler/%s/", baseURL, prefix, tr.tref.Slug)
 	termLabel := localizedTermLabel(tr.tref.Slug, tr.tref.Label, b.l.Code)
 	title := termLabel + " " + b.l.TermSuffix
+	if b.l.Code == "tr" && strings.HasSuffix(tr.tref.Slug, "-yaz") {
+		title = termLabel + " · yaz okulu açılan dersler"
+	}
 	lead := fmt.Sprintf(b.l.TermLeadFmt, termLabel, tr.meta.Courses, tr.meta.Sections, len(tr.meta.Branches))
 
 	jsonld := jsonldScript([]any{
@@ -1543,7 +1546,7 @@ var landingPages = []landingPage{
 		slug: "ders-programi", tab: "dersler", title: "İTÜ Ders Programı ve Açık Dersler",
 		description: "İTÜ ders programında bu dönem açık dersleri kod, ad, CRN veya hocayla ara; şube saatlerini, kontenjanı ve doluluk durumunu karşılaştır.",
 		h1:          "İTÜ ders programı",
-		queries:     []string{"İTÜ ders", "İTÜ ders programı", "İTÜ açık dersler"},
+		queries:     []string{"İTÜ ders", "İTÜ ders programı", "İTÜ açılan dersler", "İTÜ yaz okulu açılan dersler"},
 		features:    []string{"Ders kodu, ad, CRN ve hocayla arama yapar", "Şube gün ve saatlerini karşılaştırır", "Kontenjan ve yazılan öğrenci sayısını gösterir"},
 		body: []string{
 			"OBS'nin yayınladığı ders programını arşivden ara: ders kodu, ad, CRN veya öğretim üyesiyle filtrele; şubelerin gün/saatini, kontenjanını ve doluluk oranını gör.",
@@ -1654,10 +1657,10 @@ var landingPages = []landingPage{
 		},
 	},
 	{
-		slug: "ders-arsivi", tab: "gecmis", title: "İTÜ Ders Arşivi ve Geçmiş Dersler",
+		slug: "ders-arsivi", tab: "gecmis", title: "İTÜ Ders Arşivi · eski ders programları",
 		description: "İTÜ ders arşivinde 2016'dan bugüne açılan dersleri ara; geçmiş şubeleri, dersi veren hocaları, kontenjanı ve not dağılımını incele.",
 		h1:          "İTÜ ders arşivi ve geçmiş dönem dersleri",
-		queries:     []string{"İTÜ ders arşivi", "İTÜ geçmiş dersler", "İTÜ geçmiş dönem dersleri"},
+		queries:     []string{"İTÜ ders arşivi", "İTÜ geçmiş dersler", "İTÜ geçmiş dönem dersleri", "İTÜ eski ders programları", "İTÜ geçmiş dönem açılan dersler", "İTÜ program arşivi"},
 		features:    []string{"2016'dan bugüne arşivlenen dönemlerde arama yapar", "Derslerin şube ve hoca geçmişini gösterir", "Kontenjan geçmişi ile not dağılımını bir arada sunar"},
 		body: []string{
 			"OBS yalnızca içinde bulunulan dönemi gösterir; dönem bitince veri kaybolur. Bu arşiv 2016'dan beri her dönemi sürüm kontrolüne alır.",

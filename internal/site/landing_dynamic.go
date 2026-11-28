@@ -29,7 +29,7 @@ func (b *Builder) landingMeta(p landingPage) (title, desc, lastmod string) {
 			return
 		}
 		label := shortTermLabel(b.index.CurrentTerm)
-		title = "İTÜ Ders Programı " + label + " · açık dersler ve kontenjan"
+		title = "İTÜ Ders Programı " + label + " · açılan dersler ve kontenjan"
 		desc = fmt.Sprintf("İTÜ %s ders programı: %s ders, %s şube. Açılan dersleri kod, ad, CRN veya hocayla ara; saatleri, kontenjanı ve doluluğu karşılaştır.",
 			label, trNum(m.Courses), trNum(m.Sections))
 		if d := dateOf(m.ScrapedAt); d != "" {

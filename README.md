@@ -1,45 +1,45 @@
 <p align="center">
   <a href="https://itu-ders.com/">
-    <img src="docs/social-card-v2.png" alt="İTÜ Ders Arşivi — ders programı, önşart haritası ve akademik takvim" width="760">
+    <img src="docs/social-card-v2.png" alt="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler" width="760">
   </a>
 </p>
 
-# İTÜ Ders Arşivi
+<p align="center">
+  <a href="https://itu-ders.com/"><b>itu-ders.com</b></a> ·
+  <a href="https://itu-ders.com/ders-programi-olustur/">Ders programı</a> ·
+  <a href="https://itu-ders.com/gano-hesaplama/">GANO hesaplama</a> ·
+  <a href="https://itu-ders.com/kontenjan/">Kontenjan</a> ·
+  <a href="https://itu-ders.com/akademik-takvim/">Akademik takvim</a>
+</p>
 
-[itu-ders.com](https://itu-ders.com/), İTÜ OBS ve akademik takvimde yayımlanan açık veriyi düzenli olarak arşivleyen bağımsız bir öğrenci aracıdır.
+İTÜ'nün herkese açık OBS ve akademik takvim verisini düzenli arşivleyen, bağımsız bir öğrenci aracı. Giriş yok, hesap yok; notların ve transkriptin yalnızca tarayıcında işlenir.
 
-- Güncel ve geçmiş dersleri, şubeleri, hocaları ve kontenjanları ara
-- Haftalık ders programı oluştur; çakışmaları gör ve ICS/CSV olarak dışa aktar
-- Bölüm ders planını, önşart haritasını, sınavları ve akademik takvimi incele
-- Notlarını veya OBS Transkript Önizleme metnini yalnızca tarayıcıda işleyerek GANO hesapla
+| | |
+|---|---|
+| **Dersler** | Bu dönemin ve 2016'dan beri her dönemin şubeleri, hocaları, kontenjanları ve dolma hızları |
+| **Ders programı** | Haftalık program kur, çakışmaları gör, ICS/CSV olarak al |
+| **GANO** | Harf notlarını tıkla, yeni GANO'yu ve şu ana göre farkını canlı gör; OBS transkriptini yapıştır |
+| **Müfredat ve önşart** | Bölüm ders planı, önşart haritası, sınav ve akademik takvim |
 
-Ham veri JSON/CSV olarak `docs/data/` altında yayımlanır. Kaynaklar İTÜ'nün herkese açık OBS sayfaları ile `takvim.sis.itu.edu.tr` adresidir. Proje İTÜ'nün resmî hizmeti değildir.
+<p align="center">
+  <img src=".github/readme/dersler.png" alt="Dersler listesi ve sağda açılan ders detayı" width="49%">
+  <img src=".github/readme/gano.png" alt="GANO hesaplayıcı: renkli not seçici ve canlı GANO" width="49%">
+</p>
 
-## Yerelde çalıştırma
+Ham veri `docs/data/` altında JSON/CSV olarak yayımlanır. Proje İTÜ'nün resmî hizmeti değildir.
+
+## Geliştirme
 
 ```bash
-go run ./cmd/scrape
-go run ./cmd/site
+go run ./cmd/scrape                       # veriyi çek
+go run ./cmd/site                         # siteyi docs/ içine üret (5–10 dk)
+go run ./cmd/site -assets-only            # yalnız assets-src/ değiştiyse hızlı kip
 python -m http.server 8765 --directory docs
 ```
 
-Yalnız `assets-src/` altındaki CSS/JS'i değiştirdiysen tam üretim (5–10 dakika) yerine hızlı kipi kullan:
-
 ```bash
-go run ./cmd/site -assets-only
+go test ./... && node --test docs/assets/core/core.test.js
+go run ./cmd/validate -quiet && npx playwright test
 ```
 
-Bu kip `assets-src/` → `docs/assets/` küçültmesini, uygulama CSS'inin sekme parçalarına bölünmesini (`docs/assets/css/`) ve `?v=` sürüm yamalarını (JS importları, `docs/index.html`, üretilmiş HTML sayfaları) çalıştırır; veri ve SEO sayfası üretmez. Bu dosyalar için çıktısı tam üretimle birebir aynıdır. Veri, şablon ya da `internal/site` değiştiyse tam `go run ./cmd/site` gerekir.
-
-Asset sürümleri dosya başınadır: her CSS/JS dosyasının `?v=` değeri kendi içeriğinden gelir; JS modüllerinde içe aktardığı dosyaların sürümlerini de kapsar. Tek satırlık bir CSS değişikliği yalnız o dosyanın önbelleğini kırar.
-
-## Test
-
-```bash
-go test ./...
-node --test docs/assets/core/core.test.js
-go run ./cmd/validate -quiet
-npx playwright test
-```
-
-Site Cloudflare Pages'ten yayınlanır; kaynak `main / docs`. Tarama ve yayın güvenlikleri, veri biçimi ve geri alma adımları için [OPERATIONS.md](OPERATIONS.md) dosyasına bakın.
+Site Cloudflare Pages'ten `main / docs` olarak yayınlanır. Tarama, veri biçimi ve geri alma adımları için [OPERATIONS.md](OPERATIONS.md).

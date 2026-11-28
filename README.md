@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://itu-ders.com/">
-    <img src="docs/social-card-v2.png" alt="İTÜ Ders Arşivi: ders programı, kontenjan ve geçmiş dönemler" width="760">
+    <img src="docs/itu-ders-logo.png" alt="itu-ders" width="313" height="80">
   </a>
 </p>
 

@@ -1026,6 +1026,7 @@ export default {
   pgMinGrade: 'at least {grade}',
   pgInThisPlan: 'in this plan · semester {n}',
   pgOtherProgram: 'another program',
+  pgPlanEquivalent: 'equivalent in this plan: {code} · semester {n}',
   pgFocusedCourse: 'Focused course · semester {n}',
   pgOpenInCoursesBtn: 'Open in courses',
   pgCourseDetailBtn: 'Course details',

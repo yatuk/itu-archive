@@ -81,3 +81,35 @@ test('Önşart: kodsuz plan kalemi transkript eşleşmesinden kod alır ve durum
   await expect(li('ING 201A')).toHaveClass(/is-passed/, { timeout: 20000 });
   await expect(li('FIZ 101EL')).toHaveClass(/is-passed/);
 });
+
+test('Önşart: eski kodlu önşart plandaki eşdeğerine (aynı ad + kredi) bağlanır', async ({ page }) => {
+  // Güncel CEN_LS planında EEE 225E (Introduction to Electronics) var; EEE 315E'nin
+  // OBS önşartı ise eski kod EHB 222E'yi (katalogda aynı ad, 3 kredi) ister.
+  const items = seed({ 'EEE 225E': { grade: 'CC', prev: '' } });
+  await page.addInitScript((kv) => {
+    for (const [k, v] of Object.entries(kv)) localStorage.setItem(k, v);
+  }, items);
+  await page.goto('/#onsart');
+  await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30000 });
+  await expect(page.locator('.pg-program-select')).toHaveValue('CEN_LS', { timeout: 30000 });
+  await expect(page.locator('#pg-root')).toHaveAttribute('data-equiv-ready', '1', { timeout: 30000 });
+
+  const li = (code) => page.locator(`.pg-li[data-code="${code}"]`);
+  await expect(li('EEE 225E')).toHaveClass(/is-passed/);
+  // Geçilen eşdeğer, eski kodlu önşartı sağlar → alınabilir.
+  await expect(li('EEE 315E')).toHaveClass(/is-eligible/);
+  // Liste özeti artık "planda yok" uyarısı taşımaz, eşdeğer kodu gösterir.
+  const pre = li('EEE 315E').locator('.pg-li-pre');
+  await expect(pre).not.toHaveClass(/\bw\b/);
+  await expect(pre).toContainText('EEE 225E');
+
+  // Detay panelinde EHB 222E satırı "plandaki eşdeğeri: EEE 225E" der ve tıklanabilir.
+  await li('EEE 315E').dispatchEvent('click');
+  const row = page.locator('.pg-alt[data-equiv="EEE 225E"]');
+  await expect(row).toHaveCount(1);
+  await expect(row).toContainText('EHB 222E');
+  await expect(row).toContainText('plandaki eşdeğeri: EEE 225E');
+  await expect(row.locator('button.pg-alt-code')).toHaveAttribute('data-pan', 'EEE 225E');
+  // Eşdeğeri olmayan eski kodlar (EHB 262E…) "başka program" kalır.
+  await expect(page.locator('.pg-alt:not(.in)').first()).toContainText('başka program');
+});

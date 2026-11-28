@@ -2666,3 +2666,44 @@ Toplam 3,00 3,00 3,00 12,00 4,00`;
   assert.match(JSON.stringify(m), /"slot":"s0i0"/);
   assert.match(JSON.stringify(m), /"code":"CIN 101"/);
 });
+
+test('önşart eşdeğerliği: eski kod, aynı İngilizce ad ve krediyle tek plan dersine eşlenir', async () => {
+  const { planEquivalents, normCourseName } = await import('./prereq-equiv.js');
+  assert.equal(normCourseName('  Intr.to  Electronics-LAB '), 'intr to electronics lab');
+  // Sentetik katalog: XYZ 222E yeni plandaki ABC 225E ile aynı ders.
+  const catalog = {
+    'XYZ 222E': { name: 'Elektroniğe Giriş', nameEn: 'Introduction to Electronics', credits: { local: 3 } },
+    'XYZ 222': { name: 'Elektroniğe Giriş', nameEn: 'Introduction to Electronics', credits: { local: 3 } },
+    'XYZ 300E': { name: 'Devreler', nameEn: 'Circuits', credits: { local: 4 } },
+    'XYZ 400E': { name: 'Sinyaller', nameEn: 'Signals', credits: { local: 3 } },
+    'XYZ 500E': { name: 'Ölçme', nameEn: '', credits: { local: 2 } },
+    'ABC 410E': { name: 'Sistem', nameEn: 'Signals', credits: { local: 3 } },
+    'QQQ 999': { name: 'Measurement', credits: {} },
+  };
+  const plan = [
+    { code: 'ABC 225E', name: 'Introduction to Electronics', credits: 3 },
+    { code: 'ABC 301E', name: 'Circuits', credits: 3 }, // kredi farklı → eşleşmez
+    { code: 'ABC 400E', name: 'Signals', credits: 3 },
+    { code: 'ABC 410E', name: 'Signal Systems', credits: 3 }, // katalog adı "Signals" → belirsiz
+    { code: 'ABC 500E', name: 'Measurement' }, // kredi bilinmiyor
+  ];
+  const eq = planEquivalents(['XYZ 222E', 'XYZ 222', 'XYZ 300E', 'XYZ 400E', 'XYZ 500E', 'QQQ 999', 'NOP 101', 'ABC 225E'],
+    plan, (c) => catalog[c] || null);
+  assert.equal(eq.get('XYZ 222E'), 'ABC 225E');
+  assert.equal(eq.get('XYZ 222'), 'ABC 225E');
+  assert.equal(eq.has('XYZ 300E'), false, 'kredi uyuşmazlığı');
+  assert.equal(eq.has('XYZ 400E'), false, 'birden çok aday');
+  assert.equal(eq.has('XYZ 500E'), false, 'İngilizce ad boş, Türkçe ad farklı');
+  assert.equal(eq.get('QQQ 999'), 'ABC 500E', 'nameEn yoksa ad; kredi bilinmiyorsa ad yeter');
+  assert.equal(eq.has('NOP 101'), false, 'katalogda yok');
+  assert.equal(eq.has('ABC 225E'), false, 'zaten planda');
+});
+
+test('önşart eşdeğerliği: plandaki eşdeğerden geçilen not eski kodlu önşartı sağlar', () => {
+  const tree = parseReq('XYZ 262E MIN. DD Veya XYZ 222E MIN. DD');
+  const best = new Map([['ABC 225E', 'CC']]);
+  assert.equal(reqSatisfied(tree, best), false);
+  const withEq = new Map(best);
+  withEq.set('XYZ 222E', best.get('ABC 225E'));
+  assert.equal(reqSatisfied(tree, withEq), true);
+});

@@ -1023,6 +1023,7 @@ export default {
   pgMinGrade: 'en az {grade}',
   pgInThisPlan: 'bu planda · {n}. yarıyıl',
   pgOtherProgram: 'başka program',
+  pgPlanEquivalent: 'plandaki eşdeğeri: {code} · {n}. yarıyıl',
   pgFocusedCourse: 'Odaktaki ders · {n}. yarıyıl',
   pgOpenInCoursesBtn: 'Derslerde aç',
   pgCourseDetailBtn: 'Ders detayı',

@@ -22,6 +22,7 @@ import { readLocalState, writeLocalState, isPlainObject } from './core/persisten
 import { I18N } from './i18n.js?v=dde1e9339338';
 import { courseProgress, readAllGrades, lastGradesProgram, gradeRank } from './core/passed.js?v=dde1e9339338';
 import { planVersions, versionFile } from './core/planversions.js';
+import { planEquivalents } from './core/prereq-equiv.js';
 
   // Düğüm detay paneli (ders önşart ağacı / seçmeli havuz listesi) React'te —
   // akış şemasının kendisi (canvas çizimi, sürükleme, yakınlaştırma) kasten
@@ -154,21 +155,8 @@ import { planVersions, versionFile } from './core/planversions.js';
       this.laneTitles = laneTitles;
       this.nodes = nodes.map((n) => ({ ...n, x: 0, y: 0, deg: 0 }));
       this.byCode = new Map(this.nodes.map((n) => [n.code, n]));
-      this.edges = edges
-        .map((e) => ({ ...e, from: this.byCode.get(e.from), to: this.byCode.get(e.to) }))
-        .filter((e) => e.from && e.to);
-
-      this.byFrom = new Map();
-      this.byTo = new Map();
-      const push = (map, key, val) => {
-        if (!map.has(key)) map.set(key, []);
-        map.get(key).push(val);
-      };
-      for (const e of this.edges) {
-        e.from.deg++; e.to.deg++;
-        push(this.byFrom, e.from.code, e.to.code);
-        push(this.byTo, e.to.code, e.from.code);
-      }
+      this.equiv = new Map();
+      this.indexEdges(edges);
 
       this.hay = this.nodes.map((n) => fold(`${n.label || ''} ${n.name || ''}`));
       this.focus = null; this.related = null;
@@ -184,6 +172,65 @@ import { planVersions, versionFile } from './core/planversions.js';
       this.resize();
       await this.introAnimate();
       this.draw();
+    }
+
+    // indexEdges, kod tabanlı kenarları düğüm nesnelerine bağlar ve
+    // byFrom/byTo/deg indekslerini (yeniden) kurar.
+    indexEdges(edges) {
+      for (const n of this.nodes) n.deg = 0;
+      this.edges = edges
+        .map((e) => ({ ...e, from: this.byCode.get(e.from), to: this.byCode.get(e.to) }))
+        .filter((e) => e.from && e.to);
+      this.byFrom = new Map();
+      this.byTo = new Map();
+      const push = (map, key, val) => {
+        if (!map.has(key)) map.set(key, []);
+        map.get(key).push(val);
+      };
+      for (const e of this.edges) {
+        e.from.deg++; e.to.deg++;
+        push(this.byFrom, e.from.code, e.to.code);
+        push(this.byTo, e.to.code, e.from.code);
+      }
+    }
+
+    // enrich, çizilmiş grafa sonradan (katalog yüklenince) bulunan plan
+    // eşdeğerliklerini işler: düğüm konumları değişmez, yalnız önşart özeti /
+    // planda-yok işareti ve kenarlar tazelenir; odak varsa detay yeniden çizilir.
+    enrich(nodes, edges, equiv) {
+      if (!this.nodes) return;
+      this.equiv = equiv || new Map();
+      const fresh = new Map(nodes.map((n) => [n.code, n]));
+      for (const n of this.nodes) {
+        const f = fresh.get(n.code);
+        if (!f) continue;
+        n.reqSummary = f.reqSummary;
+        n.offPlan = f.offPlan;
+        n.offCodes = f.offCodes;
+      }
+      this.indexEdges(edges);
+      const focus = this.focus && this.byCode.get(this.focus);
+      if (focus) {
+        this.related = this.relatedOf(focus.code);
+        if (focus.kind !== 'elective') this.renderDetail(focus.code);
+      }
+      this.draw();
+    }
+
+    relatedOf(code) {
+      const related = new Set([code]);
+      const walk = (start, map) => {
+        const q = [start];
+        while (q.length) {
+          const cur = q.pop();
+          for (const next of map.get(cur) ?? []) {
+            if (!related.has(next)) { related.add(next); q.push(next); }
+          }
+        }
+      };
+      walk(code, this.byTo);
+      walk(code, this.byFrom);
+      return related;
     }
 
     // Durum satırı: "Program · 48 ders/slot · 13 önşart bağı · odak BLG 223E".
@@ -320,7 +367,7 @@ import { planVersions, versionFile } from './core/planversions.js';
         const [x1, y1] = this.worldToScreen(e.from.x + NODE_W / 2, e.from.y);
         const [x2, y2] = this.worldToScreen(e.to.x - NODE_W / 2, e.to.y);
         ctx.globalAlpha = (this.alpha ?? 1) * (on ? 1 : (focused ? 0.18 : 0.5));
-        drawEdge(ctx, [x1, y1], [x2, y2], on ? c.acid : c.hot, on ? 2.2 : 1.3, e.alt, k);
+        drawEdge(ctx, [x1, y1], [x2, y2], on ? c.acid : c.hot, on ? 2.2 : 1.3, e.alt || e.equiv, k);
       }
 
       // Düğümler
@@ -432,19 +479,7 @@ import { planVersions, versionFile } from './core/planversions.js';
       this.root.classList.add('pg-has-detail');
       const reset = this.root.querySelector('.pg-reset');
       if (reset) reset.disabled = false;
-      const related = new Set([code]);
-      const walk = (start, map) => {
-        const q = [start];
-        while (q.length) {
-          const cur = q.pop();
-          for (const next of map.get(cur) ?? []) {
-            if (!related.has(next)) { related.add(next); q.push(next); }
-          }
-        }
-      };
-      walk(code, this.byTo);
-      walk(code, this.byFrom);
-      this.related = related;
+      this.related = this.relatedOf(code);
       this.renderStatus();
       this.renderDetail(code);
       this.draw();
@@ -534,14 +569,18 @@ import { planVersions, versionFile } from './core/planversions.js';
         if (grades.length === 1) head.push(tf('pgMinGrade', { grade: grades[0] }));
         const rows = mergeAlts(g.alts).map((alt) => {
           const codes = alt.codes;
-          const hit = codes.find(inPlan);
-          const taken = codes.some((c) => isTaken(c));
-          const note = hit ? tf('pgInThisPlan', { n: laneOf(hit) }) : I18N.t('pgOtherProgram');
+          const direct = codes.find(inPlan);
+          // Planda olmayan eski kod, plandaki eşdeğerine (aynı ad + kredi) çözülür.
+          const eq = direct || alt.text ? '' : (codes.map((c) => this.equiv?.get(c)).find((c) => c && c !== code && inPlan(c)) || '');
+          const hit = direct || eq;
+          const taken = codes.some((c) => isTaken(c)) || (eq && isTaken(eq));
+          const note = direct ? tf('pgInThisPlan', { n: laneOf(direct) })
+            : eq ? tf('pgPlanEquivalent', { code: eq, n: laneOf(eq) }) : I18N.t('pgOtherProgram');
           const label = alt.text || codes.join(' / ');
           const btn = hit
             ? `<button type="button" class="pg-alt-code num" data-pan="${esc(hit)}" translate="no">${esc(label)}</button>`
             : `<span class="num" translate="no">${esc(label)}</span>`;
-          return `<li class="pg-alt${hit ? ' in' : ''}">${btn}<small>${esc(note)}${taken ? ` · ${esc(I18N.t('pgTakenMark'))}` : ''}</small></li>`;
+          return `<li class="pg-alt${hit ? ' in' : ''}${eq ? ' eq' : ''}"${eq ? ` data-equiv="${esc(eq)}"` : ''}>${btn}<small>${esc(note)}${taken ? ` · ${esc(I18N.t('pgTakenMark'))}` : ''}</small></li>`;
         }).join('');
         return `<div class="pg-req-group"><div class="pg-or">${esc(head.join(' · '))}</div><ul class="pg-alts">${rows}</ul></div>`;
       }).join('') : `<p class="pg-empty">${esc(I18N.t('pgNoPrereqInProgram'))}</p>`;
@@ -956,13 +995,18 @@ import { planVersions, versionFile } from './core/planversions.js';
 
   // summarizeReq, liste görünümü için kısa önşart özeti üretir ve bu planda
   // hiçbir alternatifi olmayan grubu "planda yok" (offPlan) işaretler.
-  export function summarizeReq(tree, inPlan) {
+  // equiv (isteğe bağlı): planda olmayan kod → plandaki eşdeğeri; eşdeğeri
+  // olan kod planda sayılır ve özette eşdeğer koduyla yazılır.
+  export function summarizeReq(tree, inPlan, equiv) {
     const groups = reqGroups(tree);
     const offCodes = [];
+    const has = (c) => inPlan.has(c) || !!(equiv && equiv.has(c) && inPlan.has(equiv.get(c)));
+    const show = (c) => (inPlan.has(c) || !equiv ? c : equiv.get(c) || c);
     const parts = groups.map((g) => {
       const fmt = (alt) => alt.map((l) => l.code || l.raw).join(` ${I18N.t('pgAndWord')} `);
-      const hits = g.alts.filter((alt) => alt.length && alt.every((l) => l.type === 'code' && inPlan.has(l.code)));
-      if (hits.length) return hits.slice(0, 2).map(fmt).join(` ${I18N.t('pgOrWord')} `);
+      const hits = g.alts.filter((alt) => alt.length && alt.every((l) => l.type === 'code' && has(l.code)));
+      const hitFmt = (alt) => alt.map((l) => show(l.code)).join(` ${I18N.t('pgAndWord')} `);
+      if (hits.length) return [...new Set(hits.map(hitFmt))].slice(0, 2).join(` ${I18N.t('pgOrWord')} `);
       const first = g.alts[0] || [];
       offCodes.push(fmt(first));
       return fmt(first);
@@ -1149,7 +1193,45 @@ import { planVersions, versionFile } from './core/planversions.js';
     return '';
   }
 
-  function buildProgramGraph(plan, prereqEdges, reqMap, slotCodes = {}) {
+  // ---- Katalog tabanlı eşdeğerlik (eski önşart kodu → plandaki yeni kod) ----
+  // Katalog branş dosyaları büyük; yalnız gereken branşlar, bir kez çekilir.
+  const catalogData = new Map(); // BRANŞ -> { kod: kayıt } | null
+  const catalogLoads = new Map(); // BRANŞ -> Promise
+  function loadCatalogBranch(branch) {
+    if (!/^[A-Z]{2,5}$/.test(branch)) return Promise.resolve(null);
+    if (!catalogLoads.has(branch)) {
+      catalogLoads.set(branch, getJSON(`data/catalog/${branch}.json`)
+        .catch(() => null)
+        .then((d) => { catalogData.set(branch, d && typeof d === 'object' ? d : null); return d; }));
+    }
+    return catalogLoads.get(branch);
+  }
+  const catalogEntry = (code) => catalogData.get(String(code).split(' ')[0])?.[code] || null;
+
+  // Planın önşart ifadelerindeki planda olmayan kodları, katalog adı ve
+  // kredisiyle plandaki tek bir derse eşler. Hata durumunda boş Map.
+  async function findPlanEquivalents(nodes, reqMap) {
+    try {
+      const courses = nodes.filter((n) => n.kind === 'course' && !n.nocode);
+      const inPlan = new Set(courses.map((n) => n.code));
+      const off = new Set();
+      for (const n of courses) {
+        const r = reqMap && reqMap.get(n.code);
+        if (r) for (const c of collectCodes(parseReq(r))) if (!inPlan.has(c)) off.add(c);
+      }
+      if (!off.size) return new Map();
+      const branchOf = (c) => String(c).split(' ')[0];
+      await Promise.all([...new Set([...off].map(branchOf))].map(loadCatalogBranch));
+      // Plan derslerinin kendi katalog adları yalnız eşleşebilecek aday varsa gerekir.
+      if (![...off].some((c) => catalogEntry(c))) return new Map();
+      await Promise.all([...new Set([...inPlan].map(branchOf))].map(loadCatalogBranch));
+      return planEquivalents(off, courses.map((n) => ({ code: n.code, name: n.name, credits: n.credits })), catalogEntry);
+    } catch {
+      return new Map();
+    }
+  }
+
+  function buildProgramGraph(plan, prereqEdges, reqMap, slotCodes = {}, equiv = null) {
     const nodes = [];
     const seen = new Set();
     const laneTitles = plan.semesters.map((s) => laneTitle(s.title));
@@ -1185,14 +1267,27 @@ import { planVersions, versionFile } from './core/planversions.js';
       const r = reqMap && reqMap.get(n.code);
       if (!r) continue;
       n.requirement = r;
-      const sum = summarizeReq(parseReq(r), codeSet);
+      const sum = summarizeReq(parseReq(r), codeSet, equiv);
       n.reqSummary = sum.text;
       n.offPlan = sum.offPlan;
       n.offCodes = sum.offCodes;
     }
+    const isAlt = (from, to) => (altsByTarget.get(to) ? altsByTarget.get(to).has(from) : false);
     const edges = prereqEdges
       .filter((e) => codeSet.has(e.from) && codeSet.has(e.to))
-      .map((e) => ({ ...e, alt: altsByTarget.get(e.to) ? altsByTarget.get(e.to).has(e.from) : false }));
+      .map((e) => ({ ...e, alt: isAlt(e.from, e.to) }));
+    if (equiv && equiv.size) {
+      // Eski koda bağlı önşart: kenar plandaki eşdeğerinden çizilir (kesikli).
+      const seenEdge = new Set(edges.map((e) => `${e.from}|${e.to}`));
+      for (const e of prereqEdges) {
+        const from = !codeSet.has(e.from) && equiv.get(e.from);
+        if (!from || from === e.to || !codeSet.has(from) || !codeSet.has(e.to)) continue;
+        const key = `${from}|${e.to}`;
+        if (seenEdge.has(key)) continue;
+        seenEdge.add(key);
+        edges.push({ ...e, from, equiv: true, equivOf: e.from, alt: isAlt(e.from, e.to) });
+      }
+    }
     return { nodes, edges, laneTitles };
   }
 
@@ -1206,13 +1301,20 @@ import { planVersions, versionFile } from './core/planversions.js';
     const prog = root.querySelector('.pg-program-select')?.value || '';
     const p = courseProgress(readAllGrades(), prog);
     lastProgress = p;
+    // Plandaki eşdeğerinden geçilen not, önşarttaki eski kodu da sağlar.
+    let best = p.best;
+    const equiv = graph?.equiv;
+    if (equiv && equiv.size && best) {
+      best = new Map(best);
+      for (const [off, planCode] of equiv) if (!best.has(off) && best.has(planCode)) best.set(off, best.get(planCode));
+    }
     const counts = { passed: 0, failed: 0, eligible: 0 };
     const byCode = new Map();
     for (const n of graph?.nodes || []) {
       let st = '';
       if (n.kind === 'course' && !n.nocode) {
         st = p.status.get(n.code) || '';
-        if (!st && n.requirement && reqSatisfied(parseReq(n.requirement), p.best)) st = 'eligible';
+        if (!st && n.requirement && reqSatisfied(parseReq(n.requirement), best)) st = 'eligible';
       } else if (n.kind === 'elective') {
         const m = /^__elective_(\d+)_(\d+)$/.exec(n.code);
         st = (m && p.slots.get(`s${m[1]}i${m[2]}`)) || '';
@@ -1272,17 +1374,39 @@ import { planVersions, versionFile } from './core/planversions.js';
       reqByCode = { edges: g.edges, req: new Map(g.nodes.filter((n) => n.requirement).map((n) => [n.code, n.requirement])) };
     }
 
-    const { nodes, edges, laneTitles } = buildProgramGraph(plan, reqByCode.edges, reqByCode.req, readAllGrades()?.[code]?.requiredSlots || {});
+    const seq = ++selectSeq;
+    delete root.dataset.equivReady;
+    const slotCodes = readAllGrades()?.[code]?.requiredSlots || {};
+    const { nodes, edges, laneTitles } = buildProgramGraph(plan, reqByCode.edges, reqByCode.req, slotCodes);
+    // Eşdeğerlik katalog dosyalarına bağlı: harita önce çizilir, katalog
+    // geldikçe (arka planda) kenarlar ve uyarılar yerinde tazelenir.
+    const equivPromise = findPlanEquivalents(nodes, reqByCode.req);
 
     root.querySelector('.pg-plan-label').textContent = plan.planLabel || '';
     renderSemesterList(root, plan, nodes, graph);
     renderWarnBox(root, nodes);
-    const status = [plan.programName, `${nodes.length} ${I18N.t('pgCourseSlotWord')}`, tf('pgEdgeCount', { n: edges.length })].join(' · ');
-    await graph.build(nodes, edges, laneTitles, status);
+    const statusOf = (n, e) => [plan.programName, `${n} ${I18N.t('pgCourseSlotWord')}`, tf('pgEdgeCount', { n: e })].join(' · ');
+    await graph.build(nodes, edges, laneTitles, statusOf(nodes.length, edges.length));
     renderMobileExplorer(root, plan, graph);
     applyProgress(root);
     statusEl.classList.remove('busy');
+
+    const builtNodes = graph.nodes;
+    const equiv = await equivPromise;
+    // Bu arada başka program seçildiyse (ya da graf yeniden kurulduysa) bırak.
+    if (seq !== selectSeq || graph.nodes !== builtNodes) return;
+    if (!equiv.size) { root.dataset.equivReady = '1'; return; }
+    const rich = buildProgramGraph(plan, reqByCode.edges, reqByCode.req, slotCodes, equiv);
+    graph.enrich(rich.nodes, rich.edges, equiv);
+    graph.statusLabel = statusOf(rich.nodes.length, rich.edges.length);
+    graph.renderStatus();
+    renderSemesterList(root, plan, graph.nodes, graph);
+    if (graph.focus) markListFocus(root, graph.focus);
+    renderWarnBox(root, graph.nodes);
+    applyProgress(root);
+    root.dataset.equivReady = '1';
   }
+  let selectSeq = 0;
 
   // "Müfredat ve GPA"da bu program için eski bir plan sürümü seçildiyse
   // (planstore: planVersion) harita da o sürümü gösterir; yoksa güncel sürüm.

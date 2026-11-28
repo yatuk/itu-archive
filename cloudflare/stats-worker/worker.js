@@ -18,6 +18,8 @@ export default {
       'Access-Control-Allow-Origin': allowed.has(origin) ? origin : 'https://itu-ders.com',
       'Access-Control-Allow-Methods': 'GET, OPTIONS',
       'Vary': 'Origin',
+      // Yalnız sayaç API'si; arama sonuçlarında görünmesin.
+      'X-Robots-Tag': 'noindex, nofollow',
     };
     if (request.method === 'OPTIONS') return new Response(null, { headers: cors });
     if (request.method !== 'GET') return new Response('Method Not Allowed', { status: 405, headers: cors });

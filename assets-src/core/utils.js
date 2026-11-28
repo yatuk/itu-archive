@@ -138,6 +138,17 @@ export function trNum(n) {
 // terimlerde İngilizce-E soneki yok sayılır ("BLG 102E" hem "BLG 102" hem
 // "BLG 102E"yi bulur). Ters yön zaten eşleşir: boşluk silindiği için
 // "blg102" ⊂ "blg102e…". Saf fonksiyon — test edilebilir.
+// Boşluk esnek "içeriyor mu": "CEN  411", "cen411" ve "CEN 411" aynı sonucu
+// verir. Önce boşluklar teke indirilerek, olmazsa tüm boşluklar silinerek
+// aranır. hay ve q fold'lanmış olmalı. Saf fonksiyon — test edilebilir.
+export function looseIncludes(hay, q) {
+  const one = String(q).replace(/\s+/g, ' ').trim();
+  if (!one) return true;
+  const h = String(hay);
+  if (h.includes(one)) return true;
+  return h.replace(/\s+/g, '').includes(one.replace(/ /g, ''));
+}
+
 export function searchMatch(term, hay) {
   if (hay.includes(term)) return true;
   if (/\d[e]$/.test(term) && hay.includes(term.slice(0, -1))) return true;

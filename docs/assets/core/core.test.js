@@ -2234,3 +2234,12 @@ test('palette: kod boşluksuz, Türkçe katlamalı eşleşir; CRN ve sayfa grupl
   assert.equal(g('').pages.length, 2);
   assert.equal(g('zzzz').courses, undefined);
 });
+
+test('looseIncludes: boşluk esnek arama', async () => {
+  const { looseIncludes } = await import('./utils.js');
+  const hay = 'cen 411e software engineering';
+  assert.equal(looseIncludes(hay, 'cen  411'), true);
+  assert.equal(looseIncludes(hay, 'cen411'), true);
+  assert.equal(looseIncludes(hay, ' cen 411e '), true);
+  assert.equal(looseIncludes(hay, 'cen 412'), false);
+});

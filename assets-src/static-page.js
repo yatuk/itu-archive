@@ -77,7 +77,9 @@
     items.forEach(function (li) {
       var k = li.getAttribute('data-k') || '';
       var ok = (!br || (' ' + li.getAttribute('data-b') + ' ').indexOf(' ' + br + ' ') !== -1) &&
-        words.every(function (w) { return k.indexOf(w) !== -1; });
+        (words.every(function (w) { return k.indexOf(w) !== -1; }) ||
+          // Boşluksuz/fazla boşluklu yazım: "cen411" ↔ "CEN 411E".
+          k.replace(/\s+/g, '').indexOf(words.join('')) !== -1);
       li.hidden = !ok;
       if (ok) shown++;
     });

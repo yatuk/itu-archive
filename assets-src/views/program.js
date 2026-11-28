@@ -5,7 +5,7 @@
 // kurulur. Birden fazla program (liste) tutulur, localStorage'da saklanır.
 // Seçili liste + çakışma listesi solda, haftalık ızgara sağda.
 
-import { $, getJSON, esc, fold, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum, copyText } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, esc, fold, looseIncludes, debounce, downloadCSV, downloadICS, parseTurkishDate, trNum, copyText } from '../core/utils.js?v=dde1e9339338';
 import { state, indexReady } from '../core/store.js?v=dde1e9339338';
 import { quotaDisplay } from '../core/chart.js?v=dde1e9339338';
 import { buildTimetable, buildingGapWarnings, parseWhen, openDetail, effectiveQuota } from './courses.js?v=dde1e9339338';
@@ -402,7 +402,7 @@ function search() {
   const hay = rows.map((r) => fold(`${r[0]} ${r[1]} ${r[2]} ${r[4]}`));
   hits = [];
   for (let i = 0; i < rows.length && hits.length < 12; i++) {
-    if (hay[i].includes(q)) hits.push(rows[i]);
+    if (looseIncludes(hay[i], q)) hits.push(rows[i]);
   }
   box.hidden = false;
   box.innerHTML = hits.map((r, idx) => { const [cap, enr] = effectiveQuota(r); return `

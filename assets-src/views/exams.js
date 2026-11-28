@@ -6,7 +6,7 @@
 // altında son ilan edilmiş takvim gösterilir. Sınavlar güne göre gruplanır;
 // aynı ders + öğretim üyesi + saat + yer taşıyan şubeler tek satıra birleşir.
 
-import { $, getJSON, esc, fold, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate, isViewVisible } from '../core/utils.js?v=dde1e9339338';
+import { $, getJSON, esc, fold, looseIncludes, debounce, buildingOf, setStatus, downloadICS, parseTurkishDate, isViewVisible } from '../core/utils.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from '../core/persistence.js?v=dde1e9339338';
@@ -423,7 +423,8 @@ function renderExams(append) {
     if (type && e.type !== type) return false;
     if (bld && buildingOf(e.place) !== bld) return false;
     if (ebranch && e.branch !== ebranch) return false;
-    return terms.every((t) => state.examHay[i].includes(t));
+    // Terimler ayrı ayrı; tümü tutmazsa boşluksuz yazım ("cen411") denenir.
+    return terms.every((t) => state.examHay[i].includes(t)) || looseIncludes(state.examHay[i], q);
   });
   currentHits = hits; // .ics dışa aktarımı için
   const days = groupExamsByDay(hits);

@@ -15,7 +15,7 @@
 // - Çizim yine branşa göre gruplanmış Path2D'lerle yapılıyor (düğüm başına
 //   ayrı fillStyle çağırmamak için); art arda arc() öncesi moveTo şart, yoksa
 //   daireler çizgiyle birleşip tek bir "vitray" şekline dönüşüyor.
-import { esc, fold, getJSON, termLabel, trNum } from './core/utils.js?v=dde1e9339338';
+import { esc, fold, getJSON, termLabel, trNum, looseIncludes } from './core/utils.js?v=dde1e9339338';
 import { state } from './core/store.js?v=dde1e9339338';
 import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=dde1e9339338';
@@ -688,7 +688,7 @@ import { courseProgress, readAllGrades, lastGradesProgram, gradeRank } from './c
       if (f.length < 2 || !this.nodes) return [];
       const out = [];
       for (let i = 0; i < this.nodes.length && out.length < 30; i++) {
-        if (this.hay[i].includes(f)) out.push(this.nodes[i]);
+        if (looseIncludes(this.hay[i], f)) out.push(this.nodes[i]);
       }
       return out;
     }

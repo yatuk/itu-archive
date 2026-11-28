@@ -4978,7 +4978,9 @@ body.modal-open { overflow: hidden; }
    Satırlar maketteki gibi istiflenir; dokunma hedefleri 44px. */
 @media (max-width: 900px) {
   #view-dersplanim .dp-pickcard { padding: 16px; }
-  #view-dersplanim .dp-program-pick { grid-template-columns: 1fr 1fr; }
+  /* Tek sütun: seviye ve dönem yarım sütunda kalınca dönem adı kesiliyordu
+     ("2026-2027 Güz Dö…"); dört seçici de tam genişlik. */
+  #view-dersplanim .dp-program-pick { grid-template-columns: minmax(0, 1fr); }
   #view-dersplanim .dp-field-wide { grid-column: 1 / -1; }
   #view-dersplanim .dp-field select { height: 44px; font-size: 16px; }
   #view-dersplanim .btn-ghost.dp-btn-sm,

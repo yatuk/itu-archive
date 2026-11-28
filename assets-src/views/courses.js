@@ -605,12 +605,15 @@ function exportSelectedCSV() {
 // Seçili şubeleri program oluşturucuya ekleyip o sekmeye geçer.
 function sendToProgram() {
   if (!state.selected.size) { toast(t('selNeedSection'), { kind: 'warn' }); return; }
-  let added = 0;
-  for (const r of state.rows) {
-    if (state.selected.has(selKey(r)) && fav.addToSchedule(state.termSlug, r[3], r[0])) added++;
-  }
-  toast(added ? t('selSent', { n: added }) : t('selAlreadyInProgram'), { kind: added ? 'ok' : 'warn' });
+  // Haftalık Program artık 'itu-programs' kaydındaki aktif programı okur;
+  // eski fav.addToSchedule ('itu-schedule') oraya hiç ulaşmıyordu. Müfredat'ın
+  // "programa ekle" düğmeleriyle aynı yol: görünüme geç, sonra ekleme olayı —
+  // program.js aktif programa ekler ve kaç şube eklendiğini kendisi bildirir.
+  const items = state.rows
+    .filter((r) => state.selected.has(selKey(r)))
+    .map((r) => ({ branch: r[3], crn: String(r[0]) }));
   window.dispatchEvent(new CustomEvent('itu:goto-program'));
+  setTimeout(() => window.dispatchEvent(new CustomEvent('itu:add-program-items', { detail: { term: state.termSlug, items } })), 0);
 }
 
 /* ---------- liste: derse göre gruplanmış şubeler ---------- */

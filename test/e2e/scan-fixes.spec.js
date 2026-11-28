@@ -20,18 +20,15 @@ test('Haftalık Program: boş durum, açık program menüsündeki düğmelere bi
   }
 });
 
-test('Dersler: Ctrl K ipucu boş kutuda görünür, yazınca gizlenir', async ({ page, isMobile }) => {
-  test.skip(isMobile, 'İpucu yalnız fareli geniş ekranda');
+test('Başlık arama düğmesi yalnız masaüstünde görünür ve paleti açar', async ({ page, isMobile }) => {
   await page.goto('/#dersler');
   await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30000 });
-  const hint = page.locator('#view-dersler .cmdk-hint');
-  await expect(hint).toBeVisible();
-  const [h, q] = await Promise.all([hint.boundingBox(), page.locator('#q').boundingBox()]);
-  expect(h.x).toBeGreaterThanOrEqual(q.x);
-  expect(h.x + h.width).toBeLessThanOrEqual(q.x + q.width);
-  expect(parseFloat(await hint.evaluate((el) => getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(12);
-  await page.locator('#q').fill('MAT');
-  await expect(hint).toBeHidden();
+  const btn = page.locator('.cmdk-trigger');
+  if (isMobile) { await expect(btn).toBeHidden(); return; }
+  await expect(btn).toBeVisible();
+  await btn.click();
+  await expect(page.getByRole('dialog', { name: 'Komut paleti' })).toBeVisible();
+  await expect(page.locator('#view-dersler .cmdk-hint')).toHaveCount(0);
 });
 
 test('Önşart: liste kodları sütunlarından taşmaz, mobil seçenek metni >= 12px', async ({ page, isMobile }) => {

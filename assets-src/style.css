@@ -7099,24 +7099,9 @@ details.ab-faq summary:focus-visible { outline: 2px solid var(--cyan); outline-o
 .cl-narrow .cl-taken-w { display: none; }
 #view-dersler .course-taken-check[hidden] { display: none; }
 
-/* Arama kutusundaki "Ctrl K" ipucu: yalnız fare/klavyeli geniş ekranda,
-   kutu boşken (× temizleme düğmesiyle aynı yere düşer). */
-.cmdk-hint { display: none; }
-@media (hover: hover) and (pointer: fine) and (min-width: 761px) {
-  #view-dersler .course-search .cmdk-hint {
-    display: inline-flex; align-items: center;
-    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
-    padding: 1px 6px; border: 1px solid var(--line); border-radius: 5px;
-    background: var(--panel-2); color: var(--dimmer);
-    font: 500 11px/1.5 var(--mono); pointer-events: none;
-  }
-  #view-dersler .course-search input:placeholder-shown { padding-right: 78px; }
-  #view-dersler .course-search:has(input:not(:placeholder-shown)) .cmdk-hint { display: none; }
-}
-
-/* Başlıktaki arama düğmesi: yalnız dar ekranda (masaüstünde Ctrl K ipucu var). */
+/* Başlıktaki arama düğmesi: yalnız masaüstünde (Ctrl K ipucu kaldırıldı). */
 .cmdk-trigger { display: none; }
-@media (max-width: 760px) {
+@media (min-width: 761px) {
   .cmdk-trigger {
     all: unset; box-sizing: border-box; cursor: pointer;
     display: inline-grid; place-items: center; flex: none;
@@ -7408,7 +7393,6 @@ details.ab-faq summary:focus-visible { outline: 2px solid var(--cyan); outline-o
 [data-theme="sade"] .cl-sort,
 [data-theme="sade"] .cl-pill,
 [data-theme="sade"] .cl-qu-short,
-[data-theme="sade"] #view-dersler .cmdk-hint,
 [data-theme="sade"] #view-dersler .eyebrow,
 [data-theme="sade"] #view-dersplanim .dp-k,
 [data-theme="sade"] #view-dersplanim .dp-ty,
@@ -7423,10 +7407,6 @@ details.ab-faq summary:focus-visible { outline: 2px solid var(--cyan); outline-o
 [data-theme="sade"] #view-program .tt-block,
 [data-theme="sade"] #pg-root .pg-state-tag,
 [data-theme="sade"] #pg-root .pg-mobile-course small { font-size: 12px; }
-@media (hover: hover) and (pointer: fine) and (min-width: 761px) {
-  [data-theme="sade"] #view-dersler .course-search .cmdk-hint { z-index: 2; }
-  [data-theme="sade"] #view-dersler .course-search input:placeholder-shown { padding-right: 86px; }
-}
 /* Açık program menüsü (Adlandır/Yeni/Kopyala/Programı sil) altındaki içeriğin üstüne binmez:
    araç çubuğu menü yüksekliği kadar yer ayırır. */
 [data-theme="sade"] #view-program .p-toolbar:has(.p-progmenu[open]) { padding-bottom: 184px; }

@@ -525,10 +525,12 @@ test('matchRow: tek terim hoca eşleşmesi geçerli ("ovatman")', () => {
   assert.equal(m.hits[0].field, 'instructor');
 });
 
-test('matchRow: çok terimde yalnızca hoca eşleşmesi sonuç üretmez', () => {
+test('matchRow: çok terimde yalnızca hoca eşleşmesi ancak ad soyad gibiyse sayılır', () => {
   const f = searchFields({ crn: '12345', code: 'BLG 411E', name: 'Software Engineering', instructor: 'Tolga Ovatman' });
-  // İki terim de yalnızca hoca alanında (kod/ad eşleşmesi yok) → çoklu hoca eşleşmesi elenir.
-  assert.equal(matchRow(['tolga', 'ovatman'], f), null);
+  // Her terim hocanın bir sözcüğünün başından tutuyor → ad soyad araması, geçerli.
+  assert.ok(matchRow(['tolga', 'ovatman'], f));
+  // Sözcük ortası eşleşmeler (kod/ad eşleşmesi de yok) elenir.
+  assert.equal(matchRow(['olga', 'vatman'], f), null);
 });
 
 test('matchRow: ad kelime başı hoca kelime başından önce skorlanır', () => {

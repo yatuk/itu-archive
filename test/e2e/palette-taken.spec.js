@@ -12,8 +12,9 @@ async function openList(page) {
 }
 
 async function openPalette(page, isMobile) {
-  if (isMobile) await page.locator('.cmdk-trigger').click();
-  else await page.keyboard.press('Control+K');
+  // Başlıktaki arama düğmesi yalnız masaüstünde; kısayol her genişlikte çalışır.
+  if (isMobile) await page.keyboard.press('Control+K');
+  else await page.locator('.cmdk-trigger').click();
   const dialog = page.getByRole('dialog', { name: 'Komut paleti' });
   await expect(dialog).toBeVisible();
   const input = dialog.getByRole('combobox');
@@ -58,7 +59,7 @@ test.describe('Komut paleti', () => {
     await expect(options.first()).toHaveAttribute('aria-selected', 'true');
     await input.press('Escape');
     await expect(dialog).toBeHidden();
-    if (isMobile) await expect(page.locator('.cmdk-trigger')).toBeFocused();
+    if (!isMobile) await expect(page.locator('.cmdk-trigger')).toBeFocused();
 
     ({ dialog, input } = await openPalette(page, isMobile));
     await input.fill('akademik takvim');
@@ -79,8 +80,8 @@ test.describe('Komut paleti', () => {
     await expect(opt).toContainText(instructor);
     await opt.click();
     await expect(dialog).toBeHidden();
-    // Çok terimli aramada yalnız hoca eşleşmesi sayılmadığından soyadı aranır.
-    await expect(page.locator('#q')).toHaveValue(instructor.split(/\s+/).pop());
+    // Hocanın tam adı aranır (yalnız soyadı başka hocaları da getirirdi).
+    await expect(page.locator('#q')).toHaveValue(instructor);
     await expect(page.locator('#course-groups .cl-body > .cl-item').first().locator('.cl-ins')).toContainText(instructor);
   });
 });

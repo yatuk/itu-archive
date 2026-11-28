@@ -329,11 +329,9 @@ function run(i) {
   }
   if (it.kind === 'instructor') {
     closePalette({ restore: false });
-    // Dersler araması çok terimli sorguda yalnız hocadan gelen eşleşmeyi
-    // bilerek saymaz (core/utils.js matchRow); tek terim olarak soyadı aranır.
-    const parts = it.instructor.name.split(/\s+/);
-    const surname = parts[parts.length - 1];
-    const q = surname.length >= 3 ? surname : it.instructor.name;
+    // Tam ad soyad aranır: matchRow her terimi hoca sözcük başında tutan
+    // çok terimli sorguyu kabul eder (yalnız soyadı başka hocaları da getirir).
+    const q = it.instructor.name;
     window.dispatchEvent(new CustomEvent('itu:goto-courses', { detail: { q } }));
     const box = document.getElementById('q');
     if (box) { box.dispatchEvent(new Event('input', { bubbles: true })); box.focus({ preventScroll: true }); }

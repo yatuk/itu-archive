@@ -220,7 +220,10 @@ export function matchRow(terms, fields) {
   }
   // Çok terimli sorguda en az bir terim kod veya ad alanında eşleşmeli; yalnızca
   // hocadan gelen çoklu eşleşme sonuç üretmesin (tek terimde hoca eşleşmesi geçerli).
-  if (terms.length > 1 && !hits.some((h) => h.field === 'code' || h.field === 'name')) return null;
+  // İstisna: her terim hocanın bir sözcüğünün başından tutuyorsa bu bir ad
+  // soyad aramasıdır ("nizamettin aydın") ve geçerlidir.
+  if (terms.length > 1 && !hits.some((h) => h.field === 'code' || h.field === 'name')
+    && !hits.every((h) => h.field === 'instructor' && h.score >= SCORE.instrStart)) return null;
   return { score, hits };
 }
 

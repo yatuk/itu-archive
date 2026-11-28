@@ -2243,3 +2243,23 @@ test('looseIncludes: boşluk esnek arama', async () => {
   assert.equal(looseIncludes(hay, ' cen 411e '), true);
   assert.equal(looseIncludes(hay, 'cen 412'), false);
 });
+
+test('transkript: OBS kırpılmış ders adı plandaki tam adla eşleşir', async () => {
+  const { abbreviatedNameMatch, parseOBSTranscript, matchTranscriptToPlan } = await import('./transcript.js');
+  assert.equal(abbreviatedNameMatch('linear algebra and applicat', 'linear algebra and applications'), true);
+  assert.equal(abbreviatedNameMatch('linear algebra and applications', 'linear algebra and applications'), false);
+  assert.equal(abbreviatedNameMatch('lin algebra and applications', 'linear algebra and applications'), false);
+  assert.equal(abbreviatedNameMatch('physics', 'physics laboratory'), false);
+  const text = `2023-2024 / Güz Dönemi
+XYZ 281E Linear Algebra and Applicat. 3,00 DC
+Toplam 3,00 3,00 3,00 4,50 1,50`;
+  const plan = { semesters: [{ items: [
+    { course: { code: 'ABC 104E', name: 'Linear Algebra and Applications', credits: 3 } },
+    { course: { code: 'ABC 105E', name: 'Linear Algebra and Applied Physics', credits: 3 } },
+  ] }] };
+  const parsed = parseOBSTranscript(text);
+  const m = matchTranscriptToPlan(plan, parsed.records);
+  const json = JSON.stringify(m);
+  assert.match(json, /"targetSlot":"s0i0"/);
+  assert.match(json, /"grade":"DC"/);
+});

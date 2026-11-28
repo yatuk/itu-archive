@@ -12,6 +12,7 @@ import { openCourseDetail, prefetchCourseDetail, wireCourseDetailEvents } from '
 import { loadStyle } from './core/lazy-style.js';
 import { methodToCode, codeToMethod, slugToCode, scopeParams } from './core/urlcodes.js?v=dde1e9339338';
 import { syncStaticCanonical } from './core/canonical.js?v=dde1e9339338';
+import { initMobileShell } from './mobile-shell.js?v=dde1e9339338';
 
 // Dersler dışındaki sekmeler ilk açılışlarında yüklenir: modül (dinamik
 // import) ve css/<ad>.css parçası birlikte gelir, görünüm ikisi hazır olunca
@@ -66,6 +67,7 @@ async function boot() {
   initTheme();
   initLangButton();
   wireTabs();
+  initMobileShell(); // sade + ≤600px: alt sekme çubuğu ve ayar/seçici sayfaları
   wireHistoryJump();
   wireCourseDetailEvents();
   window.addEventListener('itu:goto-program', () => { if (showView) showView('program', true); });

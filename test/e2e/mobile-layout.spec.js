@@ -8,6 +8,7 @@
 // "veri hazır" varsayımı yok — her ölçümden önce panelin içeriği beklenir.
 
 import { test, expect } from '@playwright/test';
+import { sekmeyeGit } from './mobil-kabuk.js';
 
 const SEKMELER = [
   'dersler',
@@ -50,8 +51,7 @@ async function sekmeyiAc(page, sekme, tema) {
   await expect(page.locator('html')).toHaveAttribute('data-theme', tema.deger);
 
   const sekmeDugmesi = page.locator(`#tab-${sekme}`);
-  await sekmeDugmesi.scrollIntoViewIfNeeded();
-  await sekmeDugmesi.click();
+  await sekmeyeGit(page, sekme);
   await expect(sekmeDugmesi).toHaveAttribute('aria-selected', 'true');
 
   const panel = page.locator(`#view-${sekme}`);
@@ -208,4 +208,106 @@ test.describe('Mobil yerleşim bekçisi · 390 px', () => {
       });
     }
   }
+});
+
+// Mobil kabuk (sade): alt sekme çubuğu, sayfa taşmaz. Fosfor değişmez.
+test.describe('Mobil kabuk · sade alt sekme çubuğu', () => {
+  for (const genislik of [375, 430]) {
+    test(`${genislik}px: alt çubuk görünür, sayfa yatay taşmaz`, async ({ page }) => {
+      await page.setViewportSize({ width: genislik, height: 900 });
+      await page.goto('/');
+      await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30_000 });
+      await expect(page.locator('html')).toHaveAttribute('data-theme', 'sade');
+      const cubuk = page.locator('.tabs.app-tabs');
+      await expect(cubuk).toBeVisible();
+      const kutu = await cubuk.boundingBox();
+      // Çubuk ekranın altına yapışık.
+      expect(Math.round(kutu.y + kutu.height)).toBe(900);
+      for (const id of ['#tab-dersler', '#tab-program', '#tab-dersplanim', '#tab-onsart', '.mshell-more']) {
+        const hedef = page.locator(id);
+        await expect(hedef).toBeVisible();
+        const k = await hedef.boundingBox();
+        expect(k.height, `${id} dokunma yüksekliği`).toBeGreaterThanOrEqual(44);
+        expect(k.y).toBeGreaterThanOrEqual(kutu.y - 1);
+      }
+      // İkincil görünümler çubukta değil, "Daha fazla" sayfasında.
+      await expect(page.locator('#tab-sinavlar')).toBeHidden();
+      for (const sekme of ['dersler', 'program', 'dersplanim', 'onsart', 'sinavlar']) {
+        await sekmeyeGit(page, sekme);
+        await expect(page.locator(`#view-${sekme}`)).toBeVisible();
+        const { kaydirma, ic } = await page.evaluate(() => ({ kaydirma: document.documentElement.scrollWidth, ic: window.innerWidth }));
+        expect(kaydirma, `${sekme}: yatay taşma`).toBeLessThanOrEqual(ic);
+      }
+      await expect(page.locator('html')).toHaveAttribute('data-active-view', 'sinavlar');
+    });
+  }
+
+  test('Daha fazla sayfası: tema ve dil, Escape ile kapanır, odak geri döner', async ({ page }) => {
+    await page.setViewportSize({ width: 430, height: 932 });
+    await page.goto('/');
+    await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 30_000 });
+    const daha = page.locator('.mshell-more');
+    await daha.click();
+    const sayfa = page.locator('.mshell-sheet');
+    await expect(sayfa).toBeVisible();
+    await expect(sayfa).toHaveAttribute('aria-modal', 'true');
+    await expect(daha).toHaveAttribute('aria-expanded', 'true');
+    await sayfa.locator('[data-mshell-settings]').click();
+    await expect(sayfa.locator('[data-mshell-theme="sade"]')).toHaveAttribute('aria-pressed', 'true');
+    await page.keyboard.press('Escape');
+    await expect(sayfa).toBeHidden();
+    await expect(daha).toBeFocused();
+    // Fosfor seçilince sayfa kapanır, üst sekme rayı geri gelir (fosfor değişmez).
+    await daha.click();
+    await sayfa.locator('[data-mshell-settings]').click();
+    await sayfa.locator('[data-mshell-theme="dark"]').click();
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+    await expect(sayfa).toBeHidden();
+    await expect(daha).toBeHidden();
+    const pos = await page.locator('.tabs.app-tabs').evaluate((el) => getComputedStyle(el).position);
+    expect(pos).toBe('sticky');
+  });
+
+  test('Müfredat: seçili program özet kartında tam adıyla, seçici sayfada', async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await page.goto('/?prog=SAO_OL#dersplanim');
+    const kart = page.locator('.mshell-prog');
+    await expect(kart).toBeVisible({ timeout: 20_000 });
+    await expect(kart.locator('.mshell-prog-v')).toContainText('SAO_OL');
+    await expect(page.locator('#dp-prog')).toBeHidden();
+    await kart.locator('.mshell-prog-change').click();
+    const sayfa = page.locator('.mshell-sheet');
+    await expect(sayfa.locator('[data-mshell-set="dp-prog"][aria-checked="true"]')).toHaveCount(1);
+    const tasma = await sayfa.evaluate((el) => el.scrollWidth - el.clientWidth);
+    expect(tasma).toBeLessThanOrEqual(0);
+    await sayfa.locator('.mshell-apply').click();
+    await expect(sayfa).toBeHidden();
+  });
+});
+
+test.describe('Marka logosu', () => {
+  for (const [ad, vp] of [['masaüstü', { width: 1440, height: 900 }], ['mobil', { width: 390, height: 844 }]]) {
+    test(`${ad}: sade başlıkta logo görünür, fosforda eski marka kalır`, async ({ page }) => {
+      await page.setViewportSize(vp);
+      await page.goto('/');
+      const logo = page.locator('.brand-home .brand-wordmark img');
+      await expect(logo).toBeVisible();
+      await expect(logo).toHaveAttribute('alt', 'itu-ders');
+      await expect(logo).toHaveAttribute('width', '313');
+      await expect(logo).toHaveAttribute('height', '80');
+      await expect.poll(() => logo.evaluate((img) => img.complete && img.naturalWidth)).toBeGreaterThan(0);
+      const k = await logo.boundingBox();
+      expect(k.height).toBeGreaterThanOrEqual(28);
+      expect(k.height).toBeLessThanOrEqual(40);
+      await page.locator('.theme-btn[data-theme="dark"]').click();
+      await expect(logo).toBeHidden();
+      await expect(page.locator('.brand-home .brand-title')).toBeVisible();
+      await expect(page.locator('.brand-home .brand-logo')).toBeVisible();
+    });
+  }
+
+  test('statik sayfa başlığında da logo görünür', async ({ page }) => {
+    await page.goto('/akademik-takvim/');
+    await expect(page.locator('.brand-home .brand-wordmark img')).toBeVisible();
+  });
 });

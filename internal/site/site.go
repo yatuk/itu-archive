@@ -1043,6 +1043,7 @@ var pageTmpl = template.Must(template.New("page").Parse(`<!doctype html>
    <a class="brand brand-home" href="{{.Shell.Home}}" aria-label="{{.Shell.HomeLabel}}">
     <span class="prompt">root@itu</span><span class="path">:~/arsiv</span><span class="caret">$</span>
     <picture><source srcset="/itü_ari.webp" type="image/webp"><img class="brand-logo" src="/itü_ari.png" alt="" width="32" height="31"></picture>
+    <picture class="brand-wordmark"><source srcset="/itu-ders-logo.webp" type="image/webp"><img src="/itu-ders-logo.png" alt="itu-ders" width="313" height="80"></picture>
     <span class="brand-title" translate="no">{{.Shell.Brand}}</span>
    </a>
    <div class="mast-controls">

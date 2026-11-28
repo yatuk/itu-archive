@@ -57,11 +57,36 @@ export function electivePool(title, options) {
   return branches.size > 0 && [...branches].every((branch) => branch === 'ITB' || branch === 'SNT') ? 'ITB_SNT' : '';
 }
 
+// OBS uzun adları kırpar: "Linear Algebra and Applicat." ↔ "Linear Algebra and
+// Applications". Sözcük sayısı aynı, her OBS sözcüğü plandaki karşılığına eşit
+// ya da onun en az 4 harflik başı, en az bir sözcük gerçekten kırpılmış.
+export function abbreviatedNameMatch(obsKey, planKey) {
+  const a = String(obsKey || '').split(' ').filter(Boolean);
+  const b = String(planKey || '').split(' ').filter(Boolean);
+  if (a.length < 2 || a.length !== b.length) return false;
+  let cut = false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] === b[i]) continue;
+    if (a[i].length >= 4 && b[i].startsWith(a[i])) { cut = true; continue; }
+    return false;
+  }
+  return cut;
+}
+
 function recordMatchesRequired(record, target, requiredByName) {
   if (target.code && record.code === target.code) return true;
   const key = equivalentNameKey(record.name);
   const sameName = requiredByName.get(key) || [];
-  return sameName.length === 1 && sameName[0].slot === target.slot;
+  if (sameName.length) return sameName.length === 1 && sameName[0].slot === target.slot;
+  // Tam ad tutmadıysa kırpılmış ad: tek aday olmalı ve kredi (biliniyorsa) aynı.
+  const cands = [];
+  for (const [planKey, list] of requiredByName) {
+    if (abbreviatedNameMatch(key, planKey)) cands.push(...list);
+  }
+  if (cands.length !== 1 || cands[0].slot !== target.slot) return false;
+  const rc = Number(record.credits);
+  const tc = Number(target.credits);
+  return !(Number.isFinite(rc) && Number.isFinite(tc) && rc > 0 && tc > 0 && rc !== tc);
 }
 
 function selectedEquivalentAttempt(records, target, requiredByName) {
@@ -229,7 +254,7 @@ export function matchTranscriptToPlan(plan, records) {
     for (const [ii, item] of (semester.items || []).entries()) {
       if (item.course) {
         const code = canonicalCode(item.course.code);
-        required.push({ slot: `s${si}i${ii}`, code, name: item.course.name || '' });
+        required.push({ slot: `s${si}i${ii}`, code, name: item.course.name || '', credits: item.course.credits });
       } else if (item.elective) {
         const optionList = item.elective.options || [];
         const options = new Set(optionList.map((o) => canonicalCode(o.code)).filter(Boolean));

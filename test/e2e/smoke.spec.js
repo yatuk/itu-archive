@@ -8,6 +8,7 @@
 // Buradaki her assertion gerçekten yaşanmış bir hataya karşılık gelir.
 
 import { test, expect } from '@playwright/test';
+import { sekmeyeGit } from './mobil-kabuk.js';
 
 /** Üretilen SEO sayfalarından her tipten bir örnek. */
 const SEO_SAYFALARI = [
@@ -93,7 +94,7 @@ test.describe('SPA (ana sayfa)', () => {
     await page.goto('/');
 
     for (const view of ['dersplanim', 'onsart', 'sinavlar', 'takvim', 'program']) {
-      await page.locator(`#tab-${view}`).click();
+      await sekmeyeGit(page, view);
       await expect(page.locator(`#view-${view}`)).toBeVisible();
     }
 
@@ -320,7 +321,7 @@ test.describe('SPA (ana sayfa)', () => {
     await page.reload();
     await expect(page.locator('html')).toHaveAttribute('data-app-state', 'ready', { timeout: 15000 });
     await expect(await page.evaluate(() => localStorage.getItem('itu-exam-filters:v1'))).toContain('BLG');
-    await page.locator('#tab-sinavlar').click();
+    await sekmeyeGit(page, 'sinavlar');
     await expect(page.locator('#eq')).toHaveValue('BLG');
 
     await page.goto('/#onsart');
@@ -383,7 +384,7 @@ test.describe('SPA (ana sayfa)', () => {
     // İkincil sekmeler ayraçtan sonra gelir ve doğrudan erişilebilir.
     const order = await page.locator('.tabs [role="tab"], .tabs .tabs-sep').evaluateAll((els) => els.map((el) => el.id || 'sep'));
     expect(order).toEqual(['tab-dersler', 'tab-dersplanim', 'tab-onsart', 'tab-sinavlar', 'tab-takvim', 'tab-program', 'sep', 'tab-gecmis', 'tab-donemler', 'tab-hakkinda']);
-    await page.locator('#tab-gecmis').click();
+    await sekmeyeGit(page, 'gecmis');
     await expect(page.locator('#view-gecmis')).toBeVisible();
     await expect(page.locator('#tab-gecmis')).toHaveAttribute('aria-selected', 'true');
 

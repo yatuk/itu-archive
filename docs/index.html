@@ -51,11 +51,11 @@
 <link rel="preload" href="assets/vendor/fonts/space-grotesk-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Uygulama çekirdek CSS'i (kabuk + Dersler + paylaşılan bileşenler). Diğer
      sekmelerin stilleri css/<sekme>.css olarak sekme açılınca yüklenir. -->
-<link rel="stylesheet" href="assets/css/app.css?v=7c32f54f8278">
+<link rel="stylesheet" href="assets/css/app.css?v=1b83844f7820">
 <!-- Yalnız etkin dilin sözlüğü yüklenir (assets/i18n.js üst düzey await ile
      bekler). Aynı dil seçimi burada yapılıp sözlük modül ağacıyla paralel
      istenir; adresleri cmd/site sürümler. -->
-<template id="i18n-preload"><link rel="modulepreload" href="assets/i18n/tr.js?v=65c6c36f8dc4" data-lang="tr"><link rel="modulepreload" href="assets/i18n/en.js?v=37a84127b2d3" data-lang="en"></template>
+<template id="i18n-preload"><link rel="modulepreload" href="assets/i18n/tr.js?v=18fed0d0d8a7" data-lang="tr"><link rel="modulepreload" href="assets/i18n/en.js?v=b0367e822c7e" data-lang="en"></template>
 <script>
 (function () {
   try {
@@ -173,6 +173,10 @@
     <picture>
      <source srcset="itü_ari.webp" type="image/webp">
      <img class="brand-logo" src="itü_ari.png" alt="İTÜ Ders Arşivi" width="32" height="31">
+    </picture>
+    <picture class="brand-wordmark">
+     <source srcset="itu-ders-logo.webp" type="image/webp">
+     <img src="itu-ders-logo.png" alt="itu-ders" width="313" height="80">
     </picture>
     <span class="brand-title" translate="no">DERS&nbsp;ARŞİVİ</span>
    </a>
@@ -727,7 +731,7 @@ curl.exe -fL --output index.json https://<span class="host">SİTE</span>/data/in
  <span id="foot-visits-row" hidden>· <span id="foot-visits"></span> ziyaret (30g)</span>
 </footer>
 
-<script type="module" src="assets/app.js?v=25e5e3d74ce4"></script>
+<script type="module" src="assets/app.js?v=6466a80e29ed"></script>
 <script>
 (function () {
   var root = document.documentElement;

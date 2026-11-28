@@ -109,9 +109,19 @@
   --panel-2: #eef1ee;
   --line: #cdd7cf;          /* dekoratif ayraç · #fff'te 1.5:1 (1.4.11 dışı) */
   --line-hot: #73877b;      /* form kenarlığı · #fff'te 3.8:1, p2'de 3.4:1 (≥3:1) */
-  --fg: #1e2b23;            /* gövde · #fff'te 14.7:1 */
-  --dim: #45564c;           /* ikincil metin · #fff'te 7.8:1, bg'de 7.2:1 (~7:1) */
-  --dimmer: #5a6b61;        /* etiket/başlık/placeholder · #fff'te 5.7:1, bg'de 5.2:1 */
+  /* Okunurluk geçişi: gövde ve ikincil metin bir kademe koyulaştı (kullanıcı
+     geri bildirimi: "yazılar ince/soluk"). Üç kademe ayrık kalır. */
+  --fg: #16211a;            /* gövde · #fff'te 16.6:1, bg'de 15.3:1 */
+  --dim: #3a4a41;           /* ikincil metin · #fff'te 9.4:1, bg'de 8.7:1, satır-hover'da 8.2:1 */
+  --dimmer: #4b5c52;        /* etiket/başlık/placeholder · #fff'te 7.1:1, bg'de 6.6:1, p2'de 6.3:1 */
+  /* Gövde yazı kalınlığı ve yüzü. Windows'ta system-ui (Segoe UI) yalnız 400/600
+     kademelerini bilir — 450/500 ya 400'e ya da yarı kalına (600) düşer ve
+     hiyerarşiyi ezer. Windows 11'in yerleşik "Segoe UI Variable Small" yüzü
+     küçük punto için çizilmiş optik boyuttur: 400'de bile gövde çizgileri
+     ~%6 daha dolu. Yoksa (macOS/Android/Win10) system-ui'ye düşülür; orada
+     450 gerçek ara kalınlık verir (SF değişken, Roboto 500). Harici font yok. */
+  --sans: "Segoe UI Variable Small", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fw-body: 450;
   /* İTÜ kurumsal altını (Pantone 872'ye yakın). Ham ton (#c9a227, --acid-vivid)
      beyaz zeminde düz metin/kenarlık olarak yalnızca 2.2:1 verir (AA'nın altında) —
      o yüzden metin/kenarlık için koyulaştırılmış --acid kullanılır, ham ton yalnızca
@@ -161,6 +171,14 @@
 /* Gövde metni artık iki temada da sans; veri (kod, CRN, saat, sayı) hâlâ
    monospace — sayı hizalaması ve "veri" hissi için. */
 [data-theme="sade"] body, [data-theme="dark"] body { font-family: var(--sans); }
+/* Sade (açık zemin): gövde metni bir kademe dolgun. macOS'ta `antialiased`
+   koyu-üstü-açık metni inceltir; açık zeminde varsayılan yumuşatmaya dönülür.
+   Fosfor/dark donmuştur — bu kural yalnızca sade'ye uygulanır. */
+[data-theme="sade"] body {
+  font-weight: var(--fw-body);
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
 /* Yatay kayan veri/sekme rayları kendi kapsayıcısında kalır; özellikle metin
    büyütmede sticky sekme çocukları belgeyi yana kaydıramaz. `clip`, sticky
    davranışını bozacak yeni bir scroll container oluşturmaz. */
@@ -1509,6 +1527,25 @@ tr.detail td { background: var(--detail-bg); border-bottom: 1px solid var(--line
 #pg-root .pg-line-chain { border-top-color: var(--acid); }
 #pg-root .pg-diamond { display: inline-block; width: 9px; height: 9px; background: none; border: 1.5px solid var(--acid); transform: rotate(45deg); }
 #pg-root .pg-offplan-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--amber); }
+/* Müfredat ve GPA notlarından gelen ilerleme: geçti (yeşil), alınabilir
+   (yeşil şerit), kaldı (kırmızı kenar). Kanvas da bu token'ları okur. */
+#pg-root { --pg-pass: #7fc795; --pg-fail: var(--red); }
+[data-theme="sade"] #pg-root { --pg-pass: #2f6b45; }
+#pg-root .pg-guide [hidden] { display: none; }
+#pg-root .pg-sw-passed,
+#pg-root .pg-sw-eligible,
+#pg-root .pg-sw-failed { display: inline-block; width: 14px; height: 10px; border-radius: 2px; border: 1.5px solid var(--pg-pass); background: color-mix(in srgb, var(--pg-pass) 18%, transparent); }
+#pg-root .pg-sw-eligible { border: 1px solid var(--line-hot); border-left: 3px solid var(--pg-pass); background: none; }
+#pg-root .pg-sw-failed { border-color: var(--pg-fail); background: none; }
+#pg-root .pg-state-tag { display: inline-block; margin-left: 6px; font-size: 11px; font-weight: 600; font-style: normal; white-space: nowrap; color: var(--dim); }
+#pg-root .is-passed .pg-state-tag { color: var(--pg-pass); }
+#pg-root .pg-mobile-course .pg-state-tag { margin-left: 0; }
+#pg-root .is-failed .pg-state-tag { color: var(--pg-fail); }
+#pg-root .pg-li.is-passed .pg-li-code,
+#pg-root .pg-mobile-course.is-passed b { color: var(--pg-pass); }
+#pg-root .pg-mobile-course.is-passed { box-shadow: inset 3px 0 0 var(--pg-pass); }
+#pg-root .pg-mobile-course.is-eligible { box-shadow: inset 3px 0 0 color-mix(in srgb, var(--pg-pass) 55%, transparent); }
+#pg-root .pg-mobile-course.is-failed { box-shadow: inset 3px 0 0 var(--pg-fail); }
 
 /* Harita */
 @media (min-width: 701px) {
@@ -4341,7 +4378,6 @@ body.modal-open { overflow: hidden; }
   border: 1px solid var(--line-hot); padding: 3px 4px;
   min-width: 0; flex: 0 1 260px; max-width: 260px;
 }
-.dp-grade-hint { color: var(--dimmer); font-size: 12px; font-style: italic; }
 
 @media (max-width: 720px) {
   .dp-sections, .dp-sections.has-instr { display: block; }
@@ -4627,13 +4663,29 @@ body.modal-open { overflow: hidden; }
 #view-dersplanim .dp-repeat-btn:hover { opacity: 1; color: var(--fg); }
 #view-dersplanim .dp-repeat-btn.on { opacity: 1; color: var(--amber); }
 #view-dersplanim .curriculum-plan-root .dp-grade-wrap,
-#view-dersplanim .dp-grade-wrap { display: inline-flex; align-items: center; gap: 2px; width: auto; min-height: 0; justify-content: flex-end; }
+#view-dersplanim .dp-grade-wrap {
+  display: inline-flex; align-items: center; gap: 2px; width: auto; min-height: 0; justify-content: flex-end;
+  padding: 0; border: 0; border-radius: 0; background: none;
+}
 #view-dersplanim .curriculum-plan-root .cp-grade-trigger {
   min-width: 76px; min-height: 34px; padding: 0 10px; border: 1px solid var(--line-hot); border-radius: 6px;
   background: var(--panel); color: var(--dim); font: 400 13px var(--mono);
 }
 #view-dersplanim .curriculum-plan-root .cp-grade-trigger.filled { color: var(--fg); border-color: var(--acid); font-weight: 600; }
-#view-dersplanim .dp-grade-clear { width: 24px; height: 24px; }
+/* × yalnız satırın üstüne gelince ya da odakta görünür; dokunmatikte hep açık.
+   opacity ile gizlenir: düğme odaklanabilir kalır, satır düzeni zıplamaz. */
+#view-dersplanim .dp-grade-clear {
+  width: 20px; height: 20px; padding: 0; border: 0; border-radius: 999px;
+  background: none; color: var(--dimmer); opacity: 0; pointer-events: none;
+}
+#view-dersplanim .dp-grade-clear svg { width: 10px; height: 10px; }
+#view-dersplanim .dp-row:hover .dp-grade-clear,
+#view-dersplanim .dp-grade-wrap:focus-within .dp-grade-clear { opacity: 1; pointer-events: auto; }
+#view-dersplanim .dp-grade-clear:hover { color: var(--red); background: var(--panel-2); }
+#view-dersplanim .dp-grade-clear:focus-visible { opacity: 1; outline: 2px solid var(--cyan); outline-offset: 1px; }
+@media (hover: none) {
+  #view-dersplanim .dp-grade-clear { opacity: 1; pointer-events: auto; }
+}
 
 /* Not çipi + harf hapları (core/grade-picker.js; /gano-hesaplama/ ile aynı
    rampa). Seçili not renkli çip; tıklanınca satırın altında 15 harf hapı +
@@ -4643,17 +4695,28 @@ body.modal-open { overflow: hidden; }
 #view-dersplanim .dp-grade-wrap > input.dp-grade { display: none; }
 #view-dersplanim .dp-gp-chip,
 #view-dersplanim .dp-gp-pill { --gp-c: color-mix(in srgb, var(--gp-hi) var(--gp-w, 50%), var(--gp-lo)); }
+/* Seçili not: rampadan açık bir zemin + aynı tonun koyu (açık temada) / açık
+   (koyu temada) metni. Dolu koyu kahve hap yerine her notta okunur kontrast. */
 #view-dersplanim .dp-gp-chip {
-  min-width: 52px; min-height: 30px; margin: 0; padding: 0 10px; border-radius: 999px; cursor: pointer;
-  border: 1px solid var(--gp-c); background: var(--gp-c); color: var(--gp-on);
-  font: 700 13px/1 var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap;
+  --gp-ink: color-mix(in srgb, var(--gp-c) 58%, var(--fg));
+  min-width: 44px; min-height: 26px; margin: 0; padding: 0 9px; border-radius: 999px; cursor: pointer;
+  border: 1px solid color-mix(in srgb, var(--gp-c) 45%, transparent);
+  background: color-mix(in srgb, var(--gp-c) 16%, var(--panel)); color: var(--gp-ink);
+  font: 700 12.5px/1 var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap;
 }
-#view-dersplanim .dp-gp-chip[data-empty] {
-  border: 1px dashed var(--line-hot); background: var(--panel); color: var(--dimmer); font: 500 12px/1 var(--sans);
+[data-theme="sade"] #view-dersplanim .dp-gp-chip {
+  --gp-ink: color-mix(in srgb, var(--gp-c) 82%, var(--fg));
+  background: color-mix(in srgb, var(--gp-c) 11%, var(--panel));
 }
 #view-dersplanim .dp-gp-chip[data-kind="x"] { border-color: var(--line-hot); background: var(--panel-2); color: var(--fg); }
-#view-dersplanim .dp-gp-chip:hover { filter: brightness(1.06); }
-#view-dersplanim .dp-gp-chip[data-empty]:hover { border-color: var(--acid); color: var(--fg); filter: none; }
+#view-dersplanim .dp-gp-chip:hover { border-color: var(--gp-c); }
+/* Boş: bağlantı gibi sade "not gir"; kutu ve kesikli çerçeve yok. */
+#view-dersplanim .dp-gp-chip[data-empty] {
+  min-width: 0; padding: 0 6px; border: 1px solid transparent; background: none; color: var(--dim);
+  font: 500 12px/1 var(--sans); text-decoration: underline dotted; text-decoration-color: var(--line-hot);
+  text-underline-offset: 3px;
+}
+#view-dersplanim .dp-gp-chip[data-empty]:hover { color: var(--fg); background: var(--panel-2); text-decoration-color: currentColor; }
 #view-dersplanim .dp-gp-chip[aria-expanded="true"] { box-shadow: 0 0 0 2px var(--panel), 0 0 0 4px var(--acid); }
 #view-dersplanim .dp-gp-chip:focus-visible,
 #view-dersplanim .dp-gp-pill:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
@@ -4671,7 +4734,9 @@ body.modal-open { overflow: hidden; }
 #view-dersplanim .dp-gp-pill[data-kind="x"][aria-checked="true"] { background: var(--acid-vivid); border: 1px solid var(--acid-vivid); color: var(--on-accent); }
 #view-dersplanim .dp-gp-pill[data-grade="M"] { margin-left: 10px; }
 @media (max-width: 900px) {
-  #view-dersplanim .dp-gp-chip { min-width: 56px; min-height: 44px; font-size: 14px; }
+  #view-dersplanim .dp-gp-chip { min-width: 52px; min-height: 44px; font-size: 14px; }
+  #view-dersplanim .dp-gp-chip[data-empty] { min-width: 0; padding: 0 10px; font-size: 13px; }
+  #view-dersplanim .dp-grade-clear { width: 28px; height: 28px; }
   #view-dersplanim .dp-gp-pop { padding: 0 14px 12px; }
   #view-dersplanim .dp-gp { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); width: 100%; }
   #view-dersplanim .dp-gp-pill { width: auto; height: 44px; font-size: 13px; }
@@ -4679,6 +4744,53 @@ body.modal-open { overflow: hidden; }
 }
 @media (prefers-reduced-motion: no-preference) {
   #view-dersplanim .dp-gp-pill { transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
+}
+
+/* Plana yerleşmeyen dersler: son yarıyılın altında, transkript aktarımından
+   kalan ve hiçbir yuvaya eşleşmeyen dersler. Kod | ad | kredi | not | dönem. */
+#view-dersplanim .dp-unused {
+  margin: 0 0 10px; padding: 14px 16px 6px; min-width: 0;
+  border: 1px dashed var(--line-hot); border-radius: var(--dp-r); background: var(--panel);
+}
+#view-dersplanim .dp-unused[hidden] { display: none; }
+#view-dersplanim .dp-unused-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+#view-dersplanim .dp-unused-head h3 {
+  margin: 0; font-family: "Space Grotesk", var(--sans); font-size: 16px; font-weight: 700; color: var(--fg);
+}
+#view-dersplanim .dp-unused-count { color: var(--dim); font: 400 12px var(--mono); }
+#view-dersplanim .dp-unused-hint { margin: 4px 0 8px; color: var(--dim); font-size: 13px; max-width: 70ch; }
+#view-dersplanim .dp-unused-list { list-style: none; margin: 0; padding: 0; }
+#view-dersplanim .dp-unused-row {
+  display: grid; grid-template-columns: 86px minmax(0, 1fr) 56px 48px 150px;
+  column-gap: 12px; align-items: center; padding: 9px 0; border-top: 1px solid var(--line);
+}
+#view-dersplanim .dp-unused-code { color: var(--fg); font: 600 13px/1.3 var(--mono); }
+#view-dersplanim .dp-unused-name { min-width: 0; color: var(--fg); font-size: 14px; line-height: 1.35; overflow-wrap: anywhere; }
+#view-dersplanim .dp-unused-credit { justify-self: end; color: var(--dim); font: 400 12px var(--mono); white-space: nowrap; }
+#view-dersplanim .dp-unused-grade {
+  --gp-c: color-mix(in srgb, var(--gp-hi) var(--gp-w, 50%), var(--gp-lo));
+  justify-self: start; padding: 3px 7px; border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--gp-c) 45%, transparent);
+  background: color-mix(in srgb, var(--gp-c) 16%, var(--panel));
+  color: color-mix(in srgb, var(--gp-c) 58%, var(--fg)); font: 700 12px/1 var(--mono);
+}
+[data-theme="sade"] #view-dersplanim .dp-unused-grade {
+  background: color-mix(in srgb, var(--gp-c) 11%, var(--panel));
+  color: color-mix(in srgb, var(--gp-c) 82%, var(--fg));
+}
+#view-dersplanim .dp-unused-grade[data-kind="x"] { border-color: var(--line-hot); background: var(--panel-2); color: var(--fg); }
+#view-dersplanim .dp-unused-term { justify-self: end; color: var(--dim); font: 400 12px var(--mono); white-space: nowrap; }
+@media (max-width: 900px) {
+  #view-dersplanim .dp-unused { padding: 14px 14px 4px; }
+  #view-dersplanim .dp-unused-row {
+    grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "code grade" "nm nm" "cr term";
+    row-gap: 3px; padding: 10px 0;
+  }
+  #view-dersplanim .dp-unused-code { grid-area: code; }
+  #view-dersplanim .dp-unused-grade { grid-area: grade; justify-self: end; }
+  #view-dersplanim .dp-unused-name { grid-area: nm; }
+  #view-dersplanim .dp-unused-credit { grid-area: cr; justify-self: start; }
+  #view-dersplanim .dp-unused-term { grid-area: term; justify-self: end; }
 }
 
 /* GANO kartı: büyük canlı GANO + resmî/şu anki değere göre fark satırı. */
@@ -4749,7 +4861,6 @@ body.modal-open { overflow: hidden; }
   width: 200px; max-width: 100%; min-height: 34px; padding: 0 8px; border: 1px solid var(--line-hot); border-radius: 6px;
   background: var(--panel); color: var(--fg); font: 400 13px var(--sans);
 }
-#view-dersplanim .dp-grade-hint { color: var(--dimmer); font-size: 12px; }
 
 /* Sağ sütun: GANO kartı */
 #view-dersplanim .dp-grades { padding: 0 20px 20px; }
@@ -6233,7 +6344,9 @@ details.cal-mon[open] summary { border-radius: 8px 8px 0 0; }
 #view-hakkinda .prose pre .host { color: var(--dim); }
 .ab-src { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-bottom: 14px; }
 .ab-src > div { padding: 14px 16px; }
-.ab-src code { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 600; word-break: break-all; }
+/* Adres etiketleri yalnızca <wbr> noktalarında ("/" sonrası) kırılır; kelime
+   ortasından bölünmez (eski break-all "DersProg / ram" yapıyordu). */
+.ab-src code { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 600; overflow-wrap: break-word; }
 .ab-src span { font-size: 13px; color: var(--dim); }
 #view-hakkinda .ab-dl, #view-hakkinda .ab-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
 #view-hakkinda .ab-dl a, #view-hakkinda .ab-links a { color: var(--fg); text-decoration: none; }

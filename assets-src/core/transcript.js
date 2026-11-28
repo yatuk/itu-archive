@@ -51,7 +51,7 @@ function isPassingGrade(grade) {
   return PASSING_GRADES.has(grade);
 }
 
-function electivePool(title, options) {
+export function electivePool(title, options) {
   if (/\b(?:ITB|SNT)\b/i.test(title || '')) return 'ITB_SNT';
   const branches = new Set([...options].map((code) => code.split(' ')[0]).filter(Boolean));
   return branches.size > 0 && [...branches].every((branch) => branch === 'ITB' || branch === 'SNT') ? 'ITB_SNT' : '';
@@ -86,6 +86,31 @@ function selectedEquivalentAttempt(records, target, requiredByName) {
     attempts: attempts.length,
     equivalentCodes: [...new Set(attempts.map((record) => record.code))],
   };
+}
+
+// Havuzu ITB_SNT olan slotların seçeneklerinin birleşimi (koda göre tekil,
+// plan sırasıyla). Arayüz bu slotlarda seçiciye bu listeyi verir: ITB slotuna
+// SNT dersi, SNT slotuna ITB dersi elle de seçilebilir.
+export function itbSntSlotOptions(plan) {
+  const slots = new Set();
+  const options = [];
+  const seen = new Set();
+  for (const [si, semester] of (plan?.semesters || []).entries()) {
+    for (const [ii, item] of (semester.items || []).entries()) {
+      if (!item.elective) continue;
+      const list = item.elective.options || [];
+      const codes = list.map((o) => canonicalCode(o.code)).filter(Boolean);
+      if (electivePool(item.elective.title, codes) !== 'ITB_SNT') continue;
+      slots.add(`s${si}i${ii}`);
+      for (const o of list) {
+        const code = canonicalCode(o.code);
+        if (!code || seen.has(code)) continue;
+        seen.add(code);
+        options.push(o);
+      }
+    }
+  }
+  return { slots, options };
 }
 
 export function parseOBSTranscript(raw) {
@@ -261,10 +286,47 @@ export function matchTranscriptToPlan(plan, records) {
   const remaining = latest.filter((record) => !usedRecords.has(record.code));
   const assignedElectiveCodes = new Set();
 
-  // Kesin seçenek kodlarını bütün dersler için önce tüket. Aksi halde daha
-  // önce gelen genel bir ITB kaydı, sonraki SNT dersinin tek kesin slotunu alır.
+  // ITB ve SNT seçmelileri İTÜ kuralı gereği birbirinin yerine sayılır: ITB
+  // slotuna SNT dersi, SNT slotuna ITB dersi yazılabilir. Bu yüzden havuzu
+  // ITB_SNT olan bütün slotlar tek bir ortak havuz gibi ele alınır. Bu havuza
+  // uyan dersler (herhangi bir ITB_SNT slotunun seçeneği, adı ya da ITB/SNT
+  // önekli kod) alındıkları sıraya göre (ilk deneme → en erken yarıyıl slotu)
+  // yerleştirilir; yoksa 2. yılda alınan bir ders yalnız kendi kodunu listeleyen
+  // 7. yarıyıl slotuna düşerdi.
+  const itbSlots = electives.filter((entry) => entry.pool === 'ITB_SNT');
+  const otherSlots = electives.filter((entry) => entry.pool !== 'ITB_SNT');
+  const itbOptions = new Set();
+  const itbCodeByName = new Map();
+  for (const entry of itbSlots) {
+    for (const code of entry.options) itbOptions.add(code);
+    for (const [key, code] of entry.optionCodeByName) if (!itbCodeByName.has(key)) itbCodeByName.set(key, code);
+  }
+  const firstSeq = new Map();
+  for (const record of records || []) {
+    if (!record?.code) continue;
+    const seq = record.seq ?? 0;
+    if (!firstSeq.has(record.code) || seq < firstSeq.get(record.code)) firstSeq.set(record.code, seq);
+  }
+  const itbCandidates = remaining
+    .map((record) => {
+      if (itbOptions.has(record.code) || /^(?:ITB|SNT)\s/.test(record.code)) return { record, code: record.code };
+      const key = equivalentNameKey(record.name);
+      return key && itbCodeByName.has(key) ? { record, code: itbCodeByName.get(key) } : null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => (firstSeq.get(a.record.code) ?? a.record.seq ?? 0) - (firstSeq.get(b.record.code) ?? b.record.seq ?? 0));
+  for (const { record, code } of itbCandidates) {
+    const slot = itbSlots.find((entry) => !usedSlots.has(entry.slot));
+    if (!slot) break;
+    usedSlots.add(slot.slot);
+    assignedElectiveCodes.add(record.code);
+    electiveAssignments.push({ ...record, code, slot: slot.slot });
+  }
+
+  // Diğer havuzlarda kesin seçenek kodlarını bütün dersler için önce tüket.
   for (const record of remaining) {
-    const slot = electives.find((entry) => !usedSlots.has(entry.slot) && entry.options.has(record.code));
+    if (assignedElectiveCodes.has(record.code)) continue;
+    const slot = otherSlots.find((entry) => !usedSlots.has(entry.slot) && entry.options.has(record.code));
     if (slot) {
       usedSlots.add(slot.slot);
       assignedElectiveCodes.add(record.code);
@@ -280,21 +342,12 @@ export function matchTranscriptToPlan(plan, records) {
     if (assignedElectiveCodes.has(record.code)) continue;
     const key = equivalentNameKey(record.name);
     if (!key) continue;
-    const slot = electives.find((entry) => !usedSlots.has(entry.slot) && entry.optionCodeByName.has(key));
+    const slot = otherSlots.find((entry) => !usedSlots.has(entry.slot) && entry.optionCodeByName.has(key));
     if (!slot) continue;
     usedSlots.add(slot.slot);
     assignedElectiveCodes.add(record.code);
     // Depoya planın kendi kodu yazılır (transkriptteki değil) — seçici bunu tanır.
     electiveAssignments.push({ ...record, code: slot.optionCodeByName.get(key), slot: slot.slot });
-  }
-
-  for (const record of remaining) {
-    if (assignedElectiveCodes.has(record.code) || !/^(?:ITB|SNT)\s/.test(record.code)) continue;
-    const slot = electives.find((entry) => !usedSlots.has(entry.slot) && entry.pool === 'ITB_SNT');
-    if (!slot) continue;
-    usedSlots.add(slot.slot);
-    assignedElectiveCodes.add(record.code);
-    electiveAssignments.push({ ...record, slot: slot.slot });
   }
 
   unmatched.push(...remaining.filter((record) => !assignedElectiveCodes.has(record.code)));
@@ -355,9 +408,25 @@ export function mergeTranscriptMatch(data, match, { officialGpa = null } = {}) {
       officialGpa: Number.isFinite(officialGpa) ? officialGpa : null,
       entries: match.counted.map(({ code, credits, grade, key }) => ({ code, credits, grade, key })),
       planKeys: { ...(match.planKeys || {}) },
+      // Plana yerleşmeyen dersler: yalnız ders bilgisi (kod, ad, kredi, not,
+      // dönem); ham metin ya da kişisel bilgi saklanmaz.
+      unmatched: transcriptUnmatchedList(match.unmatched),
     };
   }
   return next;
+}
+
+// Saklanacak en küçük "plana yerleşmeyen ders" listesi.
+export function transcriptUnmatchedList(list) {
+  return (Array.isArray(list) ? list : [])
+    .filter((r) => r && typeof r.code === 'string' && r.code)
+    .map((r) => ({
+      code: r.code,
+      name: typeof r.name === 'string' ? r.name : '',
+      credits: Number(r.credits) || 0,
+      grade: typeof r.grade === 'string' ? r.grade : '',
+      term: typeof r.term === 'string' ? r.term : '',
+    }));
 }
 
 export function transcriptProgramCandidates(programIndex, transcriptPrograms) {

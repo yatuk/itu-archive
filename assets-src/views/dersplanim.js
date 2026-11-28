@@ -13,22 +13,22 @@
 //   - ders detayı → core/course-detail.js
 //   - seçmeli havuz → önşart sekmesindeki panel (?prog=X&pool=<slot>#onsart)
 //   - şube satırı / kontenjan özeti → quotaDisplay (core/chart.js)
-//   - programa ekle → core/favorites.js addToSchedule
+//   - programa ekle → itu:add-program-items olayı (views/program.js)
 
 import { $, getJSON, esc, trNum, termLabel, debounce, isViewVisible, staggerReveal } from '../core/utils.js?v=dde1e9339338';
 import { state } from '../core/store.js?v=dde1e9339338';
 import { openCourseDetail } from '../core/course-detail.js?v=dde1e9339338';
 import { quotaDisplay } from '../core/chart.js?v=dde1e9339338';
-import * as fav from '../core/favorites.js?v=dde1e9339338';
 import { toast } from '../core/toast.js?v=dde1e9339338';
 import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=dde1e9339338';
 import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=dde1e9339338';
+import { inActiveProgram } from '../core/program-store.js';
 import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram } from '../core/planstore.js?v=dde1e9339338';
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2 } from '../core/grades.js?v=dde1e9339338';
 import { gradePickerHTML, gradeTone, bindGradePickers } from '../core/grade-picker.js';
 import { confirmDialog } from '../core/dialog.js?v=dde1e9339338';
 import { formatProgramLabel, normalizeProgramLevel } from '../core/programs.js?v=dde1e9339338';
-import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from '../core/transcript.js?v=dde1e9339338';
+import { parseOBSTranscript, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates, itbSntSlotOptions } from '../core/transcript.js?v=dde1e9339338';
 import { extractPdfText } from '../core/pdf-extract.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=dde1e9339338';
@@ -230,6 +230,7 @@ function ensureHost() {
       <p class="resultline" id="dp-result" aria-live="polite">${I18N.t('planSelectingProgram')}</p>
     </div>
     <div id="dp-semesters" class="dp-semesters"></div>
+    <section id="dp-unused" class="dp-unused" hidden aria-labelledby="dp-unused-title"></section>
     </div>
     <details class="dp-tools dp-card" id="dp-tools">
       <summary><span>${t('Planlama araçları', 'Planning tools')}</span><small>${esc(I18N.t('dpToolsHint'))}</small></summary>
@@ -333,6 +334,7 @@ async function selectProgram(code) {
   unmountCurriculum();
   plan = null;
   stored = loadStored(code);
+  if ($('#dp-unused')) $('#dp-unused').hidden = true;
   saveLastProgram(code);
   const savedTarget = Number(stored.targetGpa);
   $('#dp-targetgpa').value = Number.isFinite(savedTarget) && savedTarget >= 0 && savedTarget <= 4
@@ -460,7 +462,7 @@ const GRADE_GROUPS = {
 // aktarım/test yolları onun value ve data-* alanlarını okur. İşaretleme
 // öznitelik olarak yazılır, çünkü React adası müfredatı HTML anı olarak taşır
 // (canlı DOM özellikleri serialize edilmez).
-const GRADE_CHIP_EMPTY = () => I18N.t('planColGrade');
+const GRADE_CHIP_EMPTY = () => I18N.t('planGradeEnter');
 
 function gradeChipLabel(code, grade) {
   return `${code} ${I18N.t('planColGrade')}: ${grade || L('girilmedi', 'not entered')}`;
@@ -564,15 +566,38 @@ function syncGradeClear(select, hasGrade) {
 }
 
 // Seçmeli slot için ders seçimi + not girişi. Option listeleri esc'li string (güvenli).
+// ITB ve SNT seçmelileri birbirinin yerine sayılır: havuzu ITB_SNT olan
+// slotların seçicisi bütün bu slotların seçeneklerinin birleşimini gösterir
+// (transkript aktarımı da bu ortak havuzu kronolojik doldurur).
+const itbUnionCache = new WeakMap();
+function itbUnion() {
+  if (!plan) return { slots: new Set(), options: [] };
+  if (!itbUnionCache.has(plan)) itbUnionCache.set(plan, itbSntSlotOptions(plan));
+  return itbUnionCache.get(plan);
+}
+
+function slotOptions(slotKey, e, pickCode) {
+  const union = itbUnion();
+  const list = union.slots.has(slotKey) ? union.options : (e.options || []);
+  // Saklanan seçim listede yoksa (eski kayıt, listede olmayan ITB/SNT kodu)
+  // yine de görünür kalsın — yoksa <select> boş görünür.
+  if (pickCode && !list.some((o) => canonicalCode(o.code) === canonicalCode(pickCode))) {
+    return [...list, { code: pickCode, name: '' }];
+  }
+  return list;
+}
+
 function electiveControls(slotKey, e, pick) {
-  const opts = (e.options || []).map((o) =>
-    `<option value="${esc(o.code)}" ${pick?.code === o.code ? 'selected' : ''}>${esc(o.code)} · ${esc(o.name || '')}</option>`
+  const pickCode = pick?.code ? canonicalCode(pick.code) : '';
+  const opts = slotOptions(slotKey, e, pick?.code || '').map((o) =>
+    `<option value="${esc(o.code)}" ${pickCode && canonicalCode(o.code) === pickCode ? 'selected' : ''}>${esc(o.code)}${o.name ? ` · ${esc(o.name)}` : ''}</option>`
   ).join('');
   const defaultOpt = `<option value="" ${!pick?.code ? 'selected' : ''}>${esc(I18N.t('planChooseCoursePlaceholder'))}</option>`;
   const pickSel = `<select class="dp-epick" data-slot="${slotKey}" aria-label="${esc(I18N.lang === 'en' ? 'Choose elective course' : 'Seçmeli ders seç')}">${defaultOpt}${opts}</select>`;
+  // Ders seçilmeden not alanı gösterilmez (ipucu metni de yok).
   const grade = pick?.code
     ? `<span class="dp-grade-wrap">${gradeControlHTML(pick.grade || '', pick.code, 'elective', slotKey)}${pick.grade ? makeClearBtn().outerHTML : ''}</span>`
-    : `<span class="dp-grade-hint">${esc(I18N.t('planChooseCourseFirst'))}</span>`;
+    : '';
   return `<div class="dp-elective-inputs">${pickSel}${grade}</div>`;
 }
 
@@ -758,8 +783,66 @@ function renderAll() {
   // "Bu dönem planından N ders açık · M zorunlu · K seçmeli slot"
   $('#dp-result').innerHTML = planSummaryLine(openCount, closedCount, slotOpen, slotCount, shown);
 
+  renderUnused();
   renderGPA();
   if (historyCodes.length) ensureHistoryFor(historyCodes);
+}
+
+// "Plana yerleşmeyen dersler": transkriptte olup hiçbir zorunlu derse ya da
+// seçmeli yuvaya eşleşmeyenler (stored.transcript.unmatched — yalnız kod, ad,
+// kredi, not, dönem). Kullanıcı sonradan bir yuvaya elle seçtiyse listeden düşer.
+// Liste boşsa bölüm gizlenir. Tam DOM (textContent) — içe aktarılan JSON da güvenli.
+function renderUnused() {
+  const host = $('#dp-unused');
+  if (!host) return;
+  const list = Array.isArray(stored.transcript?.unmatched) ? stored.transcript.unmatched : [];
+  const used = new Set();
+  for (const pick of Object.values(stored.elective || {})) if (pick?.code) used.add(canonicalCode(pick.code));
+  for (const [code, rec] of Object.entries(stored.grades || {})) if (rec?.grade) used.add(canonicalCode(code));
+  const rows = list.filter((r) => r && typeof r.code === 'string' && r.code && !used.has(canonicalCode(r.code)));
+  host.replaceChildren();
+  host.hidden = !rows.length;
+  if (!rows.length) return;
+  const head = document.createElement('div');
+  head.className = 'dp-unused-head';
+  const h = document.createElement('h3');
+  h.id = 'dp-unused-title';
+  h.textContent = I18N.t('planUnusedTitle');
+  const count = document.createElement('span');
+  count.className = 'dp-unused-count';
+  count.textContent = tf('planUnusedCount', { n: rows.length });
+  head.append(h, count);
+  const hint = document.createElement('p');
+  hint.className = 'dp-unused-hint';
+  hint.textContent = I18N.t('planUnusedHint');
+  const ul = document.createElement('ul');
+  ul.className = 'dp-unused-list';
+  for (const r of rows) {
+    const li = document.createElement('li');
+    li.className = 'dp-unused-row';
+    const code = document.createElement('span');
+    code.className = 'dp-unused-code';
+    code.setAttribute('translate', 'no');
+    code.textContent = r.code;
+    const name = document.createElement('span');
+    name.className = 'dp-unused-name';
+    name.textContent = typeof r.name === 'string' ? r.name : '';
+    const credit = document.createElement('span');
+    credit.className = 'dp-unused-credit';
+    credit.textContent = `${trNum(Number(r.credits) || 0)} ${I18N.t('planCreditAbbr')}`;
+    const grade = document.createElement('span');
+    grade.className = 'dp-unused-grade';
+    const g = typeof r.grade === 'string' ? r.grade : '';
+    grade.textContent = g || '—';
+    const tone = gradeTone(g);
+    if (tone == null) grade.dataset.kind = 'x'; else grade.style.setProperty('--gp-w', `${tone}%`);
+    const term = document.createElement('span');
+    term.className = 'dp-unused-term';
+    term.textContent = typeof r.term === 'string' ? r.term : '';
+    li.append(code, name, credit, grade, term);
+    ul.appendChild(li);
+  }
+  host.append(head, hint, ul);
 }
 
 function matchesElectiveType(e, types) {
@@ -1969,8 +2052,16 @@ function init() {
     if (a === 'detail') {
       openCourseDetail(act.dataset.code, { term: termSlug, source: 'dersplanim' });
     } else if (a === 'add') {
-      const ok = fav.addToSchedule(termSlug, act.dataset.branch, act.dataset.crn);
-      toast(ok ? I18N.t('planAddedToScheduleToast') : I18N.t('prgDup'));
+      // Haftalık Program 'itu-programs' içindeki aktif programı okur; eski
+      // 'itu-schedule' kaydına (fav.addToSchedule) yazmak orada görünmüyordu.
+      const ok = !inActiveProgram(termSlug, act.dataset.branch, act.dataset.crn);
+      if (ok) {
+        window.dispatchEvent(new CustomEvent('itu:add-program-items', {
+          detail: { term: termSlug, items: [{ branch: act.dataset.branch, crn: String(act.dataset.crn) }] },
+        }));
+      } else {
+        toast(I18N.t('prgDup'));
+      }
       act.disabled = true;
       act.textContent = ok ? I18N.t('planCheckAdded') : I18N.t('planWasInList');
     } else if (a === 'dp-more') {
@@ -2041,6 +2132,7 @@ function init() {
         const inputs = sel.closest('.dp-elective-inputs');
         if (inputs) inputs.innerHTML = electiveControls(slot, found.elective, { code: sel.value, grade: '' });
       }
+      renderUnused();
       refreshAverages();
     }
   });

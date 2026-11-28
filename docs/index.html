@@ -51,7 +51,7 @@
 <link rel="preload" href="assets/vendor/fonts/space-grotesk-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Uygulama çekirdek CSS'i (kabuk + Dersler + paylaşılan bileşenler). Diğer
      sekmelerin stilleri css/<sekme>.css olarak sekme açılınca yüklenir. -->
-<link rel="stylesheet" href="assets/css/app.css?v=f1bb5bb92661">
+<link rel="stylesheet" href="assets/css/app.css?v=85017cebf799">
 <!-- Yalnız etkin dilin sözlüğü yüklenir (assets/i18n.js üst düzey await ile
      bekler). Aynı dil seçimi burada yapılıp sözlük modül ağacıyla paralel
      istenir; adresleri cmd/site sürümler. -->
@@ -403,7 +403,7 @@
     <div class="pg-meta-text"><p class="pg-status" data-i18n="pgSelectProgramPrompt">Bir program seçin</p><span class="pg-plan-label"></span></div>
     <details class="pg-guide" open>
      <summary data-i18n="pgGuideSummary">Haritayı okuma</summary>
-     <div><span><i class="pg-line-solid" aria-hidden="true"></i><span data-i18n="pgLegendRequired">Zorunlu önşart</span></span><span><i class="pg-line-dash" aria-hidden="true"></i><span data-i18n="pgLegendAlternative">Alternatif; biri yeterli</span></span><span><i class="pg-line-chain" aria-hidden="true"></i><span data-i18n="pgLegendChain">Odaktaki zincir</span></span><span><i class="pg-diamond" aria-hidden="true"></i><span data-i18n="pgLegendElectivePool">Seçmeli havuz</span></span><span><i class="pg-offplan-dot" aria-hidden="true"></i><span data-i18n="pgLegendOffPlan">Önşartı planda olmayan bir koda bağlı</span></span></div>
+     <div><span><i class="pg-line-solid" aria-hidden="true"></i><span data-i18n="pgLegendRequired">Zorunlu önşart</span></span><span><i class="pg-line-dash" aria-hidden="true"></i><span data-i18n="pgLegendAlternative">Alternatif; biri yeterli</span></span><span><i class="pg-line-chain" aria-hidden="true"></i><span data-i18n="pgLegendChain">Odaktaki zincir</span></span><span><i class="pg-diamond" aria-hidden="true"></i><span data-i18n="pgLegendElectivePool">Seçmeli havuz</span></span><span><i class="pg-offplan-dot" aria-hidden="true"></i><span data-i18n="pgLegendOffPlan">Önşartı planda olmayan bir koda bağlı</span></span><span class="pg-lg-passed" hidden><i class="pg-sw-passed" aria-hidden="true"></i><span data-pg-count>Geçtiğin ders</span></span><span class="pg-lg-eligible" hidden><i class="pg-sw-eligible" aria-hidden="true"></i><span data-i18n="pgLegendEligible">Önşartı tamam, alınabilir</span></span><span class="pg-lg-failed" hidden><i class="pg-sw-failed" aria-hidden="true"></i><span data-i18n="pgLegendFailed">Kaldığın ders</span></span></div>
     </details>
    </div>
    <section class="pg-mobile-explorer" aria-label="Mobil önşart gezgini" data-i18n-aria-label="pgMobileExplorerAriaLabel" hidden></section>
@@ -622,7 +622,7 @@
     <section aria-labelledby="ab-src">
      <h3 id="ab-src" tabindex="-1" data-i18n="abSrcTitle">Veri nereden geliyor</h3>
      <div class="ab-src">
-      <div class="tx-card"><code>obs.itu.edu.tr/public/DersProgram</code><span data-i18n="abSrcObs">Dört program seviyesi (Önlisans, Lisans, Lisansüstü, Lisansüstü 2. Öğretim) ve 337 bölüm kodu için güncel ders programı.</span></div>
+      <div class="tx-card"><code>obs.itu.edu.tr/<wbr>public/<wbr>DersProgram</code><span data-i18n="abSrcObs">Dört program seviyesi (Önlisans, Lisans, Lisansüstü, Lisansüstü 2. Öğretim) ve 337 bölüm kodu için güncel ders programı.</span></div>
       <div class="tx-card"><code>takvim.sis.itu.edu.tr</code><span data-i18n="abSrcCal">Dört akademik yılın tam takvimi.</span></div>
       <div class="tx-card"><code data-i18n="abSrcDumpsCode">tarihsel dökümler</code><span data-i18n="abSrcDumps">2016-2017'ye kadar uzanan geçmiş dönemler.</span></div>
      </div>

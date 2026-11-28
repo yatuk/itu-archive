@@ -815,11 +815,90 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
 
     const stored = await page.evaluate(() => localStorage.getItem('itu-grades:v1') || '');
     expect(stored).not.toContain('TEST KULLANICISI');
-    expect(stored).not.toContain('PRIVATE COURSE LABEL');
+    expect(stored).not.toContain('000000000');
+    expect(stored).not.toContain('Öğrenci Numarası');
+    // Ham satır saklanmaz; plana yerleşmeyen ders yalnız en küçük alanlarıyla durur.
+    expect(stored).not.toContain('ZZZ 999 PRIVATE COURSE LABEL 2,00 AA');
+    expect(JSON.parse(stored).data.CEN_LS.transcript.unmatched).toEqual([
+      { code: 'ZZZ 999', name: 'PRIVATE COURSE LABEL', credits: 2, grade: 'AA', term: '2024-2025 / Bahar' },
+    ]);
     expect(JSON.parse(stored).data.CEN_LS.requiredSlots).toEqual({
       s0i1: 'FIZ 101EL', s1i5: 'FIZ 102EL', s1i6: 'ING 112A',
     });
     expect(await page.locator('.transcript-dlg').count()).toBe(0);
+  });
+
+  test('Transkript: ITB/SNT ortak havuzu kronolojik dolar, plana yerleşmeyenler en altta listelenir ve yenilemede kalır', async ({ page }) => {
+    // Sentetik metin (gerçek öğrenci verisi yok). CEN_LS'de 5. yarıyıl
+    // "ITB Elective I" yalnız SNT kodları listeler; CIN 101 2. yılda alındığı
+    // için yine de oraya (7. yarıyıl "ITB Elective II" yerine) yerleşmeli.
+    const transcript = `2023-2024 / Güz Dönemi
+Ders Kodu Ders Adı Kredi Not
+MAT 103E Mathematics I 4,00 BB
+CIN 101 Çince I 3,00 AA
+XYZ 201 Synthetic Outside Course 2,00 BA+
+A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
+Bilgisayar Mühendisliği (KKTC)
+Dönem 9,00 9,00 9,00 30,00 3,33
+2025-2026 / Güz Dönemi
+Ders Kodu Ders Adı Kredi Not
+SNT 102E Photography 3,00 BA
+Toplam 12,00 12,00 12,00 40,50 3,38`;
+
+    await page.goto('/#dersplanim');
+    const open = page.locator('#dp-empty .dp-transcript-open');
+    await expect(open).toBeVisible({ timeout: 20000 });
+    await expect(page.locator('#dp-unused')).toBeHidden();
+    await open.click();
+    await page.locator('#transcript-input').fill(transcript);
+    await expect(page.locator('#transcript-preview')).toContainText('CEN_LS');
+    await page.locator('.transcript-dlg .dlg-ok').click();
+    await expect(page.locator('#dp-prog')).toHaveValue('CEN_LS', { timeout: 20000 });
+
+    // Ortak havuz: ilk alınan ders ilk ITB_SNT yuvasına; seçici bu kodu
+    // (yuvanın kendi listesinde olmasa da) seçili gösterir.
+    const first = page.locator('select.dp-epick[data-slot="s4i6"]');
+    const second = page.locator('select.dp-epick[data-slot="s6i4"]');
+    await expect(first).toHaveValue('CIN 101');
+    await expect(second).toHaveValue('SNT 102E');
+    await expect(first.locator('option[value="SNT 102E"]')).toHaveCount(1);
+    await expect(second.locator('option[value="CIN 101"]')).toHaveCount(1);
+    // Boş yuvada "önce ders seç" ipucu yok.
+    await expect(page.locator('.dp-grade-hint')).toHaveCount(0);
+
+    const unused = page.locator('#dp-unused');
+    await expect(unused).toBeVisible();
+    await expect(unused.locator('h3')).toHaveText('Plana yerleşmeyen dersler');
+    const rows = unused.locator('.dp-unused-row');
+    await expect(rows).toHaveCount(1);
+    await expect(rows.first().locator('.dp-unused-code')).toHaveText('XYZ 201');
+    await expect(rows.first().locator('.dp-unused-name')).toHaveText('Synthetic Outside Course');
+    await expect(rows.first().locator('.dp-unused-credit')).toHaveText('2 kr');
+    await expect(rows.first().locator('.dp-unused-grade')).toHaveText('BA+');
+    await expect(rows.first().locator('.dp-unused-term')).toHaveText('2023-2024 / Güz');
+    // Bölüm son yarıyılın altında durur.
+    const after = await page.evaluate(() => {
+      const sems = document.querySelectorAll('#dp-semesters .dp-sem');
+      const last = sems[sems.length - 1];
+      const box = document.querySelector('#dp-unused');
+      return Boolean(last && (last.compareDocumentPosition(box) & Node.DOCUMENT_POSITION_FOLLOWING));
+    });
+    expect(after).toBe(true);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(1);
+
+    await page.reload();
+    await expect(page.locator('#dp-prog')).toHaveValue('CEN_LS', { timeout: 20000 });
+    await expect(page.locator('#dp-unused .dp-unused-row')).toHaveCount(1);
+    await expect(page.locator('#dp-unused .dp-unused-code')).toHaveText('XYZ 201');
+    await expect(page.locator('select.dp-epick[data-slot="s4i6"]')).toHaveValue('CIN 101');
+
+    // Elle sıfırlanınca bölüm gizlenir.
+    await page.locator('#dp-tools > summary').click();
+    await page.locator('.dp-data-tools > summary').click();
+    await page.locator('#dp-reset').click();
+    await page.locator('.dlg-ok').click();
+    await expect(page.locator('#dp-unused')).toBeHidden();
   });
 
   test('Ders Planım: BL/M/G/P notu girilince "Dönem için ders öner" çökmez', async ({ page }) => {

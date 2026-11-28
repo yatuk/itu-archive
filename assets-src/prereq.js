@@ -20,6 +20,7 @@ import { state } from './core/store.js?v=dde1e9339338';
 import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=dde1e9339338';
 import { I18N } from './i18n.js?v=dde1e9339338';
+import { courseProgress, readAllGrades, lastGradesProgram, gradeRank } from './core/passed.js?v=dde1e9339338';
 
   // Düğüm detay paneli (ders önşart ağacı / seçmeli havuz listesi) React'te —
   // akış şemasının kendisi (canvas çizimi, sürükleme, yakınlaştırma) kasten
@@ -76,6 +77,9 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     if (_canvasColors && _canvasColors.theme === theme) return _canvasColors;
     const cs = getComputedStyle(document.documentElement);
     const v = (n, fb) => cs.getPropertyValue(n).trim() || fb;
+    const pgRoot = document.getElementById('pg-root');
+    const ps = pgRoot ? getComputedStyle(pgRoot) : cs;
+    const pv = (n, fb) => ps.getPropertyValue(n).trim() || fb;
     _canvasColors = {
       theme,
       bg: v('--bg', '#f4f6f4'),
@@ -89,6 +93,9 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       acid: v('--acid', '#805f1a'),
       amber: v('--amber', '#8a5f00'),
       cyan: v('--cyan', '#1f3f6b'),
+      // Geçti/kaldı renkleri #pg-root üzerinde tanımlı (temaya göre).
+      pass: pv('--pg-pass', '#2f6b45'),
+      fail: pv('--pg-fail', '#c2303a'),
       mono: v('--mono', 'ui-monospace, monospace'),
       sans: v('--sans', 'system-ui, sans-serif'),
     };
@@ -327,13 +334,34 @@ import { I18N } from './i18n.js?v=dde1e9339338';
         const [cx, cy] = this.worldToScreen(n.x, n.y);
         const bw = NODE_W * k, bh = NODE_H * k;
         const x = cx - bw / 2, y = cy - bh / 2;
-        ctx.globalAlpha = (this.alpha ?? 1) * (dim ? 0.4 : 1);
+        const nodeAlpha = (this.alpha ?? 1) * (dim ? 0.4 : 1);
+        const st = n.progress || '';
+        ctx.globalAlpha = nodeAlpha;
         ctx.beginPath();
         roundRect(ctx, x, y, bw, bh, 4 * k);
         ctx.fillStyle = sel ? c.fg : (n.kind === 'elective' ? c.panel2 : c.panel);
         ctx.fill();
-        ctx.lineWidth = rel ? 2 : 1;
-        ctx.strokeStyle = sel ? c.fg : rel ? c.acid : (n.kind === 'elective' ? c.line : c.hot);
+        // Geçilen ders: yeşil hafif dolgu + yeşil kenar; alınabilir: solda
+        // ince yeşil şerit; kaldı: kırmızı kenar. Seçili düğüm kendi rengini korur.
+        if (st === 'passed' && !sel) {
+          ctx.globalAlpha = nodeAlpha * 0.14;
+          ctx.fillStyle = c.pass;
+          ctx.fill();
+          ctx.globalAlpha = nodeAlpha;
+        }
+        if (st === 'eligible' && !sel) {
+          ctx.save();
+          ctx.clip();
+          ctx.fillStyle = c.pass;
+          ctx.fillRect(x, y, 3.5 * k, bh);
+          ctx.restore();
+          ctx.beginPath();
+          roundRect(ctx, x, y, bw, bh, 4 * k);
+        }
+        ctx.lineWidth = rel ? 2 : (st === 'passed' || st === 'failed' ? 1.5 : 1);
+        ctx.strokeStyle = sel ? c.fg : rel ? c.acid
+          : st === 'passed' ? c.pass : st === 'failed' ? c.fail
+          : (n.kind === 'elective' ? c.line : c.hot);
         if (n.nocode && !sel) ctx.setLineDash([3 * k, 3 * k]);
         ctx.stroke();
         ctx.setLineDash([]);
@@ -361,8 +389,26 @@ import { I18N } from './i18n.js?v=dde1e9339338';
             ctx.fillText(fitText(ctx, n.name || '', (NODE_W - 14) * k), x + 8 * k, y + 31 * k);
           }
         }
+        // Geçilen ders: sağ üst köşede onay işareti (renk körlüğüne karşı
+        // yalnız renge dayanmasın). Kaldı: küçük çarpı.
+        if ((st === 'passed' || st === 'failed') && showText) {
+          const mx = x + bw - 10 * k, my = y + 9 * k, r = 3.4 * k;
+          ctx.beginPath();
+          if (st === 'passed') {
+            ctx.moveTo(mx - r, my); ctx.lineTo(mx - r * 0.25, my + r * 0.8); ctx.lineTo(mx + r, my - r * 0.8);
+          } else {
+            ctx.moveTo(mx - r * 0.8, my - r * 0.8); ctx.lineTo(mx + r * 0.8, my + r * 0.8);
+            ctx.moveTo(mx + r * 0.8, my - r * 0.8); ctx.lineTo(mx - r * 0.8, my + r * 0.8);
+          }
+          ctx.lineWidth = Math.max(1.4, 1.8 * k);
+          ctx.lineCap = 'round';
+          ctx.strokeStyle = sel ? c.bg : (st === 'passed' ? c.pass : c.fail);
+          ctx.stroke();
+          ctx.lineCap = 'butt';
+        }
         // Önşartı bu planda olmayan bir koda bağlı ders: köşede amber nokta.
-        if (n.offPlan) {
+        // Geçilen/kaldığın derste bu uyarı gereksiz (yerini işaret alır).
+        if (n.offPlan && st !== 'passed' && st !== 'failed') {
           ctx.beginPath();
           ctx.arc(x + 103 * k, y + 9 * k, 3.5 * k, 0, Math.PI * 2);
           ctx.fillStyle = c.amber;
@@ -962,6 +1008,23 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     </li>`;
   }
 
+  // reqSatisfied, önşart ağacının geçilen derslerle (kod → en iyi not)
+  // sağlanıp sağlanmadığını söyler. VE=hepsi, VEYA=biri; "MIN. CC" gibi asgari
+  // not koşulu da aranır. Metin yaprakları (kod olmayan koşullar) bilinemediği
+  // için sağlanmamış sayılır — "alınabilir" iddiası temkinli kalsın. Saf.
+  export function reqSatisfied(tree, best) {
+    if (!tree) return true;
+    if (tree.type === 'code') {
+      const g = best && best.get(tree.code);
+      if (!g) return false;
+      const min = minGrade(tree.detail);
+      return !min || gradeRank(g) >= gradeRank(min);
+    }
+    if (tree.type === 'text') return false;
+    const items = tree.items || [];
+    return tree.type === 'or' ? items.some((it) => reqSatisfied(it, best)) : items.every((it) => reqSatisfied(it, best));
+  }
+
   // Ağaçtaki tüm yaprak ders kodlarını toplar (grup tatmini için).
   function collectCodes(tree, out = []) {
     if (tree.type === 'code') out.push(tree.code);
@@ -985,8 +1048,17 @@ import { I18N } from './i18n.js?v=dde1e9339338';
   if (typeof window !== 'undefined') {
     window.addEventListener(TAKEN_CHANGED, () => {
       if (graph && lastPoolNode) graph.renderPool(lastPoolNode);
+      // Müfredat'ta not değişti: geçti/alınabilir boyaması tazelenir.
+      if (graph && graph.nodes) applyProgress(graph.root);
+    });
+    // Başka bir sekmede not girildiyse (aynı tarayıcı) da tazele.
+    window.addEventListener('storage', (ev) => {
+      if (graph && graph.nodes && (!ev.key || ev.key.startsWith('itu-grades'))) applyProgress(graph.root);
     });
   }
+  // "Müfredat ve GPA"da en son açılan program — haritanın kendi başına
+  // seçtiği/kullanıcının seçtiği programla karşılaştırmak için hatırlanır.
+  let seenGradesProgram = '';
   let programs = null;
   let reqByCode = null;
   // Seviye filtresi: varsayılan yalnızca lisans. Kullanıcı değiştirirse bu
@@ -997,7 +1069,9 @@ import { I18N } from './i18n.js?v=dde1e9339338';
   function savePrereqPreference(root) {
     const program = root.querySelector('.pg-program-select')?.value || '';
     const list = root.classList.contains('pg-list-mode') || root.classList.contains('pg-mobile-full');
-    prereqPreference = { program, levels: [...activeLevels], view: list ? 'list' : 'graph' };
+    // mufredat: bu tercih kaydedildiğinde "Müfredat ve GPA"da açık olan program.
+    // Orada sonradan başka bir program seçilirse harita o programa geçer.
+    prereqPreference = { program, levels: [...activeLevels], view: list ? 'list' : 'graph', mufredat: seenGradesProgram };
     writeLocalState('itu-prereq-view', prereqPreference, { validate: isPlainObject });
   }
 
@@ -1107,6 +1181,68 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     return { nodes, edges, laneTitles };
   }
 
+  // ---- Müfredat ve GPA notlarına göre ilerleme ----
+  // Düğümlere n.progress yazar: 'passed' | 'failed' | 'eligible' | ''.
+  // Liste görünümü ve mobil gezgindeki satırlar da aynı durumu sınıfla taşır;
+  // lejant yalnızca kullanıcının not verisi varsa görünür.
+  let lastProgress = null;
+  function applyProgress(root) {
+    if (!root) return;
+    const prog = root.querySelector('.pg-program-select')?.value || '';
+    const p = courseProgress(readAllGrades(), prog);
+    lastProgress = p;
+    const counts = { passed: 0, failed: 0, eligible: 0 };
+    const byCode = new Map();
+    for (const n of graph?.nodes || []) {
+      let st = '';
+      if (n.kind === 'course' && !n.nocode) {
+        st = p.status.get(n.code) || '';
+        if (!st && n.requirement && reqSatisfied(parseReq(n.requirement), p.best)) st = 'eligible';
+      } else if (n.kind === 'elective') {
+        const m = /^__elective_(\d+)_(\d+)$/.exec(n.code);
+        st = (m && p.slots.get(`s${m[1]}i${m[2]}`)) || '';
+      }
+      n.progress = st;
+      if (st) counts[st]++;
+      byCode.set(n.code, st);
+    }
+    root.dataset.passed = String(counts.passed);
+    decorateProgress(root, byCode);
+    const legend = root.querySelector('.pg-guide > div');
+    if (legend) {
+      const show = (cls, on, text) => {
+        const el = legend.querySelector(cls);
+        if (!el) return;
+        el.hidden = !on;
+        const label = el.querySelector('[data-pg-count]');
+        if (label && text) label.textContent = text;
+      };
+      show('.pg-lg-passed', p.any, tf('pgLegendPassed', { n: counts.passed }));
+      show('.pg-lg-eligible', p.any && counts.eligible > 0, '');
+      show('.pg-lg-failed', counts.failed > 0, '');
+    }
+    if (graph && graph.nodes) graph.draw();
+  }
+
+  const STATE_CLASSES = ['is-passed', 'is-failed', 'is-eligible'];
+  const STATE_LABEL = { passed: 'pgStatePassed', failed: 'pgStateFailed', eligible: 'pgStateEligible' };
+  function decorateProgress(root, byCode) {
+    const map = byCode || new Map((graph?.nodes || []).map((n) => [n.code, n.progress || '']));
+    root.querySelectorAll('.pg-li[data-code], .pg-mobile-course[data-focus-code], .pg-mobile-course[data-pool-code]').forEach((el) => {
+      const code = el.dataset.code || el.dataset.focusCode || el.dataset.poolCode;
+      const st = map.get(code) || '';
+      el.classList.remove(...STATE_CLASSES);
+      el.querySelector('.pg-state-tag')?.remove();
+      if (!st) return;
+      el.classList.add(`is-${st}`);
+      const tag = document.createElement('small');
+      tag.className = 'pg-state-tag';
+      tag.textContent = I18N.t(STATE_LABEL[st]);
+      const host = el.querySelector('.pg-li-name, span') || el;
+      host.appendChild(tag);
+    });
+  }
+
   async function selectProgram(root, code) {
     const { graph } = await ensureData(root);
     const statusEl = root.querySelector('.pg-status');
@@ -1128,6 +1264,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     const status = [plan.programName, `${nodes.length} ${I18N.t('pgCourseSlotWord')}`, tf('pgEdgeCount', { n: edges.length })].join(' · ');
     await graph.build(nodes, edges, laneTitles, status);
     renderMobileExplorer(root, plan, graph);
+    applyProgress(root);
     statusEl.classList.remove('busy');
   }
 
@@ -1196,6 +1333,7 @@ import { I18N } from './i18n.js?v=dde1e9339338';
       box.querySelectorAll('[data-focus-code]').forEach((b) => b.addEventListener('click', () => renderFocus(b.dataset.focusCode)));
       box.querySelectorAll('[data-pool-code]').forEach((b) => b.addEventListener('click', () => currentGraph.focusNode(b.dataset.poolCode)));
       box.querySelector('[data-detail-code]')?.addEventListener('click', (ev) => window.dispatchEvent(new CustomEvent('itu:course-detail', { detail: { code: ev.currentTarget.dataset.detailCode, source: 'onsart-mobile' } })));
+      decorateProgress(box);
     };
     box.hidden = false;
     renderIndex();
@@ -1321,6 +1459,47 @@ import { I18N } from './i18n.js?v=dde1e9339338';
     }
   }
 
+  // Programı seçicide açar: gerekirse seviyesini filtreye ekler, fakültesini
+  // seçer. Seçicide bulunduysa true.
+  function openProgramInPicker(root, code) {
+    const hedef = programs.find((p) => p.code === code);
+    if (!hedef) return false;
+    const lv = hedef.level || 'LS';
+    if (!activeLevels.has(lv)) {
+      activeLevels.add(lv);
+      const box = root.querySelector('.pg-levels');
+      if (box) renderLevelFilter(box);
+    }
+    const facSel = root.querySelector('.pg-faculty-select');
+    const fac = hedef.faculty || I18N.t('planOtherFaculty');
+    renderProgramPicker(root);
+    if ([...facSel.options].some((o) => o.value === fac)) {
+      facSel.value = fac;
+      renderProgramPicker(root);
+    }
+    const sel = root.querySelector('.pg-program-select');
+    if (![...sel.options].some((o) => o.value === code)) return false;
+    sel.value = code;
+    return true;
+  }
+
+  // Sekme yeniden gösterildiğinde: Müfredat'ta o arada başka program
+  // açıldıysa ona geç; değilse yalnızca geçti/alınabilir boyamasını tazele.
+  function refreshFromGrades(root) {
+    const now = lastGradesProgram();
+    const sel = root.querySelector('.pg-program-select');
+    if (now && now !== seenGradesProgram) {
+      seenGradesProgram = now;
+      if (sel && sel.value !== now && openProgramInPicker(root, now)) {
+        selectProgram(root, now);
+        savePrereqPreference(root);
+        history.replaceState(null, '', `?prog=${encodeURIComponent(now)}#onsart`);
+        return;
+      }
+    }
+    if (graph && graph.nodes) applyProgress(root);
+  }
+
   let inited = false;
   export const PrereqGraph = {
     async init(rootSelector) {
@@ -1361,21 +1540,23 @@ import { I18N } from './i18n.js?v=dde1e9339338';
         // Paylaşılabilir URL: ?prog=BLG_LS&pool=<slot>#onsart — programı seç,
         // grafik kurulunca (varsa) havuz panelini aç.
         const params = new URLSearchParams(location.search);
-        const wantProg = params.get('prog') || prereqPreference.program || '';
+        // Öncelik: URL'deki ?prog= > "Müfredat ve GPA"da açılan program (harita
+        // tercihi kaydedildiğinden beri değiştiyse ya da hiç tercih yoksa) >
+        // haritada hatırlanan tercih.
+        const gradesProg = lastGradesProgram();
+        seenGradesProgram = gradesProg;
+        const fromGrades = !params.get('prog') && gradesProg && programs.some((p) => p.code === gradesProg)
+          && (!prereqPreference.program || prereqPreference.mufredat !== gradesProg);
+        const wantProg = params.get('prog') || (fromGrades ? gradesProg : '') || prereqPreference.program || '';
         if (wantProg) {
           // Paylaşılan link başka bir fakültenin programına işaret edebilir:
-          // önce o programın fakültesini aç, sonra bölüm listesini kur.
-          const hedef = programs.find((p) => p.code === wantProg);
-          if (hedef) {
-            const facSel = root.querySelector('.pg-faculty-select');
-            const fac = hedef.faculty || I18N.t('planOtherFaculty');
-            if ([...facSel.options].some((o) => o.value === fac)) {
-              facSel.value = fac;
-              renderProgramPicker(root);
-            }
-          }
+          // önce o programın seviyesini ve fakültesini aç, sonra bölüm listesini kur.
+          const ok = openProgramInPicker(root, wantProg);
           const sel = root.querySelector('.pg-program-select');
-          const ok = [...sel.options].some((o) => o.value === wantProg);
+          if (ok && fromGrades) {
+            savePrereqPreference(root);
+            history.replaceState(null, '', `?prog=${encodeURIComponent(wantProg)}#onsart`);
+          }
           if (ok) {
             sel.value = wantProg;
             selectProgram(root, wantProg).then(() => {
@@ -1402,6 +1583,8 @@ import { I18N } from './i18n.js?v=dde1e9339338';
         }
 
         inited = true;
+      } else {
+        refreshFromGrades(root);
       }
     },
   };

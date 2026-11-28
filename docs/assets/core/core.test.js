@@ -10,7 +10,8 @@ import { fold, normSearch, searchMatch, matchRow, markField, suggestDrop, trNum,
 import { fillBar, quotaDisplay, quotaState, trendChart } from './chart.js';
 import { splitInstructors, obsDeepLink, gradePassPct, gradeMode, fillSpeedLabel, commonFields } from './course-detail.js';
 import { sortValue, parseWhen, timeBucket, matchesDay, buildTimetable, buildingGapWarnings, programList, groupCourseRows, cachedGroupCourseRows, quotaParts, whereText } from '../views/courses.js';
-import { parseReq, reqAlts } from '../prereq.js';
+import { parseReq, reqAlts, reqSatisfied } from '../prereq.js';
+import { courseProgress, gradeRank } from './passed.js';
 import { buildSnippet, parseTimeRange, examOverlap, finalsConflict, midtermWeeks } from '../views/program.js';
 import { examDateMatchesTerm, examScheduleMatchesTerm, examToIcs, examMapsQuery } from '../views/exams.js';
 import { topByCount } from '../views/history.js';
@@ -22,7 +23,7 @@ import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, isPassingGrade, ta
 import { setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
 import * as fav from './favorites.js';
 import { formatProgramLabel, normalizeProgramLevel, programLevelLabel } from './programs.js';
-import { parseOBSTranscript, transcriptLatest, transcriptCountedAttempts, transcriptGpa, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates } from './transcript.js';
+import { parseOBSTranscript, transcriptLatest, transcriptCountedAttempts, transcriptGpa, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates, itbSntSlotOptions, transcriptUnmatchedList } from './transcript.js';
 import { versionedKey, readLocalState, writeLocalState, isPlainObject } from './persistence.js';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from './backup.js';
 import { buildBalancedPlan } from './planner.js';
@@ -144,7 +145,9 @@ EHB 315E Intro to Electronics Laboratory 1,00 BA`).records;
   assert.equal(merged.grades['ING 112A'].grade, 'CC+');
 });
 
-test('transkript ITB ve SNT derslerini kesin seçenekten sonra ortak boş havuza yerleştirir', () => {
+test('transkript ITB ve SNT derslerini tek ortak havuza alınma sırasıyla yerleştirir', () => {
+  // ITB ve SNT birbirinin yerine sayılır: slotun kendi seçenek listesi değil,
+  // alınma sırası belirler (ilk alınan → ilk ITB_SNT slotu).
   const records = parseOBSTranscript(`2024-2025 / Güz Dönemi
 ITB 205E Philosophy 3,00 BB
 SNT 102E Photography 3,00 BA`).records;
@@ -154,10 +157,105 @@ SNT 102E Photography 3,00 BA`).records;
   ] }] };
   const match = matchTranscriptToPlan(plan, records);
   assert.deepEqual(match.electiveAssignments.map((r) => [r.slot, r.code]), [
-    ['s0i0', 'SNT 102E'],
-    ['s0i1', 'ITB 205E'],
+    ['s0i0', 'ITB 205E'],
+    ['s0i1', 'SNT 102E'],
   ]);
   assert.equal(match.unmatched.length, 0);
+});
+
+// Sentetik müfredat: CEN_LS benzeri iki ITB_SNT slotu. 5. yarıyıl "ITB Elective I"
+// yalnız SNT kodları listeler; 7. yarıyıl "ITB Elective II" dil/beşerî dersleri
+// (CIN 101 gibi) listeler. Araya bir teknik seçmeli (TM) slotu girer.
+const ITB_PLAN = { semesters: [
+  { items: [{ course: { code: 'MAT 103E', name: 'Mathematics I' } }] },
+  { items: [] }, { items: [] }, { items: [] },
+  { items: [
+    { elective: { title: 'ITB Elective I', options: [{ code: 'SNT 101', name: 'Art A' }, { code: 'SNT 102E', name: 'Photography' }] } },
+    { elective: { title: '5th Sems. Elect. Course (TM)', options: [{ code: 'BLG 361E', name: 'Databases' }] } },
+  ] },
+  { items: [] },
+  { items: [
+    { elective: { title: 'ITB Elective II', options: [{ code: 'CIN 101', name: 'Chinese I' }, { code: 'ITB 205E', name: 'Philosophy' }] } },
+  ] },
+] };
+
+test('ITB/SNT: 2. yılda alınan dil dersi kendi kodunu listeleyen 7. yarıyıl yerine ilk ITB_SNT slotuna yerleşir', () => {
+  const records = parseOBSTranscript(`2022-2023 / Güz Dönemi
+MAT 103E Mathematics I 4,00 BB
+2023-2024 / Güz Dönemi
+CIN 101 Chinese I 3,00 AA
+2025-2026 / Güz Dönemi
+SNT 102E Photography 3,00 BA
+BLG 361E Databases 3,00 CB`).records;
+  const match = matchTranscriptToPlan(ITB_PLAN, records);
+  assert.deepEqual(match.electiveAssignments.map((r) => [r.slot, r.code, r.grade]), [
+    ['s4i0', 'CIN 101', 'AA'],
+    ['s6i0', 'SNT 102E', 'BA'],
+    ['s4i1', 'BLG 361E', 'CB'],
+  ]);
+  assert.equal(match.unmatched.length, 0);
+  const merged = mergeTranscriptMatch({}, match);
+  assert.deepEqual(merged.elective.s4i0, { code: 'CIN 101', grade: 'AA', prev: '' });
+  assert.deepEqual(merged.elective.s6i0, { code: 'SNT 102E', grade: 'BA', prev: '' });
+});
+
+test('ITB/SNT: sıra ilk denemeye göredir; slotlar dolunca fazlası eşleşmeyenlere düşer', () => {
+  // SNT 101 önce FF ile alınıp sonra tekrar edildi: ilk denemesi CIN 101'den önce.
+  const records = parseOBSTranscript(`2022-2023 / Güz Dönemi
+SNT 101 Art A 3,00 FF *
+2022-2023 / Bahar Dönemi
+CIN 101 Chinese I 3,00 BB
+2024-2025 / Güz Dönemi
+SNT 101 Art A 3,00 CC
+ITB 299E Extra Humanities 3,00 AA`).records;
+  const match = matchTranscriptToPlan(ITB_PLAN, records);
+  assert.deepEqual(match.electiveAssignments.map((r) => [r.slot, r.code, r.grade]), [
+    ['s4i0', 'SNT 101', 'CC'],
+    ['s6i0', 'CIN 101', 'BB'],
+  ]);
+  // Üçüncü ITB/SNT dersi için boş ortak slot kalmadı.
+  assert.deepEqual(match.unmatched.map((r) => r.code), ['ITB 299E']);
+});
+
+test('itbSntSlotOptions ITB_SNT slotlarının seçenek birleşimini verir, diğer havuzları katmaz', () => {
+  const { slots, options } = itbSntSlotOptions(ITB_PLAN);
+  assert.deepEqual([...slots], ['s4i0', 's6i0']);
+  assert.deepEqual(options.map((o) => o.code), ['SNT 101', 'SNT 102E', 'CIN 101', 'ITB 205E']);
+});
+
+test('plana yerleşmeyen dersler en küçük alanlarla saklanır ve JSON yedeğinde korunur', () => {
+  const parsed = parseOBSTranscript(`Öğrenci Numarası : 000000000
+Adı : SENTETIK OGRENCI
+2023-2024 / Güz Dönemi
+MAT 103E Mathematics I 4,00 BB
+XYZ 201 Synthetic Outside Course 2,00 BA+
+TUR 121 Turkish I 0,00 BL
+A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
+Sentetik Program
+Toplam 6,00 6,00 6,00 20,00 3,33`);
+  const match = matchTranscriptToPlan(ITB_PLAN, parsed.records);
+  assert.deepEqual(match.unmatched.map((r) => r.code), ['XYZ 201', 'TUR 121']);
+  const stored = mergeTranscriptMatch({}, match, { officialGpa: parsed.officialGpa });
+  assert.deepEqual(stored.transcript.unmatched, [
+    { code: 'XYZ 201', name: 'Synthetic Outside Course', credits: 2, grade: 'BA+', term: '2023-2024 / Güz' },
+    { code: 'TUR 121', name: 'Turkish I', credits: 0, grade: 'BL', term: '2023-2024 / Güz' },
+  ]);
+  for (const item of stored.transcript.unmatched) {
+    assert.deepEqual(Object.keys(item).sort(), ['code', 'credits', 'grade', 'name', 'term']);
+  }
+  const json = JSON.stringify(stored);
+  assert.equal(json.includes('SENTETIK OGRENCI'), false);
+  assert.equal(json.includes('000000000'), false);
+  assert.equal(json.includes('Sentetik Program'), false);
+  assert.deepEqual(transcriptUnmatchedList([null, { code: '' }, { code: 'AAA 100', name: 1, credits: 'x' }]), [
+    { code: 'AAA 100', name: '', credits: 0, grade: '', term: '' },
+  ]);
+  const restored = importJSON(exportJSON('X_LS', stored));
+  assert.deepEqual(restored.data.transcript.unmatched, stored.transcript.unmatched);
+  // Eski kayıt (unmatched alanı yok) hâlâ geçerli bir transkript görüntüsüdür.
+  const legacy = { ...stored, transcript: { ...stored.transcript } };
+  delete legacy.transcript.unmatched;
+  assert.equal(gpaEntries(ITB_PLAN, legacy).source, 'transcript');
 });
 
 test('eşdeğer kodlu derste eski VF yerine kronolojik son başarılı notu kullanır', () => {
@@ -772,6 +870,41 @@ test('matchesDay tam günü eşleştirir', () => {
 });
 
 // ---- Önşart AND/OR ayrıştırıcısı ----
+
+test('courseProgress: geçti/kaldı, transkript ve seçmeli slot notlarından', () => {
+  const all = {
+    CEN_LS: {
+      grades: { 'MAT 103E': { grade: 'DD', prev: 'FF' }, 'FIZ 101E': { grade: 'FF' }, 'KIM 101E': { grade: 'E' }, 'TUR 101': { grade: 'BL' } },
+      elective: { s2i5: { code: 'SNT 102', grade: 'BB' }, s3i4: { code: 'ECN 201', grade: 'VF' } },
+      transcript: { entries: [{ code: 'ING 100', grade: 'P' }, { code: 'MAT 103E', grade: 'FF', key: 'g:MAT 103E' }], planKeys: {} },
+    },
+    BLG_LS: { grades: { 'FIZ 101E': { grade: 'CC' } } },
+  };
+  const p = courseProgress(all, 'CEN_LS');
+  assert.equal(p.any, true);
+  assert.equal(p.status.get('MAT 103E'), 'passed');
+  assert.equal(p.status.get('FIZ 101E'), 'passed', 'başka programda geçilen ders de geçti sayılır');
+  assert.equal(p.status.get('TUR 101'), 'passed');
+  assert.equal(p.status.get('ING 100'), 'passed');
+  assert.equal(p.status.get('SNT 102'), 'passed');
+  assert.equal(p.status.get('ECN 201'), 'failed');
+  assert.equal(p.status.has('KIM 101E'), false, 'eksik (E) ne geçti ne kaldı');
+  assert.equal(p.slots.get('s2i5'), 'passed');
+  assert.equal(p.slots.get('s3i4'), 'failed');
+  assert.equal(courseProgress(all, 'BLG_LS').slots.size, 0);
+  assert.equal(courseProgress({}, '').any, false);
+});
+
+test('reqSatisfied: VE/VEYA ve asgari not', () => {
+  const best = new Map([['MAT 102E', 'DD'], ['FIZ 101E', 'BB']]);
+  assert.equal(reqSatisfied(parseReq('( MAT 102 MIN. DD Veya MAT 102E MIN. DD )'), best), true);
+  assert.equal(reqSatisfied(parseReq('MAT 102E MIN. DD Ve FIZ 101E MIN. DD'), best), true);
+  assert.equal(reqSatisfied(parseReq('MAT 102E MIN. CC Ve FIZ 101E MIN. DD'), best), false);
+  assert.equal(reqSatisfied(parseReq('MAT 102E MIN. DD Ve KIM 101E MIN. DD'), best), false);
+  assert.ok(gradeRank('BL') > gradeRank('AA'));
+  assert.equal(gradeRank('E'), -1);
+});
+
 
 test('parseReq VEYA alternatiflerini ayırır, hepsi "biri yeter" olur', () => {
   const tree = parseReq('( MAT 102 MIN. DD Veya MAT 102E MIN. DD ) Veya ( MAT 104 MIN. DD Veya MAT 104E MIN. DD )');

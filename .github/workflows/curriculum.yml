@@ -23,7 +23,9 @@ jobs:
     # DersPlan uçları zaman zaman çok yavaş/kararsız (context deadline exceeded
     # art arda geliyor); ilk canlı koşu 20 dk'da yarılanmadan iptal edildi.
     # Aylık, arka planda çalışan bir iş olduğundan süre kısıtı düşük öncelik.
-    timeout-minutes: 60
+    # Eski plan sürümleri de çekildiğinden (cmd/curriculum -all-versions,
+    # data/curriculum/versions/) detay isteği sayısı artı; süre 90 dk.
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:

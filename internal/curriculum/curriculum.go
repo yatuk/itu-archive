@@ -20,9 +20,11 @@
 // tek dönemli olarak saklanıyor.
 //
 // Bir program birden çok plan sürümü listeler (örn. "2017-2018 Güz ile
-// 2021-2022 Güz Dönemleri Arası"); son satır her zaman en güncel olanı, o
-// yüzden yalnızca onu çekiyoruz — geçmiş müfredat sürümleri bu görselleştirme
-// için gerekli değil.
+// 2021-2022 Güz Dönemleri Arası"); son satır her zaman en güncel olanı ve
+// <PROG>.json'a o yazılır (varsayılan). Öğrenci, kaydolduğu dönemde geçerli
+// sürüme tabidir; bu yüzden Client.AllVersions açıkken eski sürümler de
+// (geçerliliği MinVersionYear'dan önce bitenler hariç) çekilir ve Plan.Older'da
+// döner. Etiketteki dönem aralığı ParseValidity ile çözülür.
 package curriculum
 
 import (
@@ -37,12 +39,21 @@ import (
 	"itu-scraper/internal/fetch"
 )
 
-const (
+// URL'ler değişken: testler httptest sunucusuna yönlendirir (setBase).
+var (
 	programListURL = "https://obs.itu.edu.tr/public/GenelTanimlamalar/ProgramKodlariList"
 	planListURL    = "https://obs.itu.edu.tr/public/DersPlan/DersPlanlariList"
 	planDetailURL  = "https://obs.itu.edu.tr/public/DersPlan/DersPlanDetay"
 	groupSearchURL = "https://obs.itu.edu.tr/public/DersPlan/_DersGrupSearch"
 )
+
+// setBase, tüm uç noktaları verilen köke taşır (yalnız testler için).
+func setBase(base string) {
+	programListURL = base + "/public/GenelTanimlamalar/ProgramKodlariList"
+	planListURL = base + "/public/DersPlan/DersPlanlariList"
+	planDetailURL = base + "/public/DersPlan/DersPlanDetay"
+	groupSearchURL = base + "/public/DersPlan/_DersGrupSearch"
+}
 
 // Level, bir program seviyesinin OBS parametreleri. Seviye tipi ID'leri
 // ProgramKodlariList'e, plan tipi kodları DersPlanlariList'e veriliyor.
@@ -125,13 +136,45 @@ type Plan struct {
 	TotalEcts    string `json:"totalEcts,omitempty"`    // sayfa altı "Toplam AKTS"
 	// OBS bazı programlarda (özellikle önlisans) AKTS toplamını 0,00 basar;
 	// o zaman kalemlerden toplanır ve bu bayrak "hesaplandı" işareti olur.
-	TotalCreditsComputed bool       `json:"totalCreditsComputed,omitempty"`
-	TotalEctsComputed    bool       `json:"totalEctsComputed,omitempty"`
-	Semesters            []Semester `json:"semesters"`
+	TotalCreditsComputed bool `json:"totalCreditsComputed,omitempty"`
+	TotalEctsComputed    bool `json:"totalEctsComputed,omitempty"`
+	// Etiketten çözülen geçerlilik aralığı ("2021-2022 Güz"): ValidFrom dahil,
+	// ValidUntil hariç (bir sonraki sürüm o dönemden başlar). Boşsa açık uç.
+	ValidFrom  string     `json:"validFrom,omitempty"`
+	ValidUntil string     `json:"validUntil,omitempty"`
+	Semesters  []Semester `json:"semesters"`
+	// Versions yalnız en güncel dosyada (<PROG>.json) bulunur: programın
+	// çekilen tüm plan sürümleri (OBS sırasıyla, en güncel sonda).
+	Versions []PlanVersion `json:"versions,omitempty"`
+	// Older, aynı programın eski sürümleri (yazım için; JSON'a girmez).
+	Older []*Plan `json:"-"`
+}
+
+// PlanVersion, bir programın plan sürümü listesindeki tek satır.
+type PlanVersion struct {
+	PlanID     int    `json:"planId"`
+	Label      string `json:"label"`
+	ValidFrom  string `json:"validFrom,omitempty"`
+	ValidUntil string `json:"validUntil,omitempty"`
+	// File, sürümün tam planı (site köküne göre). En güncel sürümün de arşiv
+	// kopyası yazılır; arayüz en günceli <PROG>.json'dan okur.
+	File   string `json:"file,omitempty"`
+	Latest bool   `json:"latest,omitempty"`
+}
+
+// VersionFile, bir plan sürümünün arşiv dosyasının site köküne göre yolu.
+func VersionFile(programCode string, planID int) string {
+	return fmt.Sprintf("data/curriculum/versions/%s-%d.json", programCode, planID)
 }
 
 type Client struct {
 	f *fetch.Client
+
+	// AllVersions açıksa Plan eski plan sürümlerini de Older'a çeker.
+	AllVersions bool
+	// MinVersionYear: geçerliliği bu yılın Güz döneminde ya da daha önce biten
+	// sürümler atlanır (o yıllarda kaydolup hâlâ okuyan öğrenci kalmadı). 0 = hepsi.
+	MinVersionYear int
 
 	mu     sync.Mutex
 	groups map[string][]Course // grupId -> alternatifler, programlar arası paylaşılıyor
@@ -208,15 +251,25 @@ func (c *Client) programsForLevel(ctx context.Context, lv Level) ([]Program, err
 	return out, nil
 }
 
-// LatestPlanID, bir programın en güncel müfredat sürümünün detay ID'sini bulur.
-func (c *Client) LatestPlanID(ctx context.Context, programCode string, lv Level) (int, string, error) {
+// PlanVersions, bir programın OBS'de listelenen tüm plan sürümlerini (OBS
+// sırasıyla; son satır en güncel) geçerlilik aralığıyla döndürür.
+func (c *Client) PlanVersions(ctx context.Context, programCode string, lv Level) ([]PlanVersion, error) {
 	url := fmt.Sprintf("%s?programKodu=%s&planTipiKodu=%s", planListURL, programCode, lv.PlanTipi)
 	body, err := c.f.Text(ctx, url)
 	if err != nil {
-		return 0, "", err
+		return nil, err
 	}
-	var lastID int
-	var lastLabel string
+	out := parsePlanList(body, programCode)
+	if len(out) == 0 {
+		return nil, fmt.Errorf("%s: hiç plan sürümü bulunamadı", programCode)
+	}
+	return out, nil
+}
+
+// parsePlanList, DersPlanlariList sayfasındaki sürüm satırlarını çözer.
+func parsePlanList(body, programCode string) []PlanVersion {
+	var out []PlanVersion
+	seen := map[int]bool{}
 	for _, row := range rowRe.FindAllStringSubmatch(body, -1) {
 		cells := cellRe.FindAllStringSubmatch(row[1], -1)
 		if len(cells) != 2 {
@@ -230,35 +283,175 @@ func (c *Client) LatestPlanID(ctx context.Context, programCode string, lv Level)
 		if m == nil {
 			continue
 		}
-		id := 0
-		fmt.Sscanf(m[1], "%d", &id)
-		if id > 0 {
-			lastID = id
-			lastLabel = clean(cells[1][1])
+		id, _ := strconv.Atoi(m[1])
+		if id <= 0 || seen[id] {
+			continue
 		}
+		seen[id] = true
+		label := clean(cells[1][1])
+		from, until := ParseValidity(label)
+		out = append(out, PlanVersion{PlanID: id, Label: label, ValidFrom: from, ValidUntil: until, File: VersionFile(programCode, id)})
 	}
-	if lastID == 0 {
-		return 0, "", fmt.Errorf("%s: hiç plan sürümü bulunamadı", programCode)
+	if len(out) > 0 {
+		out[len(out)-1].Latest = true
 	}
-	return lastID, lastLabel, nil
+	return out
+}
+
+// LatestPlanID, bir programın en güncel müfredat sürümünün detay ID'sini bulur.
+func (c *Client) LatestPlanID(ctx context.Context, programCode string, lv Level) (int, string, error) {
+	vs, err := c.PlanVersions(ctx, programCode, lv)
+	if err != nil {
+		return 0, "", err
+	}
+	last := vs[len(vs)-1]
+	return last.PlanID, last.Label, nil
+}
+
+// termRe, plan etiketindeki "2021-2022 / Güz" dönem kalıbı. Yıl ile dönem
+// arasındaki eğik çizgi ve boşluklar OBS'de tutarsız ("2026-2027/ Güz",
+// "2024 - 2025 / Güz", "2025-2026 Güz"); dönem adı yoksa Güz varsayılır.
+var termRe = regexp.MustCompile(`(?i)(\d{4})\s*-\s*(\d{4})(?:\s*/?\s*(güz|guz|bahar|yaz|fall|spring|summer))?`)
+
+// ParseValidity, plan sürümü etiketinden geçerlilik aralığını çözer:
+//
+//	"… 2017-2018 / Güz ile 2021-2022 / Güz Dönemleri Arası" → ("2017-2018 Güz", "2021-2022 Güz")
+//	"… 2026-2027/ Güz Dönemi Sonrası"                       → ("2026-2027 Güz", "")
+//	"… 2026-2027 / Güz Dönemi Öncesi"                       → ("", "2026-2027 Güz")
+//	"… (PhD)"                                                → ("", "")
+//
+// Başlangıç dahil, bitiş hariçtir: OBS ardışık sürümlerde bitiş dönemini bir
+// sonraki sürümün başlangıcı olarak yazar.
+func ParseValidity(label string) (from, until string) {
+	var terms []string
+	var ends []int
+	for _, m := range termRe.FindAllStringSubmatchIndex(label, -1) {
+		y1, _ := strconv.Atoi(label[m[2]:m[3]])
+		y2, _ := strconv.Atoi(label[m[4]:m[5]])
+		if y1 < 1950 || y1 > 2200 || y2 != y1+1 {
+			continue
+		}
+		season := "Güz"
+		if m[6] >= 0 {
+			season = normSeason(label[m[6]:m[7]])
+		}
+		terms = append(terms, fmt.Sprintf("%d-%d %s", y1, y2, season))
+		ends = append(ends, m[1])
+	}
+	switch {
+	case len(terms) >= 2:
+		return terms[0], terms[1]
+	case len(terms) == 1:
+		rest := strings.ToLower(label[ends[0]:])
+		if strings.Contains(rest, "öncesi") || strings.Contains(rest, "oncesi") || strings.Contains(rest, "before") {
+			return "", terms[0]
+		}
+		return terms[0], ""
+	}
+	return "", ""
+}
+
+func normSeason(s string) string {
+	switch strings.ToLower(s) {
+	case "bahar", "spring":
+		return "Bahar"
+	case "yaz", "summer":
+		return "Yaz"
+	}
+	return "Güz"
+}
+
+// TermKey, "2021-2022 Güz" dönemini sıralanabilir sayıya çevirir (yıl*3 +
+// Güz 0 / Bahar 1 / Yaz 2); çözülemezse -1.
+func TermKey(term string) int {
+	m := termRe.FindStringSubmatch(term)
+	if m == nil {
+		return -1
+	}
+	y, _ := strconv.Atoi(m[1])
+	off := 0
+	switch normSeason(m[3]) {
+	case "Bahar":
+		off = 1
+	case "Yaz":
+		off = 2
+	}
+	return y*3 + off
+}
+
+// keepVersion, eski sürümün çekilmeye değer olup olmadığını söyler: bitişi
+// bilinmeyen ya da MinVersionYear Güz'ünden sonra biten sürümler tutulur.
+func (c *Client) keepVersion(v PlanVersion) bool {
+	if v.Latest || c.MinVersionYear <= 0 || v.ValidUntil == "" {
+		return true
+	}
+	k := TermKey(v.ValidUntil)
+	return k < 0 || k > c.MinVersionYear*3
 }
 
 // Plan, bir programın en güncel müfredatını tam olarak çeker (seçmeli grupları
-// dahil).
+// dahil). AllVersions açıksa eski sürümler Older'a, sürüm listesi Versions'a
+// yazılır; tek bir eski sürümün sayfası bozuksa yalnız o sürüm atlanır.
 func (c *Client) Plan(ctx context.Context, p Program) (*Plan, error) {
-	lv := levelOf(p.Level)
-	planID, label, err := c.LatestPlanID(ctx, p.Code, lv)
-	if err != nil {
-		return nil, err
-	}
-	body, err := c.f.Text(ctx, fmt.Sprintf("%s/%d", planDetailURL, planID))
-	if err != nil {
-		return nil, err
-	}
-	if lv.Flat {
-		return c.parseFlatPlan(ctx, body, p, label, planID)
-	}
+	return c.plan(ctx, p, nil)
+}
 
+func (c *Client) plan(ctx context.Context, p Program, warn func(string, ...any)) (*Plan, error) {
+	vs, err := c.PlanVersions(ctx, p.Code, levelOf(p.Level))
+	if err != nil {
+		return nil, err
+	}
+	latest := vs[len(vs)-1]
+	plan, err := c.PlanByID(ctx, p, latest)
+	if err != nil {
+		return nil, err
+	}
+	if !c.AllVersions {
+		return plan, nil
+	}
+	var kept []PlanVersion
+	for _, v := range vs[:len(vs)-1] {
+		if !c.keepVersion(v) {
+			continue
+		}
+		old, err := c.PlanByID(ctx, p, v)
+		if err != nil {
+			if warn != nil {
+				warn("  %s sürüm %d atlandı: %v", p.Code, v.PlanID, err)
+			}
+			continue
+		}
+		if len(old.Semesters) == 0 {
+			continue
+		}
+		plan.Older = append(plan.Older, old)
+		kept = append(kept, v)
+	}
+	plan.Versions = append(kept, latest)
+	return plan, nil
+}
+
+// PlanByID, verilen plan sürümünün ders tablosunu çeker.
+func (c *Client) PlanByID(ctx context.Context, p Program, v PlanVersion) (*Plan, error) {
+	body, err := c.f.Text(ctx, fmt.Sprintf("%s/%d", planDetailURL, v.PlanID))
+	if err != nil {
+		return nil, err
+	}
+	var plan *Plan
+	if levelOf(p.Level).Flat {
+		plan, err = c.parseFlatPlan(ctx, body, p, v.Label, v.PlanID)
+	} else {
+		plan, err = c.parseSemesterPlan(ctx, body, p, v.Label, v.PlanID)
+	}
+	if err != nil {
+		return nil, err
+	}
+	plan.ValidFrom, plan.ValidUntil = ParseValidity(v.Label)
+	return plan, nil
+}
+
+// parseSemesterPlan, lisans/önlisans planının yarıyıl tablolarını çözer.
+func (c *Client) parseSemesterPlan(ctx context.Context, body string, p Program, label string, planID int) (*Plan, error) {
 	titles := h2Re.FindAllStringSubmatch(body, -1)
 	tables := tableRe.FindAllStringSubmatch(body, -1)
 
@@ -399,8 +592,11 @@ func (c *Client) group(ctx context.Context, id string) ([]Course, error) {
 		code := canonicalCode(cells[0][1])
 		if code == "" {
 			parts := strings.Fields(first)
-			if len(parts) < 3 {
-				continue // "BLG 337E Başlık..." biçiminde değilse atla
+			if len(parts) < 3 || parts[1][0] < '0' || parts[1][0] > '9' {
+				// "BLG 337E Başlık..." biçiminde değilse atla. OBS bazı
+				// satırları numarasız basıyor ("CIN <br/> Çince I"); bunlardan
+				// "CIN Çince" gibi sahte kod üretilmemeli.
+				continue
 			}
 			code = parts[0] + " " + parts[1]
 		}
@@ -437,7 +633,7 @@ func (c *Client) ScrapeAll(ctx context.Context, programs []Program, workers int,
 		go func() {
 			defer wg.Done()
 			for p := range jobs {
-				plan, err := c.Plan(ctx, p)
+				plan, err := c.plan(ctx, p, warn)
 				results <- result{plan, err, p.Code}
 			}
 		}()

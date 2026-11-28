@@ -29,20 +29,24 @@ func main() {
 	out := flag.String("out", "docs", "çıktı kök dizini")
 	workers := flag.Int("workers", 6, "eşzamanlı istek sayısı")
 	rps := flag.Float64("rps", 5, "saniyedeki istek üst sınırı")
-	only := flag.String("only", "", "yalnızca bu program kodunu çek (test için, örn. BLG_LS)")
+	only := flag.String("only", "", "yalnızca bu program kodlarını çek (virgülle, örn. CEN_LS,BLGE_LS)")
+	allVersions := flag.Bool("all-versions", true, "eski plan sürümlerini de çek (data/curriculum/versions/)")
+	minYear := flag.Int("min-version-year", 2015, "geçerliliği bu yılın Güz dönemine kadar biten eski sürümleri atla (0 = hepsi)")
 	flag.Parse()
 
-	if err := run(*out, *workers, *rps, *only); err != nil {
+	if err := run(*out, *workers, *rps, *only, *allVersions, *minYear); err != nil {
 		log.Fatalf("hata: %v", err)
 	}
 }
 
-func run(out string, workers int, rps float64, only string) error {
+func run(out string, workers int, rps float64, only string, allVersions bool, minYear int) error {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
 	f := fetch.New(rps, workers)
 	cc := curriculum.New(f)
+	cc.AllVersions = allVersions
+	cc.MinVersionYear = minYear
 	st := store.New(out)
 
 	programs, err := cc.Programs(ctx)
@@ -50,13 +54,7 @@ func run(out string, workers int, rps float64, only string) error {
 		return err
 	}
 	if only != "" {
-		var filtered []curriculum.Program
-		for _, p := range programs {
-			if p.Code == only {
-				filtered = append(filtered, p)
-			}
-		}
-		programs = filtered
+		programs = filterPrograms(programs, only)
 		if len(programs) == 0 {
 			return fmt.Errorf("%s programı bulunamadı", only)
 		}
@@ -80,7 +78,6 @@ func run(out string, workers int, rps float64, only string) error {
 	logf("%d/%d program taze çekildi; %d önceki başarılı plan korundu", len(fresh), len(programs), retained)
 
 	index := make([]map[string]string, 0, len(plans))
-	versions := map[string][]map[string]any{}
 	for _, p := range plans {
 		if err := st.WriteJSON(p, "data", "curriculum", p.ProgramCode+".json"); err != nil {
 			return err
@@ -88,9 +85,11 @@ func run(out string, workers int, rps float64, only string) error {
 		index = append(index, map[string]string{
 			"code": p.ProgramCode, "name": p.ProgramName, "faculty": p.Faculty, "level": p.Level,
 		})
-		if p.PlanID > 0 {
-			name := fmt.Sprintf("%s-%d.json", p.ProgramCode, p.PlanID)
-			if err := st.WriteJSON(p, "data", "curriculum", "versions", name); err != nil {
+		// Sürüm arşivi: en güncel sürümün kopyası (sürüm listesi olmadan) ve
+		// bu taramada çekilen eski sürümler data/curriculum/versions/ altında.
+		for _, v := range archiveCopies(p) {
+			name := fmt.Sprintf("%s-%d.json", v.ProgramCode, v.PlanID)
+			if err := st.WriteJSON(v, "data", "curriculum", "versions", name); err != nil {
 				return err
 			}
 		}
@@ -98,14 +97,83 @@ func run(out string, workers int, rps float64, only string) error {
 	if err := st.WriteJSON(index, "data", "curriculum", "index.json"); err != nil {
 		return err
 	}
-	// Arşiv, önceki başarılı taramaları korur. Böylece OBS yeni bir plan sürümü
-	// yayımladığında kullanıcı eski ve yeni müfredatı yan yana karşılaştırabilir.
-	entries, _ := os.ReadDir(filepath.Join(out, "data", "curriculum", "versions"))
+	// Arşiv önceki başarılı taramaları da korur: OBS bir sürümü listeden
+	// kaldırsa bile dosyası ve dizin satırı kalır.
+	versions, err := buildVersionIndex(filepath.Join(out, "data", "curriculum", "versions"), plans)
+	if err != nil {
+		return err
+	}
+	if err := st.WriteJSON(versions, "data", "curriculum", "versions", "index.json"); err != nil {
+		return err
+	}
+	logf("bitti")
+	return nil
+}
+
+// filterPrograms, virgülle ayrılmış kod listesine uyan programları bırakır.
+func filterPrograms(programs []curriculum.Program, only string) []curriculum.Program {
+	want := map[string]bool{}
+	for _, code := range strings.Split(only, ",") {
+		if code = strings.TrimSpace(code); code != "" {
+			want[code] = true
+		}
+	}
+	var out []curriculum.Program
+	for _, p := range programs {
+		if want[p.Code] {
+			out = append(out, p)
+		}
+	}
+	return out
+}
+
+// archiveCopies, bir programın versions/ altına yazılacak planlarını döndürür:
+// en güncel sürüm (sürüm listesi çıkarılmış kopya) ve eski sürümler.
+func archiveCopies(p *curriculum.Plan) []*curriculum.Plan {
+	var out []*curriculum.Plan
+	if p.PlanID > 0 {
+		latest := *p
+		latest.Versions = nil
+		latest.Older = nil
+		out = append(out, &latest)
+	}
+	for _, old := range p.Older {
+		if old != nil && old.PlanID > 0 {
+			out = append(out, old)
+		}
+	}
+	return out
+}
+
+// versionEntry, versions/index.json satırı.
+type versionEntry struct {
+	ID         int    `json:"id"`
+	Label      string `json:"label"`
+	ValidFrom  string `json:"validFrom,omitempty"`
+	ValidUntil string `json:"validUntil,omitempty"`
+	Latest     bool   `json:"latest,omitempty"`
+	File       string `json:"file"`
+	SourceURL  string `json:"sourceUrl"`
+}
+
+// buildVersionIndex, versions/ dizinindeki tüm arşiv dosyalarından program →
+// sürüm listesi dizinini kurar (en yeni ID önce). Latest, programın güncel
+// <PROG>.json dosyasındaki planId'dir.
+func buildVersionIndex(dir string, plans []*curriculum.Plan) (map[string][]versionEntry, error) {
+	latestID := map[string]int{}
+	for _, p := range plans {
+		latestID[p.ProgramCode] = p.PlanID
+	}
+	versions := map[string][]versionEntry{}
+	entries, err := os.ReadDir(dir)
+	if err != nil && !os.IsNotExist(err) {
+		return nil, err
+	}
 	for _, entry := range entries {
 		if entry.IsDir() || !strings.HasSuffix(entry.Name(), ".json") || entry.Name() == "index.json" {
 			continue
 		}
-		raw, err := os.ReadFile(filepath.Join(out, "data", "curriculum", "versions", entry.Name()))
+		raw, err := os.ReadFile(filepath.Join(dir, entry.Name()))
 		if err != nil {
 			continue
 		}
@@ -113,19 +181,20 @@ func run(out string, workers int, rps float64, only string) error {
 		if json.Unmarshal(raw, &archived) != nil || archived.ProgramCode == "" {
 			continue
 		}
-		versions[archived.ProgramCode] = append(versions[archived.ProgramCode], map[string]any{
-			"id": archived.PlanID, "label": archived.PlanLabel,
-			"file": "data/curriculum/versions/" + entry.Name(), "sourceUrl": archived.SourceURL,
+		from, until := archived.ValidFrom, archived.ValidUntil
+		if from == "" && until == "" {
+			from, until = curriculum.ParseValidity(archived.PlanLabel)
+		}
+		versions[archived.ProgramCode] = append(versions[archived.ProgramCode], versionEntry{
+			ID: archived.PlanID, Label: archived.PlanLabel, ValidFrom: from, ValidUntil: until,
+			Latest: archived.PlanID == latestID[archived.ProgramCode],
+			File:   "data/curriculum/versions/" + entry.Name(), SourceURL: archived.SourceURL,
 		})
 	}
 	for code := range versions {
-		sort.Slice(versions[code], func(i, j int) bool { return versions[code][i]["id"].(int) > versions[code][j]["id"].(int) })
+		sort.Slice(versions[code], func(i, j int) bool { return versions[code][i].ID > versions[code][j].ID })
 	}
-	if err := st.WriteJSON(versions, "data", "curriculum", "versions", "index.json"); err != nil {
-		return err
-	}
-	logf("bitti")
-	return nil
+	return versions, nil
 }
 
 func loadCurriculumPlans(dir string) ([]*curriculum.Plan, error) {

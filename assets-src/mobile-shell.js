@@ -160,11 +160,18 @@ function optionList(s, name, { grid = false } = {}) {
       <span class="mshell-r" aria-hidden="true"></span><span class="mshell-rt">${escHtml(o.textContent.trim())}</span></button>`).join('')}</div>`;
 }
 
+// Plan sürümü (#dp-ver): yalnız programın birden çok sürümü (seçeneği) varsa.
+function versionField() {
+  const s = sel('dp-ver');
+  if (!s || s.options.length < 2) return '';
+  return `<h3 class="mshell-field">${escHtml(t('mshPlanVersion'))}</h3>${optionList(s, t('mshPlanVersion'))}`;
+}
+
 function renderPicker() {
   return head(t('mshPickTitle')) + `<div class="mshell-sh-body">
     <h3 class="mshell-field">${escHtml(t('mshLevel'))}</h3>${optionList(sel('dp-level'), t('mshLevel'), { grid: true })}
     <h3 class="mshell-field">${escHtml(t('mshFaculty'))}</h3>${optionList(sel('dp-fac'), t('mshFaculty'))}
-    <h3 class="mshell-field">${escHtml(t('mshProgram'))}</h3>${optionList(sel('dp-prog'), t('mshProgram'))}
+    <h3 class="mshell-field">${escHtml(t('mshProgram'))}</h3>${optionList(sel('dp-prog'), t('mshProgram'))}${versionField()}
     <h3 class="mshell-field">${escHtml(t('mshTerm'))}</h3>${optionList(sel('dp-term'), t('mshTerm'))}
     </div><div class="mshell-sh-foot"><button type="button" class="mshell-apply" data-mshell-close>${escHtml(t('mshApply'))}</button></div>`;
 }
@@ -191,7 +198,10 @@ function syncProgramCard() {
   // Yalnız değişince yaz: MutationObserver kendi yazımızla döngüye girmesin.
   const setText = (q, v) => { const el = card.querySelector(q); if (el.textContent !== v) el.textContent = v; };
   setText('.mshell-prog-v', name);
-  setText('.mshell-prog-d', [selectedText(sel('dp-level')), selectedText(sel('dp-term'))].filter(Boolean).join(' · '));
+  // Eski bir plan sürümü seçiliyse (güncel ilk seçenektir) özet onu da söyler.
+  const ver = sel('dp-ver');
+  const verText = ver && ver.options.length > 1 && ver.selectedIndex > 0 ? selectedText(ver) : '';
+  setText('.mshell-prog-d', [selectedText(sel('dp-level')), selectedText(sel('dp-term')), verText].filter(Boolean).join(' · '));
 }
 
 function watchPlan() {

@@ -4522,11 +4522,15 @@ body.modal-open { overflow: hidden; }
 }
 #view-dersplanim .dp-pickcard { padding: 20px; }
 #view-dersplanim .dp-program-pick {
-  display: grid; grid-template-columns: 140px minmax(0, 1fr) minmax(0, 1.5fr) 190px;
+  display: grid; grid-template-columns: 140px minmax(0, 1fr) minmax(0, 1.5fr) 236px;
   gap: 12px; align-items: end; flex: none;
 }
 #view-dersplanim .dp-field { display: flex; flex-direction: column; align-items: stretch; gap: 4px; min-width: 0; width: auto; flex: none; }
 #view-dersplanim .dp-field-label { color: var(--dimmer); font-size: 12px; font-weight: 600; letter-spacing: 0; text-transform: none; }
+/* Plan sürümü seçici: yalnız programın birden çok sürümü varsa görünür; ikinci
+   satırda fakülte + program sütunlarının altında durur. */
+#view-dersplanim .dp-ver-pick { grid-column: 2 / 4; }
+#view-dersplanim .dp-ver-pick[hidden] { display: none; }
 #view-dersplanim .dp-field select {
   /* flex:none — .dp-fac-select/.dp-prog-select'in eski satır içi flex:1 1 0'ı
      dikey etikette yüksekliği 23px'e eziyordu; dört seçici aynı boyda kalır. */

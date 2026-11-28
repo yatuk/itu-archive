@@ -293,6 +293,9 @@ function dersplanimParams() {
   // URL'deki prog korunur — ?prog=X#dersplanim bağlantısı sıyrılmasın.
   const prog = $('#dp-prog')?.value || new URLSearchParams(location.search).get('prog') || '';
   if (prog) p.set('prog', prog);
+  // Plan sürümü yalnız eski sürüm seçiliyse yazılır (güncel = varsayılan).
+  const pv = $('#dp-ver');
+  if (prog && pv && pv.options.length > 1 && pv.selectedIndex > 0) p.set('pv', pv.value);
   if ($('#dp-open')?.checked) p.set('fopen', '1');
   if ($('#dp-cap')?.checked) p.set('fcap', '1');
   const sems = [...document.querySelectorAll('#dp-sems input:checked')].map((x) => x.value);

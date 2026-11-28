@@ -19,7 +19,7 @@ export function slugToCode(slug) { return String(slug || '').replace(/-/g, ' ');
 export const VIEW_PARAMS = {
   dersler: ['q', 'branch', 'day', 'time', 'level', 'method', 'program', 'code', 'open', 'sort', 'sdir'],
   onsart: ['prog', 'pool'],
-  dersplanim: ['prog', 'fopen', 'fcap', 'fsems', 'ftypes'],
+  dersplanim: ['prog', 'pv', 'fopen', 'fcap', 'fsems', 'ftypes'],
   takvim: ['year', 'caltype', 'upcoming'],
   gecmis: ['hq'],
   sinavlar: ['eq', 'etype', 'building', 'ebranch'],

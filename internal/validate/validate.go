@@ -704,6 +704,44 @@ func (r *Result) checkCurriculum(root string) {
 			r.warnf("curriculum: %q hiç dönem içermiyor", code)
 		}
 		r.checkPlanItems(code, &plan)
+		r.checkPlanVersions(root, code, &plan)
+	}
+}
+
+// checkPlanVersions, güncel plan dosyasındaki sürüm listesinin tutarlılığını
+// ve eski sürümlerin arşiv dosyalarını (data/curriculum/versions/) denetler.
+func (r *Result) checkPlanVersions(root, code string, plan *curriculum.Plan) {
+	if len(plan.Versions) == 0 {
+		return
+	}
+	latest := 0
+	for _, v := range plan.Versions {
+		if v.Latest {
+			latest++
+			if v.PlanID != plan.PlanID {
+				r.errf("curriculum: %q: güncel sürüm %d, dosyanın planId'si %d", code, v.PlanID, plan.PlanID)
+			}
+			continue
+		}
+		if v.File != curriculum.VersionFile(code, v.PlanID) {
+			r.errf("curriculum: %q: sürüm %d dosya yolu %q beklenmiyor", code, v.PlanID, v.File)
+			continue
+		}
+		var old curriculum.Plan
+		if err := readJSON(filepath.Join(root, filepath.FromSlash(v.File)), &old); err != nil {
+			r.errf("curriculum: %q: sürüm dosyası %s yok/bozuk", code, v.File)
+			continue
+		}
+		if old.ProgramCode != code || old.PlanID != v.PlanID {
+			r.errf("curriculum: %s içindeki program/sürüm (%q/%d) uyuşmuyor", v.File, old.ProgramCode, old.PlanID)
+		}
+		if len(old.Semesters) == 0 {
+			r.warnf("curriculum: %s hiç dönem içermiyor", v.File)
+		}
+		r.checkPlanItems(fmt.Sprintf("%s@%d", code, v.PlanID), &old)
+	}
+	if latest != 1 {
+		r.errf("curriculum: %q: sürüm listesinde %d güncel sürüm (1 beklenir)", code, latest)
 	}
 }
 

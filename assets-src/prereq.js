@@ -21,6 +21,7 @@ import { isTaken, TAKEN_CHANGED } from './core/taken.js?v=dde1e9339338';
 import { readLocalState, writeLocalState, isPlainObject } from './core/persistence.js?v=dde1e9339338';
 import { I18N } from './i18n.js?v=dde1e9339338';
 import { courseProgress, readAllGrades, lastGradesProgram, gradeRank } from './core/passed.js?v=dde1e9339338';
+import { planVersions, versionFile } from './core/planversions.js';
 
   // Düğüm detay paneli (ders önşart ağacı / seçmeli havuz listesi) React'te —
   // akış şemasının kendisi (canvas çizimi, sürükleme, yakınlaştırma) kasten
@@ -1248,10 +1249,11 @@ import { courseProgress, readAllGrades, lastGradesProgram, gradeRank } from './c
     const statusEl = root.querySelector('.pg-status');
     statusEl.textContent = I18N.t('pgLoadingCurriculum');
     statusEl.classList.add('busy');
-    const [plan, g] = await Promise.all([
+    const [latest, g] = await Promise.all([
       fetch(`data/curriculum/${code}.json`).then((r) => r.json()),
       reqByCode ? Promise.resolve(null) : fetch('data/prereq/graph.json').then((r) => r.json()),
     ]);
+    const plan = await chosenVersionPlan(code, latest);
     if (g) {
       reqByCode = { edges: g.edges, req: new Map(g.nodes.filter((n) => n.requirement).map((n) => [n.code, n.requirement])) };
     }
@@ -1266,6 +1268,28 @@ import { courseProgress, readAllGrades, lastGradesProgram, gradeRank } from './c
     renderMobileExplorer(root, plan, graph);
     applyProgress(root);
     statusEl.classList.remove('busy');
+  }
+
+  // "Müfredat ve GPA"da bu program için eski bir plan sürümü seçildiyse
+  // (planstore: planVersion) harita da o sürümü gösterir; yoksa güncel sürüm.
+  let shownVersion = { program: '', planId: 0 };
+  function storedPlanVersion(code) {
+    return Number(readAllGrades()[code]?.planVersion) || 0;
+  }
+  async function chosenVersionPlan(code, latest) {
+    const want = storedPlanVersion(code);
+    const v = want ? planVersions(latest).find((x) => x.planId === want && !x.latest) : null;
+    shownVersion = { program: code, planId: 0 };
+    if (!v) return latest;
+    try {
+      const r = await fetch(versionFile(code, v));
+      if (!r.ok) throw new Error(String(r.status));
+      const plan = await r.json();
+      shownVersion = { program: code, planId: v.planId };
+      return plan;
+    } catch {
+      return latest;
+    }
   }
 
   // Planda olmayan koda bağlı önşartları özetleyen amber not (maket: .warnbox).
@@ -1496,6 +1520,11 @@ import { courseProgress, readAllGrades, lastGradesProgram, gradeRank } from './c
         history.replaceState(null, '', `?prog=${encodeURIComponent(now)}#onsart`);
         return;
       }
+    }
+    // Aynı programın plan sürümü Müfredat'ta değiştiyse haritayı yeniden kur.
+    if (sel && sel.value && sel.value === shownVersion.program && storedPlanVersion(sel.value) !== shownVersion.planId) {
+      selectProgram(root, sel.value);
+      return;
     }
     if (graph && graph.nodes) applyProgress(root);
   }

@@ -1,0 +1,1939 @@
+{
+ "planId": 232,
+ "programCode": "EHB_LS",
+ "programName": "Elektronik ve Haberleşme Mühendisliği Lisans",
+ "faculty": "Elektrik - Elektronik Fakültesi",
+ "level": "LS",
+ "planLabel": "Elektronik ve Haberleşme Mühendisliği Lisans Programı 2017-2018 / Güz Dönemi Öncesi",
+ "sourceUrl": "https://obs.itu.edu.tr/public/DersPlan/DersPlanDetay/232",
+ "totalCredits": "154,50",
+ "totalEcts": "241,50",
+ "validUntil": "2017-2018 Güz",
+ "semesters": [
+  {
+   "title": "1. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ETK 101",
+      "name": "Mühendislik Etiği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "theory": 1,
+      "type": "ITB"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 111",
+      "name": "Elektronik ve Haberleşme Mühendisliğine Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "theory": 1,
+      "type": "MT"
+     }
+    },
+    {
+     "course": {
+      "code": "FIZ 101",
+      "name": "Fizik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "",
+      "name": "Fizik I Lab",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "KIM 101",
+      "name": "Genel Kimya I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "",
+      "name": "Genel Kimya I Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1.5,
+      "lab": 2,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 281",
+      "name": "Lineer Cebir ve Uygulamaları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 281E",
+      "name": "Linear Algebra and Applicat.",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 101E",
+      "name": "Mathematics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 6.5,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 101",
+      "name": "Türk Dili I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course I",
+      "groupId": "1915",
+      "credits": "3",
+      "ects": [
+       3.5
+      ],
+      "options": [
+       {
+        "code": "ING 101",
+        "name": "English I"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "2. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "FIZ 106",
+      "name": "Fizik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "",
+      "name": "Fizik II Laboratuvarı",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 1,
+      "lab": 2,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 101E",
+      "name": "Int to Comp and Inf Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 1.5,
+      "ects": 2.5,
+      "theory": 1,
+      "lab": 1,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "MAL 201",
+      "name": "Malzeme Bilimi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 102E",
+      "name": "Mathematics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 5,
+      "ects": 7,
+      "theory": 4,
+      "tutorial": 2,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271",
+      "name": "Olasılık ve İstatistik",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 271E",
+      "name": "Probability and Statistics",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "TUR 102",
+      "name": "Türk Dili II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
+     }
+    },
+    {
+     "elective": {
+      "title": "English Course II",
+      "groupId": "1917",
+      "credits": "3",
+      "ects": [
+       3.5,
+       4
+      ],
+      "options": [
+       {
+        "code": "ING 103H",
+        "name": "Public Presentations"
+       },
+       {
+        "code": "ING 103G",
+        "name": "Business Communications"
+       },
+       {
+        "code": "ING 103P",
+        "name": "Poetry"
+       },
+       {
+        "code": "ING 103B",
+        "name": "Business English"
+       },
+       {
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
+       },
+       {
+        "code": "ING 103O",
+        "name": "Psychology"
+       },
+       {
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "ING 102",
+        "name": "English II"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "3. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "MAT 201",
+      "name": "Diferansiyel Denklemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 4,
+      "ects": 5.5,
+      "theory": 4,
+      "type": "TB"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 211",
+      "name": "Elektrik Devre Temelleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 211E",
+      "name": "Basics of Electrical Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "ING 201",
+      "name": "English III",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 3.5,
+      "theory": 3,
+      "type": "EC"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 231",
+      "name": "Elektronik I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 231E",
+      "name": "Electronics I",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "BIL 105E",
+      "name": "Int to Scientific and Engineering Computing (C)",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 2,
+      "tutorial": 2,
+      "type": "TM"
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Seçime Bağlı Ders (TB)",
+      "groupId": "1919",
+      "credits": "3",
+      "ects": [
+       2,
+       4.5,
+       5,
+       6
+      ],
+      "options": [
+       {
+        "code": "BLG 112E",
+        "name": "Discrete Mathematics"
+       },
+       {
+        "code": "MAT 205E",
+        "name": "Theory of Complex Functions"
+       },
+       {
+        "code": "MAT 206E",
+        "name": "Fuzzy Mathematics"
+       },
+       {
+        "code": "MAT 301E",
+        "name": "Partial Differantial Equations"
+       },
+       {
+        "code": "FIZ 201E",
+        "name": "Modern Physics"
+       },
+       {
+        "code": "MAT 495E",
+        "name": "Basic Algebraic Topology"
+       },
+       {
+        "code": "MAT 106E",
+        "name": "Analytic Geometry and Vector Calculation"
+       },
+       {
+        "code": "MAT 447E",
+        "name": "Integral Equations"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "3.yy Seçime Bağlı Ders (ITB)",
+      "groupId": "1920",
+      "credits": "3",
+      "ects": [
+       4
+      ],
+      "options": [
+       {
+        "code": "SNT 105E",
+        "name": "Film Art"
+       },
+       {
+        "code": "SNT 101E",
+        "name": "Looking at the Art of Sculpture"
+       },
+       {
+        "code": "SNT 106E",
+        "name": "Traditional Turkish Art&Crafts"
+       },
+       {
+        "code": "SNT 103E",
+        "name": "Drawing"
+       },
+       {
+        "code": "SNT 108E",
+        "name": "Ceramic"
+       },
+       {
+        "code": "SNT 109",
+        "name": "Kazı Resim (Gravür)"
+       },
+       {
+        "code": "SNT 114E",
+        "name": "Contemporary Art"
+       },
+       {
+        "code": "SNT 119E",
+        "name": "History of Popular Music"
+       },
+       {
+        "code": "SNT 226E",
+        "name": "Philosophy of Art"
+       },
+       {
+        "code": "SNT 115E",
+        "name": "Modernity and Visual Culture"
+       },
+       {
+        "code": "SNT 122",
+        "name": "Seramik Sanatı"
+       },
+       {
+        "code": "SNT 214E",
+        "name": "Performance, Music and Dance"
+       },
+       {
+        "code": "SNT 227E",
+        "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 111",
+        "name": "Moda Tasarımı ve Sanat"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 213",
+        "name": "Türkiye Müzik Kültürleri"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 118",
+        "name": "Müzik Arkeolojisi"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
+       },
+       {
+        "code": "SNT 228",
+        "name": "Müzik ve Politika"
+       },
+       {
+        "code": "SNT 229",
+        "name": "Türkiye'de Popüler Müzik Tarihinden İzlekler"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "4. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "EHB 232",
+      "name": "Devre ve Sistem Analizi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 212",
+      "name": "Elektromagnetik Alanlara Giriş",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 212E",
+      "name": "Intr.to Electromagnetic Fields",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 262",
+      "name": "Elektronik II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 262E",
+      "name": "Electronics II",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 252",
+      "name": "İşaretler ve Sistemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 252E",
+      "name": "Signals and Systems",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 221",
+      "name": "Elektrik Devre Temelleri Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 2,
+      "lab": 2,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 221",
+      "name": "Veri Yapıları",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
+     }
+    },
+    {
+     "course": {
+      "code": "MAT 202",
+      "name": "Sayısal Yöntemler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TB"
+     }
+    }
+   ]
+  },
+  {
+   "title": "5. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "EHB 311",
+      "name": "Elektroniğe Giriş Lab.",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 1,
+      "ects": 3,
+      "lab": 2,
+      "type": "MT"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 313",
+      "name": "Elektromagnetik Dalgalar",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 313E",
+      "name": "Electromagnetic Waves",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 231",
+      "name": "Sayısal Devreler",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "BLG 231E",
+      "name": "Digital Circuits",
+      "language": "English",
+      "required": "Z",
+      "credits": 3,
+      "ects": 4.5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 351",
+      "name": "Analog Haberleşme",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "MT"
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders I(MT)",
+      "groupId": "1923",
+      "credits": "3",
+      "ects": [
+       6
+      ],
+      "options": [
+       {
+        "code": "EHB 315E",
+        "name": "Digital Signal Processing"
+       },
+       {
+        "code": "EHB 335E",
+        "name": "Analog Electronic Circuits"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders II (MT)",
+      "groupId": "1924",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       7
+      ],
+      "options": [
+       {
+        "code": "ELK 331E",
+        "name": "Power Electronic Circuits"
+       },
+       {
+        "code": "ELK 341E",
+        "name": "Electrical Machines I"
+       },
+       {
+        "code": "BLG 212E",
+        "name": "Microprocessor Systems"
+       },
+       {
+        "code": "EHB 315E",
+        "name": "Digital Signal Processing"
+       },
+       {
+        "code": "EHB 335E",
+        "name": "Analog Electronic Circuits"
+       },
+       {
+        "code": "EHB 420E",
+        "name": "Artificial Neural Networks"
+       },
+       {
+        "code": "EHB 477E",
+        "name": "Fundm.of Electrmgn.Compt."
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "6. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "EHB 362",
+      "name": "Mikrodalga Mühendisliği",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 6,
+      "theory": 3,
+      "type": "MT"
+     }
+    },
+    {
+     "course": {
+      "code": "KON 317",
+      "name": "Otomatik Kontrol Sistemleri",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 5,
+      "theory": 3,
+      "type": "TM"
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders I (MT)",
+      "groupId": "1928",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
+      "options": [
+       {
+        "code": "EHB 322E",
+        "name": "Digital Electronic Circuits"
+       },
+       {
+        "code": "EHB 481E",
+        "name": "Des.&Applic.of Basic Comm.Sys."
+       },
+       {
+        "code": "EHB 352E",
+        "name": "Digital Communications"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders II (MT)",
+      "groupId": "1930",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
+      "options": [
+       {
+        "code": "EHB 332E",
+        "name": "Network Synthesis"
+       },
+       {
+        "code": "EHB 372E",
+        "name": "Digital Signal Processing Design and Applications"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders III (MT)",
+      "groupId": "1932",
+      "credits": "1",
+      "ects": [
+       2,
+       4
+      ],
+      "options": [
+       {
+        "code": "EHB 412E",
+        "name": "Sayısal Sistem Laboratuarı"
+       },
+       {
+        "code": "EHB 312E",
+        "name": "Analog Elec. Circuits Lab."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Courses (MT)",
+      "groupId": "1933",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       7
+      ],
+      "options": [
+       {
+        "code": "BLG 212E",
+        "name": "Microprocessor Systems"
+       },
+       {
+        "code": "BLG 252E",
+        "name": "Object Oriented Programming"
+       },
+       {
+        "code": "EHB 322E",
+        "name": "Digital Electronic Circuits"
+       },
+       {
+        "code": "EHB 352E",
+        "name": "Digital Communications"
+       },
+       {
+        "code": "EHB 475E",
+        "name": "Digital Speech Processing"
+       },
+       {
+        "code": "EHB 474E",
+        "name": "Introduction to Optimization"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "6.yy Seçime Bağlı Ders (TM )",
+      "groupId": "1934",
+      "credits": "3",
+      "ects": [
+       4,
+       4.5,
+       5,
+       6
+      ],
+      "options": [
+       {
+        "code": "ELK 234E",
+        "name": "Thermodynamics &Hydrodynamics"
+       },
+       {
+        "code": "ELK 214E",
+        "name": "Fund.of Electr. Energy Conver."
+       },
+       {
+        "code": "BLG 368E",
+        "name": "Operations Research"
+       },
+       {
+        "code": "STA 201E",
+        "name": "Statics"
+       },
+       {
+        "code": "STA 204E",
+        "name": "Statics&Strength of Materials"
+       },
+       {
+        "code": "KON 224E",
+        "name": "Measurement&Instrumentation"
+       },
+       {
+        "code": "DNK 201E",
+        "name": "Dynamics"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "7. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 101",
+      "name": "Atatürk İlk & İnkılap Trh I",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders III (MT)",
+      "groupId": "1941",
+      "credits": "3",
+      "ects": [
+       6,
+       7
+      ],
+      "options": [
+       {
+        "code": "ELK 336E",
+        "name": "Quantum Computation"
+       },
+       {
+        "code": "BLG 212E",
+        "name": "Microprocessor Systems"
+       },
+       {
+        "code": "EHB 481E",
+        "name": "Des.&Applic.of Basic Comm.Sys."
+       },
+       {
+        "code": "EHB 326E",
+        "name": "Intr.to Embedded Systems"
+       },
+       {
+        "code": "EHB 328E",
+        "name": "Machine Learning for Sig.Proc."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders I (MT)",
+      "groupId": "1942",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       7
+      ],
+      "options": [
+       {
+        "code": "ELK 331E",
+        "name": "Power Electronic Circuits"
+       },
+       {
+        "code": "ELK 336E",
+        "name": "Quantum Computation"
+       },
+       {
+        "code": "ELK 341E",
+        "name": "Electrical Machines I"
+       },
+       {
+        "code": "BLG 212E",
+        "name": "Microprocessor Systems"
+       },
+       {
+        "code": "BLG 441E",
+        "name": "Real-Time System Design by Digital Signal Processors"
+       },
+       {
+        "code": "KON 424E",
+        "name": "Mod.&Cntrl of Biological Sys."
+       },
+       {
+        "code": "EHB 424E",
+        "name": "Ultrasound and Applications in Medicine"
+       },
+       {
+        "code": "EHB 436E",
+        "name": "Digital System Design Applic."
+       },
+       {
+        "code": "EHB 315E",
+        "name": "Digital Signal Processing"
+       },
+       {
+        "code": "EHB 453E",
+        "name": "Intr.to Mobile Communications"
+       },
+       {
+        "code": "EHB 405E",
+        "name": "Analog Integrated Circuits"
+       },
+       {
+        "code": "EHB 415E",
+        "name": "Data Communications"
+       },
+       {
+        "code": "EHB 443E",
+        "name": "CMOS RF Circuit Design"
+       },
+       {
+        "code": "EHB 326E",
+        "name": "Intr.to Embedded Systems"
+       },
+       {
+        "code": "EHB 421E",
+        "name": "Introduction to Medical Electronics"
+       },
+       {
+        "code": "EHB 422E",
+        "name": "The Origin and Sensing Methods of Biological Signals"
+       },
+       {
+        "code": "EHB 335E",
+        "name": "Analog Electronic Circuits"
+       },
+       {
+        "code": "EHB 420E",
+        "name": "Artificial Neural Networks"
+       },
+       {
+        "code": "EHB 473E",
+        "name": "Microwave and RF Communication"
+       },
+       {
+        "code": "EHB 419E",
+        "name": "Digital System Design"
+       },
+       {
+        "code": "EHB 454E",
+        "name": "Communication Theory"
+       },
+       {
+        "code": "EHB 458E",
+        "name": "Microwave Measurement Methods and Applications"
+       },
+       {
+        "code": "EHB 456E",
+        "name": "Antennas"
+       },
+       {
+        "code": "EHB 328E",
+        "name": "Machine Learning for Sig.Proc."
+       },
+       {
+        "code": "EHB 413E",
+        "name": "VLSI Circuit Design I"
+       },
+       {
+        "code": "EHB 442E",
+        "name": "Semiconductor Devices"
+       },
+       {
+        "code": "EHB 477E",
+        "name": "Fundm.of Electrmgn.Compt."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Courses (MT)",
+      "groupId": "1943",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
+      "options": [
+       {
+        "code": "ELK 336E",
+        "name": "Quantum Computation"
+       },
+       {
+        "code": "ELK 341E",
+        "name": "Electrical Machines I"
+       },
+       {
+        "code": "BLG 252E",
+        "name": "Object Oriented Programming"
+       },
+       {
+        "code": "EHB 414E",
+        "name": "Microelectronic Analog Circuit Design"
+       },
+       {
+        "code": "EHB 418E",
+        "name": "RF Electronics Applications"
+       },
+       {
+        "code": "EHB 416E",
+        "name": "High Frequency Electronics"
+       },
+       {
+        "code": "EHB 469E",
+        "name": "Introduction to Multimedia"
+       },
+       {
+        "code": "EHB 405E",
+        "name": "Analog Integrated Circuits"
+       },
+       {
+        "code": "EHB 417E",
+        "name": "RF Microelectronics"
+       },
+       {
+        "code": "EHB 326E",
+        "name": "Intr.to Embedded Systems"
+       },
+       {
+        "code": "EHB 328E",
+        "name": "Machine Learning for Sig.Proc."
+       },
+       {
+        "code": "EHB 451E",
+        "name": "Active Microwave Circuits"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders II (MT)",
+      "groupId": "1944",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       7
+      ],
+      "options": [
+       {
+        "code": "ELK 331E",
+        "name": "Power Electronic Circuits"
+       },
+       {
+        "code": "ELK 336E",
+        "name": "Quantum Computation"
+       },
+       {
+        "code": "ELK 341E",
+        "name": "Electrical Machines I"
+       },
+       {
+        "code": "BLG 212E",
+        "name": "Microprocessor Systems"
+       },
+       {
+        "code": "BLG 441E",
+        "name": "Real-Time System Design by Digital Signal Processors"
+       },
+       {
+        "code": "KON 424E",
+        "name": "Mod.&Cntrl of Biological Sys."
+       },
+       {
+        "code": "EHB 424E",
+        "name": "Ultrasound and Applications in Medicine"
+       },
+       {
+        "code": "EHB 436E",
+        "name": "Digital System Design Applic."
+       },
+       {
+        "code": "EHB 315E",
+        "name": "Digital Signal Processing"
+       },
+       {
+        "code": "EHB 453E",
+        "name": "Intr.to Mobile Communications"
+       },
+       {
+        "code": "EHB 405E",
+        "name": "Analog Integrated Circuits"
+       },
+       {
+        "code": "EHB 415E",
+        "name": "Data Communications"
+       },
+       {
+        "code": "EHB 443E",
+        "name": "CMOS RF Circuit Design"
+       },
+       {
+        "code": "EHB 326E",
+        "name": "Intr.to Embedded Systems"
+       },
+       {
+        "code": "EHB 421E",
+        "name": "Introduction to Medical Electronics"
+       },
+       {
+        "code": "EHB 422E",
+        "name": "The Origin and Sensing Methods of Biological Signals"
+       },
+       {
+        "code": "EHB 335E",
+        "name": "Analog Electronic Circuits"
+       },
+       {
+        "code": "EHB 420E",
+        "name": "Artificial Neural Networks"
+       },
+       {
+        "code": "EHB 473E",
+        "name": "Microwave and RF Communication"
+       },
+       {
+        "code": "EHB 419E",
+        "name": "Digital System Design"
+       },
+       {
+        "code": "EHB 454E",
+        "name": "Communication Theory"
+       },
+       {
+        "code": "EHB 458E",
+        "name": "Microwave Measurement Methods and Applications"
+       },
+       {
+        "code": "EHB 456E",
+        "name": "Antennas"
+       },
+       {
+        "code": "EHB 328E",
+        "name": "Machine Learning for Sig.Proc."
+       },
+       {
+        "code": "EHB 413E",
+        "name": "VLSI Circuit Design I"
+       },
+       {
+        "code": "EHB 442E",
+        "name": "Semiconductor Devices"
+       },
+       {
+        "code": "EHB 477E",
+        "name": "Fundm.of Electrmgn.Compt."
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "7.yy Elective Course (ITB)",
+      "groupId": "1945",
+      "credits": "3",
+      "ects": [
+       4
+      ],
+      "options": [
+       {
+        "code": "ISL 478E",
+        "name": "Entrepreneurship"
+       },
+       {
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
+       },
+       {
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
+       },
+       {
+        "code": "ING 103SC",
+        "name": "Science Communication"
+       },
+       {
+        "code": "HUK 214E",
+        "name": "Protection of Technological Innovations"
+       },
+       {
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
+       },
+       {
+        "code": "HUK 213E",
+        "name": "Occupational Safety and Health Law"
+       },
+       {
+        "code": "ITB 037E",
+        "name": "Knowledge, Language & Logic"
+       },
+       {
+        "code": "ITB 087E",
+        "name": "Media and Society"
+       },
+       {
+        "code": "ITB 094E",
+        "name": "International.Rel.and Globali."
+       },
+       {
+        "code": "ITB 095E",
+        "name": "Technology, Policy and Law"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218E",
+        "name": "Commercial Law"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
+       },
+       {
+        "code": "ITB 151E",
+        "name": "Human Resources and Management"
+       },
+       {
+        "code": "ITB 228E",
+        "name": "Gender Studies"
+       },
+       {
+        "code": "ITB 206E",
+        "name": "Issues in World Politics"
+       },
+       {
+        "code": "ITB 207E",
+        "name": "Ottoman History"
+       },
+       {
+        "code": "ITB 209E",
+        "name": "Türkiye in World Affairs"
+       },
+       {
+        "code": "ITB 217E",
+        "name": "Engineering Ethics"
+       },
+       {
+        "code": "ITB 233E",
+        "name": "Anthropology"
+       },
+       {
+        "code": "ITB 203E",
+        "name": "Sociology"
+       },
+       {
+        "code": "ITB 230E",
+        "name": "Disaster Awareness"
+       },
+       {
+        "code": "ITB 231E",
+        "name": "Volunteering Studies"
+       },
+       {
+        "code": "ITB 234E",
+        "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "ITB 235E",
+        "name": "Türkiye and EuropeanUnion"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "title": "8. Yarıyıl",
+   "items": [
+    {
+     "course": {
+      "code": "ATA 102",
+      "name": "Atatürk İlk & İnkılap Trh II",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 2,
+      "ects": 2,
+      "theory": 2,
+      "type": "ITB"
+     }
+    },
+    {
+     "course": {
+      "code": "EHB 492",
+      "name": "Bitirme Projesi",
+      "language": "Türkçe",
+      "required": "Z",
+      "credits": 3,
+      "ects": 12,
+      "lab": 6,
+      "type": "MT"
+     }
+    },
+    {
+     "elective": {
+      "title": "8.yy Seçimli Ders (ITB)",
+      "groupId": "1951",
+      "credits": "3",
+      "ects": [
+       4
+      ],
+      "options": [
+       {
+        "code": "HUK 201E",
+        "name": "Labor Law"
+       },
+       {
+        "code": "EKO 201E",
+        "name": "Economics"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders I (MT)",
+      "groupId": "1952",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       7
+      ],
+      "options": [
+       {
+        "code": "ELK 336E",
+        "name": "Quantum Computation"
+       },
+       {
+        "code": "BLG 212E",
+        "name": "Microprocessor Systems"
+       },
+       {
+        "code": "EHB 434E",
+        "name": "Nonlinear Circuits and Systems"
+       },
+       {
+        "code": "EHB 322E",
+        "name": "Digital Electronic Circuits"
+       },
+       {
+        "code": "EHB 332E",
+        "name": "Network Synthesis"
+       },
+       {
+        "code": "EHB 428E",
+        "name": "Industrial Electronics"
+       },
+       {
+        "code": "EHB 437E",
+        "name": "Biomedical Devices"
+       },
+       {
+        "code": "EHB 438E",
+        "name": "Fundamentals of Medical Electronics Design"
+       },
+       {
+        "code": "EHB 440E",
+        "name": "Comp.Aided Devices in Medicine"
+       },
+       {
+        "code": "EHB 431E",
+        "name": "Design & Appl.Digital Com.Sys."
+       },
+       {
+        "code": "EHB 433E",
+        "name": "Digital Filters and Systems"
+       },
+       {
+        "code": "EHB 435E",
+        "name": "Engineering Systems Analysis"
+       },
+       {
+        "code": "EHB 443E",
+        "name": "CMOS RF Circuit Design"
+       },
+       {
+        "code": "EHB 352E",
+        "name": "Digital Communications"
+       },
+       {
+        "code": "EHB 464E",
+        "name": "Satellite Communications"
+       },
+       {
+        "code": "EHB 425E",
+        "name": "VLSI Circuit Design II"
+       },
+       {
+        "code": "EHB 427E",
+        "name": "Microelectronics Technology"
+       },
+       {
+        "code": "EHB 430E",
+        "name": "Radio-Television Systems"
+       },
+       {
+        "code": "EHB 467E",
+        "name": "Radar Systems"
+       },
+       {
+        "code": "EHB 468E",
+        "name": "Principles of Electromagnetic Compatibility Measurements"
+       },
+       {
+        "code": "EHB 466E",
+        "name": "Remote Sensing"
+       },
+       {
+        "code": "EHB 445E",
+        "name": "Medical Instrumentation,Design and Applications"
+       },
+       {
+        "code": "EHB 463E",
+        "name": "Communication Systems"
+       },
+       {
+        "code": "EHB 471E",
+        "name": "Advanced Electronic Circuit Design. and Applications"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Seçimli Ders II (MT)",
+      "groupId": "1953",
+      "credits": "3",
+      "ects": [
+       5,
+       6,
+       7
+      ],
+      "options": [
+       {
+        "code": "ELK 336E",
+        "name": "Quantum Computation"
+       },
+       {
+        "code": "BLG 212E",
+        "name": "Microprocessor Systems"
+       },
+       {
+        "code": "EHB 434E",
+        "name": "Nonlinear Circuits and Systems"
+       },
+       {
+        "code": "EHB 322E",
+        "name": "Digital Electronic Circuits"
+       },
+       {
+        "code": "EHB 332E",
+        "name": "Network Synthesis"
+       },
+       {
+        "code": "EHB 428E",
+        "name": "Industrial Electronics"
+       },
+       {
+        "code": "EHB 437E",
+        "name": "Biomedical Devices"
+       },
+       {
+        "code": "EHB 438E",
+        "name": "Fundamentals of Medical Electronics Design"
+       },
+       {
+        "code": "EHB 440E",
+        "name": "Comp.Aided Devices in Medicine"
+       },
+       {
+        "code": "EHB 431E",
+        "name": "Design & Appl.Digital Com.Sys."
+       },
+       {
+        "code": "EHB 433E",
+        "name": "Digital Filters and Systems"
+       },
+       {
+        "code": "EHB 435E",
+        "name": "Engineering Systems Analysis"
+       },
+       {
+        "code": "EHB 443E",
+        "name": "CMOS RF Circuit Design"
+       },
+       {
+        "code": "EHB 352E",
+        "name": "Digital Communications"
+       },
+       {
+        "code": "EHB 464E",
+        "name": "Satellite Communications"
+       },
+       {
+        "code": "EHB 425E",
+        "name": "VLSI Circuit Design II"
+       },
+       {
+        "code": "EHB 427E",
+        "name": "Microelectronics Technology"
+       },
+       {
+        "code": "EHB 430E",
+        "name": "Radio-Television Systems"
+       },
+       {
+        "code": "EHB 467E",
+        "name": "Radar Systems"
+       },
+       {
+        "code": "EHB 468E",
+        "name": "Principles of Electromagnetic Compatibility Measurements"
+       },
+       {
+        "code": "EHB 466E",
+        "name": "Remote Sensing"
+       },
+       {
+        "code": "EHB 445E",
+        "name": "Medical Instrumentation,Design and Applications"
+       },
+       {
+        "code": "EHB 463E",
+        "name": "Communication Systems"
+       },
+       {
+        "code": "EHB 471E",
+        "name": "Advanced Electronic Circuit Design. and Applications"
+       }
+      ]
+     }
+    },
+    {
+     "elective": {
+      "title": "Elective Courses (MT)",
+      "groupId": "1954",
+      "credits": "3",
+      "ects": [
+       5,
+       6
+      ],
+      "options": [
+       {
+        "code": "ELK 336E",
+        "name": "Quantum Computation"
+       },
+       {
+        "code": "EHB 322E",
+        "name": "Digital Electronic Circuits"
+       },
+       {
+        "code": "EHB 426E",
+        "name": "Microelectr.Analog Syst.Design"
+       },
+       {
+        "code": "EHB 432E",
+        "name": "Microprocessor System Design"
+       },
+       {
+        "code": "EHB 334E",
+        "name": "Random Signals and Noise"
+       },
+       {
+        "code": "EHB 352E",
+        "name": "Digital Communications"
+       },
+       {
+        "code": "EHB 464E",
+        "name": "Satellite Communications"
+       },
+       {
+        "code": "EHB 465E",
+        "name": "Fiberoptic Com. Systems"
+       },
+       {
+        "code": "EHB 408E",
+        "name": "Wireless Com.Networks"
+       },
+       {
+        "code": "EHB 429E",
+        "name": "Communication Electronic Circuits"
+       },
+       {
+        "code": "EHB 466E",
+        "name": "Remote Sensing"
+       },
+       {
+        "code": "EHB 475E",
+        "name": "Digital Speech Processing"
+       },
+       {
+        "code": "EHB 474E",
+        "name": "Introduction to Optimization"
+       },
+       {
+        "code": "EHB 472E",
+        "name": "Image Processing Fundamentals"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

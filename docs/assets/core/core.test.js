@@ -27,6 +27,7 @@ import { parseOBSTranscript, transcriptLatest, transcriptCountedAttempts, transc
 import { versionedKey, readLocalState, writeLocalState, isPlainObject } from './persistence.js';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from './backup.js';
 import { buildBalancedPlan } from './planner.js';
+import { termKey, firstTranscriptTerm, planVersions, pickPlanVersion, versionFile, versionLabel, termText } from './planversions.js';
 import { parseSessions, candidatesByCode, evaluate, findAlternatives, presetPrefs, WEEKDAYS } from './altfind.js';
 import { campusForLocation, isRemoteMethod, minimumTransitionMinutes, transitionIssue } from './campus.js';
 import { specialSectionKind } from './section-kind.js';
@@ -2463,4 +2464,98 @@ DDD 202 Synthetic AA 3,00 AA`);
   // Bilinmeyen durum adı saklanmaz.
   const odd = mergeTranscriptMatch({}, matchTranscriptToPlan(plan, parsed.records), { standing: [{ term: 'X', status: 'Bilinmeyen' }] });
   assert.equal(odd.transcript.standing, undefined);
+});
+
+// Plan sürümleri (core/planversions.js): sentetik, CEN_LS biçimli sürüm listesi.
+const SYNTH_VERSIONS = [
+  { planId: 1635, label: 'Örnek 2021-2022 / Güz ile 2026-2027/ Güz Dönemleri Arası', validFrom: '2021-2022 Güz', validUntil: '2026-2027 Güz', file: 'data/curriculum/versions/CEN_LS-1635.json' },
+  { planId: 2729, label: 'Örnek 2026-2027/ Güz Dönemi Sonrası', validFrom: '2026-2027 Güz', file: 'data/curriculum/versions/CEN_LS-2729.json', latest: true },
+];
+
+test('plan sürümü: dönem anahtarı Güz < Bahar < Yaz ve EN/TR dönem biçimleri', () => {
+  assert.ok(termKey('2023-2024 / Güz') < termKey('2023-2024 / Bahar'));
+  assert.ok(termKey('2023-2024 Bahar') < termKey('2023-2024 Yaz'));
+  assert.ok(termKey('2023-2024 Yaz') < termKey('2024-2025 Fall'));
+  assert.equal(termKey('2023-2024 / Güz'), termKey('2023-2024 Fall'));
+  assert.equal(termKey('dönem yok'), null);
+  assert.equal(termText('2023-2024 / Bahar', 'en'), 'Spring 2023-2024');
+  assert.equal(termText('2023-2024 / Bahar', 'tr'), '2023-2024 Bahar');
+});
+
+test('plan sürümü: ilk transkript dönemi kayıt sırasından bağımsız en erken dönemdir', () => {
+  const records = [
+    { code: 'A 1', term: '2024-2025 / Bahar' },
+    { code: 'B 1', term: '2023-2024 / Güz' },
+    { code: 'C 1', term: '2023-2024 / Yaz' },
+    { code: 'D 1', term: '' },
+  ];
+  assert.equal(firstTranscriptTerm(records), '2023-2024 / Güz');
+  assert.equal(firstTranscriptTerm([]), '');
+});
+
+test('plan sürümü: ilk döneme göre aralığı kapsayan sürüm seçilir (başlangıç dahil, bitiş hariç)', () => {
+  const vs = planVersions({ planId: 2729, versions: SYNTH_VERSIONS });
+  assert.equal(vs[0].planId, 2729, 'güncel sürüm listede önce');
+  assert.equal(pickPlanVersion(vs, '2023-2024 / Güz').planId, 1635);
+  assert.equal(pickPlanVersion(vs, '2021-2022 / Güz').planId, 1635);
+  assert.equal(pickPlanVersion(vs, '2025-2026 / Bahar').planId, 1635);
+  assert.equal(pickPlanVersion(vs, '2026-2027 / Güz').planId, 2729, 'bitiş dönemi bir sonraki sürüme aittir');
+  assert.equal(pickPlanVersion(vs, '2027-2028 / Güz').planId, 2729);
+  // Tüm sürümlerden önce başlayan öğrenci en erken sürüme düşer.
+  assert.equal(pickPlanVersion(vs, '2015-2016 / Güz').planId, 1635);
+  assert.equal(pickPlanVersion(vs, ''), null);
+  // Sürüm listesi olmayan eski dosya: seçici gizli kalsın diye tek satır.
+  assert.equal(planVersions({ planId: 7, planLabel: 'X' }).length, 1);
+  assert.equal(versionFile('CEN_LS', vs[0]), 'data/curriculum/CEN_LS.json');
+  assert.equal(versionFile('CEN_LS', vs[1]), 'data/curriculum/versions/CEN_LS-1635.json');
+  const t = (k, vars) => ({ planVerRange: `${vars.from} ile ${vars.until} arası`, planVerFrom: `${vars.from} sonrası`, planVerLatest: 'güncel' })[k];
+  assert.equal(versionLabel(vs[1], t), '2021-2022 Güz ile 2026-2027 Güz arası');
+  assert.equal(versionLabel(vs[0], t), '2026-2027 Güz sonrası · güncel');
+  // Üst üste binen aralıklarda en geç başlayan (en özgül) sürüm kazanır.
+  const overlap = [
+    { planId: 1, validFrom: '2017-2018 Güz' },
+    { planId: 2, validFrom: '2021-2022 Güz', latest: true },
+  ];
+  assert.equal(pickPlanVersion(overlap, '2022-2023 / Güz').planId, 2);
+  assert.equal(pickPlanVersion(overlap, '2019-2020 / Güz').planId, 1);
+});
+
+test('plan sürümü: 2023 girişli transkript eski sürümde kimya ve lineer cebir slotlarına yerleşir', () => {
+  const oldPlan = { planId: 1635, semesters: [{ title: '1. Yarıyıl', items: [
+    { course: { code: 'MAT 281E', name: 'Linear Algebra and Applicat.' } },
+    { course: { code: 'CEN 113E', name: 'Intr.toComp.Eng.and Ethics' } },
+    { course: { code: 'KIM 101E', name: 'General Chemistry I' } },
+    { course: { code: '', name: 'General Chemistry I Lab' } },
+  ] }] };
+  const latestPlan = { planId: 2729, versions: SYNTH_VERSIONS, semesters: [{ title: '1. Yarıyıl', items: [
+    { course: { code: 'MAT 103E', name: 'Mathematics I' } },
+    { course: { code: 'CEN 113E', name: 'Intr.toComp.Eng.and Ethics' } },
+  ] }] };
+  const parsed = parseOBSTranscript(`2023-2024 / Güz Dönemi
+MAT 281E Linear Algebra and Applicat. 3,00 BB
+CEN 113E Intr.toComp.Eng.and Ethics 3,00 AA
+KIM 101E General Chemistry I 3,00 CB
+KIM 101EL General Chemistry I Lab 1,00 BA
+2023-2024 / Bahar Dönemi
+MAT 103E Mathematics I 4,00 CC`);
+  const v = pickPlanVersion(planVersions(latestPlan), firstTranscriptTerm(parsed.records));
+  assert.equal(v.planId, 1635);
+  const onLatest = matchTranscriptToPlan(latestPlan, parsed.records);
+  assert.ok(onLatest.unmatched.some((r) => r.code === 'KIM 101E'), 'güncel sürümde kimya yerleşmez');
+  const onOld = matchTranscriptToPlan(oldPlan, parsed.records);
+  const slots = Object.fromEntries(onOld.courseAssignments.map((a) => [a.targetSlot, a.sourceCode]));
+  assert.equal(slots.s0i0, 'MAT 281E');
+  assert.equal(slots.s0i1, 'CEN 113E');
+  assert.equal(slots.s0i2, 'KIM 101E');
+  assert.equal(slots.s0i3, 'KIM 101EL');
+  assert.deepEqual(onOld.unmatched.map((r) => r.code), ['MAT 103E']);
+});
+
+test('plan sürümü JSON içe aktarımında korunur; eski kayıt sürümsüz yüklenir', () => {
+  const withVer = importJSON(JSON.stringify({ program: 'CEN_LS', grades: {}, planVersion: 1635 }));
+  assert.equal(withVer.data.planVersion, 1635);
+  const legacy = importJSON(JSON.stringify({ program: 'CEN_LS', grades: { 'MAT 103E': { grade: 'BB' } } }));
+  assert.equal(legacy.data.planVersion, undefined);
+  assert.equal(legacy.data.grades['MAT 103E'].grade, 'BB');
+  assert.equal(importJSON(JSON.stringify({ program: 'X', planVersion: 'kötü' })).data.planVersion, undefined);
 });

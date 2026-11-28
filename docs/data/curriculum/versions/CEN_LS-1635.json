@@ -4,10 +4,12 @@
  "programName": "Bilgisayar Mühendisliği (İngilizce) (KKTC) Lisans",
  "faculty": "İTÜ-KKTC Eğitim-Araştırma Yerleşkeleri",
  "level": "LS",
- "planLabel": "Bilgisayar Mühendisliği Lisans Programı (%100 İngilizce) (KKTC) 2021-2022 / Güz Dönemi Sonrası",
+ "planLabel": "Bilgisayar Mühendisliği Lisans Programı (%100 İngilizce) (KKTC) 2021-2022 / Güz ile 2026-2027/ Güz Dönemleri Arası",
  "sourceUrl": "https://obs.itu.edu.tr/public/DersPlan/DersPlanDetay/1635",
  "totalCredits": "134,00",
  "totalEcts": "245,00",
+ "validFrom": "2021-2022 Güz",
+ "validUntil": "2026-2027 Güz",
  "semesters": [
   {
    "title": "1. Yarıyıl",
@@ -394,18 +396,6 @@
         "name": "Basics of Visual Composition"
        },
        {
-        "code": "SNT 102E",
-        "name": "Photography"
-       },
-       {
-        "code": "SNT 103E",
-        "name": "Drawing"
-       },
-       {
-        "code": "SNT 104E",
-        "name": "Mythology and Art"
-       },
-       {
         "code": "SNT 105E",
         "name": "Film Art"
        },
@@ -414,48 +404,12 @@
         "name": "Traditional Turkish Art&Crafts"
        },
        {
-        "code": "SNT 107E",
-        "name": "Ancient Civilizat.in Anatolia"
-       },
-       {
-        "code": "SNT 112E",
-        "name": "Theater"
-       },
-       {
-        "code": "SNT 113E",
-        "name": "Art and Interpretation"
+        "code": "SNT 103E",
+        "name": "Drawing"
        },
        {
         "code": "SNT 114E",
         "name": "Contemporary Art"
-       },
-       {
-        "code": "SNT 116E",
-        "name": "The Art of Communication"
-       },
-       {
-        "code": "SNT 117E",
-        "name": "Jazz Appreciation"
-       },
-       {
-        "code": "SNT 121E",
-        "name": "World Music Cultures"
-       },
-       {
-        "code": "SNT 123E",
-        "name": "Film Production"
-       },
-       {
-        "code": "SNT 211E",
-        "name": "Istanbul:Hist.,Art and Society"
-       },
-       {
-        "code": "SNT 212E",
-        "name": "Art,Culture and Society"
-       },
-       {
-        "code": "SNT 215E",
-        "name": "Balkan Musics"
        },
        {
         "code": "SNT 226E",
@@ -464,6 +418,54 @@
        {
         "code": "SNT 227E",
         "name": "Sound and Society"
+       },
+       {
+        "code": "SNT 112E",
+        "name": "Theater"
+       },
+       {
+        "code": "SNT 116E",
+        "name": "The Art of Communication"
+       },
+       {
+        "code": "SNT 212E",
+        "name": "Art,Culture and Society"
+       },
+       {
+        "code": "SNT 104E",
+        "name": "Mythology and Art"
+       },
+       {
+        "code": "SNT 107E",
+        "name": "Ancient Civilizat.in Anatolia"
+       },
+       {
+        "code": "SNT 123E",
+        "name": "Film Production"
+       },
+       {
+        "code": "SNT 113E",
+        "name": "Art and Interpretation"
+       },
+       {
+        "code": "SNT 102E",
+        "name": "Photography"
+       },
+       {
+        "code": "SNT 117E",
+        "name": "Jazz Appreciation"
+       },
+       {
+        "code": "SNT 211E",
+        "name": "Istanbul:Hist.,Art and Society"
+       },
+       {
+        "code": "SNT 215E",
+        "name": "Balkan Musics"
+       },
+       {
+        "code": "SNT 121E",
+        "name": "World Music Cultures"
        }
       ]
      }
@@ -556,8 +558,32 @@
       ],
       "options": [
        {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
         "code": "BLG 337E",
         "name": "Principles of Computer Comm."
+       },
+       {
+        "code": "BLG 442E",
+        "name": "Tech.&Innov. Mng.for Inf.Tech."
+       },
+       {
+        "code": "BLG 368E",
+        "name": "Operations Research"
+       },
+       {
+        "code": "MAL 201E",
+        "name": "Materials Science"
+       },
+       {
+        "code": "KON 317E",
+        "name": "Control Systems"
+       },
+       {
+        "code": "KON 224E",
+        "name": "Measurement&Instrumentation"
        },
        {
         "code": "BLG 345E",
@@ -566,30 +592,6 @@
        {
         "code": "BLG 348E",
         "name": "Introduction to Bioinformatics"
-       },
-       {
-        "code": "BLG 368E",
-        "name": "Operations Research"
-       },
-       {
-        "code": "BLG 442E",
-        "name": "Tech.&Innov. Mng.for Inf.Tech."
-       },
-       {
-        "code": "BLG 448E",
-        "name": "Project Management in Eng."
-       },
-       {
-        "code": "KON 224E",
-        "name": "Measurement&Instrumentation"
-       },
-       {
-        "code": "KON 317E",
-        "name": "Control Systems"
-       },
-       {
-        "code": "MAL 201E",
-        "name": "Materials Science"
        }
       ]
      }
@@ -681,8 +683,36 @@
       ],
       "options": [
        {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
         "code": "BLG 337E",
         "name": "Principles of Computer Comm."
+       },
+       {
+        "code": "BLG 442E",
+        "name": "Tech.&Innov. Mng.for Inf.Tech."
+       },
+       {
+        "code": "BLG 454E",
+        "name": "Learning From Data"
+       },
+       {
+        "code": "BLG 368E",
+        "name": "Operations Research"
+       },
+       {
+        "code": "MAL 201E",
+        "name": "Materials Science"
+       },
+       {
+        "code": "KON 317E",
+        "name": "Control Systems"
+       },
+       {
+        "code": "KON 224E",
+        "name": "Measurement&Instrumentation"
        },
        {
         "code": "BLG 345E",
@@ -691,34 +721,6 @@
        {
         "code": "BLG 348E",
         "name": "Introduction to Bioinformatics"
-       },
-       {
-        "code": "BLG 368E",
-        "name": "Operations Research"
-       },
-       {
-        "code": "BLG 442E",
-        "name": "Tech.&Innov. Mng.for Inf.Tech."
-       },
-       {
-        "code": "BLG 448E",
-        "name": "Project Management in Eng."
-       },
-       {
-        "code": "BLG 454E",
-        "name": "Learning From Data"
-       },
-       {
-        "code": "KON 224E",
-        "name": "Measurement&Instrumentation"
-       },
-       {
-        "code": "KON 317E",
-        "name": "Control Systems"
-       },
-       {
-        "code": "MAL 201E",
-        "name": "Materials Science"
        }
       ]
      }
@@ -780,52 +782,20 @@
         "name": "System Programming"
        },
        {
-        "code": "BLG 430E",
-        "name": "Computer Networks"
+        "code": "BLG 468E",
+        "name": "Object Oriented Model.&Design"
+       },
+       {
+        "code": "BLG 456E",
+        "name": "Robotics"
        },
        {
         "code": "BLG 433E",
         "name": "Computer Communications"
        },
        {
-        "code": "BLG 434E",
-        "name": "Introduction to Expert Systems"
-       },
-       {
-        "code": "BLG 435E",
-        "name": "Artificial Intelligence"
-       },
-       {
-        "code": "BLG 438E",
-        "name": "Digital System Design Laboratory"
-       },
-       {
-        "code": "BLG 439E",
-        "name": "Computer Project I"
-       },
-       {
-        "code": "BLG 440E",
-        "name": "Computer Project II"
-       },
-       {
-        "code": "BLG 443E",
-        "name": "Discrete Event Simulation"
-       },
-       {
-        "code": "BLG 444E",
-        "name": "Computer Graphics"
-       },
-       {
         "code": "BLG 447E",
         "name": "Compiler Design"
-       },
-       {
-        "code": "BLG 449E",
-        "name": "Prog.in Parallel&DistrubedSys."
-       },
-       {
-        "code": "BLG 450E",
-        "name": "Real-Time Systems Software"
        },
        {
         "code": "BLG 451E",
@@ -836,12 +806,24 @@
         "name": "Microprocessor Design Laboratory"
        },
        {
-        "code": "BLG 453E",
-        "name": "Computer Vision"
+        "code": "BLG 439E",
+        "name": "Computer Project I"
        },
        {
-        "code": "BLG 456E",
-        "name": "Robotics"
+        "code": "BLG 450E",
+        "name": "Real-Time Systems Software"
+       },
+       {
+        "code": "BLG 438E",
+        "name": "Digital System Design Laboratory"
+       },
+       {
+        "code": "BLG 443E",
+        "name": "Discrete Event Simulation"
+       },
+       {
+        "code": "BLG 449E",
+        "name": "Prog.in Parallel&DistrubedSys."
        },
        {
         "code": "BLG 458E",
@@ -852,20 +834,40 @@
         "name": "Computer Security"
        },
        {
-        "code": "BLG 460E",
-        "name": "Secure Programming"
-       },
-       {
-        "code": "BLG 468E",
-        "name": "Object Oriented Model.&Design"
-       },
-       {
         "code": "BLG 475E",
         "name": "Software Quality and Testing"
        },
        {
         "code": "BLG 477E",
         "name": "Multimedia Computing"
+       },
+       {
+        "code": "BLG 430E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "BLG 434E",
+        "name": "Introduction to Expert Systems"
+       },
+       {
+        "code": "BLG 435E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 440E",
+        "name": "Computer Project II"
+       },
+       {
+        "code": "BLG 444E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "BLG 453E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 460E",
+        "name": "Secure Programming"
        },
        {
         "code": "BLG 478E",
@@ -890,52 +892,20 @@
         "name": "System Programming"
        },
        {
-        "code": "BLG 430E",
-        "name": "Computer Networks"
+        "code": "BLG 468E",
+        "name": "Object Oriented Model.&Design"
+       },
+       {
+        "code": "BLG 456E",
+        "name": "Robotics"
        },
        {
         "code": "BLG 433E",
         "name": "Computer Communications"
        },
        {
-        "code": "BLG 434E",
-        "name": "Introduction to Expert Systems"
-       },
-       {
-        "code": "BLG 435E",
-        "name": "Artificial Intelligence"
-       },
-       {
-        "code": "BLG 438E",
-        "name": "Digital System Design Laboratory"
-       },
-       {
-        "code": "BLG 439E",
-        "name": "Computer Project I"
-       },
-       {
-        "code": "BLG 440E",
-        "name": "Computer Project II"
-       },
-       {
-        "code": "BLG 443E",
-        "name": "Discrete Event Simulation"
-       },
-       {
-        "code": "BLG 444E",
-        "name": "Computer Graphics"
-       },
-       {
         "code": "BLG 447E",
         "name": "Compiler Design"
-       },
-       {
-        "code": "BLG 449E",
-        "name": "Prog.in Parallel&DistrubedSys."
-       },
-       {
-        "code": "BLG 450E",
-        "name": "Real-Time Systems Software"
        },
        {
         "code": "BLG 451E",
@@ -946,12 +916,24 @@
         "name": "Microprocessor Design Laboratory"
        },
        {
-        "code": "BLG 453E",
-        "name": "Computer Vision"
+        "code": "BLG 439E",
+        "name": "Computer Project I"
        },
        {
-        "code": "BLG 456E",
-        "name": "Robotics"
+        "code": "BLG 450E",
+        "name": "Real-Time Systems Software"
+       },
+       {
+        "code": "BLG 438E",
+        "name": "Digital System Design Laboratory"
+       },
+       {
+        "code": "BLG 443E",
+        "name": "Discrete Event Simulation"
+       },
+       {
+        "code": "BLG 449E",
+        "name": "Prog.in Parallel&DistrubedSys."
        },
        {
         "code": "BLG 458E",
@@ -962,20 +944,40 @@
         "name": "Computer Security"
        },
        {
-        "code": "BLG 460E",
-        "name": "Secure Programming"
-       },
-       {
-        "code": "BLG 468E",
-        "name": "Object Oriented Model.&Design"
-       },
-       {
         "code": "BLG 475E",
         "name": "Software Quality and Testing"
        },
        {
         "code": "BLG 477E",
         "name": "Multimedia Computing"
+       },
+       {
+        "code": "BLG 430E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "BLG 434E",
+        "name": "Introduction to Expert Systems"
+       },
+       {
+        "code": "BLG 435E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 440E",
+        "name": "Computer Project II"
+       },
+       {
+        "code": "BLG 444E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "BLG 453E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 460E",
+        "name": "Secure Programming"
        },
        {
         "code": "BLG 478E",
@@ -994,240 +996,60 @@
       ],
       "options": [
        {
-        "code": "ALM 101",
-        "name": "Almanca I"
-       },
-       {
-        "code": "ALM 102",
-        "name": "Almanca II"
-       },
-       {
-        "code": "ALM 201",
-        "name": "Almanca III"
-       },
-       {
-        "code": "ALM 202",
-        "name": "Almanca IV"
-       },
-       {
-        "code": "ALM 301",
-        "name": "Almanca V"
-       },
-       {
-        "code": "ALM 302",
-        "name": "Almanca VI"
-       },
-       {
-        "code": "ALM 401",
-        "name": "Almanca VII"
-       },
-       {
-        "code": "ARB 101",
-        "name": "Arapça I"
-       },
-       {
-        "code": "ARB 102",
-        "name": "Arapça II"
-       },
-       {
-        "code": "BEB 120",
-        "name": "Spor ve Temel Bilimler"
-       },
-       {
-        "code": "BEB 121",
-        "name": "Spor ve Teknoloji"
-       },
-       {
         "code": "BLG 463E",
         "name": "Innov. Leadership in Comp.Eng."
-       },
-       {
-        "code": "CIN 101",
-        "name": "Çince I"
-       },
-       {
-        "code": "CIN 102",
-        "name": "Çince II"
-       },
-       {
-        "code": "CIN 201",
-        "name": "Çince III"
-       },
-       {
-        "code": "FRA 101",
-        "name": "Fransızca I"
-       },
-       {
-        "code": "FRA 102",
-        "name": "Fransızca II"
-       },
-       {
-        "code": "FRA 201",
-        "name": "Fransızca III"
-       },
-       {
-        "code": "FRA 202",
-        "name": "Fransızca IV"
-       },
-       {
-        "code": "FRA 301",
-        "name": "Fransızca V"
-       },
-       {
-        "code": "FRA 302",
-        "name": "Fransızca VI"
-       },
-       {
-        "code": "HUK 211",
-        "name": "Sosyal Güvenlik Hukuku"
-       },
-       {
-        "code": "HUK 212",
-        "name": "Sendika.&Toplu İş Sözl.Hukuku"
-       },
-       {
-        "code": "HUK 213",
-        "name": "İş Sağlığı ve Güvenliği Hukuku"
-       },
-       {
-        "code": "HUK 214",
-        "name": "Teknolojik Yeniliklerin Korun."
-       },
-       {
-        "code": "HUK 215",
-        "name": "Sözleşmeler Hukuku"
-       },
-       {
-        "code": "HUK 216",
-        "name": "Telekomünikasyon Hukuku"
-       },
-       {
-        "code": "HUK 217",
-        "name": "AR-GE Hukuku"
-       },
-       {
-        "code": "HUK 218",
-        "name": "Ticaret Hukuku"
-       },
-       {
-        "code": "ING 103A",
-        "name": "Creative Writing"
-       },
-       {
-        "code": "ING 103AC",
-        "name": "Urban Ecology"
-       },
-       {
-        "code": "ING 103AD",
-        "name": "Advanced English for Engineers"
-       },
-       {
-        "code": "ING 103B",
-        "name": "Business English"
-       },
-       {
-        "code": "ING 103C",
-        "name": "Great Moments in Science"
-       },
-       {
-        "code": "ING 103CO",
-        "name": "Profess.Communic.for Engineers"
-       },
-       {
-        "code": "ING 103DD",
-        "name": "Decoding Discourse: Language, Power, and Ideology"
-       },
-       {
-        "code": "ING 103G",
-        "name": "Business Communications"
-       },
-       {
-        "code": "ING 103H",
-        "name": "Public Presentations"
-       },
-       {
-        "code": "ING 103I",
-        "name": "Short Stories"
-       },
-       {
-        "code": "ING 103L",
-        "name": "Mythology"
-       },
-       {
-        "code": "ING 103N",
-        "name": "Film Studies"
-       },
-       {
-        "code": "ING 103O",
-        "name": "Psychology"
-       },
-       {
-        "code": "ING 103P",
-        "name": "Poetry"
-       },
-       {
-        "code": "ING 103ES",
-        "name": "Intercultural Citizenship in International Education"
-       },
-       {
-        "code": "ING 103SC",
-        "name": "Science Communication"
-       },
-       {
-        "code": "ISL 465E",
-        "name": "Int.to Entrepreneurship&Innov."
        },
        {
         "code": "ISL 478E",
         "name": "Entrepreneurship"
        },
        {
-        "code": "ISP 101",
-        "name": "İspanyolca I"
+        "code": "ISL 465E",
+        "name": "Int.to Entrepreneurship&Innov."
        },
        {
-        "code": "ISP 102",
-        "name": "İspanyolca II"
+        "code": "ING 103CO",
+        "name": "Profess.Communic.for Engineers"
        },
        {
-        "code": "ISP 201",
-        "name": "İspanyolca III"
+        "code": "ING 103H",
+        "name": "Public Presentations"
        },
        {
-        "code": "ISP 202",
-        "name": "İspanyolca IV"
+        "code": "ING 103SC",
+        "name": "Science Communication"
        },
        {
-        "code": "ISP 301",
-        "name": "İspanyolca V"
+        "code": "ING 103G",
+        "name": "Business Communications"
        },
        {
-        "code": "ISP 302",
-        "name": "İspanyolca VI"
+        "code": "ING 103P",
+        "name": "Poetry"
        },
        {
-        "code": "ITA 101",
-        "name": "İtalyanca I"
+        "code": "HUK 214E",
+        "name": "Protection of Technological Innovations"
        },
        {
-        "code": "ITA 102",
-        "name": "İtalyanca II"
+        "code": "HUK 216",
+        "name": "Telekomünikasyon Hukuku"
        },
        {
-        "code": "ITA 201",
-        "name": "İtalyanca III"
+        "code": "ING 103B",
+        "name": "Business English"
        },
        {
-        "code": "ITA 202",
-        "name": "İtalyanca IV"
+        "code": "ING 103AD",
+        "name": "Advanced English for Engineers"
        },
        {
-        "code": "ITA 301",
-        "name": "İtalyanca V"
+        "code": "ING 103O",
+        "name": "Psychology"
        },
        {
-        "code": "ITB 020E",
-        "name": "Formations of Modernity"
+        "code": "HUK 213E",
+        "name": "Occupational Safety and Health Law"
        },
        {
         "code": "ITB 037E",
@@ -1246,40 +1068,48 @@
         "name": "Technology, Policy and Law"
        },
        {
-        "code": "ITB 143E",
-        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+        "code": "ING 103A",
+        "name": "Creative Writing"
+       },
+       {
+        "code": "ING 103AC",
+        "name": "Urban Ecology"
+       },
+       {
+        "code": "ING 103C",
+        "name": "Great Moments in Science"
+       },
+       {
+        "code": "ING 103ES",
+        "name": "Intercultural Citizenship in International Education"
+       },
+       {
+        "code": "ING 103L",
+        "name": "Mythology"
+       },
+       {
+        "code": "ING 103N",
+        "name": "Film Studies"
+       },
+       {
+        "code": "HUK 217",
+        "name": "AR-GE Hukuku"
+       },
+       {
+        "code": "HUK 218E",
+        "name": "Commercial Law"
+       },
+       {
+        "code": "ITB 020E",
+        "name": "Formations of Modernity"
        },
        {
         "code": "ITB 151E",
         "name": "Human Resources and Management"
        },
        {
-        "code": "ITB 171E",
-        "name": "Science,Technology and Society"
-       },
-       {
-        "code": "ITB 179E",
-        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
-       },
-       {
-        "code": "ITB 201E",
-        "name": "Introduction to Humanities & Social Sciences"
-       },
-       {
-        "code": "ITB 202E",
-        "name": "World History"
-       },
-       {
-        "code": "ITB 203E",
-        "name": "Sociology"
-       },
-       {
-        "code": "ITB 204E",
-        "name": "Political Science"
-       },
-       {
-        "code": "ITB 205E",
-        "name": "Philosophy"
+        "code": "ITB 228E",
+        "name": "Gender Studies"
        },
        {
         "code": "ITB 206E",
@@ -1290,68 +1120,20 @@
         "name": "Ottoman History"
        },
        {
-        "code": "ITB 208E",
-        "name": "Formations of Modern Türkiye"
-       },
-       {
         "code": "ITB 209E",
         "name": "Türkiye in World Affairs"
-       },
-       {
-        "code": "ITB 213E",
-        "name": "Toplics in Literature and Society"
-       },
-       {
-        "code": "ITB 214E",
-        "name": "The Modern Middle East"
-       },
-       {
-        "code": "ITB 215E",
-        "name": "Topics in Hist.and Society"
-       },
-       {
-        "code": "ITB 216E",
-        "name": "Economy and Society"
        },
        {
         "code": "ITB 217E",
         "name": "Engineering Ethics"
        },
        {
-        "code": "ITB 218E",
-        "name": "History of Science&Technology"
+        "code": "ITB 233E",
+        "name": "Anthropology"
        },
        {
-        "code": "ITB 219E",
-        "name": "Ethics"
-       },
-       {
-        "code": "ITB 220E",
-        "name": "Psychology"
-       },
-       {
-        "code": "ITB 221E",
-        "name": "Anatolian Archaeology"
-       },
-       {
-        "code": "ITB 222E",
-        "name": "City and Society"
-       },
-       {
-        "code": "ITB 224E",
-        "name": "Environment and Society"
-       },
-       {
-        "code": "ITB 225E",
-        "name": "Intercultural Citizenship Education"
-       },
-       {
-        "code": "ITB 227E",
-        "name": "Political Theory"
-       },
-       {
-        "code": "ITB 228E",
-        "name": "Gender Studies"
+        "code": "ITB 203E",
+        "name": "Sociology"
        },
        {
         "code": "ITB 230E",
@@ -1362,48 +1144,128 @@
         "name": "Volunteering Studies"
        },
        {
-        "code": "ITB 233E",
-        "name": "Anthropology"
-       },
-       {
         "code": "ITB 234E",
         "name": "The Rise of Civilizations"
+       },
+       {
+        "code": "ITB 213E",
+        "name": "Toplics in Literature and Society"
+       },
+       {
+        "code": "ITB 219E",
+        "name": "Ethics"
+       },
+       {
+        "code": "ING 103I",
+        "name": "Short Stories"
+       },
+       {
+        "code": "ITB 179E",
+        "name": "Literatures of Intimate Separacies:Vizyones,Seyfettin,Armen"
+       },
+       {
+        "code": "ITB 202E",
+        "name": "World History"
+       },
+       {
+        "code": "ITB 214E",
+        "name": "The Modern Middle East"
+       },
+       {
+        "code": "ITB 215E",
+        "name": "Topics in Hist.and Society"
+       },
+       {
+        "code": "ITB 218E",
+        "name": "History of Science&Technology"
+       },
+       {
+        "code": "ITB 222E",
+        "name": "City and Society"
+       },
+       {
+        "code": "ITB 224E",
+        "name": "Environment and Society"
+       },
+       {
+        "code": "ITB 171E",
+        "name": "Science,Technology and Society"
+       },
+       {
+        "code": "ITB 201E",
+        "name": "Introduction to Humanities & Social Sciences"
+       },
+       {
+        "code": "ITB 205E",
+        "name": "Philosophy"
+       },
+       {
+        "code": "HUK 211",
+        "name": "Sosyal Güvenlik Hukuku"
+       },
+       {
+        "code": "HUK 212",
+        "name": "Sendika.&Toplu İş Sözl.Hukuku"
+       },
+       {
+        "code": "HUK 215",
+        "name": "Sözleşmeler Hukuku"
+       },
+       {
+        "code": "ITB 143E",
+        "name": "Durrel and Said : Orientalism Practiced and Theorized"
+       },
+       {
+        "code": "ITB 204E",
+        "name": "Political Science"
+       },
+       {
+        "code": "ITB 208E",
+        "name": "Formations of Modern Türkiye"
+       },
+       {
+        "code": "ITB 216E",
+        "name": "Economy and Society"
+       },
+       {
+        "code": "ITB 220E",
+        "name": "Psychology"
+       },
+       {
+        "code": "ITB 221E",
+        "name": "Anatolian Archaeology"
+       },
+       {
+        "code": "ITB 227E",
+        "name": "Political Theory"
+       },
+       {
+        "code": "BEB 121",
+        "name": "Spor ve Teknoloji"
+       },
+       {
+        "code": "BEB 120",
+        "name": "Spor ve Temel Bilimler"
+       },
+       {
+        "code": "ARB 101",
+        "name": "Arapça I"
+       },
+       {
+        "code": "ARB 102",
+        "name": "Arapça II"
+       },
+       {
+        "code": "ITB 225E",
+        "name": "Intercultural Citizenship Education"
        },
        {
         "code": "ITB 235E",
         "name": "Türkiye and EuropeanUnion"
        },
        {
-        "code": "JPN 101",
-        "name": "Japonca I"
-       },
-       {
-        "code": "JPN 102",
-        "name": "Japonca II"
-       },
-       {
-        "code": "JPN 201",
-        "name": "Japonca III"
-       },
-       {
-        "code": "JPN 202",
-        "name": "Japonca IV"
-       },
-       {
-        "code": "RUS 101",
-        "name": "Rusça I"
-       },
-       {
-        "code": "RUS 102",
-        "name": "Rusça II"
-       },
-       {
-        "code": "RUS 201",
-        "name": "Rusça III"
-       },
-       {
-        "code": "RUS 202",
-        "name": "Rusça IV"
+        "code": "ING 103DD",
+        "name": "Decoding Discourse: Language, Power, and Ideology"
        }
       ]
      }
@@ -1454,52 +1316,20 @@
         "name": "System Programming"
        },
        {
-        "code": "BLG 430E",
-        "name": "Computer Networks"
+        "code": "BLG 468E",
+        "name": "Object Oriented Model.&Design"
+       },
+       {
+        "code": "BLG 456E",
+        "name": "Robotics"
        },
        {
         "code": "BLG 433E",
         "name": "Computer Communications"
        },
        {
-        "code": "BLG 434E",
-        "name": "Introduction to Expert Systems"
-       },
-       {
-        "code": "BLG 435E",
-        "name": "Artificial Intelligence"
-       },
-       {
-        "code": "BLG 438E",
-        "name": "Digital System Design Laboratory"
-       },
-       {
-        "code": "BLG 439E",
-        "name": "Computer Project I"
-       },
-       {
-        "code": "BLG 440E",
-        "name": "Computer Project II"
-       },
-       {
-        "code": "BLG 443E",
-        "name": "Discrete Event Simulation"
-       },
-       {
-        "code": "BLG 444E",
-        "name": "Computer Graphics"
-       },
-       {
         "code": "BLG 447E",
         "name": "Compiler Design"
-       },
-       {
-        "code": "BLG 449E",
-        "name": "Prog.in Parallel&DistrubedSys."
-       },
-       {
-        "code": "BLG 450E",
-        "name": "Real-Time Systems Software"
        },
        {
         "code": "BLG 451E",
@@ -1510,12 +1340,24 @@
         "name": "Microprocessor Design Laboratory"
        },
        {
-        "code": "BLG 453E",
-        "name": "Computer Vision"
+        "code": "BLG 439E",
+        "name": "Computer Project I"
        },
        {
-        "code": "BLG 456E",
-        "name": "Robotics"
+        "code": "BLG 450E",
+        "name": "Real-Time Systems Software"
+       },
+       {
+        "code": "BLG 438E",
+        "name": "Digital System Design Laboratory"
+       },
+       {
+        "code": "BLG 443E",
+        "name": "Discrete Event Simulation"
+       },
+       {
+        "code": "BLG 449E",
+        "name": "Prog.in Parallel&DistrubedSys."
        },
        {
         "code": "BLG 458E",
@@ -1526,20 +1368,40 @@
         "name": "Computer Security"
        },
        {
-        "code": "BLG 460E",
-        "name": "Secure Programming"
-       },
-       {
-        "code": "BLG 468E",
-        "name": "Object Oriented Model.&Design"
-       },
-       {
         "code": "BLG 475E",
         "name": "Software Quality and Testing"
        },
        {
         "code": "BLG 477E",
         "name": "Multimedia Computing"
+       },
+       {
+        "code": "BLG 430E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "BLG 434E",
+        "name": "Introduction to Expert Systems"
+       },
+       {
+        "code": "BLG 435E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 440E",
+        "name": "Computer Project II"
+       },
+       {
+        "code": "BLG 444E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "BLG 453E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 460E",
+        "name": "Secure Programming"
        },
        {
         "code": "BLG 478E",
@@ -1559,8 +1421,36 @@
       ],
       "options": [
        {
+        "code": "BLG 448E",
+        "name": "Project Management in Eng."
+       },
+       {
         "code": "BLG 337E",
         "name": "Principles of Computer Comm."
+       },
+       {
+        "code": "BLG 442E",
+        "name": "Tech.&Innov. Mng.for Inf.Tech."
+       },
+       {
+        "code": "BLG 454E",
+        "name": "Learning From Data"
+       },
+       {
+        "code": "BLG 368E",
+        "name": "Operations Research"
+       },
+       {
+        "code": "MAL 201E",
+        "name": "Materials Science"
+       },
+       {
+        "code": "KON 317E",
+        "name": "Control Systems"
+       },
+       {
+        "code": "KON 224E",
+        "name": "Measurement&Instrumentation"
        },
        {
         "code": "BLG 345E",
@@ -1569,34 +1459,6 @@
        {
         "code": "BLG 348E",
         "name": "Introduction to Bioinformatics"
-       },
-       {
-        "code": "BLG 368E",
-        "name": "Operations Research"
-       },
-       {
-        "code": "BLG 442E",
-        "name": "Tech.&Innov. Mng.for Inf.Tech."
-       },
-       {
-        "code": "BLG 448E",
-        "name": "Project Management in Eng."
-       },
-       {
-        "code": "BLG 454E",
-        "name": "Learning From Data"
-       },
-       {
-        "code": "KON 224E",
-        "name": "Measurement&Instrumentation"
-       },
-       {
-        "code": "KON 317E",
-        "name": "Control Systems"
-       },
-       {
-        "code": "MAL 201E",
-        "name": "Materials Science"
        }
       ]
      }
@@ -1617,52 +1479,20 @@
         "name": "System Programming"
        },
        {
-        "code": "BLG 430E",
-        "name": "Computer Networks"
+        "code": "BLG 468E",
+        "name": "Object Oriented Model.&Design"
+       },
+       {
+        "code": "BLG 456E",
+        "name": "Robotics"
        },
        {
         "code": "BLG 433E",
         "name": "Computer Communications"
        },
        {
-        "code": "BLG 434E",
-        "name": "Introduction to Expert Systems"
-       },
-       {
-        "code": "BLG 435E",
-        "name": "Artificial Intelligence"
-       },
-       {
-        "code": "BLG 438E",
-        "name": "Digital System Design Laboratory"
-       },
-       {
-        "code": "BLG 439E",
-        "name": "Computer Project I"
-       },
-       {
-        "code": "BLG 440E",
-        "name": "Computer Project II"
-       },
-       {
-        "code": "BLG 443E",
-        "name": "Discrete Event Simulation"
-       },
-       {
-        "code": "BLG 444E",
-        "name": "Computer Graphics"
-       },
-       {
         "code": "BLG 447E",
         "name": "Compiler Design"
-       },
-       {
-        "code": "BLG 449E",
-        "name": "Prog.in Parallel&DistrubedSys."
-       },
-       {
-        "code": "BLG 450E",
-        "name": "Real-Time Systems Software"
        },
        {
         "code": "BLG 451E",
@@ -1673,12 +1503,24 @@
         "name": "Microprocessor Design Laboratory"
        },
        {
-        "code": "BLG 453E",
-        "name": "Computer Vision"
+        "code": "BLG 439E",
+        "name": "Computer Project I"
        },
        {
-        "code": "BLG 456E",
-        "name": "Robotics"
+        "code": "BLG 450E",
+        "name": "Real-Time Systems Software"
+       },
+       {
+        "code": "BLG 438E",
+        "name": "Digital System Design Laboratory"
+       },
+       {
+        "code": "BLG 443E",
+        "name": "Discrete Event Simulation"
+       },
+       {
+        "code": "BLG 449E",
+        "name": "Prog.in Parallel&DistrubedSys."
        },
        {
         "code": "BLG 458E",
@@ -1689,20 +1531,40 @@
         "name": "Computer Security"
        },
        {
-        "code": "BLG 460E",
-        "name": "Secure Programming"
-       },
-       {
-        "code": "BLG 468E",
-        "name": "Object Oriented Model.&Design"
-       },
-       {
         "code": "BLG 475E",
         "name": "Software Quality and Testing"
        },
        {
         "code": "BLG 477E",
         "name": "Multimedia Computing"
+       },
+       {
+        "code": "BLG 430E",
+        "name": "Computer Networks"
+       },
+       {
+        "code": "BLG 434E",
+        "name": "Introduction to Expert Systems"
+       },
+       {
+        "code": "BLG 435E",
+        "name": "Artificial Intelligence"
+       },
+       {
+        "code": "BLG 440E",
+        "name": "Computer Project II"
+       },
+       {
+        "code": "BLG 444E",
+        "name": "Computer Graphics"
+       },
+       {
+        "code": "BLG 453E",
+        "name": "Computer Vision"
+       },
+       {
+        "code": "BLG 460E",
+        "name": "Secure Programming"
        }
       ]
      }

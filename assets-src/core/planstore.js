@@ -8,6 +8,7 @@
 //   { grades:   { "<DERS KODU>": { grade: "BB", prev: "FF" } },
 //     elective: { "<s<sy>i<sy>>": { code: "SNT 102", grade: "BB", prev: "" } },
 //     transfer: { credits, gpa },
+//     planVersion: <planId>,  // isteğe bağlı: seçili plan sürümü (yoksa güncel)
 //     updatedAt: <ms> }
 //
 // Tekrar: son not `grade`'te, önceki `prev`'te saklanır; hesaba yalnızca son
@@ -92,6 +93,7 @@ export function importJSON(json) {
     if (!d || !d.program) return null;
     const data = { grades: d.grades || {}, elective: d.elective || {}, requiredSlots: d.requiredSlots || {}, transfer: d.transfer || null, targetGpa: d.targetGpa || '' };
     if (validTranscript(d.transcript)) data.transcript = d.transcript;
+    if (Number.isInteger(d.planVersion) && d.planVersion > 0) data.planVersion = d.planVersion;
     return { program: d.program, data };
   } catch { return null; }
 }

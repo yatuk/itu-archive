@@ -735,9 +735,11 @@ test.describe('Program seçimi (fakülte → bölüm)', () => {
   });
 
   test('OBS transkript metni programı bulur, tekrarları son notla aktarır ve ham metni saklamaz', async ({ page }) => {
+    // Dönemler güncel CEN_LS plan sürümünün (2026-2027 Güz sonrası) içinde: ilk
+    // transkript dönemi sürümü seçer, bu test güncel plandaki yuvaları denetler.
     const transcript = `Öğrenci Numarası : 000000000
 Adı : TEST KULLANICISI
-2023-2024 / Güz Dönemi
+2026-2027 / Güz Dönemi
 Ders Kodu Ders Adı Kredi Not
 CEN 101E Intr. to Information Systems 2,00 FF *
 MAT 103E Mathematics I 4,00 DC+
@@ -746,7 +748,7 @@ BLG 335E Analysis of Algorithms I 3,00 VF
 A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
 Bilgisayar Mühendisliği (KKTC)
 Dönem 6,00 2,00 6,00 3,00 0,50
-2024-2025 / Bahar Dönemi
+2027-2028 / Bahar Dönemi
 Ders Kodu Ders Adı Kredi Not
 CEN 101E Intr. to Information Systems 2,00 BA+
 CEN 213E Data Structures 3,50 CB+
@@ -821,7 +823,7 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
     // Ham satır saklanmaz; plana yerleşmeyen ders yalnız en küçük alanlarıyla durur.
     expect(stored).not.toContain('ZZZ 999 PRIVATE COURSE LABEL 2,00 AA');
     expect(JSON.parse(stored).data.CEN_LS.transcript.unmatched).toEqual([
-      { code: 'ZZZ 999', name: 'PRIVATE COURSE LABEL', credits: 2, grade: 'AA', term: '2024-2025 / Bahar' },
+      { code: 'ZZZ 999', name: 'PRIVATE COURSE LABEL', credits: 2, grade: 'AA', term: '2027-2028 / Bahar' },
     ]);
     expect(JSON.parse(stored).data.CEN_LS.requiredSlots).toEqual({
       s0i1: 'FIZ 101EL', s1i5: 'FIZ 102EL', s1i6: 'ING 112A',
@@ -831,17 +833,18 @@ Toplam 11,50 9,50 11,50 26,00 2,26`;
 
   test('Transkript: ITB/SNT ortak havuzu kronolojik dolar, plana yerleşmeyenler en altta listelenir ve yenilemede kalır', async ({ page }) => {
     // Sentetik metin (gerçek öğrenci verisi yok). CEN_LS'de 5. yarıyıl
-    // "ITB Elective I" yalnız SNT kodları listeler; CIN 101 2. yılda alındığı
+    // "ITB Elective I" yalnız SNT kodları listeler; HUK 214E (ITB Elective II havuzunda) ilk alındığı
     // için yine de oraya (7. yarıyıl "ITB Elective II" yerine) yerleşmeli.
-    const transcript = `2023-2024 / Güz Dönemi
+    // İlk dönem 2026-2027 Güz: güncel plan sürümü seçilir (bkz. planversions.js).
+    const transcript = `2026-2027 / Güz Dönemi
 Ders Kodu Ders Adı Kredi Not
 MAT 103E Mathematics I 4,00 BB
-CIN 101 Çince I 3,00 AA
+HUK 214E Protection of Technological Innovations 3,00 AA
 XYZ 201 Synthetic Outside Course 2,00 BA+
 A.Krd. B.Krd. O.K.Krd. B.Puan Ort.
 Bilgisayar Mühendisliği (KKTC)
 Dönem 9,00 9,00 9,00 30,00 3,33
-2025-2026 / Güz Dönemi
+2028-2029 / Güz Dönemi
 Ders Kodu Ders Adı Kredi Not
 SNT 102E Photography 3,00 BA
 Toplam 12,00 12,00 12,00 40,50 3,38`;
@@ -860,10 +863,10 @@ Toplam 12,00 12,00 12,00 40,50 3,38`;
     // (yuvanın kendi listesinde olmasa da) seçili gösterir.
     const first = page.locator('select.dp-epick[data-slot="s4i6"]');
     const second = page.locator('select.dp-epick[data-slot="s6i4"]');
-    await expect(first).toHaveValue('CIN 101');
+    await expect(first).toHaveValue('HUK 214E');
     await expect(second).toHaveValue('SNT 102E');
     await expect(first.locator('option[value="SNT 102E"]')).toHaveCount(1);
-    await expect(second.locator('option[value="CIN 101"]')).toHaveCount(1);
+    await expect(second.locator('option[value="HUK 214E"]')).toHaveCount(1);
     // Boş yuvada "önce ders seç" ipucu yok.
     await expect(page.locator('.dp-grade-hint')).toHaveCount(0);
 
@@ -876,7 +879,7 @@ Toplam 12,00 12,00 12,00 40,50 3,38`;
     await expect(rows.first().locator('.dp-unused-name')).toHaveText('Synthetic Outside Course');
     await expect(rows.first().locator('.dp-unused-credit')).toHaveText('2 kr');
     await expect(rows.first().locator('.dp-unused-grade')).toHaveText('BA+');
-    await expect(rows.first().locator('.dp-unused-term')).toHaveText('2023-2024 / Güz');
+    await expect(rows.first().locator('.dp-unused-term')).toHaveText('2026-2027 / Güz');
     // Bölüm son yarıyılın altında durur.
     const after = await page.evaluate(() => {
       const sems = document.querySelectorAll('#dp-semesters .dp-sem');
@@ -892,7 +895,7 @@ Toplam 12,00 12,00 12,00 40,50 3,38`;
     await expect(page.locator('#dp-prog')).toHaveValue('CEN_LS', { timeout: 20000 });
     await expect(page.locator('#dp-unused .dp-unused-row')).toHaveCount(1);
     await expect(page.locator('#dp-unused .dp-unused-code')).toHaveText('XYZ 201');
-    await expect(page.locator('select.dp-epick[data-slot="s4i6"]')).toHaveValue('CIN 101');
+    await expect(page.locator('select.dp-epick[data-slot="s4i6"]')).toHaveValue('HUK 214E');
 
     // Elle sıfırlanınca bölüm gizlenir.
     await page.locator('#dp-tools > summary').click();

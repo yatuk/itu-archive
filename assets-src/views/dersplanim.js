@@ -33,6 +33,7 @@ import { extractPdfText } from '../core/pdf-extract.js?v=dde1e9339338';
 import { I18N } from '../i18n.js?v=dde1e9339338';
 import { createBackup, parseBackup, backupSummary, restoreBackup } from '../core/backup.js?v=dde1e9339338';
 import { buildBalancedPlan } from '../core/planner.js?v=dde1e9339338';
+import { planVersions, pickPlanVersion, firstTranscriptTerm, versionFile, versionLabel, termText } from '../core/planversions.js';
 
 // Basit {placeholder} yer değiştirmeli çeviri: I18N sözlüğü placeholder desteklemez.
 function tf(key, vars) {
@@ -51,6 +52,11 @@ const histCache = new Map(); // branş → history nesnesi
 let stored = {};        // program bazlı not verisi (localStorage)
 const catalogMap = new Map(); // seçilen seçmeli ders kodu → { local, ects }
 let initialParams = null; // onShow'da senkron yakalanan URL parametreleri
+// Plan sürümü (core/planversions.js): latestPlan <PROG>.json'dur ve sürüm
+// listesini taşır; `plan` gösterilen sürümdür. planVersionId 0 = güncel sürüm.
+let latestPlan = null;
+let planVersionId = 0;
+const planFiles = new Map(); // dosya → yüklenmiş plan (transkript önizlemesi için senkron erişim)
 
 // Filtre durumu (URL'den okunur, DOM'dan yazılır).
 const filters = { open: false, cap: false, semesters: new Set(), types: new Set() };
@@ -175,6 +181,7 @@ function ensureHost() {
         <select id="dp-prog" class="dp-prog-select" aria-label="${t('Bölüm seç', 'Choose department')}"></select>
         </label>
         <label class="dp-field dp-term-pick"><span class="dp-field-label">${t('dönem', 'term')}</span><select id="dp-term" aria-label="${t('Dönem seç', 'Choose term')}"></select></label>
+        <label class="dp-field dp-field-wide dp-ver-pick" hidden><span class="dp-field-label">${esc(I18N.t('planVerField'))}</span><select id="dp-ver" aria-label="${esc(I18N.t('planVerAria'))}"></select></label>
       </div>
       <div id="dp-summary" class="dp-summary"></div>
     </div>
@@ -330,6 +337,9 @@ function renderProgramOptions(faculty, level = $('#dp-level')?.value || 'LS') {
 function showProgramEmpty() {
   progCode = '';
   plan = null;
+  latestPlan = null;
+  planVersionId = 0;
+  renderVersionOptions();
   const view = $('#view-dersplanim');
   view?.classList.add('dp-no-program');
   if ($('#dp-empty')) $('#dp-empty').hidden = false;
@@ -357,12 +367,18 @@ async function selectProgram(code) {
   catalogMap.clear();
   setDPResult(I18N.t('statLoading'), { busy: true });
   try {
-    plan = await getJSON(`data/curriculum/${code}.json`);
+    latestPlan = await loadPlanFile(`data/curriculum/${code}.json`);
   } catch {
     setDPResult(`${I18N.t('planCurriculumLoadFailed')} (${esc(code)})`, { error: true });
     plan = null;
+    latestPlan = null;
+    renderVersionOptions();
     return;
   }
+  if (code !== progCode) return;
+  plan = await resolveVersionPlan(code, latestPlan, wantedPlanVersion(code));
+  if (code !== progCode) return;
+  renderVersionOptions();
   // Programın planı yoksa (kapanmış program, eksik plan) açık mesaj — boş liste değil.
   if (!plan || !plan.semesters || !plan.semesters.length) {
     $('#dp-semesters').innerHTML = `<p class="empty">${I18N.t('planNoCurriculum')} (${esc(code)}).</p>`;
@@ -383,6 +399,109 @@ function setDPResult(msg, opts) {
   if (!el) return;
   el.textContent = msg;
   el.className = 'resultline' + (opts?.error ? ' err' : opts?.busy ? ' busy' : '');
+}
+
+// -- plan sürümü --
+// Öğrenci kaydolduğu dönemin plan sürümüne tabidir. Seçilen sürüm programın
+// not kaydında (planstore: stored.planVersion) saklanır; yoksa güncel sürüm.
+
+function loadPlanFile(file) {
+  return getJSON(file).then((p) => { planFiles.set(file, p); return p; });
+}
+
+function latestVersionId() {
+  return planVersions(latestPlan).find((v) => v.latest)?.planId || 0;
+}
+
+// URL'deki ?pv= (paylaşılan bağlantı, yalnız aynı program için bir kez) >
+// saklanan seçim.
+function wantedPlanVersion(code) {
+  const params = initialParams;
+  if (params?.get('pv') && params.get('prog') === code) {
+    const id = Number(params.get('pv'));
+    params.delete('pv');
+    if (id) return id;
+  }
+  return Number(stored?.planVersion) || 0;
+}
+
+// İstenen sürümün planını döndürür ve planVersionId'yi ayarlar; sürüm yoksa
+// ya da yüklenemezse güncel plan.
+async function resolveVersionPlan(code, latest, wantId) {
+  planVersionId = 0;
+  const v = planVersions(latest).find((x) => x.planId === Number(wantId));
+  if (!v || v.latest) return latest;
+  try {
+    const p = await loadPlanFile(versionFile(code, v));
+    planVersionId = v.planId;
+    return p;
+  } catch {
+    toast(I18N.t('planVerLoadFailed'), { kind: 'warn' });
+    return latest;
+  }
+}
+
+function versionText(v) {
+  return versionLabel(v, (k, vars) => I18N.t(k, vars), I18N.lang);
+}
+
+function renderVersionOptions() {
+  const sel = $('#dp-ver');
+  if (!sel) return;
+  const vs = planVersions(latestPlan);
+  sel.innerHTML = vs.map((v) => `<option value="${v.planId}" title="${esc(v.label || '')}">${esc(versionText(v))}</option>`).join('');
+  sel.value = String(planVersionId || latestVersionId() || '');
+  const wrap = sel.closest('.dp-ver-pick');
+  if (wrap) wrap.hidden = vs.length < 2;
+}
+
+// Gösterilen plan sürümünü değiştirir ve programın kaydına yazar. Notlar ders
+// koduyla tutulduğu için sürümler arasında korunur.
+async function setPlanVersion(id) {
+  if (!latestPlan || !progCode) return false;
+  const want = Number(id) || latestVersionId();
+  if (want === (planVersionId || latestVersionId())) return true;
+  const code = progCode;
+  const target = planVersions(latestPlan).find((v) => v.planId === want);
+  if (!target) return false;
+  setDPResult(I18N.t('statLoading'), { busy: true });
+  const next = await resolveVersionPlan(code, latestPlan, want);
+  if (code !== progCode) return false;
+  const ok = (planVersionId || latestVersionId()) === want;
+  plan = next;
+  if (ok) {
+    const { planVersion: _old, ...rest } = stored;
+    stored = planVersionId ? { ...rest, planVersion: planVersionId } : rest;
+    saveStored(progCode, stored);
+  }
+  closedSems.clear();
+  filters.semesters.clear();
+  unmountCurriculum();
+  catalogMap.clear();
+  renderVersionOptions();
+  renderAll();
+  saveState();
+  ensureCatalogForPicks();
+  window.dispatchEvent(new CustomEvent('itu:plan-version-changed', { detail: { program: progCode, planId: planVersionId } }));
+  return ok;
+}
+
+// Transkript önizlemesi için: ilk transkript dönemine göre sürüm. Planlar
+// henüz yüklenmediyse yükleme başlatılır ve rerun ile önizleme yenilenir.
+function transcriptVersionChoice(code, records, rerun) {
+  const term = firstTranscriptTerm(records);
+  if (!code || !term) return null;
+  const file = `data/curriculum/${code}.json`;
+  const latest = code === progCode && latestPlan ? latestPlan : planFiles.get(file);
+  if (!latest) { loadPlanFile(file).then(rerun, () => {}); return null; }
+  const vs = planVersions(latest);
+  if (vs.length < 2) return null;
+  const v = pickPlanVersion(vs, term) || vs.find((x) => x.latest);
+  if (!v) return null;
+  const vfile = versionFile(code, v);
+  const vplan = v.latest ? latest : planFiles.get(vfile);
+  if (!vplan) loadPlanFile(vfile).then(rerun, () => {});
+  return { planId: v.planId, label: versionText(v), term: termText(term, I18N.lang), plan: vplan || null };
 }
 
 // -- dönem seçici --
@@ -683,6 +802,7 @@ function saveState() {
   if (!isViewVisible('dersplanim')) return;
   const p = new URLSearchParams();
   if (progCode) p.set('prog', progCode);
+  if (progCode && planVersionId) p.set('pv', String(planVersionId));
   if (termSlug && termSlug !== state.index?.currentSlug) p.set('term', termSlug);
   if (filters.open) p.set('fopen', '1');
   if (filters.cap) p.set('fcap', '1');
@@ -1931,6 +2051,7 @@ function openTranscriptDialog() {
   const fileStatus = host.querySelector('#transcript-file-status');
   let parsed = null;
   let inferredCode = '';
+  let versionChoice = null; // ilk transkript dönemine göre plan sürümü
   let settled = false;
 
   return new Promise((resolve) => {
@@ -1975,8 +2096,11 @@ function openTranscriptDialog() {
       if (target) parts.push(`${en ? 'Program' : 'Program'}: ${formatProgramLabel(target.code, target, I18N.lang)}`);
       else parts.push(en ? 'Choose your program above before importing.' : 'Aktarmadan önce yukarıdan programını seç.');
       if (inferredCode && progCode) parts.push(en ? "the transcript's program will be selected" : 'transkriptteki programa geçilecek');
-      if (plan && progCode && !inferredCode) {
-        const match = matchTranscriptToPlan(plan, parsed.records);
+      versionChoice = transcriptVersionChoice(targetCode, parsed.records, () => { if (!settled) refresh(); });
+      if (versionChoice) parts.push(I18N.t('planVerAuto', { label: versionChoice.label, term: versionChoice.term }));
+      const matchPlan = versionChoice ? versionChoice.plan : (inferredCode ? null : plan);
+      if (matchPlan && targetCode) {
+        const match = matchTranscriptToPlan(matchPlan, parsed.records);
         const count = match.courseAssignments.length + match.electiveAssignments.length;
         parts.push(en ? `${count} courses match this plan` : `${count} ders seçili planla eşleşiyor`);
         if (match.unmatched.length) parts.push(en ? `${match.unmatched.length} unmatched` : `${match.unmatched.length} eşleşmeyen`);
@@ -2007,7 +2131,7 @@ function openTranscriptDialog() {
     host.querySelector('.dlg-close').addEventListener('click', () => close(null));
     host.querySelector('.dlg-cancel').addEventListener('click', () => close(null));
     ok.addEventListener('click', () => {
-      if (!ok.disabled && parsed) close({ parsed, inferredCode });
+      if (!ok.disabled && parsed) close({ parsed, inferredCode, versionId: versionChoice?.planId || 0 });
     });
     host.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') { event.preventDefault(); close(null); return; }
@@ -2021,10 +2145,25 @@ function openTranscriptDialog() {
   });
 }
 
+// Transkriptin ilk dönemine göre seçilen plan sürümüne geçer. Sürüm değiştiyse
+// eski sürümün slot anahtarlı seçmeli seçimleri yeni plana uymaz; aktarım onları
+// transkriptten yeniden kurar. Dönüş: sonuç satırına eklenecek not ('' = yok).
+async function applyTranscriptVersion(versionId) {
+  if (!versionId || !latestPlan || !progCode) return '';
+  const v = planVersions(latestPlan).find((x) => x.planId === versionId);
+  if (!v) return '';
+  if (versionId !== (planVersionId || latestVersionId())) {
+    if (!(await setPlanVersion(versionId))) return '';
+    stored = { ...stored, elective: {}, requiredSlots: {} };
+  }
+  return `${I18N.t('planVerField')}: ${versionText(v)}`;
+}
+
 async function importTranscript() {
   const choice = await openTranscriptDialog();
   if (!choice) return;
   if (choice.inferredCode && choice.inferredCode !== progCode) await selectTranscriptProgram(choice.inferredCode);
+  const versionNote = await applyTranscriptVersion(choice.versionId);
   if (!plan || !progCode) {
     toast(I18N.lang === 'en' ? 'Choose your program first' : 'Önce programını seç', { kind: 'warn' });
     return;
@@ -2045,6 +2184,7 @@ async function importTranscript() {
   const details = [I18N.lang === 'en' ? `${imported} grades imported` : `${imported} not aktarıldı`];
   if (repeatCount) details.push(I18N.lang === 'en' ? `${repeatCount} repeated courses` : `${repeatCount} tekrar dersi`);
   if (match.unmatched.length) details.push(I18N.lang === 'en' ? `${match.unmatched.length} courses need manual review` : `${match.unmatched.length} ders elle kontrol edilmeli`);
+  if (versionNote) details.push(versionNote);
   setTranscriptResult(`${details.join(' · ')}. ${I18N.lang === 'en' ? 'The raw transcript was not saved.' : 'Ham transkript kaydedilmedi.'}`, match.unmatched.length ? 'warn' : 'success');
   $('#dp-grades').open = true;
   toast(I18N.lang === 'en' ? 'Transcript grades imported' : 'Transkript notları aktarıldı');
@@ -2295,6 +2435,7 @@ function init() {
   $('#dp-prog').addEventListener('change', () => {
     selectProgram($('#dp-prog').value);
   });
+  $('#dp-ver').addEventListener('change', () => setPlanVersion($('#dp-ver').value));
   // Özet satırındaki düğme her çizimde yeniden kurulur: delege dinleyici.
   $('#view-dersplanim').addEventListener('click', (ev) => {
     if (ev.target.closest('.dp-transcript-open')) importTranscript();
@@ -2493,6 +2634,8 @@ function init() {
     catalogMap.clear();
     ensureCatalogForPicks();
     renderAll();
+    // Dosyadaki plan sürümüne geç (aynıysa işlem yapılmaz).
+    setPlanVersion(Number(stored.planVersion) || latestVersionId());
     toast(I18N.t('planGradesImported'));
   });
   $('#dp-backup-all').addEventListener('click', () => {
@@ -2521,7 +2664,8 @@ function init() {
       danger: true,
     }).then((yes) => {
       if (!yes) return;
-      stored = {};
+      // Notlar silinir; seçili plan sürümü bir not değildir, korunur.
+      stored = planVersionId ? { planVersion: planVersionId } : {};
       saveStored(progCode, stored);
       $('#dp-targetgpa').value = '3.00';
       renderAll();

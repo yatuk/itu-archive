@@ -1600,7 +1600,9 @@ function openTranscriptDialog() {
       }
       parsed = parseOBSTranscript(input.value);
       const candidates = transcriptProgramCandidates(progIndex, parsed.programs);
-      inferredCode = !progCode && candidates.length === 1 ? candidates[0].code : '';
+      // Transkriptteki bölüm tek bir programa denk geliyorsa o kazanır; üstte
+      // başka bir program seçili olsa bile (ör. KKTC programı) ona geçilir.
+      inferredCode = candidates.length === 1 && candidates[0].code !== progCode ? candidates[0].code : '';
       const canChooseProgram = Boolean(progCode || inferredCode);
       ok.disabled = parsed.records.length === 0 || !canChooseProgram;
       preview.className = `transcript-preview${parsed.records.length ? ' ready' : ''}`;
@@ -1612,14 +1614,15 @@ function openTranscriptDialog() {
       }
       const distinct = new Set(parsed.records.map((r) => r.code)).size;
       const repeats = parsed.records.length - distinct;
-      const targetCode = progCode || inferredCode;
+      const targetCode = inferredCode || progCode;
       const target = progIndex.find((item) => item.code === targetCode);
       const parts = [en ? `${parsed.records.length} rows, ${distinct} courses` : `${parsed.records.length} kayıt · ${distinct} farklı ders`];
       if (repeats) parts.push(en ? `${repeats} repeat attempts` : `${repeats} tekrar kaydı`);
       if (parsed.officialGpa != null) parts.push(en ? `OBS total GPA ${String(parsed.officialGpa).replace('.', ',')}` : `OBS toplam GANO ${String(parsed.officialGpa).replace('.', ',')}`);
       if (target) parts.push(`${en ? 'Program' : 'Program'}: ${formatProgramLabel(target.code, target, I18N.lang)}`);
       else parts.push(en ? 'Choose your program above before importing.' : 'Aktarmadan önce yukarıdan programını seç.');
-      if (plan && progCode) {
+      if (inferredCode && progCode) parts.push(en ? "the transcript's program will be selected" : 'transkriptteki programa geçilecek');
+      if (plan && progCode && !inferredCode) {
         const match = matchTranscriptToPlan(plan, parsed.records);
         const count = match.courseAssignments.length + match.electiveAssignments.length;
         parts.push(en ? `${count} courses match this plan` : `${count} ders seçili planla eşleşiyor`);
@@ -1668,7 +1671,7 @@ function openTranscriptDialog() {
 async function importTranscript() {
   const choice = await openTranscriptDialog();
   if (!choice) return;
-  if (!progCode && choice.inferredCode) await selectTranscriptProgram(choice.inferredCode);
+  if (choice.inferredCode && choice.inferredCode !== progCode) await selectTranscriptProgram(choice.inferredCode);
   if (!plan || !progCode) {
     toast(I18N.lang === 'en' ? 'Choose your program first' : 'Önce programını seç', { kind: 'warn' });
     return;

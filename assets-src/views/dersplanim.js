@@ -23,7 +23,7 @@ import { toast } from '../core/toast.js?v=dde1e9339338';
 import { joinCourse, joinElective, semesterLoad, canonicalCode, groupSections, parseRange, creditBadge, sectionsForCode } from '../core/plan.js?v=dde1e9339338';
 import { getTaken, saveTaken, notifyTakenChanged } from '../core/taken.js?v=dde1e9339338';
 import { inActiveProgram } from '../core/program-store.js';
-import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram, remainingPlan, estimateGraduation, nextRegularTerm, termSlugFromLabel, transcriptTerms, officialStanding } from '../core/planstore.js?v=dde1e9339338';
+import { loadStored, saveStored, setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets, loadLastProgram, saveLastProgram, remainingPlan, estimateGraduation, nextRegularTerm, termSlugFromLabel, transcriptTerms, officialStanding, internshipSummary, mergeInternships, addInternship, removeInternship, setInternshipRequired, INTERNSHIP } from '../core/planstore.js?v=dde1e9339338';
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, targetNeeded, fmtTr2, isPassingGrade, academicStanding, retakeCandidates, fmtGain, STANDING, RETAKE_GRADES } from '../core/grades.js?v=dde1e9339338';
 import { gradePickerHTML, gradeTone, bindGradePickers } from '../core/grade-picker.js';
 import { confirmDialog } from '../core/dialog.js?v=dde1e9339338';
@@ -1597,6 +1597,8 @@ function renderGrad(ctx) {
   const slotCount = rem.electives.reduce((n, g) => n + g.slots.length, 0);
   const slotCredits = rem.electives.reduce((n, g) => n + g.credits, 0);
   const done = remCredits <= 0 && !rem.required.length && !slotCount;
+  // Lisansüstü programlarda zorunlu staj yoktur: staj satırı gizli.
+  const staj = standingScope() === 'none' ? null : internshipSummary(stored);
 
   const stat = (label, value, sub = '') => `<div class="dp-grad-stat"><dt>${esc(label)}</dt><dd><b class="num">${value}</b>${sub ? `<small>${sub}</small>` : ''}</dd></div>`;
   const stats = [
@@ -1604,9 +1606,14 @@ function renderGrad(ctx) {
   ];
   if (remEcts != null) stats.push(stat(I18N.t('dpGradEcts'), esc(trNum(remEcts)), esc(tf('dpGradOf', { total: trNum(tot.ects) }))));
   stats.push(stat(I18N.t('dpGradRequired'), String(rem.required.length)));
+  if (staj) {
+    const sub = `${I18N.t('dpStajUnit')} · ${staj.complete ? I18N.t('dpStajDoneSub') : tf('dpStajLeftSub', { n: trNum(staj.remaining) })}`;
+    stats.push(`<div class="dp-grad-stat dp-grad-staj${staj.complete ? ' is-done' : ''}"><dt>${esc(I18N.t('dpStajLabel'))}</dt><dd><b class="num">${esc(`${trNum(staj.done)} / ${trNum(staj.required)}`)}</b><small>${esc(sub)}</small></dd></div>`);
+  }
   if (!done && est && est.semesters > 0) {
     const sub = [tf('dpGradEstimateSub', { n: est.semesters, load: trNum(Math.round(load * 10) / 10) })];
     if (onWatch) sub.push(I18N.t('dpGradEstimateWatch'));
+    if (staj && !staj.complete) sub.push(tf('dpGradEstimateStaj', { n: trNum(staj.remaining) }));
     stats.push(`<div class="dp-grad-stat dp-grad-est"><dt>${esc(I18N.t('dpGradEstimate'))}</dt><dd><b>${esc(termName(est.slug) || '·')}</b><small>${esc(sub.join(' · '))}</small></dd></div>`);
   }
 
@@ -1631,11 +1638,95 @@ function renderGrad(ctx) {
 
   box.innerHTML = `<header class="dp-grad-head"><h3 id="dp-grad-h">${esc(I18N.t('dpGradTitle'))}</h3><small>${esc(I18N.t('dpGradBasis'))}</small></header>
     <dl class="dp-grad-stats">${stats.join('')}</dl>
-    ${done ? `<p class="dp-grad-done">${esc(I18N.t('dpGradDone'))}</p>` : ''}
+    ${done && staj && !staj.complete ? `<p class="dp-grad-warn">${esc(tf('dpGradDoneStaj', { n: trNum(staj.remaining) }))}</p>`
+    : done ? `<p class="dp-grad-done">${esc(I18N.t('dpGradDone'))}</p>` : ''}
     ${gpaLow}
-    ${reqList || elList ? `<div class="dp-grad-lists">${reqList}${elList}</div>` : ''}
+    ${reqList || elList || staj ? `<div class="dp-grad-lists">${reqList}${elList}${staj ? stajDetailsHTML(staj) : ''}</div>` : ''}
     ${done ? '' : `<p class="dp-hint dp-grad-note">${esc(I18N.t('dpGradNote'))}</p>`}`;
   box.hidden = false;
+}
+
+// -- Staj (Mezuniyete ne kaldı kartının içinde) --
+// Kurum adı hiç saklanmaz; yalnız süre, tarih ve muafiyet (planstore.js · INTERNSHIP).
+let stajOpen = false;
+
+function stajDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || ''));
+  return m ? `${m[3]}.${m[2]}.${m[1]}` : '';
+}
+
+function stajDetailsHTML(staj) {
+  const n = staj.list.length;
+  const items = staj.list.map((x, i) => {
+    const dates = x.start || x.end ? `${stajDate(x.start) || '?'} - ${stajDate(x.end) || '?'}` : '';
+    const days = tf('dpStajDays', { n: trNum(x.days) });
+    const label = tf('dpStajRemoveAria', { days: trNum(x.days) });
+    const tags = `${x.exempt ? `<span class="dp-staj-tag">${esc(I18N.t('dpStajExempt'))}</span>` : ''}<span class="dp-staj-src">${esc(I18N.t(x.source === 'transcript' ? 'dpStajFromTranscript' : 'dpStajManual'))}</span>`;
+    return `<li class="dp-staj-item"><span class="dp-staj-main"><b class="num">${esc(days)}</b>${dates ? `<span class="num dp-staj-dates">${esc(dates)}</span>` : ''}${tags}</span>
+      <button type="button" class="dp-staj-del" data-staj-del="${i}" aria-label="${esc(label)}" title="${esc(label)}"><span aria-hidden="true">×</span></button></li>`;
+  }).join('');
+  return `<details class="dp-grad-more dp-staj" id="dp-staj"${stajOpen ? ' open' : ''}>
+    <summary>${esc(n ? tf('dpStajList', { n }) : I18N.t('dpStajListEmpty'))}</summary>
+    ${n ? `<ul class="dp-staj-list">${items}</ul>` : `<p class="dp-staj-empty">${esc(I18N.t('dpStajEmpty'))}</p>`}
+    <form class="dp-staj-add" id="dp-staj-add" novalidate>
+      <fieldset><legend>${esc(I18N.t('dpStajAddTitle'))}</legend>
+        <label class="dp-staj-f"><span>${esc(I18N.t('dpStajAddDays'))}</span><input type="number" id="dp-staj-days" name="days" min="1" max="365" step="1" inputmode="numeric" placeholder="20" autocomplete="off" aria-describedby="dp-staj-err"></label>
+        <label class="dp-staj-f"><span>${esc(I18N.t('dpStajAddStart'))}</span><input type="date" id="dp-staj-start" name="start"></label>
+        <label class="dp-staj-f"><span>${esc(I18N.t('dpStajAddEnd'))}</span><input type="date" id="dp-staj-end" name="end"></label>
+        <label class="dp-staj-check"><input type="checkbox" id="dp-staj-exempt" name="exempt"><span>${esc(I18N.t('dpStajAddExempt'))}</span></label>
+        <button type="submit" class="dp-staj-addbtn">${esc(I18N.t('dpStajAdd'))}</button>
+      </fieldset>
+      <p class="dp-staj-err" id="dp-staj-err" role="alert" hidden>${esc(I18N.t('dpStajInvalid'))}</p>
+    </form>
+    <label class="dp-staj-req"><span>${esc(I18N.t('dpStajRequired'))}</span><input type="number" id="dp-staj-req" min="1" max="200" step="1" inputmode="numeric" value="${esc(String(staj.required))}" placeholder="${INTERNSHIP.defaultDays}" autocomplete="off"></label>
+    <p class="dp-st-note dp-staj-note">${esc(I18N.t('dpStajRule'))} <a href="${esc(INTERNSHIP.source)}" target="_blank" rel="noopener">${esc(I18N.t('dpStajSource'))}</a></p>
+  </details>`;
+}
+
+function rerenderStaj(focusSel) {
+  stajOpen = true;
+  renderGPA();
+  if (focusSel) $(focusSel)?.focus();
+}
+
+function bindStaj() {
+  const box = $('#dp-grad');
+  if (!box) return;
+  // toggle kabarmaz: yakalama evresinde dinlenir. Kart her çizimde yeniden
+  // kurulduğu için açık/kapalı durumu burada tutulur.
+  box.addEventListener('toggle', (ev) => { if (ev.target.id === 'dp-staj') stajOpen = ev.target.open; }, true);
+  box.addEventListener('submit', (ev) => {
+    if (ev.target.id !== 'dp-staj-add') return;
+    ev.preventDefault();
+    if (!progCode) return;
+    const daysEl = $('#dp-staj-days');
+    const days = Number(String(daysEl.value || '').trim());
+    const ok = Number.isInteger(days) && days >= 1 && days <= 365;
+    daysEl.setAttribute('aria-invalid', String(!ok));
+    daysEl.classList.toggle('dp-invalid', !ok);
+    $('#dp-staj-err').hidden = ok;
+    if (!ok) { daysEl.focus(); return; }
+    stored = addInternship(stored, { days, start: $('#dp-staj-start').value, end: $('#dp-staj-end').value, exempt: $('#dp-staj-exempt').checked });
+    saveStored(progCode, stored);
+    rerenderStaj('#dp-staj-days');
+  });
+  box.addEventListener('click', (ev) => {
+    const del = ev.target.closest('[data-staj-del]');
+    if (!del || !progCode) return;
+    const before = stored;
+    stored = removeInternship(stored, Number(del.dataset.stajDel));
+    saveStored(progCode, stored);
+    rerenderStaj('#dp-staj-days');
+    toast(I18N.t('dpStajRemoved'), {
+      action: { label: I18N.t('progUndo'), fn: () => { stored = before; saveStored(progCode, stored); rerenderStaj(); } },
+    });
+  });
+  box.addEventListener('change', (ev) => {
+    if (ev.target.id !== 'dp-staj-req' || !progCode) return;
+    stored = setInternshipRequired(stored, String(ev.target.value || '').trim());
+    saveStored(progCode, stored);
+    rerenderStaj('#dp-staj-req');
+  });
 }
 
 // GANO kartındaki akademik durum satırları. Kırmızı yalnız gerçek gözetim
@@ -2114,6 +2205,7 @@ function openTranscriptDialog() {
       const target = progIndex.find((item) => item.code === targetCode);
       const parts = [en ? `${parsed.records.length} rows, ${distinct} courses` : `${parsed.records.length} kayıt · ${distinct} farklı ders`];
       if (repeats) parts.push(en ? `${repeats} repeat attempts` : `${repeats} tekrar kaydı`);
+      if (parsed.internships?.length) parts.push(tf('dpTranscriptStaj', { n: parsed.internships.length }));
       if (parsed.officialGpa != null) parts.push(en ? `OBS total GPA ${String(parsed.officialGpa).replace('.', ',')}` : `OBS toplam GANO ${String(parsed.officialGpa).replace('.', ',')}`);
       if (target) parts.push(`${en ? 'Program' : 'Program'}: ${formatProgramLabel(target.code, target, I18N.lang)}`);
       else parts.push(en ? 'Choose your program above before importing.' : 'Aktarmadan önce yukarıdan programını seç.');
@@ -2197,6 +2289,7 @@ async function importTranscript() {
     return;
   }
   stored = mergeTranscriptMatch(stored, match, { officialGpa: choice.parsed.officialGpa, standing: choice.parsed.standing });
+  stored = mergeInternships(stored, choice.parsed.internships);
   saveStored(progCode, stored);
   catalogMap.clear();
   ensureCatalogForPicks();
@@ -2206,6 +2299,7 @@ async function importTranscript() {
   const details = [I18N.lang === 'en' ? `${imported} grades imported` : `${imported} not aktarıldı`];
   if (repeatCount) details.push(I18N.lang === 'en' ? `${repeatCount} repeated courses` : `${repeatCount} tekrar dersi`);
   if (match.unmatched.length) details.push(I18N.lang === 'en' ? `${match.unmatched.length} courses need manual review` : `${match.unmatched.length} ders elle kontrol edilmeli`);
+  if (choice.parsed.internships?.length) details.push(tf('dpTranscriptStaj', { n: choice.parsed.internships.length }));
   if (versionNote) details.push(versionNote);
   setTranscriptResult(`${details.join(' · ')}. ${I18N.lang === 'en' ? 'The raw transcript was not saved.' : 'Ham transkript kaydedilmedi.'}`, match.unmatched.length ? 'warn' : 'success');
   $('#dp-grades').open = true;
@@ -2464,6 +2558,7 @@ function init() {
     const jump = ev.target.closest('[data-jump]');
     if (jump) jumpToPlanItem(jump.dataset.jumpCode || '', jump.dataset.jumpSlot || '');
   });
+  bindStaj();
   $('#dp-retake-target').addEventListener('change', (ev) => {
     retakeTarget = ev.target.value;
     renderRetake(currentState());

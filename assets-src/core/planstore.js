@@ -9,6 +9,8 @@
 //     elective: { "<s<sy>i<sy>>": { code: "SNT 102", grade: "BB", prev: "" } },
 //     transfer: { credits, gpa },
 //     planVersion: <planId>,  // isteğe bağlı: seçili plan sürümü (yoksa güncel)
+//     internships: [{ days, start, end, exempt, source }],  // isteğe bağlı: staj
+//     internshipRequired: <iş günü>,  // isteğe bağlı: kullanıcının düzelttiği toplam
 //     updatedAt: <ms> }
 //
 // Tekrar: son not `grade`'te, önceki `prev`'te saklanır; hesaba yalnızca son
@@ -94,6 +96,9 @@ export function importJSON(json) {
     const data = { grades: d.grades || {}, elective: d.elective || {}, requiredSlots: d.requiredSlots || {}, transfer: d.transfer || null, targetGpa: d.targetGpa || '' };
     if (validTranscript(d.transcript)) data.transcript = d.transcript;
     if (Number.isInteger(d.planVersion) && d.planVersion > 0) data.planVersion = d.planVersion;
+    const internships = internshipList(d);
+    if (internships.length) data.internships = internships;
+    if (validRequiredDays(d.internshipRequired)) data.internshipRequired = Number(d.internshipRequired);
     return { program: d.program, data };
   } catch { return null; }
 }
@@ -366,4 +371,89 @@ export function gpaEntries(plan, stored, catalogMap = new Map()) {
     source: edited ? 'edited' : 'transcript',
     officialGpa: snap.officialGpa != null && Number.isFinite(official) ? official : null,
   };
+}
+
+
+// -- Staj --
+// İTÜ Staj Genel Esasları, Madde 9 (Senato, son değişiklik 15.10.2025):
+// "Toplam zorunlu staj süresi en az 30, en fazla 45 işgünüdür" (Denizcilik
+// programları meslek mevzuatına tabi; Mimarlık ve İç Mimarlık en fazla 60).
+// Kesin süre programın Staj Tamamlayıcı Esasları'nda belirlenir ve programdan
+// programa değişir (ör. Matematik Mühendisliği 30). Program bazında veri
+// olmadığı için varsayılan, mühendislik programlarında yaygın olan 2 × 20 =
+// 40 iş günüdür; kullanıcı kendi programının toplamını düzeltebilir.
+// Kaynak: https://www.sis.itu.edu.tr/TR/mevzuat/staj-genel-esaslar.php
+export const INTERNSHIP = {
+  defaultDays: 40,
+  minDays: 30,
+  maxDays: 45,
+  source: 'https://www.sis.itu.edu.tr/TR/mevzuat/staj-genel-esaslar.php',
+};
+
+function validRequiredDays(v) {
+  const n = Number(v);
+  return v !== '' && v != null && Number.isInteger(n) && n > 0 && n <= 200;
+}
+
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+// Saklanan staj kaydını en küçük alanlara indirger (kurum adı vb. hiçbir ek
+// alan geçmez); geçersizse null.
+function cleanInternship(x, source) {
+  if (!isPlainObject(x)) return null;
+  const days = Number(x.days);
+  if (!Number.isInteger(days) || days <= 0 || days > 365) return null;
+  const start = typeof x.start === 'string' && DATE_RE.test(x.start) ? x.start : '';
+  const end = typeof x.end === 'string' && DATE_RE.test(x.end) ? x.end : '';
+  const src = source || (x.source === 'transcript' ? 'transcript' : 'manual');
+  return { days, start, end, exempt: Boolean(x.exempt), source: src };
+}
+
+// Programın saklanan staj kayıtları (eski verilerde alan yoksa []).
+export function internshipList(stored) {
+  return (Array.isArray(stored?.internships) ? stored.internships : []).map((x) => cleanInternship(x)).filter(Boolean);
+}
+
+// Transkriptten gelen stajlar: önceki transkript kayıtlarının yerini alır; elle
+// eklenmiş ve aynı başlangıç tarihi + süreli kayıt (çift sayım) düşer, diğer
+// elle eklenenler korunur. Transkriptte staj bölümü yoksa veri değişmez.
+export function mergeInternships(data, parsed) {
+  const incoming = (Array.isArray(parsed) ? parsed : []).map((x) => cleanInternship(x, 'transcript')).filter(Boolean);
+  if (!incoming.length) return data;
+  const sameAs = (m) => incoming.some((t) => t.days === m.days && (!m.start || !t.start || m.start === t.start));
+  const manual = internshipList(data).filter((x) => x.source === 'manual' && !sameAs(x));
+  return { ...(data || {}), internships: [...incoming, ...manual] };
+}
+
+export function addInternship(data, entry) {
+  const item = cleanInternship({ ...entry, source: 'manual' }, 'manual');
+  if (!item) return data;
+  return { ...(data || {}), internships: [...internshipList(data), item] };
+}
+
+export function removeInternship(data, index) {
+  const list = internshipList(data);
+  if (!Number.isInteger(index) || index < 0 || index >= list.length) return data;
+  list.splice(index, 1);
+  const next = { ...(data || {}), internships: list };
+  if (!list.length) delete next.internships;
+  return next;
+}
+
+// Kullanıcının düzelttiği toplam; boş/geçersiz değer varsayılana döner.
+export function setInternshipRequired(data, value) {
+  const next = { ...(data || {}) };
+  if (validRequiredDays(value)) next.internshipRequired = Number(value);
+  else delete next.internshipRequired;
+  return next;
+}
+
+// { list, done, required, remaining, complete, isDefault }: muaf staj tamamlanmış sayılır.
+export function internshipSummary(stored) {
+  const list = internshipList(stored);
+  const custom = validRequiredDays(stored?.internshipRequired);
+  const required = custom ? Number(stored.internshipRequired) : INTERNSHIP.defaultDays;
+  const done = list.reduce((n, x) => n + x.days, 0);
+  const remaining = Math.max(0, required - done);
+  return { list, done, required, remaining, complete: remaining === 0, isDefault: !custom };
 }

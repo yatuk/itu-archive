@@ -20,7 +20,7 @@ import { methodToCode, codeToMethod, codeToSlug, slugToCode, scopeParams } from 
 import { parseCodes } from './taken.js';
 import { codeKey, sectionsForCode, joinCourse, joinElective, parseRange, itemLoad, semesterLoad, fmtLoad, planSummary, canonicalCode, codesMatch, groupSections, crnRangeText, courseMetaLabel, creditBadge } from './plan.js';
 import { GRADE_POINTS, EXEMPT, calcGPA, latestOnly, progress, isPassingGrade, targetNeeded, fmtTr2 } from './grades.js';
-import { setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets } from './planstore.js';
+import { setGrade, setRepeat, setElective, buildEntries, gpaEntries, exportJSON, importJSON, typeBuckets, internshipSummary, internshipList, mergeInternships, addInternship, removeInternship, setInternshipRequired } from './planstore.js';
 import * as fav from './favorites.js';
 import { formatProgramLabel, normalizeProgramLevel, programLevelLabel } from './programs.js';
 import { parseOBSTranscript, transcriptLatest, transcriptCountedAttempts, transcriptGpa, matchTranscriptToPlan, mergeTranscriptMatch, transcriptProgramCandidates, itbSntSlotOptions, transcriptUnmatchedList } from './transcript.js';
@@ -306,6 +306,98 @@ BLG 422E Computer Networks 3,00 CC`).records;
 // Kişisel verisi çıkarılmış gerçek OBS "Transkript Önizleme" metni. Son satır
 // "Toplam 122,00 82,00 101,00 191,38 1,89": GANO = 191,38 / 101.
 const OBS_FIXTURE = readFileSync(new URL('../../../test/fixtures/obs-transcript-redacted.txt', import.meta.url), 'utf8');
+
+// Staj bölümü: sentetik metin (gerçek kurum/öğrenci yok).
+const STAJ_TRANSCRIPT = `Öğrenci Numarası : 000000000
+Adı : ÖRNEK
+2025-2026 / Bahar Dönemi
+Ders Kodu Ders Adı Kredi Not
+CEN 101E Intr. to Information Systems 2,00 BB
+Toplam 2,00 2,00 2,00 6,00 3,00
+Akd. Durum İyi Durum
+2026-2027 / Güz Dönemi - Devam Eden Dersler
+Ders Kodu Ders Adı Kredi
+CEN 322E Computer Architecture 3,00
+Staj Bilgileri
+Kurum Staj Tarihi Staj Süresi Program
+Örnek Yazılım A.Ş. 01.07.2025 - 25.08.2025 20 İş Günü Bilgisayar Mühendisliği (İngilizce) (KKTC)
+Lisans
+İSTANBUL TEKNİK ÜNİVERSİTESİ
+ÖĞRENİM BELGESİ
+Sayfa 2 / 2
+Öğrenci Numarası : 000000000
+Adı Soyadı : ÖRNEK KİŞİ
+MUAF 09.03.2026 - 06.04.2026 20 İş Günü Bilgisayar Mühendisliği (İngilizce) (KKTC)
+Lisans
+** Belge Sonu ** ÖN İZLEME`;
+
+test('transkript staj bölümü: süre, tarih ve MUAF ayrışır; kurum ve başlık bilgisi saklanmaz', () => {
+  const parsed = parseOBSTranscript(STAJ_TRANSCRIPT);
+  assert.deepEqual(parsed.internships, [
+    { days: 20, start: '2025-07-01', end: '2025-08-25', exempt: false },
+    { days: 20, start: '2026-03-09', end: '2026-04-06', exempt: true },
+  ]);
+  // Staj satırları ders kaydı olmaz.
+  assert.deepEqual(parsed.records.map((r) => r.code), ['CEN 101E']);
+  const json = JSON.stringify(parsed.internships);
+  for (const bad of ['Örnek Yazılım', 'A.Ş.', 'Bilgisayar', 'Lisans', '000000000', 'ÖRNEK', 'MUAF']) {
+    assert.equal(json.includes(bad), false, bad);
+  }
+});
+
+test('transkript staj: taşan satır, sayfa altbilgisi araya girer, bölüm yoksa boş', () => {
+  const wrapped = parseOBSTranscript(`2025-2026 / Güz Dönemi
+CEN 101E Intr. to Information Systems 2,00 BB
+Staj Bilgileri
+Kurum Staj Tarihi Staj Süresi Program
+Uzun Adlı Örnek Mühendislik ve
+Danışmanlık Ltd. Şti. 02.02.2026 - 27.02.2026 20
+İş Günü Makina Mühendisliği
+Lisans
+Sayfa 3 / 3
+ÖN İZLEME
+Örnek Kurum 06.07.2026 - 17.07.2026 10 İş Günü Makina Mühendisliği Lisans`);
+  assert.deepEqual(wrapped.internships, [
+    { days: 20, start: '2026-02-02', end: '2026-02-27', exempt: false },
+    { days: 10, start: '2026-07-06', end: '2026-07-17', exempt: false },
+  ]);
+  assert.equal(wrapped.records.length, 1);
+  assert.deepEqual(parseOBSTranscript(`2025-2026 / Güz Dönemi
+CEN 101E Intr. to Information Systems 2,00 BB
+** Belge Sonu **`).internships, []);
+  assert.deepEqual(parseOBSTranscript(OBS_FIXTURE).internships, []);
+});
+
+test('staj deposu: transkript birleşir, elle ekle/kaldır, gerekli süre düzeltilir, JSON aktarımı korur', () => {
+  assert.deepEqual(internshipSummary({}), { list: [], done: 0, required: 40, remaining: 40, complete: false, isDefault: true });
+  let d = addInternship({}, { days: 20, start: '2025-07-01', end: '', exempt: false, institution: 'Gizli A.Ş.' });
+  assert.deepEqual(d.internships, [{ days: 20, start: '2025-07-01', end: '', exempt: false, source: 'manual' }]);
+  assert.equal(addInternship(d, { days: 0 }), d);
+  // Aynı stajı transkript getirince elle eklenen düşer (çift sayım yok).
+  d = mergeInternships(d, parseOBSTranscript(STAJ_TRANSCRIPT).internships);
+  assert.equal(d.internships.length, 2);
+  assert.ok(d.internships.every((x) => x.source === 'transcript'));
+  assert.equal(mergeInternships(d, []), d);
+  const s = internshipSummary(d);
+  assert.equal(s.done, 40);
+  assert.equal(s.complete, true);
+  d = setInternshipRequired(d, '45');
+  assert.equal(internshipSummary(d).remaining, 5);
+  assert.equal(internshipSummary(d).isDefault, false);
+  assert.equal(setInternshipRequired(d, '').internshipRequired, undefined);
+  const restored = importJSON(exportJSON('CEN_LS', d));
+  assert.deepEqual(restored.data.internships, d.internships);
+  assert.equal(restored.data.internshipRequired, 45);
+  d = removeInternship(d, 0);
+  assert.equal(d.internships.length, 1);
+  assert.equal(removeInternship(removeInternship(d, 0), 0).internships, undefined);
+  // Eski kayıt (alan yok) ve bozuk değerler sorunsuz yüklenir.
+  assert.deepEqual(internshipList({ internships: [{ days: 'x' }, null, { days: 15, start: 'dün', institution: 'X' }] }), [
+    { days: 15, start: '', end: '', exempt: false, source: 'manual' },
+  ]);
+  assert.equal(importJSON(JSON.stringify({ program: 'CEN_LS', grades: {} })).data.internships, undefined);
+});
+
 
 test('transkript GANO OBS kuralıyla hesaplanır: * işaretli denemeler düşer, FF/VF sayılır, BL ve 0 kredi girmez', () => {
   const parsed = parseOBSTranscript(OBS_FIXTURE);

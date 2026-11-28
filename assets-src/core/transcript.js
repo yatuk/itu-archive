@@ -1,7 +1,8 @@
 // OBS Transkript Önizleme ekranından kopyalanan düz metni ayrıştırır.
 // Saf modüldür: DOM, localStorage ve ağ erişimi yoktur. Öğrenci adı/numarası,
 // kimlik ve doğum bilgileri hiçbir çıktıya alınmaz; yalnız ders kayıtları,
-// dönem etiketi ve belgedeki son toplam GANO döner.
+// dönem etiketi, belgedeki son toplam GANO ve staj süreleri (kurum adı
+// olmadan) döner.
 
 import { canonicalCode } from './plan.js?v=dde1e9339338';
 import { GRADE_POINTS } from './grades.js?v=dde1e9339338';
@@ -35,6 +36,39 @@ const STANDING_STATUSES = new Map([
 function standingStatus(raw) {
   return STANDING_STATUSES.get(String(raw || '').toLocaleLowerCase('tr-TR').replace(/\s+/g, ' ').trim()) || '';
 }
+// "Staj Bilgileri" bölümü: "Kurum Staj Tarihi Staj Süresi Program" başlığı,
+// ardından her staj için "<kurum> 01.07.2025 - 25.08.2025 20 İş Günü <program>"
+// satırı (program adı sonraki satıra taşabilir: "Lisans"). Kurum "MUAF" ise
+// staj muaf sayılır. Kurum ve program adı SAKLANMAZ; yalnız gün, tarih, muafiyet.
+const INTERNSHIP_HEAD_RE = /^(?:Staj\s+Bilgileri|Internship\s+(?:Information|Records))\b/i;
+const INTERNSHIP_COLS_RE = /^Kurum\s+Staj\s+Tarihi\b|^(?:Institution|Company)\s+(?:Internship\s+)?Date\b/i;
+const INTERNSHIP_DAYS_RE = /(\d{1,3})\s*(?:[İIiı][şsŞS]\s*[GgĞ][üuÜU][nN][üuÜU]?|(?:working|business|work)\s+days?)(?![A-Za-zÇĞİÖŞÜçğıöşü])/i;
+const INTERNSHIP_DATES_RE = /(\d{1,2})\.(\d{1,2})\.(\d{4})\s*-\s*(\d{1,2})\.(\d{1,2})\.(\d{4})/;
+// Sayfa altbilgisi/üstbilgisi: staj satırlarının arasına girebilir.
+const PAGE_NOISE_RE = /^(?:İSTANBUL\s+TEKNİK\s+ÜNİVERSİTESİ|ISTANBUL\s+TECHNICAL\s+UNIVERSITY|ÖĞRENİM\s+BELGESİ|TRANSCRIPT|ÖN\s+İZLEME|Sayfa\s+\d+\s*\/\s*\d+|Page\s+\d+\s*\/\s*\d+)\b|\s:\s|^[^:]{1,40}:\s|:$/i;
+
+function isoDate(d, m, y) {
+  const dd = Number(d), mm = Number(m), yy = Number(y);
+  if (!(dd >= 1 && dd <= 31 && mm >= 1 && mm <= 12 && yy >= 1950 && yy <= 2100)) return '';
+  return `${yy}-${String(mm).padStart(2, '0')}-${String(dd).padStart(2, '0')}`;
+}
+
+// Bir staj satırı (önceki taşmış satırlarla birleştirilmiş) → { days, start, end, exempt } | null.
+export function parseInternshipRow(text) {
+  const line = cleanLine(text).replace(/\s*ÖN\s+İZLEME\s*$/i, '');
+  const daysMatch = line.match(INTERNSHIP_DAYS_RE);
+  if (!daysMatch) return null;
+  const days = Number(daysMatch[1]);
+  if (!Number.isFinite(days) || days <= 0 || days > 365) return null;
+  const head = line.slice(0, daysMatch.index);
+  const dates = head.match(INTERNSHIP_DATES_RE);
+  const start = dates ? isoDate(dates[1], dates[2], dates[3]) : '';
+  const end = dates ? isoDate(dates[4], dates[5], dates[6]) : '';
+  const institution = dates ? head.slice(0, dates.index) : head;
+  const exempt = /(?:^|\s)(?:MUAF|EXEMPT(?:ED)?)(?=\s|$)/i.test(institution);
+  return { days, start, end, exempt };
+}
+
 const PASSING_GRADES = new Set(['AA', 'BA+', 'BA', 'BB+', 'BB', 'CB+', 'CB', 'CC+', 'CC', 'DC+', 'DC', 'DD+', 'DD', 'BL', 'M', 'G', 'P']);
 
 // OBS ile müfredat kaynağı aynı ders adını farklı kısaltmalarla verebiliyor.
@@ -171,8 +205,32 @@ export function parseOBSTranscript(raw) {
   let expectProgram = false;
   let officialGpa = null;
   const standingByTerm = new Map();
+  const internships = [];
+  let inInternships = false;
+  let internshipBuf = [];
 
   for (const line of lines) {
+    // Staj bölümü: bu bölümdeki hiçbir satır ders kaydı sayılmaz.
+    if (INTERNSHIP_HEAD_RE.test(line)) {
+      inInternships = true;
+      internshipBuf = [];
+      term = '';
+      expectProgram = false;
+      continue;
+    }
+    if (inInternships) {
+      if (/^\*\*\s*Belge\s+Sonu|^\*\*\s*End\s+of\s+Document/i.test(line)) { inInternships = false; internshipBuf = []; continue; }
+      // Staj bölümünden sonra yeni bir dönem başlarsa (beklenmez) bölüm biter.
+      if (TERM_RE.test(line) || IN_PROGRESS_RE.test(line)) { inInternships = false; internshipBuf = []; }
+      else {
+        if (INTERNSHIP_COLS_RE.test(line) || PAGE_NOISE_RE.test(line)) continue;
+        internshipBuf.push(line);
+        if (internshipBuf.length > 4) internshipBuf.shift();
+        const row = parseInternshipRow(internshipBuf.join(' '));
+        if (row) { internships.push(row); internshipBuf = []; }
+        continue;
+      }
+    }
     if (IN_PROGRESS_RE.test(line)) {
       term = '';
       expectProgram = false;
@@ -225,7 +283,7 @@ export function parseOBSTranscript(raw) {
 
   // standing: dönem başına resmî akademik durum (belge sırasıyla).
   const standing = [...standingByTerm.entries()].map(([t, status]) => ({ term: t, status }));
-  return { records, programs: [...programs], officialGpa, standing };
+  return { records, programs: [...programs], officialGpa, standing, internships };
 }
 
 // OBS'nin kümülatif GANO kuralı (transkriptteki dönem "Toplam" satırlarından

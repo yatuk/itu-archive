@@ -7402,3 +7402,36 @@ details.ab-faq summary:focus-visible { outline: 2px solid var(--cyan); outline-o
 }
 @keyframes mshell-up { from { transform: translateY(40px); opacity: .6; } to { transform: none; opacity: 1; } }
 @keyframes mshell-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* Tarama düzeltmeleri (yalnız sade; fosfor donuk): içerik taşıyan etiket/üstveri >= 12px,
+   açık program menüsü altındaki içeriğe binmez, önşart liste kodu taşmaz. */
+[data-theme="sade"] .cl-sort,
+[data-theme="sade"] .cl-pill,
+[data-theme="sade"] .cl-qu-short,
+[data-theme="sade"] #view-dersler .cmdk-hint,
+[data-theme="sade"] #view-dersler .eyebrow,
+[data-theme="sade"] #view-dersplanim .dp-k,
+[data-theme="sade"] #view-dersplanim .dp-ty,
+[data-theme="sade"] #view-dersplanim .dp-recommend-note,
+[data-theme="sade"] #view-dersplanim em,
+[data-theme="sade"] #view-dersplanim summary > b,
+[data-theme="sade"] .cl-head .cl-name,
+[data-theme="sade"] #pg-root summary > span,
+[data-theme="sade"] #view-program .p-k,
+[data-theme="sade"] #view-program .p-obs-hint,
+[data-theme="sade"] #view-program .p-wk-hours span,
+[data-theme="sade"] #view-program .tt-block,
+[data-theme="sade"] #pg-root .pg-state-tag,
+[data-theme="sade"] #pg-root .pg-mobile-course small { font-size: 12px; }
+@media (hover: hover) and (pointer: fine) and (min-width: 761px) {
+  [data-theme="sade"] #view-dersler .course-search .cmdk-hint { z-index: 2; }
+  [data-theme="sade"] #view-dersler .course-search input:placeholder-shown { padding-right: 86px; }
+}
+/* Açık program menüsü (Adlandır/Yeni/Kopyala/Programı sil) altındaki içeriğin üstüne binmez:
+   araç çubuğu menü yüksekliği kadar yer ayırır. */
+[data-theme="sade"] #view-program .p-toolbar:has(.p-progmenu[open]) { padding-bottom: 184px; }
+@media (max-width: 760px) {
+  [data-theme="sade"] #view-program .p-toolbar:has(.p-progmenu[open]) { padding-bottom: 210px; }
+}
+[data-theme="sade"] #pg-root .pg-li-name { min-width: 0; overflow-wrap: anywhere; }
+[data-theme="sade"] #pg-root .pg-li-code { display: inline-block; max-width: 100%; }
